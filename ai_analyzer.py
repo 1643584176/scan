@@ -25,10 +25,22 @@ def get_sentence_model():
     global _sentence_model
     if _sentence_model is None:
         from sentence_transformers import SentenceTransformer
+        import os
+        
+        # 设置国内镜像源（加速下载）
+        os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+        
         # 使用轻量级多语言模型，支持中文
         print("正在加载AI模型（首次运行需要下载模型，约400MB）...")
-        _sentence_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
-        print("AI模型加载完成！")
+        try:
+            _sentence_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+            print("AI模型加载完成！")
+        except Exception as e:
+            print(f"⚠️  AI模型下载失败: {e}")
+            print("💡 提示：可以手动下载模型或使用离线模式")
+            print("   设置环境变量: set HF_ENDPOINT=https://hf-mirror.com")
+            # 返回 None，后续分析跳过
+            return None
     return _sentence_model
 
 
@@ -95,6 +107,26 @@ class AIVulnerabilityAnalyzer:
             分析结果字典
         """
         print(f"\n🤖 AI正在分析 {domain} 的扫描结果...")
+        
+        # 检查模型是否加载成功
+        model = get_sentence_model()
+        if model is None:
+            print("⚠️  AI模型未加载，跳过智能分析")
+            # 返回基础分析结果
+            parsed_vulns = self._parse_scan_output(scan_output)
+            return {
+                "domain": domain,
+                "url": url,
+                "timestamp": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                "tech_stack": tech_stack,
+                "raw_vuln_count": len(parsed_vulns),
+                "analyzed_vulns": [{'raw': v['raw'], 'severity': v['severity'], 'type': v['type']} for v in parsed_vulns],
+                "risk_score": 0,
+                "risk_level": "low",
+                "recommendations": [],
+                "similar_cases": [],
+                "summary": f"扫描完成，发现 {len(parsed_vulns)} 个结果（AI分析已跳过）"
+            }
         
         # 1. 解析扫描结果
         parsed_vulns = self._parse_scan_output(scan_output)

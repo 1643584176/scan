@@ -14,10 +14,29 @@ def run_wappalyzer(target):
         wappalyzer = Wappalyzer.latest()
         webpage = WebPage.new_from_url(target)
         techs = wappalyzer.analyze(webpage)
+        
+        # 转换 set 类型为 list，以便 JSON 序列化
+        def convert_sets(obj):
+            if isinstance(obj, set):
+                return list(obj)
+            elif isinstance(obj, dict):
+                return {k: convert_sets(v) for k, v in obj.items()}
+            elif isinstance(obj, list):
+                return [convert_sets(i) for i in obj]
+            return obj
+        
+        techs_converted = convert_sets(techs)
+        
         with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(techs, f, indent=4)
+            json.dump(techs_converted, f, indent=4)
         print(f"技术栈数据已保存到 {output_file}")
-        print("检测到的技术:", list(techs.keys()))
+        # 兼容 dict 和 list 两种格式
+        if isinstance(techs_converted, dict):
+            print("检测到的技术:", list(techs_converted.keys()))
+        elif isinstance(techs_converted, list):
+            print("检测到的技术:", techs_converted)
+        else:
+            print("检测到的技术: []")
     except Exception as e:
         print(f"错误: {e}")
 

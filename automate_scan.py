@@ -10,6 +10,7 @@ import json
 import shutil
 import subprocess
 import sys
+import time
 from urllib.parse import urlparse
 from datetime import datetime
 from ai_analyzer import get_ai_analyzer
@@ -21,7 +22,13 @@ def get_domain(url):
 def parse_whatweb(json_file):
     with open(json_file, encoding='utf-8') as f:
         techs = json.load(f)
-    return list(techs.keys())
+    # Wappalyzer 可能返回 dict 或 list，需要兼容处理
+    if isinstance(techs, dict):
+        return list(techs.keys())
+    elif isinstance(techs, list):
+        return techs
+    else:
+        return []
 
 def parse_nuclei(txt_file):
     """解析Nuclei扫描结果"""
@@ -30,24 +37,73 @@ def parse_nuclei(txt_file):
     return content
 
 def update_nuclei():
+    """智能更新Nuclei模板和引擎（静默执行）"""
     nuclei_exe = os.path.join(os.getcwd(), 'tools', 'nuclei', 'nuclei.exe')
-    if os.path.exists(nuclei_exe):
-        print("正在更新Nuclei模板...")
-        try:
-            result = subprocess.run([nuclei_exe, '-update-templates'], capture_output=True, text=True)
-            if result.returncode == 0:
-                print("Nuclei模板更新完成。")
-            else:
-                print("更新失败:", result.stderr)
-        except Exception as e:
-            print(f"更新错误: {e}")
-    else:
-        print("Nuclei未找到，跳过更新。")
+    
+    if not os.path.exists(nuclei_exe):
+        return
+    
+    try:
+        # 检查当前版本信息
+        check_result = subprocess.run(
+            [nuclei_exe, '-update-templates', '-silent'], 
+            capture_output=True, 
+            text=True,
+            timeout=60
+        )
+        
+        output = check_result.stdout + check_result.stderr
+        
+        # 检查引擎是否需要更新
+        engine_outdated = 'outdated' in output.lower()
+        templates_latest = 'latest' in output.lower() or 'up-to-date' in output.lower()
+        
+        if templates_latest and not engine_outdated:
+            return
+        
+        # 需要更新
+        if engine_outdated:
+            update_result = subprocess.run(
+                [nuclei_exe, '-update'], 
+                capture_output=True, 
+                text=True,
+                timeout=300
+            )
+        else:
+            update_result = subprocess.run(
+                [nuclei_exe, '-update-templates'], 
+                capture_output=True, 
+                text=True,
+                timeout=300
+            )
+            
+    except:
+        pass
+
+def update_sqlmap():
+    """更新SQLMap到最新版本（静默执行）"""
+    try:
+        # 使用 pip 更新 sqlmap
+        subprocess.run(
+            [sys.executable, '-m', 'pip', 'install', '--upgrade', 'sqlmap'],
+            capture_output=True,
+            text=True,
+            timeout=120
+        )
+    except:
+        pass
 
 def main():
-    print("启动项目，检查Nuclei更新...")
-    update_nuclei()
-    print("更新检查完成。\n")
+    # 启动时自动更新工具（静默执行）
+    import concurrent.futures
+    
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+        future_nuclei = executor.submit(update_nuclei)
+        future_sqlmap = executor.submit(update_sqlmap)
+        
+        # 等待两个更新任务完成
+        future_nuclei.result()
+        future_sqlmap.result()
 
     urls_dir = 'urls'
     if not os.path.exists(urls_dir):
@@ -62,33 +118,156 @@ def main():
             for url in urls:
                 domain = get_domain(url)
                 bounty_dir = f"@{domain}_bounty"
-                if os.path.exists(bounty_dir):
-                    print(f"目录 {bounty_dir} 已存在，跳过。")
+                
+                # 如果目录不存在，则创建
+                if not os.path.exists(bounty_dir):
+                    shutil.copytree('example_bounty', bounty_dir)
+                    print(f"创建目录 {bounty_dir}")
+
+                # 技术栈检测（Wappalyzer + HTTP头/HTML分析）
+                subprocess.run([sys.executable, os.path.join(os.getcwd(), 'tools', 'whatweb', 'scan.py'), url], cwd=bounty_dir, capture_output=True)
+                
+                # 增强检测：HTTP头和HTML分析
+                enhanced_result = subprocess.run(
+                    [sys.executable, os.path.join(os.getcwd(), 'tools', 'whatweb', 'scan_enhanced.py'), url],
+                    cwd=bounty_dir,
+                    capture_output=True,
+                    text=True
+                )
+                
+                # 如果增强检测有错误，静默跳过（不显示）
+                # if enhanced_result.returncode != 0 and enhanced_result.stderr:
+                #     print(f"⚠️  增强检测警告: {enhanced_result.stderr[:200]}")
+
+                # 解析技术栈信息（合并 Wappalyzer 和增强检测的结果）
+                tech_stack = []
+                tech_details = {}
+                
+                # 1. 解析 Wappalyzer 结果
+                for file in os.listdir(bounty_dir):
+                    if file.startswith('wappalyzer_') and file.endswith('.json'):
+                        tech_file = os.path.join(bounty_dir, file)
+                        with open(tech_file, 'r', encoding='utf-8') as f:
+                            tech_data = json.load(f)
+                        
+                        if isinstance(tech_data, dict):
+                            for tech_name, tech_info in tech_data.items():
+                                version = ''
+                                if isinstance(tech_info, dict) and 'version' in tech_info:
+                                    version = f" v{tech_info['version']}"
+                                elif isinstance(tech_info, list) and len(tech_info) > 0:
+                                    version = f" v{tech_info[0]}"
+                                tech_details[tech_name] = version
+                                tech_stack.append(tech_name)
+                        elif isinstance(tech_data, list):
+                            for tech in tech_data:
+                                if tech not in tech_stack:
+                                    tech_stack.append(tech)
+                                    tech_details[tech] = ''
+                        break
+                
+                # 2. 解析增强检测结果（HTTP头 + HTML）
+                for file in os.listdir(bounty_dir):
+                    if file.startswith('enhanced_') and file.endswith('.json'):
+                        tech_file = os.path.join(bounty_dir, file)
+                        try:
+                            with open(tech_file, 'r', encoding='utf-8') as f:
+                                enhanced_data = json.load(f)
+                            
+                            # 合并增强检测到的技术（去重）
+                            for tech_name, version in enhanced_data.items():
+                                if tech_name not in tech_details:
+                                    tech_details[tech_name] = f" v{version}" if version else ''
+                                    tech_stack.append(tech_name)
+                        except:
+                            pass
+                        break
+                
+                # 显示技术栈（带版本号）
+                if tech_details:
+                    tech_list = [f"{name}{ver}" for name, ver in tech_details.items()]
+                    print(f"✅ 技术栈: {', '.join(tech_list)}")
+                else:
+                    print(f"✅ 技术栈: {', '.join(tech_stack) if tech_stack else '未检测到'}")
+
+                # 第一步：URL 收集（增量扫描）
+                print("\n🔍 启动 URL 收集...")
+                subprocess.run([
+                    sys.executable,
+                    os.path.join(os.getcwd(), 'tools', 'nikto', 'url_collector.py'),
+                    url,
+                    bounty_dir
+                ], cwd=bounty_dir)
+                
+                # 读取 all_urls.txt
+                all_urls_file = os.path.join(bounty_dir, 'all_urls.txt')
+                if not os.path.exists(all_urls_file):
+                    print("❌ 未找到 all_urls.txt")
                     continue
-
-                # 复制 example_bounty
-                shutil.copytree('example_bounty', bounty_dir)
-                print(f"创建目录 {bounty_dir}")
-
-                # 运行 whatweb
-                subprocess.run([sys.executable, 'tools/whatweb/scan.py', url], cwd=bounty_dir)
-
-                # 运行 Nuclei 漏洞扫描
-                subprocess.run([sys.executable, 'tools/nikto/scan.py', url], cwd=bounty_dir)
+                
+                with open(all_urls_file, 'r', encoding='utf-8') as f:
+                    all_urls = [line.strip() for line in f if line.strip()]
+                
+                print(f"✅ 加载 {len(all_urls)} 个有效 URL\n")
+                
+                # 第二步：从 all_urls.txt 中提取带参数的 URL
+                print("📊 提取带参数的 URL...")
+                from urllib.parse import urlparse
+                
+                param_urls = []
+                for target_url in all_urls:
+                    parsed = urlparse(target_url)
+                    if parsed.query:  # 有查询参数
+                        param_urls.append(target_url)
+                
+                # 去重
+                param_urls = list(set(param_urls))
+                
+                if param_urls:
+                    print(f"✅ 发现 {len(param_urls)} 个带参数的 URL")
+                    # 保存参数 URL 到文件，供 SQLMap 使用
+                    params_file = os.path.join(bounty_dir, f'nuclei_params_{datetime.now().strftime("%Y%m%d_%H%M%S")}.txt')
+                    with open(params_file, 'w', encoding='utf-8') as f:
+                        for purl in param_urls:
+                            f.write(purl + '\n')
+                    print(f"💾 参数已保存: {params_file}")
+                else:
+                    print("⚠️  未发现带参数的 URL")
+                
+                # 第三步：Nuclei 扫描（使用 all_urls.txt）
+                print("\n🚀 启动 Nuclei 扫描...")
+                # 将 all_urls.txt 传递给 Nuclei
+                nuclei_input_file = os.path.join(bounty_dir, 'all_urls.txt')
+                subprocess.run([
+                    sys.executable, 
+                    os.path.join(os.getcwd(), 'tools', 'nikto', 'scan_enhanced.py'), 
+                    nuclei_input_file,  # 传递文件而不是单个 URL
+                    'fast'
+                ], cwd=bounty_dir)
+                
+                # 第四步：SQLMap 注入测试
+                if param_urls:
+                    print("\n💉 启动 SQLMap 注入测试...")
+                    subprocess.run([
+                        sys.executable,
+                        os.path.join(os.getcwd(), 'tools', 'nikto', 'sqlmap_scan.py'),
+                        params_file,
+                        bounty_dir
+                    ], cwd=bounty_dir)
 
                 # 解析输出并更新文件
                 findings_path = os.path.join(bounty_dir, 'findings.md')
                 progress_path = os.path.join(bounty_dir, 'progress.md')
                 readme_path = os.path.join(bounty_dir, 'README.md')
 
-                tech_stack = []
                 scan_output = ''
 
                 for file in os.listdir(bounty_dir):
-                    if file.startswith('wappalyzer_') and file.endswith('.json'):
-                        tech_stack = parse_whatweb(os.path.join(bounty_dir, file))
                     if file.startswith('nuclei_') and file.endswith('.txt'):
                         scan_output = parse_nuclei(os.path.join(bounty_dir, file))
+                        break
+
+                # AI智能分析
 
                 # 🤖 AI智能分析
                 ai_analyzer = get_ai_analyzer()

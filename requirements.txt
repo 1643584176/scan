@@ -2,6 +2,9 @@ requests
 python-Wappalyzer
 python-nmap
 setuptools
+httpx
+beautifulsoup4
+sqlmap
 
 # AI智能分析（可选，首次使用会自动下载模型约400MB）
 numpy>=1.24.0
