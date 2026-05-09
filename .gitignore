@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata
+share/python-wheels
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# AI记忆数据（不提交到Git）
+knowledge_base.json
+ai_memory_db/
+ai_memory_backup_*/
+ai_analysis_report.md
+ai_memory_report_*.md
+
+# 许可证文件（敏感信息）
+license.json
+licenses/
+
+# 扫描结果目录（每个目标生成的目录）
+@*_bounty/
+
+# 大型二进制文件（可从官方下载）
+tools/nuclei/nuclei.exe
+tools/nuclei.zip
+tools/nuclei/*.exe
+*.zip
+
+# 测试文件
+test_*.py
+*.test.py
+
+# 开发文档（不提交）
+*总结.md
+*完成总结.md
+项目总结.md
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
