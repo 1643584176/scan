@@ -1,0 +1,6 @@
+# 渗透测试用到的关键Payload、参数、常见攻击词典
+
+1' or '1'='1
+"><svg/onload=alert(1)>
+../../../../etc/passwd
+{"admin":true}
