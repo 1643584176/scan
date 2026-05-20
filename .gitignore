@@ -48,23 +48,20 @@ ai_memory_report_*.md
 license.json
 licenses/
 
-# 扫描结果目录（每个目标生成的目录）
+# 扫描结果目录
+results/
 @*_bounty/
 
-# 大型二进制文件（可从官方下载）
-tools/nuclei/nuclei.exe
-tools/nuclei.zip
-tools/nuclei/*.exe
-*.zip
+# 大型数据文件
+latest_vulns.json
 
-# 测试文件
-test_*.py
-*.test.py
+# 环境变量和敏感信息
+.env
+*.env
+HACKERONE_API_TOKEN
+license.json
 
-# 开发文档（不提交）
-*总结.md
-*完成总结.md
-项目总结.md
+
 
 # 日志文件
 *.log

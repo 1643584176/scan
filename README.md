@@ -1,150 +1,239 @@
-# 🤖 AI增强版漏洞扫描系统
+# 🔍 智能安全扫描器
 
-> **社区共享 · 集体智慧 · 互帮互助**
-
-[English](#english) | [社区共享说明](社区共享说明.md) | [AI使用指南](AI使用指南.md)
-
----
+基于 Go 工具的自动化 Web 安全扫描系统，集成 HackerOne 漏洞报告学习功能。
 
 ## ✨ 核心特性
 
-- 🧠 **AI智能分析** - 自动识别真实漏洞和误报
-- 📚 **记忆系统** - 记住历史案例，跨项目复用
-- 🌍 **社区共享** - 贡献经验，获取全球智慧
-- 🔄 **自学习进化** - 越用越智能，准确率持续提升
-- 🔒 **完全本地化** - 数据隐私安全，离线可用
+- 🚀 **快速扫描** - 使用 Go 编写的高性能工具（Nuclei, httpx, Katana）
+- 🎯 **精准检测** - 智能 URL 收集和分类，减少误报
+- 📖 **漏洞学习** - 从 HackerOne 公开报告学习实战技巧
+- 🔧 **易于使用** - 简化的工作流程，一键扫描
+- 📊 **详细报告** - 自动生成 Markdown 格式扫描报告
+- 🔒 **本地运行** - 所有数据保存在本地，保护隐私
 
----
+## 🚀 快速开始
 
-## 🚀 快速开始（3步）
+### 1. 环境要求
 
-### **方式1：新用户（推荐）**
+- Python 3.7+
+- Go 1.20+ （用于安装扫描工具）
+
+### 2. 安装依赖
 
 ```bash
-# 1. 安装依赖
+# 安装 Python 依赖
 pip install -r requirements.txt
 
-# 2. 下载Nuclei工具
-python tools/setup_tools.py
-# 或查看 tools/nuclei/INSTALL.md
+# 安装 Go 扫描工具
+python tools/go_tools.py install
+```
 
-# 3. 一键导入示例社区智慧
-python quick_start.py
+### 3. 添加目标
 
-# 4. 开始扫描
+编辑 `urls/targets.txt`，添加要扫描的目标（每行一个）：
+
+```
+https://example.com
+https://test.com
+```
+
+### 4. 开始扫描
+
+```bash
 python automate_scan.py
 ```
 
-### **方式2：手动操作**
+扫描结果将保存在 `@域名_bounty/` 目录中。
 
-1. 安装Python依赖：`pip install -r requirements.txt`
-2. 将目标URL放入 `urls/` 目录的文本文件中，每行一个URL
-3. 运行 `python automate_scan.py` 开始AI增强扫描
-4. （可选）运行 `python share_memory.py` 贡献经验或下载社区智慧
+## 📚 漏洞报告学习
 
----
-
-## 🌍 社区共享 - 互帮互助
-
-### **核心理念**
-你的每一次扫描都在为社区贡献智慧，其他人的经验也会帮助你！
-
-### **参与方式**
+### 搜索公开漏洞报告
 
 ```bash
-# 贡献你的经验（匿名）
-python share_memory.py
+# 搜索 XSS 报告
+python tools/vuln_report_learner.py XSS
 
-# 下载社区智慧
-python share_memory.py
+# 搜索 SQL 注入报告（10个）
+python tools/vuln_report_learner.py "SQL Injection" 10
 
-# 导入到本地AI
-python import_community.py
+# 搜索 IDOR 报告
+python tools/vuln_report_learner.py IDOR 5
 ```
 
-**效果：**
-- 📈 准确率从60%提升到85%+
-- 🎯 立即识别罕见漏洞类型
-- 🤝 与全球用户共同成长
+### 查看学习报告
 
-详见：[社区共享说明.md](社区共享说明.md)
+生成的报告会保存为 Markdown 文件：
+- `xss_learning_report.md`
+- `sql_injection_learning_report.md`
+- 等等...
 
----
+详见：[VULN_REPORT_LEARNING.md](VULN_REPORT_LEARNING.md)
 
-## 📁 目录结构
+## 🛠️ 工具管理
 
-### **核心文件**
-- **automate_scan.py** - AI增强版主扫描脚本
-- **ai_analyzer.py** - AI智能分析引擎
-- **ai_feedback.py** - 反馈学习工具
-- **share_memory.py** - 社区共享系统
-- **import_community.py** - 导入社区智慧
-- **manage_memory.py** - 记忆管理工具
-- **quick_start.py** - 快速开始向导
-
-### **数据文件**
-- **knowledge_base.json** - 本地AI知识库（不提交Git）
-- **ai_memory_db/** - 向量数据库（不提交Git）
-- **example_community_wisdom.json** - 示例社区智慧
-
-### **文档**
-- **README.md** - 项目说明
-- **AI使用指南.md** - 详细使用手册
-- **社区共享说明.md** - 共享系统说明
-- **GIT协作指南.md** - Git协作说明
-
-### **其他**
-- **common/** - 共享资源（漏洞模式、排除项）
-- **example_bounty/** - 赏金项目模板
-- **tools/** - 扫描工具（Nuclei、Wappalyzer等）
-- **urls/** - URL输入目录
-
----
-
-## English
-
-# 🤖 AI-Enhanced Vulnerability Scanner
-
-> **Community Sharing · Collective Wisdom · Mutual Help**
-
-## ✨ Features
-
-- 🧠 **AI Analysis** - Automatically identify real vulnerabilities and false positives
-- 📚 **Memory System** - Remember historical cases, cross-project reuse
-- 🌍 **Community Sharing** - Contribute experience, gain global wisdom
-- 🔄 **Self-Learning** - Smarter with use, accuracy continuously improves
-- 🔒 **Fully Local** - Data privacy secure, offline available
-
-## 🚀 Quick Start
+### 检查工具状态
 
 ```bash
-# 1. Install dependencies
-pip install -r requirements.txt
+python tools/go_tools.py check
+```
 
-# 2. Import example community wisdom
-python quick_start.py
+### 更新工具
 
-# 3. Start scanning
+```bash
+python tools/go_tools.py update
+```
+
+### 安装单个工具
+
+```bash
+python tools/go_tools.py install nuclei
+python tools/go_tools.py install httpx
+python tools/go_tools.py install katana
+```
+
+## 📁 项目结构
+
+```
+scan/
+├── automate_scan.py              # 主扫描脚本
+├── simple_scan.py                # 简化版扫描脚本
+├── js_analyzer.py               # JavaScript 分析器
+├── logger.py                    # 日志工具
+├── tools/
+│   ├── go_tools.py              # Go 工具管理器 ⭐
+│   ├── vuln_report_learner.py   # 漏洞报告学习工具 ⭐
+│   ├── hackerone_disclosed.py   # HackerOne 公开报告查询 ⭐
+│   └── nikto/                   # 扫描模块
+│       ├── url_collector.py     # URL 收集器
+│       ├── url_analyzer.py      # URL 分析器
+│       ├── scan.py              # Nuclei 扫描器
+│       ├── sqlmap_scan.py       # SQLMap 扫描器
+│       └── js_analyzer.py       # JS 分析器
+├── urls/
+│   └── targets.txt              # 目标 URL 列表
+├── results/                     # 扫描结果（自动生成）
+├── requirements.txt             # Python 依赖
+├── README.md                    # 本文件
+├── QUICKSTART.md                # 快速开始指南
+├── HACKERONE_INTEGRATION.md     # HackerOne 集成说明
+└── VULN_REPORT_LEARNING.md      # 漏洞学习指南
+```
+
+## 🎯 扫描流程
+
+```
+1. HTTP 探测 (httpx)
+   ↓
+2. URL 收集 (Katana)
+   ↓
+3. URL 分类分析
+   ↓
+4. 漏洞扫描 (Nuclei)
+   ↓
+5. SQL 注入测试 (SQLMap)
+   ↓
+6. JavaScript 分析
+   ↓
+7. 生成报告
+```
+
+## 📊 输出文件
+
+每个目标的扫描结果保存在 `@域名_bounty/` 目录：
+
+```
+@example.com_bounty/
+├── all_urls.txt              # 所有收集的 URL
+├── valid_urls.txt            # 验证有效的 URL
+├── nuclei_scan.txt           # Nuclei 扫描结果
+├── sqlmap_targets.txt        # SQLMap 测试目标
+├── sqlmap_results.json       # SQLMap 测试结果
+├── js_endpoints.txt          # JS 中发现的端点
+├── js_secrets.json           # JS 中的敏感信息
+├── findings.md               # 漏洞发现汇总
+├── progress.md               # 扫描进度记录
+└── README.md                 # 扫描总结
+```
+
+## 🔐 HackerOne 集成（可选）
+
+如果你想从 HackerOne 自动获取目标或学习公开报告：
+
+### 1. 获取 API Token
+
+1. 登录 HackerOne
+2. 访问 https://hackerone.com/settings/api_token
+3. 点击 "Generate new token"
+4. 复制生成的 Token（只显示一次！）
+
+### 2. 配置到项目
+
+编辑 `.env` 文件（已添加到 `.gitignore`，不会提交）：
+
+```ini
+HACKERONE_API_TOKEN=your_token_here
+HACKERONE_USERNAME=your_username_here
+```
+
+详见：[HACKERONE_SETUP.md](HACKERONE_SETUP.md) - 完整配置指南
+
+### 3. 验证配置
+
+```bash
+python tools/hackerone_api.py
+```
+
+### 4. 开始扫描
+
+```bash
 python automate_scan.py
 ```
 
-## 🌍 Community Sharing
+脚本会自动从 HackerOne 获取你的项目目标并开始扫描！
 
-Contribute your scanning experience (anonymized) and download community wisdom:
+## 💡 使用技巧
 
-```bash
-python share_memory.py      # Contribute or download
-python import_community.py  # Import to local AI
-```
+### 1. 加速扫描
 
-See: [社区共享说明.md](社区共享说明.md) (Chinese)
+- 使用 `simple_scan.py` 进行快速扫描
+- 调整 Nuclei 并发参数（默认已优化）
+- 只扫描关键目标，避免大规模扫描
 
-## Directory Structure
+### 2. 提高准确性
 
-- **automate_scan.py** - Main AI-enhanced scanning script
-- **ai_analyzer.py** - AI analysis engine
-- **share_memory.py** - Community sharing system
-- **knowledge_base.json** - Local AI knowledge base (not in Git)
-- **example_community_wisdom.json** - Example community wisdom
-- **tools/** - Scanning tools (Nuclei, Wappalyzer, etc.)
-- **urls/** - URL input directory
+- 确保目标 URL 准确
+- 检查 `all_urls.txt` 确认 URL 收集完整
+- 手动验证重要漏洞
+
+### 3. 学习最佳实践
+
+- 定期阅读 HackerOne 公开报告
+- 分析漏洞模式和利用技巧
+- 在合法环境中练习
+
+## ⚠️ 重要提示
+
+1. **合法授权** - 仅扫描你有权测试的目标
+2. **遵守法律** - 未经授权的扫描可能违法
+3. **负责任披露** - 发现漏洞后负责任地报告
+4. **备份数据** - 定期备份重要的扫描结果
+
+## 📖 相关文档
+
+- [QUICKSTART.md](QUICKSTART.md) - 快速开始指南
+- [VULN_REPORT_LEARNING.md](VULN_REPORT_LEARNING.md) - 漏洞报告学习指南
+- [HACKERONE_INTEGRATION.md](HACKERONE_INTEGRATION.md) - HackerOne 集成说明
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📄 许可证
+
+MIT License
+
+---
+
+**Happy Hacking! 🔐**
+
+> 记住：始终在授权范围内使用本工具

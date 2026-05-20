@@ -149,7 +149,7 @@ def run_crawler(target, output_dir='.'):
         # 显示敏感参数摘要
         sensitive = crawler.find_sensitive_params()
         if sensitive:
-            print(f"\n⚠️  发现敏感参数类别:")
+            print(f"\n[WARN] 发现敏感参数类别:")
             for category, examples in sensitive.items():
                 print(f"   {category}: {len(set(examples))} 个位置")
     

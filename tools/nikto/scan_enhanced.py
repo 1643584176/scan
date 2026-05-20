@@ -108,7 +108,7 @@ def run_nuclei(target, mode='normal', tech_stack=None):
         tags_str = ','.join(all_tags)
         command.extend(['-tags', tags_str])
         
-        print(f"🎯 针对性扫描: {', '.join(tech_stack)}")
+        print(f"[INFO] 针对性扫描: {', '.join(tech_stack)}")
         if tech_specific_tags:
             print(f"   特定模板: {', '.join(set(tech_specific_tags))}")
     
@@ -183,7 +183,7 @@ def run_nuclei(target, mode='normal', tech_stack=None):
                         # 
                         # # 如果错误率超过50%，发出警告（提高阈值）
                         # if error_rate > 50 and error_count > last_error_count:
-                        #     print(f"\n  ⚠️  错误率过高: {error_rate:.1f}%")
+                        #     print(f"\n  [WARN] 错误率过高: {error_rate:.1f}%")
                         #     last_error_count = error_count
                         
                         # 计算剩余时间（只在进度>5%时才显示，避免早期估算不准）
@@ -234,17 +234,17 @@ def run_nuclei(target, mode='normal', tech_stack=None):
             elapsed_min = int(elapsed_time // 60)
             elapsed_sec = int(elapsed_time % 60)
             
-            print(f"\n✅ 扫描完成！")
-            print(f"⏱️  耗时: {elapsed_min}分{elapsed_sec}秒")
-            print(f"📋 模板: {templates_loaded:,} 个")
-            print(f"🎯 发现漏洞: {matched_count} 个")
-            print(f"💾 结果: {output_file}")
+            print(f"\n[OK] 扫描完成！")
+            print(f"[INFO] 耗时: {elapsed_min}分{elapsed_sec}秒")
+            print(f"[INFO] 模板: {templates_loaded:,} 个")
+            print(f"[INFO] 发现漏洞: {matched_count} 个")
+            print(f"[INFO] 结果: {output_file}")
             
             # 如果有漏洞，显示简要信息
             if matched_count > 0:
-                print(f"\n📄 查看: type {output_file}")
+                print(f"\n[INFO] 查看: type {output_file}")
         else:
-            print(f"❌ 扫描失败，返回码: {process.returncode}")
+            print(f"[ERROR] 扫描失败，返回码: {process.returncode}")
             
     except FileNotFoundError:
         print("未找到Nuclei。请确保nuclei.exe在tools/nuclei/目录下。")
@@ -273,7 +273,7 @@ if __name__ == "__main__":
         # 从文件读取 URL 列表
         with open(target, 'r', encoding='utf-8') as f:
             urls = [line.strip() for line in f if line.strip() and line.startswith('http')]
-        print(f"📂 从文件加载 {len(urls)} 个 URL: {target}")
+        print(f"[INFO] 从文件加载 {len(urls)} 个 URL: {target}")
         
         # 对每个 URL 执行扫描
         for url in urls:

@@ -1,13 +1,9 @@
-requests
-python-Wappalyzer
-python-nmap
-setuptools
-httpx
-beautifulsoup4
-sqlmap
+# 核心依赖
+requests>=2.31.0
+beautifulsoup4>=4.12.0
 
-# AI智能分析（可选，首次使用会自动下载模型约400MB）
-numpy>=1.24.0
-torch>=2.0.0
-sentence-transformers>=2.2.0
-chromadb>=0.4.0
+# 可选：AI 分析（如需要）
+# numpy>=1.24.0
+# torch>=2.0.0
+# sentence-transformers>=2.2.0
+# chromadb>=0.4.0
