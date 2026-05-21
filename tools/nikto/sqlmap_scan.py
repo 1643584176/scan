@@ -78,19 +78,24 @@ def run_sqlmap_on_url(url, output_dir, level=1, risk=1):
             'error': 'SQLMap not found'
         }
     
+    # 安全的 SQLMap 配置（符合 HackerOne 规则）
     cmd = [
         sys.executable, sqlmap_exe,
         '-u', url,
-        '--batch',           # 自动选择默认选项
-        '--level', str(level),  # 测试等级 (1-5)，快速模式使用1
-        '--risk', str(risk),    # 风险等级 (1-3)，快速模式使用1
-        '--threads', '5',       # 线程数，增加到5
-        '--timeout', '8',       # 超时时间，减少到8秒
+        '--batch',              # 自动选择默认选项
+        '--level', '1',         # 最低测试级别（减少请求数）
+        '--risk', '1',          # 最低风险等级（避免数据修改）
+        '--threads', '1',       # 单线程，避免对服务器造成压力
+        '--timeout', '10',      # 超时时间 10 秒
         '--retries', '0',       # 不重试
+        '--time-sec', '5',      # 增加延迟至 5 秒（礼貌扫描）
         '--random-agent',       # 随机 User-Agent
-        '--batch',              # 非交互模式
-        '-o',                   # 启用所有优化
-        '--smart'               # 智能模式，只进行最有效的测试
+        '--skip-waf',           # 跳过 WAF 检测（减少请求）
+        '--technique', 'E',     # 仅测试 Error-based（最安全的技术）
+        '--fresh-queries',      # 不保存会话，每次都是全新测试
+        '--no-cast',            # 不使用类型转换（减少复杂性）
+        '--flush-session',      # 清除之前的会话数据
+        '--disable-coloring',   # 禁用彩色输出（便于解析）
     ]
     
     try:
@@ -164,17 +169,18 @@ def load_urls_from_file(urls_file):
     return urls
 
 def scan_urls(urls, output_dir, limit=10):
-    """扫描 URL 列表（快速模式）"""
+    """扫描 URL 列表（安全模式）"""
     results = []
     
-    log("\n开始 SQLMap 注入测试...（快速模式）")
-    log("   测试级别: 1 (快速)")
-    log("   风险等级: 1 (低)")
-    log("   线程数: 5")
-    log("   单URL超时: 3分钟")
+    log("\n开始 SQLMap 注入测试...（安全模式 - 符合 HackerOne 规则）")
+    log("   测试级别: 1 (最低，减少请求)")
+    log("   风险等级: 1 (最低，避免数据修改)")
+    log("   线程数: 1 (单线程，避免压力)")
+    log("   请求延迟: 5 秒 (礼貌扫描)")
+    log("   测试技术: Error-based only (最安全)")
     log(f"   待测试 URL: {len(urls)} 个")
     log(f"   最大测试数: {limit}")
-    log("   [INFO] 快速模式牺牲部分准确性换取速度\n")
+    log("   [INFO] 安全模式优先保护目标服务器稳定性\n")
     
     # 限制测试数量
     test_urls = urls[:limit]

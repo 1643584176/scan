@@ -51,40 +51,67 @@ class URLAnalyzer:
         return True
     
     def classify_url(self, url):
-        """对单个 URL 进行分类"""
+        """对单个 URL 进行分类（增强版）"""
         parsed = urlparse(url)
         path = parsed.path.lower()
         query = parsed.query
         filename = path.split('/')[-1].lower()
         
-        # 1. API 端点检测
-        if any(pattern in path for pattern in ['/api/', '/v1/', '/v2/', '/graphql']):
+        # 1. API 端点检测（增强：支持更多模式）
+        api_patterns = [
+            '/api/', '/v1/', '/v2/', '/v3/', '/graphql', '/rest/',
+            '/api-', '-api/', '/endpoint', '/webhook'
+        ]
+        if any(pattern in path for pattern in api_patterns):
             return 'api_endpoints'
-        if filename.endswith(('.json', '.xml')):
+        if filename.endswith(('.json', '.xml', '.yaml', '.yml')):
+            return 'api_endpoints'
+        # 检测 RESTful 风格：/users/123, /posts/456/comments
+        import re
+        if re.search(r'/\w+/\d+(/\w+)?$', path):
             return 'api_endpoints'
         
-        # 2. 登录/认证相关
-        if any(keyword in path for keyword in ['/login', '/auth', '/signin', '/signup', '/register', '/logout', '/oauth']):
+        # 2. 登录/认证相关（增强：支持 OAuth、SSO）
+        auth_patterns = [
+            '/login', '/auth', '/signin', '/signup', '/register', 
+            '/logout', '/oauth', '/sso', '/session', '/token',
+            '/authenticate', '/authorization', '/permission'
+        ]
+        if any(keyword in path for keyword in auth_patterns):
             return 'login_auth'
         
-        # 3. 管理后台
-        if any(keyword in path for keyword in ['/admin', '/dashboard', '/manage', '/control', '/panel', '/backend']):
+        # 3. 管理后台（增强：支持更多关键词）
+        admin_patterns = [
+            '/admin', '/dashboard', '/manage', '/control', '/panel', 
+            '/backend', '/console', '/system', '/settings', '/config',
+            '/moderator', '/supervisor', '/operator'
+        ]
+        if any(keyword in path for keyword in admin_patterns):
             return 'admin_panel'
         
-        # 4. 文件上传
-        if any(keyword in path for keyword in ['/upload', '/attach', '/import', '/export']):
+        # 4. 文件上传（增强：支持导入/导出）
+        upload_patterns = [
+            '/upload', '/attach', '/import', '/export', '/download',
+            '/file', '/document', '/media', '/asset'
+        ]
+        if any(keyword in path for keyword in upload_patterns):
             return 'upload_files'
         
-        # 5. 搜索页面
-        if any(keyword in path for keyword in ['/search', '/query', '/find', '/filter']):
+        # 5. 搜索页面（增强：支持过滤/排序）
+        search_patterns = [
+            '/search', '/query', '/find', '/filter', '/sort',
+            '/browse', '/explore', '/discover', '/lookup'
+        ]
+        if any(keyword in path for keyword in search_patterns):
             return 'search_pages'
         
-        # 6. 带参数的页面
+        # 6. 带参数的页面（增强：区分敏感参数）
         if query:
             return 'forms_with_params'
         
-        # 7. 静态资源
-        if filename.endswith(('.js', '.css', '.map')):
+        # 7. 静态资源（增强：支持更多类型）
+        static_extensions = ('.js', '.css', '.map', '.ts', '.jsx', '.tsx')
+        if filename.endswith(static_extensions):
             return 'static_resources'
         
         # 8. 其他

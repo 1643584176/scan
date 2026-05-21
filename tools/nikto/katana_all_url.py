@@ -183,9 +183,42 @@ def run_katana_streaming(target, output_dir, target_domain=None):
         traceback.print_exc()
         return []
 
+def is_api_target(url):
+    """
+    判断目标是否为 API 类型
+    
+    Args:
+        url: 目标 URL
+    
+    Returns:
+        bool: 是否为 API 目标
+    """
+    from urllib.parse import urlparse
+    parsed = urlparse(url)
+    path = parsed.path.lower()
+    
+    # API 特征路径
+    api_indicators = [
+        '/api/', '/v1/', '/v2/', '/v3/', '/graphql',
+        '/rest/', '/endpoint', '/webhook'
+    ]
+    
+    # 如果 URL 本身包含 API 特征，或者是纯域名 + API 路径
+    if any(indicator in path for indicator in api_indicators):
+        return True
+    
+    # 如果路径很短且以 / 结尾，可能是 API 根路径
+    if path in ['/', '/api']:
+        # 进一步检查域名是否暗示是 API
+        domain = parsed.netloc.lower()
+        if 'api.' in domain or 'api-' in domain:
+            return True
+    
+    return False
+
 def run_katana(target, output_dir, cookies=None):
     """
-    使用 Katana 爬取 URL
+    使用 Katana 爬取 URL（智能策略版）
     
     Args:
         target: 目标 URL
@@ -194,6 +227,26 @@ def run_katana(target, output_dir, cookies=None):
     """
     log("[KATANA] 启动 Katana 爬虫...")
     log("[WAIT] 请稍候，Katana 正在初始化...")
+    
+    # 检测目标类型并调整策略
+    is_api = is_api_target(target)
+    
+    if is_api:
+        log("[INFO] 检测到 API 目标，使用浅层爬取策略")
+        depth = 1  # API 不需要深爬
+        js_crawl = False  # API 通常没有 JS
+        concurrency = 5  # 降低并发
+        log("   - 爬取深度: 1 (仅首页和直接链接)")
+        log("   - JS 爬取: 禁用")
+        log("   - 并发数: 5")
+    else:
+        log("[INFO] 检测到 Web 应用目标，使用深层爬取策略")
+        depth = 4  # 普通网站需要更深
+        js_crawl = True  # 启用 JS 爬取
+        concurrency = 10  # 提高并发
+        log("   - 爬取深度: 4 (深入爬取)")
+        log("   - JS 爬取: 启用")
+        log("   - 并发数: 10")
     
     # 直接使用系统 PATH 中的 katana 命令
     katana_exe = 'katana'
@@ -204,14 +257,18 @@ def run_katana(target, output_dir, cookies=None):
     cmd = [
         katana_exe,
         '-u', target,
-        '-d', '3',           # 深度 3（爬取首页 + 一级链接 + 二级链接）
-        '-c', '10',          # 并发数 10（提高并发）
-        '-timeout', '5',     # 每个请求超时 5 秒（快速失败）
-        '-f', 'url',         # 只输出 URL
-        '-known-files', 'all', # 爬取 robots.txt、sitemap.xml
-        '-silent'             # 静默模式，减少输出
-        # 注意：不使用 -mrs 限制，避免遗漏大型页面和 JS 文件
+        '-d', str(depth),       # 动态深度
+        '-c', str(concurrency), # 动态并发
+        '-timeout', '5',        # 每个请求超时 5 秒（快速失败）
+        '-f', 'url',            # 只输出 URL
+        '-known-files', 'all',  # 爬取 robots.txt、sitemap.xml
+        '-silent'               # 静默模式，减少输出
     ]
+    
+    # 如果不是 API 目标，启用 JS 爬取
+    if js_crawl:
+        cmd.append('-js-crawl')
+        log("   - 已启用 JavaScript 文件爬取")
     
     # 如果提供了 Cookie，添加到命令中
     if cookies:

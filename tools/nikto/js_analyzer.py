@@ -73,9 +73,58 @@ class JSAnalyzer:
                 log(f"[WARN] 无法访问主页: {e}")
                 return
         
-        # 分析每个 JS 文件
-        for i, js_url in enumerate(self.js_files[:10], 1):  # 限制分析前10个
-            log(f"[INFO] [{i}/{min(len(self.js_files), 10)}] 分析: {js_url[:80]}...")
+        # 智能选择要分析的 JS 文件（优先级排序）
+        log(f"[INFO] 共发现 {len(self.js_files)} 个 JS 文件，智能选择高价值文件进行分析...")
+        
+        # 定义优先级关键词
+        high_priority_keywords = [
+            'api', 'config', 'auth', 'login', 'admin', 'user', 
+            'account', 'payment', 'token', 'secret', 'key',
+            'bundle', 'main', 'app', 'vendor', 'runtime'
+        ]
+        medium_priority_keywords = [
+            'index', 'home', 'dashboard', 'profile', 'settings',
+            'search', 'filter', 'form', 'component'
+        ]
+        
+        # 分类 JS 文件
+        high_priority = []
+        medium_priority = []
+        low_priority = []
+        
+        for js_url in self.js_files:
+            js_lower = js_url.lower()
+            if any(kw in js_lower for kw in high_priority_keywords):
+                high_priority.append(js_url)
+            elif any(kw in js_lower for kw in medium_priority_keywords):
+                medium_priority.append(js_url)
+            else:
+                low_priority.append(js_url)
+        
+        # 根据总数动态决定分析数量
+        total_files = len(self.js_files)
+        max_to_analyze = min(total_files, 50)  # 最多分析50个
+        
+        # 分配配额：高优先级70%，中优先级20%，低优先级10%
+        high_quota = int(max_to_analyze * 0.7)
+        medium_quota = int(max_to_analyze * 0.2)
+        low_quota = max_to_analyze - high_quota - medium_quota
+        
+        selected_files = (
+            high_priority[:high_quota] +
+            medium_priority[:medium_quota] +
+            low_priority[:low_quota]
+        )
+        
+        log(f"[INFO] 选择策略:")
+        log(f"   - 高优先级: {len(high_priority[:high_quota])} 个 (API/配置/认证相关)")
+        log(f"   - 中优先级: {len(medium_priority[:medium_quota])} 个 (页面组件)")
+        log(f"   - 低优先级: {len(low_priority[:low_quota])} 个 (其他)")
+        log(f"   - 总计: {len(selected_files)} 个文件")
+        
+        # 分析选中的 JS 文件
+        for i, js_url in enumerate(selected_files, 1):
+            log(f"[INFO] [{i}/{len(selected_files)}] 分析: {js_url[:80]}...")
             
             try:
                 resp = requests.get(js_url, timeout=10, headers={
