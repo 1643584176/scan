@@ -1,0 +1,101 @@
+# Sembcorp 可测试URL列表
+# 根据漏洞范围文档筛选
+# 生成时间: 2026-05-21
+
+## ✅ In-Scope URLs (可以测试)
+
+### 主站静态页面
+https://www.sembcorp.com/
+https://www.sembcorp.com/about-us/our-purpose-and-vision/
+https://www.sembcorp.com/about-us/our-leadership/
+https://www.sembcorp.com/about-us/our-commitment-to-corporate-governance/
+https://www.sembcorp.com/about-us/awards-and-recognition/
+https://www.sembcorp.com/driving-energy-transition/
+https://www.sembcorp.com/driving-energy-transition/our-businesses/
+https://www.sembcorp.com/driving-energy-transition/our-businesses/gas-and-related-services/
+https://www.sembcorp.com/driving-energy-transition/our-businesses/renewable-energy/
+https://www.sembcorp.com/driving-energy-transition/our-businesses/integrated-urban-solutions/
+https://www.sembcorp.com/driving-energy-transition/our-businesses/decarbonisation-solutions/
+https://www.sembcorp.com/driving-energy-transition/our-approach-to-sustainability/
+https://www.sembcorp.com/creating-shareholder-value/
+https://www.sembcorp.com/creating-shareholder-value/investing-in-sembcorp/
+https://www.sembcorp.com/creating-shareholder-value/results-and-publications/
+https://www.sembcorp.com/news-and-insights/
+https://www.sembcorp.com/news-and-insights/news/
+https://www.sembcorp.com/news-and-insights/insights-and-stories/
+https://www.sembcorp.com/site-services-pages/privacy-statement/
+https://www.sembcorp.com/site-services-pages/terms-of-use/
+https://www.sembcorp.com/sitemap/
+
+### 新加坡站点 (/sg/)
+https://www.sembcorp.com/sg/
+https://www.sembcorp.com/sg/driving-energy-transition/
+https://www.sembcorp.com/sg/our-solutions-in-singapore/
+https://www.sembcorp.com/sg/sembcorp-in-singapore/
+https://www.sembcorp.com/sg/news-and-insights/
+https://www.sembcorp.com/sg/sitemap/
+
+### 英国站点 (/uk/)
+https://www.sembcorp.com/uk/
+https://www.sembcorp.com/uk/driving-energy-transition/
+https://www.sembcorp.com/uk/our-solutions-in-the-uk/
+https://www.sembcorp.com/uk/sembcorp-in-the-uk/
+https://www.sembcorp.com/uk/news-and-insights/
+https://www.sembcorp.com/uk/sitemap/
+
+### Cookie策略页面（虽然是交互的，但是核心功能）
+https://www.sembcorp.com/cookie-policy-and-preferences/
+
+---
+
+## ❌ Out-of-Scope URLs (禁止测试)
+
+### 子域名（明确排除）
+webint.sembcorp.com/*
+media.sembcorp.com/*
+public-remit.sembcorpenergy.co.uk/*
+asia.tools.euroland.com/*
+
+### 交互式功能（明确排除）
+*/contact-us/*
+*/forms/*
+*/careers/*
+*/apply-for-opportunities/*
+
+### 排除的业务单元
+*/wilton-international/* (虽然出现在UK站点，但单独列为排除)
+*/sembcorp-specialised-construction/*
+
+### 第三方服务
+fonts.googleapis.com/*
+fonts.gstatic.com/*
+www.googletagmanager.com/*
+static.cloudflareinsights.com/*
+www.linkedin.com/*
+
+---
+
+## 📝 测试建议
+
+### 可以测试的内容：
+1. **XSS** - 在静态页面的URL参数中测试
+2. **Open Redirect** - 测试重定向逻辑
+3. **信息泄露** - 检查敏感信息暴露
+4. **HTTP安全头** - 检查缺失的安全头
+5. **内容安全策略(CSP)** - 检查CSP配置
+
+### 不能测试的内容：
+1. ❌ 联系表单提交
+2. ❌ 用户注册/登录
+3. ❌ 文件上传
+4. ❌ 暴力破解
+5. ❌ DoS/DDoS
+6. ❌ 子域名枚举
+7. ❌ 第三方服务
+
+### 注意事项：
+- 必须添加 Header: `x-hackerone-research: [你的H1用户名]`
+- 速率限制: 200请求/分钟
+- 只测试公开可访问的内容
+- 不要访问、保留或破坏任何数据
+- 发现意外数据立即停止并报告
