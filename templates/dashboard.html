@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="URL 与 JavaScript 增量安全分析账本">
+  <title>AssetTrace · 资产轨迹</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="masthead">
+    <a class="brand" href="/">
+      <span class="brand-mark">AT</span>
+      <span>AssetTrace</span>
+    </a>
+    <p class="masthead-note">资产版本 / 检测覆盖 / 可复用知识</p>
+    <a class="api-link" href="/docs">API 文档 ↗</a>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">INCREMENTAL SECURITY LEDGER</p>
+        <h1>分析一次，<br><em>留下轨迹。</em></h1>
+      </div>
+      <p class="hero-copy">
+        页面、脚本和端点被组织成资产图。内容未变且检测器版本相同，
+        系统会复用历史结果；内容变化时，只重跑受影响的资产。
+      </p>
+    </section>
+
+    <section class="workspace">
+      <aside class="rail">
+        <form id="scan-form" class="scan-form">
+          <label for="target-url">目标 URL</label>
+          <div class="input-wrap">
+            <span>↳</span>
+            <input
+              id="target-url"
+              name="url"
+              type="url"
+              placeholder="https://example.com"
+              required
+              autocomplete="url"
+            >
+          </div>
+          <label for="project-name">项目名称 <small>可选</small></label>
+          <input
+            id="project-name"
+            name="name"
+            type="text"
+            placeholder="例如：主站审计"
+            maxlength="120"
+          >
+          <button id="scan-submit" type="submit">
+            <span>开始增量分析</span>
+            <span aria-hidden="true">→</span>
+          </button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+
+        <div class="project-heading">
+          <span>项目</span>
+          <span id="project-count">0</span>
+        </div>
+        <nav id="project-list" class="project-list" aria-label="项目列表">
+          <p class="empty-note">还没有项目。</p>
+        </nav>
+      </aside>
+
+      <section id="detail-panel" class="detail-panel">
+        <div class="empty-state">
+          <span class="empty-index">00</span>
+          <h2>选择一个项目查看资产轨迹</h2>
+          <p>或在左侧输入 URL 开始第一次分析。</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <span>AssetTrace 0.1</span>
+    <span>仅扫描你拥有或获授权测试的目标</span>
+  </footer>
+</body>
+</html>

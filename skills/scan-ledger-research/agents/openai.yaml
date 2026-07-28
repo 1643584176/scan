@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scan Ledger Research"
+  short_description: "Reuse verified web security analysis patterns"
+  default_prompt: "Use $scan-ledger-research to review an AssetTrace project and plan the next authorized security checks."
