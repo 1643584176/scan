@@ -1,7 +1,0 @@
-[
-  {
-    "test": "HTTP Desync CL.TE",
-    "result": "SUSPICIOUS",
-    "evidence": "Response length: 264, Contains timeout indicators"
-  }
-]
