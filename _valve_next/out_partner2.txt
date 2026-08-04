@@ -1,0 +1,26 @@
+======================================================================
+[D] goto 编码变体:登录对话框 URL 与 302 行为
+======================================================================
+goto='%2F%2Fevil.com'             -> 200 loc=None dialog=https://partner.steamgames.com//evil.com
+goto='%2F%2Fevil.com%2Fsteal'     -> 200 loc=None dialog=https://partner.steamgames.com//evil.com/steal
+goto='https:%2F%2Fevil.com'       -> 200 loc=None dialog=https://partner.steamgames.com/dashboard
+goto='%255c%255cevil.com'         -> 200 loc=None dialog=https://partner.steamgames.com/%5c%5cevil.com
+goto='%2F%5Cevil.com'             -> 200 loc=None dialog=https://partner.steamgames.com/\\evil.com
+goto='%3Fgoto%3D%2F%2Fevil.com'   -> 200 loc=None dialog=https://partner.steamgames.com/?goto=//evil.com
+
+--- 直接访问反射出的登录对话框 URL ---
+https://partner.steamgames.com/%2F%2Fevil.com -> 200 loc=None final=https://partner.steamgames.com/
+https://partner.steamgames.com/%2F%2Fevil.com%2Fsteal -> 200 loc=None final=https://partner.steamgames.com/
+https://partner.steamgames.com/https:%2F%2Fevil.com -> 200 loc=None final=https://partner.steamgames.com/
+https://partner.steamgames.com/%2F%5Cevil.com -> 200 loc=None final=https://partner.steamgames.com/
+
+======================================================================
+[E] g_ShowLoginDialog 定义与校验逻辑
+======================================================================
+
+======================================================================
+[F] 后台 JS 端点提取
+======================================================================
+   1x [partner_admin.js] /admin/news/postimagedelete/
+   1x [partner_marketing.js] /marketing/updatedemoquit
+   1x [partner_newsadmin.js] /admin/news/postimagedelete/

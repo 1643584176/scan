@@ -1,0 +1,53 @@
+Skip to main content  >
+Learn more about HackerOne
+Log in
+Security page
+Program guidelines
+Scope
+Hacktivity
+Thanks
+Updates
+Glovo is taking a break and is not accepting new submissions.
+Search
+Scope
+All scopes
+Maximum severity
+Any
+Bounty eligibility
+All
+Download Burp Suite Project Configuration File
+Download CSV
+View changes (Last updated on June 17, 2024)
+Asset name
+	Type
+	Coverage
+	Max. severity
+	Bounty
+	Last update
+	Resolved Reports 
+
+
+No assets in scope
+Glovo
+https://glovoapp.com
+@Glovo_ES
+Glovo is the most successful delivery platform made to connect users with couriers, so that they can send or receive anything within minutes.
+Response launched in Feb 2021
+Submit without Report Assistant
+Stats
+Reports received | 90 days	0
+Last report resolved	2 years ago
+Reports resolved	135
+Hackers thanked	141
+© HackerOne
+Opportunities
+Security
+Leaderboard
+Blog
+Status
+Docs
+Support
+Disclosure Guidelines
+Press
+Privacy
+Terms

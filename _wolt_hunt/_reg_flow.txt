@@ -1,0 +1,31 @@
+=== Creating temp email ===
+Temp email: uzbfvanb@guerrillamailblock.com
+SID: ms32epjhdjpuv973o86m...
+filled email: uzbfvanb@guerrillamailblock.com
+
+Visible buttons after email:
+  "Oskemen" testid=header.address-select-button
+  "Partners" testid=
+  "Log in" testid=UserStatus.Login
+  "Sign up" testid=UserStatus.Signup
+  "Log in for saved addresses" testid=login-button-text
+  "Finland" testid=
+  "English" testid=Footer.OpenLanguageSelectionDialogButton
+  "Theme" testid=
+  "Cookies" testid=
+  "Continue with Google" testid=MethodSelect.Google
+  "Continue with Apple" testid=MethodSelect.Apple
+  "Continue with Facebook" testid=MethodSelect.Facebook
+  "Continue" testid=StepMethodSelect.NextButton
+
+Inputs after continue:
+
+Buttons after continue: ['刷新']
+
+Visible text:
+  "嗯… 无法访问此页面"
+  "请尝试："
+  "ERR_CONNECTION_TIMED_OUT"
+  "Microsoft Edge"
+
+URL: chrome-error://chromewebdata/

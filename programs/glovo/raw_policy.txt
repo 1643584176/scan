@@ -1,0 +1,87 @@
+Skip to main content  >
+Learn more about HackerOne
+Log in
+Security page
+Program guidelines
+Scope
+Hacktivity
+Thanks
+Updates
+Glovo is taking a break and is not accepting new submissions.
+Program highlights
+N/A
+Average time to first response
+N/A
+Average time to triage
+Scope exclusions
+Core Ineligible Findings are out of scope. 
+Learn more 
+Overview
+Last updated on June 19, 2024. View changes 
+Announcement
+Glovo Vulnerabilities Disclosure program is closing and we're moving to the DeliveryHero program.
+You can find the Vulnerability Disclosure program here https://hackerone.com/deliveryhero where you can continue to submit reports and vulnerabilities.
+Thanks for the support and all the vulnerabilities reported so far.
+We'll hope that you will continue contributing to keep Glovo safe.
+Regards, Glovo Security Team
+Top hackers
+See all hackers 
+1
+theweertic
+Reputation: 95
+2
+spaceboy20
+Reputation: 63
+3
+0xshari7a
+Reputation: 44
+4
+null_hypothesis
+Reputation: 37
+5
+parthabishwas
+Reputation: 28
+6
+mohamed__abdelhady
+Reputation: 23
+7
+triarii
+Reputation: 21
+8
+0xwise
+Reputation: 21
+9
+knifesec
+Reputation: 16
+10
+killedkenny
+Reputation: 14
+11
+mohammedmahdiali
+Reputation: 14
+12
+groo7
+Reputation: 14
+Glovo
+https://glovoapp.com
+@Glovo_ES
+Glovo is the most successful delivery platform made to connect users with couriers, so that they can send or receive anything within minutes.
+Response launched in Feb 2021
+Submit without Report Assistant
+Stats
+Reports received | 90 days	0
+Last report resolved	2 years ago
+Reports resolved	135
+Hackers thanked	141
+© HackerOne
+Opportunities
+Security
+Leaderboard
+Blog
+Status
+Docs
+Support
+Disclosure Guidelines
+Press
+Privacy
+Terms

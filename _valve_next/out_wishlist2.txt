@@ -1,0 +1,17 @@
+[0] steamcommunity 可达性
+   GET / -> 0 len=138
+
+[1] 探测几个知名用户的 wishlist 网页行为
+   76561197960434622: 0 title='' items=0 private=no
+   76561198006409504: 0 title='' items=0 private=no
+   76561198046992582: 0 title='' items=0 private=no
+   76561198183721740: 0 title='' items=0 private=no
+
+[2] 随机扫描找私密愿望单用户(60 个)
+
+[3] API vs 网页对比
+
+[4] 对照:不存在/无效 steamid
+   steamid=1 -> 400 '<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Missing required routing para'
+   steamid=76561197960265728 -> 400 '<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Missing required routing para'
+   steamid=99999999999999999 -> 200 '{"response":{}}'

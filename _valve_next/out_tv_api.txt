@@ -1,0 +1,84 @@
+======================================================================
+[A] steam.tv 首页指纹 + 安全头
+======================================================================
+/               -> 200 len= 10068 final=https://steam.tv/csgo
+   title='SteamTV'
+   Server: nginx
+   X-Frame-Options: DENY
+   Content-Security-Policy: default-src blob: data: https: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://community.steamstatic.com/ https://media.s
+   Set-Cookie: sessionid=1c316baf322c7a4d9944e7b8; Path=/; Secure; SameSite=None
+/dota2/         -> 200 len= 10068 final=https://steam.tv/dota2/
+   title='SteamTV'
+/csgo/          -> 200 len= 10068 final=https://steam.tv/csgo/
+   title='SteamTV'
+/cs2/           -> 200 len= 10068 final=https://steam.tv/csgo
+   title='SteamTV'
+/valve/         -> 200 len= 10068 final=https://steam.tv/csgo
+   title='SteamTV'
+/broadcast/     -> 200 len= 10068 final=https://steam.tv/csgo
+   title='SteamTV'
+/login          -> 404 len=     0 final=https://steam.tv/login
+   title=None
+/api/           -> 200 len= 10068 final=https://steam.tv/csgo
+   title='SteamTV'
+
+======================================================================
+[B] steam.tv JS 资产与端点提取
+======================================================================
+首页 JS 引用 4 个
+   https://community.steamstatic.com/public/javascript/webui/libraries.js?v=PMECmajEJI6t&amp;l=english&amp;_cdn=china_eccdnx
+   https://community.steamstatic.com/public/javascript/webui/libraries_cm.js?v=R6CDw37TghvA&amp;l=english&amp;_cdn=china_eccdnx
+   https://community.steamstatic.com/public/javascript/webui/steammessages.js?v=Z_5ZYrioiHWg&amp;l=english&amp;_cdn=china_eccdnx
+   https://community.steamstatic.com/public/javascript/webui/friends.js?v=4x1mX8GnQ7oR&amp;l=english&amp;_cdn=china_eccdnx
+   EP: https://community.steamstatic.com/public/css/webui/friends.css
+   EP: https://community.steamstatic.com/public/javascript/webui/friends.js
+   EP: https://community.steamstatic.com/public/javascript/webui/libraries
+   EP: https://community.steamstatic.com/public/javascript/webui/libraries.js
+   EP: https://community.steamstatic.com/public/javascript/webui/steammessages.js
+   EP: https://community.steamstatic.com/public/shared/css/motiva
+   EP: https://community.steamstatic.com/public/shared/css/shared
+
+======================================================================
+[C] steam.tv 参数反射
+======================================================================
+?channel=XVXZTOKEN        -> 200 反射=0
+?game=XVXZTOKEN           -> 200 反射=0
+?broadcaster=XVXZTOKEN    -> 200 反射=0
+?id=XVXZTOKEN             -> 200 反射=0
+?ref=XVXZTOKEN            -> 200 反射=0
+?lang=XVXZTOKEN           -> 200 反射=0
+
+======================================================================
+[D] api.steampowered.com 公开端点探测
+======================================================================
+/ISteamWebAPIUtil/GetServerInfo/v1/                                      -> 0 '<urlopen error timed out>'
+/ISteamWebAPIUtil/GetSupportedAPIList/v1/                                -> 0 '<urlopen error timed out>'
+/ISteamUser/GetPlayerSummaries/v0002/?steamids=76561197960434622         -> 0 '<urlopen error timed out>'
+/ISteamUser/GetFriendList/v0001/?steamid=76561197960434622               -> 0 '<urlopen error timed out>'
+/ISteamUser/GetPlayerBans/v1/?steamids=76561197960434622                 -> 0 '<urlopen error timed out>'
+/ISteamUser/GetUserGroupList/v1/?steamid=76561197960434622               -> 400 "<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Required parameter 'key' is missing</bo"
+/ISteamUser/ResolveVanityURL/v0001/?vanityurl=gabe                       -> 400 "<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Required parameter 'key' is missing</bo"
+/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=570                 -> 200 '{"response":{"player_count":406210,"result":1}}'
+/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=570 -> 200 '{"achievementpercentages":{"achievements":[]}}'
+/ISteamUserStats/GetSchemaForGame/v2/?appid=570                          -> 400 "<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Required parameter 'key' is missing</bo"
+/ISteamApps/GetAppList/v2/                                               -> 404 "<html><head><title>Not Found</title></head><body><h1>Not Found</h1>Method 'GetAppList' not found in interface "
+/ISteamApps/GetAppList/v0001/                                            -> 404 "<html><head><title>Not Found</title></head><body><h1>Not Found</h1>Method 'GetAppList' not found in interface "
+/ISteamApps/GetServersAtAddress/v1/?addr=127.0.0.1                       -> 200 '{"response":{"success":true,"servers":[]}}'
+/ISteamApps/UpToDateCheck/v1/?appid=570&version=1                        -> 200 '{"response":{"success":true,"up_to_date":false,"version_is_listable":false,"required_version":37,"message":"OU'
+/ISteamNews/GetNewsForApp/v0002/?appid=570&count=1                       -> 200 '{"appnews":{"appid":570,"newsitems":[{"gid":"1839676055886687","title":"Gameplay Patch 7.41e and Summer Scrub"'
+/ISteamNews/GetNewsForAppAuthed/v0002/?appid=570&count=1                 -> 400 "<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Required parameter 'key' is missing</bo"
+/ISteamNews/GetNewsForApp/v2/?appid=570&count=1&maxlength=10             -> 200 '{"appnews":{"appid":570,"newsitems":[{"gid":"1839676055886687","title":"Gameplay Patch 7.41e and Summer Scrub"'
+/ISteamRemoteStorage/GetPublishedFileDetails/v1/                         -> 200 '{"response":{"result":1,"resultcount":1,"publishedfiledetails":[{"publishedfileid":"1","result":9}]}}'
+/ISteamRemoteStorage/GetUGCFileDetails/v1/?appid=570&ugcid=1             -> 403 '<html><head><title>Forbidden</title></head><body><h1>Forbidden</h1>Access is denied. Retrying will not help. P'
+/ISteamRemoteStorage/EnumerateUserPublishedFiles/v1/?steamid=76561197960 -> 404 "<html><head><title>Not Found</title></head><body><h1>Not Found</h1>Method 'EnumerateUserPublishedFiles' not fo"
+/IPlayerService/GetOwnedGames/v0001/?steamid=76561197960434622           -> 401 '<html><head><title>Unauthorized</title></head><body><h1>Unauthorized</h1>Access is denied. Retrying will not h'
+/IPlayerService/GetRecentlyPlayedGames/v0001/?steamid=76561197960434622  -> 403 '<html><head><title>Forbidden</title></head><body><h1>Forbidden</h1>Access is denied. Retrying will not help. P'
+/IPlayerService/GetSteamLevel/v0001/?steamid=76561197960434622           -> 403 '<html><head><title>Forbidden</title></head><body><h1>Forbidden</h1>Access is denied. Retrying will not help. P'
+/IPlayerService/GetBadges/v0001/?steamid=76561197960434622               -> 403 '<html><head><title>Forbidden</title></head><body><h1>Forbidden</h1>Access is denied. Retrying will not help. P'
+/IPlayerService/GetCommunityBadgeProgress/v0001/?steamid=765611979604346 -> 401 '<html><head><title>Unauthorized</title></head><body><h1>Unauthorized</h1>Access is denied. Retrying will not h'
+/ISteamLeaderboards/GetLeaderboardsForGame/v0002/?appid=570              -> 400 "<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Required parameter 'key' is missing</bo"
+/ISteamWebUserPresenceOAuth/GetFriendsList/v0001/?steamid=76561197960434 -> 404 "<html><head><title>Not Found</title></head><body><h1>Not Found</h1>Interface 'ISteamWebUserPresenceOAuth' not "
+/ISteamUserAuth/AuthenticateUser/v0001/?steamid=76561197960434622        -> 404 "<html><head><title>Not Found</title></head><body><h1>Not Found</h1>Method 'AuthenticateUser' not found in inte"
+/ISteamWebAPIUtil/GetServerInfo/v0001/                                   -> 200 '{"servertime":1785739632,"servertimestring":"Sun Aug  2 23:47:12 2026"}'
+/ISteamDirectory/GetCMList/v1/?cellid=0                                  -> 200 '{"response":{"serverlist":["162.254.197.38:27017","155.133.226.74:27017","162.254.197.40:27017","146.66.155.54'
+/ISteamApps/GetAppList/v0002/?key=&format=json                           -> 404 "<html><head><title>Not Found</title></head><body><h1>Not Found</h1>Method 'GetAppList' not found in interface "

@@ -1,0 +1,16 @@
+[1] Creating mail.tm...
+  email: pccp85811892@web-library.net
+[2] Opening Wolt...
+[3] Clicking Log in...
+  [API] GET https://authentication.wolt.com/v1/wauth2/consumer-sms/verification-delivery-methods
+[4] Filling email...
+  Buttons: [{'t': 'Oskemen', 'tid': 'header.address-select-button', 'd': False}, {'t': 'Partners', 'tid': '', 'd': False}, {'t': 'Log in', 'tid': 'UserStatus.Login', 'd': False}, {'t': 'Sign up', 'tid': 'UserStatus.Signup', 'd': False}, {'t': '', 'tid': '', 'd': False}, {'t': 'Log in for saved addresses', 'tid': 'login-button-text', 'd': None}, {'t': '', 'tid': '', 'd': False}, {'t': '', 'tid': '', 'd': False}, {'t': 'Finland', 'tid': '', 'd': None}, {'t': 'English', 'tid': 'Footer.OpenLanguageSelectionDialogButton', 'd': None}, {'t': 'Theme', 'tid': '', 'd': None}, {'t': 'Cookies', 'tid': '', 'd': None}, {'t': 'Continue with Google', 'tid': 'MethodSelect.Google', 'd': False}, {'t': 'Continue with Apple', 'tid': 'MethodSelect.Apple', 'd': False}, {'t': 'Continue with Facebook', 'tid': 'MethodSelect.Facebook', 'd': False}, {'t': 'Continue', 'tid': 'StepMethodSelect.NextButton', 'd': False}]
+[5] Clicked Continue (LOGIN)
+  URL: https://wolt.com/en/fin
+  Title: Wolt Delivery | Food, Groceries and more in 30 minutes | Finland
+  Inputs: [{'type': 'text', 'name': '', 'placeholder': 'Enter delivery address', 'testid': '', 'maxLength': -1}, {'type': 'email', 'name': 'email', 'placeholder': '', 'testid': 'MethodSelect.EmailInput', 'maxLength': -1}]
+[6] Polling email...
+  !! No email received in 60s
+
+[DONE] email=pccp85811892@web-library.net  API calls=24
+  GET https://authentication.wolt.com/v1/wauth2/consumer-sms/verification-delivery-methods

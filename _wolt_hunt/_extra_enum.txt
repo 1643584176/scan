@@ -1,0 +1,6 @@
+bad_slug: 404 69
+bad_id: 404 18
+restaurants: 404 18
+explore: 404 18
+addr_suggest: 404 18
+venue_items: 404 18

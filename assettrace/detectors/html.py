@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from html.parser import HTMLParser
 from urllib.parse import urlsplit
 
@@ -46,7 +47,7 @@ class _SurfaceParser(HTMLParser):
 
 class HtmlSurfaceDetector:
     key = "html-surface"
-    version = "1.1.0"
+    version = "1.2.0"
     supported_kinds = frozenset({"page"})
 
     def analyze(self, snapshot: AssetSnapshot) -> DetectorResult:
@@ -138,6 +139,27 @@ class HtmlSurfaceDetector:
                     )
                 )
 
+        stack_pattern = _stack_trace_pattern()
+        if stack_pattern.search(snapshot.text):
+            findings.append(
+                FindingDraft(
+                    dedupe_key="error-stack-trace-exposed",
+                    title="Page appears to expose an application stack trace",
+                    category="error-disclosure",
+                    severity="medium",
+                    confidence="medium",
+                    evidence=(
+                        "The HTML response contains text patterns that look like "
+                        "a server or application stack trace."
+                    ),
+                    remediation=(
+                        "Return a generic error page to clients and keep stack traces "
+                        "only in protected server-side logs."
+                    ),
+                    location=snapshot.url,
+                )
+            )
+
         return DetectorResult(
             findings=findings,
             discoveries=_dedupe_discoveries(discoveries),
@@ -165,3 +187,16 @@ def _dedupe_discoveries(items: list[Discovery]) -> list[Discovery]:
     for item in items:
         unique[(item.url, item.kind, item.relation)] = item
     return list(unique.values())
+
+
+def _stack_trace_pattern() -> re.Pattern[str]:
+    return re.compile(
+        (
+            r"Traceback \(most recent call last\):"
+            r"|Exception in thread"
+            r"|Stack trace:"
+            r"|System\.[A-Za-z0-9_.]+Exception"
+            r"|at [A-Za-z0-9_.$<>]+\([A-Za-z0-9_.$<>]+\.java:\d+\)"
+        ),
+        re.IGNORECASE,
+    )

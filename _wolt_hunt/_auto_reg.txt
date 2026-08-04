@@ -1,0 +1,165 @@
+Error occurred in event listener
+Traceback (most recent call last):
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_page.py", line 308, in _on_route
+    handled = await route_handler.handle(route)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 443, in handle
+    raise e
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 430, in handle
+    return await self._handle_internal(route)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 466, in _handle_internal
+    await handler_finished_future
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 457, in _handler
+    self.handler(route, route.request)  # type: ignore
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_impl_to_api_mapping.py", line 139, in wrapper_func
+    return handler(
+        *list(map(lambda a: self.from_maybe_impl(a), args))[:arg_count]
+    )
+  File "D:\scan\_wolt_hunt\auto_register.py", line 49, in hook
+    body = (req.post_data or '')[:500]
+            ^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\sync_api\_generated.py", line 171, in post_data
+    return mapping.from_maybe_impl(self._impl_obj.post_data)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_network.py", line 215, in post_data
+    return base64.b64decode(base64_post_data).decode()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x92 in position 0: invalid start byte
+Error occurred in event listener
+Traceback (most recent call last):
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 561, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 119, in _inner_send
+    raise error
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_page.py", line 308, in _on_route
+    handled = await route_handler.handle(route)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 443, in handle
+    raise e
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 430, in handle
+    return await self._handle_internal(route)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 466, in _handle_internal
+    await handler_finished_future
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 457, in _handler
+    self.handler(route, route.request)  # type: ignore
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_impl_to_api_mapping.py", line 139, in wrapper_func
+    return handler(
+        *list(map(lambda a: self.from_maybe_impl(a), args))[:arg_count]
+    )
+  File "D:\scan\_wolt_hunt\auto_register.py", line 49, in hook
+    body = (req.post_data or '')[:500]
+            ^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\sync_api\_generated.py", line 171, in post_data
+    return mapping.from_maybe_impl(self._impl_obj.post_data)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_network.py", line 215, in post_data
+    return base64.b64decode(base64_post_data).decode()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x92 in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_page.py", line 308, in _on_route
+    handled = await route_handler.handle(route)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 443, in handle
+    raise e
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 430, in handle
+    return await self._handle_internal(route)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 466, in _handle_internal
+    await handler_finished_future
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_helper.py", line 457, in _handler
+    self.handler(route, route.request)  # type: ignore
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_impl_to_api_mapping.py", line 139, in wrapper_func
+    return handler(
+        *list(map(lambda a: self.from_maybe_impl(a), args))[:arg_count]
+    )
+  File "D:\scan\_wolt_hunt\auto_register.py", line 56, in hook
+    route.continue_()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\sync_api\_generated.py", line 1025, in continue_
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.continue_(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_network.py", line 518, in continue_
+    return await self._handle_route(_inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_network.py", line 468, in _handle_route
+    raise e
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_network.py", line 464, in _handle_route
+    await callback()
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_network.py", line 516, in _inner
+    await self._inner_continue(False)
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_network.py", line 522, in _inner_continue
+    await self._race_with_page_close(
+    ...<17 lines>...
+    )
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_network.py", line 563, in _race_with_page_close
+    raise cast(BaseException, fut.exception())
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 563, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+          ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_errors.py", line 58, in rewrite_error
+    rewritten_exc = type(error)(message)
+TypeError: function takes exactly 5 arguments (1 given)
+[1] Creating mail.tm account...
+  domain: web-library.net
+  email: pccp85811746@web-library.net
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUz...
+[2] Opening Wolt...
+[3] Clicking Sign up...
+  [API] GET https://authentication.wolt.com/v1/wauth2/consumer-sms/verification-delivery-methods
+[4] Filling email...
+[5] Clicking Continue...
+  URL: https://wolt.com/en/fin
+  Inputs: [{'type': 'text', 'name': '', 'placeholder': 'Enter delivery address', 'testid': '', 'maxLength': -1}, {'type': 'email', 'name': 'email', 'placeholder': '', 'testid': 'MethodSelect.EmailInput', 'maxLength': -1}]
+  Buttons: [{'t': 'Oskemen', 'tid': 'header.address-select-button'}, {'t': 'Partners', 'tid': ''}, {'t': 'Log in', 'tid': 'UserStatus.Login'}, {'t': 'Sign up', 'tid': 'UserStatus.Signup'}, {'t': 'Log in for saved addresses', 'tid': 'login-button-text'}, {'t': 'Finland', 'tid': ''}, {'t': 'English', 'tid': 'Footer.OpenLanguageSelectionDialogButton'}, {'t': 'Theme', 'tid': ''}, {'t': 'Cookies', 'tid': ''}, {'t': 'Continue with Google', 'tid': 'MethodSelect.Google'}, {'t': 'Continue with Apple', 'tid': 'MethodSelect.Apple'}, {'t': 'Continue with Facebook', 'tid': 'MethodSelect.Facebook'}, {'t': 'Continue', 'tid': 'StepMethodSelect.NextButton'}]
+  Title: Wolt Delivery | Food, Groceries and more in 30 minutes | Finland
+[6] Waiting for verification email...
+  !! No code received, saving state for manual
+Traceback (most recent call last):
+  File "D:\scan\_wolt_hunt\auto_register.py", line 173, in <module>
+    br.close()
+    ~~~~~~~~^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\sync_api\_generated.py", line 16238, in close
+    return mapping.from_maybe_impl(self._sync(self._impl_obj.close(reason=reason)))
+                                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 244, in close
+    raise e
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 241, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\scan\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 563, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+TypeError: Browser.close: function takes exactly 5 arguments (1 given)

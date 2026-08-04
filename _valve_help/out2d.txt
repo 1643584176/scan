@@ -1,0 +1,196 @@
+======================================================================
+[E] Login redir JSON 注入测试
+======================================================================
+redir='X"'                                       -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/X\&quot;&quot;,&quot;disableQR&quot;:false}
+   原始反射: 0 | 编码反射: 30
+redir='X"]},"evil":1'                            -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/&quot;,&quot;disableQR&quot;:false}
+   原始反射: 0 | 编码反射: 30
+redir='X\\'                                      -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/X\\&quot;,&quot;disableQR&quot;:false}
+   原始反射: 1 | 编码反射: 30
+redir='X\\u0022'                                 -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/X\\u0022&quot;,&quot;disableQR&quot;:false}
+   原始反射: 0 | 编码反射: 30
+redir='X/../'                                    -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/X\/..\/&quot;,&quot;disableQR&quot;:false}
+   原始反射: 0 | 编码反射: 30
+redir='\\evil.com'                               -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/\\evil.com&quot;,&quot;disableQR&quot;:false}
+   原始反射: 1 | 编码反射: 30
+redir='///evil.com'                              -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/\/\/evil.com&quot;,&quot;disableQR&quot;:false}
+   原始反射: 0 | 编码反射: 30
+redir='%5cevil.com'                              -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/%5cevil.com&quot;,&quot;disableQR&quot;:false}
+   原始反射: 1 | 编码反射: 30
+redir='https://help.steampowered.com.evil.com/x' -> 200 data-props={&quot;redirectUrl&quot;:&quot;https:\/\/help.steampowered.com\/en\/&quot;,&quot;disableQR&quot;:false}
+   原始反射: 0 | 编码反射: 30
+redir='https://evil.com'                         -> 403 data-props=(none)
+   原始反射: 0 | 编码反射: 0
+
+======================================================================
+[F] redirectUrl 消费逻辑 (help.js)
+======================================================================
+--- [location.href] @4377 ---
+    		    ); 		} 	},  	InitStaticPage: function() 	{ 		this.FinishPageLoad();  		var wizard_url = this.GetWizardURL( window.location.href ); 		var page_url = wizard_url; 		var search_text = null;  		var iQueryString = wizard_url.indexOf( '?' ); 		if ( iQueryString >= 0 ) 		{ 			// strip search term out of wizard_url 			var
+
+--- [location.href] @6213 ---
+    UseHistoryAPI = !!(window.history && window.history.pushState); 		this.m_sCurrentPage = HelpWizard.GetWizardURL( window.location.href );  		// used to avoid redundant calls to LoadPageFromHash when navigating through hash URLs (still used for search) 		var strPoppedStateHash;  		if ( HelpWizard.m_bUseHistoryAPI ) 		{ 	
+
+--- [location.href] @6914 ---
+    	var wizard_url = oState && oState.wizard_url; 				if ( !wizard_url ) 					wizard_url = HelpWizard.GetWizardURL( window.location.href ); 				HelpWizard.LoadPageFromHash( false, wizard_url, false, oState && oState.search_text );  				strPoppedStateHash = window.location.hash; 				HelpWizard.m_bInPopState = false; 			});
+
+--- [location.href] @12631 ---
+    eHistoryAPI ) 					{ 						if ( !bPushedSearchState ) 						{ 							strSearchBaseURL = HelpWizard.GetWizardURL( window.location.href ); 							var iQueryString = strSearchBaseURL.indexOf( '?' ); 							if ( iQueryString >= 0 ) 							{ 								rgSearchBaseURLParams = iQueryString >= 0 ? $J.deparam( strSearchBaseURL.su
+
+--- [location.href] @60820 ---
+    sessionid: g_sessionID }) 		.done( function() { 			if ( bStayOnPage ) 				Modal.Dismiss(); 			else 			{ 				if ( window.location.href.match( /[?&]l=/ ) ) 					window.location = window.location.href.replace( /([?&])l=[^&]*&?/, '$1' ); 				else 					window.location.reload(); 			} 		}).fail( function() { 			Modal.Dismiss(
+
+--- [location.href] @60884 ---
+    age ) 				Modal.Dismiss(); 			else 			{ 				if ( window.location.href.match( /[?&]l=/ ) ) 					window.location = window.location.href.replace( /([?&])l=[^&]*&?/, '$1' ); 				else 					window.location.reload(); 			} 		}).fail( function() { 			Modal.Dismiss(); 			ShowAlertDialog( 'Change language', 'There was a problem c
+
+--- [location.replace] @2687 ---
+    'undefined' ) 				Valve_OnHelpWizardNavigate( data );  			if ( data.redirect ) 			{ 				if ( data.replace ) 					window.location.replace( data.redirect ); 				else 					window.location = data.redirect; 				return; 			}  			document.title = data.title || 'Steam Support';  			if ( !data.html ) 			{ 				HelpWizard.ShowPag
+
+--- [window.location] @239 ---
+    h: function( fresh_page_load, url, link_click, search_text ) { 		var wizard_url = url; 		if ( !wizard_url ) 		{ 			if ( window.location.hash.length < 2 ) 				wizard_url = 'Home'; 			else 				wizard_url = window.location.hash.replace( /^#!?/,''); 		}  				if ( wizard_url.toLowerCase().startsWith('login') ) 		{ 			window
+
+--- [window.location] @323 ---
+    l; 		if ( !wizard_url ) 		{ 			if ( window.location.hash.length < 2 ) 				wizard_url = 'Home'; 			else 				wizard_url = window.location.hash.replace( /^#!?/,''); 		}  				if ( wizard_url.toLowerCase().startsWith('login') ) 		{ 			window.location = "https://help.steampowered.com/en/login" + wizard_url.slice( 5 ); 			ret
+
+--- [window.location] @433 ---
+    ard_url = window.location.hash.replace( /^#!?/,''); 		}  				if ( wizard_url.toLowerCase().startsWith('login') ) 		{ 			window.location = "https://help.steampowered.com/en/login" + wizard_url.slice( 5 ); 			return; 		}  		var page_url = wizard_url; 		var iQueryString = wizard_url.indexOf( '?' ); 		if ( iQueryString >= 
+
+--- [window.location] @2114 ---
+    analytics/devguides/collection/analyticsjs/single-page-applications 			ga( 'set', 'page', HelpWizard.m_bUseHistoryAPI ? window.location.pathname + window.location.search : '/wizard/' + wizard_url ); 			if ( link_click ) 				ga( 'send', 'pageview' ); 		} 		catch ( e ) 		{ 		}   		$J.ajax( { 			url: 'https://help.steampo
+
+--- [window.location] @2141 ---
+    ion/analyticsjs/single-page-applications 			ga( 'set', 'page', HelpWizard.m_bUseHistoryAPI ? window.location.pathname + window.location.search : '/wizard/' + wizard_url ); 			if ( link_click ) 				ga( 'send', 'pageview' ); 		} 		catch ( e ) 		{ 		}   		$J.ajax( { 			url: 'https://help.steampowered.com/en/wizard/' + wiz
+
+--- [window.location] @2680 ---
+    ate != 'undefined' ) 				Valve_OnHelpWizardNavigate( data );  			if ( data.redirect ) 			{ 				if ( data.replace ) 					window.location.replace( data.redirect ); 				else 					window.location = data.redirect; 				return; 			}  			document.title = data.title || 'Steam Support';  			if ( !data.html ) 			{ 				HelpWizard.
+
+--- [window.location] @2736 ---
+    a );  			if ( data.redirect ) 			{ 				if ( data.replace ) 					window.location.replace( data.redirect ); 				else 					window.location = data.redirect; 				return; 			}  			document.title = data.title || 'Steam Support';  			if ( !data.html ) 			{ 				HelpWizard.ShowPageError(); 				return; 			}  			if ( HelpWizard.m_
+
+--- [window.location] @4370 ---
+         } 		    ); 		} 	},  	InitStaticPage: function() 	{ 		this.FinishPageLoad();  		var wizard_url = this.GetWizardURL( window.location.href ); 		var page_url = wizard_url; 		var search_text = null;  		var iQueryString = wizard_url.indexOf( '?' ); 		if ( iQueryString >= 0 ) 		{ 			// strip search term out of wizard_url
+
+--- [window.location] @6206 ---
+    ard.m_bUseHistoryAPI = !!(window.history && window.history.pushState); 		this.m_sCurrentPage = HelpWizard.GetWizardURL( window.location.href );  		// used to avoid redundant calls to LoadPageFromHash when navigating through hash URLs (still used for search) 		var strPoppedStateHash;  		if ( HelpWizard.m_bUseHistoryAPI 
+
+--- [window.location] @6907 ---
+    e;  				var wizard_url = oState && oState.wizard_url; 				if ( !wizard_url ) 					wizard_url = HelpWizard.GetWizardURL( window.location.href ); 				HelpWizard.LoadPageFromHash( false, wizard_url, false, oState && oState.search_text );  				strPoppedStateHash = window.location.hash; 				HelpWizard.m_bInPopState = false;
+
+--- [window.location] @7048 ---
+    ); 				HelpWizard.LoadPageFromHash( false, wizard_url, false, oState && oState.search_text );  				strPoppedStateHash = window.location.hash; 				HelpWizard.m_bInPopState = false; 			}); 		}  		$J(window).on( 'hashchange', function() {  			if ( strPoppedStateHash !== window.location.hash ) 				HelpWizard.LoadPageFromHa
+
+--- [window.location] @7196 ---
+    lpWizard.m_bInPopState = false; 			}); 		}  		$J(window).on( 'hashchange', function() {  			if ( strPoppedStateHash !== window.location.hash ) 				HelpWizard.LoadPageFromHash( false ); 		}); 	},  	ShowPageError: function() 	{ 		try 		{ 			ga( 'send', 'pageview', '/wizard/PageError/' ); 		} 		catch ( e ) 		{ 		}  		$J( 
+
+--- [window.location] @7648 ---
+    password ) 	{ 		var strQuery = '?'; 		if ( need_password === true ) 			strQuery += 'need_password=1&'; 		var redirect = window.location.pathname; 		if ( window.location.search ) 			redirect += window.location.search; 		if ( window.location.hash && window.location.hash.length > 2 ) 			redirect += '#' + window.location.h
+
+--- [window.location] @7681 ---
+    '; 		if ( need_password === true ) 			strQuery += 'need_password=1&'; 		var redirect = window.location.pathname; 		if ( window.location.search ) 			redirect += window.location.search; 		if ( window.location.hash && window.location.hash.length > 2 ) 			redirect += '#' + window.location.hash;  		HelpWizard.LoadPageFromHa
+
+--- [window.location] @7721 ---
+    rQuery += 'need_password=1&'; 		var redirect = window.location.pathname; 		if ( window.location.search ) 			redirect += window.location.search; 		if ( window.location.hash && window.location.hash.length > 2 ) 			redirect += '#' + window.location.hash;  		HelpWizard.LoadPageFromHash( false, 'login' + strQuery + 'redir='
+
+--- [window.location] @7752 ---
+    	var redirect = window.location.pathname; 		if ( window.location.search ) 			redirect += window.location.search; 		if ( window.location.hash && window.location.hash.length > 2 ) 			redirect += '#' + window.location.hash;  		HelpWizard.LoadPageFromHash( false, 'login' + strQuery + 'redir=' + encodeURIComponent( redirect
+
+--- [window.location] @7776 ---
+    ocation.pathname; 		if ( window.location.search ) 			redirect += window.location.search; 		if ( window.location.hash && window.location.hash.length > 2 ) 			redirect += '#' + window.location.hash;  		HelpWizard.LoadPageFromHash( false, 'login' + strQuery + 'redir=' + encodeURIComponent( redirect ) ); 	},  	SubmitRefund
+
+--- [window.location] @7831 ---
+    direct += window.location.search; 		if ( window.location.hash && window.location.hash.length > 2 ) 			redirect += '#' + window.location.hash;  		HelpWizard.LoadPageFromHash( false, 'login' + strQuery + 'redir=' + encodeURIComponent( redirect ) ); 	},  	SubmitRefundRequest: function( help_issue, appid, transid, gid_line
+
+--- [window.location] @12624 ---
+    d.m_bUseHistoryAPI ) 					{ 						if ( !bPushedSearchState ) 						{ 							strSearchBaseURL = HelpWizard.GetWizardURL( window.location.href ); 							var iQueryString = strSearchBaseURL.indexOf( '?' ); 							if ( iQueryString >= 0 ) 							{ 								rgSearchBaseURLParams = iQueryString >= 0 ? $J.deparam( strSearchBas
+
+--- [window.location] @31693 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @33016 ---
+     			{ 				$J('#change_email_area').hide(); 				$J('#confirm_email_form').show(); 			} 			else if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @34297 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @35311 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @36676 ---
+     			{ 				$J('#change_phone_area').hide(); 				$J('#confirm_phone_form').show(); 			} 			else if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @37989 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @39079 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @40258 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @42388 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @43450 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 				return; 			} 			else 			{ 				elError.text( data.e
+
+--- [window.location] @44300 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 			} 			else 			{ 				elError.text( data.errorMsg ).sl
+
+--- [window.location] @45204 ---
+     Please give us a few minutes and try again.' ).slideDown(); 		}).done( function( data ) { 			if ( data.hash ) 			{ 				window.location = 'https://help.steampowered.com/en/' + data.hash; 			} 			else if ( data.html ) 			{ 				HelpWizard.SetPageContent( data.html ); 			} 			else 			{ 				if ( data.searchError ) 				{ 		
+
+--- [window.location] @47675 ---
+     eReset, 				issueid: unIssueID, 				lost: unLost 			} ) 		}).fail( function( xhr ) {  		}).done( function( data ) { 			window.location = data.redirect; 		}); 	},  	BindRelated: function( strSessionID, nAccountID, eReset, unIssueID ) { 		$J.ajax({ 			type: "POST", 			url: "https://help.steampowered.com/en/wizard/AjaxAc
+
+--- [window.location] @48115 ---
+    ountID, 				reset: eReset, 				issueid: unIssueID 			} ) 		}).fail( function( xhr ) {  		}).done( function( data ) { 			window.location = data.redirect; 		}); 	},  	SubmitProofOfPurchase: function( strSessionID, eReset, nLost ) { 		var $WaitDialog = ShowBlockingWaitDialog( 			'Proof of Purchase', 			'Verifying payment 
+
+--- [window.location] @49341 ---
+    $J('#billing_phone').val() 			} 		}).fail(function (xhr) {  		}).done(function (data) { 			if ( data.success ) 			{ 				window.location = "https://help.steampowered.com/en/wizard/HelpWithLoginInfoReset/?s=" + strSessionID + 					"&account=" + data.accountid + "&reset=" + eReset + "&lost=" + nLost; 			} 			else 			{ 			
+
+--- [window.location] @54257 ---
+    ion( element, accountid ) 	{ 		V_SetCookie( 'steamPublisherAccount' + accountid, $J( element ).val(), 0, '/' );         window.location.reload(); 	}, 	VerifyEmail: function( form ) 	{ 		var $Form = $J( form ); 		$Form.find( 'button' ).addClass( 'btn_disabled' ).prop( 'disabled', true );  		$J.ajax({ 			type: $Form.attr
+
+--- [window.location] @56971 ---
+    HelpWithPurchase' 			}, 			crossDomain: true, 			xhrFields: { withCredentials: true }, 		} ) 			.fail( function() { 				window.location.reload(); 			}) 			.done( function( data ) 			{ 				if ( data && data.transfer_info ) 				{ 					HelpWizard.TransferLogin( data ); 				} 				else 				{ 					// something went wrong, bu
+
+--- [window.location] @57226 ---
+    in( data ); 				} 				else 				{ 					// something went wrong, but the account should have been created - redirect 					window.location = 'https://help.steampowered.com/en/wizard/HelpWithPurchase'; 				} 			}); 	}, 	TransferLogin: function( data ) 	{ 		let posts = []; 		var nFailed = 0; 		var nTransferred = 0; 		for ( 
+
+--- [window.location] @58128 ---
+    l(posts).then(() => { 			console.log( 'transfer ' + nTransferred + '/' + nFailed ); 			if ( nTransferred > 0 ) 			{ 				window.location = 'https://help.steampowered.com/en/wizard/HelpWithPurchase'; 			} 		}).catch((e) => { 			// this is a weird failure 		}); 	} };  function Logout() { 	var $Form = $J('<form/>', {'actio
+
+--- [window.location] @60813 ---
+    guage, sessionid: g_sessionID }) 		.done( function() { 			if ( bStayOnPage ) 				Modal.Dismiss(); 			else 			{ 				if ( window.location.href.match( /[?&]l=/ ) ) 					window.location = window.location.href.replace( /([?&])l=[^&]*&?/, '$1' ); 				else 					window.location.reload(); 			} 		}).fail( function() { 			Modal.D
+
+--- [window.location] @60859 ---
+    tion() { 			if ( bStayOnPage ) 				Modal.Dismiss(); 			else 			{ 				if ( window.location.href.match( /[?&]l=/ ) ) 					window.location = window.location.href.replace( /([?&])l=[^&]*&?/, '$1' ); 				else 					window.location.reload(); 			} 		}).fail( function() { 			Modal.Dismiss(); 			ShowAlertDialog( 'Change language
+
+--- [window.location] @60877 ---
+    StayOnPage ) 				Modal.Dismiss(); 			else 			{ 				if ( window.location.href.match( /[?&]l=/ ) ) 					window.location = window.location.href.replace( /([?&])l=[^&]*&?/, '$1' ); 				else 					window.location.reload(); 			} 		}).fail( function() { 			Modal.Dismiss(); 			ShowAlertDialog( 'Change language', 'There was a pr
+
+--- [window.location] @60948 ---
+    .href.match( /[?&]l=/ ) ) 					window.location = window.location.href.replace( /([?&])l=[^&]*&?/, '$1' ); 				else 					window.location.reload(); 			} 		}).fail( function() { 			Modal.Dismiss(); 			ShowAlertDialog( 'Change language', 'There was a problem communicating with the Steam servers.  Please try again later.' )
+
+--- [window.location] @62389 ---
+    he Steam Servers failed to cancel this pending purchase. Please try again later. Error code: ' + data.success ); 		}  		window.location.reload(); 	} ); }  function CancelAccountDeletion() { 	$J.ajax( { 		url: 'https://help.steampowered.com/en/wizard/AjaxCancelAccountDeletion/', 		type: 'POST', 		data: g_rgDefaultWizard
+
+--- [window.location] @63341 ---
+    howAlertDialog( 'Cancel Account Deletion', 'Successfully canceled your account deletion.'  ) 			.done( function() { 				window.location = 'https://help.steampowered.com/en/'; 			}); 		} 	} ); }  function CancelSteamChinaAccessDeletion() { 	$J.ajax( { 		url: 'https://help.steampowered.com/en/wizard/AjaxCancelSteamChinaA
+
+--- [window.location] @64449 ---
+    tion Deletion', 'Successfully canceled your Steam China access and information deletion.'  ) 			.done( function() { 				window.location = 'https://help.steampowered.com/en/'; 			}); 		} 	} ); }   // contains all the functions for generating hardware returns & replacements HardwareRMA = { 	m_bDoingAjax: false, 	m_sActiv
+
+--- [window.location] @89262 ---
+    ata.next_page, true ); 				//HelpRequestPage.DismissCreateHelpRequestForm(); 			} 			else if ( data.redirect ) 			{ 				window.location = data.redirect; 			} 		}).fail( function( xhr ) { 			ShowAlertDialog( 'Contact Steam Support', 'There was a problem submitting your help request to Steam Support. Please wait a few mi
+
+--- [window.location] @102990 ---
+    ry again. If this error persists, create a new help request so we can assist you.' ); 		} ).done( function( data ) { 			window.location.reload(); 		} ); 	} };  function UpdateStateSelectState() { 	var cc = $J('#billing_country').val(); 	if ( cc == 'US' ) 	{ 		$J('#billing_state_label').show(); 		$J('#billing_state_inpu
+
+--- [window.location] @124548 ---
+    ).done( function(data){ 				g_bUpdateShippingAddress = false; 				// Success... 				if ( data.success == 1 ) 				{ 					window.location.reload(); 				} 				else 				{ 					OnUpdateShippingAddressFailure(); 				} 	}).fail( function(){ 								g_bUpdateShippingAddress = false; 				OnUpdateShippingAddressFailure(); 	}); }
+
+
+======================================================================
+[G] shared_global.js 中 LoginManager 逻辑
+======================================================================

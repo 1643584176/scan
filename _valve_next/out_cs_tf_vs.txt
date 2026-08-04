@@ -1,0 +1,147 @@
+======================================================================
+[CS] https://www.counter-strike.net 页面指纹 + 安全头
+======================================================================
+/                    -> 200 len=  5375 final=https://www.counter-strike.net/
+   title=None
+   Server: nginx
+/news/               -> 200 len=  5775 final=https://www.counter-strike.net/news/
+   title='#Blog_Title'
+/cs2/                -> 200 len=  5891 final=https://www.counter-strike.net/cs2/
+   title='Introducing Counter-Strike 2 | Limited Test'
+/game/               -> 200 len=  5375 final=https://www.counter-strike.net/game/
+   title=None
+/merch/              -> 200 len=  5375 final=https://www.counter-strike.net/merch/
+   title=None
+/events/             -> 200 len=  5375 final=https://www.counter-strike.net/events/
+   title=None
+/news/updates/       -> 200 len=  5783 final=https://www.counter-strike.net/news/updates/
+   title='#Blog_Title'
+/search/             -> 200 len=  5375 final=https://www.counter-strike.net/search/
+   title=None
+
+--- [CS] 页面内联端点/API 提取 ---
+   EP: https://www.counter-strike.net/public/css/aos/aos.css
+   EP: https://www.counter-strike.net/public/css/csgo
+   EP: https://www.counter-strike.net/public/javascript/aos/aos.js
+   EP: https://www.counter-strike.net/public/javascript/csgo
+
+--- [CS] 参数反射 ---
+
+--- [CS] JS 资产下载+端点提取 ---
+   https://www.counter-strike.net/public/javascript/aos/aos.js?v=b10838615&amp;l=en -> 13 KB
+   https://www.counter-strike.net/public/javascript/csgo_react/libraries~b28b7af69. -> 1736 KB
+   https://www.counter-strike.net/public/javascript/csgo_react/main.js?v=OsjG7cYuHC -> 1005 KB
+   https://www.counter-strike.net/public/javascript/csgo_react/manifest.js?v=TjzFN1 -> 6 KB
+   JS-EP: /ajaxcreateupdatedeletepartnerevents/
+   JS-EP: /ajaxgetcreatorhomeinfo
+   JS-EP: /ajaxgetpartnereventpermissions/
+   JS-EP: /ajaxgetvanityandclanid/
+   JS-EP: /announcements/ajaxgetlocalization/
+   JS-EP: /announcements/ajaxgetmyvote/
+   JS-EP: /events/ajaxgetdynamiceventmetadata
+
+======================================================================
+[TF] https://www.teamfortress.com 页面指纹 + 安全头
+======================================================================
+/                    -> 200 len= 25135 final=https://www.teamfortress.com/
+   title='Team Fortress 2'
+   Server: nginx
+/news/               -> 404 len=   548 final=https://www.teamfortress.com/news/
+   title='404 Not Found'
+/game/               -> 404 len=   548 final=https://www.teamfortress.com/game/
+   title='404 Not Found'
+/tickets/            -> 404 len=   548 final=https://www.teamfortress.com/tickets/
+   title='404 Not Found'
+/stats.php           -> 404 len=    16 final=https://www.teamfortress.com/stats.php
+   title=None
+/stats/              -> 404 len=   548 final=https://www.teamfortress.com/stats/
+   title='404 Not Found'
+/posters.php         -> 404 len=    16 final=https://www.teamfortress.com/posters.php
+   title=None
+
+--- [TF] 页面内联端点/API 提取 ---
+   EP: https://developer.valvesoftware.com/wiki/Source
+   EP: https://help.steampowered.com/en/wizard/HelpWithGame/
+   EP: https://partner.steamgames.com/doc/sdk/uploading/distributing
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/blog/images/blog
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/blog/images/bloodsplatter.png
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/blog/images/bloodsplatter2.png
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/blog/images/favicon.ico
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/blog/images/now
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/blog/images/spyskull.png
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/blog/images/trans.gif
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/blog/images/valve
+   EP: https://steamcdn-a.akamaihd.net/apps/tf2/sheet
+   EP: https://steamcdn-a.akamaihd.net/apps/tfstore/images/header/en
+   EP: https://steamcdn-a.akamaihd.net/steam/news/235677/issue07blog.png
+   EP: https://steamcdn-a.akamaihd.net/steam/news/238809/engy
+   EP: https://steamcdn-a.akamaihd.net/steam/news/247188/make
+   EP: https://steamcommunity.com/app/440
+   EP: https://steamcommunity.com/app/440/discussions/
+   EP: https://steamcommunity.com/app/440/workshop/
+   EP: https://steamcommunity.com/games/300/announcements/detail/574874801961698004
+   EP: https://steamcommunity.com/games/320/announcements/detail/529838805680652976
+   EP: https://steamcommunity.com/games/360/announcements/detail/562489902889960289
+   EP: https://steamcommunity.com/games/CSS/announcements/detail/689716592460694166
+   EP: https://steamcommunity.com/games/TF2/announcements/detail/511824321138655315
+   EP: https://steamcommunity.com/market/
+   EP: https://steamcommunity.com/workshop/browse
+   EP: https://store.steampowered.com/app/440/
+   EP: https://wiki.teamfortress.com
+   EP: https://wiki.teamfortress.com/
+   EP: https://www.teamfortress.com/
+   EP: https://www.teamfortress.com/gray
+   EP: https://www.teamfortress.com/mannwill
+   EP: https://www.teamfortress.com/rss.xml
+   EP: https://www.teamfortress.com/tf07
+   EP: https://www.teamfortress.com/wizardcon/
+   EP: https://www.valvesoftware.com
+   EP: https://www.valvesoftware.com/contact
+
+--- [TF] 参数反射 ---
+
+--- [TF] JS 资产下载+端点提取 ---
+
+======================================================================
+[VS] https://www.valvesoftware.com 页面指纹 + 安全头
+======================================================================
+/                    -> 200 len= 23110 final=https://www.valvesoftware.com/en/
+   title='Valve Corporation'
+   Server: nginx
+   X-Frame-Options: DENY
+/en/                 -> 200 len= 23110 final=https://www.valvesoftware.com/en/
+   title='Valve Corporation'
+/games/              -> 200 len= 23110 final=https://www.valvesoftware.com/en/
+   title='Valve Corporation'
+/about/              -> 200 len= 17565 final=https://www.valvesoftware.com/en/about/
+   title='About Us - Valve Corporation'
+/jobs/               -> 200 len= 23110 final=https://www.valvesoftware.com/en/
+   title='Valve Corporation'
+
+--- [VS] 页面内联端点/API 提取 ---
+   EP: http://store.steampowered.com/
+   EP: https://partner.steamgames.com/
+   EP: https://www.valvesoftware.com/en/
+   EP: https://www.valvesoftware.com/en/about
+   EP: https://www.valvesoftware.com/en/jobs
+   EP: https://www.valvesoftware.com/en/legal/site-terms-of-use
+   EP: https://www.valvesoftware.com/en/people
+   EP: https://www.valvesoftware.com/en/press/inquiries
+   EP: https://www.valvesoftware.com/en/public/javascript/jobs.js
+   EP: https://www.valvesoftware.com/en/public/javascript/valvesoftware.js
+   EP: https://www.valvesoftware.com/en/public/shared/javascript/jquery-1.8.3.min.js
+   EP: https://www.valvesoftware.com/en/publications
+   EP: https://www.valvesoftware.com/en/security
+   EP: https://www.valvesoftware.com/public/css/fonts.css
+   EP: https://www.valvesoftware.com/public/css/forms.css
+   EP: https://www.valvesoftware.com/public/css/global.css
+   EP: https://www.valvesoftware.com/public/css/jobs.css
+
+--- [VS] 参数反射 ---
+
+--- [VS] JS 资产下载+端点提取 ---
+   https://www.valvesoftware.com/en/public/javascript/flickity.pkgd.min.js?v=b10829 -> 56 KB
+   https://www.valvesoftware.com/en/public/javascript/jobs.js?v=KKAPM5KmPVH7&amp;_c -> 8 KB
+   https://www.valvesoftware.com/en/public/javascript/valvesoftware.js?v=Yw_MCZWiaU -> 8 KB
+   https://www.valvesoftware.com/en/public/shared/javascript/jquery-1.8.3.min.js?v= -> 91 KB
+

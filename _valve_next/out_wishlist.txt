@@ -1,0 +1,82 @@
+======================================================================
+[1] 网页端愿望单(公开用户)
+======================================================================
+GET /wishlist/76561197960434622 -> 0 title=None len=25
+
+======================================================================
+[2] API 未登录(无 cookie 无 key)
+======================================================================
+/IWishlistService/GetWishlist/v1/                       -> 200
+   '{"response":{"items":[{"appid":50650,"priority":29,"date_added":1433965886},{"appid":215824,"priority":24,"date_added":1433965881},{"appid":227700,"priority":16,"date_added":1407878981},{"appid":239220,"priority":9,"date_added":1413934988},{"appid":294860,"pri'
+/IWishlistService/GetWishlistItemCount/v1/              -> 200
+   '{"response":{"count":41}}'
+/IStoreService/GetGamesFollowed/v1/                     -> 200
+   '{"response":{"appids":[211,753,765,18500,20500,39210,43110,109300,204650,210970,221410,223300,231200,232090,236430,244770,261550,282140,300550,304650,305620,316790,344740,374320,377160,414120,419270,435150,508440,578650,814380,874260]}}'
+
+======================================================================
+[3] 私密 profile 用户愿望单泄露测试(随机 ID,限制 20 个)
+======================================================================
+Traceback (most recent call last):
+  File "D:\python3.14\Lib\socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\scan\_valve_next\test_wishlist.py", line 109, in <module>
+    main()
+    ~~~~^^
+  File "D:\scan\_valve_next\test_wishlist.py", line 78, in main
+    s, body, h, final = get(COMM + f'/wishlist/{sid2}')
+                        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\_valve_next\test_wishlist.py", line 24, in get
+    resp = urllib.request.urlopen(r, context=CTX, timeout=timeout)
+  File "D:\python3.14\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "D:\python3.14\Lib\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "D:\python3.14\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "D:\python3.14\Lib\urllib\request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\urllib\request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1358, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1404, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python3.14\Lib\http\client.py", line 1492, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\python3.14\Lib\http\client.py", line 1023, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\socket.py", line 862, in create_connection
+    exceptions.clear()  # raise only the last error
+    ~~~~~~~~~~~~~~~~^^
+KeyboardInterrupt

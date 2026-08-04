@@ -1,0 +1,58 @@
+200 depot patch 信息(旧manifest)    /IContentServerDirectoryService/GetDepotPatchInfo/v1/?appid=
+   '{"response":{}}'
+200 depot patch CS2              /IContentServerDirectoryService/GetDepotPatchInfo/v1/?appid=
+   '{"response":{}}'
+200 SDR 配置                       /ISteamApps/GetSDRConfig/v1/?appid=570                      
+   '{"revision":1784582254,"pops":{"ams":{"desc":"Amsterdam (Netherlands)","geo":[4.90000000000000036,52.3699999999999974],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.248.36","por'
+200 SDR 配置 CS2                   /ISteamApps/GetSDRConfig/v1/?appid=730                      
+   '{"revision":1784582254,"pops":{"ams":{"desc":"Amsterdam (Netherlands)","geo":[4.90000000000000036,52.3699999999999974],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.248.36","por'
+200 SteamPipe 服务器列表              /IContentServerDirectoryService/GetServersForSteamPipe/v1/?c
+   '{"response":{"servers":[{"type":"CDN","source_id":33,"load":0,"weighted_load":50,"num_entries_in_client_list":1,"host":"xz.pphimalayanrt.com","vhost":"xz.pphimalayanrt.com","https_'
+200 视频 CDN 分配                    /IContentServerDirectoryService/GetCDNForVideo/v1/?property_
+   '{"response":{}}'
+200 客户端更新主机                      /IContentServerDirectoryService/GetClientUpdateHosts/v1/    
+   '{"response":{"hosts_kv":"\\"hosts\\"\\n{\\n\\t\\"Realms\\"\\n\\t{\\n\\t\\t\\"SteamGlobal\\"\\n\\t\\t{\\n\\t\\t\\t\\"client-update.akamai.steamstatic.com\\"\\n\\t\\t\\t{\\n\\t\\t\\t\\t\\"base_url\\"\\t\\t\\"/\\"\\n\\t\\t\\t'
+200 客户端更新主机(空sig)                /IContentServerDirectoryService/GetClientUpdateHosts/v1/?cac
+   '{"response":{"hosts_kv":"\\"hosts\\"\\n{\\n\\t\\"Realms\\"\\n\\t{\\n\\t\\t\\"SteamGlobal\\"\\n\\t\\t{\\n\\t\\t\\t\\"client-update.akamai.steamstatic.com\\"\\n\\t\\t\\t{\\n\\t\\t\\t\\t\\"base_url\\"\\t\\t\\"/\\"\\n\\t\\t\\t'
+200 内容服务器选择                      /IContentServerDirectoryService/PickSingleContentServer/v1/?
+   '{"response":{}}'
+200 CM 连接列表                      /ISteamDirectory/GetCMListForConnect/v1/?cellid=0&maxcount=3
+   '{"response":{"serverlist":[{"endpoint":"cmp2-hkg1.steamserver.net:27021","legacy_endpoint":"cmp2-hkg1.steamserver.net:27021","type":"websockets","dc":"hkg1","realm":"steamglobal","'
+200 SteamPipe 域名                 /ISteamDirectory/GetSteamPipeDomains/v1/                    
+   '{"response":{"domainlist":["*.steamcontent.com","cs.steampowered.com","alibaba.cdn.steampipe.steamcontent.com","broadcast.st.dl.eccdnx.com","cdn-ali.content.steamchina.com","cdn-qc'
+401 创意工坊投票(需key?)                /IPublishedFileService/GetUserVoteSummary/v1/?publishedfilei
+   '<html><head><title>Unauthorized</title></head><body><h1>Unauthorized</h1>Access is denied. Retrying will not help. Please verify your <pre>key=</pre> parameter.</body></html>'
+200 Dota2 服务器版本                  /IGCVersion_570/GetServerVersion/v1/                        
+   '{ "result":{ "success":true, "engine":1, "deploy_version":6882, "active_version":6882, "response_time":1785740060 } }'
+200 CS2 服务器版本                    /IGCVersion_730/GetServerVersion/v1/                        
+   '{ \t"result": { \t\t"success": true, \t\t"deploy_version": 0, \t\t"active_version": 0, \t\t"response_time": 1785740062 \t} }'
+200 TF2 服务器版本                    /IGCVersion_440/GetServerVersion/v1/                        
+   '{ \t"result": { \t\t"success": true, \t\t"deploy_version": 10828683, \t\t"active_version": 10828683, \t\t"min_allowed_version": 10828683 \t} }'
+200 游戏1046930 客户端版本              /IGCVersion_1046930/GetClientVersion/v1/                    
+   '{ "result":{ "success":true, "min_allowed_version":512, "active_version":552 } }'
+200 游戏1269260 客户端版本              /IGCVersion_1269260/GetClientVersion/v1/                    
+   '{ "result":{ "success":true, "min_allowed_version":256, "active_version":256 } }'
+200 游戏1422450 客户端版本              /IGCVersion_1422450/GetClientVersion/v1/                    
+   '{ "result":{ "success":true, "min_allowed_version":6666, "active_version":6666 } }'
+200 TF2 世界状态                     /ITFSystem_440/GetWorldStatus/v1/                           
+   '{ \t"result": { \t\t"beta_stress_test_event_active": false, \t\t"event_match_group": "k_eTFMatchGroup_Invalid", \t\t"event_expire_time": 0, \t\t"active_client_version": 10828683 \t} }'
+405 广播玩家统计                       /ISteamBroadcast/PlayerStats/v1/                            
+   '<html><head><title>Method Not Allowed</title></head><body><h1>Method Not Allowed</h1>This API must be called with a HTTP POST request</body></html>'
+200 关注的游戏(需key?)                 /IStoreService/GetGamesFollowed/v1/?steamid=7656119796043462
+   '{"response":{"appids":[211,753,765,18500,20500,39210,43110,109300,204650,210970,221410,223300,231200,232090,236430,244770,261550,282140,300550,304650,305620,316790,344740,374320,37'
+200 愿望单(未登录?)                    /IWishlistService/GetWishlist/v1/?steamid=76561197960434622 
+   '{"response":{"items":[{"appid":50650,"priority":29,"date_added":1433965886},{"appid":215824,"priority":24,"date_added":1433965881},{"appid":227700,"priority":16,"date_added":140787'
+200 愿望单数量(未登录?)                  /IWishlistService/GetWishlistItemCount/v1/?steamid=765611979
+   '{"response":{"count":41}}'
+401 推荐标签                         /IStoreService/GetRecommendedTagsForUser/v1/?language=englis
+   '<html><head><title>Unauthorized</title></head><body><h1>Unauthorized</h1>Access is denied. Retrying will not help. Please verify your <pre>key=</pre> parameter.</body></html>'
+200 全球统计                         /ISteamUserStats/GetGlobalStatsForGame/v1/?appid=570&count=1
+   '{"response":{"result":8,"error":"Stat \'total_players\' not found"}}'
+200 合集详情(POST)                   /ISteamRemoteStorage/GetCollectionDetails/v1/               
+   '{"response":{"result":1,"resultcount":1,"collectiondetails":[{"publishedfileid":"1","result":9}]}}'
+200 token 详情(空token)             /ISteamUserOAuth/GetTokenDetails/v1/?access_token=          
+   '{"success":15,"reason":"Access Denied"}'
+405 认证会话信息                       /IAuthenticationService/GetAuthSessionInfo/v1/?client_id=1  
+   '<html><head><title>Method Not Allowed</title></head><body><h1>Method Not Allowed</h1>This API must be called with a HTTP POST request</body></html>'
+200 RSA 公钥                       /IAuthenticationService/GetPasswordRSAPublicKey/v1/?account_
+   '{"response":{"publickey_mod":"9b778e455a07946b586ebb49503e602208c418ae9b71aa1939e9d2830a93c773039d365a8047b13e817e2d89960138f91aaba587000ce070e0fda1b88c83872fd04365a5ae599681218dc5'

@@ -1,0 +1,386 @@
+Skip to main content  >
+Learn more about HackerOne
+Log in
+Security page
+Program guidelines
+Scope
+Hacktivity
+Thanks
+Updates
+Collaborators
+Search
+Scope
+All scopes
+Maximum severity
+Any
+Bounty eligibility
+All
+Download Burp Suite Project Configuration File
+Download CSV
+View changes (Last updated on November 5, 2025)
+1-26 of 26
+Asset name
+	Type
+	Coverage
+	Max. severity
+	Bounty
+	Last update
+	Resolved Reports 
+
+www.valvesoftware.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 10, 2017
+	
+51 (4%)
+
+www.teamfortress.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 25, 2017
+	
+15 (1%)
+
+www.dota2.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 10, 2017
+	
+84 (6%)
+
+www.counter-strike.net	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 25, 2017
+	
+13 (1%)
+
+wiki.teamfortress.com
+This asset is a community run site, not part of Valve or its infrastructure. Reports about issues for this domain are appreciated and will be passed along to the volunteers that run the site.
+	Domain	
+In scope
+	
+Critical
+	
+Ineligible
+	
+Feb 2, 2018
+	
+1 (0%)
+
+support.steampowered.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 10, 2017
+	
+19 (1%)
+
+storefront.steampowered.com
+This site is out of scope pending engineering cleanup. We are only interested in reports on this domain with a CVSS score above 8 at this time.
+	Domain	
+In scope
+	
+Critical
+	
+Ineligible
+	
+Jan 26, 2018
+	
+0 (0%)
+
+store.steampowered.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 17, 2017
+	
+133 (10%)
+
+steamcommunity.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 17, 2017
+	
+217 (16%)
+
+Steam Servers	Other	
+In scope
+	
+Critical
+	
+Eligible
+	
+Sep 8, 2017
+	
+47 (4%)
+
+Steam Client	Other	
+In scope
+	
+Critical
+	
+Eligible
+	
+Feb 6, 2024
+	
+21 (2%)
+
+playartifact.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Nov 20, 2018
+	
+2 (0%)
+
+partner.steampowered.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 10, 2017
+	
+40 (3%)
+
+partner.steamgames.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 10, 2017
+	
+203 (15%)
+
+https://github.com/valvesoftware
+We are happy to receive reports on code assets, but to be eligible for bounty they must be accompanied by a working POC against a shipping product.
+	Source code	
+In scope
+	
+Critical
+	
+Ineligible
+	
+May 10, 2018
+	
+3 (0%)
+
+help.steampowered.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Feb 19, 2019
+	
+11 (1%)
+
+com.valvesoftware.Steam	iOS: App Store	
+In scope
+	
+Critical
+	
+Eligible
+	
+Sep 13, 2017
+	
+2 (0%)
+
+com.valvesoftware.Steam	Android: Play Store	
+In scope
+	
+Critical
+	
+Eligible
+	
+Sep 13, 2017
+	
+11 (1%)
+
+api.steampowered.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Oct 10, 2017
+	
+32 (2%)
+
+*.steamstatic.com	Wildcard	
+In scope
+	
+Critical
+	
+Eligible
+	
+Nov 4, 2025
+	
+2 (0%)
+
+developer.valvesoftware.com	Domain	
+In scope
+	
+Low
+	
+Eligible
+	
+May 11, 2018
+	
+3 (0%)
+
+www.steampowered.com
+This subdomain is out of scope pending code cleanup
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Oct 17, 2017
+	
+0 (0%)
+
+www.steamgames.com
+Pending cleanup from engineering.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Oct 30, 2017
+	
+0 (0%)
+
+valvestore.forfansbyfans.com,store.valvesoftware.com
+This site is run by a 3rd party.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Aug 30, 2018
+	
+0 (0%)
+
+translation.steampowered.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+May 7, 2018
+	
+0 (0%)
+
+list.valvesoftware.com
+This site is run by a 3rd party.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Sep 7, 2019
+	
+0 (0%)
+1-26 of 26
+Valve
+https://www.valvesoftware.com
+Bounty launched in May 2018
+Response efficiency: 67%
+Submit without Report Assistant
+Rewards
+
+Severity
+
+Rewards
+
+Low
+
+Avg. bounty n/a
+12.79% submissions
+
+$100 – $200
+Medium
+
+Avg. bounty $750
+48.21% submissions
+
+$200 – $750
+High
+
+Avg. bounty $1,641
+24.73% submissions
+
+$750 – $2,500
+Critical
+
+Avg. bounty $5,679
+14.27% submissions
+
+$2,500 – $7,500
+Stats
+Total bounties paid	$2,865,150
+Average bounty	$750
+Top bounty range	$3,000 - $20,000
+Bounties paid | 90 days	$123,900
+Reports received | 90 days	255
+Last report resolved	2 days ago
+Reports resolved	1320
+Hackers thanked	620
+Assets In Scope	21
+© HackerOne
+Opportunities
+Security
+Leaderboard
+Blog
+Status
+Docs
+Support
+Disclosure Guidelines
+Press
+Privacy
+Terms

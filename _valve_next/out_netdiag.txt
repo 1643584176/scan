@@ -1,0 +1,25 @@
+======================================================================
+[1] steamcommunity 可达性诊断
+======================================================================
+   /                                        -> 0 len=138 21.0s
+   /wishlist/76561197960434622              -> 0 len=138 21.0s
+   /market/                                 -> 0 len=138 21.0s
+   /search?text=test                        -> 0 len=138 21.1s
+   /id/valve                                -> 0 len=138 21.0s
+   /profiles/76561197960434622              -> 0 len=138 21.1s
+
+======================================================================
+[2] playartifact.com(scope 内)
+======================================================================
+   https://www.playartifact.com/                 -> 0 len=45 21.8s title=''
+   https://playartifact.com/                     -> 0 len=138 22.1s title=''
+   https://www.playartifact.com/cards/           -> 0 len=138 21.9s title=''
+   https://www.playartifact.com/d/               -> 0 len=138 22.3s title=''
+
+======================================================================
+[3] 补充:steamgames.com / steampowered.com 边界确认
+======================================================================
+   https://www.steamgames.com/                   -> 0 len=138 22.5s title=''
+   https://store.steampowered.com/               -> 0 len=138 21.0s title=''
+   https://list.valvesoftware.com/               -> 200 len=13756 1.4s title='Account information - Valve De'
+   https://translation.steampowered.com/         -> 200 len=26341 2.1s title='Crowdin Enterprise'

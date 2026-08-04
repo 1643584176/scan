@@ -1,0 +1,173 @@
+Skip to main content  >
+Learn more about HackerOne
+Log in
+Security page
+Program guidelines
+Scope and Rewards
+Hacktivity
+Thanks
+Updates
+Collaborators
+Safe harbor
+Search
+Scope
+All scopes
+Maximum severity
+Any
+Bounty eligibility
+All
+Bounty updated Jul 16, 2026
+|
+Scope updated Jul 27, 2026
+View changes
+Tier 1
+In scope
+Low
+$150
+Medium
+$750
+High
+$1,500
+Critical
+$3,500
+1-7 of 7
+Asset name
+	Type
+	Max. severity
+	Bounty
+	Last update
+	Resolved Reports 
+
+wolt.com
+Used by: Everybody.
+Our main web page.
+Notable use-cases: Offering an in-browser JavaScript app to interact with other APIs and services. Offering HTTP endpoints to interact with this service's own APIs.
+	Domain	
+Critical
+	
+Eligible
+	
+Updated
+Jul 21, 2026
+	
+0 (-)
+
+restaurant-api.wolt.com
+Used by: Regular wolt.com users, Wolt employees, corporate customers, delivery partners, store managers.
+Notable use-cases: Creating and editing users, placing orders, tracking orders, setting prices.
+Your JWT as a regular wolt.com user should grant you access to most functionality for your user type.
+	Domain	
+Critical
+	
+Eligible
+	
+Updated
+Jul 21, 2026
+	
+0 (-)
+
+ops.wolt.com
+Keywords: admin
+Used by: Wolt employees.
+This service's endpoints are only accessible by Wolt employees (if you can show otherwise, that’ll be very interesting). However, your tainted data (e.g., purchase info, profile info) may be processed by this service.
+	Domain	
+Critical
+	
+Eligible
+	
+Updated
+Jul 21, 2026
+	
+0 (-)
+
+merchant.wolt.com
+Keywords: admin
+Used by: Wolt employees, store managers.
+Portal for store managers to update menus.
+Your JWT as a regular wolt.com user should grant you limited access.
+	Domain	
+Critical
+	
+Eligible
+	
+Updated
+Jul 21, 2026
+	
+0 (-)
+
+drive.wolt.com
+Keywords: admin
+Used by: Wolt employees, delivery partners.
+Admin portal for Wolt's last-mile delivery partners.
+Your JWT as a regular wolt.com user should grant you limited access.
+	Domain	
+Critical
+	
+Eligible
+	
+Updated
+Jul 21, 2026
+	
+0 (-)
+
+corporate.wolt.com
+Keywords: admin
+Used by: Wolt employees, corporate customers.
+Admin portal for Wolt's corporate customers.
+Your JWT as a regular wolt.com user should grant you limited access.
+	Domain	
+Critical
+	
+Eligible
+	
+Updated
+Jul 21, 2026
+	
+0 (-)
+
+authentication.wolt.com
+Keywords: OAuth2, OIDC, JWT
+Used by: Regular wolt.com users, Wolt employees, other services (service-to-service communication).
+Handles the vast majority of our authN/authZ. In other words, JWTs signed by this service can grant you access to other services/APIs.
+Your JWT as a regular wolt.com user comes from this service.
+	Domain	
+Critical
+	
+Eligible
+	
+Updated
+Jul 21, 2026
+	
+0 (-)
+1-7 of 7
+Tier 2
+In scope
+Excluded Assets
+Out of scope
+Wolt
+https://wolt.com
+Bounty launched in Jul 2026
+Response efficiency: 100%
+Submit without Report Assistant
+Stats
+Total bounties paid	<$10,000
+Average bounty	-
+Top bounty	$2,500
+Bounties paid | 90 days	$1 - $5,000
+Reports received | 90 days	473
+Last report resolved	-
+Reports resolved	0
+Hackers thanked	1
+Assets In Scope	12
+© HackerOne
+Opportunities
+Security
+Leaderboard
+Blog
+Status
+Docs
+Support
+Disclosure Guidelines
+Press
+Privacy
+Terms

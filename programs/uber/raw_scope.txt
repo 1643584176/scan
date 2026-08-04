@@ -1,0 +1,358 @@
+Skip to main content  >
+Learn more about HackerOne
+Log in
+Security page
+Program guidelines
+Scope
+Hacktivity
+Thanks
+Updates
+Collaborators
+Search
+Scope
+All scopes
+Maximum severity
+Any
+Bounty eligibility
+All
+Download Burp Suite Project Configuration File
+Download CSV
+View changes (Last updated on June 8, 2026)
+1-23 of 23
+Asset name
+	Type
+	Coverage
+	Max. severity
+	Bounty
+	Last update
+	Resolved Reports 
+
+uber.com	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+May 6, 2026
+	
+337 (13%)
+
+Recon Data
+Uber provides endpoints to determine whether an asset belongs to Uber:
+https://appsec-analysis.uber.com/public/bugbounty/ListDomains
+https://appsec-analysis.uber.com/public/bugbounty/ListIPs
+All of the endpoints support offset and limit as optional parameters.
+Example: https://appsec-analysis.uber.com/public/bugbounty/ListDomains?offset=0&limit=100.
+The public endpoints for asset information are for recon purposes. Information returned by those endpoints (or not) does not mean a bounty is guaranteed.
+	Other	
+In scope
+	
+None
+	
+Eligible
+	
+May 8, 2023
+	
+98 (4%)
+
+*ubereats.com
+Includes all subdomains (*.ubereats.com) except subdomains listed in out of scope.
+	Other	
+In scope
+	
+None
+	
+Eligible
+	
+Jul 13, 2023
+	
+89 (3%)
+
+*.uberinternal.com	Other	
+In scope
+	
+None
+	
+Eligible
+	
+Jul 13, 2023
+	
+36 (1%)
+
+uber.onelogin.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+uber.com.cn
+Any asset under *.uber.com.cn is not eligible for Uber bounty programs. This and any other asset related to Uber in China belongs to Didi Chuxing.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+scaledsolutions*.uber.com	Wildcard	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Oct 6, 2025
+	
+0 (0%)
+
+people.uber.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+newsroom.uber.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+merchants.ubereats.com
+Reports of broken access control or privilege escalation that affect only organization‑scoped roles within the reporter’s own organization (e.g., a Staff role performing Manager‑only actions in the same organization) are out of scope for the Merchants application. This exclusion does not apply to cross‑tenant access, such findings remain in scope.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Feb 10, 2026
+	
+0 (0%)
+
+love.uber.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+https://brand.uber.com	URL	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Feb 1, 2024
+	
+0 (0%)
+
+https://assets.uber.com	URL	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Feb 1, 2024
+	
+0 (0%)
+
+Fraud Reports
+Fraud reports are out of scope and ineligible for bounties. This includes reports detailing the ability to take free rides and evade payment.
+	Other	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jan 15, 2025
+	
+0 (0%)
+
+et.uber.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+eng.uber.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+drive.uber.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+central-beta.uber.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 8, 2026
+	
+0 (0%)
+
+bizblog.uber.com	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+
+*scaledsolutions.uber.com	Wildcard	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Oct 6, 2025
+	
+0 (0%)
+
+*.ubertransit.io
+This asset is not eligible for Uber bounty programs.
+	Other	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jan 24, 2023
+	
+0 (0%)
+
+*.uberscoot.us
+This asset is not eligible for Uber bounty programs.
+	Other	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jan 24, 2023
+	
+0 (0%)
+
+*.ubercarshare.com	Other	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jul 13, 2023
+	
+0 (0%)
+1-23 of 23
+Uber
+https://www.uber.com
+Bounty launched in Mar 2016
+Response efficiency: 82%
+Submit without Report Assistant
+Rewards
+
+Severity
+
+Rewards
+
+Low
+
+Avg. bounty $300
+31.23% submissions
+
+$300
+Medium
+
+Avg. bounty $991
+44.73% submissions
+
+$500 – $2,500
+High
+
+Avg. bounty $5,904
+20.33% submissions
+
+$4,000 – $11,000
+Critical
+
+Avg. bounty n/a
+3.72% submissions
+
+$11,000 – $15,000
+Stats
+Total bounties paid	$4,454,927
+Average bounty range	$500 - $700
+Top bounty range	$3,000 - $50,000
+Bounties paid | 90 days	$98,248
+Reports received | 90 days	433
+Last report resolved	15 hours ago
+Reports resolved	2680
+Hackers thanked	1153
+Assets In Scope	4
+© HackerOne
+Opportunities
+Security
+Leaderboard
+Blog
+Status
+Docs
+Support
+Disclosure Guidelines
+Press
+Privacy
+Terms

@@ -1,0 +1,48 @@
+======================================================================
+[1] Points Shop 未登录面
+======================================================================
+/points/shop/                                 -> 0 len=45 final= title=None
+/points/shop/c/avatar/                        -> 0 len=45 final= title=None
+/points/shop/c/profile/                       -> 0 len=25 final= title=None
+/points/shop/c/background/                    -> 0 len=25 final= title=None
+/points/shop/c/animated-avatar/               -> 0 len=25 final= title=None
+/points/shop/c/emoticon/                      -> 0 len=45 final= title=None
+/points/shop/c/miniprofile/                   -> 0 len=25 final= title=None
+/points/shop/c/itembundles                    -> 0 len=25 final= title=None
+/points/shop/c/profilebundles                 -> 0 len=25 final= title=None
+
+--- points shop 参数反射 ---
+?sort=XVXZTOKEN -> 0 反射=0
+?category=XVXZTOKEN -> 0 反射=0
+?query=XVXZTOKEN -> 200 反射=31
+
+--- points API 端点 ---
+/points/shop/c/featured/                      -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html>\n<html class=" responsive DesktopUI" lang="en"  >\n<head>\n\t<meta http-equiv="Content-T'
+/points/shop/c/search/                        -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html>\n<html class=" responsive DesktopUI" lang="en"  >\n<head>\n\t<meta http-equiv="Content-T'
+/points/ajaxgetitemprice/                     -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html>\n<html class=" responsive DesktopUI" lang="en"  >\n<head>\n\t<meta http-equiv="Content-T'
+/points/ajaxgetbalance/                       -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html>\n<html class=" responsive DesktopUI" lang="en"  >\n<head>\n\t<meta http-equiv="Content-T'
+/points/shop/ajaxquery/                       -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html>\n<html class=" responsive DesktopUI" lang="en"  >\n<head>\n\t<meta http-equiv="Content-T'
+
+======================================================================
+[2] login_store.js strRedirectURL 完整校验逻辑
+======================================================================
+@947: ...orm || document.forms['logon'] );  	this.m_fnOnFailure = rgOptions.fnOnFailure || null; 	this.m_fnOnSuccess = rgOptions.fnOnSuccess || null;  	this.m_strRedirectURL = rgOptions.strRedirectURL || (this.m_bIsMobile ? '' : strBaseURL); 	this.m_strSessionID = rgOptions.strSessionID || null;  	this.m_strUsernameEntered = null; 	this.m_strUsernameCanonical = null;  	if ( rgOptions.gidCaptcha ) 		this.Up...
+
+@974: ...n'] );  	this.m_fnOnFailure = rgOptions.fnOnFailure || null; 	this.m_fnOnSuccess = rgOptions.fnOnSuccess || null;  	this.m_strRedirectURL = rgOptions.strRedirectURL || (this.m_bIsMobile ? '' : strBaseURL); 	this.m_strSessionID = rgOptions.strSessionID || null;  	this.m_strUsernameEntered = null; 	this.m_strUsernameCanonical = null;  	if ( rgOptions.gidCaptcha ) 		this.UpdateCaptcha( rgOptions.gidC...
+
+@19556: ...if ( this.m_fnOnSuccess ) 	{ 		this.m_fnOnSuccess(); 	} 	else if ( $J('#openidForm').length ) 	{ 				$J('#openidForm').submit(); 	} 	else if ( this.m_strRedirectURL != '' ) 	{ 		// If this isn't one of our URLs, reject anything that looks like it has a protocol in it. 		if ( this.m_strRedirectURL.match ( /^[^\/]*:/i ) ) 		{ 			if ( this.m_strRedirectURL.replace( /^http:/, 'https:' ).indexOf( this....
+
+@19689: ...else if ( this.m_strRedirectURL != '' ) 	{ 		// If this isn't one of our URLs, reject anything that looks like it has a protocol in it. 		if ( this.m_strRedirectURL.match ( /^[^\/]*:/i ) ) 		{ 			if ( this.m_strRedirectURL.replace( /^http:/, 'https:' ).indexOf( this.m_strSiteBaseURL.replace( /^http:/, 'https:') ) !== 0 ) 			{ 				this.m_strRedirectURL = ''; 			} 		} 		// browsers treat multiple le...
+
+@19747: ...n't one of our URLs, reject anything that looks like it has a protocol in it. 		if ( this.m_strRedirectURL.match ( /^[^\/]*:/i ) ) 		{ 			if ( this.m_strRedirectURL.replace( /^http:/, 'https:' ).indexOf( this.m_strSiteBaseURL.replace( /^http:/, 'https:') ) !== 0 ) 			{ 				this.m_strRedirectURL = ''; 			} 		} 		// browsers treat multiple leading slashes as the end of the protocol specifier 		if ( ...
+
+@19878: ...		{ 			if ( this.m_strRedirectURL.replace( /^http:/, 'https:' ).indexOf( this.m_strSiteBaseURL.replace( /^http:/, 'https:') ) !== 0 ) 			{ 				this.m_strRedirectURL = ''; 			} 		} 		// browsers treat multiple leading slashes as the end of the protocol specifier 		if ( this.m_strRedirectURL.match( /^\/\// ) ) { this.m_strRedirectURL = ''; } 		if( this.m_strRedirectURL  ) 			window.location = this.m...
+
+@20004: ...!== 0 ) 			{ 				this.m_strRedirectURL = ''; 			} 		} 		// browsers treat multiple leading slashes as the end of the protocol specifier 		if ( this.m_strRedirectURL.match( /^\/\// ) ) { this.m_strRedirectURL = ''; } 		if( this.m_strRedirectURL  ) 			window.location = this.m_strRedirectURL; 		else 			window.location = this.m_strSiteBaseURL 	} 	else if ( this.m_bIsMobile ) 	{ 				var oauthJSON = doc...
+
+@20047: ...; 			} 		} 		// browsers treat multiple leading slashes as the end of the protocol specifier 		if ( this.m_strRedirectURL.match( /^\/\// ) ) { this.m_strRedirectURL = ''; } 		if( this.m_strRedirectURL  ) 			window.location = this.m_strRedirectURL; 		else 			window.location = this.m_strSiteBaseURL 	} 	else if ( this.m_bIsMobile ) 	{ 				var oauthJSON = document.forms['logon'].elements['oauth'] && d...
+
+@20083: ...ple leading slashes as the end of the protocol specifier 		if ( this.m_strRedirectURL.match( /^\/\// ) ) { this.m_strRedirectURL = ''; } 		if( this.m_strRedirectURL  ) 			window.location = this.m_strRedirectURL; 		else 			window.location = this.m_strSiteBaseURL 	} 	else if ( this.m_bIsMobile ) 	{ 				var oauthJSON = document.forms['logon'].elements['oauth'] && document.forms['logon'].elements['oau...
+
+@20129: ... specifier 		if ( this.m_strRedirectURL.match( /^\/\// ) ) { this.m_strRedirectURL = ''; } 		if( this.m_strRedirectURL  ) 			window.location = this.m_strRedirectURL; 		else 			window.location = this.m_strSiteBaseURL 	} 	else if ( this.m_bIsMobile ) 	{ 				var oauthJSON = document.forms['logon'].elements['oauth'] && document.forms['logon'].elements['oauth'].value; 		if ( oauthJSON && ( oauthJSON.le...
+

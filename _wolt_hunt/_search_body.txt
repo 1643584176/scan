@@ -1,0 +1,2 @@
+URL: https://consumer-api.wolt.com/consumer-api/consumer-assortment/v1/venues/slug/wolt-market-kamppi/assortment/items/search?language=fi
+BODY: {"q":"pizza"}

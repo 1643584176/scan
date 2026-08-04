@@ -1,0 +1,14 @@
+GET v2/config  -> 200 application/json | {"ab_assignments":{"confirm_alternative_delivery_methods":"variant","deal-end-date-in-venue-web":"treatment","deliveroo_out_of_range_bottom_sheet_android":"treatment","discovery-window-shopping":"treatment","doordash_out_of_range_bottom_sheet":"treat
+GET 58da504ba3284104e807127d/districts  -> 200 application/json | {"city_districts":[{"location":[24.93124526977539,60.167604664294934],"name":"Kamppi","slug":"kamppi"},{"location":[24.94171661376953,60.171489927289585],"name":"Kluuvi","slug":"kluuvi"},{"location":[24.923263015747068,60.17947248716521],"name":"Tool
+GET consumer-api/address-fields  -> 200 application/json | {"countries":{"ALB":{"alpha_2_code":"AL","apartment":{"address_fields":[{"items":[{"id":"building_name","placeholder":"e.g. Yuho Tower","required":false,"title":"Building name"}],"template":"textbox"},{"items":[{"id":"entrance","placeholder":"e.g. A 
+GET config/consents  -> 200 application/json | [{"country":"DNK","default":false,"id":"5dfb4476d9ce7937f22ac055","required":true,"slug":"consumerconsents-woltwide-accepttermsandconditions","title":"I've read and agree with the User Terms of Service. I understand that my personal data will be proc
+GET pages/explore  -> 404 text/plain; charset=UTF-8 | Article not found
+GET slug/wolt-market-kamppi  -> 404 text/plain | 404 page not found
+POST v1/consent-enrollments-config  -> 200 application/json | {"consents":[{"children_consents":[{"default":false,"id":"1ce7c01e-9264-4f9b-9485-4503c936e590","is_bundle":false,"is_required":false,"latest_version":{"content":{"description_text":"We use technologies to perform important functions for our services
+POST consumer_client/exposures  -> 429  | 
+GET venues/60ebeb71c6904c2caf035f71  -> 404 text/plain | 404 page not found
+GET 60ebeb71c6904c2caf035f71/menu  -> 404 text/plain | 404 page not found
+GET pages/search  -> 410 application/json | {"msg": "We\u2019ve updated the Wolt app! To continue using the app, please go to the App Store and download the latest update.", "title": "Something went wrong \ud83d\ude15", "status": "ERR", "error_code": 430, "params": null, "data": null}
+GET v1/search  -> 404 text/plain | 404 page not found
+GET users/me  -> 404 text/plain | 404 page not found
+POST evaluation/evaluate-struct  -> 200 application/json | {"context":{},"successes":[{"name":"test","value":null,"exposure_enabled":false,"exposure_context":null,"additional_exposures":[],"value_type":"VALUE_TYPE_UNSPECIFIED"}]}

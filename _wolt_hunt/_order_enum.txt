@@ -1,0 +1,54 @@
+/order-xp/web/v1/orders -> 404 :: 404 page not found
+GET /order-xp/web/v1/orders -> 404
+/order-xp/web/v2/orders -> 404 :: 404 page not found
+GET /order-xp/web/v2/orders -> 404
+/order-xp/web/v1/orders/place -> 404 :: 404 page not found
+GET /order-xp/web/v1/orders/place -> 404
+/order-xp/web/v2/orders/place -> 404 :: 404 page not found
+GET /order-xp/web/v2/orders/place -> 404
+/order-xp/web/v1/pages/order-confirmation -> 404 :: 404 page not found
+GET /order-xp/web/v1/pages/order-confirmation -> 404
+/order-xp/web/v2/pages/order-confirmation -> 404 :: 404 page not found
+GET /order-xp/web/v2/pages/order-confirmation -> 404
+/order-xp/web/v1/purchase -> 404 :: 404 page not found
+GET /order-xp/web/v1/purchase -> 404
+/order-xp/web/v2/purchase -> 404 :: 404 page not found
+GET /order-xp/web/v2/purchase -> 404
+/order-xp/web/v1/carts -> 404 :: 404 page not found
+GET /order-xp/web/v1/carts -> 404
+/order-xp/web/v2/carts -> 404 :: 404 page not found
+GET /order-xp/web/v2/carts -> 404
+/order-xp/web/v1/cart -> 404 :: 404 page not found
+GET /order-xp/web/v1/cart -> 404
+/order-xp/web/v2/cart -> 404 :: 404 page not found
+GET /order-xp/web/v2/cart -> 404
+/order-xp/web/v1/pages/cart -> 404 :: 404 page not found
+GET /order-xp/web/v1/pages/cart -> 404
+/order-xp/web/v2/pages/cart -> 404 :: 404 page not found
+GET /order-xp/web/v2/pages/cart -> 404
+/order-xp/web/v1/baskets -> 404 :: 404 page not found
+GET /order-xp/web/v1/baskets -> 404
+/order-xp/web/v2/baskets -> 404 :: 404 page not found
+GET /order-xp/web/v2/baskets -> 404
+/order-xp/web/v1/checkout -> 404 :: 404 page not found
+GET /order-xp/web/v1/checkout -> 404
+/order-xp/web/v2/checkout -> 404 :: 404 page not found
+GET /order-xp/web/v2/checkout -> 404
+/order-xp/web/v1/pages/checkout -> 404 :: 404 page not found
+GET /order-xp/web/v1/pages/checkout -> 404
+/order-xp/web/v1/orders/guest -> 404 :: 404 page not found
+GET /order-xp/web/v1/orders/guest -> 404
+/order-xp/web/v2/orders/guest -> 404 :: 404 page not found
+GET /order-xp/web/v2/orders/guest -> 404
+/order-xp/web/v1/guest/orders -> 404 :: 404 page not found
+GET /order-xp/web/v1/guest/orders -> 404
+/order-xp/web/v2/guest/orders -> 404 :: 404 page not found
+GET /order-xp/web/v2/guest/orders -> 404
+/order-xp/api/v1/orders -> 404 :: 404 page not found
+GET /order-xp/api/v1/orders -> 404
+/order-xp/api/v2/orders -> 404 :: 404 page not found
+GET /order-xp/api/v2/orders -> 404
+/order-xp/api/v1/carts -> 404 :: 404 page not found
+GET /order-xp/api/v1/carts -> 404
+/order-xp/api/v2/carts -> 404 :: 404 page not found
+GET /order-xp/api/v2/carts -> 404

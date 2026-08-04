@@ -1,0 +1,18 @@
+=== [1] GetWishlistSortedFiltered 带 context/data_request ===
+<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Please verify that all required parameters are being sent</body></html>
+[HTTP 400 | 142B]
+
+
+=== [2] GetWishlistItemCount(3 个不同用户) ===
+  76561197960434622 -> {"response":{"count":41}}
+  76561198092420573 -> {"response":{"count":2}}
+  99999999999999999 -> {"response":{}}
+
+
+=== [3] GetGamesFollowed 完整(前 2 个用户) ===
+  76561197960434622 ->
+{"response":{"appids":[211,753,765,18500,20500,39210,43110,109300,204650,210970,221410,223300,231200,232090,236430,244770,261550,282140,300550,304650,305620,316790,344740,374320,377160,414120,419270,435150,508440,578650,814380,874260]}}
+
+  76561198092420573 ->
+{"response":{}}
+

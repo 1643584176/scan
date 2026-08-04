@@ -14,6 +14,10 @@ from assettrace.urls import canonicalize_url
 
 PERSISTED_RESPONSE_HEADERS = frozenset(
     {
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
         "cache-control",
         "content-length",
         "content-security-policy",
@@ -22,11 +26,15 @@ PERSISTED_RESPONSE_HEADERS = frozenset(
         "cross-origin-opener-policy",
         "cross-origin-resource-policy",
         "etag",
+        "expires",
         "last-modified",
         "permissions-policy",
+        "pragma",
         "referrer-policy",
         "server",
+        "set-cookie",
         "strict-transport-security",
+        "vary",
         "x-content-type-options",
         "x-frame-options",
         "x-powered-by",

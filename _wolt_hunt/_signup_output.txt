@@ -1,0 +1,37 @@
+clicked Sign up
+MODAL INPUTS:
+  INPUT type=email placeholder="" name="email" required=False autocomplete="email"
+
+BUTTONS:
+  "Oskemen" testid=header.address-select-button
+  "Partners" testid=
+  "Log in" testid=UserStatus.Login
+  "Sign up" testid=UserStatus.Signup
+  "Log in for saved addresses" testid=login-button-text
+  "Finland" testid=
+  "English" testid=Footer.OpenLanguageSelectionDialogButton
+  "Theme" testid=
+  "Cookies" testid=
+  "Continue with Google" testid=MethodSelect.Google
+  "Continue with Apple" testid=MethodSelect.Apple
+  "Continue with Facebook" testid=MethodSelect.Facebook
+
+URL: https://wolt.com/en/fin
+TITLE: Wolt Delivery | Food, Groceries and more in 30 minutes | Finland
+
+VISIBLE TEXT:
+  "Oskemen"
+  "Partners"
+  "Partners"
+  "Jobs"
+  "Groceries.Delivered."
+  "Groceries."
+  "Groceries."
+  "G"
+  "r"
+  "o"
+  "c"
+  "e"
+  "r"
+  "i"
+  "e"

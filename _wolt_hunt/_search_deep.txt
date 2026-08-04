@@ -1,0 +1,14 @@
+ALL keys: ['id', 'advertising_info', 'alcohol_permille', 'allowed_delivery_methods', 'available_times', 'barcode_gtin', 'caffeine_info', 'can_be_promoted', 'checksum', 'description', 'deposit', 'dietary_preferences', 'disabled_info', 'fulfillment_lead_time', 'has_extra_info', 'images', 'videos', 'is_cutlery', 'is_no_contact_delivery_allowed', 'is_wolt_plus_only', 'lowest_price', 'lowest_price_v2', 'max_quantity_per_purchase', 'min_quantity_per_purchase', 'name', 'options', 'original_price', 'original_net_price', 'item_price_discount_validity_period', 'price', 'net_price', 'product_hierarchy_level_id', 'product_hierarchy_tags', 'purchasable_balance', 'restrictions', 'return_policy', 'sell_by_weight_config', 'should_display_purchasable_balance', 'tags', 'unit_info', 'unit_price', 'variant', 'vat_category_code', 'vat_percentage', 'vat_percentage_decimal', 'external_compliance_link', 'consent_info']
+  price-related: lowest_price = None
+  price-related: lowest_price_v2 = None
+  price-related: original_price = None
+  price-related: original_net_price = None
+  price-related: item_price_discount_validity_period = None
+  price-related: price = 741
+  price-related: net_price = None
+  price-related: unit_price = {'base': 1, 'original_price': None, 'original_net_price': None, 'price': 1522, 'net_price': None, 'unit': 'kilogram'}
+  price-related: vat_percentage = 13
+  price-related: vat_percentage_decimal = 13.5
+Empty search: 422
+Cross venue: 404 len=57
+limit=1000: items=106

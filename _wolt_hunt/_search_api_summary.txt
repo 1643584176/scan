@@ -1,0 +1,13 @@
+POST https://consumer-api.wolt.com/consumer-api/consents-router/v1/consent-enrollments-config
+GET  https://restaurant-api.wolt.com/v2/config
+GET  https://restaurant-api.wolt.com/v1/cities/58da504ba3284104e807127d/districts
+GET  https://consumer-api.wolt.com/order-xp/web/v1/venue/slug/wolt-market-kamppi/dynamic/?selected_delivery_method=homedelivery
+GET  https://restaurant-api.wolt.com/v2/config?lat=49.94727165591465&lon=82.62239438704967
+GET  https://restaurant-api.wolt.com/v1/consumer-api/address-fields?language=en&lat=49.94727165591465&lon=82.62239438704967
+POST https://api.avo.app/inspector/v1/track
+POST https://consumer-api.wolt.com/regatta/consumer_client/exposures
+POST https://consumer-api.wolt.com/regatta/consumer_client/exposures
+POST https://consumer-api.wolt.com/regatta/consumer_client/exposures
+GET  https://restaurant-api.wolt.com/v2/config/consents
+POST https://api.avo.app/inspector/v1/track
+POST https://consumer-api.wolt.com/consumer-api/consumer-assortment/v1/venues/slug/wolt-market-kamppi/assortment/items/search?language=fi

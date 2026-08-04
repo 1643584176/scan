@@ -1,0 +1,58 @@
+======================================================================
+[1] ajax 端点未登录 GET/POST 行为
+======================================================================
+GET  /ajaxgetcreatorhomeinfo                          -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+POST /ajaxgetcreatorhomeinfo                          -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+GET  /ajaxgetvanityandclanid/                         -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+POST /ajaxgetvanityandclanid/                         -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+GET  /announcements/ajaxgetlocalization/              -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+POST /announcements/ajaxgetlocalization/              -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+GET  /announcements/ajaxgetmyvote/                    -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+POST /announcements/ajaxgetmyvote/                    -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+GET  /events/ajaxgetdynamiceventmetadata              -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+POST /events/ajaxgetdynamiceventmetadata              -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+GET  /ajaxcreateupdatedeletepartnerevents/            -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+POST /ajaxcreateupdatedeletepartnerevents/            -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+GET  /ajaxgetpartnereventpermissions/                 -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+POST /ajaxgetpartnereventpermissions/                 -> 200 ct=text/html; charset=UTF-8 '<!DOCTYPE html> <html class="responsive"> <head> \t\t<!-- <meta name="viewport" content="width=device-width,initial-scale='
+
+======================================================================
+[2] main.js 中端点调用上下文
+======================================================================
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /ajaxgetcreatorhomeinfo:
+   ..._mapClanToCreatorHome.set(e.GetAccountID(),r)}return this.m_mapClanToCreatorHome.get(e.GetAccountID()).m_promise}async InternalCreatorHome(e,t){let r={get_appids:!0,l:S.LANGUAGE,origin:self.origin},i=S.STORE_BASE_URL+"curator/"+e.GetClanAccountID()+"/ajaxgetcreatorhomeinfo",n=await Ei().get(i,{params:r,cancelToken:t&&t.token});return e.Initialize(n.data),e}async LoadCreatorHomeListForAppIncludeHiddden(e,t){if(this.LazyInit(),!this.m_mapAppToCreatorIDList.has(e)){let r={appid:e},i=S.STORE_BASE_UR...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /ajaxgetvanityandclanid/:
+   ...et(e);let t="appid_"+e;return this.m_mapPromisesLoading.has(t)||this.m_mapPromisesLoading.set(t,this.InternalLoadOGGClanInfoForAppID(e)),this.m_mapPromisesLoading.get(t)}async InternalLoadOGGClanInfoForAppID(e){const t=S.COMMUNITY_BASE_URL+"ogg/"+e+"/ajaxgetvanityandclanid/";let r=null;try{r=(await Ei().get(t,{params:this.GetRequestParam()})).data}catch(e){}return r?(this.InternalSetupValue(r),this.m_mapAppIDToClanInfo.get(e)):null}async LoadOGGClanInfoForIdentifier(e){if(this.LazyInit(),this.m_...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /ajaxgetvanityandclanid/:
+   ...owerCase();return this.m_mapPromisesLoading.has(t)||this.m_mapPromisesLoading.set(t,this.InternalLoadOGGClanInfoForIdentifier(e)),this.m_mapPromisesLoading.get(t)}async InternalLoadOGGClanInfoForIdentifier(e){const t=S.COMMUNITY_BASE_URL+"games/"+e+"/ajaxgetvanityandclanid/";let r=await Ei().get(t,{params:this.GetRequestParam()});return this.InternalSetupValue(r.data),this.m_mapVanityToClanInfo.get(e?.toLocaleLowerCase())}async LoadOGGClanInfoForGroupVanity(e){if(this.LazyInit(),this.m_mapVanity...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /ajaxgetvanityandclanid/:
+   ..._mapPromisesLoading.has(t)||this.m_mapPromisesLoading.set(t,this.InternalLoadOGGClanInfoForGroupVanity(e?.toLocaleLowerCase())),this.m_mapPromisesLoading.get(t)}async InternalLoadOGGClanInfoForGroupVanity(e){const t=S.COMMUNITY_BASE_URL+"groups/"+e+"/ajaxgetvanityandclanid/";let r=await Ei().get(t,{params:this.GetRequestParam()});return this.InternalSetupValue(r.data),this.m_mapVanityToClanInfo.get(e?.toLocaleLowerCase())}async LoadClanInfoForClanSteamID(e){this.LazyInit();let t=e.GetAccountID()...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /ajaxgetvanityandclanid/:
+   ...ding.get(r)}async LoadClanInfoForClanAccountID(e){const t=Si.InitFromClanID(e);return this.LoadClanInfoForClanSteamID(t)}async InternalLoadClanInfoForClanSteamID(e){let t=e.GetAccountID();const r=S.COMMUNITY_BASE_URL+"gid/"+e.ConvertTo64BitString()+"/ajaxgetvanityandclanid/";let i=await Ei().get(r,{params:this.GetRequestParam()});return this.InternalSetupValue(i.data),this.m_mapClanAccountIDToClanInfo.get(t)}GetOGGClanInfo(e){return"string"==typeof e?this.m_mapVanityToClanInfo.get(e?.toLocaleLow...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /announcements/ajaxgetlocalization/:
+   ...dates().catch((e=>{console.log("UpdatedApps failed to load: ",e.response.data)})),this.m_mapUpdatedApps&&this.m_mapUpdatedApps.get(e)}async LoadClanEventLocalizationFromAnnouncementGID(e,t){let r=S.COMMUNITY_BASE_URL+"gid/"+e.ConvertTo64BitString()+"/announcements/ajaxgetlocalization/"+t;return(await Ei().get(r)).data.localization}async LoadBatchPartnerEventsByEventGIDsOrAnnouncementGIDs(e,t,r){const i=new Array,n=S.STORE_BASE_URL+"events/ajaxgetbatchedpartnerevent/",a=Gp(ne(S.LANGUAGE));let s=n...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /announcements/ajaxgetmyvote/:
+   ...etServiceTransport(),t);1==i.GetEResult()&&(r=!!i.Body().voted_up()||!i.Body().voted_down()&&void 0)}else{const i="store"==z(),n=i?S.STORE_BASE_URL+"actions/ajaxgetmyannouncementvote":S.COMMUNITY_BASE_URL+"gid/"+e.clanSteamID.ConvertTo64BitString()+"/announcements/ajaxgetmyvote/"+e.AnnouncementGID,a={gid:i?e.AnnouncementGID:void 0},s=await Ei().get(n,{withCredentials:!0,cancelToken:t.token,params:a});r=!!s.data.voted_up||!s.data.voted_down&&void 0}return this.m_mapAnnounceGIDToVote.set(e.Announc...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /events/ajaxgetdynamiceventmetadata:
+   ...icData(e,t){let r=new Array,i="";if(e.forEach(((e,t)=>{this.m_mapYouTubeVideo.has(e)?r.push(this.m_mapYouTubeVideo.get(e)):(i.length>0&&(i+=","),i+=e)})),0==i.length)return r;let n={youtubevideoids:i},a=null;return a=await Ei().get(S.STORE_BASE_URL+"/events/ajaxgetdynamiceventmetadata",{params:n,cancelToken:t.token}),a&&a.data&&a.data.youtube&&(0,Mi.h5)((()=>{a.data.youtube.forEach(((e,t)=>{this.m_mapYouTubeVideo.set(e.videoid,e),r.push(e)}))})),r}async LoadSharedFileDynamicData(e,t){let r=new A...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /events/ajaxgetdynamiceventmetadata:
+   ...eDynamicData(e,t){let r=new Array,i="";if(e.forEach(((e,t)=>{this.m_mapSharedFile.has(e)?r.push(this.m_mapSharedFile.get(e)):(i.length>0&&(i+=","),i+=e)})),0==i.length)return r;let n={sharedfileids:i},a=null;return a=await Ei().get(S.STORE_BASE_URL+"/events/ajaxgetdynamiceventmetadata",{params:n,cancelToken:t.token}),a&&a.data&&a.data.sharedfiles&&(0,Mi.h5)((()=>{a.data.sharedfiles.forEach(((e,t)=>{this.m_mapSharedFile.set(e.sharedfileid,e),r.push(e)}))})),r}}(0,n.Cg)([Mi.sH],rm.prototype,"m_map...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /ajaxcreateupdatedeletepartnerevents/:
+   ...as(t)&&(this.m_mapExistingEvents.get(t).deleteInProgress=!0);let r=null,i=new URLSearchParams;return i.append("sessionid",S.SESSIONID),i.append("bDelete","1"),i.append("gid",t),r=await Ei().post(S.COMMUNITY_BASE_URL+"/gid/"+e.ConvertTo64BitString()+"/ajaxcreateupdatedeletepartnerevents/",i),this.RemoveGIDFromList(e,t),r.data}RemoveGIDFromList(e,t){if(this.m_mapExistingEvents.delete(t),this.m_mapClanToGIDs.has(e.GetAccountID())){let r=this.m_mapClanToGIDs.get(e.GetAccountID()),i=r.indexOf(t);i>=0...
+
+[cs_main_js_v_OsjG7cYuHCUg_amp_l_english_amp__cdn_china_eccdnx.js] /ajaxgetpartnereventpermissions/:
+   ...this.m_mapClanToUserPermissions.has(r)){let t=new m_(e.GetAccountID());this.m_mapClanToUserPermissions.set(r,{result:t,promise:d_.RemapToPromise(t),bLoaded:!1})}try{if(Boolean(C.logged_in)){let n=S.COMMUNITY_BASE_URL+"gid/"+e.ConvertTo64BitString()+"/ajaxgetpartnereventpermissions/",a={};if("partnerweb"==z()?(n=S.PARTNER_BASE_URL+"partnerevents/ajaxgetpartnereventpermissions",a={clanaccountid:e.GetAccountID()}):"store"==z()&&(n=S.STORE_BASE_URL+"events/ajaxgetpartnereventpermissions",a={clanacco...
+
+
+======================================================================
+[3] 事件/公告页参数反射
+======================================================================

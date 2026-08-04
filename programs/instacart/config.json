@@ -1,0 +1,173 @@
+{
+  "name": "instacart",
+  "platform": "hackerone",
+  "program_url": "https://hackerone.com/instacart",
+  "username": "pccp",
+  "fetched_at": "2026-08-04T04:31:07+00:00",
+  "bounties": [
+    "$172",
+    "$50",
+    "$250",
+    "$719",
+    "$1,500",
+    "$2,106",
+    "$5,000",
+    "$6,175",
+    "$15,000",
+    "$200",
+    "$2,500",
+    "$20,000",
+    "$39,900"
+  ],
+  "scope": {
+    "in_scope": [
+      {
+        "name": "www.instacart.com",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "template.uat.foodstorm.com",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "shoppers.instacart.com",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "com.instacart.client",
+        "type": "Android: Play Store",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "api.instacart.com",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "admin.instacart.com",
+        "type": "iOS: App Store",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "*.instacart.tools",
+        "type": "Wildcard",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "*.instacart.com",
+        "type": "Wildcard",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      }
+    ],
+    "out_of_scope_domains": [
+      {
+        "name": "tech.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "news.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "life.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "instacart.careers",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "enterprise-status.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "design.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "covidresponse.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "corporate.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "carrotstore.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "careers.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "brand.instacart.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "*.email.instacart.com",
+        "type": "Wildcard",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      }
+    ],
+    "count": 8
+  },
+  "rules": {
+    "required_headers": [],
+    "user_agent": "",
+    "rate_limit": "",
+    "test_accounts": [],
+    "test_entities": [],
+    "forbidden": [
+      "Core Ineligible Findings are out of scope.",
+      "tech.instacart.com",
+      "news.instacart.com",
+      "life.instacart.com",
+      "instacart.careers",
+      "enterprise-status.instacart.com",
+      "design.instacart.com",
+      "covidresponse.instacart.com",
+      "corporate.instacart.com",
+      "carrotstore.instacart.com",
+      "careers.instacart.com",
+      "brand.instacart.com",
+      "*.email.instacart.com"
+    ],
+    "report_rules": [],
+    "notes": []
+  }
+}

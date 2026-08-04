@@ -1,0 +1,33 @@
+======================================================================
+[0] DNS 解析诊断
+======================================================================
+   steamcommunity.com           -> ['199.59.148.89']
+   api.steampowered.com         -> ['23.63.113.216']
+   store.steampowered.com       -> ['23.195.249.79']
+   www.playartifact.com         -> ['172.234.232.226']
+
+======================================================================
+[1] api.steampowered.com 深度端点
+======================================================================
+   GetWishlistSortedFiltered    -> 0 'Remote end closed connection without response'
+   GetGamesFollowedCount        -> 0 '<urlopen error timed out>'
+   GetWishlistItemCount         -> 0 '<urlopen error timed out>'
+   GetUserVoteSummary           -> 0 '<urlopen error timed out>'
+   P2Leaderboard                -> 0 '<urlopen error timed out>'
+   GetDepotPatchInfo            -> 0 '<urlopen error timed out>'
+   GetCDNForVideo               -> 0 'Remote end closed connection without response'
+   GetSteamPipeDomains          -> 0 '<urlopen error timed out>'
+   BroadcastPlayerStats         -> 0 '<urlopen error timed out>'
+   GetAuthSessionInfo           -> 0 '<urlopen error timed out>'
+   PollAuthSessionStatus        -> 0 '<urlopen error timed out>'
+   RSA_valve                    -> 0 '<urlopen error timed out>'
+   RSA_rand                     -> 0 '<urlopen error timed out>'
+   CurrentPlayers               -> 0 '<urlopen error timed out>'
+   GC1046930                    -> 0 '<urlopen error timed out>'
+
+======================================================================
+[2] steamcommunity 备用路径(steamstatic 等)
+======================================================================
+   https://steamcommunity-a.akamaihd.net/                                 -> 403 len=385
+   https://community.cloudflare.steamstatic.com/                          -> 403 len=97
+   https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f -> 200 len=535

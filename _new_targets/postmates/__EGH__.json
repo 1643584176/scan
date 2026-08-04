@@ -1,0 +1,17 @@
+{
+  "x-uber-origin": "eats-web",
+  "x-uber-source": "eats-web",
+  "x-uber-device": "eats-web",
+  "x-uber-device-id": "904d3b8b-36fd-49bf-bd6e-1906dc3a3e9e",
+  "x-uber-client-name": "ubereats_com",
+  "x-uber-client-version": "3.0.0",
+  "x-uber-web-application-id": "web-desktop",
+  "x-uber-device-language": "en-US",
+  "x-uber-eater-xp-uuid": "2440f207-fdb6-40da-b06c-4e666229dddf",
+  "x-uber-client-id": "postmates-web",
+  "x-uber-app-variant": "postmates",
+  "x-uber-analytics-session-id": "1bd3ac04-2ebd-49c6-9509-58e082d7cf98",
+  "x-uber-session-id": "1bd3ac04-2ebd-49c6-9509-58e082d7cf98",
+  "x-uber-client-session": "1bd3ac04-2ebd-49c6-9509-58e082d7cf98",
+  "x-uber-client-user-session-id": "1bd3ac04-2ebd-49c6-9509-58e082d7cf98"
+}

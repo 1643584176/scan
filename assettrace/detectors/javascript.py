@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from urllib.parse import urlsplit
 
 from assettrace.models import (
     AssetSnapshot,
@@ -59,7 +60,7 @@ SINK_PATTERNS = (
 
 class JavaScriptDetector:
     key = "javascript-static"
-    version = "1.1.0"
+    version = "1.4.0"
     supported_kinds = frozenset({"javascript"})
 
     def analyze(self, snapshot: AssetSnapshot) -> DetectorResult:
@@ -89,6 +90,27 @@ class JavaScriptDetector:
                 resolved = canonicalize_url(raw_url, snapshot.final_url or snapshot.url)
             except (InvalidUrl, ValueError):
                 continue
+            endpoint_host = (urlsplit(resolved).hostname or "").lower()
+            if _looks_internal_or_development_hostname(endpoint_host):
+                findings.append(
+                    FindingDraft(
+                        dedupe_key=f"internal-endpoint-host:{endpoint_host}",
+                        title="JavaScript references an internal or development host",
+                        category="asset-exposure",
+                        severity="low",
+                        confidence="high",
+                        evidence=(
+                            "A public JavaScript string references the "
+                            f"internal/development-looking host {endpoint_host}."
+                        ),
+                        remediation=(
+                            "Remove unused environment endpoints from production "
+                            "bundles and keep internal service names out of public "
+                            "client-side code."
+                        ),
+                        location=snapshot.url,
+                    )
+                )
             discoveries.append(
                 Discovery(
                     url=resolved,
@@ -135,6 +157,42 @@ class JavaScriptDetector:
                         fetch=True,
                     )
                 )
+                findings.append(
+                    FindingDraft(
+                        dedupe_key="public-source-map-reference",
+                        title="JavaScript exposes a source map reference",
+                        category="source-map-exposure",
+                        severity="info",
+                        confidence="high",
+                        evidence=f"The asset publishes sourceMappingURL to {map_url}.",
+                        remediation=(
+                            "Remove production sourceMappingURL comments or "
+                            "serve source maps only through an intended controlled path."
+                        ),
+                        location=snapshot.url,
+                    )
+                )
+                map_host = (urlsplit(map_url).hostname or "").lower()
+                if _looks_internal_or_development_hostname(map_host):
+                    findings.append(
+                        FindingDraft(
+                            dedupe_key=f"internal-source-map-host:{map_host}",
+                            title="JavaScript references an internal source map host",
+                            category="source-map-exposure",
+                            severity="low",
+                            confidence="high",
+                            evidence=(
+                                "A public JavaScript sourceMappingURL points to "
+                                f"the internal-looking host {map_host}."
+                            ),
+                            remediation=(
+                                "Remove production sourceMappingURL comments or "
+                                "publish source maps only through an intended "
+                                "public endpoint with access control."
+                            ),
+                            location=snapshot.url,
+                        )
+                    )
 
         return DetectorResult(
             findings=findings,
@@ -158,3 +216,27 @@ def _dedupe_discoveries(items: list[Discovery]) -> list[Discovery]:
     for item in items:
         unique[(item.url, item.kind, item.relation)] = item
     return list(unique.values())
+
+
+def _looks_internal_or_development_hostname(hostname: str) -> bool:
+    labels = hostname.strip(".").split(".")
+    for index, label in enumerate(labels):
+        if label in {
+            "development",
+            "internal",
+            "intranet",
+            "corp",
+            "private",
+            "localhost",
+            "staging",
+            "sandbox",
+            "qa",
+            "uat",
+            "local",
+        }:
+            return True
+        if "internal" in label:
+            return True
+        if label == "dev" and index < len(labels) - 1:
+            return True
+    return False

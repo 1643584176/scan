@@ -367,6 +367,216 @@ class IncrementalScanTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(findings[0]["detector_key"], "transport-tls")
         self.assertEqual(findings[0]["confidence"], "high")
 
+    async def test_internal_source_map_host_is_reported(self):
+        page_url = "https://example.test/"
+        script_url = "https://example.test/app.js"
+        map_url = "https://sourcemaps.internal.example.test/app.js.map"
+        fetcher = FakeFetcher(
+            {
+                page_url: (
+                    200,
+                    {"content-type": "text/html"},
+                    b'<script src="/app.js"></script>',
+                ),
+                script_url: (
+                    200,
+                    {"content-type": "application/javascript"},
+                    (
+                        b'console.log("ok");\n'
+                        b"//# sourceMappingURL="
+                        + map_url.encode("utf-8")
+                    ),
+                ),
+                map_url: (
+                    404,
+                    {"content-type": "application/json"},
+                    b"{}",
+                ),
+            }
+        )
+        engine = ScanEngine(self.repository, self.settings, fetcher=fetcher)
+
+        result = await engine.scan_url(page_url)
+        project_id = result["project"]["project"]["id"]
+        findings = self.repository.list_findings(project_id)
+
+        self.assertTrue(
+            any(
+                item["category"] == "source-map-exposure"
+                and item["severity"] == "low"
+                for item in findings
+            )
+        )
+
+    async def test_internal_endpoint_host_is_reported(self):
+        page_url = "https://example.test/"
+        script_url = "https://example.test/app.js"
+        fetcher = FakeFetcher(
+            {
+                page_url: (
+                    200,
+                    {"content-type": "text/html"},
+                    b'<script src="/app.js"></script>',
+                ),
+                script_url: (
+                    200,
+                    {"content-type": "application/javascript"},
+                    (
+                        b'const api = "https://api.development.example.test/v1";'
+                    ),
+                ),
+            }
+        )
+        engine = ScanEngine(self.repository, self.settings, fetcher=fetcher)
+
+        result = await engine.scan_url(page_url)
+        project_id = result["project"]["project"]["id"]
+        findings = self.repository.list_findings(project_id)
+
+        self.assertTrue(
+            any(
+                item["category"] == "asset-exposure"
+                and item["severity"] == "low"
+                for item in findings
+            )
+        )
+
+    async def test_public_dev_tld_is_not_reported_as_internal(self):
+        page_url = "https://example.test/"
+        script_url = "https://example.test/app.js"
+        fetcher = FakeFetcher(
+            {
+                page_url: (
+                    200,
+                    {"content-type": "text/html"},
+                    b'<script src="/app.js"></script>',
+                ),
+                script_url: (
+                    200,
+                    {"content-type": "application/javascript"},
+                    b'const docs = "https://react.dev/reference/react";',
+                ),
+            }
+        )
+        engine = ScanEngine(self.repository, self.settings, fetcher=fetcher)
+
+        result = await engine.scan_url(page_url)
+        project_id = result["project"]["project"]["id"]
+        findings = self.repository.list_findings(project_id)
+
+        self.assertFalse(
+            any(item["category"] == "asset-exposure" for item in findings)
+        )
+
+    async def test_header_baseline_findings_cover_cors_cookies_and_cache(self):
+        page_url = "https://example.test/login"
+        fetcher = FakeFetcher(
+            {
+                page_url: (
+                    200,
+                    {
+                        "content-type": "text/html",
+                        "content-security-policy": "script-src 'self' 'unsafe-inline'",
+                        "access-control-allow-origin": "*",
+                        "access-control-allow-credentials": "true",
+                        "access-control-allow-methods": "GET, POST, DELETE",
+                        "access-control-allow-headers": "authorization, x-api-key",
+                        "set-cookie": "sessionid=abc123; Path=/",
+                        "cache-control": "public, max-age=600",
+                        "strict-transport-security": "max-age=300",
+                        "x-powered-by": "Express",
+                    },
+                    b"<html><body>login</body></html>",
+                )
+            }
+        )
+        engine = ScanEngine(self.repository, self.settings, fetcher=fetcher)
+
+        result = await engine.scan_url(page_url)
+        project_id = result["project"]["project"]["id"]
+        findings = self.repository.list_findings(project_id)
+        finding_titles = {item["title"] for item in findings}
+
+        self.assertTrue(
+            {
+                "CORS allows any origin while credentials are enabled",
+                "CORS preflight allows broad state-changing methods",
+                "CORS allows sensitive request headers from broad origins",
+                "Cookie is missing the Secure attribute",
+                "Cookie is missing the HttpOnly attribute",
+                "Cookie is missing the SameSite attribute",
+                "Response sets cookies without a protective cache policy",
+                "HTTP Strict Transport Security max-age is shorter than one year",
+                "Content Security Policy allows unsafe script execution",
+                "Content Security Policy does not define default-src",
+                "Content Security Policy does not restrict plugin content",
+                "Content Security Policy does not restrict base-uri",
+                "Response exposes X-Powered-By",
+            }.issubset(finding_titles)
+        )
+
+    async def test_html_stack_trace_is_reported(self):
+        page_url = "https://example.test/error"
+        fetcher = FakeFetcher(
+            {
+                page_url: (
+                    500,
+                    {"content-type": "text/html"},
+                    (
+                        b"<html><body>Traceback (most recent call last):\n"
+                        b'  File "app.py", line 1\nValueError: boom</body></html>'
+                    ),
+                )
+            }
+        )
+        engine = ScanEngine(self.repository, self.settings, fetcher=fetcher)
+
+        result = await engine.scan_url(page_url)
+        project_id = result["project"]["project"]["id"]
+        findings = self.repository.list_findings(project_id)
+
+        self.assertTrue(
+            any(
+                item["title"] == "Page appears to expose an application stack trace"
+                for item in findings
+            )
+        )
+
+    async def test_public_source_map_reference_is_reported(self):
+        page_url = "https://example.test/"
+        script_url = "https://example.test/app.js"
+        map_url = "https://cdn.example.test/app.js.map"
+        fetcher = FakeFetcher(
+            {
+                page_url: (
+                    200,
+                    {"content-type": "text/html"},
+                    b'<script src="/app.js"></script>',
+                ),
+                script_url: (
+                    200,
+                    {"content-type": "application/javascript"},
+                    (
+                        b'console.log("ok");\n'
+                        b"//# sourceMappingURL="
+                        + map_url.encode("utf-8")
+                    ),
+                ),
+            }
+        )
+        engine = ScanEngine(self.repository, self.settings, fetcher=fetcher)
+
+        result = await engine.scan_url(page_url)
+        project_id = result["project"]["project"]["id"]
+        findings = self.repository.list_findings(project_id)
+
+        self.assertTrue(
+            any(
+                item["title"] == "JavaScript exposes a source map reference"
+                for item in findings
+            )
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

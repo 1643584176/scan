@@ -1,0 +1,44 @@
+############ [0] 跟随重定向: gabe 愿望单 ############
+HTTP 200 | 9066B | https://steamcommunity.com/
+<title>Steam Community</title>
+data-appid 数: 0
+
+############ [1] 扫描 30 个随机 steamid(网页 vs API)############
+[1] 76561198093484146 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[2] 76561197978605581 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[3] 76561198036908072 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[4] 76561198040471894 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[5] 76561197964229035 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[6] 76561198092420573 web=200 priv=0 items=0 api_count=2 api={"response":{"items":[{"appid":1631270,"priority":0,"date_ad
+[7] 76561198086868364 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[8] 76561198114897298 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[9] 76561198214899486 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[10] 76561198174786893 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[11] 76561198019206760 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[12] 76561198073906582 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[13] 76561198059109018 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[14] 76561198136183475 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[15] 76561198068335801 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[16] 76561198134821433 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[17] 76561198079803792 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[18] 76561198102505041 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[19] 76561198131214350 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[20] 76561197995865905 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[21] 76561198104444869 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[22] 76561197987921519 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[23] 76561198015033541 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[24] 76561198120172775 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[25] 76561198238572544 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[26] 76561197976303526 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[27] 76561198077069630 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[28] 76561198095926285 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[29] 76561198069064435 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+[30] 76561198013185262 web=200 priv=0 items=0 api_count=0 api={"response":{}}
+
+############ [2] 对照: 无效 steamid ############
+--- steamid=1
+<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Missing required routing parameter</body></html>
+--- steamid=76561197960265728
+<html><head><title>Bad Request</title></head><body><h1>Bad Request</h1>Missing required routing parameter</body></html>
+--- steamid=99999999999999999
+{"response":{}}

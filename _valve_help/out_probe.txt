@@ -1,0 +1,159 @@
+绝对 URL 端点: 47 个,相对: 0 个
+AJAX/Help 端点: 36 个
+!!https://help.steampowered.com/en/wizard/AjaxSubmitRefundRequest/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxCancelHelpRequest/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"error":"Invalid data"}'
+!!https://help.steampowered.com/en/wizard/AjaxPackagePurchaseReceipt/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '[]'
+!!https://help.steampowered.com/en/wizard/AjaxSearchResults/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"success":1,"html":"\\n\\t<div class=\\"help_search_results_apps\\">\\n\\t\\t<div clas'
+!!https://help.steampowered.com/en/wizard/AjaxRefundRequestConfirmation
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxRefundRequestForm
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxGiftRefundRequestForm
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxMarkGiftRefundable/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"success":false,"marked_refundable":0}'
+!!https://help.steampowered.com/en/wizard/AjaxCheckPasswordAvailable/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"available":false}'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryChangePassword/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"An error occurred trying to handle that request (Error 8)'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryChangeEmail/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"Invalid email format"}'
+  https://help.steampowered.com/en/wizard/AjaxAccountRecoveryConfirmChangeEmail/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 0  '<urlopen error timed out>'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryResetPhoneNumber/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"An error occurred trying to handle that request (Error 8)'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryChangePhone/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"Phone number is invalid"}'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryConfirmChangePhone/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"Bad SMS code, please try again"}'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryUpdatedPhoneChina/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"An error occurred trying to handle that request (Error 11'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryResetTwoFactor/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"Invalid Steam Guard Mobile Authenticator code. Please try'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryVerifyPassword/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"The entered password is invalid"}'
+!!https://help.steampowered.com/en/wizard/AjaxVerifyAccountRecoveryCode/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"hash":"","errorMsg":"The provided verification code is invalid. Please verify '
+!!https://help.steampowered.com/en/wizard/AjaxSendAccountRecoveryCode
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"success":true}'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryGetNextStep
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"redirect":"https:\\/\\/help.steampowered.com\\/en\\/wizard\\/HelpRequestCantLogin\\/'
+!!https://help.steampowered.com/en/wizard/AjaxAccountRecoveryBindRelated
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '[]'
+  https://help.steampowered.com/en/wizard/HelpWithLoginInfoReset/?s=
+    GET : 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+  https://help.steampowered.com/en//wizard/HelpWithPurchase
+    GET : 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+  https://help.steampowered.com/en/wizard/HelpWithPurchase
+    GET : 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+  https://help.steampowered.com/en/wizard/HelpWithLogin/
+    GET : 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxCancelPendingPurchase/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxCancelAccountDeletion/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+  https://help.steampowered.com/en/wizard/HelpDeleteAccountRequest
+    GET : 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxCancelSteamChinaAccessDeletion/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxVerifySerialNumber
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 ''
+  https://help.steampowered.com/en/wizard/AjaxHardwareCreateReturn
+    GET : 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+!!https://help.steampowered.com/en/wizard/AjaxVerifyShippingAddress
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"success":2}'
+!!https://help.steampowered.com/en/wizard/AjaxHardwareCreateReplacementRMA
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"success":8,"message":"Sorry! An unexpected error has occurred while processing'
+!!https://help.steampowered.com/en/wizard/AjaxReopenHelpRequest/
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 application/json; charset=utf-8 '{"error":"Invalid data"}'
+!!https://help.steampowered.com/en/wizard/AjaxUpdateShippingAddress
+    GET : 403 application/json; charset=utf-8 '{"success":15}'
+    POST: 200 text/html; charset=UTF-8 '<!DOCTYPE html> <html class=" responsive DesktopUI" lang="en"  > <head> \t<meta h'
+
+=== 所有绝对端点(含非 AJAX)===
+  1x https://help.steampowered.com/en/login
+  18x https://help.steampowered.com/en/
+  5x https://help.steampowered.com/en/wizard/
+  1x https://help.steampowered.com/en/wizard/AjaxSubmitRefundRequest/
+  2x https://help.steampowered.com/en/wizard/AjaxCancelHelpRequest/
+  1x https://help.steampowered.com/en/wizard/AjaxPackagePurchaseReceipt/
+  1x https://help.steampowered.com/en/wizard/ScamUserSearch/
+  1x https://help.steampowered.com/en/wizard/AjaxSearchResults/
+  1x https://help.steampowered.com/en/wizard/AjaxRefundRequestConfirmation
+  5x https://help.steampowered.com/public/shared/images/login/throbber.gif
+  1x https://help.steampowered.com/en/wizard/AjaxRefundRequestForm
+  1x https://help.steampowered.com/en/wizard/AjaxGiftRefundRequestForm
+  1x https://help.steampowered.com/en/wizard/AjaxMarkGiftRefundable/
+  1x https://help.steampowered.com/en/wizard/AjaxCheckPasswordAvailable/
+  2x https://help.steampowered.com/en/login/getrsakey/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryChangePassword/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryChangeEmail/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryConfirmChangeEmail/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryResetPhoneNumber/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryChangePhone/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryConfirmChangePhone/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryUpdatedPhoneChina/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryResetTwoFactor/
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryVerifyPassword/
+  1x https://help.steampowered.com/en/wizard/AjaxVerifyAccountRecoveryCode/
+  1x https://help.steampowered.com/en/wizard/AjaxSendAccountRecoveryCode
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryGetNextStep
+  1x https://help.steampowered.com/en/wizard/AjaxAccountRecoveryBindRelated
+  1x https://help.steampowered.com/en/wizard/HelpWithLoginInfoReset/?s=
+  1x https://help.steampowered.com/en/wizard/RefreshCaptcha
+  1x https://help.steampowered.com/en/login/rendercaptcha/?gid=
+  1x https://help.steampowered.com/en/login/getmenuactions/
+  1x https://help.steampowered.com/en//wizard/HelpWithPurchase
+  2x https://help.steampowered.com/en/wizard/HelpWithPurchase
+  2x https://help.steampowered.com/en/login/logout/
+  1x https://help.steampowered.com/en/wizard/HelpWithLogin/
+  1x https://help.steampowered.com/en/login/setlanguage/
+  1x https://help.steampowered.com/en/wizard/AjaxCancelPendingPurchase/
+  1x https://help.steampowered.com/en/wizard/AjaxCancelAccountDeletion/
+  4x https://help.steampowered.com/en/wizard/HelpDeleteAccountRequest
+  1x https://help.steampowered.com/en/wizard/AjaxCancelSteamChinaAccessDeletion/
+  1x https://help.steampowered.com/en/wizard/AjaxVerifySerialNumber
+  1x https://help.steampowered.com/en/wizard/AjaxHardwareCreateReturn
+  2x https://help.steampowered.com/en/wizard/AjaxVerifyShippingAddress
+  1x https://help.steampowered.com/en/wizard/AjaxHardwareCreateReplacementRMA
+  1x https://help.steampowered.com/en/wizard/AjaxReopenHelpRequest/
+  1x https://help.steampowered.com/en/wizard/AjaxUpdateShippingAddress

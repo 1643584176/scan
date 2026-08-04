@@ -1,0 +1,25 @@
+{
+  "name": "glovo",
+  "platform": "hackerone",
+  "program_url": "https://hackerone.com/glovo",
+  "username": "pccp",
+  "fetched_at": "2026-08-04T04:23:20+00:00",
+  "bounties": [],
+  "scope": {
+    "in_scope": [],
+    "out_of_scope_domains": [],
+    "count": 0
+  },
+  "rules": {
+    "required_headers": [],
+    "user_agent": "",
+    "rate_limit": "",
+    "test_accounts": [],
+    "test_entities": [],
+    "forbidden": [
+      "Core Ineligible Findings are out of scope."
+    ],
+    "report_rules": [],
+    "notes": []
+  }
+}

@@ -1,0 +1,330 @@
+Skip to main content  >
+Learn more about HackerOne
+Log in
+Security page
+Program guidelines
+Scope
+Hacktivity
+Thanks
+Updates
+Collaborators
+Program highlights
+Platform Standards
+Fully compliant with Platform Standards. 
+Managed by HackerOne
+Collaboration Enabled
+Includes Retesting
+10 hours
+Average time to first response
+2 weeks, 7 hours
+Average time to triage
+2 weeks, 5 days
+Average time to bounty
+1 month, 3 days
+Average time from submission to bounty
+6 months, 9 hours
+Average time to resolution
+Rewards summary
+Last updated on April 25, 2024. View changes 
+Each severity lists the 90-day average bounty and the percentage of total resolved reports, if applicable.
+Low
+
+Avg. bounty $172
+37.02% submissions
+
+Medium
+
+Avg. bounty $719
+38.56% submissions
+
+High
+
+Avg. bounty $2,106
+14.65% submissions
+
+Critical
+
+Avg. bounty $6,175
+9.77% submissions
+
+$50 – $250
+$250 – $1,500
+$1,500 – $5,000
+$5,000 – $15,000
+Payouts are our typical maximum for a submission, based on severity.
+Scope exclusions
+Core Ineligible Findings are out of scope. 
+Learn more 
+Overview
+Last updated on January 14, 2026. View changes 
+Table of Contents
+Rules & Terms
+Vulnerability Types
+Out-of-Scope
+Known Issues
+Assets
+Core Assets
+Out-of-Scope
+Rewards
+Eligibility
+Payout Amounts
+Additional Factors
+Google Play Security Reward Program
+Submissions
+Report Quality
+Demonstrating Impact
+Attribution
+Automated Tools
+Transparency
+Triage Process
+Payout Process
+Feedback
+Rules
+In order to be considered for a reward, the following rules of engagement must be adhered to during testing. However, the golden rule you must follow is that you must not disrupt, compromise, destroy data, or interrupt or degrade our services. You must only interact with accounts you own or those for which you have the explicit permission of the account holder.
+Additionally, while hunting for bugs, please refrain from the following activities:
+Testing for DoS issues, or any kind of issue which could affect the experience of other Instacart users
+Using automated tools which generate significant traffic
+Accessing another user’s data or other private information
+Attempting to social engineer or spam Instacart employees, shoppers or other users (including reporting false information about an order to shoppers or customer representatives)
+Submitting reports from automated tools without any verification
+If you have found an issue that could be escalated, do not attempt to pivot or escalate access - Instacart will perform analysis to determine the maximum possible impact a submission has, you do not need to do this for us.
+If you have found an issue that requires interacting with customer representatives to demonstrate impact, please refrain from doing so. Submit the issue to us and we will determine the impact of the vulnerability.
+Failure to adhere to these rules may cause your report to be closed as N/A and a temporary or permenant ban from Instacart's bug bounty program.
+Vulnerability Types
+Out-of-Scope
+Generally, a submission is eligible for a reward, regardless of vulnerability type, if it has clear security or privacy impact.
+However, the following types are typically not eligible for a reward and we therefore recommend not hunting for:
+General
+Security best practices and other non-exploitable issues
+Vulnerabilities only affecting users of outdated or unpatched browsers and platforms
+Social engineering
+Web Applications
+Content spoofing
+Password and account recovery policies, such as reset link expiration or password complexity
+Reflected file download (RFD)
+CSV injection
+Email/username enumeration
+Disclosure of files/paths within robots.txt
+Mobile
+Attacks requiring physical access to a user's device
+Embedded client-side API keys which are intended to be used by our applications
+Old versions of mobile applications no longer available through Google Play Store or iOS App Store
+Infrastructure
+DNS poisoning
+Additionally, the following vulnerabilities won’t be eligible without further proof of security impact:
+General
+Known vulnerable libraries
+Web Applications
+Login & logout CSRF, and missing CSRF protection in general
+Clickjacking
+Missing security headers
+Infra
+SPF/DKIM configuration issues
+SSL/TLS configuration issues
+S3 ACL issues without proof that the bucket is owned by Instacart
+Known Issues
+Going forward, this section will be used to list any long-standing issues that we’re already aware of.
+Assets
+Any system or service listed under *.instacart.com or *.instacart.tools is within scope for the program, except where noted.
+For recent acquisitions that joined Instacart in the last two years, only critical vulnerabilities defined below are in scope and eligible for reward. In addition, the maximum payout for reports regarding recent acquisitions is 50% of our regular payout structure. For Foodstorm, only template.uat.foodstorm.com is included in the scope and the our regular payout will be applied for template.uat.foodstorm.com findings.
+Some examples of critical vulnerabilities include:
+Vulnerabilities that lead to system or database access such as command injection, insecure deserialization, SQL injection, and XXE.
+Vulnerabilities that lead to loss of personal or company information, such as severe IDORs, information leak, or sensitive secret disclosure.
+Account takeovers with little to no user interaction.
+Instacart reserves the right to determine the severity of a vulnerability and whether the report qualifies for a reward.
+If you believe you have found an issue which affects Instacart but is not listed within scope, we ask that you still report it to us for consideration, but we do not recommend you look for these issues as they are likely to be ineligible.
+Additionally, given that DNS records change frequently, and EC2 IP addresses may be recycled, you should attempt to verify that the service is still maintained by Instacart.
+Core Assets
+The following assets are considered “core assets” within the program:
+Web
+www.instacart.com (http://www.instacart.com/)
+api.instacart.com (http://api.instacart.com/)
+admin.instacart.com (http://admin.instacart.com/)
+Mobile (Android)
+Customers (com.instacart.client)
+Shoppers (see https://shoppers.instacart.com/apps)
+Mobile (iOS)
+Customers (545599256)
+Shoppers (see https://shoppers.instacart.com/apps)
+Unfortunately, we will not be able to provide test credentials or provision any test accounts for researchers at the moment.
+Out-of-Scope
+Systems or services which are not owned or maintained by Instacart, such as third-party blogs or micro-sites, are not eligible, and we can’t give you permission to test against. These include (but not limited to):
+brand.instacart.com
+affiliate.instacart.com
+careers.instacart.com and www.careers.instacart.com
+instacart.careers
+carrotstore.instacart.com and www.carrotstore.instacart.com
+corporate.instacart.com
+covidresponse.instacart.com
+design.instacart.com and www.design.instacart.com
+*.email.instacart.com
+enterprise-status.instacart.com
+life.instacart.com and www.life.instacart.com
+news.instacart.com and www.news.instacart.com
+tech.instacart.com and www.tech.instacart.com
+However, If you stumble upon a critical or high impact vulnerability on these services, feel free to send it over and we will coordinate to get it fixed.
+Rewards
+Eligibility
+We appreciate and thank everyone who submits valid reports that help us improve the security of Instacart!
+However, only those that meet the following eligibility requirements may receive a monetary reward:
+You must be the first reporter of a vulnerability
+The vulnerability must be associated with a site or application in scope
+The vulnerability should be exploitable - used to affect the confidentiality, integrity, authenticity, and safety of our data, applications, systems, applications or users
+The vulnerability should have demonstrable business impact
+You must disclose the vulnerability report directly and exclusively to us
+You may not publicly disclose the vulnerability prior to our resolution or approval
+We can be legally prohibited from rewarding you (for example, you can’t be a resident of or located within Cuba, Sudan, North Korea, Iran or Syria a national of other certain countries, or on a denied parties or sanctions list)
+Instacart reserves the right to decide the bounty amount and whether the vulnerability was previously reported. Instacart also reserves the right to change or discontinue its bug bounty program at any time without notice in its sole discretion.
+Payout Amounts
+The following table lists the typical maximum reward depending on submission severity:
+Severity	Maximum Bounty	Example Issues
+Critical	$15,000	Remote Code Execution
+High	$5,000	Significant Auth Bypass, Significant Information Disclosure, Privilege Escalation to an Admin user, SSRF etc.
+Medium	$1,500	Reflected XSS, CSRF, Access Control issues etc.
+Low	$250	Open Redirection, Information leakage etc.
+The final decision is at Instacart’s sole analysis of the impact posed by the submission.
+Additional Factors
+When determining the reward amount, the following are example factors that are taken in to consideration, and can either raise or lower the amount:
+Does the vulnerability require privileged access, or is it publicly exploitable?
+Are all Instacart users affected, or only a subset? Are all devices/browsers vulnerable?
+Is the vulnerability limited in someway (such as SSRF to only a specific IP range)?
+How “noisy” would exploitation be? Does it require one HTTP request or 100,000?
+Google Play Security Reward Program
+Certain vulnerabilities with a working proof of concept on some of our Android mobile app(s) may qualify for an additional bounty through the Google Play Security Rewards Program.
+To see which apps and vulnerabilities may qualify for a bounty, please refer to the Google Play Security Rewards Program’s Scope and Vulnerability Criteria (https://www.google.com/about/appsecurity/play-rewards/#rewards).
+Submissions
+We want to get your submissions resolved and rewarded as soon as possible, but in order to achieve this goal, we need a few things from you first.
+Report Quality
+You should aim to include all of the relevant information that we need to a) reproduce the issue, and b) understand the impact, in your submission. This can include:
+A summary of the issue - what could a malicious user do with this bug?
+POC steps for us to replicate the issue
+Details of any test accounts or objects you used to aid debugging
+We understand that English may not be the first language of many researchers, so including screenshots or a short video demonstrating the issue can help expedite the triage process.
+Demonstrating Impact
+In order to demonstrate impact for various types of bugs, you can use one of the following techniques, which will avoid you causing a privacy violation by accessing sensitive data/services:
+For SQL injection, select version() or current_user and include the output. Do not attempt to load data from other rows or tables
+For command injection, you can run touch /tmp/{your_username} and send us the file path. Do not attempt to modify or cat other files such as /etc/passwd
+For XSS, you should run alert(document.domain) to prove that the code is running under our origin and not a third-party or sandboxed domain
+For authentication/authorization issues, you should attempt to load data from one of your other test accounts and not other Instacart users
+If at any stage you’re unable to demonstrate impact without potentially accessing production data, you should let us know so that we can do the investigation for you.
+Attribution
+In order for us to attribute any test traffic or data back to you, we ask that when you create accounts your include your HackerOne username in the email address field.
+Additionally, in order to test authentication/authorization issues, you should create multiple test accounts.
+Automated Tools
+We recognize that using various automated tools is an important part of the recon and testing phases of bug bounty. As such, rather than prohibiting their use, we ask that you configure your tools to use reasonable limits. For example, up to 5 threads for directory brute-forcing is likely to not cause impact and is therefore reasonable, whereas 500+ threads is not.
+Transparency
+Instacart is committed to being as transparent as possible throughout the whole submission life cycle. We want you to know what to expect when you send in a submission.
+As each submission is different, there can be unexpected delays or additional investigation that is required, but these are the typical processes we go through:
+Triage Process
+When a submission has been validated as potentially valid by HackerOne Triage, a member of the Instacart Bug Bounty team will perform further validation to understand:
+Is the submission unique, or a duplicate of another submission or an internal issue?
+Does it meet our bar for a security issue?
+Do we have enough information for the impact to be understood or for the submission to be triaged internally?
+Based on the above, we’ll either ask for more information, close out the issue, or forward it internally for further verification and fix.
+We aim to keep you updated throughout the fix process, but there can be additional unseen factors which extend the time taken to get a submission to a resolved state.
+Payout Process
+As researchers ourselves, we know how frustrating it can be waiting for a payout on a submission. Therefore our aim is to pay out submissions as soon as practically possible after triage. The way we do it is the following:
+If a submission has clear security impact, and we are confident it isn’t a duplicate, we will pay our minimum bounty at time of triage
+The team hosts a payout meeting to discuss and vote on all recent submissions
+For those which are eligible for a reward, we will then either reward the remaining bounty after the meeting (for those already having a minimum bounty issued), or the full bounty (for those without an existing payout)
+For those which are not eligible, we will articulate to you why this is the case and mark the submission as ineligible
+For the rare cases where we’re unsure if it’s eligible or not, we will award the bounty at time of resolution - this is so that we can make a more informed decision based on the actions we took
+We also recognize that payout amounts can be different than what you’re expecting, therefore we will try to give a justification when issuing the payout - for example, if we found additional impact and are giving a larger reward, or if the submission had less impact that originally thought.
+Feedback
+Without researchers our program wouldn’t exist, so we welcome any and all feedback as to how we can improve! If you have any thoughts, please feel free to reach out to our team at bug-bounty@instacart.com.
+Top hackers
+See all hackers 
+1
+todayisnew
+Reputation: 505
+2
+down2earth
+Reputation: 378
+3
+dawidczagan
+Reputation: 323
+4
+steppe
+Reputation: 249
+5
+introvertmac
+Reputation: 240
+6
+rhynorater
+Reputation: 213
+7
+xlord91
+Reputation: 209
+8
+cablej
+Reputation: 195
+9
+zonduu
+Reputation: 182
+10
+fransrosen
+Reputation: 171
+11
+attacco03
+Reputation: 168
+12
+sameoldstory
+Reputation: 168
+Instacart
+https://instacart.com
+@instacart
+Bounty launched in Feb 2022
+Response efficiency: 82%
+Submit without Report Assistant
+Rewards
+
+Severity
+
+Rewards
+
+Low
+
+Avg. bounty $172
+37.02% submissions
+
+$50 – $250
+Medium
+
+Avg. bounty $719
+38.56% submissions
+
+$250 – $1,500
+High
+
+Avg. bounty $2,106
+14.65% submissions
+
+$1,500 – $5,000
+Critical
+
+Avg. bounty $6,175
+9.77% submissions
+
+$5,000 – $15,000
+Stats
+Total bounties paid	$555,095
+Average bounty range	$200 - $250
+Top bounty range	$2,500 - $20,000
+Bounties paid | 90 days	$39,900
+Reports received | 90 days	277
+Last report resolved	10 days ago
+Reports resolved	527
+Hackers thanked	509
+Assets In Scope	10
+© HackerOne
+Opportunities
+Security
+Leaderboard
+Blog
+Status
+Docs
+Support
+Disclosure Guidelines
+Press
+Privacy
+Terms
