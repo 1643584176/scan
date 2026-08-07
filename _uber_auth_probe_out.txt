@@ -1,0 +1,59 @@
+标题: 注册或登录优步账号
+URL: https://auth.uber.com/v2/
+
+=== POST 请求: 11 ===
+
+https://auth.uber.com/v2/_events
+  headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+  body: {"items":[{"type":"__XP_PING__","payload":{"lemon":"aid"}}]}
+
+https://auth.uber.com/v2/_metadata?v=aia
+  headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+  body: {"meta":"IsOFwpJePcOFw5sVO8KFwoIBb8OWw5QPbMKEw5UFbcOXw5YFe8OLw4NoLcOFw5sVGMK+wodkEMKRwoJlGMKkw5EHb8Kvw5NtNsKRwpFbN8K1wq9mH8KkwpkGDMKmwoZHFcOfwrdTNcKNwpYCGMKRwoxtKcKBwodFNMKWwptZIcKPwqJgOsKFw5N9HcKmwq9jF8KfwqJmDsKNwpldI8OMwrRbcsKRwplSOMKmwqBvLMK+wpdEDsKhwrl/EsKkwq12OsKiwqR/OsKDwqt+FMKrw5QCa8OIw5BeOMOIwpBZF8KtwowPD8KxwqtnPcKywpRBCcORwpZ/a8KSwpUEYcKDwoV7N8KQw5EHCMOXwpFPEMKmwptxLMOUw5ACb8KRwqBQFsKMwq1gDsKxw5RBA8OSwqVTDcK+wqhaPcKmw45uLcKvwrdEA8OWwolwOsKGwo18E8K2wqpiH8K9w5ReDcKSwqV2F8KOw5RiH8KDwo1wPcO
+
+https://auth.uber.com/v2/udi-meta
+  headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+  body: {"meta":"IsOFwpJePcOFw5sVO8KFwoIBb8OWw5QPbMKEw5UFbcOXw5YFe8OLw4NoLcOFw5sVGMK+wodkEMKRwoJlGMKkw5EHb8Kvw5NtNsKRwpFbN8K1wq9mH8KkwpkGDMKmwoZHFcOfwrdTNcKNwpYCGMKRwoxtKcKBwodFNMKWwptZIcKPwqJgOsKFw5N9HcKmwq9jF8KfwqJmDsKNwpldI8OMwrRbcsKRwplSOMKmwqBvLMK+wpdEDsKhwrl/EsKkwq12OsKiwqR/OsKDwqt+FMKrw5QCa8OIw5BeOMOIwpBZF8KtwowPD8KxwqtnPcKywpRBCcORwpZ/a8KSwpUEYcKDwoV7N8KQw5EHCMOXwpFPEMKmwptxLMOUw5ACb8KRwqBQFsKMwq1gDsKxw5RBA8OSwqVTDcK+wqhaPcKmw45uLcKvwrdEA8OWwolwOsKGwo18E8K2wqpiH8K9w5ReDcKSwqV2F8KOw5RiH8KDwo1wPcO
+
+https://auth.uber.com/v2/_events
+  headers: {'content-type': 'text/plain;charset=UTF-8'}
+  body: {"items":[{"type":"__XP_LOG_VERIFICATION_EVENT__","payload":{"token":"ca014aa3-eddf-44e1-91af-ae65df937560","webEventsMeta":{"dimensions":{"viewport_height":900,"viewport_width":1440,"screen_height":900,"screen_width":1440},"page":{"hostname":"auth.uber.com","pathname":"/v2/","referrer":"","url":"https://auth.uber.com/v2/"},"time_ms":1786065189746},"__url__":"/","__urlParams__":{},"flush_time_ms":1786065191818}},{"type":"application-performance:browser:web-vitals","payload":{"applicationPerforma
+
+https://auth.uber.com/v2/_metadata?v=fjs
+  headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+  body: {"meta":{"event_id":"1786065173861.Gac7aT","sealed_result":null,"visitor_id":"jmmwj6aDwiQf5Dk0hhBf","suspect_score":11}}
+
+https://auth.uber.com/web/publish
+  headers: {'content-type': 'application/json'}
+  body: {"events":[{"page":{"referrer":"","url":"https://auth.uber.com/v2/"},"dimensions":{"viewport_height":900,"viewport_width":1440,"screen_height":900,"screen_width":1440,"device_pixel_ratio":1.0000000149011612},"geolocation":{"time_zone":"Asia/Shanghai"},"name":"usl_input","is_shadow":true,"app_name":"arch-web","app_runtime":"production","event_source":"browser","cold_launch_id":"60136976-c921-4fc5-b615-76cde5e325e0","event_uuid":"e84b00cc-bd57","type":"action","value_map":{"usl_id":"6e08bc59-dcb9-
+
+https://auth.uber.com/v2/_events
+  headers: {'content-type': 'text/plain;charset=UTF-8'}
+  body: {"items":[{"type":"m3:histogram","payload":{"key":"device_identity.browser.collect_metadata.duration","value":2656,"tags":{"is_legacy_build":"false","vendor":"fjs"},"webEventsMeta":{"dimensions":{"viewport_height":900,"viewport_width":1440,"screen_height":900,"screen_width":1440},"page":{"hostname":"auth.uber.com","pathname":"/v2/","referrer":"","url":"https://auth.uber.com/v2/"},"time_ms":1786065192406},"__url__":"/","__urlParams__":{},"flush_time_ms":1786065193825}},{"type":"m3:histogram","pay
+
+https://auth.uber.com/v2/_events
+  headers: {'content-type': 'text/plain;charset=UTF-8'}
+  body: {"items":[{"type":"custom-hp-web-event","payload":{"name":"usl_full_page_load","type":"action","value_map":{"analyticsSessionID":"b9a9d8cb-752b-413b-a668-5dbfc74f3bc2","arkose_enabled":"true","arkose_shadow":"false","client_name":"usl_desktop","countryCode":"CN","eventType":"TypeInputMobile","inAuthSessionID":"","isEmbedded":"false","isSurveyView":"false","isWebview":"false","marketing_vistor_id":"6e08bc59-dcb9-48cf-92b8-4dd20ac2c86f","nextDomain":"","pageLoadId":"3acc3216-c0b8-413b-8982-ecf5b86
+
+https://auth.uber.com/v2/_events
+  headers: {'content-type': 'text/plain;charset=UTF-8'}
+  body: {"items":[{"type":"application-performance:browser:web-vitals","payload":{"applicationPerformance":{"browser":{"webVitals":{"name":"TTFB","value":912.4000000059605,"pageLoadUuid":"25854a9e-546b-434d-955d-59f8409f1a73","apmUrl":"/","otherMeta":{"networkEffectiveType":"4g"}}}},"webEventsMeta":{"dimensions":{"viewport_height":900,"viewport_width":1440,"screen_height":900,"screen_width":1440},"page":{"hostname":"auth.uber.com","pathname":"/v2/","referrer":"","url":"https://auth.uber.com/v2/"},"time_
+
+https://auth.uber.com/v2/_events
+  headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+  body: {"items":[{"type":"custom-hp-web-event","payload":{"name":"usl_full_page_load","type":"action","value_map":{"analyticsSessionID":"b9a9d8cb-752b-413b-a668-5dbfc74f3bc2","arkose_enabled":"true","arkose_shadow":"false","client_name":"usl_desktop","countryCode":"CN","eventType":"TypeInputMobile","inAuthSessionID":"","isEmbedded":"false","isSurveyView":"false","isWebview":"false","marketing_vistor_id":"6e08bc59-dcb9-48cf-92b8-4dd20ac2c86f","nextDomain":"","pageLoadId":"3acc3216-c0b8-413b-8982-ecf5b86
+
+https://auth.uber.com/web/publish
+  headers: {'content-type': 'application/json'}
+  body: {"events":[{"page":{"referrer":"","url":"https://auth.uber.com/v2/"},"dimensions":{"viewport_height":900,"viewport_width":1440,"screen_height":900,"screen_width":1440,"device_pixel_ratio":1.0000000149011612},"geolocation":{"time_zone":"Asia/Shanghai"},"name":"usl_full_page_load","is_shadow":true,"app_name":"arch-web","app_runtime":"production","event_source":"browser","cold_launch_id":"60136976-c921-4fc5-b615-76cde5e325e0","event_uuid":"2bd6d3a2-137a","type":"action","value_map":{"usl_id":"6e08b
+
+=== JS chunk: 9 ===
+  https://auth.uber.com/v2/_static/client-main-4db1b922e1dc9db2.js
+  https://auth.uber.com/v2/_static/client-vendor-react-8ba82b8cc7a44376.js
+  https://auth.uber.com/v2/_static/client-vendor-fusion-24dd1565cb4552df.js
+  https://auth.uber.com/v2/_static/client-5095-c67617b325c3a383.js
+  https://auth.uber.com/v2/_static/client-runtime-ad01a0187f6c88b7.js
+  https://ak04a6qc.uber.com/v2/30000F36-CADF-490C-929A-C6A7DD8B33C4/api.js
+  https://auth.uber.com/v2/_static/client-8497-7ffd0dc10b37316b.js
+  https://auth.uber.com/v2/_static/client-9959-c29e6bde65bfa768.js
+  https://auth.uber.com/v2/_static/client-3135-8db3e62c0ee5e891.js

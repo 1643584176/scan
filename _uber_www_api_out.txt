@@ -1,0 +1,59 @@
+共 14 个 POST:
+
+=== https://www.uber.com/api/getCurrentUser?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {}
+
+=== https://www.uber.com/api/getExperiments?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"xpParameter":{"defaultValue":"LEGACY","key":"config.city_selector_variant","namespace":"chameleon-experiments"}}
+
+=== https://www.uber.com/api/getMapHeroEnabledProducts?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {}
+
+=== https://www.uber.com/api/getProductSuggestions?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"type":"DEFAULT"}
+
+=== https://www.uber.com/api/getMerchandisingAdAvailability?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"redirectUrl":"https://m.uber.com/reserve"}
+
+=== https://www.uber.com/api/getProductSuggestions?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"type":"CUSTOM","useExpandedData":false}
+
+=== https://www.uber.com/api/getCurrentUser?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {}
+
+=== https://www.uber.com/api/pudoLocationSearch?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"latitude":37.7749,"longitude":-122.4194,"query":"","type":"PICKUP"}
+
+=== https://www.uber.com/api/pudoLocationSearch?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"latitude":37.7749,"longitude":-122.4194,"query":"","type":"DROPOFF"}
+
+=== https://www.uber.com/api/getProductSuggestions?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"type":"DEFAULT"}
+
+=== https://www.uber.com/api/getBlockExperiments?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"geo":{"best":{"localeCode":"zh-CN","countryCode":"KR","territoryGeoPoint":{"latitude":37.32647888761949,"longitude":126.25259606685594},"territoryId":2715},"url":{"localeCode":"zh-CN","countryCode":"KR"},"user":{"geoIpCoordinates":{"lat":39.911,"lng":116.395},"expiresAt":"2026-08-06T18:40:14.723Z","countryCode":"KR","territoryId":2715,"productGeofenceUUID":"ff48990d-eb68-433d-b42c-86a29545e71d","territoryGeoJson":[[{"lat":37.6294995,"lng":125.9988014},{"lat":37.6294995,"lng":126.4895008},{"lat
+
+=== https://www.uber.com/api/isWebview?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {}
+
+=== https://www.uber.com/api/pudoLocationSearch?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"latitude":37.32647888761949,"longitude":126.25259606685594,"query":"","type":"PICKUP"}
+
+=== https://www.uber.com/api/pudoLocationSearch?localeCode=zh-CN ===
+    headers: {'x-csrf-token': 'x', 'content-type': 'application/json'}
+    body: {"latitude":37.32647888761949,"longitude":126.25259606685594,"query":"","type":"DROPOFF"}
+
+cookies 已保存 _uber_www_cookies.json

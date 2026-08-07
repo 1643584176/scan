@@ -1,0 +1,18 @@
+
+[A] HTTP /api/versions/{key} 匿名
+  [私有] 403 len=210 '{"error":true,"status":403,"message":"You don\'t have permission to view this file.","i18n":{"id":"permissions.sinatra.ca'
+  [公开] 200 len=58747 '{"error":false,"status":200,"meta":{"versions":[{"id":"2223696284140444468","file_key":"bv2nMIdFf4u3dESGail4sm","view":"'
+
+[B] 匿名 WS + URL preload 带 OpenEditorFileData(私有文件)
+  [HIT] {"File": {"queries": {"[\"root\",\"fileV2\",[\"qzDqStIDJyGbthpKiuvfwg\"],[]]": {"initial": {}}}, "computations": {}}}
+  共 1 条
+
+[C] 匿名 subscribe FileCanUseDevModeDemoFile(私有文件)
+  [HIT] {"FilePrototypeInfo": {"queries": {"[\"root\",\"filePrototypeInfo\",[\"qzDqStIDJyGbthpKiuvfwg\"],[]]": {"initial": {}}}, "computations": {}}}
+  共 1 条
+
+[D] 匿名 WS clientType=desktop + subscribe OpenEditorFileData(私有文件)
+  [HIT] {"File": {"queries": {"[\"root\",\"fileV2\",[\"qzDqStIDJyGbthpKiuvfwg\"],[]]": {"initial": {}}}, "computations": {}}}
+  共 1 条
+
+===== 完成 =====

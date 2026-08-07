@@ -1,0 +1,1 @@
+wss://www.figma.com/api/livegraph?pv=1&pr=f6e7e6e0377f9d72&pt=1786072448&ph=VV7_WsCN5qx2eplkYxQaS3GioP1h9E9sK1vqChawOMs&userId=&anonUserId=&clientType=web&commitHash=5848603c50c1ee154ea6a1fe5ee3aab3791c5b48&preload=%7B%7D&requestedProtocolVersion=2&clientUrl=https%3A%2F%2Fwww.figma.com%2Ffile%2Fbv2nMIdFf4u3dESGail4sm&connectionType=initial&reconnect=0

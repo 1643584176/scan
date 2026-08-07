@@ -1,0 +1,45 @@
+测试 143 个字段...
+  FOUND: stores -> 400 Invalid GraphQL query
+  FOUND: estimates -> 400 Invalid GraphQL query
+  FOUND: contact -> 400 Invalid GraphQL query
+  FOUND: favorites -> 400 Invalid GraphQL query
+  FOUND: pudoCitySearch -> 400 Invalid GraphQL query
+  FOUND: pudoAutocomplete -> 400 Invalid GraphQL query
+  FOUND: pudoSuggestions -> 400 Invalid GraphQL query
+  FOUND: pudoLocationSearch -> 400 Invalid GraphQL query
+  FOUND: pudoResolveLocation -> 400 Invalid GraphQL query
+  FOUND: wayfindingInstructions -> 400 Invalid GraphQL query
+  FOUND: savedPlaces -> 400 Invalid GraphQL query
+  FOUND: pudoFlights -> 400 Invalid GraphQL query
+  FOUND: pudoResolveFlight -> 400 Invalid GraphQL query
+  FOUND: pudoLocationRefinement -> 400 Invalid GraphQL query
+  FOUND: currentUser -> 400 Invalid GraphQL query
+  FOUND: currentUserProfile -> 400 Invalid GraphQL query
+  FOUND: userProfile -> 400 Invalid GraphQL query
+  FOUND: userInfo -> 400 Invalid GraphQL query
+  FOUND: remoteConfig -> 400 Invalid GraphQL query
+  FOUND: countries -> 400 Invalid GraphQL query
+  FOUND: currencies -> 400 Invalid GraphQL query
+
+=== 共发现 21 个存在的字段 ===
+  stores: 400 Invalid GraphQL query
+  estimates: 400 Invalid GraphQL query
+  contact: 400 Invalid GraphQL query
+  favorites: 400 Invalid GraphQL query
+  pudoCitySearch: 400 Invalid GraphQL query
+  pudoAutocomplete: 400 Invalid GraphQL query
+  pudoSuggestions: 400 Invalid GraphQL query
+  pudoLocationSearch: 400 Invalid GraphQL query
+  pudoResolveLocation: 400 Invalid GraphQL query
+  wayfindingInstructions: 400 Invalid GraphQL query
+  savedPlaces: 400 Invalid GraphQL query
+  pudoFlights: 400 Invalid GraphQL query
+  pudoResolveFlight: 400 Invalid GraphQL query
+  pudoLocationRefinement: 400 Invalid GraphQL query
+  currentUser: 400 Invalid GraphQL query
+  currentUserProfile: 400 Invalid GraphQL query
+  userProfile: 400 Invalid GraphQL query
+  userInfo: 400 Invalid GraphQL query
+  remoteConfig: 400 Invalid GraphQL query
+  countries: 400 Invalid GraphQL query
+  currencies: 400 Invalid GraphQL query

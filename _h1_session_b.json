@@ -1,0 +1,22 @@
+[
+ {
+  "name": "h1_device_id",
+  "value": "f5a99378-94a5-49da-987e-e9c47f9915f6",
+  "domain": "hackerone.com",
+  "path": "/",
+  "expires": 1817606137.532962,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "__Host-session",
+  "value": "OStmRjZSS2dxbU5JU0dFeVI0RU9XQzRsbnpoczRWZUppS0p5UkVnR1orQTd3dnBwVEtKU1pwZS9vMERVNFVEVXZCL0haWkJNVzJFYkhLZmltMllUUGI1TDA2NWQ2L2hRUElCK3R1Z2hmdjR1dmlhOEZZNzZ5dUZGcDY4VGRvU0NFOG1IY0VWb3VYOHhQNUxObWVWUkphSlVLd0drcjc3bktYMFZFMDhxUGp4b0N1SnZsVGNWeUFVeVB3V1JQVHVrRXp1NXBxU3lsUW40K1ZMY3pFQW9Ec2wyT2p0cVFqenZzSE5LaHB5elZEN2krbkM2T0s4bUJiSy9hVVkzWGVncmw2ZmlwUUlrSndiUi90WENFSUMxbXR3b3l3bzBkYjFHSnZueEFtZVQ0Ymc9LS1iSG9rT2poTHhWSnRlN1h3Y0pINmF3PT0%3D--5f66770c924d991dcde7961381c515146f6f0c65",
+  "domain": "hackerone.com",
+  "path": "/",
+  "expires": 1787279737.533027,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ }
+]

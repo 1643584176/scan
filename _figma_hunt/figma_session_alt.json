@@ -1,0 +1,422 @@
+[
+ {
+  "name": "__Host-figma.did",
+  "value": "MTc4NjA4NTMyNw.KfNi8JXKdds8tQo3q1q2tsHzK2tGO0SGu2bTX0Qg5ds.yPCIdtyvUyKPOr7D9eN6EQ5LOQnikvjlx6w4h5S2Lfc",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1817621346.273455,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "product_locale",
+  "value": "%22en%22",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1817621364.548795,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "ajs_anonymous_id",
+  "value": "%223ff78a8a-d1d8-4040-afbd-3d09b2f76ee1%22",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1788677346,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "AWSALBTG",
+  "value": "s9wI1B/FdyliLfn9oNc9mQ1DcWUXV5XrotMH6taff7pGosyD4Cn/sRmH8+cNZoELW0D+5sqHxcjd/DnrD9uIr8iHc97pLYoHjVg6nX17IfhzlOTMKW6lFrJ9qB1zlj6CZjnVrcNkUeifzPEPiHhNbnUSf+FkYoH2cW/XouF3H9kX",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1786690146.856998,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "AWSALBTGCORS",
+  "value": "s9wI1B/FdyliLfn9oNc9mQ1DcWUXV5XrotMH6taff7pGosyD4Cn/sRmH8+cNZoELW0D+5sqHxcjd/DnrD9uIr8iHc97pLYoHjVg6nX17IfhzlOTMKW6lFrJ9qB1zlj6CZjnVrcNkUeifzPEPiHhNbnUSf+FkYoH2cW/XouF3H9kX",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1786690146.857109,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "AWSALB",
+  "value": "LNolrssZPQG6gW/LLhEAdNmN4VufS33Z1QA6MEcRmexc8cKHhR7FWexYyYRIjn5lPd6t/XMggfwtS5051Ox8ucMfQMBUfUKm0R9HpCzOtM4LHXN7jvTTmz+cLY5e",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1786690146.857168,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "AWSALBCORS",
+  "value": "LNolrssZPQG6gW/LLhEAdNmN4VufS33Z1QA6MEcRmexc8cKHhR7FWexYyYRIjn5lPd6t/XMggfwtS5051Ox8ucMfQMBUfUKm0R9HpCzOtM4LHXN7jvTTmz+cLY5e",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1786690146.857195,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "_gcl_au",
+  "value": "1.1.263217108.1786085348.-.-.1786085347.561645995.1786085348.1786085347",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1793861348,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "tatari-cookie-test",
+  "value": "58915768",
+  "domain": "marketing.figma.com",
+  "path": "/",
+  "expires": 1820645348.123901,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "tatari-session-cookie",
+  "value": "5258257c-dc61-29ac-9978-fb609ea860bf",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1820645348.126979,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "id",
+  "value": "221a9b70fb0d01ed||t=1786085329|et=730|cs=002213fd4803e6cdce46bf68d1",
+  "domain": ".doubleclick.net",
+  "path": "/",
+  "expires": 1820645348.399683,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "_twpid",
+  "value": "tw.1786085348325.352950971434527541",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1819781358.336862,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Strict"
+ },
+ {
+  "name": "_rdt_uuid",
+  "value": "1786085348341.b5b91bb4-1c8e-4ef9-a62e-ca499a07f9b6",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1793861348,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Strict"
+ },
+ {
+  "name": "_uetsid",
+  "value": "16ca6790922c11f1aa62f5ee09738ec1",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1786171748,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_uetvid",
+  "value": "16ca8980922c11f19f3211fedbc9566d",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1819781348,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "__cf_bm",
+  "value": "xpnv8V11OwkjFL8zeA8O.PfMN0YxhmbgurYZnk5HpLA-1786085329.9259777-1.0.1.1-UdNqqLqlU3FGRFYBq2.uyqOxu.VCp5CUpyTCvd1LbQQxnyofMPKQq8B6Jtoo3O8eY_gbGtjlTtIcbhTr3.6HT6EzbWch.r5as3J70mGLwAoUOGoOdiFzxN.khTw5QXNE",
+  "domain": ".bzrcdn.openai.com",
+  "path": "/",
+  "expires": 1786087148.437146,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "MR",
+  "value": "0",
+  "domain": ".bat.bing.com",
+  "path": "/",
+  "expires": 1786690149.676717,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "__spdt",
+  "value": "267f31b2d5774d048e650101372cd573",
+  "domain": "marketing.figma.com",
+  "path": "/",
+  "expires": 1817621348,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Strict"
+ },
+ {
+  "name": "MUID",
+  "value": "2AFC385F47CB6529275F2FF1461B648D",
+  "domain": ".bing.com",
+  "path": "/",
+  "expires": 1819781349.676464,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "bito",
+  "value": "AACWJE7U6wAAAAAKO2Qkug",
+  "domain": ".bidr.io",
+  "path": "/",
+  "expires": 1820198948.809087,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "bitoIsSecure",
+  "value": "ok",
+  "domain": ".bidr.io",
+  "path": "/",
+  "expires": 1820198948.809286,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "li_sugr",
+  "value": "7b836125-3539-4c97-b8ef-9a48ee60dd0e",
+  "domain": ".linkedin.com",
+  "path": "/",
+  "expires": 1793861350.18742,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "bcookie",
+  "value": "\"v=2&4733c364-ce08-4b00-87f7-043073a842b3\"",
+  "domain": ".linkedin.com",
+  "path": "/",
+  "expires": 1817621350.187647,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "lidc",
+  "value": "\"b=OGST08:s=O:r=O:a=O:p=O:g=3471:u=1:x=1:i=1786085330:t=1786171730:v=2:sig=AQEi8mwtlrZME3tttVrLxgsW716nUdkg\"",
+  "domain": ".linkedin.com",
+  "path": "/",
+  "expires": 1786171749.441957,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "__cf_bm",
+  "value": "p8WAiy1tXlq.M89C.aqjF0BwnNeyRXsvK8D6vti1pXA-1786085330.878729-1.0.1.1-.YRy_8SWeB4R33f4Ya1HBSJttTqq4own90YbsjzYcQCdH.TTlYZtBn4gtCuKInIAdcz.188yOFu_flYXXxq7tIL3fhxDWg8Kd8WOLlPuqHFIvF_s_96V26XcyXIY9UYk",
+  "domain": ".linkedin.com",
+  "path": "/",
+  "expires": 1786087149.442014,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "UserMatchHistory",
+  "value": "AQKv_FkcbONjvAAAAZ_a-1DZXScXLgQNfkEAEeZNiRFHcqryFFIJy7JTz34AD9bcpQirKDxKJDNMsQ",
+  "domain": ".linkedin.com",
+  "path": "/",
+  "expires": 1788677349.680426,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "AnalyticsSyncHistory",
+  "value": "AQJ57n50oTebJAAAAZ_a-1DZ0zZHWLmetXoWvZg3lcyiSWzmZ-4iNqyPgubHV_Uma3Ffyz0S8vu2fVROGAbhjQ",
+  "domain": ".linkedin.com",
+  "path": "/",
+  "expires": 1788677349.680498,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "CLID",
+  "value": "d5ee1ea40eae46cf88100b6709ea3971.20260807.20270807",
+  "domain": "www.clarity.ms",
+  "path": "/",
+  "expires": 1817621349.776838,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "bscookie",
+  "value": "\"v=1&2026080706485159befab1-1c64-4ffe-8ab1-b1796e6eabf5AQGlIgow0Xd2kLgyO6KBrhAptQXSHqcs\"",
+  "domain": ".www.linkedin.com",
+  "path": "/",
+  "expires": 1817621349.933061,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "_clck",
+  "value": "601u8c%5E2%5Eg8e%5E0%5E2410",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1817621350,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_clsk",
+  "value": "1hbsali%5E1786085351305%5E1%5E0%5Eh.clarity.ms%2Fcollect",
+  "domain": ".figma.com",
+  "path": "/",
+  "expires": 1786171751,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_fwb",
+  "value": "106EtA13FCHC1qCSpMVxgDF.1786085352430",
+  "domain": ".marketing.figma.com",
+  "path": "/",
+  "expires": 1820645352.430643,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "wcs_bt",
+  "value": "undefined:1786085352",
+  "domain": "marketing.figma.com",
+  "path": "/",
+  "expires": 1820645352.436895,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "NWB",
+  "value": "70b6af956d2adaeab19e03750ad4dbe4.1786085334254",
+  "domain": ".wcs.naver.com",
+  "path": "/",
+  "expires": 1820645352.695567,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "IP_ADDRESS_CONTROLS",
+  "value": "D34m25Ky6O1OBcRitx-JwQt6c0ytmFOA.EWpXqfiD6j9GCBcmWVwC5zvc-RkGPcyJwkgpvCmZa9AYVyJFmQEph071-eEezoBcuYD-PsBtKYnXJZ-r3TOO0LA-KW15J7c3z0SxKUx5KqUyPUTSgAkC1soCOfNTRg%3D%3D",
+  "domain": ".www.figma.com",
+  "path": "/",
+  "expires": 1789541362.647573,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "__Host-figma.authn",
+  "value": "%7B%221666382703778278399%22%3A%22figtkn.5565120979.authn.Ge0M92jS6q8tiYq2cJlUJY%22%7D",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1789541362.647656,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "__Host-figma.authn-state",
+  "value": "1",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1789541362.64772,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "__Host-figma.authn.mac",
+  "value": "1.eyJwbGFuIjoic3RhcnRlciIsImV4cGlyZXNfYXQiOjE3OTEyNjkzNDR9.d71eff566d3a7ba94a9dd127e07f3e627488e5b800291cbf6a23be4bb4db818d",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1789541362.64778,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "__Host-figma.embed",
+  "value": "%7B%221666382703778278399%22%3A%22figtkn.5565120981.embed.iqRvTm2zoyjdK3GQU6p1I2%22%7D",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1789541362.647839,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "__Host-figma.embed.mac",
+  "value": "1.eyJwbGFuIjoic3RhcnRlciIsImV4cGlyZXNfYXQiOjE3OTEyNjkzNDV9.b79ff3cf9c016e1ad9e42d991945a372f59083c48ce49230ee6d74abb50c2653",
+  "domain": "www.figma.com",
+  "path": "/",
+  "expires": 1789541363.647893,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "figma.mst",
+  "value": "1",
+  "domain": ".www.figma.com",
+  "path": "/",
+  "expires": 1789541363.647948,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "figma.session",
+  "value": "BAh7CEkiD3Nlc3Npb25faWQGOgZFVG86HVJhY2s6OlNlc3Npb246OlNlc3Npb25JZAY6D0BwdWJsaWNfaWRJIkU3ZTU1ZjlmZTZjM2MxZWZlZmM3ZmFiMGQ4MWVjYjZjYmI1OWE4NjIwMzcxNTUzN2JmZWEzN2NhZDA1NDZkMmM0BjsARkkiCmZsYXNoBjsARnsASSINdXNlcm5hbWUGOwBGSSIWMTY0MzU4NDE3NkBxcS5jb20GOwBU--9e8630fc67e2777e800d78215af409d0bba17b2e",
+  "domain": ".www.figma.com",
+  "path": "/",
+  "expires": 1789541364.548926,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "Lax"
+ }
+]

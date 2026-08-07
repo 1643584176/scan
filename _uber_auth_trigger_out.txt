@@ -1,0 +1,9 @@
+input 数量: 1
+  [0] type=email name=email placeholder=输入手机号码或电子邮箱 autocomplete=email webauthn
+输入到 [0]
+  btn[0]: 继续
+  btn[1]: 使用 Google 继续操作
+  btn[2]: 使用 Apple 继续操作
+点击按钮[0]: 继续
+
+=== graphql 请求: 0 ===

@@ -1,0 +1,44 @@
+=== DRIVE: Follow redirects ===
+  /api/                404 ¡ú /api
+  /api/v1/             404 ¡ú /api/v1
+  /v1/                 404 ¡ú /en/v1
+  /graphql             404 ¡ú /en/graphql
+  /orders/             404 ¡ú /en/orders
+  /delivery/           404 ¡ú /en/delivery
+  Login page has: buildId
+
+=== AUTH.WOLT.COM OAUTH AUDIT ===
+[1] OAuth endpoints:
+  GET  /v1/wauth2/consumer-sms/verification-delivery-methods   200 | {"country_codes":{"358":["sms","whatsapp","whatsapp_zero_tap","telegram","viber","call"]},"default":["sms","whatsapp","whatsapp_zero_tap","telegram","
+
+[2] SMS verification flow:
+  POST /v1/wauth2/consumer-sms/send-verification               404 | <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try agai
+  POST /v1/wauth2/consumer-sms/verify                          404 | <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try agai
+  POST /v1/wauth2/consumer-email/send-verification             404 | <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try agai
+  POST /v1/wauth2/consumer-email/verify                        404 | <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try agai
+
+[3] OAuth redirect_uri test:
+  redirect_uri=https://evil.com                         404 ¡ú 
+  redirect_uri=https://wolt.com.evil.com                404 ¡ú 
+  redirect_uri=https://wolt.com@evil.com                404 ¡ú 
+  redirect_uri=https://wolt.com/%2f%2fevil.com          404 ¡ú 
+
+[4] OpenID configuration:
+
+DONE

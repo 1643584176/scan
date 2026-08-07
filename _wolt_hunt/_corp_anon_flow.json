@@ -1,0 +1,12 @@
+[
+ {
+  "m": "POST",
+  "u": "https://o17585.ingest.us.sentry.io/api/4510702272053248/envelope/?sentry_version=7&sentry_key=db5ed2e7dd93d83d6fd0ee4ecf1a3cb4&sentry_client=sentry.javascript.react%2F9.47.1",
+  "body": ""
+ },
+ {
+  "m": "GET",
+  "u": "https://consumer-static-assets.wolt.com/lottie/assets/corporate_login_overview_3-2.json",
+  "body": ""
+ }
+]
