@@ -10,3 +10,7 @@ data/blobs/
 reports/
 spa_analysis/
 *.log
+
+# Figma 抓包快照（含 AWS 预签名凭据，不入库）
+_figma_hunt/editor_page.html
+_figma_hunt/ws_traffic.json
