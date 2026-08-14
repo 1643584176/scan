@@ -1,0 +1,26 @@
+{
+ "TeamPublicInfo": {
+  "queries": {
+   "[\"root\",\"teamPublicInfo\",[\"1666397394890946753\"],[]]": {
+    "initial": {}
+   }
+  },
+  "computations": {}
+ },
+ "Team": {
+  "queries": {
+   "[\"root\",\"team\",[\"1666397394890946753\",\"1666382703778278399\"],[]]": {
+    "initial": {}
+   }
+  },
+  "computations": {}
+ },
+ "TeamLimitedInfo": {
+  "queries": {
+   "[\"root\",\"teamLimitedInfo\",[\"1666397394890946753\",\"1666382703778278399\"],[]]": {
+    "initial": {}
+   }
+  },
+  "computations": {}
+ }
+}

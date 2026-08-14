@@ -1,0 +1,5 @@
+=== Anonymous livegraph PlanByFileKey query for public file CYs4jJGyYeUxpAVcJ2EAZ4 (Material 3 Design Kit) ===
+
+// Full Plan object of owning team (team::724875287175278511, Team chi)
+//   -> stripeCustomerId leaked (cus_IlEm1OntcEC6uH), second independent case
+{"messageType":"denormalizedPendingMutations","mutations":{"[\"FileByKey\",{\"fileKey\":\"CYs4jJGyYeUxpAVcJ2EAZ4\"}]":{"Project":{"queries":{"[\"File\",\"project\",[null],[\"129921236\"]]":{"initial":{}}},"computations":{}}}}}

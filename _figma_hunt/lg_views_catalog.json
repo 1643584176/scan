@@ -1,0 +1,483 @@
+{
+ "OpenEditorFileData": {
+  "hash": "3d578d4859a5845c2f037014898cd2e84f17ac3961ec9fa4b7f1d06c302e63c1",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "StatsigTeamsOrderView": {
+  "hash": "16c129c0c9135d1b62bf91a990996bf07c3771e5dfa34ba09a7d6da442e59bf2",
+  "args": {
+   "currentOrgId": null
+  }
+ },
+ "FileCanUseDevModeDemoFile": {
+  "hash": "71f2e28d59b7dd5cb843ca69e89d4b8ee17de0a0acfe265c7c3fb2d0e91d38de",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "TeamByIdForPlanUserView": {
+  "hash": "91557f88bbaa665a0f1aa49fb5653f16d090b232067a52c34d21d733cd90ebaa",
+  "args": {
+   "teamId": "1484993099407069875"
+  }
+ },
+ "OrgByIdForPlanUserView": {
+  "hash": "563a564f117cc2fafcebf3f69feb5fad597e05231075227e6e21562d6fca5bf0",
+  "args": {
+   "orgId": "1484997479016537761"
+  }
+ },
+ "TeamByIdForPlanView": {
+  "hash": "1702975bb11e8a131da34d8767ea0ef2174c622e6a87a94cd25c8dcd63cb32c0",
+  "args": {
+   "teamId": "1484993099407069875"
+  }
+ },
+ "LibraryPresetSubscriptionsV2": {
+  "hash": "dbde304966947b3db8eb706daec19fc36cc68fe30b20e4835aaf638983798fb0",
+  "args": {
+   "group": "default"
+  }
+ },
+ "UserColorProfilePreferenceView": {
+  "hash": "b8d0e8d696d791163e3e7caf8df987593becff3f127d7cc9b10a449c256e5b09",
+  "args": {}
+ },
+ "LibraryVariableCollectionDataWithVariables": {
+  "hash": "64d304112f925191f67332c426a2c4ccf7a0134d1451e831ad1b02cb7a09b838",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "LibraryModuleData": {
+  "hash": "25318ec37d5b8f135dc56e8db11605593ba93c154936ac32e6bbcfad7368e185",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "OrgByIdForPlanView": {
+  "hash": "c99f01108f2893bdccf8912323ca9ac97a7c0c6b6232faa979b42ad29fa83d41",
+  "args": {
+   "orgId": "1484997479016537761"
+  }
+ },
+ "LegacySourceStyleData": {
+  "hash": "5cbf3e6251d38bb8e8a3803f32ea3ace8dfdf1647d7857a9d828890fe4c2fc64",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "ClientReloadView": {
+  "hash": "090107196b2da79691cdfb1d0184f983e8335f393c9c59a8201bae7318a03f36",
+  "args": {
+   "cacheNonce": "d48ab68f-4b83-4cbb-a448-d8842cb575fe"
+  }
+ },
+ "RecentNetworkControlRejectionView": {
+  "hash": "70ac169ba7bfadb506b3117809bf61e3d264afc826f87c4dcef8409c028392ce",
+  "args": {
+   "cacheNonce": "f1373c66-069c-47c6-99db-9d7cbbae3c6f"
+  }
+ },
+ "RecentIdleTimeoutSettingChangeView": {
+  "hash": "a77f1370dad45949b55317d68e62d2a0c2c811abe0ba52449efa02b64ba0bb47",
+  "args": {
+   "cacheNonce": "1ebcfc2a-1d6c-461f-ad57-6c6a972fd2a8"
+  }
+ },
+ "AiAssistantKillSwitchView": {
+  "hash": "01a5350a5d6b49eb45aa04414b294f5a815be998b73ea80a7bb3de567299b928",
+  "args": {}
+ },
+ "OrgSharedSettingView": {
+  "hash": "0dbedcef4ecf486641b4babc1a6bc2b0c74a246604f97eeb249bb7eee0278934",
+  "args": {
+   "orgId": null
+  }
+ },
+ "McpOauthClientsView": {
+  "hash": "0f29e00009b30c4ed823dd9cc6b12e1894a02fd27f33b3845db8d864e1d18801",
+  "args": {}
+ },
+ "LockClientView": {
+  "hash": "33c1c91067a94b090e87a7a00fba7e2660afa8224decc365ca4c0a30fbf1b6bd",
+  "args": {
+   "cacheNonce": "029e5cf6-80ff-495e-afb7-fbdd40ef7692"
+  }
+ },
+ "LibraryData": {
+  "hash": "fce68eeee3014e622a2b8b96ed5d952b6fd4d24158900c3bb2dc838fb0c84136",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanAccessFullDevMode": {
+  "hash": "f506b79a43e49021fe7849dd7c7fc40f6fb72abaef507ec85d08755080e32242",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileIsEligibleForDevModeTrial": {
+  "hash": "23520a9b4bebc0f4f046ed87f1d0ecde16b6921c33bb77ee401643e306d847e8",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileIsInDevModeTrial": {
+  "hash": "f4c69d681cee5d2b6cef7fdef0d07ea7c41189ecd9975b10abd8631df927bbf8",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileDevModeTrialRequestPending": {
+  "hash": "4df27755acef32c0f36e27e051e9e5c870ba03a3c604ce372666c0a3eee4179b",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanAccessFullDevModeOrgPlus": {
+  "hash": "db18a44b9e48fc21754b68b0340c2671cf783540e27b925179a0e078d0dcac94",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanExport": {
+  "hash": "587caea09b9955bcee87d8cab74135babc7f1132d16fa92dc111b0c6e7397440",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "StateGroupUpdatesForFile": {
+  "hash": "2de78467d59a4d6df8958733b67a21de63c9cb483bc7b8a5ff048197f0b4d6b1",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "ComponentUpdatesForFile": {
+  "hash": "ce0fab2c340a93161f5ef44d2832eb83886d6af8cf488f4d484be472d049b1a7",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanUseAiOrViewerModeAi": {
+  "hash": "ee9b0b3e54517bf5bc54e0eb4fb230c053df66ad3bf537c35b750ed5bf69b835",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanEditCmsContent": {
+  "hash": "b5e3a8543d56969c37b7de219f1e72aa157a5a3e758c8c3cb2e61a770e08269b",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "SavedResources": {
+  "hash": "7d69cf1976004be90f8ba354cbcf1b29d2a0b99b0f4f5d77bcfad973f78372f1",
+  "args": {
+   "orgId": null
+  }
+ },
+ "FileCanViewAnnotations": {
+  "hash": "0ef9b185c9a43422d0afb654aa963bcbb068da69ef1f3cecce6732d608a2e3f0",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileAiChatThreadsView": {
+  "hash": "3ebe8bcd1ab2477b47769f9f4463b6541a104b6d6762402c7ffadd514bfbe08c",
+  "args": {
+   "ownerId": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanEditAnnotations": {
+  "hash": "512a71a0e97a05ad4d142ece8c20fbd7679572490b3e69fc941c5e086a8b81b6",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanViewAnnotationsMegadot": {
+  "hash": "161303d4861fc5234987b1cb8ece4e9a17afd12bc71b3dce3da63ae75b7d5673",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "DeveloperRelatedLinks": {
+  "hash": "86b9ea24e1c2a9fcb8f60fcaeb14ec2929e8e50f143bdc52e1b429951d1f998c",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileWorkshopMode": {
+  "hash": "d154f3413323c86e37f70534214df3b9ac68baa412849357b0ddf55436ef007e",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "PlanByFileKey": {
+  "hash": "f3100f1ff3ea3f670d76ee03e3d3b842a2ca479fef2ec5e95a3f175020432432",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "CurrentTeamCombinedPermissions": {
+  "hash": "f25ed3eceb859f73d4484895786b72fcf082f473c83967f96136f7fa8d0f05b4",
+  "args": {
+   "teamId": "1484993099407069875"
+  }
+ },
+ "TeamPermissions": {
+  "hash": "3c15fa4360ea844a42a171e481c5d8dff8c9d7ea55bc6af6a6bbeead3740d73c",
+  "args": {
+   "teamId": "1484993099407069875"
+  }
+ },
+ "TeamCanEdit": {
+  "hash": "5c9e003db9b41e1229921b5b8015f5bbbdcfe5c833d7ff92fd9f7effa8abb081",
+  "args": {
+   "id": "1484993099407069875"
+  }
+ },
+ "UserForRcs": {
+  "hash": "d3fe5032fdb0514d65901993a4761d35e3898d0e297139137434b892c13a720b",
+  "args": {}
+ },
+ "PluginPreferencesView": {
+  "hash": "e3d8665753ccfbd945f8a332f8c2655058c891e4edac217e989520560a27768a",
+  "args": {
+   "targetOrgId": null,
+   "targetUserId": null
+  }
+ },
+ "CurrentWorkspaceView": {
+  "hash": "77055e368f294046750e92f0f2cd631bcda774b75958d91f83ef455a63a93a84",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanEdit": {
+  "hash": "d429642e776cbca7c56d234c6e357805c6895b62e717c1348b55331ccfbff340",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanAccessTextureMode": {
+  "hash": "03d319dcad48b8a9061498e83f46e60f9e9a58761f8419bd672a5f8311fcd00b",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanAccessMotionEntryPoint": {
+  "hash": "4627be64c52bb211239d9b97a3b24806ddb3fe5c809137b904399d4226e7a22c",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "DeviceTryFileView": {
+  "hash": "5b6c90465cc55b296a79debe5c9981724bfe188777aecfc3485dd3dfc178dec6",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "StarterFileEditConfirmation": {
+  "hash": "273c4b03605071bd534fd26e15e668b54942c76f98bcb012ae51b4d3fdd23834",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "HasCollectionsView": {
+  "hash": "f486c759f20ebb90b1d19adcb589d65658fcb2fd8398ebb75208c9da5cc2470a",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "LibraryFileSubscriptions": {
+  "hash": "80c3c503f71aa45758ce8c957a85ffcc0228820b2f75b70643ec7775d10b8917",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "NotificationExperimentInfoView": {
+  "hash": "58df839f568b743fd6db9d0d7dc78b4604c81ab309601896cad37d16f9037ccd",
+  "args": {
+   "cacheNonce": "95671ab9-b397-4c36-b808-e07c413c382b"
+  }
+ },
+ "FileCanUseAi": {
+  "hash": "6cce5027f0502e5e52fee98183103911b9e553d76eef7acf12fc76413286faae",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanUseFragmentSearchAi": {
+  "hash": "fa0101eff101821aa08f2627b8ba787a0a1e110d85f17ad27023594901669b67",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "RecentlyUsedActionsView": {
+  "hash": "18a4664fc64eba9e5112460de6e6fff17bb6e6087e1920dc4549131d066fbabd",
+  "args": {}
+ },
+ "LibraryOrgSubscriptions": {
+  "hash": "308a5587bdc35bf1555c8d66f48140d575395e0849ea4fdfc2a30b7747f9e2f7",
+  "args": {
+   "orgId": "1484997479016537761"
+  }
+ },
+ "LibraryTeamSubscriptions": {
+  "hash": "4c9548d44057067d15a26b79394acadec329ba9d463605b4a194cb08f045d001",
+  "args": {}
+ },
+ "FileExpirationView": {
+  "hash": "ce4475fd4467dad6b807038f260eabe872ba39c1abf7f51f34f1fea28d173405",
+  "args": {
+   "figFileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanUseAiOrDevModeAi": {
+  "hash": "0207dfbdc37da131107759e8890c16bf7163e9aed0cbe1008b9bc0af2d7270cf",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileByKey": {
+  "hash": "b4514b92941fdb1f9b4eead3631d8bd84db24aa08749369dc781799c07cdbb87",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "WorkspaceSubscribedLibrariesForFile": {
+  "hash": "fcadb1ab2e9846738e61dab8c7d3dcbc01eca47f9da71053c5a60ff36acdd603",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "UserPreferences": {
+  "hash": "0fbadfdec8232c9f0a4391584a5f1ca18173900ad88e24c71572d94d950239ef",
+  "args": {}
+ },
+ "EditButtonView": {
+  "hash": "02a05911592fa7c50fafce2d9a19b43f85c18b4ae2871a9d43ba50950e4c3a73",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm",
+   "orgId": "1484997479016537761"
+  }
+ },
+ "FileWithCommentsAndReactions": {
+  "hash": "f8a9f1559e2f6f626ada9312cc6d6aab7ab93159c85c1d913602ffa44098befb",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "ResolvedComments": {
+  "hash": "a1cf406e0c93591363e16d1a2fffa9a5913f2883d6530681d619a623ef2e6d5a",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "StyleByKey": {
+  "hash": "beb5599483dc49b838e3b5ed3a25036150d98076d58883458b3667f59105ac85",
+  "args": {
+   "key": "196134914f1a2caaed0544fdf24c5dd5bc240d5e",
+   "openFileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "VariableCollectionByKey": {
+  "hash": "9e738dbfdb1d8dd7cedbae83a35f02bdba405a52b6c3cf917e962f0da4eda5b6",
+  "args": {
+   "key": "035e4ac9aca4a1d799d59f1397d4a2a0d258ad02"
+  }
+ },
+ "FileNameViewDropdown": {
+  "hash": "7d64032442b4a5ae2a05e3e8ae85ccf26fb835a3fd0ee048b622781dd0e012f6",
+  "args": {
+   "branchFileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileManagePermission": {
+  "hash": "162d04161b8c6291972a603bdcf686594055268634f4561f48c7735197455b17",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "BranchingPermissionsView": {
+  "hash": "9db40469cfd535d286cb7e0c73b34f5bc8a261a9d00bb3a432d6777a2a9904f5",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "ListCollectionsView": {
+  "hash": "088c61c1b79bf15ca0a788c05eaab4b8abe2e1cc20aa0bd50240a6d29540745e",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "UserFlagByName": {
+  "hash": "6a2a32059390f46f8acdbfc31ecfb2f3ebf6b591a6034d930cca491353ba0750",
+  "args": {
+   "name": "seen_ready_for_dev_callout"
+  }
+ },
+ "VariableByKey": {
+  "hash": "3b8a33645bf385eb2997212c0f4f62a247d4f0aa934362a971004badff577d4e",
+  "args": {
+   "key": "019b20b56352f8679acd7aad132c690f2e6c545d"
+  }
+ },
+ "ActiveAiChatThreadView": {
+  "hash": "af9504cfba69fdd37da19942f106e91e2876603f5a342e8bafc940ad8f80344c",
+  "args": {
+   "ownerId": "bv2nMIdFf4u3dESGail4sm",
+   "id": "26586add-d136-422a-a39b-df6fc226da56"
+  }
+ },
+ "FileEditRequestExistence": {
+  "hash": "012240b6dd72d26835eb97cc2c6145b43b52203981af2bcfeae9740a74ebb614",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "DeveloperRelatedLinksForNode": {
+  "hash": "751c06876b14287fe2809c67ee86a0f3740f0358db5e6dbabf3768ef53d6bb2b",
+  "args": {
+   "fileKey": "",
+   "nodeId": ""
+  }
+ },
+ "FilePermissionsV2": {
+  "hash": "3a3a1e4c25cc440f94f0d254a3ff2c4f9f0ac2eb2ab9a0d2c41b9c4fabf968e0",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm",
+   "teamId": "1484993099407069875",
+   "currentOrgId": null
+  }
+ },
+ "FileWithRoleRequests": {
+  "hash": "e34f3faad2635eea5d085a34de1a43df81aa31324a97790ea679a4e5af528c88",
+  "args": {
+   "fileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "FileCanAccessFullCodeConnect": {
+  "hash": "3f98cae95fdb0a3857b3392bc0c11e35824b40e01f501072dc844f1109648d2a",
+  "args": {
+   "key": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "PreloadCodeConnectLk": {
+  "hash": "1d67c47f72323a639084478bd180b8acec84be881542cafa0fbcfb1266275f27",
+  "args": {
+   "nodes": [],
+   "openFileKey": "bv2nMIdFf4u3dESGail4sm"
+  }
+ },
+ "AutoRunPluginsView": {
+  "hash": "d4248d7842123417435d71a892426b7d61d5824aa9a915a3e9ca0b520f4fd245",
+  "args": {
+   "targetOrgId": "1484997479016537761",
+   "targetUserId": null
+  }
+ }
+}

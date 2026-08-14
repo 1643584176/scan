@@ -1,0 +1,22 @@
+{
+ "漏洞": "livegraph TeamByIdForPlanView 匿名 IDOR - 任意团队计划信息泄露",
+ "端点": "wss://www.figma.com/api/livegraph",
+ "视图": "TeamByIdForPlanView (viewHash=1702975bb11e8a131da34d8767ea0ef2174c622e6a87a94cd25c8dcd63cb32c0)",
+ "复现": {
+  "匿名_teamA(1666382706663462213)": {
+   "id": "team::1666382706663462213",
+   "tier": "starter",
+   "planRecordId": "cc6b6125-a07f-4d39-a54c-50ef65f33919"
+  },
+  "匿名_外部企业团队(1484993099407069875)": {
+   "id": "organization::1484997479016537761",
+   "tier": "enterprise",
+   "planRecordId": "8c2cd314-b89d-4664-b6dc-6c8ac706665d"
+  },
+  "匿名_无效ID(1111111111111111111)": "空壳(对照:按查询ID返回,非调用者上下文)",
+  "A登录态_外部企业团队": "与匿名响应完全一致(无字段裁剪)"
+ },
+ "影响": "匿名用户可查询任意存在 teamId 的套餐层级(tier)、内部计划记录ID(planRecordId)、组织归属(orgId)，跨租户信息泄露",
+ "团队ID来源": "公开文件 metadata 或猜测枚举",
+ "关联视图": "CurrentTeamCombinedPermissions 同样匿名返回任意团队 teamPublicInfo(subscription/isOrgTeam/studentTeamState)"
+}

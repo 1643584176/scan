@@ -1,0 +1,38 @@
+{
+ "LegacySourceStyleData": [
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"LegacySourceStyleData\\\",{\\\"fileKey\\\":\\\"5Gs4PaTz11Hlk2sqVnidBG\\\"}]\":{\"File\":{\"queries\":{\"[\\\"root\\\",\\\"fileV2\\\",[\\\"5Gs4PaTz11Hlk2sqVnidBG\\\"],[]]\":{\"initial\":{}}},\"computations\":{}}}}}"
+ ],
+ "LibraryVariableCollectionDataWithVariables": [
+  "{\"messageType\":\"viewLoaded\",\"viewName\":\"LegacySourceStyleData\",\"args\":{\"fileKey\":\"5Gs4PaTz11Hlk2sqVnidBG\"}}",
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"LibraryVariableCollectionDataWithVariables\\\",{\\\"fileKey\\\":\\\"5Gs4PaTz11Hlk2sqVnidBG\\\"}]\":{\"File\":{\"queries\":{\"[\\\"root\\\",\\\"fileV2\\\",[\\\"5Gs4PaTz11Hlk2sqVnidBG\\\"],[]]\":{\"initial\":{}}},\"computations\":{}}}}}"
+ ],
+ "LibraryModuleData": [
+  "{\"messageType\":\"viewLoaded\",\"viewName\":\"LibraryVariableCollectionDataWithVariables\",\"args\":{\"fileKey\":\"5Gs4PaTz11Hlk2sqVnidBG\"}}",
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"LibraryModuleData\\\",{\\\"fileKey\\\":\\\"5Gs4PaTz11Hlk2sqVnidBG\\\"}]\":{\"File\":{\"queries\":{\"[\\\"root\\\",\\\"fileV2\\\",[\\\"5Gs4PaTz11Hlk2sqVnidBG\\\"],[]]\":{\"initial\":{}}},\"computations\":{}}}}}"
+ ],
+ "TeamByIdForPlanUserView": [
+  "{\"messageType\":\"viewLoaded\",\"viewName\":\"LibraryModuleData\",\"args\":{\"fileKey\":\"5Gs4PaTz11Hlk2sqVnidBG\"}}",
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"TeamByIdForPlanUserView\\\",{\\\"teamId\\\":\\\"1666382706663462213\\\"}]\":{\"TeamPublicInfo\":{\"queries\":{\"[\\\"root\\\",\\\"teamPublicInfo\\\",[\\\"1666382706663462213\\\"],[]]\":{\"initial\":{\"1666382706663462213\":{\"id\":\"1666382706663462213\"}}}},\"computations\":{}}}}}"
+ ],
+ "TeamByIdForPlanView": [
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"TeamByIdForPlanUserView\\\",{\\\"teamId\\\":\\\"1666382706663462213\\\"}]\":{\"Team\":{\"queries\":{\"[\\\"root\\\",\\\"team\\\",[\\\"1666382706663462213\\\",null],[]]\":{\"initial\":{}}},\"computations\":{}},\"TeamPublicInfo\":{\"queries\":{},\"computations\":{\"[\\\"TeamPublicInfo\\\",\\\"currentPlanUser\\\",\\\"1666382706663462213\\\",{\\\"_rootId\\\":\\\"1666382706663462213\\\",\\\"userId\\\":null}]\":{\"fieldName\":\"currentPlanUser\",\"value\":null}}}}}}"
+ ],
+ "McpOauthClientsView": [
+  "{\"messageType\":\"viewLoaded\",\"viewName\":\"TeamByIdForPlanUserView\",\"args\":{\"teamId\":\"1666382706663462213\"}}",
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"TeamByIdForPlanView\\\",{\\\"teamId\\\":\\\"1666382706663462213\\\"}]\":{\"TeamPublicInfo\":{\"queries\":{\"[\\\"root\\\",\\\"teamPublicInfo\\\",[\\\"1666382706663462213\\\"],[]]\":{\"initial\":{\"1666382706663462213\":{\"id\":\"1666382706663462213\"}}}},\"computations\":{}},\"Team\":{\"queries\":{\"[\\\"root\\\",\\\"team\\\",[\\\"1666382706663462213\\\",null],[]]\":{\"initial\":{}}},\"computations\":{}}}}}"
+ ],
+ "OrgSharedSettingView": [
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"TeamByIdForPlanView\\\",{\\\"teamId\\\":\\\"1666382706663462213\\\"}]\":{\"TeamPublicInfo\":{\"queries\":{},\"computations\":{\"[\\\"TeamPublicInfo\\\",\\\"planPublicInfo\\\",\\\"1666382706663462213\\\",{\\\"_rootId\\\":\\\"1666382706663462213\\\",\\\"userId\\\":null}]\":{\"fieldName\":\"planPublicInfo\",\"value\":{\"id\":\"team::1666382706663462213\",\"tier\":\"starter\",\"key\":{\"type\":\"team\",\"parentId\":\"1666382706663462213\"},\"planRecordId\":\"cc6b6125-a07f-4d39-a54c-50ef65f33919\"}}}}}}}"
+ ],
+ "StatsigTeamsOrderView": [
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"TeamByIdForPlanView\\\",{\\\"teamId\\\":\\\"1666382706663462213\\\"}]\":{\"TeamLimitedInfo\":{\"queries\":{\"[\\\"root\\\",\\\"teamLimitedInfo\\\",[\\\"1666382706663462213\\\",null],[]]\":{\"initial\":{}}},\"computations\":{}}}}}"
+ ],
+ "UserColorProfilePreferenceView": [
+  "{\"messageType\":\"viewLoaded\",\"viewName\":\"TeamByIdForPlanView\",\"args\":{\"teamId\":\"1666382706663462213\"}}",
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"McpOauthClientsView\\\",{}]\":{\"OauthConnection\":{\"queries\":{\"[\\\"root\\\",\\\"oauthConnection\\\",[null],[]]\":{\"initial\":{}}},\"computations\":{}}}}}"
+ ],
+ "FileCanUseDevModeDemoFile": [
+  "{\"messageType\":\"viewLoaded\",\"viewName\":\"McpOauthClientsView\",\"args\":{}}",
+  "{\"messageType\":\"denormalizedPendingMutations\",\"mutations\":{\"[\\\"OrgSharedSettingView\\\",{\\\"orgId\\\":null}]\":{\"Org\":{\"queries\":{\"[\\\"root\\\",\\\"org\\\",[null,null],[]]\":{\"initial\":{}}},\"computations\":{}}}}}"
+ ]
+}

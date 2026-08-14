@@ -1,0 +1,128 @@
+{
+  "name": "notion",
+  "platform": "hackerone",
+  "program_url": "https://hackerone.com/notion",
+  "username": "pccp",
+  "fetched_at": "2026-08-12T09:25:56+00:00",
+  "bounties": [
+    "$50-$100 Low",
+    "$100-$250 Medium",
+    "$500-$2,000 High",
+    "$2,000-$5,000 Critical"
+  ],
+  "scope": {
+    "in_scope": [
+      {
+        "name": "Public API",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "api.notion.com 资源;特别关注 API token 权限提升"
+      },
+      {
+        "name": "Product API",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "notion.so/api/v3;重点关注 injection/RCE/SSRF/IDOR/权限提升"
+      },
+      {
+        "name": "Privilege Escalation",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "访问无权限页面;尤其 'Anyone with a link' 共享页被未拿链接者访问"
+      },
+      {
+        "name": "notion.id",
+        "type": "Android: Play Store",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "Android app"
+      },
+      {
+        "name": "Notion Integrations",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "第三方集成 CSRF"
+      },
+      {
+        "name": "Notion Frontend",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "notion.so/ 及其营销站资源"
+      },
+      {
+        "name": "Notion Desktop App",
+        "type": "Executable",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "www.notion.so/desktop"
+      },
+      {
+        "name": "Notion Authentication",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "认证面"
+      },
+      {
+        "name": "Notion AI",
+        "type": "AI Model",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "AI 访问用户无权限数据;混淆/不可见字符改 AI 响应需证明安全影响"
+      },
+      {
+        "name": "mail.notion.so",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "邮件域名"
+      },
+      {
+        "name": "Github Repositories or other public artifacts owned by makenotion",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "GitHub 公开仓库/工件"
+      },
+      {
+        "name": "calendar.notion.so",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible",
+        "note": "日历域名"
+      }
+    ],
+    "out_of_scope_domains": [],
+    "count": 12
+  },
+  "rules": {
+    "required_headers": [],
+    "user_agent": "",
+    "rate_limit": "",
+    "test_accounts": [],
+    "test_entities": [],
+    "forbidden": [
+      "file.notion.so / notion-static.com 上的 JS 执行(预期行为,除非证明对 in-scope 用户造成伤害)",
+      "页面/数据库视图 lock 功能绕过",
+      "付费墙绕过(获取更高计划付费功能)",
+      "AI prompt engineering 响应操控(提交给模型厂商)",
+      "system prompt 泄露(无进一步用户影响)",
+      "In-App Contact form(链接外部平台)"
+    ],
+    "report_rules": [
+      "Please provide detailed reports with reproducible steps. If the report is not detailed enough to reproduce the issue, the issue will not be eligible for a reward.",
+      "Make a good faith effort to avoid privacy violations, destruction of data, and interruption or degradation of our service. Only interact with accounts you own or with the explicit permission of the account holder."
+    ],
+    "notes": [
+      "Bounty 启动于 2025-11,响应效率 93%,90 天收到 566 报告(竞争激烈)",
+      "Product API 占已解决报告 54%(96 个)——主战场",
+      "Privilege Escalation 明确点名 'Anyone with a link at' 共享页场景",
+      "提交要求详细可复现步骤,不够详细不奖励"
+    ]
+  }
+}

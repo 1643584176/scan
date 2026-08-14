@@ -1,0 +1,221 @@
+[
+ {
+  "LibraryPresetSubscriptionsV2": {
+   "LibraryPresetSubscriptionV2": {
+    "queries": {
+     "[\"root\",\"libraryPresetSubscriptionsV2\",[\"default\"],[]]": {
+      "initial": {
+       "1fc0f102-a473-4112-847f-251dc3b07735": {
+        "id": "1fc0f102-a473-4112-847f-251dc3b07735",
+        "hubFileId": "1540060090060216489",
+        "group": "default",
+        "order": "5",
+        "partner_type": "apple",
+        "libraryKey": "lk-32bda072ec15e732e76d56aa8bd25314051f296f8519a8d868031b46eaabb5ade1290829d0d7deca926b5388f760e9e94aa76d56bfe2ead33d78adeeeb7d15fb",
+        "default_subscribed": false
+       },
+       "78a55401-3cfd-4f6f-b29b-1ad44ea24819": {
+        "id": "78a55401-3cfd-4f6f-b29b-1ad44ea24819",
+        "hubFileId": "1540071341298017505",
+        "group": "default",
+        "order": "6",
+        "partner_type": "apple",
+        "libraryKey": "lk-4f44e69da5f723deffc1c2461604f793251559fb3fb0f1f6af7c4fffaa12c05a33c40283401af5f2edf0db0639d516ccef9b73ae6aadff7e6588df60cbd36dd4",
+        "default_subscribed": false
+       },
+       "e619c85e-deda-4ed5-9425-cdad97d07214": {
+        "id": "e619c85e-deda-4ed5-9425-cdad97d07214",
+        "hubFileId": "1527721578857867021",
+        "group": "default",
+        "order": "7",
+        "partner_type": "apple",
+        "libraryKey": "lk-a5b98decf0fb24381005421a2986b813149fcf20f37a1169316d44e2802c483494c6fc98ab8e083540a73bd5e45cf892a38123ee61981aee097d5f4eb8487a17",
+        "default_subscribed": false
+       },
+       "01694efe-a695-45d6-a161-2b21fd95fed5": {
+        "id": "01694efe-a695-45d6-a161-2b21fd95fed5",
+        "hubFileId": "1543337041090580818",
+        "group": "default",
+        "order": "8",
+        "partner_type": "apple",
+        "libraryKey": "lk-52492a50a550123b626cdfcd7639929209dc66307681f3f8cf9937770a714f2d76ade248aff2d8a0e42da17e343a440cebc0a04f1800ad34ae6d86e1a7f7aa9a",
+        "default_subscribed": false
+       },
+       "3bfa1c5f-3fcf-4fef-8848-eee7c1858834": {
+        "id": "3bfa1c5f-3fcf-4fef-8848-eee7c1858834",
+        "hubFileId": "1651309003795292092",
+        "group": "default",
+        "order": "1",
+        "partner_type": "apple",
+        "libraryKey": "lk-3167e7e1386e96621fc3b20782e2ec1b199754eeceff2ef04bf90d28a124be6414b67982dc8fb71ea1896b0310c316f54d7b9f0ac598cb3111748728c039a567",
+        "default_subscribed": true
+       },
+       "f9d70674-db15-4079-9ad1-f5711d4e55de": {
+        "id": "f9d70674-db15-4079-9ad1-f5711d4e55de",
+        "hubFileId": "1035203688168086460",
+        "group": "default",
+        "order": "2",
+        "partner_type": "google",
+        "libraryKey": "lk-5a31d104cabc6a74d4edf6425e7bc6575e9c0f18cda7efb746193aef4d915b077d115c985e6cf49d36d97d455a17d5127a2cbbfbc618b8a70a38669dccb61462",
+        "default_subscribed": true
+       },
+       "9b9669da-a33f-4616-bde3-389e4a4e5b5b": {
+        "id": "9b9669da-a33f-4616-bde3-389e4a4e5b5b",
+        "hubFileId": "1380235722331273046",
+        "group": "default",
+        "order": "3",
+        "partner_type": "figma",
+        "libraryKey": "lk-e0ffcff14368019c4f30f45401cd233d6cbc5f869988484192d04cbbef801fb0064ef68feaa8a2775ee4f1f05d9a4af1a6d07b2658eac4aefb7afb18728c4066",
+        "default_subscribed": true
+       },
+       "e29922ab-22bf-475f-b36f-d14999b45aa6": {
+        "id": "e29922ab-22bf-475f-b36f-d14999b45aa6",
+        "hubFileId": "1651309434229735362",
+        "group": "default",
+        "order": "4",
+        "partner_type": "apple",
+        "libraryKey": "lk-9b6046629e11db2bbe15e5a3fa0443ecd557a34812bc69997a2b8598852d86fb806d4036ca6c146521c7e1cf898a1e3d46dda55a15bf1f86579794b29480aa80",
+        "default_subscribed": false
+       }
+      }
+     }
+    },
+    "computations": {}
+   },
+   "CommunityLibrary": {
+    "queries": {
+     "[\"LibraryPresetSubscriptionV2\",\"communityLibrary\",[],[\"1540060090060216489\"]]": {
+      "initial": {
+       "2262933168854747367": {
+        "id": "2262933168854747367",
+        "updatedAt": "2025-12-18T15:02:40.898Z",
+        "hubFileId": "1540060090060216489"
+       }
+      }
+     },
+     "[\"LibraryPresetSubscriptionV2\",\"communityLibrary\",[],[\"1540071341298017505\"]]": {
+      "initial": {
+       "2262934589446649630": {
+        "id": "2262934589446649630",
+        "updatedAt": "2025-12-18T15:04:37.675Z",
+        "hubFileId": "1540071341298017505"
+       }
+      }
+     },
+     "[\"LibraryPresetSubscriptionV2\",\"communityLibrary\",[],[\"1527721578857867021\"]]": {
+      "initial": {
+       "2241800555421623528": {
+        "id": "2241800555421623528",
+        "updatedAt": "2026-03-20T14:42:07.246Z",
+        "hubFileId": "1527721578857867021"
+       }
+      }
+     },
+     "[\"LibraryPresetSubscriptionV2\",\"communityLibrary\",[],[\"1543337041090580818\"]]": {
+      "initial": {
+       "2262940035435831507": {
+        "id": "2262940035435831507",
+        "updatedAt": "2026-02-23T15:27:36.299Z",
+        "hubFileId": "1543337041090580818"
+       }
+      }
+     },
+     "[\"LibraryPresetSubscriptionV2\",\"communityLibrary\",[],[\"1651309003795292092\"]]": {
+      "initial": {
+       "2373155617880150322": {
+        "id": "2373155617880150322",
+        "updatedAt": "2026-07-27T17:19:33.410Z",
+        "hubFileId": "1651309003795292092"
+       }
+      }
+     },
+     "[\"LibraryPresetSubscriptionV2\",\"communityLibrary\",[],[\"1035203688168086460\"]]": {
+      "initial": {
+       "17225819": {
+        "id": "17225819",
+        "updatedAt": "2026-05-19T18:16:33.264Z",
+        "hubFileId": "1035203688168086460"
+       }
+      }
+     },
+     "[\"LibraryPresetSubscriptionV2\",\"communityLibrary\",[],[\"1380235722331273046\"]]": {
+      "initial": {
+       "17308346": {
+        "id": "17308346",
+        "updatedAt": "2026-03-09T15:23:25.757Z",
+        "hubFileId": "1380235722331273046"
+       }
+      }
+     },
+     "[\"LibraryPresetSubscriptionV2\",\"communityLibrary\",[],[\"1651309434229735362\"]]": {
+      "initial": {
+       "2373154102296540760": {
+        "id": "2373154102296540760",
+        "updatedAt": "2026-07-27T17:21:14.287Z",
+        "hubFileId": "1651309434229735362"
+       }
+      }
+     }
+    },
+    "computations": {}
+   }
+  }
+ },
+ {
+  "CurrentTeamCombinedPermissions": {
+   "TeamPublicInfo": {
+    "queries": {
+     "[\"root\",\"teamPublicInfo\",[\"1666382706663462213\"],[]]": {
+      "initial": {
+       "1666382706663462213": {
+        "id": "1666382706663462213",
+        "aiFeaturesDisabledAt": null,
+        "gracePeriodEnd": null,
+        "orgId": null,
+        "studentTeamState": "not_student_team"
+       }
+      }
+     }
+    },
+    "computations": {}
+   }
+  }
+ },
+ {
+  "FileNameViewDropdown": {
+   "File": {
+    "queries": {
+     "[\"root\",\"fileV2\",[\"bv2nMIdFf4u3dESGail4sm\"],[]]": {
+      "initial": {
+       "bv2nMIdFf4u3dESGail4sm": {
+        "id": "bv2nMIdFf4u3dESGail4sm",
+        "trashedAt": null,
+        "sourceFileKey": null,
+        "key": "bv2nMIdFf4u3dESGail4sm",
+        "folderId": "355763952"
+       }
+      }
+     }
+    },
+    "computations": {}
+   }
+  }
+ },
+ {
+  "PreloadCodeConnectLk": {
+   "File": {
+    "queries": {
+     "[\"root\",\"fileV2\",[\"bv2nMIdFf4u3dESGail4sm\"],[]]": {
+      "initial": {
+       "bv2nMIdFf4u3dESGail4sm": {
+        "id": "bv2nMIdFf4u3dESGail4sm",
+        "key": "bv2nMIdFf4u3dESGail4sm"
+       }
+      }
+     }
+    },
+    "computations": {}
+   }
+  }
+ }
+]

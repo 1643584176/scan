@@ -1,6 +1,6 @@
 # Figma H1 赏金测试 · 进度整理
 
-更新日期：2026-08-07
+更新日期：2026-08-11
 
 ## 项目信息
 
@@ -48,7 +48,28 @@
 
 ## 后续方向（待确认）
 
-1. 用新账号登录获取 session，对比登录态/匿名态 API 差异
-2. livegraph preload 查询（FileBrowser*）是否可跨 teamId/orgId 越权
-3. pagination_resolver 系列（org_*、admin_*、plan_ai_usage*）权限校验
-4. Weave 域名（scope 新增）认证/越权面
+1. ✅ 已完成（2026-08-10）：livegraph preload 跨 teamId 越权 → **无泄漏**，详见 [livegraph_admin_probe_结论.md](livegraph_admin_probe_结论.md)
+2. ✅ 已完成（2026-08-10）：pagination_resolver 系列权限校验 → **全部 403**（非管理员整体拒绝）
+3. 待办：B 账号对称验证（需重抓 B 账号 livegraph URL）
+4. 待办：公开文件 key 枚举基线（OpenEditorFileData）、fuid 参数、FileBrowserTeamPageFolderItemsView folder 级注入重跑
+5. ❌ 已放弃（2026-08-11）：Weave 面（详见下方「Weave 侦察记录（已封存）」）
+
+## Weave 侦察记录（已封存 2026-08-11）
+
+**放弃原因**：登录链路无法打通（OAuth code 一次性且有效期极短、api.weavy.ai POST 被 Cloudflare WAF 拦需完整浏览器头、app.weavy.ai 用户浏览器访问不稳定），无法获取登录态 Bearer token，登录面 IDOR 无法开展。
+
+**已有发现（可后续复用）**：
+- scope 原文确认：Figma Weave (formerly Weavy)，入口 = Figma 应用内 iframe 或 **https://weavy.ai**（含 app.weavy.ai / api.weavy.ai / weave.figma.com，均在 scope 内）
+- weave.figma.com / www.figma.com/weave/ 均 404 废弃；官网菜单指向 https://weave.figma.com（营销站）
+- 产品本体：app.weavy.ai（Netlify Next.js SPA），API 域 api.weavy.ai/api，主 bundle index-i3HM40rF.js（weavy_bundle.js 5.8MB）
+- 109 个 /v1/ 端点：accounts/analytics/auth/figma/folders/projects/recipes/models/community/credits 等
+- 认证机制：Figma OAuth（client_id=SbBGdDK0JIYzSU92FsIHQr，redirect=app.weavy.ai/signin|settings，scope=openid profile email file_content:read file_create）→ /v1/auth/figma/oidc/token 换 id_token → Firebase OAuthProvider(oidc.figma) 换 Bearer
+- 匿名面：统一 401（internalErrorCode=1001），无匿名/邮箱注册面；POST /v1/auth/figma/oidc/token 需完整浏览器头过 WAF
+- 关键文件：weavy_bundle.js、_weavy_anon_probe.py、_weavy_exchange.py（code→token 交换）、weavy_idtoken.json、weavy_oauth_state.json
+
+## 关键机制结论（2026-08-10）
+
+- livegraph viewHash 是纯客户端缓存键，**服务端不校验**（真实/零 hash 行为一致；跨 args 复用 hash 不报错）
+- preload 参数由服务端注册订阅，同 args 重复订阅 → duplicate-subscribe 错误
+- 管理级 view（orgAdminUsers 等）在 livegraph 注册表中**不存在**（view-does-not-exist，与权限无关）
+- 跨 teamId 注入（CurrentTeamCombinedPermissions/FileBrowserSidebarData）→ 服务端按会话用户过滤，B 队/随机 teamId 返回空或回退自身数据
