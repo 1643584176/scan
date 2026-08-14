@@ -11,6 +11,11 @@ reports/
 spa_analysis/
 *.log
 
+# Shopify: JS bundles (large downloads) and signed URL material
+_shopify_browser_out/js/
+_shopify_browser_out/js_admin/
+_shopify_browser_out/_target.json
+
 # Figma capture snapshots with signed URLs/session material
 _figma_hunt/editor_page.html
 _figma_hunt/ws_traffic.json
