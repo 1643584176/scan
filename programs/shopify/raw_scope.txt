@@ -1,0 +1,498 @@
+Skip to main content  >
+Learn more about HackerOne
+Log in
+Maintenance announcement: HackerOne will be undergoing maintenance on Friday Aug 14th, from 12:00 PM until 12:30 PM CST.
+Security page
+Program guidelines
+Scope
+Hacktivity
+Thanks
+Updates
+Collaborators
+Safe harbor
+Search
+Scope
+All scopes
+Maximum severity
+Any
+Bounty eligibility
+All
+Download Burp Suite Project Configuration File
+Download CSV
+View changes (Last updated on June 6, 2026)
+1-30 of 30
+Asset name
+	Type
+	Coverage
+	Max. severity
+	Bounty
+	Last update
+	Resolved Reports 
+
+your-store.myshopify.com
+Environment: Core
+Your development store hosted at *.myshopify.com. Create a development store by signing up at https://partners.shopify.com/
+	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+499 (21%)
+
+shopify.plus
+Environment: Core
+	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+2 (0%)
+
+Shopify Mobile Applications
+Environment: Non-core
+Android: https://play.google.com/store/apps/dev?id=8929232438554100687
+iOS: https://itunes.apple.com/ca/developer/shopify-inc/id371294475
+Note: any services operated by a third party without a proof of concept demonstrating impact on Shopify users will likely be ineligible for a bounty.
+	Other	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+53 (2%)
+
+shop.app
+Environment: Core
+	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+54 (2%)
+
+partners.shopify.com
+Environment: Core
+	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+102 (4%)
+
+Authentication & ATO	Other	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 5, 2026
+	
+1 (0%)
+
+arrive-server.shopifycloud.com
+Environment: Core
+	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+2 (0%)
+
+admin.shopify.com
+Environment: Core
+	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+127 (5%)
+
+accounts.shopify.com
+Environment: Core
+	Domain	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+121 (5%)
+
+*.shopifycs.com
+Environment: Non-core
+Shopify's service for handling credit card data in a PCI compliant way.
+	Wildcard	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+2 (0%)
+
+*.pci.shopifyinc.com
+Environment: Core
+	Wildcard	
+In scope
+	
+Critical
+	
+Eligible
+	
+Jun 27, 2025
+	
+1 (0%)
+
+shopifyinbox.com
+Environment: Non-core
+	Domain	
+In scope
+	
+Medium
+	
+Eligible
+	
+Jun 27, 2025
+	
+6 (0%)
+
+Shopify Third Party Store
+Environment: Non-core
+You may only test against shops you have created.
+	Other	
+In scope
+	
+Medium
+	
+Ineligible
+	
+Jun 27, 2025
+	
+3 (0%)
+
+Shopify Third Party Apps
+Environment: Non-core
+Vulnerabilities found in Shopify third party apps should be reported to the responsible developer. You should only report vulnerabilities in Shopify third party apps to Shopify under this program if you do not receive a satisfactory response from the responsible developer.
+	Other	
+In scope
+	
+Medium
+	
+Ineligible
+	
+Jun 27, 2025
+	
+24 (1%)
+
+Shopify Developed Apps
+Environment: Non-core
+Shopify apps and sales channels means everything installed via the following link https://apps.shopify.com/collections/made-by-shopify
+	Other	
+In scope
+	
+Medium
+	
+Eligible
+	
+Jun 27, 2025
+	
+237 (10%)
+
+linkpop.com
+Environment: Non-core
+	Domain	
+In scope
+	
+Medium
+	
+Eligible
+	
+Jun 27, 2025
+	
+11 (0%)
+
+https://github.com/Shopify/*
+Environment: Non-core
+Public repositories available under the Shopify organization in Github.
+	Source code	
+In scope
+	
+Medium
+	
+Eligible
+	
+Jun 27, 2025
+	
+35 (1%)
+
+*.shopifykloud.com
+Environment: Non-core
+Shopify Kloud includes all .shopifykloud.com applications. Please note, there may be developer test or third party applications launched on the domain which may have low security implications for Shopify. If you are unsure about a subdomain on .shopifykloud.com and it looks like a test application, email us at bugbounty AT shopify.com before spending time on it.
+	Wildcard	
+In scope
+	
+Medium
+	
+Eligible
+	
+Jun 27, 2025
+	
+36 (1%)
+
+*.shopifycloud.com
+Environment: Non-core
+.shopifycloud.com may include developer test or third party applications. For example, devdegree.shopifycloud.com, vendorvoice.shopifycloud.com, nsolid-test-console.shopifycloud.com. These types of domains are not considered in scope and reports pertaining to them will be closed Informative. If you are unsure about a domain and it looks like a test application, please email us at bugbounty@shopify.com before spending time on it.
+	Wildcard	
+In scope
+	
+Medium
+	
+Eligible
+	
+Jun 27, 2025
+	
+84 (3%)
+
+*.shopify.io
+Environment: Non-core
+*.shopify.io may include developer test or third party applications. If you are unsure about a domain and it looks like a test or third party application, please email us at bugbounty@shopify.com before spending time on it.
+	Wildcard	
+In scope
+	
+Medium
+	
+Eligible
+	
+Jun 27, 2025
+	
+34 (1%)
+
+*.shopify.com
+Environment: Non-core
+Reports involving .shopify.com are reviewed on a per case basis for bounty eligibility, this includes shopifycompass.com. Any services operated by a third party without a proof of concept demonstrating impact on .myshopify.com users will likely be ineligible for a bounty.
+	Wildcard	
+In scope
+	
+Medium
+	
+Eligible
+	
+Jun 27, 2025
+	
+249 (10%)
+
+supplier-portal.shopifycloud.com
+Environment: Non-core
+Includes invoices.shopify.io, factures.shopify.io, invoices.shopify.cn, invoices.shopify.de, invoices.shopify.fr, invoices.shopify.jp
+	Other	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+
+Other
+Environment: Non-core
+	Other	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+
+livechat.shopify.com
+Environment: Non-core
+Contacting Shopify Support over chat, email or phone about your HackerOne report is not allowed.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+
+investors.shopify.com
+Environment: Non-core
+Operated by a third party.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+
+community.shopify.dev
+Environment: Non-core
+community.shopify.dev is a third party service and not in scope of our bug bounty program. Please do not test this subdomain.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+
+community.shopify.com
+Environment: Non-core
+community.shopify.com is a third party service and not in scope of our bug bounty program. Please do not test this subdomain.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+
+cdn.shopify.com
+Environment: Non-core
+Shopify allows merchants to upload any file they want on our content delivery network. Being able to upload a file is not a vulnerability, this is the intended functionality.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+
+academy.shopify.com
+Environment: Non-core
+Operated by a third party.
+	Domain	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+
+*.email.shopify.com
+Environment: Non-core
+Operated by a third party.
+	Wildcard	
+Out of scope
+	
+None
+	
+Ineligible
+	
+Jun 27, 2025
+	
+0 (0%)
+1-30 of 30
+Shopify
+https://www.shopify.com
+Shopify is a multi-channel commerce platform that helps people sell online, in-store, and everywhere in between.
+Bounty launched in Apr 2015
+Response efficiency: 43%
+Submit without Report Assistant
+Rewards
+
+Severity
+
+Rewards
+
+Low
+
+Avg. bounty $500
+33.70% submissions
+
+$500 – $1,000
+Medium
+
+Avg. bounty $3,380
+55.11% submissions
+
+$1,000 – $14,000
+High
+
+Avg. bounty $3,625
+8.55% submissions
+
+$14,000 – $50,000
+Critical
+
+Avg. bounty $82,090
+2.64% submissions
+
+$50,000 – $200,000
+Stats
+Total bounties paid	$9,479,103
+Average bounty range	$500 - $900
+Top bounty range	$6,900 - $200,000
+Bounties paid | 90 days	$364,305
+Reports received | 90 days	1950
+Last report resolved	13 days ago
+Reports resolved	2422
+Hackers thanked	1150
+Assets In Scope	21
+© HackerOne
+Opportunities
+Security
+Leaderboard
+Blog
+Status
+Docs
+Support
+Disclosure Guidelines
+Press
+Privacy
+Terms

@@ -1,0 +1,199 @@
+{
+  "name": "shopify",
+  "platform": "hackerone",
+  "program_url": "https://hackerone.com/shopify",
+  "username": "pccp",
+  "fetched_at": "2026-08-13T09:09:52+00:00",
+  "bounties": [
+    "$500",
+    "$1,000",
+    "$3,380",
+    "$14,000",
+    "$3,625",
+    "$50,000",
+    "$82,090",
+    "$900",
+    "$6,900"
+  ],
+  "scope": {
+    "in_scope": [
+      {
+        "name": "your-store.myshopify.com",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "shopify.plus",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "shop.app",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "partners.shopify.com",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "Authentication & ATO",
+        "type": "Other",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "arrive-server.shopifycloud.com",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "admin.shopify.com",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "accounts.shopify.com",
+        "type": "Domain",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "*.shopifycs.com",
+        "type": "Wildcard",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "*.pci.shopifyinc.com",
+        "type": "Wildcard",
+        "max_severity": "critical",
+        "bounty": "eligible"
+      },
+      {
+        "name": "shopifyinbox.com",
+        "type": "Other",
+        "max_severity": "medium",
+        "bounty": "eligible"
+      },
+      {
+        "name": "linkpop.com",
+        "type": "Domain",
+        "max_severity": "medium",
+        "bounty": "eligible"
+      },
+      {
+        "name": "https://github.com/shopify/*",
+        "type": "Source code",
+        "max_severity": "medium",
+        "bounty": "eligible"
+      },
+      {
+        "name": "*.shopifykloud.com",
+        "type": "Wildcard",
+        "max_severity": "medium",
+        "bounty": "eligible"
+      },
+      {
+        "name": "*.shopifycloud.com",
+        "type": "Wildcard",
+        "max_severity": "medium",
+        "bounty": "eligible"
+      },
+      {
+        "name": "*.shopify.io",
+        "type": "Wildcard",
+        "max_severity": "medium",
+        "bounty": "eligible"
+      },
+      {
+        "name": "*.shopify.com",
+        "type": "Wildcard",
+        "max_severity": "medium",
+        "bounty": "eligible"
+      }
+    ],
+    "out_of_scope_domains": [
+      {
+        "name": "supplier-portal.shopifycloud.com",
+        "type": "Other",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "livechat.shopify.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "investors.shopify.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "community.shopify.dev",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "community.shopify.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "cdn.shopify.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "academy.shopify.com",
+        "type": "Domain",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      },
+      {
+        "name": "*.email.shopify.com",
+        "type": "Wildcard",
+        "max_severity": "none",
+        "bounty": "ineligible"
+      }
+    ],
+    "count": 17
+  },
+  "rules": {
+    "required_headers": [],
+    "user_agent": "",
+    "rate_limit": "",
+    "test_accounts": [],
+    "test_entities": [],
+    "forbidden": [
+      "Core Ineligible Findings are out of scope.",
+      "Exemplary Standards",
+      "This program has committed to awarding the submissions below.",
+      "Bounty awards for discovered leaked credentials",
+      "Check here for the full Exemplary Standards page list.",
+      "supplier-portal.shopifycloud.com",
+      "livechat.shopify.com",
+      "investors.shopify.com",
+      "community.shopify.dev",
+      "community.shopify.com",
+      "cdn.shopify.com",
+      "academy.shopify.com",
+      "*.email.shopify.com"
+    ],
+    "report_rules": [],
+    "notes": []
+  }
+}
