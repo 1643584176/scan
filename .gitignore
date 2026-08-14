@@ -20,19 +20,3 @@ _figma_hunt/fpv2_flowbite_full.txt
 _figma_hunt/fpv2_full.txt
 _figma_hunt/lg_deep_dive.txt
 _figma_hunt/cross_team_out/fresh_recents_zerohash.json
-
-# Local capture/session artifacts
-_notion_hunt/
-_shopify_browser_out/
-_superhuman_hunt/
-mail_page.html
-*.har
-*.curl
-*.env
-*_cookie*.txt
-*_cookies*.txt
-*_cookie*.bak
-*_cookies*.bak
-*_oauth_state.json
-*_url_latest.txt
-user_ws_curl.txt
