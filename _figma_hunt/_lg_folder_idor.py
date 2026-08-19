@@ -21,18 +21,18 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 HASH = "ab" * 16
 
 def lg_url(client_url="bv2nMIdFf4u3dESGail4sm"):
-    return (f"wss://www.figma.com/api/livegraph?pv=1&pr=dad80c10603319f8&pt=1786432687"
-            f"&ph=dnoflh97wkg6_cF_nypMbd9rtfZmF2KhdefK4gshdaM"
-            f"&userId={B_UID}&anonUserId={B_ANON}"
-            f"&clientType=web&commitHash={COMMIT}"
+    return (f"wss://www.figma.com/api/livegraph?pv=1&pr=251c5be83e6853e5&pt=1786072093"
+            f"&ph=sb9dUg8LQV0WGY29b-j8nggmhGX8TR2vghWs-rNzbds"
+            f"&userId={B_UID}&anonUserId="
+            f"&clientType=web&commitHash=5848603c50c1ee154ea6a1fe5ee3aab3791c5b48"
             f"&preload=%7B%7D&requestedProtocolVersion=2"
             f"&clientUrl=https%3A%2F%2Fwww.figma.com%2Ffile%2F{client_url}"
             f"&connectionType=initial&reconnect=0")
 
 def auth():
     return {"messageType": "auth", "clientType": "web",
-            "args": {"userId": B_UID, "anonymousUserId": B_ANON},
-            "tags": {"clientType": "web", "commitHash": COMMIT,
+            "args": {"userId": B_UID, "anonymousUserId": None},
+            "tags": {"clientType": "web", "commitHash": "81855c2bc7c604648169c4e4333f43579bfa7464",
                      "clientUrl": "https://www.figma.com/files"},
             "clientRequestedVersion": 2}
 

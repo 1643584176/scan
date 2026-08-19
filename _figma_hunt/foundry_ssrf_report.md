@@ -67,7 +67,7 @@ Body: {"sboxdUrl":"<from step 1>","path":"code/src/code/DL0.txt","options":{"con
 → SSE stream, content field (base64) decodes to: "User-agent: *\nDisallow: /deny\n"
 ```
 
-## Evidence
+## Evidence (第一轮, 2026-08-12)
 
 | Target URL | Result | Latency | Meaning |
 |---|---|---|---|
@@ -83,6 +83,20 @@ Body: {"sboxdUrl":"<from step 1>","path":"code/src/code/DL0.txt","options":{"con
 - Literal private IPs are rejected by a pre-check, but **hex/octal-encoded IPs pass the pre-check** and reach the real connection path (1.5s connect timeout) — only the network layer isolates them.
 - Cloud metadata (AWS IMDS, GCP, ECS) is **not reachable** from the fetch environment.
 - Arbitrary **public** URLs are fetched server-side with full response exfiltration.
+
+## Evidence (第二轮深化, 2026-08-17: IPv6/编码/内部域名/回显语义)
+
+| Test | Result | Meaning |
+|---|---|---|
+| `httpbin /status/401|403|500` | EMPTY, path absent | **非 200 响应不落盘** — 回显仅限 200 响应(函数层行为) |
+| `http://[::1]/`、`[::1]:8080`、`[fd00::1]`、`[fe80::1]` | EMPTY (2.2s timeout) | IPv6 同样被网络层隔离 |
+| `http://[::ffff:169.254.169.254]/...`、`[0:0:...:ffff:169.254.169.254]` | EMPTY | IPv4-mapped 形式隔离 |
+| `http://2130706433/`、`http://127.1/`、`http://0177.0.0.1/` | EMPTY | decimal/short/octal 编码隔离(连接层) |
+| `http://169.254.169.254.sslip.io/...` | EMPTY | DNS 变体隔离(按解析后 IP 生效) |
+| `https://<sboxd>.makeproxy-c.figma.site/`(自身沙箱) | 0.9s 快速 EMPTY | 连接成功返回 401 被丢弃 — 公网路径行为,无内网证据 |
+| `https://<app>.makeproxy-c.figma.site/`(自身应用) | 0.7s 快速 EMPTY | 同上(匿名直连亦 403) |
+
+**第二轮结论**: 网络层隔离完整覆盖 IPv4/IPv6/编码/DNS 变体/内部域名,无升级路径; 回显仅限 200 响应(非 200 静默丢弃)。内部域名快速返回 = fetch 环境走公网路径(与匿名直连行为一致)。SSRF 真实影响面 = 任意公网 URL 的 200 响应内容回显 (IP allowlist/geo/WAF 绕过面)。
 
 ## Impact
 
