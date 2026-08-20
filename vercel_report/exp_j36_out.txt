@@ -1,0 +1,67 @@
+create: 200
+sid: sbx_sbOGBXmaJCqL8MafLHe64lVgTSjt
+=== cmd[vda-identity] status 200 ===
+===== [A] Device number comparison =====
+/dev/root: FileNotFoundError
+/dev/vda: major=254 minor=0 rdev=0xfe00 size=0
+/dev/vda1: FileNotFoundError
+/dev/vdb: major=254 minor=16 rdev=0xfe10 size=0
+/dev/vdc: FileNotFoundError
+===== /proc/partitions =====
+major minor  #blocks  name
+
+ 254        0   34603008 vda
+ 254       16   33554432 vdb
+
+===== [B] mountinfo (first 40 lines) =====
+0: 69 42 254:16 / / rw,relatime - xfs /dev/vdb rw,nouuid,inode64,logbufs=8,logbsize=32k,noquota
+1: 71 69 0:35 / /proc rw,relatime - proc proc rw
+2: 72 69 0:6 / /dev rw,relatime - devtmpfs devtmpfs rw,size=2190712k,nr_inodes=547678,mode=755
+3: 73 72 0:36 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,mode=620,ptmxmode=666
+4: 74 72 0:37 / /dev/shm rw,nosuid,nodev,noexec,relatime - tmpfs shm rw,size=65536k
+5: 75 72 0:29 / /dev/mqueue rw,nosuid,nodev,noexec,relatime - mqueue mqueue rw
+6: 76 69 0:20 / /sys rw,nosuid,nodev,noexec,relatime - sysfs sysfs rw
+7: 77 76 0:21 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - cgroup2 cgroup rw
+8: 78 69 254:0 /etc/hosts /etc/hosts ro,relatime - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+9: 79 69 254:0 /etc/resolv.conf /etc/resolv.conf ro,relatime - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+10: 80 69 254:0 /volumes/run/vercel/share /run/vercel/share rw,relatime master:1 - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+11: 81 69 254:0 /run/cell/ca-cert.pem /etc/pki/ca-trust/source/anchors/vercel-proxy-ca.pem ro,relatime - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+12: 82 69 254:0 /run/cell/ca-cert.pem /usr/local/share/ca-certificates/vercel-proxy-ca.crt ro,relatime - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+13: 43 71 0:6 /null /proc/kcore rw,relatime - devtmpfs devtmpfs rw,size=2190712k,nr_inodes=547678,mode=755
+14: 44 71 0:6 /null /proc/keys rw,relatime - devtmpfs devtmpfs rw,size=2190712k,nr_inodes=547678,mode=755
+===== [C] Visibility inside sandbox =====
+/run/cell: NOT FOUND
+/volumes: NOT FOUND
+/opt/vercel: NOT FOUND
+/volumes/run/vercel/share: NOT FOUND
+/run/vercel/share: DIR exists, entries=['sandbox-init', 'init.sock']
+===== Sandbox's own /etc =====
+hostname: 
+passwd head: root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+vercel-sandbox:x:1000:1000::/home/vercel-sandbox:/bin/bash
+
+===== [D] Host data signatures on vda =====
+vda root: hits: 0 []
+[hostname-path] 0 hits: []
+[vda-str] 12 hits: [1301259, 6803896, 6810939, 6811224, 6857101, 6864144, 6864429, 13019876, 13019935, 13306804]
+  @1301259: b'. - CIF A01337260-RMerc.Vitoria-Gasteiz T1055 F62 S81C0A\x06\x03U\x04\t\x0c:Avda del Mediterraneo Etorbidea 14 - 01010 Vitoria-Gasteiz0\x0f\x06\x03U\x1d\x13\x01\x01\xff\x04\x050\x03\x01\x01\xff0\x0e\x06\x03U\x1d\x0f\x01\x01\xff\x04\x04\x03\x02\x01\x060\x1d\x06\x03U\x1d\x0e\x04\x16\x04\x14\x1d\x1ce\x0e\xa8\xf2%{\xb4\x91\xcf\xe4\xb1\xb1\xe6\xbdUtl\x050\r\x06\t*\x86H\x86\xf7\r\x01\x01\x0b\x05\x00\x03\x82\x02\x01\x00x\xa6\x0c\x16J\x9fL\x88:\xc0\xcb\x0e\xa5\x16}'
+  @6803896: b'\x03nu;z\x04num;z\x07numero;z\x06numsp;z\x05nvap;z\x07nVDash;z\x07Vdash;z\x07nvDash;z\x07nvdash;z\x05nvge;z\x05nvgt;z\x07nvHarr;z\x08nvinfin;z\x07nvlArr;z\x05nvle;z\x05nvlt;z\x08nvltrie;z\x07nvrArr;z\x08nvrtrie;z\x06nvsim;z\x07nwarhk;z\x06nwArr;z\x06nwarr;z\x08nwarrow;z\x07nwnear;r{\x00\x00\x00r\xbe\x00\x00\x00z\x07O'
+  @6810939: b'ght;z\x05Vbar;z\x05vBar;z\x06vBarv;z\x04Vcy;z\x04vcy;z\x06VDash;z\x06Vdash;z\x06vDash;z\x06vdash;z\x07Vdashl;z\x04Vee;z\x04vee;z\x07veebar;z\x06veeeq;z\x07vellip;z\x07Verbar;z\x07verbar;z\x05Vert;z\x05vert;z\x0cVerticalBar;z\rVerticalLine;z\x12VerticalSeparator;z\x0eVerticalTilde;z\x0eVery'
+[volumes] 0 hits: []
+[run-cell] 0 hits: []
+[sbx-init] 0 hits: []
+[celld-init] 0 hits: []
+
+cleanup done

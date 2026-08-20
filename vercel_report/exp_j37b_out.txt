@@ -1,0 +1,18 @@
+create: 200
+sid: sbx_XqqqzH2IMApMf0kIJPrAYr0lkTPV
+=== cmd[vda-write-test-v2] status 200 ===
+magic=b'XFSB' bs=4096 dblocks=8648704 real=35433480192 fs_end=35425091584 outside=8388608
+target = 35429285888 (0x83fc00000)
+orig[0:32]: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00' (all-zero=True)
+open O_RDWR: OK
+wrote 512 bytes (expect 512)
+fsync: OK
+READBACK match: True
+restored orig, fsync OK
+RESTORE match: True
+===== Cross-check: 1KB around target unaffected =====
+  @35429285376 zero=True
+  @35429286400 zero=True
+RESULT: WRITE_OK - sandbox CAN WRITE host rootfs disk (vda), restore clean
+
+cleanup done
