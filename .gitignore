@@ -25,3 +25,49 @@ _figma_hunt/fpv2_flowbite_full.txt
 _figma_hunt/fpv2_full.txt
 _figma_hunt/lg_deep_dive.txt
 _figma_hunt/cross_team_out/fresh_recents_zerohash.json
+
+# Figma: disposable browser profiles, downloaded bundles, and app extracts
+_figma_hunt/tmp_b_research/
+_figma_hunt/tmp_chrome_profile*/
+_figma_hunt/FigmaSetup-*.exe
+_figma_hunt/Figma-*-app.asar
+_figma_hunt/desktop_*/
+_figma_hunt/js_all/
+_figma_hunt/js_make/
+
+# Figma: transient captures and locally generated analysis artifacts
+_figma_hunt/*_out.txt
+_figma_hunt/*_tmp.*
+_figma_hunt/*.png
+_figma_hunt/*.fig
+_figma_hunt/chunk*.js
+_figma_hunt/vendor_core*.js
+_figma_hunt/make_runtime*.js
+_figma_hunt/A_recent_files.json
+_figma_hunt/B_recent_files.json
+_figma_hunt/flowbite_libdata_full.json
+_figma_hunt/libdata_*.json
+_figma_hunt/mcp_create_resp.json
+_figma_hunt/open_editor_filedata.json
+_figma_hunt/vpub_tmp.json
+
+# Root-level experiment output (final evidence belongs under a report directory)
+/exp_*_out.txt
+/exp_*_out.jsonl
+/exp_*_body.json
+/*_run_out.txt
+/j*_full_out.txt
+/j*_disasm*.txt
+/j*.bin
+/_j*.hex
+/k*_url.txt
+/cmdout.jsonl
+/vs_body.json
+/vs_out.jsonl
+
+# Local credentials, sessions, and traffic captures
+/*.pem
+/*.har
+/*cookies*.txt
+/*token*.txt
+/_webhook_uuid.txt
