@@ -1,3 +1,7 @@
+> # ⚠️ 已撤回 (WITHDRAWN 2026-08-21)
+> **撤回原因**：j171 跨沙箱验证证伪“写宿主磁盘”声明——沙箱 A 写 /dev/vda + fsync 成功后，全新沙箱 B 读同一块为全零。/dev/vda 是每沙箱私有视图（只读镜像层 + COW），写不跨沙箱，不存在 persistent host write / host RCE。剩余能力（读镜像内容）无敏感资产，按 Vercel 挑战规则（需真正逃逸/凭据窃取；“仅到 guest OS 不算”）不构成漏洞。主动撤回（Not a vulnerability）。
+> **教训**：j37b “写→fsync→读回一致”仅证明写私有副本生效（COW 陷阱）；提交前必须做跨实例验证。
+
 # Title
 Vercel Sandbox escape: user code can read/write the host rootfs block device /dev/vda
 

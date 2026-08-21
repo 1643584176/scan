@@ -34,9 +34,9 @@
 
 ### 待补充记录位
 
-- **Shopify MCP profile SSRF**（2026-08 中）：数据读取级证据链完备（内网 OIDC JSON 被解析），提交后待记录回复
-- **Figma foundry downloadUrl SSRF**（2026-08-12 草稿）：公网 fetch 成立、内网隔离——提交后待记录
-- **Wolt checkout 价格操纵 CWE-602**：已提交，待记录回复
+- **Shopify MCP profile SSRF**（2026-08 中）**：内网 OIDC JSON 解析 + 15 内网子域枚举——**不提交（2026-08-19 规则审查后决定）**：Shopify 规则明确 "simple HTTP/DNS interaction alone 不算漏洞，多数关 Informative/N/A"；无元数据访问、无后续利用链；先例（内网读图 $0）证明无深度利用的 SSRF 无奖励。**2026-08-19 深化后最终裁决**：profile 注入载体已用 Vercel 打通（mcp-carrier-2.vercel.app/profile.json），但注入边界=白名单交集模型无法解锁 checkout/order（匿名官方 profile 也 Tool not found）、spec/schema 白名单映射不 fetch（无二次 SSRF）、服务端 fetch 无凭据头（无法窃取内网凭据）、内网枚举 154 请求无新敏感 JSON 端点——维持不提交。**2026-08-20 认证态测试完成，最终裁决不变**：官方 OAuth Device Flow 拿到真实 token（catalog token + merchant checkout JWT 双变体成功）；catalog 域认证态=匿名态（无 checkout 工具，8-19 "认证门槛"为端点域误判）；merchant 域 fluxfootwear.com 认证态下 checkout 工具全部真实可用，但 create_checkout 是官方正常功能；注入只能收缩（carrier4 无 checkout → Tool not found）不能扩张；payment_handlers 注入无效（服务端 gpay 配置优先）；无二次 SSRF（merchant 域 webhook.site new=0）；无 IDOR（checkout id 带随机 key）——全线封死，维持不提交，恢复 Figma 主线。
+- **Figma foundry downloadUrl SSRF**（2026-08-12 草稿）：公网 fetch 成立、内网隔离——**不提交（2026-08-19 决定）**：无内网/云元数据访问能力，公网回显无新增能力（攻击者自己 curl 即可），按 SSRF 有效性标准不构成漏洞，避免浪费报告机会
+- **Wolt checkout 价格操纵 CWE-602**：已提交，**判定 Duplicate（重复，2026-08-19）**
 
 ## 提交前自查清单（基于 #1 教训）
 
