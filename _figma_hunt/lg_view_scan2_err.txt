@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\scan\_figma_hunt\_lg_view_scan.py", line 21, in <module>
+    m = re.search(r'(?:const|var|let)?\s*' + re.escape(var) + r'\s*=\s*(\{args:\[)', src)
+  File "D:\python3.14\Lib\re\__init__.py", line 177, in search
+    return _compile(pattern, flags).search(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyboardInterrupt

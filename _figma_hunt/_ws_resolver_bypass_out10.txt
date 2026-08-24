@@ -1,0 +1,43 @@
+
+===== [FilesForTeam] FilesForTeam ⚠参数错误 =====
+  {"messageType":"viewSubscriptionFailed","error":"View 'FilesForTeam': argument error: 'updatedAtTimestamp' 'expected string representation of datetime, got number from 0'","errorCode":"argument-parse-validation-failure","liveViewKey":"[\"FilesForTeam\",{\"__requestId\":\"2a8fe34c-2df5-4bd4-b3a1-50e049ae5456\",\"teamId\":\"947922137358580288\",\"updatedAtTimestamp\":0}]","viewHash":"00000000000000000000000000000000"}
+
+===== [TeamProjectsPreview] TeamProjectsWithFilesPreview ⚠有错误 =====
+  {"messageType":"viewSubscriptionFailed","error":"Attempted to subscribe to view TeamProjectsWithFilesPreview that does not exist","errorCode":"view-does-not-exist","liveViewKey":"[\"TeamProjectsWithFilesPreview\",{\"__requestId\":\"dfb7b8c6-3c35-48cb-b7c8-8e5f2e1742c4\",\"teamId\":\"947922137358580288\"}]","viewHash":"00000000000000000000000000000000"}
+
+===== [LimitedTeamProjects] LimitedTeamProjectsWithFilesPreview ⚠有错误 =====
+  {"messageType":"viewSubscriptionFailed","error":"Attempted to subscribe to view LimitedTeamProjectsWithFilesPreview that does not exist","errorCode":"view-does-not-exist","liveViewKey":"[\"LimitedTeamProjectsWithFilesPreview\",{\"__requestId\":\"a2a2e7a7-8486-4f5c-b07d-ba8ae1a1cf9e\",\"teamId\":\"947922137358580288\"}]","viewHash":"00000000000000000000000000000000"}
+
+===== [TeamSummary] TeamSummary ⚠有错误 =====
+  {"messageType":"viewSubscriptionFailed","error":"Attempted to subscribe to view TeamSummary that does not exist","errorCode":"view-does-not-exist","liveViewKey":"[\"TeamSummary\",{\"__requestId\":\"0d080758-4bf3-4f3e-9d71-21bbcbd2a794\",\"teamId\":\"947922137358580288\"}]","viewHash":"00000000000000000000000000000000"}
+
+===== [ColorPalettes] ColorPalettesForTeam 空壳 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"ColorPalettesForTeam\",{\"__requestId\":\"cd29bfa8-0220-4372-a6f5-cdbbddffd8c2\",\"teamId\":\"947922137358580288\"}]":{"ColorPalette":{"queries":{"[\"root\",\"colorPalettesForTeam\",[\"947922137358580288\"],[]]":{"initial":{}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"ColorPalettesForTeam","args":{"teamId":"947922137358580288","__requestId":"cd29bfa8-0220-4372-a6f5-cdbbddffd8c2"}}
+
+===== [ComponentUpdates] ComponentUpdatesForTeam 空壳 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"ComponentUpdatesForTeam\",{\"__requestId\":\"fb5a0f6c-cfd9-4705-ae49-e402822b828c\",\"teamId\":\"947922137358580288\"}]":{"Team":{"queries":{"[\"root\",\"team\",[\"947922137358580288\",\"1667396392129259941\"],[]]":{"initial":{}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"ComponentUpdatesForTeam","args":{"teamId":"947922137358580288","__requestId":"fb5a0f6c-cfd9-4705-ae49-e402822b828c"}}
+
+===== [FontFile] FontFileForTeamView ⚠参数错误 =====
+  {"messageType":"viewSubscriptionFailed","error":"View 'FontFileForTeamView': argument error: 'updatedAtTimestamp' 'expected string representation of datetime, got number from 0'","errorCode":"argument-parse-validation-failure","liveViewKey":"[\"FontFileForTeamView\",{\"__requestId\":\"c9fc9320-dda5-4e54-89e2-cc5d49085c78\",\"teamId\":\"947922137358580288\",\"updatedAtTimestamp\":0}]","viewHash":"00000000000000000000000000000000"}
+
+===== [FileViewHistory] FileViewHistoryExp 空壳 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"FileViewHistoryExp\",{\"__requestId\":\"ac6028af-3d29-48c9-9b2a-123acd60376d\",\"teamId\":\"947922137358580288\"}]":{"Team":{"queries":{"[\"root\",\"team\",[\"947922137358580288\",\"1667396392129259941\"],[]]":{"initial":{}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"FileViewHistoryExp","args":{"teamId":"947922137358580288","__requestId":"ac6028af-3d29-48c9-9b2a-123acd60376d"}}
+
+===== [ActiveFileUsers] ActiveFileUsersForFileView ⭐返回数据 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"ActiveFileUsersForFileView\",{\"__requestId\":\"cf2e79ab-f3eb-4be3-93c7-6fcd3be6ce0d\",\"fileKey\":\"ucha7bf05fJ81CJZVoruo0\"}]":{"File":{"queries":{"[\"root\",\"_fileViewableByPrototypeViewers\",[\"ucha7bf05fJ81CJZVoruo0\",\"1667396392129259941\"],[]]":{"initial":{"ucha7bf05fJ81CJZVoruo0":{"id":"ucha7bf05fJ81CJZVoruo0","key":"ucha7bf05fJ81CJZVoruo0"}}}},"computations":{}}}}}
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"ActiveFileUsersForFileView\",{\"__requestId\":\"cf2e79ab-f3eb-4be3-93c7-6fcd3be6ce0d\",\"fileKey\":\"ucha7bf05fJ81CJZVoruo0\"}]":{"File":{"queries":{},"computations":{"[\"File\",\"name\",\"ucha7bf05fJ81CJZVoruo0\",{\"_rootId\":\"ucha7bf05fJ81CJZVoruo0\"}]":{"fieldName":"name","value":"Flowbite Design System Pro v2.7.0"}}}}}}
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"ActiveFileUsersForFileView\",{\"__requestId\":\"cf2e79ab-f3eb-4be3-93c7-6fcd3be6ce0d\",\"fileKey\":\"ucha7bf05fJ81CJZVoruo0\"}]":{"ActiveFileUser":{"queries":{"[\"File\",\"activeFileUsers\",[],[\"ucha7bf05fJ81CJZVoruo0\"]]":{"initial":{}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"ActiveFileUsersForFileView","args":{"fileKey":"ucha7bf05fJ81CJZVoruo0","__requestId":"cf2e79ab-f3eb-4be3-93c7-6fcd3be6ce0d"}}
+
+===== [LibrarySubs] LibrarySubscriptionsForTeam 空壳 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"LibrarySubscriptionsForTeam\",{\"__requestId\":\"056db552-3790-4588-abf7-3c2f208ad46f\",\"teamId\":\"947922137358580288\"}]":{"Team":{"queries":{"[\"root\",\"team\",[\"947922137358580288\",\"1667396392129259941\"],[]]":{"initial":{}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"LibrarySubscriptionsForTeam","args":{"teamId":"947922137358580288","__requestId":"056db552-3790-4588-abf7-3c2f208ad46f"}}
+
+===== [TeamSummary 对照B] TeamSummary ⚠有错误 =====
+  {"messageType":"viewSubscriptionFailed","error":"Attempted to subscribe to view TeamSummary that does not exist","errorCode":"view-does-not-exist","liveViewKey":"[\"TeamSummary\",{\"__requestId\":\"98c90cf3-edeb-483d-82ad-a3f2bb46df23\",\"teamId\":\"1667396394890946753\"}]","viewHash":"00000000000000000000000000000000"}
+
+===== [FilesForTeam 对照B] FilesForTeam ⚠参数错误 =====
+  {"messageType":"viewSubscriptionFailed","error":"View 'FilesForTeam': argument error: 'updatedAtTimestamp' 'expected string representation of datetime, got number from 0'","errorCode":"argument-parse-validation-failure","liveViewKey":"[\"FilesForTeam\",{\"__requestId\":\"33652ef2-0123-406b-92bf-bb2578287632\",\"teamId\":\"1667396394890946753\",\"updatedAtTimestamp\":0}]","viewHash":"00000000000000000000000000000000"}

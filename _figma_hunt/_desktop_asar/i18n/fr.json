@@ -1,0 +1,956 @@
+{
+  "desktop.dialogs.about.app_name_and_version": {
+    "string": "{appName} pour bureau, version {version}"
+  },
+  "desktop.dialogs.about.copyright": {
+    "string": "Copyright © {year} Figma, Inc."
+  },
+  "desktop.dialogs.about.optimized_for_apple_silicon": {
+    "string": "Optimisé pour Apple Silicon."
+  },
+  "desktop.dialogs.about.title": {
+    "string": "À propos de {appName}"
+  },
+  "desktop.dialogs.arm_translation.body": {
+    "string": "Cette version de {appName} n'est pas conçue pour être utilisée sur Apple Silicon. Veuillez télécharger à nouveau {appName} depuis la page des téléchargements de Figma pour vous assurer que la version correcte est installée."
+  },
+  "desktop.dialogs.arm_translation.body_windows": {
+    "string": "Cette version de {appName} n'est pas destinée à être utilisée sous Windows sur ARM. Veuillez télécharger à nouveau {appName} depuis la page des téléchargements de Figma pour vous assurer que la version correcte est installée."
+  },
+  "desktop.dialogs.arm_translation.download_button": {
+    "string": "Ouvrir la page des téléchargements"
+  },
+  "desktop.dialogs.arm_translation.title": {
+    "string": "Mettez à jour {appName}"
+  },
+  "desktop.dialogs.blocked_by_proxy.body": {
+    "string": "Cela se produit probablement parce que votre réseau d'entreprise utilise un proxy.{lineBreak} peut être résolu en ajoutant les origines non-Figma utilisées par votre proxy à votre paramètre AllowedOriginHosts. Cliquez sur le bouton ci-dessous pour visiter notre Centre d'aide et obtenir plus d'informations."
+  },
+  "desktop.dialogs.blocked_by_proxy.title": {
+    "string": "Navigation vers « {hostname} » bloquée"
+  },
+  "desktop.dialogs.button.cancel": {
+    "string": "Annuler"
+  },
+  "desktop.dialogs.button.got_it": {
+    "string": "OK"
+  },
+  "desktop.dialogs.button.ok": {
+    "string": "OK"
+  },
+  "desktop.dialogs.button.quit": {
+    "string": "Quitter"
+  },
+  "desktop.dialogs.button.restart": {
+    "string": "Redémarrer"
+  },
+  "desktop.dialogs.button.save": {
+    "string": "Enregistrer"
+  },
+  "desktop.dialogs.button.try_again": {
+    "string": "Réessayer"
+  },
+  "desktop.dialogs.button.visit_help_center": {
+    "string": "Accéder au Centre d'aide"
+  },
+  "desktop.dialogs.checkbox.do_not_ask_me_again": {
+    "string": "Ne plus me demander"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.body": {
+    "string": "La fermeture de cet onglet interrompra toutes les importations en cours et en attente."
+  },
+  "desktop.dialogs.close_tab_import_in_progress.close_tab": {
+    "string": "Fermer l'onglet"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.keep_tab_open": {
+    "string": "Laisser l'onglet ouvert"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.title": {
+    "string": "Importation de fichiers en cours"
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.body": {
+    "string": "La fermeture de l'onglet n'entraînera pas la perte de vos modifications, mais vous devrez vous reconnecter pour les synchroniser à nouveau."
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.close_tab_button": {
+    "string": "Fermer l'onglet"
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.title": {
+    "string": "Vous avez des modifications non enregistrées"
+  },
+  "desktop.dialogs.close_window_unsaved_changes.body": {
+    "string": "Les modifications sont en cours d'enregistrement. Vos modifications seront perdues si vous fermez la fenêtre maintenant."
+  },
+  "desktop.dialogs.close_window_unsaved_changes.close_window_button": {
+    "string": "Fermer la fenêtre et supprimer les modifications"
+  },
+  "desktop.dialogs.close_window_unsaved_changes.title": {
+    "string": "Supprimer les modifications non enregistrées ?"
+  },
+  "desktop.dialogs.confirm_display_capture.body": {
+    "string": "{appName} souhaite partager le contenu de votre écran et des fenêtres ouvertes. Souhaitez-vous partager votre écran ?"
+  },
+  "desktop.dialogs.confirm_display_capture.share_button": {
+    "string": "Partager"
+  },
+  "desktop.dialogs.export_failed.title": {
+    "string": "Échec de l'exportation"
+  },
+  "desktop.dialogs.export_failed_invalid_path.details": {
+    "string": "« {filePath} » n'est pas un chemin valide. Aucun fichier n'a été enregistré."
+  },
+  "desktop.dialogs.export_failed_invalid_path.message": {
+    "string": "Échec de l'exportation"
+  },
+  "desktop.dialogs.invalid_figma_url.body": {
+    "string": "Le presse-papiers ne contient pas d'URL Figma valide."
+  },
+  "desktop.dialogs.invalid_figma_url.title": {
+    "string": "URL Figma non valide"
+  },
+  "desktop.dialogs.log_out_unsaved_changes.body": {
+    "string": "Les modifications sont en cours d'enregistrement. Vos modifications seront perdues si vous vous déconnectez maintenant."
+  },
+  "desktop.dialogs.log_out_unsaved_changes.log_out_button": {
+    "string": "Déconnectez-vous et annulez les modifications"
+  },
+  "desktop.dialogs.log_out_unsaved_changes.title": {
+    "string": "Supprimer les modifications non enregistrées ?"
+  },
+  "desktop.dialogs.make_local.trust_directory.detail": {
+    "string": "Figma Make peut charger la configuration du projet à partir de ce dossier, qui peut exécuter des commandes.\n\n{directory}"
+  },
+  "desktop.dialogs.make_local.trust_directory.message": {
+    "string": "Les fichiers de ce dossier sont-ils fiables ?"
+  },
+  "desktop.dialogs.make_local.trust_directory.required_error": {
+    "string": "Faites confiance dans ce dossier avant d'utiliser Make Local. La configuration du projet dans ce dossier peut exécuter des commandes."
+  },
+  "desktop.dialogs.make_local.trust_directory.title": {
+    "string": "Faire confiance dans ce dossier ?"
+  },
+  "desktop.dialogs.make_local.trust_directory.trust_button": {
+    "string": "Dossier de confiance"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.detail": {
+    "string": "Make ouvrira ce référentiel après le clonage. La configuration du projet et les métadonnées Git dans ce référentiel peuvent exécuter des commandes.\n\n{directory}"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.message": {
+    "string": "Faites-vous confiance à ce référentiel ?"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.title": {
+    "string": "Faire confiance au référentiel cloné ?"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.trust_button": {
+    "string": "Référentiel de confiance"
+  },
+  "desktop.dialogs.merge_close.body": {
+    "string": "Gardez cet onglet ouvert jusqu'à ce que la branche ait terminé de fusionner."
+  },
+  "desktop.dialogs.merge_close.title": {
+    "string": "Tenez bon ! Fusion toujours en cours…"
+  },
+  "desktop.dialogs.move_to_applications_folder.body": {
+    "string": "Veuillez déplacer l'application {appName} vers le dossier Applications et réessayer.{lineBreak}Si l'application figure déjà dans ce dossier, faites-la glisser dans un autre dossier, puis déplacez-la à nouveau dans Applications."
+  },
+  "desktop.dialogs.move_to_applications_folder.title": {
+    "string": "Déplacez vers le dossier Applications"
+  },
+  "desktop.dialogs.multiple_installations.body": {
+    "string": "L'application de bureau {appName} est installée en plusieurs exemplaires. Veuillez réessayer après avoir supprimé l'installation de l'autre application de bureau :"
+  },
+  "desktop.dialogs.multiple_installations.remove_other_desktop_app_button": {
+    "string": "Supprimer l'autre application de bureau"
+  },
+  "desktop.dialogs.multiple_installations.title": {
+    "string": "Les installations multiples ne sont pas prises en charge"
+  },
+  "desktop.dialogs.no_update_available.body": {
+    "string": "Vous utilisez déjà la dernière version de {appName}.{lineBreak}Il vous manque une nouvelle fonctionnalité ? Actualisez vos onglets et cherchez-la à nouveau. Si vous rencontrez d'autres problèmes, contactez l'assistance technique."
+  },
+  "desktop.dialogs.no_update_available.reload_all_tabs_button": {
+    "string": "Actualiser tous les onglets"
+  },
+  "desktop.dialogs.no_update_available.title": {
+    "string": "Aucune mise à jour disponible"
+  },
+  "desktop.dialogs.plugin_request_camera_and_microphone_permission": {
+    "string": "Veuillez activer la caméra et le microphone pour {appName} dans Réglages système → Sécurité et confidentialité → Confidentialité."
+  },
+  "desktop.dialogs.plugin_request_camera_permission": {
+    "string": "Veuillez activer la caméra pour {appName} dans Réglages systèmes → Sécurité et confidentialité → Confidentialité."
+  },
+  "desktop.dialogs.plugin_request_microphone_permission": {
+    "string": "Veuillez activer le microphone pour {appName} dans Réglages système → Sécurité et confidentialité → Confidentialité."
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.body": {
+    "string": "L'actualisation de l'onglet n'entraînera pas la perte de vos modifications, mais vous devrez vous reconnecter pour les synchroniser à nouveau."
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.reload_tab_button": {
+    "string": "Actualiser l'onglet"
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.title": {
+    "string": "Vous avez des modifications non enregistrées"
+  },
+  "desktop.dialogs.replace_existing_files.details.multiple": {
+    "string": "{numFiles,number,integer} fichiers, y compris « {fileName} », existent déjà. Si vous les remplacez, cela écrasera le contenu existant."
+  },
+  "desktop.dialogs.replace_existing_files.details.single": {
+    "string": "« {fileName} » existe déjà. Si vous le remplacez, cela écrasera le contenu existant."
+  },
+  "desktop.dialogs.replace_existing_files.message": {
+    "string": "{numFiles, plural, one {Remplacer le fichier existant ?} other {Remplacer les fichiers existants ?}}"
+  },
+  "desktop.dialogs.replace_existing_files.replace_button": {
+    "string": "Remplacer"
+  },
+  "desktop.dialogs.replace_existing_files.title": {
+    "string": "Remplacez les fichiers existants"
+  },
+  "desktop.dialogs.reset_figma_and_restart.body": {
+    "string": "Les données de l'application {appName} seront réinitialisées et l'application redémarrera. Vous devrez vous reconnecter à {appName} une fois l'opération terminée."
+  },
+  "desktop.dialogs.reset_figma_and_restart.title": {
+    "string": "Réinitialiser {appName} et redémarrer ?"
+  },
+  "desktop.dialogs.reset_figma_and_restart_failure.body": {
+    "string": "{appName} n'a pas pu réinitialiser les données de l'application et la redémarrer. Veuillez contacter l'assistance pour obtenir de l'aide."
+  },
+  "desktop.dialogs.reset_figma_and_restart_failure.title": {
+    "string": "Échec de la réinitialisation de {appName}"
+  },
+  "desktop.dialogs.restart_and_save_performance_log_dialog_body": {
+    "string": "Lorsque vous cliquez sur OK, vous êtes invité à choisir où enregistrer un fichier journal des performances, puis l'application redémarre. Au bout de 30 secondes, l'application enregistre ensuite les journaux à l'emplacement que vous avez choisi."
+  },
+  "desktop.dialogs.restart_required.body": {
+    "string": "{appName} doit être redémarrée pour que les modifications prennent effet."
+  },
+  "desktop.dialogs.restart_required.title": {
+    "string": "Redémarrez pour appliquer les modifications"
+  },
+  "desktop.dialogs.save_debug_info_dialog_title": {
+    "string": "Enregistrez les informations de débuggage"
+  },
+  "desktop.dialogs.save_file_failed.details": {
+    "string": "« {filePath} » n'a pas pu être enregistré. Les fichiers restants ne seront pas enregistrés."
+  },
+  "desktop.dialogs.save_file_failed.message": {
+    "string": "Échec de l'enregistrement du fichier"
+  },
+  "desktop.dialogs.save_network_log_dialog_body": {
+    "string": "Dans Figma, effectuez l'action sur laquelle vous souhaitez obtenir des informations. Après 30 secondes, vous recevrez une invite pour enregistrer le fichier du journal réseau."
+  },
+  "desktop.dialogs.save_network_log_dialog_title": {
+    "string": "Sauvegarde d'un journal réseau"
+  },
+  "desktop.dialogs.save_performance_log_dialog_body": {
+    "string": "Dans Figma, effectuez l'action sur laquelle vous souhaitez obtenir des informations. Après 30 secondes, vous recevrez une invite pour enregistrer le fichier du journal de performances."
+  },
+  "desktop.dialogs.save_performance_log_dialog_title": {
+    "string": "Enregistrement d'un journal de performances"
+  },
+  "desktop.dialogs.update_available.body": {
+    "string": "Une nouvelle version de {appName} est prête à être installée."
+  },
+  "desktop.dialogs.update_available.install_now": {
+    "string": "Installer maintenant"
+  },
+  "desktop.dialogs.update_available.install_on_next_launch": {
+    "string": "Installer au prochain lancement"
+  },
+  "desktop.dialogs.update_available.title": {
+    "string": "Mise à jour disponible"
+  },
+  "desktop.dialogs.update_error.body": {
+    "string": "{appName} n'a pas pu installer la mise à jour :"
+  },
+  "desktop.dialogs.update_error.download_update_manually_button": {
+    "string": "Télécharger manuellement"
+  },
+  "desktop.dialogs.update_error.title": {
+    "string": "Erreur de mise à jour"
+  },
+  "desktop.dialogs.voice_call_request_microphone_permission": {
+    "string": "L'accès au microphone est requis pour parler dans Figma Audio. Veuillez activer le microphone pour {appName} dans Réglages système → Sécurité et confidentialité → Microphone."
+  },
+  "desktop.dialogs.write_plugin.choose_plugin_location": {
+    "string": "Choisissez l'emplacement du répertoire du plugin"
+  },
+  "desktop.dialogs.write_plugin.choose_plugin_name_and_location": {
+    "string": "Choisissez le nom du plugin et l'emplacement du répertoire"
+  },
+  "desktop.errors.loading_screen.error_description": {
+    "string": "Échec du chargement de Figma"
+  },
+  "desktop.errors.loading_screen.error_message": {
+    "string": "Désolé, un problème est survenu"
+  },
+  "desktop.errors.navigation_failed_description": {
+    "string": "Erreur lors de la navigation vers « {url} » : {error}."
+  },
+  "desktop.menu.about": {
+    "string": "À propos de {appName}"
+  },
+  "desktop.menu.actions": {
+    "string": "Actions…"
+  },
+  "desktop.menu.add_to_dictionary": {
+    "string": "Ajouter au dictionnaire"
+  },
+  "desktop.menu.always_show_tabs_when_presenting": {
+    "string": "Toujours afficher les onglets lors de la présentation"
+  },
+  "desktop.menu.arrange_menu": {
+    "string": "Disposition"
+  },
+  "desktop.menu.bring_all_to_front": {
+    "string": "Tout mettre au premier plan"
+  },
+  "desktop.menu.check_for_updates": {
+    "string": "Rechercher des mises à jour"
+  },
+  "desktop.menu.close_tab": {
+    "string": "Fermer l'onglet"
+  },
+  "desktop.menu.close_window": {
+    "string": "Fermer la fenêtre"
+  },
+  "desktop.menu.color_management": {
+    "string": "Gestion des couleurs"
+  },
+  "desktop.menu.color_space_managed": {
+    "string": "Géré"
+  },
+  "desktop.menu.color_space_menu": {
+    "string": "Espace de couleur"
+  },
+  "desktop.menu.color_space_srgb": {
+    "string": "sRGB"
+  },
+  "desktop.menu.color_space_unmanaged": {
+    "string": "Non géré"
+  },
+  "desktop.menu.copy": {
+    "string": "Copier"
+  },
+  "desktop.menu.cut": {
+    "string": "Couper"
+  },
+  "desktop.menu.debug_figma_agent": {
+    "string": "Débugger Figma Agent"
+  },
+  "desktop.menu.disable_hardware_acceleration": {
+    "string": "Désactiver l'accélération matérielle"
+  },
+  "desktop.menu.edit_menu": {
+    "string": "Modifier"
+  },
+  "desktop.menu.empty_placeholder": {
+    "string": "(vide)"
+  },
+  "desktop.menu.enable_haptic_feedback": {
+    "string": "Activer le retour haptique du pavé tactile"
+  },
+  "desktop.menu.export": {
+    "string": "Exporter…"
+  },
+  "desktop.menu.export_as": {
+    "string": "Exporter en tant que…"
+  },
+  "desktop.menu.export_frames_to_pdf": {
+    "string": "Exporter les frames au format PDF"
+  },
+  "desktop.menu.export_selected_slides_to_pdf": {
+    "string": "Exporter les diapositives au format PDF…"
+  },
+  "desktop.menu.export_slides_to": {
+    "string": "Exporter les diapositives en tant que…"
+  },
+  "desktop.menu.export_slides_to_pdf": {
+    "string": "Exporter toutes les diapositives au format PDF…"
+  },
+  "desktop.menu.file_menu": {
+    "string": "Fichier"
+  },
+  "desktop.menu.graphics_backend": {
+    "string": "Backend graphique"
+  },
+  "desktop.menu.graphics_backend_default": {
+    "string": "Valeur par défaut"
+  },
+  "desktop.menu.help_menu": {
+    "string": "Aide"
+  },
+  "desktop.menu.help_page": {
+    "string": "Page d'aide"
+  },
+  "desktop.menu.import": {
+    "string": "Importer"
+  },
+  "desktop.menu.import_from_csv": {
+    "string": "Importer depuis un fichier CSV"
+  },
+  "desktop.menu.interface_scale_make_larger": {
+    "string": "Agrandir"
+  },
+  "desktop.menu.interface_scale_make_smaller": {
+    "string": "Réduire"
+  },
+  "desktop.menu.interface_scale_menu": {
+    "string": "Échelle de l'interface"
+  },
+  "desktop.menu.interface_scale_percent": {
+    "string": "{interfaceScalePercent} %"
+  },
+  "desktop.menu.interface_scale_reset_to_default": {
+    "string": "Réinitialiser"
+  },
+  "desktop.menu.legal_summary": {
+    "string": "Résumé légal"
+  },
+  "desktop.menu.loading_placeholder": {
+    "string": "Chargement…"
+  },
+  "desktop.menu.log_out": {
+    "string": "Déconnexion"
+  },
+  "desktop.menu.mac_hide": {
+    "string": "Masquer {appName}"
+  },
+  "desktop.menu.mac_hide_others": {
+    "string": "Masquer les autres"
+  },
+  "desktop.menu.mac_quit": {
+    "string": "Quitter {appName}"
+  },
+  "desktop.menu.mac_services": {
+    "string": "Services"
+  },
+  "desktop.menu.mac_unhide": {
+    "string": "Afficher tout"
+  },
+  "desktop.menu.manage_plugins": {
+    "string": "Gérer les plugins"
+  },
+  "desktop.menu.minimize": {
+    "string": "Réduire"
+  },
+  "desktop.menu.new_file": {
+    "string": "Nouveau fichier"
+  },
+  "desktop.menu.new_tab": {
+    "string": "Nouvel onglet"
+  },
+  "desktop.menu.new_window": {
+    "string": "Nouvelle fenêtre"
+  },
+  "desktop.menu.object_menu": {
+    "string": "Objet"
+  },
+  "desktop.menu.open_file_browser": {
+    "string": "Ouvrir le navigateur de fichiers"
+  },
+  "desktop.menu.open_file_url_from_clipboard": {
+    "string": "Ouvrir l'URL du fichier à partir du presse-papiers"
+  },
+  "desktop.menu.open_test_websocket_page": {
+    "string": "Ouvrir la page de test Websocket"
+  },
+  "desktop.menu.paste": {
+    "string": "Coller"
+  },
+  "desktop.menu.plugins_menu": {
+    "string": "Plugins"
+  },
+  "desktop.menu.prefer_high_performance_gpu": {
+    "string": "Préférer un GPU haute-performance"
+  },
+  "desktop.menu.preferences": {
+    "string": "Préférences"
+  },
+  "desktop.menu.recently_closed_tabs": {
+    "string": "Onglets récemment fermés"
+  },
+  "desktop.menu.redo": {
+    "string": "Rétablir"
+  },
+  "desktop.menu.release_notes": {
+    "string": "Notes de version"
+  },
+  "desktop.menu.reload_all_tabs": {
+    "string": "Actualiser tous les onglets"
+  },
+  "desktop.menu.reopen_closed_tab": {
+    "string": "Rouvrir l'onglet fermé"
+  },
+  "desktop.menu.reset_figma_and_restart": {
+    "string": "Réinitialiser Figma et redémarrer"
+  },
+  "desktop.menu.restart_and_save_performance_log": {
+    "string": "Redémarrer et enregistrer le journal des performances…"
+  },
+  "desktop.menu.save_debug_info": {
+    "string": "Enregistrer les informations de débuggage"
+  },
+  "desktop.menu.save_local_copy": {
+    "string": "Enregistrer une copie locale"
+  },
+  "desktop.menu.save_network_log": {
+    "string": "Enregistrer le journal réseau"
+  },
+  "desktop.menu.save_performance_log": {
+    "string": "Enregistrer le journal de performances"
+  },
+  "desktop.menu.save_performance_log_stop": {
+    "string": "Arrêter la consignation des performances…"
+  },
+  "desktop.menu.save_to_version_history": {
+    "string": "Enregistrer dans l'historique des versions"
+  },
+  "desktop.menu.select_all": {
+    "string": "Sélectionner tout"
+  },
+  "desktop.menu.select_next_tab": {
+    "string": "Sélectionner l'onglet suivant"
+  },
+  "desktop.menu.select_previous_tab": {
+    "string": "Sélectionner l'onglet précédent"
+  },
+  "desktop.menu.show_figma_in_menu_bar": {
+    "string": "Afficher Figma dans la barre de menus"
+  },
+  "desktop.menu.show_figma_in_system_tray": {
+    "string": "Afficher Figma dans la barre d'état système"
+  },
+  "desktop.menu.show_version_history": {
+    "string": "Afficher l'historique des versions"
+  },
+  "desktop.menu.support_forum": {
+    "string": "Forum d'assistance"
+  },
+  "desktop.menu.text_menu": {
+    "string": "Texte"
+  },
+  "desktop.menu.toggle_developer_tools": {
+    "string": "Activer les outils de développement d'applications web"
+  },
+  "desktop.menu.toggle_full_screen": {
+    "string": "Basculer en mode plein écran"
+  },
+  "desktop.menu.toggle_internal_developer_tools": {
+    "string": "Activer les outils de développement par tabulation"
+  },
+  "desktop.menu.toggle_preview_developer_tools": {
+    "string": "Activer/désactiver les outils de développement de l’aperçu du navigateur"
+  },
+  "desktop.menu.troubleshooting_menu": {
+    "string": "Dépannage"
+  },
+  "desktop.menu.undo": {
+    "string": "Annuler"
+  },
+  "desktop.menu.vector_menu": {
+    "string": "Vecteur"
+  },
+  "desktop.menu.video_tutorials": {
+    "string": "Tutoriels vidéo"
+  },
+  "desktop.menu.view_menu": {
+    "string": "Vue"
+  },
+  "desktop.menu.widgets_menu": {
+    "string": "Widgets"
+  },
+  "desktop.menu.window_menu": {
+    "string": "Fenêtre"
+  },
+  "desktop.menu.windows_quit": {
+    "string": "Quitter"
+  },
+  "desktop.menu.zoom": {
+    "string": "Zoom"
+  },
+  "desktop.shell.app.edited_time": {
+    "string": "Modifié {time}"
+  },
+  "desktop.shell.app.last_viewed_time": {
+    "string": "Consulté pour la dernière fois {time}"
+  },
+  "desktop.shell_app.agent_not_running": {
+    "string": "Ne fonctionne pas"
+  },
+  "desktop.shell_app.agent_running": {
+    "string": "En cours d'exécution"
+  },
+  "desktop.shell_app.agent_status": {
+    "string": "Statut de l'agent : "
+  },
+  "desktop.shell_app.agent_version": {
+    "string": "Version de l'agent : "
+  },
+  "desktop.shell_app.current_user_presenting": {
+    "string": "Vous êtes mis(e) en avant"
+  },
+  "desktop.shell_app.error_tab.403_forbidden.description": {
+    "string": "Contactez le propriétaire, un administrateur ou l'assistance pour obtenir de l'aide."
+  },
+  "desktop.shell_app.error_tab.403_forbidden.title": {
+    "string": "Vous ne pouvez pas accéder à cette ressource"
+  },
+  "desktop.shell_app.error_tab.404_not_found.description": {
+    "string": "Si vous vous attendiez à voir un fichier ici, il se peut que vous n'ayez pas les autorisations nécessaires pour y accéder. Veuillez demander au propriétaire de mettre à jour les autorisations du fichier et d'essayer à nouveau."
+  },
+  "desktop.shell_app.error_tab.404_not_found.title": {
+    "string": "Fichier introuvable ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.407_authentication_required.description": {
+    "string": "Un proxy nécessitant une authentification a été rencontré. Veuillez vous authentifier avec ce proxy ou contacter votre administrateur réseau."
+  },
+  "desktop.shell_app.error_tab.407_authentication_required.title": {
+    "string": "Authentification requise ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.502_temporary_outage.description": {
+    "string": "Le serveur Figma connaît une panne temporaire."
+  },
+  "desktop.shell_app.error_tab.503_temporary_outage.description": {
+    "string": "Le serveur Figma est en maintenance."
+  },
+  "desktop.shell_app.error_tab.connection_error.description": {
+    "string": "Votre ordinateur est peut-être hors ligne ou le serveur Figma rencontre des problèmes."
+  },
+  "desktop.shell_app.error_tab.connection_error.title": {
+    "string": "Erreur de connexion : {errorCode}"
+  },
+  "desktop.shell_app.error_tab.crash.close_tab_button": {
+    "string": "Fermer l'onglet"
+  },
+  "desktop.shell_app.error_tab.crash.description": {
+    "string": "Actualisez Figma pour tenter de résoudre le problème."
+  },
+  "desktop.shell_app.error_tab.crash.reload_button": {
+    "string": "Actualiser"
+  },
+  "desktop.shell_app.error_tab.crash.title": {
+    "string": "Un problème est survenu"
+  },
+  "desktop.shell_app.error_tab.error_code": {
+    "string": "Code d'erreur : {errorCode}"
+  },
+  "desktop.shell_app.error_tab.figma_will_automatically_try_to_reconnect": {
+    "string": "Figma va tenter automatiquement de se reconnecter."
+  },
+  "desktop.shell_app.error_tab.generic_server_error.description": {
+    "string": "Le serveur Figma a rencontré une erreur interne."
+  },
+  "desktop.shell_app.error_tab.generic_server_error.title": {
+    "string": "Erreur du serveur ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.reason_crashed": {
+    "string": "Raison : plantage"
+  },
+  "desktop.shell_app.error_tab.temporary_outage.title": {
+    "string": "Interruption temporaire ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.try_again_button": {
+    "string": "Réessayer"
+  },
+  "desktop.shell_app.error_tab.visit_help_page_or_contact_support": {
+    "string": "Pour obtenir de l'aide, consultez la page {helpPageUrl} ou contactez {supportEmail}."
+  },
+  "desktop.shell_app.modal_cancel": {
+    "string": "Annuler"
+  },
+  "desktop.shell_app.modal_confirm": {
+    "string": "Confirmer"
+  },
+  "desktop.shell_app.env_config.backend_label": {
+    "string": "Backend"
+  },
+  "desktop.shell_app.env_config.frontend_label": {
+    "string": "Frontend"
+  },
+  "desktop.shell_app.env_config.shell_label": {
+    "string": "Shell"
+  },
+  "desktop.shell_app.env_config.backend_production": {
+    "string": "Production"
+  },
+  "desktop.shell_app.env_config.backend_staging": {
+    "string": "Préproduction"
+  },
+  "desktop.shell_app.env_config.backend_gov": {
+    "string": "Gouvernement"
+  },
+  "desktop.shell_app.env_config.devbox": {
+    "string": "Devbox"
+  },
+  "desktop.shell_app.env_config.backend_custom": {
+    "string": "URL personnalisée"
+  },
+  "desktop.shell_app.env_config.coder": {
+    "string": "Programmeur"
+  },
+  "desktop.shell_app.env_config.frontend_same_as_backend": {
+    "string": "Identique au backend"
+  },
+  "desktop.shell_app.env_config.frontend_canary": {
+    "string": "Canary"
+  },
+  "desktop.shell_app.env_config.frontend_local": {
+    "string": "Frontend local"
+  },
+  "desktop.shell_app.env_config.frontend_fcp_sha": {
+    "string": "Aperçu de la validation frontend (SHA)"
+  },
+  "desktop.shell_app.env_config.shell_auto": {
+    "string": "Auto (correspondance avec le frontend)"
+  },
+  "desktop.shell_app.env_config.shell_local": {
+    "string": "Shell local"
+  },
+  "desktop.shell_app.env_config.coder_workspace_label": {
+    "string": "Espace de travail du programmeur"
+  },
+  "desktop.shell_app.env_config.commit_sha_label": {
+    "string": "SHA de validation"
+  },
+  "desktop.shell_app.env_config.additional_ffs_label": {
+    "string": "Indicateurs de fonctionnalités supplémentaires (facultatif)"
+  },
+  "desktop.shell_app.env_config.save_button": {
+    "string": "Enregistrer & redémarrer"
+  },
+  "desktop.shell_app.open_tabs_in_other_windows.section": {
+    "string": "Onglets dans la fenêtre {windowIndex}"
+  },
+  "desktop.shell_app.new_tab_menu.new_file": {
+    "string": "Nouveau fichier"
+  },
+  "desktop.shell_app.parsed_fonts": {
+    "string": "Polices analysées : "
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.title": {
+    "string": "Onglets ouverts et récemment fermés"
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.empty_message": {
+    "string": "Vos onglets ouverts et vos onglets récemment fermés apparaîtront ici."
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.search_placeholder": {
+    "string": "Rechercher dans les onglets"
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.no_matches": {
+    "string": "Aucun résultat trouvé"
+  },
+  "desktop.shell_app.open_tabs.title": {
+    "string": "Onglets dans cette fenêtre"
+  },
+  "desktop.shell_app.open_tabs.close_tab": {
+    "string": "Fermer l'onglet {tabTitle}"
+  },
+  "desktop.shell_app.open_tabs.mute_tab": {
+    "string": "Désactiver le son de l'onglet {tabTitle}"
+  },
+  "desktop.shell_app.recently_closed_tabs.title": {
+    "string": "Onglets récemment fermés"
+  },
+  "desktop.shell_app.restart_agent": {
+    "string": "Redémarrer l'agent"
+  },
+  "desktop.shell_app.restarting_agent": {
+    "string": "Redémarrage…"
+  },
+  "desktop.shell_app.tab_error.label": {
+    "string": "Erreur de tabulation"
+  },
+  "desktop.shell_app.tab_bar.label": {
+    "string": "Barre d'onglets"
+  },
+  "desktop.shell_app.tab_bar.close_button.label": {
+    "string": "Fermer"
+  },
+  "desktop.shell_app.tab_bar.community_tab.label": {
+    "string": "Communauté"
+  },
+  "desktop.shell_app.tab_bar.community_tab.tooltip": {
+    "string": "Communauté Figma"
+  },
+  "desktop.shell_app.tab_bar.factory_tab.label": {
+    "string": "Vous êtes en préproduction"
+  },
+  "desktop.shell_app.tab_bar.home_tab.label": {
+    "string": "Accueil"
+  },
+  "desktop.shell_app.tab_bar.maximize_button.label": {
+    "string": "Agrandir"
+  },
+  "desktop.shell_app.tab_bar.menu_button.label": {
+    "string": "Menu"
+  },
+  "desktop.shell_app.tab_bar.minimize_button.label": {
+    "string": "Réduire"
+  },
+  "desktop.shell_app.tab_bar.pinned_tab_label": {
+    "string": "Onglet épinglé : {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.pinned_split_tab_label": {
+    "string": "Onglet fractionné épinglé : {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.pinned_split_tab_group_label": {
+    "string": "Groupe d'onglets fractionnés épinglés : {tab1}, {tab2}"
+  },
+  "desktop.shell_app.tab_bar.split_tab_group_label": {
+    "string": "Groupe d'onglets fractionnés : {tab1}, {tab2}"
+  },
+  "desktop.shell_app.tab_bar.split_tab_label": {
+    "string": "Onglet fractionné : {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.tab_close_button.label": {
+    "string": "Fermer l'onglet"
+  },
+  "desktop.shell_app.tab_bar.tab_mute_button.label": {
+    "string": "Désactiver le son de l'onglet"
+  },
+  "desktop.shell_app.tab_bar.update_button.label": {
+    "string": "Mettre à jour"
+  },
+  "desktop.shell_app.time_ago.days": {
+    "string": "{numDays, plural, one {hier} other {il y a {numDays} jours}}"
+  },
+  "desktop.shell_app.time_ago.hours": {
+    "string": "{numHours, plural, one {il y a {numHours} heure} other {il y a {numHours} heures}}"
+  },
+  "desktop.shell_app.time_ago.minutes": {
+    "string": "{numMinutes, plural, one {il y a {numMinutes} minute} other {il y a {numMinutes} minutes}}"
+  },
+  "desktop.shell_app.time_ago.months": {
+    "string": "{numMonths, plural, one {le mois dernier} other {il y a {numMonths} mois}}"
+  },
+  "desktop.shell_app.time_ago.seconds": {
+    "string": "{numSeconds, plural, one {il y a {numSeconds} seconde} other {il y a {numSeconds} secondes}}"
+  },
+  "desktop.shell_app.time_ago.years": {
+    "string": "{numYears, plural, one {l'an dernier} other {il y a {numYears} ans}}"
+  },
+  "desktop.shell_app.user_at_mentioned_you": {
+    "string": "Mentionné par {handle}"
+  },
+  "desktop.shell_app.user_presenting": {
+    "string": "Vous suivez {handle}"
+  },
+  "desktop.shell_app.tab_groups.context_menu.ungroup": {
+    "string": "Dégrouper"
+  },
+  "desktop.shell_app.tab_groups.context_menu.delete_group": {
+    "string": "Supprimer un groupe"
+  },
+  "desktop.shell_app.tab_groups.context_menu.edit_group_name": {
+    "string": "Modifier le nom du groupe"
+  },
+  "desktop.shell_app.tab_groups.context_menu.group_color": {
+    "string": "Couleur de groupe"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_blue": {
+    "string": "Bleu"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_red": {
+    "string": "Rouge"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_yellow": {
+    "string": "Jaune"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_green": {
+    "string": "Vert"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_purple": {
+    "string": "Violet"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_pink": {
+    "string": "Rose"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_persimmon": {
+    "string": "Kaki"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_grey": {
+    "string": "Gris"
+  },
+  "desktop.shell_app.tab_preview.memory_freed": {
+    "string": "Onglet déchargé : {memory} Mo libérés"
+  },
+  "desktop.shell_app.tab_preview.memory_freed_GB": {
+    "string": "Onglet déchargé : {memory} Go libérés"
+  },
+  "desktop.shell_app.tab_preview.memory_usage": {
+    "string": "Utilisation de la mémoire : {memory} Mo"
+  },
+  "desktop.shell_app.tab_preview.memory_usage_GB": {
+    "string": "Utilisation de la mémoire : {memory} Go"
+  },
+  "desktop.tab_context_menu.close_all_tabs": {
+    "string": "Fermer tous les onglets"
+  },
+  "desktop.tab_context_menu.close_other_tabs": {
+    "string": "Fermer les autres onglets"
+  },
+  "desktop.tab_context_menu.close_tab": {
+    "string": "Fermer"
+  },
+  "desktop.tab_context_menu.copy_link": {
+    "string": "Copier le lien"
+  },
+  "desktop.tab_context_menu.move_to_another_window": {
+    "string": "Déplacer vers une autre fenêtre"
+  },
+  "desktop.tab_context_menu.move_to_new_window": {
+    "string": "Déplacer vers une nouvelle fenêtre"
+  },
+  "desktop.tab_context_menu.new_window": {
+    "string": "Nouvelle fenêtre"
+  },
+  "desktop.tab_context_menu.open_in_browser": {
+    "string": "Ouvrir dans le navigateur"
+  },
+  "desktop.tab_context_menu.open_in_split_tab": {
+    "string": "Ouvrir dans un onglet fractionné"
+  },
+  "desktop.tab_context_menu.other_window": {
+    "string": "{numOtherTabs, plural, one {{tabName} et {numOtherTabs,number} autre onglet} other {{tabName} et {numOtherTabs,number} autres onglets}}"
+  },
+  "desktop.tab_context_menu.pin_tab": {
+    "string": "Épingler"
+  },
+  "desktop.tab_context_menu.reload_tab": {
+    "string": "Actualiser"
+  },
+  "desktop.tab_context_menu.rename": {
+    "string": "Renommer le fichier"
+  },
+  "desktop.tab_context_menu.separate_split_tabs": {
+    "string": "Onglets séparés"
+  },
+  "desktop.tab_context_menu.show_icons": {
+    "string": "Afficher les icônes"
+  },
+  "desktop.tab_context_menu.unpin_tab": {
+    "string": "Détacher"
+  },
+  "desktop.tab_context_menu.close_tab_group": {
+    "string": "Fermer le groupe d'onglets"
+  },
+  "desktop.tab_context_menu.add_to_tab_group": {
+    "string": "Ajouter à un groupe d'onglets"
+  },
+  "desktop.tab_context_menu.new_tab_group": {
+    "string": "Nouveau groupe d'onglets"
+  },
+  "desktop.tab_context_menu.remove_from_tab_group": {
+    "string": "Supprimer du groupe d'onglets"
+  },
+  "desktop.tab_context_menu.new_group_name": {
+    "string": "Groupe {number}"
+  },
+  "desktop.tabs.community": {
+    "string": "{pluginName} (Communauté)"
+  },
+  "desktop.tabs.untitled": {
+    "string": "Sans titre"
+  }
+}

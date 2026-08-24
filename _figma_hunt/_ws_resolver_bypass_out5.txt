@@ -1,0 +1,22 @@
+
+===== [BillingTrialOrg+Plan] BillingTrialForResourceAndPlanType ⚠有错误 帧数=1 =====
+  {"messageType":"viewSubscriptionFailed","error":"View 'BillingTrialForResourceAndPlanType': argument error: 'planType' 'expected one of: Organization, Enterprise'","errorCode":"argument-parse-validation-failure","liveViewKey":"[\"BillingTrialForResourceAndPlanType\",{\"__requestId\":\"1d682bf2-4081-4a83-b15a-805689890865\",\"planType\":\"ORG\",\"resourceId\":\"1484997479016537761\",\"resourceType\":\"Org\"}]","viewHash":"00000000000000000000000000000000"}
+
+===== [BillingTrialOrg] BillingTrialForResource 空壳 帧数=2 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"BillingTrialForResource\",{\"__requestId\":\"2fe524fa-4446-4b17-b427-01ad54b6df33\",\"resourceId\":\"1484997479016537761\",\"resourceType\":\"Org\"}]":{"BillingTrial":{"queries":{"[\"root\",\"billingTrialForResource\",[\"1484997479016537761\",\"Org\"],[]]":{"initial":{}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"BillingTrialForResource","args":{"resourceId":"1484997479016537761","resourceType":"Org","__requestId":"2fe524fa-4446-4b17-b427-01ad54b6df33"}}
+
+===== [DomainOrgAdmins[]] DomainOrgAdminsToRemove ⚠有错误 帧数=2 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"DomainOrgAdminsToRemove\",{\"__requestId\":\"271da71f-01b7-4ff6-85db-e8ec59a4f00f\",\"domainIds\":[],\"orgId\":\"1484997479016537761\"}]":{"DomainOrgAdminToRemove":{"queries":{"[\"root\",\"domainOrgAdminsToRemove\",[\"1667396392129259941\",\"1484997479016537761\",[]],[],\"271da71f-01b7-4ff6-85db-e8ec59a4f00f\"]":{"error":{"code":"sinatraResolverError","message":"Error: Error making sinatra request Error: Error in request to http://internal-proxy.prod.figma.com/api/internal/livegraph/sinatra_resolver/domain_org_admins_to_remove. Status code = 403. Error message = {\"error\":true,\"status\":403,\"message\":\"You don't have permission to do that. Contact your organization administrator.\",\"i18n\":{\"id\":\"error.no_permission_contact_org_admin\",\"fallback_text\":\"You don't have permission to do that. Contact your organization administrator.\",\"params\":{}}}","retriable":false}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"DomainOrgAdminsToRemove","args":{"orgId":"1484997479016537761","domainIds":[],"__requestId":"271da71f-01b7-4ff6-85db-e8ec59a4f00f"}}
+
+===== [AiCreditsPermsTEAM] AiCreditsPermissionsView ⚠有错误 帧数=1 =====
+  {"messageType":"viewSubscriptionFailed","error":"View 'AiCreditsPermissionsView': argument error: 'planType' 'expected one of: ORG,organization, TEAM,team'","errorCode":"argument-parse-validation-failure","liveViewKey":"[\"AiCreditsPermissionsView\",{\"PlanType\":\"TEAM\",\"__requestId\":\"fc48c476-a76c-4c9c-8f1e-ec7ad7b2d0af\",\"planId\":\"cc6b6125-a07f-4d39-a54c-50ef65f33919\",\"planParentId\":\"1666382706663462213\",\"planType\":\"TEAM\"}]","viewHash":"00000000000000000000000000000000"}
+
+===== [AdminReqDetail Fake] AdminRequestDetailView 空壳 帧数=2 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"AdminRequestDetailView\",{\"__requestId\":\"aa8fff17-f260-4f8a-b2dc-60dd1310ad37\",\"meteringPeriodId\":null,\"planId\":\"cc6b6125-a07f-4d39-a54c-50ef65f33919\",\"requestId\":\"00000000-0000-0000-0000-000000000000\"}]":{"AdminRequest":{"queries":{"[\"root\",\"adminRequest\",[\"00000000-0000-0000-0000-000000000000\",\"cc6b6125-a07f-4d39-a54c-50ef65f33919\"],[]]":{"initial":{}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"AdminRequestDetailView","args":{"requestId":"00000000-0000-0000-0000-000000000000","planId":"cc6b6125-a07f-4d39-a54c-50ef65f33919","meteringPeriodId":null,"__requestId":"aa8fff17-f260-4f8a-b2dc-60dd1310ad37"}}
+
+===== [AdminReqDetail B] AdminRequestDetailView 空壳 帧数=2 =====
+  {"messageType":"denormalizedPendingMutations","mutations":{"[\"AdminRequestDetailView\",{\"__requestId\":\"7effa330-1b16-4160-96b2-4325a7d5c8ea\",\"meteringPeriodId\":null,\"planId\":\"46b1d26c-c802-4ef1-a83c-d96cfe7295f4\",\"requestId\":\"00000000-0000-0000-0000-000000000000\"}]":{"AdminRequest":{"queries":{"[\"root\",\"adminRequest\",[\"00000000-0000-0000-0000-000000000000\",\"46b1d26c-c802-4ef1-a83c-d96cfe7295f4\"],[]]":{"initial":{}}},"computations":{}}}}}
+  {"messageType":"viewLoaded","viewName":"AdminRequestDetailView","args":{"requestId":"00000000-0000-0000-0000-000000000000","planId":"46b1d26c-c802-4ef1-a83c-d96cfe7295f4","meteringPeriodId":null,"__requestId":"7effa330-1b16-4160-96b2-4325a7d5c8ea"}}

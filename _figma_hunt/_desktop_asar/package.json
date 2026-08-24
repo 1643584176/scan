@@ -1,0 +1,12 @@
+{
+  "name": "figma-desktop",
+  "version": "126.8.13",
+  "author": "Figma, Inc. <support@figma.com>",
+  "description": "Figma Desktop",
+  "homepage": "https://www.figma.com",
+  "main": "main.js",
+  "dependencies-consider-carefully": "Consider carefully adding new dependencies. NPM modules often contain a lot of transitive dependencies which increases code size and decreases load times",
+  "dependencies": {
+    "chokidar": "^3.6.0"
+  }
+}

@@ -1,0 +1,956 @@
+{
+  "desktop.dialogs.about.app_name_and_version": {
+    "string": "Versão do app {appName} para desktop {version}"
+  },
+  "desktop.dialogs.about.copyright": {
+    "string": "Copyright © {year} Figma, Inc."
+  },
+  "desktop.dialogs.about.optimized_for_apple_silicon": {
+    "string": "Otimizado para Apple Silicon."
+  },
+  "desktop.dialogs.about.title": {
+    "string": "Sobre {appName}"
+  },
+  "desktop.dialogs.arm_translation.body": {
+    "string": "Esta versão do {appName} não é destinada para uso em Apple Silicon. Baixe o {appName} novamente na página de downloads do Figma para garantir que a versão correta seja instalada."
+  },
+  "desktop.dialogs.arm_translation.body_windows": {
+    "string": "Esta versão do {appName} não é destinada para uso em Windows em ARM. Baixe o {appName} novamente na página de downloads do Figma para garantir que a versão correta seja instalada."
+  },
+  "desktop.dialogs.arm_translation.download_button": {
+    "string": "Abrir a página de downloads"
+  },
+  "desktop.dialogs.arm_translation.title": {
+    "string": "Atualize o {appName}"
+  },
+  "desktop.dialogs.blocked_by_proxy.body": {
+    "string": "É provável que isso esteja acontecendo porque sua rede corporativa está usando um proxy.{lineBreak}Isso pode ser resolvido adicionando origens que não sejam do Figma usadas pelo seu proxy à configuração AllowedOriginHosts. Clique no botão abaixo para acessar nossa central de ajuda para mais detalhes."
+  },
+  "desktop.dialogs.blocked_by_proxy.title": {
+    "string": "Navegação bloqueada para ''{hostname}'"
+  },
+  "desktop.dialogs.button.cancel": {
+    "string": "Cancelar"
+  },
+  "desktop.dialogs.button.got_it": {
+    "string": "Entendi"
+  },
+  "desktop.dialogs.button.ok": {
+    "string": "OK"
+  },
+  "desktop.dialogs.button.quit": {
+    "string": "Sair"
+  },
+  "desktop.dialogs.button.restart": {
+    "string": "Reiniciar"
+  },
+  "desktop.dialogs.button.save": {
+    "string": "Salvar"
+  },
+  "desktop.dialogs.button.try_again": {
+    "string": "Tente novamente"
+  },
+  "desktop.dialogs.button.visit_help_center": {
+    "string": "Acessar central de ajuda"
+  },
+  "desktop.dialogs.checkbox.do_not_ask_me_again": {
+    "string": "Não me pergunte novamente"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.body": {
+    "string": "Fechar esta aba interromperá todas as importações em andamento e pendentes."
+  },
+  "desktop.dialogs.close_tab_import_in_progress.close_tab": {
+    "string": "Fechar aba"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.keep_tab_open": {
+    "string": "Mantenha a aba aberta"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.title": {
+    "string": "Importação de arquivo em andamento"
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.body": {
+    "string": "Fechar a aba não causará a perda de suas alterações, mas você precisará se reconectar para sincronizar as alterações."
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.close_tab_button": {
+    "string": "Fechar aba"
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.title": {
+    "string": "Você tem alterações não salvas"
+  },
+  "desktop.dialogs.close_window_unsaved_changes.body": {
+    "string": "As alterações estão sendo salvas. Suas alterações serão perdidas se você fechar a janela agora."
+  },
+  "desktop.dialogs.close_window_unsaved_changes.close_window_button": {
+    "string": "Fechar janela e descartar alterações"
+  },
+  "desktop.dialogs.close_window_unsaved_changes.title": {
+    "string": "Descartar alterações não salvas?"
+  },
+  "desktop.dialogs.confirm_display_capture.body": {
+    "string": "{appName} quer compartilhar o conteúdo da sua tela e das janelas abertas. Deseja compartilhar sua tela?"
+  },
+  "desktop.dialogs.confirm_display_capture.share_button": {
+    "string": "Compartilhar"
+  },
+  "desktop.dialogs.export_failed.title": {
+    "string": "Falha na exportação"
+  },
+  "desktop.dialogs.export_failed_invalid_path.details": {
+    "string": "\"{filePath}\" não é um caminho válido. Nenhum arquivo foi salvo."
+  },
+  "desktop.dialogs.export_failed_invalid_path.message": {
+    "string": "Falha na exportação"
+  },
+  "desktop.dialogs.invalid_figma_url.body": {
+    "string": "A área de transferência não contém um URL válido do Figma."
+  },
+  "desktop.dialogs.invalid_figma_url.title": {
+    "string": "URL do Figma inválido"
+  },
+  "desktop.dialogs.log_out_unsaved_changes.body": {
+    "string": "As alterações estão sendo salvas. Suas alterações serão perdidas se você se desconectar agora."
+  },
+  "desktop.dialogs.log_out_unsaved_changes.log_out_button": {
+    "string": "Sair e Descartar Alterações"
+  },
+  "desktop.dialogs.log_out_unsaved_changes.title": {
+    "string": "Descartar alterações não salvas?"
+  },
+  "desktop.dialogs.make_local.trust_directory.detail": {
+    "string": "O Figma Make pode carregar a configuração do projeto desta pasta que pode executar comandos.\n\n{directory}"
+  },
+  "desktop.dialogs.make_local.trust_directory.message": {
+    "string": "Você confia nos arquivos desta pasta?"
+  },
+  "desktop.dialogs.make_local.trust_directory.required_error": {
+    "string": "Confie nesta pasta antes de usar o Make Local. A configuração do projeto nesta pasta pode executar comandos."
+  },
+  "desktop.dialogs.make_local.trust_directory.title": {
+    "string": "Confiar nesta pasta?"
+  },
+  "desktop.dialogs.make_local.trust_directory.trust_button": {
+    "string": "Confiar na pasta"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.detail": {
+    "string": "O Make abrirá este repositório após clonar. A configuração do projeto e os metadados do Git neste repositório podem executar comandos.\n\n{directory}"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.message": {
+    "string": "Você confia neste repositório?"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.title": {
+    "string": "Confiar no repositório clonado?"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.trust_button": {
+    "string": "Confiar no repositório"
+  },
+  "desktop.dialogs.merge_close.body": {
+    "string": "Mantenha esta aba aberta até que o ramo termine de ser mesclado."
+  },
+  "desktop.dialogs.merge_close.title": {
+    "string": "Aguente firme! Ainda mesclando…"
+  },
+  "desktop.dialogs.move_to_applications_folder.body": {
+    "string": "Mova o app {appName} para a pasta Aplicativos e tente novamente.{lineBreak}Se o app já estiver na pasta Aplicativos, arraste-o para outra pasta e depois de volte para Aplicativos."
+  },
+  "desktop.dialogs.move_to_applications_folder.title": {
+    "string": "Mover para a pasta Aplicativos"
+  },
+  "desktop.dialogs.multiple_installations.body": {
+    "string": "Você tem várias instalações do app {appName} para desktop. Tente novamente após remover a outra instalação do app para desktop em:"
+  },
+  "desktop.dialogs.multiple_installations.remove_other_desktop_app_button": {
+    "string": "Remover outro app para desktop"
+  },
+  "desktop.dialogs.multiple_installations.title": {
+    "string": "Não há suporte para várias instalações"
+  },
+  "desktop.dialogs.no_update_available.body": {
+    "string": "Você já está usando a versão mais recente do {appName}.{lineBreak}Está faltando algum recurso novo? Tente recarregar suas abas e verifique novamente. Se você tiver outros problemas, entre em contato com o suporte."
+  },
+  "desktop.dialogs.no_update_available.reload_all_tabs_button": {
+    "string": "Recarregar todas as abas"
+  },
+  "desktop.dialogs.no_update_available.title": {
+    "string": "Nenhuma atualização disponível"
+  },
+  "desktop.dialogs.plugin_request_camera_and_microphone_permission": {
+    "string": "Ative o microfone e a câmera para {appName} em Preferências do sistema → Segurança e privacidade → Privacidade."
+  },
+  "desktop.dialogs.plugin_request_camera_permission": {
+    "string": "Ative a câmera para {appName} em Preferências do sistema → Segurança e privacidade → Privacidade."
+  },
+  "desktop.dialogs.plugin_request_microphone_permission": {
+    "string": "Ative o microfone para {appName} em Preferências do sistema → Segurança e privacidade → Privacidade."
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.body": {
+    "string": "Recarregar a aba não causará a perda de suas alterações, mas você precisará se reconectar para sincronizar as alterações."
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.reload_tab_button": {
+    "string": "Recarregar aba"
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.title": {
+    "string": "Você tem alterações não salvas"
+  },
+  "desktop.dialogs.replace_existing_files.details.multiple": {
+    "string": "{numFiles,number,integer} arquivos, incluindo \"{fileName}\", já existem. Substituí-los sobrescreverá o conteúdo existente."
+  },
+  "desktop.dialogs.replace_existing_files.details.single": {
+    "string": "\"{fileName}\" já existe. Substituí-lo sobrescreverá o conteúdo existente."
+  },
+  "desktop.dialogs.replace_existing_files.message": {
+    "string": "{numFiles, plural, one {Substituir arquivo existente?} other {Substituir arquivos existentes?}}"
+  },
+  "desktop.dialogs.replace_existing_files.replace_button": {
+    "string": "Substitua"
+  },
+  "desktop.dialogs.replace_existing_files.title": {
+    "string": "Substituir arquivos existentes"
+  },
+  "desktop.dialogs.reset_figma_and_restart.body": {
+    "string": "Os dados do app {appName} serão redefinidos, e o app será reiniciado. Você precisará fazer login novamente no {appName} após isso ser concluído."
+  },
+  "desktop.dialogs.reset_figma_and_restart.title": {
+    "string": "Redefinir {appName} e reiniciar?"
+  },
+  "desktop.dialogs.reset_figma_and_restart_failure.body": {
+    "string": "{appName} não conseguiu redefinir os dados do aplicativo e reiniciar. Entre em contato com o suporte para receber assistência."
+  },
+  "desktop.dialogs.reset_figma_and_restart_failure.title": {
+    "string": "Não foi possível redefinir {appName}"
+  },
+  "desktop.dialogs.restart_and_save_performance_log_dialog_body": {
+    "string": "Quando você clicar em OK, será solicitado que escolha onde salvar um arquivo de registro de desempenho, então o app será reiniciado. O app então salvará os registros no local que você escolheu após 30 segundos."
+  },
+  "desktop.dialogs.restart_required.body": {
+    "string": "{appName} precisa ser reiniciado para aplicar as alterações."
+  },
+  "desktop.dialogs.restart_required.title": {
+    "string": "Reinicie para aplicar as alterações"
+  },
+  "desktop.dialogs.save_debug_info_dialog_title": {
+    "string": "Salvar informações de depuração"
+  },
+  "desktop.dialogs.save_file_failed.details": {
+    "string": "\"{filePath}\" não pôde ser salvo. Os arquivos restantes não serão salvos."
+  },
+  "desktop.dialogs.save_file_failed.message": {
+    "string": "Falha ao salvar o arquivo"
+  },
+  "desktop.dialogs.save_network_log_dialog_body": {
+    "string": "Realize a ação específica no Figma sobre a qual você deseja obter informações. Você receberá um aviso após 30 segundos para salvar o arquivo de registro de rede."
+  },
+  "desktop.dialogs.save_network_log_dialog_title": {
+    "string": "Salvar um registro de rede"
+  },
+  "desktop.dialogs.save_performance_log_dialog_body": {
+    "string": "Realize a ação específica no Figma sobre a qual você deseja obter informações. Você receberá um aviso após 30 segundos para salvar o arquivo de registro de desempenho."
+  },
+  "desktop.dialogs.save_performance_log_dialog_title": {
+    "string": "Salvar um registro de desempenho"
+  },
+  "desktop.dialogs.update_available.body": {
+    "string": "Uma nova versão do {appName} está pronta para ser instalada."
+  },
+  "desktop.dialogs.update_available.install_now": {
+    "string": "Instalar agora"
+  },
+  "desktop.dialogs.update_available.install_on_next_launch": {
+    "string": "Instalar na próxima inicialização"
+  },
+  "desktop.dialogs.update_available.title": {
+    "string": "Atualização disponível"
+  },
+  "desktop.dialogs.update_error.body": {
+    "string": "{appName} não conseguiu instalar a atualização:"
+  },
+  "desktop.dialogs.update_error.download_update_manually_button": {
+    "string": "Baixar atualização manualmente"
+  },
+  "desktop.dialogs.update_error.title": {
+    "string": "Erro de atualização"
+  },
+  "desktop.dialogs.voice_call_request_microphone_permission": {
+    "string": "O acesso ao microfone é necessário para falar no Figma Audio. Ative o microfone para {appName} em Preferências do sistema → Segurança e privacidade → Privacidade → Microfone."
+  },
+  "desktop.dialogs.write_plugin.choose_plugin_location": {
+    "string": "Escolha a localização do diretório do plugin"
+  },
+  "desktop.dialogs.write_plugin.choose_plugin_name_and_location": {
+    "string": "Escolha o nome do plugin e a localização do diretório"
+  },
+  "desktop.errors.loading_screen.error_description": {
+    "string": "Falha ao carregar o Figma"
+  },
+  "desktop.errors.loading_screen.error_message": {
+    "string": "Opa, algo deu errado"
+  },
+  "desktop.errors.navigation_failed_description": {
+    "string": "Erro ao navegar para \"{url}\": {error}"
+  },
+  "desktop.menu.about": {
+    "string": "Sobre o {appName}"
+  },
+  "desktop.menu.actions": {
+    "string": "Ações…"
+  },
+  "desktop.menu.add_to_dictionary": {
+    "string": "Adicionar ao Dicionário"
+  },
+  "desktop.menu.always_show_tabs_when_presenting": {
+    "string": "Sempre exibir abas ao apresentar"
+  },
+  "desktop.menu.arrange_menu": {
+    "string": "Organizar"
+  },
+  "desktop.menu.bring_all_to_front": {
+    "string": "Mover tudo para frente"
+  },
+  "desktop.menu.check_for_updates": {
+    "string": "Verificar atualizações…"
+  },
+  "desktop.menu.close_tab": {
+    "string": "Fechar aba"
+  },
+  "desktop.menu.close_window": {
+    "string": "Fechar janela"
+  },
+  "desktop.menu.color_management": {
+    "string": "Gerenciamento de cores"
+  },
+  "desktop.menu.color_space_managed": {
+    "string": "Gerenciado"
+  },
+  "desktop.menu.color_space_menu": {
+    "string": "Espaço de cor"
+  },
+  "desktop.menu.color_space_srgb": {
+    "string": "sRGB"
+  },
+  "desktop.menu.color_space_unmanaged": {
+    "string": "Não gerenciado"
+  },
+  "desktop.menu.copy": {
+    "string": "Copiar"
+  },
+  "desktop.menu.cut": {
+    "string": "Cortar"
+  },
+  "desktop.menu.debug_figma_agent": {
+    "string": "Depurar Agente Figma"
+  },
+  "desktop.menu.disable_hardware_acceleration": {
+    "string": "Desativar aceleração de hardware"
+  },
+  "desktop.menu.edit_menu": {
+    "string": "Editar"
+  },
+  "desktop.menu.empty_placeholder": {
+    "string": "(vazio)"
+  },
+  "desktop.menu.enable_haptic_feedback": {
+    "string": "Ativar a resposta tátil do trackpad"
+  },
+  "desktop.menu.export": {
+    "string": "Exportar…"
+  },
+  "desktop.menu.export_as": {
+    "string": "Exportar como…"
+  },
+  "desktop.menu.export_frames_to_pdf": {
+    "string": "Exportar quadros para PDF…"
+  },
+  "desktop.menu.export_selected_slides_to_pdf": {
+    "string": "Exportar slides para PDF…"
+  },
+  "desktop.menu.export_slides_to": {
+    "string": "Exportar slides para…"
+  },
+  "desktop.menu.export_slides_to_pdf": {
+    "string": "Exportar todos os slides para PDF…"
+  },
+  "desktop.menu.file_menu": {
+    "string": "Arquivo"
+  },
+  "desktop.menu.graphics_backend": {
+    "string": "Backend gráfico"
+  },
+  "desktop.menu.graphics_backend_default": {
+    "string": "Padrão"
+  },
+  "desktop.menu.help_menu": {
+    "string": "Ajuda"
+  },
+  "desktop.menu.help_page": {
+    "string": "Página de Ajuda"
+  },
+  "desktop.menu.import": {
+    "string": "Importar…"
+  },
+  "desktop.menu.import_from_csv": {
+    "string": "Importar do CSV…"
+  },
+  "desktop.menu.interface_scale_make_larger": {
+    "string": "Ampliar"
+  },
+  "desktop.menu.interface_scale_make_smaller": {
+    "string": "Reduzir"
+  },
+  "desktop.menu.interface_scale_menu": {
+    "string": "Escala da interface"
+  },
+  "desktop.menu.interface_scale_percent": {
+    "string": "{interfaceScalePercent}%"
+  },
+  "desktop.menu.interface_scale_reset_to_default": {
+    "string": "Restaurar para o padrão"
+  },
+  "desktop.menu.legal_summary": {
+    "string": "Informações legais"
+  },
+  "desktop.menu.loading_placeholder": {
+    "string": "Carregando…"
+  },
+  "desktop.menu.log_out": {
+    "string": "Sair"
+  },
+  "desktop.menu.mac_hide": {
+    "string": "Ocultar {appName}"
+  },
+  "desktop.menu.mac_hide_others": {
+    "string": "Ocultar Outros"
+  },
+  "desktop.menu.mac_quit": {
+    "string": "Sair do {appName}"
+  },
+  "desktop.menu.mac_services": {
+    "string": "Serviços"
+  },
+  "desktop.menu.mac_unhide": {
+    "string": "Mostrar tudo"
+  },
+  "desktop.menu.manage_plugins": {
+    "string": "Gerenciar plugins…"
+  },
+  "desktop.menu.minimize": {
+    "string": "Minimizar"
+  },
+  "desktop.menu.new_file": {
+    "string": "Novo arquivo"
+  },
+  "desktop.menu.new_tab": {
+    "string": "Nova aba"
+  },
+  "desktop.menu.new_window": {
+    "string": "Nova Janela"
+  },
+  "desktop.menu.object_menu": {
+    "string": "Objeto"
+  },
+  "desktop.menu.open_file_browser": {
+    "string": "Abra o navegador de arquivos"
+  },
+  "desktop.menu.open_file_url_from_clipboard": {
+    "string": "Abrir URL do arquivo da área de transferência"
+  },
+  "desktop.menu.open_test_websocket_page": {
+    "string": "Abrir página de teste do Websocket"
+  },
+  "desktop.menu.paste": {
+    "string": "Colar"
+  },
+  "desktop.menu.plugins_menu": {
+    "string": "Plugins"
+  },
+  "desktop.menu.prefer_high_performance_gpu": {
+    "string": "Preferir GPU de alto desempenho"
+  },
+  "desktop.menu.preferences": {
+    "string": "Preferências"
+  },
+  "desktop.menu.recently_closed_tabs": {
+    "string": "Abas fechadas recentemente"
+  },
+  "desktop.menu.redo": {
+    "string": "Refazer"
+  },
+  "desktop.menu.release_notes": {
+    "string": "Novidades da versão"
+  },
+  "desktop.menu.reload_all_tabs": {
+    "string": "Recarregar todas as abas"
+  },
+  "desktop.menu.reopen_closed_tab": {
+    "string": "Reabrir aba fechada"
+  },
+  "desktop.menu.reset_figma_and_restart": {
+    "string": "Redefinir o Figma e reiniciar"
+  },
+  "desktop.menu.restart_and_save_performance_log": {
+    "string": "Reiniciar e Salvar registro de desempenho…"
+  },
+  "desktop.menu.save_debug_info": {
+    "string": "Salvar informações de depuração…"
+  },
+  "desktop.menu.save_local_copy": {
+    "string": "Salvar cópia local…"
+  },
+  "desktop.menu.save_network_log": {
+    "string": "Salvar registro de rede…"
+  },
+  "desktop.menu.save_performance_log": {
+    "string": "Salvar registro de desempenho…"
+  },
+  "desktop.menu.save_performance_log_stop": {
+    "string": "Parar registro de desempenho…"
+  },
+  "desktop.menu.save_to_version_history": {
+    "string": "Salvar no histórico de versões"
+  },
+  "desktop.menu.select_all": {
+    "string": "Selecionar tudo"
+  },
+  "desktop.menu.select_next_tab": {
+    "string": "Selecionar próxima aba"
+  },
+  "desktop.menu.select_previous_tab": {
+    "string": "Selecione aba anterior"
+  },
+  "desktop.menu.show_figma_in_menu_bar": {
+    "string": "Exibir Figma na barra de menus"
+  },
+  "desktop.menu.show_figma_in_system_tray": {
+    "string": "Exibir Figma na bandeja do sistema"
+  },
+  "desktop.menu.show_version_history": {
+    "string": "Exibir histórico de versões"
+  },
+  "desktop.menu.support_forum": {
+    "string": "Fórum de suporte"
+  },
+  "desktop.menu.text_menu": {
+    "string": "Texto"
+  },
+  "desktop.menu.toggle_developer_tools": {
+    "string": "Alternar Ferramentas de Desenvolvedor de Aplicativos Web"
+  },
+  "desktop.menu.toggle_full_screen": {
+    "string": "Alternar tela cheia"
+  },
+  "desktop.menu.toggle_internal_developer_tools": {
+    "string": "Alternar barra de abas da Ferramenta para desenvolvedores"
+  },
+  "desktop.menu.toggle_preview_developer_tools": {
+    "string": "Alternar Ferramentas de Desenvolvedor da Visualização do Navegador"
+  },
+  "desktop.menu.troubleshooting_menu": {
+    "string": "Solução de problemas"
+  },
+  "desktop.menu.undo": {
+    "string": "Desfazer"
+  },
+  "desktop.menu.vector_menu": {
+    "string": "Vetor"
+  },
+  "desktop.menu.video_tutorials": {
+    "string": "Tutoriais em vídeo"
+  },
+  "desktop.menu.view_menu": {
+    "string": "Visualizar"
+  },
+  "desktop.menu.widgets_menu": {
+    "string": "Widgets"
+  },
+  "desktop.menu.window_menu": {
+    "string": "Janela"
+  },
+  "desktop.menu.windows_quit": {
+    "string": "Sair"
+  },
+  "desktop.menu.zoom": {
+    "string": "Zoom"
+  },
+  "desktop.shell.app.edited_time": {
+    "string": "Editado {time}"
+  },
+  "desktop.shell.app.last_viewed_time": {
+    "string": "Última visualização {time}"
+  },
+  "desktop.shell_app.agent_not_running": {
+    "string": "Não está em execução"
+  },
+  "desktop.shell_app.agent_running": {
+    "string": "Em execução"
+  },
+  "desktop.shell_app.agent_status": {
+    "string": "Status do agente: "
+  },
+  "desktop.shell_app.agent_version": {
+    "string": "Versão do agente: "
+  },
+  "desktop.shell_app.current_user_presenting": {
+    "string": "Você está em destaque"
+  },
+  "desktop.shell_app.error_tab.403_forbidden.description": {
+    "string": "Entre em contato com o proprietário, um administrador ou o suporte para receber assistência."
+  },
+  "desktop.shell_app.error_tab.403_forbidden.title": {
+    "string": "Não é possível acessar este recurso"
+  },
+  "desktop.shell_app.error_tab.404_not_found.description": {
+    "string": "Se você esperava ver um arquivo aqui, pode ser que não tenha permissão para acessá-lo. Peça que o proprietário atualize as permissões do arquivo e tente novamente."
+  },
+  "desktop.shell_app.error_tab.404_not_found.title": {
+    "string": "Não encontrado ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.407_authentication_required.description": {
+    "string": "Um proxy que requer autenticação foi encontrado. Autentique-se com esse proxy ou entre em contato com o administrador da rede."
+  },
+  "desktop.shell_app.error_tab.407_authentication_required.title": {
+    "string": "Autenticação necessária ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.502_temporary_outage.description": {
+    "string": "O servidor Figma está passando por uma interrupção temporária."
+  },
+  "desktop.shell_app.error_tab.503_temporary_outage.description": {
+    "string": "O servidor do Figma está em manutenção."
+  },
+  "desktop.shell_app.error_tab.connection_error.description": {
+    "string": "Seu computador pode estar offline ou o servidor do Figma pode estar com problemas."
+  },
+  "desktop.shell_app.error_tab.connection_error.title": {
+    "string": "Erro de conexão: {errorCode}"
+  },
+  "desktop.shell_app.error_tab.crash.close_tab_button": {
+    "string": "Fechar aba"
+  },
+  "desktop.shell_app.error_tab.crash.description": {
+    "string": "Recarregar o Figma pode resolver isso."
+  },
+  "desktop.shell_app.error_tab.crash.reload_button": {
+    "string": "Recarregar"
+  },
+  "desktop.shell_app.error_tab.crash.title": {
+    "string": "Algo deu errado"
+  },
+  "desktop.shell_app.error_tab.error_code": {
+    "string": "Código de erro: {errorCode}"
+  },
+  "desktop.shell_app.error_tab.figma_will_automatically_try_to_reconnect": {
+    "string": "O Figma tentará se reconectar automaticamente."
+  },
+  "desktop.shell_app.error_tab.generic_server_error.description": {
+    "string": "O servidor do Figma encontrou um erro interno."
+  },
+  "desktop.shell_app.error_tab.generic_server_error.title": {
+    "string": "Erro do servidor ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.reason_crashed": {
+    "string": "Motivo: falha"
+  },
+  "desktop.shell_app.error_tab.temporary_outage.title": {
+    "string": "Interrupção temporária ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.try_again_button": {
+    "string": "Tente novamente"
+  },
+  "desktop.shell_app.error_tab.visit_help_page_or_contact_support": {
+    "string": "Para conseguir ajuda, acesse {helpPageUrl} ou entre em contato com {supportEmail}."
+  },
+  "desktop.shell_app.modal_cancel": {
+    "string": "Cancelar"
+  },
+  "desktop.shell_app.modal_confirm": {
+    "string": "Confirmar"
+  },
+  "desktop.shell_app.env_config.backend_label": {
+    "string": "Back-end"
+  },
+  "desktop.shell_app.env_config.frontend_label": {
+    "string": "Front-end"
+  },
+  "desktop.shell_app.env_config.shell_label": {
+    "string": "Shell"
+  },
+  "desktop.shell_app.env_config.backend_production": {
+    "string": "Produção"
+  },
+  "desktop.shell_app.env_config.backend_staging": {
+    "string": "Staging"
+  },
+  "desktop.shell_app.env_config.backend_gov": {
+    "string": "Governo"
+  },
+  "desktop.shell_app.env_config.devbox": {
+    "string": "Devbox"
+  },
+  "desktop.shell_app.env_config.backend_custom": {
+    "string": "URL personalizado"
+  },
+  "desktop.shell_app.env_config.coder": {
+    "string": "Coder"
+  },
+  "desktop.shell_app.env_config.frontend_same_as_backend": {
+    "string": "Igual ao back-end"
+  },
+  "desktop.shell_app.env_config.frontend_canary": {
+    "string": "Canário"
+  },
+  "desktop.shell_app.env_config.frontend_local": {
+    "string": "Front-end local"
+  },
+  "desktop.shell_app.env_config.frontend_fcp_sha": {
+    "string": "Visualização de commit de front-end (SHA)"
+  },
+  "desktop.shell_app.env_config.shell_auto": {
+    "string": "Automático (corresponder ao front-end)"
+  },
+  "desktop.shell_app.env_config.shell_local": {
+    "string": "Shell local"
+  },
+  "desktop.shell_app.env_config.coder_workspace_label": {
+    "string": "Área de trabalho do Coder"
+  },
+  "desktop.shell_app.env_config.commit_sha_label": {
+    "string": "SHA de commit"
+  },
+  "desktop.shell_app.env_config.additional_ffs_label": {
+    "string": "Flags de recurso adicionais (opcional)"
+  },
+  "desktop.shell_app.env_config.save_button": {
+    "string": "Salvar e reiniciar"
+  },
+  "desktop.shell_app.open_tabs_in_other_windows.section": {
+    "string": "Abas na janela {windowIndex}"
+  },
+  "desktop.shell_app.new_tab_menu.new_file": {
+    "string": "Novo arquivo"
+  },
+  "desktop.shell_app.parsed_fonts": {
+    "string": "Fontes analisadas: "
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.title": {
+    "string": "Abas abertas e fechadas recentemente"
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.empty_message": {
+    "string": "Suas abas abertas e abas fechadas recentemente aparecerão aqui"
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.search_placeholder": {
+    "string": "Buscar abas"
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.no_matches": {
+    "string": "Nenhuma correspondência encontrada"
+  },
+  "desktop.shell_app.open_tabs.title": {
+    "string": "Abas nesta janela"
+  },
+  "desktop.shell_app.open_tabs.close_tab": {
+    "string": "Fechar aba {tabTitle}"
+  },
+  "desktop.shell_app.open_tabs.mute_tab": {
+    "string": "Silenciar aba {tabTitle}"
+  },
+  "desktop.shell_app.recently_closed_tabs.title": {
+    "string": "Abas fechadas recentemente"
+  },
+  "desktop.shell_app.restart_agent": {
+    "string": "Reiniciar agente"
+  },
+  "desktop.shell_app.restarting_agent": {
+    "string": "Reiniciando…"
+  },
+  "desktop.shell_app.tab_error.label": {
+    "string": "Erro na aba"
+  },
+  "desktop.shell_app.tab_bar.label": {
+    "string": "Barra de abas"
+  },
+  "desktop.shell_app.tab_bar.close_button.label": {
+    "string": "Fechar"
+  },
+  "desktop.shell_app.tab_bar.community_tab.label": {
+    "string": "Comunidade"
+  },
+  "desktop.shell_app.tab_bar.community_tab.tooltip": {
+    "string": "Comunidade Figma"
+  },
+  "desktop.shell_app.tab_bar.factory_tab.label": {
+    "string": "Você está em staging"
+  },
+  "desktop.shell_app.tab_bar.home_tab.label": {
+    "string": "Início"
+  },
+  "desktop.shell_app.tab_bar.maximize_button.label": {
+    "string": "Maximizar"
+  },
+  "desktop.shell_app.tab_bar.menu_button.label": {
+    "string": "Menu"
+  },
+  "desktop.shell_app.tab_bar.minimize_button.label": {
+    "string": "Minimizar"
+  },
+  "desktop.shell_app.tab_bar.pinned_tab_label": {
+    "string": "Aba fixada: {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.pinned_split_tab_label": {
+    "string": "Aba dividida fixada: {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.pinned_split_tab_group_label": {
+    "string": "Grupo de abas divididas fixadas: {tab1}, {tab2}"
+  },
+  "desktop.shell_app.tab_bar.split_tab_group_label": {
+    "string": "Grupo de abas divididas: {tab1}, {tab2}"
+  },
+  "desktop.shell_app.tab_bar.split_tab_label": {
+    "string": "Aba dividida: {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.tab_close_button.label": {
+    "string": "Fechar aba"
+  },
+  "desktop.shell_app.tab_bar.tab_mute_button.label": {
+    "string": "Silenciar aba"
+  },
+  "desktop.shell_app.tab_bar.update_button.label": {
+    "string": "Atualizar agora"
+  },
+  "desktop.shell_app.time_ago.days": {
+    "string": "{numDays, plural, one {ontem} other {{numDays} dias atrás}}"
+  },
+  "desktop.shell_app.time_ago.hours": {
+    "string": "{numHours, plural, one {{numHours} hora atrás} other {{numHours} horas atrás}}"
+  },
+  "desktop.shell_app.time_ago.minutes": {
+    "string": "{numMinutes, plural, one {{numMinutes} minuto atrás} other {{numMinutes} minutos atrás}}"
+  },
+  "desktop.shell_app.time_ago.months": {
+    "string": "{numMonths, plural, one {mês passado} other {{numMonths} meses atrás}}"
+  },
+  "desktop.shell_app.time_ago.seconds": {
+    "string": "{numSeconds, plural, one {{numSeconds} segundo atrás} other {{numSeconds} segundos atrás}}"
+  },
+  "desktop.shell_app.time_ago.years": {
+    "string": "{numYears, plural, one {ano passado} other {{numYears} anos atrás}}"
+  },
+  "desktop.shell_app.user_at_mentioned_you": {
+    "string": "Mencionado por {handle}"
+  },
+  "desktop.shell_app.user_presenting": {
+    "string": "Destaque em {handle}"
+  },
+  "desktop.shell_app.tab_groups.context_menu.ungroup": {
+    "string": "Desagrupar"
+  },
+  "desktop.shell_app.tab_groups.context_menu.delete_group": {
+    "string": "Excluir grupo"
+  },
+  "desktop.shell_app.tab_groups.context_menu.edit_group_name": {
+    "string": "Editar nome do grupo"
+  },
+  "desktop.shell_app.tab_groups.context_menu.group_color": {
+    "string": "Cor do grupo"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_blue": {
+    "string": "Azul"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_red": {
+    "string": "Vermelho"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_yellow": {
+    "string": "Amarelo"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_green": {
+    "string": "Verde"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_purple": {
+    "string": "Roxo"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_pink": {
+    "string": "Rosa"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_persimmon": {
+    "string": "Caqui"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_grey": {
+    "string": "Cinza"
+  },
+  "desktop.shell_app.tab_preview.memory_freed": {
+    "string": "Aba descarregada: {memory} MB liberados"
+  },
+  "desktop.shell_app.tab_preview.memory_freed_GB": {
+    "string": "Aba descarregada: {memory} GB liberados"
+  },
+  "desktop.shell_app.tab_preview.memory_usage": {
+    "string": "Uso de memória: {memory} MB"
+  },
+  "desktop.shell_app.tab_preview.memory_usage_GB": {
+    "string": "Uso de memória: {memory} GB"
+  },
+  "desktop.tab_context_menu.close_all_tabs": {
+    "string": "Fechar todas as abas"
+  },
+  "desktop.tab_context_menu.close_other_tabs": {
+    "string": "Fechar outras abas"
+  },
+  "desktop.tab_context_menu.close_tab": {
+    "string": "Fechar"
+  },
+  "desktop.tab_context_menu.copy_link": {
+    "string": "Copiar link"
+  },
+  "desktop.tab_context_menu.move_to_another_window": {
+    "string": "Mover para outra janela"
+  },
+  "desktop.tab_context_menu.move_to_new_window": {
+    "string": "Mover para nova janela"
+  },
+  "desktop.tab_context_menu.new_window": {
+    "string": "Nova Janela"
+  },
+  "desktop.tab_context_menu.open_in_browser": {
+    "string": "Abrir no navegador"
+  },
+  "desktop.tab_context_menu.open_in_split_tab": {
+    "string": "Abrir em aba dividida"
+  },
+  "desktop.tab_context_menu.other_window": {
+    "string": "{numOtherTabs, plural, one {{tabName} e {numOtherTabs,number} outra aba} other {{tabName} e {numOtherTabs,number} outras abas}}"
+  },
+  "desktop.tab_context_menu.pin_tab": {
+    "string": "Fixar"
+  },
+  "desktop.tab_context_menu.reload_tab": {
+    "string": "Recarregar"
+  },
+  "desktop.tab_context_menu.rename": {
+    "string": "Renomear arquivo"
+  },
+  "desktop.tab_context_menu.separate_split_tabs": {
+    "string": "Separar abas"
+  },
+  "desktop.tab_context_menu.show_icons": {
+    "string": "Mostrar ícones"
+  },
+  "desktop.tab_context_menu.unpin_tab": {
+    "string": "Desafixar"
+  },
+  "desktop.tab_context_menu.close_tab_group": {
+    "string": "Fechar Grupo de Abas"
+  },
+  "desktop.tab_context_menu.add_to_tab_group": {
+    "string": "Adicionar a Grupo de abas"
+  },
+  "desktop.tab_context_menu.new_tab_group": {
+    "string": "Novo Grupo de abas"
+  },
+  "desktop.tab_context_menu.remove_from_tab_group": {
+    "string": "Remover do Grupo de abas"
+  },
+  "desktop.tab_context_menu.new_group_name": {
+    "string": "Grupo {number}"
+  },
+  "desktop.tabs.community": {
+    "string": "{pluginName} (Comunidade)"
+  },
+  "desktop.tabs.untitled": {
+    "string": "Sem título"
+  }
+}

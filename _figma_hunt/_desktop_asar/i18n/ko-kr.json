@@ -1,0 +1,956 @@
+{
+  "desktop.dialogs.about.app_name_and_version": {
+    "string": "{appName} 데스크톱 앱 버전 {version}"
+  },
+  "desktop.dialogs.about.copyright": {
+    "string": "Copyright © {year} Figma, Inc."
+  },
+  "desktop.dialogs.about.optimized_for_apple_silicon": {
+    "string": "Apple Silicon에 최적화되어 있습니다."
+  },
+  "desktop.dialogs.about.title": {
+    "string": "{appName} 소개"
+  },
+  "desktop.dialogs.arm_translation.body": {
+    "string": "이 {appName} 버전은 Apple Silicon에서 사용하기에 적합하지 않습니다. Figma 다운로드 페이지에서 {appName}을(를) 다시 다운로드하여 올바른 버전이 설치되었는지 확인하십시오."
+  },
+  "desktop.dialogs.arm_translation.body_windows": {
+    "string": "이 {appName} 버전은 Windows on Arm에서 사용하기에 적합하지 않습니다. Figma 다운로드 페이지에서 {appName}을(를) 다시 다운로드하여 올바른 버전이 설치되었는지 확인하십시오."
+  },
+  "desktop.dialogs.arm_translation.download_button": {
+    "string": "다운로드 페이지 열기"
+  },
+  "desktop.dialogs.arm_translation.title": {
+    "string": "업데이트 {appName}"
+  },
+  "desktop.dialogs.blocked_by_proxy.body": {
+    "string": "회사 네트워크에서 프록시를 사용하고 있기 때문에 이러한 문제가 발생했을 가능성이 높습니다.{lineBreak} 프록시에서 사용하는 Figma가 아닌 출처를 AllowedOriginHosts 설정에 추가해 해결할 수 있습니다. 자세한 내용을 보려면 아래 버튼을 클릭하여 도움말 센터를 방문하십시오."
+  },
+  "desktop.dialogs.blocked_by_proxy.title": {
+    "string": "''{hostname}'(으)로의 탐색이 차단되었습니다"
+  },
+  "desktop.dialogs.button.cancel": {
+    "string": "취소"
+  },
+  "desktop.dialogs.button.got_it": {
+    "string": "확인"
+  },
+  "desktop.dialogs.button.ok": {
+    "string": "확인"
+  },
+  "desktop.dialogs.button.quit": {
+    "string": "종료"
+  },
+  "desktop.dialogs.button.restart": {
+    "string": "다시 시작"
+  },
+  "desktop.dialogs.button.save": {
+    "string": "저장"
+  },
+  "desktop.dialogs.button.try_again": {
+    "string": "다시 시도"
+  },
+  "desktop.dialogs.button.visit_help_center": {
+    "string": "도움말 센터 방문하기"
+  },
+  "desktop.dialogs.checkbox.do_not_ask_me_again": {
+    "string": "다시 묻지 않음"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.body": {
+    "string": "이 탭을 닫으면 진행 중이거나 보류 중인 모든 가져오기가 중지됩니다."
+  },
+  "desktop.dialogs.close_tab_import_in_progress.close_tab": {
+    "string": "탭 닫기"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.keep_tab_open": {
+    "string": "탭 열어 두기"
+  },
+  "desktop.dialogs.close_tab_import_in_progress.title": {
+    "string": "파일 가져오는 중"
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.body": {
+    "string": "탭을 닫아도 변경 사항은 손실되지 않지만, 변경 사항을 동기화하려면 다시 연결해야 합니다."
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.close_tab_button": {
+    "string": "탭 닫기"
+  },
+  "desktop.dialogs.close_tab_unsaved_changes.title": {
+    "string": "저장되지 않은 변경 사항이 있습니다."
+  },
+  "desktop.dialogs.close_window_unsaved_changes.body": {
+    "string": "현재 변경 사항을 저장하고 있습니다. 지금 창을 닫으면 변경 사항이 손실됩니다."
+  },
+  "desktop.dialogs.close_window_unsaved_changes.close_window_button": {
+    "string": "창 닫기 및 변경 사항 삭제"
+  },
+  "desktop.dialogs.close_window_unsaved_changes.title": {
+    "string": "저장되지 않은 변경 사항을 삭제하시겠습니까?"
+  },
+  "desktop.dialogs.confirm_display_capture.body": {
+    "string": "{appName}이(가) 화면과 열려 있는 창의 내용을 공유하려고 합니다. 화면을 공유하시겠습니까?"
+  },
+  "desktop.dialogs.confirm_display_capture.share_button": {
+    "string": "공유하기"
+  },
+  "desktop.dialogs.export_failed.title": {
+    "string": "내보내기 실패"
+  },
+  "desktop.dialogs.export_failed_invalid_path.details": {
+    "string": "''{filePath}'은(는) 유효한 경로가 아닙니다. 파일이 저장되지 않았습니다."
+  },
+  "desktop.dialogs.export_failed_invalid_path.message": {
+    "string": "내보내기 실패"
+  },
+  "desktop.dialogs.invalid_figma_url.body": {
+    "string": "클립보드에 유효한 Figma URL이 포함되어 있지 않습니다."
+  },
+  "desktop.dialogs.invalid_figma_url.title": {
+    "string": "잘못된 Figma URL"
+  },
+  "desktop.dialogs.log_out_unsaved_changes.body": {
+    "string": "현재 변경 사항을 저장하고 있습니다. 지금 로그아웃하면 변경 사항이 손실됩니다."
+  },
+  "desktop.dialogs.log_out_unsaved_changes.log_out_button": {
+    "string": "로그아웃 및 변경 사항 삭제"
+  },
+  "desktop.dialogs.log_out_unsaved_changes.title": {
+    "string": "저장되지 않은 변경 사항을 삭제시겠습니까?"
+  },
+  "desktop.dialogs.make_local.trust_directory.detail": {
+    "string": "Figma Make는 명령어를 실행할 수 있는 이 폴더에서 프로젝트 구성을 로드할 수 있습니다.\n\n{directory}"
+  },
+  "desktop.dialogs.make_local.trust_directory.message": {
+    "string": "이 폴더의 파일을 신뢰하십니까?"
+  },
+  "desktop.dialogs.make_local.trust_directory.required_error": {
+    "string": "Make Local을 사용하기 전에 이 폴더를 신뢰하세요. 이 폴더의 프로젝트 구성은 명령어를 실행할 수 있습니다."
+  },
+  "desktop.dialogs.make_local.trust_directory.title": {
+    "string": "이 폴더를 신뢰하시겠습니까?"
+  },
+  "desktop.dialogs.make_local.trust_directory.trust_button": {
+    "string": "폴더 신뢰하기"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.detail": {
+    "string": "Make가 복제한 후 이 리포지토리를 열 것입니다. 이 리포지토리의 프로젝트 구성 및 Git 메타데이터는 명령어를 실행할 수 있습니다.\n\n{directory}"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.message": {
+    "string": "이 리포지토리를 신뢰하십니까?"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.title": {
+    "string": "복제된 리포지토리를 신뢰하시겠습니까?"
+  },
+  "desktop.dialogs.make_local.trust_git_clone.trust_button": {
+    "string": "리포지토리 신뢰하기"
+  },
+  "desktop.dialogs.merge_close.body": {
+    "string": "브랜치 병합이 완료될 때까지 이 탭을 열어 두십시오."
+  },
+  "desktop.dialogs.merge_close.title": {
+    "string": "잠시만 기다려주세요. 아직 병합 중…"
+  },
+  "desktop.dialogs.move_to_applications_folder.body": {
+    "string": "{appName} 앱을 애플리케이션 폴더로 이동한 후 다시 시도하세요.{lineBreak}앱이 이미 애플리케이션 폴더에 있는 경우 다른 폴더로 이동한 다음 다시 애플리케이션으로 이동합니다."
+  },
+  "desktop.dialogs.move_to_applications_folder.title": {
+    "string": "애플리케이션 폴더로 이동"
+  },
+  "desktop.dialogs.multiple_installations.body": {
+    "string": "{appName} 데스크톱 앱이 여러 개 설치되어 있습니다. 다른 데스크톱 앱 설치를 제거한 후 다시 시도하십시오."
+  },
+  "desktop.dialogs.multiple_installations.remove_other_desktop_app_button": {
+    "string": "다른 데스크톱 앱 제거"
+  },
+  "desktop.dialogs.multiple_installations.title": {
+    "string": "다중 설치는 지원되지 않습니다."
+  },
+  "desktop.dialogs.no_update_available.body": {
+    "string": "이미 최신 버전의 {appName} 앱을 사용하고 있습니다.{lineBreak}새로운 기능이 필요하세요? 탭을 다시 로드하여 확인해 보세요. 다른 문제가 발생하면 지원팀에 연락하세요."
+  },
+  "desktop.dialogs.no_update_available.reload_all_tabs_button": {
+    "string": "모든 탭 다시 불러오기"
+  },
+  "desktop.dialogs.no_update_available.title": {
+    "string": "사용 가능한 업데이트 없음"
+  },
+  "desktop.dialogs.plugin_request_camera_and_microphone_permission": {
+    "string": "시스템 환경설정 → 보안 및 개인 정보 보호 → 개인 정보 보호에서 {appName}에 대해 카메라와 마이크를 활성화하세요."
+  },
+  "desktop.dialogs.plugin_request_camera_permission": {
+    "string": "시스템 환경설정 → 보안 및 개인 정보 보호 → 개인 정보 보호에서 {appName}에 대해 카메라를 활성화하세요."
+  },
+  "desktop.dialogs.plugin_request_microphone_permission": {
+    "string": "시스템 환경설정 → 보안 및 개인 정보 보호 → 개인 정보 보호에서 {appName}에 대해 마이크를 활성화하세요."
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.body": {
+    "string": "탭을 다시 로드해도 변경 사항은 손실되지 않지만, 변경 사항을 동기화하려면 다시 연결해야 합니다."
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.reload_tab_button": {
+    "string": "탭 새로 고침"
+  },
+  "desktop.dialogs.reload_tab_unsaved_changes.title": {
+    "string": "저장되지 않은 변경 사항이 있습니다."
+  },
+  "desktop.dialogs.replace_existing_files.details.multiple": {
+    "string": "''{fileName}' 파일을 포함해 {numFiles,number,integer}개의 파일이 이미 존재합니다. 이를 교체하면 기존 내용을 덮어쓰게 됩니다."
+  },
+  "desktop.dialogs.replace_existing_files.details.single": {
+    "string": "''{fileName}'이 이미 존재합니다. 이를 교체하면 기존 내용을 덮어쓰게 됩니다."
+  },
+  "desktop.dialogs.replace_existing_files.message": {
+    "string": "{numFiles, plural, other {기존 파일을 교체하시겠습니까?}}"
+  },
+  "desktop.dialogs.replace_existing_files.replace_button": {
+    "string": "교체"
+  },
+  "desktop.dialogs.replace_existing_files.title": {
+    "string": "기존 파일 교체"
+  },
+  "desktop.dialogs.reset_figma_and_restart.body": {
+    "string": "{appName} 앱 데이터가 초기화되고 앱이 재시작됩니다. 이 작업이 완료된 후에는 {appName}에 다시 로그인해야 합니다."
+  },
+  "desktop.dialogs.reset_figma_and_restart.title": {
+    "string": "{appName} 앱을 재설정하고 재시작하시겠습니까?"
+  },
+  "desktop.dialogs.reset_figma_and_restart_failure.body": {
+    "string": "{appName}의 앱 데이터를 재설정하고 재시작하지 못했습니다. 지원팀에 문의하여 도움을 받으세요."
+  },
+  "desktop.dialogs.reset_figma_and_restart_failure.title": {
+    "string": "{appName} 재설정 실패"
+  },
+  "desktop.dialogs.restart_and_save_performance_log_dialog_body": {
+    "string": "\"확인\"을 클릭하면 성능 로그 파일을 저장할 위치를 선택하라는 메시지가 표시된 후 앱이 다시 시작됩니다. 그런 다음 앱이 30초 후에 선택한 위치에 로그를 저장합니다."
+  },
+  "desktop.dialogs.restart_required.body": {
+    "string": "변경 사항을 적용하려면 {appName} 앱을 다시 시작해야 합니다."
+  },
+  "desktop.dialogs.restart_required.title": {
+    "string": "변경 사항을 적용하려면 다시 시작하십시오."
+  },
+  "desktop.dialogs.save_debug_info_dialog_title": {
+    "string": "디버그 정보 저장"
+  },
+  "desktop.dialogs.save_file_failed.details": {
+    "string": "''{filePath}'을(를) 저장할 수 없습니다. 남은 파일은 저장되지 않습니다."
+  },
+  "desktop.dialogs.save_file_failed.message": {
+    "string": "파일 저장에 실패했습니다."
+  },
+  "desktop.dialogs.save_network_log_dialog_body": {
+    "string": "Figma에서 정보를 얻고자 하는 특정 액션을 완료하십시오. 30초 후에 네트워크 로그 파일을 저장하라는 메시지가 표시됩니다."
+  },
+  "desktop.dialogs.save_network_log_dialog_title": {
+    "string": "네트워크 로그 저장하기"
+  },
+  "desktop.dialogs.save_performance_log_dialog_body": {
+    "string": "Figma에서 정보를 얻고자 하는 특정 액션을 완료하십시오. 30초 후에 성능 로그 파일을 저장하라는 메시지가 표시됩니다."
+  },
+  "desktop.dialogs.save_performance_log_dialog_title": {
+    "string": "성능 로그 저장"
+  },
+  "desktop.dialogs.update_available.body": {
+    "string": "{appName}의 새 버전을 설치할 준비가 되었습니다."
+  },
+  "desktop.dialogs.update_available.install_now": {
+    "string": "지금 설치"
+  },
+  "desktop.dialogs.update_available.install_on_next_launch": {
+    "string": "다음 실행 시 설치"
+  },
+  "desktop.dialogs.update_available.title": {
+    "string": "업데이트 이용 가능"
+  },
+  "desktop.dialogs.update_error.body": {
+    "string": "{appName}의 업데이트를 설치하지 못했습니다. 오류 메시지:"
+  },
+  "desktop.dialogs.update_error.download_update_manually_button": {
+    "string": "수동으로 업데이트 다운로드"
+  },
+  "desktop.dialogs.update_error.title": {
+    "string": "업데이트 오류"
+  },
+  "desktop.dialogs.voice_call_request_microphone_permission": {
+    "string": "Figma Audio에서 대화하려면 마이크 접근 권한이 필요합니다. 시스템 환경설정 → 보안 및 개인 정보 보호 → 개인 정보 보호 → 마이크에서 {appName}에 대해 카메라 및 마이크를 활성화하세요."
+  },
+  "desktop.dialogs.write_plugin.choose_plugin_location": {
+    "string": "플러그인 디렉토리 위치 선택"
+  },
+  "desktop.dialogs.write_plugin.choose_plugin_name_and_location": {
+    "string": "플러그인 이름과 디렉토리 위치 선택"
+  },
+  "desktop.errors.loading_screen.error_description": {
+    "string": "Figma 로드 실패"
+  },
+  "desktop.errors.loading_screen.error_message": {
+    "string": "문제가 발생했습니다."
+  },
+  "desktop.errors.navigation_failed_description": {
+    "string": "''{url}'(으)로 이동 중 오류: {error}"
+  },
+  "desktop.menu.about": {
+    "string": "{appName} 소개"
+  },
+  "desktop.menu.actions": {
+    "string": "액션…"
+  },
+  "desktop.menu.add_to_dictionary": {
+    "string": "사전에 추가"
+  },
+  "desktop.menu.always_show_tabs_when_presenting": {
+    "string": "프레젠테이션할 때 항상 탭을 표시"
+  },
+  "desktop.menu.arrange_menu": {
+    "string": "정렬"
+  },
+  "desktop.menu.bring_all_to_front": {
+    "string": "모두 맨 앞으로 가져오기"
+  },
+  "desktop.menu.check_for_updates": {
+    "string": "업데이트 확인"
+  },
+  "desktop.menu.close_tab": {
+    "string": "탭 닫기"
+  },
+  "desktop.menu.close_window": {
+    "string": "창 닫기"
+  },
+  "desktop.menu.color_management": {
+    "string": "색상 관리"
+  },
+  "desktop.menu.color_space_managed": {
+    "string": "관리형"
+  },
+  "desktop.menu.color_space_menu": {
+    "string": "색 공간"
+  },
+  "desktop.menu.color_space_srgb": {
+    "string": "sRGB"
+  },
+  "desktop.menu.color_space_unmanaged": {
+    "string": "비관리형"
+  },
+  "desktop.menu.copy": {
+    "string": "복사"
+  },
+  "desktop.menu.cut": {
+    "string": "잘라내기"
+  },
+  "desktop.menu.debug_figma_agent": {
+    "string": "Figma Agent 디버그"
+  },
+  "desktop.menu.disable_hardware_acceleration": {
+    "string": "하드웨어 가속 사용 안 함"
+  },
+  "desktop.menu.edit_menu": {
+    "string": "편집"
+  },
+  "desktop.menu.empty_placeholder": {
+    "string": "(비어 있음)"
+  },
+  "desktop.menu.enable_haptic_feedback": {
+    "string": "트랙패드 햅틱 피드백 활성화"
+  },
+  "desktop.menu.export": {
+    "string": "내보내기…"
+  },
+  "desktop.menu.export_as": {
+    "string": "내보내기 형식…"
+  },
+  "desktop.menu.export_frames_to_pdf": {
+    "string": "프레임을 PDF로 내보내기…"
+  },
+  "desktop.menu.export_selected_slides_to_pdf": {
+    "string": "슬라이드를 PDF로 내보내기…"
+  },
+  "desktop.menu.export_slides_to": {
+    "string": "슬라이드를 다음으로 내보내기…"
+  },
+  "desktop.menu.export_slides_to_pdf": {
+    "string": "모든 슬라이드를 PDF로 내보내기…"
+  },
+  "desktop.menu.file_menu": {
+    "string": "파일"
+  },
+  "desktop.menu.graphics_backend": {
+    "string": "그래픽스 백엔드"
+  },
+  "desktop.menu.graphics_backend_default": {
+    "string": "기본"
+  },
+  "desktop.menu.help_menu": {
+    "string": "도움말"
+  },
+  "desktop.menu.help_page": {
+    "string": "도움말 페이지"
+  },
+  "desktop.menu.import": {
+    "string": "가져오기…"
+  },
+  "desktop.menu.import_from_csv": {
+    "string": "CSV 파일에서 가져오기…"
+  },
+  "desktop.menu.interface_scale_make_larger": {
+    "string": "확대"
+  },
+  "desktop.menu.interface_scale_make_smaller": {
+    "string": "축소"
+  },
+  "desktop.menu.interface_scale_menu": {
+    "string": "인터페이스 크기"
+  },
+  "desktop.menu.interface_scale_percent": {
+    "string": "{interfaceScalePercent}%"
+  },
+  "desktop.menu.interface_scale_reset_to_default": {
+    "string": "기본 설정으로 재설정"
+  },
+  "desktop.menu.legal_summary": {
+    "string": "법률 요약"
+  },
+  "desktop.menu.loading_placeholder": {
+    "string": "로드 중…"
+  },
+  "desktop.menu.log_out": {
+    "string": "로그아웃"
+  },
+  "desktop.menu.mac_hide": {
+    "string": "{appName} 숨기기"
+  },
+  "desktop.menu.mac_hide_others": {
+    "string": "다른 항목 숨기기"
+  },
+  "desktop.menu.mac_quit": {
+    "string": "{appName} 종료"
+  },
+  "desktop.menu.mac_services": {
+    "string": "서비스"
+  },
+  "desktop.menu.mac_unhide": {
+    "string": "모두 표시"
+  },
+  "desktop.menu.manage_plugins": {
+    "string": "플러그인 관리…"
+  },
+  "desktop.menu.minimize": {
+    "string": "최소화"
+  },
+  "desktop.menu.new_file": {
+    "string": "새 파일"
+  },
+  "desktop.menu.new_tab": {
+    "string": "새 탭"
+  },
+  "desktop.menu.new_window": {
+    "string": "새로운 창"
+  },
+  "desktop.menu.object_menu": {
+    "string": "개체"
+  },
+  "desktop.menu.open_file_browser": {
+    "string": "파일 브라우저 열기"
+  },
+  "desktop.menu.open_file_url_from_clipboard": {
+    "string": "클립보드에서 파일 URL 열기"
+  },
+  "desktop.menu.open_test_websocket_page": {
+    "string": "테스트 웹소켓 페이지 열기"
+  },
+  "desktop.menu.paste": {
+    "string": "붙여넣기"
+  },
+  "desktop.menu.plugins_menu": {
+    "string": "플러그인"
+  },
+  "desktop.menu.prefer_high_performance_gpu": {
+    "string": "고성능 GPU 선호"
+  },
+  "desktop.menu.preferences": {
+    "string": "기본 설정"
+  },
+  "desktop.menu.recently_closed_tabs": {
+    "string": "최근에 닫은 탭"
+  },
+  "desktop.menu.redo": {
+    "string": "다시 실행"
+  },
+  "desktop.menu.release_notes": {
+    "string": "릴리스 노트"
+  },
+  "desktop.menu.reload_all_tabs": {
+    "string": "모든 탭 다시 불러오기"
+  },
+  "desktop.menu.reopen_closed_tab": {
+    "string": "닫은 탭 다시 열기"
+  },
+  "desktop.menu.reset_figma_and_restart": {
+    "string": "Figma 재설정 및 재시작"
+  },
+  "desktop.menu.restart_and_save_performance_log": {
+    "string": "다시 시작 및 성능 로그 저장…"
+  },
+  "desktop.menu.save_debug_info": {
+    "string": "디버그 정보 저장…"
+  },
+  "desktop.menu.save_local_copy": {
+    "string": "로컬 복사본 저장…"
+  },
+  "desktop.menu.save_network_log": {
+    "string": "네트워크 로그 저장…"
+  },
+  "desktop.menu.save_performance_log": {
+    "string": "성능 로그 저장…"
+  },
+  "desktop.menu.save_performance_log_stop": {
+    "string": "성능 로깅 중지…"
+  },
+  "desktop.menu.save_to_version_history": {
+    "string": "버전 내역에 저장"
+  },
+  "desktop.menu.select_all": {
+    "string": "모두 선택"
+  },
+  "desktop.menu.select_next_tab": {
+    "string": "다음 탭 선택"
+  },
+  "desktop.menu.select_previous_tab": {
+    "string": "이전 탭 선택"
+  },
+  "desktop.menu.show_figma_in_menu_bar": {
+    "string": "메뉴 모음에 Figma 표시"
+  },
+  "desktop.menu.show_figma_in_system_tray": {
+    "string": "시스템 트레이에 Figma 표시"
+  },
+  "desktop.menu.show_version_history": {
+    "string": "버전 내역 보기"
+  },
+  "desktop.menu.support_forum": {
+    "string": "지원 포럼"
+  },
+  "desktop.menu.text_menu": {
+    "string": "텍스트"
+  },
+  "desktop.menu.toggle_developer_tools": {
+    "string": "웹 앱 개발자 도구 전환"
+  },
+  "desktop.menu.toggle_full_screen": {
+    "string": "풀 화면 전환"
+  },
+  "desktop.menu.toggle_internal_developer_tools": {
+    "string": "탭 바 개발자 도구 전환"
+  },
+  "desktop.menu.toggle_preview_developer_tools": {
+    "string": "브라우저 미리보기 개발자 도구 전환"
+  },
+  "desktop.menu.troubleshooting_menu": {
+    "string": "문제 해결"
+  },
+  "desktop.menu.undo": {
+    "string": "실행 취소"
+  },
+  "desktop.menu.vector_menu": {
+    "string": "벡터"
+  },
+  "desktop.menu.video_tutorials": {
+    "string": "동영상 튜토리얼"
+  },
+  "desktop.menu.view_menu": {
+    "string": "보기"
+  },
+  "desktop.menu.widgets_menu": {
+    "string": "위젯"
+  },
+  "desktop.menu.window_menu": {
+    "string": "창"
+  },
+  "desktop.menu.windows_quit": {
+    "string": "종료"
+  },
+  "desktop.menu.zoom": {
+    "string": "Zoom"
+  },
+  "desktop.shell.app.edited_time": {
+    "string": "{time} 편집됨"
+  },
+  "desktop.shell.app.last_viewed_time": {
+    "string": "최근 본 {time}"
+  },
+  "desktop.shell_app.agent_not_running": {
+    "string": "실행 중이 아님"
+  },
+  "desktop.shell_app.agent_running": {
+    "string": "실행 중"
+  },
+  "desktop.shell_app.agent_status": {
+    "string": "에이전트 상태: "
+  },
+  "desktop.shell_app.agent_version": {
+    "string": "에이전트 버전: "
+  },
+  "desktop.shell_app.current_user_presenting": {
+    "string": "스포트라이트를 받는 중입니다"
+  },
+  "desktop.shell_app.error_tab.403_forbidden.description": {
+    "string": "도움이 필요하면 소유자, 관리자 또는 지원팀에 문의하세요."
+  },
+  "desktop.shell_app.error_tab.403_forbidden.title": {
+    "string": "이 리소스에 접근할 수 없음"
+  },
+  "desktop.shell_app.error_tab.404_not_found.description": {
+    "string": "여기에 파일이 표시될 것으로 예상했다면, 해당 파일에 접근할 권한이 없을 수 있습니다. 소유자에게 파일 권한을 업데이트해달라고 요청하고 다시 시도해 주세요."
+  },
+  "desktop.shell_app.error_tab.404_not_found.title": {
+    "string": "찾을 수 없음({statusCode})"
+  },
+  "desktop.shell_app.error_tab.407_authentication_required.description": {
+    "string": "인증이 필요한 프록시가 발견되었습니다. 이 프록시로 인증하거나 네트워크 관리자에게 문의하세요."
+  },
+  "desktop.shell_app.error_tab.407_authentication_required.title": {
+    "string": "인증 필요({statusCode})"
+  },
+  "desktop.shell_app.error_tab.502_temporary_outage.description": {
+    "string": "Figma 서버가 일시적으로 중단되었습니다."
+  },
+  "desktop.shell_app.error_tab.503_temporary_outage.description": {
+    "string": "Figma 서버가 유지 보수로 인해 작동을 멈췄습니다."
+  },
+  "desktop.shell_app.error_tab.connection_error.description": {
+    "string": "컴퓨터가 오프라인 상태이거나 Figma 서버에 문제가 있을 수 있습니다."
+  },
+  "desktop.shell_app.error_tab.connection_error.title": {
+    "string": "연결 오류: {errorCode}"
+  },
+  "desktop.shell_app.error_tab.crash.close_tab_button": {
+    "string": "탭 닫기"
+  },
+  "desktop.shell_app.error_tab.crash.description": {
+    "string": "Figma를 다시 로드하면 이 문제가 해결될 수 있습니다."
+  },
+  "desktop.shell_app.error_tab.crash.reload_button": {
+    "string": "다시 로드"
+  },
+  "desktop.shell_app.error_tab.crash.title": {
+    "string": "문제가 발생했습니다"
+  },
+  "desktop.shell_app.error_tab.error_code": {
+    "string": "오류 코드: {errorCode}"
+  },
+  "desktop.shell_app.error_tab.figma_will_automatically_try_to_reconnect": {
+    "string": "Figma가 자동으로 다시 연결을 시도합니다."
+  },
+  "desktop.shell_app.error_tab.generic_server_error.description": {
+    "string": "Figma 서버에서 내부 오류가 발생했습니다."
+  },
+  "desktop.shell_app.error_tab.generic_server_error.title": {
+    "string": "서버 오류 ({statusCode})"
+  },
+  "desktop.shell_app.error_tab.reason_crashed": {
+    "string": "이유: 손상됨"
+  },
+  "desktop.shell_app.error_tab.temporary_outage.title": {
+    "string": "임시 중단({statusCode})"
+  },
+  "desktop.shell_app.error_tab.try_again_button": {
+    "string": "다시 시도"
+  },
+  "desktop.shell_app.error_tab.visit_help_page_or_contact_support": {
+    "string": "도움을 받으려면 {helpPageUrl}을(를) 방문하거나 {supportEmail}에 문의하십시오."
+  },
+  "desktop.shell_app.modal_cancel": {
+    "string": "취소"
+  },
+  "desktop.shell_app.modal_confirm": {
+    "string": "확인"
+  },
+  "desktop.shell_app.env_config.backend_label": {
+    "string": "백엔드"
+  },
+  "desktop.shell_app.env_config.frontend_label": {
+    "string": "프론트엔드"
+  },
+  "desktop.shell_app.env_config.shell_label": {
+    "string": "셸"
+  },
+  "desktop.shell_app.env_config.backend_production": {
+    "string": "프로덕션"
+  },
+  "desktop.shell_app.env_config.backend_staging": {
+    "string": "스테이징"
+  },
+  "desktop.shell_app.env_config.backend_gov": {
+    "string": "정부"
+  },
+  "desktop.shell_app.env_config.devbox": {
+    "string": "Devbox"
+  },
+  "desktop.shell_app.env_config.backend_custom": {
+    "string": "맞춤 URL"
+  },
+  "desktop.shell_app.env_config.coder": {
+    "string": "코더"
+  },
+  "desktop.shell_app.env_config.frontend_same_as_backend": {
+    "string": "백엔드와 동일"
+  },
+  "desktop.shell_app.env_config.frontend_canary": {
+    "string": "Canary"
+  },
+  "desktop.shell_app.env_config.frontend_local": {
+    "string": "로컬 프론트엔드"
+  },
+  "desktop.shell_app.env_config.frontend_fcp_sha": {
+    "string": "프론트엔드 커밋 미리보기(SHA)"
+  },
+  "desktop.shell_app.env_config.shell_auto": {
+    "string": "자동(프론트엔드 일치)"
+  },
+  "desktop.shell_app.env_config.shell_local": {
+    "string": "로컬 셸"
+  },
+  "desktop.shell_app.env_config.coder_workspace_label": {
+    "string": "코더 작업공간"
+  },
+  "desktop.shell_app.env_config.commit_sha_label": {
+    "string": "커밋 SHA"
+  },
+  "desktop.shell_app.env_config.additional_ffs_label": {
+    "string": "추가 기능 플래그(선택 사항)"
+  },
+  "desktop.shell_app.env_config.save_button": {
+    "string": "저장 및 재시작"
+  },
+  "desktop.shell_app.open_tabs_in_other_windows.section": {
+    "string": "{windowIndex} 창의 탭"
+  },
+  "desktop.shell_app.new_tab_menu.new_file": {
+    "string": "새 파일"
+  },
+  "desktop.shell_app.parsed_fonts": {
+    "string": "구문 분석된 글꼴: "
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.title": {
+    "string": "열린 탭 및 최근에 닫은 탭"
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.empty_message": {
+    "string": "열려 있는 탭과 최근에 닫은 탭이 여기에 나타납니다."
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.search_placeholder": {
+    "string": "탭 검색"
+  },
+  "desktop.shell_app.open_and_recently_closed_tabs.no_matches": {
+    "string": "일치하는 항목이 없습니다"
+  },
+  "desktop.shell_app.open_tabs.title": {
+    "string": "이 창의 탭"
+  },
+  "desktop.shell_app.open_tabs.close_tab": {
+    "string": "{tabTitle} 탭 닫기"
+  },
+  "desktop.shell_app.open_tabs.mute_tab": {
+    "string": "{tabTitle} 탭 음소거"
+  },
+  "desktop.shell_app.recently_closed_tabs.title": {
+    "string": "최근에 닫은 탭"
+  },
+  "desktop.shell_app.restart_agent": {
+    "string": "에이전트 다시 시작"
+  },
+  "desktop.shell_app.restarting_agent": {
+    "string": "재시작 중…"
+  },
+  "desktop.shell_app.tab_error.label": {
+    "string": "탭 오류"
+  },
+  "desktop.shell_app.tab_bar.label": {
+    "string": "탭 바"
+  },
+  "desktop.shell_app.tab_bar.close_button.label": {
+    "string": "닫기"
+  },
+  "desktop.shell_app.tab_bar.community_tab.label": {
+    "string": "커뮤니티"
+  },
+  "desktop.shell_app.tab_bar.community_tab.tooltip": {
+    "string": "Figma 커뮤니티"
+  },
+  "desktop.shell_app.tab_bar.factory_tab.label": {
+    "string": "스테이징"
+  },
+  "desktop.shell_app.tab_bar.home_tab.label": {
+    "string": "홈"
+  },
+  "desktop.shell_app.tab_bar.maximize_button.label": {
+    "string": "최대화"
+  },
+  "desktop.shell_app.tab_bar.menu_button.label": {
+    "string": "메뉴"
+  },
+  "desktop.shell_app.tab_bar.minimize_button.label": {
+    "string": "최소화"
+  },
+  "desktop.shell_app.tab_bar.pinned_tab_label": {
+    "string": "고정 탭: {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.pinned_split_tab_label": {
+    "string": "고정 분할 탭: {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.pinned_split_tab_group_label": {
+    "string": "고정 분할 탭 그룹: {tab1}, {tab2}"
+  },
+  "desktop.shell_app.tab_bar.split_tab_group_label": {
+    "string": "분할 탭 그룹: {tab1}, {tab2}"
+  },
+  "desktop.shell_app.tab_bar.split_tab_label": {
+    "string": "탭 분할: {tabTitle}"
+  },
+  "desktop.shell_app.tab_bar.tab_close_button.label": {
+    "string": "탭 닫기"
+  },
+  "desktop.shell_app.tab_bar.tab_mute_button.label": {
+    "string": "탭 음소거"
+  },
+  "desktop.shell_app.tab_bar.update_button.label": {
+    "string": "지금 업데이트"
+  },
+  "desktop.shell_app.time_ago.days": {
+    "string": "{numDays, plural, other {{numDays}일 전}}"
+  },
+  "desktop.shell_app.time_ago.hours": {
+    "string": "{numHours, plural, other {{numHours}시간 전}}"
+  },
+  "desktop.shell_app.time_ago.minutes": {
+    "string": "{numMinutes, plural, other {{numMinutes}분 전}}"
+  },
+  "desktop.shell_app.time_ago.months": {
+    "string": "{numMonths, plural, other {{numMonths}개월 전}}"
+  },
+  "desktop.shell_app.time_ago.seconds": {
+    "string": "{numSeconds, plural, other {{numSeconds}초 전}}"
+  },
+  "desktop.shell_app.time_ago.years": {
+    "string": "{numYears, plural, other {{numYears}년 전}}"
+  },
+  "desktop.shell_app.user_at_mentioned_you": {
+    "string": "{handle}님이 언급함"
+  },
+  "desktop.shell_app.user_presenting": {
+    "string": "{handle}에 스포트라이트 비추기"
+  },
+  "desktop.shell_app.tab_groups.context_menu.ungroup": {
+    "string": "그룹 해제"
+  },
+  "desktop.shell_app.tab_groups.context_menu.delete_group": {
+    "string": "그룹 삭제"
+  },
+  "desktop.shell_app.tab_groups.context_menu.edit_group_name": {
+    "string": "그룹 이름 편집"
+  },
+  "desktop.shell_app.tab_groups.context_menu.group_color": {
+    "string": "그룹 색상"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_blue": {
+    "string": "블루"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_red": {
+    "string": "레드"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_yellow": {
+    "string": "노랑"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_green": {
+    "string": "그린"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_purple": {
+    "string": "보라색"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_pink": {
+    "string": "핑크"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_persimmon": {
+    "string": "감색"
+  },
+  "desktop.shell_app.tab_groups.context_menu.color_grey": {
+    "string": "회색"
+  },
+  "desktop.shell_app.tab_preview.memory_freed": {
+    "string": "오프로드된 탭: {memory}MB 추가 확보"
+  },
+  "desktop.shell_app.tab_preview.memory_freed_GB": {
+    "string": "탭 오프로드: {memory}GB 추가 확보"
+  },
+  "desktop.shell_app.tab_preview.memory_usage": {
+    "string": "메모리 사용량: {memory}MB"
+  },
+  "desktop.shell_app.tab_preview.memory_usage_GB": {
+    "string": "메모리 사용량: {memory}GB"
+  },
+  "desktop.tab_context_menu.close_all_tabs": {
+    "string": "모든 탭 닫기"
+  },
+  "desktop.tab_context_menu.close_other_tabs": {
+    "string": "다른 탭 닫기"
+  },
+  "desktop.tab_context_menu.close_tab": {
+    "string": "닫기"
+  },
+  "desktop.tab_context_menu.copy_link": {
+    "string": "링크 복사"
+  },
+  "desktop.tab_context_menu.move_to_another_window": {
+    "string": "다른 창으로 이동"
+  },
+  "desktop.tab_context_menu.move_to_new_window": {
+    "string": "새 창으로 이동"
+  },
+  "desktop.tab_context_menu.new_window": {
+    "string": "새로운 창"
+  },
+  "desktop.tab_context_menu.open_in_browser": {
+    "string": "브라우저에서 열기"
+  },
+  "desktop.tab_context_menu.open_in_split_tab": {
+    "string": "스플릿 탭에서 열기"
+  },
+  "desktop.tab_context_menu.other_window": {
+    "string": "{numOtherTabs, plural, other {{tabName} 및 {numOtherTabs,number}개의 다른 탭}}"
+  },
+  "desktop.tab_context_menu.pin_tab": {
+    "string": "핀"
+  },
+  "desktop.tab_context_menu.reload_tab": {
+    "string": "다시 로드"
+  },
+  "desktop.tab_context_menu.rename": {
+    "string": "파일 이름 변경"
+  },
+  "desktop.tab_context_menu.separate_split_tabs": {
+    "string": "탭 분리"
+  },
+  "desktop.tab_context_menu.show_icons": {
+    "string": "아이콘을 표시"
+  },
+  "desktop.tab_context_menu.unpin_tab": {
+    "string": "고정 해제"
+  },
+  "desktop.tab_context_menu.close_tab_group": {
+    "string": "탭 그룹 닫기"
+  },
+  "desktop.tab_context_menu.add_to_tab_group": {
+    "string": "탭 그룹에 추가"
+  },
+  "desktop.tab_context_menu.new_tab_group": {
+    "string": "새 탭 그룹"
+  },
+  "desktop.tab_context_menu.remove_from_tab_group": {
+    "string": "탭 그룹에서 제거"
+  },
+  "desktop.tab_context_menu.new_group_name": {
+    "string": "그룹 {number}"
+  },
+  "desktop.tabs.community": {
+    "string": "{pluginName} (커뮤니티)"
+  },
+  "desktop.tabs.untitled": {
+    "string": "제목 없음"
+  }
+}

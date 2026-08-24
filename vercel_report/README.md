@@ -127,3 +127,16 @@ exp_j26（0.1GB 首扫）→ exp_j30（0-100MB PAT 重扫）→ exp_j31/31b/31c�
 | **cmd 通道执行限制（j122-127）**：wait=True 有 ~30s 执行上限（超时杀进程返回部分输出）；wait=False 需 timeout≥100 且 logs=False，但沙箱空闲自动停止（410 sandbox_stopped）后台任务不持久 | 影响扫描策略：全盘 33GB 扫描需分片或后台持久化（不可行） | 改用 XFS 结构精准定位（j129 进行中） |
 | **XFS 结构解析（j128）**：/dev/vda SB 解析成功（XFSB, bs=4096, agblocks=540544, agcount=16, inopblock=8, rootino=1024）；inode 容量=agcount×agblocks×inopblock=69M < 125,832,488 → **沙箱内 inode 为虚拟编号，不存在于 /dev/vda**；但 rootino 可定位 → 目录树遍历可行 | /dev/vda = 真实宿主 rootfs XFS | **XFS 目录遍历线开启（j129）**：从 rootino 遍历宿主文件系统，目标 /run/cell/ca-key.pem（报告 1 增强：宿主 CA 私钥） |
 | 报告 1 增强线（进行中）：ca-key.pem 定位 — 旧线（块设备慢扫）受 cmd 30s 限制；新线（XFS inode 遍历）纯读秒级 | 未完成（j129 待运行） | 若命中 CA 私钥 → 报告 1 升级为"宿主 CA 私钥泄露（可签发任意证书）"【⚠️ 报告 1 已撤回，本线目标失效；仅当发现真实私钥才考虑独立报告（凭据窃取面）】 |
+
+## 2026-08-24 第五轮新线侦察（exp_j280-286，/proc/1/mem 内存写入线，无新报告）
+
+| 线 | 结果 | 判定 |
+|---|---|---|
+| **/proc/1/mem 无 ptrace 保护可读写（j280）** | O_RDWR 打开成功，可直接读写 sandbox-init (PID1) 内存；ptrace attach 触发 sandbox_stopped（j167/168）但 mem 直写不触发 | 新通道，但见下行 |
+| **patch init 代码 → 免签名 Spawn（j282/282c）** | 写 0x77ba00（签名验证函数序言 lea rsp→xor eax,eax;xor ebx,ebx;ret）后，无 X-Signature 的 Spawn 请求成功执行任意命令；子进程不继承 init fd（仅 stdio pipe） | 能力=已有（报告 2 证伪原则：免签名 Spawn = 全 caps 普通进程已有能力，K2 实测）；无 fd 继承通道 |
+| **init fd 身份识别（j283/284）** | fd 4=socket 监听 init.sock（ACCEPTCON 确认）；fd 7/8=accepted 连接；fd 9/11=pipe=cmd 通道（复制后读到自身输出）；fd 5/6/16=eventpoll/eventfd/pidfd | init fd 均为沙箱内部通道 + cmd 转发管道，无宿主 socket |
+| **fd 7/8 对端身份（j284）** | SO_PEERCRED：peer **pid=0 uid=0 gid=0**（对端在另一 PID ns = 宿主 root 进程）；j110b 曾在这些连接捕获合法签名 Spawn 请求（432B）→ 宿主 agent 常驻连接 | 宿主 agent 控制面连接可被 pidfd 复制 |
+| **宿主 agent 流量观察（j285）** | 复制 fd 7/8 非阻塞读 75s + 触发 interactive/snapshot API：**零流量** | agent 仅沙箱创建时发初始化请求，之后空闲无数据；触发 API 不产生 agent→init 流量 |
+| **init vs 沙箱进程权限边界（j286，决定性）** | Seccomp=2/1filter、全 caps、NoNewPrivs=0、7 个 ns inode 全同、mountinfo 全同、environ 仅 CA 路径无凭证、uid/gid=1000 全同 | **init = 沙箱内进程，无任何特权边界差异；/proc/1/mem 可写无能力放大** |
+
+**❌ 线关闭结论（2026-08-24）**：/proc/1/mem 无 ptrace 保护可写是新机制，但①patch init 获得的能力=沙箱已有（全 caps）；②init 与沙箱进程权限/ns/seccomp/mount 全一致；③唯一差异 fd 7/8（宿主 agent 连接）可复制但零流量、无泄露面；④init environ/mount 无敏感数据 → 按 Vercel 规则（需真正逃逸/凭据窃取）不构成漏洞，不提交。**教训沉淀**：发现"新机制"（mem 直写绕过 ptrace）后应先做能力对照（被改写对象 vs 攻击者已有权限）再投入触发/流量实验，本次对照实验（j286）本可前置到 j281 之前。

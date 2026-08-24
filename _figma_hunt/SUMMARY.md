@@ -1,6 +1,15 @@
 # Figma H1 赏金测试 · 进度整理
 
-更新日期：2026-08-11
+更新日期：2026-08-24
+
+## ⛔ 已裁决（禁止复测）
+
+| 面 | 裁决 | 裁决日期 |
+|---|---|---|
+| PlanByFileKey 匿名 plan 数据泄露（stripeCustomerId/vatGstId/tier/ANNUAL_CONTRACT/续费日期） | **已提交 H1，项目方回复"公开数据"，关闭 Informative**。禁止重新测试/重新推导（含 REST 对照、匿名验证等任何形式） | 2026-08 上旬 |
+| TeamByIdForPlanView 匿名 planPublicInfo（tier/planRecordId） | 与 PlanByFileKey 同一数据源，下游全 403 无利用链，不提交 | 2026-08-07 |
+
+> 规则：任何"新发现"在投入证据验证前，必须先查本表 + 工作区历史报告 + 记忆，确认该面未被裁决过。
 
 ## 项目信息
 
