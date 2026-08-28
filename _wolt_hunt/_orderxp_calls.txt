@@ -1,6 +1,0 @@
-== js/74220-69017fd0bce92093.js ==
-,mosaic_checkout_rows_page:r.unknown,skip_reason:(0,s.U)(p.Ql),telemetry:e_})]),em=async({purchase_plan:e,locale:t,signal:n})=>(0,l.A)(eg,i.Zr.post("/order-xp/web/v2/pages/checkout",{purchase_plan:e},{headers:{"App-Language":(0,o.L)(t),"App-Locale":(0,o.L)(t)},signal:n}),{reportErrors:!0});n.d(t,{},
-
-== js/56301-8230c27e4683bd58.js ==
--map-v2":{off:"off",on:["on"]},"web-wolt-benefits-bff-invite":{off:"off",on:["on"]},"enable-storefront-loyalty-program":{off:"off",on:["on"]},"mosaic-order-xp-checkout-order-summary":{off:"off",on:["on"]},delivery_within_x_range:{off:"off",on:["on"]},"woltcom-app-open-v2-android":{off:"control",on:[
-
