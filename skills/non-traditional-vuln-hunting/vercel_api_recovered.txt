@@ -1,0 +1,38 @@
+################ 1a7a395a (194KB) ################
+--- x-vercel @38990 ---
+ith no demonstrated cross-tenant impact.
+sandbox-init Ed25519 key extraction.
+Credential brokering / observability header leakage
+Platform injects x-vercel-oidc-token, x-vercel-protection-bypass, and x-vercel-proxy-signature into every request without stripping. Capture of these headers from a sandbox workload is in scope only if the exfiltration channel is a Vercel-side defect, not a third-party 
+################ e1507845 (177KB) ################
+--- x-vercel @48186 ---
+默丢**（非白名单端口）、对 TCP 回 ICMP Prohibited。
+
+现在转向更强的链——**brokered credentials**（HackerOne in-scope 原文明确包含 "retrieving brokered credentials"）：sandbox 内有 x-vercel-oidc-token，如果它能调 network-policy API 把 deny-all 改回 allow-all = 直接绕过防火墙。之前提取过 OIDC token，先看它："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"OIDC token 存在（JWT，iss=oidc.vercel.com/team_GIy1...）。先解码看 claims，然后用它直接调 network-pol
+--- Bearer  @1447 ---
+s=16 (实际16槽)上次失败是16槽用满(验证12+探测4)，根因是cqe写满16个
+2.端点指纹:
+POST/vO.7/config(需要JSON体，无需认证!)400“JSON输入意外结束”
+GET /config/set \u003e 401 + Www-Authenticate: Bearer realm="Datadog Agent" (有 Bearer 保护)
+GET/evp_proxy/v4/*502 Bad Gatevay (EVP代理活跃但GET路径不通试POST)
+修复方案:环重建机制(每14次创建后关闭+重新设置)。J463: POST evp_proxy 试金石(借用宿主Datadog密钥)、POST/0.7/config,dogstatsd，其余端点
+1024/1025/2050终于可测。
+3创建文件
+正在生成
+卡死了  继续
+
+\u003c/us
+################ 494b74ea (116KB) ################
+################ d1c9a155 (96KB) ################
+--- Bearer  @68157 ---
+n2. **端点指纹**：
+   - `POST /v0.7/config`（需要 JSON body，无认证！）→ 400 "unexpected end of JSON input"
+   - `GET /config/set` → **401 + `Www-Authenticate: Bearer realm="Datadog Agent"`**（有 Bearer 保护）
+   - `GET /evp_proxy/v4/*` → **502 Bad Gateway**（EVP 代理活跃但 GET 路径不通 → 试 POST）
+
+修复方案：**ring 重建机制**（每 14 次创建后 close+重新 setup）。J463：POST evp_proxy 试金石（借 host Datadog key）、POST /v0.7/config、dogstatsd、其余端点 + 1024
+################ 558c85f7 (50KB) ################
+################ 8b33948a (110KB) ################
+################ 16ba677c (78KB) ################
+################ 478d0b50 (117KB) ################

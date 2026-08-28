@@ -1,0 +1,57 @@
+data blocks: 1
+-----
+=== exp_pidfd v6 start ===
+=== PHASE1 start mypid=28 ===
+unix sockets: 24 entries
+=== EPOLL PROBE ===
+--- epoll fd 5 ---
+  tfd:        4 events: 8000201d data: 3f8816745d000003  pos:0 ino:514 sdev:9
+  tfd:        8 events: 8000201d data: 3f8816745c000001  pos:0 ino:519 sdev:9
+  tfd:        6 events:       19 data:           cd95e8  pos:0 ino:f sdev:e
+  tfd:        7 events: 8000201d data: 3f88167459000003  pos:0 ino:534 sdev:9
+  tfd:        9 events: 8000201d data: 3f8816745a000004  pos:0 ino:539 sdev:9
+=== EPOLL PROBE done ===
+pidfd_open(1) -> 4 errno 0
+sandbox-init fds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+SRC=P1 stolen=5 srcfd=0 type=02
+SRC=P1 stolen=6 srcfd=1 type=01
+SRC=P1 stolen=7 srcfd=2 type=01
+SRC=P1 stolen=8 srcfd=3 type=010
+SRC=P1 stolen=9 srcfd=4 SOCK dom=1 typ=1 soerr=0 peercred=(1, 1000, 1000) peer(107,None,None) name(0,1,/run/vercel/share/init.sock) unix=None peekerr:22
+SRC=P1 stolen=10 srcfd=5 type=00
+SRC=P1 stolen=11 srcfd=6 type=00
+SRC=P1 stolen=12 srcfd=7 SOCK dom=1 typ=1 soerr=0 peercred=(0, 0, 0) peer(0,1,<anon>) name(0,1,/run/vercel/share/init.sock) unix=None peekerr:11
+SRC=P1 stolen=13 srcfd=8 SOCK dom=1 typ=1 soerr=0 peercred=(0, 0, 0) peer(0,1,<anon>) name(0,1,/run/vercel/share/init.sock) unix=None peekerr:11
+SRC=P1 stolen=14 srcfd=9 SOCK dom=1 typ=1 soerr=0 peercred=(0, 0, 0) peer(0,1,<anon>) name(0,1,/run/vercel/share/init.sock) unix=None peekerr:11
+=== PHASE1 done ctrl=4 pidfds=[] ===
+=== PHASE2 start ===
+=== PHASE2 done ===
+=== PROBE start ===
+--- probe fd 9 ---
+fd9 peer(107,None,None) name(0,1,/run/vercel/share/init.sock)
+fd9 looks LISTEN -> accept
+ACCEPT srcfd=9 -> errno 11
+--- probe fd 12 ---
+fd12 peer(0,1,<anon>) name(0,1,/run/vercel/share/init.sock)
+fd12 recv[PD]=err11
+fd12 recv[PDT]=err11
+fd12 recv[P]=err11
+fd12 recv[D]=err11
+--- probe fd 13 ---
+fd13 peer(0,1,<anon>) name(0,1,/run/vercel/share/init.sock)
+fd13 recv[PD]=err11
+fd13 recv[PDT]=err11
+fd13 recv[P]=err11
+fd13 recv[D]=err11
+--- probe fd 14 ---
+fd14 peer(0,1,<anon>) name(0,1,/run/vercel/share/init.sock)
+fd14 recv[PD]=err11
+fd14 recv[PDT]=err11
+fd14 recv[P]=err11
+fd14 recv[D]=err11
+=== PROBE done listen=[9] ===
+ctrl candidates: [9, 12, 13, 14]
+=== ALLDONE ===
+=== PHASE3 start watch=100 fds=[9, 12, 13, 14] listen=[9] ===
+ACCEPT srcfd=9 -> errno 11
+

