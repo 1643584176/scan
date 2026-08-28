@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+"""Phase2b: deny-all 下本地面/内网/IPv6/metadata 探测(修复版)"""
+import sys
+sys.path.insert(0, r'D:\scan\skills\non-traditional-vuln-hunting')
+from fw_driver import cmd
+
+SID = "sbx_6M8Yg7kJadsCnQ8GlDyTeZJa6VaY"
+
+GUEST = r'''
+import socket, time
+
+def t(name, fn):
+    try:
+        r = fn()
+        print('[%s] -> %r' % (name, r), flush=True)
+    except Exception as e:
+        print('[%s] EXC %s: %s' % (name, type(e).__name__, e), flush=True)
+
+def tcp(ip, port, payload=b'', wait=3):
+    s = socket.create_connection((ip, port), timeout=5)
+    s.settimeout(wait)
+    if payload:
+        s.sendall(payload)
+    try:
+        return s.recv(4096)
+    finally:
+        s.close()
+
+print('--- net info ---', flush=True)
+for f in ['/proc/net/route', '/proc/net/if_inet6', '/etc/resolv.conf', '/proc/net/arp']:
+    try:
+        print(f, ':', open(f).read()[:600], flush=True)
+    except Exception as e:
+        print(f, 'ERR', e, flush=True)
+
+t('lo 127.0.0.1:23456', lambda: tcp('127.0.0.1', 23456, b'ping\n'))
+t('lo 127.0.0.1:30001', lambda: tcp('127.0.0.1', 30001, b'ping\n'))
+t('lo 127.0.0.1:30002', lambda: tcp('127.0.0.1', 30002, b'ping\n'))
+t('169.254.169.254:80', lambda: tcp('169.254.169.254', 80, b'GET / HTTP/1.1\r\nHost: x\r\n\r\n'))
+t('100.64.0.1:80', lambda: tcp('100.64.0.1', 80, b'GET / HTTP/1.1\r\nHost: x\r\n\r\n'))
+t('100.64.0.1:443', lambda: tcp('100.64.0.1', 443, b''))
+t('172.31.0.2:53', lambda: tcp('172.31.0.2', 53, b''))
+t('172.31.0.2:80', lambda: tcp('172.31.0.2', 80, b'GET / HTTP/1.1\r\nHost: x\r\n\r\n'))
+t('172.31.0.2:443', lambda: tcp('172.31.0.2', 443, b''))
+try:
+    s = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+    s.settimeout(4)
+    s.connect(('2606:4700:4700::1111', 443))
+    print('[v6 1.1.1.1:443] CONNECTED', flush=True)
+    s.close()
+except Exception as e:
+    print('[v6 1.1.1.1:443] EXC %s: %s' % (type(e).__name__, e), flush=True)
+print('done', flush=True)
+'''
+
+code = "cat > /tmp/pg2.py <<'PYEOF'\n" + GUEST + "\nPYEOF\npython3 /tmp/pg2.py"
+
+if __name__ == "__main__":
+    c, r = cmd(SID, "bash", ["-lc", code], timeout_ms=90000)
+    print("code:", c)
+    print(r[:6000])
