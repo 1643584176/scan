@@ -8,6 +8,7 @@ STOP_MARKER = 'SCAN_DONE'
 
 
 def run(sid):
+    cmd(sid, "sh", ["-c", "mkdir -p /vercel/sandbox"], timeout_ms=15000)
     code = open(os.path.join(HERE, "exp332_guest.py"), "rb").read()
     payload = base64.b64encode(code).decode()
     inject = "import base64;open('/vercel/sandbox/exp332.py','wb').write(base64.b64decode('%s'))" % payload
