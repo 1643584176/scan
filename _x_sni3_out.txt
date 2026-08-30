@@ -1,0 +1,69 @@
+npol1 sid: sbx_qelQfRDZw6kWD7uKsyRQcSvxskd3 status: running
+[DIRECT-headers] {
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/8.17.0", 
+    "X-Amzn-Trace-Id": "Root=1-6a92bec8-7482ffd31f935a1540999b30"
+  }, 
+  "json": null, 
+  "method": "GET", 
+  "origin": "3.224.147.198", 
+  "url": "https://httpbin.org/anything"
+}
+
+[SPOOF1111-full] HTTP/1.1 200 OK
+Date: Sat, 29 Aug 2026 11:13:13 GMT
+Content-Type: application/json
+Content-Length: 287
+Connection: close
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Host": "httpbin.org", 
+    "X-Amzn-Trace-Id": "Root=1-6a92bec9-531a2dbb5be439d020d9053c"
+  }, 
+  "json": null, 
+  "method": "GET", 
+  "origin": "3.224.147.198", 
+  "url": "https://httpbin.org/anything"
+}
+
+
+[VPC-full] HTTP/1.1 200 OK
+Date: Sat, 29 Aug 2026 11:13:14 GMT
+Content-Type: application/json
+Content-Length: 287
+Connection: close
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Host": "httpbin.org", 
+    "X-Amzn-Trace-Id": "Root=1-6a92beca-45e7f3a00721a3ca28e6755c"
+  }, 
+  "json": null, 
+  "method": "GET", 
+  "origin": "3.224.147.198", 
+  "url": "https://httpbin.org/anything"
+}
+
+
+=== HEADERS DONE ===

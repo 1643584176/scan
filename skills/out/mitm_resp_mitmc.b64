@@ -1,0 +1,3 @@
+{"command":{"id":"cmd_f850f71d8d72417aaf9ea433050a","name":"cat","args":["/vercel/sandbox/mitm_resp.b64"],"cwd":"/vercel/sandbox","sessionId":"sbx_6nbJVCs17sPmynBOkclAC3IUfiuO","startedAt":1787980561044,"exitCode":null}}
+{"data":"cat: /vercel/sandbox/mitm_resp.b64: No such file or directory\n","stream":"stderr"}
+{"command":{"id":"cmd_f850f71d8d72417aaf9ea433050a","name":"cat","args":["/vercel/sandbox/mitm_resp.b64"],"cwd":"/vercel/sandbox","sessionId":"sbx_6nbJVCs17sPmynBOkclAC3IUfiuO","startedAt":1787980561044,"exitCode":1,"durationMs":0}}

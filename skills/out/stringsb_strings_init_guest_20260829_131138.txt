@@ -1,0 +1,1 @@
+DRIVER_EXC: [Errno 2] No such file or directory: 'F:\\scan\\skills\\non-traditional-vuln-hunting\\strings_init_guest.py'

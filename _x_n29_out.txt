@@ -1,0 +1,24 @@
+url=https://sb-4o2vjrfdre6b.vercel.run/ws/interactive
+dns ok after 3s: sb-4o2vjrfdre6b.vercel.run
+===== ① WS 协议 fuzz =====
+handshake: HTTP/1.1 101 Switching Protocols
+initial err: The read operation timed out
+<< b'ping' err The read operation timed out
+<< b'{"type":"exec","command":"id"}' err The read operation timed out
+<< b'{"command":"id"}' err The read operation timed out
+<< b'{"type":"input","data":"id\n"}' err The read operation timed out
+<< b'{"type":"shell","cmd":"id"}' err The read operation timed out
+<< b'{"type":"connect","cols":80,"rows":24}' err The read operation timed out
+<< b'id\n' err The read operation timed out
+<< b'{"type":"resize","cols":120,"rows":30}' err The read operation timed out
+<< b'{"type":"tty"}' err The read operation timed out
+<< b'{"type":"spawn","file":"/bin/sh","args":[]}' err The read operation timed out
+
+===== ② token 跨 resume =====
+new sid: sbx_dpsYKFWFAMKO6Sfn4g7zEQO40suz
+new token: iu-CVvPqOI7E37rPW1LldyMjVOfG8KMKEboIQ9XKoXk
+old token == new? False
+old tok + old url after resume: HTTP/1.1 502 Bad Gateway
+new tok + old url: HTTP/1.1 502 Bad Gateway
+new tok + new url: HTTP/1.1 101 Switching Protocols
+DONE

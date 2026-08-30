@@ -1,0 +1,31 @@
+{"command":{"id":"cmd_d85966c7af3a411dad7f15950a52","name":"python3","args":["/vercel/sandbox/udp_bypass_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_HeKQ1BdY1AFoOZK0J2eAxsdhbxFM","startedAt":1787980689444,"exitCode":null}}
+{"data":"[1787980689.5] === PHASE1 UDP 端口矩阵 ===\n","stream":"stdout"}
+{"data":"[1787980692.5] UDP DNS            8.8.8.8:53 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980695.9] UDP NTP-Cloudflare 162.159.200.123:123 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980699.3] UDP QUIC           1.1.1.1:443 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980702.7] UDP ISAKMP         1.1.1.1:500 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980706.1] UDP OpenVPN        1.1.1.1:1194 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980709.5] UDP SSDP           1.1.1.1:1900 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980712.9] UDP STUN           1.1.1.1:3478 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980716.3] UDP IPsec-NAT-T    1.1.1.1:4500 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980719.7] UDP mDNS           8.8.8.8:5353 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980723.1] UDP UDP-8000       8.8.8.8:8000 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980726.6] UDP UDP-9000       8.8.8.8:9000 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980730.0] UDP UDP-9999       8.8.8.8:9999 -> TIMEOUT (无响应/被丢弃)\n","stream":"stdout"}
+{"data":"[1787980730.4] === PHASE2 DNS 实际查询 (UDP 53) ===\n","stream":"stdout"}
+{"data":"[1787980735.4] DNS example.com -> FAIL (None)\n","stream":"stdout"}
+{"data":"[1787980740.9] DNS o-o.myaddr.l.google.com -> FAIL (None)\n","stream":"stdout"}
+{"data":"[1787980741.4] === PHASE3 ICMP 对照 ===\n","stream":"stdout"}
+{"data":"[1787980741.4] ping 8.8.8.8: 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\n","stream":"stdout"}
+{"data":"[1787980741.7] ping 1.1.1.1: 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\n","stream":"stdout"}
+{"data":"[1787980742.0] ping 162.159.200.123: 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\n","stream":"stdout"}
+{"data":"[1787980742.3] === PHASE4 TCP 对照 ===\n","stream":"stdout"}
+{"data":"[1787980742.3] TCP 8.8.8.8:443 -> connect_ex=113\n","stream":"stdout"}
+{"data":"[1787980742.6] TCP 1.1.1.1:80 -> connect_ex=113\n","stream":"stdout"}
+{"data":"[1787980742.9] TCP 162.159.200.123:443 -> connect_ex=113\n","stream":"stdout"}
+{"data":"[1787980743.2] === PHASE5 DNS 外带验证 (dnslog 域) ===\n","stream":"stdout"}
+{"data":"[1787980748.2] dnslog FAIL <urlopen error [Errno -2] Name or service not known>\n[1787980748.2] === PHASE6 接口/IP ===\n","stream":"stdout"}
+{"data":"[1787980748.2] ip addr: \n","stream":"stdout"}
+{"data":"[1787980748.2] route: \n","stream":"stdout"}
+{"data":"[1787980748.2] resolv: #MANUAL\nnameserver 172.31.0.2\n[1787980748.2] UDPBYPASS_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_d85966c7af3a411dad7f15950a52","name":"python3","args":["/vercel/sandbox/udp_bypass_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_HeKQ1BdY1AFoOZK0J2eAxsdhbxFM","startedAt":1787980689444,"exitCode":0,"durationMs":58786}}

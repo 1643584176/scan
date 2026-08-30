@@ -1,0 +1,44 @@
+===== 1) CREATE body unknown fields =====
+[create:baseline] 200 | {"sandbox":{"name":"fs_base","currentSessionId":"sbx_iZ7yNe4Guw7NQsCXayHNHyHzkJlS","status":"running","statusUpdatedAt":1788017775877,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788017775877,"updatedAt":1788017775877},"session":{"id":"sbx_iZ7yNe4Guw7NQsCXayHNHyHzkJlS","runtime":"node22","requestedAt":1788017775826,"startedAt":1788017775844,"status":"running","vcpus":2,"memory":4096,"timeout":300000,"region":"iad1","cwd":"/vercel/sandbox","createdAt":1788017775826,"updatedAt":178801777585
+[create:image-node20] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[create:image-custom] 400 | {"error":{"code":"bad_request","message":"Invalid image reference: vercel/sandbox:latest"}}
+[create:fsId] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `fsId`."}}
+[create:region] 200 | {"sandbox":{"name":"fs_region","currentSessionId":"sbx_5wgH0h5NEPO5q3W8owNjp91VQ3cl","status":"running","statusUpdatedAt":1788017785257,"persistent":true,"region":"sfo1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788017785257,"updatedAt":1788017785257},"session":{"id":"sbx_5wgH0h5NEPO5q3W8owNjp91VQ3cl","runtime":"node22","requestedAt":1788017784966,"startedAt":1788017785227,"status":"running","vcpus":2,"memory":4096,"timeout":300000,"region":"sfo1","cwd":"/vercel/sandbox","createdAt":1788017784966,"updatedAt":1788017785
+[create:privileged] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `privileged`."}}
+[create:capabilities] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `capabilities`."}}
+[create:mounts] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts` should be object."}}
+[create:networkMode-host] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `networkMode`."}}
+[create:env] 200 | {"sandbox":{"name":"fs_env","currentSessionId":"sbx_IpMzEiACMLoqQXLpCIVZikAG97Vl","status":"running","statusUpdatedAt":1788017797787,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788017797787,"updatedAt":1788017797787},"session":{"id":"sbx_IpMzEiACMLoqQXLpCIVZikAG97Vl","runtime":"node22","requestedAt":1788017797665,"startedAt":1788017797729,"status":"running","vcpus":2,"memory":4096,"timeout":300000,"region":"iad1","cwd":"/vercel/sandbox","createdAt":1788017797665,"updatedAt":1788017797745
+[create:metadata] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `metadata`."}}
+[create:labels] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `labels`."}}
+[create:ttl] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `ttl`."}}
+[create:templateId] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `templateId`."}}
+[create:runtime] 400 | {"error":{"code":"bad_request","message":"Invalid request: `runtime` should be equal to one of the allowed values \"node22, node24, node26, python3.13, cua-ubuntu-xfce, walleye-python, blackbox-playwright, sandbox-ai-sh, sandbox-roocode, sandbox-roocode-noble, sandbox-yournextstore, sandbox-v0\"."}}
+[create:runtime-xfce] 400 | {"error":{"code":"bad_request","message":"Invalid request: `runtime` has to be one of node22, node24, node26, python3.13"}}
+[create:runtime-playwright] 400 | {"error":{"code":"bad_request","message":"Invalid request: `runtime` has to be one of node22, node24, node26, python3.13"}}
+[create:runtime-roocode] 400 | {"error":{"code":"bad_request","message":"Invalid request: `runtime` has to be one of node22, node24, node26, python3.13"}}
+[create:runtime-walleye] 400 | {"error":{"code":"bad_request","message":"Invalid request: `runtime` has to be one of node22, node24, node26, python3.13"}}
+[create:mounts-empty] 200 | {"sandbox":{"name":"fs_mount2","currentSessionId":"sbx_kmv0lHGi4L5TyMeHqmYNBBXvlL7b","status":"running","statusUpdatedAt":1788017816699,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788017816699,"updatedAt":1788017816699},"session":{"id":"sbx_kmv0lHGi4L5TyMeHqmYNBBXvlL7b","runtime":"node22","requestedAt":1788017816634,"startedAt":1788017816653,"status":"running","vcpus":2,"memory":4096,"timeout":300000,"region":"iad1","cwd":"/vercel/sandbox","createdAt":1788017816634,"updatedAt":1788017816
+[create:mounts-obj] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts` should match pattern \"^/.*\"."}}
+[create:mounts-map] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./etc` should be object."}}
+===== 2) network-policy unknown fields =====
+fs_pol sid: sbx_QYPc7ZsyS5cQLJ0zGLE7tFwGEdQw
+[policy:dns] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `dns`."}}
+[policy:dns2] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `dns`."}}
+[policy:allowedPorts] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `allowedPorts`."}}
+[policy:deniedPorts] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `deniedPorts`."}}
+[policy:protocols] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `protocols`."}}
+[policy:rules] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `rules`."}}
+[policy:outbound] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `outbound`."}}
+[policy:http] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `http`."}}
+[policy:tls] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `tls`."}}
+[policy:log] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `log`."}}
+[policy:dnsMode] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `dnsMode`."}}
+[policy:allowPrivate] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `allowPrivate`."}}
+[policy:privateNetworks] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `privateNetworks`."}}
+[policy:allowedHosts] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `allowedHosts`."}}
+[policy:egressRules] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `egressRules`."}}
+[policy:sniffing] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `sniffing`."}}
+[policy:wildcardDomains] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `wildcardDomains`."}}
+[policy:allowedIps] 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `allowedIps`."}}
+DONE

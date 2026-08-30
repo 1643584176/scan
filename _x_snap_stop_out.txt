@@ -1,0 +1,13 @@
+[create] -> 200
+sid = sbx_291rePpsKZrNA6JMruLNfSsk5DVa
+[cmd before] -> 200 out='alive-before-snap'
+[before] status=running
+=== POST snapshot ===
+[snapshot] -> 201 {"snapshot":{"id":"snap_0sXpukll9mDmTWKuRIMJLnrIHFDP","sourceSessionId":"sbx_291rePpsKZrNA6JMruLNfSsk5DVa","region":"iad1","regions":["iad1"],"status":"created","sizeBytes":642381229,"expiresAt":17886
+[t+2s] status=running
+[t+5s] status=stopped
+[t+10s] status=stopped
+[cmd after snap] -> 410 out=''
+[np {} after snap] -> 410 {"error":{"code":"sandbox_stopped","message":"Sandbox has stopped execution and is no longer available"}}
+[after-np] status=stopped
+CLEANED

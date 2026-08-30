@@ -1,0 +1,7 @@
+[create l36d] -> 200
+[before-patch] -> NODYN 
+[patch /v2/sandboxes/l36d] -> 400 | {"error":{"code":"bad_request","message":"Invalid request: missing required property `projectId`"}}
+[patch /v2/sandboxes/l36d/network-policy] -> 404 | {"error":{"code":"not_found","message":"Not Found"}}
+[patch /v4/sandboxes/l36d] -> 404 | {"error":{"code":"not_found","message":"Not Found"}}
+[after-patch] -> NODYN 
+DONE

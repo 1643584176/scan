@@ -1,0 +1,14 @@
+[mk snap] -> 201 {"snapshot":{"id":"snap_CMVKli8AcvDTkQ8SIniy82L8UoVp","sourceSessionId":"sbx_nVUDaWuhSmrPtCaoBoe1FEH3Zyc0","region":"iad
+[victim create] -> 200
+[victim snap] -> 201 {"snapshot":{"id":"snap_nbXmWcQqdt1sApeoCetXCht5PNsA","sourceSessionId":"sbx_EP823Pt2W4hMPwexL9lWliECkAaX","region":"iad
+snap_own = snap_CMVKli8AcvDTkQ8SIniy82L8UoVp
+snap_v   = snap_nbXmWcQqdt1sApeoCetXCht5PNsA
+=== T1: 自己快照树 ===
+[own tree] -> 200 {"snapshots":[],"anchor":{"snapshot":{"id":"snap_CMVKli8AcvDTkQ8SIniy82L8UoVp","sourceSessionId":"sbx_nVUDaWuhSmrPtCaoBoe1FEH3Zyc0","region":"iad1","regions":["iad1"],"status":"created","sizeBytes":642381251,"expiresAt":1788696025916,"createdAt":1788091225916,"updatedAt":1788091225916,"lastUsedAt":1788091225916,"creationMethod":"manual"},"siblings":[],"count":"1"},"pagination":{"count":0,"next":nu
+=== T2: 跨租户读 victim 快照树 ===
+[victim tree attacker tok] -> 404 {"error":{"code":"not_found","message":"Could not find project: prj_LX0QDsEAlWA0uRZvVTunSef3lllF"}}
+[victim snap own project] -> 200 {"snapshots":[],"pagination":{"count":0,"next":null}}
+=== T3: 无/假 snapshotId ===
+[no snapshotId] -> 400 {"error":{"code":"bad_request","message":"Invalid request: missing required property `snapshotId`"}}
+[fake snapshotId] -> 400 {"error":{"code":"bad_request","message":"Invalid request: `snapshotId` should NOT be shorter than 32 characters."}}
+DONE

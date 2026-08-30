@@ -1,0 +1,37 @@
+===== image reference matrix =====
+[img-node22] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-node22-bare] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-node22-latest] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-digest] 400 | {"error":{"code":"bad_request","message":"Invalid image reference: node:22@sha256:abc"}}
+[img-dockerio] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-indexdk] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-reg1] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-ecr] 400 | {"error":{"code":"bad_request","message":"Invalid image reference: public.ecr.aws/docker/library/node:22"}}
+[img-ghcr] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-quay] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-url] 400 | {"error":{"code":"bad_request","message":"Invalid image reference: https://raw.githubusercontent.com/x/y/main/Dockerfile"}}
+[img-internal-id] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-vercel] 400 | {"error":{"code":"bad_request","message":"Invalid image reference: vercel/node22"}}
+[img-vercel2] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-node-bare] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-lib-node] 400 | {"error":{"code":"bad_request","message":"Invalid image reference: library/node:22"}}
+
+===== mounts value object schema =====
+[m-hostPath] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `hostPath`."}}
+[m-source] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `source`."}}
+[m-src] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `src`."}}
+[m-path] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `path`."}}
+[m-host] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `host`."}}
+[m-type-bind] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `type`."}}
+[m-driver] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `driver`."}}
+[m-readonly] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `readOnly`."}}
+[m-mode] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` missing required property `drive`."}}
+[m-value] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` should NOT have additional property `value`."}}
+[m-empty-obj] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./mnt/x` missing required property `drive`."}}
+[m-hostpath-same] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts./etc` should NOT have additional property `hostPath`."}}
+[m-root] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts` should NOT be shorter than 2 characters."}}
+
+===== env injection verify =====
+[env-create] 200 | {"sandbox":{"name":"envtest1","currentSessionId":"sbx_zKo9zLDFSAE57nJnF6EUt0uzMPhu","status":"running","statusUpdatedAt":1788017997782,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788017997782,"updatedAt":1788017997782},"session":{"id":"sbx_zKo9zLDFSAE57nJnF6EUt0uzMPhu","runtime":"node22","re
+[env-check] 200 | {"command":{"id":"cmd_2b86a4c5fb3645378d3edb374823","name":"env","args":[],"cwd":"/vercel/sandbox","sessionId":"sbx_zKo9zLDFSAE57nJnF6EUt0uzMPhu","startedAt":1788017999056,"exitCode":null}} {"data":"AWS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt\nCARGO_HTTP_CAINFO=/etc/ssl/certs/ca-certificates.crt\nCURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt\nGIT_SSL_CAINFO=/etc/ssl/certs/ca-certificates.crt\nGRPC_DEFAULT_SSL_ROOTS_FILE_PATH=/etc/ssl/certs/ca-certificates.crt\nNODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt\nNODE_USE_SYSTEM_CA=1\nNPM_CONFIG_CAFILE=/etc/ssl/certs/ca-certificates.crt\nPIP_CERT=/etc/ssl/certs/ca-certificates.crt\nREQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt\nSSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt\nHOME=/home/vercel-sandbox\nFOO=bar123\nPATH=
+DONE

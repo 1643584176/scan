@@ -1,0 +1,21 @@
+[tinj1 policy] http=404
+   {"error":{"code":"not_found","message":"Not Found"}}
+[npol1 policy] http=404
+   {"error":{"code":"not_found","message":"Not Found"}}
+[tinj1-A-ip1111] A_CODE:403
+
+[tinj1-B-domain] B_CODE:403
+
+[tinj1-C-privip] C_CODE:403
+
+[tinj1-D-vercel] D_CODE:403
+
+[npol1-A-ip1111] A_CODE:000
+
+[npol1-B-domain] B_CODE:000
+
+[npol1-C-privip] C_CODE:000
+
+[npol1-D-vercel] D_CODE:000
+
+=== 403COND DONE ===

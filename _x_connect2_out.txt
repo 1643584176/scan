@@ -1,0 +1,17 @@
+npol1 sid: sbx_5hvkDFmeEVwSbYTdvAAZGQ5gXVl9 status: running
+[P1-h2-connect] * CONNECT: 'http/1.1' negotiated
+> CONNECT example.com:443 HTTP/1.1
+< HTTP/1.1 400 Bad Request
+* CONNECT tunnel failed, response 400
+
+[P2-h1-connect] * CONNECT: 'http/1.1' negotiated
+> CONNECT example.com:443 HTTP/1.1
+< HTTP/1.1 400 Bad Request
+* CONNECT tunnel failed, response 400
+
+[P3-h2-1111] * CONNECT: 'http/1.1' negotiated
+> CONNECT 1.1.1.1:443 HTTP/1.1
+< HTTP/1.1 400 Bad Request
+* CONNECT tunnel failed, response 400
+
+=== P DONE ===

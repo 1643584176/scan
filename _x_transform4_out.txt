@@ -1,0 +1,130 @@
+=== A1-cfip (https://1.1.1.1/) ===
+[create https://1.1.1.1/] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_RHLqAFH3OZf0YhTxvy8LQ2eeErks","status":"running","statusUpdatedAt":1788086167801
+[A1-cfip] == A1-cfip
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Cf-Ray: a33327546eef5008-IAD
+Date: Sun, 30 Aug 2026 10:36:17 GMT
+Location: https://one.one.one.one/
+Server: cloudflare
+Content-Length: 0
+=== A2-gdns (https://8.8.8.8/) ===
+[create https://8.8.8.8/] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_O2303ZSG5aasIdecNypGjvErFwXp","status":"running","statusUpdatedAt":1788086187465
+[A2-gdns] == A2-gdns
+HTTP/1.1 302 Found
+Connection: close
+Content-Length: 216
+Access-Control-Allow-Origin: *
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Type: text/html; charset=UTF-8
+Date: Sun, 30 Aug 2026 10:36:37 GMT
+Location: https://dns.google/
+Server: HTTP server (unknown)
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+=== A3-api-user (https://api.vercel.com/v2/user) ===
+[create https://api.vercel.com/v2/user] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_Db27zIDHDxW5gSA565JXiAnk6Xs3","status":"running","statusUpdatedAt":1788086207203
+[A3-api-user] == A3-api-user
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 109
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Allow-Methods: OPTIONS, GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: private, max-age=0
+Content-Type: application/json; charset=utf-8
+Date: Sun, 30 Aug 2026 10:36:57 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Vercel-Id: sfo1::c6whh-1788086217472-e144570f3901
+
+{"error":{"code":"forbidden","message":"The request is missing an authentication token","missingToken":true}}
+=== A4-api-team (https://api.vercel.com/v2/teams) ===
+[create https://api.vercel.com/v2/teams] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_uGGFh6zoW61muRNEFzYkvU1bbl5B","status":"running","statusUpdatedAt":1788086226752
+[A4-api-team] == A4-api-team
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 109
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Allow-Methods: OPTIONS, GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: private, max-age=0, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 30 Aug 2026 10:37:17 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Vercel-Id: sfo1::xpjgz-1788086237105-35825ebf71c5
+
+{"error":{"code":"forbidden","message":"The request is missing an authentication token","missingToken":true}}
+=== A5-redir1 (https://httpbin.org/redirect/1) ===
+[create https://httpbin.org/redirect/1] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_XqYzwdCngxA6Zkbgf4eaicIfiHSS","status":"running","statusUpdatedAt":1788086246929
+[A5-redir1] == A5-redir1
+HTTP/1.1 404 NOT FOUND
+Connection: close
+Content-Length: 233
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Type: text/html
+Date: Sun, 30 Aug 2026 10:37:36 GMT
+Server: gunicorn/19.9.0
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+=== A6-anything (https://httpbin.org/anything/forward_ctl) ===
+[create https://httpbin.org/anything/forward_ctl] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_jHjrpufbLiZhLYW3XNXSO7hVnpcx","status":"running","statusUpdatedAt":1788086266363
+[A6-anything] == A6-anything
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1623
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Sun, 30 Aug 2026 10:37:56 GMT
+Server: gunicorn/19.9.0
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*",
+=== A7-mmds (https://169.254.169.254/) ===
+[create https://169.254.169.254/] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_TLKn78f5g7PyKE14F3M8xHIAMS6P","status":"running","statusUpdatedAt":1788086286145
+[A7-mmds] == A7-mmds
+HTTP/1.1 502 Bad Gateway
+Connection: close
+
+Bad Gateway
+=== B1-eth0ip ===
+[create https://httpbin.org/anything/b1_placeholder] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_jqgPhrRbgK4TobSG8fHmhkqTDAEv","status":"running","statusUpdatedAt":1788086307648
+[B1] guest eth0 ip = 100.64.30.216
+[create https://100.64.30.216:8443/] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_VAT5P5QADHap5NmqwCdUG3yqO7LA","status":"running","statusUpdatedAt":1788086318199
+[tls] bind=0.0.0.0 ok=False 1
+[B1-eth0ip] == B1-eth0ip
+HTTP/1.1 502 Bad Gateway
+Connection: close
+
+Bad Gateway
+[B1-log] ==TLSLOG==
+TLS_START 1788086328.3763342
+==OUT==
+=== B2-loTLS ===
+[create https://127.0.0.1:8443/] -> 200 {"sandbox":{"name":"tf50","currentSessionId":"sbx_1gDEDKVI14K6VduDDSEcJmA29hj7","status":"running","statusUpdatedAt":1788086345995
+[tls] bind=127.0.0.1 ok=False 1
+[B2-loTLS] == B2-loTLS
+HTTP/1.1 502 Bad Gateway
+Connection: close
+
+Bad Gateway
+[B2-log] ==TLSLOG==
+TLS_START 1788086356.19317
+==OUT==
+CLEANED

@@ -1,0 +1,10 @@
+===== ① CRLF/敏感头注入 =====
+create -> 400 | {"error":{"code":"bad_request","message":"Invalid injection rule: header value for \"X-CRLF\" is invalid."}}
+
+===== ② injectionRules 独立 domain =====
+create (empty allow + inj) -> 200 | {"sandbox":{"name":"l31b","currentSessionId":"sbx_1XXLbrer76mGsQp8mnxzDx9QURd6","status":"running","statusUpdatedAt":1788051601416,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","image":"vercel/sandb
+[https://sbx-echo-e29ca9cb.vercel.app/] -> 
+[https://httpbin.org/anything] -> 
+
+===== ③ OIDC custom 模式 =====
+DONE

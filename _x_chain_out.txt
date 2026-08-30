@@ -1,0 +1,15 @@
+[tinj1] resumed sid: sbx_Ze4AxjNWTwxRCZWt4fDT2vdYXblz
+sid: sbx_Ze4AxjNWTwxRCZWt4fDT2vdYXblz
+[ALLOW-ALL] set_policy http=200
+[A-direct-echo] {"method":"GET","url":"/a","headers":{"x-vercel-id":"iad1::cv2fx-1788011066437-77594f28964b","user-agent":"curl/8.17.0","x-vercel-forwarded-for":"18.232.109.165","x-real-ip":"18.232.109.165","x-forwarded-proto":"https","x-vercel-enable-rewrite-caching":"1","x-vercel-proxied-for":"18.232.109.165","x-vercel-ip-postal-code":"20149","x-vercel-ip-continent":"NA","x-vercel-ip-timezone":"America/New_York","x-vercel-ip-longitude":"-77.4903","x-vercel-oidc-token":"eyJraWQiOiJtcmstNDMwMmVjMWI2NzBmNDhhOThhZDYxZGFkZTRhMjNiZTciLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJvd25lcjpwY2NwLXRlYW06cHJvamVjdDpzYngtZWNoby1lMjljYTljYjplbnZpcm9ubWVudDpwcm9kdWN0aW9uIiwiZXhwIjoxNzg4MDE4MjY2LCJvd25lcl9pZCI6InRlYW1fR0l5MVNaNDQ0bHNwcWVOYmg0cjh1QVVnIiwicGxhbiI6ImhvYmJ5IiwicHJvamVjdCI6InNieC1lY2hvLWUyOWNhOWNiIiwiaWF
+[ALLOW-API] set_policy http=200
+[B-fakehost-echo] Forbidden
+
+Forbidden
+sfo1::6jj5t-1788011074143-5384d3ba17df
+[ALLOW-VERCEL] set_policy http=200
+[C-sni-vercel-fakehost] Forbidden
+
+Forbidden
+iad1::v9jfv-1788011080563-8c69c151c6fe
+=== CHAIN DONE ===

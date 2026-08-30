@@ -1,0 +1,14 @@
+===== ① v4 对照 =====
+[v4-inj] -> 200 | {"sandbox":{"name":"l30","currentSessionId":"sbx_HFP9Nbsb6EncjRuRy91vNZ0rwoCn","status":"running","statusUpdatedAt":1788051523617,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","image":"vercel/sandbo
+[v4-env] -> 200 | {"sandbox":{"name":"l30","currentSessionId":"sbx_JjYbjexbtUhGM8Tx5qRc4T51vFEg","status":"running","statusUpdatedAt":1788051527373,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","image":"vercel/sandbo
+[v4-ports] -> 200 | {"sandbox":{"name":"l30","currentSessionId":"sbx_9ddhCvRBBxP8LizBY7n0YDDlfHOc","status":"running","statusUpdatedAt":1788051531497,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","image":"vercel/sandbo
+
+===== ② v3 injectionRules =====
+[create v3 l30a] -> 200 | {"sandbox":{"name":"l30a","currentSessionId":"sbx_KsBFqggUWVmMygMdQUCQ2YeNisXZ","status":"running","statusUpdatedAt":1788051539614,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"mem
+readback np: {"mode": "custom", "allowedDomains": ["httpbin.org"]}
+headers resp: {   "headers": {     "Accept": "*/*",      "Accept-Encoding": "gzip",      "Host": "httpbin.org",      "Transfer-Encoding": "chunked",      "User-Agent": "curl/8.18.0",      "X-Amzn-Trace-Id": "Root=1-6a938059-6d5dc83462e5c7d453c1447b",      "X-T": "1",      "X-Test-2": "abc"   } } 
+
+===== ③ v3 env =====
+[create v3 l30b] -> 200 | {"sandbox":{"name":"l30b","currentSessionId":"sbx_FRe5f2kXnZ3HL2c65TCD9lxTzzxt","status":"running","statusUpdatedAt":1788051550863,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"mem
+env resp: FOO=bar sh: 1: Bad substitution 
+DONE

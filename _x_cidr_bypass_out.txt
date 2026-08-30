@@ -1,0 +1,62 @@
+[C1 create] -> 200
+  == DNS ==
+  2606:4700:10::6814:179a example.com
+  2606:4700:10::ac42:93f3 example.com
+  == TCP ==
+  200
+  == TCP_IP ==
+  curl: (28) Connection timed out after 6002 milliseconds
+  000
+  == DNS_DIRECT ==
+  curl: (28) Connection timed out after 6001 milliseconds
+  000
+[C2 create] -> 500
+  err: An unexpected internal error occurred
+[C3 create] -> 400
+  err: Invalid CIDR "::/0".
+[C4 create] -> 200
+  == DNS ==
+  2606:4700:10::6814:179a example.com
+  2606:4700:10::ac42:93f3 example.com
+  == TCP ==
+  200
+  == TCP_IP ==
+  curl: (56) Recv failure: Connection reset by peer
+  000
+  == DNS_DIRECT ==
+  curl: (35) TLS connect error: error:0A000126:SSL routines::unexpected eof while reading
+  000
+[C5 create] -> 200
+  == DNS ==
+  == TCP ==
+  curl: (6) Could not resolve host: example.com
+  000
+  == TCP_IP ==
+  curl: (28) Connection timed out after 6002 milliseconds
+  000
+  == DNS_DIRECT ==
+  curl: (28) Connection timed out after 6002 milliseconds
+  000
+[C6 create] -> 200
+  == DNS ==
+  == TCP ==
+  curl: (6) Could not resolve host: example.com
+  000
+  == TCP_IP ==
+  curl: (28) Connection timed out after 6002 milliseconds
+  000
+  == DNS_DIRECT ==
+  curl: (28) Connection timed out after 6002 milliseconds
+  000
+[C7 create] -> 200
+  == DNS ==
+  == TCP ==
+  curl: (6) Could not resolve host: example.com
+  000
+  == TCP_IP ==
+  curl: (56) Recv failure: Connection reset by peer
+  000
+  == DNS_DIRECT ==
+  curl: (35) TLS connect error: error:0A000126:SSL routines::unexpected eof while reading
+  000
+DONE

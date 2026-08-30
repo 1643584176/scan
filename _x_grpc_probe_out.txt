@@ -1,0 +1,69 @@
+sid = sbx_z4VhfRGh9S7Gcpa17KFKAEKl0aa8
+[probe] -> 200
+=== T1: 裸 TCP banner 23456 ===
+bash: line 1: xxd: command not found
++ echo '=== T1: 裸 TCP banner 23456 ==='
++ timeout 4 bash -c 'exec 3<>/dev/tcp/127.0.0.1/23456; head -c 200 <&3 | xxd | head -10'
++ echo '=== T1b: 裸 TCP banner 26661 ==='
++ timeout 4 bash -c 'exec 3<>/dev/tcp/127.0.0.1/26661; head -c 200 <&3 | xxd | head -10'
+=== T1b: 裸 TCP banner 26661 ===
+bash: connect: Connection refused
+bash: line 1: /dev/tcp/127.0.0.1/26661: Connection refused
+bash: line 1: 3: Bad file descriptor
+bash: line 1: xxd: command not found
++ echo '=== T2: h2c prior knowledge 23456 ==='
+=== T2: h2c prior knowledge 23456 ===
++ curl -sS -m 5 --http2-prior-knowledge -i http://127.0.0.1:23456/
++ head -10
++ echo '=== T2b: h2c 26661 ==='
+HTTP/2 404 
+content-type: text/plain; charset=utf-8
+x-content-type-options: nosniff
+content-length: 19
+date: Sun, 30 Aug 2026 12:26:22 GMT
+
+404 page not found
+=== T2b: h2c 26661 ===
++ curl -sS -m 5 --http2-prior-knowledge -i http://127.0.0.1:26661/
++ head -10
+curl: (7) Failed to connect to 127.0.0.1 port 26661 after 0 ms: Could not connect to server
++ echo '=== T3: gRPC health 23456 ==='
+=== T3: gRPC health 23456 ===
++ curl -sS -m 5 -i -X POST http://127.0.0.1:23456/grpc.health.v1.Health/Check -H 'content-type: application/grpc' --data-binary ''
++ head -10
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sun, 30 Aug 2026 12:26:22 GMT
+Content-Length: 19
+
+404 page not found
+=== T3b: gRPC health 26661 ===
++ echo '=== T3b: gRPC health 26661 ==='
++ curl -sS -m 5 -i -X POST http://127.0.0.1:26661/grpc.health.v1.Health/Check -H 'content-type: application/grpc' --data-binary ''
++ head -10
+curl: (7) Failed to connect to 127.0.0.1 port 26661 after 0 ms: Could not connect to server
++ echo '=== T4: HTTP 响应头细节 23456 ==='
+=== T4: HTTP 响应头细节 23456 ===
++ curl -sS -m 5 -i -X OPTIONS http://127.0.0.1:23456/
++ head -15
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sun, 30 Aug 2026 12:26:22 GMT
+Content-Length: 19
+
+404 page not found
+=== T5: 端口监听状态 ===
++ echo '=== T5: 端口监听状态 ==='
++ ss -tlnp
++ grep -E '23456|26661'
++ echo '=== T6: 进程 ==='
+LISTEN 0      4096               *:23456            *:*          
+=== T6: 进程 ===
++ ps aux
++ grep -iE '23456|26661|sandbox|init'
++ grep -v grep
++ head -10
+ubuntu         1  0.2  0.2 1234512 12012 ?       Ssl  12:26   0:00 /run/vercel/share/sandbox-init --socket=/run/vercel/share/init.sock --pubkey=lLmPNRX9VVt/clV+0
+DONE

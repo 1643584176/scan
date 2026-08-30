@@ -1,0 +1,18 @@
+sid: sbx_Ze4AxjNWTwxRCZWt4fDT2vdYXblz
+[ALLOW-API] set_policy http=200
+[1-base-api] 404
+[2-nonexist] 404
+[3-vercelcom] 307
+[4-www] 308
+[5-vercelapp] 308
+[6-echo] 403
+[7-echo-dep] 302
+[8-example] 404
+[9-ip] 308
+[10-www-vercelapp] 308
+[ALLOW-VERCEL] set_policy http=200
+[A-echo] 403
+[B-nonexist] 404
+[C-vercelapp] 308
+[D-www] 308
+=== FB MATRIX DONE ===

@@ -1,0 +1,107 @@
+npol1 sid: sbx_5hvkDFmeEVwSbYTdvAAZGQ5gXVl9 status: running
+[N1-extract] --- SPAWN-FIELDS ---
+Request
+Response
+GetEvent
+nextEvent
+RequestURI
+readRequest
+setEventErr
+CloseRequest
+limiterEvent
+ocspResponse
+OCSPResponse
+ReadResponse
+RequestHeader
+singleRequest
+*http.Request
+finishRequest
+onRequestSend
+CloseResponse
+ResponseHeader
+*http.Response
+upgradeRequest
+*tls.QUICEvent
+ResponseTrailer
+updateRequested
+setRequestMethod
+*[]tls.QUICEvent
+newResponseWriter
+*[8]tls.QUICEvent
+WriteRequestHeader
+*tls.QUICEventKind
+isSpawnEvent_Event
+newWriterAndRequest
+mergeResponseHeader
+enableSessionEvents
+*spawnv1.SpawnEvent
+*http.ResponseWriter
+*func(*http.Request)
+*tls.helloRequestMsg
+*spawnv1.KillRequest
+*spawnv1.PingRequest
+*http.initALPNRequest
+*runtime.limiterEvent
+*spawnv1.KillResponse
+*spawnv1.SpawnRequest
+*spawnv1.PingResponse
+closedRequestBodyEarly
+RequestCompressionName
+*http2.startPushRequest
+*http2.FrameWriteRequest
+*spawnv1.SpawnEvent_Exit
+newWriterAndRequestNoBody
+*func(func(*http.Request))
+*[]http2.FrameWriteRequest
+*tls.certificateRequestMsg
+*spawnv1.SpawnEvent_Stderr
+*spawnv1.SpawnEvent_Stdout
+*http.http2startPushRequest
+*func() http.ResponseWriter
+*tls.CertificateRequestInfo
+*spawnv1.isSpawnEvent_Event
+(60 shown)
+--- SERVICE ---
+v1UH
+cv1f
+*spawnv1.x
+*spawnv1.PtyStart
+*spawnv1.PtyInput
+*spawnv1.PtyOutput
+*spawnv1.PtyResize
+*spawnv1.ExitStatus
+*spawnv1.PtyStarted
+*spawnv1.SpawnEvent
+*spawnv1.KillRequest
+*spawnv1.PingRequest
+*spawnv1.KillResponse
+*spawnv1.SpawnStarted
+*spawnv1.SpawnRequest
+*spawnv1.PingResponse
+*spawnv1.PtyOutput_Exit
+*spawnv1.PtyOutput_Data
+*spawnv1.PtyInput_Stdin
+*spawnv1.PtyInput_Start
+*spawnv1.PtyInput_Resize
+*spawnv1.SpawnEvent_Exit
+*spawnv1.isPtyInput_Input
+*spawnv1.PtyOutput_Started
+*spawnv1.SpawnEvent_Stderr
+*spawnv1.SpawnEvent_Stdout
+*spawnv1.isPtyOutput_Output
+*spawnv1.isSpawnEvent_Event
+*spawnv1.SpawnEvent_Started
+#*spawnv1connect.SpawnServiceHandler
+;*struct { F uintptr; R spawnv1connect.SpawnServiceHandler }
+Qgithub.com/vercel/api/hive-containers/sandbox-controller/gen/spawn/spawnv1connect
+ZJgithub.com/vercel/api/hive-containers/sandbox-controller/gen/spawn;spawnv1
+github.com/vercel/api/hive-containers/sandbox
+[N2-ping] INIT_CONNECT_OK
+PING_RESP b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 29 Aug 2026 12:50:53 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'
+
+[N3-vsock] VSOCK_ERR 2 23456 PermissionError [Errno 13] Permission denied
+VSOCK_ERR 2 2379 PermissionError [Errno 13] Permission denied
+VSOCK_ERR 2 443 PermissionError [Errno 13] Permission denied
+VSOCK_ERR 1 23456 PermissionError [Errno 13] Permission denied
+
+=== G9 DONE ===

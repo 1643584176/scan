@@ -1,0 +1,61 @@
+===== drive value enumeration =====
+[drive-host] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-root] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-data] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-vda] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-rootfs] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-tmpfs] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-ephemeral] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-workspace] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-home] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-system] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-boot] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-docker] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-containerd] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-cache] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-logs] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-proc] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-dev] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-share] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-vercel] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-sandbox] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-image] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-layer] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-overlay] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-runtime] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-hostfs] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-vm] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-microvm] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-snapshot] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-disk] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-disk0] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-disk1] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-vdb] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-vdc] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-sda] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-xvda] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-volume] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-vol] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-fs] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-nfs] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-efs] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-ebs] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-s3] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-mem] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-init] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-guest] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-hostfs0] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-rootfs0] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-persistent] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-local] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[drive-bind] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+
+===== guest path control =====
+[gp:/mnt/x] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[gp:/etc] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[gp:/proc/1/root] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[gp:/vercel/sandbox/x] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[gp:/] 400 | {"error":{"code":"bad_request","message":"Invalid request: `mounts` should NOT be shorter than 2 characters."}}
+[gp:/mnt] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+[gp:/dev] 403 | {"error":{"code":"forbidden","message":"Drives are not enabled for this project. The feature is in private preview and requires explicit project enrollment."}}
+DONE

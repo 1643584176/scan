@@ -1,0 +1,24 @@
+===== 1) image external-registry check (DNS/error-diff) =====
+[img-invalid-tld] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-vercelapp] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-hello-docker] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-ghcr-vercel] 404 | {"error":{"code":"not_found","message":"Image not found."}}
+[img-localhost] 400 | {"error":{"code":"bad_request","message":"Invalid image reference: localhost/foo:1"}}
+[img-127] 400 | {"error":{"code":"bad_request","message":"Invalid image reference: 127.0.0.1/foo:1"}}
+
+===== 2) drives enrollment endpoint guesses =====
+[enr0] POST /v2/sandboxes/drives/enroll -> 403 | {"error":{"code":"forbidden","message":"Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta"}}
+[enr1] POST /v2/sandboxes/drives -> 404 | {"error":{"code":"not_found","message":"Not Found"}}
+[enr2] GET /v2/sandboxes/drives -> 403 | {"error":{"code":"forbidden","message":"Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta"}}
+[enr3] POST /v2/projects/prj_iyw2xfjP3RKPT7n8b8c1tBIxxK5F/drives -> 404 | {"error":{"code":"not_found","message":"Not Found"}}
+[enr4] POST /v2/projects/prj_iyw2xfjP3RKPT7n8b8c1tBIxxK5F/sandbox-drives -> 404 | {"error":{"code":"not_found","message":"Not Found"}}
+[enr5] GET /v2/projects/prj_iyw2xfjP3RKPT7n8b8c1tBIxxK5F/sandbox-settings -> 404 | {"error":{"code":"not_found","message":"Not Found"}}
+[enr6] PATCH /v2/projects/prj_iyw2xfjP3RKPT7n8b8c1tBIxxK5F -> 400 | {"error":{"code":"bad_request","message":"Invalid request: `sandbox` should NOT have additional property `drivesEnabled`."}}
+[enr7] POST /v2/sandboxes/enroll -> 404 | {"error":{"code":"not_found","message":"Not Found"}}
+[enr8] GET /v2/sandboxes/features -> 400 | {"error":{"code":"bad_request","message":"Invalid request: missing required property `projectId`"}}
+[enr9] GET /v2/sandboxes/settings -> 404 | {"error":{"code":"not_found","message":"Named sandbox 'settings' not found for this project."}}
+
+===== 3) sfo1 D-line repro (custom policy + PG probe) =====
+[sfo1-create] 200 | {"sandbox":{"name":"sfod1","currentSessionId":"sbx_m373W6LANFoWvxyiSyjbCKuMrKGV","status":"running","statusUpdatedAt":1788018273127,"persistent":true,"region":"sfo1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"networkPolicy":{"mode":"custom","allowedDomains":["h
+[sfo1-pg] 200 | {"command":{"id":"cmd_bed644c84d5049098b7fb8eb746b","name":"sh","args":["-c","echo aW1wb3J0IHNvY2tldCxzdHJ1Y3Q7IHM9c29ja2V0LnNvY2tldCgpOyBzLnNldHRpbWVvdXQoNCk7IHJjPXMuY29ubmVjdF9leCgoJzE3Mi4zMS4wLjInLDU0MzIpKTsgcHJpbnQoJ1BHX1JDJywgcmMpOwppZiByYz09MDoKIHMuc2VuZGFsbChzdHJ1Y3QucGFjaygnIUlJJyw4LDgwODc3MTAzKSk7IGltcG9ydCB0aW1lOyB0aW1lLnNsZWVwKDAuOCk7CiB0cnk6IHByaW50KCdQR19SRVNQJywgcy5yZWN2KDQpKQogZXhjZ
+DONE
