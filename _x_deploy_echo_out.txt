@@ -1,7 +1,0 @@
-project name: sbx-echo-e29ca9cb
-uploaded api/index.js ea378af932d2
-uploaded vercel.json 17d6f46d87a3
-deploy create: 200 {"alias":["sbx-echo-e29ca9cb-pccp-team.vercel.app"],"aliasAssigned":false,"automaticAliases":["sbx-echo-e29ca9cb-pccp-team.vercel.app"],"bootedAt":1788010475464,"buildingAt":1788010475464,"buildSkipped":false,"createdAt":1788010475464,"creator":{"uid":"LSWPnDjM67ZU8EupByRW0zBm","username":"1643584176-6771"},"id":"dpl_6Hj6eEU9W4nVwnCCBd8ohEL4Qf8U","name":"sbx-echo-e29ca9cb","meta":{},"originCacheRe
-deployment id: dpl_6Hj6eEU9W4nVwnCCBd8ohEL4Qf8U url: sbx-echo-e29ca9cb-fwvcn8jon-pccp-team.vercel.app
-  poll 0: READY
-DONE url=https://sbx-echo-e29ca9cb-fwvcn8jon-pccp-team.vercel.app

@@ -1,2 +1,0 @@
-[resume] -> 404 {"error":{"code":"not_found","message":"Named sandbox 'snapresume49' not found for this project."}}
-parse err 'sandbox'

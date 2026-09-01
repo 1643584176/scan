@@ -1,7 +1,0 @@
-429 retry 1
-429 retry 2
-[create l36d] -> 200
-[before-patch] networkPolicy = {"mode": "custom", "allowedDomains": ["sbx-echo-e29ca9cb.vercel.app"]}
-[patch] -> 400 | {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `name`."}}
-[after-patch] networkPolicy = {"mode": "custom", "allowedDomains": ["sbx-echo-e29ca9cb.vercel.app"]}
-DONE
