@@ -71,3 +71,27 @@ _figma_hunt/vpub_tmp.json
 /*cookies*.txt
 /*token*.txt
 /_webhook_uuid.txt
+
+# ---- 凭据/会话/密钥文件(各 report 目录) ----
+*_creds*.py
+*_creds*.json
+*_creds*.txt
+_apikey*.json
+_ctx*.json
+*_tokens*.json
+*_sess*.json
+*_token*.txt
+*_sess*.txt
+_aws_creds*.json
+_auth_better_auth.json
+_sb_tokens.json
+_wh_uuid.txt
+*_cookies*.json
+
+# ---- 源码克隆/子模块(不入库) ----
+figma_report/_kiwi_ref/
+figma_report/_kiwi_work/kiwi/
+neon_report/_pg_session_jwt_src/
+netlify_report/_gotrue_src/
+netlify_report/_openapi/
+netlify_report/_pgrepack_src/
