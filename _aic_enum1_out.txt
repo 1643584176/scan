@@ -1,0 +1,38 @@
+=== AIC ÄäÃûÃæÃ¶¾Ù ===
+PATH                                                         CODE  CTYPE                          SENS/HINT
+/                                                            301                                  
+/login/                                                      200   text/html                      
+/am/version                                                  404   text/html                      
+/am/isAlive.jsp                                              200   text/html;charset=UTF-8        
+/am/healthcheck                                              404   text/html                      
+/am/info                                                     404   text/html                      
+/am/json/version                                             404   application/json;charset=UTF   version
+/am/json/serverinfo/alpha                                    404   application/json;charset=UTF   
+/am/json/realms/alpha/authenticate                           405   application/json;charset=UTF   
+/am/json/realms/alpha/users                                  401   application/json;charset=UTF   
+/am/json/realms/alpha/sessions                               401   application/json;charset=UTF   
+/am/json/realms/alpha/policies                               401   application/json;charset=UTF   
+/am/json/realms/alpha/selfservice/registration               404   application/json;charset=UTF   
+/am/json/realms/alpha/selfservice/passwordReset              404   application/json;charset=UTF   
+/am/json/realms/root/realms                                  401   application/json;charset=UTF   
+/am/json/realms/alpha/realm-config                           401   application/json;charset=UTF   
+/am/json/realms/alpha/applications                           401   application/json;charset=UTF   
+/am/json/realms/alpha/groups                                 401   application/json;charset=UTF   
+/am/json/realms/alpha/devices                                404   application/json;charset=UTF   
+/am/oauth2/.well-known/openid-configuration                  200   application/json;charset=UTF   
+/am/oauth2/realms/alpha/.well-known/openid-configuration     200   application/json;charset=UTF   
+/am/oauth2/realms/root/.well-known/openid-configuration      200   application/json;charset=UTF   
+/am/oauth2/authorize                                         400   text/html;charset=UTF-8        
+/am/oauth2/access_token                                      405   application/json;charset=UTF   "error"
+/am/oauth2/realms/alpha/authorize                            400   text/html;charset=UTF-8        
+/am/oauth2/realms/alpha/access_token                         405   application/json;charset=UTF   "error"
+/am/saml/consent                                             404   text/html                      
+/am/saml/redirect/alias/alpha                                404   text/html                      
+/am/restful-security/authenticate                            404   text/html                      
+/am/restful-security/sessions                                404   text/html                      
+/am/enduser/                                                 404   text/html                      
+/am/XUI/                                                     200   text/html                      
+/am/console/                                                 404   text/html                      
+/am/idm/endpoint/selfservice/registration                    404   text/html                      
+/openam/json/realms/alpha/authenticate                       404   text/html                      
+/am/umbraco/config                                           404   text/html                      

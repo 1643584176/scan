@@ -1,0 +1,56 @@
+{
+ "avatar": "https://avatars.githubusercontent.com/u/247122667?v=4",
+ "connected_accounts": {
+  "github": "1643584176"
+ },
+ "created_at": "2026-09-02T03:53:54.699Z",
+ "email": "1643584176@qq.com",
+ "favorite_sites": [],
+ "full_name": "LI PCCP",
+ "last_login": "2026-09-02T03:53:55.139Z",
+ "pending_email": null,
+ "questionnaire": {
+  "_id": null,
+  "company_size_c": null,
+  "job_leadership_title": "",
+  "job_role": "other",
+  "use_case": "learning_experimenting",
+  "use_case_context": "school",
+  "use_case_something_else": ""
+ },
+ "saml_slug": null,
+ "site_count": 1,
+ "slug": "1643584176",
+ "uid": null,
+ "account_id": "6a979dd2ae93f47d55b62897",
+ "tracking_id": "6a979dd2ae93f47d55b62895",
+ "mfa_enabled": false,
+ "id": "6a979dd2ae93f47d55b62895",
+ "login_providers": [
+  "github"
+ ],
+ "avatar_url": "https://avatars.githubusercontent.com/u/247122667?v=4",
+ "onboarding_progress": {
+  "guided_onboarding": {
+   "default": {
+    "customize-site-name": "open",
+    "deploy-again": "open",
+    "view-deploy-summary": "open",
+    "preview-your-deploy": "open"
+   },
+   "last_task_name_completed": null,
+   "total_tasks": 4,
+   "total_tasks_completed": 0
+  },
+  "notifications_read_at": "2026-09-01T00:00:00.000Z"
+ },
+ "sandbox": false,
+ "graphql_enabled": false,
+ "has_pending_email_verification": false,
+ "saml_account_id": "",
+ "saml_organization_id": "",
+ "preferred_account_id": "",
+ "command_bar_signed_user_id": "836e04cfed2d4cca03ca094e739034152d1d5827e73f865a53a5f85361b5381c",
+ "managed_by_sso_or_directory_sync": false,
+ "domain_capture_status": null
+}

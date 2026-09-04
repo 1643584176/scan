@@ -1,0 +1,14 @@
+=== size 13956 ===
+--- CALL ctx @2387 ---
+e_role_drop_clicked"),l(d)}}),[t,a,l])},Ie=()=>{const{trackUiInteraction:a}=F(),{formatMessage:t}=f(),s=x(I.EditRoleModal,{watch:!0}),l=g.useCallback(d=>{s.openModal(d.name)},[s]);return g.useCallback(d=>({label:t({id:"akiVGI",defaultMessage:[{type:0,value:"Edit"}]}),icon:"edit",onClick(){a("provisioned_instance_role_edit_clicked"),l(d)}}),[t,a,l])},Se=()=>{const a=xe(),t=Ie();return g.useCallback(s=>[t(s),a(s)],[t,a])},je="_checkboxGroup_r2h1p_1",Ce="_checkboxLabel_r2h1p_7",P={checkboxGroup:je,checkboxLabel:Ce},L=a=>["provisioned-instance-roles",a],Ee=a=>ie({queryKey:L(a??""),queryFn:a?()=>T.listProvisionedInstanceRoles(a).then(({data:{database_instance_roles:t}})=>t):re,retry:he}),Ae=a=>{const t=G();return K({mutationFn:s=>T.createProvisionedInstanceRole(a,s),onSuccess:()=>{t.invalidateQueries({queryKey:L(a)})}})},De=a=>{const t=G();return K({mutationFn:s=>T.updateProvisionedInstanceRole(a,s),onSuccess:()=>{t.invalidateQueries({queryKey:L(a)})}})},Y=({provisionedInstanceName:a,role:t,roles:s,onSuccess:l,onRequestClose:d})=>{const{formatMessage:o}=f(),m=g.useMemo(()=>s?.map(n=>({name:n.name,type:n.identity_type==="USER"?"user":n.identity_type==="GROUP"?"group":"service_principal"}
+=== chunk 内 url/http/api 字面量 ===
+=== chunk 内 import 行 ===
+import{r as g,j as e}from"./client-CJWnElJ8.js"
+import{m as F,h as f,n as x,M as I,a0 as ie,ax as re,ag as T,Z as G,c as K,ce as H,c9 as Z,aN as J,bl as D,eb as B,aP as j,aO as C,Q as h,aQ as W,cf as X,ca as $,d7 as ee,d8 as se,f as ae,T as te,bs as le,O as oe,ec as de,ed as ce,aR as k,aA as ue,k as pe,cm as Q,P as V,br as O,B as me,L as ye,C as be}from"./index-LpJ7SKi1.js"
+import{u as ge}from"./useCurrentProvisionedInstance-BkyxKEkQ.js"
+import{P as ve}from"./ProvisionedInstanceBreadcrumbs-CnB8cdNq.js"
+import{n as he,aa as fe,_ as E}from"./app-CcBRprEu.js"
+import{P as Re}from"./PrincipalSelect-qqFggO11.js"
+import{T as Me}from"./_createAggregator-Cs40TtXa.js"
+import{P as _e}from"./PageHeader-DhONzvbJ.js"
+import{a as Pe}from"./DataTableV2-B3xJMmGN.js"

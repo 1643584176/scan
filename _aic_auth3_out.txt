@@ -1,0 +1,9 @@
+=== 1. sessions 500 完整响应 ===
+status: 500
+headers: {'x-frame-options': 'SAMEORIGIN', 'content-security-policy-report-only': "frame-ancestors 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'", 'x-content-type-options': 'nosniff', 'cache-control': 'no-store, private, max-age=0, must-revalidate', 'warning': '100 OpenAM REST "No Accept-API-Version specified"', 'Content-Length': '0', 'date': 'Tue, 01 Sep 2026 07:27:43 GMT', 'x-forgerock-transactionid': '53806ecc-0293-49dc-be8a-7e65dd6acd10', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload;', 'x-robots-tag': 'none', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+body: 
+
+=== 2. OAuth 授权码流(用会话 cookie 自动认证) ===
+ru=https://openam-bug-bounty-stag.forgeblocks.com/enduser/callback        -> 400 loc=
+ru=https://openam-bug-bounty-stag.forgeblocks.com/enduser/                -> 400 loc=
+ru=https://openam-bug-bounty-stag.forgeblocks.com/enduser?realm=/alpha    -> 400 loc=

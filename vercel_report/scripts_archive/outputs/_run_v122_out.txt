@@ -1,0 +1,33 @@
+create: 200 {"sandbox":{"name":"v122","currentSessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","status":"running","statusUpdatedAt":1788164632691,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788164632691,"updatedAt":1788164632691},"session":{"id":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","runtime":"node22","reques
+[create ok] 5s
+[inject /vercel/sandbox/exec_probe.sh] 200
+[inject /vercel/sandbox/vda122_guest.py] 200
+[inject /vercel/sandbox/vda122_probe_guest.py] 200
+[run guest] 200
+{"command":{"id":"cmd_49bedb746ea64b94b8a39b256888","name":"python3","args":["/vercel/sandbox/vda122_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","startedAt":1788164636695,"exitCode":null}}
+{"data":"[1788164636.728] mount vda ret=0\n","stream":"stdout"}
+{"data":"[1788164636.728] payload written to COW 8238 bytes\n","stream":"stdout"}
+{"data":"[1788164636.739] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=088dcd27-63ec-4244-a7ad-d0b49931617d-snapshot\n","stream":"stdout"}
+{"data":"[1788164636.744] Create v122b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\\n\\x94(\\n\\x05v122b\\x1a\\x87\\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59\"\\x17\\n\\x15io.containerd.runc.v2*\\x91&\\n6types.containerd.'\n","stream":"stdout"}
+{"data":"[1788164636.800] Tasks/Create v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\n\\n\\x05v122b\\x10\\x94\\x05'\n","stream":"stdout"}
+{"data":"[1788164636.814] Tasks/Start v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x94\\x05'\n","stream":"stdout"}
+{"data":"[1788164637.115] --- COW v122c.out @1s +210 ---\n[1788164636.8] === P1 read celld ===\n[1788164636.9] read /proc/1/root/opt/vercel/celld 36578592 bytes\n[1788164636.9] === P2 scan gzip blocks ===\n/celld 36578592 bytes\n[1788164636.9] === P2 scan gzip blocks ===\n\n","stream":"stdout"}
+{"data":"[1788164643.125] --- COW v122c.out @21s +347 ---\n[1788164636.8] === P1 read celld ===\n[1788164636.9] read /proc/1/root/opt/vercel/celld 36578592 bytes\n[1788164636.9] === P2 scan gzip blocks ===\n[1788164643.1] gzip blocks found=7 decompressed=1\n[1788164643.1] descriptor output 0 bytes\n[1788164643.1] V122C_DONE\n788164643.1] descriptor output 0 bytes\n[1788164643.1] V122C_DONE\nCHROOT_RC=0\nV99_END\n\n","stream":"stdout"}
+{"data":"[1788164643.146] kill v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  \n[1788164643.146] V99M_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_49bedb746ea64b94b8a39b256888","name":"python3","args":["/vercel/sandbox/vda122_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","startedAt":1788164636695,"exitCode":0,"durationMs":6457}}
+
+[guest tail] 200
+{"command":{"id":"cmd_ba650bbaaa9445f3877a4b8f0deb","name":"sh","args":["-c","tail -c 30000 /vercel/sandbox/v122m.out 2>&1"],"cwd":"/vercel/sandbox","sessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","startedAt":1788164644196,"exitCode":null}}
+{"data":"[1788164636.728] mount vda ret=0\n[1788164636.728] payload written to COW 8238 bytes\n[1788164636.739] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=088dcd27-63ec-4244-a7ad-d0b49931617d-snapshot\n[1788164636.744] Create v122b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\\n\\x94(\\n\\x05v122b\\x1a\\x87\\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59\"\\x17\\n\\x15io.containerd.runc.v2*\\x91&\\n6types.containerd.'\n[1788164636.800] Tasks/Create v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\n\\n\\x05v122b\\x10\\x94\\x05'\n[1788164636.814] Tasks/Start v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x94\\x05'\n[1788164637.115] --- COW v122c.out @1s +210 ---\n[1788164636.8] === P1 read celld ===\n[1788164636.9] read /proc/1/root/opt/vercel/celld 36578592 bytes\n[1788164636.9] === P2 scan gzip blocks ===\n/celld 36578592 bytes\n[1788164636.9] === P2 scan gzip blocks ===\n\n[1788164643.125] --- COW v122c.out @21s +347 ---\n[1788164636.8] === P1 read celld ===\n[1788164636.9] read /proc/1/root/opt/vercel/celld 36578592 bytes\n[1788164636.9] === P2 scan gzip blocks ===\n[1788164643.1] gzip blocks found=7 decompressed=1\n[1788164643.1] descriptor output 0 bytes\n[1788164643.1] V122C_DONE\n788164643.1] descriptor output 0 bytes\n[1788164643.1] V122C_DONE\nCHROOT_RC=0\nV99_END\n\n[1788164643.146] kill v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  \n[1788164643.146] V99M_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_ba650bbaaa9445f3877a4b8f0deb","name":"sh","args":["-c","tail -c 30000 /vercel/sandbox/v122m.out 2>&1"],"cwd":"/vercel/sandbox","sessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","startedAt":1788164644196,"exitCode":0,"durationMs":2}}
+
+[probe out] 200
+{"command":{"id":"cmd_df61bf6746a34460861e8fa5fc3e","name":"sh","args":["-c","cat /vercel/sandbox/exec_probe.out 2>&1"],"cwd":"/vercel/sandbox","sessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","startedAt":1788164645250,"exitCode":null}}
+{"data":"cat: /vercel/sandbox/exec_probe.out: No such file or directory\n","stream":"stdout"}
+{"command":{"id":"cmd_df61bf6746a34460861e8fa5fc3e","name":"sh","args":["-c","cat /vercel/sandbox/exec_probe.out 2>&1"],"cwd":"/vercel/sandbox","sessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","startedAt":1788164645250,"exitCode":1,"durationMs":2}}
+
+[p3 file] 200
+{"command":{"id":"cmd_b800a711a43b407eb8daeaebbce8","name":"sh","args":["-c","tail -c 200000 /vercel/sandbox/v122d.out 2>&1"],"cwd":"/vercel/sandbox","sessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","startedAt":1788164646308,"exitCode":null}}
+{"command":{"id":"cmd_b800a711a43b407eb8daeaebbce8","name":"sh","args":["-c","tail -c 200000 /vercel/sandbox/v122d.out 2>&1"],"cwd":"/vercel/sandbox","sessionId":"sbx_FwNctIzxQ8p5xgwuTZnVCXjnolyh","startedAt":1788164646308,"exitCode":0,"durationMs":1}}
+
+CLEANED total 19s

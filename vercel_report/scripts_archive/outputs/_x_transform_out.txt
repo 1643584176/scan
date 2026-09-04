@@ -1,0 +1,24 @@
+=== P1: transform injection ===
+[create] -> 200 {"sandbox":{"name":"tf47","currentSessionId":"sbx_XWNEFQWYiogBpMecZvIFuo326STz","status":"running","statusUpdatedAt":1788080833145,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"mem
+sid1 = sbx_XWNEFQWYiogBpMecZvIFuo326STz
+[P1-inject] == P1-inject
+HTTP/2 200 
+access-control-allow-credentials: true
+access-control-allow-origin: *
+content-type: application/json
+date: Sun, 30 Aug 2026 09:07:30 GMT
+server: gunicorn/19.9.0
+content-length: 234
+
+{
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/8.18.0", 
+    "X-Amzn-Trace-Id": "Root=1-6a93f2d2-3a4faf4f2e1249c1279444e4", 
+    "X-Inj-Mark": "INJ_42"
+  }
+}
+=== P2: forwardURL 127.0.0.1 ===
+[create] -> 400 {"error":{"code":"bad_request","message":"Invalid forward rule: address must use https."}}

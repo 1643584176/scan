@@ -1,0 +1,10 @@
+### [del-obj-priv] DELETE /storage/v1/object/sbx_priv/sr_file.txt (2.6s)
+200 | {"message":"Successfully deleted"}
+### [del-obj-pub] DELETE /storage/v1/object/sbx_pub/pub_file.txt (5.5s)
+200 | {"message":"Successfully deleted"}
+### [del-bucket-priv] DELETE /storage/v1/bucket/sbx_priv?emptiedBucket=true (3.6s)
+200 | {"message":"Successfully deleted"}
+### [del-bucket-pub] DELETE /storage/v1/bucket/sbx_pub?emptiedBucket=true (1.0s)
+200 | {"message":"Successfully deleted"}
+### [] GET /storage/v1/bucket (5.9s)
+200 | []

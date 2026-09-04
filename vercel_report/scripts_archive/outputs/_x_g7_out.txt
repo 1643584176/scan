@@ -1,0 +1,25 @@
+npol1 sid: sbx_8lQg6V9uBuE9fyvoqu372pVRoql5 status: stopped
+resumed sid: sbx_5hvkDFmeEVwSbYTdvAAZGQ5gXVl9
+[L1-extract] --- GRPC METHODS (slash patterns) ---
+/proc/seH
+/self/moH
+/dev/nulH
+/self/seL
+/etc/locH
+/dev/urandom
+/o/O
+--- URLS ---
+HEADERSUpgradeTrailer flags= len=%d (conn) %v=%v,GODEBUGtrailer:status:method:schemehttp://chunkednosniffCreatedIM Usedunknowncode_%dcharsetmessagegrpcwebrequestproc_%dVerbose%sError19531259765625uintptrSwapperChanDir using , type= Value>Convert:eventsforcegcallocmWcpuprofallocmRgctraceIO waitsyscallwaitingforevernetworkUNKNOWNcleanup, goid=  mark  s=nil
+name is not in canonical format (it must end with a .)bytes.Buffer: reader returned negative count from Readcryptobyte: Builder is exceeding its fixed-size buffertls: server resumed a session with a different versiontls: server accepted 0-RTT with the wrong cipher suitetls: certificate used with invalid signature algorithmx509: cannot verify signature: algorithm unimplementedx509: invalid RDNSequence: invalid attribute value: %sURI with IP (%q) cannot be matched against constraintsindent may only be composed of space or tab charactersunknown field number %d while unmarshalling GoFeaturesunknown field number %d while unmarshalling FeatureSetfield %v has invalid type: got %v, want interface kindinternal error: negative process handle reference counthttp2: server: error reading preface from client %v: %vinternal error: can only be writing one frame at a timereflect: internal error: invalid use of makeMethodValuereflect.FuncOf: last arg of variadic func must be sliceeach colon-separated field must have at least one digitmheap.freeSpanLocked - invalid free of user arena chunkcasfrom_Gscanstatus:top gp->status is not in scan statetls: internal error: handshake should have had a resulttls: server sent non-zero legacy TLS compression methodbufio.Scanner: SplitFunc returns negative advance countrequest header li
+[L4-run] srw------- 1 root root 0 Aug 29 12:49 /tmp/me.sock
+===LOG===
+{"level":"info","ts":"2026-08-29T12:49:19.143Z","msg":"authentication enabled","app":"sandbox-init"}
+{"level":"info","ts":"2026-08-29T12:49:19.143Z","msg":"sandbox-init listening","app":"sandbox-init","socket":"/tmp/me.sock"}
+===PS===
+vercel-+      30  0.0  0.0   4292  3404 ?        S    12:49   0:00 sh -c sudo /run/vercel/share/sandbox-init -socket /tmp/me.sock -pubkey i0LREDAQy/qxuiZbECJEbY12v1cvoHbHzg3OETJq7LA= >/tmp/si.log 2>&1 & sleep 2; ls -la /tmp/me.sock 2>&1; echo ===LOG===; cat /tmp/si.log 2>&1 | head -5; echo ===PS===; ps aux 2>&1 | grep -i "me.sock" | head -3; echo ===NET===; sudo cat /proc/net/tcp 2>/dev/null | head -8; sudo pkill -f "me.sock" 2>/dev/null; echo L4_DONE
+root          31  0.0  0.1  16308  7400 ?        S    12:49   0:00 sudo /run/vercel/share/sandbox-init -socket /tmp/me.sock -pubkey i0LREDAQy/qxuiZbECJEbY12v1cvoHbHzg3OETJq7LA=
+root          34  0.0  0.1 1234512 8212 ?        Sl   12:49   0:00 /run/vercel/share/sandbox-init -socket /tmp/me.sock -pubkey i0LREDAQy/qxuiZbECJEbY12v1cvoHbHzg3OETJq7LA=
+===NET===
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+
+=== G7 DONE ===

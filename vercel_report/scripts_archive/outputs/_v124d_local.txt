@@ -1,0 +1,80 @@
+[1788165157.044] mount vda ret=0
+[1788165157.045] payload written to COW 8463 bytes
+
+[1788165157.062] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=ca139266-48ef-479d-8084-eb9961d2e37f-snapshot
+
+[1788165157.069] Create v124b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\x15\n\x92(\n\x05v124b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x91&\n6types.containerd.'
+
+[1788165157.145] Tasks/Create v124b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\n\n\x05v124b\x10\x90\x05'
+
+[1788165157.158] Tasks/Start v124b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\x90\x05'
+
+[1788165157.460] --- COW v124c.out @1s +212 ---
+[1788165157.2] === P1 read celld ===
+[1788165157.3] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165157.3] === P2 locate descriptors ===
+elld 36447264 bytes
+[1788165157.3] === P2 locate descriptors ===
+
+
+[1788165158.063] --- COW v124c.out @3s +250 ---
+[1788165157.2] === P1 read celld ===
+[1788165157.3] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165157.3] === P2 locate descriptors ===
+[1788165157.9] proto names found: 123
+ P2 locate descriptors ===
+[1788165157.9] proto names found: 123
+
+
+[1788165158.965] --- COW v124c.out @6s +340 ---
+[1788165157.2] === P1 read celld ===
+[1788165157.3] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165157.3] === P2 locate descriptors ===
+[1788165157.9] proto names found: 123
+[1788165158.8] parsed files=0 cell files=[]
+[1788165158.8] V124C_DONE
+165158.8] parsed files=0 cell files=[]
+[1788165158.8] V124C_DONE
+CHROOT_RC=0
+V99_END
+
+
+[1788165158.986] kill v124b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+
+[1788165158.986] V99M_DONE
+
+[1788165157.044] mount vda ret=0
+[1788165157.045] payload written to COW 8463 bytes
+[1788165157.062] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=ca139266-48ef-479d-8084-eb9961d2e37f-snapshot
+[1788165157.069] Create v124b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\x15\n\x92(\n\x05v124b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x91&\n6types.containerd.'
+[1788165157.145] Tasks/Create v124b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\n\n\x05v124b\x10\x90\x05'
+[1788165157.158] Tasks/Start v124b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\x90\x05'
+[1788165157.460] --- COW v124c.out @1s +212 ---
+[1788165157.2] === P1 read celld ===
+[1788165157.3] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165157.3] === P2 locate descriptors ===
+elld 36447264 bytes
+[1788165157.3] === P2 locate descriptors ===
+
+[1788165158.063] --- COW v124c.out @3s +250 ---
+[1788165157.2] === P1 read celld ===
+[1788165157.3] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165157.3] === P2 locate descriptors ===
+[1788165157.9] proto names found: 123
+ P2 locate descriptors ===
+[1788165157.9] proto names found: 123
+
+[1788165158.965] --- COW v124c.out @6s +340 ---
+[1788165157.2] === P1 read celld ===
+[1788165157.3] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165157.3] === P2 locate descriptors ===
+[1788165157.9] proto names found: 123
+[1788165158.8] parsed files=0 cell files=[]
+[1788165158.8] V124C_DONE
+165158.8] parsed files=0 cell files=[]
+[1788165158.8] V124C_DONE
+CHROOT_RC=0
+V99_END
+
+[1788165158.986] kill v124b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788165158.986] V99M_DONE

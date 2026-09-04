@@ -1,0 +1,8 @@
+init: 200 ['NameCallback', 'PasswordCallback']
+login: 200 token: H_4retvGeWNk8wZgWwFFXiS65t8.*AAJTSQACMDIAAlNLABxhZ0xrc2R6SzV
+/am/json/realms/root/realms/alpha/sessions?_action=getSessionInfo                     -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+/am/json/realms/root/realms/alpha/users?_queryFilter=true                             -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+/am/json/realms/root/realms/alpha/users/self                                          -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+/am/json/realms/root/realms/alpha/groups?_queryFilter=true                            -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+/am/json/realms/root/realms/alpha/applications?_queryFilter=true                      -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+/iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants?pageSize=5           -> 400 {"message":"Missing access token"}

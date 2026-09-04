@@ -1,0 +1,7 @@
+{"command":{"id":"cmd_1b4ae6d44b9349538f228ba597af","name":"sh","args":["-c","sudo -n mkdir -p /mnt/vdax; sudo -n mount /dev/vda /mnt/vdax 2>&1; ls -la /mnt/vdax/root/ 2>&1 | head -20; echo ===C===; sudo -n cat /mnt/vdax/root/v52c.out 2>&1; echo ===M===; sudo -n cat /mnt/vdax/root/v52m.out 2>&1"],"cwd":"/vercel/sandbox","sessionId":"sbx_dtDkJcj0J8QStbYJuIAK6iP9sHmZ","startedAt":1788142304899,"exitCode":null}}
+{"data":"total 0\ndr-xr-x---.  2 root root   6 Jan 30  2023 .\ndrwxr-xr-x  18 root root 239 Aug 31 02:09 ..\n","stream":"stdout"}
+{"data":"===C===\n","stream":"stdout"}
+{"data":"cat: /mnt/vdax/root/v52c.out: No such file or directory\n","stream":"stdout"}
+{"data":"===M===\n","stream":"stdout"}
+{"data":"cat: /mnt/vdax/root/v52m.out: No such file or directory\n","stream":"stdout"}
+{"command":{"id":"cmd_1b4ae6d44b9349538f228ba597af","name":"sh","args":["-c","sudo -n mkdir -p /mnt/vdax; sudo -n mount /dev/vda /mnt/vdax 2>&1; ls -la /mnt/vdax/root/ 2>&1 | head -20; echo ===C===; sudo -n cat /mnt/vdax/root/v52c.out 2>&1; echo ===M===; sudo -n cat /mnt/vdax/root/v52m.out 2>&1"],"cwd":"/vercel/sandbox","sessionId":"sbx_dtDkJcj0J8QStbYJuIAK6iP9sHmZ","startedAt":1788142304899,"exitCode":1,"durationMs":77}}

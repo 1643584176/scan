@@ -1,0 +1,116 @@
+[1788226017.834] mount vda ret=0
+[1788226017.835] payload written to COW 9704 bytes
+[1788226017.876] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=255b04e4-e765-4c99-9e6d-d1a14663fe9b-snapshot
+[1788226017.885] Create v165b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\
+\\x94(\
+\\x05v165b\\x1a\\x87\\x01977805900165.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788226017.962] Tasks/Create v165b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v165b\\x10\\x91\\x05'
+[1788226017.973] Tasks/Start v165b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x91\\x05'
+[1788226018.274] --- COW v165c.out @1s +344 ---
+[1788226018.0] === 1 create yes ===
+[1788226018.1] Create yes -> HTTP/1.1 200 OK b'{"containerId":"bfc48407-8f05-4c1b-ae02-1d3f2c723a80"}'
+[1788226018.1] cid=bfc48407-8f05-4c1b-ae02-1d3f2c723a80
+[1788226018.1] Start -> HTTP/1.1 200 OK b'{}'
+
+[1788226019.175] --- COW v165c.out @4s +4006 ---
+[1788226019.1] !!! YES pid=690 cmd=/usr/bin/coreutils --coreutils-prog-shebang=yes /usr/bin/yes 
+[1788226019.1] R /.dockerenv
+[1788226019.1] R /bin
+[1788226019.1] R /boot
+[1788226019.1] R /dev
+[1788226019.1] R /etc
+[1788226019.1] R /home
+[1788226019.1] R /lib
+[1788226019.1] R /lib64
+[1788226019.1] R /local
+[1788226019.1] R /media
+[1788226019.1] R /mnt
+[1788226019.1] R /opt
+[1788226019.1] R /proc
+[1788226019.1] R /root
+[1788226019.1] R /run
+[1788226019.1] R /sbin
+[1788226019.1] R /srv
+[1788226019.1] R /sys
+[1788226019.1] R /tmp
+[1788226019.1] R /usr
+[1788226019.1] R /var
+[1788226019.1] R /vercel
+[1788226019.1] MI 115 67 254:16 / / rw,relatime - xfs /dev/vdb rw,nouuid,inode64,logbufs=8,logbsize=32k,noquota
+[1788226019.1] MI 117 115 0:41 / /proc rw,relatime - proc proc rw
+[1788226019.1] MI 118 115 0:6 / /dev rw,relatime - devtmpfs devtmpfs rw,size=2190712k,nr_inodes=547678,mode=755
+[1788226019.1] MI 119 118 0:42 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,gid=5,mode=620,ptmxmode=666
+[1788226019.1] MI 120 118 0:43 / /dev/shm rw,nosuid,nodev,noexec,relatime - tmpfs shm rw,size=65536k
+[1788226019.1] MI 121 118 0:38 / /dev/mqueue rw,nosuid,nodev,noexec,relatime - mqueue mqueue rw
+[1788226019.1] MI 122 115 0:20 / /sys rw,nosuid,nodev,noexec,relatime - sysfs sysfs rw
+[1788226019.1] MI 123 122 0:21 /container/bfc48407-8f05-4c1b-ae02-1d3f2c723a80 /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - cgroup2 cgroup rw
+[1788226019.1] MI 124 115 254:0 /etc/hosts /etc/hosts ro,relatime - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+[1788226019.1] MI 125 115 254:0 /etc/resolv.conf /etc/resolv.conf ro,relatime - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+[1788226019.1] MI 126 115 254:0 /run/cell/ca-cert.pem /etc/pki/ca-trust/source/anchors/vercel-proxy-ca.pem ro,relatime - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+[1788226019.1] MI 127 115 254:0 /run/cell/ca-cert.pem /usr/local/share/ca-certificates/vercel-proxy-ca.crt ro,relatime - xfs /dev/root rw,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota
+[1788226019.1] MI 70 117 0:6 /null /proc/kcore rw,relatime - devtmpfs devtmpfs rw,size=2190712k,nr_inodes=547678,mode=755
+[1788226019.1] MI 83 117 0:6 /null /proc/keys rw,relatime - devtmpfs devtmpfs rw,size=2190712k,nr_inodes=547678,mode=755
+[1788226019.1] ST PPid:\t1
+[1788226019.1] ST Uid:\t1000\t1000\t1000\t1000
+[1788226019.1] ST Gid:\t1000\t1000\t1000\t1000
+[1788226019.1] ST NSpid:\t690\t1
+[1788226019.1] ST CapEff:\t000001ffffffffff
+[1788226019.1] ST CapBnd:\t000001ffffffffff
+[1788226019.1] ST NoNewPrivs:\t0
+[1788226019.1] ST Seccomp:\t2
+[1788226019.1] ENV PATH=/vercel/runtimes/node22/bin:/home/vercel-sandbox/.global/pnpm/bin:/home/vercel-sandbox/.global/npm/bin:/vercel/runtimes/node22/bin:/vercel/bin:/opt/git/bin:/home/vercel-sandbox/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOME=/home/vercel-sandbox
+[1788226019.1] CWD /
+[1788226019.1] NS pid pid:[4026532101]
+[1788226019.1] NS mnt mnt:[4026532098]
+[1788226019.1] NS net net:[4026531833]
+[1788226019.1] NS uts uts:[4026532099]
+[1788226019.1] NS ipc ipc:[4026532100]
+[1788226019.1] NS user user:[4026531837]
+[1788226019.1] CG 0::/container/bfc48407-8f05-4c1b-ae02-1d3f2c723a80
+[1788226019.1] === 2 exec+find ===
+[1788226019.1] write Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_37c1e1a5b5f84129a13a6a75413"}'
+26019.1] NS uts uts:[4026532099]
+[1788226020.076] --- COW v165c.out @7s +4038 ---
+[1788226020.1] === 3 stream ===
+[1788226020.376] --- COW v165c.out @8s +4649 ---
+[1788226020.1] StreamOutput s=0 -> HTTP/1.1 200 OK gs= len=75 body=b'0\\r\
+Grpc-Message: only stdout or stderr can be requested\\r\
+Grpc-Status: 3\\r\
+\\r\
+'
+[1788226020.1] StreamOutput s=1 -> HTTP/1.1 200 OK gs= len=83 body=b'0\\r\
+Grpc-Message: container output must be attached before start\\r\
+Grpc-Status: 9\\r\
+[1788226020.1] StreamOutput s=2 -> HTTP/1.1 200 OK gs= len=83 body=b'0\\r\
+[1788226020.1] === 4 mount live ===
+[1788226020.1] mkdir Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_de000c929b2f4f329a56fbbefbc"}'
+-Status: 9\\r\
+[1788226020.677] --- COW v165c.out @9s +5963 ---
+[1788226020.6] Mount {'bind': {'source': '/tmp', 'destination': '/tmp/v165mnt', 'mode': 'MOUNT_MODE_READ_WRITE'}} -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788226020.6] Mount {'bind': {'source': '/etc', 'destination': '/tmp/v165mnt', 'mode': 'MOUNT_MODE_READ_WRITE'}} -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788226020.6] Mount {'tmpfs': {'destination': '/tmp/v165mnt', 'mode': 'MOUNT_MODE_READ_WRITE'}} -> HTTP/1.1 400 Bad Request invalid mount: missing mount size
+[1788226020.6] === 5 drive proto ===
+[1788226020.7] mount.proto at 0x16dd543
+[1788226020.7] MountTypeDrive ref at 0x16dd6e1
+[1788226020.7] MountTypeDrive def at 0x16dd6df
+[1788226020.7] DRV b'\
+\\x0eMountTypeDrive\\x12\\x16\
+\\x06source\\x18\\x01 \\x01(\\tR\\x06source\\x12 \
+\\x0bdestination\\x18\\x02 \\x01(\\tR\\x0bdestination\\x123\
+\\x04mode\\x18\\x03 \\x01(\\x0e2\\x1f.vercel.hive.types.v1.MountModeR\\x04mode"Y\
+\\x0eMountTypeTmpfs\\x12 \
+\\x0bdestination\\x18\\x01 \\x01(\\tR\\x0bdestination\\x12%\
+\\x0esize_megabytes\\x18\\x02 \\x01(\\x04R\\rsizeMegabytes"\\xd1\\x02\
+\\x05Mount\\x129\
+\\x04bind\\x18\\x01 \\x01(\\x0b2#.verc...[TRUNC 1136]
+[1788226020.7] V165_DONE
+0eMountTypeDrive\\x12\\x16\
+[1788226020.708] kill v165b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788226020.710] V99M_DONE
+CHROOT_RC=0
+V99_END

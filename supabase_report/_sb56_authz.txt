@@ -1,0 +1,8 @@
+### [authorize-2] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit (0.8s)
+200 | {"user_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","user_role":{"role":"postgres","expires_at":1788514905}}
+### [authorize-ip2] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit (0.9s)
+200 | {"user_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","user_role":{"role":"postgres","expires_at":1788514905}}
+### [authorize-other-role] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit (0.8s)
+403 | {"message":"Unauthorized to assume role"}
+### [authorize-no-rhost] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit (0.9s)
+400 | {"message":"rhost: Invalid input"}

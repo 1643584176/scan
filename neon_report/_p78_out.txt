@@ -1,0 +1,17 @@
+total paths in bat: 212
+=== 相关路径(14) ===
+/agentic_provisioning/account_requests/${encodeURIComponent(t)}/${encodeURIComponent(n)}
+/agentic_provisioning/account_requests/${encodeURIComponent(t)}/${encodeURIComponent(n)}/approve
+/ai_gateway/resolve_identity
+/projects/${encodeURIComponent(t)}/auth/oauth_providers
+/projects/${encodeURIComponent(t)}/auth/oauth_providers/${encodeURIComponent(n)}
+/projects/${encodeURIComponent(t)}/branches/${encodeURIComponent(n)}/auth/oauth_providers
+/projects/${encodeURIComponent(t)}/branches/${encodeURIComponent(n)}/auth/oauth_providers/${encodeURIComponent(r)}
+/projects/${encodeURIComponent(t)}/branches/${encodeURIComponent(n)}/credentials
+/projects/${encodeURIComponent(t)}/branches/${encodeURIComponent(n)}/credentials/${encodeURIComponent(r)}
+/projects/${encodeURIComponent(t)}/branches/${encodeURIComponent(n)}/databases
+/projects/${encodeURIComponent(t)}/branches/${encodeURIComponent(n)}/databases/${encodeURIComponent(r)}
+/users/me/mfa/passkey/credentials
+/users/me/mfa/passkey/credentials/${encodeURIComponent(t)}/removal
+/users/me/mfa/passkey/credentials/${encodeURIComponent(t)}/removal/challenge
+arrow-field methods: 305, method-style: 0

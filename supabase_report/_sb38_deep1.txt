@@ -1,0 +1,14 @@
+### [settings] (2.0s)
+201 | [{"name":"data_directory","setting":"/data/pgdata","source":"override"},{"name":"dynamic_library_path","setting":"$libdir","source":"default"},{"name":"huge_pages","setting":"try","source":"default"},{"name":"log_min_duration_statement","setting":"-1","source":"default"},{"name":"log_statement","setting":"ddl","source":"configuration file"},{"name":"password_encryption","setting":"scram-sha-256","source":"configuration file"},{"name":"session_preload_libraries","setting":"supautils","source":"configuration file"},{"name":"shared_preload_libraries","setting":"pg_stat_statements, pgaudit, plpgsql, plpgsql_check, pg_cron, pg_net, pgsodium, auto_explain, pg_tle, plan_filter, supabase_vault","source":"configuration file"},{"name":"ssl","setting":"on","source":"configuration file"}]
+### [authid-acl] (1.9s)
+201 | [{"relname":"pg_authid","owner":"supabase_admin","relacl":"{supabase_admin=arwdDxtm/supabase_admin}"},{"relname":"pg_roles","owner":"supabase_admin","relacl":"{supabase_admin=arwdDxtm/supabase_admin,=r/supabase_admin}"},{"relname":"pg_shadow","owner":"supabase_admin","relacl":"{supabase_admin=arwdDxtm/supabase_admin}"},{"relname":"pg_user","owner":"supabase_admin","relacl":"{supabase_admin=arwdDxtm/supabase_admin,=r/supabase_admin}"}]
+### [authid-full] (2.0s)
+201 | [{"rolname":"supabase_read_only_user","rolpassword":"SCRAM-SHA-256$4096:gv8ZEHTYf4OsdNUXfhxhPA==$gu4zc3Tgj5Q0qcApMmDNQSNOWq3lQAk8TAc23HVMPbg=:Oya2VIQqnVq7GqOqFKkm0Wpth9ScZcNvaBHhfPtLcb4="}]
+### [pss-count] (1.7s)
+201 | [{"n":664,"mc":1}]
+### [auth-migr] (1.8s)
+400 | {"message":"Failed to run sql query: ERROR:  42703: column \"id\" does not exist\nLINE 1: select 'auth' src, version from auth.schema_migrations order by id desc limit 3;\n                                                                        ^\n"}
+### [stor-migr] (1.7s)
+400 | {"message":"Failed to run sql query: ERROR:  42P01: relation \"storage.schema_migrations\" does not exist\nLINE 1: select 'storage' src, version from storage.schema_migrations order by id desc limit 3;\n                                           ^\n"}
+### [pgsodium-keys] (2.4s)
+400 | {"message":"Failed to run sql query: ERROR:  42P01: relation \"pgsodium.key\" does not exist\nLINE 1: select id, name, status, key_type, length(decrypted_key) keylen from pgsodium.key;\n                                                                             ^\n"}

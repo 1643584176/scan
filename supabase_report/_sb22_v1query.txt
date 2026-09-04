@@ -1,0 +1,12 @@
+### [v1-query-ro] POST /v1/projects/vnfobbywemqgcgjokkxd/database/query (1.8s)
+201 | [{"current_user":"supabase_read_only_user","version":"PostgreSQL 17.6 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 15.2.0, 64-bit"}]
+### [v1-query-ro2] POST /v1/projects/vnfobbywemqgcgjokkxd/database/query/read-only (1.7s)
+201 | [{"current_user":"supabase_read_only_user"}]
+### [conn-probe] GET /platform/pg-meta/vnfobbywemqgcgjokkxd/connection (0.7s)
+404 | {"message":"Cannot GET /platform/pg-meta/vnfobbywemqgcgjokkxd/connection"}
+### [conn-probe] GET /platform/projects/vnfobbywemqgcgjokkxd/connection-string (0.7s)
+404 | {"message":"Cannot GET /platform/projects/vnfobbywemqgcgjokkxd/connection-string"}
+### [conn-probe] GET /platform/projects/vnfobbywemqgcgjokkxd/connection (0.7s)
+404 | {"message":"Cannot GET /platform/projects/vnfobbywemqgcgjokkxd/connection"}
+### [conn-probe] GET /platform/projects/vnfobbywemqgcgjokkxd/database/connection (0.7s)
+404 | {"message":"Cannot GET /platform/projects/vnfobbywemqgcgjokkxd/database/connection"}

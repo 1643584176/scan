@@ -1,0 +1,7 @@
+[create l36d] -> 200
+[before-patch] networkPolicy = {"mode": "custom", "allowedDomains": ["sbx-echo-e29ca9cb.vercel.app"]}
+[orig-inj] -> NOXORIG 
+[patch np-only] -> 200 | {"sandbox":{"name":"l36d","currentSessionId":"sbx_Msy3YVrcC3b3LA2KxEMKBzwv34zg","status":"running","statusUpdatedAt":1788056874301,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"mem
+[after-patch] networkPolicy = {"mode": "custom", "allowedDomains": ["httpbin.org"]}
+[dyn-inj] -> NOXDYN 
+DONE

@@ -1,0 +1,28 @@
+=== 1 setup ===
+cid=4b7b20d6-36dc-4661-8f75-75a0287ba2b9
+yes pid=689
+CTR /dev: autofs console cpu cpu_dma_latency cuse fd full fuse hwrng kmsg loop-control loop0 loop1 loop2 loop3 loop4 loop5 loop6 loop7 mem mqueue net null port ptmx ptp0 pts random shm snapshot stderr stdin stdout tty tty0 tty1 tty10 tty11 tty12 tty13
+CTR root: .dockerenv bin boot dev etc home lib lib64 local media mnt opt proc root run sbin srv sys tmp usr var vercel
+=== 2 mount bind ===
+Mount /etc/hostname -> /tmp/m1 -> HTTP/1.1 200 OK b'{}'
+VERIFY /tmp/m1 MISSING
+Mount /proc/1/root/etc/hostname -> /tmp/m2 -> HTTP/1.1 200 OK b'{}'
+VERIFY /tmp/m2 MISSING
+Mount /etc/shadow -> /tmp/m3 -> HTTP/1.1 200 OK b'{}'
+VERIFY /tmp/m3 MISSING
+Mount /dev/vda -> /mnt/host1 -> HTTP/1.1 200 OK b'{}'
+VERIFY /mnt/host1 MISSING
+Mount /run/containerd/containerd.sock -> /tmp/m4 -> HTTP/1.1 200 OK b'{}'
+VERIFY /tmp/m4 MISSING
+Mount tmpfs -> HTTP/1.1 200 OK b'{}'
+VERIFY tmpfs exists=False
+=== 3 ctr mount vda ===
+CTR /dev/vda exists=True
+=== 4 host files ===
+FILE /proc/1/root/opt/vercel/celld-init.sh (1295):
+FILE /proc/1/root/var/run/cell/ca-cert.pem (635):
+RUNCCFG 0ed423c8-b31a-4ce7-a325-57cbb9fb86b5 (10115):
+SBC EXC [Errno 2] No such file or directory: '/proc/537/exe'
+=== 5 methods ===
+METHODS(8): vercel.hive.cell.api.containers.v1.ContainersService/Exec vercel.hive.cell.api.containers.v1.ContainersService/Wait vercel.hive.cell.api.containers.v1.ContainersService/KillServer vercel.hive.cell.api.containers.v1.ContainersService/Start vercel.hive.cell.api.containers.v1.ContainersService/Stdin vercel.hive.cell.api.containers.v1.ContainersService/MountNo vercel.hive.cell.api.containe
+V176_DONE

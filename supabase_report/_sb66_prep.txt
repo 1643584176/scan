@@ -1,0 +1,7 @@
+### [mk-rls-tbl]
+201 | []
+### [signup-B] POST /auth/v1/signup ERR The read operation timed out
+### [confirm-B]
+201 | []
+### [grant-B] POST /auth/v1/token?grant_type=password (7.2s)
+400 | {"code":400,"error_code":"invalid_credentials","msg":"Invalid login credentials"}

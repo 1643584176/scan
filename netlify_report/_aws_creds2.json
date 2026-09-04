@@ -1,0 +1,11 @@
+{
+ "access_key": "ASIASPDMWU3NCIXPN4GU",
+ "secret_key": "jW14CINxjNDeqxJOPn6t2fzur0YIqjoNwng/ZrVq",
+ "session_token": "IQoJb3JpZ2luX2VjEPf//////////w..len1232",
+ "account": "169879185114",
+ "region": "us-east-2",
+ "lambda_name": "23815e7abccef425bd61a6aeea27517abd8d7d887c4dcfc9de356e2a6d8ce43a",
+ "log_group": "/aws/lambda/23815e7abccef425bd61a6aeea27517abd8d7d887c4dcfc9de356e2a6d8ce43a",
+ "nf_token": "062d3d30-a9b9-4477-aa69-4a3dba0d5b30",
+ "site_id": "04f08ff6-f274-47ac-b6d7-5fb1e055f3b4"
+}

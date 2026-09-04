@@ -1,0 +1,15 @@
+=== 1. PKCE 授权码流 ===
+fr:iga:* -> OK scopes=['openid', 'fr:iga:*']
+
+=== 2. IGA 端点复查(新 token) ===
+GET   /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants?pageSize=1 -> 200  {"result":[{"compositeId":"849b1c957d72411019af8903854cb15440cb66c849538804e44bd953220eec7571d30d74dc1b2dfe66f7a6a34b29875443ad070ebe96fbddcf6800ae7e4ba571","item":{"type":"user"},"keys":{"type":"user","userId":"db3d6356-61a0-4684-9eaa-c1353dfa44d9"}
+GET   /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests?_pageSiz -> 200  {"result":[],"searchAfterKey":null,"totalCount":0,"resultCount":0}
+
+=== 3. 写操作测试 ===
+PATCH /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9                   -> 404  <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>Error</title> </head> <body> <pre>Cannot PATCH /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9</pre> </body> </html> 
+PATCH /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9                   -> 404  <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>Error</title> </head> <body> <pre>Cannot PATCH /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9</pre> </body> </html> 
+PATCH /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9                   -> 404  <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>Error</title> </head> <body> <pre>Cannot PATCH /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9</pre> </body> </html> 
+PATCH /openidm/managed/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9                  -> 403  
+PATCH /openidm/managed/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9                  -> 403  
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants            -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests          -> 400  {"message":"Invalid request _action."}

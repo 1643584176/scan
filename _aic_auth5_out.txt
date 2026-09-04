@@ -1,0 +1,19 @@
+=== 1. POST idFromSession(拿自己 id) ===
+200 {"id":"db3d6356-61a0-4684-9eaa-c1353dfa44d9","realm":"/alpha","dn":"id=db3d6356-61a0-4684-9eaa-c1353dfa44d9,ou=user,o=alpha,ou=services,ou=am-config","successURL":"/enduser/?realm=/alpha","fullLoginUR
+
+=== 2. 查询边界:自己 vs 他人 ===
+_queryFilter=mail+eq+%221643584176%40qq.com%22                         -> 200 {"result":[],"resultCount":0,"pagedResultsCookie":null,"totalPagedResultsPolicy":"NONE","totalPagedResults":-1,"remainingPagedResults":-1}
+_queryFilter=mail+eq+%221643584176%40wearehackerone.com%22             -> 200 {"result":[],"resultCount":0,"pagedResultsCookie":null,"totalPagedResultsPolicy":"NONE","totalPagedResults":-1,"remainingPagedResults":-1}
+_queryFilter=userName+eq+%22researcher1643%22                          -> 200 {"result":[],"resultCount":0,"pagedResultsCookie":null,"totalPagedResultsPolicy":"NONE","totalPagedResults":-1,"remainingPagedResults":-1}
+
+=== 3. sessions POST ===
+getSessionInfo       -> 501 {"code":501,"reason":"Not Implemented","message":"Action not implemented for this resource"}
+logout               -> 200 {"result":"Successfully logged out"}
+
+=== 4. 匿名复核 kba / 其他 selfservice ===
+/am/json/realms/alpha/selfservice/kba                                       -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+/am/json/realms/alpha/selfservice                                           -> 404 {"code":404,"reason":"Not Found","message":"Resource 'selfservice' not found"}
+/am/json/realms/alpha/selfservice/registration                              -> 404 {"code":404,"reason":"Not Found","message":"Resource 'selfservice/registration' not found"}
+/am/json/realms/alpha/users?_queryFilter=true                               -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+/am/json/realms/alpha/applications?_queryFilter=true                        -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+/am/json/realms/alpha/sessions?_queryFilter=true                            -> 401 {"code":401,"reason":"Unauthorized","message":"Access Denied"}

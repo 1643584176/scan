@@ -1,0 +1,12 @@
+[domains] http=200
+  domain: pccp-sandbox-lab.vercel.app verified: True
+resumed sid: sbx_T9pi6h8BgaCYl3xOxyIedzYJMCGR
+[W1-mydomain] MY_CODE:404
+
+[W2-direct] DIRECT_CODE:000
+
+[W3-api] API_CODE:308
+
+[W4-v0] V0_CODE:200
+
+=== VHOST2 DONE ===

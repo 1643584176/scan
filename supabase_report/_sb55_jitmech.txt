@@ -1,0 +1,10 @@
+### [authorize-pg] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit (1.1s)
+403 | {"message":"Unauthorized to assume role"}
+### [put-postgres] PUT /v1/projects/vnfobbywemqgcgjokkxd/database/jit (1.8s)
+200 | {"user_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","user_roles":[{"role":"postgres","expires_at":1788514905}]}
+### [get-self] GET /v1/projects/vnfobbywemqgcgjokkxd/database/jit (0.8s)
+200 | {"user_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","user_roles":[{"role":"postgres","expires_at":1788514905}]}
+### [db-roles-jit] (1.9s)
+201 | [{"rolname":"authenticated","rolsuper":false,"rolcanlogin":false,"rolvaliduntil":null},{"rolname":"authenticator","rolsuper":false,"rolcanlogin":true,"rolvaliduntil":null},{"rolname":"supabase_auth_admin","rolsuper":false,"rolcanlogin":true,"rolvaliduntil":null}]
+### [db-objs-jit] (1.7s)
+201 | []

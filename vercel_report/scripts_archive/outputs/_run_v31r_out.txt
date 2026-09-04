@@ -1,0 +1,128 @@
+[create] -> 200
+sid = sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi
+mknod: 200 {"command":{"id":"cmd_6dc4db672eda4ba4850553ba0922","name":"sh","args":["-c","mknod /dev/vda b 254 0 2>/dev/null; ls -la /dev/vda"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","star
+mkdir: 200
+inject: 200
+verify: 200 {"command":{"id":"cmd_d8fcc7e3da014604a9afae3969dd","name":"sh","args":["-c","ls -la /vercel/sandbox/"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066688684,"exitCo
+kick: 200 {"command":{"id":"cmd_79c358bd93c94063b2a7dd044642","name":"sh","args":["-c","nohup python3 /vercel/sandbox/vda31_ctrd_fast_guest.py > /tmp/v31r_stdou
+wait r0 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_e2cac9e7138e41acb35ccd4f228c","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066696396,"exitCode":0,"durationMs":2}}
+
+wait r1 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_48a6c1429e04485b9d287ba60583","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066702415,"exitCode":0,"durationMs":1}}
+
+wait r2 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_4292a5ae0629405cb0ba8e2b3b3f","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066708851,"exitCode":0,"durationMs":1}}
+
+wait r3 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_3b324c92cab345fea188da973084","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066715178,"exitCode":0,"durationMs":2}}
+
+wait r4 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_c94fc6af832b4fff98863ef0323d","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066721576,"exitCode":0,"durationMs":1}}
+
+wait r5 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_1880a73916e5482da0dadff0278f","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066728104,"exitCode":0,"durationMs":1}}
+
+wait r6 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_57dc2673135e43d49e49bb424868","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066734529,"exitCode":0,"durationMs":1}}
+
+wait r7 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_7d835fa82ed146628cee10283e36","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066740830,"exitCode":0,"durationMs":1}}
+
+wait r8 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_c94224493b614536a2a03cb4282b","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066747491,"exitCode":0,"durationMs":2}}
+
+wait r9 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_a2e87c491b6948cabac233f05965","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066753481,"exitCode":0,"durationMs":2}}
+
+wait r10 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_279f9f5ceb574dd1ab3fcd1cde54","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066759570,"exitCode":0,"durationMs":1}}
+
+wait r11 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_532849f55f64454180ff6af2aed9","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066766487,"exitCode":0,"durationMs":1}}
+
+wait r12 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_26ffa1e184234e3292999a6c3b8d","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066772973,"exitCode":0,"durationMs":2}}
+
+wait r13 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_8e363e5b018445af94d3c04b2ee7","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066779458,"exitCode":0,"durationMs":1}}
+
+wait r14 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_283ee5f2ffb84a109c002df393bc","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066785867,"exitCode":0,"durationMs":2}}
+
+wait r15 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_4d5d2d7cc7464a319b2bca1cba2a","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066792540,"exitCode":0,"durationMs":2}}
+
+wait r16 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_5c9a55bf2d1d44329840fee0dc06","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066798628,"exitCode":0,"durationMs":1}}
+
+wait r17 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_c82638a5e19d47dcb0c3b698ef10","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066805112,"exitCode":0,"durationMs":2}}
+
+wait r18 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_7ca83c558c9f4e93b95f6286c8c2","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066811354,"exitCode":0,"durationMs":1}}
+
+wait r19 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_48125328283e43cb8202c226cbaa","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066817622,"exitCode":0,"durationMs":2}}
+
+wait r20 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_6c66c18dec304c65a36ee640fc14","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066824011,"exitCode":0,"durationMs":1}}
+
+wait r21 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_fc9152b71dd145e384b1cdabcb6a","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066830826,"exitCode":0,"durationMs":2}}
+
+wait r22 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_658667ae749a4c01928d31c8edf8","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066837448,"exitCode":0,"durationMs":2}}
+
+wait r23 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_8121805a062a4417a75ac001bc38","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066843954,"exitCode":0,"durationMs":1}}
+
+wait r24 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_7795b040ced5442f9989515f76c7","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066850685,"exitCode":0,"durationMs":1}}
+
+wait r25 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_6928c8a4366f47cbac0ca7b77742","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066857528,"exitCode":0,"durationMs":1}}
+
+wait r26 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_4821364a98954af5b4d84d67ba6e","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066864126,"exitCode":0,"durationMs":2}}
+
+wait r27 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_ea832e190d8047fc970af1f37b44","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066870501,"exitCode":0,"durationMs":2}}
+
+wait r28 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_1efc044759794e8b9514cda0106e","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066877050,"exitCode":0,"durationMs":1}}
+
+wait r29 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_9718692c40214752a92795f3675c","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066883405,"exitCode":0,"durationMs":2}}
+
+wait r30 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_6928783155be4f1ebb858214f5d8","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066890083,"exitCode":0,"durationMs":3}}
+
+wait r31 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_f7d0527723db49558f0dcfd7a880","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066896643,"exitCode":0,"durationMs":1}}
+
+wait r32 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_57d32bbe7acc453e9ad7e3f53a92","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066903036,"exitCode":0,"durationMs":2}}
+
+wait r33 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_297c3457164c4ed5b170c7ee1ae2","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066909742,"exitCode":0,"durationMs":3}}
+
+wait r34 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_27382c1063224c6bac2c8ffc4671","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066916327,"exitCode":0,"durationMs":6}}
+
+wait r35 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_c8a34974f36643eab3b1b9e1268b","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066923071,"exitCode":0,"durationMs":3}}
+
+wait r36 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_6524b1edfab3438baacb59714716","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066929713,"exitCode":0,"durationMs":2}}
+
+wait r37 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_17a5dedfb517435d95a124f4e1a3","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066936091,"exitCode":0,"durationMs":2}}
+
+wait r38 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_fcaddb73ff344d89b742e5f2b741","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066942744,"exitCode":0,"durationMs":1}}
+
+wait r39 status=200 | eate === ","stream":"stdout"}
+{"command":{"id":"cmd_b95da29e5b9147dc9ebea48c7126","name":"cat","args":["/vercel/sandbox/v31r.out"],"cwd":"/vercel","sessionId":"sbx_m4vdEDuU3WqTQNyp6Jt76LQoI2hi","startedAt":1788066949057,"exitCode":0,"durationMs":2}}
+
+CLEANED

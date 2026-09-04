@@ -1,0 +1,22 @@
+===== prod_chunks/index-LpJ7SKi1.js (len 2885881) =====
+KW securityWorker -> 5
+  ctx: Code:Nkt,formToJSON:Fkt,getAdapter:Bkt,mergeConfig:Ukt}=$n;var Wde=(e=>(e.Json="application/json",e.FormData="multipart/form-data",e.UrlEncoded="application/x-www-form-urlencoded",e.Text="text/plain",e))(Wde||{});class yat{instance;securityData=null;securityWorker;secure;format;constructor({securityWorker:t,secure:n,format:r,...i}={}){this.instance=$n.create({...i,baseURL:i.baseURL||"https://console.neon.tech/api/v2"}),this.secure=n,this.format=r,this.securityWorker=t}setSecurityData=t=>{this.securityData=t};mergeRequestParams(t,n){const r=t.me
+  ctx: geConfig:Ukt}=$n;var Wde=(e=>(e.Json="application/json",e.FormData="multipart/form-data",e.UrlEncoded="application/x-www-form-urlencoded",e.Text="text/plain",e))(Wde||{});class yat{instance;securityData=null;securityWorker;secure;format;constructor({securityWorker:t,secure:n,format:r,...i}={}){this.instance=$n.create({...i,baseURL:i.baseURL||"https://console.neon.tech/api/v2"}),this.secure=n,this.format=r,this.securityWorker=t}setSecurityData=t=>{this.securityData=t};mergeRequestParams(t,n){const r=t.method||n&&n.method;return{...this.instance.
+  ctx: e||{});class yat{instance;securityData=null;securityWorker;secure;format;constructor({securityWorker:t,secure:n,format:r,...i}={}){this.instance=$n.create({...i,baseURL:i.baseURL||"https://console.neon.tech/api/v2"}),this.secure=n,this.format=r,this.securityWorker=t}setSecurityData=t=>{this.securityData=t};mergeRequestParams(t,n){const r=t.method||n&&n.method;return{...this.instance.defaults,...t,...n||{},headers:{...r&&this.instance.defaults.headers[r.toLowerCase()]||{},...t.headers||{},...n&&n.headers||{}}}}stringifyFormItem(t){return typeof 
+  ctx: for(const o of a){const s=o instanceof Blob||o instanceof File;n.append(r,s?o:this.stringifyFormItem(o))}return n},new FormData)}request=async({secure:t,path:n,type:r,query:i,format:a,body:o,...s})=>{const l=(typeof t=="boolean"?t:this.secure)&&this.securityWorker&&await this.securityWorker(this.securityData)||{},u=this.mergeRequestParams(s,l),c=a||this.format||void 0;return r==="multipart/form-data"&&o&&o!==null&&typeof o=="object"&&(o=this.createFormData(o)),r==="text/plain"&&o&&o!==null&&typeof o!="string"&&(o=JSON.stringify(o)),this.instanc
+KW setSecurityData -> 1
+  ctx: instance;securityData=null;securityWorker;secure;format;constructor({securityWorker:t,secure:n,format:r,...i}={}){this.instance=$n.create({...i,baseURL:i.baseURL||"https://console.neon.tech/api/v2"}),this.secure=n,this.format=r,this.securityWorker=t}setSecurityData=t=>{this.securityData=t};mergeRequestParams(t,n){const r=t.method||n&&n.method;return{...this.instance.defaults,...t,...n||{},headers:{...r&&this.instance.defaults.headers[r.toLowerCase()]||{},...t.headers||{},...n&&n.headers||{}}}}stringifyFormItem(t){return typeof t=="object"&&t!==
+KW extends yat -> 1
+  ctx: peof o=="object"&&(o=this.createFormData(o)),r==="text/plain"&&o&&o!==null&&typeof o!="string"&&(o=JSON.stringify(o)),this.instance.request({...u,headers:{...u.headers||{},...r?{"Content-Type":r}:{}},params:i,responseType:c,data:o,url:n})}}class bat extends yat{listBillingInvoices=(t={})=>this.request({path:"/billing/invoices",method:"GET",secure:!0,format:"json",...t});updateBillingAccount=(t,n={})=>this.request({path:"/billing/account",method:"PATCH",body:t,secure:!0,type:"application/json",format:"json",...n});getCreditBalance=(t,n={})=>this
+KW new yat -> 0
+KW new bat -> 1
+  ctx: TE",secure:!0,...i});getProjectPlatformServed=(t,n={})=>this.request({path:`/projects/${encodeURIComponent(t)}/platform-served`,method:"GET",secure:!0,format:"json",...n})}const Kde="",Yde=`${Kde}/api/v2`,Vkt=`${Kde}/telemetry/v1`,_at=_8(),Cat=!1,Le=new bat({baseURL:Yde,headers:{accept:Wde.Json,"X-CSRF-Token":_at},withCredentials:Cat});class wat{constructor(t,n=0){this.createSubscription=t,this.timeout=n}cache={};subscribe(t,n){if(!this.cache[t]){const i=[];this.cache[t]={unsubscribe:this.createSubscription(t,i),listeners:i,timeoutId:null}}cons
+SUBCLASS: bat
+INST: n = new Date()
+INST: o = new Date()
+===== prod_app.js (len 1822181) =====
+KW securityWorker -> 0
+KW setSecurityData -> 0
+KW extends yat -> 0
+KW new yat -> 0
+KW new bat -> 0

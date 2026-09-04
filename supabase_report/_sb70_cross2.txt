@@ -1,0 +1,27 @@
+### [login-A] POST /auth/v1/token?grant_type=password try1 ERR _ssl.c:1063: The handshake operation timed out
+### [login-A] POST /auth/v1/token?grant_type=password (3.9s)
+200 | {"access_token":"eyJhbGciOiJFUzI1NiIsImtpZCI6ImM4YmY4Mzk5LTI2ZmQtNDY1Zi1iNTExLTRkNGI0N2RkZjZhYSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3ZuZm9iYnl3ZW1xZ2Nnam9ra3hkLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzN2RhNzlmNy0yZDhhLTQ3ZTktOTE4My01MDk4YjgwY2VmOGUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg4NTE2MDE4LCJpYXQiOjE3ODg1MTI0MTgsImVtYWlsIjoic2J4X2F1dmppamZ6QHFxLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJzYnhfYXV2amlqZnpAcXEuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6IjM3ZGE3OWY3LTJkOGEtNDdlOS05MTgzLTUwOThiODBjZWY4ZSJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzg4NTEyNDE4fV0sInNlc3Npb25faWQiOiJkMjA4ODI2NS03YWVjLTQwODItODVhMC0yYjExNGVhZDU4ZjUiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.Wrr3oCu2mfGLuFElJMddYNtXwpSQvsvaF1ljDVmT7r3-YDziRs2bq-l30pVOzlUfMqTgxsVwugvj8WsFnKMAfw","token_type":"bearer","expires_in":3600,"expires_at":1788516018,"refresh_token":"qlns254enuey","user":{"id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","aud":"authenticated","role":"authenticated","email":"sbx_auvjijfz@qq.com","email_confirmed_at":"2026-09-04T08:51:35.65741Z","phone":"","confirmation_sent_at":"2026-09-04T08:51:30.554168Z","confirmed_at":"2026-09-04T08:51:35.65741Z","last_sign_in_at":"2026-09-04T09:00:18.101327182Z","app_metadata":{"provider":"email","providers":["email"]},"user_metadata":{"email":"sbx_auvjijfz@qq.com","email_verified
+### [A-insert] POST /rest/v1/sbx_rls_t (7.0s)
+201 | 
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret try1 ERR _ssl.c:1063: The handshake operation timed out
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (6.3s)
+200 | [{"id":1,"owner":"37da79f7-2d8a-47e9-9183-5098b80cef8e","secret":"A-DATA-topsecret-7f3a"}]
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (3.1s)
+200 | []
+### [B-update-A] PATCH /rest/v1/sbx_rls_t?secret=eq.A-DATA-topsecret-7f3a (3.5s)
+204 | 
+### [B-del-A] DELETE /rest/v1/sbx_rls_t?secret=eq.A-DATA-topsecret-7f3a (7.6s)
+204 | 
+### [B-ins-ownerA] POST /rest/v1/sbx_rls_t (9.0s)
+403 | {"code":"42501","details":null,"hint":null,"message":"new row violates row-level security policy for table \"sbx_rls_t\""}
+### [B-insert] POST /rest/v1/sbx_rls_t (4.0s)
+201 | 
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (6.4s)
+200 | []
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (9.7s)
+200 | [{"id":1,"owner":"37da79f7-2d8a-47e9-9183-5098b80cef8e","secret":"A-DATA-topsecret-7f3a"}, 
+ {"id":3,"owner":"db697feb-196c-4e4f-825f-891e78c3d584","secret":"B-DATA"}]
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (3.9s)
+200 | [{"id":1,"owner":"37da79f7-2d8a-47e9-9183-5098b80cef8e","secret":"A-DATA-topsecret-7f3a"}]
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (2.4s)
+200 | [{"id":3,"owner":"db697feb-196c-4e4f-825f-891e78c3d584","secret":"B-DATA"}]

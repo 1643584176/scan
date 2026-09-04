@@ -1,0 +1,469 @@
+### InviteExternalUserJitResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "email": {
+   "type": "string",
+   "format": "email",
+   "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$"
+  },
+  "invite_id": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  },
+  "user_roles": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "role": {
+      "type": "string"
+     },
+     "expires_at": {
+      "type": "number"
+     },
+     "allowed_networks": {
+      "type": "object",
+      "properties": {
+       "allowed_cidrs": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv4",
+           "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       },
+       "allowed_cidrs_v6": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv6",
+           "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       }
+      }
+     },
+     "branches_only": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "role"
+    ]
+   }
+  }
+ },
+ "required": [
+  "email",
+  "invite_id",
+  "user_roles"
+ ]
+}
+### JitAccessRequestRequest
+{
+ "type": "object",
+ "properties": {
+  "state": {
+   "type": "string",
+   "enum": [
+    "enabled",
+    "disabled"
+   ]
+  }
+ },
+ "required": [
+  "state"
+ ],
+ "example": {
+  "state": "enabled"
+ }
+}
+### JitAccessResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "user_id": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  },
+  "user_roles": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "role": {
+      "type": "string"
+     },
+     "expires_at": {
+      "type": "number"
+     },
+     "allowed_networks": {
+      "type": "object",
+      "properties": {
+       "allowed_cidrs": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv4",
+           "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       },
+       "allowed_cidrs_v6": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv6",
+           "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       }
+      }
+     },
+     "branches_only": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "role"
+    ]
+   }
+  }
+ },
+ "required": [
+  "user_roles"
+ ]
+}
+### JitAuthorizeAccessResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "user_id": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  },
+  "user_role": {
+   "type": "object",
+   "properties": {
+    "role": {
+     "type": "string"
+    },
+    "expires_at": {
+     "type": "number"
+    },
+    "allowed_networks": {
+     "type": "object",
+     "properties": {
+      "allowed_cidrs": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "cidr": {
+          "type": "string",
+          "format": "cidrv4",
+          "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+         }
+        },
+        "required": [
+         "cidr"
+        ]
+       }
+      },
+      "allowed_cidrs_v6": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "cidr": {
+          "type": "string",
+          "format": "cidrv6",
+          "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+         }
+        },
+        "required": [
+         "cidr"
+        ]
+       }
+      }
+     }
+    },
+    "branches_only": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "role"
+   ]
+  }
+ },
+ "required": [
+  "user_id",
+  "user_role"
+ ]
+}
+### JitListAccessResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "anyOf": [
+     {
+      "type": "object",
+      "properties": {
+       "user_id": {
+        "type": "string",
+        "format": "uuid",
+        "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+       },
+       "primary_email": {
+        "type": "string",
+        "nullable": true
+       },
+       "invite_id": {
+        "type": "null"
+       },
+       "expires_at": {
+        "type": "null"
+       },
+       "user_roles": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "role": {
+           "type": "string"
+          },
+          "expires_at": {
+           "type": "number"
+          },
+          "allowed_networks": {
+           "type": "object",
+           "properties": {
+            "allowed_cidrs": {
+             "type": "array",
+             "items": {
+              "type": "object",
+              "properties": {
+               "cidr": {
+                "type": "string",
+                "format": "cidrv4",
+                "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+               }
+              },
+              "required": [
+               "cidr"
+              ]
+             }
+            },
+            "allowed_cidrs_v6": {
+             "type": "array",
+             "items": {
+              "type": "object",
+              "properties": {
+               "cidr": {
+                "type": "string",
+                "format": "cidrv6",
+                "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+               }
+              },
+              "required": [
+               "cidr"
+              ]
+             }
+            }
+           }
+          },
+          "branches_only": {
+           "type": "boolean"
+          }
+         },
+         "required": [
+          "role"
+         ]
+        }
+       }
+      },
+      "required": [
+       "user_id",
+       "primary_email",
+       "invite_id",
+       "expires_at",
+       "user_roles"
+      ]
+     },
+     {
+      "type": "object",
+      "properties": {
+       "user_id": {
+        "type": "null"
+       },
+       "primary_email": {
+        "type": "string"
+       },
+       "invite_id": {
+        "type": "string",
+        "format": "uuid",
+        "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+       },
+       "expires_at": {
+        "type": "string"
+       },
+       "user_roles": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "role": {
+           "type": "string"
+          },
+          "expires_at": {
+           "type": "number"
+          },
+          "allowed_networks": {
+           "type": "object",
+           "properties": {
+            "allowed_cidrs": {
+             "type": "array",
+             "items": {
+              "type": "object",
+              "properties": {
+               "cidr": {
+                "type": "string",
+                "format": "cidrv4",
+                "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+               }
+              },
+              "required": [
+               "cidr"
+              ]
+             }
+            },
+            "allowed_cidrs_v6": {
+             "type": "array",
+             "items": {
+              "type": "object",
+              "properties": {
+               "cidr": {
+                "type": "string",
+                "format": "cidrv6",
+                "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+               }
+              },
+              "required": [
+               "cidr"
+              ]
+             }
+            }
+           }
+          },
+          "branches_only": {
+           "type": "boolean"
+          }
+         },
+         "required": [
+          "role"
+         ]
+        }
+       }
+      },
+      "required": [
+       "user_id",
+       "primary_email",
+       "invite_id",
+       "expires_at",
+       "user_roles"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "required": [
+  "items"
+ ]
+}
+### SslEnforcementRequest
+{
+ "type": "object",
+ "properties": {
+  "requestedConfig": {
+   "type": "object",
+   "properties": {
+    "database": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "database"
+   ]
+  }
+ },
+ "required": [
+  "requestedConfig"
+ ],
+ "example": {
+  "requestedConfig": {
+   "database": true
+  }
+ }
+}
+### SslEnforcementResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "currentConfig": {
+   "type": "object",
+   "properties": {
+    "database": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "database"
+   ]
+  },
+  "appliedSuccessfully": {
+   "type": "boolean"
+  }
+ },
+ "required": [
+  "currentConfig",
+  "appliedSuccessfully"
+ ]
+}

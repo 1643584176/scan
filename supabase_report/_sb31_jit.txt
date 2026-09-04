@@ -1,0 +1,10 @@
+### [activity] POST /v1/projects/vnfobbywemqgcgjokkxd/database/query (1.8s)
+201 | [{"usename":"authenticator","application_name":"PostgREST 14.5","client_addr":"::1","state":"idle","backend_type":"client backend"},{"usename":"authenticator","application_name":"PostgREST 14.5","client_addr":"::1","state":"idle","backend_type":"client backend"},{"usename":"postgres","application_name":"mgmt-api","client_addr":"2600:1f1c:778:2c01:ca06:6d1b:6139:4de0","state":"active","backend_type":"client backend"},{"usename":"supabase_admin","application_name":"postgres_exporter","client_addr":"::1","state":"idle","backend_type":"client backend"}]
+### [jit-state] GET /v1/projects/vnfobbywemqgcgjokkxd/jit-access (0.8s)
+200 | {"state":"unavailable","unavailableReason":"ssl_enforcement_required"}
+### [ssl-state] GET /v1/projects/vnfobbywemqgcgjokkxd/ssl-enforcement (1.4s)
+200 | {"currentConfig":{"database":false},"appliedSuccessfully":true}
+### [jit-enable] PUT /v1/projects/vnfobbywemqgcgjokkxd/jit-access (1.7s)
+200 | {"state":"unavailable","unavailableReason":"ssl_enforcement_required"}
+### [ssl-enable] PUT /v1/projects/vnfobbywemqgcgjokkxd/ssl-enforcement (0.8s)
+400 | {"message":"requestedConfig: Invalid input: expected object, received undefined"}

@@ -1,0 +1,20 @@
+tinj1 sid: sbx_v1FJvMNiR7BflmFRxnibEWwnjH2Q status: stopped
+resumed sid: sbx_RGKs76PFpZrmg67LxPeKUqE5r9Bn
+=== T1 Host=eu.httpbin.org -> 200
+{"error":"Forbidden: request authority does not match SNI","status":403}
+=== T2 Host=1.1.1.1 -> 200
+{"error":"Forbidden: request authority does not match SNI","status":403}
+=== T3 Host=example.com -> 200
+{"error":"Forbidden: request authority does not match SNI","status":403}
+=== T4 resolve-to-1.1.1.1 -> 200
+
+=== T5 no-sni-ip -> 200
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+
+=== T-ROUTE DONE ===

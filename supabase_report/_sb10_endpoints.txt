@@ -1,0 +1,155 @@
+=== URL 字符串 (count) ===
+ 20  ${t}/rest/v1/${e}
+ 15  ,platform:
+ 12  /v1/projects/{ref}/branches
+ 11  /platform/projects/{ref}/billing/addons
+ 11  /platform/projects/{ref}/content
+ 11  /project/[ref]/settings/infrastructure
+ 10  /platform/pg-meta/:ref/query
+ 10  /platform/storage/{ref}/archive
+ 10  /platform/projects/{ref}/disk
+ 10  ${t}/auth/v1/signup
+ 10  ${t}/auth/v1/user
+ 10  ${t}/rest/v1/${e}?select=*
+ 10  ${t}/rest/v1/${e}?some_column=eq.someValue
+ 10  ${s}/storage/v1/object/${e}/folder/avatar1.png
+  9  /platform/projects/{ref}/content/folders
+  9  /platform/integrations/github/connections
+  9  /platform/projects/{ref}/run-lints
+  9  /platform/organizations/{slug}/entitlements
+  9  /platform/projects/{ref}/settings
+  9  /v1/projects/{ref}/custom-hostname
+  9  /platform/projects/{ref}/config/postgrest
+  8  data-platform
+  8  /platform/projects/{ref}
+  6  /platform/projects/{ref}/api/rest
+  5  ${e.origin}/v1/credits
+  5  ${t.origin}/v1/report?${a.toString()}
+  5  ${t.origin}/v1/generation?id=${encodeURIComponent(e.id)}
+  5  /v1/realtime/client-secrets
+  5  /platform/projects/:ref/run-lints
+  5  /platform/organizations/:slug/usage
+  5  /v1/projects/:ref/analytics/endpoints/logs.all
+  5  /platform/projects/{ref}/content/folders/{id}
+  5  /v1/projects/{ref}/api-keys/legacy
+  5  /platform/projects/{ref}/config/secrets/update-status
+  5  /platform/projects/{ref}/status
+  5  ${B.API_URL}/projects/${e}/api/rest
+  5  /platform/database/{ref}/backups/download
+  5  /platform/projects/{ref}/pause/status
+  5  ${S.DOCS_URL}/guides/platform/migrating-within-supabase/dashboard-restore
+  5  /platform/projects/{ref}/restore
+  5  ${S.DOCS_URL}/guides/platform/backups
+  5  ${S.DOCS_URL}/guides/platform/delete-project
+  5  /platform/database/{ref}/backups/downloadable-backups
+  5  /v1/projects/{ref}/upgrade/status
+  5  ${t}/auth/v1/token?grant_type=password
+  5  ${t}/auth/v1/magiclink
+  5  ${t}/auth/v1/otp
+  5  ${t}/auth/v1/verify
+  5  ${t}/auth/v1/recover
+  5  ${t}/auth/v1/logout
+  5  ${t}/auth/v1/invite
+  5  ${s}/rest/v1/rpc/${e}
+  5  ${t}/rest/v1/${e}?select=some_column,other_column
+  5  ${t}/rest/v1/${e}?select=some_column,other_table(foreign_key)
+  5  ${s}/storage/v1/object/${e}
+  5  ${s}/storage/v1/object/list/${e}
+  5  ${s}/storage/v1/object/sign/${e}/folder/avatar1.png
+  5  ${t}/functions/v1/${e}
+  5  /infrastructure
+  5  settings/infrastructure
+  5  /platform/projects
+  5  /platform/storage/{ref}/buckets
+  4  /platform/projects/{ref}/content/item/{id}
+  4  /platform/pg-meta/{ref}/query
+  4  /platform/replication/{ref}/pipelines/{pipeline_id}/version
+  4  ${r.API_URL}/platform/deployment-mode
+  4  /platform/projects/{ref}/config/storage
+  4  %storage/v1/object/%
+  3  /platform/projects/{ref}/load-balancers
+  3  /platform/projects/{ref}/config/pgbouncer
+  3  /platform/projects/{ref}/config/supavisor
+  3  },platform:{free:
+  3  /platform/projects/{ref}/databases
+  3  /v1/projects/{ref}/network-bans/retrieve
+  3  /platform/notifications
+  3  /platform/feedback/send
+  3  /platform/projects/{ref}/wake
+  3  /platform/organizations/{slug}/billing/subscription
+  3  /platform/projects-resource-warnings
+  3  ${t.DOCS_URL}/guides/platform/database-size#disabling-read-only-mode
+  3  ${t.DOCS_URL}/guides/platform/database-size#disk-management
+  3  ${t.DOCS_URL}/guides/platform/going-into-prod#auth-rate-limits
+  3  /platform/integrations/github/authorization
+  3  /platform/organizations/{slug}/members/reached-free-project-limit
+  3  /platform/telemetry/feature-flags/track
+  3  /platform/organizations/{slug}/available-versions
+  3  /platform/projects/{ref}/restore/versions
+  3  /v1/projects/{ref}/types/typescript
+  3  /v1/projects/{ref}/functions
+  3  /platform/projects/{ref}/restart
+  3  /platform/storage/{ref}/buckets/{id}
+  3  /platform/integrations/github/repositories/{repository_id}/branches/{branch_name}
+  3  /platform/feedback/downgrade
+  3  /platform/projects/{ref}/infra-monitoring
+  2  infrastructure
+  2  ${q.DOCS_URL}/guides/platform/custom-domains
+  2  ${q.DOCS_URL}/guides/platform/ipv4-address
+  2  ${q.DOCS_URL}/guides/platform/backups#point-in-time-recovery
+  2  infrastructure:read_replicas
+  2  ${Q.DOCS_URL}/guides/platform/manage-your-usage/pipelines
+  2  /platform/replication/{ref}/destinations-pipelines/{destination_id}/{pipeline_id}
+  2  security.platformAuditLogs
+  2  /platform/projects/{ref}/analytics/endpoints/logs.all.otel
+  2  /platform/projects/{ref}/analytics/endpoints/logs.all
+  2  /platform/replication/{ref}/pipelines/{pipeline_id}/start
+  2  /platform/replication/{ref}/pipelines/{pipeline_id}/status
+  2  /platform/replication/{ref}/sources/{source_id}/publications/{publication_name}/cost-estimate
+  2  /platform/replication/{ref}/pipelines/{pipeline_id}/stop
+  2  /platform/replication/{ref}/pipelines/{pipeline_id}
+  2  /platform/replication/{ref}/pipelines/{pipeline_id}/replication-status
+  2  /platform/replication/{ref}/pipelines/{pipeline_id}/restart
+  2  /platform/projects/{ref}/content/count
+  2  /v1/branches/{branch_id_or_ref}
+  2  ${Y.DOCS_URL}/guides/platform/ipv4-address
+  2  /platform/organizations/{slug}/usage
+  2  platform
+  2  /storage/v1/iceberg
+  2  /storage/v1/s3
+  2  /storage/v1/vector
+  2  /platform/integrations/github/connections/{connection_id}/config
+
+=== pg-meta chunk 详情 ===
+### 099kov3mfam-s.js (555537 bytes)
+   pg-meta/:ref/query
+   URL /platform/pg-meta/:ref/query
+   URL /platform/pg-meta/:ref/query
+### 0h9x8dhtehorj.js (39013 bytes)
+   pg-meta/{ref}/query
+   URL /platform/pg-meta/{ref}/query
+   URL /platform/pg-meta/{ref}/query
+### 0ktvwau299fo5.js (555537 bytes)
+   pg-meta/:ref/query
+   URL /platform/pg-meta/:ref/query
+   URL /platform/pg-meta/:ref/query
+### 0n7s33g1sgnzh.js (555537 bytes)
+   pg-meta will
+    -- fallback to returning the result of the impersonation sql.
+    select 1 as 
+   URL /platform/pg-meta/:ref/query
+   URL /platform/pg-meta/:ref/query
+### 135zu0645roqv.js (39013 bytes)
+   pg-meta/{ref}/query
+   URL /platform/pg-meta/{ref}/query
+   URL /platform/pg-meta/{ref}/query
+### 21f3lz1qyh2dn.js (555537 bytes)
+   pg-meta/:ref/query
+   URL /platform/pg-meta/:ref/query
+   URL /platform/pg-meta/:ref/query
+### 22xhpobl2s5ti.js (555537 bytes)
+   pg-meta will
+    -- fallback to returning the result of the impersonation sql.
+    select 1 as 
+   URL /platform/pg-meta/:ref/query
+   URL /platform/pg-meta/:ref/query

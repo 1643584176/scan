@@ -1,0 +1,22 @@
+create: 200 {"sandbox":{"name":"v198","currentSessionId":"sbx_RIbCtwUpWQeEhMe23dOri1o0kDEm","status":"running","statusUpdatedAt":1788231071882,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788231071882,"updatedAt":1788231071882},"session":{"id":"sbx_RIbCtwUpWQeEhMe23dOri1o0kDEm","runtime":"node22","reques
+[create ok] 5s
+[inject /vercel/sandbox/vda198_guest.py] 200
+[inject /vercel/sandbox/vda198_probe_guest.py] 200
+[inject /vercel/sandbox/vda197_user.py] 200
+[guest started]
+[trigger user 4b6e47d8]
+[user snap] 200
+{"command":{"id":"cmd_a8347189a6704c26b632674d4757","name":"python3","args":["/vercel/sandbox/vda197_user.py","4b6e47d8"],"cwd":"/vercel/sandbox","sessionId":"sbx_RIbCtwUpWQeEhMe23dOri1o0kDEm","startedAt":1788231083376,"exitCode":null}}
+{"data":"[1788231083.4] === u1: s3://127.0.0.1:18081 ===\n","stream":"stdout"}
+
+[status] ('stopped', 'snap_0zuACtH5v6yFh42iUhtpTcih2C6m')
+[guest rc] 200
+{"command":{"id":"cmd_325e6290ca914fa69a5ec2b70238","name":"python3","args":["/vercel/sandbox/vda198_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_RIbCtwUpWQeEhMe23dOri1o0kDEm","startedAt":1788231075353,"exitCode":null}}
+{"data":"[1788231075.383] mount vda ret=0\n[1788231075.383] payload written to COW 2864 bytes\n","stream":"stdout"}
+{"data":"[1788231075.395] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=cc3cd0d0-691f-441f-872a-56f0411b1b1b-snapshot\n","stream":"stdout"}
+{"data":"[1788231075.400] Create v198b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\\n\\x94(\\n\\x05v198b\\x1a\\x87\\x01977805900198.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1988be914dc973663ab50e48d0045087340cc71cf903e2841b59\"\\x17\\n\\x15io.containerd.runc.v2*\\x91&\\n6types.containerd.'\n","stream":"stdout"}
+{"data":"[1788231075.466] Tasks/Create v198b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\n\\n\\x05v198b\\x10\\x90\\x05'\n","stream":"stdout"}
+{"data":"[1788231075.486] Tasks/Start v198b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x90\\x05'\n","stream":"stdout"}
+{"data":"[1788231075.787] --- COW v198c.out @1s +104 ---\nVDB_RC=0\nBIND_RUN=0\nBIND_PROC=0\nVDA_RC=1\n[1788231075.5] === sniff start ===\n[1788231075.5] AF_PACKET OK\n\n","stream":"stdout"}
+
+CLEANED total 43s

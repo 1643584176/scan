@@ -1,0 +1,13 @@
+[create] -> 200
+sid = sbx_WhQy0AvMVbcGaU2jytT6iqxQQSsL
+mknod: 200 {"command":{"id":"cmd_18177946481e428c90810e63af8f","name":"sh","args":["-c","mknod /dev/vda b 254 0 2>/dev/null; ls -la /dev/vda"],"cwd":"/vercel","sessionId":"sbx_WhQy0AvMVbcGaU2jytT6iqxQQSsL","star
+mkdir: 200
+inject: 200
+verify: 200 {"command":{"id":"cmd_05c212add8c74f06a5dc4c31b14c","name":"sh","args":["-c","ls -la /vercel/sandbox/"],"cwd":"/vercel","sessionId":"sbx_WhQy0AvMVbcGaU2jytT6iqxQQSsL","startedAt":1788064917212,"exitCo
+kick: 200 {"command":{"id":"cmd_3d964746be8d4eef89c5c9f6ad93","name":"sh","args":["-c","nohup python3 /vercel/sandbox/vda25_light_desc_guest.py > /tmp/v25l_stdo
+saved -> F:\scan\skills\out\vda25_light_desc_guest_20260830_124204.txt
+{"command":{"id":"cmd_cc3e8c514ba64940ab31a64edccc","name":"cat","args":["/vercel/sandbox/v25l.out"],"cwd":"/vercel","sessionId":"sbx_WhQy0AvMVbcGaU2jytT6iqxQQSsL","startedAt":1788064925042,"exitCode":null}}
+{"data":"[1788064918.7] mount ret=0\n[1788064918.7] === P0 light descriptor scan ===\n[1788064918.7] blobs found: 0\n[1788064918.7] === P1 json Exec window ===\n[1788064918.8] CID=ctr_a7ca9eb0d51e4ddd9e8957dcd9bc\n[1788064918.8] start -> HTTP/1.1 200 OK | {}\n[1788064918.8] exec json -> NORESP | \n[1788064918.8] exec grpc f9,f1 -> NORESP | \n[1788064918.8] exec grpc f9 -> NORESP | \n[1788064918.8] kill -> HTTP/1.1 200 OK | {}\n[1788064918.8] V25L_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_cc3e8c514ba64940ab31a64edccc","name":"cat","args":["/vercel/sandbox/v25l.out"],"cwd":"/vercel","sessionId":"sbx_WhQy0AvMVbcGaU2jytT6iqxQQSsL","startedAt":1788064925042,"exitCode":0,"durationMs":2}}
+
+CLEANED

@@ -1,0 +1,51 @@
+[V1 create] -> 200
+  == -6 example.com (不在白名单) ==
+  curl: (6) Could not resolve host: example.com
+  code=000 err=Could not resolve host: example.com
+  == -4 example.com ==
+  curl: (6) Could not resolve host: example.com
+  code=000 err=Could not resolve host: example.com
+  == -6 httpbin.org (在白名单) ==
+  curl: (6) Could not resolve host: httpbin.org
+  code=000 err=Could not resolve host: httpbin.org
+  == -4 httpbin.org ==
+  code=200 err=
+  == -6 直连 2606:4700:10::6814:179a (example.com IP, 带 Host) ==
+  curl: (7) Failed to connect to 2606:4700:10::6814:179a port 443 after 0 ms: Could not connect to server
+  code=000 err=Failed to connect to 2606:4700:10::6814:179a port 443 after 0 ms: Could not connect to server
+  == -4 直连 93.184.215.14 (example.com IP, 带 Host) ==
+  curl: (35) TLS connect error: error:0A000126:SSL 
+[V2 create] -> 200
+  == -6 example.com (不在白名单) ==
+  curl: (6) Could not resolve host: example.com
+  code=000 err=Could not resolve host: example.com
+  == -4 example.com ==
+  curl: (6) Could not resolve host: example.com
+  code=000 err=Could not resolve host: example.com
+  == -6 httpbin.org (在白名单) ==
+  curl: (6) Could not resolve host: httpbin.org
+  code=000 err=Could not resolve host: httpbin.org
+  == -4 httpbin.org ==
+  curl: (6) Could not resolve host: httpbin.org
+  code=000 err=Could not resolve host: httpbin.org
+  == -6 直连 2606:4700:10::6814:179a (example.com IP, 带 Host) ==
+  curl: (7) Failed to connect to 2606:4700:10::6814:179a port 443 after 0 ms: Could not connect to server
+  code=000 err=Failed to connect to 2606:4700:10::6814:179a port 443 after 0 ms: Could not connect to server
+  == -4 直连 93.184.215
+[V3 create] -> 200
+  == -6 example.com (不在白名单) ==
+  curl: (7) Failed to connect to example.com port 443 after 2 ms: Could not connect to server
+  code=000 err=Failed to connect to example.com port 443 after 2 ms: Could not connect to server
+  == -4 example.com ==
+  code=200 err=
+  == -6 httpbin.org (在白名单) ==
+  curl: (6) Could not resolve host: httpbin.org
+  code=000 err=Could not resolve host: httpbin.org
+  == -4 httpbin.org ==
+  code=200 err=
+  == -6 直连 2606:4700:10::6814:179a (example.com IP, 带 Host) ==
+  curl: (7) Failed to connect to 2606:4700:10::6814:179a port 443 after 0 ms: Could not connect to server
+  code=000 err=Failed to connect to 2606:4700:10::6814:179a port 443 after 0 ms: Could not connect to server
+  == -4 直连 93.184.215.14 (example.com IP, 带 Host) ==
+  curl: (35) TLS connect error: error:0A00
+DONE

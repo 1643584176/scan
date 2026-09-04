@@ -1,0 +1,13 @@
+create: 200 {"sandbox":{"name":"exp330","currentSessionId":"sbx_SJ9VQH4DJ0cWvniMSY7aA3ZVhYZu","status":"running","statusUpdatedAt":1788158894513,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788158894513,"updatedAt":1788158894514},"session":{"id":"sbx_SJ9VQH4DJ0cWvniMSY7aA3ZVhYZu","runtime":"node22","requ
+sid: sbx_SJ9VQH4DJ0cWvniMSY7aA3ZVhYZu
+inject: 200 {"command":{"id":"cmd_78b2dae88ca54f419c3c67f8dac2","name":"python3","args":["-c","import base64;open('/vercel/sandbox/exp330.py','wb').write(base64.b64decode('IyAtKi0gY29kaW5nOiB1dGYtOCAtKi0KIiIiZXhw
+run: 200
+{"command":{"id":"cmd_0a26a4c28e7348afaa40173cd509","name":"python3","args":["/vercel/sandbox/exp330.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_SJ9VQH4DJ0cWvniMSY7aA3ZVhYZu","startedAt":1788158896266,"exitCode":null}}
+{"command":{"id":"cmd_0a26a4c28e7348afaa40173cd509","name":"python3","args":["/vercel/sandbox/exp330.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_SJ9VQH4DJ0cWvniMSY7aA3ZVhYZu","startedAt":1788158896266,"exitCode":0,"durationMs":151392}}
+
+=== ×îÖÕ½á¹û ===
+{"command":{"id":"cmd_d7ec6ae0800e4192af67e2f6fcba","name":"cat","args":["/vercel/sandbox/arp330.out"],"cwd":"/vercel/sandbox","sessionId":"sbx_SJ9VQH4DJ0cWvniMSY7aA3ZVhYZu","startedAt":1788159051512,"exitCode":null}}
+{"data":"IFACE eth0 100.64.200.7 86:05:74:df:f3:e3\nMY eth0 100.64.200.7 86:05:74:df:f3:e3\nARP 100.64.0.1 5a:33:63:e2:fa:7f\nARP_DONE 100.64.200.7\nARP 100.64.0.1 5a:33:63:e2:fa:7f\nARP 100.64.0.1 5a:33:63:e2:fa:7f\nARP 100.64.0.1 5a:33:63:e2:fa:7f\nARP_DONE 100.64.0.0\nPROM_ERR OSError(22, 'Invalid argument')\nSCAN_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_d7ec6ae0800e4192af67e2f6fcba","name":"cat","args":["/vercel/sandbox/arp330.out"],"cwd":"/vercel/sandbox","sessionId":"sbx_SJ9VQH4DJ0cWvniMSY7aA3ZVhYZu","startedAt":1788159051512,"exitCode":0,"durationMs":0}}
+
+EXIT=0

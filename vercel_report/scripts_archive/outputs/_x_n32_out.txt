@@ -1,0 +1,24 @@
+===== ① 敏感头逐个 =====
+[create l32] -> 200 | {"sandbox":{"name":"l32","currentSessionId":"sbx_W12IlUPAP17VfCbds2I5oygfnJM9","status":"running","statusUpdatedAt":1788051661266,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memo
+[Host] -> {"method":"GET","url":"/","headers":{"x-real-ip":"3.89.70.242","x-vercel-proxy-signature-ts":"1788051965","x-forwarded-for":"3.89.70.242","x-vercel-ip-country-region":"VA","x-forwarded-proto":"https","accept":"*/*","x-vercel-ip-city":"Ashburn","x-forwarded-host":"sbx-echo-e29ca9cb.vercel.app","x-vercel-enable-rewrite-caching":"1","user-agent":"curl/8.18.0","x-vercel-deployment-url":"sbx-echo-e29ca9cb-fwvcn8jon-pccp-team.vercel.app","x-vercel-ip-country":"US","x-vercel-ja4-digest":"t13d1312h2_f57
+[create l32] -> 429 | {"error":{"code":"rate_limit_exceeded","message":"Concurrency limit exceeded (10). Upgrade to a Pro plan for higher limits: https://vercel.com/docs/vercel-sandbox/pricing#concurrency-limits"}}
+[Authorization] 400/other, skip
+[create l32] -> 429 | {"error":{"code":"rate_limit_exceeded","message":"Concurrency limit exceeded (10). Upgrade to a Pro plan for higher limits: https://vercel.com/docs/vercel-sandbox/pricing#concurrency-limits"}}
+[X-Forwarded-For] 400/other, skip
+[create l32] -> 429 | {"error":{"code":"rate_limit_exceeded","message":"Concurrency limit exceeded (10). Upgrade to a Pro plan for higher limits: https://vercel.com/docs/vercel-sandbox/pricing#concurrency-limits"}}
+[X-Vercel-OIDC-Token] 400/other, skip
+[create l32] -> 429 | {"error":{"code":"rate_limit_exceeded","message":"Concurrency limit exceeded (10). Upgrade to a Pro plan for higher limits: https://vercel.com/docs/vercel-sandbox/pricing#concurrency-limits"}}
+[X-Real-IP] 400/other, skip
+[create l32] -> 200 | {"sandbox":{"name":"l32","currentSessionId":"sbx_dnXCSqL1RuGnX87lElqYPbxjE4w8","status":"running","statusUpdatedAt":1788051699980,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memo
+[Cookie] -> {"method":"GET","url":"/","headers":{"x-real-ip":"98.92.73.142","x-vercel-proxied-for":"98.92.73.142","x-vercel-proxy-signature-ts":"1788052004","x-vercel-oidc-token":"eyJ0eXAiOiJKV1QiLCJraWQiOiJtcmstNDMwMmVjMWI2NzBmNDhhOThhZDYxZGFkZTRhMjNiZTciLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3ODgwNTE2NjUsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsInByb2plY3QiOiJzYngtZWNoby1lMjljYTljYiIsInN1YiI6Im93bmVyOnBjY3AtdGVhbTpwcm9qZWN0OnNieC1lY2hvLWUyOWNhOWNiOmVudmlyb25tZW50OnByb2R1Y3Rpb24iLCJhdWQiOiJodHRwczpcL1wvdmVyY2VsLmNvbVw
+[create l32] -> 200 | {"sandbox":{"name":"l32","currentSessionId":"sbx_H3khDtNo15xQUBca1k5ZgNPHEsE4","status":"running","statusUpdatedAt":1788051713355,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memo
+[X-Api-Key] -> {"method":"GET","url":"/","headers":{"x-vercel-ip-latitude":"39.0469","forwarded":"for=100.54.91.48;host=sbx-echo-e29ca9cb.vercel.app;proto=https;sig=0QmVhcmVyIDAwMDJkMzQzNGIxM2EzMmI4OThiOWRmNjg0ODI1NDM1YmFmZjE4NzQ3MzE0NmMxOTA0ZWE4MjRjZWVlOTNkZDQ=;exp=1788052017","x-vercel-proxy-signature-ts":"1788052017","x-real-ip":"100.54.91.48","x-forwarded-for":"100.54.91.48","x-api-key":"sk-fake","accept-encoding":"gzip","accept":"*/*","x-vercel-ip-as-number":"14618","x-vercel-oidc-token":"eyJ0eXAiOiJKV1Qi
+[create l32] -> 200 | {"sandbox":{"name":"l32","currentSessionId":"sbx_V4UlYmKlUYZoKz1AVCdMunCWQ9Ms","status":"running","statusUpdatedAt":1788051726560,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memo
+[X-Vercel-Forwarded-For] -> {"method":"GET","url":"/","headers":{"x-vercel-proxy-signature":"Bearer 0f061c5a123e861d6541e14f3ce842cee13a860949c586edaf9870efd3398815","x-forwarded-for":"3.80.246.47","x-vercel-oidc-token":"eyJ0eXAiOiJKV1QiLCJraWQiOiJtcmstNDMwMmVjMWI2NzBmNDhhOThhZDYxZGFkZTRhMjNiZTciLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3ODgwNTE2NjUsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsInByb2plY3QiOiJzYngtZWNoby1lMjljYTljYiIsInN1YiI6Im93bmVyOnBjY3AtdGVhbTpwcm9qZWN0OnNieC1lY2hvLWUyOWNhOWNiOmVudmlyb25tZW50OnByb2R1Y3Rpb24iLCJhdWQiOiJodH
+
+===== ② 多值头 =====
+[create l32b] -> 400 | {"error":{"code":"bad_request","message":"Invalid request: `networkPolicy.injectionRules[0].headers.X-Multi` should be string."}}
+
+===== ③ OIDC custom =====
+[create l32c] -> 400 | {"error":{"code":"bad_request","message":"Invalid injection rule for domain \"sbx-echo-e29ca9cb.vercel.app\": at least one header is required."}}
+DONE

@@ -1,0 +1,37 @@
+[1788225427.150] mount vda ret=0
+[1788225427.150] payload written to COW 9016 bytes
+[1788225427.173] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=88734705-a76a-435f-b60b-a163492f9465-snapshot
+[1788225427.180] Create v159b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x15\
+\\x92(\
+\\x05v159b\\x1a\\x87\\x01977805900159.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788225427.244] Tasks/Create v159b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v159b\\x10\\x90\\x05'
+[1788225427.255] Tasks/Start v159b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x90\\x05'
+[1788225427.555] --- COW v159c.out @1s +2058 ---
+[1788225427.3] === 1 create cmd string ===
+[1788225427.3] Create#0 cmd='echo V159PWN > /tmp/v159pwn; id > /tmp/v159id; env > /tmp/v1' -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to create container: runc create failed: runc did not terminate successfully: exit status 1"}' gs=
+[1788225427.4] Create#1 cmd='/bin/sh -c "echo V159PWN > /tmp/v159pwn; id > /tmp/v159id; e' -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to create container: runc create failed: runc did not terminate successfully: exit status 1"}' gs=
+[1788225427.4] Create+env -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to create container: runc create failed: runc did not terminate successfully: exit status 1"}' gs=
+[1788225427.4] === 2 grpc celld ===
+[1788225427.4] grpc GetDriveStorageUsage -> HTTP/1.1 404 Not Found gs= gm= b'404 page not found\
+'
+[1788225427.4] grpc Heartbeat -> HTTP/1.1 404 Not Found gs= gm= b'404 page not found\
+[1788225427.4] grpc StopContainer -> HTTP/1.1 404 Not Found gs= gm= b'404 page not found\
+[1788225427.4] grpc WaitContainer -> HTTP/1.1 404 Not Found gs= gm= b'404 page not found\
+[1788225427.4] grpc Configure -> HTTP/1.1 404 Not Found gs= gm= b'404 page not found\
+[1788225427.4] grpc SetWorkload -> HTTP/1.1 404 Not Found gs= gm= b'404 page not found\
+[1788225427.4] grpc StartContainer -> HTTP/1.1 404 Not Found gs= gm= b'404 page not found\
+[1788225427.4] === 3 grpc exec ===
+[1788225427.4] Create sleep300 -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to create container: runc create failed: runc did not terminate successfully: exit status 1"}'
+[1788225427.4] cid=
+[1788225427.4] === 4 mount ===
+[1788225427.4] V159_DONE
+4] Create sleep300 -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to create container: runc create failed: runc did not terminate successfully: exit status 1"}'
+CHROOT_RC=0
+V99_END
+
+[1788225427.567] kill v159b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788225427.567] V99M_DONE

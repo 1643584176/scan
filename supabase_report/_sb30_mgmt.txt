@@ -1,0 +1,12 @@
+### [login-role-rw] POST /v1/projects/vnfobbywemqgcgjokkxd/cli/login-role (1.9s)
+201 | {"role":"cli_login_postgres","password":"pKMZlzuecO7t4uqjvObr663oLAlwBK9b","ttl_seconds":300}
+### [chk-cli-role] POST /v1/projects/vnfobbywemqgcgjokkxd/database/query (3.7s)
+201 | [{"rolname":"cli_login_postgres","rolsuper":false,"rolcreatedb":false,"rolcreaterole":false,"rolbypassrls":false,"rolcanlogin":true,"rolvaliduntil":"2026-09-04 08:18:58.117518+00"}]
+### [chk-cli-member] POST /v1/projects/vnfobbywemqgcgjokkxd/database/query (2.1s)
+201 | [{"role":"postgres","member":"cli_login_postgres","admin_option":false}]
+### [del-login-role] DELETE /v1/projects/vnfobbywemqgcgjokkxd/cli/login-role (1.9s)
+200 | {"message":"ok"}
+### [mk-claim] POST /v1/projects/vnfobbywemqgcgjokkxd/claim-token (3.4s)
+200 | {"token":"8c027932c85062f12d3d056d199377136289e5a7","token_alias":"8c027","expires_at":"2026-09-04T09:14:06.786+00:00","created_at":"2026-09-04T08:14:06.786+00:00","created_by":"68ef6708-65ba-4411-82fb-ea59015a04e9"}
+### [get-claim] GET /v1/projects/vnfobbywemqgcgjokkxd/claim-token (0.8s)
+200 | {"token_alias":"8c027","expires_at":"2026-09-04T09:14:06.786+00:00","created_at":"2026-09-04T08:14:06.786+00:00","created_by":"68ef6708-65ba-4411-82fb-ea59015a04e9","id":"7cd2f9f7-3367-4a9f-b61b-d04f9875a576"}

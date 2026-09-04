@@ -1,0 +1,14 @@
+### [vault-cols] (2.0s)
+201 | [{"column_name":"id","data_type":"uuid"},{"column_name":"name","data_type":"text"},{"column_name":"description","data_type":"text"},{"column_name":"secret","data_type":"text"},{"column_name":"decrypted_secret","data_type":"text"},{"column_name":"key_id","data_type":"uuid"},{"column_name":"nonce","data_type":"bytea"},{"column_name":"created_at","data_type":"timestamp with time zone"},{"column_name":"updated_at","data_type":"timestamp with time zone"},{"column_name":"id","data_type":"uuid"},{"column_name":"name","data_type":"text"},{"column_name":"description","data_type":"text"},{"column_name":"secret","data_type":"text"},{"column_name":"key_id","data_type":"uuid"},{"column_name":"nonce","data_type":"bytea"},{"column_name":"created_at","data_type":"timestamp with time zone"},{"column_name":"updated_at","data_type":"timestamp with time zone"}]
+### [vault-write] (2.0s)
+201 | [{"sid":"a8868262-07dd-43d5-a7e7-44e92dd1a959"}]
+### [vault-dec] (1.8s)
+201 | [{"name":"sbx_probe_name_9x7k","decrypted_secret":"sbx_probe_val_9x7k","key_id":null}]
+### [vault-clean] (1.8s)
+201 | [{"name":"sbx_probe_name_9x7k","secret_null":false,"key_id":null}]
+### [auth-tables] (1.8s)
+201 | [{"relname":"audit_log_entries"},{"relname":"custom_oauth_providers"},{"relname":"flow_state"},{"relname":"identities"},{"relname":"instances"},{"relname":"mfa_amr_claims"},{"relname":"mfa_challenges"},{"relname":"mfa_factors"},{"relname":"oauth_authorizations"},{"relname":"oauth_client_states"},{"relname":"oauth_clients"},{"relname":"oauth_consents"},{"relname":"one_time_tokens"},{"relname":"refresh_tokens"},{"relname":"saml_providers"},{"relname":"saml_relay_states"},{"relname":"schema_migrations"},{"relname":"sessions"},{"relname":"sso_domains"},{"relname":"sso_providers"},{"relname":"users"},{"relname":"webauthn_challenges"},{"relname":"webauthn_credentials"}]
+### [rt-tables] (1.7s)
+201 | [{"relname":"schema_migrations","relkind":"r"},{"relname":"subscription","relkind":"r"}]
+### [ext-pgcron] (2.2s)
+201 | []

@@ -1,0 +1,10 @@
+### [rol-ro] (2.7s)
+500 | {"message":"Failed to send database JIT access invite","errorEventId":"589d501063c64ea08c3055c4f432180a"}
+### [nouser] (4.0s)
+500 | {"message":"Failed to send database JIT access invite","errorEventId":"761e2780b1d24c20b42c4db7002efb83"}
+### [rol-anon] (2.7s)
+500 | {"message":"Failed to send database JIT access invite","errorEventId":"0fb0347b9daf43819de6d70f5629cf47"}
+### [full] (0.7s)
+401 | {"message":"JWT failed verification"}
+### [norole-exp] (0.6s)
+401 | {"message":"JWT failed verification"}

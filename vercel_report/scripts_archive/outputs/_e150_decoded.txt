@@ -1,0 +1,6 @@
+DECODED with utf-8 len 9391
+Traceback (most recent call last):
+  File "D:\scan\_probe_e150.py", line 12, in <module>
+    print(t[:4000])
+    ~~~~~^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\ufffd' in position 22: illegal multibyte sequence

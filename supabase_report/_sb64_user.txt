@@ -1,0 +1,7 @@
+### [signup] POST /auth/v1/signup (8.6s)
+200 | {"id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","aud":"authenticated","role":"authenticated","email":"sbx_auvjijfz@qq.com","phone":"","confirmation_sent_at":"2026-09-04T08:51:30.554168362Z","app_metadata":{"provider":"email","providers":["email"]},"user_metadata":{"email":"sbx_auvjijfz@qq.com","email_verified":false,"phone_verified":false,"sub":"37da79f7-2d8a-47e9-9183-5098b80cef8e"},"identities":[{"identity_id":"a2bfa34e-a207-4852-9eb1-be130aef68c9","id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","user_id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","identity_data":{"email":"sbx_auvjijfz@qq.com","email_verified":false,"phone_verified":false,"sub":"37da79f7-2d8a-47e9-9183-5098b80cef8e"},"provider":"email","last_sign_in_at":"2026-09-04T08:51:30.551292717Z","created_at":"2026-09-04T08:51:30.551349Z","updated_at":"2026-09-04T08:51:30.551349Z","email":"sbx_auvjijfz@qq.com"}],"created_at":"2026-09-04T08:51:30.548131Z","updated_at":"2026-09-04T08:51:31.334903Z","is_anonymous":false}
+### [user-state]
+201 | [{"id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","email":"sbx_auvjijfz@qq.com","email_confirmed_at":null,"created_at":"2026-09-04 08:51:30.548131+00","role":"authenticated"}]
+### [db-confirm]
+201 | [{"id":"37da79f7-2d8a-47e9-9183-5098b80cef8e"}]
+### [pw-grant] POST /auth/v1/token?grant_type=password ERR _ssl.c:1063: The handshake operation timed out

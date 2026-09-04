@@ -1,0 +1,12 @@
+=== M3 host bin strings ===
+[1788160088.9] --- /proc/535/root/opt/vercel/sandboxctrl ---
+[1788160088.9]   ls: cannot access '/proc/535/root/opt/vercel/sandboxctrl': No such file or directory
+[1788160088.9] --- /proc/1/root/opt/vercel/celld ---
+[1788160088.9]   -rwxr-xr-x. 1 1001 1001 36447264 Aug 27 15:08 /proc/1/root/opt/vercel/celld
+[1788160088.9] --- /proc/1/root/run/vercel/share/sandbox-init ---
+[1788160088.9]   ls: cannot access '/proc/1/root/run/vercel/share/sandbox-init': No such file or directory
+[1788160088.9] === M4 low RAM scan ===
+[1788160088.9] scan @0x100000 FAIL
+[1788160088.9] scan @0x1000000 FAIL
+[1788160088.9] scan @0x10000000 FAIL
+[1788160088.9] 

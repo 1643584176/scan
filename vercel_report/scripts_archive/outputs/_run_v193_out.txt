@@ -1,0 +1,17 @@
+create: 200 {"sandbox":{"name":"v193","currentSessionId":"sbx_aimf3OeihdnfDyy1xuYunDKJBSGJ","status":"running","statusUpdatedAt":1788230014261,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230014261,"updatedAt":1788230014261},"session":{"id":"sbx_aimf3OeihdnfDyy1xuYunDKJBSGJ","runtime":"node22","reques
+[create ok] 5s
+[inject /vercel/sandbox/vda193_guest.py] 200
+[inject /vercel/sandbox/vda193_probe_guest.py] 200
+[run guest] 200
+{"command":{"id":"cmd_0b9bd130da3e4e4db920fd7c885a","name":"python3","args":["/vercel/sandbox/vda193_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_aimf3OeihdnfDyy1xuYunDKJBSGJ","startedAt":1788230016865,"exitCode":null}}
+{"data":"[1788230016.897] mount vda ret=0\n","stream":"stdout"}
+{"data":"[1788230016.897] payload written to COW 4597 bytes\n","stream":"stdout"}
+{"data":"[1788230016.910] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=1997181b-ef4d-4df9-85a7-143895ffc9d8-snapshot\n","stream":"stdout"}
+{"data":"[1788230016.916] Create v193b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\\n\\x94(\\n\\x05v193b\\x1a\\x87\\x01977805900193.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1938be914dc973663ab50e48d0045087340cc71cf903e2841b59\"\\x17\\n\\x15io.containerd.runc.v2*\\x91&\\n6types.containerd.'\n","stream":"stdout"}
+{"data":"[1788230016.970] Tasks/Create v193b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\n\\n\\x05v193b\\x10\\x92\\x05'\n","stream":"stdout"}
+{"data":"[1788230016.982] Tasks/Start v193b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x92\\x05'\n","stream":"stdout"}
+{"data":"[1788230017.283] --- COW v193c.out @1s +95 ---\n[1788230017.0] === 1 listener ===\n[1788230017.0] LISTENER UP\ner ===\n[1788230017.0] LISTENER UP\n\n","stream":"stdout"}
+
+[v193c.out] 422
+{"error":{"code":"resource_unavailable","message":"Command could not be started due to unavailable resources. Please try again."}}
+CLEANED total 11s

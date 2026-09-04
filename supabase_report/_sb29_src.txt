@@ -1,0 +1,12 @@
+### [get-auth-src] (1.8s)
+201 | [{"proname":"get_auth","proacl":"{supabase_admin=X/supabase_admin,pgbouncer=X/supabase_admin}","prosrc":"\n  BEGIN\n      RAISE DEBUG 'PgBouncer auth request: %', p_usename;\n\n      RETURN QUERY\n      SELECT\n          rolname::text,\n          CASE WHEN rolvaliduntil < now()\n              THEN null\n              ELSE rolpassword::text\n          END\n      FROM pg_authid\n      WHERE rolname=$1 and rolcanlogin;\n  END;\n  "}]
+### [vault-src] (1.8s)
+201 | [{"proname":"create_secret","proacl":"{supabase_admin=X/supabase_admin,postgres=X*/supabase_admin,service_role=X/supabase_admin}","src":"\nDECLARE\n  rec record;\nBEGIN\n  INSERT INTO vault.secrets (secret, name, description)\n  VALUES (\n    new_secret,\n    new_name,\n    new_description\n  )\n  RETURNING * INTO rec;\n  UPDATE vault.secrets s\n  SET secret = encode(vault._crypto_aead_det_encrypt(\n    message := convert_to(rec.secret, 'utf8'),\n    additional := convert_to(s.id::text, 'utf8'),\n    key_id := 0,\n    context := 'pgsodium'::bytea,\n    nonce := rec.nonce\n  ), 'base64')\n  WHERE id = rec.id;\n  RETURN rec.id;\nEND\n"},{"proname":"update_secret","proacl":"{supabase_admin=X/supabase_admin,postgres=X*/supabase_admin,service_role=X/supabase_admin}","src":"\nDECLARE\n  decrypted_secret text := (SELECT decrypted_secret FROM vault.decrypted_secrets WHERE id = secret_id);\nBEGIN\n  UPDATE vault.secrets s\n  SET\n    secret = CASE WHEN new_secret IS NULL THEN s.secret\n                  ELSE encode(vault._crypto_aead_det_encrypt(\n                    message := convert_to(new_secret, 'utf8'),\n                    additional := convert_to(s.id::text, 'utf8'),\n                    key_id := 0,\n                    context := 'pgsodium'::bytea,\n                    nonce := s.nonce\n                  ), 'base64') END,\n    name = coalesce(new_name, s.name),\n    description = coalesce(new_description, s.description),\n    updated_at = now()\n  WHERE s.id = secret_id;\nEND\n"}]
+### [call-getauth] (2.0s)
+400 | {"message":"Failed to run sql query: ERROR:  42501: permission denied for function get_auth\n"}
+### [authid-pw] (1.7s)
+201 | [{"rolname":"supabase_admin","pw_prefix":"SCRAM-SHA-256$4"},{"rolname":"supabase_auth_admin","pw_prefix":"SCRAM-SHA-256$4"},{"rolname":"postgres","pw_prefix":"SCRAM-SHA-256$4"}]
+### [pgbouncer-objs] (1.7s)
+201 | []
+### [create-secret-args] (1.8s)
+201 | [{"args":"new_secret text, new_name text DEFAULT NULL::text, new_description text DEFAULT ''::text, new_key_id uuid DEFAULT NULL::uuid"}]

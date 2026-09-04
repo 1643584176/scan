@@ -1,0 +1,10 @@
+### [acl-bits] (1.8s)
+201 | [{"anon_authid":false,"anon_roles":true,"au_authid":false}]
+### [mk-func] (1.7s)
+201 | []
+### [rpc-anon] POST /rest/v1/rpc/sbx_probe_authid (1.4s)
+401 | {"code":"42501","details":null,"hint":"Grant the required privileges to the current role with: GRANT SELECT ON pg_catalog.pg_authid TO anon;","message":"permission denied for table pg_authid"}
+### [rpc-sr] POST /rest/v1/rpc/sbx_probe_authid (1.1s)
+403 | {"code":"42501","details":null,"hint":"Grant the required privileges to the current role with: GRANT SELECT ON pg_catalog.pg_authid TO service_role;","message":"permission denied for table pg_authid"}
+### [clean-func] (2.0s)
+201 | []

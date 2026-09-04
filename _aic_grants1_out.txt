@@ -1,0 +1,21 @@
+=== 1. 完整 grants 结构 ===
+GET   /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants?pageS -> 200  {"result":[{"compositeId":"849b1c957d72411019af8903854cb15440cb66c849538804e44bd953220eec7571d30d74dc1b2dfe66f7a6a34b29875443ad070ebe96fbddcf6800ae7e4ba571","item":{"type":"user"},"keys":{"type":"user","userId":"db3d6356-61a0-4684-9eaa-c1353dfa44d9"},"user":{"_rev":"8d40d008-98c6-46ed-935d-38d01ae5b
+saved full grants json, count: 1
+
+=== 2. POST grants 格式爆破 ===
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants       -> 400  {"message":"Invalid provisioning object, allowed types are: entitlements, applications, roles, accountGrant, entitlementGrant"}
+
+=== 3. requests POST 带 _action ===
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests?_ac -> 400  {"message":"Invalid request _action."}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests?_ac -> 200  {"result":[],"searchAfterKey":null,"totalCount":0,"resultCount":0}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests?_ac -> 400  {"message":"Invalid request _action."}

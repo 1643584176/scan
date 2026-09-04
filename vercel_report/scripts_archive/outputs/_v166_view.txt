@@ -1,0 +1,66 @@
+[1788226072.601] mount vda ret=0
+[1788226072.601] payload written to COW 6658 bytes
+[1788226072.615] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=b6ccb362-84f8-4250-a219-0db7d962a3a2-snapshot
+[1788226072.622] Create v166b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\
+\\x94(\
+\\x05v166b\\x1a\\x87\\x01977805900166.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788226072.700] Tasks/Create v166b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v166b\\x10\\x8e\\x05'
+[1788226072.719] Tasks/Start v166b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x8e\\x05'
+[1788226073.020] --- COW v166c.out @1s +339 ---
+[1788226072.8] === 1 setup ===
+[1788226072.8] Create yes -> HTTP/1.1 200 OK b'{"containerId":"1d761b6b-7825-454c-bbcf-5ece48b25f60"}'
+[1788226072.8] cid=1d761b6b-7825-454c-bbcf-5ece48b25f60
+[1788226072.8] Start -> HTTP/1.1 200 OK b'{}'
+
+[1788226073.923] --- COW v166c.out @4s +497 ---
+[1788226073.8] yes pid=687
+[1788226073.8] === 2 exec verify ===
+[1788226073.8] v1 Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_92dcd6b5458f43979d803ae4ba2"}'
+rify ===
+[1788226074.825] --- COW v166c.out @7s +1104 ---
+[1788226074.8] SBX /tmp/v166mark ERR
+[1788226074.8] SBX /tmp/v166id ERR
+[1788226074.8] SBX /tmp/v166pwd ERR
+[1788226074.8] SBX /tmp/v166hostname ERR
+[1788226074.8] SBX /tmp/v166vercel ERR
+[1788226074.8] === 3 net probe ===
+[1788226074.8] net1 Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_2f2fbb92695848cfa5608196234"}'
+[1788226074.8] net2 Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_61f2e3e9f1d843dbac10020c6ef"}'
+[1788226074.8] net3 Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_933d8ca89942448eb9d9e743215"}'
+[1788226074.8] net4 Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_47188b143d004d4d826a4925aa1"}'
+215"}'
+[1788226076.930] --- COW v166c.out @14s +1234 ---
+[1788226076.8] === 4 ctr proc ===
+[1788226076.8] proc Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_5c5949249a0e430ab34de0bfecc"}'
+oc ===
+[1788226077.831] --- COW v166c.out @17s +1365 ---
+[1788226077.8] === 5 cgroup view ===
+[1788226077.8] cg Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_8f2163a5c6c84c9281ba76d0162"}'
+view ===
+[1788226079.032] --- COW v166c.out @21s +5471 ---
+[1788226078.8] === 6 results ===
+[1788226078.8] SBX2 /tmp/v166mark ERR
+[1788226078.8] SBX2 /tmp/v166id ERR
+[1788226078.8] SBX2 /tmp/v166pwd ERR
+[1788226078.8] SBX2 /tmp/v166hostname ERR
+[1788226078.8] SBX2 /tmp/v166vercel ERR
+[1788226078.8] === 7 stream enum ===
+[1788226078.9] CTX b'OutputStream' @0x3308e6: b'td.llBitsTable\\x00type:RL4gG1/A\\x00github.com/vercel/hive/pkg/adapters/pb.RlimitToModel\\x00net.(*conn).LocalAddr\\x00github.com/vercel/hive/gen/cell/api/processes.OutputStream.Descriptor\\x00type:KPTvEzlM\\x00github.com/DataDog/sketches-go/ddsketch/store..inittask\\x00type:.qw5GXKFV\\x00type:XvgvuRYU\\x00go:link.pkghash.google.golang.org/protobuf/runtime/protoiface\\x00ve...[TRUNC 962]
+[1788226078.9] CTX b'OutputStream' @0x331ce1: b'ferwrap1\\x00type:sxrq1lbJ\\x00github.com/DataDog/dd-trace-go/v2/internal/hostname.isRefreshing\\x00type:.nRM0aU+j\\x00github.com/vercel/hive/gen/cell/api/containers.OutputStream.Number\\x00github.com/json-iterator/go.sortableBindings.Swap\\x00type:.pgcuN/33\\x00net/netip.(*AddrPort).AppendText\\x00type:2L3SX/m3\\x00reflect.(*structType).ExportedMethods\\x00context.cancelCtx...[TRUNC 962]
+[1788226078.9] CTX b'OutputStream' @0x3536d1: b'/connect/internal/gen/connectext/grpc/status/v1.file_connectext_grpc_status_v1_status_proto_rawDescData\\x00github.com/vercel/hive/gen/cell/api/processes.OutputStream.Type\\x00golang.org/x/net/http2..stmp_22\\x00type:.f5gbKa6q\\x00type:.5MrdyvdL\\x00type:.PlTFdS2P\\x00type:ZiBkO1aT\\x00type:pPTHhJfJ\\x00github.com/containerd/containerd.New\\x00type:48Dk8jij\\x00crypto/tls.(*...[TRUNC 956]
+[1788226078.9] CTX b'OutputStream' @0x364a6e: b'pn2R6hVC\\x00type:.ixMwEegN\\x00compress/flate.(*deflateFast).shiftOffsets\\x00type:.eEKpB+4w\\x00log.(*Logger).Flags\\x00github.com/vercel/hive/gen/cell/api/processes.(*OutputStream).Enum\\x00mime/quotedprintable.readHexByte\\x00crypto/tls.(*Conn).Close\\x00type:.o0T72byY\\x00crypto/tls.extractPadding\\x00github.com/google/pprof/profile.init.func27\\xc2\\xb7f\\x00type:.byYm5Ii...[TRUNC 971]
+[1788226078.9] CTX b'OutputStream' @0x36de12: b'akeStdFloatValueSliceMarshaler.func35\\x00github.com/tinylib/msgp/msgp.(*Writer).WriteUint\\x00type:IiP8sUBC\\x00github.com/vercel/hive/gen/cell/api/containers.(*OutputStream).EnumDescriptor\\x00type:.cKpMe1UG\\x00github.com/puzpuzpuz/xsync/v3.(*MapOf[github.com/DataDog/dd-trace-go/v2/internal/telemetry.metricKey,github.com/DataDog/dd-trace-go/v2/internal/telemetry.metr...[TRUNC 950]
+[1788226078.9] CTX b'OutputStream' @0x3741e1: b'le.golang.org/protobuf/internal/filedesc.(*File).unmarshalFull\\x00github.com/modern-go/reflect2.assertType\\x00github.com/vercel/hive/gen/cell/api/processes.OutputStream_name\\x00type:1YAH7uMx\\x00connectrpc.com/connect.(*Request[github.com/vercel/hive/gen/celld/api/celld.StartContainerRequest]).internalOnly\\x00golang.org/x/net/http2.init.func7\\xc2\\xb7f\\x00github.com/...[TRUNC 965]
+[1788226078.9] CTX b'OutputStream' @0x3aa3f7: b'itab.*github.com/gogo/protobuf/proto.stringValue,github.com/gogo/protobuf/proto.Message\\x00type:.20fBpSSV\\x00github.com/vercel/hive/gen/cell/api/containers.OutputStream_name\\x00github.com/go-jose/go-jose/v4/json.(*UnsupportedValueError).Error\\x00reflect.FuncOf.func1\\x00github.com/containernetworking/cni/pkg/types/100.convertFrom100\\x00vendor/golang.org/x/crypto/cry...[TRUNC 947]
+[1788226078.9] CTX b'OutputStream' @0x3b39e3: b'6BIWeVL\\x00type:PQ5mvdUA\\x00github.com/containerd/containerd/pkg/cleanup.clearCancel.Deadline\\x00type:.m9XXksbG\\x00github.com/vercel/hive/gen/cell/api/containers.OutputStream.Enum\\x00type:KUPxWP5E\\x00slices..dict.insertionSortCmpFunc[go.opentelemetry.io/otel/attribute.KeyValue]\\x00type:y7LcWnwH\\x00type:.yvYZLcvp\\x00type:.EKsIzqyX\\x00type:.fduHUyxW\\x00go.uber.org/za...[TRUNC 953]
+[1788226078.9] CTX done hits=8
+[1788226078.9] V166_DONE
+x00type:PQ5mvdUA\\x00github.com/containerd/containerd/pkg/cleanup.clearCancel.Deadline\\x00type:.m9XXksbG\\x00github.com/vercel/hive/gen/cell/api/containers.OutputStream.Enum\\x00type:KUPxWP5E\\x00slices..dict.insertionSortCmpFunc[go.opentelemetry.io/otel/attribute.KeyValue]\\x00type:y7LcWnwH\\x00type:.yvYZLcvp\\x00type:.EKsIzqyX\\x00type:.fduHUyxW\\x00go.uber.org/za...[TRUNC 953]
+CHROOT_RC=0
+V99_END
+[1788226079.062] kill v166b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788226079.062] V99M_DONE

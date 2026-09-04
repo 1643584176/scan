@@ -1,0 +1,40 @@
+[create] -> 200
+sid = sbx_QFHsNTdKMKD34iD74jwYbjmD1Rq3
+=== P1: interactive ===
+[interactive] -> 200 {"url":"wss://sb-3s8sojabnwzu.vercel.run/ws/interactive","token":"UQaV6ZRuCFYHaWnIvRu2oPUq_daElq3XWfGyUAbVDhE"}
+[session] -> 200 {"session":{"id":"sbx_QFHsNTdKMKD34iD74jwYbjmD1Rq3","runtime":"node22","requestedAt":1788088603172,"startedAt":1788088603199,"status":"running","vcpus":2,"memory":4096,"timeout":300000,"region":"iad1","cwd":"/vercel","createdAt":1788088603172,"updatedAt":1788088603207,"interactivePort":26661,"sourceSandboxName":"sdk46b","projectId":"prj_iyw2xfjP3RKPT7n8b8c1tBIxxK5F"},"routes":[]}
+=== P2: listSnapshots 跨租户 ===
+[victim list own] -> 200 {"snapshots":[{"id":"snap_yDQhmwARI0QSRwITVstj1df8dud5","sourceSessionId":"sbx_kha5wxbV905yjutN6QyiONISv4d1","region":"iad1","regions":["iad1"],"status":"created","sizeBytes":250217584,"expiresAt":179
+[attacker list victim proj] -> 404 {"error":{"code":"not_found","message":"Could not find project: prj_LX0QDsEAlWA0uRZvVTunSef3lllF"}}
+[victim list attacker proj] -> 403 {"error":{"code":"forbidden","message":"Not authorized"}}
+=== P3: listSessions 跨租户 ===
+[attacker list victim sessions] -> 404 {"error":{"code":"not_found","message":"Could not find project: prj_LX0QDsEAlWA0uRZvVTunSef3lllF"}}
+[victim list own sessions] -> 200 {"sessions":[{"id":"sbx_kha5wxbV905yjutN6QyiONISv4d1","runtime":"node22","requestedAt":1788000091731,"startedAt":1788000091877,"stoppedAt":1788000393758,"status":"stopped","duration":301881,"vcpus":2,
+=== P4: PATCH 跨租户 ===
+[victim PATCH] -> 404 {"error":{"code":"not_found","message":"Named sandbox 'sdk46b' not found for this project."}}
+=== P5: fs/write x-cwd=/tmp + 遍历 ===
+[write /tmp] -> 200 {}
+[write /tmp ../] -> 400 {"error":{"code":"bad_request","message":"The submitted tarball could not be extracted","stderr":"tar: Removing leading `../../' from member names\ntar: ../../etc/sdk_escape2: Member name contains '..
+[write /tmp enc ../] -> 200 {}
+[verify] ls: cannot access '/etc/sdk_escape*': No such file or directory
+-rw-r--r-- 1 ubuntu ubuntu 12 Aug 30 11:17 /tmp/sdk_mark.txt
+=== P6: cmdId/kill/logs ===
+[cmd async] -> 200 {"command":{"id":"cmd_db9fe6b656784661bbd21c791845","name":"sleep","args":["30"],"cwd":"/vercel","sessionId":"sbx_QFHsNTdKMKD34iD74jwYbjmD1Rq3","startedAt":1788088626707,"exitCode":null}}
+cmdId = cmd_db9fe6b656784661bbd21c791845
+[get cmd] -> 200 {"command":{"id":"cmd_db9fe6b656784661bbd21c791845","name":"sleep","args":["30"],"cwd":"/vercel","sessionId":"sbx_QFHsNTdKMKD34iD74jwYbjmD1Rq3","start
+[kill cmd] -> 400 {"error":{"code":"bad_request","message":"Invalid request: missing required property `signal`."}}
+[cmd logs] -> 200 
+[victim kill] -> 400 {"error":{"code":"bad_request","message":"Invalid request: missing required property `signal`."}}
+=== P7: fork 数据复制 ===
+[src mark] -> 200
+[fork] -> 200 {"sandbox":{"name":"sdk46bf","currentSessionId":"sbx_X51DY8OtMLpg0zFYztgWijbZV37A","status":"running","statusUpdatedAt":1788088661696,"persistent":tru
+Traceback (most recent call last):
+  File "F:\scan\_x_sdk_api2.py", line 157, in <module>
+    fsid = json.loads(r)['sandbox']['currentSessionId']
+  File "F:\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "F:\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "F:\Python310\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 694 (char 693)

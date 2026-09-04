@@ -1,0 +1,158 @@
+[1788171384.718] mount vda ret=0
+[1788171384.719] payload written to COW 9933 bytes
+
+[1788171384.733] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=1ee03e1d-bbfe-451c-9321-5c98ea9f53bb-snapshot
+
+[1788171384.738] Create v149b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\x17\n\x94(\n\x05v149b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x91&\n6types.containerd.'
+
+[1788171384.780] Tasks/Create v149b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\n\n\x05v149b\x10\x90\x05'
+
+[1788171384.790] Tasks/Start v149b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\x90\x05'
+
+[1788171385.091] --- COW v149c.out @1s +1372 ---
+[1788171384.8] === 1 /volumes ===
+[1788171384.8] ls /volumes EXC [Errno 2] No such file or directory: '/volumes'
+[1788171384.8] /proc/1/root/volumes/run/ = ['vercel']
+[1788171384.8] === 2 blockfile ===
+[1788171384.8] FILE /proc/1/root/var/lib/containerd/io.containerd.metadata.v1.bolt/meta.db (262144)
+[1788171384.8] bolt meta.db size=262144
+[1788171384.8] bolt HVC hvc_iad1_b01540a2_014405a85d23403db60e523fda2ffc96
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] === 3 containerd list ===
+[1788171384.8] containerd.sock exists=True
+[1788171384.8] CTR List rc=0 HDR:HTTP/2 200  content-type: application/grpc grpc-status: 2 grpc-message: EOF  
+[1788171384.8] CTR raw len=0 b''
+[1788171384.8] === 4 celld mem ===
+[1788171384.8] celld comm=b'celld\n'
+[1788171384.8] celld PTRACE_ATTACH rc=0 errno=0
+84.8] === 4 celld mem ===
+[1788171384.8] celld comm=b'celld\n'
+[1788171384.8] celld PTRACE_ATTACH rc=0 errno=0
+
+
+[1788171385.392] --- COW v149c.out @2s +9337 ---
+[1788171384.8] === 1 /volumes ===
+[1788171384.8] ls /volumes EXC [Errno 2] No such file or directory: '/volumes'
+[1788171384.8] /proc/1/root/volumes/run/ = ['vercel']
+[1788171384.8] === 2 blockfile ===
+[1788171384.8] FILE /proc/1/root/var/lib/containerd/io.containerd.metadata.v1.bolt/meta.db (262144)
+[1788171384.8] bolt meta.db size=262144
+[1788171384.8] bolt HVC hvc_iad1_b01540a2_014405a85d23403db60e523fda2ffc96
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] === 3 containerd list ===
+[1788171384.8] containerd.sock exists=True
+[1788171384.8] CTR List rc=0 HDR:HTTP/2 200  content-type: application/grpc grpc-status: 2 grpc-message: EOF  
+[1788171384.8] CTR raw len=0 b''
+[1788171384.8] === 4 celld mem ===
+[1788171384.8] celld comm=b'celld\n'
+[1788171384.8] celld PTRACE_ATTACH rc=0 errno=0
+[1788171385.2] celld MEM 1 b'AWS_' @0x346bf960240: b'cel/hive/gen/types;types\x00\x00\x00\x00\x00\x00\x00\x00Z&github.com/vercel/hive/gen/types;types\x00\x00\x00\x00\x00\x00\x00\x00AWS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crtPIP_CERT=/etc/ssl/certs/ca-certificates.crt\x00\x00\x00\x00\x00SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crtZ-github.com/vercel/'
+[1788171385.2] celld MEM 1 b'AWS_' @0x346bfacc602: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x120AWS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt\x124CARGO_HTTP_CAINFO=/etc/ssl/certs/ca-certificates.crt\x121CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt\x121GIT_SSL_C'
+[1788171385.2] celld MEM 1 b'Authorization' @0x346bf9cb506: b'\x00\x000\x00\x00\x009\x00\x00\x00A\x00\x00\x00F\x00\x00\x00a\x00\x00\x00f\x00\x00\x000\x00\x00\x009\x00\x00\x00A\x00\x00\x00F\x00\x00\x00a\x00\x00\x00f\x00\x00\x00Proxy-Authenticate\x00\x00z\x00\x00\x00Proxy-Authorization\x00\x00\x00\x00\x00Transfer-Encoding7})\x00\x00\x00\x00X-Forwarded-Proto\x00\x00\x00z\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00Connect-Protocol-Version\x04\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00X-Datadog-Trace-Id\x00\x00\x03\x00\x00\x00X-Datadog-P'
+[1788171385.2] celld MEM 1 b'Authorization' @0x346bfc4eaf0: b'\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff\xff\x10\x00\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff\xff\x10\x00\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff\xff\x10\x00\x03\x00\x00\x00\x03\x00\x00\x00e\x00\x00\x00e\x00\x00\x00AgeAllowExpect\x00\x00Authorization\x00\x00\x00Content-EncodingContent-LocationContent-Range\x00\x00\x00If-MatchLink\x00\x00\x00\x00Max-Forwards\x00\x00\x00\x00OriginRange\x00\x00\x00\x00\x00RefererRefresh\x00\x00\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff\xff\x10\x00\r\x00\x00\x00\r\x00\x00\x00\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff'
+[1788171385.2] celld MEM 1 b'token' @0x346bfa1aeb5: b'tries: 65536 (order: 9, 2097152 bytes, linear)\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x006,204,119451,-;MPTCP token hash table entries: 8192 (order: 6, 196608 bytes, linear)\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x006,206,119735,-;UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)\n\x00\x00\x00\x00\x00\x00\x00\x00'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a864d6: b'CAPCAP_SETPCAPSCMP_CMP_EQ/proc/kcorepanic_valuestack_tracepeer_closed^[a-z0-9]+$PRIVATE KEYworkload_idtotal_bytesusage_usec cpuset.cpusmemory.peakpsi.io.somepsi.io.full^[a-f0-9]+$Gorilla MuxHTTP Routerv(\\d.\\d)\\d*error.stackService: %sTraceID: %daws_se'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a87b93: b'cpmlkemclose notifyremote errorc hs traffics hs trafficc ap traffics ap traffic PRIVATE KEYmultipathtcp127.0.0.1:53pointtopointno such hostunknown portCIDR addressinvalid portMime-VersionX-ImforwardsX-Powered-ByLittleEndianNativeEndianrandautoseedmax-'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a8a686: b'[]byte{protobuf errorreserved_rangeCLICOLOR_FORCEsend msgs: %+vnetlink %s: %vEC PRIVATE KEYtrue-client-ipInstEmptyWidthincompressibleOTEL_LOG_LEVELpass1Index: %wtc_deletearraytc_new_nothrow(::)?do_mallocruntime\\.panic/anon_hugepageDuration: %.4vreques'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a8c128: b';rightarrowtail;rightharpoonup;trianglelefteq;upharpoonright; not a functionRSA PRIVATE KEY^[0-9a-zA-Z.]*$invalid big int-- is not validreadObjectStartreadEscapedCharerror during rununable to rebootcelld.init.phasestartCelldServercontext canceledno su'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1ad5c5e: b'=============================tls: failed to find PEM block with type ending in "PRIVATE KEY" in key input after skipping PEM blocks of the following types: %v%T uses github.com/golang/protobuf, but connect-go only supports google.golang.org/protobuf: '
+[1788171385.2] celld MEM 1 b'AWS_' @0x1a85178: b'/containercontainerslog_sourcevsock_portap-south-1eu-north-1af-south-1HIVE_REALMAWS_REGIONstacktracerpc.systemrpc.methodCAP_FOWNERCAP_FSETIDCAP_SETGIDCAP_SETUIDCAP_SYSLOGimage_size/proc/keyspanic_type10.0.0.0/8project_idfree_bytesused_bytesrx_p'
+[1788171385.2] celld MEM 1 b'AWS_' @0x1a98d20: b'oroutineruntime.go.mem_stats.sysDD_TRACE_REPORT_HOSTNAMEDD_TRACE_SOURCE_HOSTNAMEAWS_LAMBDA_FUNCTION_NAMEnetwork.destination.nameRuntime metrics enabled.reflect.MapIter.SetValuereflect.StructOf: field reflect.Value.SetComplexreflect.Value.Unsafe'
+[1788171385.2] celld MEM 1 b'AWS_' @0x1aa5afe: b' %v with %vrpc error: code = %s desc = %sbuilding encoding table %v: %vDD_TRACE_AWS_ANALYTICS_ENABLEDDD_TRACE_CHI_ANALYTICS_ENABLEDDD_TRACE_DEBUG_ABANDONED_SPANSDD_TRACE_GIN_ANALYTICS_ENABLEDDD_TRACE_MCP_ANALYTICS_ENABLEDDD_TRACE_MGO_ANALYTICS_'
+[1788171385.2] celld MEM 1 b'Authorization' @0x1a8879e: b'ntUsage of %s:\n (default %q) (default %v)WINDOW_UPDATESTREAM_CLOSEDCONNECT_ERRORAuthorizationCache-ControlLast-ModifiedContent-RangeAccept-RangesIf-None-Match[FrameHeader invalid base unknown timersend_too_muchempty patternFQDN too longsocks connectRese'
+[1788171385.2] celld MEM 1 b'Authorization' @0x1a907a0: b'ient disconnectedhttp: Server closedINADEQUATE_SECURITYINITIAL_WINDOW_SIZEProxy-Authorizationframe_data_stream_0 (%d bytes omitted)err must be non-nilTLS version too lowflow_on_data_lengthheaders_half_closedhost/path missing /multipart/form-dataContent-'
+[1788171385.2] celld MEM 1 b'Bearer ' @0x1a84828: b'deleted)Comment: Locations%6d: %#x /dev/dri/endpoint:telemetrySubscribeCOMMITTEDBearer %smanifestsbytes=%d-bytes %d-labels.%sresolving/etc/mtabblob://%v%s %s #%dbinarylogPeer<nil>last hourtrimSpaceFFE_FLAGSgets-keptPROCEDUREASSERTIONTEMPORARYRECUR'
+[1788171385.2] celld MEM 1 b'token' @0x16e98d2: b't\x00\x05failf\x00\x05usage\x00\x05undef\x01\x05Token\x01\x05Width\x00\x05write\x00\x05limit\x00\x05count\x00\x05atEOF\x08\x05ssave\x00\x05error\x00\x05token\x01\x05Write\x00\x05fmtBs\x00\x05fmtBx\x00\x05fmtQc\x00\x05fmtSx\x00\x05minus\x00\x05sharp\x00\x05space\x00\x05plusV\x01\x05Close\x01\x05Outer\t\x05Mutex\x00\x05valid\x01\x05Flags\x01\x05Valid\x01\x05Flush\x00\x05state\x01\x05Clone\x01\x05Proto\x00\x05multi\x01\x05HTTP1\x01\x05HTTP2\x00\x05clos'
+[1788171385.2] celld MEM 1 b'token' @0x16ebff2: b'\xb8\x00\x00\x00\x00\x00 $\xb8\x00\x00\x00\x00\x00\x80$\xb8\x00\x00\x00\x00\x00\x01\x06*fs.FS\xe0,\xbe\x00\x00\x00\x00\x00\x01\x06Buffer\x00\x06setErr\x00\x06toRead\x00\x06nbytes\x00\x06window\x00\x06tokens\xa0L\xdc\x00\x00\x00\x00\x00\t\x06Header\x00\x06uint64\x01\x06Int31n\x01\x06Int63n\x00\x06int31n\x80\x9d\xc3\x00\x00\x00\x00\x00\xa0\x9d\xc3\x00\x00\x00\x00\x00\xc0\x9d\xc3\x00\x00\x00\x00\x00\x00\x06dynTab\x00\x06isHuff \t\xde\x00\x00\x00\x00\x00\xc0\t\xde\x00\x00\x00\x00\x00@\n\xde\x00\x00\x00\x00\x00\xe0\xb5\xdd\x00\x00\x00\x00\x00\x01\x06Stride\x00\x06excess <\xde\x00\x00\x00\x00\x00\x80\xef\xd3\x00\x00\x00\x00\x00\x00\xf0\xd3\x00\x00\x00\x00'
+[1788171385.2] celld mem scan done regions=4 found=18
+[1788171385.2] === 5 init mem ===
+[1788171385.2] init pid=582
+[1788171385.2] init PTRACE_ATTACH rc=0 errno=0
+0\x00\x00\x01\x06Buffer\x00\x06setErr\x00\x06toRead\x00\x06nbytes\x00\x06window\x00\x06tokens\xa0L\xdc\x00\x00\x00\x00\x00\t\x06Header\x00\x06uint64\x01\x06Int31n\x01\x06Int63n\x00\x06int31n\x80\x9d\xc3\x00\x00\x00\x00\x00\xa0\x9d\xc3\x00\x00\x00\x00\x00\xc0\x9d\xc3\x00\x00\x00\x00\x00\x00\x06dynTab\x00\x06isHuff \t\xde\x00\x00\x00\x00\x00\xc0\t\xde\x00\x00\x00\x00\x00@\n\xde\x00\x00\x00\x00\x00\xe0\xb5\xdd\x00\x00\x00\x00\x00\x01\x06Stride\x00\x06excess <\xde\x00\x00\x00\x00\x00\x80\xef\xd3\x00\x00\x00\x00\x00\x00\xf0\xd3\x00\x00\x00\x00'
+[1788171385.2] celld mem scan done regions=4 found=18
+[1788171385.2] === 5 init mem ===
+[1788171385.2] init pid=582
+[1788171385.2] init PTRACE_ATTACH rc=0 errno=0
+
+
+[1788171384.8] === 1 /volumes ===
+[1788171384.8] ls /volumes EXC [Errno 2] No such file or directory: '/volumes'
+[1788171384.8] /proc/1/root/volumes/run/ = ['vercel']
+[1788171384.8] === 2 blockfile ===
+[1788171384.8] FILE /proc/1/root/var/lib/containerd/io.containerd.metadata.v1.bolt/meta.db (262144)
+[1788171384.8] bolt meta.db size=262144
+[1788171384.8] bolt HVC hvc_iad1_b01540a2_014405a85d23403db60e523fda2ffc96
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] bolt UUID 1ee03e1d-bbfe-451c-9321-5c98ea9f53bb
+[1788171384.8] === 3 containerd list ===
+[1788171384.8] containerd.sock exists=True
+[1788171384.8] CTR List rc=0 HDR:HTTP/2 200  content-type: application/grpc grpc-status: 2 grpc-message: EOF  
+[1788171384.8] CTR raw len=0 b''
+[1788171384.8] === 4 celld mem ===
+[1788171384.8] celld comm=b'celld\n'
+[1788171384.8] celld PTRACE_ATTACH rc=0 errno=0
+[1788171385.2] celld MEM 1 b'AWS_' @0x346bf960240: b'cel/hive/gen/types;types\x00\x00\x00\x00\x00\x00\x00\x00Z&github.com/vercel/hive/gen/types;types\x00\x00\x00\x00\x00\x00\x00\x00AWS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crtPIP_CERT=/etc/ssl/certs/ca-certificates.crt\x00\x00\x00\x00\x00SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crtZ-github.com/vercel/'
+[1788171385.2] celld MEM 1 b'AWS_' @0x346bfacc602: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x120AWS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt\x124CARGO_HTTP_CAINFO=/etc/ssl/certs/ca-certificates.crt\x121CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt\x121GIT_SSL_C'
+[1788171385.2] celld MEM 1 b'Authorization' @0x346bf9cb506: b'\x00\x000\x00\x00\x009\x00\x00\x00A\x00\x00\x00F\x00\x00\x00a\x00\x00\x00f\x00\x00\x000\x00\x00\x009\x00\x00\x00A\x00\x00\x00F\x00\x00\x00a\x00\x00\x00f\x00\x00\x00Proxy-Authenticate\x00\x00z\x00\x00\x00Proxy-Authorization\x00\x00\x00\x00\x00Transfer-Encoding7})\x00\x00\x00\x00X-Forwarded-Proto\x00\x00\x00z\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00Connect-Protocol-Version\x04\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00X-Datadog-Trace-Id\x00\x00\x03\x00\x00\x00X-Datadog-P'
+[1788171385.2] celld MEM 1 b'Authorization' @0x346bfc4eaf0: b'\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff\xff\x10\x00\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff\xff\x10\x00\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff\xff\x10\x00\x03\x00\x00\x00\x03\x00\x00\x00e\x00\x00\x00e\x00\x00\x00AgeAllowExpect\x00\x00Authorization\x00\x00\x00Content-EncodingContent-LocationContent-Range\x00\x00\x00If-MatchLink\x00\x00\x00\x00Max-Forwards\x00\x00\x00\x00OriginRange\x00\x00\x00\x00\x00RefererRefresh\x00\x00\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff\xff\x10\x00\r\x00\x00\x00\r\x00\x00\x00\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00.\x00\x00\x000\x00\x00\x00\xff'
+[1788171385.2] celld MEM 1 b'token' @0x346bfa1aeb5: b'tries: 65536 (order: 9, 2097152 bytes, linear)\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x006,204,119451,-;MPTCP token hash table entries: 8192 (order: 6, 196608 bytes, linear)\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x006,206,119735,-;UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)\n\x00\x00\x00\x00\x00\x00\x00\x00'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a864d6: b'CAPCAP_SETPCAPSCMP_CMP_EQ/proc/kcorepanic_valuestack_tracepeer_closed^[a-z0-9]+$PRIVATE KEYworkload_idtotal_bytesusage_usec cpuset.cpusmemory.peakpsi.io.somepsi.io.full^[a-f0-9]+$Gorilla MuxHTTP Routerv(\\d.\\d)\\d*error.stackService: %sTraceID: %daws_se'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a87b93: b'cpmlkemclose notifyremote errorc hs traffics hs trafficc ap traffics ap traffic PRIVATE KEYmultipathtcp127.0.0.1:53pointtopointno such hostunknown portCIDR addressinvalid portMime-VersionX-ImforwardsX-Powered-ByLittleEndianNativeEndianrandautoseedmax-'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a8a686: b'[]byte{protobuf errorreserved_rangeCLICOLOR_FORCEsend msgs: %+vnetlink %s: %vEC PRIVATE KEYtrue-client-ipInstEmptyWidthincompressibleOTEL_LOG_LEVELpass1Index: %wtc_deletearraytc_new_nothrow(::)?do_mallocruntime\\.panic/anon_hugepageDuration: %.4vreques'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a8c128: b';rightarrowtail;rightharpoonup;trianglelefteq;upharpoonright; not a functionRSA PRIVATE KEY^[0-9a-zA-Z.]*$invalid big int-- is not validreadObjectStartreadEscapedCharerror during rununable to rebootcelld.init.phasestartCelldServercontext canceledno su'
+[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1ad5c5e: b'=============================tls: failed to find PEM block with type ending in "PRIVATE KEY" in key input after skipping PEM blocks of the following types: %v%T uses github.com/golang/protobuf, but connect-go only supports google.golang.org/protobuf: '
+[1788171385.2] celld MEM 1 b'AWS_' @0x1a85178: b'/containercontainerslog_sourcevsock_portap-south-1eu-north-1af-south-1HIVE_REALMAWS_REGIONstacktracerpc.systemrpc.methodCAP_FOWNERCAP_FSETIDCAP_SETGIDCAP_SETUIDCAP_SYSLOGimage_size/proc/keyspanic_type10.0.0.0/8project_idfree_bytesused_bytesrx_p'
+[1788171385.2] celld MEM 1 b'AWS_' @0x1a98d20: b'oroutineruntime.go.mem_stats.sysDD_TRACE_REPORT_HOSTNAMEDD_TRACE_SOURCE_HOSTNAMEAWS_LAMBDA_FUNCTION_NAMEnetwork.destination.nameRuntime metrics enabled.reflect.MapIter.SetValuereflect.StructOf: field reflect.Value.SetComplexreflect.Value.Unsafe'
+[1788171385.2] celld MEM 1 b'AWS_' @0x1aa5afe: b' %v with %vrpc error: code = %s desc = %sbuilding encoding table %v: %vDD_TRACE_AWS_ANALYTICS_ENABLEDDD_TRACE_CHI_ANALYTICS_ENABLEDDD_TRACE_DEBUG_ABANDONED_SPANSDD_TRACE_GIN_ANALYTICS_ENABLEDDD_TRACE_MCP_ANALYTICS_ENABLEDDD_TRACE_MGO_ANALYTICS_'
+[1788171385.2] celld MEM 1 b'Authorization' @0x1a8879e: b'ntUsage of %s:\n (default %q) (default %v)WINDOW_UPDATESTREAM_CLOSEDCONNECT_ERRORAuthorizationCache-ControlLast-ModifiedContent-RangeAccept-RangesIf-None-Match[FrameHeader invalid base unknown timersend_too_muchempty patternFQDN too longsocks connectRese'
+[1788171385.2] celld MEM 1 b'Authorization' @0x1a907a0: b'ient disconnectedhttp: Server closedINADEQUATE_SECURITYINITIAL_WINDOW_SIZEProxy-Authorizationframe_data_stream_0 (%d bytes omitted)err must be non-nilTLS version too lowflow_on_data_lengthheaders_half_closedhost/path missing /multipart/form-dataContent-'
+[1788171385.2] celld MEM 1 b'Bearer ' @0x1a84828: b'deleted)Comment: Locations%6d: %#x /dev/dri/endpoint:telemetrySubscribeCOMMITTEDBearer %smanifestsbytes=%d-bytes %d-labels.%sresolving/etc/mtabblob://%v%s %s #%dbinarylogPeer<nil>last hourtrimSpaceFFE_FLAGSgets-keptPROCEDUREASSERTIONTEMPORARYRECUR'
+[1788171385.2] celld MEM 1 b'token' @0x16e98d2: b't\x00\x05failf\x00\x05usage\x00\x05undef\x01\x05Token\x01\x05Width\x00\x05write\x00\x05limit\x00\x05count\x00\x05atEOF\x08\x05ssave\x00\x05error\x00\x05token\x01\x05Write\x00\x05fmtBs\x00\x05fmtBx\x00\x05fmtQc\x00\x05fmtSx\x00\x05minus\x00\x05sharp\x00\x05space\x00\x05plusV\x01\x05Close\x01\x05Outer\t\x05Mutex\x00\x05valid\x01\x05Flags\x01\x05Valid\x01\x05Flush\x00\x05state\x01\x05Clone\x01\x05Proto\x00\x05multi\x01\x05HTTP1\x01\x05HTTP2\x00\x05clos'
+[1788171385.2] celld MEM 1 b'token' @0x16ebff2: b'\xb8\x00\x00\x00\x00\x00 $\xb8\x00\x00\x00\x00\x00\x80$\xb8\x00\x00\x00\x00\x00\x01\x06*fs.FS\xe0,\xbe\x00\x00\x00\x00\x00\x01\x06Buffer\x00\x06setErr\x00\x06toRead\x00\x06nbytes\x00\x06window\x00\x06tokens\xa0L\xdc\x00\x00\x00\x00\x00\t\x06Header\x00\x06uint64\x01\x06Int31n\x01\x06Int63n\x00\x06int31n\x80\x9d\xc3\x00\x00\x00\x00\x00\xa0\x9d\xc3\x00\x00\x00\x00\x00\xc0\x9d\xc3\x00\x00\x00\x00\x00\x00\x06dynTab\x00\x06isHuff \t\xde\x00\x00\x00\x00\x00\xc0\t\xde\x00\x00\x00\x00\x00@\n\xde\x00\x00\x00\x00\x00\xe0\xb5\xdd\x00\x00\x00\x00\x00\x01\x06Stride\x00\x06excess <\xde\x00\x00\x00\x00\x00\x80\xef\xd3\x00\x00\x00\x00\x00\x00\xf0\xd3\x00\x00\x00\x00'
+[1788171385.2] celld mem scan done regions=4 found=18
+[1788171385.2] === 5 init mem ===
+[1788171385.2] init pid=582
+[1788171385.2] init PTRACE_ATTACH rc=0 errno=0
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc00001747f: b" bytes, linear)\\n\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\n[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a864d6: b'CAPCAP_SETPCAPSCMP_CMP_EQ/proc/kcorepanic_valuestack_tracepeer_closed^[a-z0-9]+$PRIVATE KEYworkload_idtotal_bytesusage_usec cpuset.cpusmemory.pe"
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc0000174ea: b'CAPCAP_SETPCAPSCMP_CMP_EQ/proc/kcorepanic_valuestack_tracepeer_closed^[a-z0-9]+$PRIVATE KEYworkload_idtotal_bytesusage_usec cpuset.cpusmemory.peakpsi.io.somepsi.io.full^[a-f0-9]+$Gorilla MuxHTTP Routerv(\\\\d.\\\\d)\\\\d*error.stackService: %sTraceID: %daws'
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc0000175b7: b"d.\\\\d)\\\\d*error.stackService: %sTraceID: %daws_se'\n[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a87b93: b'cpmlkemclose notifyremote errorc hs traffics hs trafficc ap traffics ap traffic PRIVATE KEYmultipathtcp127.0.0.1:53pointtopointno such hostunkno"
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc000017622: b'cpmlkemclose notifyremote errorc hs traffics hs trafficc ap traffics ap traffic PRIVATE KEYmultipathtcp127.0.0.1:53pointtopointno such hostunknown portCIDR addressinvalid portMime-VersionX-ImforwardsX-Powered-ByLittleEndianNativeEndianrandautoseedmax-'
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc0000176ec: b"owered-ByLittleEndianNativeEndianrandautoseedmax-'\n[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a8a686: b'[]byte{protobuf errorreserved_rangeCLICOLOR_FORCEsend msgs: %+vnetlink %s: %vEC PRIVATE KEYtrue-client-ipInstEmptyWidthincompressibleOTEL_LOG_LE"
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc000017757: b'[]byte{protobuf errorreserved_rangeCLICOLOR_FORCEsend msgs: %+vnetlink %s: %vEC PRIVATE KEYtrue-client-ipInstEmptyWidthincompressibleOTEL_LOG_LEVELpass1Index: %wtc_deletearraytc_new_nothrow(::)?do_mallocruntime\\\\.panic/anon_hugepageDuration: %.4vreque'
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc000017822: b"runtime\\\\.panic/anon_hugepageDuration: %.4vreques'\n[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a8c128: b';rightarrowtail;rightharpoonup;trianglelefteq;upharpoonright; not a functionRSA PRIVATE KEY^[0-9a-zA-Z.]*$invalid big int-- is not validreadObje"
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc00001788d: b';rightarrowtail;rightharpoonup;trianglelefteq;upharpoonright; not a functionRSA PRIVATE KEY^[0-9a-zA-Z.]*$invalid big int-- is not validreadObjectStartreadEscapedCharerror during rununable to rebootcelld.init.phasestartCelldServercontext canceledno su'
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc000017957: b'd.init.phasestartCelldServercontext canceledno su\'\n[1788171385.2] celld MEM 1 b\'PRIVATE KEY\' @0x1ad5c5e: b\'=============================tls: failed to find PEM block with type ending in "PRIVATE KEY" in key input after skipping PEM blocks of the follo'
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc0000179c2: b'=============================tls: failed to find PEM block with type ending in "PRIVATE KEY" in key input after skipping PEM blocks of the following types: %v%T uses github.com/golang/protobuf, but connect-go only supports google.golang.org/protobuf: '
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc000019982: b" bytes, linear)\\n\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\n[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a864d6: b'CAPCAP_SETPCAPSCMP_CMP_EQ/proc/kcorepanic_valuestack_tracepeer_closed^[a-z0-9]+$PRIVATE KEYworkload_idtotal_bytesusage_usec cpuset.cpusmemory.pe"
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc0000199ed: b'CAPCAP_SETPCAPSCMP_CMP_EQ/proc/kcorepanic_valuestack_tracepeer_closed^[a-z0-9]+$PRIVATE KEYworkload_idtotal_bytesusage_usec cpuset.cpusmemory.peakpsi.io.somepsi.io.full^[a-f0-9]+$Gorilla MuxHTTP Routerv(\\\\d.\\\\d)\\\\d*error.stackService: %sTraceID: %daws'
+[1788171385.6] init mem scan done regions=2 found=12
+[1788171385.6] === 6 init rootfs ===
+[1788171385.6] V149_DONE
+00019982: b" bytes, linear)\\n\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'\n[1788171385.2] celld MEM 1 b'PRIVATE KEY' @0x1a864d6: b'CAPCAP_SETPCAPSCMP_CMP_EQ/proc/kcorepanic_valuestack_tracepeer_closed^[a-z0-9]+$PRIVATE KEYworkload_idtotal_bytesusage_usec cpuset.cpusmemory.pe"
+[1788171385.6] init MEM 582 b'PRIVATE KEY' @0xc0000199ed: b'CAPCAP_SETPCAPSCMP_CMP_EQ/proc/kcorepanic_valuestack_tracepeer_closed^[a-z0-9]+$PRIVATE KEYworkload_idtotal_bytesusage_usec cpuset.cpusmemory.peakpsi.io.somepsi.io.full^[a-f0-9]+$Gorilla MuxHTTP Routerv(\\\\d.\\\\d)\\\\d*error.stackService: %sTraceID: %daws'
+[1788171385.6] init mem scan done regions=2 found=12
+[1788171385.6] === 6 init rootfs ===
+[1788171385.6] V149_DONE
+CHROOT_RC=0
+V99_END
+

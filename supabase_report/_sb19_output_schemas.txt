@@ -1,0 +1,1101 @@
+######################################################################
+SCHEMA JitAccessResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "user_id": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  },
+  "user_roles": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "role": {
+      "type": "string"
+     },
+     "expires_at": {
+      "type": "number"
+     },
+     "allowed_networks": {
+      "type": "object",
+      "properties": {
+       "allowed_cidrs": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv4",
+           "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       },
+       "allowed_cidrs_v6": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv6",
+           "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       }
+      }
+     },
+     "branches_only": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "role"
+    ]
+   }
+  }
+ },
+ "required": [
+  "user_roles"
+ ]
+}
+######################################################################
+SCHEMA JitAuthorizeAccessResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "user_id": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  },
+  "user_role": {
+   "type": "object",
+   "properties": {
+    "role": {
+     "type": "string"
+    },
+    "expires_at": {
+     "type": "number"
+    },
+    "allowed_networks": {
+     "type": "object",
+     "properties": {
+      "allowed_cidrs": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "cidr": {
+          "type": "string",
+          "format": "cidrv4",
+          "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+         }
+        },
+        "required": [
+         "cidr"
+        ]
+       }
+      },
+      "allowed_cidrs_v6": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "cidr": {
+          "type": "string",
+          "format": "cidrv6",
+          "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+         }
+        },
+        "required": [
+         "cidr"
+        ]
+       }
+      }
+     }
+    },
+    "branches_only": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "role"
+   ]
+  }
+ },
+ "required": [
+  "user_id",
+  "user_role"
+ ]
+}
+######################################################################
+SCHEMA JitListAccessResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "anyOf": [
+     {
+      "type": "object",
+      "properties": {
+       "user_id": {
+        "type": "string",
+        "format": "uuid",
+        "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+       },
+       "primary_email": {
+        "type": "string",
+        "nullable": true
+       },
+       "invite_id": {
+        "type": "null"
+       },
+       "expires_at": {
+        "type": "null"
+       },
+       "user_roles": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "role": {
+           "type": "string"
+          },
+          "expires_at": {
+           "type": "number"
+          },
+          "allowed_networks": {
+           "type": "object",
+           "properties": {
+            "allowed_cidrs": {
+             "type": "array",
+             "items": {
+              "type": "object",
+              "properties": {
+               "cidr": {
+                "type": "string",
+                "format": "cidrv4",
+                "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+               }
+              },
+              "required": [
+               "cidr"
+              ]
+             }
+            },
+            "allowed_cidrs_v6": {
+             "type": "array",
+             "items": {
+              "type": "object",
+              "properties": {
+               "cidr": {
+                "type": "string",
+                "format": "cidrv6",
+                "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+               }
+              },
+              "required": [
+               "cidr"
+              ]
+             }
+            }
+           }
+          },
+          "branches_only": {
+           "type": "boolean"
+          }
+         },
+         "required": [
+          "role"
+         ]
+        }
+       }
+      },
+      "required": [
+       "user_id",
+       "primary_email",
+       "invite_id",
+       "expires_at",
+       "user_roles"
+      ]
+     },
+     {
+      "type": "object",
+      "properties": {
+       "user_id": {
+        "type": "null"
+       },
+       "primary_email": {
+        "type": "string"
+       },
+       "invite_id": {
+        "type": "string",
+        "format": "uuid",
+        "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+       },
+       "expires_at": {
+        "type": "string"
+       },
+       "user_roles": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "role": {
+           
+######################################################################
+SCHEMA InviteExternalUserJitResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "email": {
+   "type": "string",
+   "format": "email",
+   "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$"
+  },
+  "invite_id": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  },
+  "user_roles": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "role": {
+      "type": "string"
+     },
+     "expires_at": {
+      "type": "number"
+     },
+     "allowed_networks": {
+      "type": "object",
+      "properties": {
+       "allowed_cidrs": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv4",
+           "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       },
+       "allowed_cidrs_v6": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv6",
+           "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       }
+      }
+     },
+     "branches_only": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "role"
+    ]
+   }
+  }
+ },
+ "required": [
+  "email",
+  "invite_id",
+  "user_roles"
+ ]
+}
+######################################################################
+SCHEMA ProjectClaimTokenResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "token_alias": {
+   "type": "string"
+  },
+  "expires_at": {
+   "type": "string"
+  },
+  "created_at": {
+   "type": "string"
+  },
+  "created_by": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  }
+ },
+ "required": [
+  "token_alias",
+  "expires_at",
+  "created_at",
+  "created_by"
+ ]
+}
+######################################################################
+SCHEMA CreateProjectClaimTokenResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "token": {
+   "type": "string"
+  },
+  "token_alias": {
+   "type": "string"
+  },
+  "expires_at": {
+   "type": "string"
+  },
+  "created_at": {
+   "type": "string"
+  },
+  "created_by": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  }
+ },
+ "required": [
+  "token",
+  "token_alias",
+  "expires_at",
+  "created_at",
+  "created_by"
+ ]
+}
+######################################################################
+SCHEMA OrganizationProjectClaimResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "project": {
+   "type": "object",
+   "properties": {
+    "ref": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "ref",
+    "name"
+   ]
+  },
+  "preview": {
+   "type": "object",
+   "properties": {
+    "valid": {
+     "type": "boolean"
+    },
+    "warnings": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "key": {
+        "type": "string"
+       },
+       "message": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "key",
+       "message"
+      ]
+     }
+    },
+    "errors": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "key": {
+        "type": "string"
+       },
+       "message": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "key",
+       "message"
+      ]
+     }
+    },
+    "info": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "key": {
+        "type": "string"
+       },
+       "message": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "key",
+       "message"
+      ]
+     }
+    },
+    "members_exceeding_free_project_limit": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string"
+       },
+       "limit": {
+        "type": "number"
+       }
+      },
+      "required": [
+       "name",
+       "limit"
+      ]
+     }
+    },
+    "source_subscription_plan": {
+     "type": "string",
+     "enum": [
+      "free",
+      "pro",
+      "team",
+      "enterprise",
+      "platform"
+     ]
+    },
+    "target_subscription_plan": {
+     "type": "string",
+     "enum": [
+      "free",
+      "pro",
+      "team",
+      "enterprise",
+      "platform",
+      null
+     ],
+     "nullable": true
+    }
+   },
+   "required": [
+    "valid",
+    "warnings",
+    "errors",
+    "info",
+    "members_exceeding_free_project_limit",
+    "source_subscription_plan",
+    "target_subscription_plan"
+   ]
+  },
+  "expires_at": {
+   "type": "string"
+  },
+  "created_at": {
+   "type": "string"
+  },
+  "created_by": {
+   "type": "string",
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  }
+ },
+ "required": [
+  "project",
+  "preview",
+  "expires_at",
+  "created_at",
+  "created_by"
+ ]
+}
+######################################################################
+SCHEMA CreateRoleResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "role": {
+   "type": "string",
+   "minLength": 1
+  },
+  "password": {
+   "type": "string",
+   "minLength": 1
+  },
+  "ttl_seconds": {
+   "type": "integer",
+   "minimum": 1,
+   "maximum": 9007199254740991,
+   "format": "int64"
+  }
+ },
+ "required": [
+  "role",
+  "password",
+  "ttl_seconds"
+ ]
+}
+######################################################################
+SCHEMA DeleteRolesResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "message": {
+   "type": "string",
+   "enum": [
+    "ok"
+   ]
+  }
+ },
+ "required": [
+  "message"
+ ]
+}
+######################################################################
+SCHEMA SnippetResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "id": {
+   "type": "string"
+  },
+  "inserted_at": {
+   "type": "string"
+  },
+  "updated_at": {
+   "type": "string"
+  },
+  "type": {
+   "type": "string",
+   "enum": [
+    "sql"
+   ]
+  },
+  "visibility": {
+   "type": "string",
+   "enum": [
+    "user",
+    "project",
+    "org",
+    "public"
+   ]
+  },
+  "name": {
+   "type": "string"
+  },
+  "description": {
+   "type": "string",
+   "nullable": true
+  },
+  "project": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "number"
+    },
+    "name": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "name"
+   ]
+  },
+  "owner": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "number"
+    },
+    "username": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "username"
+   ]
+  },
+  "updated_by": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "number"
+    },
+    "username": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "username"
+   ]
+  },
+  "favorite": {
+   "type": "boolean"
+  },
+  "content": {
+   "type": "object",
+   "properties": {
+    "favorite": {
+     "deprecated": true,
+     "description": "Deprecated: Rely on root-level favorite property instead.",
+     "type": "boolean"
+    },
+    "schema_version": {
+     "type": "string"
+    },
+    "sql": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "schema_version",
+    "sql"
+   ]
+  }
+ },
+ "required": [
+  "id",
+  "inserted_at",
+  "updated_at",
+  "type",
+  "visibility",
+  "name",
+  "description",
+  "project",
+  "owner",
+  "updated_by",
+  "favorite",
+  "content"
+ ]
+}
+######################################################################
+SCHEMA SnippetList_Output
+{
+ "type": "object",
+ "properties": {
+  "data": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "inserted_at": {
+      "type": "string"
+     },
+     "updated_at": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string",
+      "enum": [
+       "sql"
+      ]
+     },
+     "visibility": {
+      "type": "string",
+      "enum": [
+       "user",
+       "project",
+       "org",
+       "public"
+      ]
+     },
+     "name": {
+      "type": "string"
+     },
+     "description": {
+      "type": "string",
+      "nullable": true
+     },
+     "project": {
+      "type": "object",
+      "properties": {
+       "id": {
+        "type": "number"
+       },
+       "name": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "id",
+       "name"
+      ]
+     },
+     "owner": {
+      "type": "object",
+      "properties": {
+       "id": {
+        "type": "number"
+       },
+       "username": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "id",
+       "username"
+      ]
+     },
+     "updated_by": {
+      "type": "object",
+      "properties": {
+       "id": {
+        "type": "number"
+       },
+       "username": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "id",
+       "username"
+      ]
+     },
+     "favorite": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "id",
+     "inserted_at",
+     "updated_at",
+     "type",
+     "visibility",
+     "name",
+     "description",
+     "project",
+     "owner",
+     "updated_by",
+     "favorite"
+    ]
+   }
+  },
+  "cursor": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "data"
+ ]
+}
+######################################################################
+SCHEMA ReadOnlyStatusResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "enabled": {
+   "type": "boolean"
+  },
+  "override_enabled": {
+   "type": "boolean"
+  },
+  "override_active_until": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "enabled",
+  "override_enabled",
+  "override_active_until"
+ ]
+}
+######################################################################
+SCHEMA GetProjectDbMetadataResponse_Output
+{
+ "type": "object",
+ "properties": {
+  "databases": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "schemas": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "name"
+       ]
+      }
+     }
+    },
+    "required": [
+     "name",
+     "schemas"
+    ]
+   }
+  }
+ },
+ "required": [
+  "databases"
+ ]
+}
+######################################################################
+SCHEMA UpdateJitAccessBody
+{
+ "type": "object",
+ "properties": {
+  "user_id": {
+   "type": "string",
+   "minLength": 1,
+   "format": "uuid",
+   "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+  },
+  "roles": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "role": {
+      "type": "string",
+      "minLength": 1
+     },
+     "expires_at": {
+      "type": "number"
+     },
+     "allowed_networks": {
+      "type": "object",
+      "properties": {
+       "allowed_cidrs": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv4",
+           "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       },
+       "allowed_cidrs_v6": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv6",
+           "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       }
+      }
+     },
+     "branches_only": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "role"
+    ]
+   }
+  }
+ },
+ "required": [
+  "user_id",
+  "roles"
+ ],
+ "example": {
+  "user_id": "55555555-5555-4555-8555-555555555555",
+  "roles": [
+   {
+    "role": "postgres",
+    "expires_at": 1740787200,
+    "allowed_networks": {
+     "allowed_cidrs": [
+      {
+       "cidr": "203.0.113.0/24"
+      }
+     ]
+    },
+    "branches_only": false
+   }
+  ]
+ }
+}
+######################################################################
+SCHEMA AuthorizeJitAccessBody
+{
+ "type": "object",
+ "properties": {
+  "role": {
+   "type": "string",
+   "minLength": 1
+  },
+  "rhost": {
+   "anyOf": [
+    {
+     "type": "string",
+     "format": "ipv4",
+     "pattern": "^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])$"
+    },
+    {
+     "type": "string",
+     "format": "ipv6",
+     "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:))$"
+    }
+   ]
+  }
+ },
+ "required": [
+  "role",
+  "rhost"
+ ],
+ "example": {
+  "role": "postgres",
+  "rhost": "203.0.113.10"
+ }
+}
+######################################################################
+SCHEMA InviteExternalUserJitAccessBody
+{
+ "type": "object",
+ "properties": {
+  "email": {
+   "type": "string",
+   "minLength": 1,
+   "format": "email",
+   "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$"
+  },
+  "roles": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "role": {
+      "type": "string",
+      "minLength": 1
+     },
+     "expires_at": {
+      "type": "number"
+     },
+     "allowed_networks": {
+      "type": "object",
+      "properties": {
+       "allowed_cidrs": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv4",
+           "pattern": "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\\/([0-9]|[1-2][0-9]|3[0-2])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       },
+       "allowed_cidrs_v6": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "cidr": {
+           "type": "string",
+           "format": "cidrv6",
+           "pattern": "^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::|([0-9a-fA-F]{1,4})?::([0-9a-fA-F]{1,4}:?){0,6})\\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$"
+          }
+         },
+         "required": [
+          "cidr"
+         ]
+        }
+       }
+      }
+     },
+     "branches_only": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "role"
+    ]
+   }
+  }
+ },
+ "required": [
+  "email",
+  "roles"
+ ],
+ "example": {
+  "email": "external-user@somedomain.xyz",
+  "roles": [
+   {
+    "role": "postgres",
+    "expires_at": 1740787200,
+    "allowed_networks": {
+     "allowed_cidrs": [
+      {
+       "cidr": "203.0.113.0/24"
+      }
+     ]
+    },
+    "branches_only": false
+   }
+  ]
+ }
+}
+### CreateProjectClaimTokenBody NOT FOUND
+### ProjectClaimToken NOT FOUND

@@ -1,0 +1,73 @@
+=== 1. OIDC discovery (alpha realm) ===
+status: 200
+  acr_values_supported                []
+  authorization_encryption_alg_values_supported ["ECDH-ES+A256KW", "ECDH-ES+A192KW", "RSA-OAEP", "ECDH-ES+A128KW", "RSA-OAEP-256", "A128KW", "A256KW", "ECDH-ES", "dir", "A192KW"]
+  authorization_encryption_enc_values_supported ["A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512"]
+  authorization_endpoint              https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/authorize
+  authorization_signing_alg_values_supported ["PS384", "RS384", "EdDSA", "ES384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512"]
+  backchannel_logout_session_supported True
+  backchannel_logout_supported        True
+  check_session_iframe                https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/connect/checkSession
+  claims_parameter_supported          False
+  claims_supported                    []
+  code_challenge_methods_supported    ["plain", "S256"]
+  end_session_endpoint                https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/connect/endSession
+  grant_types_supported               ["implicit", "urn:ietf:params:oauth:grant-type:saml2-bearer", "refresh_token", "password", "client_credentials", "urn:ietf:params:oauth:grant-type:device_code", "authorization_code", "urn:openid:params:grant-type:ciba", "urn:ietf:params:oauth:grant-type:uma-ticket", "urn:ietf:params:oauth:grant-type
+  id_token_encryption_alg_values_supported ["ECDH-ES+A256KW", "ECDH-ES+A192KW", "RSA-OAEP", "ECDH-ES+A128KW", "RSA-OAEP-256", "A128KW", "A256KW", "ECDH-ES", "dir", "A192KW"]
+  id_token_encryption_enc_values_supported ["A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512"]
+  id_token_signing_alg_values_supported ["PS384", "ES384", "RS384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512"]
+  introspection_encryption_alg_values_supported ["ECDH-ES+A256KW", "ECDH-ES+A192KW", "RSA-OAEP", "ECDH-ES+A128KW", "RSA-OAEP-256", "A128KW", "A256KW", "ECDH-ES", "dir", "A192KW"]
+  introspection_encryption_enc_values_supported ["A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512"]
+  introspection_endpoint              https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/introspect
+  introspection_signing_alg_values_supported ["PS384", "RS384", "EdDSA", "ES384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512"]
+  issuer                              https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha
+  jwks_uri                            https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/connect/jwk_uri
+  prompt_values_supported             ["none", "login", "consent"]
+  pushed_authorization_request_endpoint https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/par
+  rcs_request_encryption_alg_values_supported ["ECDH-ES+A256KW", "ECDH-ES+A192KW", "RSA-OAEP", "ECDH-ES+A128KW", "RSA-OAEP-256", "A128KW", "A256KW", "ECDH-ES", "dir", "A192KW"]
+  rcs_request_encryption_enc_values_supported ["A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512"]
+  rcs_request_signing_alg_values_supported ["PS384", "ES384", "RS384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512"]
+  rcs_response_encryption_alg_values_supported ["ECDH-ES+A256KW", "ECDH-ES+A192KW", "ECDH-ES+A128KW", "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A256KW", "ECDH-ES", "dir", "A192KW"]
+  rcs_response_encryption_enc_values_supported ["A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512"]
+  rcs_response_signing_alg_values_supported ["PS384", "ES384", "RS384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512"]
+  registration_endpoint               https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/register
+  request_object_encryption_alg_values_supported ["ECDH-ES+A256KW", "ECDH-ES+A192KW", "ECDH-ES+A128KW", "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A256KW", "ECDH-ES", "dir", "A192KW"]
+  request_object_encryption_enc_values_supported ["A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512"]
+  request_object_signing_alg_values_supported ["PS384", "ES384", "RS384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512"]
+  request_parameter_supported         True
+  request_uri_parameter_supported     True
+  require_pushed_authorization_requests False
+  require_request_uri_registration    True
+  response_modes_supported            ["jwt", "form_post.jwt", "form_post", "fragment.jwt", "query", "query.jwt", "fragment"]
+  response_types_supported            ["code token id_token", "code", "code id_token", "device_code", "id_token", "code token", "token", "token id_token"]
+  revocation_endpoint                 https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/token/revoke
+  revocation_endpoint_auth_methods_supported ["client_secret_post", "private_key_jwt", "self_signed_tls_client_auth", "tls_client_auth", "none", "client_secret_basic"]
+  scopes_supported                    ["address", "phone", "openid", "profile", "fr:idm:*", "am-introspect-all-tokens", "email"]
+  subject_types_supported             ["public", "pairwise"]
+  tls_client_certificate_bound_access_tokens True
+  token_endpoint                      https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/access_token
+  token_endpoint_auth_methods_supported ["client_secret_post", "private_key_jwt", "self_signed_tls_client_auth", "tls_client_auth", "none", "client_secret_basic"]
+  token_endpoint_auth_signing_alg_values_supported ["PS384", "ES384", "RS384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512"]
+  userinfo_encryption_alg_values_supported ["ECDH-ES+A256KW", "ECDH-ES+A192KW", "RSA-OAEP", "ECDH-ES+A128KW", "RSA-OAEP-256", "A128KW", "A256KW", "ECDH-ES", "dir", "A192KW"]
+  userinfo_encryption_enc_values_supported ["A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512"]
+  userinfo_endpoint                   https://openam-bug-bounty-stag.forgeblocks.com:443/am/oauth2/alpha/userinfo
+  userinfo_signing_alg_values_supported ["ES384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512"]
+  version                             3.0
+
+=== 2. authenticate POST (callbacks) ===
+body=None -> 200
+{"authId":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aGl0ZWxpc3Qtc3RhdGUiOiJjYzQ2ODRkMi1iOTRmLTRiYTgtYjFiYi1hN2ZjMTk1OGU0NjUiLCJvdGsiOiJmODB1anA0czExZjdwbTNzbzA0YzNsam42NSIsIndoaXRlbGlzdC1sb2NrLWV4cGlyeSI6IjAiLCJyZWFsbSI6Ii9hbHBoYSIsInNlc3Npb25JZCI6IipBQUpUU1FBQ01ESUFCSFI1Y0dVQUNFcFhWRjlCVlZSSUFBSlRNUUFDTURFLipleUowZVhBaU9pSktWMVFpTENKamRIa2lPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LlpYbEtNR1ZZUVdsUGFVcExWakZSYVV4RFNteGliVTFwVDJsS1FrMVVTVFJSTUVwRVRGVm9WRTFxVlRKSmFYZHBXVmQ0YmtscWIybGFSMng1U1c0d0xpNVdS
+---
+body={} -> 200
+{"authId":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aGl0ZWxpc3Qtc3RhdGUiOiI4ZWI0NzMyNi04N2FjLTRhMGQtYWMxMy0yMWUyNjEzYjBlZGIiLCJvdGsiOiJiMGx0djVqcnZoOW04MTBsaG9hZHFjYjJ2NiIsIndoaXRlbGlzdC1sb2NrLWV4cGlyeSI6IjAiLCJyZWFsbSI6Ii9hbHBoYSIsInNlc3Npb25JZCI6IipBQUpUU1FBQ01ESUFCSFI1Y0dVQUNFcFhWRjlCVlZSSUFBSlRNUUFDTURFLipleUowZVhBaU9pSktWMVFpTENKamRIa2lPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LlpYbEtNR1ZZUVdsUGFVcExWakZSYVV4RFNteGliVTFwVDJsS1FrMVVTVFJSTUVwRVRGVm9WRTFxVlRKSmFYZHBXVmQ0YmtscWIybGFSMng1U1c0d0xpNVZS
+---
+body={'authId': ''} -> 400
+{"errorMessage":"Authentication Error: Invalid AuthId"}
+---
+
+=== 3. isAlive.jsp ===
+200 '\n\n\n\n\n\n<html>\n\n<head>\n    <title>OpenAM</title>\n</head>\n\n<body>\n\n<h1>Server is ALIVE: </h1>\n\n\n</body>\n\n</html>\n\n\n'
+
+=== 4. 401 ÏìÓ¦Ï¸½Ú (users) ===
+WWW-Authenticate: None
+body: {"code":401,"reason":"Unauthorized","message":"Access Denied"}

@@ -1,0 +1,17 @@
+=== 1. 基线:标准 scope ===
+('CODE+TOKEN', 'code=_NAxYpyDbOuNg04xQVR-.. scopes=')
+('CODE+TOKEN', 'code=XYtwivEmkaio6Mb-zreK.. scopes=')
+
+=== 2. scope 注入测试 ===
+('302', 'https://openam-bug-bounty-stag.forgeblocks.com/enduser/sessionCheck.html?error_description=Unknown/invalid%20scope(s)&er')
+('302', 'https://openam-bug-bounty-stag.forgeblocks.com/enduser/sessionCheck.html?error_description=Unknown/invalid%20scope(s)&er')
+('302', 'https://openam-bug-bounty-stag.forgeblocks.com/enduser/sessionCheck.html?error_description=Unknown/invalid%20scope(s)&er')
+('302', 'https://openam-bug-bounty-stag.forgeblocks.com/enduser/sessionCheck.html?error_description=Unknown/invalid%20scope(s)&er')
+('302', 'https://openam-bug-bounty-stag.forgeblocks.com/enduser/sessionCheck.html?error_description=Unknown/invalid%20scope(s)&er')
+
+=== 3. implicit 流 ===
+('302', 'https://openam-bug-bounty-stag.forgeblocks.com/enduser/sessionCheck.html#error_description=Missing%20required%20paramete')
+('302', 'https://openam-bug-bounty-stag.forgeblocks.com/enduser/sessionCheck.html#error_description=Response%20type%20is%20not%20')
+
+=== 4. response_type=code 无 scope ===
+('302', 'https://openam-bug-bounty-stag.forgeblocks.com/enduser/sessionCheck.html?error_description=No%20scope%20requested%20and%')

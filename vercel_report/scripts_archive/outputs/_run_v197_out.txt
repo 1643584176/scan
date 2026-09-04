@@ -1,0 +1,30 @@
+create: 200 {"sandbox":{"name":"v197","currentSessionId":"sbx_yJiul5ErxWwRe0lJ1dyTsvvODj9T","status":"running","statusUpdatedAt":1788230843642,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230843642,"updatedAt":1788230843642},"session":{"id":"sbx_yJiul5ErxWwRe0lJ1dyTsvvODj9T","runtime":"node22","reques
+[create ok] 5s
+[inject /vercel/sandbox/vda197_guest.py] 200
+[inject /vercel/sandbox/vda197_probe_guest.py] 200
+[inject /vercel/sandbox/vda197_user.py] 200
+[run guest] 200
+{"command":{"id":"cmd_597f3627ddca43aca71a405e8f9e","name":"python3","args":["/vercel/sandbox/vda197_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_yJiul5ErxWwRe0lJ1dyTsvvODj9T","startedAt":1788230847006,"exitCode":null}}
+{"data":"[1788230847.043] mount vda ret=0\n[1788230847.044] payload written to COW 2863 bytes\n","stream":"stdout"}
+{"data":"[1788230847.061] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=f84300fe-994f-4007-b7e2-01a9fd77606c-snapshot\n","stream":"stdout"}
+{"data":"[1788230847.068] Create v197b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x15\\n\\x92(\\n\\x05v197b\\x1a\\x87\\x01977805900197.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1978be914dc973663ab50e48d0045087340cc71cf903e2841b59\"\\x17\\n\\x15io.containerd.runc.v2*\\x91&\\n6types.containerd.'\n","stream":"stdout"}
+{"data":"[1788230847.124] Tasks/Create v197b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\n\\n\\x05v197b\\x10\\x93\\x05'\n","stream":"stdout"}
+{"data":"[1788230847.135] Tasks/Start v197b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x93\\x05'\n","stream":"stdout"}
+{"data":"[1788230847.436] --- COW v197c.out @1s +104 ---\nVDB_RC=0\nBIND_RUN=0\nBIND_PROC=0\nVDA_RC=1\n[1788230847.2] === sniff start ===\n[1788230847.2] AF_PACKET OK\n\n","stream":"stdout"}
+{"data":"[1788230933.985] --- COW v197c.out @289s +46 ---\n[1788230933.9] V197S_DONE\nCHROOT_RC=0\nV99_END\n\n","stream":"stdout"}
+{"data":"[1788230934.011] kill v197b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  \n[1788230934.012] V99M_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_597f3627ddca43aca71a405e8f9e","name":"python3","args":["/vercel/sandbox/vda197_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_yJiul5ErxWwRe0lJ1dyTsvvODj9T","startedAt":1788230847006,"exitCode":0,"durationMs":87016}}
+
+[wait sniff 10s]
+[user snap] 200
+{"command":{"id":"cmd_145be4f5187e42858e3479f4fcd6","name":"python3","args":["/vercel/sandbox/vda197_user.py","96647119"],"cwd":"/vercel/sandbox","sessionId":"sbx_yJiul5ErxWwRe0lJ1dyTsvvODj9T","startedAt":1788230944917,"exitCode":null}}
+{"data":"[1788230944.9] === u1: s3://127.0.0.1:18081 ===\n","stream":"stdout"}
+
+[wait stop 25s]
+[status] ('stopped', 'snap_7a34h2FUaayjar6w2J8xHX3oXHfb')
+[resume]
+[resume rc] 200 {"sandbox":{"name":"v197","currentSnapshotId":"snap_7a34h2FUaayjar6w2J8xHX3oXHfb","currentSessionId":"sbx_sDfQc8U1GvJ4Sp49bWIZH2WMjsBD","status":"running","statusUpdatedAt":1788230975634,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230843642,"updatedAt":1788230843642,"expiresAt":1788231275
+[post-resume status] ('running', 'snap_7a34h2FUaayjar6w2J8xHX3oXHfb')
+[v197s.out] 410
+{"error":{"code":"sandbox_failed","message":"Sandbox has failed due to an internal error and is no longer available"}}
+CLEANED total 154s

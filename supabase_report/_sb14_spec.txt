@@ -1,0 +1,13 @@
+api.supabase.com       /openapi.json                              404 application/json; charset=utf- | {"message":"Cannot GET /openapi.json"}
+api.supabase.com       /api/openapi.json                          404 application/json; charset=utf- | {"message":"Cannot GET /api/openapi.json"}
+api.supabase.com       /api/v1/openapi.json                       200 text/html; charset=utf-8 | <!doctype html> <html>   <head>     <title>Scalar API Reference</title>     <meta charset="utf-8" />     <meta       name="viewport"       content="width=device-width, initial-scal
+api.supabase.com       /v1/openapi.json                           401 application/json; charset=utf- | {"message":"Unauthorized"}
+api.supabase.com       /api/v1-og.json                            404 application/json; charset=utf- | {"message":"Cannot GET /api/v1-og.json"}
+api.supabase.com       /swagger.json                              404 application/json; charset=utf- | {"message":"Cannot GET /swagger.json"}
+api.supabase.com       /api/swagger.json                          404 application/json; charset=utf- | {"message":"Cannot GET /api/swagger.json"}
+api.supabase.com       /api/v1/swagger.json                       200 text/html; charset=utf-8 | <!doctype html> <html>   <head>     <title>Scalar API Reference</title>     <meta charset="utf-8" />     <meta       name="viewport"       content="width=device-width, initial-scal
+api.supabase.com       /api/v1/docs.json                          200 text/html; charset=utf-8 | <!doctype html> <html>   <head>     <title>Scalar API Reference</title>     <meta charset="utf-8" />     <meta       name="viewport"       content="width=device-width, initial-scal
+api.supabase.com       /v1/docs.json                              401 application/json; charset=utf- | {"message":"Unauthorized"}
+supabase.com           /docs/openapi.json                         404 text/html; charset=utf-8 | <!DOCTYPE html><!--U_e2tzwI3_Df2IjVbf92o--><html lang="en" class="__variable_f15809 __variable_179247"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-widt
+supabase.com           /docs/reference/api/openapi.json           404 text/html; charset=utf-8 | <!DOCTYPE html><!--U_e2tzwI3_Df2IjVbf92o--><html lang="en" class="__variable_f15809 __variable_179247"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-widt
+supabase.com           /docs/reference/api/reference/openapi.json 404 text/html; charset=utf-8 | <!DOCTYPE html><!--U_e2tzwI3_Df2IjVbf92o--><html lang="en" class="__variable_f15809 __variable_179247"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-widt

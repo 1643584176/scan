@@ -1,0 +1,65 @@
+[1788164636.728] mount vda ret=0
+
+[1788164636.728] payload written to COW 8238 bytes
+
+[1788164636.739] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=088dcd27-63ec-4244-a7ad-d0b49931617d-snapshot
+
+[1788164636.744] Create v122b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\x17\n\x94(\n\x05v122b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x91&\n6types.containerd.'
+
+[1788164636.800] Tasks/Create v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\n\n\x05v122b\x10\x94\x05'
+
+[1788164636.814] Tasks/Start v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\x94\x05'
+
+[1788164637.115] --- COW v122c.out @1s +210 ---
+[1788164636.8] === P1 read celld ===
+[1788164636.9] read /proc/1/root/opt/vercel/celld 36578592 bytes
+[1788164636.9] === P2 scan gzip blocks ===
+/celld 36578592 bytes
+[1788164636.9] === P2 scan gzip blocks ===
+
+
+[1788164643.125] --- COW v122c.out @21s +347 ---
+[1788164636.8] === P1 read celld ===
+[1788164636.9] read /proc/1/root/opt/vercel/celld 36578592 bytes
+[1788164636.9] === P2 scan gzip blocks ===
+[1788164643.1] gzip blocks found=7 decompressed=1
+[1788164643.1] descriptor output 0 bytes
+[1788164643.1] V122C_DONE
+788164643.1] descriptor output 0 bytes
+[1788164643.1] V122C_DONE
+CHROOT_RC=0
+V99_END
+
+
+[1788164643.146] kill v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788164643.146] V99M_DONE
+
+[1788164636.728] mount vda ret=0
+[1788164636.728] payload written to COW 8238 bytes
+[1788164636.739] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=088dcd27-63ec-4244-a7ad-d0b49931617d-snapshot
+[1788164636.744] Create v122b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\x17\n\x94(\n\x05v122b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x91&\n6types.containerd.'
+[1788164636.800] Tasks/Create v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\n\n\x05v122b\x10\x94\x05'
+[1788164636.814] Tasks/Start v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\x94\x05'
+[1788164637.115] --- COW v122c.out @1s +210 ---
+[1788164636.8] === P1 read celld ===
+[1788164636.9] read /proc/1/root/opt/vercel/celld 36578592 bytes
+[1788164636.9] === P2 scan gzip blocks ===
+/celld 36578592 bytes
+[1788164636.9] === P2 scan gzip blocks ===
+
+[1788164643.125] --- COW v122c.out @21s +347 ---
+[1788164636.8] === P1 read celld ===
+[1788164636.9] read /proc/1/root/opt/vercel/celld 36578592 bytes
+[1788164636.9] === P2 scan gzip blocks ===
+[1788164643.1] gzip blocks found=7 decompressed=1
+[1788164643.1] descriptor output 0 bytes
+[1788164643.1] V122C_DONE
+788164643.1] descriptor output 0 bytes
+[1788164643.1] V122C_DONE
+CHROOT_RC=0
+V99_END
+
+[1788164643.146] kill v122b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788164643.146] V99M_DONE
+
+cat: /vercel/sandbox/exec_probe.out: No such file or directory

@@ -1,0 +1,21 @@
+### [del-bucket-priv] DELETE /storage/v1/bucket/sbx_priv?emptiedBucket=true try1 ERR The read operation timed out
+### [del-bucket-priv] DELETE /storage/v1/bucket/sbx_priv?emptiedBucket=true (4.3s)
+400 | {"statusCode":"409","error":"ResourceNotEmpty","message":"The bucket you tried to delete is not empty","code":"ResourceNotEmpty"}
+### [del-bucket-pub] DELETE /storage/v1/bucket/sbx_pub?emptiedBucket=true (2.7s)
+400 | {"statusCode":"409","error":"ResourceNotEmpty","message":"The bucket you tried to delete is not empty","code":"ResourceNotEmpty"}
+### [] GET /storage/v1/bucket (5.3s)
+200 | [{"id":"sbx_priv","name":"sbx_priv","owner":"","public":false,"type":"STANDARD","file_size_limit":null,"allowed_mime_types":null,"created_at":"2026-09-04T09:12:17.288Z","updated_at":"2026-09-04T09:12:17.288Z"},{"id":"sbx_pub","name":"sbx_pub","owner":"","public":true,"type":"STANDARD","file_size_limit":null,"allowed_mime_types":null,"created_at":"2026-09-04T09:13:15.054Z","updated_at":"2026-09-04T09:13:15.054Z"}]
+### [login-A] POST /auth/v1/token?grant_type=password (26.4s)
+200 | {"access_token":"eyJhbGciOiJFUzI1NiIsImtpZCI6ImM4YmY4Mzk5LTI2ZmQtNDY1Zi1iNTExLTRkNGI0N2RkZjZhYSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3ZuZm9iYnl3ZW1xZ2Nnam9ra3hkLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzN2RhNzlmNy0yZDhhLTQ3ZTktOTE4My01MDk4YjgwY2VmOGUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg4NTE2OTUyLCJpYXQiOjE3ODg1MTMzNTIsImVtYWlsIjoic2J4X2F1dmppamZ6QHFxLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJzYnhfYXV2amlqZnpAcXEuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInNieF9wcm9iZSI6IjEiLCJzdWIiOiIzN2RhNzlmNy0yZDhhLTQ3ZTktOTE4My01MDk4YjgwY2VmOGUifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4ODUxMzM1Mn1dLCJzZXNzaW9uX2lkIjoiYzIxOTJlY2QtNTM5Zi00MjJkLWJlNWEtNDAxMDRjZDc4YmRmIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.1rvPSOk1ZshUuW8futSUEKZmTvJkKjlAAXsZ94hTMGPLGfso5s5uOwyZyhzlOaX5HNCa9ryBD13yCexT2r8stw","token_type":"bearer","expires_in":3600,"expires_at":1788516952,"refresh_token":"vykkkplg2tek","user":{"id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","aud":"authenticated","role":"authenticated","email":"sbx_auvjijfz@qq.com","email_confirmed_at":"2026-09-04T08:51:35.65741Z","phone":"","confirmation_sent_at":"2026-09-04T08:51:30.554168Z","confirmed_at":"2026-09-04T08:51:35.65741Z","last_sign_in_at":"2026-09-04T09:15:52.468352257Z","app_metadata":{"provider":"email","providers":["email"]},"user_metadata":{"email":"sbx_auvjijfz@qq
+### [A-upsert-own] POST /rest/v1/sbx_rls_t?on_conflict=id (4.4s)
+400 | {"code":"428C9","details":"Column \"id\" is an identity column defined as GENERATED ALWAYS.","hint":"Use OVERRIDING SYSTEM VALUE to override.","message":"cannot insert a non-DEFAULT value into column \"id\""}
+### [B-upsert-A-row] POST /rest/v1/sbx_rls_t?on_conflict=id (7.3s)
+400 | {"code":"428C9","details":"Column \"id\" is an identity column defined as GENERATED ALWAYS.","hint":"Use OVERRIDING SYSTEM VALUE to override.","message":"cannot insert a non-DEFAULT value into column \"id\""}
+### [B-bulk-ownerA] POST /rest/v1/sbx_rls_t (5.1s)
+403 | {"code":"42501","details":null,"hint":null,"message":"new row violates row-level security policy for table \"sbx_rls_t\""}
+### [B-upd-owner-self] PATCH /rest/v1/sbx_rls_t?secret=eq.B-DATA (6.1s)
+403 | {"code":"42501","details":null,"hint":null,"message":"new row violates row-level security policy for table \"sbx_rls_t\""}
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (5.5s)
+200 | [{"id":1,"owner":"37da79f7-2d8a-47e9-9183-5098b80cef8e","secret":"A-DATA-topsecret-7f3a"}]
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (1.7s)
+200 | [{"id":3,"owner":"db697feb-196c-4e4f-825f-891e78c3d584","secret":"B-DATA"}]

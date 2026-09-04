@@ -1,0 +1,6 @@
+### [jit-authorize-off] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit (0.7s)
+406 | {"message":"Failed to get user's JIT access for project","errorEventId":"11c9ce4757f34e3a880d6d5a65c9b3ad"}
+### [jit-update-off] PUT /v1/projects/vnfobbywemqgcgjokkxd/database/jit (1.5s)
+200 | {"user_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","user_roles":[{"role":"sbx_nonexistent_role_probe","expires_at":1788511000}]}
+### [jit-delete-off] DELETE /v1/projects/vnfobbywemqgcgjokkxd/database/jit (0.6s)
+404 | {"message":"Cannot DELETE /v1/projects/vnfobbywemqgcgjokkxd/database/jit"}

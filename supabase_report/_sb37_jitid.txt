@@ -1,0 +1,6 @@
+### [put-other-uid] PUT /v1/projects/vnfobbywemqgcgjokkxd/database/jit (2.1s)
+409 | {"message":"Failed update database JIT access"}
+### [clean-other-uid] PUT /v1/projects/vnfobbywemqgcgjokkxd/database/jit (1.8s)
+409 | {"message":"Failed update database JIT access"}
+### [self-verify] GET /v1/projects/vnfobbywemqgcgjokkxd/database/jit (0.8s)
+200 | {"user_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","user_roles":[]}

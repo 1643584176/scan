@@ -1,0 +1,7 @@
+[t0] -> 200 | {"sandbox":{"name":"race","currentSessionId":"sbx_0d37S8S5YQEQZjp027Mj0BpQD5P8","status":"running","statusUpdatedAt":1788051115396,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","image":"vercel/sandbox/universal@sha256:0e3e3617e824397f170fc7c43ccaa5
+[t1] -> 400 | {"error":{"code":"bad_request","message":"A sandbox with the name 'race' already exists for this project. Use GET /sandboxes/:name to resume it or delete it first."}}
+[t2] -> 400 | {"error":{"code":"bad_request","message":"A sandbox with the name 'race' already exists for this project. Use GET /sandboxes/:name to resume it or delete it first."}}
+GET race -> 200 | {"sandbox":{"name":"race","currentSessionId":"sbx_0d37S8S5YQEQZjp027Mj0BpQD5P8","status":"running","statusUpdatedAt":1788051115396,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","image":"vercel/sandbox/universal@sha256:0e3e3617e824397f170fc7c43ccaa565dd7ac36518e83ead3d41e077cd9f6ec7","timeout":300000,"snapshotExpiration":604800000,"keepLastSnapshots":{"count":1,"deleteEvicted":true},"cwd":"/vercel","createdAt":1788051115396,"updatedAt":178805111
+list race count: 1
+  race: sid=sbx_0d37S8S5YQEQZjp027Mj0BpQD5P8 status=running
+DONE

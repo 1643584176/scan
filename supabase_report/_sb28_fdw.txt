@@ -1,0 +1,14 @@
+### [secdef] (2.1s)
+201 | [{"proname":"get_auth","nspname":"pgbouncer","owner":"supabase_admin","prosecdef":true},{"proname":"create_secret","nspname":"vault","owner":"supabase_admin","prosecdef":true},{"proname":"update_secret","nspname":"vault","owner":"supabase_admin","prosecdef":true}]
+### [vault-funcs] (1.9s)
+201 | [{"proname":"_crypto_aead_det_decrypt","owner":"supabase_admin","prosecdef":false},{"proname":"_crypto_aead_det_encrypt","owner":"supabase_admin","prosecdef":false},{"proname":"_crypto_aead_det_noncegen","owner":"supabase_admin","prosecdef":false},{"proname":"create_secret","owner":"supabase_admin","prosecdef":true},{"proname":"update_secret","owner":"supabase_admin","prosecdef":true}]
+### [vault-read] (1.8s)
+201 | [{"n":0}]
+### [fdw-avail] (1.8s)
+201 | [{"name":"postgres_fdw","default_version":"1.1"},{"name":"file_fdw","default_version":"1.0"}]
+### [umap] (1.8s)
+201 | []
+### [ft-read] (1.8s)
+400 | {"message":"Failed to run sql query: ERROR:  2F003: password or GSSAPI delegated credentials required\nDETAIL:  Non-superusers must delegate GSSAPI credentials or provide a password in the user mapping.\n"}
+### [cleanup] (2.3s)
+201 | []

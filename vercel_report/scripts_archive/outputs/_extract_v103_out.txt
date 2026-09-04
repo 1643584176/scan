@@ -1,0 +1,289 @@
+=== N1 celld strings ===
+[1788160355.9] celld size=36447264
+ ===
+[1788160355.9] celld size=36447264
+
+[1788160357.115] --- COW v103c.out @4s +7967 ---
+[1788160355.9] === N1 celld strings ===
+[1788160355.9] celld size=36447264
+[1788160357.1] celld hits: 11985
+[1788160357.1]     %syaml_VERSION_DIRECTIVE_TOKENyaml_FLOW_SEQUENCE_END_TOKENcloud.google.com/go/bigquerycloud.google.com/go/bigtablecloud.google.com/go/clouddmscloud.google.com/go/dataflowcloud.go
+[1788160357.1]    !"#$%&' !"#$%&'()*+,-./()*+,-./012345670123456789:;<=>?89:;<=>?
+[1788160357.1]    !"#$%&'()*+,-./0123456789:;<=>? .
+[1788160357.1]    !"#$%&()*+,-.012345689:;<=>
+[1788160357.1]    !"#$%&()*+,-.012345689:;<=>@ABCDEF
+[1788160357.1]    ()*+,-.01234568@ABCDEFHIJKLMNPXYZ[\]^
+[1788160357.1]    )%.0f %s%.1f %s]?)(.*)removes{{end}}operandAacute;Abreve;Agrave;Assign;Atilde;Barwed;Bumpeq;Cacute;Ccaron;Ccedil;Colone;Conint;CupCap;Dagger;Dcaron;DotDot;Dstrok;Eacute;Ecaron;Egr
+[1788160357.1]    *chan http.http2frameWriteResult
+[1788160357.1]    *func() (http.http2Frame, error)
+[1788160357.1]    *func() *http2.FrameWriteRequest
+[1788160357.1]    *func() *sqllexer.LastValueToken
+[1788160357.1]    *func() http.http2ClientConnPool
+[1788160357.1]    *func() http.http2WriteScheduler
+[1788160357.1]    *func(*http.Request, bool, bool)
+[1788160357.1]    *func(*http.Request, error) bool
+[1788160357.1]    *func(*http2.clientStream) error
+[1788160357.1]    *func(*http2.stream, int, error)
+[1788160357.1]    *func(http.http2ErrCode, string)
+[1788160357.1]    *func(json.Kind, int) json.Token
+[1788160357.1]    *func(string, *http.routingNode)
+[1788160357.1]    *func(string, *http2.ClientConn)
+[1788160357.1]    *func(string, http.RoundTripper)
+[1788160357.1]    *func(syscall.Sockaddr) net.Addr
+[1788160357.1]    *func(uint8) (json.Token, error)
+[1788160357.1]    *http.http2headerFieldValueError
+[1788160357.1]    *http.http2headersOrContinuation
+[1788160357.1]    *http.http2transportResponseBody
+[1788160357.1]    *httptrace.clientEventContextKey
+[1788160357.1]    *map.group[http.ConnState]string
+[1788160357.1]    *map.group[string][]*http.Cookie
+[1788160357.1]    *map[*http2.serverConn]struct {}
+[1788160357.1]    *map[uint32]http2.streamMetadata
+[1788160357.1]    *sandbox.ControllerCreateRequest
+[1788160357.1]    *sandbox.ControllerStartResponse
+[1788160357.1]    *sandbox.ControllerStatusRequest
+[1788160357.1]    *sandbox.ControllerUpdateRequest
+[1788160357.1]    *sandbox.ShutdownSandboxResponse
+[1788160357.1]    is not allowed in FIPS 140-only modecrypto/rsa: use of primes of different sizes is not allowed in FIPS 140-only modecrypto/aes: internal error: using generic implementation despi
+[1788160357.1]    m=nil base X25519%w%.0wkem_idnetdnsgophertelnetreturn.locallisten.onionsendtoip+netwritev--%s
+[1788160357.1]    runqueue= stopwait= runqsize= gfreecnt= throwing= spinning=atomicand8float64nanfloat32nan ptrSize=  targetpc= until pc=active < 0unknown pcruntime: ggoroutine  (durable)fips140ems
+[1788160357.1]   !*chan http.http2FrameWriteRequest
+[1788160357.1]   !*func() http.http2ClientConnState
+[1788160357.1]   !*func() http2.clientConnIdleState
+[1788160357.1]   !*func(*http.Request, string) bool
+[1788160357.1]   !*func(*http.http2DataFrame) error
+[1788160357.1]   !*func(*http.http2PingFrame) error
+[1788160357.1]   !*func(*http2.PriorityFrame) error
+[1788160357.1]   !*func(*http2.SettingsFrame) error
+[1788160357.1]   !*func(*http2.SettingsFrame, bool)
+[1788160357.1]   !*func(...http.http2Setting) error
+[1788160357.1]   !*func(http.Header) *connect.Error
+[1788160357.1]   !*func(http.http2frameWriteResult)
+[1788160357.1]   !*func(http2.readFrameResult) bool
+[1788160357.1]   !*func(httptrace.WroteRequestInfo)
+[1788160357.1]   !*func(int) (unix.Sockaddr, error)
+[1788160357.1]   !*func(string, http.Handler) error
+[1788160357.1]   !*http.unencryptedNetConnInTLSConn
+[1788160357.1]   !*http2.duplicatePseudoHeaderError
+[1788160357.1]   !*map.group[http.http2Flags]string
+[1788160357.1]   !*map.group[http2.SettingID]string
+[1788160357.1]   !*map.group[int64]*channelz.Socket
+[1788160357.1]   !*map.group[string]*http2.dialCall
+[1788160357.1]   !*map[uint32]*http.http2writeQueue
+[1788160357.1]   !*sandbox.ControllerCreateResponse
+[1788160357.1]   !*sandbox.ControllerMetricsRequest
+[1788160357.1]   !*sandbox.ControllerStatusResponse
+[1788160357.1]   !*sandbox.ControllerUpdateResponse
+[1788160357.1]   "(),/:;<=>?@[]\{}%v kind not handledTransformer(%s, %s)/etc/selinux/confighttp.request.methodBad hex digit in %qno such template %qapplication/ld+jsondnbits: %08x, fs:%ddropped_lin
+[1788160357.1]   "*atomic.Pointer[net/http.response]
+[1788160357.1]   "*func() (http2.FrameHeader, error)
+[1788160357.1]   "*func(*http.http2startPushRequest)
+[1788160357.1]   "*func(*http.pattern, http.Handler)
+[1788160357.1]   "*func(*http2.RSTStreamFrame) error
+[1788160357.1]   "*func(bool) func(*http.ClientConn)
+[1788160357.1]   "*func(http.http2FrameHeader) error
+[1788160357.1]   "*func(http.http2FrameWriteRequest)
+[1788160357.1]   "*func(http2.ErrCode, string) error
+[1788160357.1]   "*func(int) (*unix.KCMClone, error)
+[1788160357.1]   "*func(uint32, http2.ErrCode) error
+[1788160357.1]   "*func(uint32, http2.PriorityParam)
+[1788160357.1]   "*http.transportReadFromServerError
+[1788160357.1]   "*http2.bufferedWriterTimeoutWriter
+[1788160357.1]   "*map.group[*net.Listener]struct {}
+[1788160357.1]   "*map[string]*http.http2addConnCall
+[1788160357.1]   "*sandbox.ControllerMetricsResponse
+[1788160357.1]   "*sandbox.ControllerPlatformRequest
+[1788160357.1]   "*sandbox.ControllerShutdownRequest
+[1788160357.1]   "`Ed25519MD5-RSAserial:cRLSign2.5.4.62.5.4.32.5.4.52.5.4.72.5.4.82.5.4.9no port[INFO] "type":efgEFGv%v %v @samplesCLUSTERCOMMANDListArgCommentcommandfargateavx512fos/execfips140net
+[1788160357.1]   "cell/api/processes/processes.proto
+[1788160357.1]   #*func() http.http2FrameWriteRequest
+[1788160357.1]   #*func(*flate.tokens, bool, []uint8)
+[1788160357.1]   #*func(*http.http2GoAwayFrame) error
+[1788160357.1]   #*func([]flate.token, bool, []uint8)
+[1788160357.1]   #*func(http.Header) ([]uint8, error)
+[1788160357.1]   #*func(http.http2writeContext) error
+[1788160357.1]   #*func(http2.PushPromiseParam) error
+[1788160357.1]   #*func(net.Listener) context.Context
+[1788160357.1]   #*func(string) (*http.Cookie, error)
+[1788160357.1]   #*func(string, *http.Request) string
+[1788160357.1]   #*http.http2clientConnPoolIdleCloser
+[1788160357.1]   #*http.http2roundRobinWriteScheduler
+[1788160357.1]   #*http2.write100ContinueHeadersFrame
+[1788160357.1]   #*map.group[http.http2ErrCode]string
+[1788160357.1]   #*map.group[http.http2SettingID]bool
+[1788160357.1]   #*map.group[http2.ErrCode]codes.Code
+[1788160357.1]   #*map.group[string]*http.routingNode
+[1788160357.1]   #*map.group[string]http.RoundTripper
+[1788160357.1]   #*map.group[uint32]*http.http2stream
+[1788160357.1]   #*map.group[uint32]*http2.writeQueue
+[1788160357.1]   #*map[*http.http2ClientConn][]string
+[1788160357.1]   #*map[string][]*http.http2ClientConn
+[1788160357.1]   #*map[uint32]*http.http2clientStream
+[1788160357.1]   #*sandbox.ControllerPlatformResponse
+[1788160357.1]   #*sandbox.ControllerShutdownResponse
+[1788160357.1]   #vendor/golang.org/x/net/http2/hpack
+[1788160357.1]   $*func() *http.http2FrameWriteRequest
+[1788160357.1]   $*func(*http.Response) *connect.Error
+[1788160357.1]   $*func(*http.http2clientStream) error
+[1788160357.1]   $*func(*http.http2stream, int, error)
+[1788160357.1]   $*func(*http.response) *http.response
+[1788160357.1] === N2 sandboxctrl locate ===
+[1788160357.1] PID 535 maps EXC FileNotFoundError
+[1788160357.1] PID 535 exe EXC FileNotFoundError
+[1788160357.1] PID 535 cwd EXC FileNotFoundError
+[1788160357.1] PID 535 root EXC FileNotFoundError
+[1788160357.1] PID 535 cmdline EXC FileNotFoundError
+[1788160357.1] PID 535 environ EXC FileNotFoundError
+[1788160357.1] PID 535 stat EXC FileNotFoundError
+357.1] PID 535 root EXC FileNotFoundError
+[1788160357.1] PID 535 cmdline EXC FileNotFoundError
+[1788160357.1] PID 535 environ EXC FileNotFoundError
+[1788160357.1] PID 535 stat EXC FileNotFoundError
+
+[1788160357.416] --- COW v103c.out @5s +8689 ---
+[1788160355.9] === N1 celld strings ===
+[1788160355.9] celld size=36447264
+[1788160357.1] celld hits: 11985
+[1788160357.1]     %syaml_VERSION_DIRECTIVE_TOKENyaml_FLOW_SEQUENCE_END_TOKENcloud.google.com/go/bigquerycloud.google.com/go/bigtablecloud.google.com/go/clouddmscloud.google.com/go/dataflowcloud.go
+[1788160357.1]    !"#$%&' !"#$%&'()*+,-./()*+,-./012345670123456789:;<=>?89:;<=>?
+[1788160357.1]    !"#$%&'()*+,-./0123456789:;<=>? .
+[1788160357.1]    !"#$%&()*+,-.012345689:;<=>
+[1788160357.1]    !"#$%&()*+,-.012345689:;<=>@ABCDEF
+[1788160357.1]    ()*+,-.01234568@ABCDEFHIJKLMNPXYZ[\]^
+[1788160357.1]    )%.0f %s%.1f %s]?)(.*)removes{{end}}operandAacute;Abreve;Agrave;Assign;Atilde;Barwed;Bumpeq;Cacute;Ccaron;Ccedil;Colone;Conint;CupCap;Dagger;Dcaron;DotDot;Dstrok;Eacute;Ecaron;Egr
+[1788160357.1]    *chan http.http2frameWriteResult
+[1788160357.1]    *func() (http.http2Frame, error)
+[1788160357.1]    *func() *http2.FrameWriteRequest
+[1788160357.1]    *func() *sqllexer.LastValueToken
+[1788160357.1]    *func() http.http2ClientConnPool
+[1788160357.1]    *func() http.http2WriteScheduler
+[1788160357.1]    *func(*http.Request, bool, bool)
+[1788160357.1]    *func(*http.Request, error) bool
+[1788160357.1]    *func(*http2.clientStream) error
+[1788160357.1]    *func(*http2.stream, int, error)
+[1788160357.1]    *func(http.http2ErrCode, string)
+[1788160357.1]    *func(json.Kind, int) json.Token
+[1788160357.1]    *func(string, *http.routingNode)
+[1788160357.1]    *func(string, *http2.ClientConn)
+[1788160357.1]    *func(string, http.RoundTripper)
+[1788160357.1]    *func(syscall.Sockaddr) net.Addr
+[1788160357.1]    *func(uint8) (json.Token, error)
+[1788160357.1]    *http.http2headerFieldValueError
+[1788160357.1]    *http.http2headersOrContinuation
+[1788160357.1]    *http.http2transportResponseBody
+[1788160357.1]    *httptrace.clientEventContextKey
+[1788160357.1]    *map.group[http.ConnState]string
+[1788160357.1]    *map.group[string][]*http.Cookie
+[1788160357.1]    *map[*http2.serverConn]struct {}
+[1788160357.1]    *map[uint32]http2.streamMetadata
+[1788160357.1]    *sandbox.ControllerCreateRequest
+[1788160357.1]    *sandbox.ControllerStartResponse
+[1788160357.1]    *sandbox.ControllerStatusRequest
+[1788160357.1]    *sandbox.ControllerUpdateRequest
+[1788160357.1]    *sandbox.ShutdownSandboxResponse
+[1788160357.1]    is not allowed in FIPS 140-only modecrypto/rsa: use of primes of different sizes is not allowed in FIPS 140-only modecrypto/aes: internal error: using generic implementation despi
+[1788160357.1]    m=nil base X25519%w%.0wkem_idnetdnsgophertelnetreturn.locallisten.onionsendtoip+netwritev--%s
+[1788160357.1]    runqueue= stopwait= runqsize= gfreecnt= throwing= spinning=atomicand8float64nanfloat32nan ptrSize=  targetpc= until pc=active < 0unknown pcruntime: ggoroutine  (durable)fips140ems
+[1788160357.1]   !*chan http.http2FrameWriteRequest
+[1788160357.1]   !*func() http.http2ClientConnState
+[1788160357.1]   !*func() http2.clientConnIdleState
+[1788160357.1]   !*func(*http.Request, string) bool
+[1788160357.1]   !*func(*http.http2DataFrame) error
+[1788160357.1]   !*func(*http.http2PingFrame) error
+[1788160357.1]   !*func(*http2.PriorityFrame) error
+[1788160357.1]   !*func(*http2.SettingsFrame) error
+[1788160357.1]   !*func(*http2.SettingsFrame, bool)
+[1788160357.1]   !*func(...http.http2Setting) error
+[1788160357.1]   !*func(http.Header) *connect.Error
+[1788160357.1]   !*func(http.http2frameWriteResult)
+[1788160357.1]   !*func(http2.readFrameResult) bool
+[1788160357.1]   !*func(httptrace.WroteRequestInfo)
+[1788160357.1]   !*func(int) (unix.Sockaddr, error)
+[1788160357.1]   !*func(string, http.Handler) error
+[1788160357.1]   !*http.unencryptedNetConnInTLSConn
+[1788160357.1]   !*http2.duplicatePseudoHeaderError
+[1788160357.1]   !*map.group[http.http2Flags]string
+[1788160357.1]   !*map.group[http2.SettingID]string
+[1788160357.1]   !*map.group[int64]*channelz.Socket
+[1788160357.1]   !*map.group[string]*http2.dialCall
+[1788160357.1]   !*map[uint32]*http.http2writeQueue
+[1788160357.1]   !*sandbox.ControllerCreateResponse
+[1788160357.1]   !*sandbox.ControllerMetricsRequest
+[1788160357.1]   !*sandbox.ControllerStatusResponse
+[1788160357.1]   !*sandbox.ControllerUpdateResponse
+[1788160357.1]   "(),/:;<=>?@[]\{}%v kind not handledTransformer(%s, %s)/etc/selinux/confighttp.request.methodBad hex digit in %qno such template %qapplication/ld+jsondnbits: %08x, fs:%ddropped_lin
+[1788160357.1]   "*atomic.Pointer[net/http.response]
+[1788160357.1]   "*func() (http2.FrameHeader, error)
+[1788160357.1]   "*func(*http.http2startPushRequest)
+[1788160357.1]   "*func(*http.pattern, http.Handler)
+[1788160357.1]   "*func(*http2.RSTStreamFrame) error
+[1788160357.1]   "*func(bool) func(*http.ClientConn)
+[1788160357.1]   "*func(http.http2FrameHeader) error
+[1788160357.1]   "*func(http.http2FrameWriteRequest)
+[1788160357.1]   "*func(http2.ErrCode, string) error
+[1788160357.1]   "*func(int) (*unix.KCMClone, error)
+[1788160357.1]   "*func(uint32, http2.ErrCode) error
+[1788160357.1]   "*func(uint32, http2.PriorityParam)
+[1788160357.1]   "*http.transportReadFromServerError
+[1788160357.1]   "*http2.bufferedWriterTimeoutWriter
+[1788160357.1]   "*map.group[*net.Listener]struct {}
+[1788160357.1]   "*map[string]*http.http2addConnCall
+[1788160357.1]   "*sandbox.ControllerMetricsResponse
+[1788160357.1]   "*sandbox.ControllerPlatformRequest
+[1788160357.1]   "*sandbox.ControllerShutdownRequest
+[1788160357.1]   "`Ed25519MD5-RSAserial:cRLSign2.5.4.62.5.4.32.5.4.52.5.4.72.5.4.82.5.4.9no port[INFO] "type":efgEFGv%v %v @samplesCLUSTERCOMMANDListArgCommentcommandfargateavx512fos/execfips140net
+[1788160357.1]   "cell/api/processes/processes.proto
+[1788160357.1]   #*func() http.http2FrameWriteRequest
+[1788160357.1]   #*func(*flate.tokens, bool, []uint8)
+[1788160357.1]   #*func(*http.http2GoAwayFrame) error
+[1788160357.1]   #*func([]flate.token, bool, []uint8)
+[1788160357.1]   #*func(http.Header) ([]uint8, error)
+[1788160357.1]   #*func(http.http2writeContext) error
+[1788160357.1]   #*func(http2.PushPromiseParam) error
+[1788160357.1]   #*func(net.Listener) context.Context
+[1788160357.1]   #*func(string) (*http.Cookie, error)
+[1788160357.1]   #*func(string, *http.Request) string
+[1788160357.1]   #*http.http2clientConnPoolIdleCloser
+[1788160357.1]   #*http.http2roundRobinWriteScheduler
+[1788160357.1]   #*http2.write100ContinueHeadersFrame
+[1788160357.1]   #*map.group[http.http2ErrCode]string
+[1788160357.1]   #*map.group[http.http2SettingID]bool
+[1788160357.1]   #*map.group[http2.ErrCode]codes.Code
+[1788160357.1]   #*map.group[string]*http.routingNode
+[1788160357.1]   #*map.group[string]http.RoundTripper
+[1788160357.1]   #*map.group[uint32]*http.http2stream
+[1788160357.1]   #*map.group[uint32]*http2.writeQueue
+[1788160357.1]   #*map[*http.http2ClientConn][]string
+[1788160357.1]   #*map[string][]*http.http2ClientConn
+[1788160357.1]   #*map[uint32]*http.http2clientStream
+[1788160357.1]   #*sandbox.ControllerPlatformResponse
+[1788160357.1]   #*sandbox.ControllerShutdownResponse
+[1788160357.1]   #vendor/golang.org/x/net/http2/hpack
+[1788160357.1]   $*func() *http.http2FrameWriteRequest
+[1788160357.1]   $*func(*http.Response) *connect.Error
+[1788160357.1]   $*func(*http.http2clientStream) error
+[1788160357.1]   $*func(*http.http2stream, int, error)
+[1788160357.1]   $*func(*http.response) *http.response
+[1788160357.1] === N2 sandboxctrl locate ===
+[1788160357.1] PID 535 maps EXC FileNotFoundError
+[1788160357.1] PID 535 exe EXC FileNotFoundError
+[1788160357.1] PID 535 cwd EXC FileNotFoundError
+[1788160357.1] PID 535 root EXC FileNotFoundError
+[1788160357.1] PID 535 cmdline EXC FileNotFoundError
+[1788160357.1] PID 535 environ EXC FileNotFoundError
+[1788160357.1] PID 535 stat EXC FileNotFoundError
+[1788160357.1] PID 535 root ls: ls: cannot access '/proc/535/root/': No such file or directory
+ls: cannot access '/proc/535/root/opt/': No such file or directory
+ls: cannot access '/proc/535/root/opt/vercel/': No such file or directory
+
+[1788160357.1] === N3 RAM channels ===
+[1788160357.1] kmem: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+OSError: [Errno 6] No such device or address: '/dev/kmem'
+
+[1788160357.1] kcore: -r-------- 1 root root 140737471590400 Aug 31 07:12 /proc/kcore
+
+[1788160357.1] kcore open OK size=140737471590400
+[1788160357.1] === N4 virtio notify test ===
+[1788160357.1] mem fd=-1
+[1788160357.1] 

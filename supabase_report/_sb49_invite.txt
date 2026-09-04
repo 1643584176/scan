@@ -1,0 +1,4 @@
+### [jit-list] GET /v1/projects/vnfobbywemqgcgjokkxd/database/jit/list (1.0s)
+200 | {"items":[{"user_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","primary_email":"1643584176@qq.com","invite_id":null,"expires_at":null,"user_roles":[]}]}
+### [jit-invite-self] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit/invite (2.7s)
+500 | {"message":"Failed to send database JIT access invite","errorEventId":"8daf4acf02834ad4938c8a0761f41bf6"}

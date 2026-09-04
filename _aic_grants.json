@@ -1,0 +1,50 @@
+{
+  "result": [
+    {
+      "compositeId": "849b1c957d72411019af8903854cb15440cb66c849538804e44bd953220eec7571d30d74dc1b2dfe66f7a6a34b29875443ad070ebe96fbddcf6800ae7e4ba571",
+      "item": {
+        "type": "user"
+      },
+      "keys": {
+        "type": "user",
+        "userId": "db3d6356-61a0-4684-9eaa-c1353dfa44d9"
+      },
+      "user": {
+        "_rev": "8d40d008-98c6-46ed-935d-38d01ae5b56f-113607",
+        "accountStatus": "active",
+        "cn": "base base_pccp",
+        "fr": {
+          "realm": "alpha"
+        },
+        "givenName": "base",
+        "id": "db3d6356-61a0-4684-9eaa-c1353dfa44d9",
+        "kbaInfo": [
+          {
+            "questionId": "1",
+            "answer": "REDACTED"
+          }
+        ],
+        "mail": "1643584176@qq.com",
+        "preferences": {
+          "marketing": true,
+          "updates": true
+        },
+        "sn": "base_pccp",
+        "userName": "pccp",
+        "metadata": {
+          "entityType": "/openidm/managed/user",
+          "created": "2026-09-01T07:09:12.435Z"
+        }
+      },
+      "metadata": {
+        "modifiedDate": "2026-09-01T07:10:31.71138291Z",
+        "createdDate": "2026-09-01T07:10:31.71138291Z"
+      }
+    }
+  ],
+  "searchAfterKey": [
+    "849b1c957d72411019af8903854cb15440cb66c849538804e44bd953220eec7571d30d74dc1b2dfe66f7a6a34b29875443ad070ebe96fbddcf6800ae7e4ba571"
+  ],
+  "totalCount": 1,
+  "resultCount": 1
+}

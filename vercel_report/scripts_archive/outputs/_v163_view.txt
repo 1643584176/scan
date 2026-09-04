@@ -1,0 +1,83 @@
+[1788225890.526] mount vda ret=0
+[1788225890.527] payload written to COW 8094 bytes
+[1788225890.539] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=d4fc0d33-a289-47cf-9797-39a6f78fb9dd-snapshot
+[1788225890.545] Create v163b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\
+\\x94(\
+\\x05v163b\\x1a\\x87\\x01977805900163.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788225890.588] Tasks/Create v163b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v163b\\x10\\x94\\x05'
+[1788225890.598] Tasks/Start v163b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x94\\x05'
+[1788225890.899] --- COW v163c.out @1s +344 ---
+[1788225890.6] === 1 create ===
+[1788225890.7] Create sleep -> HTTP/1.1 200 OK b'{"containerId":"ef75c40e-97f4-46c3-b1b9-4321db710008"}'
+[1788225890.7] cid=ef75c40e-97f4-46c3-b1b9-4321db710008
+[1788225890.7] Start -> HTTP/1.1 200 OK b'{}'
+}'
+
+[1788225891.199] --- COW v163c.out @2s +477 ---
+[1788225891.2] === 2 exec write ===
+[1788225891.2] write Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_a4a7f6e9b4bb44b0afdbe77a737"}'
+ite ===
+[1788225892.702] --- COW v163c.out @7s +850 ---
+[1788225892.7] SBX /tmp/v163m ERR
+[1788225892.7] SBX /root/v163m ERR
+[1788225892.7] SBX /etc/v163m ERR
+[1788225892.7] SBX /mnt/v163m ERR
+[1788225892.7] SBX /var/tmp/v163m ERR
+[1788225892.7] SBX /tmp/v163pwd ERR
+[1788225892.7] SBX /tmp/v163ls ERR
+[1788225892.7] === 3 output ===
+[1788225892.7] out Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_33af4f524e554fd68612e908671"}'
+utput ===
+[1788225893.303] --- COW v163c.out @9s +5059 ---
+[1788225893.2] StreamOutput s=0 -> HTTP/1.1 200 OK gs= body=b'0\\r\
+Grpc-Message: only stdout or stderr can be requested\\r\
+Grpc-Status: 3\\r\
+\\r\
+'
+[1788225893.2] StreamOutput s=1 -> HTTP/1.1 200 OK gs= body=b'0\\r\
+Grpc-Message: container output must be attached before start\\r\
+Grpc-Status: 9\\r\
+[1788225893.2] StreamOutput s=2 -> HTTP/1.1 200 OK gs= body=b'0\\r\
+[1788225893.2] === 4 mount dst ===
+[1788225893.2] Mount dst='/tmp/x' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/root/x' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/etc/x' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/run/x' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/var/tmp/x' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/mnt/drives/sandbox/x' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/tmp' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/root' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/etc' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/run' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/dev/shm/x' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount dst='/tmp/../x' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] === 5 mount src ===
+[1788225893.2] Mount src='/tmp' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount src='/proc/1/root/etc/passwd' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount src='/run/containerd/containerd.sock' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount src='/sys/fs/cgroup' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount src='/proc' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount src='/dev' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount src='/etc' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount src='/vercel/sandbox' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] Mount src='/proc/1/root/opt/vercel/celld' -> HTTP/1.1 500 Internal Server Error failed to mount: invalid mount: invalid destination \\
+[1788225893.2] === 6 other types ===
+[1788225893.2] Mount {'drive': {'drive_id': 'sandbox', 'mount_path': '/tmp/v163drv', 'mode': 'MOUNT_MODE_READ_WRITE'}} -> HTTP/1.1 400 Bad Request invalid mount: missing source
+[1788225893.2] Mount {'drive': {'driveId': 'sandbox', 'mountPath': '/tmp/v163drv', 'mode': 'MOUNT_MODE_READ_WRITE'}} -> HTTP/1.1 400 Bad Request invalid mount: missing source
+[1788225893.2] Mount {'tmpfs': {'mode': 'MOUNT_MODE_READ_WRITE'}} -> HTTP/1.1 400 Bad Request invalid mount: missing destination
+[1788225893.2] Mount {'tmpfs': {}} -> HTTP/1.1 400 Bad Request invalid mount: missing destination
+[1788225893.2] === 7 post mount ===
+[1788225893.2] post Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_78c6d0ea3f294a5b8715faef09c"}'
+d Request invalid mount: missing destination
+[1788225894.204] --- COW v163c.out @12s +5104 ---
+[1788225894.0] V163_DONE
+missing destination
+CHROOT_RC=0
+V99_END
+[1788225894.220] kill v163b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788225894.220] V99M_DONE
