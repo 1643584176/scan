@@ -1,0 +1,1 @@
+import{j as a}from"./client-CJWnElJ8.js";import{u as t,T as n}from"./TransferProjectsSelectOrgModal-6k6IVRo5.js";const d=({project:r,...s})=>{const{isLoading:e,disabledMessage:o}=t();return a.jsx(n,{projects:[r],disabledMessage:o,isLoading:e,...s})};export{d as T};

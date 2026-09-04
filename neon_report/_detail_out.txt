@@ -1,0 +1,311 @@
+
+### POST /organizations/{source_org_id}/projects/transfer :: transferProjectsFromOrgToOrg
+  desc: Transfers selected projects, identified by their IDs, from your organization to another specified organization. 
+  BODY[application/json]: {"$ref": "#/components/schemas/TransferProjectsToOrganizationRequest"}
+  SEC: None
+  RESP: ['200', '406', '422', 'default']
+
+### POST /projects/auth/transfer_ownership :: transferNeonAuthProviderProject
+  desc: Transfers ownership of your Neon-managed auth project to your own auth provider account. 
+  BODY[application/json]: {"$ref": "#/components/schemas/NeonAuthTransferAuthProviderProjectRequest"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/auth/domains :: listNeonAuthRedirectURIWhitelistDomains
+  desc: Deprecated. Use `/projects/{project_id}/branches/{branch_id}/auth/domains` instead. Removal scheduled for March 1, 2026. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### POST /projects/{project_id}/auth/domains :: addNeonAuthDomainToRedirectURIWhitelist
+  desc: Deprecated. Use `/projects/{project_id}/branches/{branch_id}/auth/domains` instead. Removal scheduled for March 1, 2026. 
+  BODY[application/json]: {"$ref": "#/components/schemas/NeonAuthAddDomainToRedirectURIWhitelistRequest"}
+  SEC: None
+  RESP: ['201', 'default']
+
+### DELETE /projects/{project_id}/auth/domains :: deleteNeonAuthDomainFromRedirectURIWhitelist
+  desc: Deprecated. Use `/projects/{project_id}/branches/{branch_id}/auth/domains` instead. Removal scheduled for March 1, 2026. 
+  BODY[application/json]: {"$ref": "#/components/schemas/NeonAuthDeleteDomainFromRedirectURIWhitelistRequest"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### DELETE /projects/{project_id}/auth/users/{auth_user_id} :: deleteNeonAuthUser
+  desc: Deprecated. Use `/projects/{project_id}/branches/{branch_id}/auth/users/{auth_user_id}` instead. Removal scheduled for March 1, 2026. 
+  PARAM path project_id (REQ) {"type": "string", "pattern": "^[a-z0-9-]{1,60}$"}
+  PARAM path auth_user_id (REQ) {"type": "string"}
+  SEC: None
+  RESP: ['204', 'default']
+
+### GET /projects/{project_id}/available_preload_libraries :: getAvailablePreloadLibraries
+  desc: Returns the shared preload libraries available for the specified project's Postgres version. Shared preload libraries are Postgres extensions that require the `shared_preload_libraries` setting and a compute restart to a
+  PARAM path project_id (REQ) {"type": "string", "pattern": "^[a-z0-9-]{1,60}$"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/ai_gateway :: getProjectBranchAiGateway
+  desc: Returns the AI Gateway endpoint host for the specified branch, used to render code-snippet base URLs. A 200 response means the branch is registered and this region serves the AI gateway. A 404 response includes a `reason
+  SEC: None
+  RESP: ['200', '404', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/auth/domains :: listBranchNeonAuthTrustedDomains
+  desc: Lists the trusted domains in the redirect URI whitelist for the specified branch. Only domains in this list are permitted as redirect targets after authentication. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/auth/domains :: addBranchNeonAuthTrustedDomain
+  desc: Adds a domain to the redirect URI whitelist for the specified branch. Only domains in this list are permitted as redirect targets after authentication. 
+  BODY[application/json]: {"$ref": "#/components/schemas/NeonAuthAddDomainToRedirectURIWhitelistRequest"}
+  SEC: None
+  RESP: ['201', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/auth/domains :: deleteBranchNeonAuthTrustedDomain
+  desc: Removes a domain from the redirect URI whitelist for the specified branch. After removal, the domain can no longer be used as a redirect target after authentication. 
+  BODY[application/json]: {"$ref": "#/components/schemas/NeonAuthDeleteDomainFromRedirectURIWhitelistRequest"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/auth/users :: createBranchNeonAuthNewUser
+  desc: Creates a new user in the Neon Auth user directory for the specified branch. The user is created in the `neon_auth.users_sync` table and can immediately authenticate using the branch's configured auth providers. 
+  BODY[application/json]: {"$ref": "#/components/schemas/CreateBranchNeonAuthNewUserRequest"}
+  SEC: None
+  RESP: ['201', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/auth/users/{auth_user_id} :: deleteBranchNeonAuthUser
+  desc: Deletes the specified user from the Neon Auth user directory for the specified branch. Removes the user record from `neon_auth.users_sync`. This action cannot be undone. 
+  SEC: None
+  RESP: ['204', 'default']
+
+### PUT /projects/{project_id}/branches/{branch_id}/auth/users/{auth_user_id}/role :: updateNeonAuthUserRole
+  desc: Updates the role of a user in the Neon Auth user directory for the specified branch. The role controls the user's level of access within the Neon Auth integration. 
+  BODY[application/json]: {"$ref": "#/components/schemas/UpdateNeonAuthUserRoleRequest"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/auth/webhooks :: getNeonAuthWebhookConfig
+  desc: Returns the webhook configuration for the specified branch's Neon Auth integration, including the endpoint URL and the events that trigger it. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### PUT /projects/{project_id}/branches/{branch_id}/auth/webhooks :: updateNeonAuthWebhookConfig
+  desc: Updates the webhook configuration for the specified branch's Neon Auth integration. Webhooks notify an external endpoint when auth events occur, such as user creation or sign-in. 
+  BODY[application/json]: {"$ref": "#/components/schemas/NeonAuthWebhookConfig"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/backup_schedule :: getSnapshotSchedule
+  desc: Returns the backup schedule for the specified branch, including the configured snapshot frequencies. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### PUT /projects/{project_id}/branches/{branch_id}/backup_schedule :: setSnapshotSchedule
+  desc: Updates the backup schedule for the specified branch. The schedule defines how often automatic snapshots are created (for example, `daily` or `weekly`). Requires a paid plan. 
+  BODY[application/json]: {"$ref": "#/components/schemas/BackupSchedule"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/buckets :: createProjectBranchBucket
+  desc: Creates a new branchable object storage bucket on the specified branch. Buckets are managed by the Neon Platform branchable object storage service.  **Note**: This endpoint is currently in Beta. 
+  BODY[application/json]: {"$ref": "#/components/schemas/BucketCreateRequest"}
+  SEC: None
+  RESP: ['201', '410', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/buckets :: listProjectBranchBuckets
+  desc: Lists branchable object storage buckets visible on the specified branch, including those inherited from ancestor branches.  **Note**: This endpoint is currently in Beta. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/buckets/{bucket_name} :: deleteProjectBranchBucket
+  desc: Deletes the named bucket from the specified branch.  **Note**: This endpoint is currently in Beta. 
+  SEC: None
+  RESP: ['204', '404', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/buckets/{bucket_name}/objects :: listProjectBranchBucketObjects
+  desc: Lists objects visible in the named bucket on the specified branch, including those inherited from ancestor branches. Listing is served by the user's session (no customer S3 credentials required).  When `delimiter` is sup
+  PARAM query prefix (opt) {"type": "string"}
+  PARAM query delimiter (opt) {"type": "string"}
+  PARAM query cursor (opt) {"type": "string"}
+  PARAM query limit (opt) {"type": "integer", "format": "int32", "minimum": 1, "maximum": 1000, "default": 1000}
+  SEC: None
+  RESP: ['200', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/buckets/{bucket_name}/objects-by-prefix :: deleteProjectBranchBucketObjectsByPrefix
+  desc: Soft-deletes every object on the specified branch whose key starts with `prefix`, in a single call. Intended to back a "delete folder" action in an object browser: a `prefix` of `app/avatars/` removes every object beneat
+  PARAM query prefix (REQ) {"type": "string", "minLength": 1, "maxLength": 1024}
+  SEC: None
+  RESP: ['200', '404', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/buckets/{bucket_name}/objects/{object_key} :: deleteProjectBranchBucketObject
+  desc: Deletes the named object from the bucket on the specified branch. Served by the user's session (no customer S3 credentials required).  **Note**: This endpoint is currently in Beta. 
+  SEC: None
+  RESP: ['204', '404', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/buckets/{bucket_name}/objects/{object_key}/download :: getProjectBranchBucketObject
+  desc: Streams the raw bytes of the named object from the bucket on the specified branch, including objects inherited from ancestor branches. Served by the user's session (no customer S3 credentials required).  The body is retu
+  SEC: None
+  RESP: ['200', '404', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/buckets/{bucket_name}/objects/{object_key}/presign :: presignProjectBranchBucketObject
+  desc: Returns a presigned URL that transfers bytes directly to or from the object's bucket on the specified branch, without the caller ever handling S3 credentials. The `operation` field selects the direction:  - `upload` retu
+  BODY[application/json]: {"$ref": "#/components/schemas/PresignRequest"}
+  SEC: None
+  RESP: ['200', '404', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/credentials :: createCredential
+  desc: Issues a new scoped service credential anchored to the specified branch. The response carries `api_token` and `s3_secret_access_key` exactly once ¡ª they are not stored server-side.  **Note**: This endpoint is currently i
+  BODY[application/json]: {"$ref": "#/components/schemas/CreateCredentialRequest"}
+  SEC: None
+  RESP: ['201', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/credentials :: listCredentials
+  desc: Returns metadata for customer-issued credentials on the branch. Secrets are never included.  **Note**: This endpoint is currently in Beta. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/credentials/{token_id} :: revokeCredential
+  desc: Soft-deletes the credential.  Idempotent.  **Note**: This endpoint is currently in Beta. 
+  SEC: None
+  RESP: ['204', '404', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/credentials/{token_id}/reveal :: revealCredential
+  desc: Returns the live `api_token` and `s3_secret_access_key` of an existing credential, so a credential whose issuance response was lost can be recovered without minting a new one.  This is a POST with an explicit `/reveal` v
+  SEC: None
+  RESP: ['200', '404', '409', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/credentials/{token_id}/rotate :: rotateCredential
+  desc: Replaces the secret material on an existing scoped credential in place. `token_id` is preserved ¡ª it is the `AWS_ACCESS_KEY_ID` for S3-compatible clients, so the access key id your application already holds keeps working
+  SEC: None
+  RESP: ['200', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/custom-domains :: registerProjectBranchCustomDomain
+  desc: Registers a customer-owned domain (for example `dashboard.acme.com`) on the branch and points it at a target entity, chosen by `entity_type` + `entity_id`. In v1 only `entity_type: function` is supported (an unsupported 
+  BODY[application/json]: {"$ref": "#/components/schemas/CustomDomainRegisterRequest"}
+  SEC: None
+  RESP: ['201', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/custom-domains :: listProjectBranchCustomDomains
+  desc: Lists all custom domains registered on the branch, across every target entity.  **Note**: This endpoint is currently in Beta. 
+  PARAM None None (opt) {}
+  PARAM query limit (opt) {"type": "integer", "minimum": 1, "maximum": 1000}
+  SEC: None
+  RESP: ['200', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/custom-domains/{domain} :: deleteProjectBranchCustomDomain
+  desc: Removes a custom domain registered on the branch and stops routing it.  **Note**: This endpoint is currently in Beta. 
+  SEC: None
+  RESP: ['204', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/data-api/{database_name} :: createProjectBranchDataAPI
+  desc: Creates a new instance of Neon Data API in the specified branch. The Data API exposes a REST interface over the branch database. The `database_name` path parameter determines which database the API serves. 
+  BODY[application/json]: {"$ref": "#/components/schemas/DataAPICreateRequest"}
+  SEC: None
+  RESP: ['201', 'default']
+
+### PATCH /projects/{project_id}/branches/{branch_id}/data-api/{database_name} :: updateProjectBranchDataAPI
+  desc: Updates the Neon Data API configuration for the specified branch. You can optionally provide settings to update the Data API configuration. The schema cache is always refreshed as part of this operation. 
+  BODY[application/json]: {"$ref": "#/components/schemas/DataAPIUpdateRequest"}
+  SEC: None
+  RESP: ['201', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/data-api/{database_name} :: deleteProjectBranchDataAPI
+  desc: Deletes the Neon Data API for the specified branch. Existing connections using the Data API endpoint will fail after deletion. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/data-api/{database_name} :: getProjectBranchDataAPI
+  desc: Retrieves the Neon Data API configuration for the specified branch, including endpoint URL, enabled state, and database settings. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/finalize_restore :: finalizeRestoreBranch
+  desc: Finalize the restore operation for a branch created from a snapshot. This operation updates the branch so it functions as the original branch it replaced. This includes:   - Reassigning any computes from the original bra
+  BODY[application/json]: {"type": "object", "properties": {"name": {"type": "string", "description": "Name for the replaced branch. If omitted, a unique name is generated."}}}
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/functions :: listProjectBranchFunctions
+  desc: Lists functions on the specified branch.  **Note**: This endpoint is currently in Beta. 
+  PARAM None None (opt) {}
+  PARAM query limit (opt) {"type": "integer", "minimum": 1, "maximum": 1000}
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/functions/{slug} :: getProjectBranchFunction
+  desc: Returns the function identified by its slug.  **Note**: This endpoint is currently in Beta. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### PATCH /projects/{project_id}/branches/{branch_id}/functions/{slug} :: updateProjectBranchFunction
+  desc: Updates the function's mutable metadata ¡ª currently only the display `name`. A string sets the display name; `null` clears it, after which the function's `name` falls back to its slug. Leading and trailing whitespace is 
+  BODY[application/json]: {"$ref": "#/components/schemas/NeonFunctionUpdateRequest"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### DELETE /projects/{project_id}/branches/{branch_id}/functions/{slug} :: deleteProjectBranchFunction
+  desc: Deletes the function identified by its slug.  **Note**: This endpoint is currently in Beta. 
+  SEC: None
+  RESP: ['204', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/functions/{slug}/deployments :: createProjectBranchFunctionDeployment
+  desc: Creates a deployment for the function. Supply any subset of zip, environment, and runtime; omitted fields inherit the function's latest version. At least one field must be supplied. The first deployment of a function mus
+  BODY[multipart/form-data]: {"$ref": "#/components/schemas/FunctionDeployRequest"}
+  SEC: None
+  RESP: ['201', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/roles/{role_name}/reset_password :: resetProjectBranchRolePassword
+  desc: Resets the password for the specified Postgres role. Returns a new password and operations. The new password is ready to use when the last operation finishes. The old password remains valid until last operation finishes.
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/branches/{branch_id}/roles/{role_name}/reveal_password :: getProjectBranchRolePassword
+  desc: Retrieves the password for the specified Postgres role, if possible. For related information, see [Manage roles](https://neon.com/docs/manage/roles/). 
+  SEC: None
+  RESP: ['200', '404', '412', 'default']
+
+### POST /projects/{project_id}/branches/{branch_id}/snapshot :: createSnapshot
+  desc: Creates a snapshot from the specified branch. This operation may initiate an asynchronous process. 
+  PARAM query lsn (opt) {"type": "string"}
+  PARAM query timestamp (opt) {"type": "string", "example": "2025-08-05T22:00:00Z"}
+  PARAM query name (opt) {"type": "string"}
+  PARAM query expires_at (opt) {"type": "string", "example": "2025-08-05T22:00:00Z"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### GET /projects/{project_id}/snapshots :: listSnapshots
+  desc: Lists the snapshots for the specified project. Each snapshot represents a point-in-time backup of the project data. 
+  SEC: None
+  RESP: ['200', 'default']
+
+### DELETE /projects/{project_id}/snapshots/{snapshot_id} :: deleteSnapshot
+  desc: Deletes the specified snapshot. 
+  SEC: None
+  RESP: ['202', 'default']
+
+### PATCH /projects/{project_id}/snapshots/{snapshot_id} :: updateSnapshot
+  desc: Updates the specified snapshot. 
+  BODY[application/json]: {"$ref": "#/components/schemas/SnapshotUpdateRequest"}
+  SEC: None
+  RESP: ['200', 'default']
+
+### POST /projects/{project_id}/snapshots/{snapshot_id}/restore :: restoreSnapshot
+  desc: Restores the specified snapshot to a new branch, and optionally finalizes the restore operation to replace the original branch. 
+  PARAM query name (opt) {"type": "string"}
+  BODY[application/json]: {"type": "object", "properties": {"name": {"description": "A name for the newly restored branch. If not provided, the server generates a unique name for the branch automatically.\n", "type": "string"}, "target_branch_id": {"description": "ID of the branch to restore the snapshot into. Defaults to the snapshot's source branch (`snapshot.source_branch_id`); fails if that cannot be determined.\n", "t
+  SEC: None
+  RESP: ['200', 'default']
+
+### POST /projects/{project_id}/transfer_requests :: createProjectTransferRequest
+  desc: Creates a transfer request for the specified project. The request expires after a set period. To accept the request, the recipient calls `PUT /projects/{project_id}/transfer_requests/{request_id}` or uses the Neon Consol
+  BODY[application/json]: {"type": "object", "properties": {"ttl_seconds": {"type": "integer", "format": "int64", "description": "Number of seconds the transfer request stays valid before it expires. Defaults to 86400 (24 hours).\n", "default": 86400}}}
+  SEC: None
+  RESP: ['201', 'default']
+
+### PUT /projects/{project_id}/transfer_requests/{request_id} :: acceptProjectTransferRequest
+  desc: Accepts a transfer request for the specified project, transferring it to the specified organization or user. If org_id is not passed, the project will be transferred to the current user or organization account. 
+  BODY[application/json]: {"type": "object", "properties": {"org_id": {"description": "The Neon organization ID to transfer the project to. If not provided, the project will be\ntransferred to the current user or organization account.\n", "example": "org-cool-darkness-12345678", "type": "string", "pattern": "^[a-z0-9-]{1,60}$"}}}
+  SEC: None
+  RESP: ['204', '406', 'default']
+
+### POST /users/me/projects/transfer :: transferProjectsFromUserToOrg
+  desc: Deprecated. Personal accounts have been migrated to organizations, so this operation no longer applies. Removal scheduled for July 1, 2026. 
+  BODY[application/json]: {"$ref": "#/components/schemas/TransferProjectsToOrganizationRequest"}
+  SEC: None
+  RESP: ['200', '406', '422', 'default']

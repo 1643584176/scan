@@ -1,0 +1,411 @@
+{
+ "models": [
+  {
+   "id": "claude-opus-4-8",
+   "provider": "anthropic",
+   "display_name": "Claude Opus 4.8",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-opus-4-7",
+   "provider": "anthropic",
+   "display_name": "Claude Opus 4.7",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-opus-4-6",
+   "provider": "anthropic",
+   "display_name": "Claude Opus 4.6",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-opus-4-5",
+   "provider": "anthropic",
+   "display_name": "Claude Opus 4.5",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-opus-5",
+   "provider": "anthropic",
+   "display_name": "Claude Opus 5",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-opus-4-1",
+   "provider": "anthropic",
+   "display_name": "Claude Opus 4.1",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-fable-5",
+   "provider": "anthropic",
+   "display_name": "Claude Fable 5",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-sonnet-5",
+   "provider": "anthropic",
+   "display_name": "Claude Sonnet 5",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-sonnet-4-6",
+   "provider": "anthropic",
+   "display_name": "Claude Sonnet 4.6",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-sonnet-4-5",
+   "provider": "anthropic",
+   "display_name": "Claude Sonnet 4.5",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "claude-haiku-4-5",
+   "provider": "anthropic",
+   "display_name": "Claude Haiku 4.5",
+   "dialects": [
+    "chat_completions",
+    "anthropic_messages"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gemini-3-1-flash-lite",
+   "provider": "google",
+   "display_name": "Gemini 3.1 Flash Lite",
+   "dialects": [
+    "chat_completions",
+    "gemini_generate_content"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gemini-3-1-pro",
+   "provider": "google",
+   "display_name": "Gemini 3.1 Pro",
+   "dialects": [
+    "chat_completions",
+    "gemini_generate_content"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gemini-3-5-flash",
+   "provider": "google",
+   "display_name": "Gemini 3.5 Flash",
+   "dialects": [
+    "chat_completions",
+    "gemini_generate_content"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gemini-3-flash",
+   "provider": "google",
+   "display_name": "Gemini 3 Flash",
+   "dialects": [
+    "chat_completions",
+    "gemini_generate_content"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gemini-3-6-flash",
+   "provider": "google",
+   "display_name": "Gemini 3.6 Flash",
+   "dialects": [
+    "chat_completions",
+    "gemini_generate_content"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gemini-3-5-flash-lite",
+   "provider": "google",
+   "display_name": "Gemini 3.5 Flash Lite",
+   "dialects": [
+    "chat_completions",
+    "gemini_generate_content"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gemma-3-12b",
+   "provider": "google",
+   "display_name": "Gemma 3 12B",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5",
+   "provider": "openai",
+   "display_name": "GPT-5",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-1",
+   "provider": "openai",
+   "display_name": "GPT-5.1",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-2",
+   "provider": "openai",
+   "display_name": "GPT-5.2",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-3-codex",
+   "provider": "openai",
+   "display_name": "GPT-5.3 Codex",
+   "dialects": [
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-4",
+   "provider": "openai",
+   "display_name": "GPT-5.4",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-4-mini",
+   "provider": "openai",
+   "display_name": "GPT-5.4 Mini",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-4-nano",
+   "provider": "openai",
+   "display_name": "GPT-5.4 Nano",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-mini",
+   "provider": "openai",
+   "display_name": "GPT-5 Mini",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-nano",
+   "provider": "openai",
+   "display_name": "GPT-5 Nano",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-5",
+   "provider": "openai",
+   "display_name": "GPT-5.5",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-5-pro",
+   "provider": "openai",
+   "display_name": "GPT-5.5 Pro",
+   "dialects": [
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-6-sol",
+   "provider": "openai",
+   "display_name": "GPT-5.6 Sol",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-6-terra",
+   "provider": "openai",
+   "display_name": "GPT-5.6 Terra",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-5-6-luna",
+   "provider": "openai",
+   "display_name": "GPT-5.6 Luna",
+   "dialects": [
+    "chat_completions",
+    "openai_responses"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-oss-120b",
+   "provider": "databricks",
+   "display_name": "GPT OSS 120B",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "gpt-oss-20b",
+   "provider": "databricks",
+   "display_name": "GPT OSS 20B",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "llama-4-maverick",
+   "provider": "meta",
+   "display_name": "Llama 4 Maverick",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "meta-llama-3-1-8b-instruct",
+   "provider": "meta",
+   "display_name": "Meta Llama 3.1 8B Instruct",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "meta-llama-3-3-70b-instruct",
+   "provider": "meta",
+   "display_name": "Meta Llama 3.3 70B Instruct",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "qwen3-next-80b-a3b-instruct",
+   "provider": "alibaba",
+   "display_name": "Qwen3 Next Instruct",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "qwen35-122b-a10b",
+   "provider": "alibaba",
+   "display_name": "Qwen3.5 122B A10B",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "kimi-k3",
+   "provider": "moonshot",
+   "display_name": "Kimi K3",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "glm-5-2",
+   "provider": "zhipu",
+   "display_name": "GLM 5.2",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "inkling",
+   "provider": "databricks",
+   "display_name": "Inkling",
+   "dialects": [
+    "chat_completions"
+   ],
+   "enabled": false
+  }
+ ]
+}

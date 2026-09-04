@@ -1,0 +1,11 @@
+KW passwordless @bat+30819: ...r});authProjectEndpointPasswordlessSession=(t,n,r,i={})=>this.request({path:`/projects/${encodeURIComponent(t)}/endpoints/${encodeURIComponent(n)}/passwordless_auth`,method:"POST",body:r,secure:!0,type:"application/json",...i});getProjectEndpointStats=(t,n,r,i={})=>this.request({path:`/projects/${encodeURIComponent(t)}/endpoints/${encodeURIComponent(n)}/stats`,method:"POST",body:r,secure:!0,type:"application/json",format:"json",...i});getAnalyticsAccoun
+KW OAuthToken: no def found in bat seg
+KW oauth_token: no def found in bat seg
+KW session/oauth: no def found in bat seg
+KW runProjectSqlQuery: no def found in bat seg
+GLOBAL grant-type:session -> 1
+  @2453019: ()=>{const e=cvt();return dvt({enabled:!1,forceProxy:!1,...e})},hvt=async(e,t)=>e?(await np.generateDatabaseCredential(e,t)).data.token:(await np.generateOAuthToken({grant_type:"urn:databricks:params:grant-type:session",scope:"!pgsql",client_id:"databricks-session"})).data.access_token,Fhe=({projectId:e,branchId:t,role:n})=>["passwords",e,t,n],pvt=({projectId:e,branchId:t,role:n,roleIsOAuth:r,endpointResourceName:i,e
+GLOBAL urn:databricks -> 1
+  @2452997: gth>0,reasons:s}},fvt=()=>{const e=cvt();return dvt({enabled:!1,forceProxy:!1,...e})},hvt=async(e,t)=>e?(await np.generateDatabaseCredential(e,t)).data.token:(await np.generateOAuthToken({grant_type:"urn:databricks:params:grant-type:session",scope:"!pgsql",client_id:"databricks-session"})).data.access_token,Fhe=({projectId:e,branchId:t,role:n})=>["passwords",e,t,n],pvt=({projectId:e,branchId:t,role:n,roleIsOAuth:r,en
+GLOBAL !pgsql -> 1
+  @2453046: vt({enabled:!1,forceProxy:!1,...e})},hvt=async(e,t)=>e?(await np.generateDatabaseCredential(e,t)).data.token:(await np.generateOAuthToken({grant_type:"urn:databricks:params:grant-type:session",scope:"!pgsql",client_id:"databricks-session"})).data.access_token,Fhe=({projectId:e,branchId:t,role:n})=>["passwords",e,t,n],pvt=({projectId:e,branchId:t,role:n,roleIsOAuth:r,endpointResourceName:i,enabled:a=!0,groupName:o})=>

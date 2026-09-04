@@ -1,0 +1,250 @@
+========== Data API Ïà¹Ø ==========
+ConsumptionHistoryQueryMetrics: array | 
+DataAPICreateRequest: object | Create Neon Data API
+  - auth_provider (opt) string ["neon_auth", "external"] Authentication provider for the Neon Data API. `neon_auth`: use Neon's built-in managed au
+  - jwks_url (opt) string  URL of the JWKS endpoint used to verify JWTs for this Data API. Required when configuring 
+  - provider_name (opt) string  Display name for the authentication provider. Accepted values include "Clerk", "Stytch", a
+  - jwt_audience (opt) string  Expected `aud` claim in incoming JWTs. When set, tokens with a different audience are reje
+  - add_default_grants (opt) boolean  Grant all permissions to the tables in the public schema to authenticated users
+  - skip_auth_schema (opt) boolean  Skip creating the auth schema and RLS functions
+  - settings (opt) -> DataAPISettings
+DataAPICreateResponse: object | Neon Data API created successfully
+  - url (REQ) string  URL of the created Data API endpoint.
+DataAPIReponse: object | Neon Data API response
+  - url (REQ) string  The URL of the Neon Data API
+  - status (REQ) string  The status of the Neon Data API deployment
+  - settings (opt) object  Configuration settings for the Data API (SubZero only)
+  - available_schemas (opt) array  List of available database schemas (SubZero only)
+DataAPISettings: object | Configuration settings for the Neon Data API
+  - db_aggregates_enabled (opt) boolean true Enable aggregates feature
+  - db_anon_role (opt) string "anonymous" Database role to use for anonymous requests
+  - db_extra_search_path (opt) string  Extra schemas to add to the search path
+  - db_max_rows (opt) integer  Hard limit on the number of rows returned in a single Data API response. No limit when uns
+  - db_schemas (opt) array  List of schemas to expose via the API. Default: ["public"]
+  - jwt_role_claim_key (opt) string ".role" JWT claim key to use for role extraction
+  - jwt_cache_max_lifetime (opt) integer  Maximum lifetime of the Data API's JWT cache, in seconds.
+  - openapi_mode (opt) string "disabled" OpenAPI specification mode (ignore-privileges, disabled)
+  - server_cors_allowed_origins (opt) string  CORS allowed origins
+  - server_timing_enabled (opt) boolean  When enabled, the Data API adds `Server-Timing` headers to each response showing database 
+DataAPIUpdateRequest: object | Update Neon Data API
+  - settings (opt) -> DataAPISettings
+ProjectBranchLogsInvalidQuery: object | 
+  - code (REQ) string  
+  - message (REQ) string  
+  - reason (REQ) string ["time_range_too_large", "invalid_time_range", "conflicting_ Machine-readable reason why the request was rejected:
+- `time_range_too_large`: the reques
+ProjectBranchLogsQueryRequest: object | 
+  - since (opt) None  Length of the query window, ending at `end_time` or at the current
+time when `end_time` is
+  - start_time (opt) string  Inclusive beginning of the query window. Mutually exclusive with
+`since`. Defaults to one 
+  - end_time (opt) string  Exclusive end of the query window. Defaults to the current time.
+  - limit (opt) integer 100 Maximum number of log records to return per page.
+  - cursor (opt) string  Opaque pagination cursor returned as `next_cursor` by a previous
+call. Resume the query af
+  - sort_order (opt) string ["asc", "desc"] Order matching records by timestamp. `desc`, the default, returns
+the newest records first
+  - source (opt) -> ProjectBranchLogSource
+  - service_name (opt) string  Match the OpenTelemetry `service.name` resource attribute exactly.
+  - scope_name (opt) string  Match the OpenTelemetry instrumentation scope name exactly.
+  - minimum_severity (opt) -> ProjectBranchLogSeverity
+  - severity_text (opt) string  Match the OpenTelemetry severity text exactly.
+  - body_contains (opt) string  Match records whose rendered `message` contains this case-sensitive
+substring.
+
+Records wi
+  - trace_id (opt) string  Match records associated with this OpenTelemetry trace ID. W3C Trace
+Context defines a tra
+  - logql (opt) string  Escape hatch for selections the structured filters cannot express: a
+raw LogQL expression,
+ProjectBranchLogsQueryResponse: object | 
+  - logs (REQ) array  
+  - next_cursor (opt) string  Pagination cursor to pass as `cursor` on the next request. Empty
+when the response is not 
+  - is_truncated (REQ) boolean  True when more records matched than were returned.
+
+========== Buckets ==========
+AnnotationObjectData: object | 
+  - type (REQ) string  Kind of resource the annotation is attached to, for example "branch" or "endpoint".
+  - id (REQ) string  The annotated object's ID.
+Bucket: object | 
+  - name (REQ) string  The bucket name (unique within a branch).
+  - access_level (REQ) -> BucketAccessLevel
+  - created_at (REQ) string  When the bucket was created. For a bucket inherited from an
+ancestor branch this is the an
+BucketAccessLevel: string | Controls anonymous access to objects in the bucket.
+- `private`: all reads and w
+BucketCreateRequest: object | 
+  - name (REQ) string  The bucket name.
+  - access_level (opt) string ["private", "public_read"] Access level for the bucket. Defaults to `private`. Set to `public_read`
+to allow anonymou
+BucketObject: object | 
+  - key (REQ) string  The full object key.
+  - size (REQ) integer  The object size in bytes.
+  - last_modified (REQ) string  The time the object was last modified.
+  - etag (REQ) string  The object's entity tag (content hash).
+BucketObjectsDeletePrefixResponse: object | 
+  - deleted (REQ) integer  The number of objects soft-deleted under the prefix. 0 when no live
+object matched the pre
+BucketObjectsListResponse: object | 
+  - folders (REQ) array  Common prefixes (folder names) collapsed under the requested
+`delimiter`. Empty when no `d
+  - objects (REQ) array  Objects whose keys did not collapse into a folder.
+  - prefix (REQ) string  The prefix that was applied to this listing (echoed back).
+  - next_cursor (opt) string  Pagination cursor to pass as `cursor` on the next request. Empty
+when the listing is not t
+  - is_truncated (REQ) boolean  True when more results exist beyond this page.
+BucketResponse: object | 
+  - bucket (REQ) -> Bucket
+BucketsListResponse: object | 
+  - buckets (REQ) array  
+PresignRequest: object | Options for the presigned URL. The `operation` selects upload (`PUT`)
+or downloa
+  - operation (REQ) string ["upload", "download"] The transfer direction. `upload` returns a presigned `PUT` URL;
+`download` returns a presi
+  - content_type (opt) string  The `Content-Type` to bind into the signed request. Only meaningful
+for `upload`: when set
+  - expires_in_seconds (opt) integer 900 How long the presigned URL stays valid, in seconds. Defaults to 900
+(15 minutes); capped a
+PresignResponse: object | 
+  - url (REQ) string  The presigned URL. Transfer the object bytes by issuing
+`method url` with the returned `he
+  - method (REQ) string  The HTTP method to use against `url`: `PUT` for an upload,
+`GET` for a download.
+
+  - headers (REQ) object  Headers the caller MUST send verbatim on the request (e.g.
+`Content-Type` when it was sign
+  - expires_at (REQ) string  When the presigned URL stops being valid.
+
+========== Credentials ==========
+CreateCredentialRequest: object | 
+  - name (opt) string  Free-form customer label for the credential.
+  - scopes (REQ) array  
+  - principal_type (REQ) string ["user"] Principal type for the credential. Only `user` is customer-managed
+and accepted here. `fun
+CreateCredentialResponse: object | 
+  - token_id (REQ) string  Opaque credential id (e.g. nak_live_<32hex>).
+  - token_id_short (REQ) string  First 12 hex chars of token_id; safe to log.
+  - name (opt) string  Customer-supplied label, echoed back from the request. Absent when not provided.
+  - api_token (REQ) string  Bearer token; returned exactly once.
+  - s3_secret_access_key (REQ) string  nsk_live_<64 hex>; the AWS_SECRET_ACCESS_KEY, returned exactly once.
+  - scopes (REQ) array  
+  - branch_id (REQ) string  
+  - created_at (REQ) string  
+  - expires_at (opt) string  When the credential expires; absent means never expires.
+
+CredentialMeta: object | 
+  - token_id (REQ) string  Opaque credential id (e.g. nak_live_<32hex>).
+  - token_id_short (REQ) string  
+  - name (opt) string  Customer-supplied label; absent when not provided at issuance.
+  - scopes (REQ) array  
+  - branch_id (opt) string  
+  - principal_type (REQ) string  
+  - function_id (opt) string  
+  - created_at (REQ) string  
+  - last_used_at (opt) string  
+  - revoked_at (opt) string  
+  - expires_at (opt) string  When the credential expires; absent means never expires. The
+verifier refuses to authentic
+CredentialScope: string | A single capability you may request when issuing a credential. A
+credential is g
+CredentialSecret: object | The live secrets of an existing credential, recovered on demand by the
+reveal en
+  - token_id (REQ) string  Opaque credential id (e.g. nak_live_<32hex>).
+  - api_token (REQ) string  Bearer token.
+  - s3_secret_access_key (REQ) string  nsk_live_<64 hex>; the AWS_SECRET_ACCESS_KEY.
+GrantedCredentialScope: string | A single capability a credential actually carries, as reported by
+responses that
+ListCredentialsResponse: object | 
+  - credentials (REQ) array  
+RotateCredentialResponse: object | The replacement secret material for an existing credential, returned
+exactly onc
+  - token_id (REQ) string  Opaque credential id (e.g. nak_live_<32hex>), unchanged by the
+rotation. Doubles as the `A
+  - token_id_short (REQ) string  First 12 hex chars of token_id; safe to log.
+  - name (opt) string  Customer-supplied label carried on the credential. Absent when none was set at issuance.
+  - api_token (REQ) string  The new Bearer token; returned exactly once.
+  - s3_secret_access_key (REQ) string  The new nsk_live_<64 hex> AWS_SECRET_ACCESS_KEY; returned exactly once.
+  - scopes (REQ) array  
+  - branch_id (REQ) string  
+  - principal_type (REQ) string ["user"] Always `user`: only customer-managed credentials are rotatable
+through this endpoint.
+
+  - created_at (REQ) string  When the credential was originally issued. Rotation replaces the
+secrets in place and does
+  - expires_at (opt) string  When the credential expires; absent means never expires. Rotation
+does not extend it.
+
+
+========== Functions ==========
+CustomDomain: object | 
+  - domain (REQ) string  The registered custom domain (normalized, lowercase).
+  - entity_type (REQ) string  The kind of branch entity the domain targets. Possible values:
+`function` (v1 supports onl
+  - entity_id (REQ) string  The target entity's identifier within the branch. For `function` this
+is the function slug
+  - cname_target (REQ) string  The hostname the customer must point their custom domain at with a
+CNAME record. Empty whe
+  - status (opt) string  The domain's current validity, computed by a background check:
+`pending` (still converging
+  - dns_status (opt) string  The DNS + CAA portion of the check: `pending` (no records yet), `ok`
+(resolves to our edge
+  - binding_status (opt) string  Whether Neon's internal routing for the domain is published:
+`pending`, `present`, or `mis
+  - status_reason (opt) string  A short, stable machine-readable reason for a non-active `status`
+(e.g. `cname-not-pointin
+CustomDomainRegisterRequest: object | 
+  - domain (REQ) string  The custom domain to register (for example `dashboard.acme.com`).
+Case-insensitive; normal
+  - entity_type (REQ) string  The kind of branch entity to point the domain at. v1 supports only
+`function`; any other v
+  - entity_id (REQ) string  The target entity's identifier within the branch. For `function` this
+is the function slug
+CustomDomainsListResponse: object | 
+  - custom_domains (REQ) array  
+FunctionDeployRequest: object | 
+  - zip (opt) string  Optional ZIP archive of the function source code. Omit to reuse the
+latest version's bundl
+  - runtime (opt) string ["nodejs24"] 
+  - environment (opt) string  Optional JSON object (a string-to-string map) of environment
+variables for the deployment,
+NeonAuthAddDomainToRedirectURIWhitelistRequest: object | 
+  - domain (REQ) string  URI to add to the redirect URI allowlist for the auth provider.
+  - auth_provider (REQ) -> NeonAuthSupportedAuthProvider
+NeonAuthDeleteDomainFromRedirectURIWhitelistItem: object | 
+  - domain (REQ) string  URI to remove from the redirect URI whitelist.
+NeonAuthDeleteDomainFromRedirectURIWhitelistRequest: object | 
+  - auth_provider (REQ) -> NeonAuthSupportedAuthProvider
+  - domains (REQ) array  Domain names to remove from the redirect URI whitelist for the specified auth provider.
+NeonAuthRedirectURIWhitelistDomain: object | 
+  - domain (REQ) string  Allowed redirect URI domain for the auth provider.
+  - auth_provider (REQ) -> NeonAuthSupportedAuthProvider
+NeonFunction: object | 
+  - id (REQ) string  Opaque, stable function identifier.
+  - slug (REQ) string  Branch-unique, lowercase DNS-label. Forms the invocation URL's host together with the bran
+  - name (REQ) string  Free-form display name.
+  - invocation_url (REQ) string  URL at which the function is invoked. The host carries `<branch_id>-<slug>` as its first D
+  - current_deployment (opt) None  The most recent deployment, regardless of build status. It may
+still be building or it may
+  - active_deployment (opt) None  The most recent deployment whose build completed successfully.
+This is the deployment that
+  - created_at (REQ) string  
+NeonFunctionDeployment: object | 
+  - id (REQ) integer  The deployment id, which is the platform version number (monotonic per function).
+  - status (REQ) string ["pending", "building", "completed", "failed"] Build lifecycle status of the deployment.
+  - memory_mib (REQ) integer  
+  - runtime (REQ) string  
+  - created_at (REQ) string  
+  - environment (opt) array  The NAMES of the deployment's environment variables, sorted.
+Values are encrypted at rest 
+  - error (opt) string  Human-readable reason the deployment build failed. Present only
+when `status` is `failed`.
+NeonFunctionDeploymentResponse: object | 
+  - deployment (REQ) -> NeonFunctionDeployment
+NeonFunctionResponse: object | 
+  - function (REQ) -> NeonFunction
+NeonFunctionUpdateRequest: object | 
+  - name (REQ) string  New display name for the function. `null` clears the display
+name; the function's `name` t
+NeonFunctionsListResponse: object | 
+  - functions (REQ) array  

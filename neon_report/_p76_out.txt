@@ -1,0 +1,20 @@
+file size: 2885881
+KW getCustomerManagedKey -> 2
+  @2173468: r-managed-key-status",e],lht=e=>["customer-managed-key",e],uht=e=>{const{data:t,isLoading:n,isError:r}=qn({queryKey:sht(e),queryFn:async()=>(await np.getCustomerManagedKey(e)).data,staleTime:1/0,enabled:!1});return{isCmkEnabled:!!t?.customer_managed_key,isLoading:n,isError:r}},cht=(e,{disabled:t})=>qn({queryKey:lht(e),queryFn:as
+  @2173665: abled:!1});return{isCmkEnabled:!!t?.customer_managed_key,isLoading:n,isError:r}},cht=(e,{disabled:t})=>qn({queryKey:lht(e),queryFn:async()=>(await np.getCustomerManagedKeyStatus()).data,refetchInterval:oht,enabled:!1}),sRt=()=>{const e=Dat(),{isCmkEnabled:t,isLoading:n,isError:r}=uht(e),{data:i,isLoading:a,isError:o}=cht(e,{disa
+KW getCustomerManagedKeyStatus -> 1
+  @2173665: abled:!1});return{isCmkEnabled:!!t?.customer_managed_key,isLoading:n,isError:r}},cht=(e,{disabled:t})=>qn({queryKey:lht(e),queryFn:async()=>(await np.getCustomerManagedKeyStatus()).data,refetchInterval:oht,enabled:!1}),sRt=()=>{const e=Dat(),{isCmkEnabled:t,isLoading:n,isError:r}=uht(e),{data:i,isLoading:a,isError:o}=cht(e,{disa
+KW runProjectSqlQuery -> 1
+  @2447867: ;return P==null?"NULL":typeof P=="string"?`'${P.replace(/'/g,"''")}'`:typeof P=="boolean"?P?"TRUE":"FALSE":String(P)}));const d=(await tvt.add(()=>np.runProjectSqlQuery(e,{query:u,db_name:n,endpoint_id:t,role_name:r,password:i,skip_history:!0}))).data;if(!d.success||d.error)throw new Error(d.error??"Query execution failed");cons
+KW getWorkspaceNetworkStatus -> 1
+  @2452260: nabled??!1,isRequestViaPrivateLink:e.is_request_via_private_link??!1}),cvt=()=>{const{data:e,isLoading:t,isError:n}=qn({queryKey:lvt(),queryFn:()=>np.getWorkspaceNetworkStatus().then(({data:r})=>uvt(r)),staleTime:1/0,enabled:!1});return{...e,isLoading:t,isError:n}},dvt=({enabled:e,forceProxy:t,isStatusKnown:n,isPublicAccessEnabl
+KW generateDatabaseCredential -> 1
+  @2452911: _confirmed_sdpl"),{shouldProxy:s.length>0,reasons:s}},fvt=()=>{const e=cvt();return dvt({enabled:!1,forceProxy:!1,...e})},hvt=async(e,t)=>e?(await np.generateDatabaseCredential(e,t)).data.token:(await np.generateOAuthToken({grant_type:"urn:databricks:params:grant-type:session",scope:"!pgsql",client_id:"databricks-session"})).dat
+KW generateOAuthToken -> 1
+  @2452965: fvt=()=>{const e=cvt();return dvt({enabled:!1,forceProxy:!1,...e})},hvt=async(e,t)=>e?(await np.generateDatabaseCredential(e,t)).data.token:(await np.generateOAuthToken({grant_type:"urn:databricks:params:grant-type:session",scope:"!pgsql",client_id:"databricks-session"})).data.access_token,Fhe=({projectId:e,branchId:t,role:n})=>
+KW listDatabaseInstances -> 0
+KW getResolveRegions -> 0
+bat class start: 1870970
+Kde/Le 位置: 1924035 (距 bat start 53065)
+bat class methods count: 305
+interesting methods: resolveAiGatewayIdentity, listProjectPermissions, grantPermissionToProject, setProjectMemberRole, removeProjectMemberRole, revokePermissionFromProject, updateNeonAuthUserRole, initializeNeonAuthProviderOAuth, listNeonAuthOauthProviders, addNeonAuthOauthProvider, listBranchNeonAuthOauthProviders, addBranchNeonAuthOauthProvider, updateNeonAuthOauthProvider, deleteNeonAuthOauthProvider, updateBranchNeonAuthOauthProvider, deleteBranchNeonAuthOauthProvider, exchangeNeonAuthProviderOAuth, listProjectBranchRoles, createProjectBranchRole, getProjectBranchRole, deleteProjectBranchRole, getProjectBranchRolePassword, resetProjectBranchRolePassword, previewOrganizationMemberRoleUpdate, createCredential, listCredentials, revokeCredential
