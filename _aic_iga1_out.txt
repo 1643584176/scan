@@ -1,0 +1,23 @@
+=== 1. 基线:自己的 grants ===
+GET   /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/grants?pageSize=10&pag -> 200  {"result":[],"searchAfterKey":null,"totalCount":0,"resultCount":0}
+
+=== 2. IDOR:替换 userId ===
+GET   /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d8/grants?pageSize=10&pag -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44da/grants?pageSize=10&pag -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/00000000-0000-0000-0000-000000000000/grants?pageSize=10&pag -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/ffffffff-ffff-ffff-ffff-ffffffffffff/grants?pageSize=10&pag -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/admin/grants?pageSize=10&pageNumber=0                       -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/administrator/grants?pageSize=10&pageNumber=0               -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/root/grants?pageSize=10&pageNumber=0                        -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/../grants?pageSize=10&pageNumber=0                          -> 401  {"message":"User is not authorized to use this endpoint."}
+GET   /iga/governance/user/../../grants?pageSize=10&pageNumber=0                       -> 404  <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>Error</title> </head> <body> <pre>Cannot GET /iga/grants</pre> </body> </html> 
+GET   /iga/governance/user/..%2F../grants?pageSize=10&pageNumber=0                     -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/me/grants?pageSize=10&pageNumber=0                          -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/self/grants?pageSize=10&pageNumber=0                        -> 400  {"message":"User doesnt have permission to view grants"}
+GET   /iga/governance/user/current/grants?pageSize=10&pageNumber=0                     -> 400  {"message":"User doesnt have permission to view grants"}
+
+=== 3. requests + targetFilter 注入 ===
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests?_pageSize=0&_ -> 200  {"result":[],"searchAfterKey":null,"totalCount":0,"resultCount":0}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests?_pageSize=0&_ -> 200  {"result":[],"searchAfterKey":null,"totalCount":0,"resultCount":0}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests?_pageSize=0&_ -> 200  {"result":[],"searchAfterKey":null,"totalCount":0,"resultCount":0}
+POST  /iga/governance/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9/requests?_pageSize=0&_ -> 200  {"result":[],"searchAfterKey":null,"totalCount":0,"resultCount":0}

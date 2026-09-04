@@ -1,0 +1,14 @@
+GET    /platform/projects                         [bearer ] -> 200 | {"projects":[{"cloud_provider":"AWS","id":51443126,"inserted_at":"2026-09-04T06:33:44.879475","name":"1643584176's Project","organization_id":14987215,"organization_slug":"ipsxbsudxngkglabjsct","ref":
+GET    /platform/projects                         [cookie ] -> 401 | {"message":"Unauthorized"}
+GET    /platform/projects                         [none   ] -> 401 | {"message":"Unauthorized"}
+GET    /v1/projects                               [bearer ] -> 200 | [{"id":"vnfobbywemqgcgjokkxd","ref":"vnfobbywemqgcgjokkxd","organization_id":"ipsxbsudxngkglabjsct","organization_slug":"ipsxbsudxngkglabjsct","name":"1643584176's Project","region":"ap-northeast-2","
+GET    /v1/profile                                [bearer ] -> 200 | {"gotrue_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","primary_email":"1643584176@qq.com","username":"1643584176"}
+GET    /v1/projects                               [cookie ] -> 401 | {"message":"Unauthorized"}
+GET    /platform/organizations/ipsxbsudxngkglabjsct [bearer ] -> 200 | {"id":14987215,"slug":"ipsxbsudxngkglabjsct","name":"1643584176's Org","billing_email":"1643584176@qq.com","billing_partner":null,"integration_source":null,"opt_in_tags":[],"restriction_data":null,"re
+GET    /platform/organizations/ipsxbsudxngkglabjsct [cookie ] -> 401 | {"message":"Unauthorized"}
+GET    /platform/projects/vnfobbywemqgcgjokkxd    [bearer ] -> 200 | {"cloud_provider":"AWS","db_host":"db.vnfobbywemqgcgjokkxd.supabase.co","id":51443126,"inserted_at":"2026-09-04T06:33:44.879475","updated_at":"2026-09-04T08:04:22.567171","name":"1643584176's Project"
+GET    /v1/projects/vnfobbywemqgcgjokkxd/database/jit [bearer ] -> 406 | {"message":"Failed to get user's JIT access for project","errorEventId":"b49bd0ed757e42c596f75104f7304d01"}
+GET    /v1/projects/vnfobbywemqgcgjokkxd/jit-access [bearer ] -> 200 | {"state":"unavailable","unavailableReason":"ssl_enforcement_required"}
+GET    /v1/projects/vnfobbywemqgcgjokkxd/readonly [bearer ] -> 200 | {"enabled":false,"override_enabled":false,"override_active_until":"1970-01-01 00:00:00+00"}
+GET    /v1/snippets                               [bearer ] -> 200 | {"data":[]}
+GET    /v1/projects/vnfobbywemqgcgjokkxd/claim-token [bearer ] -> 404 | {"message":"Project claim token not found"}

@@ -1,0 +1,41 @@
+PWN +0:
+ROOT uid=0
+RD /mnt/etc/shadow -> EXC [Errno 2] No such file or directory: '/mnt/etc/shadow'
+RD /mnt/etc/passwd -> EXC [Errno 2] No such file or directory: '/mnt/etc/passwd'
+RD /mnt/etc/hostname -> EXC [Errno 2] No such file or directory: '/mnt/etc/hostname'
+RD /mnt/etc/containerd/config.toml -> EXC [Errno 2] No such file or directory: '/mnt/etc/containerd/config.toml'
+RD /mnt/etc/aws/credentials -> EXC [Errno 2] No such file or directory:...[TRUNC 3847]
+[1788227455.4] poll end 3839
+[1788227455.4] V178_DONE
+> EXC [Errno 2] No such file or directory: '/mnt/etc/shadow'
+RD /mnt/etc/passwd -> EXC [Errno 2] No such file or directory: '/mnt/etc/passwd'
+RD /mnt/etc/hostname -> EXC [Errno 2] No such file or directory: '/mnt/etc/hostname'
+RD /mnt/etc/containerd/config.toml -> EXC [Errno 2] No such file or directory: '/mnt/etc/containerd/config.toml'
+RD /mnt/etc/aws/credentials -> EXC [Errno 2] No such file or directory:...[TRUNC 3847]
+[1788227455.4] poll end 3839
+[1788227455.4] V178_DONE
+CHROOT_RC=0
+V99_END
+
+
+============================================================
+PWN +0:
+ROOT uid=0
+RD /mnt/etc/shadow -> EXC [Errno 2] No such file or directory: '/mnt/etc/shadow'
+RD /mnt/etc/passwd -> EXC [Errno 2] No such file or directory: '/mnt/etc/passwd'
+RD /mnt/etc/hostname -> EXC [Errno 2] No such file or directory: '/mnt/etc/hostname'
+RD /mnt/etc/containerd/config.toml -> EXC [Errno 2] No such file or directory: '/mnt/etc/containerd/config.toml'
+RD /mnt/etc/aws/credentials -> EXC [Errno 2] No such file or directory:...[TRUNC 3847]
+[1788227455.4] poll end 3839
+[1788227455.4] V178_DONE
+> EXC [Errno 2] No such file or directory: '/mnt/etc/shadow'
+RD /mnt/etc/passwd -> EXC [Errno 2] No such file or directory: '/mnt/etc/passwd'
+RD /mnt/etc/hostname -> EXC [Errno 2] No such file or directory: '/mnt/etc/hostname'
+RD /mnt/etc/containerd/config.toml -> EXC [Errno 2] No such file or directory: '/mnt/etc/containerd/config.toml'
+RD /mnt/etc/aws/credentials -> EXC [Errno 2] No such file or directory:...[TRUNC 3847]
+[1788227455.4] poll end 3839
+[1788227455.4] V178_DONE
+CHROOT_RC=0
+V99_END
+
+============================================================

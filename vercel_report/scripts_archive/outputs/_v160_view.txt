@@ -1,0 +1,59 @@
+[1788225482.175] mount vda ret=0
+[1788225482.175] payload written to COW 6984 bytes
+[1788225482.187] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=577fd9df-2612-4530-9dfd-a3d489ad27bd-snapshot
+[1788225482.193] Create v160b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x15\
+\\x92(\
+\\x05v160b\\x1a\\x87\\x01977805900160.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788225482.233] Tasks/Create v160b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v160b\\x10\\x93\\x05'
+[1788225482.246] Tasks/Start v160b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x93\\x05'
+[1788225482.547] --- COW v160c.out @1s +2616 ---
+[1788225482.3] === 1 /run/cell ===
+[1788225482.3] cell ca-cert.pem type=other
+[1788225482.3] cell cell.sock type=other
+[1788225482.3] cell runc type=dir
+[1788225482.3] === 2 celld fds ===
+[1788225482.3] celld fd0 -> /dev/console
+[1788225482.3] celld fd1 -> /dev/console
+[1788225482.3] celld fd10 -> socket:[533]
+[1788225482.3] celld fd11 -> anon_inode:[pidfd]
+[1788225482.3] celld fd12 -> socket:[1075]
+[1788225482.3] celld fd13 -> socket:[536]
+[1788225482.3] celld fd14 -> socket:[543]
+[1788225482.3] celld fd15 -> socket:[1088]
+[1788225482.3] celld fd16 -> socket:[1090]
+[1788225482.3] celld fd17 -> socket:[1094]
+[1788225482.3] celld fd18 -> /dev/kmsg
+[1788225482.3] celld fd19 -> socket:[547]
+[1788225482.3] celld fd2 -> /dev/console
+[1788225482.3] celld fd20 -> socket:[548]
+[1788225482.3] celld fd21 -> /run/containerd/fifo/2881019581/577fd9df-2612-4530-9dfd-a3d489ad27bd-stdin
+[1788225482.3] celld fd22 -> /run/containerd/fifo/2881019581/577fd9df-2612-4530-9dfd-a3d489ad27bd-stdout
+[1788225482.3] celld fd23 -> /run/containerd/fifo/2881019581/577fd9df-2612-4530-9dfd-a3d489ad27bd-stderr
+[1788225482.3] celld fd24 -> /run/containerd/fifo/2881019581/577fd9df-2612-4530-9dfd-a3d489ad27bd-stdin
+[1788225482.3] celld fd25 -> /run/containerd/fifo/2881019581/577fd9df-2612-4530-9dfd-a3d489ad27bd-stdout
+[1788225482.3] celld fd26 -> /run/containerd/fifo/2881019581/577fd9df-2612-4530-9dfd-a3d489ad27bd-stderr
+[1788225482.3] celld fd27 -> socket:[1195]
+[1788225482.3] celld fd28 -> socket:[1198]
+[1788225482.3] celld fd29 -> socket:[1200]
+[1788225482.3] celld fd3 -> /sys/fs/cgroup/celld/cpu.max
+[1788225482.3] celld fd30 -> pipe:[1204]
+[1788225482.3] celld fd31 -> socket:[1293]
+[1788225482.3] celld fd32 -> pipe:[1205]
+[1788225482.3] celld fd33 -> socket:[1294]
+[1788225482.3] celld fd34 -> socket:[1296]
+[1788225482.3] celld fd4 -> /sys/fs/cgroup/container/runtime
+[1788225482.3] celld fd5 -> anon_inode:[eventpoll]
+[1788225482.3] celld fd6 -> anon_inode:[eventfd]
+[1788225482.3] celld fd7 -> socket:[1089]
+[1788225482.3] celld fd8 -> /sys/fs/cgroup/container/runtime
+[1788225482.3] celld fd9 -> /sys/fs/cgroup/celld
+[1788225482.3] === 3 create fail diag ===
+[1788225482.3] celld stderr -> /dev/console
+[1788225482.3] Create cmd=echo hi -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to create container: runc create failed: runc did not terminate successfully: exit status 1"}'
+
+[1788225572.434] kill v160b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788225572.434] V99M_DONE

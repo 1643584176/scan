@@ -1,0 +1,8 @@
+### [ssl-off] PUT /v1/projects/vnfobbywemqgcgjokkxd/ssl-enforcement (5.8s)
+200 | {"currentConfig":{"database":false},"appliedSuccessfully":true}
+### [ssl-verify] GET /v1/projects/vnfobbywemqgcgjokkxd/ssl-enforcement (1.1s)
+200 | {"currentConfig":{"database":false},"appliedSuccessfully":true}
+### [jit-off] PUT /v1/projects/vnfobbywemqgcgjokkxd/jit-access (6.1s)
+200 | {"state":"disabled","appliedSuccessfully":true}
+### [jit-verify] GET /v1/projects/vnfobbywemqgcgjokkxd/jit-access (0.8s)
+200 | {"state":"unavailable","unavailableReason":"ssl_enforcement_required"}

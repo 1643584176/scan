@@ -1,0 +1,21 @@
+sid = sbx_cmGyGCVz4uQ9WUou3gi2ykJEbxjG
+=== P1: guest 内 26661 ws 握手 ===
+[guest ws] == ws upgrade 26661
+== ws upgrade 23456
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sun, 30 Aug 2026 11:02:58 GMT
+Content-Length: 19
+
+404 page not found
+host=sb-16p1sj8vo64h.vercel.run
+=== P2: xterm 二进制协议 ===
+[xterm-input] -> None:'TIMEOUT'
+[xterm-resize+input] -> None:'TIMEOUT'
+[xterm-bin] -> None:'TIMEOUT'
+[json-nl] -> None:'TIMEOUT'
+[json-rpc] -> None:'TIMEOUT'
+=== P4: 长等初始消息 ===
+[wait1] None:'TIMEOUT'
+CLEANED

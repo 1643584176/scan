@@ -1,0 +1,57 @@
+=== 1 net ===
+GW=100.64.0.1
+MYIP=100.64.125.19
+ARP: IP address       HW type     Flags       HW address            Mask     Device
+DNS conf: 
+=== 2 egress ===
+UDP8.8.8.8:53 -> 61 bytes from ('8.8.8.8', 53)
+UDP100.64.0.1:53 EXC timed out
+TCP 1.1.1.1:443 -> rc=0
+TCP 8.8.8.8:53 -> rc=0
+TCP 1.1.1.1:80 -> rc=0
+TCP 93.184.215.14:80 -> rc=11
+=== 3 scan ===
+scan done 19558 targets 0 hits took=28s
+=== 5 sbi strings ===
+STR /proc/1/root/volumes/run/vercel/share/sandbox-init size=9134264
+STR b'HandleFunc' @0x40e7f2: iler || 
+STR b'http\\.Handler' @0x4125f0: rrorHandling || 
+STR b'http\\.Handler' @0x417ab6: dHeaderTimeout || *http.http2inflow || maxClientStreamID || unstartedHandlers || writingFrameAsync || http2HeadersFrame || newResponseWriter || stopShutdownTimer || *http.HandlerFunc || *http.routingNode || *http.serveMux121 || *http.statusError || *http.http2sorter || *iter.Seq[string] || *http.closeWriter || *http.rwUnwrapper || *connect.en
+STR b'http\\.Handler' @0x424c2c: truct {} || %*[]struct { key string; elem string } || %*http.http2duplicatePseudoHeaderError || %*map.group[http.http2SettingID]string || %*struct { F uintptr; R http.Handler } || %*map[chan<- os.Signal]*signal.handler || %*map[string][]connect.protocolHandler || %*[]struct { key int; elem struct {} } || TimeKey || json:"timeKey" yaml:"
+STR b'http\\.Handler' @0x427da8: rl.URL) (zap.Sink, error) || ,*[8]struct { key string; elem interface {} } || ,*struct { F uintptr; X0 *context.cancelCtx } || ,*func(*http.Server, *tls.Conn, http.Handler) || ,*func() (net.Conn, *bufio.ReadWriter, error) || ,*[]struct { key *http.conn; elem struct {} } || ,*[]struct { key string; elem http.muxEntry } || ,*func(*ht
+STR b'http\\.Handler' @0x42a09e: tp.http2stream } || 1*[8]struct { key http.http2ErrCode; elem string } || 1*[8]struct { key http.http2SettingID; elem bool } || 1*func(*http.Server, net.Conn, http.Handler, bool) || FunctionKey%json:"functionKey" yaml:"functionKey" || 1*pool.Pool[*go.uber.org/zap/zapcore.CheckedEntry] || 1*pool.Pool[*go.uber.org/zap/zapcore.err
+STR b'http\\.Handler' @0x43ba67: node[go.shape.interface {},go.shape.interface {}] || 7*[]struct { key *http.http2serverConn; elem struct {} } || 7*map[string]func(*http.Server, *tls.Conn, http.Handler) || 7*[8]struct { key string; elem []*multipart.FileHeader } || 7*struct { F uintptr; R *http.http2serverInternalState } || 7*[]struct { key string; elem *con
+STR b'http\\.Handler' @0x43d3ee: tring, string, syscall.RawConn) error || =*struct { key string; elem func(*url.URL) (zap.Sink, error) } || =*map.group[string]func(*http.Server, *tls.Conn, http.Handler) || =*[8]struct { key http.routingIndexKey; elem []*http.pattern } || =*func(*connect.protocolHandlerParams) connect.protocolHandler || =*func(zapcore.Entry, 
+STR b'http\\.Handler' @0x450347: rameWriteRequest } || G*[8]struct { key protoreflect.Name; elem protoreflect.FieldDescriptor } || H*struct { key string; elem func(*http.Server, *tls.Conn, http.Handler) } || H*atomic.Pointer[internal/sync.indirect[*internal/abi.Type,interface {}]] || H*[16]atomic.Pointer[internal/sync.node[*internal/abi.Type,interface {}]
+STR b'http\\.Handler' @0x450681: 840e013b91925 || J*go.shape.fbe9c5c698049ac9223f80be039c1066cde558e55ce65086b37e8c6d3e8bab1f || J*[]struct { key string; elem func(*http.Server, *tls.Conn, http.Handler) } || J*struct { F uintptr; X0 func(*http.Server, net.Conn, http.Handler, bool) } || J*func(impl.pointer, impl.pointer, *impl.coderFieldInfo, impl.mergeOpt
+STR b'http\\.Handler' @0x4506c7: 086b37e8c6d3e8bab1f || J*[]struct { key string; elem func(*http.Server, *tls.Conn, http.Handler) } || J*struct { F uintptr; X0 func(*http.Server, net.Conn, http.Handler, bool) } || J*func(impl.pointer, impl.pointer, *impl.coderFieldInfo, impl.mergeOptions) || CommandCprotobuf:"bytes,1,opt,name=command,proto3" json:"comman
+STR b'http\\.Handler' @0x45084d: op() bool } || K*func(context.Context, time.Duration) (context.Context, context.CancelFunc) || K*[8]struct { key string; elem func(*http.Server, *tls.Conn, http.Handler) } || K*func(http.ResponseWriter, *http.Request) (connect.handlerConnCloser, bool) || K*go.shape.struct { encoding/json.v reflect.Value; encoding/json.ks s
+STR b'http\\.Handler' @0x5ef210: ack.deferwrap1 || net/http.(*response).closeNotify || net/http.(*response).closeNotify.deferwrap1 || net/http.registerOnHitEOF || net/http.requestBodyRemains || net/http.HandlerFunc.ServeHTTP || net/http.Error || net/http.NotFound || net/http.Redirect || path.Split || net/http.htmlEscape || net/http.(*redirectHandler).ServeHTTP || net/http.cleanP
+STR b'http\\.Handler' @0x5f22dd: sponseWriterState).declareTrailer-fm || net/http.(*http2stream).copyTrailersToHandlerRequest-fm || net/http.(*http2stream).copyTrailersToHandlerRequest || net/http.Handler.ServeHTTP-fm || net/http.(*http2writeResHeaders).writeHeaderBlock-fm || net/http.(*http2stream).onWriteTimeout-fm || net/http.(*http2stream).onReadTimeout-fm
+STR b'serveMux' @0x417ae1: tStreamID || unstartedHandlers || writingFrameAsync || http2HeadersFrame || newResponseWriter || stopShutdownTimer || *http.HandlerFunc || *http.routingNode || *http.serveMux121 || *http.statusError || *http.http2sorter || *iter.Seq[string] || *http.closeWriter || *http.rwUnwrapper || *connect.envelope || handlerConnCloser || *connect.pro
+STR b'serveMux' @0x5ee20b: ethodsPath || net/http.(*mapping[go.shape.string,go.shape.*uint8]).eachPair || net/http.(*routingNode).matchingMethodsPath.func1 || net/http.init.1 || net/http.(*serveMux121).handle || net/http.(*serveMux121).handle.deferwrap1 || net/http.appendSorted || sort.Search || net/http.appendSorted.func1 || net/http.(*serveMux121).findHandle
+STR b'serveMux' @0x5ee22a: o.shape.string,go.shape.*uint8]).eachPair || net/http.(*routingNode).matchingMethodsPath.func1 || net/http.init.1 || net/http.(*serveMux121).handle || net/http.(*serveMux121).handle.deferwrap1 || net/http.appendSorted || sort.Search || net/http.appendSorted.func1 || net/http.(*serveMux121).findHandler || net/http.RedirectHandler || net/
+STR b'serveMux' @0x5ee292: net/http.(*serveMux121).handle || net/http.(*serveMux121).handle.deferwrap1 || net/http.appendSorted || sort.Search || net/http.appendSorted.func1 || net/http.(*serveMux121).findHandler || net/http.RedirectHandler || net/http.(*serveMux121).handler || net/http.(*serveMux121).match || net/http.(*serveMux121).handler.deferwrap1
+STR b'serveMux' @0x5ee2cf: ndle.deferwrap1 || net/http.appendSorted || sort.Search || net/http.appendSorted.func1 || net/http.(*serveMux121).findHandler || net/http.RedirectHandler || net/http.(*serveMux121).handler || net/http.(*serveMux121).match || net/http.(*serveMux121).handler.deferwrap1 || net/http.(*serveMux121).redirectToPathSlash || net/http.(*serveMux1
+STR b'serveMux' @0x5ee2ef: orted || sort.Search || net/http.appendSorted.func1 || net/http.(*serveMux121).findHandler || net/http.RedirectHandler || net/http.(*serveMux121).handler || net/http.(*serveMux121).match || net/http.(*serveMux121).handler.deferwrap1 || net/http.(*serveMux121).redirectToPathSlash || net/http.(*serveMux121).shouldRedirectRLocked || net/ht
+STR b'serveMux' @0x5ee30d: endSorted.func1 || net/http.(*serveMux121).findHandler || net/http.RedirectHandler || net/http.(*serveMux121).handler || net/http.(*serveMux121).match || net/http.(*serveMux121).handler.deferwrap1 || net/http.(*serveMux121).redirectToPathSlash || net/http.(*serveMux121).shouldRedirectRLocked || net/http.(*conn).hijacked || net/http.(
+STR b'serveMux' @0x5ee338: dHandler || net/http.RedirectHandler || net/http.(*serveMux121).handler || net/http.(*serveMux121).match || net/http.(*serveMux121).handler.deferwrap1 || net/http.(*serveMux121).redirectToPathSlash || net/http.(*serveMux121).shouldRedirectRLocked || net/http.(*conn).hijacked || net/http.(*conn).hijacked.deferwrap1 || net/http.(*conn)
+STR b'serveMux' @0x5ee364: *serveMux121).handler || net/http.(*serveMux121).match || net/http.(*serveMux121).handler.deferwrap1 || net/http.(*serveMux121).redirectToPathSlash || net/http.(*serveMux121).shouldRedirectRLocked || net/http.(*conn).hijacked || net/http.(*conn).hijacked.deferwrap1 || net/http.(*conn).hijackLocked || bufio.NewReadWriter || net/http.(
+STR b'/v1/' @0x50905c: 
+STR b'/v1/' @0x646269: pkg/mod/google.golang.org/protobuf@v1.36.11/types/known/anypb/any.pb.go || /go/pkg/mod/connectrpc.com/connect@v1.20.0/internal/gen/connectext/grpc/status/v1/status.pb.go || /go/pkg/mod/connectrpc.com/connect@v1.20.0/envelope.go || /go/pkg/mod/connectrpc.com/connect@v1.20.0/error.go || /go/pkg/mod/connectrpc.com/con
+STR done hits=25
+=== 6 exec var ===
+cid=6b336da5-9049-472e-af22-8776608acbfa
+=== 1 net ===\n[1788227030.2] GW=100.64.0.1\n[1788227030.2] MYIP=100.64.125.19\n[1788227030.2] ARP: IP address       HW type     Flags       HW address            Mask     Device\n100.64.0.1       0x1         0x2         1a:f3:25:84:23:cc     *        eth0\n\n[1788227030.2] DNS conf: \n[1788227030.2] === 2 egress ===\n[1788227030.2] UDP8.8.8.8:53 -> 61 bytes from ('8.8.8.8', 53)\n[1788227033.2] UD
+STR b'http\\.Handler' @0x4125f0: rrorHandling || *func(uint32) || replyToWriter || headerFragBuf || WritePriority || WriteRawFrame || WriteSettings || readMetaFrame || *func(uint16) || HeaderEncoder || *http.Handler || *http.Request || ContentLength || *http.pattern || *http.segment || conflictsWith || MultipartForm || PostFormValue || requiresHTTP1 || finalTrailers || finishRe
+yes pid=695
+Exec0 /bin/sh -> HTTP/1.1 200 OK b'{"processId":"hvcp_fc9472b58677447cb9f2547dda6"}'
+Exec1 sh -> HTTP/1.1 200 OK b'{"processId":"hvcp_b9cf8ebca34f4c9889bb1a514dd"}'
+Exec2 /bin/echo -> HTTP/1.1 200 OK b'{"processId":"hvcp_e7d04bf2b3be4daebff9cb971fa"}'
+CHECK /proc/695/root/tmp/p1ok exists=False
+CHECK /proc/695/root/tmp/p2ok exists=False
+=== 7 mount val ===
+MV b'invalid destination' @0x16a6c78: portedTLS_ECDHE_RSA_WITH_RC4_128_SHAmultipart/form-data; boundary=missing validateFirstLine funcmalformed MIME header line: %qmime: duplicate parameter nametext/javascript; charset=utf-8access-control-request-headerschunked line ends with bare LF227373675443232059478759765625looking for beginning of valuein exponent of numeric literal%s: unable to unmarshal %q
+MV b'invalid path' @0x168db7d: *http.Serverinvalid settingssetting_win_sizestream_went_downover_max_streamscontent-encodingread_frame_otherUnencryptedHTTP2at offset %d: %w%s %s HTTP/1.1
+MV b'mount mode unspecified' @0x1697078: k not a power of 2minpc or maxpc invalidnon-Go function at pc=error decoding messageinappropriate fallbackTLS_AES_128_GCM_SHA256TLS_AES_256_GCM_SHA384ECDSAWithP256AndSHA256ECDSAWithP384AndSHA384ECDSAWithP521AndSHA512extended master secrethkdf: counter overflow.localhost.localdomainmissing ']' in addressinvalid address familyoperation was canceled/usr/share/
+V174_DONE

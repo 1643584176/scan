@@ -1,0 +1,22 @@
+npol1 sid: sbx_8lQg6V9uBuE9fyvoqu372pVRoql5 status: running
+[K1-user] uid=1000(vercel-sandbox) gid=1000(vercel-sandbox) groups=1000(vercel-sandbox)
+===
+uid=0(root) gid=0(root) groups=0(root)
+===
+which: no strings in (/vercel/runtimes/node22/bin:/home/vercel-sandbox/.global/pnpm/bin:/home/vercel-sandbox/.global/npm/bin:/vercel/runtimes/node22/bin:/vercel/bin:/opt/git/bin:/home/vercel-sandbox/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+/usr/bin/sudo
+/usr/bin/su
+/usr/bin/mount
+
+[K2-strings-head] sh: line 1: strings: command not found
+
+[K3-strings-grep] 
+[K4-exec] -rwxr-xr-x 1 root root 9134264 Aug 29 12:43 /run/vercel/share/sandbox-init
+Usage of /run/vercel/share/sandbox-init:
+  -pubkey string
+    	Base64-encoded Ed25519 public key for auth (required)
+  -socket string
+    	Unix socket path to listen on (required)
+RC=0
+
+=== G5 DONE ===

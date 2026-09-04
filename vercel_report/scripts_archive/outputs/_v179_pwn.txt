@@ -1,0 +1,56 @@
+PWNSEG 0:
+ROOT uid=0 gid=0
+MOUNT rc=0
+MNT: ['bin', 'boot', 'dev', 'etc', 'home', 'lib', 'lib64', 'media', 'mnt', 'opt', 'proc', 'root', 'run', 'sbin', 'srv', 'sys', 'tmp', 'usr', 'var', 'volumes']
+RD /mnt/etc/shadow -> b'root:*:19387:0:99999:7:::\nbin:*:19387:0:99999:7:::\ndaemon:*:19387:0:99999:7:::\nadm:*:19387:0:99999:7:::\nlp:*:19387:0:99999:7:::\nsync:*:19387:0:99999:7:::\nshutdown:*:19387:0:99999:7:::\nhalt:*:19387:0:99999:7:::\nmail:*:19387:0:99999:7:::\noperator:*:19387:0:99999:7:::\ngames:*:19387:0:99999:7:::\nftp:*:19387:0:99999:7:::\nnobody:*:19387:0:99999:7:::\n'
+RD /mnt/etc/passwd -> b'root:x:0:0:root:/root:/bin/bash\nbin:x:1:1:bin:/bin:/sbin/nologin\ndaemon:x:2:2:daemon:/sbin:/sbin/nologin\nadm:x:3:4:adm:/var/adm:/sbin/nologin\nlp:x:4:7:lp:/var/spool/lpd:/sbin/nologin\nsync:x:5:0:sync:/sbin:/bin/sync\nshutdown:x:6:0:shutdown:/sbin:/sbin/shutdown\nhalt:x:7:0:halt:/sbin:/sbin/halt\nmail:x:8:12:mail:/var/spool/mail:/sbin/nologin\noperator:x:11:0:operator:/root:/sbin/nologin\ngames:x:12:100:games:/usr/games:/sbin/nologin\nftp:x:14:50:FTP User:/var/ftp:/sbin/nologin\nnobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin\n'
+RD /mnt/etc/hostname -> EXC [Errno 2] No such file or directory: '/mnt/etc/hostname'
+RD /mnt/etc/containerd/config.toml -> b'version = 3\n\ndisabled_plugins = [\n  "io.containerd.snapshotter.v1.blockfile",\n  "io.containerd.snapshotter.v1.btrfs",\n  "io.containerd.snapshotter.v1.devmapper",\n  "io.containerd.snapshotter.v1.erofs",\n  "io.containerd.snapshotter.v1.native",\n  "io.containerd.snapshotter.v1.zfs",\n  "io.containerd.differ.v1.erofs",\n  "io.containerd.differ.v1.walking",\n  "io.containerd.mount-handler.v1.erofs",\n  "io.containerd.image-verifier.v1.bindir",\n  "io.containerd.tracing.processor.v1.otlp",\n  "io.containerd.internal.v1.tracing",\n  "io.containerd.ttrpc.v1.otelttrpc",\n  "io.containerd.grpc.v1.cri",\n  "io.containerd.grpc.v1.diff",\n  "io.containerd.grpc.v1.mounts",\n  "io.containerd.grpc.v1.streaming",\n  "io.containerd.grpc.v1.transfer",\n  "io.containerd.grpc.v1.sandbox-controllers",\n  "io.containerd.grpc.v1.sandboxes",\n  "io.containerd.service.v1.diff-service",\n  "io.containerd.service.v1.streaming-service",\n  "io.containerd.nri.v1.nri",\n  "io.containerd.internal.v1.opt",\n  "io.containerd.monitor.container.v1.restart",\n  "io.containerd.transfer.v1.local",\n  "io.containerd.streaming.v1.manager",\n  "io.containerd.sandbox.store.v1.local",\n  "io.containerd.sandbox.controller.v1.shim",\n  "io.containerd'
+RD /mnt/etc/aws/credentials -> EXC [Errno 2] No such file or directory: '/mnt/etc/aws/credentials'
+RD /mnt/root/.ssh/authorized_keys -> EXC [Errno 2] No such file or directory: '/mnt/root/.ssh/authorized_keys'
+RD /mnt/root/.aws/credentials -> EXC [Errno 2] No such file or directory: '/mnt/root/.aws/credentials'
+RD /mnt/root/.bash_history -> EXC [Errno 2] No such file or directory: '/mnt/root/.bash_history'
+RD /mnt/etc/resolv.conf -> b'#MANUAL\nnameserver 172.31.0.2\n'
+LS /mnt/root (1): ['v179m.out']
+LS /mnt/home (0): []
+LS /mnt/opt (1): ['vercel']
+LS /mnt/var/lib/containerd (9): ['io.containerd.content.v1.content', 'io.containerd.metadata.v1.bolt', 'io.containerd.runtime.v2.task', 'io.containerd.sandbox.controller.v1.shim', 'io.containerd.snapshotter.v1.blockfile', 'io.containerd.snapshotter.v1.erofs', 'io.containerd.snapshotter.v1.native', 'io.containerd.snapshotter.v1.overlayfs', 'tmpmounts']
+LS /mnt/var/lib (7): ['alternatives', 'containerd', 'dnf', 'games', 'misc', 'rpm', 'rpm-state']
+LS /mnt/var/run/cell (3): ['ca-cert.pem', 'cell.sock', 'runc']
+LS /mnt/usr/local (10): ['bin', 'etc', 'games', 'include', 'lib', 'lib64', 'libexec', 'sbin', 'share', 'src']
+LS /mnt/srv (0): []
+LS /mnt/var/run/containerd (7): ['containerd.sock', 'containerd.sock.ttrpc', 'fifo', 'io.containerd.mount-manager.v1.bolt', 'io.containerd.runtime.v2.task', 'runc', 's']
+GREP /mnt/etc/services b'Autho
+[1788227618.2] PWNSEG 3900:
+rization' @162095: b'th    1615/tcp                # NetBill Authorization Server\nnetbill-auth    1615/udp                # NetBill Authorization Server\nnetbill-prod    1616/tcp                # NetBil'
+GREP /mnt/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt b'AKIA' @513020: b'oYgWRcmDV+OTCCpIKKULW6w+ha1qie4sMX29vE67AKIA3pnuP/YFRH8Tud1Cg8\noq6j+6qLgiIqNYeQuBxZR5DVnS76SeNlqDbrx+QcaNyzMWyrTs4kgBXIEFkQEXJN\nepyYnMT8YeCzsp1OoMbCWasY1qJVRewpqiU31k5KPQtAweST5PzN'
+GREP /mnt/etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem b'AKIA' @369686: b'oYgWRc
+============================================================
+PWNSEG 0:
+ROOT uid=0 gid=0
+MOUNT rc=0
+MNT: ['bin', 'boot', 'dev', 'etc', 'home', 'lib', 'lib64', 'media', 'mnt', 'opt', 'proc', 'root', 'run', 'sbin', 'srv', 'sys', 'tmp', 'usr', 'var', 'volumes']
+RD /mnt/etc/shadow -> b'root:*:19387:0:99999:7:::\nbin:*:19387:0:99999:7:::\ndaemon:*:19387:0:99999:7:::\nadm:*:19387:0:99999:7:::\nlp:*:19387:0:99999:7:::\nsync:*:19387:0:99999:7:::\nshutdown:*:19387:0:99999:7:::\nhalt:*:19387:0:99999:7:::\nmail:*:19387:0:99999:7:::\noperator:*:19387:0:99999:7:::\ngames:*:19387:0:99999:7:::\nftp:*:19387:0:99999:7:::\nnobody:*:19387:0:99999:7:::\n'
+RD /mnt/etc/passwd -> b'root:x:0:0:root:/root:/bin/bash\nbin:x:1:1:bin:/bin:/sbin/nologin\ndaemon:x:2:2:daemon:/sbin:/sbin/nologin\nadm:x:3:4:adm:/var/adm:/sbin/nologin\nlp:x:4:7:lp:/var/spool/lpd:/sbin/nologin\nsync:x:5:0:sync:/sbin:/bin/sync\nshutdown:x:6:0:shutdown:/sbin:/sbin/shutdown\nhalt:x:7:0:halt:/sbin:/sbin/halt\nmail:x:8:12:mail:/var/spool/mail:/sbin/nologin\noperator:x:11:0:operator:/root:/sbin/nologin\ngames:x:12:100:games:/usr/games:/sbin/nologin\nftp:x:14:50:FTP User:/var/ftp:/sbin/nologin\nnobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin\n'
+RD /mnt/etc/hostname -> EXC [Errno 2] No such file or directory: '/mnt/etc/hostname'
+RD /mnt/etc/containerd/config.toml -> b'version = 3\n\ndisabled_plugins = [\n  "io.containerd.snapshotter.v1.blockfile",\n  "io.containerd.snapshotter.v1.btrfs",\n  "io.containerd.snapshotter.v1.devmapper",\n  "io.containerd.snapshotter.v1.erofs",\n  "io.containerd.snapshotter.v1.native",\n  "io.containerd.snapshotter.v1.zfs",\n  "io.containerd.differ.v1.erofs",\n  "io.containerd.differ.v1.walking",\n  "io.containerd.mount-handler.v1.erofs",\n  "io.containerd.image-verifier.v1.bindir",\n  "io.containerd.tracing.processor.v1.otlp",\n  "io.containerd.internal.v1.tracing",\n  "io.containerd.ttrpc.v1.otelttrpc",\n  "io.containerd.grpc.v1.cri",\n  "io.containerd.grpc.v1.diff",\n  "io.containerd.grpc.v1.mounts",\n  "io.containerd.grpc.v1.streaming",\n  "io.containerd.grpc.v1.transfer",\n  "io.containerd.grpc.v1.sandbox-controllers",\n  "io.containerd.grpc.v1.sandboxes",\n  "io.containerd.service.v1.diff-service",\n  "io.containerd.service.v1.streaming-service",\n  "io.containerd.nri.v1.nri",\n  "io.containerd.internal.v1.opt",\n  "io.containerd.monitor.container.v1.restart",\n  "io.containerd.transfer.v1.local",\n  "io.containerd.streaming.v1.manager",\n  "io.containerd.sandbox.store.v1.local",\n  "io.containerd.sandbox.controller.v1.shim",\n  "io.containerd'
+RD /mnt/etc/aws/credentials -> EXC [Errno 2] No such file or directory: '/mnt/etc/aws/credentials'
+RD /mnt/root/.ssh/authorized_keys -> EXC [Errno 2] No such file or directory: '/mnt/root/.ssh/authorized_keys'
+RD /mnt/root/.aws/credentials -> EXC [Errno 2] No such file or directory: '/mnt/root/.aws/credentials'
+RD /mnt/root/.bash_history -> EXC [Errno 2] No such file or directory: '/mnt/root/.bash_history'
+RD /mnt/etc/resolv.conf -> b'#MANUAL\nnameserver 172.31.0.2\n'
+LS /mnt/root (1): ['v179m.out']
+LS /mnt/home (0): []
+LS /mnt/opt (1): ['vercel']
+LS /mnt/var/lib/containerd (9): ['io.containerd.content.v1.content', 'io.containerd.metadata.v1.bolt', 'io.containerd.runtime.v2.task', 'io.containerd.sandbox.controller.v1.shim', 'io.containerd.snapshotter.v1.blockfile', 'io.containerd.snapshotter.v1.erofs', 'io.containerd.snapshotter.v1.native', 'io.containerd.snapshotter.v1.overlayfs', 'tmpmounts']
+LS /mnt/var/lib (7): ['alternatives', 'containerd', 'dnf', 'games', 'misc', 'rpm', 'rpm-state']
+LS /mnt/var/run/cell (3): ['ca-cert.pem', 'cell.sock', 'runc']
+LS /mnt/usr/local (10): ['bin', 'etc', 'games', 'include', 'lib', 'lib64', 'libexec', 'sbin', 'share', 'src']
+LS /mnt/srv (0): []
+LS /mnt/var/run/containerd (7): ['containerd.sock', 'containerd.sock.ttrpc', 'fifo', 'io.containerd.mount-manager.v1.bolt', 'io.containerd.runtime.v2.task', 'runc', 's']
+GREP /mnt/etc/services b'Autho
+[1788227618.2] PWNSEG 3900:
+rization' @162095: b'th    1615/tcp                # NetBill Authorization Server\nnetbill-auth    1615/udp                # NetBill Authorization Server\nnetbill-prod    1616/tcp                # NetBil'
+GREP /mnt/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt b'AKIA' @513020: b'oYgWRcmDV+OTCCpIKKULW6w+ha1qie4sMX29vE67AKIA3pnuP/YFRH8Tud1Cg8\noq6j+6qLgiIqNYeQuBxZR5DVnS76SeNlqDbrx+QcaNyzMWyrTs4kgBXIEFkQEXJN\nepyYnMT8YeCzsp1OoMbCWasY1qJVRewpqiU31k5KPQtAweST5PzN'
+GREP /mnt/etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem b'AKIA' @369686: b'oYgWRc
+============================================================

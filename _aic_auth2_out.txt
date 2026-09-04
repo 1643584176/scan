@@ -1,0 +1,28 @@
+=== 1. 会话有效性 ===
+GET   /am/json/realms/alpha/sessions?_action=getSessionInfo                -> 400  {"code":400,"reason":"Bad Request","message":"Unrecognized request parameter '_action'"}
+GET   /am/oauth2/alpha/userinfo                                            -> 401  {"error_description":"The access token provided is expired, revoked, malformed, or invalid for other reasons.","error":"invalid_token"}
+
+=== 2. 用户资源(基线) ===
+GET   /am/json/realms/alpha/users?_queryFilter=true                        -> 403  {"code":403,"reason":"Forbidden","message":"Permission to perform the read operation denied"}
+GET   /am/json/realms/alpha/users/self                                     -> 403  {"code":403,"reason":"Forbidden","message":"Permission to perform the read operation denied"}
+
+=== 3. 管理/越权探测 ===
+GET   /am/json/realms/alpha/users?_queryFilter=userName+sw+"researcher"    -> 403  {"code":403,"reason":"Forbidden","message":"Permission to perform the read operation denied"}
+GET   /am/json/realms/alpha/users?_queryFilter=mail+sw+"1643584176"        -> 403  {"code":403,"reason":"Forbidden","message":"Permission to perform the read operation denied"}
+GET   /am/json/realms/alpha/users?_queryFilter=true&_pageSize=100          -> 403  {"code":403,"reason":"Forbidden","message":"Permission to perform the read operation denied"}
+GET   /am/json/realms/root/users?_queryFilter=true                         -> 403  {"code":403,"reason":"Forbidden","message":"This operation is not available in PingOne Advanced Identity Cloud."} 
+GET   /am/json/realms/alpha/groups?_queryFilter=true                       -> 403  {"code":403,"reason":"Forbidden","message":"Permission to perform the read operation denied"}
+GET   /am/json/realms/alpha/realms                                         -> 403  {"code":403,"reason":"Forbidden","message":"The user has insufficient privileges"}
+GET   /am/json/realms/alpha/realm-config                                   -> 404  {"code":404,"reason":"Not Found","message":"Resource '' not found"}
+GET   /am/json/realms/alpha/applications?_queryFilter=true                 -> 200  {"result":[],"resultCount":0,"pagedResultsCookie":null,"totalPagedResultsPolicy":"NONE","totalPagedResults":-1,"remainingPagedResults":0}
+GET   /am/json/realms/alpha/agents?_queryFilter=true                       -> 403  {"code":403,"reason":"Forbidden","message":"Permission to perform the read operation denied"}
+GET   /am/json/realms/alpha/policies?_queryFilter=true                     -> 403  {"code":403,"reason":"Forbidden","message":"The user has insufficient privileges"}
+GET   /am/json/realms/alpha/devices?_queryFilter=true                      -> 404  {"code":404,"reason":"Not Found","message":"Resource 'devices' not found"}
+GET   /am/json/realms/alpha/oauth2/clients?_queryFilter=true               -> 404  {"code":404,"reason":"Not Found","message":"Resource 'oauth2/clients' not found"}
+GET   /am/json/realms/alpha/sessions?_queryFilter=true                     -> 500  
+GET   /am/json/realms/alpha/sessions?_action=logout                        -> 400  {"code":400,"reason":"Bad Request","message":"Unrecognized request parameter '_action'"}
+GET   /am/oauth2/alpha/introspect                                          -> 405  {"code":405,"reason":"Method Not Allowed","message":"Method Not Allowed"}
+GET   /openidm/managed/user?_queryFilter=true                              -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /openidm/managed/user/db3d6356-61a0-4684-9eaa-c1353dfa44d9           -> 403  {"code":403,"reason":"Forbidden","message":"Access denied"}
+GET   /iga/rest/roles                                                      -> 404  <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>Error</title> </head> <body> <pre>Cannot GET /iga/rest/roles</pre> </body> </html> 
+GET   /iga/rest/accesses                                                   -> 404  <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>Error</title> </head> <body> <pre>Cannot GET /iga/rest/accesses</pre> </body> </html> 

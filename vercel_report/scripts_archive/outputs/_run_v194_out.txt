@@ -1,0 +1,10 @@
+create: 200 {"sandbox":{"name":"v194","currentSessionId":"sbx_N2u3WQQLJqdHmqVdoE4lRkKFkl8l","status":"running","statusUpdatedAt":1788230087015,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230087015,"updatedAt":1788230087015},"session":{"id":"sbx_N2u3WQQLJqdHmqVdoE4lRkKFkl8l","runtime":"node22","reques
+[create ok] 5s
+[inject /vercel/sandbox/vda194_probe_user.py] 200
+[run payload] 200
+{"command":{"id":"cmd_14a65693024d43169dd90108eab6","name":"python3","args":["/vercel/sandbox/vda194_probe_user.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_N2u3WQQLJqdHmqVdoE4lRkKFkl8l","startedAt":1788230089013,"exitCode":null}}
+{"data":"[1788230089.0] === 1 listener ===\n","stream":"stdout"}
+{"data":"[1788230089.0] LISTENER UP\n","stream":"stdout"}
+{"data":"[1788230091.0] === 2 ctrl snapshot ===\n","stream":"stdout"}
+
+CLEANED total 13s

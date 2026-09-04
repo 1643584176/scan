@@ -1,0 +1,128 @@
+===PS===
+UID          PID    PPID  C STIME TTY          TIME CMD
+vercel-+       1       0  1 03:57 ?        00:00:00 /run/vercel/share/sandbox-init --socket=/run/vercel/share/init.sock --pubkey=MVxylMmYwiafiZkZ/4KqStdE5+rXvocXwgy3sljQrRs=
+vercel-+      26       1  0 03:57 ?        00:00:00 sh -c echo ===PS===; ps -ef 2>&1 | head -60; echo ===PROC1_CMD===; tr "\0" " " < /proc/1/cmdline 2>&1; echo; echo ===PROC1_ENV===; tr "\0" "\n" < /proc/1/environ 2>&1 | head -60; echo ===SANDBOX_DIR===; ls -la /vercel/sandbox/ 2>&1 | head -50; echo ===SHARE===; ls -la /run/vercel/share/ 2>&1 | head -40; echo ===CELL===; ls -la /run/cell/ 2>&1 | head -40; echo ===VERCEL===; ls -la /run/vercel/ 2>&1 | head -40; echo ===CGROUP===; cat /proc/self/cgroup 2>&1; echo ===UID===; id 2>&1
+vercel-+      27      26  0 03:57 ?        00:00:00 ps -ef
+vercel-+      28      26  0 03:57 ?        00:00:00 /usr/bin/coreutils --coreutils-prog-shebang=head /usr/bin/head -60
+===PROC1_CMD===
+/run/vercel/share/sandbox-init --socket=/run/vercel/share/init.sock --pubkey=MVxylMmYwiafiZkZ/4KqStdE5+rXvocXwgy3sljQrRs= 
+===PROC1_ENV===
+PATH=/vercel/runtimes/node22/bin:/home/vercel-sandbox/.global/pnpm/bin:/home/vercel-sandbox/.global/npm/bin:/vercel/runtimes/node22/bin:/vercel/bin:/opt/git/bin:/home/vercel-sandbox/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+AWS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+CARGO_HTTP_CAINFO=/etc/ssl/certs/ca-certificates.crt
+CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+GIT_SSL_CAINFO=/etc/ssl/certs/ca-certificates.crt
+GRPC_DEFAULT_SSL_ROOTS_FILE_PATH=/etc/ssl/certs/ca-certificates.crt
+NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
+NODE_USE_SYSTEM_CA=1
+NPM_CONFIG_CAFILE=/etc/ssl/certs/ca-certificates.crt
+PIP_CERT=/etc/ssl/certs/ca-certificates.crt
+REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+HOME=/home/vercel-sandbox
+===SANDBOX_DIR===
+total 0
+drwxr-xr-x 2 vercel-sandbox vercel-sandbox  6 Aug 27 14:30 .
+drwxr-xr-x 5 root           root           48 Aug 27 14:30 ..
+===SHARE===
+total 8924
+drwxr-x--- 2 vercel-sandbox vercel-sandbox      43 Aug 31 03:57 .
+drwxr-xr-x 3 root           root                19 Aug 31 03:57 ..
+srw------- 1 vercel-sandbox vercel-sandbox       0 Aug 31 03:57 init.sock
+-rwxr-xr-x 1 root           root           9134264 Aug 31 03:56 sandbox-init
+===CELL===
+ls: cannot access '/run/cell/': No such file or directory
+===VERCEL===
+total 0
+drwxr-xr-x 3 root           root            19 Aug 31 03:57 .
+drwxr-xr-x 9 root           root           121 Aug 31 03:57 ..
+drwxr-x--- 2 vercel-sandbox vercel-sandbox  43 Aug 31 03:57 share
+===CGROUP===
+0::/
+===UID===
+uid=1000(vercel-sandbox) gid=1000(vercel-sandbox) groups=1000(vercel-sandbox)
+[1788148654.072] mount vda ret=0
+[1788148654.073] payload written to COW 4119 bytes
+[1788148654.091] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=c3b1807d-72d4-4d50-a58d-6a93f6c187f0-snapshot
+[1788148654.098] Create v67b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\t\n\x86(\n\x04v67b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x86&\n6types.containerd.i'
+[1788148654.165] Tasks/Create v67b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\t\n\x04v67b\x10\xa3\x05'
+[1788148654.180] Tasks/Start v67b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\xa3\x05'
+[1788148655.181] --- COW v67c.out @1s ---
+cf9bc062723851244a9952
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAX_SHIM_VERSION=2
+TTRPC_ADDRESS=/run/containerd/containerd.sock.ttrpc
+GRPC_ADDRESS=/run/containerd/containerd.sock
+NAMESPACE=default
+GOMAXPROCS=4
+OTEL_SERVICE_NAME=containerd-shim-v67b
+
+[1788148654.210] --- ENV 697 ---
+PWD=/
+HOME=/root
+SHLVL=1
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+_=/sbin/chroot
+
+[1788148654.210] --- ENV 697 ---
+PWD=/
+HOME=/root
+SHLVL=1
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+_=/sbin/chroot
+
+[1788148654.220] ctr-img      -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to create container: unable to get container: image \"busybox\": not found"}
+[1788148654.220] ctr-img      -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to create container: unable to get container: image \"busybox\": not found"}
+[1788148654.325] ctr-img2     -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to create container: unable to get container: image \"docker.io/library/busybox:latest\": not found"}
+[1788148654.325] ctr-img2     -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to create container: unable to get container: image \"docker.io/library/busybox:latest\": not found"}
+[1788148654.467] ctr-drive    -> HTTP/1.1 200 OK (0.04s) | {"containerId":"9cd80907-77b1-4834-bfb1-e56e0124d111"}
+[1788148654.467] ctr-drive    -> HTTP/1.1 200 OK (0.04s) | {"containerId":"9cd80907-77b1-4834-bfb1-e56e0124d111"}
+[1788148654.568] ctr-both     -> HTTP/1.1 400 Bad Request (0.00s) | {"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}
+[1788148654.568] ctr-both     -> HTTP/1.1 400 Bad Request (0.00s) | {"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}
+[1788148654.721] ctr-sbimg    -> HTTP/1.1 200 OK (0.05s) | {"containerId":"ctr_ae2f344fb2e84fce949ed8d95073"}
+[1788148654.721] ctr-sbimg    -> HTTP/1.1 200 OK (0.05s) | {"containerId":"ctr_ae2f344fb2e84fce949ed8d95073"}
+[1788148654.826] oci-b64      -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"failed to set OCI image config: host API call failed: internal: invalid_argument: oci_image_config missing required field \"os\""}
+[1788148654.826] oci-b64      -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"failed to set OCI image config: host API call failed: internal: invalid_argument: oci_image_config missing required field \"os\""}
+[1788148654.932] oci-b64m     -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to set OCI image config: host API call failed: internal: invalid_argument: oci_image_config missing required field \"os\""}
+[1788148654.932] oci-b64m     -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to set OCI image config: host API call failed: internal: invalid_argument: oci_image_config missing required field \"os\""}
+[1788148655.037] snap-s3ok    -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"drive sandbox is still in use by a container. Please call Kill() and Wait() on the container before creating a snapshot"}
+[1788148655.037] snap-s3ok    -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"drive sandbox is still in use by a container. Please call Kill() and Wait() on the container before creating a snapshot"}
+[1788148655.138] snap-s3vercel -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"drive sandbox is still in use by a container. Please call Kill() and Wait() on the container before creating a snapshot"}
+[1788148655.138] snap-s3vercel -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"drive sandbox is still in use by a container. Please call Kill() and Wait() on the container before creating a snapshot"}
+
+[1788148656.182] --- COW v67c.out @2s ---
+n:/usr/bin:/sbin:/bin
+_=/sbin/chroot
+
+[1788148654.210] --- ENV 697 ---
+PWD=/
+HOME=/root
+SHLVL=1
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+_=/sbin/chroot
+
+[1788148654.220] ctr-img      -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to create container: unable to get container: image \"busybox\": not found"}
+[1788148654.220] ctr-img      -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to create container: unable to get container: image \"busybox\": not found"}
+[1788148654.325] ctr-img2     -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to create container: unable to get container: image \"docker.io/library/busybox:latest\": not found"}
+[1788148654.325] ctr-img2     -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to create container: unable to get container: image \"docker.io/library/busybox:latest\": not found"}
+[1788148654.467] ctr-drive    -> HTTP/1.1 200 OK (0.04s) | {"containerId":"9cd80907-77b1-4834-bfb1-e56e0124d111"}
+[1788148654.467] ctr-drive    -> HTTP/1.1 200 OK (0.04s) | {"containerId":"9cd80907-77b1-4834-bfb1-e56e0124d111"}
+[1788148654.568] ctr-both     -> HTTP/1.1 400 Bad Request (0.00s) | {"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}
+[1788148654.568] ctr-both     -> HTTP/1.1 400 Bad Request (0.00s) | {"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}
+[1788148654.721] ctr-sbimg    -> HTTP/1.1 200 OK (0.05s) | {"containerId":"ctr_ae2f344fb2e84fce949ed8d95073"}
+[1788148654.721] ctr-sbimg    -> HTTP/1.1 200 OK (0.05s) | {"containerId":"ctr_ae2f344fb2e84fce949ed8d95073"}
+[1788148654.826] oci-b64      -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"failed to set OCI image config: host API call failed: internal: invalid_argument: oci_image_config missing required field \"os\""}
+[1788148654.826] oci-b64      -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"failed to set OCI image config: host API call failed: internal: invalid_argument: oci_image_config missing required field \"os\""}
+[1788148654.932] oci-b64m     -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to set OCI image config: host API call failed: internal: invalid_argument: oci_image_config missing required field \"os\""}
+[1788148654.932] oci-b64m     -> HTTP/1.1 500 Internal Server Error (0.01s) | {"code":"internal","message":"failed to set OCI image config: host API call failed: internal: invalid_argument: oci_image_config missing required field \"os\""}
+[1788148655.037] snap-s3ok    -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"drive sandbox is still in use by a container. Please call Kill() and Wait() on the container before creating a snapshot"}
+[1788148655.037] snap-s3ok    -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"drive sandbox is still in use by a container. Please call Kill() and Wait() on the container before creating a snapshot"}
+[1788148655.138] snap-s3vercel -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"drive sandbox is still in use by a container. Please call Kill() and Wait() on the container before creating a snapshot"}
+[1788148655.138] snap-s3vercel -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"drive sandbox is still in use by a container. Please call Kill() and Wait() on the container before creating a snapshot"}
+[1788148655.240] snap-http    -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"base URL must use s3:// scheme, got: http"}
+[1788148655.240] snap-http    -> HTTP/1.1 500 Internal Server Error (0.00s) | {"code":"internal","message":"base URL must use s3:// scheme, got: http"}
+[1788148655.341] V67C_DONE
+[1788148655.341] V67C_DONE
+CHROOT_RC=0
+V66_END
+

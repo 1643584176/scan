@@ -1,0 +1,3232 @@
+
+===== 启动树 =====
+{
+ "authId": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aGl0ZWxpc3Qtc3RhdGUiOiJlMjVmMDMxZi1mMTdlLTQ0OTktYTFhYy01NWQyYTE5OTE0MGQiLCJhdXRoSW5kZXhWYWx1ZSI6IlJlZ2lzdHJhdGlvbiIsIm90ayI6ImU0YzAzMWdtNzQxMHIxbzdjYnVvcmw3bzRuIiwiYXV0aEluZGV4VHlwZSI6InNlcnZpY2UiLCJ3aGl0ZWxpc3QtbG9jay1leHBpcnkiOiIwIiwicmVhbG0iOiIvYWxwaGEiLCJzZXNzaW9uSWQiOiIqQUFKVFNRQUNNRElBQkhSNWNHVUFDRXBYVkY5QlZWUklBQUpUTVFBQ01ERS4qZXlKMGVYQWlPaUpLVjFRaUxDSmpkSGtpT2lKS1YxUWlMQ0poYkdjaU9pSklVekkxTmlKOS5aWGxLTUdWWVFXbFBhVXBMVmpGUmFVeERTbXhpYlUxcFQybEtRazFVU1RSUk1FcEVURlZvVkUxcVZUSkphWGRwV1ZkNGJrbHFiMmxhUjJ4NVNXNHdMaTVXU0dsRVR6azRhV3hCVUVSR2Rrc3ROMGN6U2tWM0xsODRZazFSYkRsNVlqVldPRUZpV1hvM1NWZDFieTFEYUZSeE5GTlNjbVJmVUU1VFNsTnpWRTEwTFhkc1JGaHBXRU0yVVVoWFZHTlNXV1psYmpGR1RFMWtRVEJ2VjJoR2FuUlpRMFpGYmxRelZUZ3dhbkpJY0VoVlVHODBSakJ3WTBwbWRHMXZjMEU0ZGpFM1prMVlVamd4V1ZOdk9FRnRlalZ2U213NVQwUmlWVXRKTVhKamRVVXpaV2xPTkhwSU9WSlNTVUoyUm5aQlN6Y3pjRU4xU0hOeFZFUkVWR0ZxYW1oM2NFVkdTa1JYWVdoRmRsWTRXRWxqZFdwNFprZ3hORjlLT0ZWQmJsQnNTMVJyYjNkSlJYVmxaRmRUYzFCa1ZrOVZVSEI1VmxSblZqRlpRbkpqZVVJM1ZHMXpjMnBUYmxaUk4xQTNaRVZxTmpKNVRFb3dUVGRCTUdSU2NsSjBlRVJmVXkwNE1uQXhTMVp4UlZSalF6aEVialpSYkdkM1JIWkJZa1J0UkVGTlpVSmFibko2TTNKcGRqSjJaQzFtUjNSbE4zTktkMHd0YUdGblNYZENNbmhUVTFSb2JFVTBZbFU1YVhac1NrazNOMVpxTVZObk9XVXpiV3RyY2tKWVFXcHhRM2RYWjI5UGNqUndiM0k1WHpkSVZrMHdaV28yVERVMlZuQndXalZzUTNsV1dGSjRWbkl5VldNeVZsZDViMVZMU1RWWFlWQnlUV3hrZW1oMGJFdDBjREEwU2t0amVrUjFlalZGY0hkV1ZFbDBNSE5uYkhScFdsOWlhVU5rZVdGdWMzTTVjVEJmZGpkU1pXeGtUMnAwTUdSR2JGTkpVRUkwUWxCemFtbHpNMnA2VGtsWFJtbDNSRVZVWVdoMlZFbHhUMFZCVW05bk5HSlRWVlEyVVZseVdUaHBWemR2ZDNnNVkyaGtlR3RzTTBSQ2VrOWljRmRrU1RkeVRHbEdZemhaV2xCSFNYQm1SblZvWlVwc2MyTlFUVmRpWkhoeWNFSnllVEZCYUdScGRYaFFWMGRXU1RaQlNuRjBZVmd0UTFab01HbEZSWFJ3V1VaaE5YRXhURkZpWkRsNmFtTlhNSEI2Tm01ak9XeFVielJmTlZjMGRWWklRM1JsVGxSeVduVjRRbFJ1Um5NM1ZXcGFlVXBtVFVSeFZtaFlkekZwWVZoS1pXWlhTWFZsYVRsMGVFcHFOVGxoU25OS2FVWlVOR2QzU1RsRk1XUXRWWFF0ZUhsdWFVbGlSVVY0Vmt0S04wMVRZbU5RY1dOaFpIVkJTRmc0YVdGdlprcHdUV3hFVlhKd1prVkxPRkpJUm5CTVVXNVJORXBtVm1KdmVYbzVaUzFNWWxOdVkxSXdjekpmUWtSemEzRm5ablpXTVVkRU5WOTJOWFpEVGpaNExYUkpRM0ZITkhKYWFHbFdZUzFOYm5OMFdDMUpYM1JFVFU1cFdFOUNibEZTVVZJMmQxcFhhRlZEV0VObldrUldhRXB1TWtFelgxZDBNRmxhTkhwQmVsRkpjMWRsZEZabE1sQlZiV1ZJZFd0dGJFZ3pNWEpXUjJWVVZraG1MVUZQTWxONloyODRaa2xPUjJ0YU9VNUpRM1JHYzNaNWIzSjVTSHBWV2pGWk1uVmZOa001UmpKUk1rOXhURWxUTVdGdmExaFhjR0Z6U2s0MmVrTkhjWFpQU1M1WmIxTndXRlZYWjFjM1FXZHlkM2hvWkhwWGVHbEIuYm5sZnRvWG9UU0hkOGowRjc5bl9uM1o2Q0pYbU5mTU54VTRHT0hrQnVhSSIsImV4cCI6MTc4ODI1MjgzNiwiaWF0IjoxNzg4MjUyNTM2fQ.lfBcbTbm5J0Jkq2CMH62ABYIuhbzTgKX8H4DaFdQS2o",
+ "callbacks": [
+  {
+   "type": "ValidatedCreateUsernameCallback",
+   "output": [
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "MIN_LENGTH",
+       "VALID_TYPE",
+       "VALID_USERNAME",
+       "CANNOT_CONTAIN_CHARACTERS",
+       "MAX_LENGTH"
+      ],
+      "fallbackPolicies": null,
+      "name": "userName",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "not-empty"
+       },
+       {
+        "policyRequirements": [
+         "MIN_LENGTH"
+        ],
+        "policyId": "minimum-length",
+        "params": {
+         "minLength": 1
+        }
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       },
+       {
+        "policyId": "valid-username",
+        "policyRequirements": [
+         "VALID_USERNAME"
+        ]
+       },
+       {
+        "params": {
+         "forbiddenChars": [
+          "/"
+         ]
+        },
+        "policyId": "cannot-contain-characters",
+        "policyRequirements": [
+         "CANNOT_CONTAIN_CHARACTERS"
+        ]
+       },
+       {
+        "params": {
+         "minLength": 1
+        },
+        "policyId": "minimum-length",
+        "policyRequirements": [
+         "MIN_LENGTH"
+        ]
+       },
+       {
+        "params": {
+         "maxLength": 255
+        },
+        "policyId": "maximum-length",
+        "policyRequirements": [
+         "MAX_LENGTH"
+        ]
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "prompt",
+     "value": "Username"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken1",
+     "value": ""
+    },
+    {
+     "name": "IDToken1validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 0
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "givenName"
+    },
+    {
+     "name": "prompt",
+     "value": "First Name"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "givenName",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken2",
+     "value": ""
+    },
+    {
+     "name": "IDToken2validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 1
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "sn"
+    },
+    {
+     "name": "prompt",
+     "value": "Last Name"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "sn",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken3",
+     "value": ""
+    },
+    {
+     "name": "IDToken3validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 2
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "mail"
+    },
+    {
+     "name": "prompt",
+     "value": "Email Address"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE",
+       "VALID_EMAIL_ADDRESS_FORMAT"
+      ],
+      "fallbackPolicies": null,
+      "name": "mail",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       },
+       {
+        "policyId": "valid-email-address-format",
+        "policyRequirements": [
+         "VALID_EMAIL_ADDRESS_FORMAT"
+        ]
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken4",
+     "value": ""
+    },
+    {
+     "name": "IDToken4validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 3
+  },
+  {
+   "type": "BooleanAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "preferences/marketing"
+    },
+    {
+     "name": "prompt",
+     "value": "Send me special offers and services"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {}
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": false
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken5",
+     "value": false
+    },
+    {
+     "name": "IDToken5validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 4
+  },
+  {
+   "type": "BooleanAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "preferences/updates"
+    },
+    {
+     "name": "prompt",
+     "value": "Send me news and updates"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {}
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": false
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken6",
+     "value": false
+    },
+    {
+     "name": "IDToken6validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 5
+  },
+  {
+   "type": "ValidatedCreatePasswordCallback",
+   "output": [
+    {
+     "name": "echoOn",
+     "value": false
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "password",
+      "policies": [
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "prompt",
+     "value": "Password"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken7",
+     "value": ""
+    },
+    {
+     "name": "IDToken7validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 6
+  },
+  {
+   "type": "KbaCreateCallback",
+   "output": [
+    {
+     "name": "prompt",
+     "value": "Select a security question"
+    },
+    {
+     "name": "predefinedQuestions",
+     "value": [
+      "What's your favorite color?"
+     ]
+    },
+    {
+     "name": "allowUserDefinedQuestions",
+     "value": true
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken8question",
+     "value": ""
+    },
+    {
+     "name": "IDToken8answer",
+     "value": ""
+    }
+   ],
+   "_id": 7
+  },
+  {
+   "type": "TermsAndConditionsCallback",
+   "output": [
+    {
+     "name": "version",
+     "value": "0.0"
+    },
+    {
+     "name": "terms",
+     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+     "name": "createDate",
+     "value": "2019-10-28T04:20:11.320Z"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken9",
+     "value": false
+    }
+   ],
+   "_id": 8
+  }
+ ],
+ "header": "Sign Up",
+ "description": "Signing up is fast and easy.<br>Already have an account? <a href='#/service/Login'>Sign In</a>"
+}
+
+===== 提交1 body =====
+{
+ "authId": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aGl0ZWxpc3Qtc3RhdGUiOiJlMjVmMDMxZi1mMTdlLTQ0OTktYTFhYy01NWQyYTE5OTE0MGQiLCJhdXRoSW5kZXhWYWx1ZSI6IlJlZ2lzdHJhdGlvbiIsIm90ayI6ImU0YzAzMWdtNzQxMHIxbzdjYnVvcmw3bzRuIiwiYXV0aEluZGV4VHlwZSI6InNlcnZpY2UiLCJ3aGl0ZWxpc3QtbG9jay1leHBpcnkiOiIwIiwicmVhbG0iOiIvYWxwaGEiLCJzZXNzaW9uSWQiOiIqQUFKVFNRQUNNRElBQkhSNWNHVUFDRXBYVkY5QlZWUklBQUpUTVFBQ01ERS4qZXlKMGVYQWlPaUpLVjFRaUxDSmpkSGtpT2lKS1YxUWlMQ0poYkdjaU9pSklVekkxTmlKOS5aWGxLTUdWWVFXbFBhVXBMVmpGUmFVeERTbXhpYlUxcFQybEtRazFVU1RSUk1FcEVURlZvVkUxcVZUSkphWGRwV1ZkNGJrbHFiMmxhUjJ4NVNXNHdMaTVXU0dsRVR6azRhV3hCVUVSR2Rrc3ROMGN6U2tWM0xsODRZazFSYkRsNVlqVldPRUZpV1hvM1NWZDFieTFEYUZSeE5GTlNjbVJmVUU1VFNsTnpWRTEwTFhkc1JGaHBXRU0yVVVoWFZHTlNXV1psYmpGR1RFMWtRVEJ2VjJoR2FuUlpRMFpGYmxRelZUZ3dhbkpJY0VoVlVHODBSakJ3WTBwbWRHMXZjMEU0ZGpFM1prMVlVamd4V1ZOdk9FRnRlalZ2U213NVQwUmlWVXRKTVhKamRVVXpaV2xPTkhwSU9WSlNTVUoyUm5aQlN6Y3pjRU4xU0hOeFZFUkVWR0ZxYW1oM2NFVkdTa1JYWVdoRmRsWTRXRWxqZFdwNFprZ3hORjlLT0ZWQmJsQnNTMVJyYjNkSlJYVmxaRmRUYzFCa1ZrOVZVSEI1VmxSblZqRlpRbkpqZVVJM1ZHMXpjMnBUYmxaUk4xQTNaRVZxTmpKNVRFb3dUVGRCTUdSU2NsSjBlRVJmVXkwNE1uQXhTMVp4UlZSalF6aEVialpSYkdkM1JIWkJZa1J0UkVGTlpVSmFibko2TTNKcGRqSjJaQzFtUjNSbE4zTktkMHd0YUdGblNYZENNbmhUVTFSb2JFVTBZbFU1YVhac1NrazNOMVpxTVZObk9XVXpiV3RyY2tKWVFXcHhRM2RYWjI5UGNqUndiM0k1WHpkSVZrMHdaV28yVERVMlZuQndXalZzUTNsV1dGSjRWbkl5VldNeVZsZDViMVZMU1RWWFlWQnlUV3hrZW1oMGJFdDBjREEwU2t0amVrUjFlalZGY0hkV1ZFbDBNSE5uYkhScFdsOWlhVU5rZVdGdWMzTTVjVEJmZGpkU1pXeGtUMnAwTUdSR2JGTkpVRUkwUWxCemFtbHpNMnA2VGtsWFJtbDNSRVZVWVdoMlZFbHhUMFZCVW05bk5HSlRWVlEyVVZseVdUaHBWemR2ZDNnNVkyaGtlR3RzTTBSQ2VrOWljRmRrU1RkeVRHbEdZemhaV2xCSFNYQm1SblZvWlVwc2MyTlFUVmRpWkhoeWNFSnllVEZCYUdScGRYaFFWMGRXU1RaQlNuRjBZVmd0UTFab01HbEZSWFJ3V1VaaE5YRXhURkZpWkRsNmFtTlhNSEI2Tm01ak9XeFVielJmTlZjMGRWWklRM1JsVGxSeVduVjRRbFJ1Um5NM1ZXcGFlVXBtVFVSeFZtaFlkekZwWVZoS1pXWlhTWFZsYVRsMGVFcHFOVGxoU25OS2FVWlVOR2QzU1RsRk1XUXRWWFF0ZUhsdWFVbGlSVVY0Vmt0S04wMVRZbU5RY1dOaFpIVkJTRmc0YVdGdlprcHdUV3hFVlhKd1prVkxPRkpJUm5CTVVXNVJORXBtVm1KdmVYbzVaUzFNWWxOdVkxSXdjekpmUWtSemEzRm5ablpXTVVkRU5WOTJOWFpEVGpaNExYUkpRM0ZITkhKYWFHbFdZUzFOYm5OMFdDMUpYM1JFVFU1cFdFOUNibEZTVVZJMmQxcFhhRlZEV0VObldrUldhRXB1TWtFelgxZDBNRmxhTkhwQmVsRkpjMWRsZEZabE1sQlZiV1ZJZFd0dGJFZ3pNWEpXUjJWVVZraG1MVUZQTWxONloyODRaa2xPUjJ0YU9VNUpRM1JHYzNaNWIzSjVTSHBWV2pGWk1uVmZOa001UmpKUk1rOXhURWxUTVdGdmExaFhjR0Z6U2s0MmVrTkhjWFpQU1M1WmIxTndXRlZYWjFjM1FXZHlkM2hvWkhwWGVHbEIuYm5sZnRvWG9UU0hkOGowRjc5bl9uM1o2Q0pYbU5mTU54VTRHT0hrQnVhSSIsImV4cCI6MTc4ODI1MjgzNiwiaWF0IjoxNzg4MjUyNTM2fQ.lfBcbTbm5J0Jkq2CMH62ABYIuhbzTgKX8H4DaFdQS2o",
+ "callbacks": [
+  {
+   "type": "ValidatedCreateUsernameCallback",
+   "output": [
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "MIN_LENGTH",
+       "VALID_TYPE",
+       "VALID_USERNAME",
+       "CANNOT_CONTAIN_CHARACTERS",
+       "MAX_LENGTH"
+      ],
+      "fallbackPolicies": null,
+      "name": "userName",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "not-empty"
+       },
+       {
+        "policyRequirements": [
+         "MIN_LENGTH"
+        ],
+        "policyId": "minimum-length",
+        "params": {
+         "minLength": 1
+        }
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       },
+       {
+        "policyId": "valid-username",
+        "policyRequirements": [
+         "VALID_USERNAME"
+        ]
+       },
+       {
+        "params": {
+         "forbiddenChars": [
+          "/"
+         ]
+        },
+        "policyId": "cannot-contain-characters",
+        "policyRequirements": [
+         "CANNOT_CONTAIN_CHARACTERS"
+        ]
+       },
+       {
+        "params": {
+         "minLength": 1
+        },
+        "policyId": "minimum-length",
+        "policyRequirements": [
+         "MIN_LENGTH"
+        ]
+       },
+       {
+        "params": {
+         "maxLength": 255
+        },
+        "policyId": "maximum-length",
+        "policyRequirements": [
+         "MAX_LENGTH"
+        ]
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "prompt",
+     "value": "Username"
+    }
+   ],
+   "input": [
+    {
+     "name": "username",
+     "value": "regdiag1648"
+    }
+   ],
+   "_id": 0
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "givenName"
+    },
+    {
+     "name": "prompt",
+     "value": "First Name"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "givenName",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "name",
+     "value": "Test"
+    }
+   ],
+   "_id": 1
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "sn"
+    },
+    {
+     "name": "prompt",
+     "value": "Last Name"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "sn",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "name",
+     "value": "Test"
+    }
+   ],
+   "_id": 2
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "mail"
+    },
+    {
+     "name": "prompt",
+     "value": "Email Address"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE",
+       "VALID_EMAIL_ADDRESS_FORMAT"
+      ],
+      "fallbackPolicies": null,
+      "name": "mail",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       },
+       {
+        "policyId": "valid-email-address-format",
+        "policyRequirements": [
+         "VALID_EMAIL_ADDRESS_FORMAT"
+        ]
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "name",
+     "value": "Test"
+    }
+   ],
+   "_id": 3
+  },
+  {
+   "type": "BooleanAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "preferences/marketing"
+    },
+    {
+     "name": "prompt",
+     "value": "Send me special offers and services"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {}
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": false
+    }
+   ],
+   "input": [
+    {
+     "name": "name",
+     "value": true
+    }
+   ],
+   "_id": 4
+  },
+  {
+   "type": "BooleanAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "preferences/updates"
+    },
+    {
+     "name": "prompt",
+     "value": "Send me news and updates"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {}
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": false
+    }
+   ],
+   "input": [
+    {
+     "name": "name",
+     "value": true
+    }
+   ],
+   "_id": 5
+  },
+  {
+   "type": "ValidatedCreatePasswordCallback",
+   "output": [
+    {
+     "name": "echoOn",
+     "value": false
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "password",
+      "policies": [
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "prompt",
+     "value": "Password"
+    }
+   ],
+   "input": [
+    {
+     "name": "password",
+     "value": "RegTest1648!x"
+    }
+   ],
+   "_id": 6
+  },
+  {
+   "type": "KbaCreateCallback",
+   "output": [
+    {
+     "name": "prompt",
+     "value": "Select a security question"
+    },
+    {
+     "name": "predefinedQuestions",
+     "value": [
+      "What's your favorite color?"
+     ]
+    },
+    {
+     "name": "allowUserDefinedQuestions",
+     "value": true
+    }
+   ],
+   "input": [
+    {
+     "name": "question",
+     "value": "What's your favorite color?"
+    },
+    {
+     "name": "answer",
+     "value": "blue"
+    }
+   ],
+   "_id": 7
+  },
+  {
+   "type": "TermsAndConditionsCallback",
+   "output": [
+    {
+     "name": "version",
+     "value": "0.0"
+    },
+    {
+     "name": "terms",
+     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+     "name": "createDate",
+     "value": "2019-10-28T04:20:11.320Z"
+    }
+   ],
+   "input": [
+    {
+     "name": "accept",
+     "value": true
+    }
+   ],
+   "_id": 8
+  }
+ ]
+}
+
+===== 提交1 响应 =====
+{
+ "authId": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aGl0ZWxpc3Qtc3RhdGUiOiI1YzA4MjA4Yy04ODZhLTQzNDQtYTc0Yi0wOTNhYjdiYjZiYmMiLCJhdXRoSW5kZXhWYWx1ZSI6IlJlZ2lzdHJhdGlvbiIsIm90ayI6ImY1c243cmVhZjl2MGNqMm42dTJiNHN0NzByIiwiYXV0aEluZGV4VHlwZSI6InNlcnZpY2UiLCJ3aGl0ZWxpc3QtbG9jay1leHBpcnkiOiIwIiwicmVhbG0iOiIvYWxwaGEiLCJzZXNzaW9uSWQiOiIqQUFKVFNRQUNNRElBQkhSNWNHVUFDRXBYVkY5QlZWUklBQUpUTVFBQ01ERS4qZXlKMGVYQWlPaUpLVjFRaUxDSmpkSGtpT2lKS1YxUWlMQ0poYkdjaU9pSklVekkxTmlKOS5aWGxLTUdWWVFXbFBhVXBMVmpGUmFVeERTbXhpYlUxcFQybEtRazFVU1RSUk1FcEVURlZvVkUxcVZUSkphWGRwV1ZkNGJrbHFiMmxhUjJ4NVNXNHdMaTU1UzFOTE5GZDVZM1ZKVUVSVVpXWm9jazVGV1ZwQkxuVlllV0pmYXpkQmJrWnJiM0ZHT1dsNVltWk9PVzlYYnpsWlZXc3haR04yUm5GcU9VZFBjMnRTWkdKR1oycFRRVzlSY1c5UVJsZHVOMU5xUW1ac2FIaGlVVTFpVjBoNmRIbG5ObkpDWkdwTmREY3pURE16VUdvM2NXeGFaMVJUTTNwUGRHYzRVbTlVTUZjeFZVdERVakZUZDBwSFNHWnVjRkp1ZG5SNlJEZE9aMFJuYTA1V1ZITTVTRmd6TlhKa1JIaFBRMDkwTVVGQllubDBUVlpvYlZCRmNtcFZTamhHYVY5NWJrUTVhbVJHWVdsSWQzTlpNMDV5ZG05YVkwd3dlRTR5YmxOdVQzQldWelZKY25wNVJ6aHliM0JpWDIxeWNYQTRRelU0Ymw5bldVb3dURVk0U0ZCTVRGOTZSVGd6VlV4cGJESnlNbEJxZFhSSllpMTBibGw2VTJaTVJWOVhZWGxyWlMxV1dITTFOSE52YTJsalJHbFRiVzVNY1ZONGNVODBkazEzVUhRM2MxZHJjMUZ3Tmt4MFkzSlFWa2haT1RWdVZGRnpOMFpNVEVKbFZFUnZkWGxNWlc4elNUUk9OR050YjJwQ2FHdFdOMUkxU1ZWR2FWTm5hbFZETVMwNE5HeHFjR2RHUjNCNVRtVjBjMFZKTWpKb1pGbHdaelYyU3pCaU1qUlJSVnBDY1c5MGIxOUtZelJ2UW1OVE1VRnBVVWRhTFhaZk1UVkRXVGwyUmtWbFNqWjFabFJQU1cwMlNIWmtjMlZyY1VwNWMwODRZMEZaTmxobWJWRnZYMFppYVZCMFpHVTBMVFpHUVhBd1ZVMTVkekZzVkdZdFZtb3pTbVZQTWpkSWQxcG9lbVp1VFhwcFIxOWZkSEJ3YVVKRVlubDFlRnBMZW1kNFRrSjFSRGg0VWtsaldqRnVYelZCU2pSTGRFSnVSVFZ5YkhFMVYydEtVSE5XYzNOR2ExbEtkMFkyWW5Bd1pYRXRVa3hzY1dOWWFFSkdOM2N0YnpSV1F6SnhNbXRMTkUxd2FqVnhYMk5JVm1KRk1tTTJibkl4VkY5NVdqWkVUSFJqVDJKTGVtaEJZalF3WkRBeFpYRlJlbEZDUTJneFNEVkZRa0k0U0Y4eVpIcEllbUZVTW1ad1JYQjJZMFpaTTI5ZlMzbHJTMEl6TUcwd2RFZEZOVGN5TFVzNWMweFBUVkZuTFhCWVVYWnNibEIzVG1saGNuQlNVVUZFU2poVlZUUk9TamhGZWpWSFkzQm1ObmQwVDBkc1EweFBWMTl1VGpsNWJWcEpObk5SU0dreVluUmpXV2RvV214blRtaGhXakZaU3pBNVV6VTNOVTlqYkdSNk1VMXZYM3BOUzB0Tk5scEVjRzFqUWpsUVdsQXhiVXMzZWkxSU5rWXpNMVE0TmxSNmRFaDFSSEl6YkU4elZsTnZTamhLZFVrMFlqQkpha1pGUzNBeFoyRjFkM0ZyWWpsSVdXUjBNakJWZFdkT1UyTkZOVzVWTnpGMlRtUlZTM0pqYVZsdVpXRTNlazVHUkRGTU9EaFRRbWRaVEdoMlNUZFRYMDU0V1hRNVZuaEpjRTlNVUUxeVIyMDVPRloyUTBrdGRVbzVVblZyT0MxNVlWbFdjRVprTFc1bVIzRlBVelZTUmtwd2NISlRNa05YZWxaa2MxTnRUemxIY0ZKb2RrUmxia3AxZGxSMlgyZGxiREppTVVsWVdscHBaV1JPUkhnMWEyaFpaMDFrTFhkeWVWOXpTbEpmVldzME5saEtOM1pOWWtGc1VYbG9OVFF6V1ROelFsUlhUVlkyV1dkc1ZUUlVjMUkzTjFGNmNtWkJSVXRXWkdSQlRuWkNiM2hoTlhoTlVqQlJaWEE0WlZwNmRXdElUV3d0UjJ0RFkyNDFhWGRQU1ZaWFNGcEZMVzFHYlhZdFlXMVhNakp1ZWkxbWJ6TmFjVGRWYUMwMlkyRklRVlJGTW1OS1VrbGlWMFoyWjNWeE1HRjZiRk5rZERJMVRqaExWbEZCYTJkNVQyTmxNVEF6ZDFBd1IzbHNSRVJwZWpWYWIxazJaRE5DYTNWSFkzQkVTMUZITVUxRlYxSjNhV2xNYWtWeE1GSXdZMmc0YUZOeExYRnhhM3BKTVhOdFRVOVRiMmRVVG04emVUSnRPWFIyTFdONGJUZGhkRXRyUVVFelZVZFRlWEkyVWxReU5qaDJXVkpoUjJWQlRFVTBhekZ5WW5GM0xqRm5ORUZHT1VnNFNYZEdNbHBaWkdaaVQzWmxMVkUueVB5bnBqcXdaR3ZaMEg5cmNpVnZmYVRQR2YydDYwMGgtMnlSTUxUaU81YyIsImV4cCI6MTc4ODI1MjgzNiwiaWF0IjoxNzg4MjUyNTM2fQ.bqdCCuwS-prpLrgIx8vkOTzGHLKvExy-lQtvS9-tzY8",
+ "callbacks": [
+  {
+   "type": "ValidatedCreateUsernameCallback",
+   "output": [
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "MIN_LENGTH",
+       "VALID_TYPE",
+       "VALID_USERNAME",
+       "CANNOT_CONTAIN_CHARACTERS",
+       "MAX_LENGTH"
+      ],
+      "fallbackPolicies": null,
+      "name": "userName",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "not-empty"
+       },
+       {
+        "policyRequirements": [
+         "MIN_LENGTH"
+        ],
+        "policyId": "minimum-length",
+        "params": {
+         "minLength": 1
+        }
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       },
+       {
+        "policyId": "valid-username",
+        "policyRequirements": [
+         "VALID_USERNAME"
+        ]
+       },
+       {
+        "params": {
+         "forbiddenChars": [
+          "/"
+         ]
+        },
+        "policyId": "cannot-contain-characters",
+        "policyRequirements": [
+         "CANNOT_CONTAIN_CHARACTERS"
+        ]
+       },
+       {
+        "params": {
+         "minLength": 1
+        },
+        "policyId": "minimum-length",
+        "policyRequirements": [
+         "MIN_LENGTH"
+        ]
+       },
+       {
+        "params": {
+         "maxLength": 255
+        },
+        "policyId": "maximum-length",
+        "policyRequirements": [
+         "MAX_LENGTH"
+        ]
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "prompt",
+     "value": "Username"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken1",
+     "value": "regdiag1648"
+    },
+    {
+     "name": "IDToken1validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 0
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "givenName"
+    },
+    {
+     "name": "prompt",
+     "value": "First Name"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "givenName",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": "Test"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken2",
+     "value": "Test"
+    },
+    {
+     "name": "IDToken2validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 9
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "sn"
+    },
+    {
+     "name": "prompt",
+     "value": "Last Name"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "sn",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": "Test"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken3",
+     "value": "Test"
+    },
+    {
+     "name": "IDToken3validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 10
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "mail"
+    },
+    {
+     "name": "prompt",
+     "value": "Email Address"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE",
+       "VALID_EMAIL_ADDRESS_FORMAT"
+      ],
+      "fallbackPolicies": null,
+      "name": "mail",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       },
+       {
+        "policyId": "valid-email-address-format",
+        "policyRequirements": [
+         "VALID_EMAIL_ADDRESS_FORMAT"
+        ]
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": [
+      "{ \"policyRequirement\": \"VALID_EMAIL_ADDRESS_FORMAT\" }"
+     ]
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": "Test"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken4",
+     "value": "Test"
+    },
+    {
+     "name": "IDToken4validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 11
+  },
+  {
+   "type": "BooleanAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "preferences/marketing"
+    },
+    {
+     "name": "prompt",
+     "value": "Send me special offers and services"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {}
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": true
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken5",
+     "value": true
+    },
+    {
+     "name": "IDToken5validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 12
+  },
+  {
+   "type": "BooleanAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "preferences/updates"
+    },
+    {
+     "name": "prompt",
+     "value": "Send me news and updates"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {}
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": true
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken6",
+     "value": true
+    },
+    {
+     "name": "IDToken6validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 13
+  },
+  {
+   "type": "ValidatedCreatePasswordCallback",
+   "output": [
+    {
+     "name": "echoOn",
+     "value": false
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "password",
+      "policies": [
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "prompt",
+     "value": "Password"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken7",
+     "value": ""
+    },
+    {
+     "name": "IDToken7validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 6
+  },
+  {
+   "type": "KbaCreateCallback",
+   "output": [
+    {
+     "name": "prompt",
+     "value": "Select a security question"
+    },
+    {
+     "name": "predefinedQuestions",
+     "value": [
+      "What's your favorite color?"
+     ]
+    },
+    {
+     "name": "allowUserDefinedQuestions",
+     "value": true
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken8question",
+     "value": "What's your favorite color?"
+    },
+    {
+     "name": "IDToken8answer",
+     "value": "blue"
+    }
+   ],
+   "_id": 7
+  },
+  {
+   "type": "TermsAndConditionsCallback",
+   "output": [
+    {
+     "name": "version",
+     "value": "0.0"
+    },
+    {
+     "name": "terms",
+     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+     "name": "createDate",
+     "value": "2019-10-28T04:20:11.320Z"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken9",
+     "value": true
+    }
+   ],
+   "_id": 8
+  }
+ ],
+ "header": "Sign Up",
+ "description": "Signing up is fast and easy.<br>Already have an account? <a href='#/service/Login'>Sign In</a>"
+}
+
+===== 提交1 cb0 =====
+{
+ "type": "ValidatedCreateUsernameCallback",
+ "output": [
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "REQUIRED",
+     "MIN_LENGTH",
+     "VALID_TYPE",
+     "VALID_USERNAME",
+     "CANNOT_CONTAIN_CHARACTERS",
+     "MAX_LENGTH"
+    ],
+    "fallbackPolicies": null,
+    "name": "userName",
+    "policies": [
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "required"
+     },
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "not-empty"
+     },
+     {
+      "policyRequirements": [
+       "MIN_LENGTH"
+      ],
+      "policyId": "minimum-length",
+      "params": {
+       "minLength": 1
+      }
+     },
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     },
+     {
+      "policyId": "valid-username",
+      "policyRequirements": [
+       "VALID_USERNAME"
+      ]
+     },
+     {
+      "params": {
+       "forbiddenChars": [
+        "/"
+       ]
+      },
+      "policyId": "cannot-contain-characters",
+      "policyRequirements": [
+       "CANNOT_CONTAIN_CHARACTERS"
+      ]
+     },
+     {
+      "params": {
+       "minLength": 1
+      },
+      "policyId": "minimum-length",
+      "policyRequirements": [
+       "MIN_LENGTH"
+      ]
+     },
+     {
+      "params": {
+       "maxLength": 255
+      },
+      "policyId": "maximum-length",
+      "policyRequirements": [
+       "MAX_LENGTH"
+      ]
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "prompt",
+   "value": "Username"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken1",
+   "value": "regdiag1648"
+  },
+  {
+   "name": "IDToken1validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 0
+}
+
+===== 提交1 cb1 =====
+{
+ "type": "StringAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "givenName"
+  },
+  {
+   "name": "prompt",
+   "value": "First Name"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "REQUIRED",
+     "VALID_TYPE"
+    ],
+    "fallbackPolicies": null,
+    "name": "givenName",
+    "policies": [
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "required"
+     },
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": "Test"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken2",
+   "value": "Test"
+  },
+  {
+   "name": "IDToken2validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 9
+}
+
+===== 提交1 cb2 =====
+{
+ "type": "StringAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "sn"
+  },
+  {
+   "name": "prompt",
+   "value": "Last Name"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "REQUIRED",
+     "VALID_TYPE"
+    ],
+    "fallbackPolicies": null,
+    "name": "sn",
+    "policies": [
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "required"
+     },
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": "Test"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken3",
+   "value": "Test"
+  },
+  {
+   "name": "IDToken3validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 10
+}
+
+===== 提交1 cb3 =====
+{
+ "type": "StringAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "mail"
+  },
+  {
+   "name": "prompt",
+   "value": "Email Address"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "REQUIRED",
+     "VALID_TYPE",
+     "VALID_EMAIL_ADDRESS_FORMAT"
+    ],
+    "fallbackPolicies": null,
+    "name": "mail",
+    "policies": [
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "required"
+     },
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     },
+     {
+      "policyId": "valid-email-address-format",
+      "policyRequirements": [
+       "VALID_EMAIL_ADDRESS_FORMAT"
+      ]
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": [
+    "{ \"policyRequirement\": \"VALID_EMAIL_ADDRESS_FORMAT\" }"
+   ]
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": "Test"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken4",
+   "value": "Test"
+  },
+  {
+   "name": "IDToken4validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 11
+}
+
+===== 提交1 cb4 =====
+{
+ "type": "BooleanAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "preferences/marketing"
+  },
+  {
+   "name": "prompt",
+   "value": "Send me special offers and services"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {}
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": true
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken5",
+   "value": true
+  },
+  {
+   "name": "IDToken5validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 12
+}
+
+===== 提交1 cb5 =====
+{
+ "type": "BooleanAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "preferences/updates"
+  },
+  {
+   "name": "prompt",
+   "value": "Send me news and updates"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {}
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": true
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken6",
+   "value": true
+  },
+  {
+   "name": "IDToken6validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 13
+}
+
+===== 提交1 cb6 =====
+{
+ "type": "ValidatedCreatePasswordCallback",
+ "output": [
+  {
+   "name": "echoOn",
+   "value": false
+  },
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "VALID_TYPE"
+    ],
+    "fallbackPolicies": null,
+    "name": "password",
+    "policies": [
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "prompt",
+   "value": "Password"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken7",
+   "value": ""
+  },
+  {
+   "name": "IDToken7validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 6
+}
+
+===== 提交1 cb7 =====
+{
+ "type": "KbaCreateCallback",
+ "output": [
+  {
+   "name": "prompt",
+   "value": "Select a security question"
+  },
+  {
+   "name": "predefinedQuestions",
+   "value": [
+    "What's your favorite color?"
+   ]
+  },
+  {
+   "name": "allowUserDefinedQuestions",
+   "value": true
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken8question",
+   "value": "What's your favorite color?"
+  },
+  {
+   "name": "IDToken8answer",
+   "value": "blue"
+  }
+ ],
+ "_id": 7
+}
+
+===== 提交1 cb8 =====
+{
+ "type": "TermsAndConditionsCallback",
+ "output": [
+  {
+   "name": "version",
+   "value": "0.0"
+  },
+  {
+   "name": "terms",
+   "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+   "name": "createDate",
+   "value": "2019-10-28T04:20:11.320Z"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken9",
+   "value": true
+  }
+ ],
+ "_id": 8
+}
+
+===== 提交2(空cbs) =====
+{
+ "authId": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aGl0ZWxpc3Qtc3RhdGUiOiI1NDMzNWM4ZS05OTE3LTRlNDEtOTQwZi04ZWI2ODMwNWYwOTQiLCJhdXRoSW5kZXhWYWx1ZSI6IlJlZ2lzdHJhdGlvbiIsIm90ayI6ImxmYThxb2FhaDQxNDU0c2hoM2Ywam8ycG9mIiwiYXV0aEluZGV4VHlwZSI6InNlcnZpY2UiLCJ3aGl0ZWxpc3QtbG9jay1leHBpcnkiOiIwIiwicmVhbG0iOiIvYWxwaGEiLCJzZXNzaW9uSWQiOiIqQUFKVFNRQUNNRElBQkhSNWNHVUFDRXBYVkY5QlZWUklBQUpUTVFBQ01ERS4qZXlKMGVYQWlPaUpLVjFRaUxDSmpkSGtpT2lKS1YxUWlMQ0poYkdjaU9pSklVekkxTmlKOS5aWGxLTUdWWVFXbFBhVXBMVmpGUmFVeERTbXhpYlUxcFQybEtRazFVU1RSUk1FcEVURlZvVkUxcVZUSkphWGRwV1ZkNGJrbHFiMmxhUjJ4NVNXNHdMaTVYWld4WFdGWndkbkkxUWxOelFsUXhVSGxpTUd4M0xrNXpNRFZtTmxsRVRVWTRSa015YzBONWRHTmpWbUpDTmtaRE1IVlFZbkY0Vm5GMk1rRlliRmxGVWxwSWJuTmtTR281U0RScFJFZ3djVGhxVG5adk1TMHllbVJGTnpWTU9EVTVPWHAwUWtWRFZYZDRjVVJFVjB4MmVVMHhYekpxYW5wME4xOWhaVFUwVkRoVVVrMVBZMWhpTXpaMGRGZEVNMEZoV20xVlEzUnBkbXRZWmpreFVIbDBPRGh4WVZGeVNVcHdXWEpaT0dVdFdUQnhVMmt5UVhGUGJEY3lOakU0VW5ocU1URldXbUZKT0ROVVRqSjFXRmhJUTBSb1pYQjJObVV5UWxCbk5WazJjamwxYmxaUGVHOXFhVVoxVFZkdVdXOWlTRVpsV0hZNUxWSmplV1JDTWtScmNtRkRibEZoYjA5c2FWbEJWRU5OZFVsS1RVcEdZWEZLY0dSNFkwd3hSbGRUTm1WUGFsTTVUSGRMTFZoWVMzZE9OWFJLZG1wMlIxZEdUVnBNTjFsUGRIbzRPVEphY2s5RFJWSTNkRzB4ZEMxa2VIRXlOemRDVnpORmMxOWphMkV3TkVONWNXWjNTVTVZYlc1TmFtbGZiVk5ITmtOWVJqRktSa1V5WDBSelNtRjZUUzAxUkZNMFFWSXdiRVZzYURsSFRHTmZRa2t0WW5wNlNWWTVUWFpUZG14ZmVHUXhSM0JqUzNNMFRHOTFRV2N3YjFKSllURkpXRU5YVGxwZk1WcFRlRFZZWVVkblMzQk5ibWt5UmpoMGRtNWFZMFpVTFhKcWQzTnNRVmhtWjFWaFRYYzVUaTFtYUhwSE5VSlFWMGd5U25KVmNIaGFUbDl0VTAxb1dHMWZjVlZaUm05dmFFTTFNWE56WVc5VlVYVm1la0pLVVRsaWFrWlBObVJoVFhSSWJuYzJYMXBETkZoZk1GZGlUemgwTlMxVVducG1jbm8yUlMxR1FuVlNZVkJEU1dad1VHc3lWbmRGWkU5WWNtUlpiRlZ4VW1NM2EwNU9ia0pTZFhwWmQzWklaRzB0TlhoTk1rbEhjbDl4Y2xKdVVXbEhiRGhRWjFKT1F6SmFaVXRCTUhGblVXaHZXbFp2YjJVeGJWVndRblV5T0RGalVHNVJWMmgxV0U5ck1HNWlha014YTFSNWFIa3ljWHBsTFdoYVMyeEVjRVV3U1ZZd1UzazVaM1F0VTFKa01sWk9SR3BKYjFrd2JqbE5WMFI0ZGxKMlpHd3dOWHBuYkU5dlltRlhWbWRQYnpWalJVZEJhVGhhY21WcGJrOWplbkJpTUUxcWFFRjJWRUoyVEVGb1RrUXpkM2h0UlhGNlVHVTNWekJJUm5acVowUlJWV3hQUzFsTVdVSTJjVlJUY0dKSVJXeFFiV3BDWXpOSFdIZGxSblIxUnpGVE5HRTVNVzVVYTA1RlZGQkNaVjl2TVMxVlVGRTRWbWhaTkRsSk1IcHRNVFZ1Ym00NGVGZFBja00xVGpSMVIyeGlNWGRxVERsdVNVb3pPVTVSYkdKbFZFeFZaRjlzVlU5T1ptdE9YMVYyUWpKWVNsSjRaM2w1VFU5NVdGWnVjRmxRYkVGWGFFUTVSSHB6VTFWSFpFeFVXRmRuVWxCMWMzaDBXWHB6VlVjMGFuSkNhbVZ3VkhsV04zQlpVa3gzTVc5U0xVOUlObFZXUzJ0UWFYQnpSREJCY21wUE0yOTViRGd4TURadFVDMWpSMlY0U3paZmNFZHFhRmhwZFZsM1FVaEVRbUZpT0hCRWFIVXhVVFZJTVRCWVZtdFNjaTFzWWs5UGJVWnlOVWhQWVMxRGVIQnlSRk5SUkhsUU9GbE1UbE5xVUdsaGFWY3RNWFY2U1dvd1UwbHBWRkpHUmxaVU9VMHhiRkZwYnpKelZXNVBialZSZWpkUVZtZ3daMXBGZVRsM05ETm5hV0pvYWtGVVZIbzVVbmxpY1dzMlRuWjJZVGhDVFhoaFZVeHdNbXR3VDJGUmVsa3dkemRtWW5SNE9WbE9SM1ZVUTFwRVNHNHllbEJyVlcxNlZsTm5Na2t3TlZWSVJURlZNbUo1Y1RaVFJucEZNbU5DZDAxYU9ISlFPRU5YUlhwV1pVeHpOQzB0YlVjM2FGQnZkMlo1T1V4VVlsZERSV2x3TFZWaFYzQmFSRXhtZG5GdWQyTnBMWGN4YWw5d1pWbEZMVVpoZG5jMmMxVTJlRWxsUVVGQmRVMW1Sa0ZLUm5Bd1N6QlhabmhKVHpGamRqbEVkM3BPYnkxeGRtbFFURVpZWVZKU2R6WmZRM2t0UmpnMlNHRldXak40UzBjdE1XcFllRE5ETnpoNWVqaE5aVlpqVlU5QlpVMDNYMmd5YUdaTWFERmpWREZxVTBSWFpsSlJPRWgxY0UxRWNuRk9PV010ZWxObE9HUmZlV2RvWVZFdWNUUlBjRWxZY0U0NVRWaFRWV3huVlVKc05uVkxady5CM0kzenJiakQzZjhTZ1p1RGxIckpkc21YNndrYmJjZWlvSEpMWnZTM09nIiwiZXhwIjoxNzg4MjUyODM2LCJpYXQiOjE3ODgyNTI1MzZ9.MnPJ7SOdKPVlh1SaAmbdVGYFL33IYVpxJZwYlqbmXG0",
+ "callbacks": [
+  {
+   "type": "ValidatedCreateUsernameCallback",
+   "output": [
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "MIN_LENGTH",
+       "VALID_TYPE",
+       "VALID_USERNAME",
+       "CANNOT_CONTAIN_CHARACTERS",
+       "MAX_LENGTH"
+      ],
+      "fallbackPolicies": null,
+      "name": "userName",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "not-empty"
+       },
+       {
+        "policyRequirements": [
+         "MIN_LENGTH"
+        ],
+        "policyId": "minimum-length",
+        "params": {
+         "minLength": 1
+        }
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       },
+       {
+        "policyId": "valid-username",
+        "policyRequirements": [
+         "VALID_USERNAME"
+        ]
+       },
+       {
+        "params": {
+         "forbiddenChars": [
+          "/"
+         ]
+        },
+        "policyId": "cannot-contain-characters",
+        "policyRequirements": [
+         "CANNOT_CONTAIN_CHARACTERS"
+        ]
+       },
+       {
+        "params": {
+         "minLength": 1
+        },
+        "policyId": "minimum-length",
+        "policyRequirements": [
+         "MIN_LENGTH"
+        ]
+       },
+       {
+        "params": {
+         "maxLength": 255
+        },
+        "policyId": "maximum-length",
+        "policyRequirements": [
+         "MAX_LENGTH"
+        ]
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "prompt",
+     "value": "Username"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken1",
+     "value": ""
+    },
+    {
+     "name": "IDToken1validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 14
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "givenName"
+    },
+    {
+     "name": "prompt",
+     "value": "First Name"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "givenName",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken2",
+     "value": ""
+    },
+    {
+     "name": "IDToken2validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 15
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "sn"
+    },
+    {
+     "name": "prompt",
+     "value": "Last Name"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "sn",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken3",
+     "value": ""
+    },
+    {
+     "name": "IDToken3validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 16
+  },
+  {
+   "type": "StringAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "mail"
+    },
+    {
+     "name": "prompt",
+     "value": "Email Address"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "REQUIRED",
+       "VALID_TYPE",
+       "VALID_EMAIL_ADDRESS_FORMAT"
+      ],
+      "fallbackPolicies": null,
+      "name": "mail",
+      "policies": [
+       {
+        "policyRequirements": [
+         "REQUIRED"
+        ],
+        "policyId": "required"
+       },
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       },
+       {
+        "policyId": "valid-email-address-format",
+        "policyRequirements": [
+         "VALID_EMAIL_ADDRESS_FORMAT"
+        ]
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": ""
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken4",
+     "value": ""
+    },
+    {
+     "name": "IDToken4validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 17
+  },
+  {
+   "type": "BooleanAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "preferences/marketing"
+    },
+    {
+     "name": "prompt",
+     "value": "Send me special offers and services"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {}
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": false
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken5",
+     "value": false
+    },
+    {
+     "name": "IDToken5validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 18
+  },
+  {
+   "type": "BooleanAttributeInputCallback",
+   "output": [
+    {
+     "name": "name",
+     "value": "preferences/updates"
+    },
+    {
+     "name": "prompt",
+     "value": "Send me news and updates"
+    },
+    {
+     "name": "required",
+     "value": true
+    },
+    {
+     "name": "policies",
+     "value": {}
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "value",
+     "value": false
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken6",
+     "value": false
+    },
+    {
+     "name": "IDToken6validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 19
+  },
+  {
+   "type": "ValidatedCreatePasswordCallback",
+   "output": [
+    {
+     "name": "echoOn",
+     "value": false
+    },
+    {
+     "name": "policies",
+     "value": {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "fallbackPolicies": null,
+      "name": "password",
+      "policies": [
+       {
+        "policyRequirements": [
+         "VALID_TYPE"
+        ],
+        "policyId": "valid-type",
+        "params": {
+         "types": [
+          "string"
+         ]
+        }
+       }
+      ],
+      "conditionalPolicies": null
+     }
+    },
+    {
+     "name": "failedPolicies",
+     "value": []
+    },
+    {
+     "name": "validateOnly",
+     "value": false
+    },
+    {
+     "name": "prompt",
+     "value": "Password"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken7",
+     "value": ""
+    },
+    {
+     "name": "IDToken7validateOnly",
+     "value": false
+    }
+   ],
+   "_id": 20
+  },
+  {
+   "type": "KbaCreateCallback",
+   "output": [
+    {
+     "name": "prompt",
+     "value": "Select a security question"
+    },
+    {
+     "name": "predefinedQuestions",
+     "value": [
+      "What's your favorite color?"
+     ]
+    },
+    {
+     "name": "allowUserDefinedQuestions",
+     "value": true
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken8question",
+     "value": ""
+    },
+    {
+     "name": "IDToken8answer",
+     "value": ""
+    }
+   ],
+   "_id": 21
+  },
+  {
+   "type": "TermsAndConditionsCallback",
+   "output": [
+    {
+     "name": "version",
+     "value": "0.0"
+    },
+    {
+     "name": "terms",
+     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+     "name": "createDate",
+     "value": "2019-10-28T04:20:11.320Z"
+    }
+   ],
+   "input": [
+    {
+     "name": "IDToken9",
+     "value": false
+    }
+   ],
+   "_id": 22
+  }
+ ],
+ "header": "Sign Up",
+ "description": "Signing up is fast and easy.<br>Already have an account? <a href='#/service/Login'>Sign In</a>"
+}
+
+===== 提交2 cb0 =====
+{
+ "type": "ValidatedCreateUsernameCallback",
+ "output": [
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "REQUIRED",
+     "MIN_LENGTH",
+     "VALID_TYPE",
+     "VALID_USERNAME",
+     "CANNOT_CONTAIN_CHARACTERS",
+     "MAX_LENGTH"
+    ],
+    "fallbackPolicies": null,
+    "name": "userName",
+    "policies": [
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "required"
+     },
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "not-empty"
+     },
+     {
+      "policyRequirements": [
+       "MIN_LENGTH"
+      ],
+      "policyId": "minimum-length",
+      "params": {
+       "minLength": 1
+      }
+     },
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     },
+     {
+      "policyId": "valid-username",
+      "policyRequirements": [
+       "VALID_USERNAME"
+      ]
+     },
+     {
+      "params": {
+       "forbiddenChars": [
+        "/"
+       ]
+      },
+      "policyId": "cannot-contain-characters",
+      "policyRequirements": [
+       "CANNOT_CONTAIN_CHARACTERS"
+      ]
+     },
+     {
+      "params": {
+       "minLength": 1
+      },
+      "policyId": "minimum-length",
+      "policyRequirements": [
+       "MIN_LENGTH"
+      ]
+     },
+     {
+      "params": {
+       "maxLength": 255
+      },
+      "policyId": "maximum-length",
+      "policyRequirements": [
+       "MAX_LENGTH"
+      ]
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "prompt",
+   "value": "Username"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken1",
+   "value": ""
+  },
+  {
+   "name": "IDToken1validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 14
+}
+
+===== 提交2 cb1 =====
+{
+ "type": "StringAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "givenName"
+  },
+  {
+   "name": "prompt",
+   "value": "First Name"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "REQUIRED",
+     "VALID_TYPE"
+    ],
+    "fallbackPolicies": null,
+    "name": "givenName",
+    "policies": [
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "required"
+     },
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": ""
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken2",
+   "value": ""
+  },
+  {
+   "name": "IDToken2validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 15
+}
+
+===== 提交2 cb2 =====
+{
+ "type": "StringAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "sn"
+  },
+  {
+   "name": "prompt",
+   "value": "Last Name"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "REQUIRED",
+     "VALID_TYPE"
+    ],
+    "fallbackPolicies": null,
+    "name": "sn",
+    "policies": [
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "required"
+     },
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": ""
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken3",
+   "value": ""
+  },
+  {
+   "name": "IDToken3validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 16
+}
+
+===== 提交2 cb3 =====
+{
+ "type": "StringAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "mail"
+  },
+  {
+   "name": "prompt",
+   "value": "Email Address"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "REQUIRED",
+     "VALID_TYPE",
+     "VALID_EMAIL_ADDRESS_FORMAT"
+    ],
+    "fallbackPolicies": null,
+    "name": "mail",
+    "policies": [
+     {
+      "policyRequirements": [
+       "REQUIRED"
+      ],
+      "policyId": "required"
+     },
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     },
+     {
+      "policyId": "valid-email-address-format",
+      "policyRequirements": [
+       "VALID_EMAIL_ADDRESS_FORMAT"
+      ]
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": ""
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken4",
+   "value": ""
+  },
+  {
+   "name": "IDToken4validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 17
+}
+
+===== 提交2 cb4 =====
+{
+ "type": "BooleanAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "preferences/marketing"
+  },
+  {
+   "name": "prompt",
+   "value": "Send me special offers and services"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {}
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": false
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken5",
+   "value": false
+  },
+  {
+   "name": "IDToken5validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 18
+}
+
+===== 提交2 cb5 =====
+{
+ "type": "BooleanAttributeInputCallback",
+ "output": [
+  {
+   "name": "name",
+   "value": "preferences/updates"
+  },
+  {
+   "name": "prompt",
+   "value": "Send me news and updates"
+  },
+  {
+   "name": "required",
+   "value": true
+  },
+  {
+   "name": "policies",
+   "value": {}
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "value",
+   "value": false
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken6",
+   "value": false
+  },
+  {
+   "name": "IDToken6validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 19
+}
+
+===== 提交2 cb6 =====
+{
+ "type": "ValidatedCreatePasswordCallback",
+ "output": [
+  {
+   "name": "echoOn",
+   "value": false
+  },
+  {
+   "name": "policies",
+   "value": {
+    "policyRequirements": [
+     "VALID_TYPE"
+    ],
+    "fallbackPolicies": null,
+    "name": "password",
+    "policies": [
+     {
+      "policyRequirements": [
+       "VALID_TYPE"
+      ],
+      "policyId": "valid-type",
+      "params": {
+       "types": [
+        "string"
+       ]
+      }
+     }
+    ],
+    "conditionalPolicies": null
+   }
+  },
+  {
+   "name": "failedPolicies",
+   "value": []
+  },
+  {
+   "name": "validateOnly",
+   "value": false
+  },
+  {
+   "name": "prompt",
+   "value": "Password"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken7",
+   "value": ""
+  },
+  {
+   "name": "IDToken7validateOnly",
+   "value": false
+  }
+ ],
+ "_id": 20
+}
+
+===== 提交2 cb7 =====
+{
+ "type": "KbaCreateCallback",
+ "output": [
+  {
+   "name": "prompt",
+   "value": "Select a security question"
+  },
+  {
+   "name": "predefinedQuestions",
+   "value": [
+    "What's your favorite color?"
+   ]
+  },
+  {
+   "name": "allowUserDefinedQuestions",
+   "value": true
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken8question",
+   "value": ""
+  },
+  {
+   "name": "IDToken8answer",
+   "value": ""
+  }
+ ],
+ "_id": 21
+}
+
+===== 提交2 cb8 =====
+{
+ "type": "TermsAndConditionsCallback",
+ "output": [
+  {
+   "name": "version",
+   "value": "0.0"
+  },
+  {
+   "name": "terms",
+   "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+   "name": "createDate",
+   "value": "2019-10-28T04:20:11.320Z"
+  }
+ ],
+ "input": [
+  {
+   "name": "IDToken9",
+   "value": false
+  }
+ ],
+ "_id": 22
+}

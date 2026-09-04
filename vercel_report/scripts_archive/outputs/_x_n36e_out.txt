@@ -1,0 +1,6 @@
+[create l36d] -> 200
+[before-patch] -> NODYN 
+[patch v2+projectId] -> 200 | {"sandbox":{"name":"l36d","currentSessionId":"sbx_8wfTOZd4AkiETe5IO7pyVX8pBTji","status":"running","statusUpdatedAt":1788056794559,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","image":"vercel/sandb
+[readback] -> 200 | {"sandbox":{"name":"l36d","currentSessionId":"sbx_8wfTOZd4AkiETe5IO7pyVX8pBTji","status":"running","statusUpdatedAt":1788056794559,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","image":"vercel/sandbox/universal@sha256:0e3e3617e824397f170fc7c43ccaa5
+[after-patch] -> NODYN 
+DONE

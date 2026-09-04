@@ -1,0 +1,205 @@
+sid = sbx_ArMecdrA2HgFD08HisHfa0uf8Egg
+[enum] -> 200
+===== 1. /sys/bus/virtio/devices =====
+--- /sys/bus/virtio/devices/virtio0
+DRIVER=virtio_blk
+MODALIAS=virtio:d00000002v00000000
+../../../../bus/virtio/drivers/virtio_blk
+--- /sys/bus/virtio/devices/virtio1
+DRIVER=virtio_blk
+MODALIAS=virtio:d00000002v00000000
+../../../../bus/virtio/drivers/virtio_blk
+--- /sys/bus/virtio/devices/virtio2
+DRIVER=virtio_net
+MODALIAS=virtio:d00000001v00000000
+../../../../bus/virtio/drivers/virtio_net
+--- /sys/bus/virtio/devices/virtio3
+DRIVER=vmw_vsock_virtio_transport
+MODALIAS=virtio:d00000013v00000000
+../../../../bus/virtio/drivers/vmw_vsock_virtio_transport
+--- /sys/bus/virtio/devices/virtio4
+DRIVER=virtio_rng
+MODALIAS=virtio:d00000004v00000000
+../../../../bus/virtio/drivers/virtio_rng
+===== 2. virtio drivers =====
+virtio_balloon
+virtio_blk
+virtio_console
+virtio_mem
+virtio_net
+virtio_rng
+virtio_rproc_serial
+vmw_vsock_virtio_transport
+===== 3. PCI devices =====
+===== 4. /proc/iomem =====
+00000000-00000fff : Reserved
+00001000-0009fbff : System RAM
+0009fc00-000fffff : Reserved
+  000de000-000defff : AMZNC10C:00
+  000f0000-000fffff : System ROM
+00100000-bfffffff : System RAM
+  01000000-01e1fcef : Kernel code
+  02000000-023f2fff : Kernel rodata
+  02400000-02bd2a7f : Kernel data
+  02eef000-031fffff : Kernel bss
+c0001000-c0001fff : LNRO0005:00
+  c0001000-c0001fff : LNRO0005:00 LNRO0005:00
+c0002000-c0002fff : LNRO0005:01
+  c0002000-c0002fff : LNRO0005:01 LNRO0005:01
+c0003000-c0003fff : LNRO0005:02
+  c0003000-c0003fff : LNRO0005:02 LNRO0005:02
+c0004000-c0004fff : LNRO0005:03
+  c0004000-c0004fff : LNRO0005:03 LNRO0005:03
+c0005000-c0005fff : LNRO0005:04
+  c0005000-c0005fff : LNRO0005:04 LNRO0005:04
+100000000-156cfffff : System RAM
+===== 5. /dev 设备节点 =====
+crw-r--r--  1 root root  10, 235 Aug 30 12:48 autofs
+crw-------  1 root root   5,   1 Aug 30 12:48 console
+crw-------  1 root root  10, 259 Aug 30 12:48 cpu_dma_latency
+crw-------  1 root root  10, 203 Aug 30 12:48 cuse
+lrwxrwxrwx  1 root root      13 Aug 30 12:48 fd -> /proc/self/fd
+crw-rw-rw-  1 root root   1,   7 Aug 30 12:48 full
+crw-------  1 root root  10, 229 Aug 30 12:48 fuse
+crw-------  1 root root  10, 183 Aug 30 12:48 hwrng
+crw-r--r--  1 root root   1,  11 Aug 30 12:48 kmsg
+crw-------  1 root root  10, 237 Aug 30 12:48 loop-control
+brw-------  1 root root   7,   0 Aug 30 12:48 loop0
+brw-------  1 root root   7,   1 Aug 30 12:48 loop1
+brw-------  1 root root   7,   2 Aug 30 12:48 loop2
+brw-------  1 root root   7,   3 Aug 30 12:48 loop3
+brw-------  1 root root   7,   4 Aug 30 12:48 loop4
+brw-------  1 root root   7,   5 Aug 30 12:48 loop5
+brw-------  1 root root   7,   6 Aug 30 12:48 loop6
+brw-------  1 root root   7,   7 Aug 30 12:48 loop7
+crw-------  1 root root   1,   1 Aug 30 12:48 mem
+crw-rw-rw-  1 root root   1,   3 Aug 30 12:48 null
+crw-------  1 root root   1,   4 Aug 30 12:48 port
+crw-rw-rw-  1 root root   5,   2 Aug 30 12:48 ptmx
+crw-------  1 root root 253,   0 Aug 30 12:48 ptp0
+crw-rw-rw-  1 root root   1,   8 Aug 30 12:48 random
+crw-------  1 root root  10, 231 Aug 30 12:48 snapshot
+lrwxrwxrwx  1 root root      15 Aug 30 12:48 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1 root root      15 Aug 30 12:48 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1 root root      15 Aug 30 12:48 stdout -> /proc/self/fd/1
+crw-rw-rw-  1 root root   5,   0 Aug 30 12:48 tty
+crw-------  1 root root   4,   0 Aug 30 12:48 tty0
+crw-------  1 root root   4,   1 Aug 30 12:48 tty1
+crw-------  1 root root   4,  10 Aug 30 12:48 tty10
+crw-------  1 root root   4,  11 Aug 30 12:48 tty11
+crw-------  1 root root   4,  12 Aug 30 12:48 tty12
+crw-------  1 root root   4,  13 Aug 30 12:48 tty13
+crw-------  1 root root   4,  14 Aug 30 12:48 tty14
+crw-------  1 root root   4,  15 Aug 30 12:48 tty15
+crw-------  1 root root   4,  16 Aug 30 12:48 tty16
+crw-------  1 root root   4,  17 Aug 30 12:48 tty17
+crw-------  1 root root   4,  18 Aug 30 12:48 tty18
+crw-------  1 root root   4,  19 Aug 30 12:48 tty19
+crw-------  1 root root   4,   2 Aug 30 12:48 tty2
+crw-------  1 root root   4,  20 Aug 30 12:48 tty20
+crw-------  1 root root   4,  21 Aug 30 12:48 tty21
+crw-------  1 root root   4,  22 Aug 30 12:48 tty22
+crw-------  1 root root   4,  23 Aug 30 12:48 tty23
+crw-------  1 root root   4,  24 Aug 30 12:48 tty24
+crw-------  1 root root   4,  25 Aug 30 12:48 tty25
+crw-------  1 root root   4,  26 Aug 30 12:48 tty26
+crw-------  1 root root   4,  27 Aug 30 12:48 tty27
+crw-------  1 root root   4,  28 Aug 30 12:48 tty28
+crw-------  1 root root   4,  29 Aug 30 12:48 tty29
+crw-------  1 root root   4,   3 Aug 30 12:48 tty3
+crw-------  1 root root   4,  30 Aug 30 12:48 tty30
+crw-------  1 root root   4,  31 Aug 30 12:48 tty31
+crw-------  1 root root   4,  32 Aug 30 12:48 tty32
+crw-------  1 root root   4,  33 Aug 30 12:48 tty33
+crw-------  1 root root   4,  34 Aug 30 12:48 tty34
+crw-------  1 root root   4,  35 Aug 30 12:48 tty35
+crw-------  1 root root   4,  36 Aug 30 12:48 tty36
+===== 6. /proc/partitions + block size =====
+major minor  #blocks  name
+
+ 254        0   34603008 vda
+ 254       16   67108864 vdb
+/sys/block/loop0: 0 sectors 
+/sys/block/loop1: 0 sectors 
+/sys/block/loop2: 0 sectors 
+/sys/block/loop3: 0 sectors 
+/sys/block/loop4: 0 sectors 
+/sys/block/loop5: 0 sectors 
+/sys/block/loop6: 0 sectors 
+/sys/block/loop7: 0 sectors 
+/sys/block/vda: 69206016 sectors 
+/sys/block/vdb: 134217728 sectors 
+===== 7. vsock =====
+crw------- 1 root root 10, 258 Aug 30 12:48 /dev/vsock
+===== 8. dmesg virtio/pci/block =====
+[    0.000000] Command line: reboot=k i8042.nopnp i8042.nomux quiet init=/opt/vercel/celld-init.sh build_version=2026.08.27-aed1eea763274bb816cf9bc062723851244a9952 ip=100.64.16.109::100.64.0.1:255.255.0.0:::off:172.31.0.2:: panic=1 pci=off nomodule i8042.noaux i8042.dumbkbd cell_id=hvc_iad1_d0b8cc3b_7c72b81073df4a5b95416485d713e4a5 ro console=ttyS0 pci=off root=/dev/vda rw virtio_mmio.device=4K@0xc0001000:5 virtio_mmio.device=4K@0xc0002000:6 virtio_mmio.device=4K@0xc0003000:7 virtio_mmio.device=4K@0xc0004000:8 virtio_mmio.device=4K@0xc0005000:9
+[    0.036797] [mem 0xc0000000-0xeebfffff] available for PCI devices
+[    0.038521] Kernel command line: reboot=k i8042.nopnp i8042.nomux quiet init=/opt/vercel/celld-init.sh build_version=2026.08.27-aed1eea763274bb816cf9bc062723851244a9952 ip=100.64.16.109::100.64.0.1:255.255.0.0:::off:172.31.0.2:: panic=1 pci=off nomodule i8042.noaux i8042.dumbkbd cell_id=hvc_iad1_d0b8cc3b_7c72b81073df4a5b95416485d713e4a5 ro console=ttyS0 pci=off root=/dev/vda rw virtio_mmio.device=4K@0xc0001000:5 virtio_mmio.device=4K@0xc0002000:6 virtio_mmio.device=4K@0xc0003000:7 virtio_mmio.device=4K@0xc0004000:8 virtio_mmio.device=4K@0xc0005000:9
+[    0.118004] MMIO Stale Data: Mitigation: Clear CPU buffers
+[    0.121814] MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+[    0.127115] x86/mm: Memory block size: 128MB
+[    0.130224] PCI: Fatal: No config space access function found
+[    0.131390] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.131390] PCI: Using E820 reservations for host bridge windows
+[    0.134301] SCSI subsystem initialized
+[    0.134301] PCI: Using ACPI for IRQ routing
+[    0.134301] PCI: System does not support PCI
+[    0.140381] PCI: CLS 0 bytes, default 64
+[    0.140388] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.150181] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    0.153191] virtio_blk virtio0: 1/0/0 default/read/poll queues
+[    0.153561] virtio_blk virtio0: [vda] 69206016 512-byte logical blocks (35.4 GB/33.0 GiB)
+[    0.154595] virtio_blk virtio1: 1/0/0 default/read/poll queues
+[    0.154726] virtio_blk virtio1: [vdb] 0 512-byte logical blocks (0 B/0 B)
+[    0.154999] Loading iSCSI transport class v2.0-870.
+[    0.155210] iscsi: registered transport (tcp)
+[    0.181711] XFS (vda): Mounting V5 Filesystem a84a7d6e-6aba-4f6c-8da1-29d5dd86897d
+[    0.197154] XFS (vda): Ending clean mount
+[   54.732109] virtio_blk virtio1: [vdb] new size: 134217728 512-byte logical blocks (68.7 GB/64.0 GiB)
+[   54.732122] vdb: detected capacity change from 0 to 134217728
+[   54.734339] XFS (vdb): Mounting V5 Filesystem 33460f0d-873c-470f-8d48-92acbd4c04a7
+[   54.753466] XFS (vdb): Ending clean mount
+===== 9. /proc/devices =====
+Character devices:
+  1 mem
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+128 ptm
+136 pts
+202 cpu/msr
+203 cpu/cpuid
+250 hidraw
+251 bsg
+252 watchdog
+253 ptp
+254 pps
+
+Block devices:
+  7 loop
+254 virtblk
+259 blkext
+===== 10. mounts =====
+/dev/vdb on / type xfs (rw,relatime,nouuid,inode64,logbufs=8,logbsize=32k,noquota)
+proc on /proc type proc (rw,relatime)
+devtmpfs on /dev type devtmpfs (rw,relatime,size=2190712k,nr_inodes=547678,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666)
+shm on /dev/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=65536k)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime)
+/dev/vda on /etc/hosts type xfs (ro,relatime,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota)
+/dev/vda on /etc/resolv.conf type xfs (ro,relatime,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota)
+/dev/vda on /run/vercel/share type xfs (rw,relatime,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota)
+/dev/vda on /etc/pki/ca-trust/source/anchors/vercel-proxy-ca.pem type xfs (ro,relatime,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota)
+/dev/vda on /usr/local/share/ca-certificates/vercel-proxy-ca.crt type xfs (ro,relatime,inode64,logbufs=8,logbsize=32k,sunit=1024,swidth=2048,noquota)
+devtmpfs on /proc/kcore type devtmpfs (rw,relatime,size=2190712k,nr_inodes=547678,mode=755)
+devtmpfs on /proc/keys type devtmpfs (rw,relatime,size=2190712k,nr_inodes=547678,mode=755)
+
+DONE

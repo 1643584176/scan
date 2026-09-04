@@ -1,0 +1,17 @@
+=== 1. 动态客户端注册(未认证) ===
+/register -> 400
+{"error_description":"Access Token not valid","error":"access_denied"}
+---
+/register/ -> 404
+
+---
+=== 2. token 端点无认证 client_credentials ===
+auth=none -> 400
+{"error_description":"Client authentication failed","error":"invalid_client"}
+---
+auth=empty-secret -> 401
+{"error_description":"Client authentication failed","error":"invalid_client"}
+---
+=== 3. 匿名 introspect ===
+-> 400
+{"error_description":"Client authentication failed","error":"invalid_client"}

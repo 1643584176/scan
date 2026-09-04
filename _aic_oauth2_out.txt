@@ -1,0 +1,7 @@
+=== 1. ÊÚÈ¨ÂëÁ÷ token ÏêÇé ===
+
+scope=openid fr:iga:* -> 400
+{"error_description":"Client authentication failed","error":"invalid_client"}
+
+scope=openid fr:idm:* -> 400
+{"error_description":"Client authentication failed","error":"invalid_client"}

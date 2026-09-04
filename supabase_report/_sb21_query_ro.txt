@@ -1,0 +1,24 @@
+### [version] select version(); (0.6s)
+500 -> application/json; charset
+{"message":"Cannot call proxy query without connection string","errorEventId":"69ebbd1ddf05414584e10953379d2ad2"}
+### [identity] select current_user cu, session_user su, current_setting('role') role_cfg, current_setting (0.7s)
+500 -> application/json; charset
+{"message":"Cannot call proxy query without connection string","errorEventId":"c4621d7be2854bcc8f2cd96381d348e1"}
+### [roles] select rolname, rolsuper, rolcreatedb, rolcreaterole, rolbypassrls, rolcanlogin from pg_ro (0.7s)
+500 -> application/json; charset
+{"message":"Cannot call proxy query without connection string","errorEventId":"cf9d9c8b5162402ea0b0633dc5e787f1"}
+### [authid-count] select count(*) n from pg_authid; (0.8s)
+500 -> application/json; charset
+{"message":"Cannot call proxy query without connection string","errorEventId":"d93e59a8ab3a4754a7bfaee4a80428be"}
+### [readfile] select pg_read_file('/etc/passwd',0,200) f; (0.7s)
+500 -> application/json; charset
+{"message":"Cannot call proxy query without connection string","errorEventId":"fa566872a79c40598078135cad745888"}
+### [extensions] select extname, extversion from pg_extension order by 1; (0.7s)
+500 -> application/json; charset
+{"message":"Cannot call proxy query without connection string","errorEventId":"d224cf3b869946b2b57527745683e63f"}
+### [schemas] select nspname from pg_namespace where nspname not like 'pg_%' and nspname <> 'information (0.6s)
+500 -> application/json; charset
+{"message":"Cannot call proxy query without connection string","errorEventId":"4168791675524fb78d012bc8732a9e18"}
+### [avail-ext] select name, default_version, installed_version from pg_available_extensions where name il (0.6s)
+500 -> application/json; charset
+{"message":"Cannot call proxy query without connection string","errorEventId":"c818e8ebe3a54deca463e817a20f8e41"}

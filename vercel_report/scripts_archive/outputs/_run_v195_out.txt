@@ -1,0 +1,27 @@
+create: 200 {"sandbox":{"name":"v195","currentSessionId":"sbx_lOgxpDtFY8gv4Jy4vY9uMtYbBGbf","status":"running","statusUpdatedAt":1788230265709,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230265709,"updatedAt":1788230265709},"session":{"id":"sbx_lOgxpDtFY8gv4Jy4vY9uMtYbBGbf","runtime":"node22","reques
+[create ok] 5s
+[inject /vercel/sandbox/vda195_guest.py] 200
+[inject /vercel/sandbox/vda195_probe_guest.py] 200
+[inject /vercel/sandbox/vda195_user.py] 200
+[run guest] 200
+{"command":{"id":"cmd_e3d60730a3054d578e7fa75e0d3e","name":"python3","args":["/vercel/sandbox/vda195_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_lOgxpDtFY8gv4Jy4vY9uMtYbBGbf","startedAt":1788230269348,"exitCode":null}}
+{"data":"[1788230269.417] mount vda ret=0\n[1788230269.418] payload written to COW 2783 bytes\n","stream":"stdout"}
+{"data":"[1788230269.450] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=c8733935-a554-4724-8f37-23e20e98f0f5-snapshot\n","stream":"stdout"}
+{"data":"[1788230269.457] Create v195b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\\n\\x94(\\n\\x05v195b\\x1a\\x87\\x01977805900195.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1958be914dc973663ab50e48d0045087340cc71cf903e2841b59\"\\x17\\n\\x15io.containerd.runc.v2*\\x91&\\n6types.containerd.'\n","stream":"stdout"}
+{"data":"[1788230269.520] Tasks/Create v195b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\n\\n\\x05v195b\\x10\\x91\\x05'\n","stream":"stdout"}
+{"data":"[1788230269.533] Tasks/Start v195b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x91\\x05'\n","stream":"stdout"}
+{"data":"[1788230269.834] --- COW v195c.out @1s +95 ---\nVDB_RC=0\nBIND_RUN=0\nBIND_PROC=0\nVDA_RC=1\n[1788230269.6] V195L_START\n[1788230269.6] LISTENER UP\n\n","stream":"stdout"}
+{"data":"[1788230359.693] kill v195b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  \n[1788230359.693] V99M_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_e3d60730a3054d578e7fa75e0d3e","name":"python3","args":["/vercel/sandbox/vda195_guest.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_lOgxpDtFY8gv4Jy4vY9uMtYbBGbf","startedAt":1788230269348,"exitCode":0,"durationMs":90351}}
+
+[wait listener 12s]
+[user snapshot] 200
+{"command":{"id":"cmd_002856eb294b4f9a99a9ec8dd4e0","name":"python3","args":["/vercel/sandbox/vda195_user.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_lOgxpDtFY8gv4Jy4vY9uMtYbBGbf","startedAt":1788230372594,"exitCode":null}}
+{"data":"[1788230372.6] === user snapshot ===\n","stream":"stdout"}
+
+[wait upload 30s]
+[status] 200
+[status body] {"name": "v195", "currentSnapshotId": "snap_TEyCvEkxpOhxZgNwlTXBJqU0cH0P", "currentSessionId": "sbx_lOgxpDtFY8gv4Jy4vY9uMtYbBGbf", "status": "stopped", "statusUpdatedAt": 1788230376670, "persistent": true, "region": "iad1", "failoverRegions": [], "vcpus": 2, "memory": 4096, "runtime": "node22", "timeout": 300000, "cwd": "/vercel/sandbox", "createdAt": 1788230265709, "updatedAt": 1788230265709}
+[v195l.out] 410
+{"error":{"code":"sandbox_failed","message":"Sandbox has failed due to an internal error and is no longer available"}}
+CLEANED total 149s

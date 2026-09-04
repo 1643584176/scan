@@ -1,0 +1,92 @@
+==========================================================================================
+GET /v1/oauth/authorize/project-claim [v1-oauth-authorize-project-claim]
+  204: 
+==========================================================================================
+GET /v1/snippets [v1-list-all-snippets]
+  200: 
+    application/json -> REF:SnippetList_Output
+==========================================================================================
+GET /v1/snippets/{id} [v1-get-a-snippet]
+  200: 
+    application/json -> REF:SnippetResponse_Output
+==========================================================================================
+GET /v1/projects/{ref}/jit-access [v1-get-jit-access-config]
+  200: 
+    application/json -> $schema="https://json-schema.org/draft/2020-12/schema" oneOf=[{"type": "object", "properties": {"state": {"type": "string", "enum": ["enabled", "disabled"]}, "appliedSuccessfully":
+==========================================================================================
+PUT /v1/projects/{ref}/jit-access [v1-update-jit-access-config]
+  200: 
+    application/json -> $schema="https://json-schema.org/draft/2020-12/schema" oneOf=[{"type": "object", "properties": {"state": {"type": "string", "enum": ["enabled", "disabled"]}, "appliedSuccessfully":
+==========================================================================================
+GET /v1/projects/{ref}/readonly [v1-get-readonly-mode-status]
+  200: 
+    application/json -> REF:ReadOnlyStatusResponse_Output
+==========================================================================================
+POST /v1/projects/{ref}/readonly/temporary-disable [v1-disable-readonly-mode-temporarily]
+  201: 
+==========================================================================================
+GET /v1/projects/{ref}/claim-token [v1-get-project-claim-token]
+  200: 
+    application/json -> REF:ProjectClaimTokenResponse_Output
+==========================================================================================
+POST /v1/projects/{ref}/claim-token [v1-create-project-claim-token]
+  200: 
+    application/json -> REF:CreateProjectClaimTokenResponse_Output
+==========================================================================================
+DELETE /v1/projects/{ref}/claim-token [v1-delete-project-claim-token]
+  204: 
+==========================================================================================
+POST /v1/projects/{ref}/cli/login-role [v1-create-login-role]
+  201: 
+    application/json -> REF:CreateRoleResponse_Output
+==========================================================================================
+DELETE /v1/projects/{ref}/cli/login-role [v1-delete-login-roles]
+  200: 
+    application/json -> REF:DeleteRolesResponse_Output
+==========================================================================================
+POST /v1/projects/{ref}/database/query [v1-run-a-query]
+  201: 
+==========================================================================================
+POST /v1/projects/{ref}/database/query/read-only [v1-read-only-query]
+  201: 
+==========================================================================================
+GET /v1/projects/{ref}/database/context [v1-get-database-metadata]
+  200: 
+    application/json -> REF:GetProjectDbMetadataResponse_Output
+==========================================================================================
+GET /v1/projects/{ref}/database/jit [v1-get-jit-access]
+  200: 
+    application/json -> REF:JitAccessResponse_Output
+==========================================================================================
+POST /v1/projects/{ref}/database/jit [v1-authorize-jit-access]
+  200: 
+    application/json -> REF:JitAuthorizeAccessResponse_Output
+==========================================================================================
+PUT /v1/projects/{ref}/database/jit [v1-update-jit-access]
+  200: 
+    application/json -> REF:JitAccessResponse_Output
+==========================================================================================
+GET /v1/projects/{ref}/database/jit/list [v1-list-jit-access]
+  200: 
+    application/json -> REF:JitListAccessResponse_Output
+==========================================================================================
+POST /v1/projects/{ref}/database/jit/invite [v1-invite-external-jit-access]
+  200: 
+    application/json -> REF:InviteExternalUserJitResponse_Output
+==========================================================================================
+POST /v1/projects/{ref}/database/jit/invite/accept [v1-accept-invite-external-jit-access]
+  200: 
+    application/json -> REF:JitAccessResponse_Output
+==========================================================================================
+DELETE /v1/projects/{ref}/database/jit/invite/{invite_id} [v1-delete-invite-external-jit-access]
+  200: 
+==========================================================================================
+DELETE /v1/projects/{ref}/database/jit/{user_id} [v1-delete-jit-access]
+  200: 
+==========================================================================================
+GET /v1/organizations/{slug}/project-claim/{token} [v1-get-organization-project-claim]
+  200: 
+    application/json -> REF:OrganizationProjectClaimResponse_Output
+==========================================================================================
+POST /v1/organizations/{slug}/project-claim/{token} [v1-claim-project-for-organization]
+  204: 

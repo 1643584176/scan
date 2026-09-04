@@ -1,0 +1,51 @@
+=== 1. userinfo(基线) ===
+GET    /am/oauth2/alpha/userinfo                                              -> 200  {"sub":"db3d6356-61a0-4684-9eaa-c1353dfa44d9","subname":"db3d6356-61a0-4684-9eaa-c1353dfa44d9"}
+
+=== 2. enduser 相关 API 面 ===
+GET    /am/json/realms/alpha/users/self                                       -> 401  {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+GET    /am/json/realms/alpha/users?_queryFilter=true                          -> 401  {"code":401,"reason":"Unauthorized","message":"Access Denied"}
+Traceback (most recent call last):
+  File "D:\scan\_aic_auth1.py", line 56, in <module>
+    probe('GET', p)
+    ~~~~~^^^^^^^^^^
+  File "D:\scan\_aic_auth1.py", line 25, in probe
+    r = S.request(method, BASE + path, timeout=12, verify=False, **kw)
+  File "D:\scan\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\scan\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\scan\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\scan\.venv\Lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\scan\.venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "D:\scan\.venv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "D:\python3.14\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python3.14\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\python3.14\Lib\http\client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\python3.14\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,5 @@
+### [signup-B] POST /auth/v1/signup (5.8s)
+429 | {"code":429,"error_code":"over_email_send_rate_limit","msg":"email rate limit exceeded"}
+### [grant-B] POST /auth/v1/token?grant_type=password (1.9s)
+400 | {"code":400,"error_code":"invalid_credentials","msg":"Invalid login credentials"}
+### 未确认用户, grant 失败, 尝试 admin verify (service_role)

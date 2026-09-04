@@ -1,0 +1,55 @@
+[1788226129.939] mount vda ret=0
+[1788226129.939] payload written to COW 4030 bytes
+[1788226129.959] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=d57a4c8f-619f-4cab-af07-04167ad0d8c4-snapshot
+[1788226129.967] Create v167b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\
+\\x94(\
+\\x05v167b\\x1a\\x87\\x01977805900167.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788226130.041] Tasks/Create v167b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v167b\\x10\\x8d\\x05'
+[1788226130.058] Tasks/Start v167b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x8d\\x05'
+[1788226130.359] --- COW v167c.out @1s +3562 ---
+[1788226130.1] === 1 topo ===
+[1788226130.1] IP: /bin/sh: line 1: ip: command not found
+[1788226130.1] ROUTE: /bin/sh: line 1: ip: command not found
+[1788226130.1] ARP: /bin/sh: line 1: ip: command not found
+[1788226130.1] === 2 listen ===
+[1788226130.1] TCP: sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+  sl  local_address                         remote_address                        st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode
+   0: 00000000000000000000000000000000:5BA0 00000000000000000000000000000000:0000 0A 00000000:00000000...[TRUNC 1002]
+[1788226130.1] UDP: sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode ref pointer drops            
+ 3654: 0100007F:C92E 0100007F:1FBD 01 00000000:00000000 00:00000000 00000000     0        0 1575 2 00000000b0ab618d 0
+[1788226130.1] VSOCK: 
+[1788226130.1] === 3 unix ===
+[1788226130.1] UNIX: 00000000a2d537d1: 00000003 00000000 00000000 0001 03   199 /run/vercel/share/init.sock
+00000000b11e8cb3: 00000003 00000000 00000000 0001 03  1761 /run/apm/apm.sock
+000000000b4ab8bc: 00000003 00000000 00000000 0001 03   122 /run/containerd/containerd.sock.ttrpc
+0000000023adfb27: 00000003 00000000 00000000 0001 03   139 /run/cell/cell.sock
+000000000d8d5b15: 00000002 00000000 00010000 0001 01  ...[TRUNC 1878]
+[1788226130.1] === 4 portscan ===
+[1788226130.1] scan done
+[1788226130.1] === 5 meta ===
+[1788226130.1] META: 
+[1788226130.1] META-IAM: 
+[1788226130.2] GW: /bin/sh: line 1: ip: command not found
+[1788226130.2] IMDS2: 
+[1788226130.2] TASKMETA: 
+[1788226130.2] === 6 gw ===
+[1788226130.2] GWMETA: 
+[1788226130.2] neigh scan /bin/sh: line 1: ip: command not found.0/24
+[1788226130.2] neigh open: []
+[1788226130.2] === 7 runc state ===
+[1788226130.2] STATE /run/runc/627c9c4e-6bc7-4085-b651-c3a1b3c329e8/state.json len=8870
+[1788226130.2] STATE {"id":"627c9c4e-6bc7-4085-b651-c3a1b3c329e8","init_process_pid":579,"init_process_start":3812,"created":"2026-09-01T01:28:46.809195095Z","config":{"no_pivot_root":false,"parent_death_signal":0,"rootfs":"/run/cell/runc/627c9c4e-6bc7-4085-b651-c3a1b3c329e8/rootfs","umask":null,"readonlyfs":false,"rootPropagation":0,"mounts":[{"source":"proc","destination":"/proc","device":"proc","flags":0,"cle...[TRUNC 2506]
+[1788226130.2] DIR /run/cell/runc/627c9c4e-6bc7-4085-b651-c3a1b3c329e8 (no state.json)
+[1788226130.2] STATE /proc/1/root/run/runc/627c9c4e-6bc7-4085-b651-c3a1b3c329e8/state.json len=8870
+[1788226130.2] DIR /proc/1/root/run/cell/runc/627c9c4e-6bc7-4085-b651-c3a1b3c329e8 (no state.json)
+[1788226130.2] V167_DONE
+:"2026-09-01T01:28:46.809195095Z","config":{"no_pivot_root":false,"parent_death_signal":0,"rootfs":"/run/cell/runc/627c9c4e-6bc7-4085-b651-c3a1b3c329e8/rootfs","umask":null,"readonlyfs":false,"rootPropagation":0,"mounts":[{"source":"proc","destination":"/proc","device":"proc","flags":0,"cle...[TRUNC 2506]
+CHROOT_RC=0
+V99_END
+
+[1788226130.379] kill v167b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788226130.380] V99M_DONE

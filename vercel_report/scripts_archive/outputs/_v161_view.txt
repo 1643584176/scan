@@ -1,0 +1,50 @@
+[1788225770.196] mount vda ret=0
+[1788225770.197] payload written to COW 6050 bytes
+[1788225770.210] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=e88af94a-d3c6-4ab5-a85d-adaf089407bd-snapshot
+[1788225770.217] Create v161b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x15\
+\\x92(\
+\\x05v161b\\x1a\\x87\\x01977805900161.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788225770.269] Tasks/Create v161b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v161b\\x10\\x92\\x05'
+[1788225770.282] Tasks/Start v161b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x92\\x05'
+[1788225770.583] --- COW v161c.out @1s +542 ---
+[1788225770.3] === 1 kmsg ===
+[1788225770.3] kmsg len=57
+[1788225770.3] === 2 unix socks ===
+[1788225770.3] === 3 create diag ===
+[1788225770.3] Create cmd=echo hi -> HTTP/1.1 500 Internal Server Error b'{"code":"internal","message":"failed to create container: runc create failed: runc did not terminate successfully: exit status 1"}'
+
+[1788225770.884] --- COW v161c.out @2s +819 ---
+[1788225770.6] kmsg after len=57
+[1788225770.6] kmsg delta b''
+[1788225770.6] === 4 cmd formats ===
+[1788225770.7] Create cmd='sleep' -> HTTP/1.1 200 OK b'{"containerId":"4cf63c59-2711-4840-9616-52334eff7933"}'
+[1788225770.7]   SUCCESS cid=4cf63c59-2711-4840-9616-52334eff7933
+770.6] === 4 cmd formats ===
+[1788225771.785] --- COW v161c.out @5s +1362 ---
+[1788225771.7]   proc 658 comm=sh cmd=/bin/sh -c echo V99_START $$ > /tmp/v161c.out 2>&1;mkdir -p /mnt/g/run /mnt/g/proc /mnt/g/mnt/h;time
+[1788225771.7]   runc dir 4cf63c59-2711-4840-9616-52334eff7933
+[1788225771.7]   runc dir 86bc1784-081a-458c-9f3f-c09c6d2aabdc
+[1788225771.7] === 5 mount verify ===
+[1788225771.7] Create plain -> HTTP/1.1 200 OK b'{"containerId":"72d9ebf1-2e56-47dc-98ff-22964e0d7353"}'
+[1788225771.7] Mount bind -> HTTP/1.1 400 Bad Request b'{"code":"invalid_argument","message":"invalid mount: mount mode unspecified"}'
+P/1.1 200 OK b'{"containerId":"72d9ebf1-2e56-47dc-98ff-22964e0d7353"}'
+[1788225772.386] --- COW v161c.out @7s +2134 ---
+[1788225772.2] mountinfo 11 -> 11 lines
+[1788225772.2] === 6 ca-cert ===
+[1788225772.2] ca-cert len=635 head=b'-----BEGIN CERTIFICATE-----\
+MIIBqTCCAU+gAwIBAgIQRdknrjtfEFBGjdaewnUw5jAKBggqhkjOPQQDAjAzMQ8w\
+DQYDVQQKEwZWZXJjZWwxIDAeBgNVBAMTF1ZlcmNlbCBOZXR3b3JrIFByb3h5IENB\
+MB4XDTI2MDkwMTAxMjIxNFoXDTI2MDkwMjAxNDIxNFowMzEPMA0GA1UEChMGVmVy\
+Y2VsMSAwHgYDVQQDExdWZXJjZWwgTmV0d29yayBQcm94eSBDQTBZMBMGByqGSM49\
+AgEGCCqGSM49AwEHA0IABN2qJAkZH7S+sGOENgWPjVloOpyMmApkxQL2tJCXlfCA\
+jCX8u53F6KppKLh00g...[TRUNC 633]
+[1788225772.2] V161_DONE
+n=635 head=b'-----BEGIN CERTIFICATE-----\
+CHROOT_RC=0
+V99_END
+[1788225772.398] kill v161b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788225772.398] V99M_DONE

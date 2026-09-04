@@ -1,0 +1,39 @@
+=== 1. 规范头重测关键端点 ===
+GET   /am/json/realms/alpha/sessions?_queryFilter=true                       -> 500  
+GET   /am/json/realms/alpha/users?_queryFilter=true                          -> 200  {"result":[],"resultCount":0,"pagedResultsCookie":null,"totalPagedResultsPolicy":"NONE","totalPagedResults":-1,"remainingPagedResults":-1}
+GET   /am/json/realms/alpha/users/self                                       -> 403  {"code":403,"reason":"Forbidden","message":"Permission to perform the read operation denied"}
+GET   /am/json/realms/alpha/applications?_queryFilter=true                   -> 200  {"result":[],"resultCount":0,"pagedResultsCookie":null,"totalPagedResultsPolicy":"NONE","totalPagedResults":-1,"remainingPagedResults":0}
+GET   /am/json/realms/alpha/selfservice/registration                         -> 404  {"code":404,"reason":"Not Found","message":"Resource 'selfservice/registration' not found"}
+GET   /am/json/realms/alpha/selfservice/passwordReset                        -> 404  {"code":404,"reason":"Not Found","message":"Resource 'selfservice/passwordReset' not found"}
+GET   /am/json/realms/alpha/selfservice/userProfile                          -> 404  {"code":404,"reason":"Not Found","message":"Resource 'selfservice/userProfile' not found"}
+GET   /am/json/realms/alpha/selfservice/forgotUsername                       -> 404  {"code":404,"reason":"Not Found","message":"Resource 'selfservice/forgotUsername' not found"}
+GET   /am/json/realms/alpha/selfservice/kba                                  -> 200  {"questions":{"1":{"en":"What is the name of your favourite restaurant?"},"2":{"en":"What was the model of your first car?"},"3":{"en":"What was the name of your childhood pet?"},"4":{"en":"What is your mother's maiden name?"}},"minimumAnswersToDefine":1,"minimumAnswersToVerify":1}
+GET   /am/json/realms/alpha/selfservice/terms                                -> 404  {"code":404,"reason":"Not Found","message":"Resource 'selfservice/terms' not found"}
+GET   /am/json/realms/alpha/selfservice/oauth                                -> 404  {"code":404,"reason":"Not Found","message":"Resource 'selfservice/oauth' not found"}
+GET   /am/json/realms/alpha/users?_action=idFromSession                      -> 400  {"code":400,"reason":"Bad Request","message":"Unrecognized request parameter '_action'"}
+
+=== 2. authorize 400 详情 ===
+status: 400
+body: <!DOCTYPE html>
+<!--
+  ~ DO NOT REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+  ~
+  ~ Copyright 2012-2025 Ping Identity Corporation.
+  ~
+  ~ The contents of this file are subject to the terms
+  ~ of the Common Development and Distribution License
+  ~ (the License). You may not use this file except in
+  ~ compliance with the License.
+  ~
+  ~ You can obtain a copy of the License at
+  ~ http://forgerock.org/license/CDDLv1.0.html
+  ~ See the License for the specific language governing
+  ~ permission and limitations under the License.
+  ~
+  ~ When distributing Covered Code, include this CDDL
+  ~ Header 
+
+=== 3. 无 redirect_uri 的 authorize(看错误提示) ===
+?client_id=endUserUIClient&response_type=code                -> 400 <!DOCTYPE html> <!--   ~ DO NOT REMOVE COPYRIGHT NOTICES OR THIS HEADER.   ~   ~ Copyright 2012-2025 Ping Identity Corporation.   ~   ~ The contents of this file are subject to the terms   ~ of the Common Development and Distribution License   ~ (the
+?client_id=endUserUIClient&response_type=code&scope=fr:iga:* -> 400 <!DOCTYPE html> <!--   ~ DO NOT REMOVE COPYRIGHT NOTICES OR THIS HEADER.   ~   ~ Copyright 2012-2025 Ping Identity Corporation.   ~   ~ The contents of this file are subject to the terms   ~ of the Common Development and Distribution License   ~ (the
+?client_id=endUserUIClient&response_type=code&scope=openid   -> 400 <!DOCTYPE html> <!--   ~ DO NOT REMOVE COPYRIGHT NOTICES OR THIS HEADER.   ~   ~ Copyright 2012-2025 Ping Identity Corporation.   ~   ~ The contents of this file are subject to the terms   ~ of the Common Development and Distribution License   ~ (the

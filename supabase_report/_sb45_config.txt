@@ -1,0 +1,88 @@
+POST /v1/projects/{ref}/cli/login-role tags=['Database'] fga=[['database_write']]
+DELETE /v1/projects/{ref}/cli/login-role tags=['Database'] fga=[['database_write']]
+GET /v1/projects/{ref}/config/auth tags=['Auth'] fga=[['auth_config_read']]
+PATCH /v1/projects/{ref}/config/auth tags=['Auth'] fga=[['auth_config_write', 'project_admin_write']]
+GET /v1/projects/{ref}/config/auth/signing-keys tags=['Auth'] fga=[['auth_signing_keys_read']]
+POST /v1/projects/{ref}/config/auth/signing-keys tags=['Auth'] fga=[['auth_signing_keys_write']]
+GET /v1/projects/{ref}/config/auth/signing-keys/legacy tags=['Auth'] fga=[['auth_signing_keys_read']]
+POST /v1/projects/{ref}/config/auth/signing-keys/legacy tags=['Auth'] fga=[['auth_signing_keys_write']]
+GET /v1/projects/{ref}/config/auth/signing-keys/{id} tags=['Auth'] fga=[['auth_signing_keys_read']]
+PATCH /v1/projects/{ref}/config/auth/signing-keys/{id} tags=['Auth'] fga=[['auth_signing_keys_write']]
+DELETE /v1/projects/{ref}/config/auth/signing-keys/{id} tags=['Auth'] fga=[['auth_signing_keys_write']]
+GET /v1/projects/{ref}/config/auth/sso/providers tags=['Auth'] fga=[['auth_config_read']]
+POST /v1/projects/{ref}/config/auth/sso/providers tags=['Auth'] fga=[['auth_config_write']]
+GET /v1/projects/{ref}/config/auth/sso/providers/{provider_id} tags=['Auth'] fga=[['auth_config_read']]
+PUT /v1/projects/{ref}/config/auth/sso/providers/{provider_id} tags=['Auth'] fga=[['auth_config_write']]
+DELETE /v1/projects/{ref}/config/auth/sso/providers/{provider_id} tags=['Auth'] fga=[['auth_config_write']]
+GET /v1/projects/{ref}/config/auth/third-party-auth tags=['Auth'] fga=[['auth_config_read']]
+POST /v1/projects/{ref}/config/auth/third-party-auth tags=['Auth'] fga=[['auth_config_write']]
+GET /v1/projects/{ref}/config/auth/third-party-auth/{tpa_id} tags=['Auth'] fga=[['auth_config_read']]
+DELETE /v1/projects/{ref}/config/auth/third-party-auth/{tpa_id} tags=['Auth'] fga=[['auth_config_write']]
+GET /v1/projects/{ref}/config/database/pgbouncer tags=['Database'] fga=[['database_read']]
+GET /v1/projects/{ref}/config/database/pooler tags=['Database'] fga=[['database_pooling_config_read']]
+PATCH /v1/projects/{ref}/config/database/pooler tags=['Database'] fga=[['database_pooling_config_write']]
+GET /v1/projects/{ref}/config/database/postgres tags=['Database'] fga=[['database_config_read']]
+PUT /v1/projects/{ref}/config/database/postgres tags=['Database'] fga=[['database_config_write']]
+GET /v1/projects/{ref}/config/storage tags=['Storage'] fga=[['storage_config_read']]
+PATCH /v1/projects/{ref}/config/storage tags=['Storage'] fga=[['storage_config_write']]
+GET /v1/projects/{ref}/database/backups tags=['Database'] fga=[['backups_read']]
+POST /v1/projects/{ref}/database/backups/restore tags=['Database'] fga=[['backups_write']]
+POST /v1/projects/{ref}/database/backups/restore-pitr tags=['Database'] fga=[['backups_write']]
+GET /v1/projects/{ref}/database/backups/restore-point tags=['Database'] fga=[['backups_read']]
+POST /v1/projects/{ref}/database/backups/restore-point tags=['Database'] fga=[['backups_write']]
+GET /v1/projects/{ref}/database/backups/schedule tags=['Database'] fga=[['backups_read']]
+PATCH /v1/projects/{ref}/database/backups/schedule tags=['Database'] fga=[['backups_write']]
+POST /v1/projects/{ref}/database/backups/undo tags=['Database'] fga=[['backups_write']]
+GET /v1/projects/{ref}/database/context tags=['Database'] fga=[['database_read']]
+GET /v1/projects/{ref}/database/jit tags=['Database'] fga=[['database_jit_read']]
+POST /v1/projects/{ref}/database/jit tags=['Database'] fga=[['database_jit_read']]
+PUT /v1/projects/{ref}/database/jit tags=['Database'] fga=[['database_jit_write']]
+POST /v1/projects/{ref}/database/jit/invite tags=['Database'] fga=[['database_jit_write']]
+POST /v1/projects/{ref}/database/jit/invite/accept tags=['Database'] fga=
+DELETE /v1/projects/{ref}/database/jit/invite/{invite_id} tags=['Database'] fga=[['database_jit_write']]
+GET /v1/projects/{ref}/database/jit/list tags=['Database'] fga=[['database_jit_write']]
+DELETE /v1/projects/{ref}/database/jit/{user_id} tags=['Database'] fga=[['database_jit_write']]
+GET /v1/projects/{ref}/database/migrations tags=['Database'] fga=[['database_migrations_read']]
+POST /v1/projects/{ref}/database/migrations tags=['Database'] fga=[['database_migrations_write']]
+PUT /v1/projects/{ref}/database/migrations tags=['Database'] fga=[['database_migrations_write']]
+DELETE /v1/projects/{ref}/database/migrations tags=['Database'] fga=[['database_migrations_write']]
+GET /v1/projects/{ref}/database/migrations/{version} tags=['Database'] fga=[['database_migrations_read']]
+PATCH /v1/projects/{ref}/database/migrations/{version} tags=['Database'] fga=[['database_migrations_write']]
+GET /v1/projects/{ref}/database/openapi tags=['Database'] fga=[['database_read']]
+PATCH /v1/projects/{ref}/database/password tags=['Database'] fga=[['database_config_write']]
+POST /v1/projects/{ref}/database/query tags=['Database'] fga=[['database_read'], ['database_write']]
+POST /v1/projects/{ref}/database/query/read-only tags=['Database'] fga=[['database_read']]
+POST /v1/projects/{ref}/database/webhooks/enable tags=['Database'] fga=[['database_webhooks_config_write']]
+GET /v1/projects/{ref}/functions tags=['Edge Functions'] fga=[['edge_functions_read']]
+POST /v1/projects/{ref}/functions tags=['Edge Functions'] fga=[['edge_functions_write']]
+PUT /v1/projects/{ref}/functions tags=['Edge Functions'] fga=[['edge_functions_write']]
+POST /v1/projects/{ref}/functions/deploy tags=['Edge Functions'] fga=[['edge_functions_write']]
+GET /v1/projects/{ref}/functions/{function_slug} tags=['Edge Functions'] fga=[['edge_functions_read']]
+PATCH /v1/projects/{ref}/functions/{function_slug} tags=['Edge Functions'] fga=[['edge_functions_write']]
+DELETE /v1/projects/{ref}/functions/{function_slug} tags=['Edge Functions'] fga=[['edge_functions_write']]
+GET /v1/projects/{ref}/functions/{function_slug}/body tags=['Edge Functions'] fga=[['edge_functions_read']]
+GET /v1/projects/{ref}/jit-access tags=['Database'] fga=[['project_admin_read']]
+PUT /v1/projects/{ref}/jit-access tags=['Database'] fga=[['project_admin_write']]
+POST /v1/projects/{ref}/read-replicas/remove tags=['Database'] fga=[['infra_read_replicas_write']]
+POST /v1/projects/{ref}/read-replicas/setup tags=['Database'] fga=[['infra_read_replicas_write']]
+GET /v1/projects/{ref}/readonly tags=['Database'] fga=[['database_readonly_config_read']]
+POST /v1/projects/{ref}/readonly/temporary-disable tags=['Database'] fga=[['database_readonly_config_write']]
+GET /v1/projects/{ref}/ssl-enforcement tags=['Database'] fga=[['database_ssl_config_read']]
+PUT /v1/projects/{ref}/ssl-enforcement tags=['Database'] fga=[['database_ssl_config_write']]
+GET /v1/projects/{ref}/storage/buckets tags=['Storage'] fga=[['storage_read']]
+GET /v1/projects/{ref}/types/typescript tags=['Database'] fga=[['database_read']]
+=== paths above ===
+### [cfg-auth] GET /v1/projects/vnfobbywemqgcgjokkxd/config/auth (1.0s)
+200 | {"api_max_request_duration":10,"db_max_pool_size":10,"db_max_pool_size_unit":"connections","disable_signup":false,"external_anonymous_users_enabled":false,"external_apple_additional_client_ids":null,"external_apple_client_id":null,"external_apple_email_optional":false,"external_apple_enabled":false,"external_apple_secret":null,"external_azure_client_id":null,"external_azure_email_optional":false,"external_azure_enabled":false,"external_azure_secret":null,"external_azure_url":null,"external_bitbucket_client_id":null,"external_bitbucket_email_optional":false,"external_bitbucket_enabled":false,"external_bitbucket_secret":null,"external_discord_client_id":null,"external_discord_email_optional":false,"external_discord_enabled":false,"external_discord_secret":null,"external_email_enabled":true,"external_facebook_client_id":null,"external_facebook_email_optional":false,"external_facebook_enabled":false,"external_facebook_secret":null,"external_figma_client_id":null,"external_figma_email_optional":false,"external_figma_enabled":false,"external_figma_secret":null,"external_github_client_id":null,"external_github_email_optional":false,"external_github_enabled":false,"external_github_secret":null,"external_gitlab_client_id":null,"external_gitlab_email_optional":false,"external_gitlab_enabled":false,"external_gitlab_secret":null,"external_gitlab_url":null,"external_google_additional_client_ids":null,"external_google_client_id":null,"external_google_email_optional":false,"external_google_enabled":false,"external_google_secret":null,"external_google_skip_nonce_check":null,"external_kakao_client_id":null,"external_kakao_email_optional":false,"external_kakao_enabled":false,"external_kakao_secret":null,"external_keycloak_client_id":null,"external_keycloak_email_optional":false,"external_keycloak_enabled":false,"external_keycloak_secret":null,"external_keycloak_url":null,"external_linkedin_oidc_client_id":null,"external_linkedin_oidc_email_optional":false,"external_linkedin_oidc_enab
+### [cfg-db] GET /v1/projects/vnfobbywemqgcgjokkxd/config/database (0.7s)
+404 | {"message":"Cannot GET /v1/projects/vnfobbywemqgcgjokkxd/config/database"}
+### [cfg-db-pg] GET /v1/projects/vnfobbywemqgcgjokkxd/config/database/postgres (0.8s)
+200 | {}
+### [cfg-net] GET /v1/projects/vnfobbywemqgcgjokkxd/config/network-restrictions (0.7s)
+404 | {"message":"Cannot GET /v1/projects/vnfobbywemqgcgjokkxd/config/network-restrictions"}
+### [cfg-storage] GET /v1/projects/vnfobbywemqgcgjokkxd/config/storage (1.1s)
+200 | {"fileSizeLimit":52428800,"features":{"imageTransformation":{"enabled":true},"s3Protocol":{"enabled":true},"purgeCache":{"enabled":true},"icebergCatalog":{"enabled":true,"maxNamespaces":10,"maxTables":10,"maxCatalogs":2},"vectorBuckets":{"enabled":true,"maxBuckets":10,"maxIndexes":5}},"capabilities":{"list_v2":true,"iceberg_catalog":true},"external":{"upstreamTarget":"canary"},"migrationVersion":"fix-search-by-timestamp-sqli"}
+### [db-backups] GET /v1/projects/vnfobbywemqgcgjokkxd/database/backups (0.7s)
+200 | {"region":"ap-northeast-2","walg_enabled":true,"pitr_enabled":false,"backups":[],"physical_backup_data":{}}
+### [db-status] GET /v1/projects/vnfobbywemqgcgjokkxd/database/status (0.8s)
+404 | {"message":"Cannot GET /v1/projects/vnfobbywemqgcgjokkxd/database/status"}

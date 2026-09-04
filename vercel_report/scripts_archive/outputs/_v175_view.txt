@@ -1,0 +1,123 @@
+=== 1 host env ===
+PID1 ENV:
+--- procs ---
+P 1: /opt/vercel/celld --init --cell-id=hvc_iad1_b5d62a97_6a111bda3f0c404cacefff3b552bc941 
+P 2: [kthreadd]
+P 3: [pool_workqueue_release]
+P 4: [kworker/R-rcu_gp]
+P 5: [kworker/R-sync_wq]
+P 6: [kworker/R-kvfree_rcu_reclaim]
+P 7: [kworker/R-slub_flushwq]
+P 8: [kworker/R-netns]
+P 9: [kworker/0:0-events]
+P 10: [kworker/0:0H-events_highpri]
+P 11: [kworker/0:1-events]
+P 12: [kworker/u8:0-events_unbound]
+P 13: [kworker/R-mm_percpu_wq]
+P 14: [ksoftirqd/0]
+P 15: [rcu_sched]
+P 16: [rcu_exp_par_gp_kthread_worker/0]
+P 17: [rcu_exp_gp_kthread_worker]
+P 18: [migration/0]
+P 19: [cpuhp/0]
+P 20: [cpuhp/1]
+P 21: [migration/1]
+P 22: [ksoftirqd/1]
+P 23: [kworker/1:0-events]
+P 24: [kworker/1:0H-events_highpri]
+P 26: [kworker/u8:1-writeback]
+P 27: [kdevtmpfs]
+P 28: [kworker/R-inet_frag_wq]
+P 29: [rcu_tasks_trace_kthread]
+P 30: [khungtaskd]
+P 31: [oom_reaper]
+P 32: [kworker/R-writeback]
+P 33: [kcompactd0]
+P 34: [ksmd]
+P 35: [khugepaged]
+P 36: [kworker/1:1-events_power_efficient]
+P 37: [kworker/R-kblockd]
+P 38: [kworker/R-kintegrityd]
+P 39: [watchdogd]
+P 40: [kworker/R-quota_events_unbound]
+P 41: [kworker/1:1H-xfs-log/vda]
+P 42: [kworker/R-rpciod]
+P 43: [kworker/R-xprtiod]
+P 50: [kworker/u8:2-flush-254:0]
+P 67: [kswapd0]
+P 70: [kworker/R-nfsiod]
+P 75: [kworker/R-xfsalloc]
+P 76: [kworker/R-xfs_mru_cache]
+P 78: [kworker/R-kthrotld]
+P 83: [irq/24-ACPI:Ged]
+P 84: [irq/25-ACPI:Ged]
+P 88: [kworker/u8:3-xfs-cil/vda]
+P 132: [hwrng]
+P 161: [kworker/R-iscsi_conn_cleanup]
+P 181: [kworker/R-mld]
+P 182: [kworker/R-ipv6_addrconf]
+P 183: [kworker/R-kstrp]
+P 186: [kworker/0:1H-kblockd]
+P 441: [kworker/u8:4-flush-254:0]
+P 461: [kworker/u9:0]
+P 472: [kworker/R-xfs-buf/vda]
+P 473: [kworker/R-xfs-conv/vda]
+P 474: [kworker/R-xfs-reclaim/vda]
+P 475: [kworker/R-xfs-blockgc/vda]
+P 476: [kworker/R-xfs-inodegc/vda]
+P 477: [kworker/R-xfs-log/vda]
+P 478: [kworker/R-xfs-cil/vda]
+P 479: [xfsaild/vda]
+P 491: /usr/bin/containerd 
+P 514: /usr/bin/containerd-shim-runc-v2 -namespace default -id 43113f12-8918-460f-a1c1-bff0087556d4 -address /run/containerd/containerd.sock 
+P 537: /opt/vercel/sandboxctrl 
+P 557: [kworker/0:2-events]
+P 558: [kworker/u8:5]
+P 559: [kworker/R-xfs-buf/vdb]
+P 560: [kworker/R-xfs-conv/vdb]
+P 561: [kworker/R-xfs-reclaim/vdb]
+P 562: [kworker/R-xfs-blockgc/vdb]
+P 563: [kworker/R-xfs-inodegc/vdb]
+P 564: [kworker/R-xfs-log/vdb]
+P 565: [kworker/R-xfs-cil/vdb]
+P 566: [xfsaild/vdb]
+P 577: /run/vercel/share/sandbox-init --socket=/run/vercel/share/init.sock --pubkey=4tbYnn7kNg0BMNuc03KSGrKQrInFugTxYZZs+qr6BsY= 
+P 619: python3 /vercel/sandbox/vda175_guest.py 
+P 631: /usr/bin/containerd-shim-runc-v2 -namespace default -id v175b -address /run/containerd/containerd.sock 
+P 654: /bin/sh -c echo V99_START $$ > /tmp/v175c.out 2>&1;mkdir -p /mnt/g/run /mnt/g/proc /mnt/g/mnt/h;timeout 8 mount /dev/vdb /mnt/g 2>&1;M_RC=$?;echo VDB_
+P 675: /usr/bin/python3 /vercel/sandbox/v175_payload.py 
+=== 2 host fs ===
+TREE /opt/vercel (2):
+TREE /etc (108):
+TREE /root (1):
+TREE /home (0):
+TREE /var/run (37):
+TREE /srv (0):
+=== 3 ctrs methods ===
+anchor b'containers.proto\x12\x1cve' at 0x-1
+anchor b'vercel.hive.cell.api' at 0x-1
+HANDLERS: vercel.hive.cell.api.containers.v1.ContainersService/Exec, vercel.hive.cell.api.containers.v1.ContainersService/Wait, vercel.hive.cell.api.containers.v1.ContainersService/KillServer, vercel.hive.cell.api.containers.v1.ContainersService/Start, vercel.hive.cell.api.containers.v1.ContainersService/Stdin, vercel.hive.cell.api.containers.v1.ContainersService/MountNo, vercel.hive.cell.api.cont
+=== 4 init paths ===
+init scan 3173 paths done
+=== 5 create img ===
+Create img=busybox -> HTTP/1.1 400 Bad Request b'{"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}'
+Create img=docker.io/library/busybox:latest -> HTTP/1.1 400 Bad Request b'{"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}'
+Create img=http://100.64.0.1:80/x -> HTTP/1.1 400 Bad Request b'{"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}'
+Create img=file:///etc/passwd -> HTTP/1.1 400 Bad Request b'{"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}'
+Create img=977805900172.dkr.ecr.us-east-1.amazonaws.com/sandbox-control -> HTTP/1.1 400 Bad Request b'{"code":"invalid_argument","message":"image and drive_id are mutually exclusive"}'
+=== 6 mount dst ===
+cid=507abba7-4d64-42c6-b469-efd29353e26e
+=== 1 host env ===\n[1788227131.9] PID1 ENV:\nPWD=/\nHOME=/\ncell_id=hvc_iad1_b5d62a97_6a111bda3f0c404cacefff3b552bc941\nTERM=linux\nSHLVL=0\nbuild_version=2026.08.31-5255a5999f698aec2c09df78224037a7719fb4fb\nPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\n\n[1788227131.9] --- procs ---\n[1788227131.9] P 1: /opt/vercel/celld --init --cell-id=hvc_iad1_b5d62a97_6a111bda3f0c404cace
+Mount dst=/vercel/sandbox -> HTTP/1.1 200 OK b'{}'
+Mount dst=/vercel -> HTTP/1.1 200 OK b'{}'
+Mount dst=/run -> HTTP/1.1 200 OK b'{}'
+Mount dst=/tmp -> HTTP/1.1 200 OK b'{}'
+Mount dst=/mnt -> HTTP/1.1 200 OK b'{}'
+Mount dst=/home -> HTTP/1.1 200 OK b'{}'
+Mount dst=/root -> HTTP/1.1 200 OK b'{}'
+Mount dst=/vercel/sandbox/x -> HTTP/1.1 200 OK b'{}'
+Mount dst=/proc/x -> HTTP/1.1 200 OK b'{}'
+Mount dst=/dev/shm -> HTTP/1.1 200 OK b'{}'
+Mount dst=/var/tmp -> HTTP/1.1 200 OK b'{}'
+Mount dst=/opt -> HTTP/1.1 200 OK b'{}'
+V175_DONE

@@ -1,0 +1,12 @@
+### [ssl-before] GET /v1/projects/vnfobbywemqgcgjokkxd/ssl-enforcement (1.0s)
+200 | {"currentConfig":{"database":false},"appliedSuccessfully":true}
+### [jit-before] GET /v1/projects/vnfobbywemqgcgjokkxd/jit-access (0.8s)
+200 | {"state":"unavailable","unavailableReason":"ssl_enforcement_required"}
+### [ssl-enable] PUT /v1/projects/vnfobbywemqgcgjokkxd/ssl-enforcement (6.3s)
+200 | {"currentConfig":{"database":true},"appliedSuccessfully":true}
+### [ssl-after] GET /v1/projects/vnfobbywemqgcgjokkxd/ssl-enforcement (1.3s)
+200 | {"currentConfig":{"database":true},"appliedSuccessfully":true}
+### [jit-enable] PUT /v1/projects/vnfobbywemqgcgjokkxd/jit-access (5.7s)
+200 | {"state":"enabled","appliedSuccessfully":true}
+### [jit-after] GET /v1/projects/vnfobbywemqgcgjokkxd/jit-access (0.9s)
+200 | {"state":"enabled","appliedSuccessfully":true}

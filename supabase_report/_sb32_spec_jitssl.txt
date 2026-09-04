@@ -1,0 +1,1491 @@
+### /v1/oauth/authorize/project-claim
+{
+ "get": {
+  "description": "Initiates the OAuth authorization flow for the specified provider. After successful authentication, the user can claim ownership of the specified project.",
+  "operationId": "v1-oauth-authorize-project-claim",
+  "parameters": [
+   {
+    "name": "project_ref",
+    "required": true,
+    "in": "query",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   },
+   {
+    "name": "client_id",
+    "required": true,
+    "in": "query",
+    "schema": {
+     "format": "uuid",
+     "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$",
+     "example": "66666666-6666-4666-8666-666666666666",
+     "type": "string"
+    }
+   },
+   {
+    "name": "response_type",
+    "required": true,
+    "in": "query",
+    "schema": {
+     "example": "code",
+     "type": "string",
+     "enum": [
+      "code",
+      "token",
+      "id_token token"
+     ]
+    }
+   },
+   {
+    "name": "redirect_uri",
+    "required": true,
+    "in": "query",
+    "schema": {
+     "example": "https://app.acme.com/auth/callback",
+     "type": "string"
+    }
+   },
+   {
+    "name": "state",
+    "required": false,
+    "in": "query",
+    "schema": {
+     "example": "st_9f4d3a206b2e4a7e8c91",
+     "type": "string"
+    }
+   },
+   {
+    "name": "response_mode",
+    "required": false,
+    "in": "query",
+    "schema": {
+     "example": "query",
+     "type": "string"
+    }
+   },
+   {
+    "name": "code_challenge",
+    "required": false,
+    "in": "query",
+    "schema": {
+     "example": "Z_P4EKbGwIkA01e3Y5fp4tMCvn_Ae5nUw7qY7XwkTrQ",
+     "type": "string"
+    }
+   },
+   {
+    "name": "code_challenge_method",
+    "required": false,
+    "in": "query",
+    "schema": {
+     "example": "S256",
+     "type": "string",
+     "enum": [
+      "plain",
+      "sha256",
+      "S256"
+     ]
+    }
+   }
+  ],
+  "responses": {
+   "204": {
+    "description": ""
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Authorize user through oauth and claim a project",
+  "tags": [
+   "OAuth"
+  ],
+  "x-endpoint-owners": [
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "organization_admin_write",
+    "project_admin_write"
+   ]
+  ]
+ }
+}
+### /v1/organizations/{slug}/project-claim/{token}
+{
+ "get": {
+  "operationId": "v1-get-organization-project-claim",
+  "parameters": [
+   {
+    "name": "slug",
+    "required": true,
+    "in": "path",
+    "description": "Organization slug",
+    "schema": {
+     "pattern": "^[\\w-]+$",
+     "example": "tsrqponmlkjihgfedcba",
+     "type": "string"
+    }
+   },
+   {
+    "name": "token",
+    "required": true,
+    "in": "path",
+    "schema": {
+     "example": "0123456789abcdef0123456789abcdef01234567",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/OrganizationProjectClaimResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Gets project details for the specified organization and claim token",
+  "tags": [
+   "Organizations"
+  ],
+  "x-endpoint-owners": [
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "organization_admin_write"
+   ]
+  ],
+  "x-internal": true
+ },
+ "post": {
+  "operationId": "v1-claim-project-for-organization",
+  "parameters": [
+   {
+    "name": "slug",
+    "required": true,
+    "in": "path",
+    "description": "Organization slug",
+    "schema": {
+     "pattern": "^[\\w-]+$",
+     "example": "tsrqponmlkjihgfedcba",
+     "type": "string"
+    }
+   },
+   {
+    "name": "token",
+    "required": true,
+    "in": "path",
+    "schema": {
+     "example": "0123456789abcdef0123456789abcdef01234567",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "204": {
+    "description": ""
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Claims project for the specified organization",
+  "tags": [
+   "Organizations"
+  ],
+  "x-endpoint-owners": [
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "organization_admin_write"
+   ]
+  ],
+  "x-internal": true
+ }
+}
+### /v1/projects/{ref}/claim-token
+{
+ "get": {
+  "operationId": "v1-get-project-claim-token",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/ProjectClaimTokenResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Gets project claim token",
+  "tags": [
+   "Projects"
+  ],
+  "x-endpoint-owners": [
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "project_admin_read"
+   ]
+  ],
+  "x-internal": true
+ },
+ "post": {
+  "operationId": "v1-create-project-claim-token",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/CreateProjectClaimTokenResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Creates project claim token",
+  "tags": [
+   "Projects"
+  ],
+  "x-endpoint-owners": [
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "organization_admin_write",
+    "project_admin_write"
+   ]
+  ],
+  "x-internal": true
+ },
+ "delete": {
+  "operationId": "v1-delete-project-claim-token",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "204": {
+    "description": ""
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Revokes project claim token",
+  "tags": [
+   "Projects"
+  ],
+  "x-endpoint-owners": [
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "organization_admin_write",
+    "project_admin_write"
+   ]
+  ],
+  "x-internal": true
+ }
+}
+### /v1/projects/{ref}/cli/login-role
+{
+ "post": {
+  "operationId": "v1-create-login-role",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "requestBody": {
+   "required": true,
+   "content": {
+    "application/json": {
+     "schema": {
+      "$ref": "#/components/schemas/CreateRoleBody"
+     }
+    }
+   }
+  },
+  "responses": {
+   "201": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/CreateRoleResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to create login role"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "[Beta] Create a login role for CLI with temporary password",
+  "tags": [
+   "Database"
+  ],
+  "x-badges": [
+   {
+    "name": "OAuth scope: database:write",
+    "position": "after"
+   }
+  ],
+  "x-endpoint-owners": [
+   "dev-workflows"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_write"
+   ]
+  ],
+  "x-oauth-scope": "database:write"
+ },
+ "delete": {
+  "operationId": "v1-delete-login-roles",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/DeleteRolesResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to delete login roles"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "[Beta] Delete existing login roles used by CLI",
+  "tags": [
+   "Database"
+  ],
+  "x-badges": [
+   {
+    "name": "OAuth scope: database:write",
+    "position": "after"
+   }
+  ],
+  "x-endpoint-owners": [
+   "dev-workflows"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_write"
+   ]
+  ],
+  "x-oauth-scope": "database:write"
+ }
+}
+### /v1/projects/{ref}/database/jit
+{
+ "get": {
+  "description": "Mappings of roles a user can assume in the project database",
+  "operationId": "v1-get-jit-access",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/JitAccessResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to list database jit access"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Get user-id to role mappings for JIT access",
+  "tags": [
+   "Database"
+  ],
+  "x-badges": [
+   {
+    "name": "OAuth scope: database:read",
+    "position": "after"
+   }
+  ],
+  "x-endpoint-owners": [
+   "security"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_jit_read"
+   ]
+  ],
+  "x-oauth-scope": "database:read"
+ },
+ "post": {
+  "description": "Authorizes the request to assume a role in the project database",
+  "operationId": "v1-authorize-jit-access",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "requestBody": {
+   "required": true,
+   "content": {
+    "application/json": {
+     "schema": {
+      "$ref": "#/components/schemas/AuthorizeJitAccessBody"
+     }
+    }
+   }
+  },
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/JitAuthorizeAccessResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to authorize database jit access"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Authorize user-id to role mappings for JIT access",
+  "tags": [
+   "Database"
+  ],
+  "x-badges": [
+   {
+    "name": "OAuth scope: database:read",
+    "position": "after"
+   }
+  ],
+  "x-endpoint-owners": [
+   "security"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_jit_read"
+   ]
+  ],
+  "x-oauth-scope": "database:read"
+ },
+ "put": {
+  "description": "Modifies the roles that can be assumed and for how long",
+  "operationId": "v1-update-jit-access",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "requestBody": {
+   "required": true,
+   "content": {
+    "application/json": {
+     "schema": {
+      "$ref": "#/components/schemas/UpdateJitAccessBody"
+     }
+    }
+   }
+  },
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/JitAccessResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to update JIT access"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Updates a user mapping for JIT access",
+  "tags": [
+   "Database"
+  ],
+  "x-endpoint-owners": [
+   "security"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_jit_write"
+   ]
+  ]
+ }
+}
+### /v1/projects/{ref}/database/jit/invite
+{
+ "post": {
+  "description": "Invites the external user and sets initial roles that can be assumed and for how long",
+  "operationId": "v1-invite-external-jit-access",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "requestBody": {
+   "required": true,
+   "content": {
+    "application/json": {
+     "schema": {
+      "$ref": "#/components/schemas/InviteExternalUserJitAccessBody"
+     }
+    }
+   }
+  },
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/InviteExternalUserJitResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to invite external user"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Invites an external user to a database for JIT access",
+  "tags": [
+   "Database"
+  ],
+  "x-endpoint-owners": [
+   "security"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_jit_write"
+   ]
+  ]
+ }
+}
+### /v1/projects/{ref}/database/jit/invite/accept
+{
+ "post": {
+  "description": "Accepts the invitation to JIT database access",
+  "operationId": "v1-accept-invite-external-jit-access",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "requestBody": {
+   "required": true,
+   "content": {
+    "application/json": {
+     "schema": {
+      "$ref": "#/components/schemas/AcceptInviteExternalUserJitAccessBody"
+     }
+    }
+   }
+  },
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/JitAccessResponse_Output"
+      }
+     }
+    }
+   },
+   "500": {
+    "description": "Failed to accept invitation"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Accepts invitation for JIT database access",
+  "tags": [
+   "Database"
+  ],
+  "x-endpoint-owners": [
+   "security"
+  ]
+ }
+}
+### /v1/projects/{ref}/database/jit/invite/{invite_id}
+{
+ "delete": {
+  "description": "Revokes and deletes the invitation",
+  "operationId": "v1-delete-invite-external-jit-access",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   },
+   {
+    "name": "invite_id",
+    "required": true,
+    "in": "path",
+    "schema": {
+     "format": "uuid",
+     "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$",
+     "example": "55555555-5555-4555-8555-555555555555",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": ""
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to revoke invite for external user"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Deletes the invite for an external user to a database for JIT access",
+  "tags": [
+   "Database"
+  ],
+  "x-endpoint-owners": [
+   "security"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_jit_write"
+   ]
+  ]
+ }
+}
+### /v1/projects/{ref}/database/jit/list
+{
+ "get": {
+  "description": "Mappings of roles a user can assume in the project database",
+  "operationId": "v1-list-jit-access",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/JitListAccessResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to list database jit access"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "List all user-id to role mappings for JIT access",
+  "tags": [
+   "Database"
+  ],
+  "x-endpoint-owners": [
+   "security"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_jit_write"
+   ]
+  ]
+ }
+}
+### /v1/projects/{ref}/database/jit/{user_id}
+{
+ "delete": {
+  "description": "Remove JIT mappings of a user, revoking all JIT database access",
+  "operationId": "v1-delete-jit-access",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   },
+   {
+    "name": "user_id",
+    "required": true,
+    "in": "path",
+    "schema": {
+     "format": "uuid",
+     "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$",
+     "example": "55555555-5555-4555-8555-555555555555",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": ""
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to remove JIT access"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "Delete JIT access by user-id",
+  "tags": [
+   "Database"
+  ],
+  "x-endpoint-owners": [
+   "security"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_jit_write"
+   ]
+  ]
+ }
+}
+### /v1/projects/{ref}/jit-access
+{
+ "get": {
+  "operationId": "v1-get-jit-access-config",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$schema": "https://json-schema.org/draft/2020-12/schema",
+       "oneOf": [
+        {
+         "type": "object",
+         "properties": {
+          "state": {
+           "type": "string",
+           "enum": [
+            "enabled",
+            "disabled"
+           ]
+          },
+          "appliedSuccessfully": {
+           "type": "boolean"
+          }
+         },
+         "required": [
+          "state"
+         ]
+        },
+        {
+         "type": "object",
+         "properties": {
+          "state": {
+           "type": "string",
+           "const": "unavailable"
+          },
+          "unavailableReason": {
+           "type": "string",
+           "enum": [
+            "platform_unsupported",
+            "postgres_upgrade_required",
+            "ssl_enforcement_required",
+            "temporarily_unavailable"
+           ]
+          }
+         },
+         "required": [
+          "state",
+          "unavailableReason"
+         ]
+        }
+       ]
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to retrieve project's temporary access configuration."
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "[Beta] Get project's temporary access configuration.",
+  "tags": [
+   "Database"
+  ],
+  "x-badges": [
+   {
+    "name": "OAuth scope: database:read",
+    "position": "after"
+   }
+  ],
+  "x-endpoint-owners": [
+   "security",
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "project_admin_read"
+   ]
+  ],
+  "x-oauth-scope": "database:read"
+ },
+ "put": {
+  "operationId": "v1-update-jit-access-config",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "requestBody": {
+   "required": true,
+   "content": {
+    "application/json": {
+     "schema": {
+      "$ref": "#/components/schemas/JitAccessRequestRequest"
+     }
+    }
+   }
+  },
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$schema": "https://json-schema.org/draft/2020-12/schema",
+       "oneOf": [
+        {
+         "type": "object",
+         "properties": {
+          "state": {
+           "type": "string",
+           "enum": [
+            "enabled",
+            "disabled"
+           ]
+          },
+          "appliedSuccessfully": {
+           "type": "boolean"
+          }
+         },
+         "required": [
+          "state"
+         ]
+        },
+        {
+         "type": "object",
+         "properties": {
+          "state": {
+           "type": "string",
+           "const": "unavailable"
+          },
+          "unavailableReason": {
+           "type": "string",
+           "enum": [
+            "platform_unsupported",
+            "postgres_upgrade_required",
+            "ssl_enforcement_required",
+            "temporarily_unavailable"
+           ]
+          }
+         },
+         "required": [
+          "state",
+          "unavailableReason"
+         ]
+        }
+       ]
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to update project's temporary access configuration."
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "[Beta] Update project's temporary access configuration.",
+  "tags": [
+   "Database"
+  ],
+  "x-badges": [
+   {
+    "name": "OAuth scope: database:write",
+    "position": "after"
+   }
+  ],
+  "x-endpoint-owners": [
+   "security",
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "project_admin_write"
+   ]
+  ],
+  "x-oauth-scope": "database:write"
+ }
+}
+### /v1/projects/{ref}/ssl-enforcement
+{
+ "get": {
+  "operationId": "v1-get-ssl-enforcement-config",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/SslEnforcementResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to retrieve project's SSL enforcement config"
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "[Beta] Get project's SSL enforcement configuration.",
+  "tags": [
+   "Database"
+  ],
+  "x-badges": [
+   {
+    "name": "OAuth scope: database:read",
+    "position": "after"
+   }
+  ],
+  "x-endpoint-owners": [
+   "infra",
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_ssl_config_read"
+   ]
+  ],
+  "x-oauth-scope": "database:read"
+ },
+ "put": {
+  "operationId": "v1-update-ssl-enforcement-config",
+  "parameters": [
+   {
+    "name": "ref",
+    "required": true,
+    "in": "path",
+    "description": "Project ref",
+    "schema": {
+     "minLength": 20,
+     "maxLength": 20,
+     "pattern": "^[a-z]+$",
+     "example": "abcdefghijklmnopqrst",
+     "type": "string"
+    }
+   }
+  ],
+  "requestBody": {
+   "required": true,
+   "content": {
+    "application/json": {
+     "schema": {
+      "$ref": "#/components/schemas/SslEnforcementRequest"
+     }
+    }
+   }
+  },
+  "responses": {
+   "200": {
+    "description": "",
+    "content": {
+     "application/json": {
+      "schema": {
+       "$ref": "#/components/schemas/SslEnforcementResponse_Output"
+      }
+     }
+    }
+   },
+   "401": {
+    "description": "Unauthorized"
+   },
+   "403": {
+    "description": "Forbidden action"
+   },
+   "429": {
+    "description": "Rate limit exceeded"
+   },
+   "500": {
+    "description": "Failed to update project's SSL enforcement configuration."
+   }
+  },
+  "security": [
+   {
+    "bearer": []
+   }
+  ],
+  "summary": "[Beta] Update project's SSL enforcement configuration.",
+  "tags": [
+   "Database"
+  ],
+  "x-badges": [
+   {
+    "name": "OAuth scope: database:write",
+    "position": "after"
+   }
+  ],
+  "x-endpoint-owners": [
+   "infra",
+   "control-plane"
+  ],
+  "x-fga-permissions": [
+   [
+    "database_ssl_config_write"
+   ]
+  ],
+  "x-oauth-scope": "database:write"
+ }
+}

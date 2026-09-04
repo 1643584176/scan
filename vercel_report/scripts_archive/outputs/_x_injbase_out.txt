@@ -1,0 +1,10 @@
+sid: sbx_NBS0ChrB7FuHwcI70Wo2jeVirlKx
+[BASE] set_policy http=200
+[BASE-any]     "X-Amzn-Trace-Id": "Root=1-6a92dd5b-43f38b3715e192b359ac1fae"
+
+[T1-allow-transform] set_policy http=400
+[T1-any] 
+[BASE2] set_policy http=200
+[BASE2-fakehost] CODE:200
+
+=== INJBASE DONE ===

@@ -1,0 +1,47 @@
+=== F1: create ports 26661+23457 ===
+[create] -> 200
+routes: [{"url": "https://sb-31gvu07viijk.vercel.run", "subdomain": "sb-31gvu07viijk", "port": 26661}, {"url": "https://sb-58ow2y14a95r.vercel.run", "subdomain": "sb-58ow2y14a95r", "port": 23457}]
+url26661 = https://sb-31gvu07viijk.vercel.run
+url23457 = https://sb-58ow2y14a95r.vercel.run
+=== F2: 公网 HTTP 探测 26661 ===
+[26661 GET /] -> 502 This sandbox is not listening on the requested port.
+
+SANDBOX_NOT_LISTENING
+
+sin1::54cxk-17880911453
+[26661 GET /healthz] -> 502 This sandbox is not listening on the requested port.
+
+SANDBOX_NOT_LISTENING
+
+sin1::888sf-17880911466
+[26661 GET /ws] -> 502 This sandbox is not listening on the requested port.
+
+SANDBOX_NOT_LISTENING
+
+sin1::sq22b-17880911476
+[26661 GET /v1] -> 502 This sandbox is not listening on the requested port.
+
+SANDBOX_NOT_LISTENING
+
+sin1::8p8nc-17880911489
+[26661 GET /interactive] -> 502 This sandbox is not listening on the requested port.
+
+SANDBOX_NOT_LISTENING
+
+sin1::5rpmq-17880911500
+[26661 POST /] -> 502 This sandbox is not listening on the requested port.
+
+SANDBOX_NOT_LISTENING
+
+sin1::92p2s-17880911510
+[26661 OPTIONS /] -> 502 allow=
+[26661 HEAD /] -> 502 
+=== F3: 对照 23457 (无服务) ===
+[23457 GET /] -> 502 This sandbox is not listening on the requested port.
+
+SANDBOX_NOT_LISTENING
+
+sin1::j8dkz-17880911544
+=== F4: WebSocket 探测 26661 ===
+[ws] EXC Handshake status 502 Bad Gateway -+-+- {'date': 'Sun, 30 Aug 2026 11:59:16 GMT', 'content-type': 'text/plain; charset=utf-8', 'content-length': '115',
+DONE

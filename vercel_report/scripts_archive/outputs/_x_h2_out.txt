@@ -1,0 +1,6 @@
+npol1 sid: sbx_5hvkDFmeEVwSbYTdvAAZGQ5gXVl9 status: running
+[O1-h2] H2_CODE:200 VER:2
+
+[O2-h1] H1_CODE:200 VER:1.1
+
+=== H2 DONE ===

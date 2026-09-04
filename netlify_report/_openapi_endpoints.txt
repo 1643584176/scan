@@ -1,0 +1,180 @@
+GET     /sites                                                                                      | 
+POST    /sites                                                                                      | 
+GET     /sites/{site_id}                                                                            | 
+PATCH   /sites/{site_id}                                                                            | 
+DELETE  /sites/{site_id}                                                                            | 
+POST    /sites/{site_id}/ssl                                                                       {site_id} | 
+GET     /sites/{site_id}/ssl                                                                       {site_id} | 
+GET     /sites/{site_id}/ssl/certificates                                                          {site_id} | 
+GET     /accounts/{account_id}/env                                                                 {account_id} | 
+POST    /accounts/{account_id}/env                                                                 {account_id} | 
+GET     /api/v1/sites/{site_id}/env                                                                {site_id} | 
+GET     /accounts/{account_id}/env/{key}                                                           {account_id} {key} | 
+PUT     /accounts/{account_id}/env/{key}                                                           {account_id} {key} | 
+PATCH   /accounts/{account_id}/env/{key}                                                           {account_id} {key} | 
+DELETE  /accounts/{account_id}/env/{key}                                                           {account_id} {key} | 
+DELETE  /accounts/{account_id}/env/{key}/value/{id}                                                {account_id} {id} {key} | 
+GET     /sites/{site_id}/functions                                                                 {site_id} | 
+GET     /sites/{site_id}/forms                                                                     {site_id} | 
+DELETE  /sites/{site_id}/forms/{form_id}                                                           {site_id} {form_id} | 
+GET     /sites/{site_id}/submissions                                                               {site_id} | 
+GET     /sites/{site_id}/files                                                                     {site_id} | 
+GET     /sites/{site_id}/assets                                                                     | 
+POST    /sites/{site_id}/assets                                                                     | 
+GET     /sites/{site_id}/assets/{asset_id}                                                          | 
+PUT     /sites/{site_id}/assets/{asset_id}                                                          | 
+DELETE  /sites/{site_id}/assets/{asset_id}                                                          | 
+GET     /sites/{site_id}/assets/{asset_id}/public_signature                                         | 
+GET     /sites/{site_id}/files/{file_path}                                                         {site_id} {file_path} | 
+POST    /purge                                                                                      | 
+GET     /sites/{site_id}/snippets                                                                   | 
+POST    /sites/{site_id}/snippets                                                                   | 
+GET     /sites/{site_id}/snippets/{snippet_id}                                                      | 
+PUT     /sites/{site_id}/snippets/{snippet_id}                                                      | 
+DELETE  /sites/{site_id}/snippets/{snippet_id}                                                      | 
+GET     /sites/{site_id}/metadata                                                                   | 
+PUT     /sites/{site_id}/metadata                                                                   | 
+GET     /sites/{site_id}/build_hooks                                                                | 
+POST    /sites/{site_id}/build_hooks                                                                | 
+GET     /sites/{site_id}/build_hooks/{id}                                                           | 
+PUT     /sites/{site_id}/build_hooks/{id}                                                           | 
+DELETE  /sites/{site_id}/build_hooks/{id}                                                           | 
+GET     /sites/{site_id}/deploys                                                                    | 
+POST    /sites/{site_id}/deploys                                                                    | 
+GET     /sites/{site_id}/deploys/{deploy_id}                                                       {site_id} {deploy_id} | 
+PUT     /sites/{site_id}/deploys/{deploy_id}                                                       {site_id} {deploy_id} | 
+DELETE  /sites/{site_id}/deploys/{deploy_id}                                                       {deploy_id} {site_id} | 
+POST    /deploys/{deploy_id}/cancel                                                                {deploy_id} | 
+POST    /sites/{site_id}/deploys/{deploy_id}/restore                                               {site_id} {deploy_id} | 
+GET     /sites/{site_id}/builds                                                                     | 
+POST    /sites/{site_id}/builds                                                                     | 
+GET     /sites/{site_id}/deployed-branches                                                          | 
+PUT     /sites/{site_id}/unlink_repo                                                                | 
+PUT     /sites/{site_id}/enable                                                                     | 
+PUT     /sites/{site_id}/disable                                                                    | 
+GET     /builds/{build_id}                                                                          | 
+POST    /builds/{build_id}/log                                                                      | 
+POST    /builds/{build_id}/start                                                                    | 
+GET     /{account_id}/builds/status                                                                 | 
+GET     /sites/{site_id}/dns                                                                        | 
+PUT     /sites/{site_id}/dns                                                                        | 
+PUT     /sites/{site_id}/rollback                                                                   | 
+GET     /deploys/{deploy_id}                                                                       {deploy_id} | 
+DELETE  /deploys/{deploy_id}                                                                       {deploy_id} | 
+PATCH   /deploys/{deploy_id}/validations_report                                                    {deploy_id} | 
+POST    /deploys/{deploy_id}/lock                                                                  {deploy_id} | 
+POST    /deploys/{deploy_id}/unlock                                                                {deploy_id} | 
+PUT     /deploys/{deploy_id}/files/{path}                                                          {deploy_id} {path} | 
+PUT     /deploys/{deploy_id}/functions/{name}                                                      {deploy_id} {name} | 
+PUT     /deploys/{deploy_id}/edge_functions/{code_sha}                                             {deploy_id} {code_sha} | 
+PUT     /sites/{site_id}/plugins/{package}                                                         {site_id} {package} | 
+GET     /sites/{site_id}/plugin_runs/latest                                                        {site_id} | 
+POST    /deploys/{deploy_id}/plugin_runs                                                           {deploy_id} | 
+GET     /forms/{form_id}/submissions                                                               {form_id} | 
+GET     /hooks                                                                                      | 
+POST    /hooks                                                                                      | 
+GET     /hooks/{hook_id}                                                                            | 
+PUT     /hooks/{hook_id}                                                                            | 
+DELETE  /hooks/{hook_id}                                                                            | 
+POST    /hooks/{hook_id}/enable                                                                     | 
+GET     /hooks/types                                                                                | 
+POST    /oauth/tickets                                                                              | 
+GET     /oauth/tickets/{ticket_id}                                                                 {ticket_id} | 
+POST    /oauth/tickets/{ticket_id}/exchange                                                        {ticket_id} | 
+GET     /deploy_keys                                                                                | 
+POST    /deploy_keys                                                                                | 
+GET     /deploy_keys/{key_id}                                                                       | 
+DELETE  /deploy_keys/{key_id}                                                                       | 
+POST    /{account_slug}/sites                                                                      {account_slug} | 
+GET     /{account_slug}/sites                                                                      {account_slug} | 
+GET     /{account_slug}/members                                                                     | 
+POST    /{account_slug}/members                                                                     | 
+GET     /{account_slug}/members/{member_id}                                                         | 
+PUT     /{account_slug}/members/{member_id}                                                         | 
+DELETE  /{account_slug}/members/{member_id}                                                         | 
+GET     /billing/payment_methods                                                                    | 
+GET     /accounts/types                                                                             | 
+GET     /accounts                                                                                   | 
+POST    /accounts                                                                                   | 
+GET     /accounts/{account_id}                                                                      | 
+PUT     /accounts/{account_id}                                                                      | 
+DELETE  /accounts/{account_id}                                                                      | 
+GET     /accounts/{account_id}/audit                                                                | 
+GET     /agent_runners                                                                              | 
+POST    /agent_runners                                                                              | 
+POST    /agent_runners/upload_url                                                                   | 
+GET     /agent_runners/{agent_runner_id}                                                            | 
+PATCH   /agent_runners/{agent_runner_id}                                                            | 
+DELETE  /agent_runners/{agent_runner_id}                                                            | 
+POST    /agent_runners/{agent_runner_id}/archive                                                    | 
+POST    /agent_runners/{agent_runner_id}/pull_request                                               | 
+POST    /agent_runners/{agent_runner_id}/commit                                                     | 
+GET     /agent_runners/{agent_runner_id}/sessions                                                   | 
+POST    /agent_runners/{agent_runner_id}/sessions                                                   | 
+GET     /agent_runners/{agent_runner_id}/sessions/{agent_runner_session_id}                         | 
+PATCH   /agent_runners/{agent_runner_id}/sessions/{agent_runner_session_id}                         | 
+DELETE  /agent_runners/{agent_runner_id}/sessions/{agent_runner_session_id}                         | 
+GET     /submissions/{submission_id}                                                                | 
+DELETE  /submissions/{submission_id}                                                                | 
+GET     /sites/{site_id}/service-instances                                                          | 
+POST    /sites/{site_id}/services/{addon}/instances                                                 | 
+GET     /sites/{site_id}/services/{addon}/instances/{instance_id}                                   | 
+PUT     /sites/{site_id}/services/{addon}/instances/{instance_id}                                   | 
+DELETE  /sites/{site_id}/services/{addon}/instances/{instance_id}                                   | 
+GET     /services/                                                                                  | 
+GET     /services/{addonName}                                                                       | 
+GET     /services/{addonName}/manifest                                                              | 
+GET     /user                                                                                       | 
+POST    /sites/{site_id}/traffic_splits                                                             | 
+GET     /sites/{site_id}/traffic_splits                                                             | 
+PUT     /sites/{site_id}/traffic_splits/{split_test_id}                                             | 
+GET     /sites/{site_id}/traffic_splits/{split_test_id}                                             | 
+POST    /sites/{site_id}/traffic_splits/{split_test_id}/publish                                     | 
+POST    /sites/{site_id}/traffic_splits/{split_test_id}/unpublish                                   | 
+POST    /dns_zones                                                                                  | 
+GET     /dns_zones                                                                                  | 
+GET     /dns_zones/{zone_id}                                                                        | 
+DELETE  /dns_zones/{zone_id}                                                                        | 
+PUT     /dns_zones/{zone_id}/transfer                                                               | 
+GET     /dns_zones/{zone_id}/dns_records                                                            | 
+POST    /dns_zones/{zone_id}/dns_records                                                            | 
+GET     /dns_zones/{zone_id}/dns_records/{dns_record_id}                                            | 
+DELETE  /dns_zones/{zone_id}/dns_records/{dns_record_id}                                            | 
+GET     /sites/{site_id}/dev_servers                                                                | 
+POST    /sites/{site_id}/dev_servers                                                                | 
+DELETE  /sites/{site_id}/dev_servers                                                                | 
+GET     /sites/{site_id}/dev_servers/{dev_server_id}                                                | 
+POST    /sites/{site_id}/dev_servers/{dev_server_id}/activity                                       | 
+POST    /sites/{site_id}/dev_servers/{dev_server_id}/state                                          | 
+GET     /sites/{site_id}/dev_server_hooks                                                           | 
+POST    /sites/{site_id}/dev_server_hooks                                                           | 
+GET     /sites/{site_id}/dev_server_hooks/{id}                                                      | 
+PUT     /sites/{site_id}/dev_server_hooks/{id}                                                      | 
+DELETE  /sites/{site_id}/dev_server_hooks/{id}                                                      | 
+GET     /sites/{site_id}/agent_runner_hooks                                                         | 
+POST    /sites/{site_id}/agent_runner_hooks                                                         | 
+GET     /sites/{site_id}/agent_runner_hooks/{id}                                                    | 
+PUT     /sites/{site_id}/agent_runner_hooks/{id}                                                    | 
+DELETE  /sites/{site_id}/agent_runner_hooks/{id}                                                    | 
+GET     /ai-gateway/providers                                                                       | 
+GET     /sites/{site_id}/ai-gateway/token                                                           | 
+GET     /accounts/{account_id}/ai-gateway/token                                                     | 
+POST    /sites/{site_id}/database                                                                   | 
+GET     /sites/{site_id}/database                                                                   | 
+DELETE  /sites/{site_id}/database                                                                   | 
+POST    /sites/{site_id}/database/branch                                                            | 
+GET     /sites/{site_id}/database/branches                                                          | 
+GET     /sites/{site_id}/database/branch/{branch_id}                                                | 
+DELETE  /sites/{site_id}/database/branch/{branch_id}                                                | 
+POST    /sites/{site_id}/database/branch/{branch_id}/reset                                          | 
+PUT     /sites/{site_id}/database/branch/{branch_id}/compute/settings                               | 
+PUT     /sites/{site_id}/database/compute/settings                                                  | 
+GET     /sites/{site_id}/database/compute/settings                                                  | 
+DELETE  /sites/{site_id}/database/compute/settings                                                  | 
+GET     /sites/{site_id}/database/migrations                                                        | 
+GET     /sites/{site_id}/database/migrations/{name}                                                 | 
+POST    /sites/{site_id}/database/migrations/{deploy_id}                                            | 
+POST    /sites/{site_id}/database/snapshot                                                          | 
+GET     /sites/{site_id}/database/snapshots                                                         | 
+DELETE  /sites/{site_id}/database/snapshot/{snapshot_id}                                            | 
+POST    /sites/{site_id}/database/snapshot/{snapshot_id}/restore                                    | 

@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""Supabase 测试凭据 (用户提供, 仅本地使用)"""
+import time
+
+# ---- 用户会话 (2026-09-04) ----
+BEARER_JWT = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwYjMwYWUwLTg0ZTktNDMwYy04NjhjLTMxMmIwZGFhOTNlZiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2FsdC5zdXBhYmFzZS5pby9hdXRoL3YxIiwic3ViIjoiNjhlZjY3MDgtNjViYS00NDExLTgyZmItZWE1OTAxNWEwNGU5IiwiYXVkIjoiYXV0aGVudGljYXRlZCIsImV4cCI6MTc4ODUxMjk3NywiaWF0IjoxNzg4NTExMTc3LCJlbWFpbCI6IjE2NDM1ODQxNzZAcXEuY29tIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJnaXRodWIiLCJwcm92aWRlcnMiOlsiZ2l0aHViIl19LCJ1c2VyX21ldGFkYXRhIjp7ImF2YXRhcl91cmwiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMjQ3MTIyNjY3P3Y9NCIsImVtYWlsIjoiMTY0MzU4NDE3NkBxcS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZnVsbF9uYW1lIjoibGlib2JvIiwiaXNzIjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbSIsIm5hbWUiOiJsaWJvYm8iLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInByZWZlcnJlZF91c2VybmFtZSI6IjE2NDM1ODQxNzYiLCJwcm92aWRlcl9pZCI6IjI0NzEyMjY2NyIsInN1YiI6IjI0NzEyMjY2NyIsInVzZXJfbmFtZSI6IjE2NDM1ODQxNzYifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJvYXV0aCIsInRpbWVzdGFtcCI6MTc4ODUwOTAwN31dLCJzZXNzaW9uX2lkIjoiMDA3YjcyZTEtMTk0ZS00ZjljLTkzYzYtODAxM2NlZTVmNzljIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gZOE0I4U1xTavgcsyYow6DIOXkzwI5raEN1pIgDPfLNgVauR0hV6t8MmOc6_HMzG27hukRCzgUrkIJrPKBcqo0amLqsm1Zw6jwuCgDH0jf1A0pHdHPMfa7yNEawgEbfYeB2zXLagR4VW6VqMLKw4hNJrri_dLmDl1y6XmJ6ZlcP4Fah6StyxUdK4lDhkn4B7l9uJmgmqXV6bb9M5s86S3Pu9I_pTd4meUzY1kWWBqNJea7BOjnZcDSDETzRLK3OtW4CigMUuxIbDylqwtwexRcuyS1NCuT2mo2JMpueV6_Ac1qrvh4q9A_DmLbRgTgpqABddauUQ53r7hJSaJlTiNA"
+
+COOKIE_RAW = "__cf_bm=mYSNXWmKgeSZch_iYbDb7BJdypPhkx3Sdk4jEHSJWVY-1788508987.8372045-1.0.1.1-5UlFHL430MqMU7AFW12AzAC63QGgTe9WXhM8FbB2R0ZVuIEkjUBACKDHhLK40bYcO6NW7fzEn2MfnpspEbC20b9Gss2QHMr0gi5tR0e4nc3jAQ4nARwwhJd4v3eylZsu; session_id=01a06b71-7952-7cc1-a796-69bd6f631f12; anonymous_id=01a06b71-7952-7cc1-a796-656b0a2dbaca; session_id=01a06b71-b98b-72fb-88c3-3fa30d6038f2; _ga=GA1.1.325640490.1788509013; FPAU=1.2.1645916465.1788508995; user_id=68ef6708-65ba-4411-82fb-ea59015a04e9; _ga_XW18KGKGNR=GS2.1.s1788509013$o1$g1$t1788509031$j42$l0$h1913200785; __stripe_mid=00521979-1835-4773-b90c-88f6374665eabbfaa1; __stripe_sid=a268ccba-16e0-4a87-a801-d2e17e2852eea6bd70; organization_slug=ipsxbsudxngkglabjsct; ph_phc_q2wUqNSr9AsKvH56PBbg9RX5dGKypQZi1gxk3cuSXJ5_posthog=%7B%22%24device_id%22%3A%2201a06b71-b981-7798-a090-9695bfafe253%22%2C%22distinct_id%22%3A%2268ef6708-65ba-4411-82fb-ea59015a04e9%22%2C%22%24sesid%22%3A%5B1788509088627%2C%2201a06b71-b98b-72fb-88c3-3fa30d6038f2%22%2C1788509010307%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22https%3A%2F%2Fsupabase.com%2F%22%7D%2C%22%24user_state%22%3A%22identified%22%7D; project_ref=vnfobbywemqgcgjokkxd"
+
+# ---- 账号元数据 ----
+USER_ID = "68ef6708-65ba-4411-82fb-ea59015a04e9"
+EMAIL = "1643584176@qq.com"
+ORG_SLUG = "ipsxbsudxngkglabjsct"
+PROJECT_REF = "vnfobbywemqgcgjokkxd"
+
+# ---- 目标 ----
+API_HOST = "api.supabase.com"
+DB_HOST = "db.%s.supabase.co" % PROJECT_REF
+
+# ---- H1 合规 ----
+VDP_HEADERS = {"X-SUPABASE-VDP": "xxbo"}
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+
+TOKEN_EXP = 1788512977

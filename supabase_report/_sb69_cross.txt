@@ -1,0 +1,19 @@
+### [login-A] POST /auth/v1/token?grant_type=password (2.6s)
+200 | {"access_token":"eyJhbGciOiJFUzI1NiIsImtpZCI6ImM4YmY4Mzk5LTI2ZmQtNDY1Zi1iNTExLTRkNGI0N2RkZjZhYSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3ZuZm9iYnl3ZW1xZ2Nnam9ra3hkLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzN2RhNzlmNy0yZDhhLTQ3ZTktOTE4My01MDk4YjgwY2VmOGUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg4NTE1NzM1LCJpYXQiOjE3ODg1MTIxMzUsImVtYWlsIjoic2J4X2F1dmppamZ6QHFxLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJzYnhfYXV2amlqZnpAcXEuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6IjM3ZGE3OWY3LTJkOGEtNDdlOS05MTgzLTUwOThiODBjZWY4ZSJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzg4NTEyMTM1fV0sInNlc3Npb25faWQiOiIxNjgzZDRkMi1jNjAwLTRkM2ItOWJhOC00NzgwZTRiZWZjMzAiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.yojch-ziJ-4tha4BpCTpYAWBPFh_4pm6lfSIp23xlvDJFfUTNF3d2L2M7zWGiy91ow-PNQGViWnY8XX9OrRHNw","token_type":"bearer","expires_in":3600,"expires_at":1788515735,"refresh_token":"g6gdw2dzjkxl","user":{"id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","aud":"authenticated","role":"authenticated","email":"sbx_auvjijfz@qq.com","email_confirmed_at":"2026-09-04T08:51:35.65741Z","phone":"","confirmation_sent_at":"2026-09-04T08:51:30.554168Z","confirmed_at":"2026-09-04T08:51:35.65741Z","last_sign_in_at":"2026-09-04T08:55:35.354446619Z","app_metadata":{"provider":"email","providers":["email"]},"user_metadata":{"email":"sbx_auvjijfz@qq.com","email_verified":false,"phone_verified":false,"sub":"37da79f7-2d8a-47e9-9183-5098b80cef8e"},"identities":[{"identity_id":"a2bfa34e-a207-4852-9eb1-be130aef68c9","id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","user_id":"37da79f7-2d8a-47e9-9183-5098b80cef8e","identity_data":{"email":"sbx_auvjijfz@qq.com","email_verified
+### [A-insert] POST /rest/v1/sbx_rls_t ERR _ssl.c:1063: The handshake operation timed out
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (12.9s)
+401 | {"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret ERR _ssl.c:1063: The handshake operation timed out
+### [B-update-A] PATCH /rest/v1/sbx_rls_t?secret=eq.A-DATA-topsecret ERR _ssl.c:1063: The handshake operation timed out
+### [B-del-A] DELETE /rest/v1/sbx_rls_t?secret=eq.A-DATA-topsecret (2.2s)
+401 | {"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+### [B-ins-ownerA] POST /rest/v1/sbx_rls_t (9.8s)
+401 | {"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+### [B-insert] POST /rest/v1/sbx_rls_t (3.6s)
+401 | {"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (2.1s)
+200 | []
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (4.3s)
+200 | []
+### [] GET /rest/v1/sbx_rls_t?select=id,owner,secret (4.1s)
+401 | {"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}

@@ -1,0 +1,11 @@
+file size 39013
+=== paths (3) ===
+  2 /platform/pg-meta/{ref}/query
+  1 /platform/projects/{ref}/analytics/endpoints/logs.all
+  1 /platform/projects/{ref}/analytics/endpoints/logs.all.otel
+
+=== 函数定义(名称+路径) ===
+
+=== pg-meta/{ref}/query 上下文 ===
+@18130: {label:"",value:e.trim()})}return a}])},682586,e=>{"use strict";var t=e.i(531837),a=e.i(977264),r=e.i(441331);let s=t.discriminatedUnion("_tag",[t.object({_tag:t.literal("database"),...a.databaseSourceSchema.shape}).strict(),t.object({_tag:t.literal("logs"),...a.logsSourceSchema.shape}).strict()]),i={_tag:"relative_time_range",unit:"hour",amount:1},l={database:{_tag:"database",endpoint:"/platform/pg-meta/{ref}/query",parameters:{}},logs:{_tag:"logs",endpoint:(0,r.logsAllEndpointUrl)(!0),parameters:{time_range:i}}},n=Object.values(l),o=e=>"relative_time_range"===e._tag?{_tag:e._tag,unit:e.unit,amount:e.amount}:{_tag:e._tag,start:e.start,end:e.end};function d(e){return"logs"===e._tag?{_tag:"logs",time_range:o(e.time_range)}:{_tag:"database",d
+@22553: rge to be run via the SQL Editor");let x=new Headers(b);if(r&&x.set("x-connection-encrypted",r),_){let e=await _({query:s,headers:x});"data"in e?y=e.data:w=e.error}else{let t={signal:g,headers:x,params:{path:{ref:e},header:{"x-connection-encrypted":r??"","x-pg-application-name":p?"supabase/dashboard-query-editor":a.DEFAULT_PLATFORM_APPLICATION_NAME}}};if(h){let{data:e}=await (0,n.post)("/platform/pg-meta/{ref}/query",{...t,body:{query:`explain ${s}`,disable_statement_timeout:p},params:{...t.params,query:{key:"preflight-check"}}}),a=e?(0,l.createNodeTree)(e):void 0,r=a?(0,l.calculateSummary)(a):void 0,i=r?.totalCost??0;if(i>=2e5)return(0,n.handleError)({message:f,code:i,metadata:{cost:i,sql:s}})}let d=i?.filter(e=>"string"==typeof e||"number

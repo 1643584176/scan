@@ -1,0 +1,78 @@
+[1788226238.761] mount vda ret=0
+[1788226238.761] payload written to COW 7073 bytes
+[1788226238.774] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=4d431fb2-5598-4fba-8ec9-3de985c2183d-snapshot
+[1788226238.780] Create v169b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\
+\\x94(\
+\\x05v169b\\x1a\\x87\\x01977805900169.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788226238.835] Tasks/Create v169b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v169b\\x10\\x8e\\x05'
+[1788226238.851] Tasks/Start v169b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x8e\\x05'
+[1788226239.152] --- COW v169c.out @1s +339 ---
+[1788226238.9] === 1 setup ===
+[1788226238.9] Create yes -> HTTP/1.1 200 OK b'{"containerId":"55bc52da-469c-403c-978a-d0c8549dbbb4"}'
+[1788226238.9] cid=55bc52da-469c-403c-978a-d0c8549dbbb4
+[1788226238.9] Start -> HTTP/1.1 200 OK b'{}'
+
+[1788226240.054] --- COW v169c.out @4s +292 ---
+[1788226239.9] yes pid=687
+[1788226239.9] === 2 exec debug ===
+[1788226239.9] cg EXC [Errno 2] No such file or directory: '/sys/fs/cgroup/container/55bc52da-469c-403c-978a-d0c8549dbbb4/cgroup.procs'
+[1788226239.9] A Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_52ae126c18e34e85b1921ebbe93"}'
+[1788226240.654] --- COW v169c.out @6s +242 ---
+[1788226240.4] cg2 EXC [Errno 2] No such file or directory: '/sys/fs/cgroup/container/55bc52da-469c-403c-978a-d0c8549dbbb4/cgroup.procs'
+[1788226240.4] B Exec(nocmd args) -> HTTP/1.1 200 OK b'{"processId":"hvcp_ac110e065711485caa2b7e08707"}'
+[1788226240.955] --- COW v169c.out @7s +238 ---
+[1788226240.9] cg3 EXC [Errno 2] No such file or directory: '/sys/fs/cgroup/container/55bc52da-469c-403c-978a-d0c8549dbbb4/cgroup.procs'
+[1788226240.9] C Exec(cmdstr) -> HTTP/1.1 200 OK b'{"processId":"hvcp_48252d938e4c4a849fa8af62532"}'
+[1788226241.556] --- COW v169c.out @9s +175 ---
+[1788226241.4] cg4 EXC [Errno 2] No such file or directory: '/sys/fs/cgroup/container/55bc52da-469c-403c-978a-d0c8549dbbb4/cgroup.procs'
+[1788226241.4] ctr pidns procs: ['1']
+[1788226242.457] --- COW v169c.out @12s +618 ---
+[1788226242.4] hostproc 654 sh /bin/sh -c echo V99_START $$ > /tmp/v169c.out 2>&1;mkdir -p /mnt/g/run /mnt/g/pr
+[1788226242.4] === 3 init.sock ===
+[1788226242.4] HTTP /proc/1/root/volumes/run/vercel/share/init.sock -> b'HTTP/1.1 404 Not Found\\r\
+Content-Type: text/plain; charset=utf-8\\r\
+X-Content-Type-Options: nosniff\\r\
+Date: Tue, 01 Sep 2026 01:30:42 GMT\\r\
+Content-Length: 19\\r\
+Connection: close\\r\
+\\r\
+404 page not found\
+'
+[1788226242.4] JSON /proc/1/root/volumes/run/vercel/share/init.sock -> b'HTTP/1.1 400 Bad Request\\r\
+400 Bad Request'
+[1788226244.560] --- COW v169c.out @19s +2839 ---
+[1788226244.4] RAW /proc/1/root/volumes/run/vercel/share/init.sock -> b''
+[1788226244.4] === 4 celld net ===
+[1788226244.5] CELD /proc/1/net/tcp:   sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+[1788226244.5] CELD /proc/1/net/tcp6:   sl  local_address                         remote_address                        st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode
+   0: 00000000000000000000000000000000:5BA0 00000000000000000000000000000000:0000 0A 00000000:00000000 00:00000000 00000000     0        0 644 2 00000000fcd3e74e 100 0 0 10 0
+   1: 0000000000000000FFFF00003F694064:5BA0 0000000000000000FFFF000001004064:F67A 01 00000000:00000000 02:0...[TRUNC 873]
+[1788226244.5] CELD /proc/1/net/udp:    sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode ref pointer drops            
+ 3155: 0100007F:C64A 0100007F:1FBD 01 00000000:00000000 00:00000000 00000000     0        0 550 2 000000008638439a 0           
+[1788226244.5] CELD /proc/1/net/route: Iface\tDestination\tGateway \tFlags\tRefCnt\tUse\tMetric\tMask\t\tMTU\tWindow\tIRTT                                                       
+eth0\t00000000\t01004064\t0003\t0\t0\t0\t00000000\t0\t0\t0                                                                               
+eth0\t00004064\t00000000\t0001\t0\t0\t0\t0000FFFF\t0\t0\t0                                                                               
+[1788226244.5] CELD /proc/1/net/vsock EXC [Errno 2] No such file or directory: '/proc/1/net/vsock'
+[1788226244.5] CELD /proc/1/net/unix: Num       RefCount Protocol Flags    Type St Inode Path
+00000000d9437c4a: 00000003 00000000 00000000 0001 03  1263 /run/vercel/share/init.sock
+00000000af00660a: 00000003 00000000 00000000 0001 03  1255 /run/apm/apm.sock
+0000000081861e6c: 00000002 00000000 00000000 0001 03  1623 /run/vercel/share/init.sock
+00000000d4459251: 00000003 00000000 00000000 0001 03   789
+00000000c73f791c: 00000003 00000000 00000000 0001 03   634
+00...[TRUNC 1323]
+[1788226244.5] IFACE: ['lo', 'eth0']
+[1788226244.5] === 5 sbi bin ===
+[1788226244.5] sandbox-init size=9134264 head=b'\\x7fELF\\x02\\x01\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x02\\x00>\\x00\\x01\\x00\\x00\\x00@\\xffG\\x00\\x00\\x00\\x00\\x00@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x90\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00@\\x008\\x00\\x06\\x00@\\x00\\x10\\x00\\x0f\\x00\\x06\\x00\\x00\\x00\\x04\\x00\\x00\\x00@\\x00\\x00\\x00\\x00\\x00\\x00\\x00@\\x00@\\x00\\x00\\x00\\x00\\x00@\\x00@\\x00\\x00\\x00\\x00\\x00P\\x01\\x00\\x00\\x00\\x00\\x00\
+[1788226244.5] V169_DONE
+Traceback (most recent call last):
+  File "/vercel/sandbox/v169_payload.py", line 209, in <module>
+    f.close()
+AttributeError: 'tuple' object has no attribute 'close'
+CHROOT_RC=1
+V99_END
+[1788226244.611] kill v169b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788226244.611] V99M_DONE

@@ -1,0 +1,45 @@
+========== VARIANT v1vercel url=s3://v1.vercel.com/snap/x ==========
+create: 200 {"sandbox":{"name":"v196v1vercel","currentSessionId":"sbx_F7TxN7XUI9jVB9wVqcZDvAy6Lhxo","status":"running","statusUpdatedAt":1788230514947,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230514947,"updatedAt":1788230514947},"session":{"id":"sbx_F7TxN7XUI9jVB9wVqcZDvAy6Lhxo","runtime":"node22"
+[pre status] ('running', None, 1788230514947)
+[inject /vercel/sandbox/vda196_user.py] 200
+[run] 200
+{"command":{"id":"cmd_5ec7f7822fa54f16ba744a56e374","name":"python3","args":["/vercel/sandbox/vda196_user.py","s3://v1.vercel.com/snap/x"],"cwd":"/vercel/sandbox","sessionId":"sbx_F7TxN7XUI9jVB9wVqcZDvAy6Lhxo","startedAt":1788230517499,"exitCode":null}}
+{"data":"[1788230517.5] === snapshot url=s3://v1.vercel.com/snap/x ===\n","stream":"stdout"}
+
+[post status] ('stopped', 'snap_1Iy0EJT8GGjghLD8xUniu78wAo7v', 1788230521977)
+[post2 status] ('stopped', 'snap_1Iy0EJT8GGjghLD8xUniu78wAo7v', 1788230521977)
+--- variant done 39s ---
+========== VARIANT baddns url=s3://nonexistent-zzz-196.invalid/snap/x ==========
+create: 200 {"sandbox":{"name":"v196baddns","currentSessionId":"sbx_MBEXbrifkenWyhod849PWpcS7XmB","status":"running","statusUpdatedAt":1788230554182,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230554183,"updatedAt":1788230554183},"session":{"id":"sbx_MBEXbrifkenWyhod849PWpcS7XmB","runtime":"node22","
+[pre status] ('running', None, 1788230554182)
+[inject /vercel/sandbox/vda196_user.py] 200
+[run] 200
+{"command":{"id":"cmd_287fe0303d5e4da998fbae6ced3d","name":"python3","args":["/vercel/sandbox/vda196_user.py","s3://nonexistent-zzz-196.invalid/snap/x"],"cwd":"/vercel/sandbox","sessionId":"sbx_MBEXbrifkenWyhod849PWpcS7XmB","startedAt":1788230556645,"exitCode":null}}
+{"data":"[1788230556.7] === snapshot url=s3://nonexistent-zzz-196.invalid/snap/x ===\n","stream":"stdout"}
+
+[post status] ('stopped', 'snap_J0zRxGm8WlELK1pzmKRR5MmX2XQP', 1788230560582)
+[post2 status] ('stopped', 'snap_J0zRxGm8WlELK1pzmKRR5MmX2XQP', 1788230560582)
+--- variant done 78s ---
+========== VARIANT sbc-self url=s3://127.0.0.1:23456/snap/x ==========
+create: 200 {"sandbox":{"name":"v196sbc-self","currentSessionId":"sbx_0MQcZxoTlqaV43AuoWUP83X6DpCQ","status":"running","statusUpdatedAt":1788230592971,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230592971,"updatedAt":1788230592971},"session":{"id":"sbx_0MQcZxoTlqaV43AuoWUP83X6DpCQ","runtime":"node22"
+[pre status] ('running', None, 1788230592971)
+[inject /vercel/sandbox/vda196_user.py] 200
+[run] 200
+{"command":{"id":"cmd_ac97dfdeeec741c8aacf265581b4","name":"python3","args":["/vercel/sandbox/vda196_user.py","s3://127.0.0.1:23456/snap/x"],"cwd":"/vercel/sandbox","sessionId":"sbx_0MQcZxoTlqaV43AuoWUP83X6DpCQ","startedAt":1788230595497,"exitCode":null}}
+{"data":"[1788230595.5] === snapshot url=s3://127.0.0.1:23456/snap/x ===\n","stream":"stdout"}
+
+[post status] ('stopped', 'snap_At6wfcdDjiAPXn9ZMOOBwfnp21ky', 1788230600011)
+[post2 status] ('stopped', 'snap_At6wfcdDjiAPXn9ZMOOBwfnp21ky', 1788230600011)
+--- variant done 118s ---
+========== VARIANT s3aws url=s3://vercel-sandbox-probe-196.s3.us-east-1.amazonaws.com/snap/x ==========
+create: 200 {"sandbox":{"name":"v196s3aws","currentSessionId":"sbx_H3ZogRmtaW9vmCODMyFc03AMBoFR","status":"running","statusUpdatedAt":1788230632437,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788230632437,"updatedAt":1788230632437},"session":{"id":"sbx_H3ZogRmtaW9vmCODMyFc03AMBoFR","runtime":"node22","r
+[pre status] ('running', None, 1788230632437)
+[inject /vercel/sandbox/vda196_user.py] 200
+[run] 200
+{"command":{"id":"cmd_29a16dac019a4455bb76ebb8b5e4","name":"python3","args":["/vercel/sandbox/vda196_user.py","s3://vercel-sandbox-probe-196.s3.us-east-1.amazonaws.com/snap/x"],"cwd":"/vercel/sandbox","sessionId":"sbx_H3ZogRmtaW9vmCODMyFc03AMBoFR","startedAt":1788230635597,"exitCode":null}}
+{"data":"[1788230635.6] === snapshot url=s3://vercel-sandbox-probe-196.s3.us-east-1.amazonaws.com/snap/x ===\n","stream":"stdout"}
+
+[post status] ('stopped', 'snap_Gvj94Lkww88bXvh0r10iRyXo24lo', 1788230639096)
+[post2 status] ('stopped', 'snap_Gvj94Lkww88bXvh0r10iRyXo24lo', 1788230639096)
+--- variant done 156s ---
+ALL DONE 156s

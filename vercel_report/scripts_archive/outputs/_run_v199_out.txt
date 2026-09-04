@@ -1,0 +1,85 @@
+create: 200 {"sandbox":{"name":"v199","currentSessionId":"sbx_ipeFKTMGZEHZBIqIHUV1udlCiXls","status":"running","statusUpdatedAt":1788231320506,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788231320506,"updatedAt":1788231320506},"session":{"id":"sbx_ipeFKTMGZEHZBIqIHUV1udlCiXls","runtime":"node22","reques
+[create ok] 5s
+[inject /vercel/sandbox/vda199_probe_user.py] 200
+[run payload] 200
+{"command":{"id":"cmd_c181e8c1ac144cb8b4b4915f3a2f","name":"python3","args":["/vercel/sandbox/vda199_probe_user.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_ipeFKTMGZEHZBIqIHUV1udlCiXls","startedAt":1788231322276,"exitCode":null}}
+{"data":"[1788231322.3] === 1 init.sock ===\n[1788231322.3] STAT /run/vercel/share/init.sock mode=140600 uid=1000 gid=1000\n","stream":"stdout"}
+{"data":"[1788231322.3] PING /run/vercel/share/init.sock -> HTTP/1.1 401 Unauthorized b'HTTP/1.1 401 Unauthorized\\r\\nAccept-Encoding: gzip\\r\\nContent-Type: application/json\\r\\nDate: Tue, 01 Sep 2026 02:55:22 GMT\\r\\nContent-Length: 63\\r\\nConnection: close\\r\\n\\r\\n{\"code\":\"unauthenticated\",\"message\":\"missing signature header\"}'\n[1788231322.3] STAT /run/init.sock EXC FileNotFoundError\n","stream":"stdout"}
+{"data":"[1788231322.3] PING /run/init.sock -> EXC FileNotFoundError b''\n","stream":"stdout"}
+{"data":"[1788231322.3] STAT /var/run/vercel/share/init.sock mode=140600 uid=1000 gid=1000\n[1788231322.3] PING /var/run/vercel/share/init.sock -> HTTP/1.1 401 Unauthorized b'HTTP/1.1 401 Unauthorized\\r\\nAccept-Encoding: gzip\\r\\nContent-Type: application/json\\r\\nDate: Tue, 01 Sep 2026 02:55:22 GMT\\r\\nContent-Length: 63\\r\\nConnection: close\\r\\n\\r\\n{\"code\":\"unauthenticated\",\"message\":\"missing signature header\"}'\n[1788231322.3] STAT /vercel/sandbox/init.sock EXC FileNotFoundError\n[1788231322.3] PING /vercel/sandbox/init.sock -> EXC FileNotFoundError b''\n[1788231322.3] === 2 env ===\n","stream":"stdout"}
+{"data":"[1788231322.3] === 3 dirs ===\n[1788231322.3] LS /run/vercel: ['share']\n[1788231322.3] LS /run/vercel/share: ['sandbox-init', 'init.sock']\n[1788231322.3] LS /etc/vercel EXC FileNotFoundError\n[1788231322.3] LS /var/run/vercel: ['share']\n[1788231322.3] LS /vercel: ['bin', 'runtimes', 'sandbox']\n[1788231322.3] LS /vercel/sandbox: ['vda199_probe_user.py']\n[1788231322.3] === 4 procs ===\n","stream":"stdout"}
+{"data":"[1788231322.3] PROC 1: /run/vercel/share/sandbox-init --socket=/run/vercel/share/init.sock --pubkey=RlOG5oHi9BXW4sVwyPlM9yghnU24vW8zvI2aJZZQD7M=  ENVHITS=[]\n[1788231322.3] === 5 23456 spawn svc ===\n","stream":"stdout"}
+{"data":"[1788231322.3] 23456 SPAWN Ping -> HTTP/1.1 404 Not Found b'HTTP/1.1 404 Not Found\\r\\nContent-Type: text/plain; charset=utf-8\\r\\nX-Content-Type-Options: nosniff\\r\\nDate: Tue, 01 Sep 2026 02:55:22 GMT\\r\\nContent-Length: 19\\r\\nConnection: close\\r\\n\\r\\n404 page not found\\n'\n","stream":"stdout"}
+{"data":"[1788231322.3] 23456 SPAWN Kill -> HTTP/1.1 404 Not Found b'HTTP/1.1 404 Not Found\\r\\nContent-Type: text/plain; charset=utf-8\\r\\nX-Content-Type-Options: nosniff\\r\\nDate: Tue, 01 Sep 2026 02:55:22 GMT\\r\\nContent-Length: 19\\r\\nConnection: close\\r\\n\\r\\n404 page not found\\n'\n","stream":"stdout"}
+{"data":"[1788231322.3] 23456 SPAWN Spawn -> HTTP/1.1 404 Not Found b'HTTP/1.1 404 Not Found\\r\\nContent-Type: text/plain; charset=utf-8\\r\\nX-Content-Type-Options: nosniff\\r\\nDate: Tue, 01 Sep 2026 02:55:22 GMT\\r\\nContent-Length: 19\\r\\nConnection: close\\r\\n\\r\\n404 page not found\\n'\n","stream":"stdout"}
+{"data":"[1788231322.3] 23456 SPAWN Start -> HTTP/1.1 404 Not Found b'HTTP/1.1 404 Not Found\\r\\nContent-Type: text/plain; charset=utf-8\\r\\nX-Content-Type-Options: nosniff\\r\\nDate: Tue, 01 Sep 2026 02:55:22 GMT\\r\\nContent-Length: 19\\r\\nConnection: close\\r\\n\\r\\n404 page not found\\n'\n","stream":"stdout"}
+{"data":"[1788231322.3] 23456 SPAWN Exec -> HTTP/1.1 404 Not Found b'HTTP/1.1 404 Not Found\\r\\nContent-Type: text/plain; charset=utf-8\\r\\nX-Content-Type-Options: nosniff\\r\\nDate: Tue, 01 Sep 2026 02:55:22 GMT\\r\\nContent-Length: 19\\r\\nConnection: close\\r\\n\\r\\n404 page not found\\n'\n","stream":"stdout"}
+{"data":"[1788231322.3] 23456 SPAWN Create -> HTTP/1.1 404 Not Found b'HTTP/1.1 404 Not Found\\r\\nContent-Type: text/plain; charset=utf-8\\r\\nX-Content-Type-Options: nosniff\\r\\nDate: Tue, 01 Sep 2026 02:55:22 GMT\\r\\nContent-Length: 19\\r\\nConnection: close\\r\\n\\r\\n404 page not found\\n'\n[1788231322.3] V199_DONE\n","stream":"stdout"}
+{"command":{"id":"cmd_c181e8c1ac144cb8b4b4915f3a2f","name":"python3","args":["/vercel/sandbox/vda199_probe_user.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_ipeFKTMGZEHZBIqIHUV1udlCiXls","startedAt":1788231322276,"exitCode":0,"durationMs":36}}
+
+Traceback (most recent call last):
+  File "D:\python3.14\Lib\urllib\request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1358, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1404, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "D:\python3.14\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python3.14\Lib\http\client.py", line 1492, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\python3.14\Lib\http\client.py", line 1023, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "D:\python3.14\Lib\socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\scan\_run_v199.py", line 36, in <module>
+    main()
+    ~~~~^^
+  File "D:\scan\_run_v199.py", line 31, in main
+    api('DELETE', '/v2/sandboxes/%s?teamId=%s&projectId=%s' % (NAME, TEAM, PROJ))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\scan\skills\non-traditional-vuln-hunting\vercel_driver.py", line 30, in api
+    with urllib.request.urlopen(req, data=data, timeout=timeout) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "D:\python3.14\Lib\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "D:\python3.14\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "D:\python3.14\Lib\urllib\request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python3.14\Lib\urllib\request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>

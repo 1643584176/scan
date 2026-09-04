@@ -1,0 +1,6 @@
+### [invite-1] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit/invite (2.9s)
+500 | {"message":"Failed to send database JIT access invite","errorEventId":"1f42a694df374202b153f6b97548705d"}
+### [invite-2] POST /v1/projects/vnfobbywemqgcgjokkxd/database/jit/invite (3.1s)
+500 | {"message":"Failed to send database JIT access invite","errorEventId":"bbdeef4146e64ae3afbc12a0e3210b25"}
+### [jit-list] GET /v1/projects/vnfobbywemqgcgjokkxd/database/jit/list (0.7s)
+200 | {"items":[{"user_id":"68ef6708-65ba-4411-82fb-ea59015a04e9","primary_email":"1643584176@qq.com","invite_id":null,"expires_at":null,"user_roles":[]}]}

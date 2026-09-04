@@ -1,0 +1,6 @@
+﻿.git
+figma_report\_kiwi_ref\.git
+figma_report\_kiwi_work\kiwi\.git
+neon_report\_pg_session_jwt_src\.git
+netlify_report\_gotrue_src\.git
+netlify_report\_pgrepack_src\.git

@@ -1,0 +1,136 @@
+{
+ "type": "object",
+ "properties": {
+  "id": {
+   "type": "string"
+  },
+  "site_id": {
+   "type": "string"
+  },
+  "user_id": {
+   "type": "string"
+  },
+  "build_id": {
+   "type": "string"
+  },
+  "state": {
+   "type": "string"
+  },
+  "name": {
+   "type": "string"
+  },
+  "url": {
+   "type": "string"
+  },
+  "ssl_url": {
+   "type": "string"
+  },
+  "admin_url": {
+   "type": "string"
+  },
+  "deploy_url": {
+   "type": "string"
+  },
+  "deploy_ssl_url": {
+   "type": "string"
+  },
+  "screenshot_url": {
+   "type": "string"
+  },
+  "review_id": {
+   "type": "number"
+  },
+  "draft": {
+   "type": "boolean"
+  },
+  "required": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "required_functions": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "required_edge_functions": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "An array of code_shas for the edge-function bundles that need to be uploaded to\ncomplete the deploy.\n"
+  },
+  "error_message": {
+   "type": "string"
+  },
+  "branch": {
+   "type": "string"
+  },
+  "commit_ref": {
+   "type": "string"
+  },
+  "commit_url": {
+   "type": "string"
+  },
+  "skipped": {
+   "type": "boolean"
+  },
+  "created_at": {
+   "type": "string",
+   "format": "dateTime"
+  },
+  "updated_at": {
+   "type": "string",
+   "format": "dateTime"
+  },
+  "published_at": {
+   "type": "string",
+   "format": "dateTime"
+  },
+  "title": {
+   "type": "string"
+  },
+  "context": {
+   "type": "string"
+  },
+  "locked": {
+   "type": "boolean"
+  },
+  "review_url": {
+   "type": "string"
+  },
+  "framework": {
+   "type": "string"
+  },
+  "skew_protection_token": {
+   "type": "string"
+  },
+  "function_schedules": {
+   "type": "array",
+   "items": {
+    "$ref": "#/definitions/functionSchedule"
+   }
+  },
+  "functions_region": {
+   "type": "string",
+   "description": "The functions region for this deploy as an airport code.\n"
+  },
+  "functions_region_overrides": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "region": {
+      "type": "string"
+     }
+    }
+   },
+   "description": "Functions in the deploy that explicitly specify their own region\n(airport code).\n"
+  }
+ }
+}

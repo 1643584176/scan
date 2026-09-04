@@ -1,0 +1,103 @@
+=== 1 extract ===
+EXTRACT sandboxctrl 11157688 bytes
+EXTRACT sandbox-init 9134264 bytes
+=== 2 sbctrl routes ===
+SBC size=11157688
+SBC b'HandleFunc' @0x4c8c92: b'se\x01\nByteReadCh\x00\ndoBodyCopy\x00\nunwrapBody\x00\nreadCloser\x00\naddPattern\x00\nmultiChild\x00\nemptyChild\x00\nhandleFunc\x01\nHandleFunc\x00\ncontinueCh\x00\ncallerGone\x00\nwriteErrCh\x00\nmarkReused\x00\ntargetAddr\x00\nbeforeDial\x00\ntryDeliver\x00\npeer'
+SBC b'serveMux' @0x4d33e4: b'ewResponseWriter\x00\x11stopShutdownTimer\x00\x11*http.errorReader\x01\x11*http.HandlerFunc\x00\x11*http.routingNode\x00\x11*http.serveMux121\x00\x11*http.statusError\x00\x11*http.persistConn\x00\x11*chan<- struct {}\x00\x11mapRoundTripError\x00\x11*http.connO'
+SBC b'http.Handler' @0x4cd3af: b'FragBuf\x01\rWritePriority\x01\rWriteRawFrame\x01\rWriteSettings\x00\rreadMetaFrame\x00\r*func(uint16)\x01\rHeaderEncoder\x01\r*http.Handler\x01\r*http.Request\x01\rContentLength\x00\r*http.pattern\x00\r*http.segment\x00\rconflictsWith\x01\rMultipartFo'
+=== 3 sbinit routes ===
+SBI size=9134264
+=== 4 blast 23456 ===
+MISS / -> HTTP/1.1 404 Not Found
+MISS /health -> HTTP/1.1 404 Not Found
+MISS /healthz -> HTTP/1.1 404 Not Found
+MISS /status -> HTTP/1.1 404 Not Found
+MISS /v1/status -> HTTP/1.1 404 Not Found
+MISS /api/status -> HTTP/1.1 404 Not Found
+MISS /metrics -> HTTP/1.1 404 Not Found
+MISS /v1/sandbox -> HTTP/1.1 404 Not Found
+MISS /sandbox -> HTTP/1.1 404 Not Found
+MISS /v1/sandbox/status -> HTTP/1.1 404 Not Found
+MISS /sandbox/status -> HTTP/1.1 404 Not Found
+MISS /v1/containers -> HTTP/1.1 404 Not Found
+MISS /containers -> HTTP/1.1 404 Not Found
+MISS /v1/container -> HTTP/1.1 404 Not Found
+MISS /v1/init -> HTTP/1.1 404 Not Found
+MISS /v1/lifecycle -> HTTP/1.1 404 Not Found
+MISS /v1/snapshot -> HTTP/1.1 404 Not Found
+MISS /v1/process -> HTTP/1.1 404 Not Found
+MISS /v1/cell -> HTTP/1.1 404 Not Found
+MISS /cell -> HTTP/1.1 404 Not Found
+MISS /v1/info -> HTTP/1.1 404 Not Found
+MISS /v1/version -> HTTP/1.1 404 Not Found
+MISS /version -> HTTP/1.1 404 Not Found
+MISS /v1/ping -> HTTP/1.1 404 Not Found
+MISS /ping -> HTTP/1.1 404 Not Found
+MISS /v1/health -> HTTP/1.1 404 Not Found
+MISS /api/v1/status -> HTTP/1.1 404 Not Found
+MISS /debug/pprof/ -> HTTP/1.1 404 Not Found
+MISS /v1/logs -> HTTP/1.1 404 Not Found
+MISS /logs -> HTTP/1.1 404 Not Found
+MISS /v1/events -> HTTP/1.1 404 Not Found
+MISS /events -> HTTP/1.1 404 Not Found
+MISS /v1/start -> HTTP/1.1 404 Not Found
+MISS /v1/stop -> HTTP/1.1 404 Not Found
+MISS /v1/restart -> HTTP/1.1 404 Not Found
+MISS /v1/exec -> HTTP/1.1 404 Not Found
+MISS /v1/run -> HTTP/1.1 404 Not Found
+MISS /v1/mount -> HTTP/1.1 404 Not Found
+MISS /v1/network -> HTTP/1.1 404 Not Found
+MISS /v1/dns -> HTTP/1.1 404 Not Found
+MISS /v1/fs -> HTTP/1.1 404 Not Found
+MISS /v1/snapshot/create -> HTTP/1.1 404 Not Found
+MISS /v1/runtime -> HTTP/1.1 404 Not Found
+MISS /v1/runtime/info -> HTTP/1.1 404 Not Found
+=== 5 blast init.sock ===
+MISS init / -> HTTP/1.1 404 Not Found
+MISS init /health -> HTTP/1.1 404 Not Found
+MISS init /healthz -> HTTP/1.1 404 Not Found
+MISS init /status -> HTTP/1.1 404 Not Found
+MISS init /v1/status -> HTTP/1.1 404 Not Found
+MISS init /api/status -> HTTP/1.1 404 Not Found
+MISS init /metrics -> HTTP/1.1 404 Not Found
+MISS init /v1/sandbox -> HTTP/1.1 404 Not Found
+MISS init /sandbox -> HTTP/1.1 404 Not Found
+MISS init /v1/sandbox/status -> HTTP/1.1 404 Not Found
+MISS init /sandbox/status -> HTTP/1.1 404 Not Found
+MISS init /v1/containers -> HTTP/1.1 404 Not Found
+MISS init /containers -> HTTP/1.1 404 Not Found
+MISS init /v1/container -> HTTP/1.1 404 Not Found
+MISS init /v1/init -> HTTP/1.1 404 Not Found
+MISS init /v1/lifecycle -> HTTP/1.1 404 Not Found
+MISS init /v1/snapshot -> HTTP/1.1 404 Not Found
+MISS init /v1/process -> HTTP/1.1 404 Not Found
+MISS init /v1/cell -> HTTP/1.1 404 Not Found
+MISS init /cell -> HTTP/1.1 404 Not Found
+MISS init /v1/info -> HTTP/1.1 404 Not Found
+MISS init /v1/version -> HTTP/1.1 404 Not Found
+MISS init /version -> HTTP/1.1 404 Not Found
+MISS init /v1/ping -> HTTP/1.1 404 Not Found
+MISS init /ping -> HTTP/1.1 404 Not Found
+MISS init /v1/health -> HTTP/1.1 404 Not Found
+MISS init /api/v1/status -> HTTP/1.1 404 Not Found
+MISS init /debug/pprof/ -> HTTP/1.1 404 Not Found
+MISS init /v1/logs -> HTTP/1.1 404 Not Found
+MISS init /logs -> HTTP/1.1 404 Not Found
+MISS init /v1/events -> HTTP/1.1 404 Not Found
+MISS init /events -> HTTP/1.1 404 Not Found
+MISS init /v1/start -> HTTP/1.1 404 Not Found
+MISS init /v1/stop -> HTTP/1.1 404 Not Found
+MISS init /v1/restart -> HTTP/1.1 404 Not Found
+MISS init /v1/exec -> HTTP/1.1 404 Not Found
+MISS init /v1/run -> HTTP/1.1 404 Not Found
+MISS init /v1/mount -> HTTP/1.1 404 Not Found
+MISS init /v1/network -> HTTP/1.1 404 Not Found
+MISS init /v1/dns -> HTTP/1.1 404 Not Found
+MISS init /v1/fs -> HTTP/1.1 404 Not Found
+MISS init /v1/snapshot/create -> HTTP/1.1 404 Not Found
+MISS init /v1/runtime -> HTTP/1.1 404 Not Found
+MISS init /v1/runtime/info -> HTTP/1.1 404 Not Found
+=== 6 methods ===
+METHODS(8): vercel.hive.cell.api.containers.v1.ContainersService/Exec vercel.hive.cell.api.containers.v1.ContainersService/Wait vercel.hive.cell.api.containers.v1.ContainersService/KillServer vercel.hive.cell.api.containers.v1.ContainersService/Start vercel.hive.cell.api.containers.v1.ContainersService/Stdin vercel.hive.cell.api.containers.v1.ContainersService/MountNo vercel.hive.cell.api.containers.v1.ContainersService/Create vercel.hive.cell.api.containers.v1.ContainersService/StreamOutputgrpc
+V184_DONE

@@ -1,0 +1,24 @@
+[create] -> 200
+sid = sbx_t1miKdHfd7aMztFbOOwqqD0xjMkf
+[marker] sh: 1: cannot create /vercel/sandbox/fs_marker.txt: Directory nonexistent
+cat: /
+=== P1: fs/read 读自己文件 ===
+[read /vercel/sandbox/fs_marker.txt] -> 404 {"error":{"code":"not_found","message":"File not found."}}
+[read /vercel/sandbox/] -> 404 {"error":{"code":"not_found","message":"File not found."}}
+[read /] -> 404 {"error":{"code":"not_found","message":"File not found."}}
+[read /etc/passwd] -> 200 root:x:0:0:root:/root:/bin/bash daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin bin:x:2:2:bin:/bin:/usr/sbin/nologin sys:x:3:3:sys:/dev:/usr/sbin/nologin sync:x:4:65534:sync:/bin:/bin/sync games:x:5:6
+[read /vercel/sandbox/../../../etc/passwd] -> 200 root:x:0:0:root:/root:/bin/bash daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin bin:x:2:2:bin:/bin:/usr/sbin/nologin sys:x:3:3:sys:/dev:/usr/sbin/nologin sync:x:4:65534:sync:/bin:/bin/sync games:x:5:6
+[read ../etc/passwd] -> 200 root:x:0:0:root:/root:/bin/bash daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin bin:x:2:2:bin:/bin:/usr/sbin/nologin sys:x:3:3:sys:/dev:/usr/sbin/nologin sync:x:4:65534:sync:/bin:/bin/sync games:x:5:6
+[read ..%2Fetc%2Fpasswd] -> 404 {"error":{"code":"not_found","message":"File not found."}}
+=== P2: fs/read 变体 (GET / query / raw path) ===
+[GET read] -> 404 {"error":{"code":"not_found","message":"Not Found"}}
+[POST read qpath] -> 400 {"error":{"code":"bad_request","message":"Invalid request: missing required property `path`."}}
+=== P3: fs/write 写文件 ===
+[write json-content] -> 415 {"error":{"message":"Unsupported Media Type"}}
+[write json-data] -> 415 {"error":{"message":"Unsupported Media Type"}}
+[write json-base64] -> 415 {"error":{"message":"Unsupported Media Type"}}
+[write octet] -> 415 {"error":{"message":"Unsupported Media Type"}}
+[write form] -> 415 {"error":{"message":"Unsupported Media Type"}}
+[verify] ls: cannot access '/vercel/sandbox/': No such file or directory
+cat: '/vercel/sandbox/fs_written*': No such file or directory
+CLEANED

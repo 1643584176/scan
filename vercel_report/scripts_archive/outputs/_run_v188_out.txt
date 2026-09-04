@@ -1,0 +1,23 @@
+create: 200 {"sandbox":{"name":"v188","currentSessionId":"sbx_8107tt86EE1WFEmyP6upx6r0KFvh","status":"running","statusUpdatedAt":1788228958270,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788228958270,"updatedAt":1788228958270},"session":{"id":"sbx_8107tt86EE1WFEmyP6upx6r0KFvh","runtime":"node22","reques
+[create ok] 5s
+[inject /vercel/sandbox/userprobe.py] 200
+[user probe] 200
+{"command":{"id":"cmd_c8731c1c580b4ac0add89c7f8703","name":"python3","args":["/vercel/sandbox/userprobe.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_8107tt86EE1WFEmyP6upx6r0KFvh","startedAt":1788228960070,"exitCode":null}}
+{"data":"[1788228960.1] === 1 ExecCommand multi-path ===\n[1788228960.1] MARKER=PWN188_28960090\n","stream":"stdout"}
+{"data":"[1788228960.1] EC {\"command\": \"/bin/sh\", \"args\": [\"-c\", \"echo PWN188_28960090 > /tmp/out188.txt 2>&1; id >> /tmp/out188.txt; hostname >> / -> HTTP/1.1 200 OK b'HTTP/1.1 200 OK\\r\\nAccept-Encoding: gzip\\r\\nContent-Type: application/json\\r\\nDate: Tue, 01 Sep 2026 02:16:00 GMT\\r\\nContent-Length: 48\\r\\nConnection: close\\r\\n\\r\\n{\"commandId\":\"cmd_bb161f66106d4ace92350351e2b5\"}'\n[1788228960.1] CID=cmd_bb161f66106d4ace92350351e2b5\n","stream":"stdout"}
+{"data":"[1788228963.1] === 2 WaitCommand after delay ===\n","stream":"stdout"}
+{"data":"[1788228963.1] WC -> HTTP/1.1 200 OK b'HTTP/1.1 200 OK\\r\\nAccept-Encoding: gzip\\r\\nContent-Type: application/json\\r\\nDate: Tue, 01 Sep 2026 02:16:03 GMT\\r\\nContent-Length: 27\\r\\nConnection: close\\r\\n\\r\\n{\"duration\":\"0.001040625s\"}'\n","stream":"stdout"}
+{"data":"[1788228963.1] KC -> HTTP/1.1 400 Bad Request b'HTTP/1.1 400 Bad Request\\r\\nAccept-Encoding: gzip\\r\\nContent-Type: application/json\\r\\nDate: Tue, 01 Sep 2026 02:16:03 GMT\\r\\nContent-Length: 62\\r\\nConnection: close\\r\\n\\r\\n{\"code\":\"invalid_argument\",\"message\":\"process already exited\"}'\n[1788228963.1] === 3 sandbox view files ===\n","stream":"stdout"}
+{"data":"[1788228963.1] SFILE /tmp/out188.txt EXC [Errno 2] No such file or directory: '/tmp/out188.txt'\n[1788228963.1] SFILE /vercel/sandbox/out188.txt EXC [Errno 2] No such file or directory: '/vercel/sandbox/out188.txt'\n[1788228963.1] SFILE /root/out188.txt EXC [Errno 2] No such file or directory: '/root/out188.txt'\n[1788228963.1] SFILE /proc/1/root/tmp/out188.txt EXC [Errno 2] No such file or directory: '/proc/1/root/tmp/out188.txt'\n[1788228963.1] === 4 Remove host path test ===\n","stream":"stdout"}
+{"data":"[1788228963.1] EC2 -> HTTP/1.1 200 OK b'HTTP/1.1 200 OK\\r\\nAccept-Encoding: gzip\\r\\nContent-Type: application/json\\r\\nDate: Tue, 01 Sep 2026 02:16:03 GMT\\r\\nContent-Length: 48\\r\\nConnection: close\\r\\n\\r\\n{\"commandId\":\"cmd_ddddcadf605746e4b128c95c176c\"}'\n","stream":"stdout"}
+{"data":"[1788228965.1] RM /tmp/v188rm_host.txt -> HTTP/1.1 200 OK b'HTTP/1.1 200 OK\\r\\nAccept-Encoding: gzip\\r\\nContent-Type: application/json\\r\\nDate: Tue, 01 Sep 2026 02:16:05 GMT\\r\\nContent-Length: 2\\r\\nConnection: close\\r\\n\\r\\n{}'\n","stream":"stdout"}
+{"data":"[1788228965.4] RM /proc/1/root/tmp/v188rm_host2.txt -> HTTP/1.1 200 OK b'HTTP/1.1 200 OK\\r\\nAccept-Encoding: gzip\\r\\nContent-Type: application/json\\r\\nDate: Tue, 01 Sep 2026 02:16:05 GMT\\r\\nContent-Length: 2\\r\\nConnection: close\\r\\n\\r\\n{}'\n","stream":"stdout"}
+{"data":"[1788228965.7] === 5 CreateSnapshot bucketBaseUrl ===\n","stream":"stdout"}
+
+[inject /vercel/sandbox/vda188_guest.py] 410
+[inject /vercel/sandbox/vda188_probe_guest.py] 410
+[run guest] 410
+{"error":{"code":"sandbox_failed","message":"Sandbox has failed due to an internal error and is no longer available"}}
+[out] 410
+{"error":{"code":"sandbox_failed","message":"Sandbox has failed due to an internal error and is no longer available"}}
+CLEANED total 21s

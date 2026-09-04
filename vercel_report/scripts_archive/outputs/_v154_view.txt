@@ -1,0 +1,12 @@
+[1788225038.840] mount vda ret=0
+
+[1788225038.841] payload written to COW 6757 bytes
+
+[1788225038.861] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=2c69845d-dee0-4f8f-8556-32ccb7fcae53-snapshot
+
+[1788225038.868] Create v154b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\x17\n\x94(\n\x05v154b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x91&\n6types.containerd.'
+
+[1788225038.934] Tasks/Create v154b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\n\n\x05v154b\x10\x90\x05'
+
+[1788225038.945] Tasks/Start v154b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\x90\x05'
+

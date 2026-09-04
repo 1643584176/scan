@@ -1,0 +1,81 @@
+[1788165394.693] mount vda ret=0
+[1788165394.693] payload written to COW 8476 bytes
+
+[1788165394.706] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=f4389198-1e7d-4b2d-b7d1-73fa9e1be67b-snapshot
+
+[1788165394.712] Create v125b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\x17\n\x94(\n\x05v125b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x91&\n6types.containerd.'
+
+[1788165394.758] Tasks/Create v125b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\n\n\x05v125b\x10\x91\x05'
+
+[1788165394.772] Tasks/Start v125b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\x91\x05'
+
+[1788165395.074] --- COW v125c.out @1s +212 ---
+[1788165394.8] === P1 read celld ===
+[1788165394.9] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165394.9] === P2 locate descriptors ===
+elld 36447264 bytes
+[1788165394.9] === P2 locate descriptors ===
+
+
+[1788165395.678] --- COW v125c.out @3s +244 ---
+[1788165394.8] === P1 read celld ===
+[1788165394.9] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165394.9] === P2 locate descriptors ===
+[1788165395.5] proto names: 123
+9] === P2 locate descriptors ===
+[1788165395.5] proto names: 123
+
+
+[1788165396.580] --- COW v125c.out @6s +326 ---
+[1788165394.8] === P1 read celld ===
+[1788165394.9] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165394.9] === P2 locate descriptors ===
+[1788165395.5] proto names: 123
+[1788165396.4] parsed files total=0
+[1788165396.4] V125C_DONE
+23
+[1788165396.4] parsed files total=0
+[1788165396.4] V125C_DONE
+CHROOT_RC=0
+V99_END
+
+
+[1788165396.607] kill v125b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788165396.608] V99M_DONE
+
+[1788165394.693] mount vda ret=0
+[1788165394.693] payload written to COW 8476 bytes
+[1788165394.706] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=f4389198-1e7d-4b2d-b7d1-73fa9e1be67b-snapshot
+[1788165394.712] Create v125b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x14\x17\n\x94(\n\x05v125b\x1a\x87\x01977805900156.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1708be914dc973663ab50e48d0045087340cc71cf903e2841b59"\x17\n\x15io.containerd.runc.v2*\x91&\n6types.containerd.'
+[1788165394.758] Tasks/Create v125b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\n\n\x05v125b\x10\x91\x05'
+[1788165394.772] Tasks/Start v125b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\x00\x00\x00\x00\x03\x08\x91\x05'
+[1788165395.074] --- COW v125c.out @1s +212 ---
+[1788165394.8] === P1 read celld ===
+[1788165394.9] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165394.9] === P2 locate descriptors ===
+elld 36447264 bytes
+[1788165394.9] === P2 locate descriptors ===
+
+[1788165395.678] --- COW v125c.out @3s +244 ---
+[1788165394.8] === P1 read celld ===
+[1788165394.9] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165394.9] === P2 locate descriptors ===
+[1788165395.5] proto names: 123
+9] === P2 locate descriptors ===
+[1788165395.5] proto names: 123
+
+[1788165396.580] --- COW v125c.out @6s +326 ---
+[1788165394.8] === P1 read celld ===
+[1788165394.9] read /proc/1/root/opt/vercel/celld 36447264 bytes
+[1788165394.9] === P2 locate descriptors ===
+[1788165395.5] proto names: 123
+[1788165396.4] parsed files total=0
+[1788165396.4] V125C_DONE
+23
+[1788165396.4] parsed files total=0
+[1788165396.4] V125C_DONE
+CHROOT_RC=0
+V99_END
+
+[1788165396.607] kill v125b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788165396.608] V99M_DONE

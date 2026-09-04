@@ -1,0 +1,36 @@
+=== M1: mkdir ../ 位置 ===
+sid = sbx_S9lPlgLXjRfnRCVdlTYWVmUdtAVq
+[mkdir ../mk_esc] -> 200 {}
+[mkdir a/../../mk_esc2] -> 200 {}
+[mkdir /tmp/../mk_esc3] -> 200 {}
+[mkdir ../ with cwd] -> 200 {}
+[find mk_esc] -> 200
+/mk_esc
+/mk_esc2
+/mk_esc3
+/mk_esc4
+---
+/vercel
+---
+ls: cannot access '/vercel/mk_esc4': No such file or directory
+/mk_esc:
+total 0
+drwxr-xr-x  2 ubuntu ubuntu   6 Aug 30 11:55 .
+drwxr-xr-x 23 root   root   310 Aug 30 11:55 ..
+
+/mk_esc2:
+total 0
+drwxr-xr-x  2 ubuntu ubuntu   6 Aug 30 11:55 .
+drwxr-xr-x 23 root   root   310 Aug 30 11:55 ..
+
+/mk_esc3:
+total 0
+drwxr-xr-x  2 ubuntu ubuntu   6 Aug 30 11
+=== V1: v3 snapshot/fork ===
+[v3 snapshot] -> 201 {"snapshot":{"id":"snap_eioppaq7fDLdi91PQeY2h5qAvHAh","sourceSessionId":"sbx_2VBROoPt8Vv4ocQ6908HhYSJP0He","region":"iad1","regions":["iad1"],"status"
+[v3 fork] -> 200 {"sandbox":{"name":"v3s51f","currentSnapshotId":"snap_eioppaq7fDLdi91PQeY2h5qAvHAh","currentSessionId":"sbx_gJmJNppvEcAGQewRXLaMVh1FMBUL","status":"ru
+=== C1: GET cmd 列表 + logs ===
+[cmd exec] -> 200 cmd_id=None
+[list cmds own] -> 200 {"commands":[{"id":"cmd_858c6c0a36db4448b18f1153dea5","name":"sh","args":["-c","echo ZWNobyBTRUNSRVRfQ01EX09VVFBVVF85OQ== | base64 -d | sh"],"cwd":"/vercel","sessionId":"sbx_4NGGYFhBpzOyIvAJgwBYNGPMGtKU","startedAt":1788090981883,"exitCode":0,"durationMs":3}]}
+[list cmds victim] -> 404 {"error":{"code":"not_found","message":"Vercel Sandbox not found."}}
+DONE

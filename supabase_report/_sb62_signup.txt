@@ -1,0 +1,9 @@
+### [cfg-auth] GET /v1/projects/vnfobbywemqgcgjokkxd/config/auth (2.6s)
+401 | {"message":"Unauthorized"}
+### [signup] POST /auth/v1/signup (4.4s)
+401 | {"hint":"No `apikey` request header or url param was found.","message":"No API key found in request"}
+### [tle-ext]
+201 | []
+### [tle-funcs] ERR _ssl.c:1063: The handshake operation timed out
+### [avail-ext]
+201 | [{"name":"pg_tle","default_version":"1.4.0"},{"name":"pgsodium","default_version":"3.1.8"},{"name":"hypopg","default_version":"1.4.1"},{"name":"http","default_version":"1.6"},{"name":"supabase_vault","default_version":"0.3.1"},{"name":"vector","default_version":"0.8.2"},{"name":"pg_graphql","default_version":"1.6.1"},{"name":"pgjwt","default_version":"0.2.0"}]

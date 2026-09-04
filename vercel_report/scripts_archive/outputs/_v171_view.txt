@@ -1,0 +1,97 @@
+[1788226351.785] mount vda ret=0
+[1788226351.786] payload written to COW 6529 bytes
+[1788226351.801] list rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   snap_key=e4ed0694-86ad-4d46-89a7-db6a61ac0936-snapshot
+[1788226351.808] Create v171b(nopid) rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x14\\x17\
+\\x94(\
+\\x05v171b\\x1a\\x87\\x01977805900171.dkr.ecr.us-east-1.amazonaws.com/sandbox-controller@sha256:95fd06013f4e1718be914dc973663ab50e48d0045087340cc71cf903e2841b59"\\x17\
+\\x15io.containerd.runc.v2*\\x91&\
+6types.containerd.'
+[1788226351.865] Tasks/Create v171b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\
+\
+\\x05v171b\\x10\\x91\\x05'
+[1788226351.877] Tasks/Start v171b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:   out=b'\\x00\\x00\\x00\\x00\\x03\\x08\\x91\\x05'
+[1788226352.177] --- COW v171c.out @1s +283 ---
+[1788226351.9] === 1 setup ===
+[1788226351.9] Create yes -> HTTP/1.1 200 OK b'{"containerId":"65613003-e7c7-421f-8e6f-18a47009199c"}'
+[1788226351.9] Start -> HTTP/1.1 200 OK b'{}'
+'{"containerId":"65613003-e7c7-421f-8e6f-18a47009199c"}'
+
+[1788226353.079] --- COW v171c.out @4s +211 ---
+[1788226353.0] yes pid=690
+[1788226353.0] Exec -> HTTP/1.1 200 OK b'{"processId":"hvcp_1208abee707a456c9358238e68d"}'
+[1788226353.0] procId=hvcp_1208abee707a456c9358238e68d
+[1788226353.0] === 2 process wait ===
+[1788226356.984] --- COW v171c.out @17s +87 ---
+[1788226357.0] PWait {'process_id': 'hvcp_1208abee707a456c9358238e68d'} -> NO_RESP b''
+[1788226361.190] --- COW v171c.out @31s +491 ---
+[1788226361.0] PWait {'processId': 'hvcp_1208abee707a456c9358238e68d'} -> NO_RESP b''
+[1788226361.0] PWait {'id': 'hvcp_1208abee707a456c9358238e68d'} -> HTTP/1.1 400 Bad Request b'{"code":"invalid_argument","message":"malformed process id: invalid length of process id: 0, expected 32"}'
+[1788226361.0] PWait {'pid': 'hvcp_1208abee707a456c9358238e68d'} -> HTTP/1.1 400 Bad Request b'{"code":"invalid_argument","message":"malformed process id: invalid length of process id: 0, expected 32"}'
+[1788226365.095] --- COW v171c.out @44s +143 ---
+[1788226365.0] CWait {'container_id': '65613003-e7c7-421f-8e6f-18a47009199c', 'process_id': 'hvcp_1208abee707a456c9358238e68d'} -> NO_RESP b''
+[1788226369.004] --- COW v171c.out @57s +180 ---
+[1788226369.0] CWait {'container_id': '65613003-e7c7-421f-8e6f-18a47009199c', 'processId': 'hvcp_1208abee707a456c9358238e68d'} -> NO_RESP b''
+[1788226369.0] === 3 process desc ===
+[1788226369.304] --- COW v171c.out @58s +5107 ---
+[1788226369.0] proc proto at 0x16d9510
+[1788226369.0] PROTO b'\\x13types/process.proto\\x12\\x14vercel.hive.types.v1"\\x94\\x01\
+\\x07Process\\x12\\x18\
+\\x07command\\x18\\x01 \\x01(\\tR\\x07command\\x12\\x1c\
+\\targuments\\x18\\x02 \\x03(\\tR\\targuments\\x12 \
+\\x0benvironment\\x18\\x03 \\x03(\\tR\\x0benvironment\\x12!\
+\\tdirectory\\x18\\x04 \\x01(\\tH\\x00R\\tdirectory\\x88\\x01\\x01B\\x0c\
+_directoryB(Z&github.com/vercel/hive/gen/types;typesb\\x06proto3\
+\\x1egoogle/protobuf/duration.proto\\x12\\x0fgoogle.protobuf":\
+\\x08Duration\\x12\\x1...[TRUNC 4970]
+[1788226369.0] === 4 mount val ===
+[1788226369.1] VAL b'invalid destination' @0x16a6c78: b'-request-headerschunked line ends with bare LF227373675443232059478759765625looking for beginning of valuein exponent of numeric literal%s: unable to unmarshal %q: %vfilesystem %d is not supportedduplicate rlimit specified: %qexpected header %v, but got %verror delivered in message: %vcould not create data type: %wusage is not currently trackedmount %s lowerdir %q -> %q: %wunable to download archive: %wfai...[TRUNC 861]
+[1788226369.1] VAL b'invalid path' @0x168db7d: b'ype unknown locationhost unreachableAlready ReportedMultiple ChoicesPayment RequiredUpgrade RequiredContent-Length: exec: no command0123456789abcdefinvalid argumentinvalid exchangeobject is remotemessage too longno route to hostremote I/O errorstopped (signal)time: bad [0-9]*invalid durationinvalid_argumentapplication/jsonread message: %wapplication/grpc0123456789ABCDEFprerouting_scrubcontainer exitedstarted cell...[TRUNC 847]
+[1788226369.1] VAL b'mount mode unspecified' @0x1697078: b"ithP521AndSHA512extended master secrethkdf: counter overflow.localhost.localdomainmissing ']' in addressinvalid address familyoperation was canceled/usr/share/mime/globs2/etc/apache/mime.typesunexpected length codegzip: invalid checksumaccess-control-max-ageinvalid HTTP header %sinvalid Trailer key %qhpack: string too longheader field %q = %q%sidna: invalid label %qInscriptional_ParthianNyiakeng_Puachue...[TRUNC 867]
+[1788226369.1] VAL b'missing source' @0x168b926: b'Root queuebad allocCountbad span statestack overflow untyped args  out of range no module databad timer heap in goroutine runtime: goid=bad record MAC/etc/protocols.in-addr.arpa./proc/net/igmpunknown mode: Accept-CharsetDkim-Signaturemessage/rfc822accept-charsetneed more dataCombining_MarkDecimal_NumberEnclosing_MarkLine_SeparatorOther_ID_StartPattern_SyntaxQuotation_MarkREQUEST_METHODunreachable:  190734863281...[TRUNC 852]
+[1788226369.1] VAL b'missing destination' @0x169295d: b':04:05mime: no media typeapplication/rdf+xmlbinary.LittleEndianbinary.NativeEndiancontent-dispositionif-unmodified-sinceproxy-authorizationinvalid Host headervalue for header %qevictCount overflowInitial_PunctuationParagraph_SeparatorCanadian_AboriginalKhitan_Small_ScriptIDS_Binary_OperatorPattern_White_Space14901161193847656257450580596923828125file already existsfile does not existfile already closedafte...[TRUNC 862]
+[1788226369.1] VAL b'invalid mount' @0x1689ff2: b'difiedContent-RangeAccept-RangesIf-None-Match[FrameHeader invalid base unknown timersend_too_muchempty patternFQDN too longsocks connectReset ContentLoop Detectedfield name %qstop signal: level 3 resetexchange fulltimer expiredsrmount errorpower failure/etc/zoneinfoparsing time  out of rangeunknown unit  is too largeGrpc-EncodingunimplementedStopContainerWaitContainer/proc/self/fdcreate %s: %wnum_processedbytes_...[TRUNC 849]
+[1788226369.1] === 5 net ip ===
+[1788226369.1] FIB: Main:
+  +-- 0.0.0.0/1 3 0 5
+     |-- 0.0.0.0
+        /0 universe UNICAST
+     +-- 100.64.0.0/16 2 0 1
+        |-- 100.64.0.0
+           /16 link UNICAST
+        |-- 100.64.123.232
+           /32 host LOCAL
+        |-- 100.64.255.255
+           /32 link BROADCAST
+     +-- 127.0.0.0/8 2 0 2
+        +-- 127.0.0.0/31 1 0 0
+           |-- 127.0.0.0
+              /8 host LOCAL
+           |-- 127.0.0.1
+              /32 host LOCAL
+        |-- 127.2...[TRUNC 978]
+[1788226369.1] FIB6 EXC [Errno 2] No such file or directory: '/proc/1/net/fib_trie6'
+[1788226369.1] IP eth0=100.64.123.232
+[1788226369.1] IP lo=127.0.0.1
+[1788226369.1] === 6 init ===
+[1788226369.1] INIT POST / -> b'404 page not found\
+'
+[1788226369.1] INIT POST /healthz -> b'404 page not found\
+[1788226369.1] INIT POST /v1/health -> b'404 page not found\
+[1788226369.2] INIT POST /v1/sandbox -> b'404 page not found\
+[1788226369.2] INIT POST /v1/sandbox/status -> b'404 page not found\
+[1788226369.2] INIT POST /sandbox/status -> b'404 page not found\
+[1788226369.2] INIT POST /v1/init/status -> b'404 page not found\
+[1788226369.2] INIT POST /init/status -> b'404 page not found\
+[1788226369.2] INIT POST /v1/start -> b'404 page not found\
+[1788226369.2] INIT POST /v1/stop -> b'404 page not found\
+[1788226369.2] INIT POST /v1/ping -> b'404 page not found\
+[1788226369.2] INIT POST /v1/version -> b'404 page not found\
+[1788226369.2] V171_DONE
+Traceback (most recent call last):
+  File "/vercel/sandbox/v171_payload.py", line 173, in <module>
+    f.close()
+AttributeError: 'tuple' object has no attribute 'close'
+CHROOT_RC=1
+V99_END
+[1788226369.328] kill v171b rc=0 HDR:HTTP/2 200  content-type: application/grpc  grpc-status: 0 grpc-message:  
+[1788226369.328] V99M_DONE

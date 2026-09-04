@@ -1,0 +1,54 @@
+npol1 sid: sbx_8lQg6V9uBuE9fyvoqu372pVRoql5 status: running
+[I1-rootdev] mknod: /tmp/rd0: File exists
+mknod: /tmp/rd16: File exists
+===RD0===
+000000 58 46 53 42 00 00 10 00 00 00 00 00 00 83 f8 00  >XFSB............<
+000010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  >................<
+000020 78 14 37 e3 2b e0 40 b5 b5 59 ee f8 aa 85 b5 b9  >x.7.+.@..Y......<
+000030 00 00 00 00 00 80 00 08 00 00 00 00 00 00 04 00  >................<
+000040 00 00 00 00 00 00 04 01 00 00 00 00 00 00 04 02  >................<
+000050 00 00 00 01 00 08 3f 80 00 00 00 10 00 00 00 00  >......?.........<
+000060 00 01 7c d0 b5 b5 02 00 02 00 00 08 00 00 00 00  >..|.............<
+000070 00 00 00 00 00 00 00 00 0c 09 09 03 14 00 00 19  >................<
+000080 00 00 00 00 00 00 0e 00 00 00 00 00 00 00 02 53  >...............S<
+000090 00 00 00 00 00 81 8c 38 00 00 00 00 00 00 00 00  >.......8........<
+0000a0 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  >................<
+0000b0
+[I2-virtio1] ==virtio1-uevent==
+DRIVER=virtio_blk
+MODALIAS=virtio:d00000002v00000000
+==net-dir==
+ls: cannot access '/sys/bus/virtio/devices/virtio1/net/': No such file or directory
+==virtio0-net==
+ls: cannot access '/sys/bus/virtio/devices/virtio0/net/': No such file or directory
+==eth0-symlink==
+total 0
+drwxr-xr-x 5 root root    0 Aug 29 12:46 .
+drwxr-xr-x 3 root root    0 Aug 29 12:46 ..
+-r--r--r-- 1 root root 4096 Aug 29 12:46 addr_assign_type
+-r--r--r-- 1 root root 4096 Aug 29 12:46 addr_len
+==ifcfg==
+sh: line 1: ip: command not found
+==routes==
+sh: line 1: ip: command not found
+
+[I3-unix] Num       RefCount Protocol Flags    Type St Inode Path
+00000000de3a8b54: 00000003 00000000 00000000 0001 03   805
+0000000030bdb703: 00000003 00000000 00000000 0001 03   588 /run/containerd/s/411679c706ffa4ac7fdcb5413ee7eef6252cea457f350e7ca2e39b72ce67419e
+0000000010104f24: 00000003 00000000 00000000 0001 03  1302
+0000000034a235c6: 00000003 00000000 00000000 0001 03  1284 /run/vercel/share/init.sock
+00000000c65fdd5e: 00000003 00000000 00000000 0001 03   745 /run/vercel/share/init.sock
+00000000a9fe066b: 00000003 00000000 00000000 0001 03  1209
+00000000c6edf8ef: 00000002 00000000 00010000 0001 01   565 /run/apm/apm.sock
+000000004241d464: 00000003 00000000 00000000 0001 03  1306 /run/vercel/share/init.sock
+000000001df06950: 00000002 00000000 00010000 0001 01  1073 /run/cell/cell.sock
+00000000ea11b04e: 00000002 00000000 00000000 0002 03  1167
+00000000b0b3f3ef: 00000003 00000000 00000000 0001
+[I4-init] -rwxr-xr-x 1 root root 9134264 Aug 29 12:43 /run/vercel/share/sandbox-init
+000000 7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00  >.ELF............<
+000010 02 00 3e 00 01 00 00 00 40 ff 47 00 00 00 00 00  >..>.....@.G.....<
+000020 40 00 00 00 00 00 00 00 90 01 00 00 00 00 00 00  >@...............<
+000030 00 00 00 00 40 00 38 00 06 00 40 00 10 00 0f 00  >....@.8...@.....<
+sh: line 1: file: command not found
+
+=== G3 DONE ===

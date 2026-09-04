@@ -1,0 +1,9 @@
+create: 200 {"sandbox":{"name":"v202","currentSessionId":"sbx_6b9EMERTq6DNCDn6YduXkzZWQHy1","status":"running","statusUpdatedAt":1788231479742,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"memory":4096,"runtime":"node22","timeout":300000,"cwd":"/vercel/sandbox","createdAt":1788231479742,"updatedAt":1788231479742},"session":{"id":"sbx_6b9EMERTq6DNCDn6YduXkzZWQHy1","runtime":"node22","reques
+[create ok] 6s
+[inject /vercel/sandbox/vda202_probe_user.py] 200
+[run payload] 200
+{"command":{"id":"cmd_ecf68fa4a7b44cd6b3c0624d54f8","name":"python3","args":["/vercel/sandbox/vda202_probe_user.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_6b9EMERTq6DNCDn6YduXkzZWQHy1","startedAt":1788231482365,"exitCode":null}}
+{"data":"[1788231482.4] PUB=RlOG5oHi9BXW4sVwyPlM9yghnU24vW8zvI2aJZZQD7M= len=32\n[1788231482.4] === 1 mem scan pub ===\n[1788231482.4] MEM regions=18\n","stream":"stdout"}
+{"command":{"id":"cmd_ecf68fa4a7b44cd6b3c0624d54f8","name":"python3","args":["/vercel/sandbox/vda202_probe_user.py"],"cwd":"/vercel/sandbox","sessionId":"sbx_6b9EMERTq6DNCDn6YduXkzZWQHy1","startedAt":1788231482365,"exitCode":137,"durationMs":90081}}
+
+CLEANED total 100s
