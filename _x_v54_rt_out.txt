@@ -1,0 +1,12 @@
+[r1 create python3.13] -> 400 {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `runtime`."}}
+  runtime 参数被拒?
+[r2 create persistent] -> 200 {"sandbox":{"name":"pr53","currentSessionId":"sbx_zW2KKJxB1PYj1kpG1Mhs3xVtnQDi","status":"running","statusUpdatedAt":1788098059627,"persistent":true,"region":"iad1","failoverRegions":[],"vcpus":2,"mem
+  persistent field: true
+[r2 marker] -> 200 PR53-MARKER
+[r2 PATCH persistent=false] -> 200 {"sandbox":{"name":"pr53","currentSessionId":"sbx_zW2KKJxB1PYj1kpG1Mhs3xVtnQDi","status":"running","statusUpdatedAt":1788098059627,"persistent":false,
+[r2 PATCH persistent=true] -> 200 {"sandbox":{"name":"pr53","currentSessionId":"sbx_zW2KKJxB1PYj1kpG1Mhs3xVtnQDi","status":"running","statusUpdatedAt":1788098059627,"persistent":true,"
+[r2 DELETE] -> 200
+[r2 GET after delete] -> 404 {"error":{"code":"not_found","message":"Named sandbox 'pr53' not found for this project."}}
+[r2 resume after delete] -> 404 {"error":{"code":"not_found","message":"Named sandbox 'pr53' not found for this project."}}
+[r3 create node22] -> 400 {"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `runtime`."}}
+DONE

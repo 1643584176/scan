@@ -1,0 +1,13 @@
+{"t": "10:09:45", "key": "noauth GET stripe/uuid", "st": 401, "note": "", "body": "{\"request_id\":\"eeb4844d-a851-4301-83bf-476064648326\",\"code\":\"\",\"message\":\"supplied credentials do not pass authentication\"}"}
+{"t": "10:09:46", "key": "GET orch=stripe", "st": 404, "note": "", "body": "{\"request_id\":\"9c38309c-980c-4601-84a0-012883a17613\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:47", "key": "GET orch=neon", "st": 404, "note": "", "body": "{\"request_id\":\"00dd22a6-8a28-412b-af4e-861fcc4b0fed\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:48", "key": "GET orch=databricks", "st": 404, "note": "", "body": "{\"request_id\":\"8c9f471f-7dc5-42f4-9326-6fa08e93d34e\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:49", "key": "GET orch=vercel", "st": 404, "note": "", "body": "{\"request_id\":\"26088115-5ea0-413c-9b91-07e2dae92f39\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:50", "key": "GET orch=github", "st": 404, "note": "", "body": "{\"request_id\":\"1c147a58-7693-482a-9b0c-c991305e6e05\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:52", "key": "GET orch=anthropic", "st": 404, "note": "", "body": "{\"request_id\":\"c51fe7c9-6eae-443f-b293-1b18d67f01bb\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:53", "key": "GET stripe/uuid2", "st": 404, "note": "", "body": "{\"request_id\":\"12acab56-d1e3-40dd-8fbf-09ed5446a95c\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:53", "key": "approve stripe/uuid", "st": 404, "note": "", "body": "{\"request_id\":\"1f084de0-d5f3-42bf-9ac1-cedf605ce26a\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:54", "key": "weird path stripe/../../projects", "st": 404, "note": "", "body": "this route does not exist"}
+{"t": "10:09:56", "key": "weird path stripe/%2e%2e", "st": 404, "note": "", "body": "{\"request_id\":\"87929e5c-1fbf-464a-921c-e53930353544\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:57", "key": "weird path stripe/0", "st": 404, "note": "", "body": "{\"request_id\":\"6e8ea198-715c-4668-882e-839467f98646\",\"code\":\"\",\"message\":\"account request not found\"}"}
+{"t": "10:09:58", "key": "weird path stripe/xstripe/xstripe/xstripe/xstripe/x", "st": 404, "note": "", "body": "this route does not exist"}

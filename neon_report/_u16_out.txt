@@ -1,0 +1,52 @@
+src=br-old-night-w2maosyd create:201
+src seeded: ([1, 'alice.real@victimcorp.com', 'ssn-111'], [2, 'bob.ceo@victimcorp.com', 'ssn-222'], [3, 'carol.vp@victimcorp.com', 'ssn-333'])
+
+===== D1 restore-to-historical POST /branches/{id}/restore =====
+mk_anon u16-ok: 201 {"branch":{"id":"br-polished-meadow-w2vby3e9","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_lsn":"0/3417600","name":"u16-ok","slug":"br-polished-meadow-w2vby3e9","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2
+D1 anon done: 200 {"project_id":"orange-sun-90493739","branch_id":"br-polished-meadow-w2vby3e9","state":"anonymized","status_message":"Anonymization completed successfully (1 tables, 1 masking rules applied)","created_
+D1 restore empty-body: 400 {"request_id":"94c02a61-26c8-4467-9a57-8aa3c8d49be9","code":"","message":"invalid request: operation RestoreProjectBranch: decode request: decode application/json: invalid: source_branch_id (field required)"}
+D1 restore err code= msg=invalid request: operation RestoreProjectBranch: decode request: decode application/json: invalid: source_branch_id (field required)
+D1 anon branch parent_lsn=0/3417600
+D1 restore parent_lsn: 400 {"request_id":"0165e6af-53d7-4f1c-a50c-049e4c370805","code":"","message":"invalid request: operation RestoreProjectBranch: decode request: decode application/json: invalid: source_branch_id (field required)"}
+D1 restore plsn err code= msg=invalid request: operation RestoreProjectBranch: decode request: decode application/json: invalid: source_branch_id (field required)
+D1 anon dataplane (expect masked): ok=True ([1, 'brandonyoung@example.com', 'ssn-111'], [2, 'michaelandrade@example.org', 'ssn-222'], [3, 'jessica95@example.com', 'ssn-333'])
+
+===== D2 snapshot channel (failed branch holds RAW data) =====
+mk_anon u16-fail: 201 {"branch":{"id":"br-bold-firefly-w2z5mjz8","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_lsn":"0/3417638","name":"u16-fail","slug":"br-bold-firefly-w2z5mjz8","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-
+D2 fail state: 200 {"project_id":"orange-sun-90493739","branch_id":"br-bold-firefly-w2z5mjz8","state":"error","status_message":"Anonymization failed: failed to anonymize table: anonymize_table failed for \"public\".\"u16_pii\": ERROR: function anon.no_such_fn() does no
+D2 snapshot create on failed br: 200 {"snapshot":{"id":"snap-old-firefly-w202mmz2","name":"u16-fail-snap","source_branch_id":"br-bold-firefly-w2z5mjz8","created_at":"2026-09-05T03:15:03Z","manual":true},"operations":[{"id":"98f0d5ff-291b-4ce0-8e3c-2353016eb170","project_id":"orange-sun-90493739","branch_id":"br-crimson-art-w2t8juou","action":"create_branch","status":"running","failure
+D2 snapshot listed status=None
+D2 snapshot restore(no target): 200 {"branch":{"id":"br-still-bird-w2r6qyvr","project_id":"orange-sun-90493739","parent_lsn":"0/373A210","name":"u16-fail-snap (restored 2026-09-05 03:15:04)","slug":"br-still-bird-w2r6qyvr","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-05T03:15:04Z","creation_source":"console","primary":false,"default":false,"protected":fa
+D2 restored branch id=br-still-bird-w2r6qyvr restore_status=restored
+D2 restored branch ready: True
+D2 restored-branch dataplane: ok=True RAW=True ([1, 'alice.real@victimcorp.com', 'ssn-111'], [2, 'bob.ceo@victimcorp.com', 'ssn-222'], [3, 'carol.vp@victimcorp.com', 'ssn-333'])
+D2 restored branch ra=None state=ready
+
+===== D3 masking_rules PATCH + anonymize on initialized (raw) branch =====
+mk_anon u16-init: 201 {"branch":{"id":"br-wild-sea-w2x6smcl","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_lsn":"0/3417638","name":"u16-init","slug":"br-wild-sea-w2x6smcl","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-05T03
+D3 init dataplane (expect 57P03): ok=False conn:{'S': 'ERROR', 'C': '57P03', 'M': 'Access to this endpoint is temporarily disabled'}
+D3 GET masking_rules: 200 {"masking_rules":[{"database_name":"neondb","schema_name":"public","table_name":"u16_pii","column_name":"email","masking_function":"anon.fake_email()"}]}
+D3 PATCH masking_rules=[]: 200 {"masking_rules":[]}
+D3 GET masking_rules after: 200 {"masking_rules":[]}
+D3 POST anonymize: 200 {"project_id":"orange-sun-90493739","branch_id":"br-wild-sea-w2x6smcl","state":"anonymizing","created_at":"2026-09-05T03:15:10Z","updated_at":"2026-09-05T03:15:25Z"}
+D3 anon status terminal: 200 {"project_id":"orange-sun-90493739","branch_id":"br-wild-sea-w2x6smcl","state":"anonymized","status_message":"Anonymization completed successfully (no masking rules defined)","created_at":"2026-09-05T03:15:10Z","updated_at":"2026-09-05T03:15:26Z","la
+D3 dataplane after re-anonymize(no rules): ok=True RAW=True ([1, 'alice.real@victimcorp.com', 'ssn-111'], [2, 'bob.ceo@victimcorp.com', 'ssn-222'], [3, 'carol.vp@victimcorp.com', 'ssn-333'])
+D3 branch ra=[{'name': 'restore', 'reason': 'cannot restore anonymized branches'}, {'name': 'delete-rw-endpoint', 'reason': 'cannot delete read-write endpoints for anonymized branches'}]
+
+===== D4 quick probes =====
+D4 PATCH branch name on ok: 200 {"branch":{"id":"br-polished-meadow-w2vby3e9","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_lsn":"0/3417600","parent_timestamp":"2026-09-05T03:14:39Z","name":"ok-renam
+D4 set_as_default on ok: 200 {"branch":{"id":"br-polished-meadow-w2vby3e9","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_lsn":"0/3417600","parent_timestamp":"2026-09-05T03:14:39Z","name":"ok-renam
+D4 PATCH branch name on fail: 200 {"branch":{"id":"br-bold-firefly-w2z5mjz8","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_lsn":"0/3417638","parent_timestamp":"2026-09-05T03:14:39Z","name":"fail-rename
+D4 set_as_default on fail: 200 {"branch":{"id":"br-bold-firefly-w2z5mjz8","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_lsn":"0/3417638","parent_timestamp":"2026-09-05T03:14:39Z","name":"fail-rename
+
+===== cleanup =====
+del snapshot snap-old-firefly-w202mmz2: 202
+del branch br-wild-sea-w2x6smcl: 200 {"branch":{"id":"br-wild-sea-w2x6smcl","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_ls
+del branch br-still-bird-w2r6qyvr: 200 {"branch":{"id":"br-still-bird-w2r6qyvr","project_id":"orange-sun-90493739","parent_lsn":"0/373A210","parent_timestamp":
+del branch br-bold-firefly-w2z5mjz8: 422 {"request_id":"6f5d1547-5595-48da-9caf-8c4a4fc0b858","code":"","message":"cannot delete default branch"}
+del branch br-polished-meadow-w2vby3e9: 200 {"branch":{"id":"br-polished-meadow-w2vby3e9","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","pa
+del src
+FINAL:
+  u16-fail                 br-bold-firefly-w2z5mjz8
+  main                     br-wandering-field-w2ob6mpn
+  u16-src                  br-old-night-w2maosyd

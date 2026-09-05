@@ -1,0 +1,8 @@
+projects: 400
+shared projects: 200 {"projects":[]}
+marker create: 201 {"branch":{"id":"br-cold-scene-w20uazq7","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/340F408","name":
+marker seeded on A: ([1, 'CROSS-PROJECT-MARKER-br-cold-'],)
+== CROSS-PROJECT fork (B <- A): 404 {"request_id":"55e5e611-762d-4669-a97a-26cf80692b86","code":"","message":"project not found"}
+control same-project fork: 201 {"branch":{"id":"br-lingering-cake-w267go78","project_id":"orange-sun-90493739","parent_id":"br-cold-scene-w20uazq7","parent_lsn":"0/3417418","name":"u13-ctrl","slug":"br-lingering-cake-w267go78","pro
+cross-project reset (B branch <- A src): 404 {"request_id":"7d582da7-3c3b-43ff-93d1-c9aa4d43bf3d","code":"","message":"project not found"}
+cleaned u13-marker

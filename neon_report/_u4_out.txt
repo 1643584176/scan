@@ -1,0 +1,17 @@
+== endpoints: 200
+   id=ep-crimson-fog-w2gucld1 host=ep-crimson-fog-w2gucld1.us-east-2.aws.neon.build type=read_write state=None
+ep-crimson-fog-w2gucld1.us-east-2.aws.neon.build                       tcp=True tls=True tls ok, recv err TimeoutError
+ep-crimson-fog-w2gucld1.us-east-2.aws.stage.neon.build                 tcp=False tls=False tcp fail: gaierror
+ep-crimson-fog-w2gucld1.neon.build                                     tcp=False tls=False tcp fail: gaierror
+pg.neon.tech                                                           tcp=True tls=True tls ok, recv err TimeoutError
+pg.stage.neon.build                                                    tcp=False tls=False tcp fail: gaierror
+ep-crimson-fog-w2gucld1.neonauth.us-east-2.aws.neon.build              tcp=False tls=False tcp fail: TimeoutError
+console-stage.neon.build                                               tcp=False tls=False tcp fail: TimeoutError
+
+ep-crimson-fog-w2gucld1.us-east-2.aws.neon.build                       -> ['2600:1f16:361:2902:764a:391d:a20e:3916', '2600:1f16:361:2916:515c:131:1d65:2eb5', '2600:1f16:361:2923:48a3:4c37:5204:84ac', '3.14.183.206']
+ep-crimson-fog-w2gucld1.us-east-2.aws.stage.neon.build                 -> DNS FAIL [Errno 11001] getaddrinfo failed
+ep-crimson-fog-w2gucld1.neon.build                                     -> DNS FAIL [Errno 11001] getaddrinfo failed
+pg.neon.tech                                                           -> ['2600:1f16:12b2:b40a:821:774b:c126:4f50', '3.136.248.123']
+pg.stage.neon.build                                                    -> DNS FAIL [Errno 11001] getaddrinfo failed
+ep-crimson-fog-w2gucld1.neonauth.us-east-2.aws.neon.build              -> ['18.189.151.196', '3.13.220.15', '3.140.90.71']
+console-stage.neon.build                                               -> ['104.18.10.47', '104.18.11.47', '2606:4700::6812:a2f', '2606:4700::6812:b2f']

@@ -1,0 +1,16 @@
+sid = sbx_eAje1Dm9qOoVu10n2dzW2nzKbcm8
+[marker] -> 200
+SNAP54-MARKER
+[snapshot] -> 201 {"snapshot":{"id":"snap_3ALkw5fAn6oCBBmQTYOQfc5h49mD","sourceSessionId":"sbx_eAje1Dm9qOoVu10n2dzW2nzKbcm8","region":"iad1","regions":["iad1"],"status":"created","sizeBytes":642383287,"expiresAt":1788702702022,"createdAt":1788097902022,"updatedAt":1788097902022,"lastUsedAt":1788097902022,"creationMet
+snap = {'id': 'snap_3ALkw5fAn6oCBBmQTYOQfc5h49mD', 'sourceSessionId': 'sbx_eAje1Dm9qOoVu10n2dzW2nzKbcm8', 'region': 'iad1', 'regions': ['iad1'], 'status': 'created', 'sizeBytes': 642383287, 'expiresAt': 1788702702022, 'createdAt': 1788097902022, 'updatedAt': 1788097902022, 'lastUsedAt': 1788097902022, 'creationMethod': 'manual'}
+[PATCH currentSnapshotId self] -> 400 {"error":{"code":"bad_request","message":"Invalid request: `currentSnapshotId` should be string."}}
+[resume] -> 200
+new sid = sbx_7gQ52JR0LXJ9ngPJ7ZmWarsvL1Xl  currentSnapshotId = snap_3ALkw5fAn6oCBBmQTYOQfc5h49mD
+[marker after resume] -> 200
+SNAP54-MARKER
+[snap detail] -> -1
+EXC URL can't contain control characters. "/v2/sandboxes/snapshots/{'id': 'snap_3ALkw5fAn6oCBBmQTYOQfc5h49mD', 'sourceSessio
+[DELETE + orphan] -> 200 {"sandbox":{"name":"snap54","currentSnapshotId":"snap_3ALkw5fAn6oCBBmQTYOQfc5h49mD","currentSessionId":"sbx_7gQ52JR0LXJ9ngPJ7ZmWarsvL1Xl","status":"running","statusUpdatedAt":1788097909365,"persistent
+[snap after delete+orphan] -> -1
+EXC URL can't contain control characters. "/v2/sandboxes/snapshots/{'id': 'snap_3ALkw5fAn6oCBBmQTYOQfc5h49mD', 'sourceSessio
+DONE

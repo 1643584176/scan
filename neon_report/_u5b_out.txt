@@ -1,0 +1,8 @@
+== connuri database_name=neondb -> 400
+    {"request_id":"89a67373-36dd-4327-89b8-72682360b29c","code":"","message":"invalid input: operation GetConnectionURI: decode params: query: \"role_name\": query parameter \"role_name\" not set"}
+== connuri database_name=neondb&role_name=neondb_owner -> 200
+== URI (password redacted check): postgresql://neondb_owner:npg_cI5ynlaAqjU2@ep-crimson-fog-w2gucld1-pooler.us-east-2.aws.neon.build/neondb?channel_binding=require&sslmode=require
+user=neondb_owner db=neondb host=ep-crimson-fog-w2gucld1-pooler.us-east-2.aws.neon.build port=5432 pwlen=16
+*** CONNECT OK EP-HOST ssl: ['neondb_owner', 'neondb', 'PostgreSQL 18.6 (2078fcb) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit']
+    PG.NEON.TECH ssl fail: TimeoutError: The read operation timed out
+    PG.NEON.TECH nossl fail: TimeoutError: The read operation timed out

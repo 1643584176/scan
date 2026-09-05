@@ -1,0 +1,72 @@
+== ET1 fingerprint (concurrent) ==
+www.zomato.com           A=23.210.26.132    A6=2a02:26f0:7100::210:18b
+  /           [200] srv=envoy ct=text/html len=12000 title=Zomato
+  /robots.txt [200] srv=envoy ct=text/plain; charset=UTF-8 len=4938 
+
+winecellar.zomato.com    A=23.210.26.161    A6=-
+  /           [403] srv=- ct=text/html len=7 
+  /robots.txt [403] srv=- ct=text/html len=7 
+
+mcp-server.zomato.com    A=23.210.26.160    A6=-
+  /           [404] srv=uvicorn ct=text/plain; charset=utf-8 len=9 
+  /robots.txt [404] srv=uvicorn ct=text/plain; charset=utf-8 len=9 
+
+www.runnr.in             A=184.27.185.91    A6=-
+  /           [200] srv=Zomato ct=application/json; charset=utf- len=23 
+  /robots.txt [200] srv=Zomato ct=text/plain len=202 
+
+bugbounty.runnr.in       A=184.27.185.87    A6=-
+  /           [500] srv=Zomato ct=text/html; charset=UTF-8 len=2554 title=We're sorry, but something went wrong (500)
+  /robots.txt [200] srv=Zomato ct=text/plain len=43 
+
+www.zomans.com           A=DNS_ERR          A6=gaierror(11001, 'getaddrinfo failed')
+
+www.blinkit.com          A=104.18.35.23     A6=-
+  /           [302] srv=cloudflare ct=text/html; charset=UTF-8 len=143 title=302 Found
+  /robots.txt [302] srv=cloudflare ct=text/html; charset=UTF-8 len=143 title=302 Found
+
+api.grofers.com          A=104.17.109.183   A6=-
+  /           [403] srv=cloudflare ct=text/html; charset=UTF-8 len=4572 title=Attention Required! | Cloudflare
+  /robots.txt [404] srv=cloudflare ct=text/html; charset=utf-8 len=243 title=Error
+
+api2.grofers.com         A=104.17.109.183   A6=-
+  /           [403] srv=cloudflare ct=text/html; charset=UTF-8 len=4572 title=Attention Required! | Cloudflare
+  /robots.txt [404] srv=cloudflare ct=text/html; charset=utf-8 len=243 title=Error
+
+www.grofers.com          A=104.17.110.183   A6=-
+  /           [403] srv=cloudflare ct=text/html; charset=UTF-8 len=4548 title=Attention Required! | Cloudflare
+  /robots.txt [308] srv=cloudflare ct= len=0 loc=https://blinkit.com/robots.txt
+
+www.grofer.io            A=DNS_ERR          A6=gaierror(11001, 'getaddrinfo failed')
+
+www.hyperpure.com        A=95.101.181.41    A6=-
+  /           [200] srv=- ct=text/html; charset=utf-8 len=12000 title=All your kitchen needs, delivered instantly across India
+  /robots.txt [200] srv=AmazonS3 ct=text/plain len=70 
+
+www.district.in          A=23.210.26.156    A6=-
+  /           [200] srv=- ct=text/html; charset=utf-8 len=12000 title=District by Zomato: Movies, Events, Dining, Sports &amp; Concerts Nearby
+  /robots.txt [200] srv=- ct=text/plain len=1099 
+
+bistro-api.blinkit.com   A=104.18.35.23     A6=-
+  /           [403] srv=cloudflare ct=text/html; charset=UTF-8 len=12000 title=blinkit | Error Page
+  /robots.txt [404] srv=cloudflare ct=text/html; charset=utf-8 len=243 title=Error
+
+www.insider.in           A=95.101.181.42    A6=-
+  /           [301] srv=- ct= len=0 loc=https://www.district.in/
+  /robots.txt [301] srv=- ct= len=0 loc=https://www.district.in/robots.txt
+
+www.edition.in           A=DNS_ERR          A6=gaierror(11001, 'getaddrinfo failed')
+
+www.ticketnew.com        A=172.66.169.69    A6=-
+  /           [301] srv=cloudflare ct=text/html; charset=UTF-8 len=534 title=301 Moved Permanently
+  /robots.txt [301] srv=cloudflare ct=text/html; charset=UTF-8 len=534 title=301 Moved Permanently
+
+www.tktnew.com           A=172.67.75.160    A6=-
+  /           [200] srv=cloudflare ct=text/html len=999 title=Ticketnew::Orders
+  /robots.txt [200] srv=cloudflare ct=text/plain; charset=utf-8 len=1248 
+
+www.eternal.com          A=23.210.26.135    A6=-
+  /           [200] srv=envoy ct=text/html len=12000 title=Eternal
+  /robots.txt [404] srv=envoy ct= len=0 
+
+done

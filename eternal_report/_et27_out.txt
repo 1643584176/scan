@@ -1,0 +1,11 @@
+B1       res_id=1                            [200] md5=3a3c042c {"selected_date": {"value": "0001-01-01", "label": "Mon, 01 Jan"}, "selected_covers": {"label": "20 guests", "value": 20
+B2       res_id=2                            [200] md5=3a3c042c {"selected_date": {"value": "0001-01-01", "label": "Mon, 01 Jan"}, "selected_covers": {"label": "20 guests", "value": 20
+B3       res_id=99999999                     [200] md5=65408ecd {"slots_response":{"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zmtcdn.com/data/o2_assets/48c0f1d6
+A1       res_id=1-0                          [200] md5=65408ecd {"slots_response":{"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zmtcdn.com/data/o2_assets/48c0f1d6
+A2       res_id=2-1                          [200] md5=65408ecd {"slots_response":{"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zmtcdn.com/data/o2_assets/48c0f1d6
+A3       res_id=99999999-99999998            [200] md5=65408ecd {"slots_response":{"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zmtcdn.com/data/o2_assets/48c0f1d6
+A4       res_id=2%2B0                        [200] md5=65408ecd {"slots_response":{"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zmtcdn.com/data/o2_assets/48c0f1d6
+H1       res_id=0x1                          [200] md5=65408ecd {"slots_response":{"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zmtcdn.com/data/o2_assets/48c0f1d6
+F1       res_id=1.0                          [200] md5=65408ecd {"slots_response":{"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zmtcdn.com/data/o2_assets/48c0f1d6
+N1       res_id=1%20AND%201                  [200] md5=65408ecd {"slots_response":{"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zmtcdn.com/data/o2_assets/48c0f1d6
+done

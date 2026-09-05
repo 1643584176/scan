@@ -1,0 +1,14 @@
+src=br-odd-poetry-w2g04ovb create:201
+src seeded: ([1, 'alice.real@victimcorp.com', 'ssn-111'], [2, 'bob.ceo@victimcorp.com', 'ssn-222'], [3, 'carol.vp@victimcorp.com', 'ssn-333'])
+fail create: 201 {"branch":{"id":"br-rough-breeze-w2tzuxcf","project_id":"orange-sun-90493739","parent_id":"br-odd-poetry-w2g04ovb","parent_lsn":"0/3417600","name":"u12-fail","slug":"br-rough-breeze-w2tzuxcf","project
+failed state confirmed: {"project_id":"orange-sun-90493739","branch_id":"br-rough-breeze-w2tzuxcf","state":"error","status_message":"Anonymization failed: failed to anonymize table: anonymize_table failed for \"public\".\"u1
+fail hp dataplane (should be disabled): (False, "{'S': 'ERROR', 'C': '57P03', 'M': 'Access to this endpoint is temporarily disabled'}")
+fork failed-br create: 201 {"branch":{"id":"br-odd-leaf-w25ivf1g","project_id":"orange-sun-90493739","parent_id":"br-rough-breeze-w2tzuxcf","parent_lsn":"0/373A210","name":"u12-fork","slug":"br-odd-leaf-w25ivf1g","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-05
+fork branch ra=None parent_lsn=0/373A210
+fork dataplane: ok=True data=([1, 'alice.real@victimcorp.com', 'ssn-111'], [2, 'bob.ceo@victimcorp.com', 'ssn-222'], [3, 'carol.vp@victimcorp.com', 'ssn-333'])
+>>> FORK-OF-FAILED-BRANCH HOLDS ORIGINAL DATA: True
+deleted failed branch
+recover: 400 {"request_id":"9af63b83-ef11-4231-b530-d2f6a3803428","code":"","message":"branch is not deleted"}
+cleanup u12-fork
+cleanup u12-src
+cleanup u12-fail (if still alive)

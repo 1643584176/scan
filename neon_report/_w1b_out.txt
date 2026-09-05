@@ -1,0 +1,19 @@
+ctrl-https-ok    https://example.com/                       -> 200 PASS(filter bypassed) {"enabled":true,"webhook_url":"https://example.com/","enabled_events":["user.created"],"timeout_seconds":1}
+dec-169254169254 https://2852039166/                        -> 400 blocked {"request_id":"17936bc4-70e4-4c87-b5b3-2e0683b7c90a","code":"","message":"request failed; reason:\"Webhook URL
+hex-a9fea9fe     https://0xa9fea9fe/                        -> 400 blocked {"request_id":"88705186-f140-49be-ac08-86d1ba0889f1","code":"","message":"request failed; reason:\"Webhook URL
+octal            https://0251.0376.0251.0376/               -> 400 blocked {"request_id":"249f2355-cff7-45cd-9656-efd01af5cbb5","code":"","message":"request failed; reason:\"Webhook URL
+dec-127          https://2130706433/                        -> 400 blocked {"request_id":"b9b307f9-e3ea-47fe-bf13-86ca233d3f76","code":"","message":"request failed; reason:\"Webhook URL
+v6-loop          https://[::1]/                             -> 400 blocked {"request_id":"0e0d7268-efc0-43a6-8955-944d1fb3315f","code":"","message":"request failed; reason:\"Webhook URL
+v6-mapped        https://[::ffff:169.254.169.254]/          -> 400 blocked {"request_id":"6d490616-895a-4b34-82fd-2fe934704065","code":"","message":"request failed; reason:\"Webhook URL
+v6-linklocal     https://[fe80::1]/                         -> 400 blocked {"request_id":"f955cba6-88df-4082-a265-571cbd7d016e","code":"","message":"request failed; reason:\"Webhook URL
+dot-end          https://169.254.169.254./                  -> 400 blocked {"request_id":"264e92d3-0406-429a-95af-8a2187963875","code":"","message":"request failed; reason:\"Webhook URL
+userinfo         https://x@169.254.169.254/                 -> 400 blocked {"request_id":"95f162a6-f176-43ad-8c04-2ee6606a3b91","code":"","message":"request failed; reason:\"Webhook URL
+double-slash     https://example.com\@169.254.169.254/      -> 200 PASS(filter bypassed) {"enabled":true,"webhook_url":"https://example.com/@169.254.169.254/","enabled_events":["user.created"],"timeo
+backslash        https://169.254.169.254\@example.com/      -> 400 blocked {"request_id":"c9f88eac-bc42-4041-a7a9-2b4af5a454db","code":"","message":"request failed; reason:\"Webhook URL
+nip-linklocal    https://169.254.169.254.nip.io/            -> 400 blocked {"request_id":"1df4adb1-3e65-4a1c-8fd6-663c5fce5000","code":"","message":"request failed; reason:\"Webhook URL
+nip-localhost    https://127.0.0.1.nip.io/                  -> 400 blocked {"request_id":"addae1dd-c5c1-4ea8-b367-184b3d6a07b0","code":"","message":"request failed; reason:\"Webhook URL
+sslip-1          https://169.254.169.254.sslip.io/          -> 400 blocked {"request_id":"de4f6da3-0b3b-44b3-bf0a-9d4ffb09b07b","code":"","message":"request failed; reason:\"Webhook URL
+ok-port          https://example.com:8443/                  -> 200 PASS(filter bypassed) {"enabled":true,"webhook_url":"https://example.com:8443/","enabled_events":["user.created"],"timeout_seconds":
+ok-subdomain     https://sub.example.com/                   -> 200 PASS(filter bypassed) {"enabled":true,"webhook_url":"https://sub.example.com/","enabled_events":["user.created"],"timeout_seconds":1
+restore: 200
+== DONE

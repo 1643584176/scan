@@ -1,0 +1,37 @@
+== create u6-src: 201 {"branch":{"id":"br-damp-sunset-w2dn3uh8","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/33EED78","name":"u6-src","slug":"br-damp-sunset-w2dn3uh8","projec
+== create u6-src: 409 {"request_id":"04a15e13-9902-48b1-a33d-6c6f1de47214","code":"BRANCH_ALREADY_EXISTS","message":"branch already exists; branch_name:\"u6-src\""}
+FAIL create src
+== create u6-src: 201 {"branch":{"id":"br-quiet-hill-w24h7xi5","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/33EEE70","name":"u6-src","slug":"br-quiet-hill-w24h7xi5","project_
+pw_of fail: 404 {"request_id":"c62afd71-6d1f-4c2e-a3de-75a7ff1bc5c7","code":"","message":"endpoint not found"}
+== create u6-src: 201 {"branch":{"id":"br-lively-moon-w2v8u44x","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/33EEF68","name":"u6-src","slug":"br-lively-moon-w2v8u44x","projec
+src pw host=ep-bold-scene-w21s7ht1-pooler.us-east-2.aws.neon.build
+== create u6-src: 201 {"branch":{"id":"br-green-leaf-w2z66hj2","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/340F408","name":"u6-src","slug":"br-green-leaf-w2z66hj2","project_
+src pw host=ep-blue-pond-w2fpg62y-pooler.us-east-2.aws.neon.build
+== create u6-src: 201 {"branch":{"id":"br-flat-salad-w2plhl2k","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/340F408","name":"u6-src","slug":"br-flat-salad-w2plhl2k","project_
+src pw host=ep-snowy-term-w2rb7h0w-pooler.us-east-2.aws.neon.build
+src select fail: TypeError: not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "F:\scan\neon_report\_u6_anon_chain.py", line 99, in <module>
+    out("src seeded: %r" % query(conn, "select * from u6_pii"))
+TypeError: not all arguments converted during string formatting
+
+== branch_anonymized: 201 {"branch":{"id":"br-flat-waterfall-w22dpq6t","project_id":"orange-sun-90493739","parent_id":"br-flat-salad-w2plhl2k","parent_lsn":"0/34175A0","name":"u6-anon","slug":"br-flat-waterfall-w22dpq6t","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-05T02:20:21Z","creation_source":"console","primary":false,"default":false,"protected":false,"cpu_used_sec":0,"compute_time_seconds":0,"active_time_seconds":0,"written_data_bytes":0,"data_transfer_bytes":0,"created_at":"2026-09-05T02:20:21Z","updated_at":"2026-09-05T02:20:21Z","created_by":{"n
+anon id=br-flat-waterfall-w22dpq6t restricted_actions=[{'name': 'restore', 'reason': 'cannot restore anonymized branches'}, {'name': 'delete-rw-endpoint', 'reason': 'cannot delete read-write endpoints for anonymized branches'}, {'name': 'connect-to-endpoints', 'reason': 'cannot connect to endpoints while branch is being anonymized'}]
+== anon status: 200 {"project_id":"orange-sun-90493739","branch_id":"br-flat-waterfall-w22dpq6t","state":"anonymized","status_message":"Anonymization completed successfully (1 tables, 1 masking rules applied)","created_at":"2026-09-05T02:20:21Z","updated_at":"2026-09-05T02:20:27Z","last_run":{"started_at":"2026-09-05T02:20:27Z","completed_at":"2026-09-05T02:20:27Z","triggered_by":"6e7f1952-b696-496f-b403-2847065ba787
+anon host=ep-misty-lake-w22xcrja-pooler.us-east-2.aws.neon.build
+== create u6-src: 201 {"branch":{"id":"br-mute-wind-w2u41a9h","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/340F408","name":"u6-src","slug":"br-mute-wind-w2u41a9h","project_sl
+src pw host=ep-super-voice-w21gjifq-pooler.us-east-2.aws.neon.build
+src seeded: ([1, 'alice.real@victimcorp.com', 'Alice Victim'], [2, 'bob.ceo@victimcorp.com', 'Bob CEO'])
+== branch_anonymized: 201 {"branch":{"id":"br-curly-term-w2qy3vae","project_id":"orange-sun-90493739","parent_id":"br-mute-wind-w2u41a9h","parent_lsn":"0/34175A0","name":"u6-anon","slug":"br-curly-term-w2qy3vae","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-05T02:21:27Z","creation_source":"console","primary":false,"default":false,"protected":false,"cpu_used_sec":0,"compute_time_seconds":0,"active_time_seconds":0,"written_data_bytes":0,"data_transfer_bytes":0,"created_at":"2026-09-05T02:21:27Z","updated_at":"2026-09-05T02:21:27Z","created_by":{"name":"","
+anon id=br-curly-term-w2qy3vae restricted_actions=[{'name': 'restore', 'reason': 'cannot restore anonymized branches'}, {'name': 'delete-rw-endpoint', 'reason': 'cannot delete read-write endpoints for anonymized branches'}, {'name': 'connect-to-endpoints', 'reason': 'cannot connect to endpoints while branch is being anonymized'}]
+== anon status: 200 {"project_id":"orange-sun-90493739","branch_id":"br-curly-term-w2qy3vae","state":"anonymized","status_message":"Anonymization completed successfully (1 tables, 1 masking rules applied)","created_at":"2026-09-05T02:21:27Z","updated_at":"2026-09-05T02:21:34Z","last_run":{"started_at":"2026-09-05T02:21:33Z","completed_at":"2026-09-05T02:21:34Z","triggered_by":"6e7f1952-b696-496f-b403-2847065ba787","t
+anon host=ep-cold-dust-w20sziu0-pooler.us-east-2.aws.neon.build
+anon data (should be masked): ([1, 'njohnson@example.net', 'Alice Victim'], [2, 'ssnow@example.net', 'Bob CEO'])
+anon conn check -> CONNECT-TO-ENDPOINTS enforced=NO(connect ok)
+== reset_to_parent on anon: 422 {"request_id":"cb8b6175-0969-48d0-be0c-b954a77042fc","code":"","message":"cannot reset branch with because a restriction is set; restriction_reason:\"cannot restore anonymized branches\""}
+== recover (not deleted) on anon: 400 {"request_id":"edbcc319-c83d-459c-9fc6-4ffa1e321d66","code":"","message":"branch is not deleted"}
+== reset(source=src) on anon: 422 {"request_id":"ed4594d6-f46b-4b74-ac19-21657b48ce51","code":"","message":"cannot reset branch with because a restriction is set; restriction_reason:\"cannot restore anonymized branches\""}
+== anon endpoints: 200 {"endpoints":[{"host":"ep-cold-dust-w20sziu0.us-east-2.aws.neon.build","hosts":{"read_write_host":"ep-cold-dust-w20sziu0.us-east-2.aws.neon.build","read_write_pooled_host":"ep-cold-dust-w20sziu0-pooler.us-east-2.aws.neon.build"},"id":"ep-cold-dust-w20sziu0","slug":"ep-cold-dust-w20sziu0","branch_slug":"br-curly-term-w2qy3vae","project_slug":"orange-sun-90493739","project_id":"orange-sun-90493739",
+anon endpoint id=ep-cold-dust-w20sziu0 type=read_write
+== cleanup u6-anon: 200 {"branch":{"id":"br-curly-term-w2qy3vae","project_id":"orange-sun-90493739","parent_id":"br-mute-wind-w2u41a9h","parent_lsn":"0/34175A0","parent_times
+== cleanup u6-src: 200 {"branch":{"id":"br-mute-wind-w2u41a9h","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/340F408","parent_

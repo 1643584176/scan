@@ -1,0 +1,22 @@
+[13:00:30] == W4f matrix iter4 ==
+[13:00:39] sessions: U1=True U2=True U3=True
+[13:00:41] O3 = ffc2ab93-8645-47f1-869e-b47933a26ca8
+[13:00:45]    join libobo1229+na_org2@gmail.com: 200
+[13:00:49]    join libobo1229+na_org3@gmail.com: 200
+[13:00:52] members: [('owner', 'libobo1229+na_org1@gmail.com'), ('member', 'libobo1229+na_org2@gmail.com'), ('member', 'libobo1229+na_org3@gmail.com')]
+[13:01:00] m2=e6d6c8ee-cf35-432a-8c21-53b59c51c350 m3=214aca0b-69e1-4c00-bd29-b86ff65b553a
+[13:01:02] A member upd member role                   -> 403 {"message":"You are not allowed to update this member","code":"YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_MEMBER"}
+[13:01:04] B member remove member                     -> 401 {"message":"You are not allowed to delete this member","code":"YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_MEMBER"}
+[13:01:06] B2 member remove by email                  -> 401 {"message":"You are not allowed to delete this member","code":"YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_MEMBER"}
+[13:01:08] members after member->member: [('owner', 'libobo1229+na_org1@gmail.com'), ('member', 'libobo1229+na_org2@gmail.com'), ('member', 'libobo1229+na_org3@gmail.com')]
+[13:01:10] owner promote U2 admin                     -> 200 {"organizationId":"ffc2ab93-8645-47f1-869e-b47933a26ca8","userId":"66b42c6b-c41e-4c5a-a2fa-aa5957cfaec0","role":"admin","createdAt":"2026-09-05T05:00:44.372Z","id":"e6d6c8ee-cf35-432a-8c21-53b59c51c35
+[13:01:12] members: [('owner', 'libobo1229+na_org1@gmail.com'), ('admin', 'libobo1229+na_org2@gmail.com'), ('member', 'libobo1229+na_org3@gmail.com')]
+[13:01:14] C admin upd member role                    -> 200 {"organizationId":"ffc2ab93-8645-47f1-869e-b47933a26ca8","userId":"019aed4c-4dc9-4b4f-8b47-ba6dad589fb4","role":"admin","createdAt":"2026-09-05T05:00:48.358Z","id":"214aca0b-69e1-4c00-bd29-b86ff65b553
+[13:01:16] members after admin update: [('owner', 'libobo1229+na_org1@gmail.com'), ('admin', 'libobo1229+na_org2@gmail.com'), ('admin', 'libobo1229+na_org3@gmail.com')]
+[13:01:18] D admin remove member                      -> 200 {"member":{"organizationId":"ffc2ab93-8645-47f1-869e-b47933a26ca8","userId":"019aed4c-4dc9-4b4f-8b47-ba6dad589fb4","role":"admin","createdAt":"2026-09-05T05:00:48.358Z","id":"214aca0b-69e1-4c00-bd29-b
+[13:01:20] members after admin remove: [('owner', 'libobo1229+na_org1@gmail.com'), ('admin', 'libobo1229+na_org2@gmail.com')]
+[13:01:26] E admin remove owner                       -> 400 {"message":"You cannot leave the organization as the only owner","code":"YOU_CANNOT_LEAVE_THE_ORGANIZATION_AS_THE_ONLY_OWNER"}
+[13:01:32] E2 admin upd owner role                    -> 403 {"message":"You are not allowed to update this member","code":"YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_MEMBER"}
+[13:01:34] members after admin->owner probes: [('owner', 'libobo1229+na_org1@gmail.com'), ('admin', 'libobo1229+na_org2@gmail.com')]
+[13:01:36] cleanup delete O3                          -> 200 {"name":"w4f-org","slug":"w4f-1788584439","logo":null,"createdAt":"2026-09-05T05:00:40.649Z","metadata":null,"id":"ffc2ab93-8645-47f1-869e-b47933a26ca8"}
+[13:01:36] == W4f DONE

@@ -1,0 +1,21 @@
+/orders [401] www=Token realm="Application" body=HTTP Token: Access denied.
+
+/orders X-Auth-Token=abc [401] body=HTTP Token: Access denied.
+
+/orders X-API-Key=abc [401] body=HTTP Token: Access denied.
+
+/orders X-Token=abc [401] body=HTTP Token: Access denied.
+
+/orders Token=abc [401] body=HTTP Token: Access denied.
+
+/orders access_token=abc [401] body=HTTP Token: Access denied.
+
+
+== login endpoint probes ==
+POST /api/v1/login            [404] ct=text/html; charset=utf body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <meta name="viewport" content="width=device-width,i
+POST /api/v1/sessions         [404] ct=text/html; charset=utf body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <meta name="viewport" content="width=device-width,i
+POST /api/v1/auth             [404] ct=text/html; charset=utf body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <meta name="viewport" content="width=device-width,i
+POST /auth/login              [404] ct=text/html; charset=utf body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <meta name="viewport" content="width=device-width,i
+POST /login.json              [404] ct=text/html; charset=utf body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <meta name="viewport" content="width=device-width,i
+POST /api/v1/users/login      [404] ct=text/html; charset=utf body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <meta name="viewport" content="width=device-width,i
+done

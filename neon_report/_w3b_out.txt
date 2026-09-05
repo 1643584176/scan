@@ -1,0 +1,33 @@
+[12:34:34] == W3b schema-only on PB  tag=w3b1890 ==
+[12:34:36] S0 branches=1 main=br-raspy-band-w247957z
+[12:34:38] S0 roles: 404 this route does not exist
+[12:34:39] S0 db role=None
+[12:34:40] S  create w3bsrc-w3b1890     -> 201 id=br-hidden-credit-w2d95v2y  {"id": "br-hidden-credit-w2d95v2y", "project_id": "damp-term-63384673", "parent_id": "br-raspy-band-w247957z", "parent_lsn": "0/1B6ADC8", "name": "w3bsrc-w3b1890", "slug": "br-hidden-credit-w2d95v2y", "project_slug": "damp-term-63384673", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:34:40Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "da
+[12:34:45] S  endpoint create br-hidden-credit-w2d95v2y -> 201 {"endpoint":{"host":"ep-frosty-mountain-w2atmccf.us-east-2.aws.neon.build","hosts":{"read_write_host":"ep-frosty-mountain-w2atmccf.us-east-2.aws.neon.build","read_write_pooled_host
+[12:34:49] S1 src endpoint=ep-frosty-mountain-w2atmccf.us-east-2.aws.neon.build (created)
+[12:34:50] S1 ABORT no uri
+[12:35:28] == W3b schema-only on PB  tag=w3b3669 ==
+[12:35:29] S0 branches=1 main=br-raspy-band-w247957z
+[12:35:30] S0 roles on main: 200 {"roles":[{"branch_id":"br-raspy-band-w247957z","name":"neondb_owner","protected":false,"authentication_method":"password","created_at":"2026-09-03T08:05:22Z","updated_at":"2026-09-03T08:05:22Z"}]}
+[12:35:30] S0 db role=neondb_owner (all=['neondb_owner'])
+[12:35:31] S  create w3bsrc-w3b3669     -> 201 id=br-odd-glade-w232utrw  {"id": "br-odd-glade-w232utrw", "project_id": "damp-term-63384673", "parent_id": "br-raspy-band-w247957z", "parent_lsn": "0/1B6ADC8", "name": "w3bsrc-w3b3669", "slug": "br-odd-glade-w232utrw", "project_slug": "damp-term-63384673", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:35:31Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "data_trans
+[12:35:34] S  endpoint create br-odd-glade-w232utrw -> 201 {"endpoint":{"host":"ep-ancient-rain-w24xsq3p.us-east-2.aws.neon.build","hosts":{"read_write_host":"ep-ancient-rain-w24xsq3p.us-east-2.aws.neon.build","read_write_pooled_host":"ep-
+[12:35:38] S1 src endpoint=ep-ancient-rain-w24xsq3p.us-east-2.aws.neon.build (created)
+[12:35:46] S1 insert: OK
+[12:35:49] S1 src count: OK [(100,)] lsn_pre=0/1B700A8 lsn_post=0/1B7BBB0
+[12:35:51] S  create w3bso-w3b3669      -> 201 id=br-little-wildflower-w2ywk8zi  {"id": "br-little-wildflower-w2ywk8zi", "project_id": "damp-term-63384673", "name": "w3bso-w3b3669", "slug": "br-little-wildflower-w2ywk8zi", "project_slug": "damp-term-63384673", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:35:51Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "data_transfer_bytes": 0, "created_at": "2026-09-05T04:35:51Z"
+[12:35:52] S2 so ready=True parent_lsn=None
+[12:35:52] S3 so endpoint=ep-aged-cloud-w26ey79q.us-east-2.aws.neon.build (existing)
+[12:35:56] S3 so to_regclass: OK [('so_probe',)]
+[12:35:58] S3 so count: OK [(0,)]
+[12:35:59] S  create w3bch-w3b3669      -> 201 id=br-restless-glitter-w2alh4iq  {"id": "br-restless-glitter-w2alh4iq", "project_id": "damp-term-63384673", "parent_id": "br-little-wildflower-w2ywk8zi", "parent_lsn": "0/19C5D78", "name": "w3bch-w3b3669", "slug": "br-restless-glitter-w2alh4iq", "project_slug": "damp-term-63384673", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:35:59Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_by
+[12:36:03] P1 child-of-so count: OK [(0,)]
+[12:36:04] S  create w3bcob-w3b3669     -> 201 id=br-patient-glitter-w24z5v2n  {"id": "br-patient-glitter-w24z5v2n", "project_id": "damp-term-63384673", "name": "w3bcob-w3b3669", "slug": "br-patient-glitter-w24z5v2n", "project_slug": "damp-term-63384673", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:36:04Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "data_transfer_bytes": 0, "created_at": "2026-09-05T04:36:04Z", "
+[12:36:10] P4 so+lsn count: OK [(0,)]
+[12:36:10] _run done
+[12:36:10] S5 cleanup 4
+[12:36:11] S5 delete w3bcob     -> 200 {"branch":{"id":"br-patient-glitter-w24z5v2n","project_id":"damp-term-63384673","name":"w3bcob-w3b36
+[12:36:13] S5 delete w3bch      -> 200 {"branch":{"id":"br-restless-glitter-w2alh4iq","project_id":"damp-term-63384673","parent_id":"br-lit
+[12:36:15] S5 delete w3bso      -> 200 {"branch":{"id":"br-little-wildflower-w2ywk8zi","project_id":"damp-term-63384673","name":"w3bso-w3b3
+[12:36:17] S5 delete w3bsrc     -> 200 {"branch":{"id":"br-odd-glade-w232utrw","project_id":"damp-term-63384673","parent_id":"br-raspy-band
+[12:36:18] == W3b DONE

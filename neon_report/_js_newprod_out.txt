@@ -1,0 +1,12 @@
+### interesting path templates from JS
+  /agentic_provisioning/account_requests/${encodeURIComponent(t)}/${encodeURIComponent(n)}   x1
+  /agentic_provisioning/account_requests/${encodeURIComponent(t)}/${encodeURIComponent(n)}/approve x1
+  /ai_gateway/models                                                                         x1
+  /ai_gateway/resolve_identity                                                               x1
+  /organizations/${encodeURIComponent(t)}/billing/aigw_credits/purchase                      x1
+  /projects/${encodeURIComponent(t)}/branches/${encodeURIComponent(n)}/ai_gateway            x1
+
+### context around 'agentic'
+  ... wb,o as Tf,aC as mY,e as bY}from"./types-CrgfaYBw.js";import{a as vY}from"./isArrayLikeObject-Bf875Hlt.js";import{r as uw,s as yY}from"./index-CBRZeV4m.js";import{R as xY}from"./ReactQueryProvider-L_CY4zDe.js";/* empty css */import"./useInfiniteQuery-BiuUWIvM.js";import"./identity-urls-DHWY89pI.js";import"./identity-events-DyNPdmAY.js";import"./_setToString-FuidWOqj.js";const _Y={[D.Root]:"root",[D.Home]:"home",[D.Welcome]:"welcome",[D.OrgWelcome]:"org_welcome",[D.Claim]:"claim",[D.AgenticProvisioningAccountRequest]:"agentic_provisioning_account_request",[D.ProjectsList]:"projects_list",[D.ProjectsSharedList]:"projects_shared_list",[D.ProjectsItem]:"projects_item_dashboard",[D.ProjectsItemSettings]:"projects_item_settings",[D.ProjectsItemSettingsSection]:"projects_item_settings_section",[D.ProjectsItemIntegrations]:"projects_item_integrations",[D.ProjectsItemAuthorize]:"projects_item_authorize",[D.ProjectsItemIdentity]:"projects_item_identity",[D.ProjectsItemBranchesIdenti
+
+### context around 'spreadsheet' api

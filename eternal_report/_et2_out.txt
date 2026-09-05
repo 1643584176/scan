@@ -1,0 +1,200 @@
+==== runnr_root  (GET www.runnr.in/) ====
+status=200 ct=application/json; charset=utf-8 server=Zomato loc=
+BODY: {"status":{"code":403}}
+
+==== runnr_robots  (GET www.runnr.in/robots.txt) ====
+status=200 ct=text/plain server=Zomato loc=
+BODY: # See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+#
+# To ban all spiders from the entire site uncomment the next two lines:
+# User-agent: *
+# Disallow: /
+
+
+==== bugbounty_robots  (GET bugbounty.runnr.in/robots.txt) ====
+status=200 ct=text/plain server=Zomato loc=
+BODY: # robotstxt.org/
+
+User-agent: * 
+Disallow:
+
+
+==== mcp_get  (GET mcp-server.zomato.com/mcp) ====
+status=401 ct=application/json server=uvicorn loc=
+BODY: {"error": "invalid_token", "error_description": "Authentication required"}
+
+==== mcp_openapi  (GET mcp-server.zomato.com/openapi.json) ====
+status=404 ct=text/plain; charset=utf-8 server=uvicorn loc=
+BODY: Not Found
+
+==== winecellar_root  (GET winecellar.zomato.com/) ====
+status=403 ct=text/html server=- loc=
+TEXT: Blocked
+
+==== ticketnew_root  (GET www.ticketnew.com/) ====
+status=301 ct=text/html; charset=UTF-8 server=cloudflare loc=https://ticketnew.com/
+BODY: <html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>cloudflare</center>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"89f748c4df6f419699674b48f0400a46","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+==== tktnew_root  (GET www.tktnew.com/) ====
+status=200 ct=text/html server=cloudflare loc=
+TEXT: Ticketnew::Orders Welcome
+
+==== tktnew_robots  (GET www.tktnew.com/robots.txt) ====
+status=200 ct=text/plain; charset=utf-8 server=cloudflare loc=
+BODY: # As a condition of accessing this website, you agree to abide by the following
+# content signals:
+
+# (a)  If a content-signal = yes, you may collect content for the corresponding
+#      use.
+# (b)  If a content-signal = no, you may not collect content for the
+#      corresponding use.
+# (c)  If the website operator does not include a content signal for a
+#      corresponding use, the website operator neither grants nor restricts
+#      permission via content signal with respect to the corresponding use.
+
+# The content signals and their meanings are:
+
+# search:   building a search index and providing search results (e.g., returning
+#           hyperlinks and short excerpts from your website's contents). Search does not
+#           include providing AI-generated search summaries.
+# ai-input: inputting content into one or more AI models (e.g., retrieval
+#           augmented generation, grounding, or other real-time taking of content for
+#           generative AI search answers).
+# ai-train: training or fine-tuning AI models.
+
+# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF
+# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT
+# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.
+
+
+==== district_robots  (GET www.district.in/robots.txt) ====
+status=200 ct=text/plain server=- loc=
+BODY: User-Agent: *
+Allow: /
+Disallow: /profile
+Disallow: */order/*
+Disallow: /*?
+Disallow: /users
+Disallow: /checkout
+Disallow: /*test*
+Disallow: /*sandbox-event*
+Disallow: /payments
+Disallow: /rss
+Disallow: /event/test
+Disallow: /waterland/
+Disallow: /*-waterland-*
+Disallow: /order-review
+Disallow: /order
+Disallow: /unservicable-location
+Disallow: /bookings
+Disallow: */orders/*
+Disallow: /sgw/*
+
+User-Agent: AdsBot-Google
+Allow: /
+
+User-Agent: AdsBot-Google-Mobile-Apps
+Allow: /
+
+User-Agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://www.district.in/movies/search-sitemap/sitemap-movies.xml
+Sitemap: https://www.district.in/events/search-sitemap/sitemap-events.xml
+Sitemap: https://www.district.in/dining/search-sitemap/sitemap-dining.xml
+Sitemap: https://www.district.in/activities/search-sitemap/sitemap-activities.xml
+Sitemap: https://www.district.in/play/search-sitemap/sitemap-play.xml
+Sitemap: https://www.district.in/stores/search-sitemap/sitemap-stores.xml
+Sitemap: https://www.district.in/events/search-sitemap/blogs.xml
+Sitemap: https://www.district.in/events/search-sitemap/hubs.xml
+
+
+==== zomato_robots  (GET www.zomato.com/robots.txt) ====
+status=200 ct=text/plain; charset=UTF-8 server=envoy loc=
+BODY: # ------------------------------------------------------------------
+#   _____                     _
+#  |__  /___  _ __ ___   __ _| |_ ___
+#    / // _ \| '_ ` _ \ / _` | __/ _ \
+#   / /| (_) | | | | | | (_| | || (_) |
+#  /____\___/|_| |_| |_|\__,_|\__\___/ 
+# 
+# -------------------------------------------------------------------
+
+Sitemap: https://www.zomato.com/sitemap.xml.gz
+Sitemap: https://www.zomato.com/sitemap_dish.xml.gz
+
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /users/
+Disallow: /downloads/
+Disallow: /nonsvn/
+Disallow: /webview/
+Disallow: /support/agent/
+Disallow: /*/tag-*
+Disallow: /*?*q=
+Disallow: /*?*%2525*
+Disallow: /*/sauce/
+Allow: /
+
+User-agent: Googlebot-Mobile
+Disallow: /admin/
+Disallow: /users/
+Disallow: /downloads/
+Disallow: /nonsvn/
+Disallow: /webview/
+Disallow: /support/agent/
+Disallow: /*/tag-*
+Disallow: /*?*q=
+Disallow: /*?*%2525*
+Disallow: /*/sauce/
+Allow: /
+
+User-agent: Mediapartners-Google
+Disallow: /admin/
+Disallow: /users/
+Disallow: /downloads/
+Disallow: /nonsvn/
+Disallow: /webview/
+Disallow: /support/agent/
+Disallow: /*/tag-*
+Disallow: /*?*q=
+Disallow: /*?*%2525*
+Disallow: /*/sauce/
+Allow: /
+
+User-agent: AdsBot-Google
+Disallow: /admin/
+Disallow: /users/
+Disallow: /downloads/
+Disallow: /nonsvn/
+Disallow: /webview/
+Disallow: /support/agent/
+Disallow: /*/tag-*
+Disallow: /*?*q=
+Disallow: /*?*%2525*
+Disallow: /*/sauce/
+Allow: /
+
+User-agent: bingbot
+Disallow: /admin/
+Disallow: /users/
+Disallow: /downloads/
+Disallow: /nonsvn/
+Disallow: /webview/
+D
+
+==== hyperpure_robots  (GET www.hyperpure.com/robots.txt) ====
+status=200 ct=text/plain server=AmazonS3 loc=
+BODY: Sitemap: https://www.hyperpure.com/sitemap.xml
+User-agent: *
+Disallow:
+
+done

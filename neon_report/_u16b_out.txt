@@ -1,0 +1,23 @@
+=== stage0 leftover fix ===
+set main default: 200 {"branch":{"id":"br-wandering-field-w2ob6mpn","project_id":"orange-sun-90493739","name":"main","slug":"br-wandering-field-w2ob6mpn","current_state":"ready","state_changed_at":"2026-09-03T08:13:36Z","l
+del u16-fail (br-bold-firefly-w2z5mjz8): 200 {"branch":{"id":"br-bold-firefly-w2z5mjz8","project_id":"orange-sun-90493739","parent_id":"br-old-night-w2maosyd","parent_lsn":"0/3417638","parent_timestamp":"2
+del u16-src (br-old-night-w2maosyd): 200 {"branch":{"id":"br-old-night-w2maosyd","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/340F408","parent_timestamp"
+=== stage1 src ===
+src=br-hidden-truth-w28l5gwz
+src seeded: ([1, 'alice.real@victimcorp.com', 'ssn-111'], [2, 'bob.ceo@victimcorp.com', 'ssn-222'])
+=== stage2 anon ok ===
+u16b-ok id=br-dark-dew-w2yuf12g plsn=0/34175A0
+anon done: 200 {"project_id":"orange-sun-90493739","branch_id":"br-dark-dew-w2yuf12g","state":"anonymized","status_message":"Anonymization completed successfully (1 tables, 1 masking rules applie
+ra=[{'name': 'restore', 'reason': 'cannot restore anonymized branches'}, {'name': 'delete-rw-endpoint', 'reason': 'cannot delete read-write endpoints for anonymized branches'}] plsn=0/34175A0
+=== stage3 restore probes ===
+restore self+plsn: 422 {"request_id":"16af85b9-e497-41aa-814e-dd2888a586f0","code":"","message":"cannot reset branch with because a restriction is set; restriction_reason:\"cannot restore anonymized branches\""}
+  err code= msg=cannot reset branch with because a restriction is set; restriction_reason:"cannot restore anonymized branches"
+restore self+ts: 422 {"request_id":"fc21826e-1c00-45ac-a178-f58da257ebe2","code":"","message":"cannot reset branch with because a restriction is set; restriction_reason:\"cannot restore anonymized branches\""}
+  err code= msg=cannot reset branch with because a restriction is set; restriction_reason:"cannot restore anonymized branches"
+=== stage4 reset_to_parent control ===
+reset_to_parent: 422 {"request_id":"bbc379ba-c4f8-44d4-9df3-0cbbcd0bb162","code":"","message":"cannot reset branch with because a restriction is set; restriction_reason:\"cannot restore anonymized branches\""}
+=== stage5 cleanup ===
+del u16b-ok: 200 {"branch":{"id":"br-dark-dew-w2yuf12g","project_id":"orange-sun-90493739","parent_id":"br-hidden-truth-w28l5gwz","parent_lsn":"0/34175A0","parent_time
+del src: 200 {"branch":{"id":"br-hidden-truth-w28l5gwz","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/340F408","pare
+FINAL:
+  main                     br-wandering-field-w2ob6mpn default=True

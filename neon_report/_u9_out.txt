@@ -1,0 +1,12 @@
+src: ([1, 'victim1@corp.example', 'ssn-AAA'], [2, 'victim2@corp.example', 'ssn-BBB'])
+anon=br-frosty-voice-w20nh3m5 parent_lsn=0/3417598
+anon rows (masked): ([1, 'acostakatrina@example.org', 'ssn-AAA'], [2, 'rojasthomas@example.net', 'ssn-BBB'])
+waiting 180s ...
+wait done
+fork create: 201 {"branch":{"id":"br-dry-poetry-w27cx4rk","project_id":"orange-sun-90493739","parent_id":"br-frosty-voice-w20nh3m5","parent_lsn":"0/3417598","name":"u9-fork","slug":"br-dry-poetry-w27cx4rk","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-05T02:28:57Z","creation_source":"console","primary":false,"default":false,"protected":false,"cpu_used_sec":0,"compute_time_seconds":0,"active_time_seconds":0,"written_data_bytes":0,"data_transfer_byt
+fork restricted_actions: None
+fork rows after 3min: ([1, 'victim1@corp.example', 'ssn-AAA'], [2, 'victim2@corp.example', 'ssn-BBB'])
+>>> ORIGINAL DATA RECOVERED AFTER 3 MIN: True
+anon2(hist) create: 201 {"branch":{"id":"br-delicate-cloud-w2nhbepy","project_id":"orange-sun-90493739","parent_id":"br-frosty-voice-w20nh3m5","parent_lsn":"0/3417598","name":"u9-anon2","slug":"br-delicate-cloud-w2nhbepy","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at"
+cleanup u9-anon
+cleanup u9-src

@@ -1,0 +1,19 @@
+GHOST GET branch: 200 {"branch":{"id":"br-ancient-flower-w2lv7sx3","project_id":"orange-sun-90493739","parent_id":"br-snowy-salad-w2260g44","parent_lsn":"0/3417600","parent_timestamp":"2026-09-05T02:42:42Z","name":"u11-failcol","slug":"br-ancient-flower-w2lv7sx3","project_slug":"orange-sun-90493739","current_state":"ready","state_changed_at":"2026-09-05T02:42:44Z","logical_size":36167680,"creation_source":"console","primary":false,"default":false,"protected":false,"cpu_used_sec":0,"compute_time_seconds":50,"active_time_seconds":160,"written_data_bytes":0,"data_transfer_bytes":11451,"created_at":"2026-09-05T02:42:44Z","updated_at":"2026-09-05T02:54:50Z","created_by":{"name":"","image":""},"init_source":"parent-dat
+  name=u11-failcol state=ready ra=[{'name': 'restore', 'reason': 'cannot restore anonymized branches'}, {'name': 'delete-rw-endpoint', 'reason': 'cannot delete read-write endpoints for anonymized branches'}, {'name': 'connect-to-endpoints', 'reason': 'cannot connect to endpoints while branch is being anonymized'}] parent_id=br-snowy-salad-w2260g44
+GHOST anon_status: 200 {"project_id":"orange-sun-90493739","branch_id":"br-ancient-flower-w2lv7sx3","state":"initialized","status_message":"Successfully initialized PostgreSQL Anonymizer on all databases","created_at":"2026-09-05T02:42:44Z","updated_at":"2026-09-05T02:42:46Z"}
+GHOST pw_of: ok
+GHOST dataplane try 0: {'S': 'ERROR', 'C': '57P03', 'M': 'Access to this endpoint is temporarily disabled'}
+GHOST dataplane try 1: {'S': 'ERROR', 'C': '57P03', 'M': 'Access to this endpoint is temporarily disabled'}
+GHOST dataplane try 2: {'S': 'ERROR', 'C': '57P03', 'M': 'Access to this endpoint is temporarily disabled'}
+GHOST dataplane try 3: {'S': 'ERROR', 'C': '57P03', 'M': 'Access to this endpoint is temporarily disabled'}
+GHOST dataplane try 4: {'S': 'ERROR', 'C': '57P03', 'M': 'Access to this endpoint is temporarily disabled'}
+GHOST fork: 201 {"branch":{"id":"br-royal-math-w2e78vcq","project_id":"orange-sun-90493739","parent_id":"br-ancient-flower-w2lv7sx3","parent_lsn":"0/37AE700","name":"u15-ghostfork","slug":"br-royal-math-w2e78vcq","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":
+GHOST fork ra=None
+GHOST-fork data: ([1, 'alice.real@victimcorp.com', 'ssn-111'], [2, 'bob.ceo@victimcorp.com', 'ssn-222'], [3, 'carol.vp@victimcorp.com', 'ssn-333'])
+cleaned u15-ghostfork
+cleanup u12-src (br-odd-poetry-w2g04ovb): 200 {"branch":{"id":"br-odd-poetry-w2g04ovb","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/340F408","parent
+cleanup u11-src (br-snowy-salad-w2260g44): 422 {"request_id":"ccaf9f4c-202f-4cde-9ec1-c064777a7126","code":"","message":"cannot delete branch that has children: br-ancient-flower-w2lv7sx3; child_br
+cleanup u11-failcol (br-ancient-flower-w2lv7sx3): 200 {"branch":{"id":"br-ancient-flower-w2lv7sx3","project_id":"orange-sun-90493739","parent_id":"br-snowy-salad-w2260g44","parent_lsn":"0/3417600","parent
+FINAL branches:
+  u11-src                        br-snowy-salad-w2260g44
+  main                           br-wandering-field-w2ob6mpn

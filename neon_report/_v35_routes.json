@@ -1,0 +1,187 @@
+{
+ "callback/google": [
+  "GET",
+  302,
+  ""
+ ],
+ "callback/github": [
+  "GET",
+  302,
+  ""
+ ],
+ "verify-email": [
+  "GET",
+  400,
+  "{\"message\":\"[query.token] Invalid input: expected string, received undefined\",\"c"
+ ],
+ "get-session": [
+  "GET",
+  200,
+  "null"
+ ],
+ "token": [
+  "GET",
+  401,
+  "{\"message\":\"Unauthorized\",\"code\":\"UNAUTHORIZED\"}"
+ ],
+ "list-sessions": [
+  "GET",
+  401,
+  "{\"message\":\"Unauthorized\",\"code\":\"UNAUTHORIZED\"}"
+ ],
+ "organization/list": [
+  "GET",
+  401,
+  "{\"message\":\"Unauthorized\",\"code\":\"UNAUTHORIZED\"}"
+ ],
+ "admin/list-users": [
+  "GET",
+  401,
+  ""
+ ],
+ "list-accounts": [
+  "GET",
+  401,
+  "{\"message\":\"Unauthorized\",\"code\":\"UNAUTHORIZED\"}"
+ ],
+ "sign-in/email": [
+  "POST",
+  400,
+  "{\"message\":\"[body.email] Invalid input: expected string, received undefined; [bo"
+ ],
+ "sign-up/email": [
+  "POST",
+  400,
+  "{\"message\":\"[body.name] Invalid input: expected string, received undefined; [bod"
+ ],
+ "sign-in/social": [
+  "POST",
+  400,
+  "{\"error\":\"Provider is required\",\"code\":\"PROVIDER_REQUIRED\"}"
+ ],
+ "sign-out": [
+  "POST",
+  200,
+  "{\"success\":true}"
+ ],
+ "reset-password": [
+  "POST",
+  400,
+  "{\"message\":\"[body.newPassword] Invalid input: expected string, received undefine"
+ ],
+ "change-email": [
+  "POST",
+  400,
+  "{\"message\":\"[body.newEmail] Invalid input: expected string, received undefined\","
+ ],
+ "change-password": [
+  "POST",
+  400,
+  "{\"message\":\"[body.newPassword] Invalid input: expected string, received undefine"
+ ],
+ "revoke-sessions": [
+  "POST",
+  401,
+  "{\"message\":\"Unauthorized\",\"code\":\"UNAUTHORIZED\"}"
+ ],
+ "revoke-other-sessions": [
+  "POST",
+  401,
+  "{\"message\":\"Unauthorized\",\"code\":\"UNAUTHORIZED\"}"
+ ],
+ "revoke-session": [
+  "POST",
+  400,
+  "{\"message\":\"[body.token] Invalid input: expected string, received undefined\",\"co"
+ ],
+ "update-user": [
+  "POST",
+  401,
+  "{\"message\":\"Unauthorized\",\"code\":\"UNAUTHORIZED\"}"
+ ],
+ "organization/create": [
+  "POST",
+  400,
+  "{\"message\":\"[body.name] Invalid input: expected string, received undefined; [bod"
+ ],
+ "organization/update": [
+  "POST",
+  400,
+  "{\"message\":\"[body.data] Invalid input: expected object, received undefined\",\"cod"
+ ],
+ "organization/delete": [
+  "POST",
+  400,
+  "{\"message\":\"[body.organizationId] Invalid input: expected string, received undef"
+ ],
+ "organization/set-active": [
+  "POST",
+  401,
+  "{\"message\":\"Unauthorized\",\"code\":\"UNAUTHORIZED\"}"
+ ],
+ "organization/invite-member": [
+  "POST",
+  400,
+  "{\"message\":\"[body.email] Invalid input: expected string, received undefined; [bo"
+ ],
+ "organization/leave": [
+  "POST",
+  400,
+  "{\"message\":\"[body.organizationId] Invalid input: expected string, received undef"
+ ],
+ "admin/create-user": [
+  "POST",
+  400,
+  "{\"message\":\"[body.email] Invalid input: expected string, received undefined; [bo"
+ ],
+ "admin/ban-user": [
+  "POST",
+  400,
+  "{\"message\":\"[body.userId] Invalid input: expected nonoptional, received undefine"
+ ],
+ "admin/unban-user": [
+  "POST",
+  400,
+  "{\"message\":\"[body.userId] Invalid input: expected nonoptional, received undefine"
+ ],
+ "admin/impersonate-user": [
+  "POST",
+  400,
+  "{\"message\":\"[body.userId] Invalid input: expected nonoptional, received undefine"
+ ],
+ "admin/stop-impersonating": [
+  "POST",
+  401,
+  ""
+ ],
+ "admin/remove-user": [
+  "POST",
+  400,
+  "{\"message\":\"[body.userId] Invalid input: expected nonoptional, received undefine"
+ ],
+ "admin/set-user-password": [
+  "POST",
+  400,
+  "{\"message\":\"[body.newPassword] Invalid input: expected string, received undefine"
+ ],
+ "admin/update-user": [
+  "POST",
+  400,
+  "{\"message\":\"[body.userId] Invalid input: expected nonoptional, received undefine"
+ ],
+ "unlink-account": [
+  "POST",
+  400,
+  "{\"message\":\"[body.providerId] Invalid input: expected string, received undefined"
+ ],
+ "link-social": [
+  "POST",
+  400,
+  "{\"message\":\"[body.provider] Invalid input\",\"code\":\"VALIDATION_ERROR\"}"
+ ],
+ "refresh-token": [
+  "POST",
+  400,
+  "{\"message\":\"[body.providerId] Invalid input: expected string, received undefined"
+ ]
+}

@@ -1,0 +1,11 @@
+results keys: ['lang', 'locations', 'restaurants', 'common']
+restaurants type: list
+element0: {"token_type": "category", "item_id": 1, "image_url": "https://b.zmtcdn.com/images/search_tokens/app_icons/category_1.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A", "description": "Delivery", "text": "Delivery"}
+element5: {"token_type": "category", "item_id": 8, "image_url": "https://b.zmtcdn.com/images/search_tokens/app_icons/category_8.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A", "description": "Breakfast", "text": "Breakfast"}
+
+common: {"city": "1", "subzone": "", "zone": "", "landmark": "", "near-me": "", "group": "", "entity_type": "city", "entity_id": "1"}
+
+restaurant count keys: {"lang": "en"}
+
+RAW around restaurants: "restaurants":[{"token_type":"category","item_id":1,"image_url":"https:\/\/b.zmtcdn.com\/images\/search_tokens\/app_icons\/category_1.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A","description":"Delivery","text":"Delivery"},{"token_type":"category","item_id":13,"image_url":"https:\/\/b.zmtcdn.com\/images\/search_tokens\/app_icons\/category_13.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A"
+done

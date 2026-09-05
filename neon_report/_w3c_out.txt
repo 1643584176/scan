@@ -1,0 +1,21 @@
+[12:37:24] == W3c restore source cross-project  tag=w3c5b39 ==
+[12:37:26] S  create orange-sun-90493739/w3ca2-w3c5b39 -> 201 br-dry-credit-w28ih19a
+[12:37:35] S  create orange-sun-90493739/w3ca3-w3c5b39 -> 201 br-bold-moon-w2a3brw2
+[12:37:43] S  create damp-term-63384673/w3cb2-w3c5b39 -> 201 br-muddy-bread-w22k0gbf
+[12:37:59] A3 mkA: OK
+[12:38:05] B2 mkB: OK
+[12:39:05] A2 baseline: ERR relation "public.xmark" does not exist
+LINE 1: SELECT * FROM public.xmark
+                      ^
+[12:39:07] T1 restore A2<-A3: 200 {"branch":{"id":"br-dry-credit-w28ih19a","project_id":"orange-sun-90493739","parent_id":"br-bold-moon-w2a3brw2","parent_lsn":"0/3459FB8","parent_timestamp":"2026-09-05T04:25:05Z","name":"w3ca2-w3c5b39","slug":"br-dry-credit-w28ih19a","current_state":"resetting
+[12:39:13] T1 A2 content: OK [('mkA-w3c5b39',)]
+[12:39:14] T2 restore A2<-B2(cross): 404 {"request_id":"f3d70831-1a21-423b-82d4-6ae6bf804dcd","code":"","message":"project, branch, endpoint or stable compute not found"}
+[12:39:23] T2 A2 content: OK [('mkA-w3c5b39',)]
+[12:39:25] T3 restore B2<-A3(cross): 404 {"request_id":"bbf1dec2-c913-4467-8521-03751fa3bdd7","code":"","message":"project, branch, endpoint or stable compute not found"}
+[12:39:33] T3 B2 content: OK [('mkB-w3c5b39',)]
+[12:39:34] T4 so cross-parent(PA,parent=PBmain): 404 {"request_id":"8413a5e9-ea65-42d5-a27f-241f0714d585","code":"","message":"parent branch not found"}
+[12:39:34] cleanup 3
+[12:39:35] del B2 br-muddy-bread-w22k0gbf -> 200
+[12:39:37] del A3 br-bold-moon-w2a3brw2 -> 422
+[12:39:39] del A2 br-dry-credit-w28ih19a -> 200
+[12:39:40] == W3c DONE

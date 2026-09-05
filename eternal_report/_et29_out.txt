@@ -1,0 +1,9 @@
+ODD /admin                       [302] <html><body>You are being <a href="https://www.runnr.in/admin/login">redirected<
+HIT /admin/login                 [200] json {"status":{"code":403}}
+ODD /orders                      [401] HTTP Token: Access denied. 
+ODD /tracking                    [302] <html><body>You are being <a href="https://www.runnr.in/admin/login">redirected<
+ODD /orders/new                  [401] HTTP Token: Access denied. 
+ODD /admin/users                 [302] <html><body>You are being <a href="https://www.runnr.in/admin/login">redirected<
+ODD /invoices                    [302] <html><body>You are being <a href="https://www.runnr.in/admin/login">redirected<
+total hits: 1
+done

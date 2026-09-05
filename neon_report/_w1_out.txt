@@ -1,0 +1,20 @@
+0 current webhook cfg: 200 {"enabled":false,"enabled_events":[],"timeout_seconds":5}
+0 auth cfg on main: 200 {"auth_provider":"better_auth","auth_provider_project_id":"f4a5269e-11f3-4322-9175-6220d653d4e0","branch_id":"br-wandering-field-w2ob6mpn","db_name":"neondb","created_at":"2026-09-03T08:36:03Z","owned
+
+=== 1 URL filter probes ===
+PUT webhook_url=http://169.254.169.254/latest/meta-data/ -> 400 {"request_id":"2cff633a-a2aa-4e7f-97bf-65ccd092b838","code":"","message":"request failed; reason:\"Webhook URL must use HTTPS\", code:\"INVALID_WEBHOOK_URL_FORMAT\""}
+PUT webhook_url=https://169.254.169.254/ -> 400 {"request_id":"64b74e4a-db4c-44f5-b675-d488fb6b4e84","code":"","message":"request failed; reason:\"Webhook URL cannot target private IP addresses\", code:\"INVALID_WEBHOOK_URL_FORMAT\""}
+PUT webhook_url=http://172.20.0.1/ -> 400 {"request_id":"20dc6463-7d38-466b-824b-68b51fd0d287","code":"","message":"request failed; reason:\"Webhook URL must use HTTPS\", code:\"INVALID_WEBHOOK_URL_FORMAT\""}
+PUT webhook_url=http://10.0.0.1/ -> 400 {"request_id":"54478750-698b-4972-a8a3-c90de971aa9f","code":"","message":"request failed; reason:\"Webhook URL must use HTTPS\", code:\"INVALID_WEBHOOK_URL_FORMAT\""}
+PUT webhook_url=http://127.0.0.1:80/ -> 400 {"request_id":"e28c352b-7835-44d6-aa87-a9dabacd7a62","code":"","message":"request failed; reason:\"Webhook URL must use HTTPS\", code:\"INVALID_WEBHOOK_URL_FORMAT\""}
+
+=== 2 sign-up latency vs webhook target ===
+A-reachable PUT cfg: True
+A-reachable sign-up libobo1229+na_w1@gmail.com -> 200 | 0.5s | {"token":"PPIZRffII42F38p84X2YSykNCasqQfdK","user":{"name":"A-reachable","email":"libobo1229+na_w1@gmail.com","emailVerified":false,"image":null,"crea
+B-meta-http PUT cfg: False
+B2-meta-https PUT cfg: False
+C-rfc1918 PUT cfg: False
+D-blackhole PUT cfg: False
+
+3 restore cfg: 200
+== DONE

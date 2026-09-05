@@ -1,0 +1,18 @@
+src=br-nameless-hall-w291zn8g create:201
+src seeded: ([1, 'alice.real@victimcorp.com'], [2, 'bob.ceo@victimcorp.com'])
+A) nostart create: 201 {"branch":{"id":"br-divine-wave-w2b1sh37","project_id":"orange-sun-90493739","parent_id":"br-nameless-hall-w291zn8g","parent_lsn":"0/3417478","name":"u14-nostart","slug":"br-divine-wave-w2b1sh37","project_slug":"orange-sun-90493739","current_state":"
+A) nostart ra=[{'name': 'restore', 'reason': 'cannot restore anonymized branches'}, {'name': 'delete-rw-endpoint', 'reason': 'cannot delete read-write endpoints for anonymized branches'}, {'name': 'connect-to-endpoints', 'reason': 'cannot connect to endpoints while branch is being anonymized'}]
+A) nostart ready state=ready
+A) nostart dataplane: ok=False data={'S': 'ERROR', 'C': '57P03', 'M': 'Access to this endpoint is temporarily disabled'}
+A) nostart anon_status: 200 {"project_id":"orange-sun-90493739","branch_id":"br-divine-wave-w2b1sh37","state":"initialized","status_message":"Successfully initialized PostgreSQL Anonymizer on all databases","created_at":"2026-09
+A) probe anonymize -> 200 {"project_id":"orange-sun-90493739","branch_id":"br-divine-wave-w2b1sh37","state":"anonymizing","created_at":"2026-09-05T02:51:34Z","updated_at":"2026
+A) probe start_anonymization -> 404 this route does not exist
+A) cleaned nostart
+B) ok create: 201 {"branch":{"id":"br-late-hall-w21bwg25","project_id":"orange-sun-90493739","parent_id":"br-nameless-hall-w291zn8g","parent_lsn":"0/34175A8","name":"u14-ok","slug":"br-late-hall-w21bwg25","project_slug":"orange-sun-90493739","current_state":"init","pe
+B) anon done: {"project_id":"orange-sun-90493739","branch_id":"br-late-hall-w21bwg25","state":"anonymized","status_message":"Anonymization completed successfully (1 tables, 1 masking rules applied)","created_at":"2
+B) GET branch ra=[{'name': 'restore', 'reason': 'cannot restore anonymized branches'}, {'name': 'delete-rw-endpoint', 'reason': 'cannot delete read-write endpoints for anonymized branches'}]
+B) ok dataplane (masked expected): ok=True data=([1, 'johnfarrell@example.com'], [2, 'brian29@example.com'])
+C) list endpoints: 200 {"endpoints":[{"host":"ep-calm-violet-w2mb73rw.us-east-2.aws.neon.build","hosts":{"read_write_host":"ep-calm-violet-w2mb73rw.us-east-2.aws.neon.build","read_write_pooled_host":"ep-calm-violet-w2mb73rw-pooler.us-east-2.aws.neon.build"},"id":"ep-calm-v
+C) DELETE rw endpoint on restricted br: 422 {"request_id":"ea8b5a58-3c24-486c-a66a-6cc565a84f94","code":"","message":"deleting the read-write endpoint is restricted for this branch; branch_id:\"br-late-hall-w21bwg25\", endpoint_id:\"ep-calm-violet-w2mb73rw\""}
+C) create read_only endpoint on restricted br: 405 
+cleanup done

@@ -1,0 +1,13 @@
+var S -> ['https://www.zomato.com']
+var T -> ['https://www.zomato.com/business']
+var a -> ['https://api.zomato.com', 'https://zomato-api-gateway.eks.zdev.net', 'https://zomato.onelink.me/xqzv/CTA']
+var c -> ['https://zomato.onelink.me/xqzv/CTA']
+var i -> ['https://www.zomato.com']
+var l -> ['https://blog.zomato.com', 'https://zomato.onelink.me/xqzv/CTA']
+var n -> ['https://b.zmtcdn.com']
+var o -> ['https://www.zomato.com', 'https://www.zomato.com/dine-out']
+var s -> ['https://api.eks.zdev.net', 'https://api.zomato.com']
+var u -> ['https://admin.zomans.com']
+
+== search domain 'i' usage ==
+done

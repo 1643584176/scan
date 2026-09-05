@@ -1,0 +1,8 @@
+== zomans DNS ==
+admin.zomans.com         23.53.202.102
+api.zomans.com           172.236.159.6
+
+== probe alive ==
+admin.zomans.com         [302] srv=akamai/nginx ct=text/html len=427 302 Found
+api.zomans.com           [302] srv=akamai/nginx ct=text/html len=428 302 Found
+done

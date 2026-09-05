@@ -1,0 +1,24 @@
+== winecellar.zomato.com variants ==
+chrome       /              [403] srv=- ct=text/html len=7 body=Blocked
+googlebot    /              [403] srv=- ct=text/html len=7 body=Blocked
+curl         /              [403] srv=- ct=text/html len=7 body=Blocked
+chrome-xff   /              [403] srv=- ct=text/html len=7 body=Blocked
+robots       /robots.txt    [403] srv=- ct=text/html len=7 body=Blocked
+http10       /              [403] srv=- ct=text/html len=7 body=Blocked
+
+== www.runnr.in gateway headers ==
+plain            [200] srv=Zomato ct=application/json; charset len=23 body={"status":{"code":403}}
+x-requested-with [200] srv=Zomato ct=application/json; charset len=23 body={"status":{"code":403}}
+x-access-token   [200] srv=Zomato ct=application/json; charset len=23 body={"status":{"code":403}}
+authorization    [200] srv=Zomato ct=application/json; charset len=23 body={"status":{"code":403}}
+accept-all       [200] srv=Zomato ct=application/json; charset len=23 body={"status":{"code":403}}
+
+== runnr path probes ==
+/api             [404] ct=text/html; charset=utf-8 len=1564 body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <
+/api/v1          [404] ct=text/html; charset=utf-8 len=1564 body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <
+/health          [404] ct=text/html; charset=utf-8 len=1564 body=<!DOCTYPE html> <html> <head>   <title>The page you were looking for doesn't exist (404)</title>   <
+/robots.txt      [200] ct=text/plain len=202 body=# See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file # 
+Traceback (most recent call last):
+  File "F:\scan\eternal_report\_et28_wc_rr.py", line 50, in <module>
+    print("%-16s [%d] ct=%s len=%d body=%s" % (p, st, h2.get("content-type", "-")[:25], len(raw), raw[:100].decode("utf-8", "replace").replace("\n", " ")), flush=True)
+UnicodeEncodeError: 'gbk' codec can't encode character '\ufffd' in position 67: illegal multibyte sequence

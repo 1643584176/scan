@@ -1,0 +1,83 @@
+saved main-8efa4cf644fa76389041.js (383 KB)
+saved pages-Search-19402afa43cd46f9047b.js (5 KB)
+saved layoutEntries-uniSearchDesContainer-a105a76fa4d68a81add7.js (5 KB)
+saved layoutEntries-searchDesktopIndex-dc423479412fc1cc3c30.js (14 KB)
+saved zomato-5b4c68bb1f2c1592a059.js (137 KB)
+saved RestaurantCardV2-8514e8764c02f001f2ae.js (17 KB)
+
+== api endpoints in zomato bundles ==
+/api/fetch                                                                                           main-8efa4cf644fa76389041.js
+/dining-gw/consumer/web/cart/checkout                                                                main-8efa4cf644fa76389041.js
+/dining-gw/consumer/web/cart/get                                                                     main-8efa4cf644fa76389041.js
+/dining-gw/consumer/web/order/cancel                                                                 main-8efa4cf644fa76389041.js
+/dining-gw/consumer/web/order/details                                                                main-8efa4cf644fa76389041.js
+/dining-gw/consumer/web/restaurant/ads                                                               main-8efa4cf644fa76389041.js
+/dining-gw/consumer/web/tr/order-history                                                             main-8efa4cf644fa76389041.js
+/dining-gw/consumer/web/tr/slots                                                                     main-8efa4cf644fa76389041.js
+/dining-gw/consumer/web/upcoming-booking/get                                                         main-8efa4cf644fa76389041.js
+/gw/web/user/notification_preferences                                                                main-8efa4cf644fa76389041.js
+/v2/get_masked_number.json                                                                           main-8efa4cf644fa76389041.js
+/webapi/searchapi.php                                                                                main-8efa4cf644fa76389041.js
+/webroutes/collection/saveCollection                                                                 main-8efa4cf644fa76389041.js
+/webroutes/dote/orderDetails                                                                         main-8efa4cf644fa76389041.js
+/webroutes/location/get                                                                              main-8efa4cf644fa76389041.js
+/webroutes/location/locationGeoData                                                                  main-8efa4cf644fa76389041.js
+/webroutes/location/search                                                                           main-8efa4cf644fa76389041.js
+/webroutes/menu/viewMenu                                                                             main-8efa4cf644fa76389041.js
+/webroutes/order/address                                                                             main-8efa4cf644fa76389041.js
+/webroutes/order/autoVerifyPhone                                                                     main-8efa4cf644fa76389041.js
+/webroutes/order/cart                                                                                main-8efa4cf644fa76389041.js
+/webroutes/order/deleteAddress                                                                       main-8efa4cf644fa76389041.js
+/webroutes/order/details                                                                             main-8efa4cf644fa76389041.js
+/webroutes/order/makeOrder                                                                           main-8efa4cf644fa76389041.js
+/webroutes/order/markFavorite                                                                        main-8efa4cf644fa76389041.js
+/webroutes/order/receipt                                                                             main-8efa4cf644fa76389041.js
+/webroutes/order/resOffer                                                                            main-8efa4cf644fa76389041.js
+/webroutes/order/valid                                                                               main-8efa4cf644fa76389041.js
+/webroutes/orderShare/getCrystalData                                                                 main-8efa4cf644fa76389041.js
+/webroutes/placeorder                                                                                main-8efa4cf644fa76389041.js
+/webroutes/postOrder/deliveryFeedback                                                                main-8efa4cf644fa76389041.js
+/webroutes/postOrder/deliveryRating                                                                  main-8efa4cf644fa76389041.js
+/webroutes/postOrder/orderRating                                                                     main-8efa4cf644fa76389041.js
+/webroutes/restaurant/bookmark                                                                       main-8efa4cf644fa76389041.js
+/webroutes/restaurant/getHygieneDetails                                                              main-8efa4cf644fa76389041.js
+/webroutes/restaurant/getHyperpureDetails                                                            main-8efa4cf644fa76389041.js
+/webroutes/restaurant/info                                                                           main-8efa4cf644fa76389041.js
+/webroutes/restaurant/rate                                                                           main-8efa4cf644fa76389041.js
+/webroutes/restaurant/share                                                                          main-8efa4cf644fa76389041.js
+/webroutes/restaurant/userModalInfo                                                                  main-8efa4cf644fa76389041.js
+/webroutes/reviews/comment/delete                                                                    main-8efa4cf644fa76389041.js
+/webroutes/reviews/comment/loadMore                                                                  main-8efa4cf644fa76389041.js
+/webroutes/reviews/comment/loadMoreManagement                                                        main-8efa4cf644fa76389041.js
+/webroutes/reviews/comment/post                                                                      main-8efa4cf644fa76389041.js
+/webroutes/reviews/delete                                                                            main-8efa4cf644fa76389041.js
+/webroutes/reviews/follow                                                                            main-8efa4cf644fa76389041.js
+/webroutes/reviews/likeReview                                                                        main-8efa4cf644fa76389041.js
+/webroutes/reviews/loadMore                                                                          main-8efa4cf644fa76389041.js
+/webroutes/reviews/post                                                                              main-8efa4cf644fa76389041.js
+/webroutes/reviews/sortReviews                                                                       main-8efa4cf644fa76389041.js
+/webroutes/reviews/suggestTags                                                                       main-8efa4cf644fa76389041.js
+/webroutes/reviews/switchTab                                                                         main-8efa4cf644fa76389041.js
+/webroutes/search/applyFilter                                                                        main-8efa4cf644fa76389041.js
+/webroutes/search/autoSuggest                                                                        main-8efa4cf644fa76389041.js
+/webroutes/search/home                                                                               main-8efa4cf644fa76389041.js
+/webroutes/user/address                                                                              main-8efa4cf644fa76389041.js
+/webroutes/user/auth/verification/init                                                               main-8efa4cf644fa76389041.js
+/webroutes/user/blogs                                                                                main-8efa4cf644fa76389041.js
+/webroutes/user/booking                                                                              main-8efa4cf644fa76389041.js
+/webroutes/user/booking/info                                                                         main-8efa4cf644fa76389041.js
+/webroutes/user/bookmarks                                                                            main-8efa4cf644fa76389041.js
+/webroutes/user/cdngOrders                                                                           main-8efa4cf644fa76389041.js
+/webroutes/user/coverPhoto                                                                           main-8efa4cf644fa76389041.js
+/webroutes/user/deleteAccount                                                                        main-8efa4cf644fa76389041.js
+/webroutes/user/deleteProfilePic                                                                     main-8efa4cf644fa76389041.js
+/webroutes/user/editProfile                                                                          main-8efa4cf644fa76389041.js
+/webroutes/user/network                                                                              main-8efa4cf644fa76389041.js
+/webroutes/user/notifications                                                                        main-8efa4cf644fa76389041.js
+/webroutes/user/nutritionOrders                                                                      main-8efa4cf644fa76389041.js
+/webroutes/user/orders                                                                               main-8efa4cf644fa76389041.js
+/webroutes/user/photos                                                                               main-8efa4cf644fa76389041.js
+/webroutes/user/profilePic                                                                           main-8efa4cf644fa76389041.js
+/webroutes/user/reviews                                                                              main-8efa4cf644fa76389041.js
+/webroutes/zomaland/get-order                                                                        main-8efa4cf644fa76389041.js
+done

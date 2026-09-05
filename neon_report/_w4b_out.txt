@@ -1,0 +1,12 @@
+[12:50:07] == W4b auth plugins recon ==
+[12:50:10] plugins: 200 {"organization":{"enabled":true,"organization_limit":10,"membership_limit":100,"creator_role":"owner","send_invitation_email":false},"magic_link":{"enabled":false,"expires_in":5,"disable_sign_up":false},"phone_number":{"enabled":false,"otp_expires_in":300},"email_provider":{"type":"shared"},"email_and_password":{"enabled":true,"email_verification_method":"otp","require_email_verification":false,"auto_sign_in_after_verification":true,"send_verification_email_on_sign_up":false,"send_verification_email_on_sign_in":false,"disable_sign_up":false},"oauth_providers":[{"id":"google","type":"shared"},{"id":"github","type":"shared"}],"allow_localhost":true}
+[12:50:11] plugin organization  : 405 
+[12:50:12] plugin phone-number  : 200 {"enabled":false,"otp_expires_in":300}
+[12:50:13] plugin magic-link    : 405 
+[12:50:16] sign-up libobo1229+na_org1@gmail.com: 200 {"token":"tgrgPcbjDBK0Bul1DwcgHtIBG8qpISpX","user":{"name":"w4b-user","email":"libobo1229+na_org1@gmail.com","emailVerified":false,"image":null,"createdAt":"2026-09-05T04:50:16.563Z","updatedAt":"2026
+[12:50:16] session cookie: __Secure-neon-auth.session_token=tgrgPcbjDBK0Bul1DwcgHtIBG8q
+[12:50:17] NA /neondb/auth/organization/list             -> 200 []
+[12:50:20] NA /neondb/auth/organization/create           -> 200 {"name":"w4b-org","slug":"w4b-org-1788583817","logo":null,"createdAt":"2026-09-05T04:50:20.069Z","id":"3189832e-d87e-436b-8a47-a8e09a33deb6","members":[{"organizationId":"3189832e-d87e-436b-8a47-a8e09a33deb6","userId":"f2366454-d3f4-4a80-ba3b-e5ca93c
+[12:50:22] NA /neondb/auth/organization/members          -> 404 
+[12:50:23] NA /neondb/auth/organization                  -> 404 
+[12:50:23] == W4b DONE

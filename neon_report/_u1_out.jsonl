@@ -1,0 +1,41 @@
+{"t": "09:59:54", "key": "G project query", "st": 404, "note": "", "body": "this route does not exist"}
+{"t": "09:59:55", "key": "G project query/history", "st": 200, "note": "", "body": "{\"history\":[]}"}
+{"t": "09:59:57", "key": "G project saved_queries", "st": 200, "note": "", "body": "[]"}
+{"t": "09:59:58", "key": "G project running_operations", "st": 200, "note": "", "body": "{\"operations\":[]}"}
+{"t": "09:59:59", "key": "G project branch_import", "st": 405, "note": "", "body": ""}
+{"t": "10:00:01", "key": "G project platform-served", "st": 200, "note": "", "body": "{\"served\":true}"}
+{"t": "10:00:02", "key": "G project notifications", "st": 200, "note": "", "body": "{}"}
+{"t": "10:00:03", "key": "G project limits", "st": 200, "note": "", "body": "{\"limits\":{\"active_time\":0,\"max_projects\":20,\"max_branches\":10,\"max_snapshots\":1,\"max_protected_branches\":0,\"max_autoscaling_cu\":2,\"max_fixed_size_cu\":2,\"cpu_seconds\":7200000,\"max_compute_time_non_primary\":0,\"max_active_endpoints\":20,\"max_read_only_endpoints\":3,\"max_read_computes_per_branch\":0,\"max_allowed_ips\":0,\"max_vpc_endpoints_per_region\":0,\"max_monitoring_retention_hours\":24,\"max_history_ret"}
+{"t": "10:00:04", "key": "G project applications/vercel", "st": 404, "note": "", "body": "this route does not exist"}
+{"t": "10:00:05", "key": "G project applications/vercel/branches", "st": 200, "note": "", "body": "{\"total\":0}"}
+{"t": "10:00:07", "key": "G project applications/vercel/settings", "st": 200, "note": "", "body": "{\"auto_delete_obsolete_branches\":false,\"production_branch_id\":\"\"}"}
+{"t": "10:00:08", "key": "G project applications/vercel/vars", "st": 200, "note": "", "body": "{\"vars\":[{\"name\":\"DATABASE_URL\",\"value\":true},{\"name\":\"DATABASE_URL_UNPOOLED\",\"value\":true},{\"name\":\"PGHOST\",\"value\":false},{\"name\":\"PGHOST_UNPOOLED\",\"value\":false},{\"name\":\"PGUSER\",\"value\":false},{\"name\":\"PGDATABASE\",\"value\":false},{\"name\":\"PGPASSWORD\",\"value\":false},{\"name\":\"NEON_AUTH_BASE_URL\",\"value\":false},{\"name\":\"VITE_NEON_AUTH_URL\",\"value\":false}],\"role\":\"\",\"database\":\"\"}"}
+{"t": "10:00:09", "key": "G project applications/github", "st": 404, "note": "", "body": "{\"request_id\":\"652fbb96-fd7c-4ec8-bf23-a5de6a3fdb52\",\"code\":\"\",\"message\":\"GitHub app project not found for project ID; project_id:\\\"orange-sun-90493739\\\"\"}"}
+{"t": "10:00:10", "key": "G project integrations/monitoring", "st": 404, "note": "", "body": "{\"request_id\":\"1189bcbd-f8e9-483b-8423-84267e98eed7\",\"code\":\"\",\"message\":\"api not found\"}"}
+{"t": "10:00:11", "key": "G project integrations/monitoring/datadog", "st": 405, "note": "", "body": ""}
+{"t": "10:00:13", "key": "G project integrations/monitoring/debug", "st": 405, "note": "", "body": ""}
+{"t": "10:00:14", "key": "G project integrations/monitoring/otel", "st": 405, "note": "", "body": ""}
+{"t": "10:00:15", "key": "G project integrations/vercel", "st": 405, "note": "", "body": ""}
+{"t": "10:00:16", "key": "G project auth/init", "st": 400, "note": "", "body": "{\"request_id\":\"4bc86c05-cabf-4147-b56a-62d51601b3ee\",\"code\":\"\",\"message\":\"invalid input: operation InitializeNeonAuthProviderOAuth: decode params: query: \\\"auth_provider\\\": query parameter \\\"auth_provider\\\" not set\"}"}
+{"t": "10:00:17", "key": "G project auth/sync_keys_vercel", "st": 405, "note": "", "body": ""}
+{"t": "10:00:18", "key": "G branch reset", "st": 405, "note": "", "body": ""}
+{"t": "10:00:20", "key": "G branch reset_to_parent", "st": 405, "note": "", "body": ""}
+{"t": "10:00:21", "key": "G branch recover", "st": 405, "note": "", "body": ""}
+{"t": "10:00:22", "key": "G branch consumption", "st": 200, "note": "", "body": "{\"consumption\":{\"compute_time_seconds\":5201,\"data_transfer_bytes\":3229383,\"logical_size_bytes\":34152448,\"written_size_since_parent_bytes\":34152448,\"pitr_history_size_since_parent_bytes\":702560}}"}
+{"t": "10:00:24", "key": "G endpoint passwordless_auth", "st": 405, "note": "", "body": ""}
+{"t": "10:00:25", "key": "G endpoint stats", "st": 405, "note": "", "body": ""}
+{"t": "10:00:26", "key": "G org billing/account", "st": 200, "note": "", "body": "{\"billing_account\":{\"state\":\"active\",\"payment_source\":{\"type\":\"\"},\"subscription_type\":\"free_v3\",\"payment_method\":\"none\",\"quota_reset_at_last\":\"2026-09-03T08:03:17Z\",\"name\":\"libobo1229@gmail.com\",\"email\":\"libobo1229@gmail.com\",\"address_city\":\"\",\"address_country\":\"\",\"address_line1\":\"\",\"address_line2\":\"\",\"address_postal_code\":\"\",\"address_state\":\"\",\"plan_details\":{\"name\":\"free\",\"version\":{\"major\":3,\"m"}
+{"t": "10:00:28", "key": "G org billing/invoices", "st": 200, "note": "", "body": "{\"invoices\":[]}"}
+{"t": "10:00:29", "key": "G org billing/aigw purchase", "st": 405, "note": "", "body": ""}
+{"t": "10:00:30", "key": "G org consumption", "st": 200, "note": "", "body": "{\"periods\":[{\"period_start\":\"2026-09-03T08:03:17Z\",\"period_end\":\"2026-10-01T00:00:00Z\",\"active_time\":0,\"written_data\":0,\"data_storage\":0,\"data_transfer\":0,\"compute_time\":0,\"logical_size_archived_bytes_month\":0,\"synthetic_storage_size_bytes_month\":0,\"peak_data_storage\":0,\"peak_projects_count\":2,\"written_data_cost\":0,\"data_storage_cost\":0,\"data_transfer_cost\":0,\"compute_time_cost\":0,\"synthetic_stora"}
+{"t": "10:00:31", "key": "G org deletion_checklist", "st": 200, "note": "", "body": "{\"conditions\":[{\"name\":\"project_count\",\"expected\":\"0\",\"actual\":\"2\"}]}"}
+{"t": "10:00:32", "key": "G org domains", "st": 200, "note": "", "body": "{\"domains\":[]}"}
+{"t": "10:00:33", "key": "G org early_access", "st": 405, "note": "", "body": ""}
+{"t": "10:00:35", "key": "G org feature_flags", "st": 200, "note": "", "body": "{\"megabase_onboarding_enabled\":true,\"neon_auth_config_name\":true,\"project_integrations_column\":true,\"roman_test_flag\":false,\"function_logs\":true,\"vercel_neon_auth_better_auth\":true,\"projects_list_ui_use_data_table_v2\":true,\"ui_sql_editor_great_again\":true,\"restrict_azure_require_recent_project\":true,\"vercel_neon_auth\":true,\"agentic_provisioning_requires_auth\":true,\"restrict_azure_for_free_orgs\":tr"}
+{"t": "10:00:36", "key": "G org features/enable", "st": 405, "note": "", "body": ""}
+{"t": "10:00:37", "key": "G org guests", "st": 200, "note": "", "body": "[]"}
+{"t": "10:00:38", "key": "G org limits", "st": 200, "note": "", "body": "{\"limits\":{\"active_time\":0,\"max_projects\":20,\"max_branches\":10,\"max_snapshots\":1,\"max_protected_branches\":0,\"max_autoscaling_cu\":2,\"max_fixed_size_cu\":2,\"cpu_seconds\":7200000,\"max_compute_time_non_primary\":0,\"max_active_endpoints\":20,\"max_read_only_endpoints\":3,\"max_read_computes_per_branch\":0,\"max_allowed_ips\":0,\"max_vpc_endpoints_per_region\":0,\"max_monitoring_retention_hours\":24,\"max_history_ret"}
+{"t": "10:00:40", "key": "G org sso", "st": 404, "note": "", "body": "{\"request_id\":\"3b7a238d-aeeb-48c0-bb18-62c23ca069f6\",\"code\":\"\",\"message\":\"sso configuration not found; org_id:\\\"org-flat-dawn-91601224\\\"\"}"}
+{"t": "10:00:41", "key": "G org sso/enforcement", "st": 405, "note": "", "body": ""}
+{"t": "10:00:42", "key": "G user billing/account", "st": 405, "note": "", "body": ""}
+{"t": "10:00:43", "key": "G user billing/invoices", "st": 400, "note": "", "body": "{\"request_id\":\"935fd838-907a-4d81-b34c-8b1088ba7466\",\"code\":\"\",\"message\":\"method is deprecated\"}"}

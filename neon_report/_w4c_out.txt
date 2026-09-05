@@ -1,0 +1,23 @@
+[12:51:16] == W4c org matrix ==
+[12:51:19] U1 session: True
+[12:51:21] U2 session: True
+[12:51:34] == W4c org matrix ==
+[12:51:36] U1 session: True
+[12:51:40] U2 session: True
+[12:51:42] U1 orgs: ['w4b-org']
+[12:51:42] O1 = 3189832e-d87e-436b-8a47-a8e09a33deb6
+[12:51:43] B members raw: 404 
+[12:51:43] owner member id: None
+[12:51:45] C1 U2 read members                     GET   -> 404 
+[12:51:47] C2 U2 update role                      POST  -> 400 {"message":"[body.memberId] Invalid input: expected string, received null","code":"VALIDATION_ERROR"}
+[12:51:49] C3 U2 delete O1                        POST  -> 400 {"message":"User is not a member of the organization","code":"USER_IS_NOT_A_MEMBER_OF_THE_ORGANIZATION"}
+[12:51:51] C4 U2 leave O1                         POST  -> 400 {"message":"Member not found","code":"MEMBER_NOT_FOUND"}
+[12:51:53] D invite U2                            POST  -> 200 {"organizationId":"3189832e-d87e-436b-8a47-a8e09a33deb6","email":"libobo1229+na_org2@gmail.com","role":"member","status":"pending","expiresAt":"2026-09-07T04:51:52.479Z",
+[12:51:55] D U2 invitations: 400 {"message":"Organization ID is required"}
+[12:51:55] D no invitation listed - try get-invitation by id later
+[12:51:57] D1 U2 read members now                 GET   -> 404 
+[12:51:59] D2 U2 self promote                     POST  -> 400 {"message":"Member not found","code":"MEMBER_NOT_FOUND"}
+[12:52:00] D3 U2 remove U1                        POST  -> 400 {"message":"[body.memberIdOrEmail] Invalid input: expected string, received undefined","code":"VALIDATION_ERROR"}
+[12:52:02] D4 U2 rename                           POST  -> 404 
+[12:52:04] E verify U1 members (fresh): 404 
+[12:52:04] == W4c DONE

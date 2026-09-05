@@ -1,0 +1,31 @@
+cleaned key u17-viewer-a
+viewer key: 200 napi_y2fw7t0v6q79703...
+
+=== A viewer read probes ===
+A viewer GET connection_uri(main): 200 {"uri":"postgresql://neondb_owner:npg_cI5ynlaAqjU2@ep-crimson-fog-w2gucld1-pooler.us-east-2.aws.neon.build/neondb?channel_binding=require&sslmode=require"}
+A viewer reveal_password(main): 405 
+
+=== B viewer fork with endpoint ===
+B viewer fork+endpoint: 201
+B fork id=br-summer-fog-w2v503mw conn_in_resp=False
+B fork ready: True
+B viewer GET connection_uri(fork): 200 {"uri":"postgresql://neondb_owner:npg_cI5ynlaAqjU2@ep-gentle-truth-w23k853k-pooler.us-east-2.aws.neon.build/neondb?channel_binding=require&sslmode=require"}
+B viewer reveal_password(fork): 405 
+
+=== C full chain (viewer reads raw data of never-started anon branch) ===
+C src seeded
+C anon(id=br-dawn-hat-w29nbaky) created (initialized, raw)
+C viewer sees branches: u17b-anon visible=True
+C viewer fork of anon(init): 201 {"branch":{"id":"br-dawn-violet-w2ipovc5","project_id":"orange-sun-90493739","parent_id":"br-dawn-hat-w29nbaky","parent_lsn":"0/373A110","name":"u17b-vrec","slug":"br-dawn-violet-w2ipovc5","project_slug":"orange-sun-90493739","current_state":"init","
+C rec id=br-dawn-violet-w2ipovc5 ra=None
+C viewer GET connection_uri(rec): 200 {"uri":"postgresql://neondb_owner:npg_EPBWw0mTzUC2@ep-dark-art-w2y9q673-pooler.us-east-2.aws.neon.build/neondb?channel_binding=require&sslmode=require"}
+C VIEWER DATA-PLANE READ: ok=True RAW=True ([1, 'alice.real@victimcorp.com', 'ssn-111'], [2, 'bob.ceo@victimcorp.com', 'ssn-222'])
+
+=== cleanup ===
+del branch br-dawn-violet-w2ipovc5: 200
+del branch br-dawn-hat-w29nbaky: 200
+del branch br-bitter-math-w2o2e765: 200
+del branch br-summer-fog-w2v503mw: 200
+del key u17b-viewer
+FINAL:
+  main                     br-wandering-field-w2ob6mpn

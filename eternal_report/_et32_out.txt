@@ -1,0 +1,11 @@
+== admin.zomans.com ==
+admin.zomans.com/ [302] loc=https://access.zomans.com/route?BubbleRequest=9Cbe%2F9MqtvdgmjGDk4r6N265H%2BdtRp22Bco9LTf3nyvEwcJQjLGo%2By%2FBPz3c03a7YE ct=text/html len=428
+  access.zomans.com/route [302] loc=https://access.zomans.com ct=text/html len=428
+    access.zomans.com [200] loc= ct=text/html len=49861
+      title: Login
+== api.zomans.com ==
+api.zomans.com/ [302] loc=https://access.zomans.com/route?BubbleRequest=9Cbe%2F9MqtvdgmjGDk4r6N4NuuUFbfeu74q2wXwYtSdoiHZu2NNqroGCMra7KIGm0sr8bc6V1 ct=text/html len=428
+  access.zomans.com/route [302] loc=https://access.zomans.com ct=text/html len=428
+    access.zomans.com [200] loc= ct=text/html len=49861
+      title: Login
+done

@@ -1,0 +1,17 @@
+src=br-holy-scene-w22lgz5b
+src rows: ([1, 'alice.real@victimcorp.com'], [2, 'bob.ceo@victimcorp.com'])
+anon create: 201 {"branch":{"id":"br-little-bird-w29d5mh3","project_id":"orange-sun-90493739","parent_id":"br-holy-scene-w22lgz5b","parent_lsn":"0/3417478","name":"u7-anon","slug":"br-little-bird-w29d5mh3","project_sl
+anon=br-little-bird-w29d5mh3
+anon current rows: ([1, 'hphillips@example.net'], [2, 'mcdanielcory@example.org'])
+Q select extname from pg_extension -> (['plpgsql'], ['pg_session_jwt'], ['anon'])
+Q select current_setting('server_version_num') -> (['180006'],)
+Q select rolsuper, rolreplication, rolbypassrls from pg_roles  -> ([False, True, True],)
+pageinspect create FAIL: DatabaseError: {'S': 'ERROR', 'V': 'ERROR', 'C': '42501', 'M': 'permission denied to create extension "pageinspect"', 'H': 'Must be superuser to create this extension.', 'F': 'extension.c', 'L': '1246', 'R': 'execut
+PAGE select count(*) from pageinspect.get_raw_page('u7_pii', FAIL: DatabaseError: {'S': 'ERROR', 'V': 'ERROR', 'C': '3F000', 'M': 'schema "pageinspect" does not exist', 'P': '22', 'F': 'namespace.c', 'L': '3578', 'R': 'get_namespace_oid'}
+PAGE select encode(pageinspect.get_raw_page('u7_pii',0),'hex FAIL: DatabaseError: {'S': 'ERROR', 'V': 'ERROR', 'C': '3F000', 'M': 'schema "pageinspect" does not exist', 'P': '15', 'F': 'namespace.c', 'L': '3578', 'R': 'get_namespace_oid'}
+child create: 201 {"branch":{"id":"br-dry-sound-w240yp44","project_id":"orange-sun-90493739","parent_id":"br-little-bird-w29d5mh3","parent_lsn":"0/373A848","name":"u7-child","slug":"br-dry-sound-w240yp44","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-0
+child=br-dry-sound-w240yp44 restricted=None
+child rows: ([1, 'hphillips@example.net'], [2, 'mcdanielcory@example.org'])
+child cleanup -> 200
+cleanup u7-anon -> 200
+cleanup u7-src -> 200

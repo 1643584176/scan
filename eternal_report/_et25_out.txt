@@ -1,0 +1,16 @@
+== legacy php ==
+/webapi/handlers/Search/index.php?q=delhi                    [403] <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "http&#58;&#47;&#47;www&#46;zomato&#46;com&#47;webapi&#47;handl
+/webapi/handlers/Search/index.php                            [403] <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "http&#58;&#47;&#47;www&#46;zomato&#46;com&#47;webapi&#47;handl
+/webapi/searchapi.php?q=test&entity_id=1&entity_type=city&meta=1 [403] <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "http&#58;&#47;&#47;www&#46;zomato&#46;com&#47;webapi&#47;searc
+
+== api.zomato.com dining-gw res_id ==
+/dining-gw/consumer/web/tr/slots?restaurant_id=1                       [400] {"status":"failed","message":"Restaurant ID not found"}
+/dining-gw/consumer/web/tr/slots?res_id=1                              [200] {"slots_response":{"selected_date":{"value":"0001-01-01","label":"Mon, 01 Jan"},"selected_covers":{"label":"20 guests","value":20},"is_slots_unavailable":true,"unavailable_data":{"image":"https://b.zm
+/dining-gw/consumer/web/tr/slots?restaurant_id=1&date=2026-09-05       [400] {"status":"failed","message":"Restaurant ID not found"}
+/dining-gw/consumer/web/restaurant/info?restaurant_id=1                [404] 404 page not found
+
+== api.zomato.com base ==
+/                                                            [301] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> <html><head> <title>301 Moved Permanently</title> </head><body> <h1>Moved Permanently</h1> <p>The document has moved <a href="http://api.zomato.com/a
+/v2/get_masked_number.json                                   [403] {"code":403,"status":"Forbidden","message":"Invalid API Key","api_time_ms":0}
+/dining-gw/consumer/web/tr/slots?restaurant_id=abc           [400] {"status":"failed","message":"Restaurant ID not found"}
+done

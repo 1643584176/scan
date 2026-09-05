@@ -1,0 +1,11 @@
+[13:03:24] == W4g invitation binding ==
+[13:03:32] sessions: True True True
+[13:03:34] O4 = 50c9ccf0-9570-4e13-b8c4-feed92367b72
+[13:03:35] invite U2: 200 {"organizationId":"50c9ccf0-9570-4e13-b8c4-feed92367b72","email":"libobo1229+na_org2@gmail.com","role":"member","status":"pending","expiresAt":"2026-09-07T05:03:35.215Z","createdAt":"2026-09-05T05:03:
+[13:03:35] invitation id: e17b598a-a339-47cb-9042-05a69a284486
+[13:03:37] Q1 U3 accept (not invited): 403 {"message":"You are not the recipient of the invitation","code":"YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION"}
+[13:03:42] members after Q1: [('owner', 'libobo1229+na_org1@gmail.com')]
+[13:03:44] Q2 U2 accept (invited): 200 {"invitation":{"organizationId":"50c9ccf0-9570-4e13-b8c4-feed92367b72","email":"libobo1229+na_org2@gmail.com","role":"member","status":"accepted","expiresAt":"2026-09-07T05:03:35.215Z","createdAt":"20
+[13:03:46] members after Q2: [('owner', 'libobo1229+na_org1@gmail.com'), ('member', 'libobo1229+na_org2@gmail.com')]
+[13:03:48] cleanup: 200
+[13:03:48] == W4g DONE

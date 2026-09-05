@@ -1,0 +1,13 @@
+[12:41:51] == W3d cross-project ref sweep  tag=w3dd54e ==
+[12:41:52] PB main endpoints: 1
+[12:41:53] PB temp branch: br-billowing-shape-w2c8b1x4
+[12:41:54] 1 uri foreign    -> 404 {"request_id":"d290e85e-0afd-47a5-aa88-4cfaf1d03d4f","code":"","message":"branch not found"}
+[12:41:56] 2 create role f  -> 404 {"request_id":"5620455e-ee8d-4a90-9682-7b9b2a820db5","code":"","message":"branch not found; branch_id:\"br-raspy-band-w247957z\", project_id:\"orange-sun-90493739\""}
+[12:41:59] 3 ep on f branch -> 404 {"request_id":"8e04be2a-07bb-470a-8471-afcdbed17159","code":"","message":"project not found"}
+[12:42:01] 4 rename f br    -> 404 {"request_id":"634669c9-8e48-46c2-925f-9fe11d6043ae","code":"","message":"branch not found"}
+[12:42:03] 5 ep cfg f       -> 404 this route does not exist
+[12:42:05] 6 delete f br    -> 204 
+[12:42:07] 7 create db f    -> 400 {"request_id":"46964c7c-26b3-4948-bf1c-cd625759be52","code":"","message":"invalid request: operation CreateProjectBranchDatabase: decode request: decode application/json: decode DatabaseCreateRequest: callback: decode fi
+[12:42:09] cleanup temp: 200
+[12:42:10] cleanup role: 204
+[12:42:10] == W3d DONE

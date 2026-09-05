@@ -1,0 +1,14 @@
+src=br-small-frost-w27is5jw
+src rows: ([1, 'alice.real@victimcorp.com', 'ssn-111-22-3333'], [2, 'bob.ceo@victimcorp.com', 'ssn-444-55-6666'])
+anon=br-still-recipe-w2ydmu75 parent_lsn=0/34175B0 created=2026-09-05T02:24:15Z
+anon rows: ([1, 'deborah17@example.net', 'ssn-111-22-3333'], [2, 'kfitzpatrick@example.org', 'ssn-444-55-6666'])
+anon status: state=anonymized last_run_start=2026-09-05T02:24:21Z
+anon current lsn: (['0/373A420', '0/373A420'],)
+fork0(at parent_lsn) create: 201 {"branch":{"id":"br-curly-mud-w2ig0ch2","project_id":"orange-sun-90493739","parent_id":"br-still-recipe-w2ydmu75","parent_lsn":"0/34175B0","name":"u8-fork0","slug":"br-curly-mud-w2ig0ch2","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-05T02:24:35Z","creation_source":"console","primary":false,"default":false,"protected":false,"cpu_use
+fork0 rows: ([1, 'alice.real@victimcorp.com', 'ssn-111-22-3333'], [2, 'bob.ceo@victimcorp.com', 'ssn-444-55-6666'])
+fork0 cleaned
+fork1(at created_at) create: 201 {"branch":{"id":"br-aged-sound-w2o6phfb","project_id":"orange-sun-90493739","parent_id":"br-still-recipe-w2ydmu75","parent_lsn":"0/34176D8","name":"u8-fork1","slug":"br-aged-sound-w2o6phfb","project_slug":"orange-sun-90493739","current_state":"init","pending_state":"ready","state_changed_at":"2026-09-05T02:24:40Z","creation_source":"console","primary":false,"default":false,"protected":false,"cpu_u
+fork1 rows: ([1, 'alice.real@victimcorp.com', 'ssn-111-22-3333'], [2, 'bob.ceo@victimcorp.com', 'ssn-444-55-6666'])
+fork1 cleaned
+cleanup u8-anon
+cleanup u8-src

@@ -1,0 +1,92 @@
+ticketnew routes (110):
+   /
+   /404
+   /[slug]
+   /[slug]/[param]
+   /[slug]/[param]/[cinemaId]
+   /[slug]/cinema-halls-and-movie-theatre
+   /_app
+   /_error
+   /api/canvasproxy
+   /api/health
+   /contact
+   /contactus
+   /feedback
+   /frequently-asked-questions
+   /h5movies
+   /h5movies/[slug]
+   /h5movies/[slug]/[cinemaId]
+   /h5movies/app-upgrade
+   /h5movies/cinema-near-me
+   /h5movies/contact
+   /h5movies/frequently-asked-questions
+   /h5movies/myorders
+   /h5movies/myorders/[bookingid]
+   /h5movies/order-history
+   /h5movies/order-review
+   /h5movies/order-review-premiere
+   /h5movies/order-review-premiere/[frmtid]
+   /h5movies/order-review/[frmtid]
+   /h5movies/orders/[orderid]
+   /h5movies/profile
+   /h5movies/promo-wall
+   /h5movies/search
+   /h5movies/seat-layout
+   /h5movies/seat-layout/[frmtid]
+   /h5movies/select-partner-city
+   /h5movies/terms-and-conditions
+   /h5movies/upcoming-movies
+   /h5movies/youtube-video
+   /list/[slug]
+   /movies/_next/:path+
+   /movies/search-sitemap/:match(.*\\.xml)
+   /myorders/[orderid]
+   /order-history
+   /order-review
+   /order-review/[frmtid]
+   /order/[orderid]
+   /profile
+   /search
+   /seat-layout
+   /seat-layout/[frmtid]
+   /select-partner-city
+   /telebooking
+   /telebooking/[telebookingcinemaid]
+   /telebooking/[telebookingcinemaid]/[telebookingid]
+   /terms-and-conditions
+   /ticketnew-web/_next/:path+
+   /upcoming-movies
+   /upcoming-movies/[slug]
+
+saved tn_441p0qgf1a-ej.js (10 KB)
+saved tn_30tf0ncqwkhct.js (29 KB)
+saved tn_2aoz8lvlm7mvq.js (344 KB)
+saved tn_41e6-otdg16ql.js (205 KB)
+saved tn_0y2e4eauahyyk.js (102 KB)
+saved tn_turbopack-2489ptvbk5zgy.js (10 KB)
+saved tn_1l8-_u115gcxv.js (0 KB)
+saved tn_41p6l24qifb-y.js (31 KB)
+saved tn_44s4ft8a1mq01.js (38 KB)
+saved tn_45671znofo_bp.js (87 KB)
+saved tn_3zt3yadht-2bm.js (28 KB)
+saved tn_0xgedrw7kcn2n.js (121 KB)
+saved tn_2y4mfgfvzp7_r.js (147 KB)
+saved tn_0cdekd3-o6xsw.js (66 KB)
+saved tn_366kcpms-kj59.js (461 KB)
+saved tn_turbopack-09flq79c3w2ze.js (11 KB)
+saved ds_3b3bde0gznvut.js (30 KB)
+saved ds_1vrkrzsy-sjfe.js (222 KB)
+saved ds_0-38z7dzgcxbi.js (151 KB)
+saved ds_turbopack-32ju1ft_b1y9p.js (9 KB)
+saved ds_0sspni1_3waok.js (17 KB)
+saved ds_27ozuboy-mg1z.js (34 KB)
+saved ds_2t5m6l255zvhn.js (48 KB)
+saved ds_3-r9nnorulo0c.js (113 KB)
+saved ds_0nc0aniy-e165.js (48 KB)
+saved ds_3admm2jbe1jq6.js (304 KB)
+saved ds_0bfvvgfkk1yk9.js (33 KB)
+saved ds_13dcswqt3ni5k.js (7 KB)
+saved ds_3f6vvan9pcth8.js (59 KB)
+saved ds_2j_59m72ho85y.js (64 KB)
+saved ds_3aiqvvd_foi6y.js (50 KB)
+downloaded 31/31

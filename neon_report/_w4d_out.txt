@@ -1,0 +1,34 @@
+[12:52:59] == W4d matrix iter2 ==
+[12:53:04] sessions: U1=True U2=True
+[12:54:16] == W4d matrix iter2 ==
+[12:54:21] sessions: U1=True U2=True
+[12:54:37] == W4d matrix iter2 ==
+[12:54:42] sessions: U1=True U2=True
+[12:54:46] DB members now: [(UUID('fe58d988-1207-4e12-86c8-9e53f54e051b'), UUID('3189832e-d87e-436b-8a47-a8e09a33deb6'), UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'), 'owner')]
+[12:54:49] DB invitations now: [(UUID('07dd36e1-578f-4f49-bb50-8b7b08529e5f'), 'libobo1229+na_org2@gmail.com', 'member', 'pending')]
+[12:54:49] invitation id: 07dd36e1-578f-4f49-bb50-8b7b08529e5f
+[12:54:50] U2 accept-invitation                 -> None Object of type UUID is not JSON serializable
+[12:54:53] DB members after accept: [(UUID('fe58d988-1207-4e12-86c8-9e53f54e051b'), UUID('3189832e-d87e-436b-8a47-a8e09a33deb6'), UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'), 'owner')]
+[12:54:58] uids: U2=[(UUID('66b42c6b-c41e-4c5a-a2fa-aa5957cfaec0'),)] U1=[(UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'),)]
+[12:56:30] == W4d matrix iter2 ==
+[12:56:35] sessions: U1=True U2=True
+[12:56:38] DB members now: [(UUID('fe58d988-1207-4e12-86c8-9e53f54e051b'), UUID('3189832e-d87e-436b-8a47-a8e09a33deb6'), UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'), 'owner')]
+[12:56:40] DB invitations now: [(UUID('07dd36e1-578f-4f49-bb50-8b7b08529e5f'), 'libobo1229+na_org2@gmail.com', 'member', 'pending')]
+[12:56:40] invitation id: 07dd36e1-578f-4f49-bb50-8b7b08529e5f
+[12:56:42] U2 accept-invitation                 -> 200 {"invitation":{"organizationId":"3189832e-d87e-436b-8a47-a8e09a33deb6","email":"libobo1229+na_org2@gmail.com","role":"member","status":"accepted","expiresAt":"2026-09-07T04:51:52.479Z","createdAt":"2026-09-05T04:51:52.479Z","inviterId":"f2366454-d3f4-4a80-ba3b-e5ca93c25f82","id":"07dd36e1-578f-4f49-bb50-8b7b08529e5f"},"member":{"organizationId":"3189832e-d87e-436b-8a47-a8e09a33deb6","userId":"66b42c6b-c41e-4c5a-a2fa-aa5957cfaec0","role":"member","createdAt":"2026-09-05T04:56:41.898Z","id":"25a576cc-0321-42b7-a1d6-dbbd03382261"}}
+[12:56:44] DB members after accept: [(UUID('fe58d988-1207-4e12-86c8-9e53f54e051b'), UUID('3189832e-d87e-436b-8a47-a8e09a33deb6'), UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'), 'owner'), (UUID('25a576cc-0321-42b7-a1d6-dbbd03382261'), UUID('3189832e-d87e-436b-8a47-a8e09a33deb6'), UUID('66b42c6b-c41e-4c5a-a2fa-aa5957cfaec0'), 'member')]
+[12:56:48] uids: U2=[(UUID('66b42c6b-c41e-4c5a-a2fa-aa5957cfaec0'),)] U1=[(UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'),)]
+[12:56:52] member ids: U2=[(UUID('25a576cc-0321-42b7-a1d6-dbbd03382261'),)] U1=[(UUID('fe58d988-1207-4e12-86c8-9e53f54e051b'),)]
+[12:56:54] E1a promote self by memberId         -> 403 {"message":"You are not allowed to update this member","code":"YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_MEMBER"}
+[12:56:56] E1b promote self by email            -> 400 {"message":"[body.memberId] Invalid input: expected string, received undefined","code":"VALIDATION_ERROR"}
+[12:56:58] E2 remove owner by email             -> 400 {"message":"You cannot leave the organization as the only owner","code":"YOU_CANNOT_LEAVE_THE_ORGANIZATION_AS_THE_ONLY_OWNER"}
+[12:57:00] E3 delete org as member              -> 403 {"message":"You are not allowed to delete this organization","code":"YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_ORGANIZATION"}
+[12:57:02] E4 leave org as member               -> 200 {"organizationId":"3189832e-d87e-436b-8a47-a8e09a33deb6","userId":"66b42c6b-c41e-4c5a-a2fa-aa5957cfaec0","role":"member","createdAt":"2026-09-05T04:56:41.898Z","id":"25a576cc-0321-42b7-a1d6-dbbd03382261","user":{"id":"66
+[12:57:04] DB members after U2 probes: [(UUID('fe58d988-1207-4e12-86c8-9e53f54e051b'), UUID('3189832e-d87e-436b-8a47-a8e09a33deb6'), UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'), 'owner')]
+[12:57:06] ctrl U1 promote U2 admin             -> 400 {"message":"[body.memberId] Invalid input: expected string, received undefined","code":"VALIDATION_ERROR"}
+[12:57:08] DB members after owner op: [(UUID('fe58d988-1207-4e12-86c8-9e53f54e051b'), UUID('3189832e-d87e-436b-8a47-a8e09a33deb6'), UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'), 'owner')]
+[12:57:10] ctrl U1 demote U2 member             -> 400 {"message":"[body.memberId] Invalid input: expected string, received undefined","code":"VALIDATION_ERROR"}
+[12:57:12] U2 leave (member)                    -> 400 {"message":"Member not found","code":"MEMBER_NOT_FOUND"}
+[12:57:14] DB members after U2 leave: [(UUID('fe58d988-1207-4e12-86c8-9e53f54e051b'), UUID('3189832e-d87e-436b-8a47-a8e09a33deb6'), UUID('f2366454-d3f4-4a80-ba3b-e5ca93c25f82'), 'owner')]
+[12:57:16] U1 delete O1 cleanup                 -> 200 {"name":"w4b-org","slug":"w4b-org-1788583817","logo":null,"createdAt":"2026-09-05T04:50:20.069Z","metadata":null,"id":"3189832e-d87e-436b-8a47-a8e09a33deb6"}
+[12:57:16] == W4d DONE

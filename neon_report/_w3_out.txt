@@ -1,0 +1,55 @@
+[12:24:34] == W3 schema-only isolation  tag=w347aa ==
+[12:24:35] S  create w3src-w347aa       -> 200 id=br-tiny-bird-w2w8ka4z  resp(branch): {"id": "br-tiny-bird-w2w8ka4z", "project_id": "orange-sun-90493739", "parent_id": "br-wandering-field-w2ob6mpn", "parent_lsn": "0/3431A78", "name": "w3src-w347aa", "slug": "br-tiny-bird-w2w8ka4z", "project_slug": "orange-sun-90493739", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:24:35Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "data_transfer_bytes": 0, "created_at": "2026-09-05T04:24:35Z", "updated_at": "2026-09
+[12:24:36] S1 src ready: True
+[12:24:38] S  endpoint create br-tiny-bird-w2w8ka4z -> 405 
+[12:27:16] S1 src endpoint host=None (no-endpoint)
+[12:27:17] S1 src uri got: False
+[12:27:17] S1 ABORT: no uri
+[12:28:47] == W3 schema-only isolation  tag=w3bb82 ==
+[12:28:48] S  create w3src-w3bb82       -> 200 id=br-wandering-heart-w2m2xaes  resp(branch): {"id": "br-wandering-heart-w2m2xaes", "project_id": "orange-sun-90493739", "parent_id": "br-wandering-field-w2ob6mpn", "parent_lsn": "0/3451F08", "name": "w3src-w3bb82", "slug": "br-wandering-heart-w2m2xaes", "project_slug": "orange-sun-90493739", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:28:48Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "data_transfer_bytes": 0, "created_at": "2026-09-05T04:28:48Z", "updated_a
+[12:28:49] S1 src ready: True
+[12:28:51] S  endpoint create br-wandering-heart-w2m2xaes -> 201 {"endpoint":{"host":"ep-lively-tooth-w2kge269.us-east-2.aws.neon.build","hosts":{"read_write_host":"ep-lively-tooth-w2kge269.us-east-2.aws.neon.build","read_write_pooled_host":"ep-
+[12:28:55] S1 src endpoint host=ep-lively-tooth-w2kge269.us-east-2.aws.neon.build (created)
+[12:28:56] S1 src uri got: True
+[12:30:05] == W3 schema-only isolation  tag=w3624c ==
+[12:30:07] S  create w3src-w3624c       -> 200 id=br-patient-cloud-w27gz07h  resp(branch): {"id": "br-patient-cloud-w27gz07h", "project_id": "orange-sun-90493739", "parent_id": "br-wandering-field-w2ob6mpn", "parent_lsn": "0/3451F08", "name": "w3src-w3624c", "slug": "br-patient-cloud-w27gz07h", "project_slug": "orange-sun-90493739", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:30:07Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "data_transfer_bytes": 0, "created_at": "2026-09-05T04:30:07Z", "updated_at": 
+[12:30:08] S1 src ready: True
+[12:30:10] S  endpoint create br-patient-cloud-w27gz07h -> 201 {"endpoint":{"host":"ep-morning-resonance-w2tfc8t7.us-east-2.aws.neon.build","hosts":{"read_write_host":"ep-morning-resonance-w2tfc8t7.us-east-2.aws.neon.build","read_write_pooled_
+[12:30:14] S1 src endpoint host=ep-morning-resonance-w2tfc8t7.us-east-2.aws.neon.build (created)
+[12:30:16] S1 src uri got: True
+[12:30:27] S1 create table: OK
+[12:30:29] S1 insert 100: OK
+[12:30:32] S1 src count: OK [(100,)]  lsn_pre=0/34572A8 lsn_post=0/3462D98
+[12:30:33] S  create w3so-w3624c        -> 412 {"request_id":"a6945912-9b08-4d57-8cf9-edc6a6723819","code":"","message":"project with a legacy web access role do not support schema-only branches; role:\"anonymous\""}
+[12:30:33] S2 schema-only CREATE FAILED (412 {"request_id":"a6945912-9b08-4d57-8cf9-edc6a6723819","code":"","message":"project with a legacy web access role do not support schema-only branches; role:\"anonymous\""}) -> try flat/alt spellings
+[12:30:36] S2 alt {"branch": {"name": "w3so-w3624c", "parent_id": "br-patient-cloud-w27gz07h", "init_source": "schema_only"}} -> 400 {"request_id":"44aead40-59ac-4f66-a5d4-797de9d1f0c5","code":"","message":"invalid init source; init_source:\"unknown\""}
+[12:30:37] S2 alt {"name": "w3so-w3624c", "parent_id": "br-patient-cloud-w27gz07h", "init_source": "schema-only"} -> 201 {"branch":{"id":"br-summer-sound-w2pt9sp1","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn","parent_lsn":"0/3451F08","name":"br-summer-sound-w2pt9sp1","slug":"br-summer-sound-w2pt9sp1","project_slug":"orange-sun-90493739",
+[12:30:38] S2 so ready=True  parent_lsn=0/3451F08  branch: {"id": "br-summer-sound-w2pt9sp1", "project_id": "orange-sun-90493739", "parent_id": "br-wandering-field-w2ob6mpn", "parent_lsn": "0/3451F08", "parent_timestamp": "2026-09-05T04:25:05Z", "name": "br-summer-sound-w2pt9sp1", "slug": "br-summer-sound-w2pt9sp1", "project_slug": "orange-sun-90493739", "current_state": "ready", "state_changed_at": "2026-09-05T04:30:37Z", "creation_source": "console", "p
+[12:30:41] S  endpoint create br-summer-sound-w2pt9sp1 -> 201 {"endpoint":{"host":"ep-curly-resonance-w2mnkhu5.us-east-2.aws.neon.build","hosts":{"read_write_host":"ep-curly-resonance-w2mnkhu5.us-east-2.aws.neon.build","read_write_pooled_host
+[12:30:45] S3 so endpoint host=ep-curly-resonance-w2mnkhu5.us-east-2.aws.neon.build (created)
+[12:30:46] S3 so uri got: True
+[12:30:48] S3 so to_regclass: OK [(None,)]
+[12:31:28] S3 so count: ERR relation "public.so_probe" does not exist
+LINE 1: SELECT count(*) FROM public.so_probe
+                             ^
+[12:32:08] S3 so writable insert: ERR relation "public.so_probe" does not exist
+LINE 1: INSERT INTO public.so_probe (secret) VALUES ('W3SO-write-ok'...
+                    ^
+[12:32:09] S3 so detail: logical_size=None physical_size=None data_size=None
+[12:32:12] S  create w3ch-w3624c        -> 200 id=br-shy-moon-w23ek5dm  resp(branch): {"id": "br-shy-moon-w23ek5dm", "project_id": "orange-sun-90493739", "parent_id": "br-summer-sound-w2pt9sp1", "parent_lsn": "0/34573D8", "name": "w3ch-w3624c", "slug": "br-shy-moon-w23ek5dm", "project_slug": "orange-sun-90493739", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:32:11Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "data_transfer_bytes": 0, "created_at": "2026-09-05T04:32:11Z", "updated_at": "2026-09-05T04
+[12:32:58] P1 child-of-so count: ERR relation "public.so_probe" does not exist
+LINE 1: SELECT count(*) FROM public.so_probe
+                             ^
+[12:32:59] S  create w3pitr-w3624c      -> 200 id=br-lively-hat-w2qvhzfa  resp(branch): {"id": "br-lively-hat-w2qvhzfa", "project_id": "orange-sun-90493739", "parent_id": "br-summer-sound-w2pt9sp1", "parent_lsn": "0/3451F08", "name": "w3pitr-w3624c", "slug": "br-lively-hat-w2qvhzfa", "project_slug": "orange-sun-90493739", "current_state": "init", "pending_state": "ready", "state_changed_at": "2026-09-05T04:32:59Z", "creation_source": "console", "primary": false, "default": false, "protected": false, "cpu_used_sec": 0, "compute_time_seconds": 0, "active_time_seconds": 0, "written_data_bytes": 0, "data_transfer_bytes": 0, "created_at": "2026-09-05T04:32:59Z", "updated_at": "2026-09
+[12:33:43] P2 pitr-child@so.parent_lsn count: ERR relation "public.so_probe" does not exist
+LINE 1: SELECT count(*) FROM public.so_probe
+                             ^
+[12:33:44] P3 restore so<-src-head: 400 {"request_id":"22fc515d-a7e0-4dfd-9469-5df3119879ef","code":"","message":"invalid request: operation RestoreProjectBranch: decode request: decode application/json: invalid: source_branch_id (field required)"}
+[12:33:45] S  create w3cob-w3624c       -> 412 {"request_id":"4c01d679-ee35-42c3-ac66-db719247558c","code":"","message":"project with a legacy web access role do not support schema-only branches; role:\"anonymous\""}
+[12:33:45] P4 create FAILED: 412 {"request_id":"4c01d679-ee35-42c3-ac66-db719247558c","code":"","message":"project with a legacy web access role do not support schema-only branches; role:\"anonymous\""}
+[12:33:45] S5 cleanup 4 branches
+[12:33:46] S5 delete w3pitr-w3624c        -> 200 {"branch":{"id":"br-lively-hat-w2qvhzfa","project_id":"orange-sun-90493739","parent_id":"br-summer-sound-w2pt9sp1","pare
+[12:33:48] S5 delete w3ch-w3624c          -> 200 {"branch":{"id":"br-shy-moon-w23ek5dm","project_id":"orange-sun-90493739","parent_id":"br-summer-sound-w2pt9sp1","parent
+[12:33:50] S5 delete w3so-w3624c          -> 200 {"branch":{"id":"br-summer-sound-w2pt9sp1","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn",
+[12:33:52] S5 delete w3src-w3624c         -> 200 {"branch":{"id":"br-patient-cloud-w27gz07h","project_id":"orange-sun-90493739","parent_id":"br-wandering-field-w2ob6mpn"
+[12:33:53] == W3 DONE

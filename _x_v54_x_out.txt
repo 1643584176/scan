@@ -1,0 +1,10 @@
+victim sid = sbx_V2PJOkleEQ4c8pIMAHeR7FFK5mhZ
+[victim marker] -> 200
+V54-VICTIM-SECRET
+[victim snapshot] -> 201 {"snapshot":{"id":"snap_bt21QkmpeinJ9EyT5mKuEWBpBhTY","sourceSessionId":"sbx_V2PJOkleEQ4c8pIMAHeR7FFK5mhZ","region":"iad1","regions":["iad1"],"status"
+snap_v = snap_bt21QkmpeinJ9EyT5mKuEWBpBhTY
+attacker sid = sbx_OzRoLbq7pALrBKfGOC33Zbx5JLNn
+[P1 PATCH currentSnapshotId=victim snap] -> 404 {"error":{"code":"not_found","message":"Snapshot 'snap_bt21QkmpeinJ9EyT5mKuEWBpBhTY' not found."}}
+[P2 DELETE victim+orphan] -> 403 {"error":{"code":"forbidden","message":"Not authorized"}}
+[P2 victim snap check] -> 200 {"snapshot":{"id":"snap_bt21QkmpeinJ9EyT5mKuEWBpBhTY","sourceSessionId":"sbx_V2PJOkleEQ4c8pIMAHeR7FFK5mhZ","region":"iad1","regions":["iad1"],"status"
+DONE

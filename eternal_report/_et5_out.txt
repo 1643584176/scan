@@ -1,0 +1,48 @@
+== MCP well-known full ==
+--- /.well-known/oauth-authorization-server [200] ---
+{"issuer":"https://mcp-server.zomato.com/","authorization_endpoint":"https://mcp-server.zomato.com/authorize","token_endpoint":"https://mcp-server.zomato.com/token","registration_endpoint":"https://mcp-server.zomato.com/register","scopes_supported":["mcp:tools","mcp:resources","mcp:prompts"],"response_types_supported":["code"],"grant_types_supported":["authorization_code","refresh_token"],"token_endpoint_auth_methods_supported":["none","client_secret_basic","client_secret_post"],"code_challenge_methods_supported":["S256"]}
+--- /.well-known/openid-configuration [200] ---
+{"issuer":"https://mcp-server.zomato.com","authorization_endpoint":"https://mcp-server.zomato.com/authorize","token_endpoint":"https://mcp-server.zomato.com/token","scopes_supported":["mcp:tools","mcp:resources","mcp:prompts"],"registration_endpoint":"https://mcp-server.zomato.com/register","grant_types_supported":["authorization_code","refresh_token"],"token_endpoint_auth_methods_supported":["none","client_secret_basic","client_secret_post"]}
+
+== ticketnew.com/movies full html ==
+status=200 total_len=26625 ct=text/html; charset=utf-8
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/441p0qgf1a-ej.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/30tf0ncqwkhct.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/2aoz8lvlm7mvq.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/41e6-otdg16ql.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/0y2e4eauahyyk.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/turbopack-2489ptvbk5zgy.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/1l8-_u115gcxv.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/41p6l24qifb-y.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/44s4ft8a1mq01.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/45671znofo_bp.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/3zt3yadht-2bm.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/0xgedrw7kcn2n.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/2y4mfgfvzp7_r.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/0cdekd3-o6xsw.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/366kcpms-kj59.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/chunks/turbopack-09flq79c3w2ze.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/PG5bsPkEbSTO8eL6Hug-W/_buildManifest.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/PG5bsPkEbSTO8eL6Hug-W/_ssgManifest.js
+JS: https://cdn.district.in/ticketnew-web/_next/static/PG5bsPkEbSTO8eL6Hug-W/_clientMiddlewareManifest.js
+NEXT buildId=PG5bsPkEbSTO8eL6Hug-W page=/
+pageProps(4294): {"initialState": {"movies": {"cart": {}, "cartLoading": false, "cartLoadingDone": false, "cartError": false, "currentlyRunningMovies": {}, "currentlyRunningMoviesLoading": true, "currentlyRunningMoviesError": false, "dialogPopUp": {"showDialoge": false, "type": ""}, "movieCitiesFiltered": false, "movieCities": {}, "movieCitiesError": false, "movieCitiesLoading": false, "cityCinemas": {}, "cityCinemasLoading": null, "upcomingMovies": {}, "upcomingMoviesError": false, "cityStorefront": {"banners": {"data": {}, "isLoading": true, "error": false}}, "metricInfo": {}, "searchedAreas": {"data": {}, "isLoading": false, "error": false}, "popularAreas": [], "genreAndLanguageList": {}, "movieContents": {}, "movieContentsError": false, "movieSessions": {}, "movieSessionsLoading": false, "movieSessionsError": false, "movieSessionsErrorMap": {}, "moviesReviews": {}, "moviesReviewsError": false, "moviesReviewsLoading": false, "cinemaSessions": {}, "cinemaSessionsLoading": false, "cinemaSessionsError": false, "seatMapSessions": {}, "selectedSeats": {}, "seatMap": {}, "seatMapError": false, "seatMapLoading": false, "cinemaFavoriteData": {}, "gstData": {"user_data": {"billing_state_data": {"state_code": "", "state_name": ""}, "name": "", "phone_number": "", "country_code": 0, "country_code_icon": "", "email_id": "", "is_name_updated": false}}, "gstStates": [], "convFee": {}, "addSeats": {}, "setSeats": {}, "seatRelease": {}, "seatReleaseLoading": false, "movieOrder": {}, "movieOrderError": fal
+
+== district.in homepage ==
+status=200 len=200000
+JS: https://cdn.district.in/district-web/_next/static/chunks/3b3bde0gznvut.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/1vrkrzsy-sjfe.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/0-38z7dzgcxbi.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/turbopack-32ju1ft_b1y9p.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/0sspni1_3waok.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/27ozuboy-mg1z.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/2t5m6l255zvhn.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/3-r9nnorulo0c.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/0nc0aniy-e165.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/3admm2jbe1jq6.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/0bfvvgfkk1yk9.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/13dcswqt3ni5k.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/3f6vvan9pcth8.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/2j_59m72ho85y.js
+JS: https://cdn.district.in/district-web/_next/static/chunks/3aiqvvd_foi6y.js
+done

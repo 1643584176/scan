@@ -1,0 +1,69 @@
+len=384166
+
+== state injection markers ==
+
+== window.__ assignments ==
+  window.csrfRequested
+  window.requestQueue
+  window.__PRELOADED_STATE__
+  window.zomato
+  window.dataLayer
+
+== script srcs ==
+   https://www.zomato.com/zpaykit/js/v4/hook.js
+   https://zwstatic.zomato.com/runtime-3c5dcc6a67df0f581815.js
+   https://zwstatic.zomato.com/lodash-es-ad9cc4b7cac38a5cfe0d.js
+   https://zwstatic.zomato.com/babel-a2f319aca208859e4fea.js
+   https://zwstatic.zomato.com/recompose-4afbbfffbf9356f5b7c8.js
+   https://zwstatic.zomato.com/zomato-5b4c68bb1f2c1592a059.js
+   https://zwstatic.zomato.com/react-redux-4e3e98e9cf4971d5abaa.js
+   https://zwstatic.zomato.com/styled-system-59c1d0bd459af849e773.js
+   https://zwstatic.zomato.com/redux-saga-9ab513c67ad43a0fc09f.js
+   https://zwstatic.zomato.com/react-dom-bab557d044befef6a2bb.js
+   https://zwstatic.zomato.com/styled-components-6334ba19011d513ce06c.js
+   https://zwstatic.zomato.com/redux-550069b68e09ab2fee2d.js
+   https://zwstatic.zomato.com/4526-1a53c495f1df6335f982.js
+   https://zwstatic.zomato.com/main-8efa4cf644fa76389041.js
+   https://zwstatic.zomato.com/StructuredData-8c099db1dcbd9195cf3f.js
+   https://zwstatic.zomato.com/pages-common-Navbar-5e0061991cc49ac3dd6d.js
+   https://zwstatic.zomato.com/3550-f59fe92ee3071a918bf6.js
+   https://zwstatic.zomato.com/3813-a7f7196b74aa09a649d8.js
+   https://zwstatic.zomato.com/9693-a8cec1e245e3e83b671a.js
+   https://zwstatic.zomato.com/5606-47f7d653f14da644831b.js
+   https://zwstatic.zomato.com/pages-Search-19402afa43cd46f9047b.js
+   https://zwstatic.zomato.com/rxjs-7de11e88aa174c028f16.js
+   https://zwstatic.zomato.com/material-ui-b67658f3c4abc8d935d7.js
+   https://zwstatic.zomato.com/jss-431561ebd409b584e665.js
+   https://zwstatic.zomato.com/9358-6992402b8c86ecefd39a.js
+   https://zwstatic.zomato.com/6347-942bf2612b8cba7457d3.js
+   https://zwstatic.zomato.com/2051-80568c8a79e7ddb1e06d.js
+   https://zwstatic.zomato.com/6434-253400b78d8de2729877.js
+   https://zwstatic.zomato.com/6810-0bfd08cea4571af43e32.js
+   https://zwstatic.zomato.com/5879-97af0073e8c874efd878.js
+   https://zwstatic.zomato.com/3598-314d7bd54d175cebd8f0.js
+   https://zwstatic.zomato.com/4304-da3ac262712e693dd0b3.js
+   https://zwstatic.zomato.com/9955-9a351ef642bb1f78b3de.js
+   https://zwstatic.zomato.com/layoutEntries-searchDesktopIndex-dc423479412fc1cc3c30.js
+   https://zwstatic.zomato.com/8640-4201d6caaeb9ae273429.js
+   https://zwstatic.zomato.com/layoutEntries-uniSearchDesContainer-a105a76fa4d68a81add7.js
+   https://zwstatic.zomato.com/layoutEntries-LocationTooltip-5e5251078bad804038f5.js
+   https://zwstatic.zomato.com/RestaurantCardV2-8514e8764c02f001f2ae.js
+   https://zwstatic.zomato.com/layoutEntries-CCPDesktopTiles-630eb9f99ed25ba333d5.js
+   https://zwstatic.zomato.com/Footers-a6d960459440832ef2aa.js
+   https://zwstatic.zomato.com/3439-8a802eed5b501c3ab275.js
+   https://zwstatic.zomato.com/ZomatoFooter-203df4dc9d27f3ddc28e.js
+   https://zwstatic.zomato.com/289-18f9686cf8f7fdee6f28.js
+   https://zwstatic.zomato.com/3419-760b3498c94bc55b0397.js
+   https://zwstatic.zomato.com/zwebmolecules-dist-Login-41c4358de88f41df5ee5.js
+   https://zwstatic.zomato.com/PageBlocker-d24ae4e693f43bba6cba.js
+total srcs: 46
+
+== zomato api-ish hosts in page ==
+   blog.zomato.com
+   jumbo.zomato.com
+   link.zomato.com
+   www.zomato.com
+   zwstatic.zomato.com
+
+== interesting param patterns (res_id etc) ==
+done

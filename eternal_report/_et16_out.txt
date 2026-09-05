@@ -1,0 +1,26 @@
+== context around key endpoints ==
+
+--- /webapi/searchapi.php ---
+CTX: .concat(i,"/webroutes/contest/vote"),mn="".concat(i,"/webroutes/business/report-fraud"),fn="".concat(i,"/webroutes/location/get"),pn="".concat(i,"/webroutes/location/locationGeoData"),An="".concat(i,"/webapi/searchapi.php"),hn=("".concat(i,"/webapi/handlers/Search/index.php"),"".concat(i,"/webroutes/location/search")),gn="".concat(i,"/webroutes/search/autoSuggest"),vn="".concat(i,"/webroutes/search/home"),En="".concat(i,"/webroutes/search/applyFilter"),_n="".concat(i,"/webrou 
+
+
+--- /webroutes/search/applyFilter ---
+CTX: n=("".concat(i,"/webapi/handlers/Search/index.php"),"".concat(i,"/webroutes/location/search")),gn="".concat(i,"/webroutes/search/autoSuggest"),vn="".concat(i,"/webroutes/search/home"),En="".concat(i,"/webroutes/search/applyFilter"),_n="".concat(i,"/webroutes/book/checkPhoneVerification"),yn="".concat(i,"/webroutes/book/verifyPhone"),bn="".concat(i,"/webroutes/book/makeBooking"),Sn="".concat(i,"/webroutes/book/modifyBooking"),Tn="".concat(i,"/webroutes/book/getTimeSlots"),In=" 
+
+
+--- /webroutes/search/autoSuggest ---
+CTX: concat(i,"/webroutes/location/locationGeoData"),An="".concat(i,"/webapi/searchapi.php"),hn=("".concat(i,"/webapi/handlers/Search/index.php"),"".concat(i,"/webroutes/location/search")),gn="".concat(i,"/webroutes/search/autoSuggest"),vn="".concat(i,"/webroutes/search/home"),En="".concat(i,"/webroutes/search/applyFilter"),_n="".concat(i,"/webroutes/book/checkPhoneVerification"),yn="".concat(i,"/webroutes/book/verifyPhone"),bn="".concat(i,"/webroutes/book/makeBooking"),Sn="".conc 
+
+
+--- /webroutes/search/home ---
+CTX: An="".concat(i,"/webapi/searchapi.php"),hn=("".concat(i,"/webapi/handlers/Search/index.php"),"".concat(i,"/webroutes/location/search")),gn="".concat(i,"/webroutes/search/autoSuggest"),vn="".concat(i,"/webroutes/search/home"),En="".concat(i,"/webroutes/search/applyFilter"),_n="".concat(i,"/webroutes/book/checkPhoneVerification"),yn="".concat(i,"/webroutes/book/verifyPhone"),bn="".concat(i,"/webroutes/book/makeBooking"),Sn="".concat(i,"/webroutes/book/modifyBooking"),Tn="".conc 
+
+
+--- /api/fetch ---
+CTX: ".concat(a,"/gw/stories/community/is-authorised"),Jn="".concat(i,"/gw/internal/auth/callback"),Qn="".concat(i,"/gw/internal/auth/logout"),Xn="".concat(a,"/v2/get_masked_number.json"),$n=("".concat(l,"/api/fetch"),"".concat(i,"/webroutes/zlive/buildCart")),et="".concat(i,"/webroutes/zlive/bookTickets"),nt="".concat(i,"/webroutes/zlive/paymentResponse"),tt="".concat(a,"/dining-gw/consumer/web/tr/slots"),rt="".concat(a,"/dining-gw/consumer/web/cart/get"),it="".concat(a,"/dining- 
+
+
+== searchapi.php param construction ==
+),pn="".concat(i,"/webroutes/location/locationGeoData"),An="".concat(i,"/webapi/searchapi.php"),hn=("".concat(i,"/webapi/handlers/Search/index.php"),"".concat(i,"/webroutes/location/search")),gn="".concat(i,"/webroutes/search/autoSuggest"),vn="".concat(i,"/webroutes/search/home"),En="".concat(i,"/webroutes/search/applyFilter"),_n="".concat(i 
+---
+done

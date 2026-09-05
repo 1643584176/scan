@@ -1,0 +1,23 @@
+[12:58:43] == W4e org matrix iter3 ==
+[12:58:47] U1 session: True
+[12:58:48] O2 = a105e44f-8bdc-4409-aebf-50977969f5e4 (200)
+[12:58:50]    invite libobo1229+na_org2@gmail.com(member): 200 {"organizationId":"a105e44f-8bdc-4409-aebf-50977969f5e4","email":"libobo1229+na_org2@gmail.com","role":"member","status":"pending","expiresAt":"2026-09-07T04:58:50.050Z","createdAt":"2026-09-05T04:58:
+[12:58:54]    accept libobo1229+na_org2@gmail.com: 200 {"invitation":{"organizationId":"a105e44f-8bdc-4409-aebf-50977969f5e4","email":"libobo1229+na_org2@gmail.com","role":"member","status":"accepted","expiresAt":"2
+[12:58:58]    invite libobo1229+na_org3@gmail.com(member): 200 {"organizationId":"a105e44f-8bdc-4409-aebf-50977969f5e4","email":"libobo1229+na_org3@gmail.com","role":"member","status":"pending","expiresAt":"2026-09-07T04:58:57.928Z","createdAt":"2026-09-05T04:58:
+[12:59:02]    accept libobo1229+na_org3@gmail.com: 401 {"message":"Unauthorized","code":"UNAUTHORIZED"}
+[12:59:08] members: [('owner', 'libobo1229+na_org1@gmail.com'), ('member', 'libobo1229+na_org2@gmail.com')]
+[12:59:12] A U2 update U3 role->admin               -> 400 {"message":"[body.memberId] Invalid input: expected string, received null","code":"VALIDATION_ERROR"}
+[12:59:16] B U2 remove U3                           -> 400 {"message":"[body.memberIdOrEmail] Invalid input: expected string, received null","code":"VALIDATION_ERROR"}
+[12:59:18] B2 U2 remove U3 by email                 -> 400 {"message":"Member not found","code":"MEMBER_NOT_FOUND"}
+[12:59:20] C U2 invite U4                           -> 403 {"message":"You are not allowed to invite users to this organization","code":"YOU_ARE_NOT_ALLOWED_TO_INVITE_USERS_TO_THIS_ORGANIZATION"}
+[12:59:22] D U2 rename org                          -> 404 
+[12:59:24] members after member probes: [('owner', 'libobo1229+na_org1@gmail.com'), ('member', 'libobo1229+na_org2@gmail.com')]
+[12:59:30] ctrl owner promote U2 admin              -> 200 {"organizationId":"a105e44f-8bdc-4409-aebf-50977969f5e4","userId":"66b42c6b-c41e-4c5a-a2fa-aa5957cfaec0","role":"admin","createdAt":"2026-09-05T04:58:53.911Z","id":"482a58d2-d45d-41f6-8e59-9fa39a929919"}
+[12:59:32] members after owner promote: [('owner', 'libobo1229+na_org1@gmail.com'), ('admin', 'libobo1229+na_org2@gmail.com')]
+[12:59:36] E admin update U3 role->member           -> 400 {"message":"[body.memberId] Invalid input: expected string, received null","code":"VALIDATION_ERROR"}
+[12:59:38] F admin invite U4                        -> 200 {"organizationId":"a105e44f-8bdc-4409-aebf-50977969f5e4","email":"libobo1229+na_org4@gmail.com","role":"member","status":"pending","expiresAt":"2026-09-07T04:59:37.488Z","createdAt":"2026-09-05T04:59:37.488Z","inviterId":"66b42c6b
+[12:59:42] G admin remove U3                        -> 400 {"message":"[body.memberIdOrEmail] Invalid input: expected string, received null","code":"VALIDATION_ERROR"}
+[12:59:49] H admin promote self owner               -> 403 {"message":"You are not allowed to update this member","code":"YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_MEMBER"}
+[12:59:51] members after admin probes: [('owner', 'libobo1229+na_org1@gmail.com'), ('admin', 'libobo1229+na_org2@gmail.com')]
+[12:59:58] cleanup delete O2                        -> 200 {"name":"w4e-org","slug":"w4e-1788584327","logo":null,"createdAt":"2026-09-05T04:58:48.106Z","metadata":null,"id":"a105e44f-8bdc-4409-aebf-50977969f5e4"}
+[12:59:58] == W4e DONE

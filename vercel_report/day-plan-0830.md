@@ -91,10 +91,17 @@
     - **信息泄漏（低价值）**：kernel cmdline 含 `build_version=2026.08.27-aed1eea...`（sandbox 镜像构建版本）+ `cell_id=hvc_iad1_...`（Vercel 内部单元 ID，guest 可见）→ 内部标识信息，无利用路径
     - **结论**：guest 可访问的全部设备/内存/IO/MSR 面均为标准 Firecracker 设备集 + 标准 ACPI（FIRECK 签名）；无额外设备、无 host 错误映射、VMCLOCK 静态无交互 → **无 EC2 host 逃逸路径，方向 1 关闭**
     - 证据：_x_v53_enum.py/out、_x_v53_mem.py/out、_x_v53_acpi.py/out、_x_v53_clk.py/out、_x_v53_obs.py/out、_x_v53_io.py/out
+16. **v54 SDK 参数深挖 + 快照存储层 → 全部关闭**（22:10 归档）：
+    - **PATCH currentSnapshotId 跨租户 → 404（隔离）**：attacker PATCH 自己 sandbox currentSnapshotId=victim 快照 → 404 "Snapshot 'snap_xxx' not found."（资源级授权；v51 只测了字段存在性，本次补跨租户引用）；victim 快照数据无法被 attacker resume 恢复（marker 验证设计）
+    - **deleteOrphanSnapshots 跨租户 → 403（隔离）**：attacker DELETE victim sandbox + deleteOrphanSnapshots=true → 403 "Not authorized"（不走绕过路径），victim 快照完好（GET 200 对照）；自己账号 DELETE+orphan → 200 正常（orphan 清理语义）
+    - **快照存储层无 URL 暴露**：SDK 验证器 Snapshot 结构（id/sourceSessionId/region/regions/status/sizeBytes/expiresAt/createdAt/updatedAt/lastUsedAt/creationMethod/parentId）无 URL/存储字段；GET 详情响应同样无 → 快照数据仅后端内部读取，无直接下载面
+    - **runtime 参数**：v4 create 拒收（400 "should NOT have additional property `runtime`"）→ 仅 v2 create/PATCH 支持（设计功能，镜像差异不影响隔离边界）
+    - **persistent 生命周期 → 正常**：create persistent=true 200 + 字段回显；PATCH false/true 切换正常；DELETE 后 GET/resume 全 404（persistent 不复活已删 sandbox，无对象生命周期漏洞）
+    - 证据：_x_v54_base.py/out（基线：自己快照 PATCH/resume 正常）、_x_v54_x.py/out（跨租户决定性）、_x_v54_rt.py/out（runtime/persistent）
 
 ## 结论（08-30 全部面关闭，无新可提交漏洞）
 
-今日验证：Exec 线（dup H1-3972961 根因）、v43 RCE 链（dup）、UDP 出网（无 bypass）、快照 IDOR（隔离）、跨沙箱共享写（COW）、策略持久化 stop/resume（正常）、跨租户写操作（全 404）、端点枚举（无新端点）、forwardURL SSRF（连接级私有防护）、fs API（guest 内解析）、跨租户全矩阵（隔离）、PTY/ports/interactive（设计功能）、snapshot 端点（官方设计：创建后自动停止+resume 从快照恢复；跨租户读写双向 404）、v51 文档/SDK 面（source 三型 guest 内拉取、getSnapshotTree 隔离、fs/mkdir 路径安全、ports 内部端口保留、cmd sudo 设计功能）、v52 残余面（image 内部镜像、CLI 无新端点、IPv6 全拦无绕过、CIDR 128.0.0.0/1 create 500 无影响、OpenAPI 24 端点全覆盖）、v53 virtio/内存设备面（标准 5 设备集、AMZNC10C VMCLOCK 标准静态无原语、/dev/mem STRICT_DEVMEM 正确、ECAM 未实现、ioport 纯标准、无 host 逃逸路径）。
+今日验证：Exec 线（dup H1-3972961 根因）、v43 RCE 链（dup）、UDP 出网（无 bypass）、快照 IDOR（隔离）、跨沙箱共享写（COW）、策略持久化 stop/resume（正常）、跨租户写操作（全 404）、端点枚举（无新端点）、forwardURL SSRF（连接级私有防护）、fs API（guest 内解析）、跨租户全矩阵（隔离）、PTY/ports/interactive（设计功能）、snapshot 端点（官方设计：创建后自动停止+resume 从快照恢复；跨租户读写双向 404）、v51 文档/SDK 面（source 三型 guest 内拉取、getSnapshotTree 隔离、fs/mkdir 路径安全、ports 内部端口保留、cmd sudo 设计功能）、v52 残余面（image 内部镜像、CLI 无新端点、IPv6 全拦无绕过、CIDR 128.0.0.0/1 create 500 无影响、OpenAPI 24 端点全覆盖）、v53 virtio/内存设备面（标准 5 设备集、AMZNC10C VMCLOCK 标准静态无原语、/dev/mem STRICT_DEVMEM 正确、ECAM 未实现、ioport 纯标准、无 host 逃逸路径）、v54 SDK 参数深挖（PATCH currentSnapshotId 跨租户 404、deleteOrphanSnapshots 跨租户 403、快照存储无 URL 暴露、persistent 删除后不可复活）。
 
 **合格标准（EC2 host 逃逸/跨租户/新 host 写原语/firewall bypass+exfil）今日无突破。** virtio/内存设备面（方向 1）已实测关闭，无 EC2 host 逃逸路径；剩余窗口 1 天，可选换产品线方向（需用户确认）。
 

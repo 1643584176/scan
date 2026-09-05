@@ -1,0 +1,9 @@
+== roles: 200 {"roles":[{"branch_id":"br-wandering-field-w2ob6mpn","name":"authenticator","protected":false,"authentication_method":"password","created_at":"2026-09-03T08:14:21Z","updated_at":"2026-09-03T08:14:21Z"},{"branch_id":"br-wandering-field-w2ob6mpn","name":"anonymous","protected":false,"authentication_method":"no_login","created_at":"2026-09-03T08:14:21Z","updated_at":"2026-09-03T08:14:21Z"},{"branch_id":"br-wandering-field-w2ob6mpn","name":"authenticated","protected":false,"authentication_method":"no_login","created_at":"2026-09-03T08:14:21Z","updated_at":"2026-09-03T08:14:21Z"},{"branch_id":"br-w
+== databases: 200 {"databases":[{"id":118708248,"branch_id":"br-wandering-field-w2ob6mpn","name":"neondb","owner_name":"neondb_owner","created_at":"2026-09-03T08:13:34Z","updated_at":"2026-09-03T08:13:34Z"}]}
+== pw candidate orange-sun-90493739/branches/br-wandering-field-w2ob6mpn/roles/neondb_owner/password -> 404 this route does not exist
+== pw candidate orange-sun-90493739/branches/br-wandering-field-w2ob6mpn/roles/neondb_owner/password/reveal -> 404 this route does not exist
+== pw candidate orange-sun-90493739/roles/neondb_owner/password -> 404 this route does not exist
+== pg driver: None
+== no password retrieved; need connection string from API
+== connuri /projects/orange-sun-90493739/connection_uri -> 400 {"request_id":"0936f2e6-be08-46ba-850e-9c2f65146ba3","code":"","message":"invalid input: operation GetConnectionURI: decode params: query: \"database_name\": query parameter \"database_name\" not set"}
+== connuri /projects/orange-sun-90493739/branches/br-wandering-field-w2ob6mpn/connection_uri -> 404 this route does not exist
