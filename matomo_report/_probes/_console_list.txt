@@ -1,0 +1,94 @@
+
+The configuration file {F:\scan\matomo_report\_src\matomo-release\matomo/config/config.ini.php} has not been found or could not be read.
+ » Please check that F:\scan\matomo_report\_src\matomo-release\matomo/config/config.ini.php is readable by the user 'lbb'. 
+
+
+Matomo [32m5.13.0[39m
+
+[33mUsage:[39m
+  command [options] [arguments]
+
+[33mOptions:[39m
+  [32m-h, --help[39m                           Display help for the given command. When no command is given display help for the [32mlist[39m command
+  [32m-q, --quiet[39m                          Do not output any message
+  [32m-V, --version[39m                        Display this application version
+  [32m    --ansi|--no-ansi[39m                 Force (or disable --no-ansi) ANSI output
+  [32m-n, --no-interaction[39m                 Do not ask any interactive question
+  [32m    --matomo-domain[=MATOMO-DOMAIN][39m  Matomo URL (protocol and domain) eg. "http://matomo.example.org"
+  [32m    --xhprof[39m                         Enable profiling with XHProf
+  [32m    --ignore-warn[39m                    Return 0 exit code even if there are warning logs or error logs detected in the command output.
+  [32m-v|vv|vvv, --verbose[39m                 Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+[33mAvailable commands:[39m
+  [32mcompletion[39m                                   Dump the shell completion script
+  [32mhelp[39m                                         Display help for a command
+  [32mlist[39m                                         List commands
+ [33mclimulti[39m
+  [32mclimulti:request[39m                             Parses and executes the given query. See Piwik\CliMulti. Intended only for system usage.
+ [33mconfig[39m
+  [32mconfig:delete[39m                                Delete a config setting
+  [32mconfig:get[39m                                   Get a config value or section
+  [32mconfig:set[39m                                   Set one or more config settings in the file config/config.ini.php
+ [33mcore[39m
+  [32mcore:archive[39m                                 Runs the CLI archiver. It is an important tool for general maintenance and to keep Piwik very fast.
+  [32mcore:calculate-conversion-pages[39m              Calculate the pages before metric for historic conversions
+  [32mcore:clear-caches[39m                            [cache:clear] Clears all caches. This command can be useful for instance after updating Matomo files manually.
+  [32mcore:convert-to-utf8mb4[39m                      Converts the database to utf8mb4
+  [32mcore:create-security-files[39m                   Creates some web server security files if they haven't existed previously. Useful when using for example Apache or IIS web server and Matomo cannot create these files automatically because of missing write permissions.
+  [32mcore:delete-logs-data[39m                        Delete data from the user log tables: log_visit, log_link_visit_action, log_conversion, log_conversion_item, log_action.
+  [32mcore:fix-duplicate-log-actions[39m               Removes duplicates in the log action table and fixes references to the duplicates in related tables. NOTE: This action can take a long time to run!
+  [32mcore:invalidate-report-data[39m                  Invalidate archived report data by date range, site and period.
+  [32mcore:matomo4-migrate-token-auths[39m             Only needed for the matomo 3 to matomo 4 migration
+  [32mcore:matomo550-migrate-annotations[39m           Only needed for Matomo 5.5.0-b2 upgrade. Migrate annotations from option table to a separate annotations table. By default creates inserts of 20 annotations per SQL insert per site. You can lower this if you have annotations with long content.
+  [32mcore:matomo550-purge-legacy-annotations[39m      Only needed for Matomo 5.5.0-b2 upgrade. Purge legacy annotations from option table after migrating them to a separate annotations table.
+  [32mcore:matomo590-migrate-user-scoped-settings[39m  Only needed for Matomo 5.9.0-b1 upgrade. Migrates legacy user-scoped settings from option keys to plugin_setting rows and purges legacy option keys.
+  [32mcore:purge-broken-archive-data[39m               Purges broken archive data from archive tables.
+  [32mcore:purge-old-archive-data[39m                  Purges out of date and invalid archive data from archive tables.
+  [32mcore:reset-invalidations[39m                     Resets invalidations that are stuck in the "in progress" state, allowing them to be reprocessed.
+  [32mcore:test-email[39m                              Send a test email
+  [32mcore:update[39m                                  Triggers upgrades. Use it after Matomo core or any plugin files have been updated. Append --yes to upgrade without confirmation.
+  [32mcore:version[39m                                 Returns the current version information of this Matomo instance.
+ [33mcustom-piwik-js[39m
+  [32mcustom-piwik-js:update[39m                       [custom-matomo-js:update] Update the Javascript Tracker with plugin tracker additions
+ [33mcustomdimensions[39m
+  [32mcustomdimensions:add-custom-dimension[39m        Add new Custom Dimension available.
+  [32mcustomdimensions:info[39m                        Get information about currently installed Custom Dimensions
+  [32mcustomdimensions:remove-custom-dimension[39m     Removes an existing Custom Dimension
+ [33mdatabase[39m
+  [32mdatabase:optimize-archive-tables[39m             Runs an OPTIMIZE TABLE query on the specified archive tables.
+ [33mdevelopment[39m
+  [32mdevelopment:enable[39m                           [development:disable] Enable or disable development mode. See config/global.ini.php in section [Development] for more information
+ [33mdiagnostics[39m
+  [32mdiagnostics:analyze-archive-table[39m            Analyze an archive table and display human readable information about what is stored. This command can be used to diagnose issues like bloated archive tables.
+  [32mdiagnostics:archiving-config[39m                 Show configuration settings that can affect archiving performance
+  [32mdiagnostics:archiving-instance-statistics[39m    Show data statistics which can affect archiving performance
+  [32mdiagnostics:archiving-metrics[39m                Show metrics describing the current archiving status
+  [32mdiagnostics:archiving-queue[39m                  Show the current state of the archive invalidations queue as a table
+  [32mdiagnostics:archiving-status[39m                 
+  [32mdiagnostics:run[39m                              Run diagnostics to check that Piwik is installed and runs correctly
+  [32mdiagnostics:unexpected-files[39m                 Show a list of unexpected files found in the Matomo installation directory and optionally delete them.
+ [33mfeatureflags[39m
+  [32mfeatureflags:delete[39m                          Delete a given feature flag
+  [32mfeatureflags:disable[39m                         Disable a given feature flag
+  [32mfeatureflags:enable[39m                          Enable a given feature flag
+  [32mfeatureflags:list[39m                            List all available feature flags and their current state
+ [33mlog[39m
+  [32mlog:watch[39m                                    Outputs the last parts of the log files and follows as the log file grows. Does not work on Windows
+ [33mlogin[39m
+  [32mlogin:unblock-blocked-ips[39m                    Unblocks all currently blocked IPs. Useful if you cannot log in to your Matomo anymore because your own IP is blocked
+ [33mmarketplace[39m
+  [32mmarketplace:set-license-key[39m                  Sets a marketplace license key
+ [33mplugin[39m
+  [32mplugin:activate[39m                              Activate a plugin.
+  [32mplugin:deactivate[39m                            Deactivate a plugin.
+  [32mplugin:install-or-update[39m                     Install or update a plugin.
+  [32mplugin:list[39m                                  List installed plugins.
+  [32mplugin:uninstall[39m                             Uninstall a plugin.
+ [33mprivacymanager[39m
+  [32mprivacymanager:anonymize-some-raw-data[39m       Anonymize some of the stored raw data (logs). The reason it only anonymizes "some" data is that personal data can be present in many various data collection points, for example some of your page URLs or page titles may include personal data and these will not be anonymized by this command as it is not possible to detect personal data for example in a URL automatically.
+ [33mscheduled-tasks[39m
+  [32mscheduled-tasks:run[39m                          [core:run-scheduled-tasks] Will run all scheduled tasks due to run at this time.
+ [33mtwofactorauth[39m
+  [32mtwofactorauth:disable-2fa-for-user[39m           Disable two-factor authentication for a user. Useful if a user loses the device that was used for two-factor authentication. After it was disabled, the user will be able to set it up again.
+ [33musercountry[39m
+  [32musercountry:attribute[39m                        Re-attribute existing raw data (visits & conversions) with geolocated location data, using the specified or configured location provider.

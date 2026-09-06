@@ -1,0 +1,13 @@
+
+The configuration file {F:\scan\matomo_report\_src\matomo-release\matomo/config/config.ini.php} has not been found or could not be read.
+ » Please check that F:\scan\matomo_report\_src\matomo-release\matomo/config/config.ini.php is readable by the user 'lbb'. 
+
+
+[33mERROR     [2026-09-06 03:26:37] 7244 [39m Uncaught exception: \vendor\symfony\console\Application.php(650): There are no commands defined in the "installation" namespace. [Query: , CLI mode: 1]
+
+[37;41m                                                                  [39;49m
+[37;41m  There are no commands defined in the "installation" namespace.  [39;49m
+[37;41m                                                                  [39;49m
+
+[32mhelp [--format FORMAT] [--raw] [--] [<command_name>][39m
+

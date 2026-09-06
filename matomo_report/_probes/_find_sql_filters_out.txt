@@ -1,0 +1,56 @@
+==== sqlFilter => (0) ====
+==== sqlFilterValue => (0) ====
+==== call_user_func (39) ====
+   core\Config.php:143 call_user_func($GLOBALS['CONFIG_INI_PATH_RESOLVER']);         }          $path = self::getByDomainConfigPath()
+   core\Console.php:154 call_user_func(array($self, 'originDoRun'), $input, $output);             });         }          $importantLog
+   core\Segment.php:501 call_user_func($segment['sqlFilterValue'], $value, $segment['sqlSegment']);             }              // appl
+   core\Segment.php:506 call_user_func($segment['sqlFilter'], $value, $segment['sqlSegment'], $matchType, $name);                  if 
+   core\Updater.php:266 call_user_func([$className, 'isMajorUpdate']);             }         }         return $queries;     }      pub
+   core\Updater.php:621 call_user_func(array($update, 'doUpdate'), $this);         } catch (\Exception $e) {             // if an Upda
+   core\API\DataTableGenericFilter.php:255 call_user_func($this->callbackBeforeRowLimitingFilters, $datatable);         }     }      public function areP
+   core\API\DataTablePostProcessor.php:119 call_user_func($this->callbackBeforeGenericFilters, $dataTable);         }          $dataTable = $this->applyG
+   core\API\DataTablePostProcessor.php:128 call_user_func($this->callbackAfterGenericFilters, $dataTable);         }          // we automatically safe de
+   core\ArchiveProcessor\RecordBuilder.php:400 call_user_func($flatToHierarchyPathCallback, $flatRow, $archiveProcessor, $hierarchicalRecord);             } 
+   core\ArchiveProcessor\RecordBuilder.php:499 call_user_func($legacyReducerCallback, $legacyHierarchicalTable, $flatTable, $archiveProcessor, $hierarchicalR
+   core\ArchiveProcessor\RecordBuilder.php:552 call_user_func($flatToHierarchyPathCallback, $flatRow);             if (!is_array($path) || empty($path)) {   
+   core\ArchiveProcessor\RecordBuilder.php:580 call_user_func($flatToHierarchyPathCallback, $flatRow);             if (is_array($path) && !empty($path)) {   
+   core\Archiver\Request.php:46 call_user_func($this->before);         }     }      public function __toString()     {         return $this->u
+   core\Config\IniFileChain.php:256 call_user_func($GLOBALS['MATOMO_MODIFY_CONFIG_SETTINGS'], $this->mergedSettings);         }          if (     
+   core\Container\ContainerFactory.php:181 call_user_func($GLOBALS['MATOMO_SORT_PLUGINS'], $plugins);     }      private function isDevelopmentModeEnable
+   core\DataAccess\RawLogDao.php:139 call_user_func($bindFunction, $bind, $lastId));             if (!empty($rows)) {                 if ($idField)
+   core\DataTable\Row.php:555 call_user_func($operation, $thisColumnValue, $columnToSumValue, $thisRow, $rowToSum);                 }       
+   core\DataTable\Filter\Sort.php:95 call_user_func($this->secondaryColumnSortCallback, $config->primaryColumnToSort, $table);         } else {    
+   core\Db\Adapter.php:101 call_user_func(array($className, 'getDefaultPort'));     }      /**      * Get list of adapters      *      * 
+   core\Db\Adapter.php:123 call_user_func(array($className, 'isEnabled'))) {                 $adapters[] = strtoupper($adapterName);     
+   core\Policy\PolicyManager.php:427 call_user_func([$controlledSetting, self::$settingTypesMap[$settingType]['method']])) {                     co
+   core\Scheduler\Scheduler.php:366 call_user_func($callable, $task->getMethodParameter());             $message = $timer->__toString();         }
+   core\Settings\Setting.php:153 call_user_func($this->configureCallback, $this->config);             }              $this->setUiControlIfNeede
+   core\Settings\Setting.php:221 call_user_func($config->prepare, $value, $this);         }          $this->validateValue($value);          if 
+   ... 14 more
+==== SegmentsList::get()->add (33) ====
+   core\Columns\Dimension.php:476 addSegment()} method. You can add one or more segments for this      * dimension. Example:      *      * ```  
+   core\Columns\Dimension.php:484 addSegment($segment);      * ```      *      * @throws Exception      */     public function configureSegments
+   core\Columns\Dimension.php:497 addSegment($segment);         }     }      /**      * Configures metrics for this dimension.      *      * For
+   core\Segment\SegmentsList.php:22 addSegments} event.  * Observers for this event should call the {@link addSegment()} method to add segments or
+   core\Segment\SegmentsList.php:23 addSegment()} method to add segments or use any of the other  * methods to remove segments.  *  * @api since P
+   core\Segment\SegmentsList.php:39 addSegment(Segment $segment)     {         $this->segments[]          = $segment;         $this->segmentsByNam
+   core\Segment\SegmentsList.php:116 addSegments(&$segments)          *     {          *         $segment = new Segment();          *         $segm
+   core\Segment\SegmentsList.php:128 addSegments', [$list]);          foreach (Dimension::getAllDimensions() as $dimension) {             $dimensio
+   plugins\Actions\Columns\ActionUrl.php:38 addSegment($dimensionSegmentFactory->createSegment($segment));     } } 
+   plugins\Actions\Columns\SearchCategory.php:43 addSegment($dimensionSegmentFactory->createSegment($segment));     } } 
+   plugins\BotTracking\Controller.php:152 addSegmentNotSupportedMessage($view);          return $this->renderView($view);     }      public function sho
+   plugins\BotTracking\Reports\AbstractAIChatbotContentUrlReport.php:100 addSegmentNotSupportedMessage($view);     }      public function configureWidgets(WidgetsList $widgetsList, Re
+   plugins\BotTracking\Reports\AbstractAIChatbotFavouredPagesReport.php:172 addSegmentNotSupportedMessage($view);     }      /**      * Excludes pages that aren't meaningfully favoured b
+   plugins\BotTracking\Reports\Get.php:86 addSegmentNotSupportedMessage($view);     } } 
+   plugins\BotTracking\Reports\GetAIChatbotBrokenContent.php:93 addSegmentNotSupportedMessage($view);     }      public function configureWidgets(WidgetsList $widgetsList, Re
+   plugins\BotTracking\Reports\GetAIChatbotRequests.php:74 addSegmentNotSupportedMessage($view);          $view->config->setDefaultColumnsToDisplay(             ['label'
+   plugins\BotTracking\Reports\SegmentNotSupportedMessageHelper.php:20 addSegmentNotSupportedMessage(ViewDataTable $view): void     {         if (!empty(Request::getRawSegmentFromRe
+   plugins\CoreHome\Columns\VisitId.php:40 addSegment($dimensionSegmentFactory->createSegment($segment));     }      public function configureMetrics(Met
+   plugins\CoreHome\Columns\VisitIp.php:51 addSegment($dimensionSegmentFactory->createSegment($segment));     } } 
+   plugins\CoreHome\Columns\VisitorDaysSinceFirst.php:35 addSegment($dimensionSegmentFactory->createSegment($segment));     } } 
+   plugins\DevicesDetection\Columns\BrowserName.php:35 addSegment($dimensionSegmentFactory->createSegment($segment));          $segment = new Segment();         $seg
+   plugins\DevicesDetection\Columns\BrowserName.php:59 addSegment($dimensionSegmentFactory->createSegment($segment));     }      public function formatValue($value, 
+   plugins\DevicesDetection\Columns\Os.php:37 addSegment($dimensionSegmentFactory->createSegment($segment));          $segment = new Segment();         $seg
+   plugins\DevicesDetection\Columns\Os.php:65 addSegment($dimensionSegmentFactory->createSegment($segment));     }      public function formatValue($value, 
+   plugins\Ecommerce\Columns\ProductCategory.php:58 addSegment($dimensionSegmentFactory->createSegment($segment));         }          // add a union of these indi
+   ... 8 more

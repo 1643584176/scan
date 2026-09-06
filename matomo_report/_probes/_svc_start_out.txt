@@ -1,0 +1,5 @@
+mariadbd pid: 6472
+mariadb up after 0s
+db/user ensure exit: 0
+php pid: 1116
+DONE

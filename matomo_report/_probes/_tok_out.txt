@@ -1,0 +1,2 @@
+user2 -> {'result': 'error', 'message': 'You can only create an authentication token for your own account.'}
+user3 -> {'result': 'error', 'message': 'You can only create an authentication token for your own account.'}

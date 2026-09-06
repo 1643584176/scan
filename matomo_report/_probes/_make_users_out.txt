@@ -1,0 +1,5 @@
+addSite site2: {'value': 2}
+addUser user2: {'result': 'success', 'message': 'ok'}
+addUser user3: {'result': 'success', 'message': 'ok'}
+users: ['admin', 'anonymous', 'user2', 'user3']
+sites: [(1, 'Local Test Site'), (2, 'Site Two')]

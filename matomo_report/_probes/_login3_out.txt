@@ -1,0 +1,5 @@
+nonce: 0abf6b930422e2a9845ef2c603f7f908
+POST login: 200 210585 -> http://127.0.0.1:8080/index.php?module=CoreHome&action=index&idSite=1&period=day&date=today
+API API.getMatomoVersion : {"result":"error","message":"You can't access this resource as it requires view access for at least one website."}
+API UsersManager.getUsers : {"result":"error","message":"You can't access this resource as it requires admin access for at least one website."}
+API SitesManager.getSitesWithAtLeastViewAccess : []

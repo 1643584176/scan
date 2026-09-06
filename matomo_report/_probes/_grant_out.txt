@@ -1,0 +1,19 @@
+grant: {'result': 'success', 'message': 'ok'}
+Traceback (most recent call last):
+  File "F:\scan\matomo_report\_probes\_grant_user2.py", line 18, in <module>
+    r2 = api('UsersManager.getUsersAccess', userLogin='user2')
+  File "F:\scan\matomo_report\_probes\_grant_user2.py", line 13, in api
+    r = urllib.request.urlopen(BASE + 'index.php?' + q, timeout=180)
+  File "F:\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "F:\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "F:\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "F:\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "F:\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "F:\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request

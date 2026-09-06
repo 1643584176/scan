@@ -1,0 +1,4 @@
+GET login: 200 193332
+nonce: adcf926938f08fd2d07cf06d438d334d
+POST login: 200 209065 http://127.0.0.1:8080/index.php?module=CoreHome&action=index&idSite=2&period=day&date=today
+token resp: 200 {"value":"794beeb243443742f0df05b4432c734e"}

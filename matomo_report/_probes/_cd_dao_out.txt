@@ -1,0 +1,88 @@
+lines: 201
+
+===== configureNewDimension() @31 =====
+{
+        $extractions = $this->encodeExtractions($extractions);
+        $active = $active ? '1' : '0';
+        $caseSensitive = $caseSensitive ? '1' : '0';
+        $id = $this->getNextCustomDimensionIdForSite($idSite);
+
+        $config = array(
+            'idcustomdimension' => $id,
+            'idsite'      => $idSite,
+            'index'       => $index,
+            'scope'       => $scope,
+            'name'        => $name,
+            'description' => (string) $description,
+            'active'      => $active,
+            'extractions' => $extractions,
+            'case_sensitive' => $caseSensitive,
+        );
+
+        $this->getDb()->insert($this->tableNamePrefixed, $config);
+
+        return $id;
+    }
+
+===== configureExistingDimension() @55 =====
+{
+        $extractions = $this->encodeExtractions($extractions);
+        $active = $active ? '1' : '0';
+        $caseSensitive = $caseSensitive ? '1' : '0';
+
+        $this->getDb()->update(
+            $this->tableNamePrefixed,
+            array(
+                'name'        => $name,
+                'description' => (string) $description,
+                'active'      => $active,
+                'extractions' => $extractions,
+                'case_sensitive' => $caseSensitive,
+            ),
+            "idcustomdimension = " . (int) $idCustomDimension . " and idsite = " . (int) $idSite
+        );
+    }
+
+===== getCustomDimensionsForSite() @74 =====
+{
+        $query = "SELECT * FROM " . $this->tableNamePrefixed . " WHERE idsite = ? ORDER BY idcustomdimension";
+        return $this->fetchAllDimensionsEnriched($query, array($idSite));
+    }
+
+===== getCustomDimension() @80 =====
+{
+        $query = "SELECT * FROM " . $this->tableNamePrefixed . " WHERE idcustomdimension = ? and idsite = ?";
+        $dimension = $this->getDb()->fetchRow($query, array($idDimension, $idSite));
+        $dimension = $this->enrichDimension($dimension);
+
+        return $dimension;
+    }
+
+===== getCustomDimensionsHavingIndex() @89 =====
+{
+        $query = "SELECT * FROM " . $this->tableNamePrefixed . " WHERE `index` = ? and scope = ? ORDER BY idcustomdimension";
+        return $this->fetchAllDimensionsEnriched($query, array($index, $scope));
+    }
+
+===== deleteConfigurationsForSite() @95 =====
+{
+        $this->getDb()->query("DELETE FROM " . $this->tableNamePrefixed . " WHERE idsite = ?", $idSite);
+    }
+
+===== deleteConfigurationsForIndex() @100 =====
+{
+        $this->getDb()->query("DELETE FROM " . $this->tableNamePrefixed . " WHERE `index` = ? and `scope` = ?", array($index, $scope));
+    }
+
+===== getNextCustomDimensionIdForSite() @145 =====
+{
+        $nextId = $this->getDb()->fetchOne("SELECT max(idcustomdimension) FROM " . $this->tableNamePrefixed . " WHERE idsite = ?", $idSite);
+
+        if (empty($nextId)) {
+            $nextId = 1;
+        } else {
+            $nextId = (int) $nextId + 1;
+        }
+
+        return $nextId;
+    }

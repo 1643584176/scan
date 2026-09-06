@@ -1,0 +1,3 @@
+user3 login: 401 http://127.0.0.1:8080/index.php
+token resp: 200 {"value":"bfb52eb146d39b0d40c365a46491f589"}
+admin getUsers: 200 [{"login":"admin","email":"xxbo+matomo@wearehackerone.com","superuser_access":1,"date_registered":"2026-09-06 04:06:03","invited_by":null,"invite_expired_at":null,"invite_accept_at":null,"last_seen":"

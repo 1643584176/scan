@@ -1,0 +1,97 @@
+=== A. All open+bounty programs, eff>=70, sorted by efficiency (top 70) ===
+1win                           | 1win_com                               | eff=100 | 1st=9.0  h | res=1373.0 h | tg=6   | 1w.cash 1w.run 1win.com https://1win.com/betting https://1win.com/casino
+Chia Network                   | chia_network                           | eff=100 | 1st=11.0 h | res=2399.0 h | tg=9   | api.vault.chiatest.net https://vault.chiatest.net/
+Bykea                          | bykea                                  | eff=100 | 1st=5.0  h | res=-     h | tg=16  | bykea.com https://api.bykea.net https://geocode-beta.bykea.net https://leaflet-map.bykea.net https:/
+Inditex                        | inditex                                | eff=100 | 1st=5.0  h | res=-     h | tg=4   | 
+inDrive                        | indrive                                | eff=100 | 1st=14.0 h | res=1321.0 h | tg=116 | ab-platform-api.eu-east-1.indriverapp.com alternativa.film api.ryadom.kz auroratechaward.com blog.in
+Mergify                        | mergify                                | eff=100 | 1st=7.0  h | res=112.0 h | tg=2   | api.mergify.com dashboard.mergify.com
+ALSCO                          | alsco                                  | eff=100 | 1st=13.0 h | res=-     h | tg=2   | sandbox-royal.securegateway.com sandbox.securegateway.com
+Krisp                          | krisp                                  | eff=100 | 1st=9.0  h | res=1089.0 h | tg=15  | account.krisp.ai analytics.krisp.ai api.krisp.ai app.krisp.ai download.krisp.ai help-jp.krisp.ai hel
+Trendyol                       | trendyol                               | eff=100 | 1st=0.0  h | res=1057.0 h | tg=11  | www.dolap.com www.tgoyemek.com www.trendyol-milla.com www.trendyol.com
+8x8                            | 8x8-bounty                             | eff=100 | 1st=1.0  h | res=443.0 h | tg=115 | 8x8.my.site.com admin-resolve.8x8.com admin.8x8.com api.8x8.com apps.8x8.com bridge.8x8.com callrout
+hostinger                      | hostinger                              | eff=100 | 1st=6.0  h | res=760.0 h | tg=11  | agents.hostinger.com builder.hostinger.com cpanel.hostinger.com horizons.hostinger.com hpanel.hostin
+Faraday, Inc.                  | faraday_inc                            | eff=100 | 1st=11.0 h | res=86.0  h | tg=9   | api.faraday.ai app.faraday.ai buy.faraday.ai row.pro vault2.faraday.ai
+Early Warning                  | early_warning                          | eff=100 | 1st=5.0  h | res=5910.0 h | tg=9   | ews-fusion.my.site.com www.certos.com zelleservice.my.salesforce.com zelleservice.my.site.com
+Matomo                         | matomo                                 | eff=100 | 1st=7.0  h | res=153.0 h | tg=11  | https://github.com/matomo-org/docker matomo.cloud
+Crypto.com                     | crypto                                 | eff=100 | 1st=13.0 h | res=-     h | tg=24  | app.mona.co developer-api.crypto.com developer-platform-api.crypto.com developer.crypto.com experien
+Enjin                          | enjin                                  | eff=100 | 1st=27.0 h | res=-     h | tg=5   | nft.io
+Nextcloud                      | nextcloud                              | eff=100 | 1st=14.0 h | res=2811.0 h | tg=94  | apps.nextcloud.com auth.nextcloud.com crm.nextcloud.com customerupdates.nextcloud.com docs.nextcloud
+Deriv.com                      | deriv                                  | eff=100 | 1st=0.0  h | res=5125.0 h | tg=18  | api.deriv.com app.deriv.com cashier.deriv.com core-api.deriv.com ct.deriv.com deriv.partners derivws
+FetLife                        | fetlife                                | eff=100 | 1st=20.0 h | res=200.0 h | tg=3   | fetlife.com fetlifemail.com
+Basecamp                       | basecamp                               | eff=100 | 1st=15.0 h | res=5251.0 h | tg=17  | app.basecamp.com fizzy.do launchpad.37signals.com world.hey.com
+Airbnb                         | airbnb                                 | eff=100 | 1st=7.0  h | res=2885.0 h | tg=27  | *.airbnb-aws.com *.airbnb.com *.airbnbcitizen.com *.atairbnb.com *.byairbnb.com *.hoteltonight-test.
+Greenhouse.io                  | greenhouse                             | eff=100 | 1st=14.0 h | res=2375.0 h | tg=12  | api.greenhouse.io app.greenhouse.io app.interseller.io boards.greenhouse.io interseller.io jss.green
+HackerOne                      | security                               | eff=100 | 1st=6.0  h | res=189.0 h | tg=26  | a5s.hackerone-ext-content.com api.hackerone.com app.pullrequest.com b5s.hackerone-ext-content.com co
+Banco Plata                    | banco_plata                            | eff=99  | 1st=5.0  h | res=-     h | tg=4   | 
+Stripchat                      | stripchat                              | eff=99  | 1st=11.0 h | res=-     h | tg=2   | go.stripchat.com
+Ripio                          | ripio                                  | eff=99  | 1st=13.0 h | res=50.0  h | tg=24  | defi.ripio.com http://auth.ripio.com https://app.ripio.com https://bridge.ripio.com/ https://kyc.rip
+MoonPay                        | moonpay                                | eff=99  | 1st=16.0 h | res=324.0 h | tg=19  | api.moonpay.com api.moonx-dev.com api.paybox.sh app.moonpay.com app.paybox.sh auth.moonpay.com buy.m
+KOHO                           | koho                                   | eff=99  | 1st=0.0  h | res=11630.0 h | tg=11  | app.koho.ca assets.koho.ca clicks.koho.ca http://api.koho.ca/1.0 http://api.koho.ca/partner login.ko
+FanDuel                        | fanduel                                | eff=99  | 1st=11.0 h | res=-     h | tg=20  | 4njbets.com 4njbets.us.betfair.com login-4ngbets.us.betfair.com login-4njbets.us.betfair.com www.4nj
+Crowdstrike                    | crowdstrike                            | eff=99  | 1st=20.0 h | res=-     h | tg=22  | falcon-sandbox.com hybrid-analysis.com onum-labs.com onum.com sgnl.ai sgnl.cloud sgnl.team sgnlapis.
+Semrush                        | semrush                                | eff=99  | 1st=10.0 h | res=817.0 h | tg=13  | investors.semrush.com workflows.semrush.com
+PortSwigger Web Security       | portswigger                            | eff=99  | 1st=12.0 h | res=-     h | tg=11  | ai.portswigger.net collections.portswigger.net http1mustdie.com id.portswigger.net links.portswigger
+Slack                          | slack                                  | eff=99  | 1st=-    h | res=-     h | tg=19  | *.quip.com api.slack.com app.slack.com edgeapi.slack.com slack-imgs.com slack-redir.net slack-status
+Wallet on Telegram             | wallet_on_telegram                     | eff=98  | 1st=17.0 h | res=179.0 h | tg=7   | p2p.walletbot.me pay.wallet.tg wallet.tg walletbot.me wallettg.com wallettg.net
+Sheer                          | sheer_bbp                              | eff=98  | 1st=15.0 h | res=232.0 h | tg=2   | my.sheer.com www.sheer.com
+Zabbix                         | zabbix                                 | eff=98  | 1st=6.0  h | res=2677.0 h | tg=1   | 
+Urban Company                  | urbancompany                           | eff=98  | 1st=5.0  h | res=1702.0 h | tg=6   | www.urbanclap.com www.urbancompany.com
+Remitly                        | remitly                                | eff=98  | 1st=28.0 h | res=3345.0 h | tg=72  | ablink.info.remitly.com access-sandbox.remitly.com access.remitly.com api.remitly.io app.rewire.to a
+Hyatt Hotels                   | hyatt                                  | eff=98  | 1st=1.0  h | res=1604.0 h | tg=61  | assets.hyatt.com blueskytours.globalbookingsolutions.com book.applevacations.com book.beachbound.com
+EXNESS                         | exness                                 | eff=98  | 1st=20.0 h | res=109.0 h | tg=14  | api.excalls.mobi exness.com exnessaffiliates.com https://my.exness.com/pa/pim/manager https://my.exn
+Anthropic                      | anthropic                              | eff=97  | 1st=12.0 h | res=833.0 h | tg=14  | anthropic.atlassian.com api.anthropic.com claude.ai console.anthropic.com docs.anthropic.com support
+OKG                            | okg                                    | eff=97  | 1st=5.0  h | res=-     h | tg=10  | 
+Goldman Sachs                  | goldmansachs                           | eff=97  | 1st=1.0  h | res=7500.0 h | tg=46  | *.ayco.com *.claritymoney.com *.global-liquidity.gs.com *.goldman.com *.goldmanpfm.com *.goldmansach
+Privy (Bounty)                 | privy-bbp                              | eff=96  | 1st=21.0 h | res=-     h | tg=12  | api.privy.io auth.privy.io dashboard.privy.io home.privy.io recovery.privy.io
+23andMe Bug Bounty             | 23andme_bbp                            | eff=96  | 1st=12.0 h | res=2060.0 h | tg=18  | 23andme.org/ancestry/last-names 23andme.org/blog 23andme.org/clinicians 23andme.org/education 23andm
+Superbet                       | superbet                               | eff=96  | 1st=14.0 h | res=-     h | tg=26  | https://napoleoncasino.be https://napoleoncasino.be/en-be/game/hogamba-crash?demo=false https://napo
+Vodafone Oman                  | vodafone_oman                          | eff=96  | 1st=22.0 h | res=36.0  h | tg=7   | apix.vodafone.om vfo01.vodafone.om vfo02.vodafone.om vfo03.vodafone.om www.vodafone.om
+SMTP2GO BBP                    | smtp2go                                | eff=96  | 1st=3.0  h | res=591.0 h | tg=3   | api.smtp2go.com app.smtp2go.com smtp2go.com
+HYPR                           | hypr-corp                              | eff=96  | 1st=23.0 h | res=420.0 h | tg=6   | 
+Exodus                         | exodus                                 | eff=96  | 1st=24.0 h | res=742.0 h | tg=27  | ctr.a.exodus.io fiat-p.a.exodus.io fiat-prod-fallback.a.exodus.io fiat.a.exodus.io kyc.a.exodus.io l
+Marriott Bug Bounty Program    | marriott                               | eff=96  | 1st=1.0  h | res=1164.0 h | tg=78  | *uat.marriott.com activities.marriott.com all-inclusive.marriott.com apcgateway.marriott.com app-ins
+Flutter UK&I                   | flutteruki                             | eff=96  | 1st=2.0  h | res=-     h | tg=43  | itv7.itv.com rafflee.co.uk super6.skysports.com
+Anduril Industries             | anduril_industries                     | eff=95  | 1st=3.0  h | res=769.0 h | tg=6   | 
+Braze, Inc.                    | braze_inc                              | eff=95  | 1st=1.0  h | res=2626.0 h | tg=3   | https://bug-bounty-dashboard.k8s.tools-001.d-use-1.braze-dev.com/
+Circle BBP                     | circle-bbp                             | eff=95  | 1st=7.0  h | res=1519.0 h | tg=29  | api.circle.com app.circle.com console.circle.com https://github.com/circlefin/stellar-cctp rpc.block
+WisdomTree, Inc.               | wisdomtree                             | eff=95  | 1st=8.0  h | res=258.0 h | tg=6   | api.wisdomtreeprimeapp.com https://app.wisdomtreeconnect.com https://app.wisdomtreeconnect.com/api/ 
+Superhuman (formerly Grammarl  | superhuman                             | eff=95  | 1st=1.0  h | res=1399.0 h | tg=30  | coda.grammarly.com coda.io codacontent.io codahosted.io docs.superhuman.com gateway.superhuman.com i
+Grab                           | grab                                   | eff=95  | 1st=6.0  h | res=-     h | tg=31  | api.grabpay.com gamma.grab.co gifts.grab.com grab.careers hungrygowhere.com kartaview.org manage.gra
+Vimeo                          | vimeo                                  | eff=95  | 1st=5.0  h | res=5130.0 h | tg=36  | api.vhx.tv api.vimeo.com applause1.magisto.com checkout.vimeo.com donations.livestream.com embed.vhx
+Bumba                          | bumba_bbp                              | eff=94  | 1st=15.0 h | res=2171.0 h | tg=1   | http://bumba.global
+3CX                            | 3cx                                    | eff=94  | 1st=10.0 h | res=1177.0 h | tg=8   | https://portal.3cx.com
+Playtika                       | playtika                               | eff=94  | 1st=15.0 h | res=127.0 h | tg=65  | bestfiends.com gnocchi-www.buffalo-ggn.net
+Coupang Taiwan                 | coupang_tw                             | eff=93  | 1st=14.0 h | res=1305.0 h | tg=47  | ads-partners.tw.coupang.com cart-front-api.tw.coupang.com cart.tw.coupang.com cash.tw.coupang.com ch
+Netflix                        | netflix                                | eff=93  | 1st=2.0  h | res=664.0 h | tg=30  | beacon.netflix.com customerevents.netflix.com help.netflix.com ichnaea.netflix.com meechum.netflix.c
+Notion Labs, Inc.              | notion                                 | eff=93  | 1st=8.0  h | res=1388.0 h | tg=12  | calendar.notion.so mail.notion.so
+Polygon Technology             | polygon-technology                     | eff=93  | 1st=16.0 h | res=511.0 h | tg=8   | faucet.polygon.technology portal.polygon.technology staking-api.polygon.technology staking.polygon.t
+Databricks                     | databricks                             | eff=93  | 1st=5.0  h | res=9809.0 h | tg=5   | accounts.cloud.databricks.com databricks.com https://dbc-9a3f8ed1-7608.cloud.databricks.com
+Nintendo                       | nintendo                               | eff=93  | 1st=-    h | res=-     h | tg=7   | 
+KAYAK                          | kayak                                  | eff=93  | 1st=0.0  h | res=367.0 h | tg=12  | business.kayak.com kayak.ai www.cheapflights.com www.checkfelix.com www.hotelscombined.com www.kayak
+Snapchat                       | snapchat                               | eff=93  | 1st=10.0 h | res=1315.0 h | tg=40  | *.sc-core.net accounts.snapchat.com ads.snapchat.com app.snapchat.com blog.playcanvas.com business.s
+TOTAL: 70
+
+=== B. Same but resolved time < 800h (~33d) ===
+Mergify                        | mergify                                | eff=100 | 1st=7.0 h | res=112.0 h
+8x8                            | 8x8-bounty                             | eff=100 | 1st=1.0 h | res=443.0 h
+hostinger                      | hostinger                              | eff=100 | 1st=6.0 h | res=760.0 h
+Faraday, Inc.                  | faraday_inc                            | eff=100 | 1st=11.0 h | res=86.0 h
+Matomo                         | matomo                                 | eff=100 | 1st=7.0 h | res=153.0 h
+FetLife                        | fetlife                                | eff=100 | 1st=20.0 h | res=200.0 h
+HackerOne                      | security                               | eff=100 | 1st=6.0 h | res=189.0 h
+Ripio                          | ripio                                  | eff=99  | 1st=13.0 h | res=50.0 h
+MoonPay                        | moonpay                                | eff=99  | 1st=16.0 h | res=324.0 h
+Wallet on Telegram             | wallet_on_telegram                     | eff=98  | 1st=17.0 h | res=179.0 h
+Sheer                          | sheer_bbp                              | eff=98  | 1st=15.0 h | res=232.0 h
+EXNESS                         | exness                                 | eff=98  | 1st=20.0 h | res=109.0 h
+Vodafone Oman                  | vodafone_oman                          | eff=96  | 1st=22.0 h | res=36.0 h
+SMTP2GO BBP                    | smtp2go                                | eff=96  | 1st=3.0 h | res=591.0 h
+HYPR                           | hypr-corp                              | eff=96  | 1st=23.0 h | res=420.0 h
+Exodus                         | exodus                                 | eff=96  | 1st=24.0 h | res=742.0 h
+Anduril Industries             | anduril_industries                     | eff=95  | 1st=3.0 h | res=769.0 h
+WisdomTree, Inc.               | wisdomtree                             | eff=95  | 1st=8.0 h | res=258.0 h
+Playtika                       | playtika                               | eff=94  | 1st=15.0 h | res=127.0 h
+Netflix                        | netflix                                | eff=93  | 1st=2.0 h | res=664.0 h
+Polygon Technology             | polygon-technology                     | eff=93  | 1st=16.0 h | res=511.0 h
+KAYAK                          | kayak                                  | eff=93  | 1st=0.0 h | res=367.0 h
+TOTAL fast-resolve: 22

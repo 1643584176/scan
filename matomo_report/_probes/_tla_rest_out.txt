@@ -1,0 +1,54 @@
+== getSelectQueryWhereNameContains ==
+function getSelectQueryWhereNameContains($matchType, $actionType)
+    {
+        // now, we handle the cases =@ (contains) and !@ (does not contain)
+        // build the expression based on the match type
+        $sql = 'SELECT idaction FROM `' . Common::prefixTable('log_action') . '` WHERE %s AND type = ' . $actionType . ' )';
+
+        switch ($matchType) {
+            case SegmentExpression::MATCH_CONTAINS:
+                // use concat to make sure, no %s occurs because some plugins use %s in their sql
+                $where = '( name LIKE CONCAT(\'%\', ?, \'%\') ';
+                break;
+            case SegmentExpression::MATCH_DOES_NOT_CONTAIN:
+                $where = '( name NOT LIKE CONCAT(\'%\', ?, \'%\') ';
+                break;
+            case SegmentExpression::MATCH_STARTS_WITH:
+                // use concat to make sure, no %s occurs because some plugins use %s in their sql
+                $where = '( name LIKE CONCAT(?, \'%\') ';
+                break;
+            case SegmentExpression::MATCH_ENDS_WITH:
+                // use concat to make sure, no %s occurs because some plugins use %s in their sql
+                $where = '( name LIKE CONCAT(\'%\', ?) ';
+                break;
+            default:
+                throw new \Exception("This match type $matchType is not available for action-segments.");
+                break;
+        }
+
+        $sql = sprintf($sql, $where);
+
+        return $sql;
+    }
+
+    private static function insertNewIdsAction($actionsN
+
+getModel: new Model()
+
+== core\Tracker\Model.php:265 ==
+function getIdActionMatchingNameAndType($name, $type)
+    {
+        $sql  = $this->getSqlSelectActionId();
+        $bind = [$name, $name, $type];
+
+        $idAction = $this->getDb()->fetchOne($sql, $bind);
+
+        return $idAction;
+    }
+
+    /**
+     * Returns the IDs for multiple actions based on name + type values.
+     *
+     * @param array $actionsNameAndType Array like `[ ['name' => '...', 'type' => 1], ... ]`
+     * @return array|false Array of DB rows w/ columns: **idaction**, **type**, **name**.
+     */

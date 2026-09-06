@@ -1,0 +1,7 @@
+total: 10
+CVE-2019-12215 | MEDIUM | 2019-05-20 | A full path disclosure vulnerability was discovered in Matomo v3.9.1 where a user can trigger a particular error to discover the full path of Matomo o
+CVE-2022-33156 | MEDIUM | 2022-07-12 | The matomo_integration (aka Matomo Integration) extension before 1.3.2 for TYPO3 allows XSS.
+CVE-2017-20175 | LOW    | 2023-02-05 | A vulnerability classified as problematic has been found in DaSchTour matomo-mediawiki-extension up to 2.4.2 on MediaWiki. This affects an unknown par
+Traceback (most recent call last):
+  File "<stdin>", line 25, in <module>
+UnicodeEncodeError: 'gbk' codec can't encode character '\xa0' in position 113: illegal multibyte sequence

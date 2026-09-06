@@ -1,0 +1,4 @@
+warm: 200 module=Installation&action=finished
+GET finished: 200 194384
+submit label: 'Continue »'
+POST finished: 200 193332 -> http://127.0.0.1:8080/index.php

@@ -1,0 +1,19 @@
+### A. getBulkRequest with array urls + nested methods
+A1 user3 bulk [getSettings,getUsers]: 200 [{"result":"error","message":"You can't access this resource as it requires admin access for at least one website."}]
+A2 anon bulk w/ nested admin token: 200 [[{"login":"admin","email":"xxbo+matomo@wearehackerone.com","superuser_access":1,"date_registered":"2026-09-06 04:06:03","invited_by":null,"invite_expired_at":null,"invite_accept_at":null,"last_seen":"2026-09-06 04:22:29","last_seen_ago":"00:55:47","invite_status":"active","uses_2fa":false},{"login"
+A3 anon bulk no token: 200 [{"result":"error","message":"You can't access this resource as it requires admin access for at least one website."}]
+A4 anon bulk force_api_session conflict: 400 {"result":"error","message":"Conflicting authentication parameters provided."}
+
+### B. Overlay.getFollowingPages with real site1 URL (/home)
+B admin : 200 []
+B user2 : 200 []
+B user3 : 200 []
+B anon  : 200 []
+
+### C. anonymous baseline on management DATA candidates
+C API.getBulkRequest                       200 [{"SDK_batch_size":10,"SDK_interval_value":30}]
+C API.getSettings                          200 {"SDK_batch_size":10,"SDK_interval_value":30}
+C API.getPagesComparisonsDisabledFor       200 ["General_Actions.Transitions_Transitions","MultiSites.index","Referrers_Referrers.Referrers_URLCampaignBuilder","General_Visitors.UserCountryMap_RealTimeMap","General_Visitors.Live_VisitorLog","Gener
+C Overlay.getTranslations                  200 {"oneClick":"1 click","clicks":"%s clicks","clicksFromXLinks":"%1$s clicks from one of %2$s links","link":"Link"}
+C SitesManager.getIpsForRange              200 ["10.0.0.0","10.255.255.255"]
+C LanguagesManager.getAvailableLanguages   200 ["am","ar","be","bg","bn","bs","ca","cs","cy","da","de","el","en","eo","es-ar","es","et","eu","fa","fi","fr","gl","gu","he","hi","hr","hu","id","is","it","ja","ka","ko","ku","lt","lv","nb","nl","nn","

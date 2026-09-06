@@ -72,7 +72,7 @@ _figma_hunt/vpub_tmp.json
 /*token*.txt
 /_webhook_uuid.txt
 
-# ---- Æ¾¾İ/»á»°/ÃÜÔ¿ÎÄ¼ş(¸÷ report Ä¿Â¼) ----
+# ---- å‡­æ®/ä¼šè¯/å¯†é’¥æ–‡ä»¶(å„ report ç›®å½•) ----
 *_creds*.py
 *_creds*.json
 *_creds*.txt
@@ -88,10 +88,17 @@ _sb_tokens.json
 _wh_uuid.txt
 *_cookies*.json
 
-# ---- Ô´Âë¿ËÂ¡/×ÓÄ£¿é(²»Èë¿â) ----
+# ---- æºç å…‹éš†/å­æ¨¡å—(ä¸å…¥åº“) ----
 figma_report/_kiwi_ref/
 figma_report/_kiwi_work/kiwi/
 neon_report/_pg_session_jwt_src/
 netlify_report/_gotrue_src/
 netlify_report/_openapi/
 netlify_report/_pgrepack_src/
+
+# h1kit local caches (bounty-targets dumps, etc.)
+h1kit/cache/
+
+# Matomo local runtime (mariadb/php) & full source trees - only curated files committed
+matomo_report/_runtime/
+matomo_report/_src/

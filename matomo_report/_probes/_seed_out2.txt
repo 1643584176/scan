@@ -1,0 +1,14 @@
+goal s1: {'value': 2}
+goal s2: {'value': 2}
+s1 t1: 200
+s1 t2: 200
+s1 t3: 200
+s2 t1: 200
+s2 t2: 200
+admin VisitsSummary.getVisits {'value': 1}
+admin Events.getAction [{'label': 'View', 'nb_uniq_visitors': 1, 'nb_visits': '1', 'nb_events': '1', 'nb_events_with_value': '0', 'sum_event_value': 0, 'min_event_value': None, 'max_event_value': None, '
+admin DevicesDetection.getType [{'label': 'Desktop', 'nb_uniq_visitors': 1, 'nb_visits': 1, 'nb_actions': '1', 'nb_users': 1, 'max_actions': 1, 'sum_visit_length': '0', 'bounce_count': '1', 'nb_visits_converted'
+admin UserCountry.getCountry [{'label': 'Unknown', 'nb_uniq_visitors': 1, 'nb_visits': 1, 'nb_actions': '1', 'nb_users': 1, 'max_actions': 1, 'sum_visit_length': '0', 'bounce_count': '1', 'nb_visits_converted'
+admin site2 getVisits: {'value': 1}
+archive-warm VisitsSummary.getVisits {'1': 1, '2': 1}
+archive-warm Goals.getConversions {'http_error': 400, 'body': '{"result":"error","message":"The method \'getConversions\' does not exist or is not availab

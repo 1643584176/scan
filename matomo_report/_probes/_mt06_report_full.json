@@ -1,0 +1,1010 @@
+[
+ {
+  "plugin": "Contents",
+  "method": "getContentNames",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Contents",
+  "method": "getContentNames",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Contents",
+  "method": "getContentPieces",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Contents",
+  "method": "getContentPieces",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "CustomDimensions",
+  "method": "getConfiguredCustomDimensionsHavingScope",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "CustomDimensions",
+  "method": "getConfiguredCustomDimensionsHavingScope",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicePlugins",
+  "method": "getPlugin",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicePlugins",
+  "method": "getPlugin",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getType",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getType",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getBrand",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getBrand",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getOsFamilies",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getOsFamilies",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getOsVersions",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getOsVersions",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getBrowsers",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getBrowsers",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getBrowserVersions",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getBrowserVersions",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getBrowserEngines",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "DevicesDetection",
+  "method": "getBrowserEngines",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Events",
+  "method": "getActionToLoadSubtables",
+  "idsite": "1",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Events",
+  "method": "getActionToLoadSubtables",
+  "idsite": "2",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Events",
+  "method": "getDefaultSecondaryDimension",
+  "idsite": "1",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Events",
+  "method": "getDefaultSecondaryDimension",
+  "idsite": "2",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Events",
+  "method": "getSecondaryDimensions",
+  "idsite": "1",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Events",
+  "method": "getSecondaryDimensions",
+  "idsite": "2",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Events",
+  "method": "getCategory",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Events",
+  "method": "getCategory",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Events",
+  "method": "getAction",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Events",
+  "method": "getAction",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Events",
+  "method": "getName",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Events",
+  "method": "getName",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Events",
+  "method": "getActionFromCategoryId",
+  "idsite": "1",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getActionFromCategoryId",
+  "idsite": "2",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getNameFromCategoryId",
+  "idsite": "1",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getNameFromCategoryId",
+  "idsite": "2",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getCategoryFromActionId",
+  "idsite": "1",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getCategoryFromActionId",
+  "idsite": "2",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getNameFromActionId",
+  "idsite": "1",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getNameFromActionId",
+  "idsite": "2",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getActionFromNameId",
+  "idsite": "1",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getActionFromNameId",
+  "idsite": "2",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getCategoryFromNameId",
+  "idsite": "1",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Events",
+  "method": "getCategoryFromNameId",
+  "idsite": "2",
+  "admin": "PARAM_ERR",
+  "user2": "PARAM_ERR",
+  "user3": "PARAM_ERR"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getItemsSku",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getItemsSku",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getItemsName",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getItemsName",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getItemsCategory",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getItemsCategory",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getConversions",
+  "idsite": "1",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getConversions",
+  "idsite": "2",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getNbVisitsConverted",
+  "idsite": "1",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getNbVisitsConverted",
+  "idsite": "2",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getConversionRate",
+  "idsite": "1",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getConversionRate",
+  "idsite": "2",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getRevenue",
+  "idsite": "1",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getRevenue",
+  "idsite": "2",
+  "admin": "NOT_AVAIL",
+  "user2": "NOT_AVAIL",
+  "user3": "NOT_AVAIL"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getDaysToConversion",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getDaysToConversion",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getVisitsUntilConversion",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Goals",
+  "method": "getVisitsUntilConversion",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctSearchEngines",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctSearchEngines",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctSocialNetworks",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctSocialNetworks",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctKeywords",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctKeywords",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctCampaigns",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctCampaigns",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctWebsites",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctWebsites",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctAIAssistants",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctAIAssistants",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctWebsitesUrls",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Referrers",
+  "method": "getNumberOfDistinctWebsitesUrls",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Resolution",
+  "method": "getConfiguration",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Resolution",
+  "method": "getConfiguration",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Transitions",
+  "method": "getTransitionsForPageTitle",
+  "idsite": "1",
+  "admin": "ERR:NoDataForAction",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Transitions",
+  "method": "getTransitionsForPageTitle",
+  "idsite": "2",
+  "admin": "ERR:NoDataForAction",
+  "user2": "ERR:NoDataForAction",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Transitions",
+  "method": "getTransitionsForPageUrl",
+  "idsite": "1",
+  "admin": "ERR:NoDataForAction",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "Transitions",
+  "method": "getTransitionsForPageUrl",
+  "idsite": "2",
+  "admin": "ERR:NoDataForAction",
+  "user2": "ERR:NoDataForAction",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserCountry",
+  "method": "getCountry",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserCountry",
+  "method": "getCountry",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserCountry",
+  "method": "getContinent",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserCountry",
+  "method": "getContinent",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserCountry",
+  "method": "getRegion",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserCountry",
+  "method": "getRegion",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserCountry",
+  "method": "getCity",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserCountry",
+  "method": "getCity",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserLanguage",
+  "method": "getLanguage",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserLanguage",
+  "method": "getLanguage",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserLanguage",
+  "method": "getLanguageCode",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "UserLanguage",
+  "method": "getLanguageCode",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitorInterest",
+  "method": "getNumberOfVisitsPerVisitDuration",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitorInterest",
+  "method": "getNumberOfVisitsPerVisitDuration",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitorInterest",
+  "method": "getNumberOfVisitsPerPage",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitorInterest",
+  "method": "getNumberOfVisitsPerPage",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitorInterest",
+  "method": "getNumberOfVisitsByDaysSinceLast",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitorInterest",
+  "method": "getNumberOfVisitsByDaysSinceLast",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitorInterest",
+  "method": "getNumberOfVisitsByVisitCount",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitorInterest",
+  "method": "getNumberOfVisitsByVisitCount",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getVisits",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getVisits",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getUniqueVisitors",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getUniqueVisitors",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getUsers",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getUsers",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getActions",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getActions",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getMaxActions",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getMaxActions",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getBounceCount",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getBounceCount",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getVisitsConverted",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getVisitsConverted",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getSumVisitsLength",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getSumVisitsLength",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getSumVisitsLengthPretty",
+  "idsite": "1",
+  "admin": "DATA-val",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitsSummary",
+  "method": "getSumVisitsLengthPretty",
+  "idsite": "2",
+  "admin": "DATA-val",
+  "user2": "DATA-val",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitTime",
+  "method": "getVisitInformationPerLocalTime",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitTime",
+  "method": "getVisitInformationPerLocalTime",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitTime",
+  "method": "getVisitInformationPerServerTime",
+  "idsite": "1",
+  "admin": "DATA-list",
+  "user2": "DENIED-view",
+  "user3": "DENIED-view"
+ },
+ {
+  "plugin": "VisitTime",
+  "method": "getVisitInformationPerServerTime",
+  "idsite": "2",
+  "admin": "DATA-list",
+  "user2": "DATA-list",
+  "user3": "DENIED-view"
+ }
+]

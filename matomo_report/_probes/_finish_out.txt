@@ -1,0 +1,4 @@
+warm setupSuperUser 200 module=Installation&action=finished
+GET trackingCode 200 204527 module=Installation&action=trackingCode&site_idSite=1&site_n
+GET finished 200 194384 http://127.0.0.1:8080/index.php?module=Installation&action=finished
+config [General]: ; <?php exit; ?> DO NOT REMOVE THIS LINE | ; file automatically generated or modified by Matomo; you can manually override the default values in global.ini.php by redefining them in this file. | 

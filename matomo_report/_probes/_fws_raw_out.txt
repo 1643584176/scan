@@ -1,0 +1,9 @@
+REDIRECT 302 -> http://127.0.0.1:8080/index.php?module=Installation&action=firstWebsiteSetup
+GET setupSuperUser 302 0
+GET firstWebsiteSetup 200 220213
+action: ?module=Installation&amp;action=firstWebsiteSetup
+submit value: None
+tz opts count 474 first: ['No timezone', 'Africa/Algiers', 'Africa/Luanda'] has UTC: True
+REDIRECT 302 -> http://127.0.0.1:8080/index.php?module=Installation&action=trackingCode&site_idSite=1&site_name=Local+Test+Site
+POST -> 302 0
+Location: index.php?module=Installation&action=trackingCode&site_idSite=1&site_name=Local+Test+Site

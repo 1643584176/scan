@@ -1,0 +1,104 @@
+log start offset: 9516194
+--- admin VisitsSummary.getVisits {'idSite': '1'} -> 200
+--- user3 VisitsSummary.getVisits {'idSite': '1'} -> 401
+--- user2 VisitsSummary.getVisits {'idSite': '1'} -> 401
+--- user2 VisitsSummary.getVisits {'idSite': '2'} -> 200
+--- user3 Events.getAction {'idSite': '2'} -> 401
+--- user2 Events.getAction {'idSite': '2'} -> 200
+================================================================================
+SQL statements executed (tail 36221 bytes):
+260906 14:28:00	  1015 Connect	matomo@localhost on matomo using TCP/IP
+		  1015 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		  1015 Query	SET sql_mode = "NO_AUTO_VALUE_ON_ZERO"
+		  1015 Prepare	SELECT DATABASE()
+		  1015 Execute	SELECT DATABASE()
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT option_value, option_name FROM `matomo_option` WHERE autoload = 1
+		  1015 Execute	SELECT option_value, option_name FROM `matomo_option` WHERE autoload = 1
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT option_value FROM `matomo_option` WHERE option_name = ?
+		  1015 Execute	SELECT option_value FROM `matomo_option` WHERE option_name = 'TestingIfDatabaseConnectionWorked'
+		  1015 Reset stmt	
+260906 14:28:01	  1015 Close stmt	
+		  1015 Prepare	SELECT * FROM matomo_user WHERE login = ?
+		  1015 Execute	SELECT * FROM matomo_user WHERE login = 'anonymous'
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT * FROM matomo_user_token_auth WHERE `password` = ?
+		  1015 Execute	SELECT * FROM matomo_user_token_auth WHERE `password` = '740ee18e33f46f1fd8f38635cbee292509dfb1948e40b0096376e12fbd899a6ec634f812458b0715e4800a89a8b7bd18747b26d5ad0c4b38080ee760a0bc7e31'
+		  1015 Close stmt	
+		  1015 Prepare	SELECT access, t2.idsite FROM `matomo_access` as t1
+				JOIN `matomo_site` as t2 USING (idsite) WHERE login = ?
+		  1015 Execute	SELECT access, t2.idsite FROM `matomo_access` as t1
+				JOIN `matomo_site` as t2 USING (idsite) WHERE login = 'anonymous'
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT `setting_name`, `setting_value`, `json_encoded` FROM `matomo_plugin_setting` WHERE plugin_name = ? and user_login = ?
+		  1015 Execute	SELECT `setting_name`, `setting_value`, `json_encoded` FROM `matomo_plugin_setting` WHERE plugin_name = 'Login' and user_login = ''
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT count(*) as numLogins FROM `matomo_brute_force_log` WHERE ip_address = ? AND attempted_at > ?
+		  1015 Execute	SELECT count(*) as numLogins FROM `matomo_brute_force_log` WHERE ip_address = '127.0.0.1' AND attempted_at > '2026-09-06 05:28:01'
+		  1015 Close stmt	
+		  1015 Prepare	SELECT * FROM matomo_user_token_auth WHERE `password` = ? AND  (date_expired is null or date_expired > ?) AND secure_only = 0
+		  1015 Execute	SELECT * FROM matomo_user_token_auth WHERE `password` = '712cd6b6118f4d1879a6bea576ae1b59c22907a5863bc733218a3b573f58744889c18ed344380362938710d22d098be267ac5c1e3df5b529e234d06b7867fc19' AND  (date_expired is null or date_expired > '2026-09-06 06:28:01') AND secure_only = 0
+		  1015 Close stmt	
+		  1015 Prepare	SELECT * FROM matomo_user WHERE `login` = ?
+		  1015 Execute	SELECT * FROM matomo_user WHERE `login` = 'admin'
+		  1015 Close stmt	
+		  1015 Prepare	SELECT * FROM matomo_user_token_auth WHERE `password` = ?
+		  1015 Execute	SELECT * FROM matomo_user_token_auth WHERE `password` = '712cd6b6118f4d1879a6bea576ae1b59c22907a5863bc733218a3b573f58744889c18ed344380362938710d22d098be267ac5c1e3df5b529e234d06b7867fc19'
+		  1015 Close stmt	
+		  1015 Prepare	SELECT language FROM matomo_user_language WHERE login = ?
+		  1015 Execute	SELECT language FROM matomo_user_language WHERE login = 'admin'
+		  1015 Reset stmt	
+260906 14:28:02	  1015 Close stmt	
+		  1015 Prepare	SELECT language FROM matomo_user_language WHERE login = ?
+		  1015 Execute	SELECT language FROM matomo_user_language WHERE login = 'admin'
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT option_name, option_value FROM `matomo_option` WHERE option_name LIKE ?
+		  1015 Execute	SELECT option_name, option_value FROM `matomo_option` WHERE option_name LIKE 'Marketplace.PluginTrialRequest.%'
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT * FROM matomo_site
+                               WHERE idsite = ?
+		  1015 Execute	SELECT * FROM matomo_site
+                               WHERE idsite = '1'
+260906 14:28:03	  1015 Close stmt	
+		  1015 Prepare	SELECT option_value FROM `matomo_option` WHERE option_name = ?
+		  1015 Execute	SELECT option_value FROM `matomo_option` WHERE option_name = 'enableBrowserTriggerArchiving'
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SET SESSION group_concat_max_len=131072
+		  1015 Execute	SET SESSION group_concat_max_len=131072
+		  1015 Close stmt	
+		  1015 Prepare	SHOW TABLES LIKE 'matomo_archive_numeric%'
+		  1015 Execute	SHOW TABLES LIKE 'matomo_archive_numeric%'
+260906 14:28:04	  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SHOW TABLES LIKE 'matomo_archive_blob%'
+		  1015 Execute	SHOW TABLES LIKE 'matomo_archive_blob%'
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT idsite, date1, date2,
+                                    GROUP_CONCAT(CONCAT(idarchive,'|',`name`,'|',`value`) ORDER BY idarchive DESC SEPARATOR ',') AS archives
+                               FROM `matomo_archive_numeric_2026_09`
+                              WHERE idsite IN (1)
+                                AND ((name IN ('done','done.VisitsSummary')) AND (value IN (1,3,4,5)))
+                                AND ((period = ? AND date1 = ? AND date2 = ?))
+                           GROUP BY idsite, date1, date2
+		  1015 Execute	SELECT idsite, date1, date2,
+                                    GROUP_CONCAT(CONCAT(idarchive,'|',`name`,'|',`value`) ORDER BY idarchive DESC SEPARATOR ',') AS archives
+                               FROM `matomo_archive_numeric_2026_09`
+                              WHERE idsite IN (1)
+                                AND ((name IN ('done','done.VisitsSummary')) AND (value IN (1,3,4,5)))
+                                AND ((period = '1' AND date1 = '2026-09-06' AND date2 = '2026-09-06'))
+                           GROUP BY idsite, date1, date2
+		  1015 Reset stmt	
+		  1015 Close stmt	
+		  1015 Prepare	SELECT value, name, idsite, date1, date2, ts_archived
+                                FROM `matomo_archive_numeric_2026_09`
+                              

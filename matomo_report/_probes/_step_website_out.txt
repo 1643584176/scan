@@ -1,0 +1,3 @@
+GET firstWebsiteSetup 200 220213 -> module=Installation&action=firstWebsiteSetup
+POST firstWebsiteSetup -> 200 190936 URL: module=Installation&amp;action=firstWebsiteSetup
+current step: firstWebsiteSetup

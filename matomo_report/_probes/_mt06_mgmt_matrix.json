@@ -1,0 +1,819 @@
+[
+ {
+  "plugin": "API",
+  "method": "getBulkRequest",
+  "kind": "read",
+  "required": [
+   "urls"
+  ],
+  "admin": "DATA",
+  "admin_body": "[]",
+  "user2": "DATA",
+  "user2_body": "[]",
+  "user3": "DATA",
+  "user3_body": "[]"
+ },
+ {
+  "plugin": "API",
+  "method": "getGlossaryMetrics",
+  "kind": "read",
+  "required": [
+   "idSite"
+  ],
+  "admin": "DATA",
+  "admin_body": "[{\"name\":\"5XX Requests\",\"id\":\"server_error_5xx_requests\",\"documentation\":\"Number of bot requests that returned an HTTP 5xx (server error) response.\"},{\"name\":\"AI Chatbot Requests\",\"id\":\"ai_chatbot_requests\",\"documentatio",
+  "user2": "ACCESS_DENIED",
+  "user2_body": "{\"result\":\"error\",\"message\":\"You can't access this resource as it requires 'view' access for the website id = 1.\"}",
+  "user3": "ACCESS_DENIED",
+  "user3_body": "{\"result\":\"error\",\"message\":\"You can't access this resource as it requires 'view' access for the website id = 1.\"}"
+ },
+ {
+  "plugin": "API",
+  "method": "getGlossaryReports",
+  "kind": "read",
+  "required": [
+   "idSite"
+  ],
+  "admin": "DATA",
+  "admin_body": "[{\"name\":\"AI Assistants (Acquisition)\",\"documentation\":\"This report shows which AI assistants led visitors to your website.<br \\/>By clicking on a row in the table, you can see from which AI assistant pages visitors came",
+  "user2": "ACCESS_DENIED",
+  "user2_body": "{\"result\":\"error\",\"message\":\"You can't access this resource as it requires 'view' access for the website id = 1.\"}",
+  "user3": "ACCESS_DENIED",
+  "user3_body": "{\"result\":\"error\",\"message\":\"You can't access this resource as it requires 'view' access for the website id = 1.\"}"
+ },
+ {
+  "plugin": "API",
+  "method": "getPagesComparisonsDisabledFor",
+  "kind": "read",
+  "required": [],
+  "admin": "DATA",
+  "admin_body": "[\"General_Actions.Transitions_Transitions\",\"MultiSites.index\",\"Referrers_Referrers.Referrers_URLCampaignBuilder\",\"General_Visitors.UserCountryMap_RealTimeMap\",\"General_Visitors.Live_VisitorLog\",\"General_Visitors.General_",
+  "user2": "DATA",
+  "user2_body": "[\"General_Actions.Transitions_Transitions\",\"MultiSites.index\",\"Referrers_Referrers.Referrers_URLCampaignBuilder\",\"General_Visitors.UserCountryMap_RealTimeMap\",\"General_Visitors.Live_VisitorLog\",\"General_Visitors.General_",
+  "user3": "DATA",
+  "user3_body": "[\"General_Actions.Transitions_Transitions\",\"MultiSites.index\",\"Referrers_Referrers.Referrers_URLCampaignBuilder\",\"General_Visitors.UserCountryMap_RealTimeMap\",\"General_Visitors.Live_VisitorLog\",\"General_Visitors.General_"
+ },
+ {
+  "plugin": "API",
+  "method": "getSettings",
+  "kind": "read",
+  "required": [],
+  "admin": "DATA",
+  "admin_body": "{\"SDK_batch_size\":10,\"SDK_interval_value\":30}",
+  "user2": "DATA",
+  "user2_body": "{\"SDK_batch_size\":10,\"SDK_interval_value\":30}",
+  "user3": "DATA",
+  "user3_body": "{\"SDK_batch_size\":10,\"SDK_interval_value\":30}"
+ },
+ {
+  "plugin": "API",
+  "method": "registerEvents",
+  "kind": "read",
+  "required": [],
+  "admin": "NOT_AVAILABLE",
+  "admin_body": "",
+  "user2": "NOT_AVAILABLE",
+  "user2_body": "",
+  "user3": "NOT_AVAILABLE",
+  "user3_body": ""
+ },
+ {
+  "plugin": "LanguagesManager",
+  "method": "getAvailableLanguageNames",
+  "kind": "read",
+  "required": [],
+  "admin": "DATA",
+  "admin_body": "[{\"code\":\"am\",\"name\":\"\\u12a0\\u121b\\u122d\\u129b\",\"english_name\":\"Amharic\"},{\"code\":\"ar\",\"name\":\"\\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629\",\"english_name\":\"Arabic\"},{\"code\":\"be\",\"name\":\"\\u0411\\u0435\\u043b\\u0430\\u0440\\u044",
+  "user2": "DATA",
+  "user2_body": "[{\"code\":\"am\",\"name\":\"\\u12a0\\u121b\\u122d\\u129b\",\"english_name\":\"Amharic\"},{\"code\":\"ar\",\"name\":\"\\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629\",\"english_name\":\"Arabic\"},{\"code\":\"be\",\"name\":\"\\u0411\\u0435\\u043b\\u0430\\u0440\\u044",
+  "user3": "DATA",
+  "user3_body": "[{\"code\":\"am\",\"name\":\"\\u12a0\\u121b\\u122d\\u129b\",\"english_name\":\"Amharic\"},{\"code\":\"ar\",\"name\":\"\\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629\",\"english_name\":\"Arabic\"},{\"code\":\"be\",\"name\":\"\\u0411\\u0435\\u043b\\u0430\\u0440\\u044"
+ },
+ {
+  "plugin": "LanguagesManager",
+  "method": "getAvailableLanguages",
+  "kind": "read",
+  "required": [],
+  "admin": "DATA",
+  "admin_body": "[\"am\",\"ar\",\"be\",\"bg\",\"bn\",\"bs\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"el\",\"en\",\"eo\",\"es-ar\",\"es\",\"et\",\"eu\",\"fa\",\"fi\",\"fr\",\"gl\",\"gu\",\"he\",\"hi\",\"hr\",\"hu\",\"id\",\"is\",\"it\",\"ja\",\"ka\",\"ko\",\"ku\",\"lt\",\"lv\",\"nb\",\"nl\",\"nn\",\"pl\",\"pt-br\",\"pt\",\"ro",
+  "user2": "DATA",
+  "user2_body": "[\"am\",\"ar\",\"be\",\"bg\",\"bn\",\"bs\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"el\",\"en\",\"eo\",\"es-ar\",\"es\",\"et\",\"eu\",\"fa\",\"fi\",\"fr\",\"gl\",\"gu\",\"he\",\"hi\",\"hr\",\"hu\",\"id\",\"is\",\"it\",\"ja\",\"ka\",\"ko\",\"ku\",\"lt\",\"lv\",\"nb\",\"nl\",\"nn\",\"pl\",\"pt-br\",\"pt\",\"ro",
+  "user3": "DATA",
+  "user3_body": "[\"am\",\"ar\",\"be\",\"bg\",\"bn\",\"bs\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"el\",\"en\",\"eo\",\"es-ar\",\"es\",\"et\",\"eu\",\"fa\",\"fi\",\"fr\",\"gl\",\"gu\",\"he\",\"hi\",\"hr\",\"hu\",\"id\",\"is\",\"it\",\"ja\",\"ka\",\"ko\",\"ku\",\"lt\",\"lv\",\"nb\",\"nl\",\"nn\",\"pl\",\"pt-br\",\"pt\",\"ro"
+ },
+ {
+  "plugin": "LanguagesManager",
+  "method": "getAvailableLanguagesInfo",
+  "kind": "read",
+  "required": [],
+  "admin": "DATA",
+  "admin_body": "[{\"code\":\"am\",\"name\":\"\\u12a0\\u121b\\u122d\\u129b\",\"english_name\":\"Amharic\",\"translators\":\"Alazar Tekle \\/ Ethiopia Map\",\"percentage_complete\":\"20%\"},{\"code\":\"ar\",\"name\":\"\\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629\",\"english",
+  "user2": "DATA",
+  "user2_body": "[{\"code\":\"am\",\"name\":\"\\u12a0\\u121b\\u122d\\u129b\",\"english_name\":\"Amharic\",\"translators\":\"Alazar Tekle \\/ Ethiopia Map\",\"percentage_complete\":\"20%\"},{\"code\":\"ar\",\"name\":\"\\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629\",\"english",
+  "user3": "DATA",
+  "user3_body": "[{\"code\":\"am\",\"name\":\"\\u12a0\\u121b\\u122d\\u129b\",\"english_name\":\"Amharic\",\"translators\":\"Alazar Tekle \\/ Ethiopia Map\",\"percentage_complete\":\"20%\"},{\"code\":\"ar\",\"name\":\"\\u0627\\u0644\\u0639\\u0631\\u0628\\u064a\\u0629\",\"english"
+ },
+ {
+  "plugin": "LanguagesManager",
+  "method": "getPluginTranslationsForLanguage",
+  "kind": "read",
+  "required": [
+   "pluginName",
+   "languageCode"
+  ],
+  "admin": "NOT_AVAILABLE",
+  "admin_body": "",
+  "user2": "NOT_AVAILABLE",
+  "user2_body": "",
+  "user3": "NOT_AVAILABLE",
+  "user3_body": ""
+ },
+ {
+  "plugin": "LanguagesManager",
+  "method": "getTranslationsForLanguage",
+  "kind": "read",
+  "required": [
+   "languageCode"
+  ],
+  "admin": "DATA",
+  "admin_body": "[{\"label\":\"General_12HourClock\",\"value\":\"12-hour clock\"},{\"label\":\"General_24HourClock\",\"value\":\"24-hour clock\"},{\"label\":\"General_AIAssistants\",\"value\":\"AI Assistants\"},{\"label\":\"General_API\",\"value\":\"API\"},{\"label\":\"Ge",
+  "user2": "DATA",
+  "user2_body": "[{\"label\":\"General_12HourClock\",\"value\":\"12-hour clock\"},{\"label\":\"General_24HourClock\",\"value\":\"24-hour clock\"},{\"label\":\"General_AIAssistants\",\"value\":\"AI Assistants\"},{\"label\":\"General_API\",\"value\":\"API\"},{\"label\":\"Ge",
+  "user3": "DATA",
+  "user3_body": "[{\"label\":\"General_12HourClock\",\"value\":\"12-hour clock\"},{\"label\":\"General_24HourClock\",\"value\":\"24-hour clock\"},{\"label\":\"General_AIAssistants\",\"value\":\"AI Assistants\"},{\"label\":\"General_API\",\"value\":\"API\"},{\"label\":\"Ge"
+ },
+ {
+  "plugin": "LanguagesManager",
+  "method": "isLanguageAvailable",
+  "kind": "read",
+  "required": [
+   "languageCode"
+  ],
+  "admin": "DATA",
+  "admin_body": "{\"value\":true}",
+  "user2": "DATA",
+  "user2_body": "{\"value\":true}",
+  "user3": "DATA",
+  "user3_body": "{\"value\":true}"
+ },
+ {
+  "plugin": "MobileMessaging",
+  "method": "getCreditLeft",
+  "kind": "read",
+  "required": [],
+  "admin": "ERR:Provider name '' unknown. Try any of the following instead: ASPSMS.",
+  "admin_body": "{\"result\":\"error\",\"message\":\"Provider name '' unknown. Try any of the following instead: ASPSMS.\"}",
+  "user2": "ACCESS_DENIED",
+  "user2_body": "{\"result\":\"error\",\"message\":\"You can't access this resource as it requires a 'superuser' access.\"}",
+  "user3": "ACCESS_DENIED",
+  "user3_body": "{\"result\":\"error\",\"message\":\"You can't access this resource as it requires view access for at least one website.\"}"
+ },
+ {
+  "plugin": "Overlay",
+  "method": "getExcludedQueryParameters",
+  "kind": "read",
+  "required": [
+   "idSite"
+  ],
+  "admin": "DATA",
+  "admin_body": "[]",
+  "user2": "ACCESS_DENIED",
+  "user2_body": "{\"result\":\"error\",\"message\":\"You can't access this resource as it requires 'view' access for the website id = 1.\"}",
+  "user3": "ACCESS_DENIED",
+  "user3_body": "{\"result\":\"error\",\"message\":\"You can't access this resource as it requires 'view' access for the website id = 1.\"}"
+ },
+ {
+  "plugin": "Overlay",
+  "method": "getFollowingPages",
+  "kind": "read",
+  "required": [
+   "url",
+   "idSite",
+   "period",
+   "date"
+  ],
+  "admin": "DATA",
+  "admin_body": "[]",
+  "user2": "DATA",
+  "user2_body": "[]",
+  "user3": "DATA",
+  "user3_body": "[]"
+ },
+ {
+  "plugin": "Overlay",
+  "method": "getTranslations",
+  "kind": "read",
+  "required": [],
+  "admin": "DATA",
+  "admin_body": "{\"oneClick\":\"1 click\",\"clicks\":\"%s clicks\",\"clicksFromXLinks\":\"%1$s clicks from one of %2$s links\",\"link\":\"Link\"}",
+  "user2": "DATA",
+  "user2_body": "{\"oneClick\":\"1 click\",\"clicks\":\"%s clicks\",\"clicksFromXLinks\":\"%1$s clicks from one of %2$s links\",\"link\":\"Link\"}",
+  "user3": "DATA",
+  "user3_body": "{\"oneClick\":\"1 click\",\"clicks\":\"%s clicks\",\"clicksFromXLinks\":\"%1$s clicks from one of %2$s links\",\"link\":\"Link\"}"
+ },
+ {
+  "plugin": "SitesManager",
+  "method": "getIpsForRange",
+  "kind": "read",
+  "required": [
+   "ipRange"
+  ],
+  "admin": "DATA",
+  "admin_body": "[\"127.0.0.1\",\"127.0.0.1\"]",
+  "user2": "DATA",
+  "user2_body": "[\"127.0.0.1\",\"127.0.0.1\"]",
+  "user3": "DATA",
+  "user3_body": "[\"127.0.0.1\",\"127.0.0.1\"]"
+ },
+ {
+  "plugin": "TagManager",
+  "method": "addContainer",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "context",
+   "name",
+   "actively"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "addContainerTag",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "type",
+   "name"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "addContainerTrigger",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "type",
+   "name"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "addContainerVariable",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "type",
+   "name",
+   "d"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "changeDebugUrl",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "url"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "createDefaultContainerForSite",
+  "kind": "WRITE",
+  "required": [
+   "idSite"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "deleteContainer",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "deleteContainerTag",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTag"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "deleteContainerTrigger",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTrigger"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "deleteContainerVariable",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idVariable"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "deleteContainerVersion",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "disablePreviewMode",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "enablePreviewMode",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "exportContainerVersion",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getAvailableContainerVariables",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainer",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerEmbedCode",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "environment"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerInstallInstructions",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "environment"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerTag",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTag"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerTags",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerTrigger",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTrigger"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerTriggerReferences",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTrigger"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerTriggers",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerVariable",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idVariable"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerVariableReferences",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idVariable"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerVariables",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerVersion",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainerVersions",
+  "kind": "read",
+  "required": [
+   "idSite",
+   "idContainer"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "getContainers",
+  "kind": "read",
+  "required": [
+   "idSite"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "pauseContainerTag",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTag"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "resumeContainerTag",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTag"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "updateContainer",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "name",
+   "acti"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "updateContainerTag",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTag",
+   "name"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "updateContainerTrigger",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idTrigger",
+   "name"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "TagManager",
+  "method": "updateContainerVariable",
+  "kind": "WRITE",
+  "required": [
+   "idSite",
+   "idContainer",
+   "idContainerVersion",
+   "idVariable",
+   "name"
+  ],
+  "admin": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "admin_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user2": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user2_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins ",
+  "user3": "ERR:The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins",
+  "user3_body": "{\"result\":\"error\",\"message\":\"The plugin TagManager is not enabled. You can activate the plugin on Settings &gt; Plugins "
+ },
+ {
+  "plugin": "UsersManager",
+  "method": "createAppSpecificTokenAuth",
+  "kind": "WRITE",
+  "required": [
+   "userLogin",
+   "passwordConfirmation",
+   "description",
+   "expir"
+  ],
+  "admin": "PARAM_ERR",
+  "admin_body": "",
+  "user2": "PARAM_ERR",
+  "user2_body": "",
+  "user3": "PARAM_ERR",
+  "user3_body": ""
+ }
+]

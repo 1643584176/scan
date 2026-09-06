@@ -1,0 +1,208 @@
+AI GET    /ai_agent_default                                                      | Get AI agent default configuration | mode,language,model
+AI POST   /ai/ask                                                                | Ask question | 
+AI POST   /ai/extract                                                            | Extract metadata (freeform) | 
+AI POST   /ai/extract_structured                                                 | Extract metadata (structured) | 
+AI POST   /ai/text_gen                                                           | Generate text | 
+AI Studio DELETE /ai_agents/{agent_id}                                                  | Delete AI agent | agent_id
+AI Studio GET    /ai_agents                                                             | List AI agents | mode,fields,agent_state,include_box_default,marker,limit
+AI Studio GET    /ai_agents/{agent_id}                                                  | Get AI agent by agent ID | agent_id,fields
+AI Studio POST   /ai_agents                                                             | Create AI agent | 
+AI Studio PUT    /ai_agents/{agent_id}                                                  | Update AI agent | agent_id
+Box Sign requests GET    /sign_requests                                                         | List Box Sign requests | marker,limit,senders,shared_requests
+Box Sign requests GET    /sign_requests/{sign_request_id}                                       | Get Box Sign request by ID | sign_request_id
+Box Sign requests POST   /sign_requests                                                         | Create Box Sign request | 
+Box Sign requests POST   /sign_requests/{sign_request_id}/cancel                                | Cancel Box Sign request | sign_request_id
+Box Sign requests POST   /sign_requests/{sign_request_id}/resend                                | Resend Box Sign request | sign_request_id
+Box Sign templates GET    /sign_templates                                                        | List Box Sign templates | marker,limit
+Box Sign templates GET    /sign_templates/{template_id}                                          | Get Box Sign template by ID | template_id
+Classifications GET    /metadata_templates/enterprise/securityClassification-6VMVochwUWo/schema | List all classifications | 
+Classifications POST   /metadata_templates/schema#classifications                             | Add initial classifications | 
+Classifications PUT    /metadata_templates/enterprise/securityClassification-6VMVochwUWo/schema#add | Add classification | 
+Classifications PUT    /metadata_templates/enterprise/securityClassification-6VMVochwUWo/schema#update | Update classification | 
+Classifications on DELETE /files/{file_id}/metadata/enterprise/securityClassification-6VMVochwUWo | Remove classification from file | file_id
+Classifications on DELETE /folders/{folder_id}/metadata/enterprise/securityClassification-6VMVochwUWo | Remove classification from folder | folder_id
+Classifications on GET    /files/{file_id}/metadata/enterprise/securityClassification-6VMVochwUWo | Get classification on file | file_id
+Classifications on GET    /folders/{folder_id}/metadata/enterprise/securityClassification-6VMVochwUWo | Get classification on folder | folder_id
+Classifications on POST   /files/{file_id}/metadata/enterprise/securityClassification-6VMVochwUWo | Add classification to file | file_id
+Classifications on POST   /folders/{folder_id}/metadata/enterprise/securityClassification-6VMVochwUWo | Add classification to folder | folder_id
+Classifications on PUT    /files/{file_id}/metadata/enterprise/securityClassification-6VMVochwUWo | Update classification on file | file_id
+Classifications on PUT    /folders/{folder_id}/metadata/enterprise/securityClassification-6VMVochwUWo | Update classification on folder | folder_id
+Collaborations (Li GET    /collaborations                                                        | List pending collaborations | status,fields,offset,limit
+Collaborations (Li GET    /files/{file_id}/collaborations                                        | List file collaborations | file_id,fields,limit,marker
+Collaborations (Li GET    /folders/{folder_id}/collaborations                                    | List folder collaborations | folder_id,fields,limit,marker
+Collaborations (Li GET    /groups/{group_id}/collaborations                                      | List group collaborations | group_id,limit,offset
+Collaborations DELETE /collaborations/{collaboration_id}                                     | Remove collaboration | collaboration_id
+Collaborations GET    /collaborations/{collaboration_id}                                     | Get collaboration | collaboration_id,fields
+Collaborations POST   /collaborations                                                        | Create collaboration | fields,notify
+Collaborations PUT    /collaborations/{collaboration_id}                                     | Update collaboration | collaboration_id
+Comments DELETE /comments/{comment_id}                                                 | Remove comment | comment_id
+Comments GET    /comments/{comment_id}                                                 | Get comment | comment_id,fields
+Comments GET    /files/{file_id}/comments                                              | List file comments | file_id,fields,limit,offset
+Comments POST   /comments                                                              | Create comment | fields
+Comments PUT    /comments/{comment_id}                                                 | Update comment | comment_id,fields
+Device pinners DELETE /device_pinners/{device_pinner_id}                                     | Remove device pin | device_pinner_id
+Device pinners GET    /device_pinners/{device_pinner_id}                                     | Get device pin | device_pinner_id
+Device pinners GET    /enterprises/{enterprise_id}/device_pinners                            | List enterprise device pins | enterprise_id,marker,limit,direction
+Domain restriction DELETE /collaboration_whitelist_entries/{collaboration_whitelist_entry_id}    | Remove domain from list of allowed collaboration domains | collaboration_whitelist_entry_id
+Domain restriction DELETE /collaboration_whitelist_exempt_targets/{collaboration_whitelist_exempt_target_id} | Remove user from list of users exempt from domain restrictions | collaboration_whitelist_exempt_target_id
+Domain restriction GET    /collaboration_whitelist_entries                                       | List allowed collaboration domains | marker,limit
+Domain restriction GET    /collaboration_whitelist_entries/{collaboration_whitelist_entry_id}    | Get allowed collaboration domain | collaboration_whitelist_entry_id
+Domain restriction GET    /collaboration_whitelist_exempt_targets                                | List users exempt from collaboration domain restrictions | marker,limit
+Domain restriction GET    /collaboration_whitelist_exempt_targets/{collaboration_whitelist_exempt_target_id} | Get user exempt from collaboration domain restrictions | collaboration_whitelist_exempt_target_id
+Domain restriction POST   /collaboration_whitelist_entries                                       | Add domain to list of allowed collaboration domains | 
+Domain restriction POST   /collaboration_whitelist_exempt_targets                                | Create user exemption from collaboration domain restrictions | 
+Email aliases DELETE /users/{user_id}/email_aliases/{email_alias_id}                        | Remove email alias | user_id,email_alias_id
+Email aliases GET    /users/{user_id}/email_aliases                                         | List user's email aliases | user_id
+Email aliases POST   /users/{user_id}/email_aliases                                         | Create email alias | user_id
+Events GET    /events                                                                | List user and enterprise events | stream_type,stream_position,limit,event_type,created_after,created_before
+Events OPTIONS /events                                                                | Get events long poll endpoint | 
+File version reten GET    /file_version_retentions                                               | List file version retentions | file_id,file_version_id,policy_id,disposition_action,disposition_before,disposition_after,limit,marker
+File version reten GET    /file_version_retentions/{file_version_retention_id}                   | Get retention on file | file_version_retention_id
+Files GET    /files/{file_id}/thumbnail.{extension}                                 | Get file thumbnail | file_id,extension,min_height,min_width,max_height,max_width
+Group memberships DELETE /group_memberships/{group_membership_id}                               | Remove user from group | group_membership_id
+Group memberships GET    /group_memberships/{group_membership_id}                               | Get group membership | group_membership_id,fields
+Group memberships GET    /groups/{group_id}/memberships                                         | List members of group | group_id,limit,offset
+Group memberships GET    /users/{user_id}/memberships                                           | List user's groups | user_id,limit,offset
+Group memberships POST   /group_memberships                                                     | Add user to group | fields
+Group memberships PUT    /group_memberships/{group_membership_id}                               | Update group membership | group_membership_id,fields
+Groups DELETE /groups/{group_id}                                                     | Remove group | group_id
+Groups GET    /groups                                                                | List groups for enterprise | filter_term,fields,limit,offset
+Groups GET    /groups/{group_id}                                                     | Get group | group_id,fields
+Groups POST   /groups                                                                | Create group | fields
+Groups PUT    /groups/{group_id}                                                     | Update group | group_id,fields
+Legal hold policy  DELETE /legal_hold_policy_assignments/{legal_hold_policy_assignment_id}       | Unassign legal hold policy | legal_hold_policy_assignment_id
+Legal hold policy  GET    /legal_hold_policy_assignments                                         | List legal hold policy assignments | policy_id,assign_to_type,assign_to_id,marker,limit,fields
+Legal hold policy  GET    /legal_hold_policy_assignments/{legal_hold_policy_assignment_id}       | Get legal hold policy assignment | legal_hold_policy_assignment_id
+Legal hold policy  GET    /legal_hold_policy_assignments/{legal_hold_policy_assignment_id}/file_versions_on_hold | List previous file versions for legal hold policy assignment | legal_hold_policy_assignment_id,marker,limit,fields
+Legal hold policy  GET    /legal_hold_policy_assignments/{legal_hold_policy_assignment_id}/files_on_hold | List files with current file versions for legal hold policy assignment | legal_hold_policy_assignment_id,marker,limit,fields
+Legal hold policy  POST   /legal_hold_policy_assignments                                         | Assign legal hold policy | 
+Metadata cascade p DELETE /metadata_cascade_policies/{metadata_cascade_policy_id}                | Remove metadata cascade policy | metadata_cascade_policy_id
+Metadata cascade p GET    /metadata_cascade_policies                                             | List metadata cascade policies | folder_id,owner_enterprise_id,marker,offset
+Metadata cascade p GET    /metadata_cascade_policies/{metadata_cascade_policy_id}                | Get metadata cascade policy | metadata_cascade_policy_id
+Metadata cascade p POST   /metadata_cascade_policies                                             | Create metadata cascade policy | 
+Metadata cascade p POST   /metadata_cascade_policies/{metadata_cascade_policy_id}/apply          | Force-apply metadata cascade policy to folder | metadata_cascade_policy_id
+Metadata instances DELETE /files/{file_id}/metadata/{scope}/{template_key}                       | Remove metadata instance from file | file_id,scope,template_key
+Metadata instances DELETE /folders/{folder_id}/metadata/{scope}/{template_key}                   | Remove metadata instance from folder | folder_id,scope,template_key
+Metadata instances GET    /files/{file_id}/metadata                                              | List metadata instances on file | file_id,view
+Metadata instances GET    /files/{file_id}/metadata/{scope}/{template_key}                       | Get metadata instance on file | file_id,scope,template_key,view
+Metadata instances GET    /folders/{folder_id}/metadata                                          | List metadata instances on folder | folder_id,view
+Metadata instances GET    /folders/{folder_id}/metadata/{scope}/{template_key}                   | Get metadata instance on folder | folder_id,scope,template_key
+Metadata instances POST   /files/{file_id}/metadata/{scope}/{template_key}                       | Create metadata instance on file | file_id,scope,template_key
+Metadata instances POST   /folders/{folder_id}/metadata/{scope}/{template_key}                   | Create metadata instance on folder | folder_id,scope,template_key
+Metadata instances PUT    /files/{file_id}/metadata/{scope}/{template_key}                       | Update metadata instance on file | file_id,scope,template_key
+Metadata instances PUT    /folders/{folder_id}/metadata/{scope}/{template_key}                   | Update metadata instance on folder | folder_id,scope,template_key
+Metadata taxonomie DELETE /metadata_taxonomies/{namespace}/{taxonomy_key}                        | Remove metadata taxonomy | namespace,taxonomy_key
+Metadata taxonomie DELETE /metadata_taxonomies/{namespace}/{taxonomy_key}/nodes/{node_id}        | Remove metadata taxonomy node | namespace,taxonomy_key,node_id
+Metadata taxonomie GET    /metadata_taxonomies/{namespace}                                       | Get metadata taxonomies for namespace | namespace,marker,limit
+Metadata taxonomie GET    /metadata_taxonomies/{namespace}/{taxonomy_key}                        | Get metadata taxonomy by taxonomy key | namespace,taxonomy_key
+Metadata taxonomie GET    /metadata_taxonomies/{namespace}/{taxonomy_key}/nodes                  | List metadata taxonomy nodes | namespace,taxonomy_key,level,parent,ancestor,query,include-total-result-count,marker
+Metadata taxonomie GET    /metadata_taxonomies/{namespace}/{taxonomy_key}/nodes/{node_id}        | Get metadata taxonomy node by ID | namespace,taxonomy_key,node_id
+Metadata taxonomie GET    /metadata_templates/{namespace}/{template_key}/fields/{field_key}/options | List metadata template's options for taxonomy field | namespace,template_key,field_key,level,parent,ancestor,query,include-total-result-count
+Metadata taxonomie PATCH  /metadata_taxonomies/{namespace}/{taxonomy_key}                        | Update metadata taxonomy | namespace,taxonomy_key
+Metadata taxonomie PATCH  /metadata_taxonomies/{namespace}/{taxonomy_key}/levels/{level_index}   | Update metadata taxonomy level | namespace,taxonomy_key,level_index
+Metadata taxonomie PATCH  /metadata_taxonomies/{namespace}/{taxonomy_key}/nodes/{node_id}        | Update metadata taxonomy node | namespace,taxonomy_key,node_id
+Metadata taxonomie POST   /metadata_taxonomies                                                   | Create metadata taxonomy | 
+Metadata taxonomie POST   /metadata_taxonomies/{namespace}/{taxonomy_key}/levels                 | Create metadata taxonomy levels | namespace,taxonomy_key
+Metadata taxonomie POST   /metadata_taxonomies/{namespace}/{taxonomy_key}/levels:append          | Add metadata taxonomy level | namespace,taxonomy_key
+Metadata taxonomie POST   /metadata_taxonomies/{namespace}/{taxonomy_key}/levels:trim            | Delete metadata taxonomy level | namespace,taxonomy_key
+Metadata taxonomie POST   /metadata_taxonomies/{namespace}/{taxonomy_key}/nodes                  | Create metadata taxonomy node | namespace,taxonomy_key
+Metadata templates DELETE /metadata_templates/{scope}/{template_key}/schema                      | Remove metadata template | scope,template_key
+Metadata templates GET    /metadata_templates                                                    | Find metadata template by instance ID | metadata_instance_id,marker,limit
+Metadata templates GET    /metadata_templates/enterprise                                         | List all metadata templates for enterprise | marker,limit
+Metadata templates GET    /metadata_templates/global                                             | List all global metadata templates | marker,limit
+Metadata templates GET    /metadata_templates/{scope}/{template_key}/schema                      | Get metadata template by name | scope,template_key
+Metadata templates GET    /metadata_templates/{template_id}                                      | Get metadata template by ID | template_id
+Metadata templates POST   /metadata_templates/schema                                             | Create metadata template | 
+Metadata templates PUT    /metadata_templates/{scope}/{template_key}/schema                      | Update metadata template | scope,template_key
+Retention policies DELETE /retention_policies/{retention_policy_id}                              | Delete retention policy | retention_policy_id
+Retention policies GET    /retention_policies                                                    | List retention policies | policy_name,policy_type,created_by_user_id,fields,limit,marker
+Retention policies GET    /retention_policies/{retention_policy_id}                              | Get retention policy | retention_policy_id,fields
+Retention policies POST   /retention_policies                                                    | Create retention policy | 
+Retention policies PUT    /retention_policies/{retention_policy_id}                              | Update retention policy | retention_policy_id
+Retention policy a DELETE /retention_policy_assignments/{retention_policy_assignment_id}         | Remove retention policy assignment | retention_policy_assignment_id
+Retention policy a GET    /retention_policies/{retention_policy_id}/assignments                  | List retention policy assignments | retention_policy_id,type,fields,marker,limit
+Retention policy a GET    /retention_policy_assignments/{retention_policy_assignment_id}         | Get retention policy assignment | retention_policy_assignment_id,fields
+Retention policy a GET    /retention_policy_assignments/{retention_policy_assignment_id}/file_versions_under_retention | Get file versions under retention | retention_policy_assignment_id,marker,limit
+Retention policy a GET    /retention_policy_assignments/{retention_policy_assignment_id}/files_under_retention | Get files under retention | retention_policy_assignment_id,marker,limit
+Retention policy a POST   /retention_policy_assignments                                          | Assign retention policy | 
+Search GET    /search                                                                | Search for content | query,scope,file_extensions,created_at_range,updated_at_range,size_range,owner_user_ids,recent_updater_user_ids
+Search POST   /metadata_queries/execute_read                                         | Query files/folders by metadata | 
+Session terminatio POST   /groups/terminate_sessions                                             | Create jobs to terminate user group session | 
+Session terminatio POST   /users/terminate_sessions                                              | Create jobs to terminate users session | 
+Shared links (App  GET    /shared_items#app_items                                                | Find app item for shared link | boxapi
+Shared links (File GET    /files/{file_id}#get_shared_link                                       | Get shared link for file | file_id,fields
+Shared links (File GET    /shared_items                                                          | Find file for shared link | if-none-match,fields,boxapi
+Shared links (File PUT    /files/{file_id}#add_shared_link                                       | Add shared link to file | file_id,fields
+Shared links (File PUT    /files/{file_id}#remove_shared_link                                    | Remove shared link from file | file_id,fields
+Shared links (File PUT    /files/{file_id}#update_shared_link                                    | Update shared link on file | file_id,fields
+Shared links (Fold GET    /folders/{folder_id}#get_shared_link                                   | Get shared link for folder | folder_id,fields
+Shared links (Fold GET    /shared_items#folders                                                  | Find folder for shared link | if-none-match,fields,boxapi
+Shared links (Fold PUT    /folders/{folder_id}#add_shared_link                                   | Add shared link to folder | folder_id,fields
+Shared links (Fold PUT    /folders/{folder_id}#remove_shared_link                                | Remove shared link from folder | folder_id,fields
+Shared links (Fold PUT    /folders/{folder_id}#update_shared_link                                | Update shared link on folder | folder_id,fields
+Shared links (Web  GET    /shared_items#web_links                                                | Find web link for shared link | if-none-match,fields,boxapi
+Shared links (Web  GET    /web_links/{web_link_id}#get_shared_link                               | Get shared link for web link | web_link_id,fields
+Shared links (Web  PUT    /web_links/{web_link_id}#add_shared_link                               | Add shared link to web link | web_link_id,fields
+Shared links (Web  PUT    /web_links/{web_link_id}#remove_shared_link                            | Remove shared link from web link | web_link_id,fields
+Shared links (Web  PUT    /web_links/{web_link_id}#update_shared_link                            | Update shared link on web link | web_link_id,fields
+Shield information DELETE /shield_information_barrier_segment_members/{shield_information_barrier_segment_member_id} | Delete shield information barrier segment member by ID | shield_information_barrier_segment_member_id
+Shield information DELETE /shield_information_barrier_segment_restrictions/{shield_information_barrier_segment_restriction_id} | Delete shield information barrier segment restriction by ID | shield_information_barrier_segment_restriction_id
+Shield information DELETE /shield_information_barrier_segments/{shield_information_barrier_segment_id} | Delete shield information barrier segment | shield_information_barrier_segment_id
+Shield information GET    /shield_information_barrier_reports                                    | List shield information barrier reports | shield_information_barrier_id,marker,limit
+Shield information GET    /shield_information_barrier_reports/{shield_information_barrier_report_id} | Get shield information barrier report by ID | shield_information_barrier_report_id
+Shield information GET    /shield_information_barrier_segment_members                            | List shield information barrier segment members | shield_information_barrier_segment_id,marker,limit
+Shield information GET    /shield_information_barrier_segment_members/{shield_information_barrier_segment_member_id} | Get shield information barrier segment member by ID | shield_information_barrier_segment_member_id
+Shield information GET    /shield_information_barrier_segment_restrictions                       | List shield information barrier segment restrictions | shield_information_barrier_segment_id,marker,limit
+Shield information GET    /shield_information_barrier_segment_restrictions/{shield_information_barrier_segment_restriction_id} | Get shield information barrier segment restriction by ID | shield_information_barrier_segment_restriction_id
+Shield information GET    /shield_information_barrier_segments                                   | List shield information barrier segments | shield_information_barrier_id,marker,limit
+Shield information GET    /shield_information_barrier_segments/{shield_information_barrier_segment_id} | Get shield information barrier segment with specified ID | shield_information_barrier_segment_id
+Shield information GET    /shield_information_barriers                                           | List shield information barriers | marker,limit
+Shield information GET    /shield_information_barriers/{shield_information_barrier_id}           | Get shield information barrier with specified ID | shield_information_barrier_id
+Shield information POST   /shield_information_barrier_reports                                    | Create shield information barrier report | 
+Shield information POST   /shield_information_barrier_segment_members                            | Create shield information barrier segment member | 
+Shield information POST   /shield_information_barrier_segment_restrictions                       | Create shield information barrier segment restriction | 
+Shield information POST   /shield_information_barrier_segments                                   | Create shield information barrier segment | 
+Shield information POST   /shield_information_barriers                                           | Create shield information barrier | 
+Shield information POST   /shield_information_barriers/change_status                             | Add changed status of shield information barrier with specified ID | 
+Shield information PUT    /shield_information_barrier_segments/{shield_information_barrier_segment_id} | Update shield information barrier segment with specified ID | shield_information_barrier_segment_id
+Skills DELETE /files/{file_id}/metadata/global/boxSkillsCards                        | Remove Box Skill cards from file | file_id
+Skills GET    /files/{file_id}/metadata/global/boxSkillsCards                        | List Box Skill cards on file | file_id
+Skills POST   /files/{file_id}/metadata/global/boxSkillsCards                        | Create Box Skill cards on file | file_id
+Skills PUT    /files/{file_id}/metadata/global/boxSkillsCards                        | Update Box Skill cards on file | file_id
+Standard and Zones DELETE /storage_policy_assignments/{storage_policy_assignment_id}             | Unassign storage policy | storage_policy_assignment_id
+Standard and Zones GET    /storage_policy_assignments                                            | List storage policy assignments | marker,resolved_for_type,resolved_for_id
+Standard and Zones GET    /storage_policy_assignments/{storage_policy_assignment_id}             | Get storage policy assignment | storage_policy_assignment_id
+Standard and Zones POST   /storage_policy_assignments                                            | Assign storage policy | 
+Standard and Zones PUT    /storage_policy_assignments/{storage_policy_assignment_id}             | Update storage policy assignment | storage_policy_assignment_id
+Task assignments DELETE /task_assignments/{task_assignment_id}                                 | Unassign task | task_assignment_id
+Task assignments GET    /task_assignments/{task_assignment_id}                                 | Get task assignment | task_assignment_id
+Task assignments GET    /tasks/{task_id}/assignments                                           | List task assignments | task_id
+Task assignments POST   /task_assignments                                                      | Assign task | 
+Task assignments PUT    /task_assignments/{task_assignment_id}                                 | Update task assignment | task_assignment_id
+Tasks DELETE /tasks/{task_id}                                                       | Remove task | task_id
+Tasks GET    /files/{file_id}/tasks                                                 | List tasks on file | file_id
+Tasks GET    /tasks/{task_id}                                                       | Get task | task_id
+Tasks POST   /tasks                                                                 | Create task | 
+Tasks PUT    /tasks/{task_id}                                                       | Update task | task_id
+Terms of service u GET    /terms_of_service_user_statuses                                        | List terms of service user statuses | tos_id,user_id
+Terms of service u POST   /terms_of_service_user_statuses                                        | Create terms of service status for new user | 
+Terms of service u PUT    /terms_of_service_user_statuses/{terms_of_service_user_status_id}      | Update terms of service status for existing user | terms_of_service_user_status_id
+Transfer folders PUT    /users/{user_id}/folders/0                                             | Transfer owned folders | user_id,fields,notify
+User avatars DELETE /users/{user_id}/avatar                                                | Delete user avatar | user_id
+User avatars GET    /users/{user_id}/avatar                                                | Get user avatar | user_id
+User avatars POST   /users/{user_id}/avatar                                                | Add or update user avatar | user_id
+Users DELETE /users/{user_id}                                                       | Delete user | user_id,notify,force
+Users GET    /users                                                                 | List enterprise users | filter_term,user_type,external_app_user_id,fields,offset,limit,usemarker,marker
+Users GET    /users/me                                                              | Get current user | fields
+Users GET    /users/{user_id}                                                       | Get user | user_id,fields
+Users POST   /users                                                                 | Create user | fields
+Users PUT    /users/{user_id}                                                       | Update user | user_id,fields
+Watermarks (Files) DELETE /files/{file_id}/watermark                                             | Remove watermark from file | file_id
+Watermarks (Files) GET    /files/{file_id}/watermark                                             | Get watermark on file | file_id
+Watermarks (Files) PUT    /files/{file_id}/watermark                                             | Apply watermark to file | file_id
+Watermarks (Folder DELETE /folders/{folder_id}/watermark                                         | Remove watermark from folder | folder_id
+Watermarks (Folder GET    /folders/{folder_id}/watermark                                         | Get watermark for folder | folder_id
+Watermarks (Folder PUT    /folders/{folder_id}/watermark                                         | Apply watermark to folder | folder_id
+Workflows GET    /workflows                                                             | List workflows | folder_id,trigger_type,limit,marker
+Workflows POST   /workflows/{workflow_id}/start                                         | Starts workflow based on request body | workflow_id
+TOTAL: 207

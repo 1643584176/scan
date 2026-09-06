@@ -1,0 +1,15 @@
+admin getContainers(site1) baseline                     | 200 | [{"idcontainer":"xToJ2fIe","idsite":1,"context":"web","name":"Default Container","description":"This container was auto generated when the website was created.","ignoreGtmDataLayer":0,"activelySyncGtmDataLayer":0,"isTagFireLimitAllowedInPre
+admin addContainer site1                                | 200 | {"value":"ubvlNtbG"}
+idContainer = ubvlNtbG
+user2 getContainer(site1 obj)                           | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user3 getContainer(site1 obj)                           | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user2 addContainer on site1                             | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user3 addContainer on site1                             | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user2 deleteContainer(site1 obj)                        | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user3 deleteContainer(site1 obj)                        | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user2 getContainerVersions(site1 obj)                   | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user3 getContainerVersions(site1 obj)                   | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user2 exportContainerVersion(site1 obj)                 | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user3 exportContainerVersion(site1 obj)                 | 401 | {"result":"error","message":"You can't access this resource as it requires 'view' access for the website id = 1."}
+user2 addContainer on own site2 (view only)             | 401 | {"result":"error","message":"You can't access this resource as it requires 'tagmanager_write' capability for the website id = 2."}
+user2 getContainers site2                               | 200 | []

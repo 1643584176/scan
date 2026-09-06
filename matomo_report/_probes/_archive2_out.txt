@@ -1,0 +1,35 @@
+[33m"force-date-last-n" is deprecated. Please use the "process_new_segments_from" INI configuration option instead.[39m
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m ---------------------------
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m INIT
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m Running Matomo 5.13.0 as Super User
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m ---------------------------
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m NOTES
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m - If you execute this script at least once per hour (or more often) in a crontab, you may disable 'Browser trigger archiving' in Matomo UI > Settings > General Settings.
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m   See the doc at: https://matomo.org/docs/setup-auto-archiving/
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m - Async process archiving not supported, using curl requests.
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m - Reports for today will be processed at most every 900 seconds. You can change this value in Matomo UI > Settings > General Settings.
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m - Archiving was last executed without error 6s ago.
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m - Will process specified sites: 1, 2
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m ---------------------------
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m START
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m Starting Matomo reports archiving...
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m Start processing archives for site 1.
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m   Will invalidate archived reports for today in site ID = 1's timezone (2026-09-06 00:00:00).
+[32mINFO      [2026-09-06 04:55:01] 10620 [39m   Will invalidate archived reports for yesterday in site ID = 1's timezone (2026-09-05 00:00:00).
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m Finished archiving for site 1, 0 API requests, Time elapsed: 0.080s [1 / 2 done]
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m Start processing archives for site 2.
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m   Will invalidate archived reports for today in site ID = 2's timezone (2026-09-06 00:00:00).
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m   Will invalidate archived reports for yesterday in site ID = 2's timezone (2026-09-05 00:00:00).
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m Finished archiving for site 2, 0 API requests, Time elapsed: 0.010s [2 / 2 done]
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m Done archiving!
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m ---------------------------
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m SUMMARY
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m Processed 0 archives.
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m Total API requests: 0
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m done: 0 req, 111 ms, no error
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m Time elapsed: 0.111s
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m ---------------------------
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m SCHEDULED TASKS
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m Starting Scheduled tasks... 
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m done
+[32mINFO      [2026-09-06 04:55:02] 10620 [39m ---------------------------
