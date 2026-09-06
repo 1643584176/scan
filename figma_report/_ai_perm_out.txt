@@ -1,0 +1,14 @@
+[FILE_A(A)] 200
+   key=IHt8kgtR3XmtqU5i8vz7p1 name='第一个' team_id=1666382706663462213 creator_id=1666382703778278399
+[FILE_B(B)] 200
+   key=uwNXWhteG3ajjX78QG7a1W name='Untitled' team_id=1667396394890946753 creator_id=1667396392129259941
+
+=== 解码 AI 线程消息 contentPb ===
+decoded bytes: b'\nACreate the next screen that follows this one in the user journey.'
+  str-ish: b'Create the next screen that follows this one in the user journey.'
+Traceback (most recent call last):
+  File "F:\scan\figma_report\_figma_ai_perm.py", line 57, in <module>
+    raw1 = base64.b64decode(b64_part1_head)
+  File "F:\Python310\lib\base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding

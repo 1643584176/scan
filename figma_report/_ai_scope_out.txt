@@ -1,0 +1,39 @@
+========== 1. B 身份订阅公开文件(Flowbite) ==========
+### PUB-Flowbite | FileAiChatThreadsView {"ownerId": "ucha7bf05fJ81CJZVoruo0"}
+    {"messageType":"authSuccess","userId":"1667396392129259941","sessionId":"session-15aa45ea-3305-4d90-8ccc-ccc244019fa7","anonymousUserId":"467288ec-5c00-432f-9f7f-41ce1afab1a9","podName":"livegraph-597fb7478c-r4ltn","containerName":"livegraph-2","serverVersion":"9595fa3ccc8376c120439ca3cb6bebee2b6341
+   [threads~0 msgs=False parts=False] {"messageType":"denormalizedPendingMutations","mutations":{"[\"FileAiChatThreadsView\",{\"ownerId\":\"ucha7bf05fJ81CJZVoruo0\"}]":{"AiChatThread":{"queries":{"[\"root\",\"fileAiChatThreads\",[\"ucha7bf05fJ81CJZVoruo0\"],[]]":{"initial":{}}},"computations":{}}}}}...
+   [threads~0 msgs=False parts=False] {"messageType":"viewLoaded","viewName":"FileAiChatThreadsView","args":{"ownerId":"ucha7bf05fJ81CJZVoruo0"}}...
+
+========== 2. 匿名订阅 FILE_A(私有) ==========
+### ANON-FILE_A | FileAiChatThreadsView {"ownerId": "IHt8kgtR3XmtqU5i8vz7p1"}
+   ERR: {"messageType":"requestError","error":"Session argument error: 'userId' 'expected string representation of bigint, got string from \"\"'"}
+    
+
+========== 3. 匿名订阅公开文件(Flowbite) ==========
+### ANON-Flowbite | FileAiChatThreadsView {"ownerId": "ucha7bf05fJ81CJZVoruo0"}
+   ERR: {"messageType":"requestError","error":"Session argument error: 'userId' 'expected string representation of bigint, got string from \"\"'"}
+    
+
+========== 4. chunks 中 privacyMode/AI 可见性 ==========
+-- 0c62c2fd-d032e3933f62f517.min.js
+   privacyMode: privacyMode:"user"
+   privacyMode: privacyMode:"user"
+   privacyMode: privacyMode:s.privacyMode
+-- 1671-b95ce97580ac1302.min.js
+-- 2268-ce4bc89dca0387b1.min.js
+   privacyMode: privacyMode:r
+   privacyMode: privacyMode:r
+   privacyMode: privacyMode:(0
+   privacyMode: privacyModeOverride:r
+   privacyMode: privacyMode:o.privacyMode
+-- 2688-74090ce86ecdf35c.min.js
+   privacyMode: d.oA)(A?.activeAiChatThread)?.privacyMode
+-- 4740-72098fc09d96357b.min.js
+-- 5911-80d3c1dad6a7a16f.min.js
+-- 8049-7a9832b7849f38f7.min.js
+   privacyMode: privacyMode:"file"
+-- 9300-41a18cb0f8ba922b.min.js
+   privacyMode: privacyModeOverride:c
+   privacyMode: return!!f&&!!f.user&&!!a&&f.privacyMode===l.YD.FILE&&f.user.id!==a
+   UI: "Private Wealth"
+-- 940032c6-b1c2c739c723c9e9.min.js
