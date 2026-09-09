@@ -1,0 +1,33 @@
+import{o as e}from"./rolldown-runtime-DAXXjFlN.js";import{By as t,Fw as n,Kx as r,Ly as i,Rw as a,nb as o,qx as s,zx as c}from"./vendor-_WdvpBLr.js";import{$f as l,Th as u,cf as d,ep as f,vh as p}from"./app-5pKgUmmm.js";var m=e(a()),h=`data:image/svg+xml,%3csvg%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.225%2016.4937L0%2015.5938L4.7%208.09375L7.7%2011.5938L11.675%205.14375L14.4%209.19375C14.1333%209.22708%2013.875%209.28125%2013.625%209.35625C13.375%209.43125%2013.125%209.51875%2012.875%209.61875L11.75%207.89375L7.925%2014.1187L4.9%2010.5938L1.225%2016.4937ZM20.925%2021.7188L17.575%2018.3687C17.225%2018.6187%2016.8458%2018.8104%2016.4375%2018.9438C16.0292%2019.0771%2015.6083%2019.1437%2015.175%2019.1437C13.9917%2019.1437%2012.9875%2018.7313%2012.1625%2017.9062C11.3375%2017.0812%2010.925%2016.0771%2010.925%2014.8937C10.925%2013.7104%2011.3375%2012.7063%2012.1625%2011.8813C12.9875%2011.0563%2013.9917%2010.6438%2015.175%2010.6438C16.3583%2010.6438%2017.3625%2011.0563%2018.1875%2011.8813C19.0125%2012.7063%2019.425%2013.7104%2019.425%2014.8937C19.425%2015.3271%2019.3542%2015.7479%2019.2125%2016.1562C19.0708%2016.5646%2018.8833%2016.9521%2018.65%2017.3188L22%2020.6437L20.925%2021.7188ZM15.175%2017.6437C15.9417%2017.6437%2016.5917%2017.3771%2017.125%2016.8438C17.6583%2016.3104%2017.925%2015.6604%2017.925%2014.8937C17.925%2014.1271%2017.6583%2013.4771%2017.125%2012.9438C16.5917%2012.4104%2015.9417%2012.1438%2015.175%2012.1438C14.4083%2012.1438%2013.7583%2012.4104%2013.225%2012.9438C12.6917%2013.4771%2012.425%2014.1271%2012.425%2014.8937C12.425%2015.6604%2012.6917%2016.3104%2013.225%2016.8438C13.7583%2017.3771%2014.4083%2017.6437%2015.175%2017.6437ZM17.025%209.44375C16.775%209.34375%2016.5167%209.27708%2016.25%209.24375C15.9833%209.21042%2015.7083%209.17708%2015.425%209.14375L20.775%200.71875L22%201.61875L17.025%209.44375Z'%20fill='%233F3AFC'/%3e%3c/svg%3e`,g=e(c());s();var _=n(),v=window.constants.campaigns.bountyCompetitiveness.status.success,y=r`
+  query SuggestedMultiplierQuery(
+    $teamHandle: String
+    $input: BountyCompetitivenessPercentileInput!
+  ) {
+    teams(where: { handle: { _eq: $teamHandle } }) {
+      nodes {
+        id
+        handle
+        bounty_competitiveness_percentile(input: $input) {
+          id
+          status
+          high {
+            id
+            pct_1x
+            pct_1_25x
+            pct_1_5x
+            pct_2x
+            pct_3x
+          }
+          critical {
+            id
+            pct_1x
+            pct_1_25x
+            pct_1_5x
+            pct_2x
+            pct_3x
+          }
+        }
+      }
+    }
+  }
+`,b={1:`pct_1x`,1.25:`pct_1_25x`,1.5:`pct_1_5x`,2:`pct_2x`,3:`pct_3x`},x=({teamHandle:e,bountyTableRow:n,campaignObjective:r,onCompletedCallback:a,high:o,critical:s})=>{let c=n?.high&&n?.critical&&n?.medium&&n?.low,{data:l,loading:f}=p(y,{onCompleted:e=>{a&&a(e)},fetchPolicy:`network-only`,variables:{teamHandle:e,input:{bounty_low:n.low,bounty_medium:n.medium,bounty_critical:n.critical,bounty_high:n.high,campaign_objective_id:r}},skip:!c});return c?l&&l.teams.nodes[0].bounty_competitiveness_percentile.status!==v?(0,_.jsx)(i,{variation:t.Warning,contentPrimary:`We do not have sufficient data to calculate the reward competitiveness`}):f||!l?(0,_.jsx)(u,{centered:!1,size:`small`},`loadingIndicator`):(0,_.jsx)(d,{children:(0,_.jsx)(S,{high:o,critical:s,bountyMultiplierRecommendation:l.teams.nodes[0].bounty_competitiveness_percentile,campaignObjective:r})}):(0,_.jsx)(i,{variation:t.Warning,contentPrimary:`Reward competitiveness can only be calculated when all severities have a bounty amount`})};x.propTypes={teamHandle:g.default.string.isRequired,bountyTableRow:g.default.object.isRequired,campaignObjective:g.default.number,onCompletedCallback:g.default.func,critical:g.default.number.isRequired,high:g.default.number.isRequired};var S=({high:e,critical:t,bountyMultiplierRecommendation:n,campaignObjective:r})=>{let[i,a]=(0,m.useState)(!1),{high:s,critical:c}=n,u=c[b[t]],d=s[b[e]]>=90&&u>=90;return(0,_.jsxs)(`div`,{className:`flex mt-spacing-24`,children:[(0,_.jsx)(`div`,{style:{marginRight:`9px`},children:(0,_.jsx)(o,{src:h,size:`lg`})}),(0,_.jsxs)(`div`,{children:[(0,_.jsx)(`strong`,{children:`Reward competitiveness`}),r?d?(0,_.jsxs)(`p`,{children:[`This reward is `,(0,_.jsxs)(`strong`,{children:[u,`%`]}),` `,`more competitive than the other bounties this cohort of hackers is attracted to on HackerOne.`]}):(0,_.jsxs)(`p`,{children:[`This reward is `,(0,_.jsx)(`strong`,{children:`less competitive`}),` than the other bounties this cohort of hackers is attracted to on HackerOne.`]}):d?(0,_.jsxs)(`p`,{children:[`This reward is `,(0,_.jsxs)(`strong`,{children:[u,`%`]}),` `,`more competitive than the other bounties the hackers in your program are attracted to on HackerOne.`]}):(0,_.jsxs)(`p`,{children:[`This reward is `,(0,_.jsx)(`strong`,{children:`less competitive`}),` than the other bounties the hackers in your program are attracted to on HackerOne.`]}),(0,_.jsx)(`a`,{onClick:()=>a(!0),children:(0,_.jsx)(`strong`,{children:`What do we consider to calculate this?`})}),i&&(0,_.jsxs)(f,{shouldCloseOnEsc:!0,showModal:i,buttonText:`Got it, thanks!`,buttonColor:`blue`,size:`small`,handleButtonClick:()=>{a(!1)},handleCloseModal:()=>{a(!1)},children:[(0,_.jsx)(`h1`,{className:`modal-title`,style:{maxWidth:`400px`},children:`What do we consider to calculate reward competitiveness?`}),(0,_.jsxs)(l,{children:[r?(0,_.jsx)(l.Item,{children:`The hackers you selected as your audience.`}):(0,_.jsx)(l.Item,{children:`The hackers who were active in your program but stopped submitting reports in the last 6 months. If your bounty offer can re-activate inactive hackers, chances are your bounty is competitive enough to keep hackers interested in working on your program.`}),(0,_.jsx)(l.Item,{children:`The number of programs these hackers have submitted reports.`}),(0,_.jsx)(l.Item,{children:`The amounts they were offered for valid reports in other programs.`})]})]}),!d&&(0,_.jsxs)(`p`,{children:[(0,_.jsx)(`strong`,{children:`TIP:`}),` Consider adjusting your bounty table or the offering amounts.`]})]})]})};S.propTypes={critical:g.default.number.isRequired,high:g.default.number.isRequired,bountyMultiplierRecommendation:g.default.object.isRequired,campaignObjective:g.default.number};export{x as n,b as r,v as t};

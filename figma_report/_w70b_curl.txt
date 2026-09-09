@@ -1,0 +1,13 @@
+curl ^"https://api.weavy.ai/api/v1/recipes/9CzKElKiDIYFVfB5snJoYM^" ^
+  -X ^"PUT^" ^
+  -H ^"authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjI0N2Y4MDYwMDM5YjVmNDBkOTQ5NjkzOGJiMTg5NzA2ZWY4ODkzM2QiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiYm9ibyBsaSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKNXZwOTU1bzJLeUxEZk5QTW01aFdLVmdybmhDSmdTa0ZhVmd5VDhUTUYwUE0xalE9czk2LWMiLCJzdWJzY3JpcHRpb25fdHlwZSI6ImZyZWUiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY29tZnl3ZWItYzMxYmUiLCJhdWQiOiJjb21meXdlYi1jMzFiZSIsImF1dGhfdGltZSI6MTc4ODgzNzAwMSwidXNlcl9pZCI6ImxSUEN4WnAyZXlaaU8yMHJmUGU1bGJUM1c1UyIsInN1YiI6ImxSUEN4WnAyZXlaaU8yMHJmUGU1bGJUM1c1UyIsImlhdCI6MTc4ODgzNzAwNCwiZXhwIjoxNzg4ODQwNjA0LCJlbWFpbCI6ImxpYm9ibzEyMjlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDcxNTU4MjMyOTE4MTE1MDM0NDUiXSwiZW1haWwiOlsibGlib2JvMTIyOUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.H0haAKpLLyY2h7aCvYkU3t5zhfgkG25x1471sqLhalMiluw7-NNA_ntrt78pRUrGxCI7GXoidLWjMwdzqK-eS0HGWB86OwnHOQdjEkP_gpSIi9gIB2ca5arA5aCaSyc0dgtri8TwcQhWfKtHKxLTQ1n6L3VCYFOp-5VNqRuYjmj94CayS6UNqFAhMoDyFThcnoui_fuTA2Gy3-V8-N-ont-2NDFyKJKGhh-vocRLE8dLsN8WtlnmSQQMOpjVHKFB6Ee7aWZeHSxweNd7puKU-7hty20mc5R7aSF7LERDnnrkbSmNz_f3j0OzNyehKd3_yN7PSgNLG_z_iVAQweRzEg^" ^
+  -H ^"baggage: session.id=1f9ce980-0041-421b-bb83-62037af4c8f2,user.id=lRPCxZp2eyZiO20rfPe5lbT3W5S2^" ^
+  -H ^"content-type: application/json^" ^
+  -b ^"_ga=GA1.1.1180683737.1788836916; cf_clearance=1RJbWwCvF8OYhSvVg7J2OXw4A_76fROa07HU__Qe4qY-1788836903-1.2.1.1-fvX9DB_TCV5doxoEVqSDbBeEoAlD9pzFVMJHraYN9gp.Cl81EFvmHBFnFjenhljOpdt1o4fZJgOt0NJ1ut3oh2EKjuFM3kV1wZQgEG5hHQKSpFF7JNf21JCOsRR_3xGPRdHKyi2mxXWFd1KJ.i5RcXVs95yqjanAHfDRCt1GX4ueqFOeYakadwYehQlnA7HyjY.GZabU8gUag5cLfKaIg4VOeFbQAKZKALNUQG2ju3YgWWt1OzGImhWZD1rpoWwJ4KgVzPNhCj3zR4hTievMRUJfJVmB9VCUIY36SJyCBmaz_2X1jWqsIV5sG2dUuxI30GkILG2nUYsd515qCFrkdF2.rDnpuLaR9vMD5Dw_vlBAP3BhZEqTBapJKAE2kiufa.WlHsN9jyOR702gujizt8FovKOT5mgf88xsV1KahuJaD1WQEQXKroR2prmnAXehOUJ0d7rcsz8xalhJsmaLGg; __Host-wv_tier=v1.lRPCxZp2eyZiO20rfPe5lbT3W5S2~1788837003-6VJzEwtU8bPMKYUQygZdWOiisZ_X2O58HPn2KDuvsdI^" ^
+  -H ^"origin: https://app.weavy.ai^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0^" ^
+  -H ^"x-app-recipeid: 9CzKElKiDIYFVfB5snJoYM^" ^
+  -H ^"x-app-version: 4.1.1214^" ^
+  -H ^"x-weavy-auth-provider: firebase^" ^
+  -H ^"x-wv-tier-cookie: 1^" ^
+  --data-raw ^"^{^\^"name^\^":^\^"sadasddsf^\^"^}^"

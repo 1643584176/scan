@@ -1,0 +1,1346 @@
+[
+ {
+  "name": "react-datepicker",
+  "desc": "A simple and reusable datepicker component for React",
+  "lang": "TypeScript",
+  "archived": false,
+  "fork": false,
+  "updated": "2026-04-02T08:36:28Z"
+ },
+ {
+  "name": "cjsx-style-guide",
+  "desc": "A Style Guide for writing clean and readable CJSX",
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2016-03-14T09:32:11Z"
+ },
+ {
+  "name": "stronger_parameters",
+  "desc": "Type checking and type casting of parameters for Action Pack",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T15:34:33Z"
+ },
+ {
+  "name": "addressable",
+  "desc": "Addressable is a replacement for the URI implementation that is part of Ruby's standard library. It more closely conforms to RFC 3986, RFC 3987, and RFC 6570 (level 4), additionally providing support for IRIs and URI templates.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-05-11T12:56:34Z"
+ },
+ {
+  "name": "rails",
+  "desc": "Ruby on Rails",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2021-10-06T23:20:05Z"
+ },
+ {
+  "name": "pingpong",
+  "desc": "HackerOne rules for round the table. What happens when your ball hit the net or when do you need to walk to the other side? Find out here.",
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2023-09-26T11:40:52Z"
+ },
+ {
+  "name": "dress_code",
+  "desc": "CSS Documentation and Styleguide Generator",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2014-08-18T22:34:17Z"
+ },
+ {
+  "name": "truncate",
+  "desc": "Dead simple HTML-safe truncation via the DOM.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-10-19T12:35:42Z"
+ },
+ {
+  "name": "hellosign-ruby-sdk",
+  "desc": "A Ruby SDK for HelloSign's API",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-09-03T20:36:22Z"
+ },
+ {
+  "name": "bank",
+  "desc": "IBAN + BIC",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:22:34Z"
+ },
+ {
+  "name": "mocha-lazy-bdd",
+  "desc": "Lazy bdd interface for mocha that provides RSpec-style let/subject macros for ES5+ projects.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:31:55Z"
+ },
+ {
+  "name": "darwinning",
+  "desc": "A Ruby gem for genetic algorithms.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-09-12T17:42:20Z"
+ },
+ {
+  "name": "redcarpet",
+  "desc": "The safe Markdown parser, reloaded.",
+  "lang": "C",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-09-24T08:32:01Z"
+ },
+ {
+  "name": "radar-chart-d3",
+  "desc": "Simple radar chart in D3.js",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-12-08T11:00:39Z"
+ },
+ {
+  "name": "spongebob",
+  "desc": "Network differences notifier",
+  "lang": "Python",
+  "archived": false,
+  "fork": true,
+  "updated": "2014-06-20T23:20:43Z"
+ },
+ {
+  "name": "retire.js",
+  "desc": "scanner detecting the use of JavaScript libraries with known vulnerabilities",
+  "lang": "Groff",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-10-19T09:35:22Z"
+ },
+ {
+  "name": "tether",
+  "desc": " A positioning engine to make overlays, tooltips and dropdowns better #hubspot-open-source",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-10-30T09:28:42Z"
+ },
+ {
+  "name": "rewire-webpack",
+  "desc": "Dependency injection for webpack bundles",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:26:18Z"
+ },
+ {
+  "name": "espresso",
+  "desc": "This is a command line tool for converting CoffeeScript files into their ES6 equivalents*",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-12-08T13:30:20Z"
+ },
+ {
+  "name": "nsp",
+  "desc": "node security project command-line tool",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:05:46Z"
+ },
+ {
+  "name": "textarea-helper",
+  "desc": "A small helper library for textareas.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-10-29T16:43:42Z"
+ },
+ {
+  "name": "jquery.hotkeys",
+  "desc": "jQuery Hotkeys lets you watch for keyboard events anywhere in your code supporting almost any key combination.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-11-08T20:57:19Z"
+ },
+ {
+  "name": "c3",
+  "desc": "A D3-based reusable chart library",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-12-07T00:29:14Z"
+ },
+ {
+  "name": "cucumber-rails",
+  "desc": "Rails Generators for Cucumber with special support for Capybara and DatabaseCleaner",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2016-06-24T09:58:40Z"
+ },
+ {
+  "name": "breach-mitigation-rails",
+  "desc": "Make Rails apps more resilient against the BREACH and CRIME attacks",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-03-31T23:04:01Z"
+ },
+ {
+  "name": "coffee-to-es2015-codemod",
+  "desc": "A set of JSCodeshift transforms that will help you transform your CoffeeScript codebase to ES2015",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": false,
+  "updated": "2016-03-04T14:13:44Z"
+ },
+ {
+  "name": "protobuf",
+  "desc": "A pure ruby implementation of Google's Protocol Buffers",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-11-16T16:54:29Z"
+ },
+ {
+  "name": "active_model_serializers",
+  "desc": "ActiveModel::Serializer implementation and Rails hooks",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2016-01-21T01:37:01Z"
+ },
+ {
+  "name": "linkhack",
+  "desc": "A ultra-simple rails app to create an internal url shortener.",
+  "lang": "SCSS",
+  "archived": false,
+  "fork": true,
+  "updated": "2026-07-31T17:12:13Z"
+ },
+ {
+  "name": "stripe-ruby-mock",
+  "desc": "A mocking library for testing stripe ruby",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2025-02-28T21:34:41Z"
+ },
+ {
+  "name": "dante",
+  "desc": "Turn any ruby code into a daemon.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:47:59Z"
+ },
+ {
+  "name": "capistrano",
+  "desc": "Remote multi-server automation tool",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2016-04-27T16:17:55Z"
+ },
+ {
+  "name": "sentry-auth-google",
+  "desc": "Google Apps SSO provider for Sentry",
+  "lang": "Python",
+  "archived": false,
+  "fork": true,
+  "updated": "2016-06-17T20:32:39Z"
+ },
+ {
+  "name": "timecop",
+  "desc": "A gem providing \"time travel\", \"time freezing\", and \"time acceleration\" capabilities, making it simple to test time-dependent code. It provides a unified method to mock Time.now, Date.today, and DateTime.now in a single call.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:33:11Z"
+ },
+ {
+  "name": "capistrano-ec2",
+  "desc": null,
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:18:11Z"
+ },
+ {
+  "name": "kender",
+  "desc": "Kender is a library of rake tasks for continuous integration.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2016-07-19T09:00:34Z"
+ },
+ {
+  "name": "mocha",
+  "desc": "simple, flexible, fun javascript test framework for node.js & the browser",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2026-01-15T07:30:18Z"
+ },
+ {
+  "name": "sidekiq-health",
+  "desc": "Monitor the size of your Sidekiq queues",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:31:18Z"
+ },
+ {
+  "name": "riparian",
+  "desc": null,
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:08:16Z"
+ },
+ {
+  "name": "track_history",
+  "desc": "Smart, performant auditing of ActiveRecord models",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:18:50Z"
+ },
+ {
+  "name": "react-calendar-heatmap",
+  "desc": "an svg calendar heatmap component, inspired by github's contribution graph",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:30:03Z"
+ },
+ {
+  "name": "postgres_ext",
+  "desc": "Adds support for missing PostgreSQL data types to ActiveRecord",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:20:42Z"
+ },
+ {
+  "name": "datetimepicker-rails",
+  "desc": "A date and time picker for Twitter Bootstrap in Rails using Simple Form",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:28:48Z"
+ },
+ {
+  "name": "momentjs-rails",
+  "desc": "The Moment.js JavaScript library ready to play with the Rails Asset Pipeline",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:30:41Z"
+ },
+ {
+  "name": "bootstrap-datetimepicker",
+  "desc": "Date/time picker widget based on twitter bootstrap",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:29:26Z"
+ },
+ {
+  "name": "markdown-to-react-components",
+  "desc": "Convert markdown into react components",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:28:11Z"
+ },
+ {
+  "name": "react-storybook-addon-info",
+  "desc": "A React Storybook addon to show additional information for your stories.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:27:33Z"
+ },
+ {
+  "name": "full-name-splitter",
+  "desc": "Lib splits full name into first and last name considering name prefixes and initials",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2015-09-09T22:27:26Z"
+ },
+ {
+  "name": "compression-webpack-plugin",
+  "desc": "Prepare compressed versions of assets to serve them with Content-Encoding",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:26:56Z"
+ },
+ {
+  "name": "php-stripe-checkout",
+  "desc": "Forked from https://www.drupal.org/project/stripe_checkout/git-instructions",
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2017-03-06T23:23:16Z"
+ },
+ {
+  "name": "sweet-alert-rails-confirm",
+  "desc": "A Rails confirm replacement with SweetAlert",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:25:04Z"
+ },
+ {
+  "name": "pry-rescue",
+  "desc": "Start a pry session whenever something goes wrong.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:25:41Z"
+ },
+ {
+  "name": "approvals",
+  "desc": "Approval Tests for Ruby",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:06:23Z"
+ },
+ {
+  "name": "backup",
+  "desc": "Easy full stack backup operations on UNIX-like systems.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T15:35:47Z"
+ },
+ {
+  "name": "cap-ec2",
+  "desc": "Capify-EC2 rewritten for Capistrano v3",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:24:26Z"
+ },
+ {
+  "name": "jira-ruby-archived",
+  "desc": "A Ruby gem for the JIRA REST API",
+  "lang": "Ruby",
+  "archived": true,
+  "fork": true,
+  "updated": "2023-03-25T13:16:19Z"
+ },
+ {
+  "name": "conduitrb",
+  "desc": "Phabricator API Wrapper in pure Ruby, no dependency",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:08:53Z"
+ },
+ {
+  "name": "sweetalert-rails",
+  "desc": "SweetAlert Rails integration",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2016-06-27T05:49:33Z"
+ },
+ {
+  "name": "graphql-ruby",
+  "desc": "Ruby implementation of GraphQL ",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:50:43Z"
+ },
+ {
+  "name": "react-make-it-rain",
+  "desc": "React Component that helps you when you want to make it rain \ud83d\udcb0\ud83d\udcb5\ud83d\udcb8",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": false,
+  "updated": "2023-03-25T12:47:29Z"
+ },
+ {
+  "name": "dd-trace-rb",
+  "desc": "datadog trace ruby client",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:23:48Z"
+ },
+ {
+  "name": "snappyshot",
+  "desc": "GraphQL snapshots",
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2017-11-08T13:54:05Z"
+ },
+ {
+  "name": "active_record_upsert",
+  "desc": "Upsert for Rails 5 / Active Record 5",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T15:36:23Z"
+ },
+ {
+  "name": "h1-212-ctf-solutions",
+  "desc": "A collection of the solutions people wrote for the H1-212 Capture The Flag event",
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2019-01-10T16:02:37Z"
+ },
+ {
+  "name": "hacker101",
+  "desc": "Source code for Hacker101.com - a free online web and mobile security class.",
+  "lang": "SCSS",
+  "archived": false,
+  "fork": false,
+  "updated": "2025-02-22T06:59:37Z"
+ },
+ {
+  "name": "railsgirls.github.io",
+  "desc": "Rails Girls Guides",
+  "lang": "HTML",
+  "archived": false,
+  "fork": true,
+  "updated": "2022-10-20T01:40:12Z"
+ },
+ {
+  "name": "duo_openvpn",
+  "desc": "Duo two-factor authentication for OpenVPN.",
+  "lang": "Python",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:07:38Z"
+ },
+ {
+  "name": "lambda-convert",
+  "desc": "AWS Lambda powered drop-in replacement for ImageMagick convert command line tool",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2022-06-07T21:27:59Z"
+ },
+ {
+  "name": "slackin",
+  "desc": "Public Slack organizations made easy",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2024-06-19T16:22:17Z"
+ },
+ {
+  "name": "pd2zendesk",
+  "desc": null,
+  "lang": "PHP",
+  "archived": false,
+  "fork": true,
+  "updated": "2016-04-21T23:38:34Z"
+ },
+ {
+  "name": "private_address_check",
+  "desc": "Ruby gem to help prevent Server Side Request Forgery",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2024-01-09T10:24:00Z"
+ },
+ {
+  "name": "h1-ctf-archives",
+  "desc": null,
+  "lang": "C",
+  "archived": false,
+  "fork": false,
+  "updated": "2018-07-12T18:44:47Z"
+ },
+ {
+  "name": "search-query-parser",
+  "desc": "A simple parser for advanced search query syntax",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:21:57Z"
+ },
+ {
+  "name": "consistency_fail",
+  "desc": "A tool for detecting missing unique indexes in Rails projects",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:00:43Z"
+ },
+ {
+  "name": "scenic",
+  "desc": "Versioned database views for Rails",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:20:05Z"
+ },
+ {
+  "name": "homebrew-taps",
+  "desc": null,
+  "lang": "Ruby",
+  "archived": false,
+  "fork": false,
+  "updated": "2018-10-04T08:48:14Z"
+ },
+ {
+  "name": "Hacker101Coursework",
+  "desc": "Deprecated coursework from first iteration of Hacker101",
+  "lang": "Python",
+  "archived": true,
+  "fork": false,
+  "updated": "2019-04-22T23:12:11Z"
+ },
+ {
+  "name": "graphql-client",
+  "desc": "A Ruby library for declaring, composing and executing GraphQL queries",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:12:36Z"
+ },
+ {
+  "name": "pg_search",
+  "desc": "pg_search builds ActiveRecord named scopes that take advantage of PostgreSQL\u2019s full text search ",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:19:28Z"
+ },
+ {
+  "name": "helpful-recon-data",
+  "desc": "This information provides helpful information to make it easier to discover new attack surface on HackerOne.com.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": false,
+  "updated": "2019-01-24T05:02:05Z"
+ },
+ {
+  "name": "c3-rails",
+  "desc": "c3 for Rails",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2018-12-14T23:53:24Z"
+ },
+ {
+  "name": "puffing-billy",
+  "desc": "A rewriting web proxy for testing interactions between your browser and external sites.  Works with ruby + rspec.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:07:00Z"
+ },
+ {
+  "name": "svg-sprite-loader",
+  "desc": "Webpack loader for creating SVG sprites.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:53:52Z"
+ },
+ {
+  "name": "duo_ruby",
+  "desc": "Duo two-factor authentication for Ruby web applications",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:17:34Z"
+ },
+ {
+  "name": "h1ql",
+  "desc": null,
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2020-03-02T12:04:09Z"
+ },
+ {
+  "name": "FliteCTF",
+  "desc": "Our CTF to celebrate our hackers approaching $50M in bounty earnings!",
+  "lang": "Java",
+  "archived": false,
+  "fork": false,
+  "updated": "2023-03-25T13:16:57Z"
+ },
+ {
+  "name": "surveymonkey",
+  "desc": "API gem for interaction with SurveyMonkeyApi",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:15:42Z"
+ },
+ {
+  "name": "arel_toolkit",
+  "desc": null,
+  "lang": "Ruby",
+  "archived": false,
+  "fork": false,
+  "updated": "2025-04-24T07:24:41Z"
+ },
+ {
+  "name": "pronto-rails_schema",
+  "desc": "Pronto runner for Rails. Checks schema for pending migrations.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:15:05Z"
+ },
+ {
+  "name": "omniauth-archived2",
+  "desc": "OmniAuth is a flexible authentication system utilizing Rack middleware.",
+  "lang": "Ruby",
+  "archived": true,
+  "fork": true,
+  "updated": "2019-06-27T00:58:07Z"
+ },
+ {
+  "name": "wallpapers",
+  "desc": "HackerOne Wallpapers",
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2021-04-20T12:43:07Z"
+ },
+ {
+  "name": "odbc_adapter",
+  "desc": "An ActiveRecord ODBC adapter",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:14:28Z"
+ },
+ {
+  "name": "gitlab",
+  "desc": "Ruby wrapper and CLI for the GitLab REST API",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:13:50Z"
+ },
+ {
+  "name": "arel_toolkit-archived",
+  "desc": null,
+  "lang": "Ruby",
+  "archived": true,
+  "fork": true,
+  "updated": "2023-03-25T13:05:09Z"
+ },
+ {
+  "name": "44con-ctf-2019",
+  "desc": "Official CTF for 44CON 2019",
+  "lang": "Python",
+  "archived": false,
+  "fork": false,
+  "updated": "2023-07-22T16:09:35Z"
+ },
+ {
+  "name": "ruby-rails-instrumentation",
+  "desc": "OpenTracing instrumentation for Rails",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:01:20Z"
+ },
+ {
+  "name": "swagger-codegen",
+  "desc": "swagger-codegen contains a template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition.",
+  "lang": null,
+  "archived": true,
+  "fork": true,
+  "updated": "2019-11-13T21:13:53Z"
+ },
+ {
+  "name": "swagger-codegen-generators",
+  "desc": null,
+  "lang": null,
+  "archived": true,
+  "fork": true,
+  "updated": "2019-11-13T10:25:06Z"
+ },
+ {
+  "name": "eslint-plugin-graphql",
+  "desc": ":vertical_traffic_light: Check your GraphQL query strings against a schema.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:11:22Z"
+ },
+ {
+  "name": "hackerone-swagger-codegen",
+  "desc": "HackerOne library for generating api clients with swagger.",
+  "lang": "HTML",
+  "archived": false,
+  "fork": false,
+  "updated": "2023-03-25T13:10:44Z"
+ },
+ {
+  "name": "widdershins",
+  "desc": "OpenAPI / Swagger, AsyncAPI & Semoasa definitions to Slate / Shins compatible markdown",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2024-02-19T08:45:25Z"
+ },
+ {
+  "name": "import_export",
+  "desc": "A Ruby client for Trade.gov's Consolidated Screening List",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2025-12-12T02:58:14Z"
+ },
+ {
+  "name": "data_classification",
+  "desc": "WIP: DataClassification helps you tag your database columns with smart comments in order to classify your data",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": false,
+  "updated": "2023-03-25T15:35:10Z"
+ },
+ {
+  "name": "ruby-qualys",
+  "desc": "Ruby Qualys API v2",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:11:59Z"
+ },
+ {
+  "name": "sidekiq",
+  "desc": "Simple, efficient background processing for Ruby",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:04:32Z"
+ },
+ {
+  "name": "packerlicious",
+  "desc": "use python to make hashicorp packer templates",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:09:30Z"
+ },
+ {
+  "name": "lookerbot",
+  "desc": "Lookerbot lets you access all your Looker data from Slack! Super fun!",
+  "lang": "TypeScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:01:57Z"
+ },
+ {
+  "name": "artemis",
+  "desc": "Ruby GraphQL client on Rails that actually makes you more productive",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:03:52Z"
+ },
+ {
+  "name": "active_record_doctor",
+  "desc": "Identify database issues before they hit production.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:03:15Z"
+ },
+ {
+  "name": "fluent_logger_rails",
+  "desc": null,
+  "lang": "Ruby",
+  "archived": false,
+  "fork": false,
+  "updated": "2026-05-11T07:25:58Z"
+ },
+ {
+  "name": "berbix-ruby",
+  "desc": "Ruby SDK for interacting with the Berbix API",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2020-08-17T16:54:11Z"
+ },
+ {
+  "name": "aws-es-proxy",
+  "desc": "aws-es-proxy is a small web server application sitting between your HTTP client (browser, curl, etc...) and Amazon Elasticsearch service.",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2020-08-04T13:59:16Z"
+ },
+ {
+  "name": "RecordRTC",
+  "desc": "RecordRTC is WebRTC JavaScript library for audio/video as well as screen activity recording. It supports Chrome, Firefox, Opera, Android, and Microsoft Edge. Platforms: Linux, Mac and Windows.",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:02:37Z"
+ },
+ {
+  "name": "sheagcraig_sal_plugins",
+  "desc": "Plugins for the Sal",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2020-10-01T18:42:06Z"
+ },
+ {
+  "name": "disco",
+  "desc": "Recommendations for Ruby and Rails using collaborative filtering",
+  "lang": "Ruby",
+  "archived": true,
+  "fork": true,
+  "updated": "2024-08-10T21:52:48Z"
+ },
+ {
+  "name": "factory_bot_instruments",
+  "desc": "Instruments for benchmarking, tracing, and debugging Factory Girl models.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:00:06Z"
+ },
+ {
+  "name": "test-prof",
+  "desc": "Ruby Tests Profiling Toolbox",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:59:29Z"
+ },
+ {
+  "name": "cuke_cataloger",
+  "desc": "A handy gem for adding identifier tags to Cucumber tests.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:58:13Z"
+ },
+ {
+  "name": "cuke_slicer",
+  "desc": "A tool to slice up your Cucumber test suite into small, easy to parallelize pieces.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:58:50Z"
+ },
+ {
+  "name": "ruby-prof-flamegraph",
+  "desc": "Easily find bottlenecks in your Ruby code. A ruby-prof printer that prints fold stacks compatible with FlameGraph",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T13:10:07Z"
+ },
+ {
+  "name": "js-message-box",
+  "desc": "A package for defining and getting validation error messages, with support for Meteor Tracker reactivity",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:57:36Z"
+ },
+ {
+  "name": "knapsack",
+  "desc": "Knapsack splits tests evenly across parallel CI nodes to run fast CI build and save you time.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:56:59Z"
+ },
+ {
+  "name": "bewaker",
+  "desc": null,
+  "lang": "Ruby",
+  "archived": false,
+  "fork": false,
+  "updated": "2023-03-25T12:55:44Z"
+ },
+ {
+  "name": "awesome-hacker-api-tools",
+  "desc": "A collection of hacker tools using HackerOne's API",
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2021-10-28T16:54:37Z"
+ },
+ {
+  "name": "hermes",
+  "desc": "Hermes is HackerOne's homegrown test impact analysis framework used for selective test running and dependency analysis.",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": false,
+  "updated": "2023-03-25T12:56:21Z"
+ },
+ {
+  "name": "hackerone-to-aws-security-hub",
+  "desc": null,
+  "lang": "Python",
+  "archived": false,
+  "fork": false,
+  "updated": "2021-09-08T15:26:29Z"
+ },
+ {
+  "name": "aws-security-hub-to-hackerone",
+  "desc": null,
+  "lang": "Shell",
+  "archived": false,
+  "fork": false,
+  "updated": "2021-09-08T15:52:41Z"
+ },
+ {
+  "name": "pipelinewise-tap-postgres",
+  "desc": "Singer.io Tap for PostgreSQL - PipelineWise compatible",
+  "lang": "Python",
+  "archived": false,
+  "fork": true,
+  "updated": "2025-09-16T18:12:20Z"
+ },
+ {
+  "name": "pipelinewise-target-snowflake",
+  "desc": "Singer.io Target for Snowflake - PipelineWise compatible",
+  "lang": "Python",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T15:33:19Z"
+ },
+ {
+  "name": "target-gsheet",
+  "desc": "Write Singer data to Google Sheets",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:52:37Z"
+ },
+ {
+  "name": "hackerone-to-github-action",
+  "desc": null,
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2022-03-03T14:35:18Z"
+ },
+ {
+  "name": "tap-google-sheets",
+  "desc": null,
+  "lang": "Python",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:49:59Z"
+ },
+ {
+  "name": "pulumi-snowflake",
+  "desc": null,
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:52:00Z"
+ },
+ {
+  "name": "dbt2looker",
+  "desc": "Generate lookml for views from dbt models",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2022-05-11T09:34:27Z"
+ },
+ {
+  "name": "capybara-chromedriver-logger",
+  "desc": "Enables console.log/error/info output from Javascript feature specs running with Chromedriver",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:53:14Z"
+ },
+ {
+  "name": "ts-ebml",
+  "desc": "EBML encoder and decoder",
+  "lang": null,
+  "archived": true,
+  "fork": true,
+  "updated": "2022-06-27T22:39:05Z"
+ },
+ {
+  "name": "HackerOne-VS-Code-Theme",
+  "desc": null,
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2024-04-07T15:57:20Z"
+ },
+ {
+  "name": "pipelinewise-tap-snowflake",
+  "desc": "Singer.io Tap for Snowflake - PipelineWise compatible",
+  "lang": "Python",
+  "archived": false,
+  "fork": true,
+  "updated": "2023-08-20T20:51:06Z"
+ },
+ {
+  "name": "target-postgres",
+  "desc": "A Singer.io Target for Postgres",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2023-03-25T12:48:44Z"
+ },
+ {
+  "name": "tap-gitlab",
+  "desc": "Singer.io Tap for extracting data from Gitlab's API",
+  "lang": "Python",
+  "archived": false,
+  "fork": true,
+  "updated": "2025-01-13T13:02:34Z"
+ },
+ {
+  "name": "demisto-content",
+  "desc": "Demisto is now Cortex XSOAR. Automate and orchestrate your Security Operations with Cortex XSOAR's ever-growing Content Repository. Pull Requests are always welcome and highly appreciated! ",
+  "lang": "Python",
+  "archived": true,
+  "fork": true,
+  "updated": "2025-03-28T13:25:16Z"
+ },
+ {
+  "name": "h1-vpn",
+  "desc": null,
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2024-01-12T04:25:36Z"
+ },
+ {
+  "name": "vuln-vects",
+  "desc": "A powerful, flexible CVSS parser, calculator and validator written for JavaScript/TypeScript.",
+  "lang": "TypeScript",
+  "archived": true,
+  "fork": true,
+  "updated": "2023-11-27T13:16:12Z"
+ },
+ {
+  "name": "chewy",
+  "desc": "High-level Elasticsearch Ruby framework based on the official elasticsearch-ruby client",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2026-02-12T00:06:52Z"
+ },
+ {
+  "name": "coinbase-ruby",
+  "desc": "DEPRECATED \u2014 Ruby wrapper for the Coinbase API",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2024-08-06T23:35:53Z"
+ },
+ {
+  "name": "Indirizzo",
+  "desc": "Extraction of Address class from geocommons/geocoder",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2024-04-19T16:51:41Z"
+ },
+ {
+  "name": "hai-on-hackerone",
+  "desc": null,
+  "lang": "Python",
+  "archived": true,
+  "fork": false,
+  "updated": "2025-11-10T14:20:32Z"
+ },
+ {
+  "name": "use-reducer-logger",
+  "desc": "A very basic logger for the useReducer function in the React Hooks API.",
+  "lang": null,
+  "archived": true,
+  "fork": true,
+  "updated": "2021-10-16T19:44:56Z"
+ },
+ {
+  "name": "jira-ruby",
+  "desc": "A Ruby gem for the JIRA REST API - forked from Alexey",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2026-05-31T20:16:22Z"
+ },
+ {
+  "name": "sbom-cyclonedx",
+  "desc": null,
+  "lang": "Ruby",
+  "archived": false,
+  "fork": false,
+  "updated": "2026-05-11T09:29:23Z"
+ },
+ {
+  "name": "h1-automations-glossary",
+  "desc": "A community-driven hub for sharing and improving automation templates that streamline HackerOne workflows.",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": false,
+  "updated": "2025-04-24T06:32:33Z"
+ },
+ {
+  "name": "caido-extension",
+  "desc": null,
+  "lang": null,
+  "archived": false,
+  "fork": false,
+  "updated": "2025-04-03T16:28:42Z"
+ },
+ {
+  "name": "graphql-ruby-fragment_cache",
+  "desc": "graphql-ruby plugin for caching parts of the response",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2025-02-20T15:02:02Z"
+ },
+ {
+  "name": "thin",
+  "desc": "A very fast & simple Ruby web server",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2025-02-16T10:13:52Z"
+ },
+ {
+  "name": "omniauth-slack",
+  "desc": "omniauth-slack ruby gem",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": true,
+  "updated": "2025-05-20T14:58:18Z"
+ },
+ {
+  "name": "hackerone-graphql-mcp-server",
+  "desc": "MCP server for the HackerOne GraphQL API",
+  "lang": "Shell",
+  "archived": false,
+  "fork": false,
+  "updated": "2025-12-03T12:51:18Z"
+ },
+ {
+  "name": "pg_result_init",
+  "desc": "PostgreSQL result initialization C extension for Ruby",
+  "lang": "Ruby",
+  "archived": false,
+  "fork": false,
+  "updated": "2025-08-26T11:43:44Z"
+ },
+ {
+  "name": "meltano",
+  "desc": "Meltano: the declarative code-first data integration engine that powers your wildest data and ML-powered product ideas. Say goodbye to writing, maintaining, and scaling your own API integrations.",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2025-09-23T06:07:59Z"
+ },
+ {
+  "name": "claude-power-user",
+  "desc": "Claude Code superpowers: core skills library",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": true,
+  "updated": "2025-11-12T16:00:20Z"
+ },
+ {
+  "name": "claude-marketplace-old",
+  "desc": "Community-editable skills for Claude Code's superpowers plugin",
+  "lang": "TypeScript",
+  "archived": true,
+  "fork": true,
+  "updated": "2025-10-23T20:26:42Z"
+ },
+ {
+  "name": "superpowers-marketplace",
+  "desc": "Curated Claude Code plugin marketplace",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2025-10-14T15:07:04Z"
+ },
+ {
+  "name": "migration-lock-timeout",
+  "desc": "A Ruby gem that adds a lock timeout to Active Record migrations",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2026-02-20T11:36:29Z"
+ },
+ {
+  "name": "hermit-packages",
+  "desc": "This repo contains Hermit manifests for installing binaries into development environments",
+  "lang": "HCL",
+  "archived": false,
+  "fork": false,
+  "updated": "2026-09-07T02:45:03Z"
+ },
+ {
+  "name": "cube",
+  "desc": "\ud83d\udcca Cube Core is open-source semantic layer for AI, BI and embedded analytics",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2026-05-14T13:21:11Z"
+ },
+ {
+  "name": "cube-internal",
+  "desc": "\ud83d\udcca Cube Core is open-source semantic layer for AI, BI and embedded analytics",
+  "lang": null,
+  "archived": false,
+  "fork": true,
+  "updated": "2026-08-28T19:26:04Z"
+ },
+ {
+  "name": "linear-python-client",
+  "desc": "Python client for Linear API",
+  "lang": "Python",
+  "archived": false,
+  "fork": false,
+  "updated": "2026-06-27T15:10:39Z"
+ },
+ {
+  "name": "ocsf-emitter",
+  "desc": null,
+  "lang": "Python",
+  "archived": false,
+  "fork": false,
+  "updated": "2026-08-28T19:24:16Z"
+ },
+ {
+  "name": "atlantis-trident",
+  "desc": "Standard Terraform CICD Templates",
+  "lang": "JavaScript",
+  "archived": false,
+  "fork": false,
+  "updated": "2026-09-02T11:44:55Z"
+ }
+]

@@ -1,0 +1,1 @@
+var e=function(e,t=2){if(!+e)return`0 Bytes`;let n=1024,r=t<0?0:t,i=[`Bytes`,`KiB`,`MiB`,`GiB`,`TiB`,`PiB`,`EiB`,`ZiB`,`YiB`],a=Math.floor(Math.log(e)/Math.log(n));return`${parseFloat((e/n**a).toFixed(r))} ${i[a]}`};export{e as t};

@@ -102,3 +102,10 @@ h1kit/cache/
 # Matomo local runtime (mariadb/php) & full source trees - only curated files committed
 matomo_report/_runtime/
 matomo_report/_src/
+
+# Figma credential/config files & transient captures (local only, never commit)
+figma_report/_figma_creds.py
+figma_report/_figma_creds.txt
+figma_report/_figma_*.har
+figma_report/_figma_*.py
+figma_report/_figma_*.txt

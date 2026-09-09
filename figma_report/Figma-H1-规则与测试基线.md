@@ -102,8 +102,8 @@
 
 | 编号 | 报告 | 端点 | 等级 | 结果 |
 |---|---|---|---|---|
-| F1 | PlanByFileKey 账单泄露 | `wss://www.figma.com/api/livegraph` | HIGH | 无效 |
-| F2 | 私有 Make 源码泄露 | WS + `/api/rev/{key}/code_snapshot` | HIGH | 无效 |
+| F1 | PlanByFileKey 账单泄露 | `wss://www.figma.com/api/livegraph` | HIGH | 项目方回复无安全影响→关闭(2026-09-07用户确认) |
+| F2 | 私有 Make 源码泄露 | WS + `/api/rev/{key}/code_snapshot` | HIGH | 已提交(2026-09-07) 等待 H1 回复 |
 | F3 | published_package 越权写 | `POST/DELETE /api/files/{key}/published_package` | MEDIUM | 无效 |
 | F4 | X-Figma-User-ID/fuid 伪造 | `/api/file_metadata`、`/api/ai_chat/*` | HIGH | 自撤回(假阳性) |
 

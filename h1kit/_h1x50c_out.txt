@@ -1,0 +1,15 @@
+len seg 20000
+------------------------------------------------------------
+subjectIsUser @ 7259336 : rt_id`]).length===0}url(e){return`/bugs?${this.toParam(e)}`}subjectIsTeam(){return typeof this.get(`subject`)==`string`&&this.get(`subject`)!==`user`}subjectIsUser(){return this.get(`subject`)===`user`}changeSelectedSubject(e){this.set({subject:e,report_id:0,page:1,reporter_ids:[],assigned_to_user_ids:[],assigned_to_group_ids:[],custom_inbox_ids:[]
+------------------------------------------------------------
+subjectIsUser @ 7262511 : `,this.fetchOnSubjectChange,this),this.fetchOnSubjectChange()}fetchOnSubjectChange(){if(this.reset(),this.inboxState.get(`subject`)&&!this.inboxState.subjectIsUser())return this.url=`/${this.inboxState.get(`subject`)}/assets`,this.withUniqueIdentifiers!==void 0&&(this.url=`${this.url}?with_unique_identifiers=${this.withUniqueIdentifiers}`),this.fet
+------------------------------------------------------------
+url= @ 7262539 : this),this.fetchOnSubjectChange()}fetchOnSubjectChange(){if(this.reset(),this.inboxState.get(`subject`)&&!this.inboxState.subjectIsUser())return this.url=`/${this.inboxState.get(`subject`)}/assets`,this.withUniqueIdentifiers!==void 0&&(this.url=`${this.url}?with_unique_identifiers=${this.withUniqueIdentifiers}`),this.fetch()}selectedByIdentifiers(e
+------------------------------------------------------------
+url= @ 7262630 : t(`subject`)&&!this.inboxState.subjectIsUser())return this.url=`/${this.inboxState.get(`subject`)}/assets`,this.withUniqueIdentifiers!==void 0&&(this.url=`${this.url}?with_unique_identifiers=${this.withUniqueIdentifiers}`),this.fetch()}selectedByIdentifiers(e){return(0,PJ.default)(this.models,t=>e.map(e=>e.toString()).includes(t.get(`asset_identifi
+------------------------------------------------------------
+fetch( @ 7262708 : tate.get(`subject`)}/assets`,this.withUniqueIdentifiers!==void 0&&(this.url=`${this.url}?with_unique_identifiers=${this.withUniqueIdentifiers}`),this.fetch()}selectedByIdentifiers(e){return(0,PJ.default)(this.models,t=>e.map(e=>e.toString()).includes(t.get(`asset_identifier`).toString())||e.map(e=>e.toString()).includes(t.get(`id`).toString()))}uns
+------------------------------------------------------------
+url= @ 7263683 : external_id`)||``).toUpperCase()}},$X=class extends LX{get model(){return RZe}url(){return this.url}initialize(e,t){this.teamHandle=t.teamHandle,this.url=t.url}comparator(e){return e.get(`name`)}parse(e){return e.weaknesses}isDuplicate(e){return e===void 0?(0,sl.default)(this.selectedId(),e):this.selectedId()===e.id}syncWithDraft(e){if(e)return thi
+------------------------------------------------------------
+sync @ 7263851 : or(e){return e.get(`name`)}parse(e){return e.weaknesses}isDuplicate(e){return e===void 0?(0,sl.default)(this.selectedId(),e):this.selectedId()===e.id}syncWithDraft(e){if(e)return this.forEach(function(t){return t.set(`selected`,t.id===e)})}hasOneSelected(){return this.where({selected:!0}).length>0}selected(){return this.find({selected:!0})}selected

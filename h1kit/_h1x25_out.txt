@@ -1,0 +1,93 @@
+===== HacktivitySearchQuery len=1448 =====
+
+  query HacktivitySearchQuery(
+    $queryString: String!
+    $from: Int
+    $size: Int
+    $sort: SortInput!
+    $reporterFilter: String
+  ) {
+    me {
+      id
+    }
+    search(
+      index: CompleteHacktivityReportIndex
+      query_string: $queryString
+      from: $from
+      size: $size
+      sort: $sort
+      reporter_filter: $reporterFilter
+    ) {
+      __typename
+
+      total_count
+
+      nodes {
+        __typename
+        ... on HacktivityDocument {
+          id
+          _id
+          reporter {
+            id
+            username
+            name
+          }
+          cve_ids
+          cwe
+          severity_rating
+          upvoted: upvoted_by_current_user
+          public
+          report {
+            id
+            databaseId: _id
+            title
+            substate
+            url
+            disclosed_at
+            report_generated_content {
+              id
+              hacktivity_summary
+            }
+          }
+          votes
+          team {
+            id
+            handle
+            name
+            medium_profile_picture: profile_picture(size: medium)
+            url
+            currency
+          }
+          total_awarded_amount
+          latest_disclosable_action
+          latest_disclosable_activity_at
+          submitted_at
+          disclosed
+          has_collaboration
+          collaborators {
+            id
+            username
+            name
+          }
+        }
+      }
+    }
+  }
+
+
+--- duplicates ctx @5393 ---
+ry-D5acVXBA.js","static/scopes_form-ZVVkxiyq.js","static/opportunity_discovery-aw6vTRfL.js","static/triage_intake-Bwk3vVkk.js","static/split_router-Rv-gZhKT.js","static/split_router-bf-M-6Dd.css","static/notifications_page-DCEv9lOY.js","static/outline-B91AlHOq.js","static/notifications_page-DUTAtIDc.css","static/bug_bounty_programs_page-C0anWPgU.js","static/report_page-DucRVz-D.js","static/report_duplicates_page-C2DXJ82k.js","static/bug-report-DxVQPQwb.js","static/user-D5NR1HRB.js","static/expired_report_page-qQrajjOs.js","static/authorization_page-B5kCBLsP.js","static/authorization_page-44yi189B.css","static/team_directory_settings_page-DIMgX6fa.js","static/team_inbox_views_settings_page-gFaPbkA4.js","static/react-sortable-hoc.esm-Ct2qVI2M.js","static/team_prepayment_settings_page-D3qwwhX
+
+--- duplicates ctx @883423 ---
+efinition`,name:{kind:`Name`,value:`DuplicatesItemReport`},typeCondition:{kind:`NamedType`,name:{kind:`Name`,value:`Report`}},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}},{kind:`Field`,name:{kind:`Name`,value:`reporter`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}}]}},{kind:`Field`,name:{kind:`Name`,value:`duplicates`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`edges`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`node`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}},{kind:`Field`,alias:{kind:`Name`,value:`database_id`},name:{kind:`Name`,value:`_id`}}]}}]}}]}}]}}]},rde={kind:`
+
+--- duplicates ctx @905253 ---
+efinition`,name:{kind:`Name`,value:`DuplicatesItemReport`},typeCondition:{kind:`NamedType`,name:{kind:`Name`,value:`Report`}},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}},{kind:`Field`,name:{kind:`Name`,value:`reporter`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}}]}},{kind:`Field`,name:{kind:`Name`,value:`duplicates`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`edges`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`node`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}},{kind:`Field`,alias:{kind:`Name`,value:`database_id`},name:{kind:`Name`,value:`_id`}}]}}]}}]}}]}},{kind:`Fragme
+
+--- duplicates ctx @1318305 ---
+efinition`,name:{kind:`Name`,value:`DuplicatesItemReport`},typeCondition:{kind:`NamedType`,name:{kind:`Name`,value:`Report`}},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}},{kind:`Field`,name:{kind:`Name`,value:`reporter`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}}]}},{kind:`Field`,name:{kind:`Name`,value:`duplicates`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`edges`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`node`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}},{kind:`Field`,alias:{kind:`Name`,value:`database_id`},name:{kind:`Name`,value:`_id`}}]}}]}}]}}]}},{kind:`Fragme
+
+--- duplicates ctx @2976214 ---
+`vulnerability_information`}},{kind:`Field`,name:{kind:`Name`,value:`original_report`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}},{kind:`Field`,name:{kind:`Name`,value:`_id`}},{kind:`Field`,alias:{kind:`Name`,value:`reportId`},name:{kind:`Name`,value:`_id`}},{kind:`Field`,name:{kind:`Name`,value:`substate`}}]}},{kind:`Field`,name:{kind:`Name`,value:`duplicates`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`total_count`}}]}},{kind:`Field`,name:{kind:`Name`,value:`reporter`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}},{kind:`Field`,name:{kind:`Name`,value:`username`}}]}},{kind:`Field`,name:{kind:`Name`,value:`weakness`},selectionSet:{kind:`SelectionSet`,selec
+
+===== REST json 端点候选 =====

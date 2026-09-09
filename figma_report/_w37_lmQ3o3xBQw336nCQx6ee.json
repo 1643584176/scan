@@ -1,0 +1,2612 @@
+{
+ "id": "lmQ3o3xBQw336nCQx6ee",
+ "name": "ControlNets - Structure Reference ",
+ "owner": "H822bxaJlpcStHwreI5drYHEWHX2",
+ "workspaceId": "aa036063-b614-4016-947f-a556884dae9e",
+ "organizationId": "849e299a-54a0-41ad-be8c-48617c59c577",
+ "visibility": "public",
+ "sharedUsers": [],
+ "poster": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639499/uploads/wpphmlenxomvtc7ahayf.png",
+ "userPoster": true,
+ "createdAt": "2025-03-24T14:02:46.227Z",
+ "updatedAt": "2025-08-28T09:45:02.331Z",
+ "publishedVersions": [],
+ "version": 1,
+ "nodes": [
+  {
+   "id": "1027993a-a284-4bab-887c-e0480ab017c6",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -2360,
+    "y": 1500
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright"
+    },
+    "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+    "result": {
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "2796e041-998b-4d8f-909a-1e7191436786",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -1240,
+    "y": 2730
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Seg"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "2d7c8880-e1f2-4d38-a325-6e171f645af5",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -1230,
+    "y": 1670
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Depth"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "3018f5ab-0074-43f6-82ae-15a221df1cec",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -1230,
+    "y": 2200
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Pose"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "3ad5f10a-6646-4677-8a84-81ea95ccc56a",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -720,
+    "y": 260
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Flux ControlNets\n"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "3f902e7c-0b29-417d-8c3e-4667a6f89563",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -200,
+    "y": 460
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux Depth Pro"
+    },
+    "name": "Flux Depth Pro",
+    "color": "Red",
+    "input": {
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "control_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     }
+    },
+    "model": {
+     "name": "black-forest-labs/flux-depth-pro",
+     "label": "",
+     "version": "30812170810708f84810ae99c7758c458f5dc6b7f29e8851dd388f311c8a01bd"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639353/uploads/bsnwoshjnxepkdpwfmkw.png",
+      "type": "image",
+      "input": {
+       "seed": 127517,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1072,
+      "height": 800,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/bsnwoshjnxepkdpwfmkw.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/bsnwoshjnxepkdpwfmkw",
+      "visualId": "a38c995b3a64e437",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/bsnwoshjnxepkdpwfmkw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/bsnwoshjnxepkdpwfmkw.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 827608,
+      "isRandom": true
+     },
+     "steps": 50,
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "guidance": 10,
+     "control_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "output_format": "png",
+     "safety_tolerance": 6,
+     "prompt_upsampling": true
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639353/uploads/bsnwoshjnxepkdpwfmkw.png",
+      "type": "image",
+      "input": {
+       "seed": 127517,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1072,
+      "height": 800,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/bsnwoshjnxepkdpwfmkw.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/bsnwoshjnxepkdpwfmkw",
+      "visualId": "a38c995b3a64e437",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/bsnwoshjnxepkdpwfmkw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/bsnwoshjnxepkdpwfmkw.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 2,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "steps": {
+      "max": 50,
+      "min": 15,
+      "type": "integer",
+      "order": 3,
+      "title": "Steps",
+      "default": 50,
+      "required": false,
+      "description": "Number of diffusion steps. Higher values yield finer details but increase processing time."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "guidance": {
+      "max": 50,
+      "min": 1,
+      "type": "number",
+      "order": 5,
+      "title": "Guidance",
+      "default": 10,
+      "required": false,
+      "description": "Controls the balance between adherence to the text as well as image prompt and image quality/diversity. Higher values make the output more closely match the prompt but may reduce overall image quality. Lower values allow for more creative freedom but might produce results less relevant to the prompt."
+     },
+     "control_image": {
+      "type": "string",
+      "order": 1,
+      "title": "Control Image",
+      "format": "uri",
+      "required": true,
+      "description": "Image to use as control input. Must be jpeg, png, or webp."
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 7,
+      "title": "Output Format",
+      "default": "png",
+      "options": [
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images."
+     },
+     "safety_tolerance": {
+      "max": 6,
+      "min": 1,
+      "type": "integer",
+      "order": 6,
+      "title": "Safety Tolerance",
+      "default": 2,
+      "required": false,
+      "description": "Safety tolerance, 1 is most strict and 6 is most permissive"
+     },
+     "prompt_upsampling": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Prompt Upsampling",
+      "default": false,
+      "required": false,
+      "description": "Automatically modify the prompt for more creative generation"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "ce25e0fd-2d23-4b66-9c69-cdcd8ce1d29a",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "control_image": {
+       "id": "67109cfa-2f1a-4ffc-a7df-8cd8e0683e8b",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Image to use as control input. Must be jpeg, png, or webp."
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional depth-aware image generation. Edit images while preserving spatial relationships.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Depth Pro"
+  },
+  {
+   "id": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": -2370,
+    "y": 1070
+   },
+   "data": {
+    "name": "File",
+    "color": "Yambo_Blue",
+    "output": {
+     "file": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     }
+    },
+    "result": {
+     "fps": 0,
+     "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+     "type": "image",
+     "width": 1080,
+     "height": 810,
+     "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+     "duration": 0,
+     "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+     "visualId": "e6e4911bdbc98e24",
+     "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+     "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+    },
+    "handles": {
+     "output": [
+      "file"
+     ]
+    },
+    "dark_color": "Yambo_Blue_Dark",
+    "border_color": "Yambo_Blue_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "File"
+  },
+  {
+   "id": "5c1eff29-4eef-490d-9302-932a6fd41085",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -730,
+    "y": 470
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux Canny Pro"
+    },
+    "name": "Flux Canny Pro",
+    "color": "Red",
+    "input": {
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "control_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     }
+    },
+    "model": {
+     "name": "black-forest-labs/flux-canny-pro",
+     "label": "",
+     "version": "6896f8d14c5f9a63291c72f1e189f7e3f935d913687b7185833bc69de22ea784"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639588/uploads/dnnlirhr2rtxskiprxmo.jpg",
+      "type": "image",
+      "input": {
+       "seed": 130916,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "guidance": 30,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1072,
+      "height": 800,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dnnlirhr2rtxskiprxmo.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/dnnlirhr2rtxskiprxmo",
+      "visualId": "e51833d9b6659833",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dnnlirhr2rtxskiprxmo.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dnnlirhr2rtxskiprxmo.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 525022,
+      "isRandom": true
+     },
+     "steps": 50,
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "guidance": 30,
+     "control_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "output_format": "jpg",
+     "safety_tolerance": 6,
+     "prompt_upsampling": true
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639588/uploads/dnnlirhr2rtxskiprxmo.jpg",
+      "type": "image",
+      "input": {
+       "seed": 130916,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "guidance": 30,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1072,
+      "height": 800,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dnnlirhr2rtxskiprxmo.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/dnnlirhr2rtxskiprxmo",
+      "visualId": "e51833d9b6659833",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dnnlirhr2rtxskiprxmo.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dnnlirhr2rtxskiprxmo.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 2,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "steps": {
+      "max": 50,
+      "min": 15,
+      "type": "integer",
+      "order": 3,
+      "title": "Steps",
+      "default": 50,
+      "required": false,
+      "description": "Number of diffusion steps. Higher values yield finer details but increase processing time."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "guidance": {
+      "max": 50,
+      "min": 1,
+      "type": "number",
+      "order": 5,
+      "title": "Guidance",
+      "default": 30,
+      "required": false,
+      "description": "Controls the balance between adherence to the text as well as image prompt and image quality/diversity. Higher values make the output more closely match the prompt but may reduce overall image quality. Lower values allow for more creative freedom but might produce results less relevant to the prompt."
+     },
+     "control_image": {
+      "type": "string",
+      "order": 1,
+      "title": "Control Image",
+      "format": "uri",
+      "required": true,
+      "description": "Image to use as control input. Must be jpeg, png, or webp."
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 7,
+      "title": "Output Format",
+      "default": "jpg",
+      "options": [
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images."
+     },
+     "safety_tolerance": {
+      "max": 6,
+      "min": 1,
+      "type": "integer",
+      "order": 6,
+      "title": "Safety Tolerance",
+      "default": 6,
+      "required": false,
+      "description": "Safety tolerance, 1 is most strict and 6 is most permissive"
+     },
+     "prompt_upsampling": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Prompt Upsampling",
+      "default": false,
+      "required": false,
+      "description": "Automatically modify the prompt for more creative generation"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "3c5788e7-4afb-413f-8349-4f70cca8c14f",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "control_image": {
+       "id": "1cc6d032-46da-4fc4-b415-7867eaa4e376",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Image to use as control input. Must be jpeg, png, or webp."
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional edge-guided image generation. Control structure and composition using Canny edge detection",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Canny Pro"
+  },
+  {
+   "id": "7c3f0108-2d60-4dac-ade6-0cbbb05d8568",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -190,
+    "y": 240
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Flux ControlNet\n"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "a5e69014-60d6-4523-b93d-83b012a9d486",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -1720,
+    "y": 2680
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Control Net Models "
+    },
+    "name": "Control Net Models ",
+    "color": "Red",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright"
+    },
+    "label": "",
+    "model": {
+     "name": "rossjillian/controlnet",
+     "label": "",
+     "version": "795433b19458d0f4fa172a7ccf93178d2adb1cb8ab2ad6c8fdc33fdbcd49f477"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639545/uploads/rq5xodlxthha6ck6zarl.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 56706,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "seg",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/rq5xodlxthha6ck6zarl.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/rq5xodlxthha6ck6zarl",
+      "visualId": "e4869a19b9cbc734",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/rq5xodlxthha6ck6zarl.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/rq5xodlxthha6ck6zarl.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "eta": 0,
+     "seed": {
+      "seed": 56706,
+      "isRandom": true
+     },
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "scale": 9,
+     "steps": 50,
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "scheduler": "DDIM",
+     "structure": "seg",
+     "num_outputs": 1,
+     "low_threshold": 100,
+     "high_threshold": 200,
+     "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+     "image_resolution": 768,
+     "return_reference_image": true
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639545/uploads/rq5xodlxthha6ck6zarl.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 56706,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "seg",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/rq5xodlxthha6ck6zarl.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/rq5xodlxthha6ck6zarl",
+      "visualId": "e4869a19b9cbc734",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/rq5xodlxthha6ck6zarl.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/rq5xodlxthha6ck6zarl.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639545/uploads/lfwcsujey7lzcfh4fj8y.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 56706,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "seg",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1024,
+      "height": 768,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lfwcsujey7lzcfh4fj8y.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/lfwcsujey7lzcfh4fj8y",
+      "visualId": "917b3b14ce2598ad",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lfwcsujey7lzcfh4fj8y.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lfwcsujey7lzcfh4fj8y.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "eta": {
+      "type": "input",
+      "order": 9,
+      "title": "Eta",
+      "default": 0,
+      "description": "Controls the amount of noise that is added to the input data during the denoising diffusion process. Higher value -> more noise"
+     },
+     "seed": {
+      "type": "seed",
+      "order": 8,
+      "title": "Seed",
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 0,
+      "title": "Image",
+      "description": "Input image"
+     },
+     "scale": {
+      "max": 30,
+      "min": 0.1,
+      "type": "number",
+      "order": 7,
+      "title": "Scale",
+      "default": 9,
+      "description": "Scale for classifier-free guidance"
+     },
+     "steps": {
+      "type": "input",
+      "order": 6,
+      "title": "Steps",
+      "default": 20,
+      "description": "Steps"
+     },
+     "prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Prompt",
+      "description": "Prompt for the model"
+     },
+     "scheduler": {
+      "ref": "scheduler",
+      "type": "enum",
+      "order": 5,
+      "title": "Scheduler",
+      "default": "DDIM",
+      "options": [
+       "DDIM",
+       "DPMSolverMultistep",
+       "HeunDiscrete",
+       "K_EULER_ANCESTRAL",
+       "K_EULER",
+       "KLMS",
+       "PNDM",
+       "UniPCMultistep"
+      ],
+      "description": "Choose a scheduler."
+     },
+     "structure": {
+      "ref": "structure",
+      "type": "enum",
+      "order": 2,
+      "title": "Structure",
+      "options": [
+       "canny",
+       "depth",
+       "hed",
+       "hough",
+       "normal",
+       "pose",
+       "scribble",
+       "seg"
+      ],
+      "description": "Controlnet structure to condition on"
+     },
+     "num_outputs": {
+      "max": 4,
+      "min": 1,
+      "type": "integer",
+      "order": 3,
+      "title": "Num Outputs",
+      "default": 1,
+      "description": "Number of images to output (higher values may OOM)"
+     },
+     "low_threshold": {
+      "max": 255,
+      "min": 1,
+      "type": "integer",
+      "order": 12,
+      "title": "Low Threshold",
+      "default": 100,
+      "description": "[canny only] Line detection low threshold"
+     },
+     "high_threshold": {
+      "max": 255,
+      "min": 1,
+      "type": "integer",
+      "order": 13,
+      "title": "High Threshold",
+      "default": 200,
+      "description": "[canny only] Line detection high threshold"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 10,
+      "title": "Negative Prompt",
+      "default": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+      "description": "Negative prompt"
+     },
+     "image_resolution": {
+      "ref": "image_resolution",
+      "type": "enum",
+      "order": 4,
+      "title": "Image Resolution",
+      "default": 512,
+      "options": [
+       256,
+       512,
+       768
+      ],
+      "description": "Resolution of output image (will be scaled to this as its smaller dimension)"
+     },
+     "return_reference_image": {
+      "type": "boolean",
+      "order": 11,
+      "title": "Return Reference Image",
+      "default": false,
+      "description": "whether to return the reference image along with the output"
+     }
+    },
+    "handles": {
+     "input": [
+      "image",
+      "prompt",
+      "negative_prompt"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "is3DLocked": false,
+    "description": "Canny / Depth map / HED edge detection / Hough/MLSD line detection / Normal map / Pose detection / Scribble / Semantic segmentation",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Control Net Models "
+  },
+  {
+   "id": "aae8062d-f312-4bcc-a862-c5a1792b3fcc",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -1710,
+    "y": 880
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "SDXL's ControlNet\n"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "c63d9ca5-380f-43ca-9d8b-ccd287aff03c",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -1230,
+    "y": 1160
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Canny"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "e43ca138-5a73-4c7a-a6d7-2883e07c8d69",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -1710,
+    "y": 1620
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Control Net Models "
+    },
+    "name": "Control Net Models ",
+    "color": "Red",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright"
+    },
+    "label": "",
+    "model": {
+     "name": "rossjillian/controlnet",
+     "label": "",
+     "version": "795433b19458d0f4fa172a7ccf93178d2adb1cb8ab2ad6c8fdc33fdbcd49f477"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639499/uploads/wpphmlenxomvtc7ahayf.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 328348,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "depth",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1024,
+      "height": 768,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/wpphmlenxomvtc7ahayf.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/wpphmlenxomvtc7ahayf",
+      "visualId": "993366e6e62412db",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/wpphmlenxomvtc7ahayf.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/wpphmlenxomvtc7ahayf.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "eta": 0,
+     "seed": {
+      "seed": 328348,
+      "isRandom": true
+     },
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "scale": 9,
+     "steps": 50,
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "scheduler": "DDIM",
+     "structure": "depth",
+     "num_outputs": 1,
+     "low_threshold": 100,
+     "high_threshold": 200,
+     "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+     "image_resolution": 768,
+     "return_reference_image": true
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639499/uploads/wpphmlenxomvtc7ahayf.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 328348,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "depth",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1024,
+      "height": 768,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/wpphmlenxomvtc7ahayf.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/wpphmlenxomvtc7ahayf",
+      "visualId": "993366e6e62412db",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/wpphmlenxomvtc7ahayf.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/wpphmlenxomvtc7ahayf.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639499/uploads/jcn86hd84hih3qfvv3ez.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 328348,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "depth",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1024,
+      "height": 768,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/jcn86hd84hih3qfvv3ez.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/jcn86hd84hih3qfvv3ez",
+      "visualId": "d6f43119726dc833",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/jcn86hd84hih3qfvv3ez.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/jcn86hd84hih3qfvv3ez.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "eta": {
+      "type": "input",
+      "order": 9,
+      "title": "Eta",
+      "default": 0,
+      "description": "Controls the amount of noise that is added to the input data during the denoising diffusion process. Higher value -> more noise"
+     },
+     "seed": {
+      "type": "seed",
+      "order": 8,
+      "title": "Seed",
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 0,
+      "title": "Image",
+      "description": "Input image"
+     },
+     "scale": {
+      "max": 30,
+      "min": 0.1,
+      "type": "number",
+      "order": 7,
+      "title": "Scale",
+      "default": 9,
+      "description": "Scale for classifier-free guidance"
+     },
+     "steps": {
+      "type": "input",
+      "order": 6,
+      "title": "Steps",
+      "default": 20,
+      "description": "Steps"
+     },
+     "prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Prompt",
+      "description": "Prompt for the model"
+     },
+     "scheduler": {
+      "ref": "scheduler",
+      "type": "enum",
+      "order": 5,
+      "title": "Scheduler",
+      "default": "DDIM",
+      "options": [
+       "DDIM",
+       "DPMSolverMultistep",
+       "HeunDiscrete",
+       "K_EULER_ANCESTRAL",
+       "K_EULER",
+       "KLMS",
+       "PNDM",
+       "UniPCMultistep"
+      ],
+      "description": "Choose a scheduler."
+     },
+     "structure": {
+      "ref": "structure",
+      "type": "enum",
+      "order": 2,
+      "title": "Structure",
+      "options": [
+       "canny",
+       "depth",
+       "hed",
+       "hough",
+       "normal",
+       "pose",
+       "scribble",
+       "seg"
+      ],
+      "description": "Controlnet structure to condition on"
+     },
+     "num_outputs": {
+      "max": 4,
+      "min": 1,
+      "type": "integer",
+      "order": 3,
+      "title": "Num Outputs",
+      "default": 1,
+      "description": "Number of images to output (higher values may OOM)"
+     },
+     "low_threshold": {
+      "max": 255,
+      "min": 1,
+      "type": "integer",
+      "order": 12,
+      "title": "Low Threshold",
+      "default": 100,
+      "description": "[canny only] Line detection low threshold"
+     },
+     "high_threshold": {
+      "max": 255,
+      "min": 1,
+      "type": "integer",
+      "order": 13,
+      "title": "High Threshold",
+      "default": 200,
+      "description": "[canny only] Line detection high threshold"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 10,
+      "title": "Negative Prompt",
+      "default": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+      "description": "Negative prompt"
+     },
+     "image_resolution": {
+      "ref": "image_resolution",
+      "type": "enum",
+      "order": 4,
+      "title": "Image Resolution",
+      "default": 512,
+      "options": [
+       256,
+       512,
+       768
+      ],
+      "description": "Resolution of output image (will be scaled to this as its smaller dimension)"
+     },
+     "return_reference_image": {
+      "type": "boolean",
+      "order": 11,
+      "title": "Return Reference Image",
+      "default": false,
+      "description": "whether to return the reference image along with the output"
+     }
+    },
+    "handles": {
+     "input": [
+      "image",
+      "prompt",
+      "negative_prompt"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "is3DLocked": false,
+    "description": "Canny / Depth map / HED edge detection / Hough/MLSD line detection / Normal map / Pose detection / Scribble / Semantic segmentation",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Control Net Models "
+  },
+  {
+   "id": "e9ae5920-5b03-4153-aec1-2b1725260962",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -1710,
+    "y": 2140
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Control Net Models "
+    },
+    "name": "Control Net Models ",
+    "color": "Red",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright"
+    },
+    "label": "",
+    "model": {
+     "name": "rossjillian/controlnet",
+     "label": "",
+     "version": "795433b19458d0f4fa172a7ccf93178d2adb1cb8ab2ad6c8fdc33fdbcd49f477"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639529/uploads/iog5atcxdggium6os71k.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 477605,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "pose",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 704,
+      "height": 512,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/iog5atcxdggium6os71k.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/iog5atcxdggium6os71k",
+      "visualId": "99666499366c999b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/iog5atcxdggium6os71k.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/iog5atcxdggium6os71k.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "eta": 0,
+     "seed": {
+      "seed": 477605,
+      "isRandom": true
+     },
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "scale": 9,
+     "steps": 50,
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "scheduler": "DDIM",
+     "structure": "pose",
+     "num_outputs": 1,
+     "low_threshold": 100,
+     "high_threshold": 200,
+     "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+     "image_resolution": 768,
+     "return_reference_image": true
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639529/uploads/iog5atcxdggium6os71k.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 477605,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "pose",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 704,
+      "height": 512,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/iog5atcxdggium6os71k.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/iog5atcxdggium6os71k",
+      "visualId": "99666499366c999b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/iog5atcxdggium6os71k.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/iog5atcxdggium6os71k.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639529/uploads/hg70e3gl43ygxccvjvgt.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 477605,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "pose",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1024,
+      "height": 768,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hg70e3gl43ygxccvjvgt.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hg70e3gl43ygxccvjvgt",
+      "visualId": "d9a6d0c36e1977c0",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hg70e3gl43ygxccvjvgt.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hg70e3gl43ygxccvjvgt.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "eta": {
+      "type": "input",
+      "order": 9,
+      "title": "Eta",
+      "default": 0,
+      "description": "Controls the amount of noise that is added to the input data during the denoising diffusion process. Higher value -> more noise"
+     },
+     "seed": {
+      "type": "seed",
+      "order": 8,
+      "title": "Seed",
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 0,
+      "title": "Image",
+      "description": "Input image"
+     },
+     "scale": {
+      "max": 30,
+      "min": 0.1,
+      "type": "number",
+      "order": 7,
+      "title": "Scale",
+      "default": 9,
+      "description": "Scale for classifier-free guidance"
+     },
+     "steps": {
+      "type": "input",
+      "order": 6,
+      "title": "Steps",
+      "default": 20,
+      "description": "Steps"
+     },
+     "prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Prompt",
+      "description": "Prompt for the model"
+     },
+     "scheduler": {
+      "ref": "scheduler",
+      "type": "enum",
+      "order": 5,
+      "title": "Scheduler",
+      "default": "DDIM",
+      "options": [
+       "DDIM",
+       "DPMSolverMultistep",
+       "HeunDiscrete",
+       "K_EULER_ANCESTRAL",
+       "K_EULER",
+       "KLMS",
+       "PNDM",
+       "UniPCMultistep"
+      ],
+      "description": "Choose a scheduler."
+     },
+     "structure": {
+      "ref": "structure",
+      "type": "enum",
+      "order": 2,
+      "title": "Structure",
+      "options": [
+       "canny",
+       "depth",
+       "hed",
+       "hough",
+       "normal",
+       "pose",
+       "scribble",
+       "seg"
+      ],
+      "description": "Controlnet structure to condition on"
+     },
+     "num_outputs": {
+      "max": 4,
+      "min": 1,
+      "type": "integer",
+      "order": 3,
+      "title": "Num Outputs",
+      "default": 1,
+      "description": "Number of images to output (higher values may OOM)"
+     },
+     "low_threshold": {
+      "max": 255,
+      "min": 1,
+      "type": "integer",
+      "order": 12,
+      "title": "Low Threshold",
+      "default": 100,
+      "description": "[canny only] Line detection low threshold"
+     },
+     "high_threshold": {
+      "max": 255,
+      "min": 1,
+      "type": "integer",
+      "order": 13,
+      "title": "High Threshold",
+      "default": 200,
+      "description": "[canny only] Line detection high threshold"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 10,
+      "title": "Negative Prompt",
+      "default": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+      "description": "Negative prompt"
+     },
+     "image_resolution": {
+      "ref": "image_resolution",
+      "type": "enum",
+      "order": 4,
+      "title": "Image Resolution",
+      "default": 512,
+      "options": [
+       256,
+       512,
+       768
+      ],
+      "description": "Resolution of output image (will be scaled to this as its smaller dimension)"
+     },
+     "return_reference_image": {
+      "type": "boolean",
+      "order": 11,
+      "title": "Return Reference Image",
+      "default": false,
+      "description": "whether to return the reference image along with the output"
+     }
+    },
+    "handles": {
+     "input": [
+      "image",
+      "prompt",
+      "negative_prompt"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "is3DLocked": false,
+    "description": "Canny / Depth map / HED edge detection / Hough/MLSD line detection / Normal map / Pose detection / Scribble / Semantic segmentation",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Control Net Models "
+  },
+  {
+   "id": "ec1ea2e8-1185-4e34-b336-8cf87648559f",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -1710,
+    "y": 1110
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Control Net Models "
+    },
+    "name": "Control Net Models ",
+    "color": "Red",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright"
+    },
+    "label": "",
+    "model": {
+     "name": "rossjillian/controlnet",
+     "label": "",
+     "version": "795433b19458d0f4fa172a7ccf93178d2adb1cb8ab2ad6c8fdc33fdbcd49f477"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639460/uploads/vgkeirsnutbakkpjcihi.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 949603,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "canny",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vgkeirsnutbakkpjcihi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vgkeirsnutbakkpjcihi",
+      "visualId": "a5583f61c68669f4",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vgkeirsnutbakkpjcihi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vgkeirsnutbakkpjcihi.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "eta": 0,
+     "seed": {
+      "seed": 949603,
+      "isRandom": true
+     },
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     },
+     "scale": 9,
+     "steps": 50,
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "scheduler": "DDIM",
+     "structure": "canny",
+     "num_outputs": 1,
+     "low_threshold": 100,
+     "high_threshold": 200,
+     "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+     "image_resolution": 768,
+     "return_reference_image": true
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639460/uploads/vgkeirsnutbakkpjcihi.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 949603,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "canny",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vgkeirsnutbakkpjcihi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vgkeirsnutbakkpjcihi",
+      "visualId": "a5583f61c68669f4",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vgkeirsnutbakkpjcihi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vgkeirsnutbakkpjcihi.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744639461/uploads/ilizsk7mjx5zsn23h5c2.png",
+      "type": "image",
+      "input": {
+       "eta": 0,
+       "seed": 949603,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+        "type": "image",
+        "width": 1080,
+        "height": 810,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+        "visualId": "e6e4911bdbc98e24",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+       },
+       "scale": 9,
+       "steps": 50,
+       "prompt": "abstract rock statue of very old woman, museum piece, light grey background",
+       "scheduler": "DDIM",
+       "structure": "canny",
+       "num_outputs": 1,
+       "low_threshold": 100,
+       "high_threshold": 200,
+       "negative_prompt": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+       "image_resolution": 768,
+       "return_reference_image": true
+      },
+      "width": 1024,
+      "height": 768,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ilizsk7mjx5zsn23h5c2.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ilizsk7mjx5zsn23h5c2",
+      "visualId": "9ff123046e658a97",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ilizsk7mjx5zsn23h5c2.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ilizsk7mjx5zsn23h5c2.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "eta": {
+      "type": "input",
+      "order": 9,
+      "title": "Eta",
+      "default": 0,
+      "description": "Controls the amount of noise that is added to the input data during the denoising diffusion process. Higher value -> more noise"
+     },
+     "seed": {
+      "type": "seed",
+      "order": 8,
+      "title": "Seed",
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 0,
+      "title": "Image",
+      "description": "Input image"
+     },
+     "scale": {
+      "max": 30,
+      "min": 0.1,
+      "type": "number",
+      "order": 7,
+      "title": "Scale",
+      "default": 9,
+      "description": "Scale for classifier-free guidance"
+     },
+     "steps": {
+      "type": "input",
+      "order": 6,
+      "title": "Steps",
+      "default": 20,
+      "description": "Steps"
+     },
+     "prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Prompt",
+      "description": "Prompt for the model"
+     },
+     "scheduler": {
+      "ref": "scheduler",
+      "type": "enum",
+      "order": 5,
+      "title": "Scheduler",
+      "default": "DDIM",
+      "options": [
+       "DDIM",
+       "DPMSolverMultistep",
+       "HeunDiscrete",
+       "K_EULER_ANCESTRAL",
+       "K_EULER",
+       "KLMS",
+       "PNDM",
+       "UniPCMultistep"
+      ],
+      "description": "Choose a scheduler."
+     },
+     "structure": {
+      "ref": "structure",
+      "type": "enum",
+      "order": 2,
+      "title": "Structure",
+      "options": [
+       "canny",
+       "depth",
+       "hed",
+       "hough",
+       "normal",
+       "pose",
+       "scribble",
+       "seg"
+      ],
+      "description": "Controlnet structure to condition on"
+     },
+     "num_outputs": {
+      "max": 4,
+      "min": 1,
+      "type": "integer",
+      "order": 3,
+      "title": "Num Outputs",
+      "default": 1,
+      "description": "Number of images to output (higher values may OOM)"
+     },
+     "low_threshold": {
+      "max": 255,
+      "min": 1,
+      "type": "integer",
+      "order": 12,
+      "title": "Low Threshold",
+      "default": 100,
+      "description": "[canny only] Line detection low threshold"
+     },
+     "high_threshold": {
+      "max": 255,
+      "min": 1,
+      "type": "integer",
+      "order": 13,
+      "title": "High Threshold",
+      "default": 200,
+      "description": "[canny only] Line detection high threshold"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 10,
+      "title": "Negative Prompt",
+      "default": "Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+      "description": "Negative prompt"
+     },
+     "image_resolution": {
+      "ref": "image_resolution",
+      "type": "enum",
+      "order": 4,
+      "title": "Image Resolution",
+      "default": 512,
+      "options": [
+       256,
+       512,
+       768
+      ],
+      "description": "Resolution of output image (will be scaled to this as its smaller dimension)"
+     },
+     "return_reference_image": {
+      "type": "boolean",
+      "order": 11,
+      "title": "Return Reference Image",
+      "default": false,
+      "description": "whether to return the reference image along with the output"
+     }
+    },
+    "handles": {
+     "input": [
+      "image",
+      "prompt",
+      "negative_prompt"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "is3DLocked": false,
+    "description": "Canny / Depth map / HED edge detection / Hough/MLSD line detection / Normal map / Pose detection / Scribble / Semantic segmentation",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Control Net Models "
+  },
+  {
+   "id": "946dd4fe-27aa-4289-9419-3009acf65914",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -450,
+    "y": 980
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Google Imagen"
+    },
+    "name": "Mystic",
+    "color": "Red",
+    "input": {
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "structure_reference": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     }
+    },
+    "label": null,
+    "model": {
+     "name": "fp_mystic"
+    },
+    "output": {
+     "result": {
+      "url": "https://media.weavy.ai/image/upload/v1756217630/uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask.png",
+      "type": "image",
+      "input": {
+       "hdr": 50,
+       "model": "realism",
+       "engine": "automatic",
+       "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+       "adherence": 50,
+       "resolution": "2k",
+       "aspect_ratio": "square_1_1",
+       "fixed_generation": false,
+       "creative_detailing": 33,
+       "structure_strength": 50,
+       "structure_reference": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png"
+      },
+      "order": 0,
+      "width": 2944,
+      "height": 2304,
+      "batchId": "341d2e75-fc09-415b-a650-cde0178879cd",
+      "viewUrl": "https://media.weavy.ai/image/upload/f_auto,q_auto/v1/uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask.png?_a=BAMAK+WO0",
+      "publicId": "uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask.png?_a=BAMAK+WO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask.png?_a=BAMAK+WO0",
+      "secondaryOrder": 0
+     }
+    },
+    "params": {
+     "hdr": 50,
+     "model": "realism",
+     "engine": "automatic",
+     "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+     "adherence": 50,
+     "resolution": "2k",
+     "aspect_ratio": "square_1_1",
+     "fixed_generation": false,
+     "creative_detailing": 33,
+     "structure_strength": 50,
+     "structure_reference": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png",
+      "type": "image",
+      "width": 1080,
+      "height": 810,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hqwer2ijvdpv4l1myhho",
+      "visualId": "e6e4911bdbc98e24",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hqwer2ijvdpv4l1myhho.png?_a=BAMCcSfi0"
+     }
+    },
+    "result": [
+     {
+      "url": "https://media.weavy.ai/image/upload/v1756217630/uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask.png",
+      "type": "image",
+      "input": {
+       "hdr": 50,
+       "model": "realism",
+       "engine": "automatic",
+       "prompt": "abstract rough rock statue of very old woman, museum piece, light grey background, bright",
+       "adherence": 50,
+       "resolution": "2k",
+       "aspect_ratio": "square_1_1",
+       "fixed_generation": false,
+       "creative_detailing": 33,
+       "structure_strength": 50,
+       "structure_reference": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742745848/uploads/hqwer2ijvdpv4l1myhho.png"
+      },
+      "order": 0,
+      "width": 2944,
+      "height": 2304,
+      "batchId": "341d2e75-fc09-415b-a650-cde0178879cd",
+      "viewUrl": "https://media.weavy.ai/image/upload/f_auto,q_auto/v1/uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask.png?_a=BAMAK+WO0",
+      "publicId": "uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask.png?_a=BAMAK+WO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/D13KHjm958bJaWyp8KGYlyWGlIj2/gsxegus3dtmopmmrkask.png?_a=BAMAK+WO0",
+      "secondaryOrder": 0
+     }
+    ],
+    "schema": {
+     "hdr": {
+      "max": 100,
+      "min": 0,
+      "type": "integer",
+      "order": 6,
+      "title": "HDR",
+      "default": 50,
+      "description": "Note: This parameter only takes effect when a \"Style Image\" is provided. Increasing this value can give you a more detailed image, at the cost of a more 'AI look' and slightly worse style transfer. Lower values have a more natural and artistic look but may increase artifacts."
+     },
+     "model": {
+      "type": "enum",
+      "order": 9,
+      "title": "Model",
+      "default": "realism",
+      "options": [
+       "realism",
+       "fluid",
+       "zen"
+      ],
+      "description": "zen - for smoother, basic, and cleaner results. fluid - the model that adheres best to prompts with great average quality for all kind of images. realism - with a more realistic color palette. IMPORTANT: You should use Zen or Fluid if you are trying to generate something that is really fantastic or a known character, Realism may not follow your prompt well."
+     },
+     "engine": {
+      "type": "enum",
+      "order": 11,
+      "title": "Engine",
+      "default": "automatic",
+      "options": [
+       "automatic",
+       "magnific_illusio",
+       "magnific_sharpy",
+       "magnific_sparkle"
+      ],
+      "description": "Select the engine for the AI model. automatic - default choice, Illusio - for smoother illustrations, landscapes, and nature. Sharpy - better for realistic images like photographs and for a more grainy look. Sparkle - also good for realistic images. It's a middle ground between Illusio and Sharpy."
+     },
+     "adherence": {
+      "max": 100,
+      "min": 0,
+      "type": "integer",
+      "order": 5,
+      "title": "Adherence",
+      "default": 50,
+      "description": "Note: This parameter only takes effect when a \"Style Image\" is provided. Increasing this value will make your generation more faithful to the prompt, but it may transfer the style a bit less accurately. Higher values can help fix small artifacts, anatomical errors and text readability. Lower values will give you more creative images and closer to the style reference."
+     },
+     "resolution": {
+      "type": "enum",
+      "order": 7,
+      "title": "Resolution",
+      "default": "2k",
+      "options": [
+       "1k",
+       "2k",
+       "4k"
+      ],
+      "description": "Resolution of the image"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 8,
+      "title": "Aspect Ratio",
+      "default": "square_1_1",
+      "options": [
+       "square_1_1",
+       "classic_4_3",
+       "traditional_3_4",
+       "widescreen_16_9",
+       "social_story_9_16",
+       "smartphone_horizontal_20_9",
+       "smartphone_vertical_9_20",
+       "standard_3_2",
+       "portrait_2_3",
+       "horizontal_2_1",
+       "vertical_1_2",
+       "social_5_4",
+       "social_post_4_5"
+      ],
+      "description": "Image size with the aspect ratio. The aspect ratio is the proportional relationship between an image's width and height, expressed as *_width_height (e.g., square_1_1, widescreen_16_9)."
+     },
+     "style_reference": {
+      "type": "string",
+      "order": 4,
+      "title": "Style Reference",
+      "description": "Base64 image to use as style reference. Using images as style references allows you to influence the aesthetic of your creation. This is possibly the most powerful tool of Mystic, as it truly lets you create incredibly unique images."
+     },
+     "fixed_generation": {
+      "type": "boolean",
+      "order": 12,
+      "title": "Fixed Generation",
+      "default": false,
+      "description": "When this option is enabled, using the same settings will consistently produce the same image. Fixed generations are ideal for fine-tuning, as it allows for incremental changes to parameters to see subtle variations in the output."
+     },
+     "creative_detailing": {
+      "max": 100,
+      "min": 0,
+      "type": "integer",
+      "order": 10,
+      "title": "Creative Detailing",
+      "default": 33,
+      "description": "Higher values can achieve greater detail per pixel at higher resolutions at the cost of giving a somewhat more \"HDR\" or artificial look. Very high values can generate quite crazy things like eyes where they shouldn't appear, etc."
+     },
+     "structure_strength": {
+      "max": 100,
+      "min": 0,
+      "type": "integer",
+      "order": 3,
+      "title": "Control Image Strength",
+      "default": 50,
+      "description": "Note: This parameter only takes effect when a \"Control Image\" image is provided. Allows to maintain the structure of the original image."
+     },
+     "structure_reference": {
+      "type": "string",
+      "order": 2,
+      "title": "Structure Reference",
+      "description": "Base64 image to use as structure reference. Using images as structure references allows you to influence the shape of your final image. This feature enables various creative applications such as coloring sketches, transforming cartoons into realistic images, texturing basic 3D models, or converting real images into cartoons."
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610ab",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "style_reference": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610qw",
+       "type": "image",
+       "label": "style_image",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Using images as style references allows you to influence the aesthetic of your creation. This is possibly the most powerful tool of Mystic, as it truly lets you create incredibly unique images."
+      },
+      "structure_reference": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610vf",
+       "type": "image",
+       "label": "control_image",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": "Maintain the structural characteristics of the image"
+      }
+     },
+     "output": {
+      "result": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610ac",
+       "type": "image",
+       "label": "result",
+       "order": 0,
+       "format": "uri",
+       "description": "Result image"
+      }
+     }
+    },
+    "version": 3,
+    "description": "Mystic image generation model for ultra-realistic, high-resolution images.",
+    "selectedOutput": 0
+   },
+   "createdAt": "2025-08-26T14:11:53.427Z",
+   "dragHandle": ".node-header",
+   "originalName": "Mystic"
+  }
+ ],
+ "edges": [
+  {
+   "id": "reactflow__edge-1027993a-a284-4bab-887c-e0480ab017c61027993a-a284-4bab-887c-e0480ab017c6-output-prompt-ec1ea2e8-1185-4e34-b336-8cf87648559fec1ea2e8-1185-4e34-b336-8cf87648559f-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "1027993a-a284-4bab-887c-e0480ab017c6",
+   "target": "ec1ea2e8-1185-4e34-b336-8cf87648559f",
+   "selected": false,
+   "sourceHandle": "1027993a-a284-4bab-887c-e0480ab017c6-output-prompt",
+   "targetHandle": "ec1ea2e8-1185-4e34-b336-8cf87648559f-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-1027993a-a284-4bab-887c-e0480ab017c61027993a-a284-4bab-887c-e0480ab017c6-output-prompt-5c1eff29-4eef-490d-9302-932a6fd410855c1eff29-4eef-490d-9302-932a6fd41085-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "1027993a-a284-4bab-887c-e0480ab017c6",
+   "target": "5c1eff29-4eef-490d-9302-932a6fd41085",
+   "selected": false,
+   "sourceHandle": "1027993a-a284-4bab-887c-e0480ab017c6-output-prompt",
+   "targetHandle": "5c1eff29-4eef-490d-9302-932a6fd41085-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-1027993a-a284-4bab-887c-e0480ab017c61027993a-a284-4bab-887c-e0480ab017c6-output-prompt-3f902e7c-0b29-417d-8c3e-4667a6f895633f902e7c-0b29-417d-8c3e-4667a6f89563-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "1027993a-a284-4bab-887c-e0480ab017c6",
+   "target": "3f902e7c-0b29-417d-8c3e-4667a6f89563",
+   "selected": false,
+   "sourceHandle": "1027993a-a284-4bab-887c-e0480ab017c6-output-prompt",
+   "targetHandle": "3f902e7c-0b29-417d-8c3e-4667a6f89563-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-5ade6c4b-df00-47a9-8842-ddb3a9bf62995ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file-5c1eff29-4eef-490d-9302-932a6fd410855c1eff29-4eef-490d-9302-932a6fd41085-input-control_image",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299",
+   "target": "5c1eff29-4eef-490d-9302-932a6fd41085",
+   "selected": false,
+   "sourceHandle": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file",
+   "targetHandle": "5c1eff29-4eef-490d-9302-932a6fd41085-input-control_image"
+  },
+  {
+   "id": "reactflow__edge-5ade6c4b-df00-47a9-8842-ddb3a9bf62995ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file-3f902e7c-0b29-417d-8c3e-4667a6f895633f902e7c-0b29-417d-8c3e-4667a6f89563-input-control_image",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299",
+   "target": "3f902e7c-0b29-417d-8c3e-4667a6f89563",
+   "selected": false,
+   "sourceHandle": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file",
+   "targetHandle": "3f902e7c-0b29-417d-8c3e-4667a6f89563-input-control_image"
+  },
+  {
+   "id": "reactflow__edge-5ade6c4b-df00-47a9-8842-ddb3a9bf62995ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file-ec1ea2e8-1185-4e34-b336-8cf87648559fec1ea2e8-1185-4e34-b336-8cf87648559f-input-image",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299",
+   "target": "ec1ea2e8-1185-4e34-b336-8cf87648559f",
+   "selected": false,
+   "sourceHandle": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file",
+   "targetHandle": "ec1ea2e8-1185-4e34-b336-8cf87648559f-input-image"
+  },
+  {
+   "id": "reactflow__edge-5ade6c4b-df00-47a9-8842-ddb3a9bf62995ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file-e43ca138-5a73-4c7a-a6d7-2883e07c8d69e43ca138-5a73-4c7a-a6d7-2883e07c8d69-input-image",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299",
+   "target": "e43ca138-5a73-4c7a-a6d7-2883e07c8d69",
+   "selected": false,
+   "sourceHandle": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file",
+   "targetHandle": "e43ca138-5a73-4c7a-a6d7-2883e07c8d69-input-image"
+  },
+  {
+   "id": "reactflow__edge-1027993a-a284-4bab-887c-e0480ab017c61027993a-a284-4bab-887c-e0480ab017c6-output-prompt-e43ca138-5a73-4c7a-a6d7-2883e07c8d69e43ca138-5a73-4c7a-a6d7-2883e07c8d69-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "1027993a-a284-4bab-887c-e0480ab017c6",
+   "target": "e43ca138-5a73-4c7a-a6d7-2883e07c8d69",
+   "selected": false,
+   "sourceHandle": "1027993a-a284-4bab-887c-e0480ab017c6-output-prompt",
+   "targetHandle": "e43ca138-5a73-4c7a-a6d7-2883e07c8d69-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-5ade6c4b-df00-47a9-8842-ddb3a9bf62995ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file-e9ae5920-5b03-4153-aec1-2b1725260962e9ae5920-5b03-4153-aec1-2b1725260962-input-image",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299",
+   "target": "e9ae5920-5b03-4153-aec1-2b1725260962",
+   "selected": false,
+   "sourceHandle": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file",
+   "targetHandle": "e9ae5920-5b03-4153-aec1-2b1725260962-input-image"
+  },
+  {
+   "id": "reactflow__edge-1027993a-a284-4bab-887c-e0480ab017c61027993a-a284-4bab-887c-e0480ab017c6-output-prompt-e9ae5920-5b03-4153-aec1-2b1725260962e9ae5920-5b03-4153-aec1-2b1725260962-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "1027993a-a284-4bab-887c-e0480ab017c6",
+   "target": "e9ae5920-5b03-4153-aec1-2b1725260962",
+   "selected": false,
+   "sourceHandle": "1027993a-a284-4bab-887c-e0480ab017c6-output-prompt",
+   "targetHandle": "e9ae5920-5b03-4153-aec1-2b1725260962-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-5ade6c4b-df00-47a9-8842-ddb3a9bf62995ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file-a5e69014-60d6-4523-b93d-83b012a9d486a5e69014-60d6-4523-b93d-83b012a9d486-input-image",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299",
+   "target": "a5e69014-60d6-4523-b93d-83b012a9d486",
+   "selected": false,
+   "sourceHandle": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file",
+   "targetHandle": "a5e69014-60d6-4523-b93d-83b012a9d486-input-image"
+  },
+  {
+   "id": "reactflow__edge-1027993a-a284-4bab-887c-e0480ab017c61027993a-a284-4bab-887c-e0480ab017c6-output-prompt-a5e69014-60d6-4523-b93d-83b012a9d486a5e69014-60d6-4523-b93d-83b012a9d486-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "1027993a-a284-4bab-887c-e0480ab017c6",
+   "target": "a5e69014-60d6-4523-b93d-83b012a9d486",
+   "selected": false,
+   "sourceHandle": "1027993a-a284-4bab-887c-e0480ab017c6-output-prompt",
+   "targetHandle": "a5e69014-60d6-4523-b93d-83b012a9d486-input-prompt"
+  },
+  {
+   "id": "61cddc42-bcda-4400-9ca3-168e8b4031b2",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red",
+    "sourceHandleType": "any",
+    "targetHandleType": "image"
+   },
+   "type": "custom",
+   "source": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299",
+   "target": "946dd4fe-27aa-4289-9419-3009acf65914",
+   "selected": false,
+   "sourceHandle": "5ade6c4b-df00-47a9-8842-ddb3a9bf6299-output-file",
+   "targetHandle": "946dd4fe-27aa-4289-9419-3009acf65914-input-structure_reference"
+  },
+  {
+   "id": "b628baf6-ad77-4366-a0f7-cbf1c6455929",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red",
+    "sourceHandleType": "any",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "1027993a-a284-4bab-887c-e0480ab017c6",
+   "target": "946dd4fe-27aa-4289-9419-3009acf65914",
+   "selected": false,
+   "sourceHandle": "1027993a-a284-4bab-887c-e0480ab017c6-output-prompt",
+   "targetHandle": "946dd4fe-27aa-4289-9419-3009acf65914-input-prompt"
+  }
+ ],
+ "latestVersion": {
+  "version": 1,
+  "createdAt": "2025-03-24T14:02:46.227Z"
+ },
+ "latestPublishedVersion": null,
+ "showcaseOrder": 20,
+ "showcase": false,
+ "designAppMetadata": null,
+ "v3": null,
+ "batchRuns": [],
+ "folderId": "987d87c4-ed1d-4cc3-be7d-5c1d48dde83c",
+ "scope": "WORKSPACE",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

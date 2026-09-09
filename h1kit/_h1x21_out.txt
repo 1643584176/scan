@@ -1,0 +1,67 @@
+===== BetterReportDuplicates (len 359) =====
+:JSe,'
+  query BetterReportDuplicates(
+    $searchText: String!
+    $teamFilter: [Int!]
+    $substate: [String!]
+    $limit: Int
+  ) {
+    search(
+      index: DuplicateDetectorReportsIndex
+      first: $limit
+      query: {
+        bool: {
+          must: {
+            multi_match: {
+              query: $searchText
+              fields: [
+                
+
+===== BetterReportDuplicatesExactText (len 940) =====
+vulnerability_information"
+                "title"
+                "comments"
+                "triage_summary"
+              ]
+              type: "phrase"
+            }
+          }
+          filter: [
+            { terms: { team_id: $teamFilter } }
+            { terms: { substate: $substate } }
+          ]
+        }
+      }
+    ) {
+      __typename
+      nodes {
+        ... on ReportDocument {
+          id
+          report_id
+          title
+        }
+      }
+    }
+  }
+':XSe,'
+  query BetterReportDuplicatesExactTextFeatureToggled(
+    $teamFilter: [Int!]
+    $substate: [String!]
+    $limit: Int
+    $exactText: String!
+    $wildcardStr: String!
+  ) {
+    search(
+      index: DuplicateDetectorReportsIndex
+      first: $limit
+      query: {
+        bool: {
+          minimum_should_match: 1
+          should: [
+            {
+              multi_match: {
+                query: $exactText
+                fields: [
+                  
+
+BetterReportDuplicatesExactTextFeatureToggled: no string

@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime-DAXXjFlN.js";import{Fw as t,Px as n,pp as r}from"./vendor-_WdvpBLr.js";var i=e(r()),a=t(),o=n(({history:e,location:t})=>{let n=i.default.parse(t.search,{ignoreQueryPrefix:!0});return(0,a.jsx)(`div`,{children:JSON.stringify(n)})});export{o as default};

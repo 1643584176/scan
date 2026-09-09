@@ -1,0 +1,92 @@
+--- title ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- description ---
+  [200] {"errors":[{"message":"Field 'description' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- weakness ---
+  [200] {"errors":[{"message":"Field 'weakness' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- cwe ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- state ---
+  [200] {"errors":[{"message":"Field 'state' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- substate ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- team ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- team_handle ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- reporter ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- reporter.username ---
+  [200] {"errors":[{"message":"Field 'reporter.username' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- reporter_username ---
+  [200] {"errors":[{"message":"Field 'reporter_username' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- severity ---
+  [200] {"errors":[{"message":"Field 'severity' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- severity_rating ---
+  [200] {"data":{"search":{"total_count":9307}}}
+--- asset ---
+  [200] {"errors":[{"message":"Field 'asset' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- asset_identifier ---
+  [200] {"errors":[{"message":"Field 'asset_identifier' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- program ---
+  [200] {"errors":[{"message":"Field 'program' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- database_id ---
+  [200] {"errors":[{"message":"Field 'database_id' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- id ---
+  [200] {"errors":[{"message":"Field 'id' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- created_at ---
+  [200] {"errors":[{"message":"Field 'created_at' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- submitted_at ---
+  [200] {"errors":[{"message":"Field 'submitted_at' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- public ---
+  [200] {"errors":[{"message":"Field 'public' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- disclosed_at ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- url ---
+  [200] {"errors":[{"message":"Field 'url' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- hacktivity ---
+  [200] {"errors":[{"message":"Field 'hacktivity' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- tag ---
+  [200] {"errors":[{"message":"Field 'tag' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- tags ---
+  [200] {"errors":[{"message":"Field 'tags' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- activity ---
+  [200] {"errors":[{"message":"Field 'activity' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- status ---
+  [200] {"errors":[{"message":"Field 'status' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- content ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- vulnerability_information ---
+  [200] {"errors":[{"message":"Field 'vulnerability_information' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- reference ---
+  [200] {"errors":[{"message":"Field 'reference' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- references ---
+  [200] {"errors":[{"message":"Field 'references' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- bounty ---
+  [200] {"errors":[{"message":"Field 'bounty' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+
+===== Lucene 语法面 =====
+--- plain_text_pub_id ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- plain_text_priv_id ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- or_clause ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- wild_all ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- wild_title ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- exists_title ---
+  [200] {"errors":[{"message":"Field '_exists_' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- neg_pub ---
+  [200] {"data":{"search":{"total_count":10000}}}
+--- range_dates ---
+  [200] {"errors":[{"message":"Field 'submitted_at' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+--- fuzzy ---
+  [200] {"data":{"search":{"total_count":566}}}
+--- paren_or ---
+  [200] {"data":{"search":{"total_count":765}}}
+--- quote_escape ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- field_dot ---
+  [200] {"errors":[{"message":"Field 'reporter.username' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}

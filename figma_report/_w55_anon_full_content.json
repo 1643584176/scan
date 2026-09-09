@@ -1,0 +1,1071 @@
+{
+ "id": "CLOID63hXfPGwO72C6tYzt",
+ "name": "newname",
+ "owner": "lRPCxZp2eyZiO20rfPe5lbT3W5S2",
+ "workspaceId": "180f334e-710b-4c81-884d-7ebf26e7b6eb",
+ "organizationId": "106f8e26-b5da-4793-acd2-25e4ea489235",
+ "visibility": "public",
+ "sharedUsers": [
+  {
+   "userEmail": "nobody-test@example.com"
+  }
+ ],
+ "poster": "https://media.weavy.ai/image/upload/v1788832929/uploads/lRPCxZp2eyZiO20rfPe5lbT3W5S2/x1opbv1sgyczb3ttbhti.png",
+ "userPoster": false,
+ "createdAt": "2026-09-08T01:36:19.311Z",
+ "updatedAt": "2026-09-08T02:02:58.739Z",
+ "publishedVersions": [
+  {
+   "version": 1,
+   "createdAt": "2026-09-08T01:36:19.311Z",
+   "publishedAt": "2026-09-08T01:53:29.540Z"
+  }
+ ],
+ "version": 1,
+ "nodes": [
+  {
+   "id": "64ce5fef-0e5c-4072-9e04-5ff05850b7d2",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -1350,
+    "y": 190
+   },
+   "data": {
+    "menu": null,
+    "name": "Sticky Note",
+    "size": "sm",
+    "color": "#656568",
+    "label": null,
+    "params": null,
+    "result": {
+     "note": "➡️\nWrite your own prompts for the image and video models, or use this one.\n",
+     "user": ""
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": []
+    },
+    "version": null,
+    "description": null
+   },
+   "createdAt": "2026-09-08T01:37:45.127Z",
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "2b837aea-ed5e-4a07-a1cd-aff9db144d61",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -270,
+    "y": 30
+   },
+   "data": {
+    "menu": null,
+    "name": "Video Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "height": 263,
+    "output": {
+     "type": "text",
+     "prompt": "waht"
+    },
+    "params": null,
+    "prompt": "waht",
+    "result": {
+     "prompt": "waht"
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": {
+      "prompt": {
+       "type": "text",
+       "order": 0,
+       "format": "text",
+       "description": "Text prompt"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Green_Dark",
+    "inputNodes": [],
+    "description": null,
+    "displayMode": "source-value",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "createdAt": "2026-09-08T01:37:45.127Z",
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "517337d0-a3ef-4924-a041-8c3de82a6fdd",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 1110,
+    "y": 330
+   },
+   "data": {
+    "menu": null,
+    "name": "Sticky Note",
+    "size": "sm",
+    "color": "#656568",
+    "label": null,
+    "params": null,
+    "result": {
+     "note": "⬅️\nClick and drag to select both model nodes, then Run selected. \n\nLuma Ray 3.2 will wait for the image to generate before running.",
+     "user": ""
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": []
+    },
+    "version": null,
+    "description": null
+   },
+   "createdAt": "2026-09-08T01:37:45.127Z",
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "63bf070b-ecc7-4ca2-b100-c40bc4c8bb88",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 610,
+    "y": 100
+   },
+   "data": {
+    "kind": {
+     "type": "wildcard",
+     "model": {
+      "name": "luma/ray-3-2",
+      "type": "predefined",
+      "description": "Generate video from a text prompt, with optional start/end anchor images for image-to-video (Luma ray-3.2, early access)."
+     },
+     "inputs": [
+      [
+       {
+        "id": "prompt",
+        "title": "prompt",
+        "required": true,
+        "validTypes": [
+         "text"
+        ],
+        "description": "Describe the subject, motion, camera movement, lighting, and pacing."
+       },
+       {
+        "nodeId": "2b837aea-ed5e-4a07-a1cd-aff9db144d61",
+        "string": "waht",
+        "outputId": "prompt"
+       }
+      ],
+      [
+       {
+        "id": "start_image_url",
+        "title": "start frame",
+        "required": false,
+        "validTypes": [
+         "image"
+        ],
+        "description": "Optional first frame for image-to-video."
+       },
+       {
+        "file": {
+         "id": "3c863fde-00c4-4ef5-a5c8-852a4906cfcb",
+         "url": "https://media.weavy.ai/image/upload/c_limit,w_2048,f_auto,q_auto/v1781690852/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png",
+         "type": "image",
+         "width": 1024,
+         "height": 1024,
+         "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7",
+         "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png?_a=BAMAMiWO0"
+        },
+        "nodeId": "8faec176-ffa9-49fe-bcbb-b734e1bbb72b",
+        "outputId": "result"
+       }
+      ],
+      [
+       {
+        "id": "end_image_url",
+        "title": "end frame",
+        "required": false,
+        "validTypes": [
+         "image"
+        ],
+        "description": "Optional last frame for image-to-video."
+       },
+       null
+      ]
+     ],
+     "outputs": [
+      {
+       "id": "result",
+       "title": "result",
+       "dataType": "video",
+       "description": "Result video."
+      }
+     ],
+     "parameters": [
+      [
+       {
+        "id": "aspect_ratio",
+        "title": "Aspect ratio",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "9:16",
+          "3:4",
+          "1:1",
+          "4:3",
+          "16:9",
+          "21:9"
+         ]
+        },
+        "description": "Output aspect ratio.",
+        "defaultValue": {
+         "type": "string",
+         "value": "16:9"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "16:9"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "resolution",
+        "title": "Resolution",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "540p",
+          "720p",
+          "1080p"
+         ]
+        },
+        "description": "Output resolution.",
+        "defaultValue": {
+         "type": "string",
+         "value": "720p"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "540p"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "duration",
+        "title": "Duration",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "5s",
+          "10s"
+         ]
+        },
+        "description": "Clip length. 10s is not supported with anchor frames.",
+        "defaultValue": {
+         "type": "string",
+         "value": "5s"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "5s"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "loop",
+        "title": "Loop",
+        "constraint": {
+         "type": "boolean"
+        },
+        "description": "Generate a seamless loop (not supported with 10s duration or an end frame).",
+        "defaultValue": {
+         "type": "boolean",
+         "value": false
+        }
+       },
+       {
+        "data": {
+         "type": "boolean",
+         "value": false
+        },
+        "type": "value"
+       }
+      ]
+     ]
+    },
+    "menu": null,
+    "name": "Luma Ray 3.2",
+    "color": null,
+    "label": "",
+    "model": {
+     "name": "luma/ray-3-2"
+    },
+    "output": {
+     "result": {
+      "id": "6f6ba898-9d80-4594-9fc0-4f5a90c14ae0",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/c_limit,w_2048,f_auto,q_auto/v1781691119/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.mp4",
+      "type": "video",
+      "input": {
+       "loop": "false",
+       "prompt": "the flowers and the stems clay is melting down. ",
+       "duration": "5s",
+       "resolution": "540p",
+       "aspect_ratio": "16:9",
+       "start_image_url": "https://media.weavy.ai/image/upload/c_limit,w_2048,f_auto,q_auto/v1781690852/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png"
+      },
+      "order": 1,
+      "width": 720,
+      "height": 720,
+      "params": {},
+      "batchId": "5c2cb427-967d-41f8-8400-a32d9799a65a",
+      "viewUrl": "",
+      "duration": 5.041667,
+      "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f",
+      "visualId": "",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.png?_a=BAMAMiWO0",
+      "secondaryOrder": 0
+     }
+    },
+    "params": {
+     "loop": false,
+     "prompt": "",
+     "duration": "5s",
+     "resolution": "540p",
+     "aspect_ratio": "16:9"
+    },
+    "result": [
+     {
+      "id": "6f6ba898-9d80-4594-9fc0-4f5a90c14ae0",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/c_limit,w_2048,f_auto,q_auto/v1781691119/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.mp4",
+      "type": "video",
+      "input": {
+       "loop": "false",
+       "prompt": "the flowers and the stems clay is melting down. ",
+       "duration": "5s",
+       "resolution": "540p",
+       "aspect_ratio": "16:9",
+       "start_image_url": "https://media.weavy.ai/image/upload/c_limit,w_2048,f_auto,q_auto/v1781690852/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png"
+      },
+      "order": 1,
+      "width": 720,
+      "height": 720,
+      "params": {},
+      "batchId": "5c2cb427-967d-41f8-8400-a32d9799a65a",
+      "viewUrl": "",
+      "duration": 5.041667,
+      "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f",
+      "visualId": "",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.png?_a=BAMAMiWO0",
+      "secondaryOrder": 0
+     }
+    ],
+    "schema": {
+     "loop": {
+      "type": "boolean",
+      "order": 3,
+      "title": "Loop",
+      "default": false,
+      "description": "Generate a seamless loop (not supported with 10s duration or an end frame)."
+     },
+     "duration": {
+      "type": "enum",
+      "order": 2,
+      "title": "Duration",
+      "default": "5s",
+      "options": [
+       "5s",
+       "10s"
+      ],
+      "description": "Clip length. 10s is not supported with anchor frames."
+     },
+     "resolution": {
+      "type": "enum",
+      "order": 1,
+      "title": "Resolution",
+      "default": "720p",
+      "options": [
+       "540p",
+       "720p",
+       "1080p"
+      ],
+      "description": "Output resolution."
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 0,
+      "title": "Aspect ratio",
+      "default": "16:9",
+      "options": [
+       "9:16",
+       "3:4",
+       "1:1",
+       "4:3",
+       "16:9",
+       "21:9"
+      ],
+      "description": "Output aspect ratio."
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "prompt",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Describe the subject, motion, camera movement, lighting, and pacing."
+      },
+      "end_image_url": {
+       "id": "end_image_url",
+       "type": "image",
+       "label": "end frame",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": "Optional last frame for image-to-video."
+      },
+      "start_image_url": {
+       "id": "start_image_url",
+       "type": "image",
+       "label": "start frame",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Optional first frame for image-to-video."
+      }
+     },
+     "output": {
+      "result": {
+       "id": "result",
+       "type": "video",
+       "label": "result",
+       "order": 0,
+       "format": "uri",
+       "description": "Result video."
+      }
+     }
+    },
+    "version": 3,
+    "description": "Generate video from a text prompt, with optional start/end anchor images for image-to-video (Luma ray-3.2, early access).",
+    "generations": [
+     {
+      "kind": {
+       "id": "6f6ba898-9d80-4594-9fc0-4f5a90c14ae0",
+       "fps": 24,
+       "url": "https://media.weavy.ai/video/upload/c_limit,w_2048,f_auto,q_auto/v1781691119/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.mp4",
+       "type": "video",
+       "width": 720,
+       "height": 720,
+       "duration": 5.041667,
+       "hasAudio": true,
+       "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f",
+       "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.png?_a=BAMAMiWO0"
+      },
+      "input": [
+       [
+        "loop",
+        "false"
+       ],
+       [
+        "prompt",
+        "the flowers and the stems clay is melting down. "
+       ],
+       [
+        "duration",
+        "5s"
+       ],
+       [
+        "resolution",
+        "540p"
+       ],
+       [
+        "aspect_ratio",
+        "16:9"
+       ],
+       [
+        "start_image_url",
+        "https://media.weavy.ai/image/upload/c_limit,w_2048,f_auto,q_auto/v1781690852/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png"
+       ]
+      ],
+      "order": 1,
+      "batchId": "5c2cb427-967d-41f8-8400-a32d9799a65a",
+      "parameters": [],
+      "secondaryOrder": 0
+     }
+    ],
+    "renderWidth": 1024,
+    "cameraLocked": false,
+    "renderHeight": 1024,
+    "selectedIndex": 0,
+    "selectedOutput": 0
+   },
+   "createdAt": "2026-09-08T01:37:45.127Z",
+   "dragHandle": ".node-header",
+   "originalName": "Luma Ray 3.2"
+  },
+  {
+   "id": "8faec176-ffa9-49fe-bcbb-b734e1bbb72b",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -270,
+    "y": 300
+   },
+   "data": {
+    "kind": {
+     "type": "wildcard",
+     "model": {
+      "name": "fal-ai/flux-2-pro",
+      "type": "predefined",
+      "service": "fal_imported",
+      "version": "fal-ai/flux-2-pro",
+      "description": "Image generation and editing with FLUX.2 [pro] from Black Forest Labs. Optimized for maximum quality, exceptional photorealism and artistic images."
+     },
+     "inputs": [
+      [
+       {
+        "id": "prompt",
+        "title": "prompt",
+        "required": true,
+        "validTypes": [
+         "text"
+        ],
+        "description": "The prompt to generate an image from."
+       },
+       {
+        "nodeId": "01784e15-e149-459c-b364-fae8be3d552b",
+        "string": "3D render, smooth polymer clay style. Four crocus flowers. Thick, rounded matte white petals; vibrant, highly saturated orange cylindrical stamens. he flowers are tightly clustered and fanned out side-by-side: a left-leaning flower, a slightly higher mid-left flower, the tallest upright center-right flower, and a right-leaning right flower. Stems are thick, wiggly and imperfect, tangled from the base, in dark forest green clay. Smooth satin plastic texture, soft even studio lighting. Vertical gradient background: deep vibrant royal blue top fading to light powder cyan bottom. Ultra-vibrant colors, high saturation, clean minimalist composition.",
+        "outputId": "prompt"
+       }
+      ],
+      [
+       {
+        "id": "image_1",
+        "title": "image_1",
+        "required": false,
+        "validTypes": [
+         "image"
+        ],
+        "description": "The image you want to edit"
+       },
+       null
+      ]
+     ],
+     "outputs": [
+      {
+       "id": "result",
+       "title": "result",
+       "dataType": "image",
+       "description": "Result image"
+      }
+     ],
+     "parameters": [
+      [
+       {
+        "id": "seed",
+        "title": "Seed",
+        "constraint": {
+         "type": "seed"
+        },
+        "description": "Seed value for random number generator. Uncheck for reproducible results.",
+        "defaultValue": {
+         "type": "seed",
+         "value": {
+          "seed": 1,
+          "isRandom": false
+         }
+        }
+       },
+       {
+        "data": {
+         "type": "seed",
+         "value": {
+          "seed": 876538,
+          "isRandom": true
+         }
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "image_size",
+        "title": "Image Size",
+        "constraint": {
+         "type": "image_size",
+         "options": [
+          "Default",
+          "auto",
+          "square_hd",
+          "square",
+          "portrait_4_3",
+          "portrait_16_9",
+          "landscape_4_3",
+          "landscape_16_9"
+         ]
+        },
+        "description": "The size of the generated image. If `auto`, the size will be determined by the model.",
+        "defaultValue": {
+         "type": "image_size",
+         "value": {
+          "type": "built_in",
+          "value": "match_input"
+         }
+        }
+       },
+       {
+        "data": {
+         "type": "image_size",
+         "value": {
+          "type": "built_in",
+          "value": "square_hd"
+         }
+        },
+        "type": "value"
+       }
+      ]
+     ]
+    },
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux 2 Pro"
+    },
+    "name": "Flux 2 Pro",
+    "color": "Red",
+    "label": null,
+    "model": {
+     "name": "fal-ai/flux-2-pro",
+     "service": "fal_imported",
+     "version": "fal-ai/flux-2-pro"
+    },
+    "output": {
+     "result": {
+      "id": "3c863fde-00c4-4ef5-a5c8-852a4906cfcb",
+      "url": "https://media.weavy.ai/image/upload/c_limit,w_2048,f_auto,q_auto/v1781690852/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png",
+      "type": "image",
+      "input": {
+       "seed": "127949",
+       "images": "",
+       "prompt": "3D render, smooth polymer clay style. Four crocus flowers. Thick, rounded matte white petals; vibrant, highly saturated orange cylindrical stamens. he flowers are tightly clustered and fanned out side-by-side: a left-leaning flower, a slightly higher mid-left flower, the tallest upright center-right flower, and a right-leaning right flower. Stems are thick, wiggly and imperfect, tangled from the base, in dark forest green clay. Smooth satin plastic texture, soft even studio lighting. Vertical gradient background: deep vibrant royal blue top fading to light powder cyan bottom. Ultra-vibrant colors, high saturation, clean minimalist composition.",
+       "image_size": "square_hd",
+       "output_format": "png",
+       "safety_tolerance": "1",
+       "enable_safety_checker": "true"
+      },
+      "order": 2,
+      "width": 1024,
+      "height": 1024,
+      "params": {},
+      "batchId": "6602956e-5f50-446a-9e61-260a0f10032d",
+      "viewUrl": "",
+      "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7",
+      "visualId": "",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png?_a=BAMAMiWO0",
+      "secondaryOrder": 0
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 876538,
+      "isRandom": true
+     },
+     "prompt": "",
+     "image_size": "square_hd",
+     "output_format": "png",
+     "safety_tolerance": "1",
+     "enable_safety_checker": true
+    },
+    "result": [
+     {
+      "id": "f1507bac-cbfb-4e1c-82d1-064e6e57b018",
+      "url": "https://media.weavy.ai/image/upload/c_limit,w_2048,f_auto,q_auto/v1781690852/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png",
+      "type": "image",
+      "input": {
+       "seed": "127949",
+       "images": "",
+       "prompt": "3D render, smooth polymer clay style. Four crocus flowers. Thick, rounded matte white petals; vibrant, highly saturated orange cylindrical stamens. he flowers are tightly clustered and fanned out side-by-side: a left-leaning flower, a slightly higher mid-left flower, the tallest upright center-right flower, and a right-leaning right flower. Stems are thick, wiggly and imperfect, tangled from the base, in dark forest green clay. Smooth satin plastic texture, soft even studio lighting. Vertical gradient background: deep vibrant royal blue top fading to light powder cyan bottom. Ultra-vibrant colors, high saturation, clean minimalist composition.",
+       "image_size": "square_hd",
+       "output_format": "png",
+       "safety_tolerance": "1",
+       "enable_safety_checker": "true"
+      },
+      "order": 2,
+      "width": 1024,
+      "height": 1024,
+      "params": {},
+      "batchId": "6602956e-5f50-446a-9e61-260a0f10032d",
+      "viewUrl": "",
+      "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7",
+      "visualId": "",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png?_a=BAMAMiWO0",
+      "secondaryOrder": 0
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image_size": {
+      "type": "fal_image_size",
+      "title": "Image Size",
+      "default": null,
+      "options": [
+       "Default",
+       "auto",
+       "square_hd",
+       "square",
+       "portrait_4_3",
+       "portrait_16_9",
+       "landscape_4_3",
+       "landscape_16_9"
+      ],
+      "required": false,
+      "description": "The size of the generated image. If `auto`, the size will be determined by the model."
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "2e6a5393-b812-43e4-94ea-deefdd3b5ac7",
+       "type": "text",
+       "label": "prompt",
+       "format": "text",
+       "required": true,
+       "description": "The prompt to generate an image from."
+      },
+      "image_1": {
+       "id": "DAeb7gVmPkddYRJbt1ED",
+       "type": "image",
+       "label": "image_1",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "The image you want to edit"
+      }
+     },
+     "output": {
+      "result": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610ac",
+       "type": "image",
+       "label": "result",
+       "order": 0,
+       "format": "uri",
+       "description": "Result image"
+      }
+     }
+    },
+    "version": 3,
+    "viewMode": "single",
+    "description": "Image generation and editing with FLUX.2 [pro] from Black Forest Labs. Optimized for maximum quality, exceptional photorealism and artistic images.",
+    "generations": [
+     {
+      "kind": {
+       "id": "3c863fde-00c4-4ef5-a5c8-852a4906cfcb",
+       "url": "https://media.weavy.ai/image/upload/c_limit,w_2048,f_auto,q_auto/v1781690852/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png",
+       "type": "image",
+       "width": 1024,
+       "height": 1024,
+       "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7",
+       "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/pqex1dxexqu9ccam6iw7.png?_a=BAMAMiWO0"
+      },
+      "input": [
+       [
+        "seed",
+        "127949"
+       ],
+       [
+        "images",
+        ""
+       ],
+       [
+        "prompt",
+        "3D render, smooth polymer clay style. Four crocus flowers. Thick, rounded matte white petals; vibrant, highly saturated orange cylindrical stamens. he flowers are tightly clustered and fanned out side-by-side: a left-leaning flower, a slightly higher mid-left flower, the tallest upright center-right flower, and a right-leaning right flower. Stems are thick, wiggly and imperfect, tangled from the base, in dark forest green clay. Smooth satin plastic texture, soft even studio lighting. Vertical gradient background: deep vibrant royal blue top fading to light powder cyan bottom. Ultra-vibrant colors, high saturation, clean minimalist composition."
+       ],
+       [
+        "image_size",
+        "square_hd"
+       ],
+       [
+        "output_format",
+        "png"
+       ],
+       [
+        "safety_tolerance",
+        "1"
+       ],
+       [
+        "enable_safety_checker",
+        "true"
+       ]
+      ],
+      "order": 2,
+      "batchId": "6602956e-5f50-446a-9e61-260a0f10032d",
+      "parameters": [],
+      "secondaryOrder": 0
+     }
+    ],
+    "renderWidth": 1024,
+    "cameraLocked": false,
+    "renderHeight": 1024,
+    "selectedIndex": 0,
+    "selectedOutput": 0
+   },
+   "createdAt": "2026-09-08T01:37:45.128Z",
+   "dragHandle": ".node-header",
+   "originalName": "Flux 2 Pro"
+  },
+  {
+   "id": "01784e15-e149-459c-b364-fae8be3d552b",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -1080,
+    "y": 130
+   },
+   "data": {
+    "menu": null,
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "3D render, smooth polymer clay style. Four crocus flowers. Thick, rounded matte white petals; vibrant, highly saturated orange cylindrical stamens. he flowers are tightly clustered and fanned out side-by-side: a left-leaning flower, a slightly higher mid-left flower, the tallest upright center-right flower, and a right-leaning right flower. Stems are thick, wiggly and imperfect, tangled from the base, in dark forest green clay. Smooth satin plastic texture, soft even studio lighting. Vertical gradient background: deep vibrant royal blue top fading to light powder cyan bottom. Ultra-vibrant colors, high saturation, clean minimalist composition."
+    },
+    "params": null,
+    "prompt": "3D render, smooth polymer clay style. Four crocus flowers. Thick, rounded matte white petals; vibrant, highly saturated orange cylindrical stamens. he flowers are tightly clustered and fanned out side-by-side: a left-leaning flower, a slightly higher mid-left flower, the tallest upright center-right flower, and a right-leaning right flower. Stems are thick, wiggly and imperfect, tangled from the base, in dark forest green clay. Smooth satin plastic texture, soft even studio lighting. Vertical gradient background: deep vibrant royal blue top fading to light powder cyan bottom. Ultra-vibrant colors, high saturation, clean minimalist composition.",
+    "result": {
+     "prompt": "3D render, smooth polymer clay style. Four crocus flowers. Thick, rounded matte white petals; vibrant, highly saturated orange cylindrical stamens. he flowers are tightly clustered and fanned out side-by-side: a left-leaning flower, a slightly higher mid-left flower, the tallest upright center-right flower, and a right-leaning right flower. Stems are thick, wiggly and imperfect, tangled from the base, in dark forest green clay. Smooth satin plastic texture, soft even studio lighting. Vertical gradient background: deep vibrant royal blue top fading to light powder cyan bottom. Ultra-vibrant colors, high saturation, clean minimalist composition."
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": {
+      "prompt": {
+       "type": "text",
+       "order": 0,
+       "format": "text",
+       "description": "Text prompt"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Green_Dark",
+    "inputNodes": [],
+    "description": null,
+    "displayMode": "source-value",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "createdAt": "2026-09-08T01:37:45.128Z",
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "cde62967-fdad-4e87-afcb-8260487ade29",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": -10,
+    "y": 230
+   },
+   "data": {
+    "menu": null,
+    "name": "Sticky Note",
+    "color": null,
+    "label": null,
+    "params": null,
+    "result": {
+     "note": "123123213",
+     "user": ""
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": []
+    },
+    "version": null,
+    "description": null
+   },
+   "createdAt": "2026-09-08T01:39:03.980Z",
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "8892d684-b5c1-4189-bf7c-456a8430a246",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": -270,
+    "y": -630
+   },
+   "data": {
+    "id": "6f6ba898-9d80-4594-9fc0-4f5a90c14ae0",
+    "fps": 24,
+    "url": "https://media.weavy.ai/video/upload/c_limit,w_2048,f_auto,q_auto/v1781691119/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.mp4",
+    "menu": null,
+    "name": "File",
+    "type": "video",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "6f6ba898-9d80-4594-9fc0-4f5a90c14ae0",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/c_limit,w_2048,f_auto,q_auto/v1781691119/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.mp4",
+      "type": "video",
+      "width": 720,
+      "height": 720,
+      "duration": 5.041667,
+      "hasAudio": true,
+      "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.png?_a=BAMAMiWO0"
+     }
+    ],
+    "label": null,
+    "width": 720,
+    "height": 720,
+    "output": {
+     "file": {
+      "id": "6f6ba898-9d80-4594-9fc0-4f5a90c14ae0",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/c_limit,w_2048,f_auto,q_auto/v1781691119/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.mp4",
+      "type": "video",
+      "width": 720,
+      "height": 720,
+      "duration": 5.041667,
+      "hasAudio": true,
+      "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.png?_a=BAMAMiWO0"
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "6f6ba898-9d80-4594-9fc0-4f5a90c14ae0",
+     "fps": 24,
+     "url": "https://media.weavy.ai/video/upload/c_limit,w_2048,f_auto,q_auto/v1781691119/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.mp4",
+     "type": "video",
+     "width": 720,
+     "height": 720,
+     "duration": 5.041667,
+     "hasAudio": true,
+     "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f",
+     "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.png?_a=BAMAMiWO0"
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "duration": 5.041667,
+    "hasAudio": true,
+    "publicId": "uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f",
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/Jm5D1OBjZSeudU5hso06IzpVEgB2/bwdasurmwy0a0yereh6f.png?_a=BAMAMiWO0",
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-09-08T01:39:32.877Z",
+   "dragHandle": ".node-header",
+   "originalName": "File"
+  }
+ ],
+ "edges": [
+  {
+   "id": "a54dd53f-ef95-4417-a824-9bf919ca42c0",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": null,
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "2b837aea-ed5e-4a07-a1cd-aff9db144d61",
+   "target": "63bf070b-ecc7-4ca2-b100-c40bc4c8bb88",
+   "selected": false,
+   "sourceHandle": "2b837aea-ed5e-4a07-a1cd-aff9db144d61-output-prompt",
+   "targetHandle": "63bf070b-ecc7-4ca2-b100-c40bc4c8bb88-input-prompt"
+  },
+  {
+   "id": "c28028ec-1f28-4074-95ba-c44c1852d270",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "01784e15-e149-459c-b364-fae8be3d552b",
+   "target": "8faec176-ffa9-49fe-bcbb-b734e1bbb72b",
+   "selected": false,
+   "sourceHandle": "01784e15-e149-459c-b364-fae8be3d552b-output-prompt",
+   "targetHandle": "8faec176-ffa9-49fe-bcbb-b734e1bbb72b-input-prompt"
+  },
+  {
+   "id": "fc64ba1a-10e2-4ee6-8c63-274fd01d003f",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": null,
+    "sourceHandleType": "image",
+    "targetHandleType": "image"
+   },
+   "type": "custom",
+   "source": "8faec176-ffa9-49fe-bcbb-b734e1bbb72b",
+   "target": "63bf070b-ecc7-4ca2-b100-c40bc4c8bb88",
+   "selected": false,
+   "sourceHandle": "8faec176-ffa9-49fe-bcbb-b734e1bbb72b-output-result",
+   "targetHandle": "63bf070b-ecc7-4ca2-b100-c40bc4c8bb88-input-start_image_url"
+  }
+ ],
+ "latestVersion": {
+  "version": 2,
+  "createdAt": "2026-09-08T01:53:29.540Z"
+ },
+ "latestPublishedVersion": {
+  "version": 1,
+  "createdAt": "2026-09-08T01:36:19.311Z",
+  "publishedAt": "2026-09-08T01:53:29.540Z"
+ },
+ "showcaseOrder": null,
+ "showcase": null,
+ "designAppMetadata": null,
+ "v3": true,
+ "batchRuns": [],
+ "folderId": null,
+ "scope": "PERSONAL",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

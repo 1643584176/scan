@@ -1,0 +1,1983 @@
+{
+ "id": "ajkQsnEdST1Y9ymyTYaZ",
+ "name": "Wan LoRA - Inflate",
+ "owner": "H822bxaJlpcStHwreI5drYHEWHX2",
+ "workspaceId": "aa036063-b614-4016-947f-a556884dae9e",
+ "organizationId": "849e299a-54a0-41ad-be8c-48617c59c577",
+ "visibility": "public",
+ "sharedUsers": [],
+ "poster": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+ "userPoster": true,
+ "createdAt": "2025-04-16T07:58:53.896Z",
+ "updatedAt": "2026-07-13T12:23:08.958Z",
+ "publishedVersions": [],
+ "version": 1,
+ "nodes": [
+  {
+   "id": "2d0f7279-56f0-4f98-b72a-a40a959cb2e9",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1600,
+    "y": 410
+   },
+   "data": {
+    "kind": {
+     "type": "wildcard",
+     "model": {
+      "name": "topaz-upscale-video",
+      "type": "predefined",
+      "description": "Professional-grade video upscaling using Topaz technology. Maximum 3840x2160"
+     },
+     "inputs": [
+      [
+       {
+        "id": "video",
+        "title": "",
+        "required": true,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": "Video to upscale"
+       },
+       {
+        "file": {
+         "id": "f81cd3ba-8bc0-43e4-936d-aa8d55d8966f",
+         "fps": 16,
+         "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+         "type": "video",
+         "width": 864,
+         "height": 472,
+         "duration": 5.0625,
+         "hasAudio": true,
+         "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+         "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+        },
+        "nodeId": "af4a8c58-a260-497f-9da8-528b720030c3",
+        "outputId": "result"
+       }
+      ]
+     ],
+     "outputs": [
+      {
+       "id": "video",
+       "title": "Video"
+      }
+     ],
+     "parameters": [
+      [
+       {
+        "id": "upscale_factor",
+        "title": "Upscale Factor",
+        "constraint": {
+         "max": 4,
+         "min": 1,
+         "type": "float_with_limits"
+        },
+        "description": "Factor to upscale the video by (e.g. 2.0 doubles width and height)",
+        "defaultValue": {
+         "type": "float",
+         "value": 2
+        }
+       },
+       {
+        "data": {
+         "type": "float",
+         "value": 4
+        },
+        "type": "value"
+       }
+      ]
+     ]
+    },
+    "name": "Topaz Video Upscaler",
+    "paid": 10,
+    "color": "Yambo_Purple",
+    "input": {
+     "video": {
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+      "type": "video",
+      "input": {
+       "seed": 261757,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+        "type": "image",
+        "input": {
+         "prompt": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+         "aspect_ratio": "16:9",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1408,
+        "height": 768,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/twuf0tbovtcsjp01ci01.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/twuf0tbovtcsjp01ci01",
+        "visualId": "94c5cf9a33648c6e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/twuf0tbovtcsjp01ci01.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/twuf0tbovtcsjp01ci01.jpg?_a=BAMCcSfi0"
+       },
+       "model": "14b",
+       "frames": 81,
+       "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+       "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": 8,
+       "sample_steps": 30,
+       "negative_prompt": "",
+       "lora_strength_clip": 1,
+       "sample_guide_scale": 5,
+       "lora_strength_model": 1
+      },
+      "width": 864,
+      "height": 472,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/gup6lizoqaumxhkkdzxh.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/gup6lizoqaumxhkkdzxh.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "label": "",
+    "model": {
+     "name": "topaz-upscale-video"
+    },
+    "output": {
+     "video": {
+      "id": "f5c1b20b-5e29-44a1-82df-5a3c46a7a575",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744187674/uploads/htligahfzsgmbeqtaws6.mp4",
+      "type": "video",
+      "input": {
+       "video": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+       "upscale_factor": "4"
+      },
+      "width": 3456,
+      "height": 1888,
+      "params": {},
+      "viewUrl": "",
+      "duration": 5.0625,
+      "publicId": "uploads/htligahfzsgmbeqtaws6",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/htligahfzsgmbeqtaws6.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "video": {
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+      "type": "video",
+      "input": {
+       "seed": 261757,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+        "type": "image",
+        "input": {
+         "prompt": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+         "aspect_ratio": "16:9",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1408,
+        "height": 768,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/twuf0tbovtcsjp01ci01.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/twuf0tbovtcsjp01ci01",
+        "visualId": "94c5cf9a33648c6e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/twuf0tbovtcsjp01ci01.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/twuf0tbovtcsjp01ci01.jpg?_a=BAMCcSfi0"
+       },
+       "model": "14b",
+       "frames": 81,
+       "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+       "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": 8,
+       "sample_steps": 30,
+       "negative_prompt": "",
+       "lora_strength_clip": 1,
+       "sample_guide_scale": 5,
+       "lora_strength_model": 1
+      },
+      "width": 864,
+      "height": 472,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/gup6lizoqaumxhkkdzxh.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/gup6lizoqaumxhkkdzxh.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+     },
+     "upscale_factor": 4
+    },
+    "result": [
+     {
+      "id": "f5c1b20b-5e29-44a1-82df-5a3c46a7a575",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744187674/uploads/htligahfzsgmbeqtaws6.mp4",
+      "type": "video",
+      "input": {
+       "video": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+       "upscale_factor": "4"
+      },
+      "width": 3456,
+      "height": 1888,
+      "params": {},
+      "viewUrl": "",
+      "duration": 5.0625,
+      "publicId": "uploads/htligahfzsgmbeqtaws6",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/htligahfzsgmbeqtaws6.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "upscale_factor": {
+      "max": 4,
+      "min": 1,
+      "type": "number",
+      "order": 1,
+      "title": "Upscale Factor",
+      "default": 2,
+      "description": "Factor to upscale the video by (e.g. 2.0 doubles width and height)"
+     }
+    },
+    "handles": {
+     "input": {
+      "video": {
+       "id": "0Mt2JviRf2Ahx1I8wU5Q",
+       "order": 0,
+       "format": "uri",
+       "required": true,
+       "description": "Video to upscale"
+      }
+     },
+     "output": [
+      "video"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional-grade video upscaling using Topaz technology. Maximum 3840x2160",
+    "generations": [
+     {
+      "kind": {
+       "id": "f5c1b20b-5e29-44a1-82df-5a3c46a7a575",
+       "fps": 16,
+       "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744187674/uploads/htligahfzsgmbeqtaws6.mp4",
+       "type": "video",
+       "width": 3456,
+       "height": 1888,
+       "duration": 5.0625,
+       "hasAudio": true,
+       "publicId": "uploads/htligahfzsgmbeqtaws6",
+       "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/htligahfzsgmbeqtaws6.jpg?_a=BAMCcSfi0"
+      },
+      "input": [
+       [
+        "video",
+        "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png"
+       ],
+       [
+        "upscale_factor",
+        "4"
+       ]
+      ],
+      "parameters": []
+     }
+    ],
+    "cameraLocked": false,
+    "selectedIndex": 0,
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Topaz Video Upscaler"
+  },
+  {
+   "id": "a30f05fd-96f3-4428-b83c-59ec4187b1ba",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -270,
+    "y": 610
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "cinematic scene of a beautiful wild and elegant black horse, in a desert. side view. cold colors. "
+    },
+    "prompt": "cinematic scene of a beautiful wild and elegant black horse, in a desert. side view. cold colors. ",
+    "result": {
+     "prompt": "cinematic scene of a beautiful wild and elegant black horse, in a desert. side view. cold colors. "
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "inputNodes": [],
+    "displayMode": "source-value",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "ab77f2cc-85f3-46a2-bd48-d675df5178fc",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 370,
+    "y": 610
+   },
+   "data": {
+    "kind": {
+     "type": "imagen3",
+     "prompt": {
+      "nodeId": "a30f05fd-96f3-4428-b83c-59ec4187b1ba",
+      "string": "cinematic scene of a beautiful wild and elegant black horse, in a desert. side view. cold colors. ",
+      "outputId": "prompt"
+     },
+     "aspectRatio": {
+      "data": {
+       "type": "string",
+       "value": "16:9"
+      },
+      "type": "value"
+     },
+     "safetyFilterLevel": {
+      "data": {
+       "type": "string",
+       "value": "block_only_high"
+      },
+      "type": "value"
+     }
+    },
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Imagen 3"
+    },
+    "name": "Google Imagen 3",
+    "color": "Red",
+    "input": {
+     "prompt": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. "
+    },
+    "model": {
+     "name": "google/imagen-3",
+     "version": "4902bedfc8567f151e7cc0bb500a4480a4fb0575a10baf7e947e02e8b52d0413"
+    },
+    "output": {
+     "result": {
+      "id": "a1d791d9-4297-4afa-a295-cb1baf8fb4f8",
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+      "type": "image",
+      "input": {
+       "prompt": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "aspect_ratio": "16:9",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1408,
+      "height": 768,
+      "params": {},
+      "viewUrl": "",
+      "publicId": "uploads/twuf0tbovtcsjp01ci01",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/twuf0tbovtcsjp01ci01.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "prompt": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+     "aspect_ratio": "16:9",
+     "safety_filter_level": "block_only_high"
+    },
+    "result": [
+     {
+      "id": "a1d791d9-4297-4afa-a295-cb1baf8fb4f8",
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+      "type": "image",
+      "input": {
+       "prompt": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "aspect_ratio": "16:9",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1408,
+      "height": 768,
+      "params": {},
+      "viewUrl": "",
+      "publicId": "uploads/twuf0tbovtcsjp01ci01",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/twuf0tbovtcsjp01ci01.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 2,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "9:16",
+       "16:9",
+       "3:4",
+       "4:3"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the generated image"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Negative Prompt",
+      "required": false,
+      "description": "Text prompt for what to discourage in the generated images"
+     },
+     "safety_filter_level": {
+      "type": "enum",
+      "order": 3,
+      "title": "Safety Filter Level",
+      "default": "block_only_high",
+      "options": [
+       "block_low_and_above",
+       "block_medium_and_above",
+       "block_only_high"
+      ],
+      "required": false,
+      "description": "block_low_and_above is strictest, block_medium_and_above blocks some prompts, block_only_high is most permissive but some prompts will still be blocked"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "e59cd3e9-28cd-4485-b21d-b24b3ffc3f56",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "negative_prompt": {
+       "id": "36d95f25-b571-42c5-bd4d-a073bfc9b3b0",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Text prompt for what to discourage in the generated images"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Google's text-to-image model, generating images with high detail, rich lighting",
+    "generations": [
+     {
+      "kind": {
+       "id": "a1d791d9-4297-4afa-a295-cb1baf8fb4f8",
+       "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+       "type": "image",
+       "width": 1408,
+       "height": 768,
+       "publicId": "uploads/twuf0tbovtcsjp01ci01",
+       "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/twuf0tbovtcsjp01ci01.jpg?_a=BAMCcSfi0"
+      },
+      "input": [
+       [
+        "prompt",
+        "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. "
+       ],
+       [
+        "aspect_ratio",
+        "16:9"
+       ],
+       [
+        "negative_prompt",
+        ""
+       ],
+       [
+        "safety_filter_level",
+        "block_only_high"
+       ]
+      ],
+      "parameters": []
+     }
+    ],
+    "cameraLocked": false,
+    "selectedIndex": 0,
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Google Imagen 3"
+  },
+  {
+   "id": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1000,
+    "y": 410
+   },
+   "data": {
+    "kind": {
+     "type": "wildcard",
+     "model": {
+      "name": "fofr/wan2.1-with-lora",
+      "type": "imported",
+      "service": "replicate",
+      "version": "c48fa8ec65b13143cb552ab98ea17984eab9d70e9fe99479117de40a2a7f9ed0",
+      "coverImage": "https://tjzk.replicate.delivery/models_models_featured_image/6069c99f-38c7-433a-8a38-d6bd906e6773/wan-lora-cover.webp",
+      "description": "Run Wan2.1 14b or 1.3b with a lora"
+     },
+     "inputs": [
+      [
+       {
+        "id": "prompt",
+        "title": "Prompt",
+        "required": true,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": "Text prompt for video generation"
+       },
+       {
+        "nodeId": "bb28f19f-8252-4171-9c8f-7796cf3e07c1",
+        "string": "The beautiful elegant black horse, in a dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+        "outputId": "prompt"
+       }
+      ],
+      [
+       {
+        "id": "negative_prompt",
+        "title": "Negative Prompt",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": "Things you do not want to see in your video"
+       },
+       null
+      ],
+      [
+       {
+        "id": "image",
+        "title": "Image",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": "Image to use as a starting frame for image to video generation."
+       },
+       {
+        "file": {
+         "id": "a1d791d9-4297-4afa-a295-cb1baf8fb4f8",
+         "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+         "type": "image",
+         "width": 1408,
+         "height": 768,
+         "publicId": "uploads/twuf0tbovtcsjp01ci01",
+         "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/twuf0tbovtcsjp01ci01.jpg?_a=BAMCcSfi0"
+        },
+        "nodeId": "ab77f2cc-85f3-46a2-bd48-d675df5178fc",
+        "outputId": "result"
+       }
+      ],
+      [
+       {
+        "id": "lora_url",
+        "title": "Lora Url",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": "Optional: The URL of a LORA to use"
+       },
+       {
+        "nodeId": "bf93bdc7-626d-4148-97dc-a7712bcbcb0a",
+        "string": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+        "outputId": "text"
+       }
+      ]
+     ],
+     "outputs": [
+      {
+       "id": "result",
+       "title": "Result"
+      }
+     ],
+     "parameters": [
+      [
+       {
+        "id": "aspect_ratio",
+        "title": "Aspect Ratio",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "16:9",
+          "9:16",
+          "1:1"
+         ]
+        },
+        "description": "The aspect ratio of the video. 16:9, 9:16, 1:1, etc.",
+        "defaultValue": {
+         "type": "string",
+         "value": "16:9"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "16:9"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "frames",
+        "title": "Frames",
+        "constraint": {
+         "type": "integer_selector",
+         "options": [
+          17,
+          33,
+          49,
+          65,
+          81
+         ]
+        },
+        "description": "The number of frames to generate (1 to 5 seconds)",
+        "defaultValue": {
+         "type": "integer",
+         "value": 81
+        }
+       },
+       {
+        "data": {
+         "type": "integer",
+         "value": 81
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "model",
+        "title": "Model",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "1.3b",
+          "14b"
+         ]
+        },
+        "description": "The model to use. 1.3b is faster, but 14b is better quality. A LORA either works with 1.3b or 14b, depending on the version it was trained on.",
+        "defaultValue": {
+         "type": "string",
+         "value": "14b"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "14b"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "resolution",
+        "title": "Resolution",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "480p",
+          "720p"
+         ]
+        },
+        "description": "The resolution of the video. 720p is not supported for 1.3b.",
+        "defaultValue": {
+         "type": "string",
+         "value": "480p"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "480p"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "lora_strength_model",
+        "title": "Lora Strength Model",
+        "constraint": {
+         "type": "float"
+        },
+        "description": "Strength of the LORA applied to the model. 0.0 is no LORA.",
+        "defaultValue": {
+         "type": "float",
+         "value": 1
+        }
+       },
+       {
+        "data": {
+         "type": "float",
+         "value": 1
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "lora_strength_clip",
+        "title": "Lora Strength Clip",
+        "constraint": {
+         "type": "float"
+        },
+        "description": "Strength of the LORA applied to the CLIP model. 0.0 is no LORA.",
+        "defaultValue": {
+         "type": "float",
+         "value": 1
+        }
+       },
+       {
+        "data": {
+         "type": "float",
+         "value": 1
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "fast_mode",
+        "title": "Fast Mode",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "Off",
+          "Balanced",
+          "Fast"
+         ]
+        },
+        "description": "Speed up generation with different levels of acceleration. Faster modes may degrade quality somewhat. The speedup is dependent on the content, so different videos may see different speedups.",
+        "defaultValue": {
+         "type": "string",
+         "value": "Balanced"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "Balanced"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "sample_steps",
+        "title": "Sample Steps",
+        "constraint": {
+         "max": 60,
+         "min": 1,
+         "type": "integer_with_limits"
+        },
+        "description": "Number of generation steps. Fewer steps means faster generation, at the expensive of output quality. 30 steps is sufficient for most prompts",
+        "defaultValue": {
+         "type": "integer",
+         "value": 30
+        }
+       },
+       {
+        "data": {
+         "type": "integer",
+         "value": 30
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "sample_guide_scale",
+        "title": "Sample Guide Scale",
+        "constraint": {
+         "max": 10,
+         "min": 0,
+         "type": "float_with_limits"
+        },
+        "description": "Higher guide scale makes prompt adherence better, but can reduce variation",
+        "defaultValue": {
+         "type": "float",
+         "value": 5
+        }
+       },
+       {
+        "data": {
+         "type": "float",
+         "value": 5
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "sample_shift",
+        "title": "Sample Shift",
+        "constraint": {
+         "max": 10,
+         "min": 0,
+         "type": "float_with_limits"
+        },
+        "description": "Sample shift factor",
+        "defaultValue": {
+         "type": "float",
+         "value": 8
+        }
+       },
+       {
+        "data": {
+         "type": "float",
+         "value": 8
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "seed",
+        "title": "Seed",
+        "constraint": {
+         "type": "seed"
+        },
+        "description": "Seed value for random number generator. Uncheck for reproducible results.",
+        "defaultValue": {
+         "type": "seed",
+         "value": {
+          "seed": 1,
+          "isRandom": false
+         }
+        }
+       },
+       {
+        "data": {
+         "type": "seed",
+         "value": {
+          "seed": 261757,
+          "isRandom": true
+         }
+        },
+        "type": "value"
+       }
+      ]
+     ]
+    },
+    "name": "fofr/wan2.1-with-lora",
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+      "type": "image",
+      "input": {
+       "prompt": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "aspect_ratio": "16:9",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1408,
+      "height": 768,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/twuf0tbovtcsjp01ci01.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/twuf0tbovtcsjp01ci01",
+      "visualId": "94c5cf9a33648c6e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/twuf0tbovtcsjp01ci01.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/twuf0tbovtcsjp01ci01.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+     "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors"
+    },
+    "model": {
+     "name": "fofr/wan2.1-with-lora",
+     "service": "replicate",
+     "version": "c48fa8ec65b13143cb552ab98ea17984eab9d70e9fe99479117de40a2a7f9ed0",
+     "coverImage": "https://tjzk.replicate.delivery/models_models_featured_image/6069c99f-38c7-433a-8a38-d6bd906e6773/wan-lora-cover.webp"
+    },
+    "output": {
+     "result": {
+      "id": "f81cd3ba-8bc0-43e4-936d-aa8d55d8966f",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+      "type": "video",
+      "input": {
+       "seed": "261757",
+       "image": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "model": "14b",
+       "frames": "81",
+       "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+       "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": "8",
+       "sample_steps": "30",
+       "negative_prompt": "",
+       "lora_strength_clip": "1",
+       "sample_guide_scale": "5",
+       "lora_strength_model": "1"
+      },
+      "width": 864,
+      "height": 472,
+      "params": {},
+      "viewUrl": "",
+      "duration": 5.0625,
+      "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 261757,
+      "isRandom": true
+     },
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744179525/uploads/twuf0tbovtcsjp01ci01.png",
+      "type": "image",
+      "input": {
+       "prompt": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "aspect_ratio": "16:9",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1408,
+      "height": 768,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/twuf0tbovtcsjp01ci01.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/twuf0tbovtcsjp01ci01",
+      "visualId": "94c5cf9a33648c6e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/twuf0tbovtcsjp01ci01.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/twuf0tbovtcsjp01ci01.jpg?_a=BAMCcSfi0"
+     },
+     "model": "14b",
+     "frames": 81,
+     "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+     "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+     "fast_mode": "Balanced",
+     "resolution": "480p",
+     "aspect_ratio": "16:9",
+     "sample_shift": 8,
+     "sample_steps": 30,
+     "lora_strength_clip": 1,
+     "sample_guide_scale": 5,
+     "lora_strength_model": 1
+    },
+    "result": [
+     {
+      "id": "0fd2ec02-cd4a-4076-abfa-376353119385",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186272/uploads/ahkjshljcqrgutq8inwm.mp4",
+      "type": "video",
+      "input": {
+       "seed": "261757",
+       "image": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "model": "14b",
+       "frames": "81",
+       "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+       "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": "8",
+       "sample_steps": "30",
+       "negative_prompt": "",
+       "lora_strength_clip": "1",
+       "sample_guide_scale": "5",
+       "lora_strength_model": "1"
+      },
+      "width": 864,
+      "height": 472,
+      "params": {},
+      "viewUrl": "",
+      "duration": 5.0625,
+      "publicId": "uploads/ahkjshljcqrgutq8inwm",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/ahkjshljcqrgutq8inwm.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "3984206b-8dcf-4692-a366-219839880d50",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+      "type": "video",
+      "input": {
+       "seed": "261757",
+       "image": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "model": "14b",
+       "frames": "81",
+       "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+       "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": "8",
+       "sample_steps": "30",
+       "negative_prompt": "",
+       "lora_strength_clip": "1",
+       "sample_guide_scale": "5",
+       "lora_strength_model": "1"
+      },
+      "width": 864,
+      "height": 472,
+      "params": {},
+      "viewUrl": "",
+      "duration": 5.0625,
+      "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "ec3c267d-39e3-4ec4-82a4-232333b676be",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+      "type": "video",
+      "input": {
+       "seed": "261757",
+       "image": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "model": "14b",
+       "frames": "81",
+       "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+       "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": "8",
+       "sample_steps": "30",
+       "negative_prompt": "",
+       "lora_strength_clip": "1",
+       "sample_guide_scale": "5",
+       "lora_strength_model": "1"
+      },
+      "width": 864,
+      "height": 472,
+      "params": {},
+      "viewUrl": "",
+      "duration": 5.0625,
+      "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "f81cd3ba-8bc0-43e4-936d-aa8d55d8966f",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+      "type": "video",
+      "input": {
+       "seed": "261757",
+       "image": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "model": "14b",
+       "frames": "81",
+       "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+       "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": "8",
+       "sample_steps": "30",
+       "negative_prompt": "",
+       "lora_strength_clip": "1",
+       "sample_guide_scale": "5",
+       "lora_strength_model": "1"
+      },
+      "width": 864,
+      "height": 472,
+      "params": {},
+      "viewUrl": "",
+      "duration": 5.0625,
+      "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "05091375-22b3-4d3a-96e3-f8d4d06cc11c",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+      "type": "video",
+      "input": {
+       "seed": "261757",
+       "image": "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. ",
+       "model": "14b",
+       "frames": "81",
+       "prompt": "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+       "lora_url": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": "8",
+       "sample_steps": "30",
+       "negative_prompt": "",
+       "lora_strength_clip": "1",
+       "sample_guide_scale": "5",
+       "lora_strength_model": "1"
+      },
+      "width": 864,
+      "height": 472,
+      "params": {},
+      "viewUrl": "",
+      "duration": 5.0625,
+      "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+      "visualId": "",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 14,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 2,
+      "title": "Image",
+      "format": "uri",
+      "required": false,
+      "description": "Image to use as a starting frame for image to video generation."
+     },
+     "model": {
+      "type": "enum",
+      "order": 5,
+      "title": "Model",
+      "default": "14b",
+      "options": [
+       "1.3b",
+       "14b"
+      ],
+      "required": false,
+      "description": "The model to use. 1.3b is faster, but 14b is better quality. A LORA either works with 1.3b or 14b, depending on the version it was trained on."
+     },
+     "frames": {
+      "type": "enum",
+      "order": 4,
+      "title": "Frames",
+      "default": 81,
+      "options": [
+       17,
+       33,
+       49,
+       65,
+       81
+      ],
+      "required": false,
+      "description": "The number of frames to generate (1 to 5 seconds)"
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for video generation"
+     },
+     "lora_url": {
+      "type": "string",
+      "order": 7,
+      "title": "Lora Url",
+      "required": false,
+      "description": "Optional: The URL of a LORA to use"
+     },
+     "fast_mode": {
+      "type": "enum",
+      "order": 10,
+      "title": "Fast Mode",
+      "default": "Balanced",
+      "options": [
+       "Off",
+       "Balanced",
+       "Fast"
+      ],
+      "required": false,
+      "description": "Speed up generation with different levels of acceleration. Faster modes may degrade quality somewhat. The speedup is dependent on the content, so different videos may see different speedups."
+     },
+     "resolution": {
+      "type": "enum",
+      "order": 6,
+      "title": "Resolution",
+      "default": "480p",
+      "options": [
+       "480p",
+       "720p"
+      ],
+      "required": false,
+      "description": "The resolution of the video. 720p is not supported for 1.3b."
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 3,
+      "title": "Aspect Ratio",
+      "default": "16:9",
+      "options": [
+       "16:9",
+       "9:16",
+       "1:1"
+      ],
+      "required": false,
+      "description": "The aspect ratio of the video. 16:9, 9:16, 1:1, etc."
+     },
+     "sample_shift": {
+      "max": 10,
+      "min": 0,
+      "type": "number",
+      "order": 13,
+      "title": "Sample Shift",
+      "default": 8,
+      "required": false,
+      "description": "Sample shift factor"
+     },
+     "sample_steps": {
+      "max": 60,
+      "min": 1,
+      "type": "integer",
+      "order": 11,
+      "title": "Sample Steps",
+      "default": 30,
+      "required": false,
+      "description": "Number of generation steps. Fewer steps means faster generation, at the expensive of output quality. 30 steps is sufficient for most prompts"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Negative Prompt",
+      "default": "",
+      "required": false,
+      "description": "Things you do not want to see in your video"
+     },
+     "lora_strength_clip": {
+      "type": "input-number",
+      "order": 9,
+      "title": "Lora Strength Clip",
+      "default": 1,
+      "required": false,
+      "description": "Strength of the LORA applied to the CLIP model. 0.0 is no LORA."
+     },
+     "sample_guide_scale": {
+      "max": 10,
+      "min": 0,
+      "type": "number",
+      "order": 12,
+      "title": "Sample Guide Scale",
+      "default": 5,
+      "required": false,
+      "description": "Higher guide scale makes prompt adherence better, but can reduce variation"
+     },
+     "lora_strength_model": {
+      "type": "input-number",
+      "order": 8,
+      "title": "Lora Strength Model",
+      "default": 1,
+      "required": false,
+      "description": "Strength of the LORA applied to the model. 0.0 is no LORA."
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "97737335-8537-4f25-bf5f-4f9928410533",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": "Image to use as a starting frame for image to video generation."
+      },
+      "prompt": {
+       "id": "163381e4-b088-4468-ac87-bde02fe101da",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for video generation"
+      },
+      "lora_url": {
+       "id": "d720c149-300b-41b6-ae7b-c30f9766eafb",
+       "order": 7,
+       "format": "text",
+       "required": false,
+       "description": "Optional: The URL of a LORA to use"
+      },
+      "negative_prompt": {
+       "id": "c2783fb0-54a1-4681-a6dd-d5c03007dbb3",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Things you do not want to see in your video"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "isWildCard": true,
+    "description": "Run Wan2.1 14b or 1.3b with a lora",
+    "generations": [
+     {
+      "kind": {
+       "id": "0fd2ec02-cd4a-4076-abfa-376353119385",
+       "fps": 16,
+       "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186272/uploads/ahkjshljcqrgutq8inwm.mp4",
+       "type": "video",
+       "width": 864,
+       "height": 472,
+       "duration": 5.0625,
+       "hasAudio": true,
+       "publicId": "uploads/ahkjshljcqrgutq8inwm",
+       "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/ahkjshljcqrgutq8inwm.jpg?_a=BAMCcSfi0"
+      },
+      "input": [
+       [
+        "seed",
+        "261757"
+       ],
+       [
+        "image",
+        "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. "
+       ],
+       [
+        "model",
+        "14b"
+       ],
+       [
+        "frames",
+        "81"
+       ],
+       [
+        "prompt",
+        "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape."
+       ],
+       [
+        "lora_url",
+        "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors"
+       ],
+       [
+        "fast_mode",
+        "Balanced"
+       ],
+       [
+        "resolution",
+        "480p"
+       ],
+       [
+        "aspect_ratio",
+        "16:9"
+       ],
+       [
+        "sample_shift",
+        "8"
+       ],
+       [
+        "sample_steps",
+        "30"
+       ],
+       [
+        "negative_prompt",
+        ""
+       ],
+       [
+        "lora_strength_clip",
+        "1"
+       ],
+       [
+        "sample_guide_scale",
+        "5"
+       ],
+       [
+        "lora_strength_model",
+        "1"
+       ]
+      ],
+      "parameters": []
+     },
+     {
+      "kind": {
+       "id": "3984206b-8dcf-4692-a366-219839880d50",
+       "fps": 16,
+       "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+       "type": "video",
+       "width": 864,
+       "height": 472,
+       "duration": 5.0625,
+       "hasAudio": true,
+       "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+       "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+      },
+      "input": [
+       [
+        "seed",
+        "261757"
+       ],
+       [
+        "image",
+        "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. "
+       ],
+       [
+        "model",
+        "14b"
+       ],
+       [
+        "frames",
+        "81"
+       ],
+       [
+        "prompt",
+        "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape."
+       ],
+       [
+        "lora_url",
+        "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors"
+       ],
+       [
+        "fast_mode",
+        "Balanced"
+       ],
+       [
+        "resolution",
+        "480p"
+       ],
+       [
+        "aspect_ratio",
+        "16:9"
+       ],
+       [
+        "sample_shift",
+        "8"
+       ],
+       [
+        "sample_steps",
+        "30"
+       ],
+       [
+        "negative_prompt",
+        ""
+       ],
+       [
+        "lora_strength_clip",
+        "1"
+       ],
+       [
+        "sample_guide_scale",
+        "5"
+       ],
+       [
+        "lora_strength_model",
+        "1"
+       ]
+      ],
+      "parameters": []
+     },
+     {
+      "kind": {
+       "id": "ec3c267d-39e3-4ec4-82a4-232333b676be",
+       "fps": 16,
+       "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+       "type": "video",
+       "width": 864,
+       "height": 472,
+       "duration": 5.0625,
+       "hasAudio": true,
+       "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+       "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+      },
+      "input": [
+       [
+        "seed",
+        "261757"
+       ],
+       [
+        "image",
+        "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. "
+       ],
+       [
+        "model",
+        "14b"
+       ],
+       [
+        "frames",
+        "81"
+       ],
+       [
+        "prompt",
+        "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape."
+       ],
+       [
+        "lora_url",
+        "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors"
+       ],
+       [
+        "fast_mode",
+        "Balanced"
+       ],
+       [
+        "resolution",
+        "480p"
+       ],
+       [
+        "aspect_ratio",
+        "16:9"
+       ],
+       [
+        "sample_shift",
+        "8"
+       ],
+       [
+        "sample_steps",
+        "30"
+       ],
+       [
+        "negative_prompt",
+        ""
+       ],
+       [
+        "lora_strength_clip",
+        "1"
+       ],
+       [
+        "sample_guide_scale",
+        "5"
+       ],
+       [
+        "lora_strength_model",
+        "1"
+       ]
+      ],
+      "parameters": []
+     },
+     {
+      "kind": {
+       "id": "f81cd3ba-8bc0-43e4-936d-aa8d55d8966f",
+       "fps": 16,
+       "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+       "type": "video",
+       "width": 864,
+       "height": 472,
+       "duration": 5.0625,
+       "hasAudio": true,
+       "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+       "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+      },
+      "input": [
+       [
+        "seed",
+        "261757"
+       ],
+       [
+        "image",
+        "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. "
+       ],
+       [
+        "model",
+        "14b"
+       ],
+       [
+        "frames",
+        "81"
+       ],
+       [
+        "prompt",
+        "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape."
+       ],
+       [
+        "lora_url",
+        "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors"
+       ],
+       [
+        "fast_mode",
+        "Balanced"
+       ],
+       [
+        "resolution",
+        "480p"
+       ],
+       [
+        "aspect_ratio",
+        "16:9"
+       ],
+       [
+        "sample_shift",
+        "8"
+       ],
+       [
+        "sample_steps",
+        "30"
+       ],
+       [
+        "negative_prompt",
+        ""
+       ],
+       [
+        "lora_strength_clip",
+        "1"
+       ],
+       [
+        "sample_guide_scale",
+        "5"
+       ],
+       [
+        "lora_strength_model",
+        "1"
+       ]
+      ],
+      "parameters": []
+     },
+     {
+      "kind": {
+       "id": "05091375-22b3-4d3a-96e3-f8d4d06cc11c",
+       "fps": 16,
+       "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744186154/uploads/gup6lizoqaumxhkkdzxh.mp4",
+       "type": "video",
+       "width": 864,
+       "height": 472,
+       "duration": 5.0625,
+       "hasAudio": true,
+       "publicId": "uploads/gup6lizoqaumxhkkdzxh",
+       "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/gup6lizoqaumxhkkdzxh.jpg?_a=BAMCcSfi0"
+      },
+      "input": [
+       [
+        "seed",
+        "261757"
+       ],
+       [
+        "image",
+        "cinematic scene of a beautiful wild and elegant black horse, in Louisiana dessert. side view. cold colors. "
+       ],
+       [
+        "model",
+        "14b"
+       ],
+       [
+        "frames",
+        "81"
+       ],
+       [
+        "prompt",
+        "The beautiful elegant black horse, in Louisiana dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape."
+       ],
+       [
+        "lora_url",
+        "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors"
+       ],
+       [
+        "fast_mode",
+        "Balanced"
+       ],
+       [
+        "resolution",
+        "480p"
+       ],
+       [
+        "aspect_ratio",
+        "16:9"
+       ],
+       [
+        "sample_shift",
+        "8"
+       ],
+       [
+        "sample_steps",
+        "30"
+       ],
+       [
+        "negative_prompt",
+        ""
+       ],
+       [
+        "lora_strength_clip",
+        "1"
+       ],
+       [
+        "sample_guide_scale",
+        "5"
+       ],
+       [
+        "lora_strength_model",
+        "1"
+       ]
+      ],
+      "parameters": []
+     }
+    ],
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 3,
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 3
+   },
+   "dragHandle": ".node-header",
+   "originalName": "fofr/wan2.1-with-lora"
+  },
+  {
+   "id": "b2aecfae-a3d9-4c10-91b2-bfa272d5a8ba",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 110,
+    "y": 1030
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "add a link to the LoRA - note that the link is to the .safetensors file. "
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "bb28f19f-8252-4171-9c8f-7796cf3e07c1",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": 390,
+    "y": 150
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "The beautiful elegant black horse, in a dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape."
+    },
+    "prompt": "The beautiful elegant black horse, in a dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape.",
+    "result": {
+     "prompt": "The beautiful elegant black horse, in a dessert then infl4t3 inflates it, both the man and the horse expanding into giant, inflated figures against the desert landscape."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "inputNodes": [],
+    "displayMode": "source-value",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "bf93bdc7-626d-4148-97dc-a7712bcbcb0a",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 370,
+    "y": 1020
+   },
+   "data": {
+    "name": "Text",
+    "color": "Yambo_Green",
+    "value": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+    "output": {
+     "text": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors",
+     "type": "text",
+     "string": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors"
+    },
+    "result": {
+     "string": "https://huggingface.co/Remade-AI/Inflate/resolve/main/inflate_20_epochs.safetensors"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "text"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Text"
+  }
+ ],
+ "edges": [
+  {
+   "id": "reactflow__edge-bf93bdc7-626d-4148-97dc-a7712bcbcb0abf93bdc7-626d-4148-97dc-a7712bcbcb0a-output-text-af4a8c58-a260-497f-9da8-528b720030c3af4a8c58-a260-497f-9da8-528b720030c3-input-lora_url",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "bf93bdc7-626d-4148-97dc-a7712bcbcb0a",
+   "target": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "selected": false,
+   "sourceHandle": "bf93bdc7-626d-4148-97dc-a7712bcbcb0a-output-text",
+   "targetHandle": "af4a8c58-a260-497f-9da8-528b720030c3-input-lora_url"
+  },
+  {
+   "id": "reactflow__edge-bb28f19f-8252-4171-9c8f-7796cf3e07c1bb28f19f-8252-4171-9c8f-7796cf3e07c1-output-prompt-af4a8c58-a260-497f-9da8-528b720030c3af4a8c58-a260-497f-9da8-528b720030c3-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "bb28f19f-8252-4171-9c8f-7796cf3e07c1",
+   "target": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "selected": false,
+   "sourceHandle": "bb28f19f-8252-4171-9c8f-7796cf3e07c1-output-prompt",
+   "targetHandle": "af4a8c58-a260-497f-9da8-528b720030c3-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-a30f05fd-96f3-4428-b83c-59ec4187b1baa30f05fd-96f3-4428-b83c-59ec4187b1ba-output-prompt-ab77f2cc-85f3-46a2-bd48-d675df5178fcab77f2cc-85f3-46a2-bd48-d675df5178fc-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "a30f05fd-96f3-4428-b83c-59ec4187b1ba",
+   "target": "ab77f2cc-85f3-46a2-bd48-d675df5178fc",
+   "selected": false,
+   "sourceHandle": "a30f05fd-96f3-4428-b83c-59ec4187b1ba-output-prompt",
+   "targetHandle": "ab77f2cc-85f3-46a2-bd48-d675df5178fc-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-ab77f2cc-85f3-46a2-bd48-d675df5178fcab77f2cc-85f3-46a2-bd48-d675df5178fc-output-result-af4a8c58-a260-497f-9da8-528b720030c3af4a8c58-a260-497f-9da8-528b720030c3-input-image",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "ab77f2cc-85f3-46a2-bd48-d675df5178fc",
+   "target": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "selected": false,
+   "sourceHandle": "ab77f2cc-85f3-46a2-bd48-d675df5178fc-output-result",
+   "targetHandle": "af4a8c58-a260-497f-9da8-528b720030c3-input-image"
+  },
+  {
+   "id": "reactflow__edge-af4a8c58-a260-497f-9da8-528b720030c3af4a8c58-a260-497f-9da8-528b720030c3-output-result-2d0f7279-56f0-4f98-b72a-a40a959cb2e92d0f7279-56f0-4f98-b72a-a40a959cb2e9-input-video",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "target": "2d0f7279-56f0-4f98-b72a-a40a959cb2e9",
+   "selected": false,
+   "sourceHandle": "af4a8c58-a260-497f-9da8-528b720030c3-output-result",
+   "targetHandle": "2d0f7279-56f0-4f98-b72a-a40a959cb2e9-input-video"
+  }
+ ],
+ "latestVersion": {
+  "version": 1,
+  "createdAt": "2025-04-16T07:58:53.896Z"
+ },
+ "latestPublishedVersion": null,
+ "showcaseOrder": 73,
+ "showcase": false,
+ "designAppMetadata": null,
+ "v3": null,
+ "batchRuns": [],
+ "folderId": "987d87c4-ed1d-4cc3-be7d-5c1d48dde83c",
+ "scope": "WORKSPACE",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

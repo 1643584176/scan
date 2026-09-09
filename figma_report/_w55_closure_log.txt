@@ -1,0 +1,5 @@
+[baseline] anonymous GET /recipes/CLOID63hXfPGwO72C6tYzt -> 403 {"internalErrorCode":1030,"message":"Unauthorized to access recipe","fieldsErrors":[],"timestamp":"2026-09-08T02:02:57.8
+[flip] PUT /recipes/CLOID63hXfPGwO72C6tYzt {visibility:public} -> 200
+[anon-read] 200 full workflow JSON saved (24833 bytes)
+[restore] PUT /recipes/CLOID63hXfPGwO72C6tYzt {visibility:private} -> 200
+[verify] anonymous GET -> 403

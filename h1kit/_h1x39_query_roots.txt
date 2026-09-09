@@ -1,0 +1,118 @@
+activity		ActivityUnion	id
+agent_guidance		AgentGuidance	guidance_type
+analytics		AnalyticsDataPoint	queries
+analytics_benchmarks		AnalyticsBenchmarkResult	benchmark_configurations
+analytics_chart		ConfigurableDashboardChart	chart_key,organization_id,team_id,filters,start_date,end_date,interval,limit,benchmarks
+analytics_chart_benchmark_filters		?	chart_key
+analytics_chart_explore		AnalyticsChartExploreResult	chart_key,organization_id,explore_type,index_value,pivot_value,filters,start_date_utc_str,end_date_utc_str,interval,order_by_field,order_by_direction,page,page_size
+analytics_dashboard_filter_definitions		?	dashboard_key,organization_id
+analytics_reports		AnalyticsReportConnection	offset,where,order_by,after,before,first,last
+application		Application	
+asset_context		AssetContext	asset_identifier,program_handle
+assets		AssetConnection	id,where,after,before,first,last
+assets_by_velocity		AssetConnection	after,before,first,last,organization_id,velocity_class
+assignable_teams		TeamConnection	after,before,first,last,report_ids,querystring
+automation		Automation	id,organization_handle
+available_chart_definitions		?	
+background_check		BackgroundCheck	
+bank_transfer_reference		BankTransferReference	
+campaign_objectives		CampaignObjectiveConnection	after,before,first,last,where
+certifications		CertificationConnection	where,after,before,first,last
+clusters		ClusterConnection	id,order_by,after,before,first,last
+completed_recommendations		?	team_ids
+configurable_dashboard		ConfigurableDashboard	dashboard_key,organization_id
+conversation		ConversationUnion	id
+custom_dashboard		CustomDashboard	id
+custom_dashboard_chart		CustomDashboardChart	chart_id
+cve_entry		RankedCveEntry	cve_id
+cwe_entries		CweEntryConnection	order_by,search,after,before,first,last
+cwe_entry		CweEntry	cwe_id
+dashboard_states		DashboardStateConnection	where,order_by,after,before,first,last
+derived_pentest		DerivedPentest	origin_id,origin_type
+document		DocumentResult	queries,elements
+embedded_submission_form		EmbeddedSubmissionForm	uuid
+experimental_dream_box_chat		ChatMessage	prompt
+external_integration_credentials		ExternalIntegrationCredentials	team_id,organization_id,provider
+external_program		ExternalProgram	handle
+external_programs		ExternalProgramConnection	after,before,first,last,search_input
+features		FeatureConnection	after,before,first,last
+gateway_users		GatewayUserConnection	team_handle,search_string,sort_by,sort_direction,hackerone_triager,program_admin,blocked_status,after,before,first,last
+hackerone_triagers		UserConnection	cleared,where,order_by,after,before,first,last
+hai_agent_core_config		HaiAgentCoreConfig	key
+hai_agent_core_configs		?	
+hai_chat		HaiChat	id
+hai_plays		HaiPlayConnection	where,order_by,after,before,first,last
+hai_task		HaiTask	id
+id		ID	
+id_verification		IdVerification	
+intake_commonly_informative_report_categories		IntakeCommonlyInformativeReportCategoryConnection	after,before,first,last
+intake_core_ineligible_finding_categories		IntakeCoreIneligibleFindingCategoryConnection	after,before,first,last
+intake_incomplete_report_categories		IntakeIncompleteReportCategoryConnection	after,before,first,last,subcategory
+intake_workflow		WorkflowRun	report_id
+label_categories		LabelCategoryConnection	where,after,before,first,last
+languages		?	
+leaderboard_entries		LeaderboardEntryConnection	after,before,first,last,key,year,quarter,filter,engagement_type,user_type
+load_configurable_analytics_chart		ConfigurableDashboardChart	chart_key,organization_id,team_id,filters,start_date,end_date,interval,limit,benchmarks
+machine_learning_inference_result		MachineLearningInferenceResult	id
+maintenance_banner		MaintenanceBanner	
+me		User	
+mediation_requests		MediationRequestConnection	where,order_by,after,before,first,last
+most_used_asset_types		?	
+most_used_technologies		?	
+node		Node	id
+oauth_application		OauthApplication	client_id
+opportunities_search		SearchResultConnection	after,before,first,last,query,filter,sort,from,size,post_filters
+organization		Organization	handle
+organization_bounty_informed_pentest_generator_runs		OrganizationBountyInformedPentestGeneratorRunsConnection	organization_id,run_id,after,before,first,last
+organization_inboxes		OrganizationInboxConnection	where,order_by,after,before,first,last
+organizations		OrganizationConnection	where,order_by,after,before,first,last
+other_workflow_step_conclusions		OtherWorkflowStepConclusionConnection	after,before,first,last
+pentest		Pentest	id
+pentest_checklist_templates		PentestChecklistTemplateConnection	organization_id,after,before,first,last
+pentest_opportunities		PentestOpportunityConnection	where,after,before,first,last
+pentest_opportunity		PentestOpportunity	token
+pentest_opportunity_status		Hash	token
+pentest_report		PentestReport	id
+pentester_positions		PentesterPositionConnection	order_by,where,after,before,first,last
+pentester_profiles		PentesterProfileConnection	after,before,first,last,where,order_by
+pentests		PentestConnection	order_by,secure_order_by,where,after,before,first,last
+popular_now		?	
+query		Query	
+ranked_cve_entries		RankedCveEntryConnection	search,order_by,after,before,first,last
+recon_context		ReconWorkspaceContext	id
+recon_contexts		ReconWorkspaceContextConnection	after,before,first,last,id
+report	DEP	Report	id
+report_intent		ReportIntent	id
+report_retest_user		ReportRetestUser	activity_id
+report_retests		ReportRetestConnection	after,before,first,last,where,order_by,assignee,offset
+report_triage_summary_examples		ReportTriageSummaryExampleConnection	after,before,first,last
+reports		ReportConnection	where,handle,state,substate,database_id,has_retests,offset,has_assignee,assignee,order_by,secure_order_by,filter,after,before,first,last
+resource		ResourceInterface	url
+rom_asset_group		RomAssetGroup	id
+rom_setting_template		ReturnOnMitigationDefaultSettings	industry,revenue_cohort
+search		SearchResultConnection	after,before,first,last,index,query,query_string,limit,sort,from,size,reporter_filter
+search_documentation		DocumentationSearchResult	query
+session	DEP	Session	
+severity_calculator		SeverityCalculator	
+skills		SkillConnection	after,before,first,last,where,exclude_my_skills
+spend_tracker_by_category		SpendTrackerSpendByAssetCategory	organization_id,category_id,start_date,end_date
+static_dashboards		?	key
+surveys		SurveyConnection	after,before,first,last,category
+tasks		TaskConnection	after,before,first,last
+team	DEP	Team	handle
+teams		TeamConnection	permissions,order_by,secure_order_by,where,after,before,first,last
+terms		TermConnection	after,before,first,last,where,order_by
+time_zones		?	
+top_technology_tags		TopTechnologyTagConnection	after,before,first,last
+tray_solution_instance_url		String	integration_id,solution_instance_id
+triage_inbox		TriageInbox	
+triage_inbox_items		TriageInboxItemConnection	assigned_to_triage,ordered_by_timer,order_by,owner_usernames,priority,ccv2,report_id,report_substate,report_severity_rating,report_title,team_handle,pod_name,view,running_validation_timer,after,before,first,last
+triage_pods		TriagePodConnection	after,before,first,last
+user	DEP	User	username
+user_insights		?	
+users		UserConnection	cleared,where,order_by,after,before,first,last
+vulnerability_templates		?	
+weaknesses		WeaknessConnection	after,before,first,last,order_by,distinct_by_name,include_deprecated
+webhook		Webhook	id
+workflow_runs		WorkflowRunConnection	where,after,before,first,last
+workflow_step_outcome_configurations		WorkflowStepOutcomeConfigurationConnection	after,before,first,last

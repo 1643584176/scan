@@ -1,0 +1,1975 @@
+{
+ "id": "XvULalxaRR01K0RA1T0Kqx",
+ "name": "Weavy Logo",
+ "owner": "H822bxaJlpcStHwreI5drYHEWHX2",
+ "workspaceId": "aa036063-b614-4016-947f-a556884dae9e",
+ "organizationId": "849e299a-54a0-41ad-be8c-48617c59c577",
+ "visibility": "public",
+ "sharedUsers": [],
+ "poster": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745431203/uploads/bwpmjszro58ghbiiammo.png",
+ "userPoster": true,
+ "createdAt": "2025-05-12T09:01:50.873Z",
+ "updatedAt": "2025-09-09T13:43:51.877Z",
+ "publishedVersions": [
+  {
+   "version": 5,
+   "createdAt": "2025-05-26T18:14:35.352Z",
+   "publishedAt": "2025-05-29T09:31:49.049Z"
+  },
+  {
+   "version": 4,
+   "createdAt": "2025-05-25T14:10:46.727Z",
+   "publishedAt": "2025-05-26T18:14:35.352Z"
+  },
+  {
+   "version": 3,
+   "createdAt": "2025-05-25T14:08:55.289Z",
+   "publishedAt": "2025-05-25T14:10:46.727Z"
+  },
+  {
+   "version": 2,
+   "createdAt": "2025-05-12T12:03:08.061Z",
+   "publishedAt": "2025-05-25T14:08:55.289Z"
+  },
+  {
+   "version": 1,
+   "createdAt": "2025-05-12T12:01:50.873Z",
+   "publishedAt": "2025-05-12T12:03:08.061Z"
+  }
+ ],
+ "version": 5,
+ "nodes": [
+  {
+   "id": "0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8",
+   "isModel": true,
+   "type": "prompt_enhance",
+   "position": {
+    "x": 1000,
+    "y": -340
+   },
+   "data": {
+    "name": "Prompt Enhancer",
+    "color": "Yambo_Purple",
+    "input": {
+     "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   "
+    },
+    "model": {
+     "name": "any_llm"
+    },
+    "output": {
+     "text": {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n"
+     }
+    },
+    "params": {
+     "model": "google/gemini-flash-1.5-8b",
+     "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+     "system_prompt": "You are an expert prompt engineer specializing in crafting prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+    },
+    "result": [
+     {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  white, black A close-up of renaissance oil painting still life, brush strokes details ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A close-up, renaissance-style still life painting, featuring a minimalistic arrangement of organic shapes in white and black, rendered in meticulous oil brushstrokes, showcasing detailed texture and subtle color variations, high-quality, photorealistic, oil on canvas, detailed brushstrokes visible, focal length 50mm,  depth of field shallow,  natural light, dramatic chiaroscuro,  calm mood,  meticulous rendering.\n"
+     },
+     {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+     },
+     {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n"
+     },
+     {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist scene featuring an organic, iridescent, plastic statue in muted lime green, gray, black, and white, positioned centrally against a plain backdrop, bathed in soft, diffused ambient light; the statue's form subtle and flowing, its surface exhibiting a delicate iridescent sheen; the overall aesthetic is calm and serene, evoking a sense of quiet contemplation; photorealistic rendering, high detail, sharp focus, studio lighting,  shallow depth of field,  precise perspective,  front-facing view; high resolution image.\n"
+     },
+     {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist, organic scene featuring a muted lime, grey, black, and white plastic iridescent statue, centered in the foreground; the statue's smooth, reflective surface subtly catches ambient light;  the background is a soft muted grey, lacking strong details;  a subtle, diffused ambient light casts no distinct shadows; the style is photorealistic, with fine details and smooth color transitions; a slight shallow depth of field focuses on the statue;  the composition is symmetrical and balanced, showing a simple, uncluttered scene.\n"
+     },
+     {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalistic sculpture of an organic form, composed of muted lime, grey, black, and white plastic, iridescent highlights, displayed on a simple, neutral textured studio backdrop,  with soft, diffused ambient light casting subtle shadows,  photorealistic rendering, sharp focus, high detail, close-up view,  studio photography, smooth, matte surfaces,  precise lines,  smooth transitions between colours.\n"
+     },
+     {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist, organic scene featuring a plastic, iridescent statue in muted lime, grey, black, and white tones, positioned at the center of a composition, with subtle, soft lighting casting gentle shadows; the statue's form is fluid and flowing, exhibiting smooth, curving lines; the background is a neutral, plain backdrop, suggesting an uncluttered, gallery-like space with softly diffused light; the material of the statue has a glossy, almost translucent quality;  style: photorealistic, highly detailed illustration, rendering: smooth, clean, high resolution; perspective: slightly elevated, bird's-eye view;  focal length: 50mm.\n"
+     }
+    ],
+    "schema": {
+     "model": {
+      "type": "enum",
+      "order": 0,
+      "title": "Model Name",
+      "default": "google/gemini-flash-1.5-8b",
+      "options": [
+       "anthropic/claude-3-haiku",
+       "google/gemini-flash-1.5",
+       "google/gemini-flash-1.5-8b",
+       "meta-llama/llama-3.2-1b-instruct",
+       "meta-llama/llama-3.2-3b-instruct",
+       "meta-llama/llama-3.1-8b-instruct",
+       "meta-llama/llama-3.1-70b-instruct",
+       "openai/gpt-4o-mini"
+      ],
+      "description": "Name of the model to use"
+     },
+     "system_prompt": {
+      "type": "text",
+      "order": 1,
+      "title": "Model's Instructions",
+      "default": "Your job is to write prompts for text-to-image models. Specifically for gaming assets. Your input will be a general description for the scene, You should write a prompt without any additions",
+      "description": "Describe the purpose of the model (e.g \"you are a prompt generator\")"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "The prompt you wish to enahnce"
+      }
+     },
+     "output": [
+      "text"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Enhance your prompt with an LLM",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 6
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt Enhancer"
+  },
+  {
+   "id": "178a80f4-559c-4c4a-b937-128b9db6f7de",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1570,
+    "y": -230
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux Canny Pro"
+    },
+    "name": "Flux Canny Pro",
+    "color": "Red",
+    "input": {
+     "prompt": {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n"
+     },
+     "control_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+      "type": "image",
+      "width": 1680,
+      "height": 720,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+      "visualId": "b331ccce3331668e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+     }
+    },
+    "model": {
+     "name": "black-forest-labs/flux-canny-pro",
+     "label": "",
+     "version": "6896f8d14c5f9a63291c72f1e189f7e3f935d913687b7185833bc69de22ea784"
+    },
+    "output": {
+     "result": {
+      "url": "https://media.weavy.ai/image/upload/v1748511059/uploads/kunf00uqhibo3prtsi88.jpg",
+      "type": "image",
+      "input": {
+       "seed": 553692,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+       },
+       "guidance": 30,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0",
+      "publicId": "uploads/kunf00uqhibo3prtsi88",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 553692,
+      "isRandom": true
+     },
+     "steps": 50,
+     "prompt": {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n"
+     },
+     "guidance": 30,
+     "control_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+      "type": "image",
+      "width": 1680,
+      "height": 720,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+      "visualId": "b331ccce3331668e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+     },
+     "output_format": "jpg",
+     "safety_tolerance": 6,
+     "prompt_upsampling": true
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745483460/uploads/w7kxtbutvaj5v6dewlvk.jpg",
+      "type": "image",
+      "input": {
+       "seed": 65892,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  white, black A close-up of renaissance oil painting still life, brush strokes details ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A close-up, renaissance-style still life painting, featuring a minimalistic arrangement of organic shapes in white and black, rendered in meticulous oil brushstrokes, showcasing detailed texture and subtle color variations, high-quality, photorealistic, oil on canvas, detailed brushstrokes visible, focal length 50mm,  depth of field shallow,  natural light, dramatic chiaroscuro,  calm mood,  meticulous rendering.\n"
+       },
+       "guidance": 30,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/w7kxtbutvaj5v6dewlvk.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/w7kxtbutvaj5v6dewlvk",
+      "visualId": "93a25a9d6e936989",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/w7kxtbutvaj5v6dewlvk.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/w7kxtbutvaj5v6dewlvk.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748283246/uploads/af9zx6ymtvtuksubf42c.jpg",
+      "type": "image",
+      "input": {
+       "seed": 797302,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  white, black A close-up of renaissance oil painting still life, brush strokes details ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A close-up, renaissance-style still life painting, featuring a minimalistic arrangement of organic shapes in white and black, rendered in meticulous oil brushstrokes, showcasing detailed texture and subtle color variations, high-quality, photorealistic, oil on canvas, detailed brushstrokes visible, focal length 50mm,  depth of field shallow,  natural light, dramatic chiaroscuro,  calm mood,  meticulous rendering.\n"
+       },
+       "guidance": 30,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/af9zx6ymtvtuksubf42c.png?_a=BAMCkGWO0",
+      "publicId": "uploads/af9zx6ymtvtuksubf42c",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/af9zx6ymtvtuksubf42c.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/af9zx6ymtvtuksubf42c.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511025/uploads/qyneeusd9w9u6qrm1om2.jpg",
+      "type": "image",
+      "input": {
+       "seed": 478151,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+       },
+       "guidance": 30,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/qyneeusd9w9u6qrm1om2.png?_a=BAMCkGWO0",
+      "publicId": "uploads/qyneeusd9w9u6qrm1om2",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/qyneeusd9w9u6qrm1om2.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/qyneeusd9w9u6qrm1om2.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511059/uploads/kunf00uqhibo3prtsi88.jpg",
+      "type": "image",
+      "input": {
+       "seed": 553692,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+       },
+       "guidance": 30,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0",
+      "publicId": "uploads/kunf00uqhibo3prtsi88",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511242/uploads/igclwfx3gdmoej21s87s.jpg",
+      "type": "image",
+      "input": {
+       "seed": 917396,
+       "steps": 50,
+       "prompt": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n",
+       "guidance": 30,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/igclwfx3gdmoej21s87s.png?_a=BAMCkGWO0",
+      "publicId": "uploads/igclwfx3gdmoej21s87s",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/igclwfx3gdmoej21s87s.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/igclwfx3gdmoej21s87s.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511277/uploads/iciokjit19mfvjzos4dp.jpg",
+      "type": "image",
+      "input": {
+       "seed": 309955,
+       "steps": 50,
+       "prompt": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n",
+       "guidance": 30,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/iciokjit19mfvjzos4dp.png?_a=BAMCkGWO0",
+      "publicId": "uploads/iciokjit19mfvjzos4dp",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/iciokjit19mfvjzos4dp.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/iciokjit19mfvjzos4dp.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511326/uploads/p0lwqebrz6wkdyjcfjbh.jpg",
+      "type": "image",
+      "input": {
+       "seed": 916267,
+       "steps": 50,
+       "prompt": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n",
+       "guidance": 30,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/p0lwqebrz6wkdyjcfjbh.png?_a=BAMCkGWO0",
+      "publicId": "uploads/p0lwqebrz6wkdyjcfjbh",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/p0lwqebrz6wkdyjcfjbh.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/p0lwqebrz6wkdyjcfjbh.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511363/uploads/kkmhhs7s04kpxroudugu.jpg",
+      "type": "image",
+      "input": {
+       "seed": 983146,
+       "steps": 50,
+       "prompt": "A clean, minimalist scene featuring an organic, iridescent, plastic statue in muted lime green, gray, black, and white, positioned centrally against a plain backdrop, bathed in soft, diffused ambient light; the statue's form subtle and flowing, its surface exhibiting a delicate iridescent sheen; the overall aesthetic is calm and serene, evoking a sense of quiet contemplation; photorealistic rendering, high detail, sharp focus, studio lighting,  shallow depth of field,  precise perspective,  front-facing view; high resolution image.\n",
+       "guidance": 30,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/kkmhhs7s04kpxroudugu.png?_a=BAMCkGWO0",
+      "publicId": "uploads/kkmhhs7s04kpxroudugu",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/kkmhhs7s04kpxroudugu.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/kkmhhs7s04kpxroudugu.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511387/uploads/d69unu5arzqbuv5c3ojy.jpg",
+      "type": "image",
+      "input": {
+       "seed": 933552,
+       "steps": 50,
+       "prompt": "A clean, minimalist, organic scene featuring a muted lime, grey, black, and white plastic iridescent statue, centered in the foreground; the statue's smooth, reflective surface subtly catches ambient light;  the background is a soft muted grey, lacking strong details;  a subtle, diffused ambient light casts no distinct shadows; the style is photorealistic, with fine details and smooth color transitions; a slight shallow depth of field focuses on the statue;  the composition is symmetrical and balanced, showing a simple, uncluttered scene.\n",
+       "guidance": 30,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/d69unu5arzqbuv5c3ojy.png?_a=BAMCkGWO0",
+      "publicId": "uploads/d69unu5arzqbuv5c3ojy",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/d69unu5arzqbuv5c3ojy.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/d69unu5arzqbuv5c3ojy.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511685/uploads/xezeyvxsroryobya7seo.jpg",
+      "type": "image",
+      "input": {
+       "seed": 386944,
+       "steps": 50,
+       "prompt": "A clean, minimalist, organic scene featuring a muted lime, grey, black, and white plastic iridescent statue, centered in the foreground; the statue's smooth, reflective surface subtly catches ambient light;  the background is a soft muted grey, lacking strong details;  a subtle, diffused ambient light casts no distinct shadows; the style is photorealistic, with fine details and smooth color transitions; a slight shallow depth of field focuses on the statue;  the composition is symmetrical and balanced, showing a simple, uncluttered scene.\n",
+       "guidance": 30,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/xezeyvxsroryobya7seo.png?_a=BAMCkGWO0",
+      "publicId": "uploads/xezeyvxsroryobya7seo",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/xezeyvxsroryobya7seo.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/xezeyvxsroryobya7seo.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1749115542/uploads/pfgryuvxquykdgzzukpd.jpg",
+      "type": "image",
+      "input": {
+       "seed": 801394,
+       "steps": 50,
+       "prompt": "A clean, minimalist, organic scene featuring a plastic, iridescent statue in muted lime, grey, black, and white tones, positioned at the center of a composition, with subtle, soft lighting casting gentle shadows; the statue's form is fluid and flowing, exhibiting smooth, curving lines; the background is a neutral, plain backdrop, suggesting an uncluttered, gallery-like space with softly diffused light; the material of the statue has a glossy, almost translucent quality;  style: photorealistic, highly detailed illustration, rendering: smooth, clean, high resolution; perspective: slightly elevated, bird's-eye view;  focal length: 50mm.\n",
+       "guidance": 30,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/pfgryuvxquykdgzzukpd.png?_a=BAMCkGWO0",
+      "publicId": "uploads/pfgryuvxquykdgzzukpd",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/pfgryuvxquykdgzzukpd.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/pfgryuvxquykdgzzukpd.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 2,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "steps": {
+      "max": 50,
+      "min": 15,
+      "type": "integer",
+      "order": 3,
+      "title": "Steps",
+      "default": 50,
+      "required": false,
+      "description": "Number of diffusion steps. Higher values yield finer details but increase processing time."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "guidance": {
+      "max": 50,
+      "min": 1,
+      "type": "number",
+      "order": 5,
+      "title": "Guidance",
+      "default": 30,
+      "required": false,
+      "description": "Controls the balance between adherence to the text as well as image prompt and image quality/diversity. Higher values make the output more closely match the prompt but may reduce overall image quality. Lower values allow for more creative freedom but might produce results less relevant to the prompt."
+     },
+     "control_image": {
+      "type": "string",
+      "order": 1,
+      "title": "Control Image",
+      "format": "uri",
+      "required": true,
+      "description": "Image to use as control input. Must be jpeg, png, or webp."
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 7,
+      "title": "Output Format",
+      "default": "jpg",
+      "options": [
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images."
+     },
+     "safety_tolerance": {
+      "max": 6,
+      "min": 1,
+      "type": "integer",
+      "order": 6,
+      "title": "Safety Tolerance",
+      "default": 6,
+      "required": false,
+      "description": "Safety tolerance, 1 is most strict and 6 is most permissive"
+     },
+     "prompt_upsampling": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Prompt Upsampling",
+      "default": false,
+      "required": false,
+      "description": "Automatically modify the prompt for more creative generation"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "3c5788e7-4afb-413f-8349-4f70cca8c14f",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "control_image": {
+       "id": "1cc6d032-46da-4fc4-b415-7867eaa4e376",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Image to use as control input. Must be jpeg, png, or webp."
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional edge-guided image generation. Control structure and composition using Canny edge detection",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 10
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Canny Pro"
+  },
+  {
+   "id": "230f0462-6fba-4b0d-af4b-65a51185a125",
+   "isModel": false,
+   "type": "prompt_concat",
+   "position": {
+    "x": 440,
+    "y": -300
+   },
+   "data": {
+    "name": "Prompts Concatenator",
+    "color": "Yambo_Green",
+    "input": {
+     "prompt1": "clean, minimalistic, organic ",
+     "prompt2": "muted lime, grey, black, white",
+     "prompt3": "a plastic iridescent statue  "
+    },
+    "output": {
+     "type": "text",
+     "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   "
+    },
+    "result": {
+     "additionalPrompt": ""
+    },
+    "handles": {
+     "input": [
+      "prompt1",
+      "prompt2",
+      "prompt3"
+     ],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "Concatenates multiple prompts to one output prompt.",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompts Concatenator"
+  },
+  {
+   "id": "6fde9e0a-bc3b-46d9-ad81-9a5a4bf58d08",
+   "isModel": false,
+   "type": "workflow_output",
+   "position": {
+    "x": 2200,
+    "y": -170
+   },
+   "data": {
+    "name": "Output",
+    "color": "Yambo_Orange",
+    "input": {
+     "workflow": {
+      "url": "https://media.weavy.ai/image/upload/v1748511059/uploads/kunf00uqhibo3prtsi88.jpg",
+      "type": "image",
+      "input": {
+       "seed": 553692,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+       },
+       "guidance": 30,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "jpg",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0",
+      "publicId": "uploads/kunf00uqhibo3prtsi88",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/kunf00uqhibo3prtsi88.png?_a=BAMCkGWO0"
+     }
+    },
+    "handles": {
+     "input": {
+      "workflow": {
+       "order": 0,
+       "format": "any",
+       "required": true,
+       "description": "Will run the connected workflow"
+      }
+     },
+     "output": []
+    },
+    "version": 2,
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Output"
+  },
+  {
+   "id": "8953751f-9b5b-4895-a4da-db1e48e02863",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": 930,
+    "y": -650
+   },
+   "data": {
+    "name": "File",
+    "color": "Yambo_Blue",
+    "output": {
+     "file": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+      "type": "image",
+      "width": 1680,
+      "height": 720,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+      "visualId": "b331ccce3331668e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+     }
+    },
+    "result": {
+     "fps": 0,
+     "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+     "type": "image",
+     "width": 1680,
+     "height": 720,
+     "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+     "duration": 0,
+     "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+     "visualId": "b331ccce3331668e",
+     "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+     "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+    },
+    "handles": {
+     "output": [
+      "file"
+     ]
+    },
+    "dark_color": "Yambo_Blue_Dark",
+    "border_color": "Yambo_Blue_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "File"
+  },
+  {
+   "id": "9e0d1ed9-a246-45e6-8f77-cc578bcb98b9",
+   "isModel": false,
+   "type": "workflow_output",
+   "position": {
+    "x": 2210,
+    "y": -460
+   },
+   "data": {
+    "name": "Output",
+    "color": "Yambo_Orange",
+    "input": {
+     "workflow": {
+      "url": "https://media.weavy.ai/image/upload/v1748511061/uploads/zchop0qcjzknksy0psjp.png",
+      "type": "image",
+      "input": {
+       "seed": 906783,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+       },
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0",
+      "publicId": "uploads/zchop0qcjzknksy0psjp",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0"
+     }
+    },
+    "handles": {
+     "input": {
+      "workflow": {
+       "order": 0,
+       "format": "any",
+       "required": true,
+       "description": "Will run the connected workflow"
+      }
+     },
+     "output": []
+    },
+    "version": 2,
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Output"
+  },
+  {
+   "id": "a2336d4e-ec03-4b8b-9950-1a89ed37840b",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -140,
+    "y": -400
+   },
+   "data": {
+    "name": "Colors",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "muted lime, grey, black, white"
+    },
+    "result": {
+     "prompt": "muted lime, grey, black, white"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Colors"
+  },
+  {
+   "id": "d1d27603-2f35-4e78-8998-8b67c4526407",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -140,
+    "y": -100
+   },
+   "data": {
+    "name": "Element ",
+    "color": "Yambo_Green",
+    "input": {},
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "a plastic iridescent statue  "
+    },
+    "result": {
+     "prompt": "a plastic iridescent statue  "
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Element "
+  },
+  {
+   "id": "f6e6ccff-8a3d-4f92-8c2f-d23f240426c1",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1570,
+    "y": -550
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux Depth Pro"
+    },
+    "name": "Flux Depth Pro",
+    "color": "Red",
+    "input": {
+     "prompt": {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n"
+     },
+     "control_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+      "type": "image",
+      "width": 1680,
+      "height": 720,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+      "visualId": "b331ccce3331668e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+     }
+    },
+    "model": {
+     "name": "black-forest-labs/flux-depth-pro",
+     "label": "",
+     "version": "30812170810708f84810ae99c7758c458f5dc6b7f29e8851dd388f311c8a01bd"
+    },
+    "output": {
+     "result": {
+      "url": "https://media.weavy.ai/image/upload/v1748511061/uploads/zchop0qcjzknksy0psjp.png",
+      "type": "image",
+      "input": {
+       "seed": 906783,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+       },
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0",
+      "publicId": "uploads/zchop0qcjzknksy0psjp",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 906783,
+      "isRandom": true
+     },
+     "steps": 50,
+     "prompt": {
+      "type": "text",
+      "input": {
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+       "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+      },
+      "value": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n"
+     },
+     "guidance": 10,
+     "control_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+      "type": "image",
+      "width": 1680,
+      "height": 720,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+      "visualId": "b331ccce3331668e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+     },
+     "output_format": "png",
+     "safety_tolerance": 6,
+     "prompt_upsampling": true
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745483463/uploads/bavmohazcnmajtl9qjv4.png",
+      "type": "image",
+      "input": {
+       "seed": 195451,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  white, black A close-up of renaissance oil painting still life, brush strokes details ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A close-up, renaissance-style still life painting, featuring a minimalistic arrangement of organic shapes in white and black, rendered in meticulous oil brushstrokes, showcasing detailed texture and subtle color variations, high-quality, photorealistic, oil on canvas, detailed brushstrokes visible, focal length 50mm,  depth of field shallow,  natural light, dramatic chiaroscuro,  calm mood,  meticulous rendering.\n"
+       },
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/bavmohazcnmajtl9qjv4.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/bavmohazcnmajtl9qjv4",
+      "visualId": "ec873266da1ccd38",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/bavmohazcnmajtl9qjv4.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/bavmohazcnmajtl9qjv4.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1747052712/uploads/yjhcccj42x6fq76ce5ns.png",
+      "type": "image",
+      "input": {
+       "seed": 40607,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  white, black A close-up of renaissance oil painting still life, brush strokes details ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A close-up, renaissance-style still life painting, featuring a minimalistic arrangement of organic shapes in white and black, rendered in meticulous oil brushstrokes, showcasing detailed texture and subtle color variations, high-quality, photorealistic, oil on canvas, detailed brushstrokes visible, focal length 50mm,  depth of field shallow,  natural light, dramatic chiaroscuro,  calm mood,  meticulous rendering.\n"
+       },
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/yjhcccj42x6fq76ce5ns.png?_a=BAMCkGWO0",
+      "publicId": "uploads/yjhcccj42x6fq76ce5ns",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/yjhcccj42x6fq76ce5ns.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_150/v1/uploads/yjhcccj42x6fq76ce5ns.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748283250/uploads/zv2lpyct5qecrmgehzmy.png",
+      "type": "image",
+      "input": {
+       "seed": 768158,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  white, black A close-up of renaissance oil painting still life, brush strokes details ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A close-up, renaissance-style still life painting, featuring a minimalistic arrangement of organic shapes in white and black, rendered in meticulous oil brushstrokes, showcasing detailed texture and subtle color variations, high-quality, photorealistic, oil on canvas, detailed brushstrokes visible, focal length 50mm,  depth of field shallow,  natural light, dramatic chiaroscuro,  calm mood,  meticulous rendering.\n"
+       },
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/zv2lpyct5qecrmgehzmy.png?_a=BAMCkGWO0",
+      "publicId": "uploads/zv2lpyct5qecrmgehzmy",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/zv2lpyct5qecrmgehzmy.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/zv2lpyct5qecrmgehzmy.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511022/uploads/szfiyph1fpoy2gfjbr1o.png",
+      "type": "image",
+      "input": {
+       "seed": 384244,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+       },
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/szfiyph1fpoy2gfjbr1o.png?_a=BAMCkGWO0",
+      "publicId": "uploads/szfiyph1fpoy2gfjbr1o",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/szfiyph1fpoy2gfjbr1o.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/szfiyph1fpoy2gfjbr1o.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511061/uploads/zchop0qcjzknksy0psjp.png",
+      "type": "image",
+      "input": {
+       "seed": 906783,
+       "steps": 50,
+       "prompt": {
+        "type": "text",
+        "input": {
+         "model": "google/gemini-flash-1.5-8b",
+         "prompt": "clean, minimalistic, organic  muted lime, grey, black, white a plastic iridescent statue   ",
+         "system_prompt": "You are an expert prompt engineer specializing in crafting  prompts for text-to-image AI models. Your task is to expand upon a basic image description by incorporating specific details about the scene, subjects, environment, lighting, mood, artistic style, and composition. The goal is to create a comprehensive prompt that enables the AI to generate a high-quality image matching the envisioned scene.\n\n1. Start with a concise overview of the main subject and scene\n2. Break down foreground elements with specific details about their appearance, position, and scale\n3. Describe the background setting, including lighting, atmosphere, and environment\n4. Specify artistic style, medium, rendering technique, and quality indicators (photorealistic, illustration, etc.)\n5. Include technical parameters like perspective, camera angle, and focal length if applicable\n6. Format the final prompt as a single paragraph with descriptive phrases separated by commas\n7. Prioritize specificity and visual detail over conceptual interpretation\n\n10-30 words, no prefix\n"
+        },
+        "value": "A clean, minimalistic, organic sculpture of a plastic, iridescent statue in muted lime, grey, black, and white, positioned centrally in a simple, neutral-toned environment;  foreground features a glossy, smooth, plastic form, reflecting ambient light, with subtle, irregular shapes; background features a plain, subtly textured grey wall, bathed in soft, diffused, natural light, creating a calm and serene mood;  photorealistic rendering, high detail, sharp focus on the statue's surface, studio lighting,  subtle depth of field;  vertical composition.\n"
+       },
+       "guidance": 10,
+       "control_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+        "type": "image",
+        "width": 1680,
+        "height": 720,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vnol6b2g8mzwzbsom5dv",
+        "visualId": "b331ccce3331668e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vnol6b2g8mzwzbsom5dv.png?_a=BAMCcSfi0"
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0",
+      "publicId": "uploads/zchop0qcjzknksy0psjp",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/zchop0qcjzknksy0psjp.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511242/uploads/pymyavrnv3dgczou8m99.png",
+      "type": "image",
+      "input": {
+       "seed": 565019,
+       "steps": 50,
+       "prompt": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n",
+       "guidance": 10,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/pymyavrnv3dgczou8m99.png?_a=BAMCkGWO0",
+      "publicId": "uploads/pymyavrnv3dgczou8m99",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/pymyavrnv3dgczou8m99.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/pymyavrnv3dgczou8m99.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511274/uploads/onb3yk5xf93r0zd0au0m.png",
+      "type": "image",
+      "input": {
+       "seed": 638363,
+       "steps": 50,
+       "prompt": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n",
+       "guidance": 10,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/onb3yk5xf93r0zd0au0m.png?_a=BAMCkGWO0",
+      "publicId": "uploads/onb3yk5xf93r0zd0au0m",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/onb3yk5xf93r0zd0au0m.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/onb3yk5xf93r0zd0au0m.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511325/uploads/zlmizjv8icw95rrydkiq.png",
+      "type": "image",
+      "input": {
+       "seed": 606890,
+       "steps": 50,
+       "prompt": "A clean, minimalist scene featuring a plastic, iridescent, lime green, grey, black, and white statue positioned centrally, casting subtle shadows, in a muted, neutral-toned, organic background; the statue's form is organic and fluid, with subtle translucencies; low-key, diffused lighting;  photorealistic rendering; high resolution;  detailed textures visible on the statue's surface;  balanced composition;  front-facing perspective; shallow depth of field.\n",
+       "guidance": 10,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/zlmizjv8icw95rrydkiq.png?_a=BAMCkGWO0",
+      "publicId": "uploads/zlmizjv8icw95rrydkiq",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/zlmizjv8icw95rrydkiq.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/zlmizjv8icw95rrydkiq.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511363/uploads/y99p6dthme9rtxrunks2.png",
+      "type": "image",
+      "input": {
+       "seed": 432264,
+       "steps": 50,
+       "prompt": "A clean, minimalist scene featuring an organic, iridescent, plastic statue in muted lime green, gray, black, and white, positioned centrally against a plain backdrop, bathed in soft, diffused ambient light; the statue's form subtle and flowing, its surface exhibiting a delicate iridescent sheen; the overall aesthetic is calm and serene, evoking a sense of quiet contemplation; photorealistic rendering, high detail, sharp focus, studio lighting,  shallow depth of field,  precise perspective,  front-facing view; high resolution image.\n",
+       "guidance": 10,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/y99p6dthme9rtxrunks2.png?_a=BAMCkGWO0",
+      "publicId": "uploads/y99p6dthme9rtxrunks2",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/y99p6dthme9rtxrunks2.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/y99p6dthme9rtxrunks2.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511390/uploads/pn35mid5o2bdjg0caio8.png",
+      "type": "image",
+      "input": {
+       "seed": 621278,
+       "steps": 50,
+       "prompt": "A clean, minimalist, organic scene featuring a muted lime, grey, black, and white plastic iridescent statue, centered in the foreground; the statue's smooth, reflective surface subtly catches ambient light;  the background is a soft muted grey, lacking strong details;  a subtle, diffused ambient light casts no distinct shadows; the style is photorealistic, with fine details and smooth color transitions; a slight shallow depth of field focuses on the statue;  the composition is symmetrical and balanced, showing a simple, uncluttered scene.\n",
+       "guidance": 10,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/pn35mid5o2bdjg0caio8.png?_a=BAMCkGWO0",
+      "publicId": "uploads/pn35mid5o2bdjg0caio8",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/pn35mid5o2bdjg0caio8.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/pn35mid5o2bdjg0caio8.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1748511684/uploads/m6ijme9wrvvagmpcqzrr.png",
+      "type": "image",
+      "input": {
+       "seed": 589635,
+       "steps": 50,
+       "prompt": "A clean, minimalist, organic scene featuring a muted lime, grey, black, and white plastic iridescent statue, centered in the foreground; the statue's smooth, reflective surface subtly catches ambient light;  the background is a soft muted grey, lacking strong details;  a subtle, diffused ambient light casts no distinct shadows; the style is photorealistic, with fine details and smooth color transitions; a slight shallow depth of field focuses on the statue;  the composition is symmetrical and balanced, showing a simple, uncluttered scene.\n",
+       "guidance": 10,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/m6ijme9wrvvagmpcqzrr.png?_a=BAMCkGWO0",
+      "publicId": "uploads/m6ijme9wrvvagmpcqzrr",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/m6ijme9wrvvagmpcqzrr.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/m6ijme9wrvvagmpcqzrr.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1749115547/uploads/dw2l6e31dzavtx8foghp.png",
+      "type": "image",
+      "input": {
+       "seed": 698038,
+       "steps": 50,
+       "prompt": "A clean, minimalist, organic scene featuring a plastic, iridescent statue in muted lime, grey, black, and white tones, positioned at the center of a composition, with subtle, soft lighting casting gentle shadows; the statue's form is fluid and flowing, exhibiting smooth, curving lines; the background is a neutral, plain backdrop, suggesting an uncluttered, gallery-like space with softly diffused light; the material of the statue has a glossy, almost translucent quality;  style: photorealistic, highly detailed illustration, rendering: smooth, clean, high resolution; perspective: slightly elevated, bird's-eye view;  focal length: 50mm.\n",
+       "guidance": 10,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/dw2l6e31dzavtx8foghp.png?_a=BAMCkGWO0",
+      "publicId": "uploads/dw2l6e31dzavtx8foghp",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/dw2l6e31dzavtx8foghp.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/dw2l6e31dzavtx8foghp.png?_a=BAMCkGWO0"
+     },
+     {
+      "url": "https://media.weavy.ai/image/upload/v1749115664/uploads/nrikicah6ekkhuzfqcqk.png",
+      "type": "image",
+      "input": {
+       "seed": 572473,
+       "steps": 50,
+       "prompt": "A clean, minimalist, organic scene featuring a plastic, iridescent statue in muted lime, grey, black, and white tones, positioned at the center of a composition, with subtle, soft lighting casting gentle shadows; the statue's form is fluid and flowing, exhibiting smooth, curving lines; the background is a neutral, plain backdrop, suggesting an uncluttered, gallery-like space with softly diffused light; the material of the statue has a glossy, almost translucent quality;  style: photorealistic, highly detailed illustration, rendering: smooth, clean, high resolution; perspective: slightly elevated, bird's-eye view;  focal length: 50mm.\n",
+       "guidance": 10,
+       "control_image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745432958/uploads/vnol6b2g8mzwzbsom5dv.png",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 1440,
+      "height": 608,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/nrikicah6ekkhuzfqcqk.png?_a=BAMCkGWO0",
+      "publicId": "uploads/nrikicah6ekkhuzfqcqk",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/nrikicah6ekkhuzfqcqk.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/nrikicah6ekkhuzfqcqk.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 2,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "steps": {
+      "max": 50,
+      "min": 15,
+      "type": "integer",
+      "order": 3,
+      "title": "Steps",
+      "default": 50,
+      "required": false,
+      "description": "Number of diffusion steps. Higher values yield finer details but increase processing time."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "guidance": {
+      "max": 50,
+      "min": 1,
+      "type": "number",
+      "order": 5,
+      "title": "Guidance",
+      "default": 10,
+      "required": false,
+      "description": "Controls the balance between adherence to the text as well as image prompt and image quality/diversity. Higher values make the output more closely match the prompt but may reduce overall image quality. Lower values allow for more creative freedom but might produce results less relevant to the prompt."
+     },
+     "control_image": {
+      "type": "string",
+      "order": 1,
+      "title": "Control Image",
+      "format": "uri",
+      "required": true,
+      "description": "Image to use as control input. Must be jpeg, png, or webp."
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 7,
+      "title": "Output Format",
+      "default": "png",
+      "options": [
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images."
+     },
+     "safety_tolerance": {
+      "max": 6,
+      "min": 1,
+      "type": "integer",
+      "order": 6,
+      "title": "Safety Tolerance",
+      "default": 2,
+      "required": false,
+      "description": "Safety tolerance, 1 is most strict and 6 is most permissive"
+     },
+     "prompt_upsampling": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Prompt Upsampling",
+      "default": false,
+      "required": false,
+      "description": "Automatically modify the prompt for more creative generation"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "ce25e0fd-2d23-4b66-9c69-cdcd8ce1d29a",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "control_image": {
+       "id": "67109cfa-2f1a-4ffc-a7df-8cd8e0683e8b",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Image to use as control input. Must be jpeg, png, or webp."
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional depth-aware image generation. Edit images while preserving spatial relationships.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 12
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Depth Pro"
+  },
+  {
+   "id": "48253ca0-6e0f-4347-89fc-4bb3b7527b6d",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 950,
+    "y": -830
+   },
+   "data": {
+    "menu": null,
+    "name": "Sticky Note",
+    "color": null,
+    "input": {},
+    "label": null,
+    "model": null,
+    "params": null,
+    "result": {
+     "note": "Use your own logo!"
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": []
+    },
+    "version": null,
+    "description": null
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "e3525c79-f610-419c-a609-77811e596e9b",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -140,
+    "y": -710
+   },
+   "data": {
+    "menu": null,
+    "name": "style",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "model": null,
+    "output": {
+     "type": "text",
+     "prompt": "clean, minimalistic, organic "
+    },
+    "params": null,
+    "result": {
+     "prompt": "clean, minimalistic, organic "
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": {
+      "prompt": {
+       "type": "text",
+       "order": 0,
+       "format": "text",
+       "description": "Text prompt"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Green_Dark",
+    "description": null,
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "style"
+  },
+  {
+   "id": "0657ac06-590a-498f-911a-339760c811b4",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -860,
+    "y": -420
+   },
+   "data": {
+    "name": "Colors",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "white, black"
+    },
+    "result": {
+     "prompt": "white, black"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Colors"
+  },
+  {
+   "id": "3f532e65-c9fc-4a60-a094-a1a3e9fe8036",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -860,
+    "y": -120
+   },
+   "data": {
+    "name": "Element ",
+    "color": "Yambo_Green",
+    "input": {},
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "A close-up of renaissance oil painting still life, brush strokes details "
+    },
+    "result": {
+     "prompt": "A close-up of renaissance oil painting still life, brush strokes details "
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Element "
+  },
+  {
+   "id": "fb4f8acc-7e4b-48f1-bc00-7935b3131526",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -860,
+    "y": -730
+   },
+   "data": {
+    "menu": null,
+    "name": "style",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "model": null,
+    "output": {
+     "type": "text",
+     "prompt": "clean, minimalistic, organic "
+    },
+    "params": null,
+    "result": {
+     "prompt": "clean, minimalistic, organic "
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": {
+      "prompt": {
+       "type": "text",
+       "order": 0,
+       "format": "text",
+       "description": "Text prompt"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Green_Dark",
+    "description": null,
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "style"
+  }
+ ],
+ "edges": [
+  {
+   "id": "reactflow__edge-a2336d4e-ec03-4b8b-9950-1a89ed37840ba2336d4e-ec03-4b8b-9950-1a89ed37840b-output-prompt-230f0462-6fba-4b0d-af4b-65a51185a125230f0462-6fba-4b0d-af4b-65a51185a125-input-prompt2",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "a2336d4e-ec03-4b8b-9950-1a89ed37840b",
+   "target": "230f0462-6fba-4b0d-af4b-65a51185a125",
+   "selected": false,
+   "sourceHandle": "a2336d4e-ec03-4b8b-9950-1a89ed37840b-output-prompt",
+   "targetHandle": "230f0462-6fba-4b0d-af4b-65a51185a125-input-prompt2"
+  },
+  {
+   "id": "reactflow__edge-d1d27603-2f35-4e78-8998-8b67c4526407d1d27603-2f35-4e78-8998-8b67c4526407-output-prompt-230f0462-6fba-4b0d-af4b-65a51185a125230f0462-6fba-4b0d-af4b-65a51185a125-input-prompt3",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "d1d27603-2f35-4e78-8998-8b67c4526407",
+   "target": "230f0462-6fba-4b0d-af4b-65a51185a125",
+   "selected": false,
+   "sourceHandle": "d1d27603-2f35-4e78-8998-8b67c4526407-output-prompt",
+   "targetHandle": "230f0462-6fba-4b0d-af4b-65a51185a125-input-prompt3"
+  },
+  {
+   "id": "reactflow__edge-f6e6ccff-8a3d-4f92-8c2f-d23f240426c1f6e6ccff-8a3d-4f92-8c2f-d23f240426c1-output-result-9e0d1ed9-a246-45e6-8f77-cc578bcb98b99e0d1ed9-a246-45e6-8f77-cc578bcb98b9-input-workflow",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "f6e6ccff-8a3d-4f92-8c2f-d23f240426c1",
+   "target": "9e0d1ed9-a246-45e6-8f77-cc578bcb98b9",
+   "selected": false,
+   "sourceHandle": "f6e6ccff-8a3d-4f92-8c2f-d23f240426c1-output-result",
+   "targetHandle": "9e0d1ed9-a246-45e6-8f77-cc578bcb98b9-input-workflow"
+  },
+  {
+   "id": "reactflow__edge-178a80f4-559c-4c4a-b937-128b9db6f7de178a80f4-559c-4c4a-b937-128b9db6f7de-output-result-6fde9e0a-bc3b-46d9-ad81-9a5a4bf58d086fde9e0a-bc3b-46d9-ad81-9a5a4bf58d08-input-workflow",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "178a80f4-559c-4c4a-b937-128b9db6f7de",
+   "target": "6fde9e0a-bc3b-46d9-ad81-9a5a4bf58d08",
+   "selected": false,
+   "sourceHandle": "178a80f4-559c-4c4a-b937-128b9db6f7de-output-result",
+   "targetHandle": "6fde9e0a-bc3b-46d9-ad81-9a5a4bf58d08-input-workflow"
+  },
+  {
+   "id": "reactflow__edge-230f0462-6fba-4b0d-af4b-65a51185a125230f0462-6fba-4b0d-af4b-65a51185a125-output-prompt-0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d80f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "230f0462-6fba-4b0d-af4b-65a51185a125",
+   "target": "0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8",
+   "selected": false,
+   "sourceHandle": "230f0462-6fba-4b0d-af4b-65a51185a125-output-prompt",
+   "targetHandle": "0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d80f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8-output-text-f6e6ccff-8a3d-4f92-8c2f-d23f240426c1f6e6ccff-8a3d-4f92-8c2f-d23f240426c1-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8",
+   "target": "f6e6ccff-8a3d-4f92-8c2f-d23f240426c1",
+   "selected": false,
+   "sourceHandle": "0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8-output-text",
+   "targetHandle": "f6e6ccff-8a3d-4f92-8c2f-d23f240426c1-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d80f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8-output-text-178a80f4-559c-4c4a-b937-128b9db6f7de178a80f4-559c-4c4a-b937-128b9db6f7de-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8",
+   "target": "178a80f4-559c-4c4a-b937-128b9db6f7de",
+   "selected": false,
+   "sourceHandle": "0f8fe99a-d0f1-4ed1-956f-529d2cb9b8d8-output-text",
+   "targetHandle": "178a80f4-559c-4c4a-b937-128b9db6f7de-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-8953751f-9b5b-4895-a4da-db1e48e028638953751f-9b5b-4895-a4da-db1e48e02863-output-file-f6e6ccff-8a3d-4f92-8c2f-d23f240426c1f6e6ccff-8a3d-4f92-8c2f-d23f240426c1-input-control_image",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "8953751f-9b5b-4895-a4da-db1e48e02863",
+   "target": "f6e6ccff-8a3d-4f92-8c2f-d23f240426c1",
+   "selected": false,
+   "sourceHandle": "8953751f-9b5b-4895-a4da-db1e48e02863-output-file",
+   "targetHandle": "f6e6ccff-8a3d-4f92-8c2f-d23f240426c1-input-control_image"
+  },
+  {
+   "id": "reactflow__edge-8953751f-9b5b-4895-a4da-db1e48e028638953751f-9b5b-4895-a4da-db1e48e02863-output-file-178a80f4-559c-4c4a-b937-128b9db6f7de178a80f4-559c-4c4a-b937-128b9db6f7de-input-control_image",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "8953751f-9b5b-4895-a4da-db1e48e02863",
+   "target": "178a80f4-559c-4c4a-b937-128b9db6f7de",
+   "selected": false,
+   "sourceHandle": "8953751f-9b5b-4895-a4da-db1e48e02863-output-file",
+   "targetHandle": "178a80f4-559c-4c4a-b937-128b9db6f7de-input-control_image"
+  },
+  {
+   "id": "d295e29c-0330-40e1-9138-67f25a4cfcea",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green",
+    "sourceHandleType": "text"
+   },
+   "type": "custom",
+   "source": "e3525c79-f610-419c-a609-77811e596e9b",
+   "target": "230f0462-6fba-4b0d-af4b-65a51185a125",
+   "selected": false,
+   "sourceHandle": "e3525c79-f610-419c-a609-77811e596e9b-output-prompt",
+   "targetHandle": "230f0462-6fba-4b0d-af4b-65a51185a125-input-prompt1"
+  }
+ ],
+ "latestVersion": {
+  "version": 6,
+  "createdAt": "2025-05-29T09:31:49.049Z"
+ },
+ "latestPublishedVersion": {
+  "version": 5,
+  "createdAt": "2025-05-26T18:14:35.352Z",
+  "publishedAt": "2025-05-29T09:31:49.049Z"
+ },
+ "showcaseOrder": null,
+ "showcase": null,
+ "designAppMetadata": {
+  "0de97341-0458-4baa-b2af-350593fce375": {
+   "order": 0,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  },
+  "8953751f-9b5b-4895-a4da-db1e48e02863": {
+   "order": 0,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  },
+  "a2336d4e-ec03-4b8b-9950-1a89ed37840b": {
+   "order": 1,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  },
+  "d1d27603-2f35-4e78-8998-8b67c4526407": {
+   "order": 2,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  },
+  "e3525c79-f610-419c-a609-77811e596e9b": {
+   "order": 3,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  }
+ },
+ "v3": null,
+ "batchRuns": [],
+ "folderId": "f7c407b0-c27e-4b99-b886-2eb0e23e20b9",
+ "scope": "WORKSPACE",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

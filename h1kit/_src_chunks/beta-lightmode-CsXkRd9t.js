@@ -1,0 +1,1 @@
+var e=`/assets/static/beta-darkmode-Btua8oJ0.svg`,t=`/assets/static/beta-lightmode-DwMssnGy.svg`;export{e as n,t};

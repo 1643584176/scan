@@ -1,0 +1,255 @@
+[AJAX] atlassian_claim_app_page-CPU6TXMv.js
+  /apps/atlassian/claim-app
+  ()=>{if(n.team_id!==``){let e=d(n.team_id).node.handle,{team_id:r,unclaimed_atlassian_app_installation_id:a}=n;x.default.ajax({method:`POST`,url:`/apps/atlassian/claim-app`,data:{team_id:r,unclaimed_atlassian_app_installation_id:a},success:()=>{f(`notice`,`Successfully linked JIRA instance 
+
+[AJAX] better_report_form-BzuBw8Pn.js
+  ${this.controllerPath()}/draft
+  clusters,isLoadingWeaknesses:!1})});this.xhrs.push(e)};loadDraft=()=>{this.setState({isLoadingDraft:!0});let e=I.default.ajax({url:`${this.controllerPath()}/draft`,data:{draft_id:this.state.reportDraftId},success:e=>{this.state.weaknesses.syncWithDraft(e.weakness_id),this.props.att
+
+[AJAX] better_report_form-BzuBw8Pn.js
+  ${this.controllerPath()}/draft_sync
+  tate.selectedScopeId?parseInt(atob(this.state.selectedScopeId).split(`/`).reverse()[0],10):null;this._sync_xhr=I.default.ajax({url:`${this.controllerPath()}/draft_sync`,dataType:`json`,method:`post`,data:{draft_id:this.state.reportDraftId,report:{title:this.state.title,vulnerability_inf
+
+[AJAX] better_report_form-BzuBw8Pn.js
+  ${this.controllerPath()}/create_draft_report
+  ch(RegExp(`\\b${n} ${r}\\b`,`i`)))))}handleCreateDraft=e=>{e.preventDefault(),this.setState({isSubmitting:!0}),I.default.ajax({url:`${this.controllerPath()}/create_draft_report`,dataType:`json`,method:`post`,team:this.props.team,currentUser:this.props.currentUser,vulnTemplatesEnabled:this.props.
+
+[AJAX] bug_bounty_programs_page-C0anWPgU.js
+  /programs/search?query=bounties%3Ayes&sort=name%3Aascending&limit=1000
+  {history:g.default.object.isRequired},UNSAFE_componentWillMount(){this.fetchPrograms()},fetchPrograms(){return h.default.ajax({url:`/programs/search?query=bounties%3Ayes&sort=name%3Aascending&limit=1000`,type:`GET`,dataType:`json`,complete:()=>this.setState({isLoading:!1}),success:e=>{this.setState({totalPrograms:e.total
+
+[AJAX] confirm_email-DFXpsQGq.js
+  /invitations/${e.token}/accept
+  let t=(0,j.useContext)(D),[n,r]=(0,j.useState)(!1),[a,o]=(0,j.useState)(!1),s=()=>t=>{t.preventDefault(),r(!0),A.default.ajax({url:`/invitations/${e.token}/accept`,method:`POST`,dataType:`json`,error:e=>{let t=e?.responseJSON?.error;if(t){v(`error`,t);try{throw Error(t)}catch(e){i(
+
+[AJAX] confirm_email-DFXpsQGq.js
+  /invitations/${e.token}/reject
+  irect_path:t,notice:n}=e;n?v(`notice`,n):O(),setTimeout(()=>{x(t)},3e3)}})},c=()=>t=>{t.preventDefault(),o(!0),A.default.ajax({url:`/invitations/${e.token}/reject`,method:`POST`,dataType:`json`,error:()=>{E(),o(!1)},success:()=>{v(`notice`,`The invitation was rejected.`),setTimeout
+
+[FETCH] confirm_email-DFXpsQGq.js
+  /invitations/${e.token}.json?confirmation_email=${encodeURIComponent(r)}
+  uired};var W=e(a()),G=({invitation:e,onEmailConfirmed:t})=>{let[r,i]=(0,j.useState)(``),[a,o]=(0,j.useState)(!0),l=()=>{fetch(`/invitations/${e.token}.json?confirmation_email=${encodeURIComponent(r)}`).then(e=>e.json()).then(e=>{if(e.auth_option===constants.invitation.authOption.confirmEmail){o(!1);return}t(e,r)}).cat
+
+[AJAX] credentials_page-DJ9hBbbu.js
+  /${e}/credentials/export_asset
+  n:`Cancel`})}),(0,G.jsx)(l,{testId:`spec-credentials-export-button`,onClick:()=>{let n=i.map(e=>e.databaseId);tt.default.ajax({url:`/${e}/credentials/export_asset`,type:`POST`,dataType:`text/csv`,data:{authenticity_token:t,structured_scopes:n},complete:function(e,t,n){if(r(!1),t===
+
+[AJAX] directory_router-DXxCCcg8.js
+  /external_programs
+  e=>{e.preventDefault(),le(),this.setState({isSubmitting:!0});let t=new FormData(Z.findDOMNode(this.refs.form));X.default.ajax({url:`/external_programs`,type:`POST`,data:t,processData:!1,contentType:!1,success:e=>this.setState({redirect:`/${e.handle}`,isSubmitting:!1,suc
+
+[FETCH] graphiql-MlRPLTBQ.js
+  /graphql
+  ction tb(e,t){return e?.type?.displayName&&e.type.displayName===t.displayName?!0:e.type===t}var nb=async e=>await(await fetch(`/graphql`,{method:`POST`,headers:{Accept:`application/json`,"Content-Type":`application/json`,"X-CSRF-Token":fe()},body:JSON.str
+
+[AJAX] invitation_requirements_page-CgQrkPIN.js
+  /invitations/${e.token}/accept_terms
+  e)(``),[s,c]=(0,A.useState)(``),[l,u]=(0,A.useState)(``),[_,y]=(0,A.useState)(z(e)),E=R(e)&&!z(e),D=()=>{n(!0),M.default.ajax({url:`/invitations/${e.token}/accept_terms`,method:`POST`,dataType:`json`,data:{first_name:r,last_name:a,address:s,country:l,agreed:_},error:e=>{n(!1);let{redirec
+
+[AJAX] invitation_requirements_page-CgQrkPIN.js
+  /invitations/${this.props.match.params.id}
+  tion:null,email:``},this.handleEmailConfirmed=this.handleEmailConfirmed.bind(this)}UNSAFE_componentWillMount(){M.default.ajax({url:`/invitations/${this.props.match.params.id}`,dataType:`json`}).done(e=>{this.setState({invitation:e})}).always(()=>this.setState({isLoading:!1}))}handleEmailConfir
+
+[AJAX2] invitation_show_page-CYb3tSr7.js
+  /invitations/${this.props.id}.json
+  eEmailConfirmed=this.handleEmailConfirmed.bind(this)}UNSAFE_componentWillMount(){this.setState({isLoading:!0}),k.default.ajax(`/invitations/${this.props.id}.json`).done(e=>this.setState({invitation:e})).fail(()=>this.setState({loadError:!0})).always(()=>this.setState({isLoading:!1
+
+[AJAX] policy_builder-Dps_3tME.js
+  /leads
+  irst_name:e,last_name:t,title:n,email:r}=this.state,{policyBuilderState:{answers:{organization:i}}}=this.props;k.default.ajax({url:`/leads`,method:`post`,data:{first_name:e,last_name:t,title:n,email:r,company_name:i,sub_source:`POLICY_BUILDER_EXPORT`},succes
+
+[AJAX2] saml_idp_response_page-BacJ7HRA.js
+  /users/saml_idp_response
+  viderId:this.props.samlProviders[0]?.id,showDetails:!1,showRawSamlResponseForm:!1,samlResponse:``};submit=()=>{m.default.ajax(`/users/saml_idp_response`,{dataType:`json`,type:`POST`,data:{name_id:this.state.nameId,saml_provider_id:this.state.samlProviderId,first_name:thi
+
+[AJAX] scopes_form-ZVVkxiyq.js
+  /${this.props.teamHandle}/learn_more/promote
+  g,teamHandle:m.default.string};state={disabled:!1};promote=e=>{this.setState({disabled:!0}),e.preventDefault(),g.default.ajax({url:`/${this.props.teamHandle}/learn_more/promote`,type:`POST`,dataType:`json`,contentType:`application/json`,success(e){document.location.href=`/bugs?subject=${e.handle
+
+[AJAX] setup_guide_page-CKJe41Fw.js
+  /${this.props.handle}/launch/first_time_invite
+  m:j.default.object.isRequired,handle:j.default.string.isRequired};handleProgramLaunch(e){e&&e.preventDefault(),V.default.ajax({url:`/${this.props.handle}/launch/first_time_invite`,dataType:`json`,type:`PUT`,contentType:`application/json`,success:()=>{p(`notice`,`Team submitted for review successfu
+
+[AJAX] setup_guide_page-CKJe41Fw.js
+  /${e}/setup_guide/complete
+  us`}),` `,`if you have any questions.`]}),(0,A.jsx)(T,{children:(0,A.jsx)(S,{onClick:t=>{t&&t.preventDefault(),V.default.ajax({url:`/${e}/setup_guide/complete`,dataType:`json`,type:`PUT`,contentType:`application/json`,success:()=>{_(`/${e}`)},error:()=>{p(`error`,`Something wen
+
+[AJAX] sitemap_page-C3vA_-Y9.js
+  /sitemap?${p({first:e})}
+  this.props.first)}UNSAFE_componentWillReceiveProps(e){this.props.first!==e.first&&this.fetch(e.first)}fetch(e){_.default.ajax({url:`/sitemap?${p({first:e})}`,dataType:`json`,success:e=>{let{users:t,profiles:n}=e;this.setState({users:t||[],profiles:n||[],isLoading:!1})},error:
+
+[AJAX] team_billing_settings_page-B0UKnT4G.js
+  /${this.props.handle}/billing.json?month=${this.state.month}&year=${this.state.year}
+  ull,total_fees:null};UNSAFE_componentWillMount(){this.fetchData()}fetchData=()=>{this.setState({isLoading:!0}),I.default.ajax({url:`/${this.props.handle}/billing.json?month=${this.state.month}&year=${this.state.year}`,error(){E(`error`,`Something went wrong while loading the billing data. Please contact         ${window.constants.noti
+
+[AJAX] team_common_responses_settings_page-DGNexejy.js
+  /${e}/common_responses/triggers.json
+  tate={loading:!1,triggers:{}};UNSAFE_componentWillMount(){let{handle:e}=this.props;this.setState({loading:!0}),M.default.ajax({url:`/${e}/common_responses/triggers.json`}).done(e=>this.setState({loading:!1,triggers:(0,k.default)(e,e=>e.id)})).fail(()=>this.setState({loading:!1}))}handleS
+
+[AJAX] team_common_responses_settings_page-DGNexejy.js
+  /${n}/common_responses/triggers.json
+  >{let{triggers:t}=this.state,{handle:n,closeModal:r}=this.props;e.preventDefault(),this.setState({loading:!0}),M.default.ajax({url:`/${n}/common_responses/triggers.json`,method:`POST`,data:{triggers:t}}).done(()=>this.setState({loading:!1},()=>r())).fail(()=>this.setState({loading:!1}))}
+
+[AJAX] team_directory_settings_page-DIMgX6fa.js
+  /${this.props.team.get(
+  .Collection}handleSubmit=e=>{e.preventDefault();let t=new FormData(this.refs.form);this.setState({loading:!0}),A.default.ajax({url:`/${this.props.team.get(`handle`)}`,type:`PUT`,data:t,processData:!1,contentType:!1,success:()=>{this.setState({loading:!1}),g(`notice`,`Changes
+
+[AJAX] team_inbox_views_settings_page-gFaPbkA4.js
+  /${this.props.handle}/inbox_views/${e.key}/update_visibility
+  rong. Please retry and if this problem persists, contact us via ${window.constants.notification.support_link}`;F.default.ajax({url:`/${this.props.handle}/inbox_views/${e.key}/update_visibility`,type:`PUT`,data:{visible:!e.visible},success:()=>{this.setState({saving:!1}),v(`notice`,`"${e.name}" was successfully 
+
+[AJAX] team_inbox_views_settings_page-gFaPbkA4.js
+  /${this.props.handle}/inbox_views/${n}
+  rong. Please retry and if this problem persists, contact us via ${window.constants.notification.support_link}`;F.default.ajax({url:`/${this.props.handle}/inbox_views/${n}`,type:`PUT`,data:{new_index:t},success:()=>this.setState({saving:!1}),error:()=>{this.setState({saving:!1,views:(0,L.de
+
+[AJAX] team_messaging_page-BM4Z-YhN.js
+  /${this.props.handle}/messaging
+  tate({customRecipients:e.target.value})};handleSubmit=e=>{e.preventDefault(),this.setState({disableSubmit:!0}),M.default.ajax({url:`/${this.props.handle}/messaging`,type:`POST`,data:this.getMessageProps(),success:this.handleSuccess,error:this.handleError})};handleSuccess=()=>(this.h
+
+[AJAX] team_miles_page-D-2lGMVZ.js
+  /${e.handle}/miles/${t}
+  ;k.propTypes={payment:C.default.object.isRequired};var A=({team:e,payment:t,markAsPaidCallback:n})=>{let r=t=>{w.default.ajax({url:`/${e.handle}/miles/${t}`,method:`PUT`,success:()=>{f(`notice`,`Successfully marked as paid.`),n()},error:()=>{x()}})};return(0,T.jsxs)(`tr`,{cl
+
+[AJAX] team_miles_page-D-2lGMVZ.js
+  /${this.props.team.handle}/miles.json
+  tchPayments()}componentWillUnmount(){this._xhr.abort()}fetchPayments(){this.setState({isLoading:!0}),this._xhr=w.default.ajax({url:`/${this.props.team.handle}/miles.json`,success:e=>{this.setState({payments:e,isLoading:!1})},error:()=>{x()}})}render(){if(this.state.isLoading)return(0,T.js
+
+[FETCH] team_policy_page-CUAf-owa.js
+  /${e}
+  yChange:i,customMessageForPolicyChange:a,declarativePolicy:o,mutation:s,setSubmitting:c,showAlert:l})=>{c(!0);try{await fetch(`/${e}`,{method:`PUT`,body:n,headers:{...T()}});let{data:c}=await s({variables:{teamId:t,policy:r,notifySubscribersOfPolicyCha
+
+[AJAX] team_prepayment_settings_page-D3qwwhXg.js
+  /${x.handle}/prepayments
+  ica/Los_Angeles`),t=m(e),n=P(e);return t===5&&n>17||t===6&&n<7},F=e=>{if(e.preventDefault(),O())return!0;a(!0),z.default.ajax({url:`/${x.handle}/prepayments`,method:`POST`,data:{invoice:{amount:l,reference:h,due_in_days:d,memo:v}},success:D,error:e=>{E(e)},complete:()=>{a(!1)
+
+[AJAX] team_product_editions_page-Br4R14j9.js
+  /${this.props.teamHandle}/product_edition/create_lead
+  ps.productEditionName})`});handleSuccess=()=>this.setState({success:!0});submitLeadForm=e=>(e.preventDefault(),D.default.ajax({url:`/${this.props.teamHandle}/product_edition/create_lead`,type:`POST`,dataType:`json`,data:this.getLeadProps(),success:this.handleSuccess,error:this.handleError}));handleError=
+
+[AJAX] team_product_editions_page-Br4R14j9.js
+  /${this.props.teamHandle}/product_edition
+  onModal:!1})}}onProductEditionTransitionConfirmed(){return e=>{e.preventDefault(),this.setState({isSaving:!0}),D.default.ajax({url:`/${this.props.teamHandle}/product_edition`,type:`PUT`,data:{product_edition_transition_form:{transition_to_product_edition_id:this.props.productEdition.id,testin
+
+[AJAX] team_profile_router-ClpTtrsG.js
+  /${this.props.match.params.handle}/policy_versions
+  equired,history:W.default.object.isRequired};state={loading:!0,error:!1};UNSAFE_componentWillMount(){this._xhr=H.default.ajax({url:`/${this.props.match.params.handle}/policy_versions`,dataType:`json`,success:e=>{e.reverse();let t=this.initialID(e);this.setQuery(t),this.setState({policyChanges:e,showCh
+
+[AJAX] team_profile_router-ClpTtrsG.js
+  /${this.props.team.handle}/${this.props.controllerName}/draft_reset_vuln_info
+  ue})},handleReset(){window.confirm(`You will lose any Issue Information entered so far. Proceed with reset?`)&&H.default.ajax({url:`/${this.props.team.handle}/${this.props.controllerName}/draft_reset_vuln_info`,dataType:`json`,method:`post`,data:{draft_id:this.state.reportDraftId},success:e=>{Object.prototype.hasOwnProperty.cal
+
+[AJAX] team_setup_page-5ZTPDRL9.js
+  /${e}/reward_settings
+  e_bounty:100,program_type:i};r(!0);let o=``;o=t===`Response`?`setup_guide`:t===`Bounty`?`policy`:`assessments`,m.default.ajax({url:`/${e}/reward_settings`,type:`PUT`,data:a,success:()=>{c(`/${e}/${o}`)},error:()=>{r(!1),u()}})};return(0,h.jsxs)(`div`,{children:[(0,h.jsxs)(
+
+[AJAX] team_soft_launch_settings_page-C0UtysX6.js
+  /${e}/launch
+  teamHandle:e.handle}),ut=e=>{let[t,n]=(0,X.useState)(null),[r,i]=(0,X.useState)(!0);return(0,X.useEffect)(()=>at.default.ajax({url:`/${e}/launch`,dataType:`json`,success:e=>{let t={hasExternalProgram:e.has_external_program,tooFewResearchers:e.too_few_researchers,t
+
+[FETCH] team_soft_launch_settings_page-C0UtysX6.js
+  /${e.handle}/publish
+  :`Cancel`}),(0,Z.jsx)(p,{variation:P.Primary,onClick:t=>{if(!(s&&l&&d))return;t.preventDefault(),x(!0);let n={policy:g};fetch(`/${e.handle}/publish`,{method:`POST`,headers:{...ae(),"Content-Type":`application/json`,Accept:`application/json`},body:JSON.stringify(n)}).
+
+[AJAX] team_submission_form_settings_page-DaCl5tu6.js
+  /${n.handle}/submission_form
+  fix`})]})]}),(0,P.jsx)(`div`,{className:`pull-right`,children:(0,P.jsxs)(c,{type:t.SUCCESS,onClick:()=>{i(!0),re.default.ajax({url:`/${n.handle}/submission_form`,type:`PUT`,data:{report_submission_form_intro:a,report_template:s,impact_template:u}}).then(()=>i(!1)).then(()=>S(`not
+
+[AJAX] user_reset_password_page-AIK1kEjh.js
+  /users/password
+  o,c]=(0,S.useState)(``),[u,p]=(0,S.useState)({}),m=()=>i.length>0&&!n,x=()=>n=>{n.preventDefault(),r(!0),p({}),w.default.ajax({url:`/users/password`,type:`PUT`,dataType:`json`,data:{"user[password]":i,"user[password_confirmation]":o,"user[reset_password_token]":e,aut
+
+[AJAX] user_settings_router-DKsq46eC.js
+  /settings/deactivate
+  ull}}handleSubmit(){return e=>{e.preventDefault(),this.setState({isSubmitting:!0});let{password:t}=this.state;vi.default.ajax({url:`/settings/deactivate`,method:`PUT`,data:{password:t},error:e=>{Q.default.existy(e.responseJSON)?this.setState({errors:Un(e.responseJSON.erro
+
+[AJAX] user_settings_router-DKsq46eC.js
+  /payout_preferences/${e}
+  ),{data:a,loading:o,refetch:s}=G(eu);if(o)return(0,X.jsx)(L,{});let{me:c,__type:l}=a,u=e=>{n(!t)},d=e=>{i(!0),vi.default.ajax({url:`/payout_preferences/${e}`,method:`DELETE`,success:()=>{s().then(()=>{I(`notice`,`The payment method has been removed.`),i(!1)})},error:()=>{K(),
+
+[AJAX] user_settings_router-DKsq46eC.js
+  /payout_preferences/${e}/set_as_default
+  ().then(()=>{I(`notice`,`The payment method has been removed.`),i(!1)})},error:()=>{K(),i(!1)}})},f=e=>{i(!0),vi.default.ajax({url:`/payout_preferences/${e}/set_as_default`,method:`POST`,success:()=>{s().then(()=>{I(`notice`,`The payment method has been set as default.`),i(!1)})},error:()=>
+
+[AJAX] user_settings_router-DKsq46eC.js
+  /settings/profile
+  Data(e.target);t.append(`user[open_for_employment]`,l(`open_for_employment`)),i({...r,isSaving:!0,errors:{}}),vi.default.ajax({url:`/settings/profile`,method:`PUT`,dataType:`json`,processData:!1,contentType:!1,data:t,success:()=>{n().then(()=>{J(),i({...r,isSaving:!1})
+
+[AJAX] user_settings_router-DKsq46eC.js
+  /settings/reputation/log?${Er({page:e})}
+  FE_componentWillReceiveProps(e){this.props.page!==e.page&&this.fetchReputations(e.page)}fetchReputations(e=1){vi.default.ajax({url:`/settings/reputation/log?${Er({page:e})}`,dataType:`json`,success:e=>{this.setState({reputations:e.reputations,total:e.total,isLoading:!1})},error:()=>{K(),this
+
+[AJAX] user_sign_in_page-CrAxrn5u.js
+  /sessions
+  erInCoolDown];if(this.setState({disabled:!0}),n.indexOf(t)>=0)return e.preventDefault(),z.default.getV18({},e=>I.default.ajax({url:`/sessions`,type:`post`,data:{email:this.state.email,password:this.state.password,remember_me:this.state.remember_me,fingerprint:e
+
+[AJAX] user_sign_up_page-CKiUbedE.js
+  /users/sign_up
+  =O(H),[a,o]=(0,L.useState)(!1),[c,l]=(0,L.useState)({});return(0,L.useEffect)(()=>{M.default.string(t)&&(o(!0),j.default.ajax({url:`/users/sign_up`,dataType:`json`,data:{invitation_token:t}}).done(e=>l({invitationEmail:n,invitationToken:e.invitation_token})).always(
+
+[AJAX] _h1x4_app.js
+  ${this.url(!1)}/subscription.json?subscribe=true
+  .get(`reporter`),team:this.get(`team`)};return this._summaries||=new jZe(this.get(`summaries`),e)}subscribe(){Sc.default.ajax({url:`${this.url(!1)}/subscription.json?subscribe=true`,method:`post`,success:e=>{this.set(e),q(`notice`,`You're successfully subscribed to this report (#${this.id}).`)}})}un
+
+[AJAX] _h1x4_app.js
+  ${this.url(!1)}/subscription.json?subscribe=false
+  s:e=>{this.set(e),q(`notice`,`You're successfully subscribed to this report (#${this.id}).`)}})}unSubscribe(){Sc.default.ajax({url:`${this.url(!1)}/subscription.json?subscribe=false`,method:`post`,success:e=>{this.set(e),q(`notice`,`You're successfully unsubscribed from this report (#${this.id}).`)}}
+
+[AJAX] _h1x4_app.js
+  ${this.url(!1)}/public_view
+  )return;let e=this.showsFullTimeline()?constants.report.visibility.noContent:constants.report.visibility.full;Sc.default.ajax({url:`${this.url(!1)}/public_view`,dataType:`json`,data:{public_view:e},method:`post`,success:e=>{this.set(e),q(`notice`,`You've successfully changed the
+
+[AJAX] _h1x4_app.js
+  /reports/${e?.database_id}/public_view
+  .props,{visibility:t}=this.state;if(!this.hasTeamSummary()||!e?.i_can_hide_timeline)return;let n=t===M$?N$:M$;Sc.default.ajax({url:`/reports/${e?.database_id}/public_view`,dataType:`json`,data:{public_view:n},method:`post`,success:()=>{this.setState({visibility:n}),q(`notice`,`You've succe
+
+[AJAX] _h1x4_app.js
+  /reports/bulk
+  e(t);if(a++,a===i)return u(arguments)};this.reports.each((e,t)=>setTimeout(()=>{this.set(`pending_reports`,a),Sc.default.ajax({url:`/reports/bulk`,method:`POST`,tryCount:0,retryLimit:0,data:(0,Pc.default)(c,{reports_count:this.reports.length,report_ids:[e.id]},{bou
+
+[AJAX] _h1x4_app.js
+  ${this.props.report.get(
+  ndow.constants.notification.support_link}.`)};handleSubmit=e=>{this.setState({loading:!0}),e.preventDefault(),Sc.default.ajax({url:`${this.props.report.get(`url`)}/ban_researcher`,method:`post`,data:{message_to_hackerone:this.state.messageToHackerone,message_to_researcher:thi
+
+[AJAX] _h1x4_app.js
+  /reports/${this.props.reportId}/mediation_requests/${e}
+  this.props.mediationType!==e.mediationType&&this.getMediationRequest(e.mediationType)}getMediationRequest=e=>{Sc.default.ajax({url:`/reports/${this.props.reportId}/mediation_requests/${e}`,dataType:`json`,beforeSend:()=>{this.setState({loading:!0})},success:e=>{this.setState({mediationRequest:e,loading:!1}
+
+[AJAX] _h1x4_app.js
+  /hackbot/genii
+  InitialState(){return{loading:!0,geniusState:`pending`}},UNSAFE_componentWillMount(){let{report:e}=this.props;Sc.default.ajax({url:`/hackbot/genii`,data:{report_id:e.id},success:({genius_type:e,genius_execution_id:t})=>{this.__isMounted&&this.setState({loading:!1,ge
+
+[AJAX] _h1x4_app.js
+  /hackbot/accept
+  ecutionId:t})}})},handleAccept(e){e&&e.preventDefault&&e.preventDefault();let{geniusExecutionId:t}=this.state;Sc.default.ajax({url:`/hackbot/accept`,method:`POST`,data:{genius_execution_id:t}}).done(({accept_path:e})=>{this.setState({geniusState:`accepted`}),e&&e!==`
+
+[AJAX] _h1x4_app.js
+  /hackbot/mute
+  pted`}),e&&e!==`#`&&gg(e)})},handleMute(e){e!==void 0&&e.preventDefault();let{geniusExecutionId:t}=this.state;Sc.default.ajax({url:`/hackbot/mute`,method:`POST`,data:{genius_execution_id:t}}).done(()=>{this.setState({geniusState:`muted`})})},handleReject(e){e!==voi
+
+[AJAX] _h1x4_app.js
+  /hackbot/reject
+  ({geniusState:`muted`})})},handleReject(e){e!==void 0&&e.preventDefault();let{geniusExecutionId:t}=this.state;Sc.default.ajax({url:`/hackbot/reject`,method:`POST`,data:{genius_execution_id:t}}).done(()=>{this.setState({geniusState:`rejected`})})},renderGeniusComponen
+
+[AJAX] _h1x4_app.js
+  /${e?.get(
+  via ${window.constants.notification.support_link}`))},s=()=>{a(!1),q(`notice`,`Changes saved successfully.`)};Sc.default.ajax({url:`/${e?.get(`handle`)}`,type:`PUT`,data:i,processData:!1,contentType:!1,success:()=>{s()},error:e=>{o(e)}})},l=e=>e?(0,Pc.default)({
+
+[FETCH] _h1x4_app.js
+  /user/csrf
+  LErrors:t,networkError:n,forward:r})=>{if(t?.[0].message===`Invalid CSRF token`){let t=e.getContext().headers;return $a(fetch(`/user/csrf`).then(async e=>await e.json()).then(e=>e[`csrf-token`])).filter(e=>!!e).flatMap(n=>(Sv(n),e.setContext({headers:{...t,
+
+[FETCH] _h1x4_app.js
+  /hai/agentic_ui_mcp/resources/read
+  essionStorage.key(e);n?.startsWith(rG)&&n!==t&&sessionStorage.removeItem(n)}}catch{}}async function sG(e,t){let n=await fetch(`/hai/agentic_ui_mcp/resources/read`,{method:`POST`,headers:{"Content-Type":`application/json`,"X-CSRF-Token":xv()},body:JSON.stringify({uri:e,organization
+
+[FETCH] _h1x4_app.js
+  /hacker_reviews
+  Policy violation`},{id:`argumentative`,label:`Argumentativeness`},{id:`rude`,label:`Rudeness`}],v=async()=>{let n=await fetch(`/hacker_reviews`,{method:`POST`,headers:{...V4(),"Content-Type":`application/json`},body:JSON.stringify({hacker_username:e?.username,re
+
+[FETCH] _h1x4_app.js
+  /reports/${e}/export/raw
+  =(0,R.useState)(!1),u=(0,R.useRef)(null);return(0,R.useEffect)(()=>{(async()=>{if(r){l(!1);return}l(!0);try{let r=await fetch(`/reports/${e}/export/raw`,{method:`POST`,headers:{"Content-Type":`application/json`,...V4()},body:JSON.stringify({include_internal_activities:t,
+
+[FETCH] _h1x4_app.js
+  /reports/${e}/export/zip
+  tate)(!1);return(0,L.jsx)(`form`,{className:`flex flex-col`,onSubmit:async r=>{r.preventDefault(),o(!0);try{let r=await fetch(`/reports/${e}/export/zip`,{method:`POST`,headers:{"Content-Type":`application/json`,...V4()},body:JSON.stringify({authenticity_token:i.session.c

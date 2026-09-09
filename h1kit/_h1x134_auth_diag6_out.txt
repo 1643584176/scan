@@ -1,0 +1,23 @@
+===== graphql Token token=".."
+HTTP 401 {"data":null,"errors":[{"message":"Invalid authentication token"}]}
+
+===== graphql Token bare
+HTTP 401 {"data":null,"errors":[{"message":"Invalid authentication token"}]}
+
+===== graphql Basic user:tok
+HTTP 401 {"data":null,"errors":[{"message":"Invalid authentication token"}]}
+
+===== api Token token=".."
+HTTP 401 {"errors":[{"status":401}]}
+
+===== api Token bare
+HTTP 401 {"errors":[{"status":401}]}
+
+===== api x-api-key
+HTTP 401 {"errors":[{"status":401}]}
+
+===== api swapped xh/HVu9F69JXKIxyxX1p
+HTTP 401 {"errors":[{"status":401}]}
+
+===== api swapped xh/HVu9F69JXKIxyxX1p
+HTTP 401 {"errors":[{"status":401}]}

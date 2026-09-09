@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime-DAXXjFlN.js";import{zx as t}from"./vendor-_WdvpBLr.js";var n=e(t()),r=({when:e,children:t})=>e?t:null;r.propTypes={when:n.default.bool.isRequired,children:n.default.node.isRequired};export{r as t};

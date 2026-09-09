@@ -1,0 +1,132 @@
+{
+ "id": "d2b50308-9c96-4681-b23b-0130308047ee",
+ "name": "Free Icon Pack 1800+ icons",
+ "description": "<h2>Do you want more icons?</h2><p>Send icon themes to my email, I will be glad to any suggestions!</p><h2>ntrtd@yandex.com</h2><p><br></p><p><br></p><h2>&gt;&gt; <a rel=\"noreferrer noopener nofollow ugc\" href=\"https://www.donationalerts.com/r/lets_race\" target=\"_blank\">Donate for corgi’s food</a> &lt;&lt;</h2>",
+ "resource_type": "design_template",
+ "created_at": "2024-11-26T16:48:06.634Z",
+ "updated_at": "2024-12-13T01:33:12.247Z",
+ "unpublished_at": null,
+ "view_count": 0,
+ "like_count": 20915,
+ "support_contact": "ntrtd@yandex.com",
+ "publishing_status": "approved_public",
+ "publish_scope": "community",
+ "user_count": 766138,
+ "editor_types": [
+  "design"
+ ],
+ "category_id": "a0f2fdd9-ab75-44c8-8671-7801bf768b94",
+ "category": null,
+ "creator": {
+  "id": "735205186788041733",
+  "handle": "Leonid Tsvetkov",
+  "img_url": "https://s3-alpha.figma.com/profile/38cc0b35-876a-41a1-9c2e-fef716b4fe31"
+ },
+ "publisher": {
+  "id": "1891080",
+  "profile_handle": "Leonid",
+  "primary_user_id": "735205186788041733",
+  "public_at": "2020-08-01T09:40:19.997Z",
+  "created_at": "2020-04-23T05:23:12.803Z",
+  "follower_count": 312,
+  "following_count": 3,
+  "location": "",
+  "name": "Leonid Tsvetkov",
+  "img_url": "https://s3-alpha.figma.com/profile/38cc0b35-876a-41a1-9c2e-fef716b4fe31",
+  "img_urls": {
+   "120_120": "https://s3-alpha.figma.com/profile/38cc0b35-876a-41a1-9c2e-fef716b4fe31",
+   "500_500": "https://s3-alpha.figma.com/profile/3f6980b7-1283-4e20-98b4-7a7d83ee234e"
+  },
+  "current_user_is_following": null,
+  "current_user_is_followed": null,
+  "is_restricted_by_current_user": null,
+  "realtime_token": "/profile-1891080:1788838710:0:750c9731546758d8ec57fc0db8762a8929af2662",
+  "entity_type": "user",
+  "badges": []
+ },
+ "community_publishers": {
+  "accepted": [
+   {
+    "id": "1891080",
+    "profile_handle": "Leonid",
+    "primary_user_id": "735205186788041733",
+    "public_at": "2020-08-01T09:40:19.997Z",
+    "created_at": "2020-04-23T05:23:12.803Z",
+    "follower_count": 312,
+    "following_count": 3,
+    "location": "",
+    "name": "Leonid Tsvetkov",
+    "img_url": "https://s3-alpha.figma.com/profile/38cc0b35-876a-41a1-9c2e-fef716b4fe31",
+    "img_urls": {
+     "120_120": "https://s3-alpha.figma.com/profile/38cc0b35-876a-41a1-9c2e-fef716b4fe31",
+     "500_500": "https://s3-alpha.figma.com/profile/3f6980b7-1283-4e20-98b4-7a7d83ee234e"
+    },
+    "current_user_is_following": null,
+    "current_user_is_followed": null,
+    "is_restricted_by_current_user": null,
+    "realtime_token": "/profile-1891080:1788838710:0:750c9731546758d8ec57fc0db8762a8929af2662",
+    "entity_type": "user",
+    "associated_users": [
+     {
+      "user_id": "735205186788041733",
+      "is_primary_user": true
+     }
+    ],
+    "description": "My contacts:\ndribbble.com/Lets\nvk.com/letsdesigner\n\nEmail for feedback:\nntrtd@yandex.com",
+    "badges": []
+   }
+  ]
+ },
+ "community_creators": {
+  "accepted": [
+   {
+    "id": "1891080",
+    "profile_handle": "Leonid",
+    "primary_user_id": "735205186788041733",
+    "public_at": "2020-08-01T09:40:19.997Z",
+    "created_at": "2020-04-23T05:23:12.803Z",
+    "follower_count": 312,
+    "following_count": 3,
+    "location": "",
+    "name": "Leonid Tsvetkov",
+    "img_url": "https://s3-alpha.figma.com/profile/38cc0b35-876a-41a1-9c2e-fef716b4fe31",
+    "img_urls": {
+     "120_120": "https://s3-alpha.figma.com/profile/38cc0b35-876a-41a1-9c2e-fef716b4fe31",
+     "500_500": "https://s3-alpha.figma.com/profile/3f6980b7-1283-4e20-98b4-7a7d83ee234e"
+    },
+    "current_user_is_following": null,
+    "current_user_is_followed": null,
+    "is_restricted_by_current_user": null,
+    "realtime_token": "/profile-1891080:1788838710:0:750c9731546758d8ec57fc0db8762a8929af2662",
+    "entity_type": "user",
+    "associated_users": [
+     {
+      "user_id": "735205186788041733",
+      "is_primary_user": true
+     }
+    ],
+    "description": "My contacts:\ndribbble.com/Lets\nvk.com/letsdesigner\n\nEmail for feedback:\nntrtd@yandex.com",
+    "badges": []
+   }
+  ]
+ },
+ "content_id": "886554014393250663",
+ "rdp_url": "https://www.figma.com/community/file/886554014393250663",
+ "community_rdp_url": "https://www.figma.com/community/file/886554014393250663",
+ "thumbnail_url": "https://s3-figma-hubfile-images-production-cdn-cgi.figma.com/cdn-cgi/image/format=auto,quality=85/hub/file/carousel/img/f6e894663475af9409f6629e60bcb996cdbf16f2",
+ "thumbnail_src_set": {
+  "160": "https://s3-figma-hubfile-images-production-cdn-cgi.figma.com/cdn-cgi/image/format=auto,quality=auto,width=160,height=96/hub/file/carousel/img/f6e894663475af9409f6629e60bcb996cdbf16f2",
+  "800": "https://s3-figma-hubfile-images-production-cdn-cgi.figma.com/cdn-cgi/image/format=auto,quality=auto,width=800,height=480/hub/file/carousel/img/f6e894663475af9409f6629e60bcb996cdbf16f2",
+  "1200": "https://s3-figma-hubfile-images-production-cdn-cgi.figma.com/cdn-cgi/image/format=auto,quality=auto,width=1200,height=720/hub/file/carousel/img/f6e894663475af9409f6629e60bcb996cdbf16f2"
+ },
+ "comments_setting": "enabled",
+ "icon_url": "https://www.figma.com/community/resource/d2b50308-9c96-4681-b23b-0130308047ee/icon?fuid=1667396392129259941",
+ "tagline": null,
+ "badges": [],
+ "is_3rd_party_monetized": false,
+ "third_party_m10n_url": null,
+ "metadata": {},
+ "preview_node_id": null,
+ "preview_node_kind": null,
+ "saved_at": "2026-09-08T03:36:30.777Z"
+}
