@@ -1,0 +1,143 @@
+################ A) recent_search null 定位 ################
+[A1_query_null] 500 len=157 611ms
+     {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+
+[A2_ts_null] 500 len=157 606ms
+     {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+
+[A3_orgnull_null] 500 len=157 579ms
+     {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+
+[A4_two_a] 500 len=157 641ms
+     {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+
+[A5_query_klong] 500 len=157 614ms
+     {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+
+################ B) import 带 slug ################
+[B_00base] 200 len=59 923ms
+     {"error":false,"status":200,"meta":{"count":1},"i18n":null}
+
+[B_01q] 200 len=59 890ms
+     {"error":false,"status":200,"meta":{"count":1},"i18n":null}
+
+[B_02cmt] 200 len=59 857ms
+     {"error":false,"status":200,"meta":{"count":1},"i18n":null}
+
+[B_03btrue] 200 len=59 809ms
+     {"error":false,"status":200,"meta":{"count":1},"i18n":null}
+
+[B_04bfalse] 200 len=59 874ms
+     {"error":false,"status":200,"meta":{"count":1},"i18n":null}
+
+[B_05orall] 200 len=59 893ms
+     {"error":false,"status":200,"meta":{"count":1},"i18n":null}
+
+[B_06null] 400 len=77 761ms
+     {"error":true,"status":400,"message":"string contains null byte","i18n":null}
+
+[B_07sleep] 200 len=59 865ms
+     {"error":false,"status":200,"meta":{"count":1},"i18n":null}
+
+[B_08slug_payload] 422 len=108 787ms
+     {"error":true,"status":422,"message":"Slug field value \"h1test'\" contains invalid characters","i18n":null}
+
+################ C) WS 读回验证 ################
+ws payloads: 9 -> _r86_ws.json
+  POS> "position":"0"
+  POS> "position":"%"
+  POS> "position":"$"
+  POS> "position":"*"
+  POS> "position":","
+  POS> "position":"."
+  POS> "position":"1"
+  POS> "position":"6"
+  POS> "position":"&"
+  POS> "position":"#"
+  POS> "position":"!"
+  POS> "position":"("
+  POS> "position":")"
+  POS> "position":"3"
+  POS> "position":"4"
+  POS> "position":"\"
+  POS> "position":"'"
+  POS> "position":"-"
+  POS> "position":"/"
+  POS> "position":"2"
+  POS> "position":"5"
+  POS> "position":"7"
+  POS> "position":"+"
+  VAL> "value":"h1test' AND pg_sleep(2)::text='0"
+  VAL> "value":"{\"
+  VAL> "value":"{\"
+  VAL> "value":"6 min"
+  VAL> "value":"{\"
+  VAL> "value":"2028-07-01"
+  VAL> "value":"Dash Bordman"
+  VAL> "value":"Tooling"
+  VAL> "value":"h1test' AND '1'='1"
+  VAL> "value":"h1test-slug-ebd981d7"
+  VAL> "value":"' || pg_sleep(2) || '"
+  VAL> "value":"h1test'"
+  VAL> "value":"h1test' OR '1'='1"
+  VAL> "value":"h1test' AND '1'='1"
+  VAL> "value":"h1test' AND 1=1--"
+  VAL> "value":"{\"
+  VAL> "value":"Strategy"
+  VAL> "value":"2028-05-31"
+  VAL> "value":"{\"
+  VAL> "value":"sustainability-isnt-a-side-project-making-impact-operational"
+  VAL> "value":"7 min"
+  VAL> "value":"{\"
+  VAL> "value":"Gail Force"
+  VAL> "value":"h1test"
+  VAL> "value":"{\"
+  VAL> "value":"{\"
+  VAL> "value":"{\"
+  VAL> "value":"Lana Terra"
+  VAL> "value":"how-to-build-a-climate-ready-data-stack"
+  VAL> "value":"4 min"
+  VAL> "value":"2028-05-07"
+  VAL> "value":"How to Build a Climate-Ready Data Stack"
+  VAL> "value":"Insights"
+  VAL> "value":"h1test' --"
+  VAL> "value":"h1test-slug-b00c4ecb"
+  VAL> "value":"h1test-slug-6403829d"
+  VAL> "value":"h1test' OR '1'='1"
+  VAL> "value":"Strategy"
+  VAL> "value":"{\"
+  VAL> "value":"{\"
+  VAL> "value":"{\"
+  VAL> "value":"4 min"
+  VAL> "value":"Greta Watt"
+  VAL> "value":"2028-08-04"
+  VAL> "value":"h1test-slug-0514ab26"
+  VAL> "value":"h1test"
+  VAL> "value":"h1test' --"
+  VAL> "value":"h1test' AND pg_sleep(2)::text='0"
+  VAL> "value":"h1test-slug-445e9f7f"
+  VAL> "value":"h1test' AND 1=2--"
+  VAL> "value":"h1test-slug-0905a361"
+  VAL> "value":"h1test'"
+  VAL> "value":"{\"
+  VAL> "value":"{\"
+  VAL> "value":"Al Gorithm"
+  VAL> "value":"Carbon Accounting: Myths, Models, and Must-Haves"
+  VAL> "value":"6 min"
+  VAL> "value":"{\"
+  VAL> "value":"Tooling"
+  VAL> "value":"carbon-accounting-myths-models-and-must-haves"
+  VAL> "value":"2028-07-11"
+  VAL> "value":"{\"
+  VAL> "value":"{\"
+  VAL> "value":"Insights"
+  VAL> "value":"inside-the-aetherfield-model-how-we-turn-data-into-action"
+  VAL> "value":"Theo Retical"
+  VAL> "value":"5 min"
+  VAL> "value":"2028-06-16"
+  VAL> "value":"{\"
+  VAL> "value":"Inside the Aetherfield Model: How We Turn Data Into Action"
+  VAL> "value":"h1test' AND '1'='2"
+  VAL> "value":"h1test-slug-0576b84f"
+  VAL> "value":"h1test' AND '1'='2"
+DONE

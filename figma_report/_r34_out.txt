@@ -1,0 +1,58 @@
+view FileMakeVersionsView: args=['fileKey', 'firstPageSize'] hash=7eb73e02f0aba4ae...
+view ListCollectionsView: args=['fileKey'] hash=54ad31928b3e6584...
+view ListFieldSchemasView: args=['fileKey'] hash=0f40187a9ab5e9ab...
+view ListItemsView: args=['collectionId', 'fileKey'] hash=196887660ce0cf7b...
+view OneCollectionView: args=['collectionId', 'fileKey'] hash=b8b0bfb4b1a400d5...
+view OneItemView: args=['collectionId', 'fileKey', 'itemStableId'] hash=fc4837f829b6b6ff...
+view HasCollectionsView: args=['fileKey'] hash=1b8e4e83e307324a...
+view CmsManagerView: args=['cmsId'] hash=429730e464efcf5c...
+view HubFile: args=['hubFileId'] hash=b122d5fafa9da89a...
+
+
+===== S1 anon -> FileMakeVersionsView(B Make M) [control] =====
+  [sub] FileMakeVersionsView {'fileKey': '6aAuG4WGbgDfgy3zvonKOE'}
+  [FAIL] None argument-parse-validation-failure
+  (messages: 2)
+
+===== S2 anon -> HubFile(1633508841091684550) =====
+  [sub] HubFile {'hubFileId': 1633508841091684550}
+  [FAIL] None argument-parse-validation-failure
+  (messages: 2)
+
+===== S3 anon -> CMS views(B Make M) =====
+  [sub] ListCollectionsView {'fileKey': '6aAuG4WGbgDfgy3zvonKOE'}
+  [sub] HasCollectionsView {'fileKey': '6aAuG4WGbgDfgy3zvonKOE'}
+  [sub] ListFieldSchemasView {'fileKey': '6aAuG4WGbgDfgy3zvonKOE'}
+  [empty] ["ListCollectionsView",{"fileKey":"6aAuG4WGbgDfgy3zvonKOE"}] (142b)
+  [empty] ["ListFieldSchemasView",{"fileKey":"6aAuG4WGbgDfgy3zvonKOE"}] (142b)
+  [LOADED] ListCollectionsView
+  [LOADED] ListFieldSchemasView
+  [empty] ["HasCollectionsView",{"fileKey":"6aAuG4WGbgDfgy3zvonKOE"}] (117b)
+  [LOADED] HasCollectionsView
+  (messages: 6)
+
+===== S4 anon -> CMS views(A file baseline) =====
+  [sub] ListCollectionsView {'fileKey': 'IHt8kgtR3XmtqU5i8vz7p1'}
+  [sub] HasCollectionsView {'fileKey': 'IHt8kgtR3XmtqU5i8vz7p1'}
+  [empty] ["ListCollectionsView",{"fileKey":"IHt8kgtR3XmtqU5i8vz7p1"}] (142b)
+  [LOADED] ListCollectionsView
+  **[DATA]** ["HasCollectionsView",{"fileKey":"IHt8kgtR3XmtqU5i8vz7p1"}] (208b)
+      {"File": {"queries": {"[\"root\",\"fileV2\",[\"IHt8kgtR3XmtqU5i8vz7p1\"],[]]": {"initial": {"IHt8kgtR3XmtqU5i8vz7p1": {"id": "IHt8kgtR3XmtqU5i8vz7p1", "key": "IHt8kgtR3XmtqU5i8vz7p1"}}}}, "computations": {}}}
+  **[DATA]** ["HasCollectionsView",{"fileKey":"IHt8kgtR3XmtqU5i8vz7p1"}] (207b)
+      {"File": {"queries": {}, "computations": {"[\"File\",\"fileHasCmsCollections\",\"IHt8kgtR3XmtqU5i8vz7p1\",{\"_rootId\":\"IHt8kgtR3XmtqU5i8vz7p1\"}]": {"fieldName": "fileHasCmsCollections", "value": false}}}}
+  [LOADED] HasCollectionsView
+  (messages: 6)
+
+===== S5 anon -> CMS views(B design file) =====
+  [sub] ListCollectionsView {'fileKey': 'uwNXWhteG3ajjX78QG7a1W'}
+  [sub] HasCollectionsView {'fileKey': 'uwNXWhteG3ajjX78QG7a1W'}
+  [empty] ["ListCollectionsView",{"fileKey":"uwNXWhteG3ajjX78QG7a1W"}] (142b)
+  [LOADED] ListCollectionsView
+  **[DATA]** ["HasCollectionsView",{"fileKey":"uwNXWhteG3ajjX78QG7a1W"}] (208b)
+      {"File": {"queries": {"[\"root\",\"fileV2\",[\"uwNXWhteG3ajjX78QG7a1W\"],[]]": {"initial": {"uwNXWhteG3ajjX78QG7a1W": {"id": "uwNXWhteG3ajjX78QG7a1W", "key": "uwNXWhteG3ajjX78QG7a1W"}}}}, "computations": {}}}
+  **[DATA]** ["HasCollectionsView",{"fileKey":"uwNXWhteG3ajjX78QG7a1W"}] (207b)
+      {"File": {"queries": {}, "computations": {"[\"File\",\"fileHasCmsCollections\",\"uwNXWhteG3ajjX78QG7a1W\",{\"_rootId\":\"uwNXWhteG3ajjX78QG7a1W\"}]": {"fieldName": "fileHasCmsCollections", "value": false}}}}
+  [LOADED] HasCollectionsView
+  (messages: 6)
+
+DONE

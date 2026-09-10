@@ -1,0 +1,16 @@
+===== PART1: __figma__/api routes in figma.com bundles =====
+  route: __figma__/api/preview_status
+
+===== PART2: figma.site runtime JS =====
+[banner_js] 200 len=11246 https://zestoro.figma.site/__figma__/make_community_banner_v1.js
+  --- banner js analysis ---
+  figma_api: ['__figma__/api/community_published_banner_details']
+  any_api_path: ["'/__figma__/api/community_published_banner_details"]
+  fetch_calls: ["fetch(DETAILS_URL, { redirect: 'follow' }"]
+[zestoro_js] 200 len=465328 https://zestoro.figma.site/assets/index-CqE3lc6a.js
+  --- zestoro runtime analysis ---
+  figma_api: []
+  fetch_str: []
+  xhr_url: []
+  kw collection x2: ...[object Object]`?`object with keys {`+Object.keys(e).join(`, `)+`}`:t)+`). If you meant to render a collection of children, use an array instead.`)}return s}function re(e,t,n){if(e==null)return e;var r=[],i=0;return ne(e,r,``,``,function(e){return t.call(n,e,i...
+DONE

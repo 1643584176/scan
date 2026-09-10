@@ -1,0 +1,40 @@
+GET 200 https://www.figma.com/api/widgets/1679037410226110154/versions
+    {"error":false,"status":200,"meta":{"plugin":{"id":"1679037410226110154","current_plugin_version_id":"272119","created_at":"2026-09-08T06:15:13.600Z","is_widget":true,"roles":{"is_public":true},"category_id":"ba697d28-282d-465d-8354-01a3f485ed83","is_seo_indexable":true,"unpublished_at":null,"instal
+GET 200 https://www.figma.com/api/user/state?team_id=1666382706663462213&fuid=1666382703778278399
+    {"error":false,"status":200,"meta":{"team_users":[{"id":"311767172","team_id":"1666382706663462213","user_id":"1666382703778278399","design_paid_status":"starter","whiteboard_paid_status":"starter","created_at":"2026-08-04T08:09:57.219Z","updated_at":"2026-08-04T08:09:57.399Z","show_figjam_user_onbo
+GET 200 https://www.figma.com/api/session/state?fuid=1666382703778278399
+    {"error":false,"status":200,"meta":{"users":[{"id":"1666382703778278399","name":"pccp","email":"1643584176@qq.com","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v2.png","created_at":"202
+POST 200 https://www.figma.com/api/figment-proxy/identify
+    
+GET 403 https://browser-intake-datadoghq.com/api/v2/rum
+    
+POST 200 https://www.figma.com/api/figment-proxy/page
+    
+POST 200 https://www.figma.com/api/figment-proxy/monitor
+    
+POST 200 https://errors.figma.com/api/sentry/api/56203/envelope/?sentry_key=d1b12a8fbe424e4b956eb33cadd5b30d&sentry_version=7&sentry_client=sentry.javascript.browser%2F8.40.0
+    {}
+POST 200 https://www.figma.com/api/web_logger/metrics/session_start
+    
+GET 200 https://www.figma.com/api/session/sync
+    {"error":false,"status":200,"meta":{"user_highest_plan":"starter","segment_id":"0"},"i18n":null}
+GET 200 https://www.figma.com/api/v2/statsig/bootstrap?team_ids=&page_locale=en&release_manifest_git_commit=676bd5bf1127d544bd63db31dea851407483657c&release_server_git_commit=05039616c0f54583de33735b4084938e31edce5e
+    {"error":false,"status":200,"meta":[{"team_id":null,"bootstrap_values":{"feature_gates":{"503922365":{"id_type":"userID","value":true,"name":"503922365","rule_id":"disabled","secondary_exposures":[]},"308934089":{"id_type":"stableID","value":false,"name":"308934089","rule_id":"default","secondary_ex
+GET 200 https://www.figma.com/api/authed_users/plans
+    {"error":false,"status":200,"meta":{"plans_by_user_id":{"1666382703778278399":[{"plan_id":"1666382706663462213","plan_type":"team","permission":"admin","plan_name":"1643584176's team","is_guest":false,"created_at":"2026-08-04T08:09:57.230Z","has_drafts":true,"is_figjam_disabled":false,"is_slides_dis
+GET 200 https://www.figma.com/api/resources/widgets/1679037410226110154?include_full_category=true
+    {"error":false,"status":200,"meta":{"resource":{"id":"d6ed9b73-104d-491e-a742-a260e93a064d","name":"User story","description":"<p>A lightweight widget for product teams to create user story cards directly in Figma.</p>","resource_type":"widget","created_at":"2026-09-08T06:23:17.113Z","updated_at":"2
+GET 200 https://www.figma.com/api/resources/d6ed9b73-104d-491e-a742-a260e93a064d/comments?page_size=60
+    {"error":false,"status":200,"meta":{"comments":[],"selected_comment":null,"mentioned_profiles":{}},"pagination":{},"i18n":null}
+POST 200 https://www.figma.com/api/widgets/1679037410226110154/view
+    {"error":false,"status":200,"i18n":null}
+GET 200 https://www.figma.com/api/community/categories/metadata/development?locale=en
+    {"error":false,"status":200,"meta":{"title":"Software development","meta_title":"10,000+ Free Software Development Plugins & Tools","description":"Streamline the handoff process with developer-friendly tools. An extensive collection of plugins created to simplify your software development journey.",
+GET 200 https://www.figma.com/api/resources/base_plugin/1679037410226110154/related_content
+    {"error":false,"status":200,"meta":{"content":[{"id":"4f57e49c-9840-41ab-9d08-3f7eb063cf89","name":"Notes","description":"<p>Leave notes for your developer or product team that features your name and date.</p><p><br></p><p>Includes 6 different states:</p><p>🎉New: Indicates new designs added.</p><p>❗
+GET 200 https://www.figma.com/api/widgets/1679037410226110154/recent_files
+    {"error":false,"status":200,"meta":[{"name":"第一个","key":"IHt8kgtR3XmtqU5i8vz7p1","editor_type":"design","workspace_id":null,"workspace_name":null,"user_id":"1666382703778278399","can_run":true,"requests_allowed":false,"org_id":null,"last_published_at":null},{"name":"mention-test-a","key":"u5aqDppy2y
+POST 200 https://www.figma.com/api/web_logger/metrics_batched
+    
+POST 200 https://www.figma.com/api/web_logger/histogram_batched
+    

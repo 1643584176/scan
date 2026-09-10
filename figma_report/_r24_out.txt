@@ -1,0 +1,16 @@
+=== goto https://paul-e-lubienecki.figma.site/
+goto ok
+html dumped: D:\scan\figma_report\_r24_page_paul_e_lubienecki_figma_site.html (21949 chars)
+=== goto https://paul-e-lubienecki.figma.site/blog-paul-e-lubienecki
+goto ok
+html dumped: D:\scan\figma_report\_r24_page_blog_paul_e_lubienecki.html (29780 chars)
+
+===== XHR/API responses =====
+GET [document] 200 https://paul-e-lubienecki.figma.site/
+GET [fetch] 200 https://paul-e-lubienecki.figma.site/_api/community_published_banner_details
+    [application/json] {"error":false,"status":200,"meta":{"hub_file_url":"https://www.figma.com/community/file/1633508841091684550?openSignupModal=true","report_abuse_url":"https://www.figma.com/report-abuse?reported_content=paul-e-lubienecki.figma.site","figma_logo_url":"https://www.figma.com/communi
+GET [document] 200 https://paul-e-lubienecki.figma.site/blog-paul-e-lubienecki
+GET [fetch] 200 https://paul-e-lubienecki.figma.site/_json/99e3107b-75e3-4718-adce-1eb0d1ab70e0/blog-paul-e-lubienecki.json
+    [application/json] {"roots":["0:3"],"nodeById":{"0:3":{"type":"WEBPAGE","id":"0:3","name":"/","absoluteBoundingBox":{"x":0.0,"y":0.0,"width":1408.0,"height":1244.0},"isolatedAbsoluteRenderBounds":{"x":0.0,"y":0.0,"width":1408.0,"height":1244.0},"relativeTransform":[[1.0,0.0,0.0],[0.0,1.0,0.0]],"siz
+
+written _r24_net.txt (4 unique)

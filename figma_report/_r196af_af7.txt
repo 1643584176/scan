@@ -1,0 +1,2 @@
+HTTP 200
+{"error":false,"status":200,"meta":{"totals":{"account_type_request":0,"ai_credit_request":0},"account_type_request":{"seat_types":{"collaborator":0,"developer":0,"expert":0}}},"i18n":null}

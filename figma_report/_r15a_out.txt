@@ -1,0 +1,15 @@
+===== R15a code 下载入口 =====
+
+[code_cur] 301 len=0
+    Location: https://www.figma.com/community
+    ctype: text/html;charset=utf-8
+
+[code_v1] 301 len=0
+    Location: https://www.figma.com/community
+    ctype: text/html;charset=utf-8
+
+[code_nover] 301 len=0
+    Location: https://www.figma.com/community
+    ctype: text/html;charset=utf-8
+
+DONE

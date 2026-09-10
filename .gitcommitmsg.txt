@@ -1,1 +1,6 @@
-Neon data-mgmt endpoint survey scripts + gitignore credential rules
+2026-09-10 整理批次: Figma SQL注入总账/源码汇总/今日总结 + SQL经验库入库
+
+- figma_report: 三份整理文档(SQL注入总账/请求解析源码汇总/今日总结) + admin_requests 结论文档
+- 经验/全局经验/SQL注入经验库: 全库首次入库 + 今日回流(01/03/05/CHANGELOG)
+- eternal_report: webroutes 进展文档与测试脚本批次
+- .gitignore: 补排除 figma cookie 会话文件与 authed 快照

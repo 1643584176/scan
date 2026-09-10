@@ -1,0 +1,28 @@
+===== A) org_id 纯数字边界 =====
+[A1_org0] 404 len=123 643ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[A2_org1] 404 len=123 355ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[A3_orgneg] 404 len=123 337ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[A4_orgzero0] 400 len=105 315ms {"error":true,"status":400,"message":"'org_id' must be a valid number, received type String","i18n":null}
+[A5_orgi32max] 404 len=123 352ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[A6_orgi32over] 404 len=123 353ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[A7_orgi64max] 404 len=123 336ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[A8_orgi64over] 400 len=193 335ms {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:102: Integer overflow"}
+[A9_orgi64far] 400 len=193 334ms {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:109: Integer overflow"}
+[A10_orge] 400 len=215 356ms {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:86: Non-number characters in quoted integer"}
+[A11_orgfloat] 400 len=215 319ms {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:86: Non-number characters in quoted integer"}
+[A12_orgplus] 400 len=215 547ms {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:85: Non-number characters in quoted integer"}
+===== B) team_id 纯数字边界 =====
+[B1_tm0] 404 len=123 325ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[B2_tm1] 404 len=123 340ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[B3_tmneg] 404 len=123 324ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[B4_tmi64over] 400 len=193 354ms {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:103: Integer overflow"}
+===== C) 双位组合 =====
+[C1_both1] 404 len=123 330ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[C2_orgUID] 404 len=123 327ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[C3_tmUID] 404 len=123 355ms {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+===== D) max_num_results 数字边界(r78 未打纯数字越界) =====
+[D1_mnr0] 200 len=62 {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+[D2_mnrneg] 200 len=62 {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+[D3_mnrmax] 200 len=62 {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+[D4_mnrover] 400 len=192 {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:88: Integer overflow"}
+DONE

@@ -1,0 +1,65 @@
+===== 组A: folder_search 参数修正(sort=relevancy) =====
+[A1_no_org] 200 len=62 722ms
+     {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[A2_orgid_site] 400 len=216 549ms
+     {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:119: Non-number characters in quoted integer"}
+
+[A3_teamid_site] 400 len=216 727ms
+     {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:120: Non-number characters in quoted integer"}
+
+[A4_onlyquery] 400 len=68 556ms
+     {"error":true,"status":400,"message":"desc is required","i18n":null}
+
+===== 组B: /api/resources resource_type 枚举爆破 =====
+[B1_files] 202 len=0 369ms
+     
+
+[B2_plugins] 202 len=0 344ms
+     
+
+[B3_widgets] 202 len=0 348ms
+     
+
+[B4_integrations] 202 len=0 339ms
+     
+
+[B5_skills] 202 len=0 326ms
+     
+
+[B6_shaders] 202 len=0 332ms
+     
+
+[B7_profiles] 202 len=0 322ms
+     
+
+[B8_mixed] 202 len=0 323ms
+     
+
+[B9_design_template] 202 len=0 308ms
+     
+
+[B10_ui_kit] 202 len=0 320ms
+     
+
+[B11_nort] 202 len=0 334ms
+     
+
+===== 组C: items 结构挖 fieldId =====
+[C1_items] 404 len=830445 2035ms
+     <!DOCTYPE html> <html lang="en" data-product-locale="en">   <head>       <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>       <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>     <script nonce="ep
+
+[C2_coll] 404 len=830445 1615ms
+     <!DOCTYPE html> <html lang="en" data-product-locale="en">   <head>       <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>       <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>     <script nonce="Oo
+
+[C3_items_paged] 404 len=830445 1586ms
+     <!DOCTYPE html> <html lang="en" data-product-locale="en">   <head>       <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>       <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>     <script nonce="BY
+
+===== 组D: recent_search 形态 =====
+[D1_put] 500 len=157 661ms
+     {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+
+[D2_get] 404 len=830445 1829ms
+     <!DOCTYPE html> <html lang="en" data-product-locale="en">   <head>       <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>       <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>     <script nonce="Kr
+
+DONE

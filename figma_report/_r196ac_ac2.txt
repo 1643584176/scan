@@ -1,0 +1,2 @@
+HTTP 403
+{"error":true,"status":403,"message":"You don't have permission to view this file.","i18n":{"id":"permissions.sinatra.cant_view_file","fallback_text":"You don't have permission to view this file.","params":{}}}

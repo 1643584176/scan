@@ -1,0 +1,50 @@
+===== STEP0a) teams/folders 全量 dump =====
+[200] len=1062 -> _r111b_folders.json
+FOLDER> 634606972 | path= Team folder | team= 1666382706663462213 | org= None | desc= None
+
+===== STEP1 paginated_files 基线 + S2 列名位矩阵 =====
+[P_base_nm_asc] 200 len=13534 first3=["1643584176's team library", 'Untitled', 'Untitled'] 
+[P_stab_nm_asc] 200 len=13534 first3=["1643584176's team library", 'Untitled', 'Untitled'] (稳定性:应一致)
+[P_base_nm_desc] 200 len=13534 first3=['t-99ff96', 'Untitled', 'Untitled'] (对照:顺序应反)
+--- S2 列名位矩阵 ---
+[S2_junk] 400 len=81 first3=[] 未知列名
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_quote] 400 len=81 first3=[] 引号
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_cmt] 400 len=81 first3=[] 注释
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_comma] 400 len=81 first3=[] 逗号拼接
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_paren] 400 len=81 first3=[] 子查询
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_case] 400 len=81 first3=[] CASE 语法
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_bs] 400 len=81 first3=[] 反斜杠结尾
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_so_junk] 400 len=80 first3=[] 排序枚举位
+      body={"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}
+[S2_ft_junk] 200 len=13534 first3=["1643584176's team library", 'Untitled', 'Untitled'] file_type 枚举位
+[S2_ps_neg] 200 len=4306 first3=["1643584176's team library", 'Team folder'] page_size 负
+[S2_ps_huge] 200 len=13534 first3=["1643584176's team library", 'Untitled', 'Untitled'] page_size 巨大
+--- 已确认合法值对照(S1 相关性:name/createdAt/touchedAt) ---
+[S2_ok_createdAt] 400 len=81 first3=[] 合法列(JS 映射)
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_ok_touchedAt] 400 len=81 first3=[] 合法列(JS 映射)
+      body={"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[S2_ok_touched_at] 200 len=13839 first3=["1643584176's team library", 't-99ff96', 'Untitled'] 合法列(另一映射)
+
+===== STEP2 folders 深端点 =====
+[F_ancestors] 200 len=71 :: {"error":false,"status":200,"meta":{"ancestor_folders":[]},"i18n":null}
+[F_contributors] 200 len=282 :: {"error":false,"status":200,"meta":[{"user":{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstat
+[F_inheritance] 404 len=830453 :: <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+
+[F_can_move] 400 len=86 :: {"error":true,"status":400,"message":"Missing required parameter team_id","i18n":null}
+[F_color] 404 len=830453 :: <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+
+DONE

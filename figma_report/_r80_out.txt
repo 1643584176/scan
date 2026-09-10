@@ -1,0 +1,22 @@
+views: {
+  "ListFieldSchemasView": "0f40187a9ab5e9ab9e1f3e525c0dadee7d2c4a819c03d4b5a174a99a3c9f44d1",
+  "ListItemsView": "196887660ce0cf7beb4f2cd807683cf63d26dbad8fc195d4fbeb71a60997f6a0",
+  "ListCollectionsView": "54ad31928b3e65843187f51739ef6179b7c460af54f9c7766f167b97483472b3",
+  "OneItemView": "fc4837f829b6b6ff6302bc2827098d0c73ca55cab682adf1835e60e2c579786f"
+}
+
+===== WS dump =====
+ws payloads: 10 -> _r80_ws.json
+
+===== field schemas 解析 =====
+
+===== /api/resources 重探 =====
+[R1_anon_callersearch] 400 len=100 550ms ct=application/json
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: files","i18n":null}
+[R2_cookie_callersearch] 400 len=100 615ms ct=application/json
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: files","i18n":null}
+[R3_cookie_bare] 200 len=141853 1378ms ct=application/json
+    {"error":false,"status":200,"meta":[{"id":"d6677ac1-293d-4a3a-ab33-ebb2aa2520fc","name":"CareerConnect","description":"<p><strong>The goal of this application is to help students, freshers, and experienced job seekers find employment opportunities easily through a simple and user
+[R4_cookie_searchpage] 400 len=102 562ms ct=application/json
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: plugins","i18n":null}
+DONE

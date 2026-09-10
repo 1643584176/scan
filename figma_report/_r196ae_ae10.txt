@@ -1,0 +1,2 @@
+HTTP 404
+{"error":true,"status":404,"message":"This file is unavailable","i18n":{"id":"file_browser.sinatra.file_unavailable","fallback_text":"This file is unavailable","params":{}}}

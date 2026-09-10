@@ -1,0 +1,50 @@
+===== 0) 基线三态 =====
+[00_empty] 200 len=1416 893ms n_results=1
+[01_team] 200 len=1422 606ms n_results=1
+[02_Team] 200 len=1422 558ms n_results=1
+[03_TEAM] 200 len=1422 578ms n_results=1
+[04_teamm] 200 len=1422 540ms n_results=1
+[05_tea] 200 len=1422 526ms n_results=1
+[06_t] 200 len=1422 479ms n_results=1
+===== 1) 引号族 =====
+[10_q] 200 len=1422 538ms n_results=1
+[11_qq] 200 len=1422 584ms n_results=1
+[12_dq] 200 len=1422 570ms n_results=1
+[13_bt] 200 len=1422 532ms n_results=1
+[14_esc] 200 len=1422 678ms n_results=1
+===== 2) 注释族 =====
+[20_cmt] 200 len=1422 488ms n_results=1
+[21_hash] 200 len=1422 478ms n_results=1
+[22_blk] 200 len=1422 560ms n_results=1
+[23_blkc] 200 len=1422 504ms n_results=1
+===== 3) 布尔对 =====
+[30_btrue] 200 len=62 547ms n_results=0
+[31_bfalse] 200 len=62 576ms n_results=0
+[32_btrue2] 200 len=62 435ms n_results=0
+[33_bfalse2] 200 len=62 1237ms n_results=0
+===== 4) OR 全表 =====
+[40_orall] 200 len=62 487ms n_results=0
+[41_orall2] 200 len=62 544ms n_results=0
+===== 5) null/换行/空格 =====
+[50_null] 200 len=1423 555ms n_results=1
+[51_nl] 200 len=1422 587ms n_results=1
+[52_sp1] 200 len=1421 512ms n_results=1
+[53_sp2] 200 len=1423 486ms n_results=1
+===== 6) 时间盲注 =====
+[60_sleep] 200 len=62 446ms n_results=0
+[61_sleep2] 200 len=62 486ms n_results=0
+[62_concat] 200 len=62 505ms n_results=0
+===== 7) LIKE/特殊 =====
+[70_pct] 200 len=1421 635ms n_results=1
+[71_us] 200 len=1422 579ms n_results=1
+[72_semi] 200 len=1421 493ms n_results=1
+[73_paren] 200 len=1422 673ms n_results=1
+[74_union] 200 len=62 460ms n_results=0
+===== 8) 数值位(max_num_results/desc/sort)=====
+[80_mnr1] 200 len=1422 n_results=1
+[81_mnr2] 200 len=1422 n_results=1
+[82_mnr0] 200 len=62 n_results=0
+[83_mnr100] 200 len=1421 n_results=1
+[84_desc_false] 200 len=1422 n_results=1
+[85_sort_alpha] 400 len=129 n_results=0
+DONE

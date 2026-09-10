@@ -1,0 +1,62 @@
+===== X. can_move_bulk 真形态激活(team_root / folder destination) =====
+[X1_team_root] 200 len=   107 963ms (形态1:destination=team)
+      {"error":false,"status":200,"meta":{"results":[{"can_move":true,"folder":{"id":"634606972"}}]},"i18n":null}
+[X2_folder_dest] 200 len=   154 512ms (形态2:destination=folder,自己→self_move?)
+      {"error":false,"status":200,"meta":{"results":[{"can_move":false,"reason":"self_move","error_code":"self_move","folder":{"id":"634606972"}}]},"i18n":null}
+
+===== Y. can_move_bulk 注入判别:team_root.team_id =====
+[Y1_tid_q] 400 len=   201 335ms (引号)
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:93: Non-number characters in quoted integer"}
+[Y2_tid_or] 400 len=   202 361ms (OR)
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:103: Non-number characters in quoted integer"}
+[Y3_tid_and1] 400 len=   202 329ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:100: Non-number characters in quoted integer"}
+[Y4_tid_and2] 400 len=   202 362ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:100: Non-number characters in quoted integer"}
+[Y5_tid_big] 400 len=   178 347ms (20位大数)
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:93: Integer overflow"}
+[Y6_tid_neg] 404 len=   123 356ms 
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+===== Z. can_move_bulk 注入判别:folder.parent_folder_id =====
+[Z1_pf_q] 400 len=   201 342ms (引号)
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:89: Non-number characters in quoted integer"}
+[Z2_pf_or] 400 len=   201 332ms (OR)
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:99: Non-number characters in quoted integer"}
+[Z3_pf_and1] 400 len=   201 334ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:96: Non-number characters in quoted integer"}
+[Z4_pf_and2] 400 len=   201 337ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:96: Non-number characters in quoted integer"}
+[Z5_pf_big] 400 len=   178 360ms (20位大数)
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Error occurred during parsing: Error parsing JSON @1:99: Integer overflow"}
+[Z6_fk_or] 400 len=    87 337ms (file.key 位混打)
+      {"error":true,"status":400,"message":"Files can only be moved to folders.","i18n":null}
+
+===== D. content_summary file.key 注入判别(字符串位,基线=1) =====
+[D1_base] 200 len=   184 489ms (基线:应为 file_count=1)
+      {"error":false,"status":200,"meta":{"subfolder_count":0,"file_count":1,"has_hidden_items":false,"has_pending_asset_transfer":false,"has_pending_resource_connection":false},"i18n":null}
+[D2_cmt] 400 len=    80 341ms (注释)
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[D3_or] 400 len=    80 344ms (OR 集扩展?)
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[D4_and1] 400 len=    80 351ms 
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[D5_and2] 400 len=    80 362ms 
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[D6_pct] 400 len=    80 344ms (LIKE 通配?)
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[D7_fk2pct] 400 len=    80 345ms (前缀通配)
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[D8_or0] 400 len=    80 328ms (纯注入)
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[D9_multi] 400 len=    80 340ms (混合)
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+
+===== A. users/batched parseInt 判决实验 =====
+[A1r_oronly] 200 len=    50 352ms (纯注入开头:parseInt=NaN→预测空)
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A2r_1or] 200 len=    50 464ms (parseInt=1:预测空[id=1无用户])
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A3r_qor] 200 len=    50 340ms (对照)
+      {"error":false,"status":200,"meta":[],"i18n":null}
+DONE

@@ -1,0 +1,36 @@
+===== R65-A: export databaseId 正确布尔对 =====
+
+[A0_base] 200 len=9478 783ms ctype=application/csv
+    body: Title,Slug,Article thumbnail,Author,Article hero image,Description (displayed in list view),Article intro,Article content,Category,Time to read,Date published How to Build a Climate-Ready Data Stack,how-to-build-a-climate-ready-data-stack,https://s3-alpha-sig.figma.com/img/bdb3/0674/ad958933f85288ea31822252e1a378d0?Expires=17899
+
+[A1_btrue] 403 len=197 640ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+[A2_bfalse] 403 len=197 605ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+[A3_comment] 403 len=197 598ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+[A4_or1] 403 len=197 568ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+
+===== R65-B: validate_cms_csv file_key 正确布尔对 =====
+
+[B0_base] 200 len=100 733ms ctype=application/json
+    body: {"error":false,"status":200,"meta":{"success":true,"error":null,"validated_items":null},"i18n":null}
+
+[B1_btrue] 404 len=123 528ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+[B2_bfalse] 404 len=123 557ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+[B3_comment] 404 len=123 555ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+[B4_or1] 404 len=123 567ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+DONE

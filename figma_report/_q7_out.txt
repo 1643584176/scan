@@ -1,0 +1,15 @@
+===== postRecentActivity :: 2 hits =====
+  >>> onome"===t?"Enter Motion Mode":d,f,e,h,{forwardToDatadog:u}),(0,i.default)().org_id&&f&&"init"!==r){if(m)return;let e=_?n.Mr.DEV_MODE_FILE_SEEN:n.Mr.DESIGN_FILE_SEEN;s.L.postRecentActivity({fileKey:f,activityType:e})}}},920970(e,t,r){r.d(t,{M$:()=>s,NT:()=>l,Q6:()=>d,Z4:()=>o,kz:()=>c});var n=r(784096),i=r(387093),a=r(657385);let o=/\/\*BOUND_VAR_START_(.*?)\*\//g,s=/\/\*BOUND_VAR_END\*\//g,l=/\/\*BOUND_STYLE_START_(.*?)\*\//g
+  >>> as_mentions/record_invite`,{...e.mentionedUserId?{mentioned_user_id:e.mentionedUserId}:{},...e.mentionedUserGroupId?{mentioned_user_group_id:e.mentionedUserGroupId}:{}})}postRecentActivity(e){return n.Ay.post(n.Ay.url`/api/files/${e.fileKey}/recent_activity`,{activity_type:e.activityType})}markMakeLocalMetadata(e){return this.MarkMakeLocalMetadataValidator.validate(({xr:t})=>t.post(t.url`/api/files/${e.fileKey}/make_local_meta
+
+===== activity_type :: 1 hits =====
+  >>> ...e.mentionedUserGroupId?{mentioned_user_group_id:e.mentionedUserGroupId}:{}})}postRecentActivity(e){return n.Ay.post(n.Ay.url`/api/files/${e.fileKey}/recent_activity`,{activity_type:e.activityType})}markMakeLocalMetadata(e){return this.MarkMakeLocalMetadataValidator.validate(({xr:t})=>t.post(t.url`/api/files/${e.fileKey}/make_local_metadata`,{has_make_local_remote:!0===e.hasMakeLocalRemote}))}}},989874(e,t,r){r.d(t,{O:()=>a,
+
+===== 'VIEWED' :: 0 hits =====
+
+===== RecentActivity :: 2 hits =====
+  >>> e"===t?"Enter Motion Mode":d,f,e,h,{forwardToDatadog:u}),(0,i.default)().org_id&&f&&"init"!==r){if(m)return;let e=_?n.Mr.DEV_MODE_FILE_SEEN:n.Mr.DESIGN_FILE_SEEN;s.L.postRecentActivity({fileKey:f,activityType:e})}}},920970(e,t,r){r.d(t,{M$:()=>s,NT:()=>l,Q6:()=>d,Z4:()=>o,kz:()=>c});var n=r(784096),i=r(387093),a=r(657385);let o=/\/\*BOUND_VAR_START_(.*?)\*\//g,s=/\/\*BOUND_VAR_END\*\//g,l=/\/\*BOUND_STYLE_START_(.*?)\*\//g,d=/
+  >>> entions/record_invite`,{...e.mentionedUserId?{mentioned_user_id:e.mentionedUserId}:{},...e.mentionedUserGroupId?{mentioned_user_group_id:e.mentionedUserGroupId}:{}})}postRecentActivity(e){return n.Ay.post(n.Ay.url`/api/files/${e.fileKey}/recent_activity`,{activity_type:e.activityType})}markMakeLocalMetadata(e){return this.MarkMakeLocalMetadataValidator.validate(({xr:t})=>t.post(t.url`/api/files/${e.fileKey}/make_local_metadata
+
+===== recent_activity :: 1 hits =====
+  >>> ntionedUserId}:{},...e.mentionedUserGroupId?{mentioned_user_group_id:e.mentionedUserGroupId}:{}})}postRecentActivity(e){return n.Ay.post(n.Ay.url`/api/files/${e.fileKey}/recent_activity`,{activity_type:e.activityType})}markMakeLocalMetadata(e){return this.MarkMakeLocalMetadataValidator.validate(({xr:t})=>t.post(t.url`/api/files/${e.fileKey}/make_local_metadata`,{has_make_local_remote:!0===e.hasMakeLocalRemote}))}}},989874(e,t,

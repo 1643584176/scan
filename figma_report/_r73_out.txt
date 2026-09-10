@@ -1,0 +1,29 @@
+===== 组1: folder_search =====
+[1a_base] 400 len=129 556ms
+     {"error":true,"status":400,"message":"Bad request.","i18n":{"id":"error.bad_request","fallback_text":"Bad request.","params":{}}}
+
+[1b_null] 400 len=129 544ms
+     {"error":true,"status":400,"message":"Bad request.","i18n":{"id":"error.bad_request","fallback_text":"Bad request.","params":{}}}
+
+[1c_quote] 400 len=129 514ms
+     {"error":true,"status":400,"message":"Bad request.","i18n":{"id":"error.bad_request","fallback_text":"Bad request.","params":{}}}
+
+===== 组2: unsplash search =====
+[2a_base] 200 len=45773 1552ms
+     {"error":false,"status":200,"meta":{"total":10000,"total_pages":1000,"results":[{"id":"gKXKBY-C-Dk","alternative_slugs":{"en":"black-and-white-cat-lying-on-brown-bamboo-chair-inside-room-gKXKBY-C-Dk","es":"gato-blanco-y-negro-acostado-en-una-silla-de-bambu-marron-dentro-de-la-habitacion-gKXKBY-C-Dk","ja":"部屋の中の茶色の竹の椅子に横たわっている黒と白の猫-gKXKBY-C-Dk","fr":"chat-noir-et-blanc-couche-sur-une-chaise-en-bambou-marron-a-linterieur-de-la-chambre-gKXKBY-C-Dk","it":"gatto-in-bianco-e-nero-sdraiato-su-una-sedia-di-bambu-marrone-allinterno-della-stanza-gKXKBY-C
+
+[2b_fkey_null] 400 len=915 314ms
+     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> <TITLE>ERROR: The request could not be satisfied</TITLE> </HEAD><BODY> <H1>400 ERROR</H1> <H2>The request could not be satisfied.</H2> <HR noshade size="1px"> Bad request. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. <BR clear="all"> If
+
+===== 组3: JS 挖掘 =====
+
+### [figmake_template 邻居] _js\figma_app-main.js
+    y.detail_view.prototype");let t=e.resource_type;switch(t){case u.vt.FIGJAM_TEMPLATE:return(0,o.tx)("community.detail_view.figjam_board");case u.vt.UI_KIT:case u.vt.DESIGN_TEMPLATE:return(0,o.tx)("community.detail_view.design_file");case u.vt.SLIDE_TEMPLATE:return(0,o.tx)("community.detail_view.slide_template");case u.vt.WIDGET:return(0,o.tx)("community.detail_view.widget");case u.vt.PLUGIN:return(0,o.tx)("community.detail_view.plugin");case u.vt.SITE_TEMPLATE:return(0,o.tx)("community.detail_view.site_template");case u.vt.COOPER_TEMPLATE_FILE:case u.vt.COOPER_TEMPLATE_ASSET:return(0,o.tx)("community.detail_view.buzz_template");case u.vt.FIGMAKE_TEMPLATE:return(0,o.tx)("community.detail_view.figmake_template");case u.vt.OAUTH_APP:return(0,o.tx)("community.detail_view.integration");case u.vt.WEAVE_WORKFLOW:return(0,o.tx)("community.detail_view.weave_workflow");case u.vt.WEAVE_APP:return(0,o.tx)("community.detail_view.weave_tool");case u.vt.GEN_TOOL:return(0,o.tx)("community.tools_page.carousel_kind_agent_built_plugin");case u.vt.GEN_EFFECT:return(0,o.tx)("community.tools_page.carousel_kind_effect");case u.vt.GEN_FILL:return(0,o.tx)("community.tools_page.carousel_kind_fill");case u.vt.CUSTOM_SKILL:return(0,o.tx)("community.detail_view.custom_skill");case u.vt.REPO_TEMPLATE:case u.vt.MCP_CONNECTOR:return"";default:return(0,n.S9)(t,"")}}function I(e){return!!e.publishing_status&&[l.
+
+### [folder_search 调用上下文] _js\1643-8a1edcf3060f125a.min.js
+    });return(0,n.useMemo)(()=>"folder"===e.resource_type?t.transform(e=>l(e.project?._descendantTransferRequests)):a.transform(e=>l(e.team?._descendantTransferRequests)),[e.resource_type,t,a])}},239078(e,r,t){t.d(r,{c:()=>i});var n=t(898509),a=t(295502),s=t(497296),o=t(268471),l=t(151717);let i=new class{constructor(){this.OrgOrTeamInfoSchemaValidator=(0,s.vh)(),this.FolderSearchSchemaValidator=(0,s.vh)(),this.getFolderSearchResults=e=>{let{query:r,orgId:t,teamId:n,maxNumResults:a}=e;return this.FolderSearchSchemaValidator.validate(async({xr:e})=>await e.get(e.url`/api/resource_connection_invite/folder_search`,s.td.toAPIParameters({query:r,sort:o.j9.RELEVANCY,desc:!0,max_num_results:a,...t?{org_id:t}:{},...n?{team_id:n}:{}}),{retryStrategyOverride:l.Sm}))}}getOrgOrTeamInfo(e){return this.OrgOrTeamInfoSchemaValidator.validate(async({xr:r})=>await r.get(r.url`/api/resource_connection_invite/lookup/${e.orgOrTeamType}/${e.orgOrTeamId}`))}createResourceConnectionInvite(e){return a.Ay.post(a.Ay.url`/api/res
+
+### [folder_search 调用上下文] _js\figma_app-main.js
+    ..{className:"x6r79c1 x127aom x9qefgd x9f619 xlm99nl x1jkqq1h"},children:(0,n.jsx)(E.s,{facetType:e,onEscape:()=>{S(!1),r?.(),w.current?.focus()}})})]})}},487027(e,t,r){r.d(t,{Aj:()=>T,Bu:()=>P,C8:()=>F,ES:()=>b,FR:()=>S,GX:()=>U,II:()=>N,KI:()=>w,M2:()=>M,Nz:()=>I,QX:()=>m,Rj:()=>k,S2:()=>y,dd:()=>A,gh:()=>C,gl:()=>g,jN:()=>L,nX:()=>D,oM:()=>O,og:()=>h,q1:()=>j,qM:()=>f,r4:()=>G,sd:()=>v,wG:()=>R,yA:()=>E});var n,i=r(374339),a=r(432459),o=r(664892),s=r(229472),l=r(168835),d=r(677978),c=r(268471),u=r(868588),p=r(667149),_=r(645888);function m(){return(0,l.iv)()&&a.v.getFeatureGate("fmr_nested_folder_search")}let h={[c.qy.FOLDER]:[],[c.qy.TEAM]:[],[c.qy.ORG]:[]};function f(e){return({[c.WY.RESOURCE]:(0,i.t)("search.facets.resource"),[c.WY.CREATOR]:(0,i.t)("search.facets.creator"),[c.WY.SPACE]:(0,i.t)("search.facets.in")})[e]}function g(e){return f(e)+": "}function E(e){let t;return e.type===c.WY.RESOURCE?y(e.value):e.type===c.WY.CREATOR?function(e){let t=e.value.length;if(0===t)return"";if(1===t){le
+
+DONE

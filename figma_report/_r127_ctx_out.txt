@@ -1,0 +1,43 @@
+===== graphql 引用普查 =====
+### _js\vendor-ed1f396491c8f547.min.js
+'ema|subscription|type|union)\\b/,operator:/[!=|&]|\\.{3}/,"property-query":/\\w+(?=\\s*\\()/,object:/\\w+(?=\\s*\\{)/,punctuation:/[!(){}\\[\\]:=,]/,property:/\\w+/},O.hooks.add("after-tokenize",function(e){if("graphql"===e.language)for(var t=e.tokens.filter(function(e){return"string"!=typeof e&&"comment"!==e.type&&"scalar"!==e.type}),n=0;n<t.length;){var a=t[n++];if("keyword"===a.type&&"mutation"===a.conten'
+  ------
+### _js\vendor-ed1f396491c8f547.min.js
+'|css(?:\\s*\\.\\s*(?:global|resolve))?|createGlobalStyle|keyframes)/.source),s("html",/\\bhtml|\\.\\s*(?:inner|outer)HTML\\s*\\+?=/.source),s("svg",/\\bsvg/.source),s("markdown",/\\b(?:markdown|md)/.source),s("graphql",/\\b(?:gql|graphql(?:\\s*\\.\\s*experimental)?)/.source),s("sql",/\\bsql/.source),t].filter(Boolean);var l={javascript:!0,js:!0,typescript:!0,ts:!0,jsx:!0,tsx:!0};e.hooks.add("after-tokenize",func'
+  ------
+### _js\vendor-ed1f396491c8f547.min.js
+'lobal|resolve))?|createGlobalStyle|keyframes)/.source),s("html",/\\bhtml|\\.\\s*(?:inner|outer)HTML\\s*\\+?=/.source),s("svg",/\\bsvg/.source),s("markdown",/\\b(?:markdown|md)/.source),s("graphql",/\\b(?:gql|graphql(?:\\s*\\.\\s*experimental)?)/.source),s("sql",/\\bsql/.source),t].filter(Boolean);var l={javascript:!0,js:!0,typescript:!0,ts:!0,jsx:!0,tsx:!0};e.hooks.add("after-tokenize",function(t){t.language '
+  ------
+files with graphql: 6
+
+===== 剩余域关键字普查(JS 调用形态) =====
+--- bug_reports ---
+### FILE: _js\figma_app-main.js  hits=1
+'aName,gid:t.gid}),e},new Map))}catch(e){d((0,k.gD)({message:`Could not fetch field metadata: ${e}`,error:!0}))}})()},[d]),(0,n.jsx)(em,{...e,descriptionLabel:(0,p.t)("bug_reporter.modal.description"),descriptionPlaceholder:(0,p.t)("bug_reporter.modal.description_placeholder"),endpoint:M.Ay.url`/api/bug_reports`,isPerformanceIssue:!1,modalTitle:e.modalTitleSuffix?`${(0,p.t)("help_widget.menu.report_issue")} ${e.modalTitleSuffix}`:(0,p.t)("help_widget.menu.report_issue"),onError:e=>{d((0,k.gD)({message:`${e}. Couldn\'t submit report. Try again or '
+  ------
+
+--- perf_reports ---
+### FILE: _js\figma_app-main.js  hits=1
+'R.Ju)(e=>(0,n.jsx)(e_,{...e,recordingKey:"bugReporter"}),"BugReporterModal"),ey=(0,R.Ju)(e=>(0,n.jsx)(em,{...e,descriptionLabel:(0,p.t)("bug_reporter.modal.description_label_performance"),descriptionPlaceholder:(0,p.t)("bug_reporter.modal.description_placeholder_performance"),endpoint:M.Ay.url`/api/perf_reports`,isPerformanceIssue:!0,modalTitle:(0,p.t)("help_widget.menu.report_performance_issue"),onSubmit:()=>{(0,U.k)({source:"performance_issue_reporter"})},recordingKey:"perfReporter",shareFileLabel:(0,p.t)("bug_reporter.modal.include_filekey_p'
+  ------
+
+--- clear_account_sharing_flag ---
+### FILE: _js\figma_app-main.js  hits=1
+'x)("account_sharing_detected.modal.ok_button")})]})})]})})});function mz(){let e=(0,oe.e)({overlay:oa.Y8P,priority:ot.D.HIGH_PRIORITY_MODAL}),t=(0,rj.wA)(),r=(0,iT.iZ)(),n=r?.email;return t2.useEffect(()=>{r&&n&&(0,F.default)().show_account_sharing_detected_modal&&(rz.Ay.post(rz.Ay.url`/api/session/clear_account_sharing_flag`),e.show({onShow:()=>{t((0,iI.to)({type:mB})),e.complete(a4.gY.Deactivated)}}))},[r,n,e,t]),null}var mV=r(998165),mH=r(302319),mK=r(649613),mW=((i=mW||{})[i.WHY_ABANDON_QUESTION=0]="WHY_ABANDON_QUESTION",i[i.FREE_FORM_INPUT'
+  ------
+
+--- deletion_request ---
+### FILE: _js\figma_app-main.js  hits=4
+'hared_container_setting,ip_allowlist:r};e.dispatch(o.F6({id:t,shared_container_setting:i})),e.dispatch((0,p.SD)("Updated IP allowlist settings")),s()}).catch(t=>{e.dispatch((0,p.GW)((0,n.J)(t)||(0,i.t)("org_actions.an_error_occurred")))})),M=(0,g.nF)((e,{orgId:t})=>{h.Ay.post(h.Ay.url`/api/org/${t}/deletion_request`).then(t=>{e.dispatch((0,p.SD)((0,i.t)("orgs_middleware.deletion_request_submitted")))}).catch(t=>{e.dispatch((0,p.GW)(t.data?.message||(0,i.t)("orgs_middleware.an_error_occurred_while_enqueeing_deletion_request"),5e3)),console.error'
+  ------
+'ainer_setting:i})),e.dispatch((0,p.SD)("Updated IP allowlist settings")),s()}).catch(t=>{e.dispatch((0,p.GW)((0,n.J)(t)||(0,i.t)("org_actions.an_error_occurred")))})),M=(0,g.nF)((e,{orgId:t})=>{h.Ay.post(h.Ay.url`/api/org/${t}/deletion_request`).then(t=>{e.dispatch((0,p.SD)((0,i.t)("orgs_middleware.deletion_request_submitted")))}).catch(t=>{e.dispatch((0,p.GW)(t.data?.message||(0,i.t)("orgs_middleware.an_error_occurred_while_enqueeing_deletion_request"),5e3)),console.error(t)})}),F=(0,g.nF)((e,{orgId:t,exportControlSetting:r,successMessage:a})='
+  ------
+'ns.an_error_occurred")))})),M=(0,g.nF)((e,{orgId:t})=>{h.Ay.post(h.Ay.url`/api/org/${t}/deletion_request`).then(t=>{e.dispatch((0,p.SD)((0,i.t)("orgs_middleware.deletion_request_submitted")))}).catch(t=>{e.dispatch((0,p.GW)(t.data?.message||(0,i.t)("orgs_middleware.an_error_occurred_while_enqueeing_deletion_request"),5e3)),console.error(t)})}),F=(0,g.nF)((e,{orgId:t,exportControlSetting:r,successMessage:a})=>{h.Ay.put(h.Ay.url`/api/orgs/${t}/export_controls`,{export_control_setting:r}).then(()=>{e.dispatch(N({payload:{file_export_setting:r},suc'
+  ------
+
+--- hub_files/template ---
+### FILE: _js\figma_app-main.js  hits=1
+'ype:L.sK.ADD_FILE,editorType:i})){e.dispatch(y.to({type:F.D,data:{team:p?{id:p}:null,resource:l.vL.FILE,action:d.Z.CREATE_FILE,editorType:i,currentPlan:N.F.Plan.STARTER,upsellPlan:N.F.Plan.PRO,entryPoint:s.C.PROJECT_PAGE_CREATE_FILE}})),t.callback?.(null);return}}try{r=await T.Ay.post(T.Ay.url`/api/hub_files/template/${t.hubFileId}/copy`,{folder_id:t.folderId,org_id:p,team_id:f||void 0})}catch{t.callback?.(null);let r={error:!0,message:(0,n.t)("community.actions.failed_to_create_a_new_file_from_hub_file_name",{hubFileName:t.hubFileName})};o&&(r'
+  ------
+
+DONE

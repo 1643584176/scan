@@ -1,0 +1,92 @@
+===== STEP0: 取真实 file_key(paginated_files 全量) =====
+[S0_pf] 400 len=80 754ms 
+  => FILE_KEY = None
+
+===== A. v2/folders 横比(v1 已测:白名单+映射+归一化) =====
+[A1_v2_non] 404 len=830453 1053ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+[A2_v2_team] 404 len=830453 922ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+[A3_v2_fid] 404 len=830493 936ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+[A4_v2_fid_team] 404 len=830473 916ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+[A5_v2_fid_p] 404 len=830453 881ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+
+===== B. folder_items/content_summary(POST 批量读) =====
+[B1_cs_guess] 400 len=177 343ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:17: Expected: '{'"}
+[B2_cs_junk] 400 len=177 338ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:17: Expected: '{'"}
+[B3_cs_empty] 400 len=91 336ms 
+      {"error":true,"status":400,"message":"Missing required parameter folder_items","i18n":null}
+[B4_cs_bare] 400 len=160 335ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Required field 'mode' is missing from the input JSON."}
+
+===== C. file_move/suggested(搜索/建议型) =====
+[C1_fm_non] 200 len=221 397ms 
+[C2_fm_q] 200 len=221 388ms 
+[C3_fm_fk] 200 len=221 399ms 
+[C4_fm_fid] 200 len=221 361ms 
+
+===== D. unsplash search(搜索型) =====
+[D1_us_dog] 403 len=96 346ms 
+      {"error":true,"status":403,"message":"You don't have permission to edit this file.","i18n":null}
+[D2_us_team] 403 len=96 355ms 
+      {"error":true,"status":403,"message":"You don't have permission to edit this file.","i18n":null}
+
+===== E. 列表/统计类到达性 =====
+[E1_recent_proto] 200 len=5419 552ms 
+[E2_sub_team] 200 len=406 385ms 
+[E3_del_count] 200 len=233 455ms 
+[E4_ub1] 404 len=830453 1025ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+[E5_ub2] 500 len=157 371ms 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[E6_ub3] 404 len=830473 814ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+
+===== F. folders 域剩余 =====
+[F1_files] 200 len=13538 701ms 
+[F2_contrib] 200 len=282 439ms 
+[F3_inherit] 404 len=830473 933ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+[F4_detail] 200 len=903 370ms 
+
+===== G. design_systems / colors =====
+[G1_ds] 404 len=830453 1046ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+[G2_colors] 404 len=830453 889ms 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use
+DONE

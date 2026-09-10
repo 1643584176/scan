@@ -1,0 +1,109 @@
+hashes: 54ad3192 1b8e4e83 0f40187a
+
+########## A: ListCollectionsView (输出=collection绑定条数) ##########
+===== A.01_base [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [payload#1] FileCmsCollection:4
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]": {"initial": {"02d6a06b-3da8-405b-8292-a3f675295bd0": {"id": "02d6a06b-3da8-405b-8292-a3f675295bd0", "collectionId": "73deee99-90c6-484a-a32c-71125c414216", "createdAt": "2026-09-10T04:51:05.984Z",
+  [payload#2] CollectionV2:1 | CollectionV2:1 | CollectionV2:1 | CollectionV2:1
+      raw: {"CollectionV2": {"queries": {"[\"FileCmsCollection\",\"collectionV2\",[],[\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"]]": {"initial": {"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205": {"id": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "stableId": "ae4ddc7c-d16f-497a-8ca5-c44ef0ea38f4", "name": "Journal", "descript
+  [LOADED] ListCollectionsView
+
+===== A.02_quote [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY'"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY'\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.03_cmt_dd [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY'-- "} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY'-- \"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.04_cmt_hash [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY'#"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY'#\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.05_cmt_block [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY'/*"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY'/*\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.06_btrue [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY' AND '1'='1"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY' AND '1'='1\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.07_bfalse [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY' AND '1'='2"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY' AND '1'='2\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.08_or1 [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY' OR '1'='1"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY' OR '1'='1\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.09_or_num [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY' OR 1=1-- "} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY' OR 1=1-- \"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.10_or_like [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY' OR file_key LIKE 'R%'-- "} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY' OR file_key LIKE 'R%'-- \"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.11_dquote [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY\""} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY\\\"\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.12_backtick [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY`"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY`\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.13_nullbyte [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY\u0000"} =====
+  [payload#1] (no initial)
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY\\u0000\"],[]]": {"error": {"code": "resolverError", "message": "not retryable: query \"SELECT \\\"collection_id\\\", \\\"created_at\\\", \\\"file_key\\\", \\\"id\\\", \\\"updated_at\\\" FROM \\\"cms_collec
+  [LOADED] ListCollectionsView
+
+===== A.14_newline [ListCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY\n'"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY\\n'\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.15_nonexist [ListCollectionsView] {"fileKey": "ZZZZZZZZZZZZZZZZZZZZZZ"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"ZZZZZZZZZZZZZZZZZZZZZZ\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+===== A.16_upper [ListCollectionsView] {"fileKey": "RUEDAOHBLXN48WDKZS66BY"} =====
+  [payload#1] FileCmsCollection:0
+      raw: {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RUEDAOHBLXN48WDKZS66BY\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+
+########## B: HasCollectionsView (输出=布尔 computation) ##########
+===== B.01_base [HasCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [payload#1] File:1
+      raw: {"File": {"queries": {"[\"root\",\"fileV2\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]": {"initial": {"RuEdaohBLXN48WdkzS66BY": {"id": "RuEdaohBLXN48WdkzS66BY", "key": "RuEdaohBLXN48WdkzS66BY"}}}}, "computations": {}}}
+  [payload#2] File.comp=True
+      raw: {"File": {"queries": {}, "computations": {"[\"File\",\"fileHasCmsCollections\",\"RuEdaohBLXN48WdkzS66BY\",{\"_rootId\":\"RuEdaohBLXN48WdkzS66BY\"}]": {"fieldName": "fileHasCmsCollections", "value": true}}}}
+  [LOADED] HasCollectionsView
+
+===== B.07_bfalse [HasCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY' AND '1'='2"} =====
+  [payload#1] File:0
+      raw: {"File": {"queries": {"[\"root\",\"fileV2\",[\"RuEdaohBLXN48WdkzS66BY' AND '1'='2\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] HasCollectionsView
+
+===== B.06_btrue [HasCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY' AND '1'='1"} =====
+  [payload#1] File:0
+      raw: {"File": {"queries": {"[\"root\",\"fileV2\",[\"RuEdaohBLXN48WdkzS66BY' AND '1'='1\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] HasCollectionsView
+
+===== B.03_cmt_dd [HasCollectionsView] {"fileKey": "RuEdaohBLXN48WdkzS66BY'-- "} =====
+  [payload#1] File:0
+      raw: {"File": {"queries": {"[\"root\",\"fileV2\",[\"RuEdaohBLXN48WdkzS66BY'-- \"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] HasCollectionsView
+
+DONE

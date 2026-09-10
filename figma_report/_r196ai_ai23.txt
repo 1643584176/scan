@@ -1,0 +1,3 @@
+HTTP 400
+https://www.figma.com/api/plans/cc6b6125-a07f-4d39-a54c-50ef65f33919/admin_requests/counts?request_permission_level=admin&view_all=true
+{"error":true,"status":400,"message":"Invalid request_permission_level","i18n":null}

@@ -1,0 +1,2 @@
+HTTP 403
+{"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}

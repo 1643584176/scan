@@ -1,0 +1,86 @@
+===== A. community/cms/category_page(slug 位) =====
+[A1_slug_design] 404 len=   123 691ms 
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[A2_slug_num] 400 len=   122 368ms 
+      {"error":true,"status":400,"message":"Invalid url_slug format: 1. Must match regex /\\A[a-z][a-z-]{0,29}\\Z/","i18n":null}
+[A3_slug_q] 400 len=   128 341ms 
+      {"error":true,"status":400,"message":"Invalid url_slug format: design'. Must match regex /\\A[a-z][a-z-]{0,29}\\Z/","i18n":null}
+[A4_slug_junk] 404 len=   123 382ms 
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+===== B. profile(handle 字符串位) =====
+[B1_handle] 404 len=830453 1124ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+[B2_handle_q] 404 len=830453 931ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+[B3_numeric] 404 len=830453 1109ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+[B4_ghost] 404 len=830473 958ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+
+===== C. follows 群(数字位) =====
+[C1_followers] 200 len=    80 358ms 
+      {"error":false,"status":200,"meta":{"followers":[]},"pagination":{},"i18n":null}
+[C2_following] 404 len=   123 344ms 
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[C3_follows] 404 len=830453 876ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+[C4_followers_q] 200 len=    80 351ms 
+      {"error":false,"status":200,"meta":{"followers":[]},"pagination":{},"i18n":null}
+
+===== D. pinned / spell / tagged / sidebar =====
+[D1_pinned] 404 len=830453 877ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+[D2_spell] 200 len=    60 341ms 
+      {"error":false,"status":200,"meta":{"words":[]},"i18n":null}
+[D3_tagged] 404 len=830453 812ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+[D4_sidebar] 404 len=830453 1073ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+
+===== E. file 关注者 / guidelines / joinlink =====
+[E1_ffollowers] 200 len=   395 482ms 
+      {"error":false,"status":200,"meta":[{"id":"2079731897","key":"laF5guxdhRzBcWmVwfKJ4e","user_id":"1666382703778278399","email_comments":true,"notification_preference":"all","user":{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.grav
+[E2_joinlink_ms] 403 len=   197 350ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[E3_joinlink] 404 len=830453 992ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_
+[E4_guidelines] 404 len=    74 372ms 
+      {"error":true,"status":404,"message":"Not found","i18n":"error.not_found"}
+DONE

@@ -1,0 +1,28 @@
+===== 创新:内部名直发(editor_type 替代 file_type) =====
+[IN_et_design] 200 len=13534 first=["1643584176's team library", 'Untitled'] 内部名=design(若等效 8.7k=绕过成立)
+[IN_et_q] 200 len=13534 first=["1643584176's team library", 'Untitled'] 内部名+引号
+[IN_et_junk] 200 len=13534 first=["1643584176's team library", 'Untitled'] 内部名+junk
+[IN_both] 200 len=8761 first=["1643584176's team library", 'Untitled'] 双发(外部+内部)
+[CTL_ft_design] 200 len=8761 first=["1643584176's team library", 'Untitled'] 对照:外部名=design
+
+===== HPP(参数污染,取头/尾?) =====
+[HPP_ft_tailval] 200 len=13534 first=["1643584176's team library", 'Untitled'] file_type=design..junk
+[HPP_ft_headval] 200 len=8761 first=["1643584176's team library", 'Untitled'] file_type=junk..design
+[HPP_sc] 400 len=81 first=[] sc=name..junk(400=取尾)
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[HPP_sc_rev] 200 len=13534 first=["1643584176's team library", 'Untitled'] sc=junk..name(200=取尾)
+
+===== R3 双重编码(枚举/白名单位) =====
+[R3_ft_dbl] 200 len=13534 first=["1643584176's team library", 'Untitled'] file_type=%2564esign(单层解→%64esign 不识别?)
+[R3_sc_dbl] 400 len=81 first=[] sc=%256eame(单层解→%6eame?)
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+
+===== R8 null-byte(枚举位) =====
+[R8_ft_tail] 200 len=8761 first=["1643584176's team library", 'Untitled'] design+\x00 尾
+[R8_ft_head] 200 len=8761 first=["1643584176's team library", 'Untitled'] \x00+design 头
+[R8_sc_tail] 200 len=13534 first=["1643584176's team library", 'Untitled'] sc=name+\x00
+
+===== Q1 编码引号形态(sort_column) =====
+[Q1_sc_enc] 200 len=13534 first=["1643584176's team library", 'Untitled'] sc=%6eame(=name 编码)
+[Q1_ft_enc] 200 len=8761 first=["1643584176's team library", 'Untitled'] ft=%64esign(=design 编码)
+DONE

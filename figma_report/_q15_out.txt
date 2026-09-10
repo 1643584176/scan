@@ -1,0 +1,41 @@
+-- 4740-72098fc09d96357b.min.js @182505
+   frag: /api/collections/${e.databaseId}/items
+   ctx : this.CsvValidationResponseValidator=(0,a.YV)("CsvValidationResponseValidator",(0,l.D)(u),null)}createItem({collection:e,itemId:t,fields:n,lgOptimisticMutationUuid:i}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:r})=>await r.post(r.url`/api/collections/${e.databaseId}/items`,{item_id:t,fields:n?.map(e=>({id:e.fieldId,field_schema_id:e.fieldSchema.databaseId,value:e.value,assets_for_publish:e.assetsForPublish,job_status:e.jobStatus,lg_optimistic_mutation_uuid:e.lgOptimisticMutationUuid})),lg_optimistic_mutation_uuid:i}))}importIt
+
+-- 4740-72098fc09d96357b.min.js @182920
+   frag: /api/collections/${e.databaseId}/items/import
+   ctx : h:e.assetsForPublish,job_status:e.jobStatus,lg_optimistic_mutation_uuid:e.lgOptimisticMutationUuid})),lg_optimistic_mutation_uuid:i}))}importItems({collection:e,items:t}){return this.BulkImportResponseSchemaValidator.validate(async({xr:n})=>await n.post(n.url`/api/collections/${e.databaseId}/items/import`,{items:(t??[]).map(e=>({fields:e.fields.map(e=>({field_schema_id:e.fieldSchemaId,value:e.value}))}))}))}updateItem({collection:e,item:t,updatedItemAttributes:n}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:i})=>await i.put(i.url`/api
+
+-- 4740-72098fc09d96357b.min.js @183221
+   frag: /api/collections/${e.databaseId}/items/${t.databaseId}
+   ctx : port`,{items:(t??[]).map(e=>({fields:e.fields.map(e=>({field_schema_id:e.fieldSchemaId,value:e.value}))}))}))}updateItem({collection:e,item:t,updatedItemAttributes:n}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:i})=>await i.put(i.url`/api/collections/${e.databaseId}/items/${t.databaseId}`,{index:n.position,status:n.status}))}updateSingleItemData({collectionId:e,fieldId:t,fieldSchema:n,item:r,value:a,assetsForPublish:l,jobStatus:o,lgOptimisticMutationUuid:c}){return this.CollectionFieldResponseSchemaValidator.validate(async({xr:d})=>{let u={va
+
+-- 4740-72098fc09d96357b.min.js @183816
+   frag: /api/collections/${e}/items/${r.databaseId}/fields/${n.databaseId}
+   ctx : ==c&&(u.lg_optimistic_mutation_uuid=c),void 0!==l&&(u.assets_for_publish=l),void 0!==o&&(u.job_status=o);let p=i.v.getFeatureGate("cms_require_collection_id_when_editing_fields"),m=d.url`/api/items/${r.databaseId}/fields/${n.databaseId}`;return p&&(e?(m=d.url`/api/collections/${e}/items/${r.databaseId}/fields/${n.databaseId}`,u.collection_id=e,u.field_schema_id=n.databaseId,u.item_id=r.databaseId):(0,s.AK)("Collection ID is required when editing fields",{itemId:r.databaseId,fieldSchemaId:n.databaseId})),await d.put(m,u)})}deleteItem({collection:e,item:t}){return this.CollectionIt
+
+-- 4740-72098fc09d96357b.min.js @184571
+   frag: /api/collections/${r}/items/${t.databaseId}/fields/${e.databaseId}/validate
+   ctx : e:n,collectionId:r}){return this.ItemValidateResponseSchemaValidator.validate(async({xr:a})=>{let l=i.v.getFeatureGate("cms_require_collection_id_when_validating_fields"),o=a.url`/api/items/${t.databaseId}/fields/${e.databaseId}/validate`;return l&&(r?o=a.url`/api/collections/${r}/items/${t.databaseId}/fields/${e.databaseId}/validate`:(0,s.AK)("Collection ID is required when validating fields",{itemId:t.databaseId,fieldSchemaId:e.databaseId})),await a.put(o,{value:n})})}validateCsv({fileKey:e,itemsData:t}){return this.CsvValidationResponseValidator.validate(async({xr:n})=>await n.post(n.u
+
+-- 4740-72098fc09d96357b.min.js @184909
+   frag: /api/collections/validate_cms_csv
+   ctx : 0,s.AK)("Collection ID is required when validating fields",{itemId:t.databaseId,fieldSchemaId:e.databaseId})),await a.put(o,{value:n})})}validateCsv({fileKey:e,itemsData:t}){return this.CsvValidationResponseValidator.validate(async({xr:n})=>await n.post(n.url`/api/collections/validate_cms_csv`,{file_key:e,items_data:t.map(e=>({fields:e.fields.map(e=>({field_schema_id:e.fieldSchemaId,value:e.value}))}))}))}}},112760(e,t,n){n.d(t,{r:()=>r});var i=n(295502);let r=new class{applyResourceCheckpoint(e){return i.Ay.post(i.Ay.url`/api/make/${e.fileKey}/ap
+
+-- figma_app-main.js @2749132
+   frag: /api/collections/${e.databaseId}
+   ctx : {id:e.id,name:e.name,field_type:e.fieldType,position:e.position,required:e.required,properties:e.properties,role:e.role??null}))}))}renameCollection({collection:e,name:t}){return this.CollectionResponseSchemaValidator.validate(async({xr:r})=>await r.put(r.url`/api/collections/${e.databaseId}`,{name:t}))}async deleteCollection({collection:e}){await a.Ay.del(a.Ay.url`/api/collections/${e.databaseId}`)}createFieldSchema({collection:e,attributes:t}){return this.FieldSchemaResponseValidator.validate(async({xr:r})=>await r.post(r.url`/api/collections/$
+
+-- figma_app-main.js @2749406
+   frag: /api/collections/${e.databaseId}/field_schemas
+   ctx : ns/${e.databaseId}`,{name:t}))}async deleteCollection({collection:e}){await a.Ay.del(a.Ay.url`/api/collections/${e.databaseId}`)}createFieldSchema({collection:e,attributes:t}){return this.FieldSchemaResponseValidator.validate(async({xr:r})=>await r.post(r.url`/api/collections/${e.databaseId}/field_schemas`,{name:t.name,field_type:t.fieldType,position:t.position,required:t.required,properties:t.properties??{},role:t.role??null}))}updateFieldSchema({collection:e,fieldSchema:t,newAttributes:r}){return this.FieldSchemaResponseValidator.validate(async({xr:n})=>awai
+
+-- figma_app-main.js @2749726
+   frag: /api/collections/${e.databaseId}/field_schemas/${t.databaseId}
+   ctx : ,field_type:t.fieldType,position:t.position,required:t.required,properties:t.properties??{},role:t.role??null}))}updateFieldSchema({collection:e,fieldSchema:t,newAttributes:r}){return this.FieldSchemaResponseValidator.validate(async({xr:n})=>await n.put(n.url`/api/collections/${e.databaseId}/field_schemas/${t.databaseId}`,{name:r.name,field_type:r.fieldType,position:r.position,required:r.required,properties:r.properties}))}async deleteFieldSchema({collection:e,fieldSchema:t}){await a.Ay.del(a.Ay.url`/api/collections/${e.databaseId}/field_schemas/${t.databaseId}`)}async export
+
+-- figma_app-main.js @2750100
+   frag: /api/collections/${e.databaseId}/export
+   ctx : ition,required:r.required,properties:r.properties}))}async deleteFieldSchema({collection:e,fieldSchema:t}){await a.Ay.del(a.Ay.url`/api/collections/${e.databaseId}/field_schemas/${t.databaseId}`)}async exportAsCsv({collection:e}){let t=await (0,a.GD)(a.Ay.url`/api/collections/${e.databaseId}/export`,null,{responseType:"blob"}),r=(0,n._C)(e.name)||"collection",i=new Date().toISOString().split("T")[0],o=`${r} ${i}.csv`;(0,s.W)(t.data,o)}async applyHubFileCollections({sourceHubFileId:e,destinationFileKey:t}){if(null==t)return void(0,l.AK)("Unable to copy H
+
+total unique frags: 10

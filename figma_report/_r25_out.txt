@@ -1,0 +1,13 @@
+===== R25 CMS 站点产物分析 =====
+
+[blog_json] 200 len=2662 ctype=application/json
+    top keys: ['roots', 'nodeById', 'assetIdToGuid', 'guidToUrl', 'fonts', 'assets', 'stablePathToAssetInfo', 'animateRootIds', 'siteSettings', 'sourceCodeHash']
+    nodeById n=3
+    sample text nodes: []
+
+[index_json] 200 len=2662 ctype=application/json
+    top keys: ['roots', 'nodeById', 'assetIdToGuid', 'guidToUrl', 'fonts', 'assets', 'stablePathToAssetInfo', 'animateRootIds', 'siteSettings', 'sourceCodeHash']
+    nodeById n=3
+    sample text nodes: []
+
+DONE

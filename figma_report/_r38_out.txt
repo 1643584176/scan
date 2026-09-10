@@ -1,0 +1,28 @@
+===== A) create collection on DESIGN file (FILE_A) =====
+[A1 create on design] 400 len=90
+    {"error":true,"status":400,"message":"this API is not supported for the file","i18n":null}
+
+===== B) apply_hub_file_collections (hub 1633508841091684550 -> k7tno...) =====
+[B1 apply_hub_coll] 200 len=40
+    {"error":false,"status":200,"i18n":null}
+
+
+----- WS B2 A self: after apply_hub_file_collections -----
+  [sub] HasCollectionsView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [sub] ListCollectionsView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [sub] ListFieldSchemasView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [payload] ["ListCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (142b)
+      {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {}}}, "computations": {}}}
+  [payload] ["ListFieldSchemasView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (142b)
+      {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+  [LOADED] ListFieldSchemasView
+  [payload] ["HasCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (208b)
+      {"File": {"queries": {"[\"root\",\"fileV2\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {"k7tnoOiCG5H49sdSgrSPlP": {"id": "k7tnoOiCG5H49sdSgrSPlP", "key": "k7tnoOiCG5H49sdSgrSPlP"}}}}, "computations": {}}}
+  [payload] ["HasCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (207b)
+      {"File": {"queries": {}, "computations": {"[\"File\",\"fileHasCmsCollections\",\"k7tnoOiCG5H49sdSgrSPlP\",{\"_rootId\":\"k7tnoOiCG5H49sdSgrSPlP\"}]": {"fieldName": "fileHasCmsCollections", "value": false}}}}
+  [LOADED] HasCollectionsView
+===== C) community search =====
+['cms'] 404 len=9
+['sites cms'] 404 len=9
+DONE

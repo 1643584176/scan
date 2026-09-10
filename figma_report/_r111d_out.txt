@@ -1,0 +1,40 @@
+===== 校准基线(再确认) =====
+[CAL_design] 200 len=8761 first=["1643584176's team library", 'Untitled']
+[CAL_design_stab] 200 len=8761 first=["1643584176's team library", 'Untitled'] 623ms
+[CAL_slides] 200 len=1600 first=['Team folder']
+[CAL_figjam] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[CAL_empty] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+
+===== S2/Q file_type 深打(对照:design=8.7k 空=1.6k 全量=13.5k) =====
+[FQ_q] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_qcmt] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_or1] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_or2] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_and1] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_and2] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_pct] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_dq] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_paren] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_union] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_case] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_tcase] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_comma] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_space] 200 len=13534 first=["1643584176's team library", 't-99ff96']
+[FQ_trail] 200 len=8761 first=["1643584176's team library", 'Untitled']
+
+===== 时间盲注 =====
+[FT_sleep] 200 len=13534 first=["1643584176's team library", 't-99ff96'] 658ms
+[FT_base] 200 len=8761 first=["1643584176's team library", 'Untitled'] 549ms
+
+===== 数组语法(结构位) =====
+[FARR_arr] 400 len=96 :: {"error":true,"status":400,"message":"editor_type must be a string, received Array","i18n":null}
+
+===== sort_column 大小写/空白变体 =====
+[SCV('Name')] 400 len=81 first=[]
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SCV('NAME')] 400 len=81 first=[]
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SCV('name ')] 200 len=13534 first=["1643584176's team library", 'Untitled']
+[SCV(' touched_at')] 200 len=13839 first=["1643584176's team library", 't-99ff96']
+[SCV('touched_at ')] 200 len=13839 first=["1643584176's team library", 't-99ff96']
+DONE

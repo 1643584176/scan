@@ -1,0 +1,29 @@
+##### 枚举定义扫描 (FILES:"xxx" 模式) #####
+  [9300-41a18cb0f8ba922b.min.js] SKILLS:"skills"
+      UR_OWN:"add_your_own",DESIGNS:"designs",EXPLORE:"explore",FROM_ORG_OR_TEAM:"from_org_or_team",FROM_COMMUNITY:"from_community",CONNECTORS:"connectors",SKILLS:"skills"},i=(0,n.eU)(!1),r=(0,n.eU)("empty_state"),l=(0,n.eU)(s.EXPLORE),o=(0,n.eU)(null),c=(0,n.eU)(""
+  [figma_app-main.js] WIDGET:"current_plugin_version_id"
+      _id"in e}function c(e){return!!e&&"publishScope"in e}function u(e){return"fig_file_metadata"in e}function p(e){return"is_widget"in e&&e.is_widget?n.v.WIDGET:"current_plugin_version_id"in e?n.v.PLUGIN:n.v.HUB_FILE}function _(e){switch(e){case i.bD.PLUGIN:return
+  [figma_app-main.js] PLUGINS:"plugins"
+      commentsViewSection",a),es=((o=es||{}).HUB_FILE="hub_file",o.PLUGIN="plugin",o.WIDGET="widget",o.COMMENT="comment",o.WEAVE_APP="weave_app",o);let el={PLUGINS:"plugins",WEAVE_APPS:"weave"},ed={EFFECTS:"effects",FILLS:"fills"};var ec=((s=ec||{})[s.CURATED_IMAGE=
+  [figma_app-main.js] PROFILE:"profile"
+       n=r(885367),i=r(263439),a=r(524518),o=r(398776);let s={WEAVE_LANDING_PAGE:"weave_landing_page",WEAVE_LANDING_PAGE_HEADER:"weave_landing_page_header",PROFILE:"profile",FILE_BROWSER_PROFILE:"file_browser_profile",FB_COMMUNITY_TAB_SHELF:"fb_community_tab_shelf",
+  [figma_app-main.js] FILES:"files"
+      cludes(e))})}r.d(t,{W:()=>i,t:()=>a})},945311(e,t,r){var n,i;r.d(t,{LA:()=>n,RK:()=>o,Zd:()=>l,gI:()=>s,tR:()=>a}),(i=n||(n={})).BrowseResourceTypes={FILES:"files",PLUGINS:"plugins",WIDGETS:"widgets",INTEGRATIONS:"integrations",MIXED:"mixed",SKILLS:"skills",SH
+  [figma_app-main.js] WIDGETS:"widgets"
+      =>a})},945311(e,t,r){var n,i;r.d(t,{LA:()=>n,RK:()=>o,Zd:()=>l,gI:()=>s,tR:()=>a}),(i=n||(n={})).BrowseResourceTypes={FILES:"files",PLUGINS:"plugins",WIDGETS:"widgets",INTEGRATIONS:"integrations",MIXED:"mixed",SKILLS:"skills",SHADERS:"shaders"},i.UniqueResourc
+  [figma_app-main.js] INTEGRATIONS:"integrations"
+      r){var n,i;r.d(t,{LA:()=>n,RK:()=>o,Zd:()=>l,gI:()=>s,tR:()=>a}),(i=n||(n={})).BrowseResourceTypes={FILES:"files",PLUGINS:"plugins",WIDGETS:"widgets",INTEGRATIONS:"integrations",MIXED:"mixed",SKILLS:"skills",SHADERS:"shaders"},i.UniqueResourceTypes=Object.keys
+  [figma_app-main.js] MIXED:"mixed"
+      K:()=>o,Zd:()=>l,gI:()=>s,tR:()=>a}),(i=n||(n={})).BrowseResourceTypes={FILES:"files",PLUGINS:"plugins",WIDGETS:"widgets",INTEGRATIONS:"integrations",MIXED:"mixed",SKILLS:"skills",SHADERS:"shaders"},i.UniqueResourceTypes=Object.keys(i.BrowseResourceTypes).filt
+  [figma_app-main.js] SHADERS:"shaders"
+      )=>a}),(i=n||(n={})).BrowseResourceTypes={FILES:"files",PLUGINS:"plugins",WIDGETS:"widgets",INTEGRATIONS:"integrations",MIXED:"mixed",SKILLS:"skills",SHADERS:"shaders"},i.UniqueResourceTypes=Object.keys(i.BrowseResourceTypes).filter(e=>"MIXED"!==e).map(e=>i.Br
+  [figma_app-main.js] PROFILES:"profiles"
+      ourceTypes=Object.keys(i.BrowseResourceTypes).filter(e=>"MIXED"!==e).map(e=>i.BrowseResourceTypes[e]),i.SearchResourceTypes={...i.BrowseResourceTypes,PROFILES:"profiles"};let a={FILES:n.BrowseResourceTypes.FILES,PLUGINS:n.BrowseResourceTypes.PLUGINS,WIDGETS:n.
+  [figma_app-main.js] PLUGINS:"integrations"
+      rtion-shaders","recoloring-shaders","flow-shaders","pattern-shaders","texturing-shaders"];function b(e){return g.includes(e)?o.LA.BrowseResourceTypes.PLUGINS:"integrations"===e||"apps"===e?o.LA.BrowseResourceTypes.INTEGRATIONS:E.includes(e)?o.LA.BrowseResource
+
+##### BrowseResourceTypes / SearchResourceTypes 模块定义处 #####
+  [figma_app-main.js] BrowseResourceTypes: :()=>a})},945311(e,t,r){var n,i;r.d(t,{LA:()=>n,RK:()=>o,Zd:()=>l,gI:()=>s,tR:()=>a}),(i=n||(n={})).BrowseResourceTypes={FILES:"files",PLUGINS:"plugins",WIDGETS:"widgets",INTEGRATIONS:"integrations",MIXED:"mixed",SKILLS:"skills",SHADERS:"shaders"},i.UniqueResourceTypes=Object.keys(i.BrowseResourceTypes).filter(e=>"MIXED"!==e).map(e=>i.BrowseResourceTypes[e]),i.SearchResourceTypes={...i.BrowseResourceTypes,PROFILES:"profiles"};let a={FILES:n.BrowseResourceTypes.FILES,PLUGINS:n.BrowseResourceTypes.PLUGINS,WIDGETS:n.B
+
+  [figma_app-main.js] SearchResourceTypes: eTypes=Object.keys(i.BrowseResourceTypes).filter(e=>"MIXED"!==e).map(e=>i.BrowseResourceTypes[e]),i.SearchResourceTypes={...i.BrowseResourceTypes,PROFILES:"profiles"};let a={FILES:n.BrowseResourceTypes.FILES,PLUGINS:n.BrowseResourceTypes.PLUGINS,WIDGETS:n.BrowseResourceTypes.WIDGETS,INTEGRATIONS:n.BrowseResourceTypes.INTEGRATIONS,SKILLS:n.BrowseResourceTypes.SKILLS,SHADERS:n.BrowseResourceTypes.SHADERS},o={FILES:n.SearchResourceTypes.FILES,PLUGINS:n.SearchResourceTypes.PLUGINS,WIDGETS:n.SearchResourceTypes.WIDGETS,
+

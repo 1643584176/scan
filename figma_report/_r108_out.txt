@@ -1,0 +1,27 @@
+===== D) JS 挖 createItem 形态 =====
+>>> createItem: ptimisticMutationUuid:i})=>(e[n.fieldId]=u(t,n.fieldSchema.databaseId,n.value,n.assetsForPublish,n.jobStatus,i),e),{});return(0,a.W)().optimisticallyCreate(i.O.createItem,{CollectionItemV2:{[t]:{lgOptimisticMutationUuid:p,stableId:t,collectionId:e.databaseId,position:o,status:"draft",createdAt:new Date,updatedAt:new Date,lastPublishedAt:null,statusUpdatedAt:null,contentUpdatedAt:new Date,contentUpdatedByUserId:d??null,createdByUserId:d??null,allFields:Object.values(h)}},Colle
+>>> updateItem: tionUuid:p})).then(e=>(l(e.data.meta.id),e.data.meta),e=>{c(e)}),t}function o({collection:e,item:t,updatedItemAttributes:n}){(0,a.W)().optimisticallyUpdate(i.O.updateItem,{CollectionItemV2:{[t.databaseId]:{collectionId:e.databaseId,position:n.position,status:n.status}}},s.hl.updateItem({collection:e,item:t,updatedItemAttributes:n}))}async function c({collectionId:e,fieldId:t,shouldCreateField:n,fieldSchema:l,item:o,value:d,assetsForPublish:p,jobStatus:m}){if(!n)return await (
+
+===== A) PUT 类型混淆(每临时 item 一发) =====
+[U0_num] 400 len=216 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/:item_id/fields/:field_schema_id: Error occurred during parsing: Error p
+[U1_bool] 400 len=216 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/:item_id/fields/:field_schema_id: Error occurred during parsing: Error p
+[U2_arr] 400 len=216 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/:item_id/fields/:field_schema_id: Error occurred during parsing: Error p
+[U3_obj] 400 len=216 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/:item_id/fields/:field_schema_id: Error occurred during parsing: Error p
+[U4_null] 400 len=198 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/:item_id/fields/:field_schema_id: Required field 'value' is missing from
+
+===== B) import 字符族(7 发新 item) =====
+[B1_nl] 200 len=59 slug=r108-b1_nl-933059 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[B2_tab] 200 len=59 slug=r108-b2_tab-2c7762 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[B3_bt] 200 len=59 slug=r108-b3_bt-e601dc resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[B4_dq] 200 len=59 slug=r108-b4_dq-8732c0 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[B5_sc] 200 len=59 slug=r108-b5_sc-d2e09d resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[B6_dash] 200 len=59 slug=r108-b6_dash-640c04 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[B7_blk] 200 len=59 slug=r108-b7_blk-56d0a9 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+
+===== C) recent_search 类型混淆 =====
+[R1_qnum] 200 len=40 resp={"error":false,"status":200,"i18n":null}
+[R2_qbool] 200 len=40 resp={"error":false,"status":200,"i18n":null}
+[R3_qarr] 200 len=40 resp={"error":false,"status":200,"i18n":null}
+[R4_qobj] 200 len=40 resp={"error":false,"status":200,"i18n":null}
+[R5_tsnum] 200 len=40 resp={"error":false,"status":200,"i18n":null}
+DONE-PHASE1-2

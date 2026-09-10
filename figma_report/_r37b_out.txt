@@ -1,0 +1,4 @@
+===== S1: create collection (mark=H1CMS_6C9337E8) =====
+[create_coll] 400 len=90
+    {"error":true,"status":400,"message":"this API is not supported for the file","i18n":null}
+create failed — abort

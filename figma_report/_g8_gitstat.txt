@@ -1,0 +1,133 @@
+===== tracked sensitive =====
+count: 106
+  _aic_sess.txt
+  _aic_sess1.py
+  _aic_sess2.py
+  _aic_sess3.py
+  _sdk/package/dist/auth/poll-for-token.cjs
+  _sdk/package/dist/auth/poll-for-token.cjs.map
+  _sdk/package/dist/auth/poll-for-token.d.cts
+  _sdk/package/dist/auth/poll-for-token.d.ts
+  _sdk/package/dist/auth/poll-for-token.js
+  _sdk/package/dist/auth/poll-for-token.js.map
+  _sdk/package/dist/session.cjs
+  _sdk/package/dist/session.cjs.map
+  _sdk/package/dist/session.d.cts
+  _sdk/package/dist/session.d.ts
+  _sdk/package/dist/session.js
+  _sdk/package/dist/session.js.map
+  _sdk/package/dist/utils/dev-credentials.cjs
+  _sdk/package/dist/utils/dev-credentials.cjs.map
+  _sdk/package/dist/utils/dev-credentials.js
+  _sdk/package/dist/utils/dev-credentials.js.map
+  _sdk/package/dist/utils/get-credentials.cjs
+  _sdk/package/dist/utils/get-credentials.cjs.map
+  _sdk/package/dist/utils/get-credentials.d.cts
+  _sdk/package/dist/utils/get-credentials.d.ts
+  _sdk/package/dist/utils/get-credentials.js
+  _sdk/package/dist/utils/get-credentials.js.map
+  eternal_report/_et10_cookies.py
+  eternal_report/_et8b_tokenflow.py
+  eternal_report/_et9_token.py
+  eternal_report/_et9b_cookies.py
+===== status summary =====
+total status lines: 807
+    745  figma_report
+     52  eternal_report
+      9  (root)
+      1  \347\273\217\351\252\214
+===== figma_report status =====
+figma_report lines: 745
+  ?? "figma_report/Figma-H1-admin_requests-r196-\347\273\223\350\256\272-2026-09-10.md"
+  ?? "figma_report/Figma-SQL\346\263\250\345\205\245\346\200\273\350\264\246-2026-09-10.md"
+  ?? "figma_report/Figma-SQL\350\257\267\346\261\202\350\247\243\346\236\220\346\272\220\347\240\201\346\261\207\346\200\273-2026-09-10.md"
+  ?? "figma_report/Figma-\344\273\212\346\227\245\346\200\273\347\273\223-2026-09-10.md"
+  ?? figma_report/_ah2_dump_module.py
+  ?? figma_report/_ah2_js_ctx.txt
+  ?? figma_report/_ah2_js_ctx2.txt
+  ?? figma_report/_ah2_js_extract.py
+  ?? figma_report/_ah2_js_extract2.py
+  ?? figma_report/_ah2_module_dump.txt
+  ?? figma_report/_ah2_toquery.txt
+  ?? figma_report/_ak2_js_cursor.py
+  ?? figma_report/_ak2_js_cursor.txt
+  ?? figma_report/_chk_browser.py
+  ?? figma_report/_endpoints_all.txt
+  ?? figma_report/_g1_scripts.py
+  ?? figma_report/_g1_scripts.txt
+  ?? figma_report/_g2_src.py
+  ?? figma_report/_g2_src_out.txt
+  ?? figma_report/_g3_cmp.py
+  ?? figma_report/_g4_ls_kb.py
+  ?? figma_report/_g5_sum.py
+  ?? figma_report/_g6_heads.py
+  ?? figma_report/_g7_verify.py
+  ?? figma_report/_g8_gitstat.py
+  ?? figma_report/_ls_md.py
+  ?? figma_report/_ls_q1.py
+  ?? figma_report/_ls_tmp.txt
+  ?? figma_report/_q10_out.txt
+  ?? figma_report/_q11_out.txt
+  ?? figma_report/_q12_out.txt
+  ?? figma_report/_q13_out.txt
+  ?? figma_report/_q14_out.txt
+  ?? figma_report/_q15_out.txt
+  ?? figma_report/_q16_out.txt
+  ?? figma_report/_q17_out.txt
+  ?? figma_report/_q18_out.txt
+  ?? figma_report/_q19_out.txt
+  ?? figma_report/_q1_paths.json
+  ?? figma_report/_q20_out.txt
+  ?? figma_report/_q2_cover.py
+  ?? figma_report/_q2_out.txt
+  ?? figma_report/_q3_ctx.py
+  ?? figma_report/_q3_ctx_out.txt
+  ?? figma_report/_q3_out.txt
+  ?? figma_report/_q4_ctx.py
+  ?? figma_report/_q4_out.txt
+  ?? figma_report/_q5_out.txt
+  ?? figma_report/_q5_scan_ad.py
+  ?? figma_report/_q6_l10.txt
+  ?? figma_report/_q6_l11.txt
+  ?? figma_report/_q6_l12.txt
+  ?? figma_report/_q6_l13.txt
+  ?? figma_report/_q6_l14.txt
+  ?? figma_report/_q6_l6.txt
+  ?? figma_report/_q6_l7.txt
+  ?? figma_report/_q6_l8.txt
+  ?? figma_report/_q6_l9.txt
+  ?? figma_report/_q6_out.txt
+  ?? figma_report/_q7_acttype.py
+  ?? figma_report/_q7_out.txt
+  ?? figma_report/_q8_enum.py
+  ?? figma_report/_q8_out.txt
+  ?? figma_report/_q9_out.txt
+  ?? figma_report/_r101_out.txt
+  ?? figma_report/_r101_ws.json
+  ?? figma_report/_r105_verify.txt
+  ?? figma_report/_r106_out.txt
+  ?? figma_report/_r107_out.txt
+  ?? figma_report/_r107_ws.json
+  ?? figma_report/_r108_out.txt
+  ?? figma_report/_r108_ws.json
+  ?? figma_report/_r109_out.txt
+  ?? figma_report/_r109_ws.json
+  ?? figma_report/_r10_caller_editor.json
+  ?? figma_report/_r10_desc_icon.json
+  ?? figma_report/_r10_name_icon_re.json
+  ?? figma_report/_r10_name_pizza.json
+  ?? figma_report/_r10_pub_appr.json
+  ?? figma_report/_r10_pub_unpub.json
+===== check-ignore keys =====
+  figma_report/_waf_cookies_new.txt -> NOT-ignored
+  figma_report/Figma-SQL注入总账-2026-09-10.md -> NOT-ignored
+  figma_report/_r196aq_r1.txt -> NOT-ignored
+  figma_report/_q6_l6.txt -> NOT-ignored
+  figma_report/_g1_scripts.py -> NOT-ignored
+  figma_report/_g2_src.py -> NOT-ignored
+  figma_report/_q1_paths.json -> NOT-ignored
+  figma_report/_r196ap_a3.txt -> NOT-ignored
+===== untracked sensitive scan (all ?? files) =====
+  !! figma_report/_r14_recent_authed.json
+  !! figma_report/_r14_recent_wafonly.json
+  !! figma_report/_waf_cookies_new.txt

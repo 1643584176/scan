@@ -1,0 +1,16 @@
+===== X0) r106 A1 完整 400 消息 =====
+400 {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:10: Expected string"}
+===== A) JSON 转义层间绕过(手工文本) =====
+[V0_rawqt] 200 len=59 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[V1_esc27] 200 len=59 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[V2_esc_or] 200 len=59 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[V3_bs_u27] 200 len=59 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[V4_bsq] 200 len=59 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+[V5_fullw] 200 len=59 resp={"error":false,"status":200,"meta":{"count":1},"i18n":null}
+===== B) 类型混淆(json= 直发 value 非字符串) =====
+[T1_num] 400 len=191 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/import: Error occurred during parsing: Error parsing JSON @1:176: Expected string"}
+[T2_bool] 400 len=191 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/import: Error occurred during parsing: Error parsing JSON @1:177: Expected string"}
+[T3_arr] 400 len=191 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/import: Error occurred during parsing: Error parsing JSON @1:176: Expected string"}
+[T4_obj] 400 len=191 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/import: Error occurred during parsing: Error parsing JSON @1:176: Expected string"}
+[T5_arr_obj] 400 len=191 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items/import: Error occurred during parsing: Error parsing JSON @1:180: Expected string"}
+DONE-PHASE1

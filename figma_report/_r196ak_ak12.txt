@@ -1,0 +1,3 @@
+HTTP 500 (0.73s)
+https://www.figma.com/api/plans/cc6b6125-a07f-4d39-a54c-50ef65f33919/admin_requests?request_types%5B%5D=account_type_request&view_all=true&cursor=eyJpZCI6IjEiLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0wMVQwMDowMDowMFoifQ%3D%3D
+{"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}

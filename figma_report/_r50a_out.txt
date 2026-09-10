@@ -1,0 +1,101 @@
+===== link_access url =====
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] (0,n.jsx)("b",{children:e.metadata.name})})});case"fig_file_link_access_change":switch(e.metadata.link_access){case"inherit":return(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_link_access_change.inherit",{name:(0,n.jsx)("b",{children:e.metadata.name})})});case"org_edit":case"p
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] n(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_link_access_change.org_edit",{name:(0,n.jsx)("b",{children:e.metadata.name}),orgName:(0,n.jsx)("b",{children:E})})});return(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_link_access_change.org_edit.link",{name:(0,n.jsx)
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] n(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_link_access_change.org_view",{name:(0,n.jsx)("b",{children:e.metadata.name}),orgName:(0,n.jsx)("b",{children:E})})});return(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_link_access_change.org_view.link",{name:(0,n.jsx)
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] n(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_link_access_change.edit",{name:(0,n.jsx)("b",{children:e.metadata.name})})});case"view":return(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_link_access_change.view",{name:(0,n.jsx)("b",{children:e.metadata.name})})});c
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] n(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_link_access_change.workspace_edit",{name:(0,n.jsx)("b",{children:e.metadata.name}),workspaceName:(0,n.jsx)("b",{children:e.metadata.workspace_name})})});case"workspace_view":return(0,n.jsx)("span",{children:eE("activity_log.event.f
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] e.metadata.workspace_name})})});default:return f=e.metadata.link_access,(0,g.$D)(o.e.WORKFLOW,Error(`Invalid link access ${f}`),{tags:{id:e.id}}),null}case"fig_file_link_expiration_change":return(0,n.jsx)("span",{children:e.metadata?.old_expires_at===null&&e.metadata?.new_expires_at!==null?
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] x)("b",{children:e.metadata?.name})})});case"fig_file_proto_link_access_change":switch(e.metadata.proto_link_access){case"view":return(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_proto_link_access_change.view",{name:(0,n.jsx)("b",{children:e.metadata.name})})});case"org_view":
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] jsx)("span",{children:eE("activity_log.event.fig_file_proto_link_access_change.org_view",{name:(0,n.jsx)("b",{children:e.metadata.name}),orgName:(0,n.jsx)("b",{children:E})})});case"workspace_view":return(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_proto_link_access_change.wor
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] jsx)("span",{children:eE("activity_log.event.fig_file_proto_link_access_change.inherit",{name:(0,n.jsx)("b",{children:e.metadata.name})})});case null:return(0,n.jsx)("span",{children:eE("activity_log.event.fig_file_proto_link_access_change.null",{name:(0,n.jsx)("b",{children:e.metadata.name
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] le_delete","fig_file_create","fig_file_duplicate","fig_file_link_access_change","fig_file_proto_link_access_change","fig_file_viewer_access_change","fig_file_member_add","fig_file_member_permission_change","fig_file_member_remove","fig_file_move","fig_file_export","fig_file_image_download",
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] activity_log.filter.downloaded_an_image")},{value:"fig_file_link_access_change",internalValue:["fig_file_link_access_change"],description:(0,eF.t)("activity_log.filter.file_link_access_changed")},{value:"fig_file_link_expiration_change",internalValue:["fig_file_link_expiration_change"],desc
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] ssions&&!(0,ed.Y)({org_browsable:h.permissions.orgBrowsable,link_access:h.permissions.linkAccess}),C=(0,ec.X)((0,er.$)(e)),N="loaded"===C.status,I=s.useMemo(()=>({userId:a?.id??void 0,orgId:r??void 0,libraryResourceId:e}),[r,e,a?.id]);return(0,n.jsx)(ee.fu,{name:"Library Management Modal",p
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] edit_url:e.editUrl,creator_id:e.creatorId,license:e.license,link_access:e.linkAccess,has_file_link_password:e.hasFileLinkPassword,has_proto_link_password:e.hasProtoLinkPassword,touched_at:e.touchedAt,proto_link_access:e.protoLinkAccess,updated_at:e.updatedAt.toDateString(),thumbnail_url:e.s
+
+  | [_js\469e6e40-f27da0e8f34b0858.min.js] LinkPassword,has_proto_link_password:e.hasProtoLinkPassword,link_access:e.linkAccess,proto_link_access:e.protoLinkAccess,org_browsable:e.orgBrowsable,org_audience:e.orgAudience,default_file_key:e.defaultFileKey,has_active_branches:e.hasActiveBranches}}function $(e){let t=e.abandonedDraftFil
+
+  | [_js\5916-70807f948690bb6a.min.js] },userInitiated:!0}))})}},[n,t,e]),g=(0,d.mr)()?.file.proto_link_access===a.Pu.VIEW,v=o.useMemo(()=>!!n&&!!_&&!!p&&!0===n.should_show_standalone_team_tos&&("prototype"!==e||!g),[n,_,p,e,g]),x=o.useMemo(()=>v&&_?{id:_.id,name:_.name,img_url:_.img_url??null}:null,[v,_]);return o.useMemo(()=>(
+
+  | [_js\935-431f89677a39072c.min.js] .boolean().nullable(),key:G,license:F.z.string().nullable(),link_access:F.z.nativeEnum(u.PQ),parent_org_id:F.z.string().nullable().optional(),proto_link_access:F.z.nativeEnum(u.Pu).nullable(),name:F.z.string(),realtime_token:F.z.string().optional(),team_id:F.z.string().nullable(),thumbnail_
+
+  | [_js\935-431f89677a39072c.min.js] g(),updated_at:F.z.string(),team_id:F.z.string().nullable(),link_access:e$.nullable(),proto_link_access:eK.nullable(),has_file_link_password:eY,has_proto_link_password:eY,realtime_token:F.z.string().optional(),org_audience:F.z.boolean().nullable(),org_browsable:F.z.boolean().nullable(),pare
+
+  | [_js\figma_app-main.js] [r,t,l])}function u(e,t=!0){let r=t&&e.repo?e.repo:e;return{link_access:r.linkAccess,proto_link_access:r.protoLinkAccess,org_audience:!!r.orgAudience,org_browsable:!!r.orgBrowsable,has_file_link_password:!!r.hasFileLinkPassword,has_proto_link_password:!!e.hasProtoLinkPassword,parent_org_id:
+
+  | [_js\figma_app-main.js] (0,g.i4)({has_file_link_password:e.file.hasFileLinkPassword,link_access:e.file.linkAccess});case"OFFLINE_FILE":return!1;default:(0,o.xb)(e)}}static getFolderId(e){switch(e.type){case"FILE":case"PINNED_FILE":return e.file.folderId;case"REPO":return e.repo.folder_id;case"PROTOTYPE":return e.p
+
+  | [_js\figma_app-main.js] rn Object.assign(r,t||{})}function b(e,t){let r={};return(e.link_access&&(r.linkAccess=e.link_access),"proto_link_access"in e&&(r.protoLinkAccess=e.proto_link_access),"has_file_link_password"in e&&(r.hasFileLinkPassword=e.has_file_link_password),"has_proto_link_password"in e&&(r.hasProtoLin
+
+  | [_js\figma_app-main.js] ull}function T(e){let t;if(!e.id)return null;let r=(t={},(e.link_access&&(t.linkAccess=e.link_access),"proto_link_access"in e&&(t.protoLinkAccess=e.proto_link_access),"org_audience"in e&&(t.orgAudience=e.org_audience),"org_browsable"in e&&(t.orgBrowsable=e.org_browsable),e.name&&(t.name=e.n
+
+  | [_js\figma_app-main.js] d:r?.id||null,setByUser:r}}}:null}function I(e,t,r){let n=e.link_access===p.PQ.VIEW||e.link_access===p.PQ.EDIT||e.proto_link_access===p.Pu.VIEW;return t&&"optimistic"!==t&&(!n||"expires_at"in e)?{FigFileLinkExpirationConfig:{[t]:{expiresAt:e.expires_at?new Date(e.expires_at):null,accessReve
+
+===== share_url =====
+  | [_js\1745a3d2-6e63fc7d3f6e49dc.min.js] url`/api/files/${ee}/weave_workflow`
+
+  | [_js\319-29c92cc68da9fcc1.min.js] url`/api/files/${e}/media_exports`
+
+  | [_js\319-29c92cc68da9fcc1.min.js] url`/api/files/${e}/media_exports/${t}`
+
+  | [_js\6db9f521-9198995e1e04a49c.min.js] url`/api/files/${e.fileKey}/generate_deck_metadata`
+
+  | [_js\7987-48fc20b1434f1691.min.js] url`/api/files/${e}/audios/${t}/commit`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/related_links`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/videos`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/realtime_token`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.branchFileKey}/source_file_updated_info`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/meta`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.openFileKey}/last_interaction`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/videos/${e.sha1}/upload`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/videos/${e.hexHash}`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/videos/${e.sha1}/thumbnails`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/audios`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/audios/${e.sha1}/upload`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/audios/${e.sha1}`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.file.key}`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/weave_cover_photo_from_url`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/page_thumbnails`
+
+  | [_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/reference_id`
+
+===== sharing endpoints =====
+  | [_js\935-431f89677a39072c.min.js] `/api/files/${e.fileKey}/related_links`
+
+  | [_js\figma_app-main.js] `/api/files/${r}/related_links`
+
+  | [_js\figma_app-main.js] `/api/files/${e}/related_links`
+
+  | [_js\figma_app-main.js] `/api/files/${e.fileKey}/related_links/link_preview`
+
+  | [_js\figma_app-main.js] `/api/files/${e}/expire_public_link`
+

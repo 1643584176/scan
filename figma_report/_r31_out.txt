@@ -1,0 +1,30 @@
+len 7574220
+
+##### preview_status
+  ...return o??{preview:null,status:null}}}class C extends Error{}async function N(e,t,r){try{let n=await t(e,{method:"GET",signal:r});if(200===n.status)return"ready";if(404===n.status)return"pending";return"unknown"}catch{return"unknown"}}async function w(e,{fetchImpl:t=fetch,maxAttempts:r=6,retryDelayMs:n=1e3,probeTimeoutMs:a=3e3,abortSignal:o}={}){let s=function(e){try{let t=new URL("/__figma__/api/preview_status",e);if("http:"!==t.protocol&&"https:"!==t.protocol)return null;return t.toString()}catch{return null}}(e.iframeSrc);if(!s)return!0;try{return await (0,i.OF)(async()=>{let e,r,n,{signal:i,cleanup:l}=(e=new AbortController,r=setTimeout(()=>e.abort(),a),n=()=>e.abort(),o?.aborted?e.abort():o?.addEventListener("abort",n,{once:!0}),{signal:e.signal,cleanup:()=>{clearTimeout(r),o?.removeE...
+
+
+##### iframeSrc preview
+  ...t.type&&e.jsUrl===t.jsUrl&&e.cssUrl===t.cssUrl&&e.binaryManifestUrl===t.binaryManifestUrl&&e.sourceCodeHash===t.sourceCodeHash;case"sandbox":return"sandbox"===t.type&&e.jsUrl===t.jsUrl&&e.previewGeneration===t.previewGeneration;case"generic_cached_preview":return"generic_cached_preview"===t.type&&e.iframeSrc===t.iframeSrc&&e.cacheKey===t.cacheKey&&e.resolvedPreviewType===t.resolvedPreviewType}}var _=((n=_||{}).NO_CHANGES="noChanges",n.NOT_INITIALIZED="notInitialized",n.CANCELED="canceled",n.NODE_REMOVED="nodeRemoved",n.SUCCESS="success",n.FAILED="failed",n);class m{constructor(e,t){this.lastRe...
+
+  ...l===t.jsUrl&&e.cssUrl===t.cssUrl&&e.binaryManifestUrl===t.binaryManifestUrl&&e.sourceCodeHash===t.sourceCodeHash;case"sandbox":return"sandbox"===t.type&&e.jsUrl===t.jsUrl&&e.previewGeneration===t.previewGeneration;case"generic_cached_preview":return"generic_cached_preview"===t.type&&e.iframeSrc===t.iframeSrc&&e.cacheKey===t.cacheKey&&e.resolvedPreviewType===t.resolvedPreviewType}}var _=((n=_||{}).NO_CHANGES="noChanges",n.NOT_INITIALIZED="notInitialized",n.CANCELED="canceled",n.NODE_REMOVED="nodeRemoved",n.SUCCESS="success",n.FAILED="failed",n);class m{constructor(e,t){this.lastRenderError=null...
+
+  ...(542197),o=r(184665),s=r(467914),l=r(575239),d=r(172395),c=r(108881),u=r(794734),p=r(840664),_=r(727599),m=r(269734),h=r(829297);function f({jsUrl:e,cssUrl:t,binaryManifestUrl:r,sourceCodeHash:n}){return{type:"bundle_cached_preview",jsUrl:e,cssUrl:t,binaryManifestUrl:r,sourceCodeHash:n}}function g({iframeSrc:e,cacheKey:t,resolvedPreviewType:r,commitSha:n}){return{type:"generic_cached_preview",iframeSrc:e,cacheKey:t,resolvedPreviewType:r,commitSha:n}}function E(){return g({iframeSrc:(0,p.Bw)(),cacheKey:p.$1,resolvedPreviewType:"starter"})}function y(e,t){let r=`<!doctype html><html><head><title...
+
+  ...(727599),m=r(269734),h=r(829297);function f({jsUrl:e,cssUrl:t,binaryManifestUrl:r,sourceCodeHash:n}){return{type:"bundle_cached_preview",jsUrl:e,cssUrl:t,binaryManifestUrl:r,sourceCodeHash:n}}function g({iframeSrc:e,cacheKey:t,resolvedPreviewType:r,commitSha:n}){return{type:"generic_cached_preview",iframeSrc:e,cacheKey:t,resolvedPreviewType:r,commitSha:n}}function E(){return g({iframeSrc:(0,p.Bw)(),cacheKey:p.$1,resolvedPreviewType:"starter"})}function y(e,t){let r=`<!doctype html><html><head><title>${e}</title><style>     html,body{margin:0;height:100%;font-family:-apple-system,system-ui,sans...
+
+  ...,sourceCodeHash:n}){return{type:"bundle_cached_preview",jsUrl:e,cssUrl:t,binaryManifestUrl:r,sourceCodeHash:n}}function g({iframeSrc:e,cacheKey:t,resolvedPreviewType:r,commitSha:n}){return{type:"generic_cached_preview",iframeSrc:e,cacheKey:t,resolvedPreviewType:r,commitSha:n}}function E(){return g({iframeSrc:(0,p.Bw)(),cacheKey:p.$1,resolvedPreviewType:"starter"})}function y(e,t){let r=`<!doctype html><html><head><title>${e}</title><style>     html,body{margin:0;height:100%;font-family:-apple-system,system-ui,sans-serif}     body{display:flex;align-items:center;justify-content:center;backgroun...
+
+  ...02em}   </style></head><body><div class="badge">${e}</div></body></html>`;return`data:text/html;charset=utf-8,${encodeURIComponent(r)}`}let b=y("Cached preview (fake)","#c8e6ff"),T=y("Fallback preview (fake)","#ffd9a8");function v(e,t){let r=e&&"complete"===e.status&&e.url?e.url:null;return r&&e?g({iframeSrc:r,cacheKey:e.id,resolvedPreviewType:t,commitSha:e.commit_sha}):null}function I(e,t=!0){let r=e.latest_cached_preview?.status??null,n=v(e.latest_cached_preview,"latest");return n||!t?{preview:n,status:r}:e.latest_cached_preview&&"pending"!==r&&!e.latest_cached_preview_manifest_buffered?{pre...
+
+  ...ack"),status:r??e.fallback_cached_preview?.status??null}}async function S({fileKey:e,componentGuid:t,gitRepoUrl:r,gitRef:i,commitSha:a,allowFakePreviewDebugOverride:o=!0}){if(o){let e=function(){if((0,s.getFeatureFlags)().make_generic_fake_cached_preview)switch(n.zl.get(c.x)){case"cached":return g({iframeSrc:b,cacheKey:"fake-generic-cached-preview-latest",resolvedPreviewType:"latest"});case"fallback":return g({iframeSrc:T,cacheKey:"fake-generic-cached-preview-fallback",resolvedPreviewType:"fallback"});case"none":return null}}();if(void 0!==e)return{preview:e,status:null,requestedCachedPreviewM...
+
+  ...gitRef:i,commitSha:a,allowFakePreviewDebugOverride:o=!0}){if(o){let e=function(){if((0,s.getFeatureFlags)().make_generic_fake_cached_preview)switch(n.zl.get(c.x)){case"cached":return g({iframeSrc:b,cacheKey:"fake-generic-cached-preview-latest",resolvedPreviewType:"latest"});case"fallback":return g({iframeSrc:T,cacheKey:"fake-generic-cached-preview-fallback",resolvedPreviewType:"fallback"});case"none":return null}}();if(void 0!==e)return{preview:e,status:null,requestedCachedPreviewMissing:!1}}if(!e||!t||!r||!i)return{preview:null,status:null,requestedCachedPreviewMissing:!1};let u=r;if(/\/file\...
+
+
+##### site preview url
+  (no hits)
+
+##### figma_site_url_build
+  (no hits)
+DONE

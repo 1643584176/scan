@@ -1,0 +1,11 @@
+[200] /webroutes/restaurant/info?res_id=1                        {"page_data":{"sections":{"SECTION_IMAGE_CAROUSEL":{"entities":[{"entity_type":"IMAGES","entity_ids":[]}],"has_more_photo":false,"obpImage":{"entity_type":"IMAGES","entit
+[400] /webroutes/restaurant/info?resId=1                         {"message":"error"}
+[400] /webroutes/restaurant/info?restaurant_id=1                 {"message":"error"}
+[400] /webroutes/restaurant/info?id=1                            {"message":"error"}
+[200] /webroutes/reviews/loadMore?res_id=1                       {"page_data":{"sections":{"SECTION_REVIEWS":{"status":"success","message":"","entities":[{"entity_type":"REVIEWS","entity_ids":[]}],"pageReviewsText":"","numberOfPages":0
+[400] /webroutes/reviews/loadMore?resId=1                        {"message":"error"}
+[400] /webroutes/reviews/loadMore?restaurant_id=1                {"message":"error"}
+[200] /webroutes/menu/viewMenu?res_id=1                          {"page_data":{"sections":{"SECTION_IMAGE_MENU":{"menuItems":[]},"SECTION_TEXT_MENU":{"menuItems":[]}},"navbarSection":[],"hasAds":false},"entities":[]}
+[400] /webroutes/menu/viewMenu?resId=1                           {"message":"error"}
+[400] /webroutes/menu/viewMenu?restaurant_id=1                   {"message":"error"}
+done

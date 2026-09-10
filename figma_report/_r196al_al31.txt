@@ -1,0 +1,3 @@
+HTTP 500 (0.67s) hdr={'server-timing': 'proxyq;dur=7.13,app;dur=172.11;desc="id:s",streamed;desc="0",proxy;dur=181'}
+https://www.figma.com/api/plans/cc6b6125-a07f-4d39-a54c-50ef65f33919/admin_requests?request_types%5B%5D=account_type_request&view_all=true&cursor=eyJxdWVyeV90aW1lc3RhbXAiOiIxIn0%3D
+{"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}

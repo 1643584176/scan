@@ -1,0 +1,49 @@
+ListItemsView hash: 196887660ce0cf7beb4f2cd807683cf63d26dbad8fc195d4fbeb71a60997f6a0
+
+===== 0_base: {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [payload] (364b) {"FileCmsCollection": {"queries": {"[\"root\",\"oneFileCmsCollection\",[\"RuEdaohBLXN48WdkzS66BY\",\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"],[]]": {"initial": {"07da80ea-18dd-4e57-909b-bd60c7a387bb": {"id": "07da80ea-18dd-4e57-909b-bd60c7a387bb", "collectionId
+  [payload] (244b) {"CollectionV2": {"queries": {"[\"FileCmsCollection\",\"collectionV2\",[],[\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"]]": {"initial": {"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205": {"id": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205"}}}}, "computations": {}}}
+  [payload] (3167b) {"CollectionItemV2": {"queries": {"[\"CollectionV2\",\"items\",[],[\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"]]": {"initial": {"96c7afe6-3530-45d0-b3fd-016c23b2444f": {"id": "96c7afe6-3530-45d0-b3fd-016c23b2444f", "stableId": "f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c386
+  [payload] (32881b) {"CollectionItemField": {"queries": {"[\"CollectionItemV2\",\"allFields\",[],[\"4aa78b00-1cc3-4e50-a8fc-d1a9e29392aa\"]]": {"initial": {"f8db8c49-3161-491b-b7f1-a0b8ddb2bbf3": {"id": "f8db8c49-3161-491b-b7f1-a0b8ddb2bbf3", "value": "how-to-build-a-climate-read
+  [payload] (22709b) {"CollectionItemField": {"queries": {"[\"CollectionItemV2\",\"allFields\",[],[\"f2de917e-1b07-4b7a-9231-78760712d8ec\"]]": {"initial": {"c0290109-b5bc-418b-a8cc-63e4a73fa2eb": {"id": "c0290109-b5bc-418b-a8cc-63e4a73fa2eb", "value": "{\"image\":\"006b0664a36018
+  [payload] (12315b) {"CollectionFieldSchema": {"queries": {"[\"CollectionItemField\",\"fieldSchema\",[],[\"f27b44f9-d6d9-497a-9054-dff79a1dd661\"]]": {"initial": {"f27b44f9-d6d9-497a-9054-dff79a1dd661": {"id": "f27b44f9-d6d9-497a-9054-dff79a1dd661", "stableId": "ad9ef6c8-8d94-40e
+  [payload] (1044b) {"CollectionFieldSchema": {"queries": {"[\"CollectionItemField\",\"fieldSchema\",[],[\"1d696c1b-d27f-4f2e-bf4d-7e1b7d793a34\"]]": {"initial": {"1d696c1b-d27f-4f2e-bf4d-7e1b7d793a34": {"id": "1d696c1b-d27f-4f2e-bf4d-7e1b7d793a34", "stableId": "88f20cec-9c1c-472
+  [payload] (552b) {"CollectionFieldSchema": {"queries": {"[\"CollectionItemField\",\"fieldSchema\",[],[\"e5545270-a872-4dbf-95e0-36fbb2c1a79f\"]]": {"initial": {"e5545270-a872-4dbf-95e0-36fbb2c1a79f": {"id": "e5545270-a872-4dbf-95e0-36fbb2c1a79f", "stableId": "b5582fba-71f0-4ac
+  [LOADED] ListItemsView
+
+===== 1_coll_btrue: {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205' AND '1'='1", "fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [FAIL] {"errorCode": "argument-parse-validation-failure", "error": "View 'ListItemsView': argument error: 'collectionId' 'expected string representation of uuid, got string from \"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205' AND '1'='1\"'"}
+
+===== 2_coll_bfalse: {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205' AND '1'='2", "fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [FAIL] {"errorCode": "argument-parse-validation-failure", "error": "View 'ListItemsView': argument error: 'collectionId' 'expected string representation of uuid, got string from \"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205' AND '1'='2\"'"}
+
+===== 3_coll_comment: {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205'-- ", "fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [FAIL] {"errorCode": "argument-parse-validation-failure", "error": "View 'ListItemsView': argument error: 'collectionId' 'expected string representation of uuid, got string from \"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205'-- \"'"}
+
+===== 4_coll_quote: {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205'", "fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [FAIL] {"errorCode": "argument-parse-validation-failure", "error": "View 'ListItemsView': argument error: 'collectionId' 'expected string representation of uuid, got string from \"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205'\"'"}
+
+===== 5_fkey_btrue: {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "fileKey": "RuEdaohBLXN48WdkzS66BY' AND '1'='1"} =====
+  [payload] (197b) {"FileCmsCollection": {"queries": {"[\"root\",\"oneFileCmsCollection\",[\"RuEdaohBLXN48WdkzS66BY' AND '1'='1\",\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListItemsView
+
+===== 6_fkey_quote: {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "fileKey": "RuEdaohBLXN48WdkzS66BY'"} =====
+  [payload] (186b) {"FileCmsCollection": {"queries": {"[\"root\",\"oneFileCmsCollection\",[\"RuEdaohBLXN48WdkzS66BY'\",\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListItemsView
+
+===== 7_coll_other: {"collectionId": "9d0637c1-4853-4ff1-802c-531e8766f4d4", "fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [payload] (364b) {"FileCmsCollection": {"queries": {"[\"root\",\"oneFileCmsCollection\",[\"RuEdaohBLXN48WdkzS66BY\",\"9d0637c1-4853-4ff1-802c-531e8766f4d4\"],[]]": {"initial": {"24214d48-d634-4642-9e3f-b0bd9e15f751": {"id": "24214d48-d634-4642-9e3f-b0bd9e15f751", "collectionId
+  [payload] (244b) {"CollectionV2": {"queries": {"[\"FileCmsCollection\",\"collectionV2\",[],[\"9d0637c1-4853-4ff1-802c-531e8766f4d4\"]]": {"initial": {"9d0637c1-4853-4ff1-802c-531e8766f4d4": {"id": "9d0637c1-4853-4ff1-802c-531e8766f4d4"}}}}, "computations": {}}}
+  [payload] (1658b) {"CollectionItemV2": {"queries": {"[\"CollectionV2\",\"items\",[],[\"9d0637c1-4853-4ff1-802c-531e8766f4d4\"]]": {"initial": {"5d43a255-acf2-4fcb-8b3d-bad3109d5117": {"id": "5d43a255-acf2-4fcb-8b3d-bad3109d5117", "stableId": "173f1543-447d-42fa-84c4-a6dd54aa71b
+  [payload] (28412b) {"CollectionItemField": {"queries": {"[\"CollectionItemV2\",\"allFields\",[],[\"c7f8f78a-9354-4b65-ab9e-e8c26d8f99b1\"]]": {"initial": {"52e9959e-130c-4388-bc46-4afb569f4761": {"id": "52e9959e-130c-4388-bc46-4afb569f4761", "value": "{\"root\":{\"children\":[{\
+  [payload] (1290b) {"CollectionFieldSchema": {"queries": {"[\"CollectionItemField\",\"fieldSchema\",[],[\"3d9476e4-bb7d-4209-852c-65938167b559\"]]": {"initial": {"3d9476e4-bb7d-4209-852c-65938167b559": {"id": "3d9476e4-bb7d-4209-852c-65938167b559", "stableId": "7baeaf2e-69ed-46a
+  [payload] (306b) {"CollectionFieldSchema": {"queries": {"[\"CollectionItemField\",\"fieldSchema\",[],[\"792b00ac-b094-49cd-89e7-8a7e2eff69e9\"]]": {"initial": {"792b00ac-b094-49cd-89e7-8a7e2eff69e9": {"id": "792b00ac-b094-49cd-89e7-8a7e2eff69e9", "stableId": "a1ce99e1-7d1f-42a
+  [LOADED] ListItemsView
+
+===== 8_coll_null: {"collectionId": null, "fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [FAIL] {"errorCode": "argument-parse-validation-failure", "error": "View 'ListItemsView': argument error: 'collectionId' 'must not be null'"}
+
+===== 9_coll_array: {"collectionId": ["ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205"], "fileKey": "RuEdaohBLXN48WdkzS66BY"} =====
+  [FAIL] {"errorCode": "argument-parse-validation-failure", "error": "View 'ListItemsView': argument error: 'collectionId' 'expected string representation of uuid, got object from [\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"]'"}
+
+DONE

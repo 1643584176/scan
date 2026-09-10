@@ -1,0 +1,1630 @@
+{
+ "/api/active_file_users": [
+  "figma_app-main.js"
+ ],
+ "/api/activity_logs": [
+  "figma_app-main.js"
+ ],
+ "/api/activity_logs/${r.key}": [
+  "figma_app-main.js"
+ ],
+ "/api/activity_logs/export": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/activity_logs/last_edit/${e.orgUserId}": [
+  "figma_app-main.js"
+ ],
+ "/api/activity_logs/recent/${e.orgUserId}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/check_redact_figmascope_file/${n}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/check_redact_figmascope_file/${r}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/check_redact_figmascope_journal/${t}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/checkpoint_diffs/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/checkpoints/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/figmascope_checkpoint_diffs/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/figmascope_checkpoints/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/files/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/multiplayer_journal/${e.fileKey}/${e.endSequenceNumber}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/multiplayer_journals/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/start_redact_figmascope_file/${t}/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/start_redact_figmascope_journal/${e.fileKey}/${e.endSequenceNumber}": [
+  "figma_app-main.js"
+ ],
+ "/api/admin/tax/validate_vat": [
+  "figma_app-main.js"
+ ],
+ "/api/arkose/on_for_user": [
+  "auth-61211038b210d6ec.min.js"
+ ],
+ "/api/asset_transfer/${e.id}": [
+  "0c62c2fd-d032e3933f62f517.min.js",
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/asset_transfer/${e.id}/approve": [
+  "0c62c2fd-d032e3933f62f517.min.js",
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/asset_transfer/${e.selectedAssetTransferRequest}": [
+  "0c62c2fd-d032e3933f62f517.min.js",
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/asset_transfer/create_request": [
+  "1643-8a1edcf3060f125a.min.js"
+ ],
+ "/api/asset_transfer/org_team_transfers/${e.orgId}": [
+  "0c62c2fd-d032e3933f62f517.min.js",
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/assistant/beta_support_requests": [
+  "9300-41a18cb0f8ba922b.min.js"
+ ],
+ "/api/billing/notification_settings": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/bug_reports": [
+  "figma_app-main.js"
+ ],
+ "/api/bulk_favorite_resources_v2": [
+  "figma_app-main.js"
+ ],
+ "/api/buzz_approvals/complete_v2": [
+  "figma_app-main.js"
+ ],
+ "/api/buzz_approvals/create": [
+  "figma_app-main.js"
+ ],
+ "/api/buzz_approvals/withdraw": [
+  "figma_app-main.js"
+ ],
+ "/api/checkout_session/pro_upgrade/${e.checkoutSessionId}/approve": [
+  "c5e2cae0-3f7c89124b4f1b73.min.js"
+ ],
+ "/api/checkout_session/pro_upgrade/${e.checkoutSessionId}/fulfill": [
+  "c5e2cae0-3f7c89124b4f1b73.min.js"
+ ],
+ "/api/checkout_session/pro_upgrade/${e.checkoutSessionId}/update_items": [
+  "c5e2cae0-3f7c89124b4f1b73.min.js"
+ ],
+ "/api/checkout_session/pro_upgrade/${e.checkoutSessionId}/update_tax": [
+  "c5e2cae0-3f7c89124b4f1b73.min.js"
+ ],
+ "/api/checkout_session/pro_upgrade/create": [
+  "c5e2cae0-3f7c89124b4f1b73.min.js"
+ ],
+ "/api/code_connect/bulk_map": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/code_snippet": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/generate_template": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/libraries/${e.libraryKey}/repositories": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/libraries/${e.libraryKey}/repositories/${e.repositoryId}": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/libraries/${e.libraryKey}/repositories/${e.repositoryId}/directories": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/libraries/${e.libraryKey}/source_files": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/libraries/${e.libraryKey}/source_files/file_details": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/libraries/${e}/template_generations/${t}/feedback": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/libraries/repositories": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/library/${e.libraryKey}/status": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/library/${t}/published_components/all": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/library/in_context/published_components": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/library/in_context/published_components/all": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/library/in_context/published_components/status": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/map": [
+  "figma_app-main.js"
+ ],
+ "/api/code_connect/user_rules": [
+  "figma_app-main.js"
+ ],
+ "/api/collections/${e.databaseId}": [
+  "figma_app-main.js"
+ ],
+ "/api/collections/${e.databaseId}/export": [
+  "figma_app-main.js"
+ ],
+ "/api/collections/${e.databaseId}/field_schemas": [
+  "figma_app-main.js"
+ ],
+ "/api/collections/${e.databaseId}/field_schemas/${t.databaseId}": [
+  "figma_app-main.js"
+ ],
+ "/api/collections/${e.databaseId}/items": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/collections/${e.databaseId}/items/${t.databaseId}": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/collections/${e.databaseId}/items/import": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/collections/${e}/items/${r.databaseId}/fields/${n.databaseId}": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/collections/${r}/items/${t.databaseId}/fields/${e.databaseId}/validate": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/collections/validate_cms_csv": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/color_palettes": [
+  "figma_app-main.js"
+ ],
+ "/api/color_palettes/${e.uuid}": [
+  "figma_app-main.js"
+ ],
+ "/api/color_palettes/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/community/buyer/${d.id}/refund": [
+  "figma_app-main.js"
+ ],
+ "/api/community/cms/category_page/${e}": [
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/community/seller/onboard": [
+  "7435-ce1dc6726292bd56.min.js"
+ ],
+ "/api/community/seller/stripe_dashboard": [
+  "7435-ce1dc6726292bd56.min.js"
+ ],
+ "/api/community/weave_workflows/${e.weaveWorkflowId}/unpublish": [
+  "figma_app-main.js"
+ ],
+ "/api/community_comments": [
+  "figma_app-main.js"
+ ],
+ "/api/community_comments/${a}": [
+  "figma_app-main.js"
+ ],
+ "/api/community_comments/${a}/report": [
+  "figma_app-main.js"
+ ],
+ "/api/community_comments/${n}": [
+  "figma_app-main.js"
+ ],
+ "/api/community_publishers/accept": [
+  "9668-5317375f131d42d8.min.js"
+ ],
+ "/api/community_publishers/remove": [
+  "9668-5317375f131d42d8.min.js"
+ ],
+ "/api/component_log_data": [
+  "figma_app-main.js"
+ ],
+ "/api/curator/file_browser_banner_configs": [
+  "5911-80d3c1dad6a7a16f.min.js"
+ ],
+ "/api/design_systems/bundles": [
+  "0c62c2fd-d032e3933f62f517.min.js"
+ ],
+ "/api/design_systems/bundles/${e.bundleId}": [
+  "0c62c2fd-d032e3933f62f517.min.js"
+ ],
+ "/api/design_systems/bundles/${e.bundleId}/editors": [
+  "0c62c2fd-d032e3933f62f517.min.js"
+ ],
+ "/api/design_systems/bundles/${e.bundleId}/sources": [
+  "0c62c2fd-d032e3933f62f517.min.js"
+ ],
+ "/api/design_systems/components_state_groups": [
+  "figma_app-main.js"
+ ],
+ "/api/design_systems/documentation_pages": [
+  "a88a4c5a-f0b14149577c3896.min.js"
+ ],
+ "/api/design_systems/documentation_pages/${e.pageId}": [
+  "a88a4c5a-f0b14149577c3896.min.js"
+ ],
+ "/api/design_systems/published_state_group_versions": [
+  "figma_app-main.js"
+ ],
+ "/api/extension_analytics/v1/org/${e}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/feed_posts/${G}/videos/${e.videoContent.videoFileUuid}/manifest": [
+  "5916-70807f948690bb6a.min.js"
+ ],
+ "/api/feed_posts/${e.postUuid}/mark_viewed": [
+  "5916-70807f948690bb6a.min.js"
+ ],
+ "/api/feed_posts/${e.publicUuid}/mark_viewed": [
+  "5911-80d3c1dad6a7a16f.min.js"
+ ],
+ "/api/feed_posts/${e.publicUuid}/vote": [
+  "5911-80d3c1dad6a7a16f.min.js"
+ ],
+ "/api/feed_posts/post_uuid/${E.publicUuid}": [
+  "1278-451e77ae694436d4.min.js"
+ ],
+ "/api/feed_visited/${e.currentOrgId}": [
+  "5911-80d3c1dad6a7a16f.min.js"
+ ],
+ "/api/figjam/default_collage_items": [
+  "figma_app-main.js"
+ ],
+ "/api/figjam/default_inserts": [
+  "figma_app-main.js"
+ ],
+ "/api/figment-proxy": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/figment-proxy/monitor": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/figment-proxy/user-support": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/file/${a}/comments/${s}": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${a}/voting_sessions/${o}": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${e.fileKey}/canvas_mentions/needs_invite": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${e.fileKey}/canvas_mentions/record_invite": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${e.fileKey}/canvas_mentions/should_add_user_group_to_file": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${e.fileKey}/comments/${e.commentThreadId}": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${i}/collections": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${r.fileKey}/voting_sessions/${t}": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${r}/comments/${t.comment.id}": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${s}/voting_sessions": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${t.key}/file_followers": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/file/${t}/comments/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/file/${t}/comments/${r}": [
+  "figma_app-main.js"
+ ],
+ "/api/file/claim/${e.fileKey}": [
+  "figma_app-main.js"
+ ],
+ "/api/file/mark_diagram_inserted/${e.fileKey}": [
+  "figma_app-main.js"
+ ],
+ "/api/file_diff/v2/checkpoint_diff/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/file_move/suggested": [
+  "6488-b9e83e69aee3c0e0.min.js"
+ ],
+ "/api/files/${c}": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.branchFileKey}/source_file_updated_info": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.file.key}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/ai_credits/plan_user_action_credit_usage": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.fileKey}/audios": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/audios/${e.sha1}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/audios/${e.sha1}/upload": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/can_request_edit": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.fileKey}/figspec/code_repository": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.fileKey}/generate_deck_metadata": [
+  "6db9f521-9198995e1e04a49c.min.js"
+ ],
+ "/api/files/${e.fileKey}/make_local_metadata": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.fileKey}/meta": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/page_thumbnails": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/realtime_token": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/recent_activity": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.fileKey}/reference_id": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/related_links": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/related_links/link_preview": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.fileKey}/videos": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/videos/${e.hexHash}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/videos/${e.sha1}/thumbnails": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/videos/${e.sha1}/upload": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.fileKey}/weave_cover_photo_from_url": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${e.file_key}/published_package": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.file_key}/published_package/${e.id}": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e.openFileKey}/last_interaction": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/${ee}/weave_workflow": [
+  "1745a3d2-6e63fc7d3f6e49dc.min.js"
+ ],
+ "/api/files/${e}/audios/${t}/commit": [
+  "7987-48fc20b1434f1691.min.js"
+ ],
+ "/api/files/${e}/color_palette": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e}/expire_public_link": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e}/figspec/code_repository": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e}/media_exports": [
+  "319-29c92cc68da9fcc1.min.js"
+ ],
+ "/api/files/${e}/media_exports/${t}": [
+  "319-29c92cc68da9fcc1.min.js"
+ ],
+ "/api/files/${e}/related_links": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${e}/thumbnail_guid": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${r.fileKey}/videos/${t}/manifest": [
+  "7379-6917000bee1c36c7.min.js"
+ ],
+ "/api/files/${r}/related_links": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${s}/duplicate_collection": [
+  "940032c6-b1c2c739c723c9e9.min.js"
+ ],
+ "/api/files/${t.fileKey}/prototype/view": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${t.fileKey}/videos/${r}/manifest": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${t.fileKey}/view": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${t.fileKey}/workshop": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${t.file_key}/workshop": [
+  "figma_app-main.js"
+ ],
+ "/api/files/${t}/apply_hub_file_collections": [
+  "figma_app-main.js"
+ ],
+ "/api/files/batch": [
+  "figma_app-main.js"
+ ],
+ "/api/files/create_starter_team_file_role": [
+  "figma_app-main.js"
+ ],
+ "/api/files/hub_file_duplicates": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/files/related_links": [
+  "figma_app-main.js"
+ ],
+ "/api/files/role_request/${e.roleRequestId}/accept": [
+  "figma_app-main.js"
+ ],
+ "/api/files/role_request/${e.roleRequestId}/deny": [
+  "figma_app-main.js"
+ ],
+ "/api/files_batch": [
+  "figma_app-main.js"
+ ],
+ "/api/folder_items/can_move_bulk": [
+  "5109-dcc40b3cbb111891.min.js"
+ ],
+ "/api/folder_items/content_summary": [
+  "5109-dcc40b3cbb111891.min.js"
+ ],
+ "/api/folder_items/move_bulk": [
+  "5109-dcc40b3cbb111891.min.js"
+ ],
+ "/api/folder_items/trash_bulk": [
+  "5109-dcc40b3cbb111891.min.js"
+ ],
+ "/api/folder_join_link/redeem": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders": [
+  "935-431f89677a39072c.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/folders/${e.destFolderId}/can_move_files": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${e.folderId}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${e.folderId}/ancestor_folders": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${e.folderId}/can_move": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${e.folderId}/color": [
+  "figma_app-main.js"
+ ],
+ "/api/folders/${e.folderId}/contributors": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${e.folderId}/duplicate": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${e.folderId}/files": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${e.folderId}/inheritance": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${e}/paginated_files": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/${t.fileKey}/pin": [
+  "figma_app-main.js"
+ ],
+ "/api/folders/${t.folderId}/description": [
+  "figma_app-main.js"
+ ],
+ "/api/folders/${t}/claim": [
+  "5911-80d3c1dad6a7a16f.min.js"
+ ],
+ "/api/folders/move": [
+  "figma_app-main.js"
+ ],
+ "/api/folders/rename": [
+  "935-431f89677a39072c.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/folders/restore/${e.folderId}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/folders/trash/${e.folderId}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/followers/${e}": [
+  "7435-ce1dc6726292bd56.min.js"
+ ],
+ "/api/following/${e}": [
+  "7435-ce1dc6726292bd56.min.js"
+ ],
+ "/api/follows": [
+  "figma_app-main.js"
+ ],
+ "/api/fonts": [
+  "940032c6-b1c2c739c723c9e9.min.js"
+ ],
+ "/api/form_post/org-lead-gen": [
+  "c5e2cae0-3f7c89124b4f1b73.min.js"
+ ],
+ "/api/guidelines/${e}/generate": [
+  "1674-a28b39d42736af05.min.js"
+ ],
+ "/api/guidelines/${e}/latest_guideline": [
+  "1674-a28b39d42736af05.min.js"
+ ],
+ "/api/guidelines/${e}/upload": [
+  "1674-a28b39d42736af05.min.js"
+ ],
+ "/api/hub_files/${t}": [
+  "figma_app-main.js"
+ ],
+ "/api/hub_files/${t}/view": [
+  "figma_app-main.js"
+ ],
+ "/api/hub_files/template/${t.hubFileId}/copy": [
+  "figma_app-main.js"
+ ],
+ "/api/hub_files/v2/${r.id}/copy": [
+  "1491-748d1f965b422f2e.min.js"
+ ],
+ "/api/insights/${e.planId}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/insights/${e.planId}/${e.tableName}/export": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/integrations/github-app/create_pull_request": [
+  "figma_app-main.js"
+ ],
+ "/api/integrations/github-app/figma-make/${e.file_key}/remove_repository_mapping": [
+  "figma_app-main.js"
+ ],
+ "/api/integrations/github-app/install_authorize_redirection_url": [
+  "figma_app-main.js"
+ ],
+ "/api/integrations/github-app/installation/${e.installation_id}": [
+  "figma_app-main.js"
+ ],
+ "/api/integrations/github-app/org_user_repositories": [
+  "figma_app-main.js"
+ ],
+ "/api/integrations/github-app/repository_branches": [
+  "figma_app-main.js"
+ ],
+ "/api/integrations/github-app/setup": [
+  "figma_app-main.js"
+ ],
+ "/api/integrations/github-app/user_access_token": [
+  "figma_app-main.js"
+ ],
+ "/api/integrations/supabase/${p}/connect": [
+  "7456-1a38d2d2beed1ad4.min.js"
+ ],
+ "/api/integrations/supabase/${p}/edge_functions/make-server/deploy": [
+  "7456-1a38d2d2beed1ad4.min.js"
+ ],
+ "/api/integrations/supabase/${p}/existing_projects": [
+  "7456-1a38d2d2beed1ad4.min.js"
+ ],
+ "/api/integrations/supabase/${p}/project/pause": [
+  "7456-1a38d2d2beed1ad4.min.js"
+ ],
+ "/api/integrations/supabase/${p}/project/restore": [
+  "7456-1a38d2d2beed1ad4.min.js"
+ ],
+ "/api/integrations/supabase/${p}/secrets": [
+  "7456-1a38d2d2beed1ad4.min.js"
+ ],
+ "/api/internal/slides/ai/inspect_file": [
+  "2268-ce4bc89dca0387b1.min.js"
+ ],
+ "/api/invites": [
+  "figma_app-main.js"
+ ],
+ "/api/invites/resend": [
+  "figma_app-main.js"
+ ],
+ "/api/ip_check": [
+  "figma_app-main.js"
+ ],
+ "/api/items/${r.databaseId}/fields/${n.databaseId}": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/items/${t.databaseId}/fields/${e.databaseId}/validate": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/libraries/${e.libraryKey}/code_connect/lookup_by_component_name": [
+  "figma_app-main.js"
+ ],
+ "/api/license_group/${e.licenseGroup.id}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/make/${e.fileKey}/apply_resource_checkpoint": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/make/${e}/repos/presign_folder_archive_upload": [
+  "4740-72098fc09d96357b.min.js"
+ ],
+ "/api/make/create_make_library": [
+  "940032c6-b1c2c739c723c9e9.min.js"
+ ],
+ "/api/make/default_make_libraries": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/make/delete_make_library_ds_import": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/make/ds_import_libraries": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/make/make_libraries": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/make/make_libraries_by_ids": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/make/update_make_library": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/mcp/clients": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/clients/${e.id}": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/clients/${t}": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/server/${e.serverId}/oauth/client": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/servers": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/servers/${e.serverId}": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/servers/${e.serverId}/oauth_callback": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/servers/${e.serverId}/publish_scope": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/servers/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/mcp/session_token_exchange": [
+  "figma_app-main.js"
+ ],
+ "/api/ml/export/file_version/${n}": [
+  "1674-a28b39d42736af05.min.js"
+ ],
+ "/api/ml/export/file_version/${o}": [
+  "5613-065a64a7ed9a322e.min.js"
+ ],
+ "/api/ml/export/status/${a}": [
+  "5613-065a64a7ed9a322e.min.js"
+ ],
+ "/api/ml/export/status/${s}": [
+  "1674-a28b39d42736af05.min.js"
+ ],
+ "/api/multiplayer/${e}/copy": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/multiplayer/${i.key}/copy": [
+  "figma_app-main.js"
+ ],
+ "/api/multiplayer/${t.file.key}/copy": [
+  "figma_app-main.js"
+ ],
+ "/api/multiplayer/${t}/copy": [
+  "figma_app-main.js"
+ ],
+ "/api/oauth/apps": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}/delist": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}/images/upload": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}/manage": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}/non_plan_user_count": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}/plan": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}/publish": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}/submit": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/apps/${e}/withdraw": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/cms/oauth_code": [
+  "719-f42fc71b5cdc56d2.min.js",
+  "af221b13-3146c9366d1d9b84.min.js"
+ ],
+ "/api/oauth/token/${e.org.id}/${e.token.client_id}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/org/${e.orgId}/org_saml_config": [
+  "figma_app-main.js"
+ ],
+ "/api/org/${e.org_id}/org_saml_config": [
+  "figma_app-main.js"
+ ],
+ "/api/org/${t.orgId}/delete_org_users": [
+  "figma_app-main.js"
+ ],
+ "/api/org/${t}/deletion_request": [
+  "figma_app-main.js"
+ ],
+ "/api/org_approved_library/${a}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/org_approved_library/${t}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/org_invites": [
+  "figma_app-main.js"
+ ],
+ "/api/org_invites/${r.id}": [
+  "figma_app-main.js"
+ ],
+ "/api/org_join_request": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/org_join_request/${e.selectedOrgJoinRequest}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/org_join_request/${t}/approve": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/org_saml_config": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/org_saml_config/${e.org_saml_config_id}": [
+  "figma_app-main.js"
+ ],
+ "/api/org_saml_config/${e.org_saml_config_id}/oidc_issuer": [
+  "figma_app-main.js"
+ ],
+ "/api/org_saml_config/${t}/scim_api_token": [
+  "figma_app-main.js"
+ ],
+ "/api/org_saml_config_required": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/org_user/${t.orgId}": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs": [
+  "c5e2cae0-3f7c89124b4f1b73.min.js"
+ ],
+ "/api/orgs/${a}": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${e.id}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/orgs/${e.org.id}/export_teams": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/orgs/${e.orgId}/lock_invoice": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${l}/license_groups": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/orgs/${r}": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${r}/billing_data": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${r}/teams/join": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${t.id}": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${t.orgId}/org_users": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${t}": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${t}/export_controls": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${t}/ip_allowlist_ranges": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${t}/resend_email_verifications": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/orgs/${t}/workspaces/buzz_approvals_settings": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${t}/workspaces/export_controls": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${t}/workspaces/web_publishing": [
+  "figma_app-main.js"
+ ],
+ "/api/orgs/${u}/license_groups": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/orgs/${u}/workspaces": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/page_status_options": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/page_status_options/${e}": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/password/forgot": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/password/recover": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/perf_reports": [
+  "figma_app-main.js"
+ ],
+ "/api/pinned_files/${e}": [
+  "0c62c2fd-d032e3933f62f517.min.js"
+ ],
+ "/api/pinned_files/${e}/${t}": [
+  "0c62c2fd-d032e3933f62f517.min.js"
+ ],
+ "/api/plan_promo/${e.promoCode}/redeem": [
+  "4861-6321bdc7792f8ba8.min.js"
+ ],
+ "/api/planless_favorited_resource_plan_id": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planID}/weave_models": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planID}/weave_models/${e.weaveModelID}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planID}/weave_settings": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planId}/access_key": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planId}/access_keys": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planId}/access_keys/${e.planAccessTokenId}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planId}/access_keys/resource_restrictions/validate": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planId}/access_keys/revoke": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planId}/access_keys/rotate": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/plans/${e.planId}/admin_requests": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/admin_requests/counts": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/admin_requests/dashboard_view": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/admin_requests/reject": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/admin_requests/resolve": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/export": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/license_group_active_users": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/license_group_allocations": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/license_group_usage": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/plan_ai_usage_billing_period": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/plan_ai_usage_monthly": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/plan_balance_summary": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/plan_billing_period_usage_summary": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/plan_usage_summary": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/plan_user_balance_summary": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/plan_user_usage_summary": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/ai_credits/request_credits": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/code_connect/generate_property_mappings": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/code_connect/generate_property_mappings/status": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/code_context/code_sources_status": [
+  "752-0e687c6d72cb1ce5.min.js"
+ ],
+ "/api/plans/${e.planId}/mcp_usage": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${e.planId}/scm/connections": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${t}/plan_users/update_permission": [
+  "figma_app-main.js"
+ ],
+ "/api/plans/${t}/web_publishing": [
+  "figma_app-main.js"
+ ],
+ "/api/plugin_preferences/user": [
+  "figma_app-main.js"
+ ],
+ "/api/plugin_runs/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/plugins/${o.id}/publishers/${i}": [
+  "figma_app-main.js"
+ ],
+ "/api/plugins/${t.id}/videos/${e.video_file_uuid}/manifest": [
+  "9668-5317375f131d42d8.min.js"
+ ],
+ "/api/plugins/${t}/roles": [
+  "figma_app-main.js"
+ ],
+ "/api/policy_configs/${e.policyAckConfigId}/acknowledge": [
+  "figma_app-main.js"
+ ],
+ "/api/profile": [
+  "figma_app-main.js"
+ ],
+ "/api/profile/${T}": [
+  "figma_app-main.js"
+ ],
+ "/api/profile/${e.profileId}": [
+  "figma_app-main.js"
+ ],
+ "/api/profile/${n}": [
+  "figma_app-main.js"
+ ],
+ "/api/profile/${r}/block": [
+  "figma_app-main.js"
+ ],
+ "/api/profile/${r}/primary_user": [
+  "figma_app-main.js"
+ ],
+ "/api/profile/${r}/user": [
+  "figma_app-main.js"
+ ],
+ "/api/profile/generate_handle": [
+  "figma_app-main.js"
+ ],
+ "/api/profile/merge": [
+  "figma_app-main.js"
+ ],
+ "/api/recent_prototypes": [
+  "figma_app-main.js"
+ ],
+ "/api/recent_search": [
+  "figma_app-main.js"
+ ],
+ "/api/reference_id/${e.referenceId}/file_key": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/resource/${e.resource.id}/save": [
+  "figma_app-main.js"
+ ],
+ "/api/resource/${e.resourceId}/like": [
+  "figma_app-main.js"
+ ],
+ "/api/resource/${e.resourceId}/save": [
+  "figma_app-main.js"
+ ],
+ "/api/resource_connection/${e}/disconnect": [
+  "1643-8a1edcf3060f125a.min.js"
+ ],
+ "/api/resource_connection_invite": [
+  "1643-8a1edcf3060f125a.min.js"
+ ],
+ "/api/resource_connection_invite/${e}": [
+  "1643-8a1edcf3060f125a.min.js"
+ ],
+ "/api/resource_connection_invite/folder_search": [
+  "1643-8a1edcf3060f125a.min.js"
+ ],
+ "/api/resource_connection_invite/lookup/${e.orgOrTeamType}/${e.orgOrTeamId}": [
+  "1643-8a1edcf3060f125a.min.js"
+ ],
+ "/api/resource_connection_invite/send_create_team_email": [
+  "1643-8a1edcf3060f125a.min.js"
+ ],
+ "/api/resource_saves": [
+  "7435-ce1dc6726292bd56.min.js"
+ ],
+ "/api/resource_scope_settings": [
+  "figma_app-main.js"
+ ],
+ "/api/resource_uses/${e.resourceId}": [
+  "figma_app-main.js"
+ ],
+ "/api/resource_uses/hub_file/${e.hubFileId}": [
+  "figma_app-main.js"
+ ],
+ "/api/resource_uses/template/${e.templateId}": [
+  "figma_app-main.js"
+ ],
+ "/api/resources": [
+  "figma_app-main.js"
+ ],
+ "/api/resources/${e.resourceId}/comments": [
+  "9668-5317375f131d42d8.min.js"
+ ],
+ "/api/resources/${t.resourceId}/comments": [
+  "figma_app-main.js"
+ ],
+ "/api/resources/${t}/${e.contentId}/related_content": [
+  "9668-5317375f131d42d8.min.js"
+ ],
+ "/api/resources/by_content_ids_and_types": [
+  "figma_app-main.js"
+ ],
+ "/api/resources/group_by_team/${e.orgId}": [
+  "figma_app-main.js"
+ ],
+ "/api/resources/home_shelf": [
+  "figma_app-main.js"
+ ],
+ "/api/resources/pinned": [
+  "figma_app-main.js"
+ ],
+ "/api/resources/recommendable_eligibility/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/roles/${t}": [
+  "figma_app-main.js"
+ ],
+ "/api/saml": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/saml/sso_options": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/saml/two_factor": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/saml/validate_code": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/search/code_suggestions": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/search/code_suggestions_bulk": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/send_mobile_download_email": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/session/app_auth": [
+  "935-431f89677a39072c.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/session/app_auth/${e.auth.appAuthId}/grant": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/app_auth/redeem": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/auth": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/available_auth_methods": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/check": [
+  "figma_app-main.js"
+ ],
+ "/api/session/clear_account_sharing_flag": [
+  "figma_app-main.js"
+ ],
+ "/api/session/clear_cont": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/google_auth/signin": [
+  "935-431f89677a39072c.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/session/google_auth/signin_or_signup": [
+  "935-431f89677a39072c.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/session/login": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/logout": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/logout/${e}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/password_encryption_config": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/redeem_magic_code": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/redeem_magic_link": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/request_magic_link": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/sessions": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/sessions/${e}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/sms_recover": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/sso_config": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/state": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/session/sync": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/sgs_debug/operation": [
+  "7456-1a38d2d2beed1ad4.min.js"
+ ],
+ "/api/spell-check-words": [
+  "figma_app-main.js"
+ ],
+ "/api/state_group_log_data": [
+  "figma_app-main.js"
+ ],
+ "/api/statsig/ai_collab_assistant_plan_details": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/statsig/ai_design_assistant_exp_overrides": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/statsig/bootstrap": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/statsig/flag_descriptions": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/statsig/flag_status_for_user": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/statsig/update_overrides": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/storybook/projects/${e.litmusProjectId}/design_connection/${e.designConnectionId}": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/styles": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions-2018-11-08/setup_intent": [
+  "6088-14762a8fd3d70fc1.min.js"
+ ],
+ "/api/subscriptions-2018-11-08/team/${t}": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/${e}/pending_cancellations": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/team/${e.teamId}/hosted_invoice_url": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/team/${e.teamId}/preview_coterm_annual_seats": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/team/${e.teamId}/summary": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/team/${t.id}/vat_gst": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/team/${t}/annual_subscription": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/team/${t}/billing_contact": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/team/${t}/coterm_annual_seats": [
+  "figma_app-main.js"
+ ],
+ "/api/subscriptions/teams/calculate_estimate": [
+  "figma_app-main.js"
+ ],
+ "/api/tagged_file": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/tax/validate_vat": [
+  "figma_app-main.js"
+ ],
+ "/api/team_join_link": [
+  "1e926454-876a86b53c441a71.min.js",
+  "5911-80d3c1dad6a7a16f.min.js"
+ ],
+ "/api/team_join_link/disable": [
+  "7184-9c74e6acffcf8e18.min.js"
+ ],
+ "/api/team_join_link/migration_status": [
+  "1e926454-876a86b53c441a71.min.js",
+  "5911-80d3c1dad6a7a16f.min.js"
+ ],
+ "/api/team_join_link/redeem": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/team_join_link/reset": [
+  "7184-9c74e6acffcf8e18.min.js"
+ ],
+ "/api/team_role_requests": [
+  "935-431f89677a39072c.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/team_role_requests/${t.requestId}": [
+  "figma_app-main.js"
+ ],
+ "/api/team_role_requests/${t.requestId}/approve": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${_}/team_users/request_upgrade": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${e.teamId}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/${e.teamId}/ai_data_sharing": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/${e.teamId}/deletion_file_count": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/${e.teamId}/folders": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/${e.teamId}/has_published_site": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/${e.teamId}/members": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${e.teamId}/num_backfilled_team_user": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/${e.teamId}/subscription_status": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/${e.teamId}/team_admins": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${e.teamId}/team_name": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/${e.teamId}/users/${e.teamMemberId}/last_active": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${e}/default_color_palette": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${n}": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${r}": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${r}/restore": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${t.teamId}": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${t.teamId}/student_team": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${t}/student_team": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/${t}/users": [
+  "figma_app-main.js"
+ ],
+ "/api/teams/create": [
+  "c5e2cae0-3f7c89124b4f1b73.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/teams/deleted/${e.teamId}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/teams/redeem_promo": [
+  "4861-6321bdc7792f8ba8.min.js",
+  "c5e2cae0-3f7c89124b4f1b73.min.js"
+ ],
+ "/api/templates/${t.file_key}/duplicate": [
+  "figma_app-main.js"
+ ],
+ "/api/try/figjam": [
+  "figma_app-main.js"
+ ],
+ "/api/unsplash/${e.fileKey}/editorial": [
+  "4067-0cf2b25d9223afcf.min.js"
+ ],
+ "/api/unsplash/${e.fileKey}/search": [
+  "4067-0cf2b25d9223afcf.min.js"
+ ],
+ "/api/upnode/font": [
+  "figma_app-main.js"
+ ],
+ "/api/upnode/heic_convert": [
+  "2268-ce4bc89dca0387b1.min.js",
+  "940032c6-b1c2c739c723c9e9.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/upnode/image": [
+  "figma_app-main.js"
+ ],
+ "/api/upnode/video": [
+  "figma_app-main.js"
+ ],
+ "/api/user": [
+  "935-431f89677a39072c.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/user/${e.id}/idle_timeout_last_active_at": [
+  "figma_app-main.js"
+ ],
+ "/api/user/${e.userId}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/${e.userId}/deletion_impact": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/${e.userId}/scim_provisioned_status": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/${e.userId}/segments": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/${e.userId}/teams": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/${t}/teams": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/accept_standalone_team_tos": [
+  "5916-70807f948690bb6a.min.js"
+ ],
+ "/api/user/backup_codes": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/dev_tokens": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/email_features": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/help-center": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/state": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user/unverified": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/user_notifications/catfic_optin/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/user_notifications/catfile_optin/${e}": [
+  "figma_app-main.js"
+ ],
+ "/api/user_notifications_bell": [
+  "figma_app-main.js"
+ ],
+ "/api/user_notifications_bell/community/clear": [
+  "figma_app-main.js"
+ ],
+ "/api/user_sidebar_sections": [
+  "figma_app-main.js"
+ ],
+ "/api/user_sidebar_sections/${t.sectionId}": [
+  "figma_app-main.js"
+ ],
+ "/api/user_sidebar_sections/${t.sidebarSectionId}": [
+  "figma_app-main.js"
+ ],
+ "/api/users/batched": [
+  "figma_app-main.js"
+ ],
+ "/api/v2/folders": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/v2/folders/${e.folderId}": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/v2/statsig/bootstrap": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/validate_address": [
+  "6088-14762a8fd3d70fc1.min.js",
+  "figma_app-main.js"
+ ],
+ "/api/validate_currency": [
+  "figma_app-main.js"
+ ],
+ "/api/validation/email/send": [
+  "935-431f89677a39072c.min.js"
+ ],
+ "/api/variable_log_data": [
+  "figma_app-main.js"
+ ],
+ "/api/variable_set_log_data": [
+  "figma_app-main.js"
+ ],
+ "/api/versions/${n}": [
+  "figma_app-main.js"
+ ],
+ "/api/viewer_restricted_draft/${e}/dismiss": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/viewer_restricted_draft/${e}/notify": [
+  "1671-b95ce97580ac1302.min.js"
+ ],
+ "/api/voice/${t}/auth": [
+  "1566-d39814e111b1bf4d.min.js"
+ ],
+ "/api/weave/${e}/edit_lock/approve": [
+  "1745a3d2-6e63fc7d3f6e49dc.min.js"
+ ],
+ "/api/weave/${e}/edit_lock/deny": [
+  "1745a3d2-6e63fc7d3f6e49dc.min.js"
+ ],
+ "/api/weave/${e}/edit_lock/release": [
+  "1745a3d2-6e63fc7d3f6e49dc.min.js"
+ ],
+ "/api/weave/${e}/edit_lock/request": [
+  "1745a3d2-6e63fc7d3f6e49dc.min.js"
+ ],
+ "/api/weave/${e}/presence": [
+  "1745a3d2-6e63fc7d3f6e49dc.min.js"
+ ],
+ "/api/weave/${e}/token": [
+  "1745a3d2-6e63fc7d3f6e49dc.min.js"
+ ],
+ "/api/widgets/${o.id}/publishers/${i}": [
+  "figma_app-main.js"
+ ],
+ "/api/widgets/${t.id}/videos/${e.video_file_uuid}/manifest": [
+  "9668-5317375f131d42d8.min.js"
+ ],
+ "/api/widgets/${t}/roles": [
+  "figma_app-main.js"
+ ],
+ "/api/widgets/batch": [
+  "figma_app-main.js"
+ ],
+ "/api/widgets/v2/versions": [
+  "figma_app-main.js"
+ ],
+ "/api/workspace/${eG}/export_teams": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/workspace/${e}/teams": [
+  "figma_app-main.js"
+ ],
+ "/api/workspace/${n}/teams": [
+  "figma_app-main.js"
+ ],
+ "/api/workspace/${x.id}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/workspace_approved_library/${a}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ],
+ "/api/workspace_approved_library/${t}": [
+  "469e6e40-f27da0e8f34b0858.min.js"
+ ]
+}

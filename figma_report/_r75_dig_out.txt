@@ -1,0 +1,16 @@
+########## a) j9 sort 枚举 ##########
+[_js\3457-010407853dd784d6.min.js] ER:case n.Dq.TEAM:return s.rR.ALPHABETICAL;case a.j9.INSTALL_COUNT:case a.j9.MEMBER_COUNT:case a.j9.RELEVANCY:case a.j9.POPULARITY:return s.rR.OTHER;default:let t=Error(`Uncaught sort key: ${e}`);return(0,l.$D)(i.e
+[_js\8658-ea1eee99cc95eff6.min.js] E;case y.Lk.CREATED_AT:return f.C0.CREATED_AT;case y.Lk.TOUCHED_AT:return f.C0.TOUCHED_AT;case y.Lk.RELEVANCY:return f.C0.SEARCH_RELEVANCE}})(d.files.sortKey),dir:d.files.sortDesc?f.ue.DESC:f.ue.ASC},updateVisibleIte
+[_js\figma_app-main.js] S},defaultModelType:m.uH.HUB_FILES}};var N=((c=N||{}).POPULARITY="popularity",c.RECENCY="recency",c.RELEVANCY="relevancy",c.NAME="name",c.AUTHOR_NAME="author_name",c.INSTALL_COUNT="install_count",c.MEMBER_COUNT="member_c
+
+########## b) toAPIParameters 实现 ##########
+
+########## c) metadataQuery 序列化 (JD fl) ##########
+
+########## d) items API body 形态 (4740) ##########
+
+########## e) BrowseResourceTypes 枚举 ##########
+### [_js\figma_app-main.js]
+(t.subsetOf??{}).every(([t,r])=>{let n=e?.[t];return!n||n.every(e=>r.includes(e))})}r.d(t,{W:()=>i,t:()=>a})},945311(e,t,r){var n,i;r.d(t,{LA:()=>n,RK:()=>o,Zd:()=>l,gI:()=>s,tR:()=>a}),(i=n||(n={})).BrowseResourceTypes={FILES:"files",PLUGINS:"plugins",WIDGETS:"widgets",INTEGRATIONS:"integrations",MIXED:"mixed",SKILLS:"skills",SHADERS:"shaders"},i.UniqueResourceTypes=Object.keys(i.BrowseResourceTypes).filter(e=>"MIXED"!==e).map(e=>i.BrowseResourceTypes[e]),i.SearchResourceTypes={...i.BrowseResourceTypes,PROFILES:"profiles"};let a={FILES:n.BrowseResourceTypes.FILES,PLUGINS:n.BrowseResourceTypes.PLUGINS,WIDGETS:n.BrowseResourceTypes.WIDGETS,INTEGRATIONS:n.BrowseResourceTypes.INTEGRATIONS,SKILLS:n.BrowseResourceTypes.SKILLS,SHADERS:n.BrowseResourceTypes.SHADERS},o={FILES:n.SearchResourceTypes.FILES,PLUGINS:n.SearchResourceTypes.PLUGINS,WIDGETS:n.SearchResourceTypes.WIDGETS,INTEGRATIONS:n.SearchResourceTypes.INTEGRATIONS,PROFILES:n.SearchResourceTypes.PROFILES,SKILLS:n.SearchResourceTypes.SKILLS,SHADERS:n.SearchResourceTypes.SHADERS},s={FILES:n.BrowseResourceTypes.FILES,PLUGINS:n.BrowseR
+---
+DONE

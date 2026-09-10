@@ -1,0 +1,111 @@
+===== A. teams/{t}/users 列表基线 + 参数面 =====
+[A0_base] 404 len=830453 1608ms [SPA404] (基线)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A1_limit5] 404 len=830453 1341ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A2_pagesize] 404 len=830453 884ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A3_offset1] 404 len=830453 1161ms [SPA404] (I4 分页位)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A4_offset_q] 404 len=830453 1109ms [SPA404] (offset 引号)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A5_offset_ar] 404 len=830453 986ms [SPA404] (offset 算式)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A6_search] 404 len=830453 1112ms [SPA404] (V5 LIKE 位)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A7_q] 404 len=830453 910ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A8_query] 404 len=830453 803ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A9_sort] 404 len=830453 938ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+
+===== B. 未测读端点到达性 =====
+[B1_palette] 404 len=830453 1056ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[B2_extan] 403 len=   197 354ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[B3_segments] 200 len=   171 344ms 
+      {"error":false,"status":200,"meta":{"segments":{"marketing_ai_credit_overlay":{"segment_name":"marketing_ai_credit_overlay","plan_id":"1666382706663462213"}}},"i18n":null}
+[B4_user_teams] 200 len=  1380 600ms 
+[B5_ws_teams] 404 len=830473 849ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[B6_org_users] 404 len=830453 830ms [SPA404] (企业)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[B7_lic_groups] 403 len=   281 356ms 
+      {"error":true,"status":403,"message":"You don't have permission to do that. Contact your organization administrator.","i18n":{"id":"error.no_permission_contact_org_admin","fallback_text":"You don't have permission to do that. Contact your organization administrator.","params":{}}}
+
+===== C. files_batch 空探(破坏性端点:仅空/类型) =====
+[C1_del_empty] 400 len=    84 327ms (空对象)
+      {"error":true,"status":400,"message":"Missing required parameter files","i18n":null}
+[C2_del_arr] 400 len=    84 376ms (空数组=无操作)
+      {"error":true,"status":400,"message":"Missing required parameter files","i18n":null}
+[C3_del_str] 400 len=    96 319ms (类型探)
+      {"error":true,"status":400,"message":"Request body should contain a list of files.","i18n":null}
+[C4_del_num] 400 len=    96 421ms (类型探)
+      {"error":true,"status":400,"message":"Request body should contain a list of files.","i18n":null}
+
+===== D. bulk_favorite_resources_v2 空探(写端点:仅空/无效 ID) =====
+[D1_put_empty] 400 len=   177 328ms (空对象)
+      {"error":true,"status":400,"message":"No resources provided","i18n":{"id":"favorited_resources.error.no_resources_provided","fallback_text":"No resources provided","params":{}}}
+[D2_put_arr] 400 len=   177 368ms (空数组)
+      {"error":true,"status":400,"message":"No resources provided","i18n":{"id":"favorited_resources.error.no_resources_provided","fallback_text":"No resources provided","params":{}}}
+[D3_put_badid] 404 len=   123 462ms (无效ID无副作用)
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[D4_put_badq] 404 len=   123 338ms (引号类型探)
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[D5_del_badid] 404 len=   123 345ms 
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+DONE

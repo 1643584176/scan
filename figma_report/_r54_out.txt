@@ -1,0 +1,15 @@
+goto https://www.figma.com/file/RuEdaohBLXN48WdkzS66BY
+final url: https://www.figma.com/file/RuEdaohBLXN48WdkzS66BY
+sent=146 recv=241 dumped
+
+===== token stats =====
+H1CMS-CANARY: sent=0 recv=0
+8248aaab: sent=0 recv=0
+73deee99: sent=0 recv=2
+H1CMS site test: sent=0 recv=1
+ec2817c9: sent=3 recv=18
+ed505d4b: sent=1 recv=8
+21f8846b: sent=1 recv=8
+
+===== canary occurrences in recv =====
+DONE

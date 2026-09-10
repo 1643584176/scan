@@ -1,0 +1,23 @@
+===== 1) zestoro.figma.site =====
+status 200 len 1599
+keys found: set()
+  asset: https://zestoro.figma.site/assets/favicon-DZH4mzYT.png
+  asset: https://zestoro.figma.site/assets/index-CqE3lc6a.js
+  asset: https://zestoro.figma.site/assets/index-Ce5ihTZG.css
+  asset: /__figma__/make_community_banner_v1.js
+
+===== 2) hub_files API probes =====
+[hub_files] 404 len=830217
+    <!DOCTYPE html> <html lang="en" data-product-locale="en">   <head>       <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=166
+[hub_files_v2] 404 len=9
+    Not Found
+[hub_files_template] 404 len=9
+    Not Found
+[hub_files_meta] 404 len=9
+    Not Found
+
+===== 3) community page =====
+status 200 len 729508
+keys: {'bv2nMIdFf4u3dESGail4sm'}
+  link: https:&#47;&#47;www.figma.com&#47;api&#47;hub_files&#47;1677299927798351554&#47;versions?include_version_history=false
+DONE

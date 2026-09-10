@@ -1,0 +1,214 @@
+>>> skip big _js/figma_app-main.js for some scans, len=7574220
+[_js/figma_app-main.js] url collections GET-ish: ...ection({id:e,name:t,description:r,fields:n,fileKey:i}){return this.CollectionResponseSchemaValidator.validate(async({xr:a})=>await a.post(a.url`/api/file/${i}/collections`,{collection_id:e,name:t,description:r??"",fields:(n??[]).map(e=>({id:e.id,name:e.name,field_type:e.fieldType,position:e.position,required:e.required,properties:e.proper...
+
+[_js/figma_app-main.js] url collections GET-ish: ...ole??null}))}))}renameCollection({collection:e,name:t}){return this.CollectionResponseSchemaValidator.validate(async({xr:r})=>await r.put(r.url`/api/collections/${e.databaseId}`,{name:t}))}async deleteCollection({collection:e}){await a.Ay.del(a.Ay.url`/api/collections/${e.databaseId}`)}createFieldSchema({collection:e,attributes:t}){return...
+
+[_js/figma_app-main.js] url collections GET-ish: ...te(async({xr:r})=>await r.put(r.url`/api/collections/${e.databaseId}`,{name:t}))}async deleteCollection({collection:e}){await a.Ay.del(a.Ay.url`/api/collections/${e.databaseId}`)}createFieldSchema({collection:e,attributes:t}){return this.FieldSchemaResponseValidator.validate(async({xr:r})=>await r.post(r.url`/api/collections/${e.databaseI...
+
+[_js/figma_app-main.js] url collections GET-ish: ...atabaseId}`)}createFieldSchema({collection:e,attributes:t}){return this.FieldSchemaResponseValidator.validate(async({xr:r})=>await r.post(r.url`/api/collections/${e.databaseId}/field_schemas`,{name:t.name,field_type:t.fieldType,position:t.position,required:t.required,properties:t.properties??{},role:t.role??null}))}updateFieldSchema({coll...
+
+[_js/figma_app-main.js] url collections GET-ish: ...ateFieldSchema({collection:e,fieldSchema:t,newAttributes:r}){return this.FieldSchemaResponseValidator.validate(async({xr:n})=>await n.put(n.url`/api/collections/${e.databaseId}/field_schemas/${t.databaseId}`,{name:r.name,field_type:r.fieldType,position:r.position,required:r.required,properties:r.properties}))}async deleteFieldSchema({coll...
+
+[_js/figma_app-main.js] url collections GET-ish: ...osition:r.position,required:r.required,properties:r.properties}))}async deleteFieldSchema({collection:e,fieldSchema:t}){await a.Ay.del(a.Ay.url`/api/collections/${e.databaseId}/field_schemas/${t.databaseId}`)}async exportAsCsv({collection:e}){let t=await (0,a.GD)(a.Ay.url`/api/collections/${e.databaseId}/export`,null,{responseType:"blob"}...
+
+[_js/figma_app-main.js] hub_file+collection: ...ponseType:"blob"}),r=(0,n._C)(e.name)||"collection",i=new Date().toISOString().split("T")[0],o=`${r} ${i}.csv`;(0,s.W)(t.data,o)}async applyHubFileCollections({sourceHubFileId:e,destinationFileKey:t}){if(null==t)return void(0,l.AK)("Unable to copy HubFile CMS collections to file. File key is missing.",{sourceHubFileId:e,destinationFileKey...
+
+[_js/figma_app-main.js] hub_file+collection: ...inationFileKey:t});try{await a.Ay.post(a.Ay.url`/api/files/${t}/apply_hub_file_collections`,{source_hub_file_id:e})}catch(e){(0,l.AK)("applyHubFileCollections mutation failed",{error:e})}}}},758227(e,t,r){r.d(t,{d:()=>o});var n=r(705929),i=r(372884),a=r(497296);let o=new class{constructor(){this.DefaultInsertsSchemaValidator=(0,a.YV)("Def...
+
+[_js/figma_app-main.js] export fn: ...i.O.deleteCollection,{CollectionV2:{[t]:null}},u.A2.deleteCollection({collection:e}).then(()=>o.sM))}function E({collection:e}){return u.A2.exportAsCsv({collection:e})}},380070(e,t,r){r.d(t,{IR:()=>h,Sp:()=>m,Vp:()=>f,dx:()=>_,gg:()=>E,j:()=>b,w1:()=>y,wx:()=>g});var n=r(263439),i=r(556662),a=r(206535),o=r(25054),s=r(397087),l=r(803626),d...
+
+[_js/figma_app-main.js] export fn: ...eteFieldSchema({collection:e,fieldSchema:t}){await a.Ay.del(a.Ay.url`/api/collections/${e.databaseId}/field_schemas/${t.databaseId}`)}async exportAsCsv({collection:e}){let t=await (0,a.GD)(a.Ay.url`/api/collections/${e.databaseId}/export`,null,{responseType:"blob"}),r=(0,n._C)(e.name)||"collection",i=new Date().toISOString().split("T")[0]...
+
+----- scan2 _js/figma_app-main.js
+[_js/4740-72098fc09d96357b.min.js] url collections GET-ish: ...n:e,itemId:t,fields:n,lgOptimisticMutationUuid:i}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:r})=>await r.post(r.url`/api/collections/${e.databaseId}/items`,{item_id:t,fields:n?.map(e=>({id:e.fieldId,field_schema_id:e.fieldSchema.databaseId,value:e.value,assets_for_publish:e.assetsForPublish,job_status:e.jobStat...
+
+[_js/4740-72098fc09d96357b.min.js] url collections GET-ish: ...mutation_uuid:i}))}importItems({collection:e,items:t}){return this.BulkImportResponseSchemaValidator.validate(async({xr:n})=>await n.post(n.url`/api/collections/${e.databaseId}/items/import`,{items:(t??[]).map(e=>({fields:e.fields.map(e=>({field_schema_id:e.fieldSchemaId,value:e.value}))}))}))}updateItem({collection:e,item:t,updatedItemAt...
+
+[_js/4740-72098fc09d96357b.min.js] url collections GET-ish: ...Item({collection:e,item:t,updatedItemAttributes:n}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:i})=>await i.put(i.url`/api/collections/${e.databaseId}/items/${t.databaseId}`,{index:n.position,status:n.status}))}updateSingleItemData({collectionId:e,fieldId:t,fieldSchema:n,item:r,value:a,assetsForPublish:l,jobStatu...
+
+[_js/4740-72098fc09d96357b.min.js] url collections GET-ish: ...etFeatureGate("cms_require_collection_id_when_editing_fields"),m=d.url`/api/items/${r.databaseId}/fields/${n.databaseId}`;return p&&(e?(m=d.url`/api/collections/${e}/items/${r.databaseId}/fields/${n.databaseId}`,u.collection_id=e,u.field_schema_id=n.databaseId,u.item_id=r.databaseId):(0,s.AK)("Collection ID is required when editing fields...
+
+[_js/4740-72098fc09d96357b.min.js] url collections GET-ish: ...wait d.put(m,u)})}deleteItem({collection:e,item:t}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:n})=>await n.del(n.url`/api/collections/${e.databaseId}/items/${t.databaseId}`))}validateItemData({fieldSchema:e,item:t,value:n,collectionId:r}){return this.ItemValidateResponseSchemaValidator.validate(async({xr:a})=>{l...
+
+[_js/4740-72098fc09d96357b.min.js] url collections GET-ish: ...te("cms_require_collection_id_when_validating_fields"),o=a.url`/api/items/${t.databaseId}/fields/${e.databaseId}/validate`;return l&&(r?o=a.url`/api/collections/${r}/items/${t.databaseId}/fields/${e.databaseId}/validate`:(0,s.AK)("Collection ID is required when validating fields",{itemId:t.databaseId,fieldSchemaId:e.databaseId})),await a....
+
+[_js/4740-72098fc09d96357b.min.js] export fn: ...value:n})})}validateCsv({fileKey:e,itemsData:t}){return this.CsvValidationResponseValidator.validate(async({xr:n})=>await n.post(n.url`/api/collections/validate_cms_csv`,{file_key:e,items_data:t.map(e=>({fields:e.fields.map(e=>({field_schema_id:e.fieldSchemaId,value:e.value}))}))}))}}},112760(e,t,n){n.d(t,{r:()=>r});var i=n(295502);let r=...
+
+----- scan2 _js/4740-72098fc09d96357b.min.js
+----- scan2 _js\048e062c-e2c3a51332730498.min.js
+----- scan2 _js\0c62c2fd-d032e3933f62f517.min.js
+----- scan2 _js\1031-1aee87a712244e8b.min.js
+----- scan2 _js\1095-54554ff490dab191.min.js
+----- scan2 _js\1150-89afafbbf55956a6.min.js
+----- scan2 _js\1197-2188eebc95d60847.min.js
+----- scan2 _js\1272-39fc73641ce2f8dd.min.js
+----- scan2 _js\1278-451e77ae694436d4.min.js
+----- scan2 _js\1355-9f016da74107ea5f.min.js
+----- scan2 _js\1491-748d1f965b422f2e.min.js
+----- scan2 _js\1566-d39814e111b1bf4d.min.js
+----- scan2 _js\161-579ad47f290edb3d.min.js
+----- scan2 _js\1643-8a1edcf3060f125a.min.js
+----- scan2 _js\1663-15e770001e95a5f6.min.js
+----- scan2 _js\1671-b95ce97580ac1302.min.js
+----- scan2 _js\1674-a28b39d42736af05.min.js
+----- scan2 _js\1714-7f9126c9fdf6efd1.min.js
+----- scan2 _js\1745a3d2-6e63fc7d3f6e49dc.min.js
+----- scan2 _js\1819-0479ad0a5fe74fd3.min.js
+----- scan2 _js\181e8476-5c3421d3d2c17b7b.min.js
+----- scan2 _js\1913-86169472b2a4d2d6.min.js
+----- scan2 _js\1998-efad5cf9a88f6012.min.js
+----- scan2 _js\1a115cee-c0a9603b7e1370e4.min.js
+----- scan2 _js\1e926454-876a86b53c441a71.min.js
+----- scan2 _js\2050-181d3049e30d34b9.min.js
+----- scan2 _js\2066-3fa71129cc7fb935.min.js
+----- scan2 _js\2073-c3c785053076b2fb.min.js
+----- scan2 _js\2131-6b0fd056b4c9e12e.min.js
+----- scan2 _js\2244-c5af39bb6538a227.min.js
+----- scan2 _js\2268-ce4bc89dca0387b1.min.js
+----- scan2 _js\2537-1fa3aa98a4696aa8.min.js
+----- scan2 _js\2688-74090ce86ecdf35c.min.js
+----- scan2 _js\2782-6bcd377baa18a9dd.min.js
+----- scan2 _js\2901-f6815300341ff458.min.js
+----- scan2 _js\2b17fec9-a4fd16fe70891f25.min.js
+----- scan2 _js\2f291eb1-12d8a7291bf21d97.min.js
+----- scan2 _js\3022-39b57bb9a0503d11.min.js
+----- scan2 _js\319-29c92cc68da9fcc1.min.js
+----- scan2 _js\3333-0886af92a86c7967.min.js
+----- scan2 _js\3457-010407853dd784d6.min.js
+----- scan2 _js\3461-e1ebd104f9d755a9.min.js
+----- scan2 _js\3868-6988b756c636a1a5.min.js
+----- scan2 _js\3908-41dce50a5d86c0f3.min.js
+----- scan2 _js\4018-2a716c6cdd7985ad.min.js
+----- scan2 _js\4067-0cf2b25d9223afcf.min.js
+----- scan2 _js\4227-d699909b39b89d9f.min.js
+----- scan2 _js\4228-cfeee9026166dda2.min.js
+----- scan2 _js\4245-160efeb4a613c7b9.min.js
+----- scan2 _js\4280-de2dc884c1b704e8.min.js
+----- scan2 _js\4631-b364d67ddd281526.min.js
+----- scan2 _js\469e6e40-f27da0e8f34b0858.min.js
+----- scan2 _js\4861-6321bdc7792f8ba8.min.js
+----- scan2 _js\4988-7186c19b4c3a17b2.min.js
+----- scan2 _js\5109-dcc40b3cbb111891.min.js
+----- scan2 _js\5144-943e575837d9cd25.min.js
+----- scan2 _js\5557-4a9f5d8ca3c14987.min.js
+----- scan2 _js\5613-065a64a7ed9a322e.min.js
+----- scan2 _js\572-55415ffb7d3e9f67.min.js
+----- scan2 _js\5911-80d3c1dad6a7a16f.min.js
+----- scan2 _js\5916-70807f948690bb6a.min.js
+----- scan2 _js\6080-ad69e35c7111a84c.min.js
+----- scan2 _js\6088-14762a8fd3d70fc1.min.js
+----- scan2 _js\6145-464599beb09b289c.min.js
+----- scan2 _js\6410-896e87a3e6c35ac3.min.js
+----- scan2 _js\6413-a21ab7ddf3358dbf.min.js
+----- scan2 _js\642-5018680b19204abe.min.js
+----- scan2 _js\6488-b9e83e69aee3c0e0.min.js
+----- scan2 _js\649-1938434e9f36205c.min.js
+----- scan2 _js\6507-6c3374efab5f9baa.min.js
+----- scan2 _js\6546-641b072ec934836c.min.js
+----- scan2 _js\6744-63e108fbd78a5bc4.min.js
+----- scan2 _js\6790-6e0c410f325c0312.min.js
+----- scan2 _js\6958-dbb90408fc72f346.min.js
+----- scan2 _js\6967-de531fdac7cbc794.min.js
+----- scan2 _js\6db9f521-9198995e1e04a49c.min.js
+----- scan2 _js\7184-9c74e6acffcf8e18.min.js
+----- scan2 _js\719-f42fc71b5cdc56d2.min.js
+----- scan2 _js\7279-94370ea95eae6088.min.js
+----- scan2 _js\7379-6917000bee1c36c7.min.js
+----- scan2 _js\7425-0ef2b523c2d3b25a.min.js
+----- scan2 _js\7435-ce1dc6726292bd56.min.js
+----- scan2 _js\7456-1a38d2d2beed1ad4.min.js
+----- scan2 _js\752-0e687c6d72cb1ce5.min.js
+----- scan2 _js\7545-95a7e077c0d99a87.min.js
+----- scan2 _js\7562-5f50a518b49a8a80.min.js
+----- scan2 _js\7676-dd91c533924345a7.min.js
+----- scan2 _js\7747-289b0f13ff307b45.min.js
+----- scan2 _js\7750-d5f3b78645a43130.min.js
+----- scan2 _js\798-c8e8b9e1b561f862.min.js
+----- scan2 _js\7987-48fc20b1434f1691.min.js
+----- scan2 _js\7a72fc59-d0ad1bb1b78928b3.min.js
+----- scan2 _js\8-f3f7d7b8c6e770e7.min.js
+----- scan2 _js\8049-7a9832b7849f38f7.min.js
+----- scan2 _js\8098-f6fa156ccc991cc7.min.js
+----- scan2 _js\8287-44561869f8421545.min.js
+----- scan2 _js\8345-c49ba1766be986db.min.js
+----- scan2 _js\849-490c69b2d8c0ecf2.min.js
+----- scan2 _js\8658-ea1eee99cc95eff6.min.js
+----- scan2 _js\8710-70581ec63cf8317d.min.js
+----- scan2 _js\873233fc-fc0e687fdee7aebd.min.js
+----- scan2 _js\8801-33a17ce443c28be0.min.js
+----- scan2 _js\8856-35df376145d1cfd1.min.js
+----- scan2 _js\8941-ee985cf96a130a59.min.js
+----- scan2 _js\8997-ee55a1b8dde04710.min.js
+----- scan2 _js\9073-ce92507ef69ca3e4.min.js
+----- scan2 _js\9268-0989705e73698dee.min.js
+----- scan2 _js\9300-41a18cb0f8ba922b.min.js
+----- scan2 _js\9348-b0ffce37600b5380.min.js
+----- scan2 _js\935-431f89677a39072c.min.js
+[_js\940032c6-b1c2c739c723c9e9.min.js] hub_file+collection: ...redFrom:"sites-templates-modal",cloneLocalStylesAndVariablesForTemplate:!0,templateInsertionDirection:v.hKj.RIGHT,onSuccess:()=>{NB.A2.applyHubFileCollections({sourceHubFileId:e.content.hub_file.id,destinationFileKey:a}),t(),Os.j.addResourceUse({resourceId:e.id}),s(!1),n(kJ.FP({tab:v.xae.LAYERS})),(0,v7.YQ)({id:eI.Ab})},onFailure:()=>{t()...
+
+----- scan2 _js\940032c6-b1c2c739c723c9e9.min.js
+----- scan2 _js\9439-52421c206d1b9eef.min.js
+----- scan2 _js\9591-0258a7773dc330d7.min.js
+----- scan2 _js\9668-5317375f131d42d8.min.js
+----- scan2 _js\9779-0d3e007932e0878f.min.js
+----- scan2 _js\a88a4c5a-f0b14149577c3896.min.js
+----- scan2 _js\af221b13-3146c9366d1d9b84.min.js
+----- scan2 _js\auth-61211038b210d6ec.min.js
+----- scan2 _js\b2835def-535034a9bcd8200e.min.js
+----- scan2 _js\c5e2cae0-3f7c89124b4f1b73.min.js
+----- scan2 _js\cssbuilder-11ed71357628a2b5.min.js
+>>> skip big _js\devtools_worker-ee32d7199317c69a.min.js for some scans, len=9813573
+----- scan2 _js\devtools_worker-ee32d7199317c69a.min.js
+----- scan2 _js\draftjs_composer-ed0bbe482cd570ec.min.js
+----- scan2 _js\ead0c34b-4d56a45e5ff2009d.min.js
+----- scan2 _js\image_io_worker-18d8a2ec3e24bb6a.min.js
+----- scan2 _js\library_search_worker-9459ac1b7b44a340.min.js
+----- scan2 _js\quill_composer-3a88c4f48ba7dd52.min.js
+----- scan2 _js\runtime~auth-29ad3e317c66e703.min.js
+----- scan2 _js\spell_check_worker-9164f5ea4e77b304.min.js
+----- scan2 _js\svg-2a96876902ce34d4.min.js
+----- scan2 _js\svg-2d73f142e76ca312.min.js
+----- scan2 _js\svg-60fccae3c44add9a.min.js
+----- scan2 _js\svg-73b9a98c5709d285.min.js
+----- scan2 _js\svg-96f5024089fdbd3e.min.js
+----- scan2 _js\svg-e10fd283a713b063.min.js
+----- scan2 _js\svg-e11e85b5d412e154.min.js
+----- scan2 _js\vendor-0ce47bc20af4b2fa.min.js
+----- scan2 _js\vendor-257d20a917bc2c19.min.js
+----- scan2 _js\vendor-3871c33a541abc9e.min.js
+----- scan2 _js\vendor-3e026113f25854ea.min.js
+----- scan2 _js\vendor-41669bf3e90c21e4.min.js
+----- scan2 _js\vendor-4495db367a9b254d.min.js
+----- scan2 _js\vendor-5b31f6d24d7e2900.min.js
+----- scan2 _js\vendor-68120d78aebaddec.min.js
+----- scan2 _js\vendor-94604dddfd2a770b.min.js
+----- scan2 _js\vendor-9f12521bd0881638.min.js
+----- scan2 _js\vendor-a126a9fb3fb820bd.min.js
+----- scan2 _js\vendor-ad96a3f740e1977d.min.js
+----- scan2 _js\vendor-b0ab9c8f3dbc4623.min.js
+----- scan2 _js\vendor-bdbacd39420b6232.min.js
+----- scan2 _js\vendor-c400190c54cccc86.min.js
+----- scan2 _js\vendor-c72f44b6aa8e71e1.min.js
+----- scan2 _js\vendor-ceb698e90f260513.min.js
+----- scan2 _js\vendor-core-ff6ab2ad5ffa3e30.min.js
+----- scan2 _js\vendor-d028e6612cec3ea6.min.js
+----- scan2 _js\vendor-da2c216de4b298cd.min.js
+----- scan2 _js\vendor-ed1f396491c8f547.min.js
+----- scan2 _js\vendor-eebb9dce35c9a366.min.js
+----- scan2 _js\vendor-ef7c6685eb83d86e.min.js
+----- scan2 _js\vendor-f992c1fca55d9167.min.js
+[_js/4740-72098fc09d96357b.min.js] hub_collection_read: ...OptimisticMutationUuid:i}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:r})=>await r.post(r.url`/api/collections/${e.databaseId}/items`,{item_id:t,fields:n?.map(e=>({id:e.fieldId,field_schema_id:e.fieldSchema.databaseId,value:e.value,assets_for_publish:e.assetsForPublish,job_...
+
+[_js/4740-72098fc09d96357b.min.js] hub_collection_read: ...tItems({collection:e,items:t}){return this.BulkImportResponseSchemaValidator.validate(async({xr:n})=>await n.post(n.url`/api/collections/${e.databaseId}/items/import`,{items:(t??[]).map(e=>({fields:e.fields.map(e=>({field_schema_id:e.fieldSchemaId,value:e.value}))}))}))}updateItem({collection:e,item...
+
+[_js/4740-72098fc09d96357b.min.js] hub_collection_read: ...t,updatedItemAttributes:n}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:i})=>await i.put(i.url`/api/collections/${e.databaseId}/items/${t.databaseId}`,{index:n.position,status:n.status}))}updateSingleItemData({collectionId:e,fieldId:t,fieldSchema:n,item:r,value:a,assetsForPu...
+
+[_js/4740-72098fc09d96357b.min.js] hub_collection_read: ...re_collection_id_when_editing_fields"),m=d.url`/api/items/${r.databaseId}/fields/${n.databaseId}`;return p&&(e?(m=d.url`/api/collections/${e}/items/${r.databaseId}/fields/${n.databaseId}`,u.collection_id=e,u.field_schema_id=n.databaseId,u.item_id=r.databaseId):(0,s.AK)("Collection ID is required whe...
+
+[_js/4740-72098fc09d96357b.min.js] hub_collection_read: ...Item({collection:e,item:t}){return this.CollectionItemResponseSchemaValidator.validate(async({xr:n})=>await n.del(n.url`/api/collections/${e.databaseId}/items/${t.databaseId}`))}validateItemData({fieldSchema:e,item:t,value:n,collectionId:r}){return this.ItemValidateResponseSchemaValidator.validate(a...
+
+[_js\940032c6-b1c2c739c723c9e9.min.js] applyHub: ...templates-modal",cloneLocalStylesAndVariablesForTemplate:!0,templateInsertionDirection:v.hKj.RIGHT,onSuccess:()=>{NB.A2.applyHubFileCollections({sourceHubFileId:e.content.hub_file.id,destinationFileKey:a}),t(),Os.j.addResourceUse({resourceId:e.id}),s(!1),n(kJ.FP({tab:v.xae.LAYERS})),(0,v7.YQ)({id:eI...
+
+[_js\940032c6-b1c2c739c723c9e9.min.js] hub_collection_read: ...Key:n}){let s,{Sprig:r}=(0,eS.A)(),i=(0,aB.hC)(),l=(0,f.wA)(),o=(s=(0,ee.tS)(),async e=>{try{await cg.Ay.post(cg.Ay.url`/api/files/${s}/duplicate_collection`,{source_library_key:e})}catch(e){(0,eO.AK)("duplicateCollection mutation failed",{error:e})}}),c=(0,S.Xr)(tm.s0),d=a===e.libraryKey,[u,x]=g.us...
+
+DONE

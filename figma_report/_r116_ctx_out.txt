@@ -1,0 +1,5 @@
+===== content_summary 上下文(全部 _js) =====
+### FILE: _js\5109-dcc40b3cbb111891.min.js  hits=1
+'=>n});var t=o(295502);function a(e,r){let o=[];if(e)for(let r of e)o.push({folder:{id:r}});if(r)for(let e of r)o.push({file:{key:e}});return o}let n={canMoveBulk:e=>t.Ay.post(t.Ay.url`/api/folder_items/can_move_bulk`,e),moveBulk:e=>t.Ay.put(t.Ay.url`/api/folder_items/move_bulk`,e),trashBulk:e=>t.Ay.put(t.Ay.url`/api/folder_items/trash_bulk`,{folder_items:e}),contentSummary:(e,r)=>t.Ay.post(t.Ay.url`/api/folder_items/content_summary`,{folder_items:e,mode:r})}},418231(e,r,o){o.d(r,{Ay:()=>v,Cm:()=>u,MD:()=>p,YO:()=>d});var t=o(263439),a=o(214861),n=o(310009),l=o(701088);if(2036!=o.j)var i=o(864950);var s=o(694560);function c(e){let r=e.canEdit,o=!e.isOrphanedOrgProject,t=e.'
+  ------
+DONE

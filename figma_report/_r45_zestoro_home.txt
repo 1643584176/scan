@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="google-site-verification" content="xuKK3AglifzLRpkV26mcVPUr-9tb3Ju4Tlp0rMfceR8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zestoro | Best Burgers &amp; Fast Food Deals</title>
+    <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
+    <meta name="google-adsense-account" content="ca-pub-1537536792893725">
+    
+    <meta name="description" content="Order delicious burgers, zinger burgers, wraps &amp; fast food deals from ZESTORO. Enjoy fresh, crispy food at unbeatable prices. ðð¥">
+    <link rel="icon" href="https://zestoro.figma.site/assets/favicon-DZH4mzYT.png">
+    <meta property="og:title" content="Zestoro | Best Burgers &amp; Fast Food Deals">
+    <meta property="og:description" content="Order delicious burgers, zinger burgers, wraps &amp; fast food deals from ZESTORO. Enjoy fresh, crispy food at unbeatable prices. ðð¥">
+    <meta property="og:image" content="https://zestoro.figma.site/assets/social-image-D6_P9ozG.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://zestoro.figma.site/assets/social-image-D6_P9ozG.png">
+    <script type="module" crossorigin src="https://zestoro.figma.site/assets/index-CqE3lc6a.js"></script>
+    <link rel="stylesheet" crossorigin href="https://zestoro.figma.site/assets/index-Ce5ihTZG.css">
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    
+  <script defer src="/__figma__/make_community_banner_v1.js"></script></body>
+</html>

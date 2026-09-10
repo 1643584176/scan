@@ -1,0 +1,26 @@
+===== R4 overlong / R5 全角 / R6 反斜杠(sort_column 白名单位) =====
+[SC_R4_ovl] 400 len=81 overlong 前缀
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC_R4_ovl2] 400 len=81 overlong 后缀
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC_R5_u2019] 400 len=81 U+2019 后缀
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC_R6_bs] 400 len=81 反斜杠后缀
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC_R6_bsq] 400 len=81 反斜杠+引号
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+
+===== 同族(file_type 枚举位,对照 design=8761) =====
+[FT_R4_ovl] 200 len=13534 design+overlong
+[FT_R5_u2019] 200 len=13534 design+U+2019
+[FT_R6_bsq] 200 len=13534 design+\+引号
+[FT_R8_mid] 200 len=8761 design 中间 \x00(剥离=design?)
+
+===== 数字/边界(page_size 语义) =====
+[PS_0] 200 len=4306 page_size=0
+[PS_1] 200 len=4306 page_size=1
+[PS_neg5] 200 len=4306 page_size=-5
+[PS_str] 400 len=108 page_size=abc
+      {"error":true,"status":400,"message":"'page_size' must be a valid number, received type String","i18n":null}
+[PS_big] 200 len=13534 page_size=99999999999999999999
+DONE

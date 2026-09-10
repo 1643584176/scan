@@ -1,0 +1,8 @@
+file                             | ANON                                               | A-auth                                            
+--------------------------------------------------------------------------------------------------------------------------------------------
+FILE_A (A design)                | 200 na=view et=design                              | 200 na=view et=design                             
+k7tno (A figmake copy)           | 200 na=view et=figmake                             | 200 na=view et=figmake                            
+RuEdaoh (A site copy)            | 200 na=view et=sites                               | 200 na=view et=sites                              
+M (B make)                       | 403 {"error":true,"status":403,"message":"You don't have permiss | 200 na=plan_view et=figmake                       
+FILE_B (B design)                | 200 na=view et=design                              | 200 na=view et=design                             
+DONE

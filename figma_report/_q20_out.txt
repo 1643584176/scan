@@ -1,0 +1,65 @@
+total results: 15
+
+- Simple Notes
+    hits=['DESC']
+    desc@: ... -&gt; update the signature to your own name by hitting the icon by the current name!</em></p><p><br></p><p>Run into a problem or have a fea...
+
+- Font Awesome Icons
+    hits=['NAME', 'TAGLINE', 'DESC']
+    tagline: Font Awesome Icons: The Icon Font That Just Works
+    desc@: ...<p>Font Awesome Icons is a robust and reliable icon toolkit. Its stability, ease of use, and ext...
+
+- Table of Contents
+    hits=['DESC']
+    desc@: ...e beginning of the name of your pages to display them as an icon</li><li>Click on the file description to change it.</li><li>Click on status...
+
+- Kanban
+    hits=['DESC']
+    desc@: ... on the Add below each section.</li><li>Click on the person icon to move a "To Do" task to the "In Progress" column.</li><li>Click on the pa...
+
+- Carbon Icons
+    hits=['NAME', 'TAGLINE', 'DESC']
+    tagline: Free, high quality, open source icon library with over 2,000 SVG icons for web and app design (IBM)
+    desc@: ...<h2>Carbon Icons is a comprehensive, high-quality, and open-source SVG icon library with ov...
+
+- Kanban Board
+    hits=['DESC']
+    desc@: ...Add the widget to your Figma file.</li><li>Press on the (+) icon to add a new task ticket.</li><li>Enter card name.</li><li>Press add card.<...
+
+- Remix Icon, 3,000+ SVG icons from Remix Icon
+    hits=['NAME', 'TAGLINE', 'DESC']
+    tagline: 3,000+ SVG icons with neutral style, free for both personal and commercial use.
+    desc@: ...<h2>Description</h2><p><strong>Remix Icon</strong> is a comprehensive, high-quality, and open-source SVG icon library...
+
+- Lucide Icons - open-source icon library Lucide Icons
+    hits=['NAME', 'TAGLINE', 'DESC']
+    tagline: Lucide Icons - open-source icon library Lucide Icons
+    desc@: ...<p><strong>Lucide Icons: Open‑Source Icon Library for Design &amp; Development Harmony</strong></p...
+
+- File Storage - Free Unlimited Use
+    hits=['DESC']
+    desc@: ...uire password to download).</li><li data-list="bullet">Show icon (text, image or general), file size and upload date/time.</li><li data-list...
+
+- UML Table Diagram
+    hits=['DESC']
+    desc@: ...br></p><p>Future Extensions</p><ul><li>🗄️&nbsp;Add an emoji icon before header title</li><li>🗄️&nbsp;Copy table markup language quickly</li>...
+
+- Smart Annotation
+    hits=['DESC']
+    desc@: ... use it for notes, documents, or discussions. The creator's icon, name, and date/time are also displayed. Optionally, these can be hidden. T...
+
+- Comment Card
+    hits=['DESC']
+    desc@: ...n complete and incomplete</p><p>- Automatically display the icon name and timestamp of the member who placed the card</p><p>- Support switch...
+
+- Section sorter
+    hits=['DESC']
+    desc@: ... can update everything</li></ul><p><br></p><h2>How does the icon work?</h2><ul><li>If the first symbols (up to 4) in the name of the widget ...
+
+- HTML Launcher
+    hits=['DESC']
+    desc@: ...One-button card</strong> – the board card stays minimal: an icon that launches the tool and an inline-editable title, independent of the fil...
+
+- FigStrology
+    hits=['NONE']
+

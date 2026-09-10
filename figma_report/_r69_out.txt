@@ -1,0 +1,43 @@
+##### W.li_fkey_null [ListItemsView] {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "fileKey": "RuEdaohBLXN48WdkzS66BY\u0000"} #####
+  [ERROR-SQL] not retryable: query "SELECT \"collection_id\", \"created_at\", \"file_key\", \"id\", \"updated_at\" FROM \"cms_collections_to_file_keys\" WHERE (\"file_key\" = $1) AND (\"collection_id\" = $2) LIMIT $3" failed: rpc error: code = InvalidArgument desc = execute: execute query: execute query: planning and executing query: execute physicalv2 plan: all hedged queries failed: closing reader: ERROR: invalid byte sequence for encoding "UTF8": 0x00 (SQLSTATE 22021)
+  (payload logged, first 200b): {"FileCmsCollection": {"queries": {"[\"root\",\"oneFileCmsCollection\",[\"RuEdaohBLXN48WdkzS66BY\\u0000\",\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"],[]]": {"error": {"code": "resolverError", "message":
+
+##### W.li_coll_null [ListItemsView] {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\u0000", "fileKey": "RuEdaohBLXN48WdkzS66BY"} #####
+  [FAIL] {"messageType": "viewSubscriptionFailed", "error": "View 'ListItemsView': argument error: 'collectionId' 'expected string representation of uuid, got string from \"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"ListItemsView\",{\"collectionId\":\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\\u000
+
+##### W.oi_stable_null [OneItemView] {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "fileKey": "RuEdaohBLXN48WdkzS66BY", "itemStableId": "\u0000"} #####
+  [FAIL] {"messageType": "viewSubscriptionFailed", "error": "View 'OneItemView': argument error: 'itemStableId' 'expected string representation of uuid, got string from \"\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"OneItemView\",{\"collectionId\":\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\",\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\",\"it
+
+##### W.oi_stable_uuidnull [OneItemView] {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "fileKey": "RuEdaohBLXN48WdkzS66BY", "itemStableId": "f9eb9d2a-ee79-4c8c- #####
+  [FAIL] {"messageType": "viewSubscriptionFailed", "error": "View 'OneItemView': argument error: 'itemStableId' 'expected string representation of uuid, got string from \"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"OneItemView\",{\"collectionId\":\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\",\"fileK
+
+##### W.cm_cmsid_null [CmsManagerView] {"cmsId": "\u0000"} #####
+  [FAIL] {"messageType": "viewSubscriptionFailed", "error": "View 'CmsManagerView': argument error: 'cmsId' 'expected string representation of uuid, got string from \"\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"CmsManagerView\",{\"cmsId\":\"\\u0000\"}]", "viewHash": "429730e464efcf5c4d909a9999d846da35a88b86ab8c881181a86727ef22593
+
+##### W.oc_coll_null [OneCollectionView] {"collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\u0000", "fileKey": "RuEdaohBLXN48WdkzS66BY"} #####
+  [FAIL] {"messageType": "viewSubscriptionFailed", "error": "View 'OneCollectionView': argument error: 'collectionId' 'expected string representation of uuid, got string from \"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"OneCollectionView\",{\"collectionId\":\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d2
+
+
+########## 组R: REST ##########
+##### R.val_fkey_null 200 len=100 1338ms #####
+    {"error":false,"status":200,"meta":{"success":true,"error":null,"validated_items":null},"i18n":null}
+
+##### R.val_fsid_null 200 len=100 632ms #####
+    {"error":false,"status":200,"meta":{"success":true,"error":null,"validated_items":null},"i18n":null}
+
+##### R.val_value_null 200 len=100 691ms #####
+    {"error":false,"status":200,"meta":{"success":true,"error":null,"validated_items":null},"i18n":null}
+
+##### R.exp_null 400 len=915 326ms #####
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> <TITLE>ERROR: The request could not be satisfied</TITLE> </HEAD><BODY> <H1>400 ERROR</H1> <H2>The request could not be satisfied.</H2> <HR noshade size="1px"> Bad request. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. <BR clear="all"> If you provide content to customers throug
+
+##### R.dup_src_null 404 len=123 585ms #####
+    {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+##### R.apply_src_null 404 len=123 756ms #####
+    {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+##### R.updval_value_null 200 len=62 593ms #####
+    {"error":false,"status":200,"meta":{"valid":true},"i18n":null}
+
+DONE -> _r69_dump.txt

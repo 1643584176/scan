@@ -1,0 +1,61 @@
+===== li_fkey_null =====
+{"FileCmsCollection": {"queries": {"[\"root\",\"oneFileCmsCollection\",[\"RuEdaohBLXN48WdkzS66BY\\u0000\",\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"],[]]": {"error": {"code": "resolverError", "message": "not retryable: query \"SELECT \\\"collection_id\\\", \\\"created_at\\\", \\\"file_key\\\", \\\"id\\\", \\\"updated_at\\\" FROM \\\"cms_collections_to_file_keys\\\" WHERE (\\\"file_key\\\" = $1) AND (\\\"collection_id\\\" = $2) LIMIT $3\" failed: rpc error: code = InvalidArgument desc = execute: execute query: execute query: planning and executing query: execute physicalv2 plan: all hedged queries failed: closing reader: ERROR: invalid byte sequence for encoding \"UTF8\": 0x00 (SQLSTATE 22021)", "retriable": true}}}, "computations": {}}}
+
+--SQL--
+not retryable: query "SELECT \"collection_id\", \"created_at\", \"file_key\", \"id\", \"updated_at\" FROM \"cms_collections_to_file_keys\" WHERE (\"file_key\" = $1) AND (\"collection_id\" = $2) LIMIT $3" failed: rpc error: code = InvalidArgument desc = execute: execute query: execute query: planning and executing query: execute physicalv2 plan: all hedged queries failed: closing reader: ERROR: invalid byte sequence for encoding "UTF8": 0x00 (SQLSTATE 22021)
+
+===== li_coll_null FAIL =====
+{"messageType": "viewSubscriptionFailed", "error": "View 'ListItemsView': argument error: 'collectionId' 'expected string representation of uuid, got string from \"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"ListItemsView\",{\"collectionId\":\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\\u0000\",\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]", "viewHash": "196887660ce0cf7beb4f2cd807683cf63d26dbad8fc195d4fbeb71a60997f6a0"}
+
+===== oi_stable_null FAIL =====
+{"messageType": "viewSubscriptionFailed", "error": "View 'OneItemView': argument error: 'itemStableId' 'expected string representation of uuid, got string from \"\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"OneItemView\",{\"collectionId\":\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\",\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\",\"itemStableId\":\"\\u0000\"}]", "viewHash": "fc4837f829b6b6ff6302bc2827098d0c73ca55cab682adf1835e60e2c579786f"}
+
+===== oi_stable_uuidnull FAIL =====
+{"messageType": "viewSubscriptionFailed", "error": "View 'OneItemView': argument error: 'itemStableId' 'expected string representation of uuid, got string from \"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"OneItemView\",{\"collectionId\":\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\",\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\",\"itemStableId\":\"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865\\u0000\"}]", "viewHash": "fc4837f829b6b6ff6302bc2827098d0c73ca55cab682adf1835e60e2c579786f"}
+
+===== cm_cmsid_null FAIL =====
+{"messageType": "viewSubscriptionFailed", "error": "View 'CmsManagerView': argument error: 'cmsId' 'expected string representation of uuid, got string from \"\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"CmsManagerView\",{\"cmsId\":\"\\u0000\"}]", "viewHash": "429730e464efcf5c4d909a9999d846da35a88b86ab8c881181a86727ef225933"}
+
+===== oc_coll_null FAIL =====
+{"messageType": "viewSubscriptionFailed", "error": "View 'OneCollectionView': argument error: 'collectionId' 'expected string representation of uuid, got string from \"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\\u0000\"'", "errorCode": "argument-parse-validation-failure", "liveViewKey": "[\"OneCollectionView\",{\"collectionId\":\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\\u0000\",\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]", "viewHash": "b8b0bfb4b1a400d5da3f6b0d1124d6b5040de63c542b1191ac66bce473798b96"}
+
+===== val_fkey_null 200 =====
+{"error":false,"status":200,"meta":{"success":true,"error":null,"validated_items":null},"i18n":null}
+
+===== val_fsid_null 200 =====
+{"error":false,"status":200,"meta":{"success":true,"error":null,"validated_items":null},"i18n":null}
+
+===== val_value_null 200 =====
+{"error":false,"status":200,"meta":{"success":true,"error":null,"validated_items":null},"i18n":null}
+
+===== exp_null 400 =====
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>400 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Bad request.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: pEKZoL8eSeJhiLEWt7Ge7uGWTxpKGlOYJSawOKghOQzOPGpwRexk1A==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+
+===== dup_src_null 404 =====
+{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+===== apply_src_null 404 =====
+{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+
+===== updval_value_null 200 =====
+{"error":false,"status":200,"meta":{"valid":true},"i18n":null}
+

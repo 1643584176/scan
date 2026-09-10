@@ -1,0 +1,111 @@
+count: 12
+keys of item0: ['badges', 'category', 'category_id', 'comments_setting', 'community_creators', 'community_publishers', 'community_rdp_url', 'content_id', 'created_at', 'creator', 'description', 'editor_types', 'icon_url', 'id', 'is_3rd_party_monetized', 'like_count', 'metadata', 'name', 'org_admin_recommended', 'preview_node_id', 'preview_node_kind', 'publish_scope', 'publisher', 'publishing_status', 'rdp_url', 'resource_type', 'support_contact', 'tagline', 'third_party_m10n_url', 'thumbnail_src_set', 'thumbnail_url', 'unpublished_at', 'updated_at', 'user_count', 'view_count', 'workspace_admin_recommended']
+
+- 'Riccardo Buzzolan Ripetizioni'
+    id=cb9a9dfd-2e37-4dae-a217-522e31a96d41 hub=1679523152246484977 editors=['sites'] cat=d40bf11f-cb65-49c3-99b0-7ebec4685155
+- 'r307-cms-source-B'
+    id=dac49b27-67b1-4487-bcef-38e0ff66ddf5 hub=1677299927798351554 editors=['sites'] cat=9875a6bf-477f-4090-baf9-595dd56e06af
+    CMS-field: name=r307-cms-source-B
+    CMS-field: description=Controlled CMS snapshot isolation test resource.
+- 'Portfólio — Larissa Cardoso | Designer Gráfi'
+    id=17d97eeb-c3c6-440c-9251-99486aac22de hub=1676733856158428883 editors=['sites'] cat=94c586f5-6263-46e2-9fcf-49718805db07
+- 'Landing Page Islamic FInance'
+    id=ffa94eef-8bd3-48a4-aa24-5401481c11aa hub=1676625840639159442 editors=['sites'] cat=9875a6bf-477f-4090-baf9-595dd56e06af
+- 'Cebanmatters'
+    id=11b05e5e-1790-4920-94df-54cb664a5768 hub=1676159535209234021 editors=['sites'] cat=9875a6bf-477f-4090-baf9-595dd56e06af
+- 'CSEA Onam'
+    id=a7f5add3-649e-4f30-9f92-aea3add9238a hub=1673384075717091447 editors=['sites'] cat=9875a6bf-477f-4090-baf9-595dd56e06af
+- 'MitraBank Syariah - Islamic Landing Page'
+    id=fc7fc007-067d-43d5-99af-3326e0b3bd83 hub=1673309931668370195 editors=['sites'] cat=9875a6bf-477f-4090-baf9-595dd56e06af
+- 'CATUDIO_PORTFOLIO'
+    id=06675402-4a35-4091-90e6-63f21dc8ee1b hub=1672897241642442966 editors=['sites'] cat=5da39f7a-04d7-4e29-9cf6-6c918c489235
+- 'photo gallery landing page'
+    id=faaa0ac3-d292-40c7-a940-7dcc07f3a6b0 hub=1671626663311705702 editors=['sites'] cat=5da39f7a-04d7-4e29-9cf6-6c918c489235
+- 'MN Peru Foods2'
+    id=a9845761-fd52-47a0-8f8d-50ca902719d9 hub=1661194470513007979 editors=['sites'] cat=d40bf11f-cb65-49c3-99b0-7ebec4685155
+- 'Boltweb'
+    id=1b8294d6-221a-4738-bb16-303023770085 hub=1659506411411899845 editors=['sites'] cat=9875a6bf-477f-4090-baf9-595dd56e06af
+- 'Micaela Portfolio'
+    id=cf6db91d-05a3-4e6f-a0cc-360b7064e337 hub=1657227445765363949 editors=['sites'] cat=94c586f5-6263-46e2-9fcf-49718805db07
+
+===== dump item0 full =====
+{
+ "id": "cb9a9dfd-2e37-4dae-a217-522e31a96d41",
+ "name": "Riccardo Buzzolan Ripetizioni",
+ "description": "<p># Ripetizioni · Economia Aziendale e Storia</p><p><br></p><p>## Lezioni individuali · Schio, Vicenza e online</p><p><br></p><p>Aiuto studenti delle scuole superiori e universitari a recuperare le lacune, preparare verifiche ed esami e costruire un metodo di studio più ordinato.</p><p><br></p><p>`Economia Aziendale` `Storia` `Metodo di studio` `Online e in presenza`</p>",
+ "resource_type": "site_template",
+ "created_at": "2026-09-09T14:25:23.781Z",
+ "updated_at": "2026-09-09T21:46:32.297Z",
+ "unpublished_at": null,
+ "support_contact": "riccardobuzzolan96@gmail.com",
+ "publishing_status": "approved_public",
+ "publish_scope": "community",
+ "editor_types": [
+  "sites"
+ ],
+ "category_id": "d40bf11f-cb65-49c3-99b0-7ebec4685155",
+ "category": null,
+ "creator": {
+  "id": "1288076917182491832",
+  "handle": "Riccardo B",
+  "img_url": "https://s3-alpha.figma.com/profile/82446f25-8cb2-4345-86d6-fc8d585a4e5f"
+ },
+ "publisher": {
+  "id": "1288076917324852337",
+  "profile_handle": "riccardobuzzola",
+  "primary_user_id": "1288076917182491832",
+  "public_at": "2023-09-27T15:38:18.970Z",
+  "created_at": "2023-09-25T09:57:48.398Z",
+  "follower_count": 0,
+  "following_count": 0,
+  "location": "Italy",
+  "name": "Riccardo B",
+  "img_url": "https://s3-alpha.figma.com/profile/82446f25-8cb2-4345-86d6-fc8d585a4e5f",
+  "img_urls": {
+   "120_120": "https://s3-alpha.figma.com/profile/82446f25-8cb2-4345-86d6-fc8d585a4e5f",
+   "500_500": "https://s3-alpha.figma.com/profile/7d2d3535-ea57-47ca-a503-3ba4db09dad9"
+  },
+  "current_user_is_following": null,
+  "current_user_is_followed": null,
+  "is_restricted_by_current_user": null,
+  "realtime_token": "/profile-1288076917324852337:1789015753:0:8daa4b3acf5e4dd78adf8f3be26223d21304dd3f",
+  "entity_type": "user",
+  "badges": []
+ },
+ "content_id": "1679523152246484977",
+ "rdp_url": "https://www.figma.com/community/file/1679523152246484977",
+ "community_rdp_url": "https://www.figma.com/community/file/1679523152246484977",
+ "thumbnail_url": "https://s3-figma-hubfile-images-production-cdn-cgi.figma.com/cdn-cgi/image/format=auto,quality=85/hub/file/carousel/img/cf34e636d3ff9030909eef6ced893b8b82db7653/036d23b0b5d4a26fe28433dc69da8d26372c5f5b",
+ "thumbnail_src_set": {
+  "160": "https://s3-figma-hubfile-images-production-cdn-cgi.figma.com/cdn-cgi/image/format=auto,quality=auto,width=160,height=96/hub/file/carousel/img/cf34e636d3ff9030909eef6ced893b8b82db7653/036d23b0b5d4a26fe28433dc69da8d26372c5f5b",
+  "800": "https://s3-figma-hubfile-images-production-cdn-cgi.figma.com/cdn-cgi/image/format=auto,quality=auto,width=800,height=480/hub/file/carousel/img/cf34e636d3ff9030909eef6ced893b8b82db7653/036d23b0b5d4a26fe28433dc69da8d26372c5f5b",
+  "1200": "https://s3-figma-hubfile-images-production-cdn-cgi.figma.com/cdn-cgi/image/format=auto,quality=auto,width=1200,height=720/hub/file/carousel/img/cf34e636d3ff9030909eef6ced893b8b82db7653/036d23b0b5d4a26fe28433dc69da8d26372c5f5b"
+ },
+ "comments_setting": "all_disabled",
+ "tagline": null,
+ "badges": [],
+ "is_3rd_party_monetized": false,
+ "third_party_m10n_url": null,
+ "metadata": {},
+ "preview_node_id": null,
+ "preview_node_kind": null,
+ "community_publishers": {
+  "accepted": [
+   {
+    "id": "1288076917324852337",
+    "profile_handle": "riccardobuzzola",
+    "primary_user_id": "1288076917182491832",
+    "public_at": "2023-09-27T15:38:18.970Z",
+    "created_at": "2023-09-25T09:57:48.398Z",
+    "follower_count": 0,
+    "following_count": 0,
+    "location": "Italy",
+    "name": "Riccardo B",
+    "img_url": "https://s3-alpha.figma.com/profile/82446f25-8cb2-4345-86d6-fc8d585a4e5f",
+    "img_urls": {
+     "120_120": "https://s3-alpha.figma.com/profile/82446f25-8cb2-4345-86d6-fc8d585a4e5f",
+     "500_500": "https://s3-alpha.figma.com/profile/7d2d3535-ea57-47ca-a503-3ba4db09dad9"
+    },
+    "current_user_is_following": null,
+    "current_user_is_followed": null,
+    "is_restricted_b

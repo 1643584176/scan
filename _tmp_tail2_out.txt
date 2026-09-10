@@ -1,0 +1,321 @@
+===== assistant =====
+[TEXT] **本轮最大发现**——C8 的错误响应**泄漏了 livegraph 查询引擎内核**:
+
+```
+"error creating LQQuery in LQResolver: error substituting parameterized query in LQ resolver:
+[Pagination] Query ["UserPublic","paginatedRecentFiles",["owned",24,"desc"],...] 
+with invalid orderBy = null while accessing getPaginationSubstitutedQuery()
+```
+
+**"substituting parameterized query" + "orderBy"**——LQ(=Live Query)resolver 把分页/排序参数**替换进查询**;而 **ORDER BY 是全 SQL 世界都无法参数绑定的位置**(必须拼接,靠白名单)——这正是"替换动作"的高危点。当前 `orderBy=null` 说明 `sortOrder:"desc"` 的值**没被映射进 orderBy**(值域不对?)——先挖 JS 找合法值域,再打"合法值+注入":
+
+===== assistant =====
+[TEXT] **deps 全量揭示**(不再截断)——**排序列名位家族浮现**:`sortColumn`(FileBrowser 族)、`sortBy`+`sortProperty`(Plan/UserGroup 族)、`cursorColumn`、以及 zod 描述泄漏的合法值域(`relevancy/name/created_at/touched_at`,`asc/desc`);还有 `useDBQuery` 开关暗示**DB 查询路径存在**。
+
+现在关键钥匙:**`compositeParentResourceId` 怎么构造**(带 sortColumn 的 FileBrowser View 全靠它,拿到构造法就能打"列名位+方向位"注入)。挖它:
+
+===== assistant =====
+[TEXT] `compositeParentResourceId` 是服务端内部名(前端只注册不构造)。换思路:先抓几个关键 View 的**完整 deps**(之前被打印截断),再直接打"无 ID 依赖"的排序位:
+
+===== assistant =====
+[TEXT] 完整 deps 到手——**`sortType`/`sortDirection`/`sortBy`/`sortColumn` 列名位全家族确认**。r196d:动态从 JS 提取 hash,8 发侦察(错误段全量提取——**错误里会带回内部 LQ 查询构造**,这是金矿):
+
+===== assistant =====
+[TEXT] **转折点出现**:
+
+- F5/F7 揭示**完整内部查询元组**:`["root","trashedResources",["1666382703778278399","team","0",null,null,null,24,"name","desc",null],[]]`——**`sortType`("name")与 `searchQuery`("a")原样进入查询数组**
+- **错误类型突变**:`"code":"sinatraResolverError"`——**Sinatra(Ruby 框架)!**——Figma 后端存在 Ruby 服务(SQL 注入温床),错误为 `"Static queries without __requestId set"`
+- F6/F8:`planId`/`projectId` 需 **uuid**(类型校验)
+
+**解锁钥匙 = `__requestId`**。挖 JS 里怎么传:
+
+===== assistant =====
+[TEXT] **金钥匙破译**——客户端源码给出确证:
+
+```js
+S = T.client?.viewHasStaticQueries(i) && I ? {...f, __requestId: I} : f
+```
+
+**有"静态查询"的 View,客户端会在 args 里注入 `__requestId` 字段**——这正是 F5/F7 报 `"Static queries without __requestId set"` 的原因(我们裸发没带)。这就是解锁 sinatra(Ruby)解析器的开关。r196e 带上 `__requestId` 重打:
+
+===== assistant =====
+[TEXT] **G 波解锁成功**——`__requestId` 让 sinatra 路径活了:
+
+- G1/G2/G3:错误从"缺 requestId"升级为 **sinatra 后端实际响应**——**泄漏内部 URL**:`http://internal-proxy.prod.figma.com/api/internal/livegraph/pagination_resolver/trashed_resources`(还有 `trashed_folders`/`unclaimed_domain_users`)——**403 权限门**(free 账号撞能力门,但证明**查询元组(含 sortType)已穿过活图服务到达 sinatra 层**)
+- G4 `BuzzApprovalsByRequestId`(fileKey+requestId)**无错误通了**(initial=2)
+- G5:该 View 的 `orderBy=null` 独立问题(`__requestId` 不解)
+
+先读 G4 数据,并批量订阅**空 deps 的自省 View**(找 planId/teamId/orgId——解锁后续所有需要真实 ID 的 View):
+
+===== assistant =====
+[TEXT] G4 揭秘 BuzzApproval 查询形态:`["File","buzzApprovalRequest",["1"],["RuE..."]]`——**requestId 排首参数、无类型校验("1"通过)**——这是活的注入候选面。r196f:自省 View(拿 planId/teamId)+ BuzzApproval 注入 + fileV2 注入:
+
+===== assistant =====
+[TEXT] **H 波大丰收**:
+
+- **H1 PlanFilterOptionsView** → **我账号的 planId 到手**:`cc6b6125-a07f-4d39-a54c-50ef65f33919`、`46b1d26c-c802-4ef1-a83c-d96cfe7295f4`
+- **H2/H4** → 大量数字 id/文件 uuid(账号资源)
+- **H6** → `requestId="1' OR '1'='1"` **无错误、空结果**(需数字型注入对照)
+- **H8** → sinatra **400 "Invalid plan type: starter"**(值域校验)→ planType 真值从 H1 拿
+- **H4** → 118KB 最近文件数据(找 folder/project id 素材)
+
+读 H1 plan 详情 + H6/H7 判读:
+
+===== assistant =====
+[TEXT] **判读确认**:
+
+- H1:plan 结构为 **PlanUser 记录**(我=两个 plan:`cc6b6125-a07f-4d39-a54c-50ef65f33919`、`46b1d26c-c802-4ef1-a83c-d96cfe7295f4`)
+- H6/H7:`fileV2["RuE...' OR '1'='1"]` → **空**(正常 fileKey 有数据)→ **fileKey 字面化,无注入**;requestId 带引号注入也空(**待数字型对照**)
+
+r196g:①Buzz 数字型注入三连(`OR 1=1`/`AND 1=2` 对照);②TrashedFiles 用**真实 planId × planType 值域**解锁(Ruby/sinatra 线):
+
+===== assistant =====
+[TEXT] **关键转折**:I4-I8 报 `'planId' expected string representation of bigint`——**TrashedFiles 的 planId 是 bigint(数字字符串),不是 uuid!**(uuid 型 planId 属另一 ID 空间)。**数字型 plan id 候选就在手边**:H3 的 team 数字 id(`3018639018`/`1666382706663462213`)+ H2 的数字 id 列表。换数字重打:
+
+===== assistant =====
+[TEXT] **J2 解锁成功!!!**——`planId=1666382706663462213`(数字 bigint)通过了 sinatra 权限门:
+
+```
+["root","trashedResources",["1666382703778278399","team","1666382706663462213",null,null,null,24,"name","desc",null],[]]
+→ initial:{file-2388946504306643138:{...}, file-2388933940464751335:{...}, ...} ← 53KB 真实数据!
+```
+
+**sinatra(Ruby)查询链路完全打通**,10 元组参数里 `creatorFilter`/`fileTypeFilter`/`sortType`/`sortDirection`/`queryParams` **全是自由可注入位**。上 K 波:sortType 追加列探针 → 语法探针 → 方向位 → 各过滤器类型探:
+
+===== assistant =====
+[TEXT] **K 波出现实质信号**:
+
+- **K2 `sortType="name, id"`**:顺序**确凿改变**(无错误)→ **多列带逗号被接受**——说明 sortType **不是"单列名白名单",而是真的进了 ORDER BY 拼接位**!
+- K3 `name' -- `:顺序同 K2、无错误(待深究)
+- K4 `asc`↔`desc`:方向位真实生效(数据集变化)
+- K5/K6/K7/K8:回退基线(方向位有枚举回退;过滤器接受但未见过滤)
+
+读 K2/K3 内部结构确认排序证据,然后**升级 payload(random()/CASE/子查询/时间盲注)**:
+
+===== assistant =====
+[TEXT] **K2/K3 判读深化**:两者顺序一致且都≠基线——**最合理解释**:非法 sortType **被验证后回退到某默认排序**(K2 的"name, id"若真拼接,该有 `name,id` 排序效果——需证据);K6 `creatorFilter="1"` 出现**23 条 vs 基线 24 条**——**过滤器真实生效**(滤掉 1 个)——这是**过滤器在 SQL 中运行的直接证据**!
+
+下一波用**强判据 payload**:`creatorFilter="1 OR 1=1"`(若拼接→返回全部 24 条;若字面化→0 条)、`random()`、**时间盲注** `pg_sleep`、带计时:
+
+===== assistant =====
+[TEXT] **L 波判读(决定性)**:
+
+- `pg_sleep(2)` **无延迟**(t_first=0.69s)→ **无时间盲注**
+- `random()` 顺序=非法值回退序列(非随机)→ **无函数执行**
+- `1 OR 1=1`/`-1 OR 1=1`/`1 AND 1=2` **三者输出完全一致**→ **creatorFilter 字面化**,无布尔效应
+- `name, id`/`name ASC NULLS FIRST` 全走"**非法→默认回退**"——**sortType 有验证表,不是拼接**
+
+**trashed_resources 全参数族判定:结构化传递,无注入**(Ruby 端做了验证+回退,很严谨)。
+
+换目标(r196k):uuid 型 planId 的 **Plan AI 用量报表**(sortBy+searchQuery)、**AdminRequestDashboard**(filterParams)、**FileBrowser**(composite 格式探)、**LitmusBuilds**(projectId):
+
+===== assistant =====
+[TEXT] **M 波判读**:
+
+- M1/M7 PlanAiUsage 系:**又是 `Static queries without __requestId set`**——**加 `__requestId` 即可解锁**(查询元组已泄漏:`["name","desc",null,"a"]`——searchQuery 进元组!)
+- M3/M4/M5:`folderItemsByResourceType,["634606970","file",24,"asc","name"]`——composite 接受任意字符串,但卡在 `orderBy=null`(同款 resolver)——**sortColumn="name" 没映射上**→试 zod 描述里的词(`created_at`/`updated_at`/`touched_at`/`relevancy`)
+- M2:AdminRequestDashboard 的 planId 要 **bigint**(试 1666382706663462213)
+- M8:无错误返回(读判读)
+
+r196l:解锁 PlanAiUsage(+`__requestId`)→ 注入 searchQuery/sortBy;AdminRequest 数字 plan;FileBrowser sortColumn 值域:
+
+===== assistant =====
+[TEXT] 继续 N 波落地——先跑刚写好的解锁+注入矩阵,看 PlanAiUsage 的 sinatra 链路能不能被 `__requestId` 打开。
+
+===== assistant =====
+[TEXT] N 波有**重大突破**:`__requestId` 成功解锁 sinatra 链路——PlanAiUsage 不再报 Static 错误,而是真实打到 `internal-proxy.prod.figma.com/.../plan_ai_usage_by_users_v2`,服务端返回 400 参数校验错误。错误消息被截断在 "Only credi..."——这可能是值域白名单泄漏。立即读全量。
+
+===== assistant =====
+[TEXT] 又是 `python -c` 引号坑——直接写读取脚本,一次性 dump 全部 N 波关键文件。
+
+===== assistant =====
+[TEXT] **金矿出现**。N 波判读:
+
+1. **sinatra 服务端把 sort_by 白名单都告诉我们了**:`"Invalid sort_by value. Only credit_usage_percentage, credits_used are supported."` —— 之前所有 PlanAiUsage 测试全都卡在校验层,从没碰到数据层。现在把 sortBy 换成合法值,然后把校验绕过/注入对轰进去。
+2. **N3 查询元组已构造成功**:`["root","adminDashboardRequests",["team","1666382706663462213","1666382703778278399","desc",null,24],[]]`——bigint plan 接受,只差 `__requestId`。
+3. FileBrowser 的 orderBy 三个候选列名全灭,降级。
+
+O 波:合法 sort_by 破门 + 绕过变体(尾空格/大小写/注释/逗号) + 合法排序下的 searchQuery 注入 + AdminRequest 解锁。
+
+===== assistant =====
+[TEXT] 判读:
+
+- **O1/O2/O3 全部破门成功!** `sig=viewLoaded=1` 无 error——PlanAIUsage 数据层首次打穿。且 **O3(尾空格 `"credits_used "`)也通过校验**——服务端把「校验值≠使用值」暴露了(strip 后比对)。O4 大小写/O5 注释/O6 逗号全灭,说明白名单是精确集合。
+- **O8 AdminRequestDashboard 也解锁了!** sinatra 端点 `admin_request_dashboard` 报新错误:`"Invalid plan_type"`——还在参数校验层,需枚举 plan_type 值域。
+- O7 网络超时没发出去,需重试。
+
+P 波:读 O1 真实数据 + 从 JS 逆向 `planType` 合法值域 + searchQuery 注入重试 + plan_type 枚举。
+
+===== assistant =====
+[TEXT] P 波判读关键点:
+
+1. **O1 数据层是通的,但空结果**:`"initial":{}, "pagination":{"start":null,"end":null}`——因为 `searchQuery='a'` 不匹配任何用户。要用空串/null 拉全量基线。
+2. **P1 注入发出去了(2600B,无 error)**——需对比 `initial` 内容判断字面化 vs 注入。
+3. **plan_type 六连灭**,但 JS 里出现 `planType:u.OL.TEAM` 常量形式——枚举真值要从 JS 常量表挖,不能猜字面字符串。
+4. 双 sinatra 端点暴露:`pagination_resolver/admin_request_dashboard` + `sinatra_resolver/admin_request_dashboard_row_count`。
+
+Q 波:空 search 基线拉数据 + PLAN2 跨 plan 试探 + JS 挖 `OL` 常量表真值。
+
+===== assistant =====
+[TEXT] Q 波核心判读:
+
+1. **JS 挖到 plan_type 真值映射**(还有意外):`switch(e){case u.OL.ORG:return"org";case u.OL.TEAM:return"team"}`——admin API 用 `'org'/'team'` 字符串。P 波两个都试过仍 Invalid,说明要么是**组合问题**(planId 类型配错:admin resolver 用 UUID plan 没试过 `__requestId`),要么值还要变体。
+2. **PLAN2 静默空**(q5/q6:无权限不是报错而是空,权限执行正确)。
+3. **usage 数据面本来就是空的**(全 plan 0 条 credit usage)——所以 searchQuery 注入只能用「错误行为」判定:`'` 如果能引发 500/SQL 错→拼接;无错→参数化。
+4. P2 暴露**第二个 resolver 目录**:`sinatra_resolver/admin_request_dashboard_row_count`。
+
+T 波:plan_type×planId 类型交叉矩阵(UUID plan 从没配过 __requestId 打过)+ searchQuery 单引号/超长判读器 + sortOrder 注入。
+
+===== assistant =====
+[TEXT] T 波出现**行为分岔**,重点文件需精读:
+
+- **T1/T2(PLAN1 uuid + team/org):完全无错误、908 字节**——既没 sinatra 错误也没数据,可能是「合法组合静默空」;T7(None)807 字节同款。
+- **T4(`'Team'`):400 但不是 "Invalid plan_type"**(invalid=0)——错误消息变了,可能有新泄漏。
+- **T12:`DESC` 大写被拒**——疑似 sort_order 白名单也泄漏。
+- **T10/T11:`'` 和 6000 字符全无错**——search 参数化+无长度限制证据。
+
+立刻精读 t1/t4/t7/t8/t12 全文。
+
+===== assistant =====
+[TEXT] **T 波炸出关键突破**:
+
+1. **`'Team'`(混合大小写)通过了 plan_type 白名单!** 错误从 `"Invalid plan_type"` 变成了 **`"Plan is not a pro team"`**——说明服务端白名单的字面值就是 `'Team'`(可能还有 `'Org'`/`'Organization'`),而 1666382706663462213 不是 pro team。
+2. **T1 揭示客户端 zod 层**:AdminRequest dashboard 的 `planId` 必须是 bigint 字符串(UUID 在订阅层就被拒),所以之前 uuid 全无效。
+3. **T12 泄漏 sort_order 白名单**:`"Invalid sort_order value. Must be 'asc' or 'desc'."`,精确大小写。
+4. searchQuery 单引号/6000 字符全无错→该面参数化确认。
+
+U 波:**换 plan——用 3018639018(另一个数字 id)配 `'Team'` 打 pro team 门槛**,三兄弟 View(Row/R/RowIds/NotificationsCount)联动。
+
+===== assistant =====
+[TEXT] U 波判读——**又炸出两层信息**:
+
+1. **`'Org'` 也过了白名单**(3018639018 报 `"Not found."` 而不是 Invalid plan_type)——白名单是 `{Team, Org}` 首字母大写精确集,`'Organization'` 被拒。
+2. **两个 400 语义分层**:`"Not found."`(plan 不存在/无权限)vs `"Plan is not a pro team"`(plan 存在但非 pro)——**这是个 plan 存在性 oracle**。但我们的 plan 都不是 pro team,这条线对 free 账号是权限-数据门槛,先标记。
+3. **RowIds/NotificationsCount 也是静态查询**:需 `__requestId`。
+4. 关键对比:**TrashedFiles 的 planType 用小写 `'team'` 就通过**——每个 resolver 白名单独立,验证粒度很细。
+
+回到注入主线:PlanAiUsage 还有两个没打的参数——`filterParams`(对象,可能展开成 SQL 条件)和 `meteringPeriodId`(类型未测)。V 波:JS 挖 filterParams schema + 类型混淆批量打。
+
+===== assistant =====
+[TEXT] **V 波重大突破点已现**:`meteringPeriodId` **零客户端校验直进查询元组**:
+
+```
+QT: [null,24,"1666382703778278399","credits_used","desc","x","a"]   ← 第6参被 meteringPeriodId 占据
+QT: [...,"1 OR 1=1","a"]                                            ← 注入串原样进查询
+```
+
+且 `filterParams` 竟然是 **string 类型**(zod:'expected string, got object')——之前全传 null 亏了。立刻精读 v3/v4/v7/v8 完整错误消息。
+
+===== assistant =====
+[TEXT] V 波精读——**两条重大线索**:
+
+1. **`meteringPeriodId` 是真实查询参数**:服务端拿它查数据库,查不到报 `404 "Metering period not found"`。无引号版 `1 OR 1=1` 也 404(排除无引号拼接),但**还没打引号版**——`x' OR '1'='1` 是区分参数化 vs 引号内拼接的判据。这是当前最接近「真注入点」的参数。
+2. **JS 泄漏全新 HTTP API**:`GET /api/plans/${planId}/ai_credits/plan_usage_summary?metering_period_id=...`——**planId 在 URL path 里**,还有 `plan_billing_period_usage_summary` 兄弟端点。这是普通 HTTP 面,直接可打。
+
+W 波:本地列全 `/api/plans/` 端点清单 + HTTP 直接打(含引号注入)+ WS 引号探针补打。
+
+===== assistant =====
+[TEXT] W 波**大丰收**:
+
+1. **JS 泄漏 23 个 `/api/plans/` 端点全图**——包括 `admin_requests/dashboard_view`、`admin_requests/counts`、整套 `ai_credits/*`、`mcp_usage`、`scm/connections` 等。
+2. **W1 直接 200 拿到数据**:`metering_period.id = 7f5b4ead-43e8-435c-98c6-92075c001013`——**这就是 WS 里 `meteringPeriodId` 需要的那把钥匙!**之前 null 导致空数据。
+3. **W5/W6:PLAN2/乱 UUID 一律 403**——HTTP 层权限执行正确,无 IDOR 迹象。
+4. **W4:org 门槛泄露**(billing-period 仅 Org plans)。
+5. W7/W8 引号注入结果待精读。
+
+X 波:HTTP 直打 admin_requests 系(plan_type 参数可直接注入式试探)+ **用真 metering period id 解锁 WS 数据面**。
+
+===== assistant =====
+[TEXT] X 波判读:
+
+1. **W7/W8 引号注入仍是 `404 "Metering period not found"`**——整串当 id 查,参数化确认(metering_period_id 线关闭)。
+2. **X1-X5:HTTP 层 403 是前置权限门**(PLANB 全拒);但 **X6:`dashboard_view` 用 PLAN1(UUID)HTTP 200 返回 `{"entries":[],"total_count":0}`**——**HTTP 与 WS 是同一数据的双接口:HTTP 收 UUID plan,WS 收 bigint**。我们自己的 plan 在 HTTP 层可正常访问。
+3. X7/X8 无 sinatra 错误,待读全文确认数据面是否打开。
+
+Y 波:HTTP 全面转向 PLAN1(自己有权限的),把 admin_requests 全家 + ai_credits 系列全打一遍,并带注入变体。
+
+===== assistant =====
+[TEXT] x7/x8:真 mperiod 也空——**我们 plan 确实 0 条 AI usage**(active_users:0),数据面无可测,PlanAiUsage 收口。
+
+Y 波全 200 但空数据,**JS 又吐出关键新面**:
+
+- `dashboard_view` 有 `query_string` + `request_types` 参数(还没打!)
+- `counts` 有 `queryString`/`requestPermissionLevel`/`viewAll`
+- JS 历史片段里还有 **`/api/subscriptions-2018-11-08/team/${t}`**——**team 数字 id 直接进 URL path,可枚举/IDOR**
+
+Z 波:JS 全量 `/api/` 端点测绘 + 打 query_string 注入系列 + 订阅端点数字 id 面。
+
+===== assistant =====
+[TEXT] **Z7 是金矿**:`request_types` 注入触发 Figma 的**路由类型检查中间件**报错——`"Error in route typechecking for /api/plans/:plan_id/admin_requests/dashboard_view: Error parsing JSON @1:17"`。参数期待 JSON 数组,类型系统在路由层拦下了注入。
+
+同时到手 **297 个 `/api/` 端点全图**(activity_logs、admin/*、collections、code_connect、community…)。
+
+但真正该聚焦的是**我们账号「有数据」的业务面**:①我们的文件 `RuEdaohBLXN48WdkzS66BY` 的评论/collections;②J2 的 24 个 trash 文件;③h4 最近文件里的 fileKey(别人的文件!)。评论面是经典「权限校验弱」区。
+
+AA 波:fileKey 评论/collections 基线 + Z7 全文 + h4 fileKey 清单。
+
+===== assistant =====
+[TEXT] AA 波判读:
+
+1. **h4 挖出 44 个 fileKey**(最近文件——大部分是别人/社区的文件)。**AA5-AA8:对 4 个非我们文件的 comments 接口全部 200 空**——关键问题:**需要「乱码 key」对照**才能判断 comments 是否不校验权限(200 空 vs 403)。
+2. **Z7 全文被截——"Error parsing JSON @" 后面还有料**,重读完整版。
+3. collections 系全 404(只有 export 是 GET 读操作)。
+4. 老系统端点(activity_logs/community_comments/color_palettes)有「老代码 SQLi」概率,JS 参数还没挖。
+
+AB 波:comments 权限对照实验 + collections export 路径注入 + 老端点参数测绘。
+
+===== assistant =====
+[TEXT] AB 波判读——**信息量爆炸**:
+
+1. **comments 权限口径确认**:乱码 key → **403 "don't have permission to use this comments feature"**;我们的文件 → 200。**说明 AA5-8 的 4 个最近文件我们确实有访问权**。权限校验存在且正确。
+2. **AB4 意外挖到 r194 的遗留数据回显**:collection export 的 CSV 里赫然躺着 `r194fn1' OR '1'='1--` 等**我们当年写进去的测试数据**(需清理,记档:CID1/CID2)。data 回显≠注入。
+3. **AB10 新端点:`GET /api/files/{key}` 200 返回文件元数据**——`/api/file/{key}` 404 而 `/api/files/{key}` 活!
+4. **AB7 `activity_logs` 返回 401 `missing_authentication`**——全站罕见的认证分支异常!这个接口(`/api/activity_logs/{last_edit,recent}/{orgUserId}` 全是数字 ID 路径)**极可疑:org 活动日志+数字 ID 枚举**。
+5. **Z7 完整**:`"Expected: '['"`——`request_types` 是 JSON 数组类型,类型检查中间件格式确认。
+
+AC 波:activity_logs 深挖(数字 ID 面)+ `/api/files/*` 权限口径矩阵。
+
+===== assistant =====
+[TEXT] AC 波判读:
+
+1. **activity_logs 全 401 `missing_authentication`**(任何 ID、任何参数)——这怪行为说明该端点走**另一套认证**:JS 揭示它需要 `orgId`(当前用户 org 上下文),我们没有 org。**参数结构拿到手了:`pageSize/orgId/startTime/endTime/teamId/eventName/emails`**,其中 `emails` 是 join 后的邮箱串——但认证层都过不去,先放。
+2. **AC2 权限口径**:乱 key → 403(`permissions.sinatra.cant_view_file`)。
+3. **JS `/api/files/` 27 个子接口全集到手**,重点读接口:`recent_activity`、`view`、`prototype/view`、`figspec/code_repository`、`can_request_edit`。
+
+AD 波:权限分布矩阵(h4 的 8 个非我们 fileKey)+ `recent_activity` 数据面 + activity_logs 带 orgId 参数补刀。
+
+===== assistant =====
+[TEXT] **AD 波重大发现**:
+
+1. **权限矩阵分明**:ad1-5 → `404 "This file is unavailable"`(历史上存在过但已删除/不可用);**ad6-8 → 200 且 `creator_id` 就是我们自己!**——h4 的 44 个 key 里混着**我们创建的文件**!
+2. **403(乱 key)vs 404(已删真 key)可区分文件存在性**——弱信息泄露,记档。
+3. recent_activity 全 404(路由形态不同,需 JS 复查调用方式)。
+
+AE 波:**筛完 h4 全 44 个 key 的权限分布**(找出所有「我们的文件」)+ 我们文件的子接口矩阵(can_request_edit/figspec/thumbnail_guid/make_local_metadata/related_links)+ 读 ad6-8 元数据。
+
+===== assistant =====
+[TEXT] **AE 波判读——资产全景清晰**:
+
+1. **h4 的 44 个 key 大多是我们自己的文件**(creator=我们):`h5test (Community)`、`Figma basics`、`第一个`、`Fortune Cookie! (Community)`、`Riccardo Buzzolan Ripetizioni (Community)`、`FigJam basics` 等,全部挂在我们的 drafts 文件夹(folder 634606970/634606972)。
+2. 子接口:`can_request_edit` 200;`related_links` 403(自己文件也拒,怪);`recent_activity` 是 POST 不碰。
+3. **重新聚焦死穴**:全站参数化扎实,但有个**工具链绝对盲区**刚暴露——**类型检查中间件之后的下游!**
+   - `request_types` 被路由层 JSON.parse 成数组 → **数组元素(string)没有 enum 类型检查的话,会漏到业务层!**
+   - 工具/人只会把 `'` 直接怼进参数 → 被 typecheck 400 拦截(盲区),而**「合法 JSON 包裹的恶意元素」能穿过这层**。
+   
+   AF 波:**绕过 typecheck 的「包裹型注入」**——`["ACCOUNT_TYPE_REQUEST'"]`、`["' OR '1'='1"]`、boolean/enum 参数的注入变体。
+
+===== assistant =====
+[TEXT] AF 波判读——**所有注入均被挡/忽略,但暴露了一个「协议谜题」**:
+
+1. **AF1:连合法 JSON 数组 `["ACCOUNT_TYPE_REQUEST"]` 也 400**(`@1:17 Expected '['`)——说明我对该参数**序列化格式的理解不对**;客户端 `addRepeated` 生成的格式另有玄机。
+2. **AF8 `@1:3`**——`requester_permission_levels` 同样期望 JSON 数组格式,解析目标是参数值。
+3. `viewAll`/`requestPermissionLevel`/`queryString` 各种注入 → 200 静默忽略(不在 typecheck schema)。
+4. **JS 终于吐全 `admin_requests` 列表参数名**:`request_types / sort_order / view_all / query_string / cursor / billing_group_ids / request_seat_types / requester_permission_levels`。
+
+**解开「客户端序列化协议」= 拿到穿过 typecheck 进入业务层的正确姿势**(别人不可能知道的盲区)。AG 波:JS 逆向 `toAPIParameters`/`addRepeated` 的真实实现。
+
+===== assistant =====
+[TEXT] 继续推进——AG 波已解密 `addRepeated` 的真实格式（`${e}[]` 后缀），现在立刻验证「typecheck 穿透」。先确认资产文件在位：
+
+===== assistant =====
+[TEXT] 资产齐全。创建 AH 波脚本——用 AG 解密出的 `param[]=VALUE` 格式重打 typecheck，验证穿透后做元素级注入：

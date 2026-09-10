@@ -1,0 +1,2 @@
+GET 200 https://zestoro.figma.site/__figma__/api/community_published_banner_details
+    {"error":false,"status":200,"meta":{"hub_file_url":"https://www.figma.com/community/file/1673056696264297444?openSignupModal=true","report_abuse_url":"https://www.figma.com/report-abuse?reported_content=zestoro.figma.site","figma_logo_url":"https://www.figma.com/community/make","remix_button_text":"Remix","report_button_text":"Report","banner_version":"2","banner_v2_text":"Created with Figma Make"

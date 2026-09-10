@@ -1,0 +1,53 @@
+===== A) CMS-ish API paths =====
+  /api/activity_logs/export   [1 files]
+  /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/update_items   [1 files]
+  /api/collections/${e.databaseId}   [1 files]
+  /api/collections/${e.databaseId}/export   [1 files]
+  /api/collections/${e.databaseId}/field_schemas   [1 files]
+  /api/collections/${e.databaseId}/field_schemas/${t.databaseId}   [1 files]
+  /api/collections/${e.databaseId}/items   [1 files]
+  /api/collections/${e.databaseId}/items/${t.databaseId}   [1 files]
+  /api/collections/${e.databaseId}/items/import   [1 files]
+  /api/collections/${e}/items/${r.databaseId}/fields/${n.databaseId}   [1 files]
+  /api/collections/${r}/items/${t.databaseId}/fields/${e.databaseId}/validate   [1 files]
+  /api/collections/validate_cms_csv   [1 files]
+  /api/community/cms/category_page/${e}   [1 files]
+  /api/figjam/default_collage_items   [1 files]
+  /api/file/${e.fileKey}/canvas_mentions/record_invite   [1 files]
+  /api/file/${i}/collections   [1 files]
+  /api/files/${e}/media_exports   [1 files]
+  /api/files/${e}/media_exports/${t}   [1 files]
+  /api/files/${s}/duplicate_collection   [1 files]
+  /api/files/${t}/apply_hub_file_collections   [1 files]
+  /api/folder_items/can_move_bulk   [1 files]
+  /api/folder_items/content_summary   [1 files]
+  /api/folder_items/move_bulk   [1 files]
+  /api/folder_items/trash_bulk   [1 files]
+  /api/insights/${e.planId}/${e.tableName}/export   [1 files]
+  /api/items/${r.databaseId}/fields/${n.databaseId}   [1 files]
+  /api/items/${t.databaseId}/fields/${e.databaseId}/validate   [1 files]
+  /api/make/delete_make_library_ds_import   [1 files]
+  /api/make/ds_import_libraries   [1 files]
+  /api/ml/export/file_version/${n}   [1 files]
+  /api/ml/export/file_version/${o}   [1 files]
+  /api/ml/export/status/${a}   [1 files]
+  /api/ml/export/status/${s}   [1 files]
+  /api/oauth/cms/oauth_code   [2 files]
+  /api/orgs/${e.org.id}/export_teams   [1 files]
+  /api/orgs/${t}/export_controls   [1 files]
+  /api/orgs/${t}/workspaces/export_controls   [1 files]
+  /api/plans/${e.planId}/ai_credits/export   [1 files]
+  /api/workspace/${eG}/export_teams   [1 files]
+
+===== B) CMS-ish path (all backtick) =====
+
+===== C) filter/sort/order keyword in CMS context =====
+[1714-7f9126c9fdf6efd1.min.js] ListItems: ...temID:null})})]})}function eO({listItems:e,resolvedType:t,searchQuery:r,isInConditional:n,setSearchQuery:s,setExpressionListItems:l,setHighlightedItemID:o}){let[a]=(0,I.DF)(),u=i.useCallback(()=>{let e=(0,d.vJq)(),r=function(e,t,r){if((0,d.RTZ)(e)){let t=e.getNodes();if(t.length>1)return[];let r=t[0];if(j(r)...
+[4740-72098fc09d96357b.min.js] ListItems: ...Fixes:t,violatingDevId:n,type:c,scopes:p}){let g,{localVariableSets:y,libraryVariableSets:_}=(0,l.md)(d.mn),{allVariableListItems:k,variableMap:v,localVariables:b,libraryVariables:S}=(0,l.md)((0,m.rb)({type:c,scopes:p})),w=(0,i.useMemo)(()=>n?(0,s.getActiveTSSceneGraph)().getFromDeveloperFriendlyId(n):null,[...
+[6488-b9e83e69aee3c0e0.min.js] sortDirection: ...Page:i,pageSize:25}),[o,l,n,i])}({planId:r,cursor:null,roleFilter:l,sortType:e.sort.key===h.C0.NAME?"path":"trashed_at",sortDirection:e.sort.dir===h.ue.ASC?"asc":"desc",queryParams:null});return(0,a.useMemo)(()=>({result:i,isLoaded:"loaded"===i.status,numFolders:i.transform(e=>e.length).unwrapOr(null),hasNextPag...
+[6546-641b072ec934836c.min.js] ListItems: ...z6dp x1fc57z9"},1:{className:"xmaolms x1ghz6dp x1fc57z9 x2b8uid"}}[0|!!t.subtitleCentered],children:t.subtitle}),t.checkListItems&&t.checkListItems.length>0?(0,i.jsx)("ul",{...{className:"x78zum5 xdt5ytf xealit5 x1o1pmfc xe8uvvx x1ghz6dp xkjsfwp x18d9i69 x1uhho1l x1xpa7k"},children:t.checkListItems.map((t,e)...
+[8-f3f7d7b8c6e770e7.min.js] sortDirection: ...a,pageSize:25}}({cursor:null,creatorFilter:K,fileTypeFilter:Q,sortType:e.sort.key===L.C0.TRASHED_AT?"trashed_at":"name",sortDirection:e.sort.dir===L.ue.ASC?"asc":"desc",planId:Z?.key.parentId??null,planType:Z?.key.type??null,queryParams:null}),ei=i.useCallback(()=>{et||ee()},[et,ee]),el=e.filters,es=e.sort;(0,m....
+[figma_app-main.js] sortDirection: ...=o("TrashedFilesPageView",["creatorFilter","cursor","fileTypeFilter","firstPageSize","planId","planType","queryParams","sortDirection","sortType"],"42d3b73b9539e50b4687b882c9c9a66ef15d131025923dfe72bf93ce0fd1c93b"),sD=o("TrashedFoldersPageView",["cursor","firstPageSize","planId","queryParams","roleFilter","sortD...
+[figma_app-main.js] ListItems: ...=e}),p.forEach(e=>{_[e.node_id]=e});let f={};d.forEach(e=>{f[e.libraryKey]=e.name});let g=[...c,...p];return{allVariableListItems:(0,m.dC)({variables:g,variableSets:[...Object.values(o),...Object.values(a)],styles:[],componentProps:[],layout:"list",fileNamesByLibraryKey:f,openFileLibraryKey:t(h._S),collapsed...
+[vendor-ef7c6685eb83d86e.min.js] ListItems: ...etIndicesForValues(e),i=t.length>0;return i&&(this.refresh(),this.ensureIndexVisible(t[0]),this.refresh(!0)),this.selectListItems(Array.isArray(e)?e:[e]),i}selectListItems(e,t=!1){t||this.selectedItems.clear();for(let t=0;t<e.length;t++){let i=e[t];this.selectedItems.has(i)||this.selectedItems.add(i)}this.re...
+DONE

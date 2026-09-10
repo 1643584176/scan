@@ -1,0 +1,81 @@
+===== folder_search query 全矩阵 =====
+[f01_base] 200 len=62 604ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f02_null] 200 len=62 672ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f03_quote] 200 len=62 720ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f04_escq] 200 len=62 672ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f05_dquote] 200 len=62 695ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f06_bt] 200 len=62 638ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f07_cmt] 200 len=62 724ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f08_hash] 200 len=62 712ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f09_blk] 200 len=62 614ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f10_blkc] 200 len=62 648ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f11_btrue] 200 len=62 897ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f12_bfalse] 200 len=62 675ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f13_orall] 200 len=62 635ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f14_num1] 200 len=62 684ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f15_num2] 200 len=62 687ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f16_like] 200 len=62 1245ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f17_us] 200 len=62 752ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f18_sleep] 200 len=62 717ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f19_semi] 200 len=62 668ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f20_nl] 200 len=62 753ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+===== 参数位补充(类型混淆/枚举位) =====
+[f21_sort_quote] 400 len=129 643ms
+    {"error":true,"status":400,"message":"Bad request.","i18n":{"id":"error.bad_request","fallback_text":"Bad request.","params":{}}}
+
+[f22_mnr_num1] 400 len=215 606ms
+    {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:79: Non-number characters in quoted integer"}
+
+[f23_mnr_num2] 400 len=215 651ms
+    {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:79: Non-number characters in quoted integer"}
+
+[f24_mnr_quote] 400 len=215 583ms
+    {"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:72: Non-number characters in quoted integer"}
+
+[f25_desc_int] 200 len=62 664ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[f26_desc_quote] 200 len=62 1104ms
+    {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+DONE

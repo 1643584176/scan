@@ -1,0 +1,46 @@
+===== toQueryParameters =====
+hits: 3
+et(t.url`/api/plans/${e.planId}/admin_requests/counts`,s.td.toQueryParameters({queryString:e.queryString,requestPermissionLevel:e.requestPermissionLevel,viewAll:e.viewAll})))}getRequests(e){return this.AdminRequestsListSchemaValidator.validate(async({xr:t})=>{let r=new A().addRepeated("request_types",e.requestTypes).add("sort_order",e.sortOrder).add("view_all",e.viewAll).add("query_string",e.queryString).add("cursor",e.cursor).addRepeated("billing_group_ids",e.billingGroupIds??[]).addRepeated("request_seat_types",e.requestSeatTypes??[]).addRepeated("requester_permission_levels",e.requesterPermissionLevels??[]).build();return await t.get(t.url`/api/plans/${e.planId}/admin_requests`,r)})}getDashboardView(e){return this.AdminRequestsDashboardViewSchemaV
+---
+rl`/api/integrations/github-app/org_user_repositories`,i.td.toQueryParameters(e)))}getGithubAppRepositoryBranches(e){return this.GithubAppRepositoryBranchesSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/integrations/github-app/repository_branches`,i.td.toAPIParameters(e)))}createGithubAppPullRequest(e){return this.GithubAppCreatePullRequestSchemaValidator.validate(async({xr:t})=>await t.post(t.url`/api/integrations/github-app/create_pull_request`,i.td.toBodyParameters(e)))}}},889933(e,t,r){r.d(t,{_v:()=>_,pO:()=>w,zo:()=>h});var n=r(696176),i=r(238191),a=r(25054),o=r(705929),s=r(71927),l=r(366257),d=r(898509),c=r(295502),u=r(497296);function p(e){if(!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(e))throw Error
+---
+void 0!==a&&(n[t.has(i)?i:(0,c.A)(i)]=r(a));return n},{})}y.toQueryParameters=function(e,t=[]){return void 0===e?e:T(e,new Set(t),b)},y.toBodyParameters=function(e,t=[]){return void 0===e?e:T(e,new Set(t))},y.toAPIParameters=function(e,t=[]){return void 0===e?e:T(e,new Set(t),b)},y.toCamelCase=function(e){return e.transform(e=>(0,d.A)(e,(e,t)=>(0,l.A)(t)))};let v=E()},12165(e,t,r){r.d(t,{YH:()=>d.YH,xx:()=>d.xx,NZ:()=>c.NZ,$t:()=>d.$t,Lz:()=>c.Lz,ij:()=>a.i,cr:()=>h.cr,t$:()=>h.t$,dT:()=>c.dT,CH:()=>s,L0:()=>u.L0,Pe:()=>d.Pe,sU:()=>d.sU,Z9:()=>c.Z9,xO:()=>c.xO,$w:()=>m.$w,yU:()=>m.yU,oQ:()=>l.o,DH:()=>m.DH,a_:()=>h.a_,AZ:()=>_.A,sg:()=>p.s,Hg:()=>u.Hg,ve:()=>u.ve,wY:()=>f.wY,b6:()=>y.b6,Ux:()=>c.Ux,Mg:()=>y.Mg,UY:()=>y.UY,Q2:()=>E.Q2,w4:()=>c.w4,pX:(
+---
+===== addRepeated =====
+hits: 6
+UEST:o.ZA.AICREDITREQUEST,OAUTH_APP_REQUEST:o.ZA.OAUTHAPPREQUEST};class A{constructor(){this.params=new URLSearchParams}addRepeated(e,t){return t.forEach(t=>this.params.append(`${e}[]`,t)),this}add(e,t){return void 0!==t&&this.params.set(e,String(t)),this}build(){return this.params}}function O(e){return 0===e.successful_attempts&&0===e.failed_attempts&&(e.already_handled_requests??0)>0}function C(e){return e.subtractive?{subtractive:!0,excludedRequestIds:e.excludedRequestIds??[],queryString:e.queryString,requestSeatTypes:e.requestSeat
+---
+iewAll:e.viewAll})))}getRequests(e){return this.AdminRequestsListSchemaValidator.validate(async({xr:t})=>{let r=new A().addRepeated("request_types",e.requestTypes).add("sort_order",e.sortOrder).add("view_all",e.viewAll).add("query_string",e.queryString).add("cursor",e.cursor).addRepeated("billing_group_ids",e.billingGroupIds??[]).addRepeated("request_seat_types",e.requestSeatTypes??[]).addRepeated("requester_permission_levels",e.requesterPermissionLevels??[]).build();return await t.get(t.url`/api/plans/${e.planId}/admin_requests`,r)})
+---
+Types).add("sort_order",e.sortOrder).add("view_all",e.viewAll).add("query_string",e.queryString).add("cursor",e.cursor).addRepeated("billing_group_ids",e.billingGroupIds??[]).addRepeated("request_seat_types",e.requestSeatTypes??[]).addRepeated("requester_permission_levels",e.requesterPermissionLevels??[]).build();return await t.get(t.url`/api/plans/${e.planId}/admin_requests`,r)})}getDashboardView(e){return this.AdminRequestsDashboardViewSchemaValidator.validate(async({xr:t})=>{let r=new A().addRepeated("request_types",e.requestTypes)
+---
+===== request_types enum =====
+hits: 5
+75208);let p=a.z.object({request_id:a.z.string(),status:a.z.string(),request_type:a.z.string()}),_={ACCOUNT_TYPE_REQUEST:"account_type_request",AI_CREDIT_REQUEST:"ai_credit_request",OAUTH_APP_REQUEST:"oauth_app_request"};var m=((n=m||{}).ADMIN="admin",n.GUEST="guest",n.MEMBER="member",n);let h=a.z.object({totals:a.z.record(a.z.string(),a.z.number()),account_type_request:a.z.object({seat_types:a.z.record(a.z.string(),a.z.number())})}),f=a.z.object({id:a.z.string(),name:a.z.string(),avatar_url:a.z.string(),email:a.z.
+---
+t_type,stack:e.stacked}]:e.hit?[{kind:"hit",hit:{...e.hit,request_type:e.request_type}}]:[])}let S={ACCOUNT_TYPE_REQUEST:"AccountTypeRequest",AI_CREDIT_REQUEST:o.ZA.AICREDITREQUEST,OAUTH_APP_REQUEST:o.ZA.OAUTHAPPREQUEST};class A{constructor(){this.params=new URLSearchParams}addRepeated(e,t){return t.forEach(t=>this.params.append(`${e}[]`,t)),this}add(e,t){return void 0!==t&&this.params.set(e,String(t)),this}build(){return this.params}}function O(e){return 0===e.successful_attempts&&0===e.failed_attempts&&(e.already
+---
+===== getCounts =====
+hits: 2
+K)({label:"adminRequestCounts",queryFn:async e=>(await this.getCounts(e)).data.meta,staleTime:1/0,gcTime:0}),this.DashboardViewQuery=d.M4.Query({label:"adminRequestsDashboardView",gcPolicy:"onUnmount",fetch:async e=>(await this.getDashboardView(e)).data.meta}),this.RequestsPaginatedQuery=d.M4.PaginatedQuery({label:"adminRequests",fetch:async(e,{pageParam:t})=>{let r=(await this.getRequests({...e,cursor:t})).data.meta,n=new Date().toISOString();return{data:{...r,query_timestam
+---
+P_REQUEST:return;default:return(0,i.xb)(e)}}(e),...C(e)})))}getCounts(e){return this.AdminRequestCountsSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/plans/${e.planId}/admin_requests/counts`,s.td.toQueryParameters({queryString:e.queryString,requestPermissionLevel:e.requestPermissionLevel,viewAll:e.viewAll})))}getRequests(e){return this.AdminRequestsListSchemaValidator.validate(async({xr:t})=>{let r=new A().addRepeated("request_types",e.requestTypes).add("sort_
+---
+===== getDashboardView =====
+hits: 2
+hboardView",gcPolicy:"onUnmount",fetch:async e=>(await this.getDashboardView(e)).data.meta}),this.RequestsPaginatedQuery=d.M4.PaginatedQuery({label:"adminRequests",fetch:async(e,{pageParam:t})=>{let r=(await this.getRequests({...e,cursor:t})).data.meta,n=new Date().toISOString();return{data:{...r,query_timestamp:n},nextPage:r.next_cursor??void 0}},joinPages:e=>({hits:e.flatMap(e=>e.data.hits),next_cursor:e[e.length-1]?.data.next_cursor,total_hits:e[0]?.data.total_hits??0,query_timestamp:e[0]?.data.query_timestamp??
+---
+ait t.get(t.url`/api/plans/${e.planId}/admin_requests`,r)})}getDashboardView(e){return this.AdminRequestsDashboardViewSchemaValidator.validate(async({xr:t})=>{let r=new A().addRepeated("request_types",e.requestTypes).add("query_string",e.queryString).build();return await t.get(t.url`/api/plans/${e.planId}/admin_requests/dashboard_view`,r)})}};function w(e,t=!1){return N.CountsQuery({planId:e,viewAll:t})}},635210(e,t,r){r.d(t,{Es:()=>h,Tt:()=>S,UZ:()=>b,bZ:()=>G,fg:()=>y,zV:()=>I});var n,i=r(705929),a=r(295502),o=r(
+---
+===== secondary_before =====
+hits: 0
+===== secondary_column =====
+hits: 0
+===== X-Figma-User-ID =====
+hits: 2
+ode/image?purpose=canvas&sha1=${s.nj(n.sha1Bytes)}&fileKey=${r.fileKey}`);let m=(0,E.initialOptions)().user_data?.id;m&&c.setRequestHeader("X-Figma-User-ID",m),c.setRequestHeader("Content-Type",_),R.pl.push(c),c.send(n.bytes||null)};i(3)})),await (0,m.fm)(0)}await Promise.all(c)}}catch(e){throw f.Ay.del(f.Ay.url`/api/files_batch`,{files:[{key:r.fileKey}]}),e}let c=[];return a>0&&c.push((0,n.t)("fullscreen.file_import.oversized_files_ima
+---
+oolPreferences:JSON.stringify(e.toolPreferences)}}},t),t}mcpOauthCallback(e,t){p(e.serverId);let r={...c.Ay.defaults.headers};return t&&(r["X-Figma-User-ID"]=t),this.McpOauthCallbackSchemaValidator.validate(async({xr:t})=>await t.post(t.url`/api/mcp/servers/${e.serverId}/oauth_callback`,u.td.toAPIParameters(e),{headers:r}))}createMcpOauthClient(e){return p(e.serverId),this.CreateMcpOauthClientSchemaValidator.validate(async({xr:t})=>awai
+---
+===== csrf =====
+hits: 0

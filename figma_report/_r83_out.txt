@@ -1,0 +1,100 @@
+===== 基线 & 判别矩阵 (query=?...) =====
+[s00_base_design] 200 len=141153 1325ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s01_q] 200 len=141153 1129ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s02_eq] 200 len=141153 1134ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s03_dq] 200 len=141153 1301ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s04_bt] 200 len=141153 1586ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s05_cmt] 200 len=141153 1905ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s06_hash] 200 len=141153 1212ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s07_blk] 200 len=141153 1208ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s08_blkc] 200 len=141153 1560ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s09_btrue] 200 len=141153 1345ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s10_bfalse] 200 len=141153 1106ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s11_orall] 200 len=141153 1165ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s12_num1] 200 len=141153 1177ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s13_num2] 200 len=141153 1174ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s14_null] 200 len=141153 1206ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s15_nl] 200 len=141153 1037ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s16_sleep] 200 len=141153 1178ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s17_concat] 200 len=141153 2063ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s18_like_pct] 200 len=141153 1571ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[s19_us] 200 len=141153 1159ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+===== resource_type 候选续爆 =====
+[rt_r1_all] 400 len=98 624ms
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: all","i18n":null}
+
+[rt_r2_community] 400 len=104 577ms
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: community","i18n":null}
+
+[rt_r3_hub_file] 400 len=103 567ms
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: hub_file","i18n":null}
+
+[rt_r4_file] 400 len=99 553ms
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: file","i18n":null}
+
+[rt_r5_template] 400 len=103 621ms
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: template","i18n":null}
+
+[rt_r6_design_files] 400 len=107 561ms
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: design_files","i18n":null}
+
+[rt_r7_ui_kits] 400 len=102 609ms
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: ui_kits","i18n":null}
+
+[rt_r8_design_templates] 400 len=111 594ms
+    {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: design_templates","i18n":null}
+
+[rt_r9_files_lower_u] 200 len=150443 1394ms
+    {"error":false,"status":200,"meta":[{"id":"93babe5d-97bc-41f2-94f0-020707fbe5cd","name":"Урок №1_Айтилогия Интенсив (figma)","description":"<p>Сайт об услугах психолога</p>","resource_type":"design_template","created_at":"2026-09-10T05:58:58.364Z","updated_at":"2026-09-10T05:59:04.831Z","unpublished_at":null,"supp
+
+[rt_r10_empty] 200 len=141153 1317ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+===== metadataQuery 序列化尝试 =====
+[mq1_json] 200 len=141153 1157ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+[mq2_quote] 200 len=141153 1236ms
+    {"error":false,"status":200,"meta":[{"id":"b1c85692-6396-4b46-8c15-c91ecb831ca6","name":"Adherence Report Design","description":"","resource_type":"figmake_template","created_at":"2026-09-10T06:10:45.407Z","updated_at":"2026-09-10T06:10:49.132Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_sc
+
+DONE

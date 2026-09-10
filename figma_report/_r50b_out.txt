@@ -1,0 +1,161 @@
+===== 历史脚本中的 share/link_access 调用 =====
+[_figma_file_share.py] '/api/files/%s/permissions' % FILE_A,
+[_figma_find_share.py] """从 transcript 找早期 link_access 修改(分享写)请求形态"""
+[_figma_find_share.py] # 只搜 assistant 执行/汇报里的 HTTP 形态: PUT/POST/PATCH 带 link_access 或 share/permission
+[_figma_find_share.py] r'(PUT|POST|PATCH)[^"]{0,120}link_access[^"]{0,200}',
+[_figma_find_share.py] r'link_access[^"]{0,150}(PUT|POST|PATCH)',
+[_figma_n1f_priv.py] 考古依据: PUT /api/files/{key} 白名单字段含 link_access (B-owner 曾 200 改 M)
+[_figma_n1f_priv.py] 流程: GET meta 回填 -> PUT link_access=invite -> anon 验证私有 -> A/anon x versions/canvas/meta
+[_figma_n1f_priv.py] print(f'   current: name={name!r} link_access={m.get("link_access")!r} desc={desc!r} tg={tg!r} vxr={vxr!r}')
+[_figma_n1f_priv.py] body = {'name': name, 'description': desc, 'link_access': cand}
+[_figma_n1f_priv.py] rr = req('PUT', f'{BASE}/api/files/{FILE_B}', UID_B, body=body, label=f'PUT link_access={cand}')
+[_figma_n1f_priv.py] nm = (j.get('meta') or {}).get('link_access') or (j.get('meta') or {}).get('name')
+[_figma_n1f_priv.py] body={'name': name, 'description': desc, 'link_access': 'view'}, label=f'RESTORE view after {cand}')
+[_figma_n1f_priv.py] body = {'name': name, 'description': desc, 'link_access': 'view'}
+[_figma_r48a_links.py] """r48a: 对比文件 link_access 与匿名可读性
+[_figma_r48a_links.py] return {'status': 200, 'name': m.get('name'), 'link_access': m.get('link_access'),
+[_figma_r48a_links.py] fmt = lambda d: f"{d.get('status')} na={d.get('link_access')} et={d.get('editor_type')}" if d.get('status') == 200 else f"{d.get('status')} {str(d.get
+[_figma_r50a_js.py] """r50a: 从 JS bundle 提取修改 link_access 的 API"""
+[_figma_r50a_js.py] ('link_access url', r'.{60}link_access.{0,220}'),
+[_figma_r50b_link.py] """r50b: 找设置 link_access / 分享 API - 历史脚本 + JS 深挖"""
+[_figma_r50b_link.py] print('===== 历史脚本中的 share/link_access 调用 =====')
+[_figma_r50b_link.py] if re.search(r'link_access|share_link|/share|permissions', t):
+[_figma_r50b_link.py] for m in re.finditer(r'[^\n]*(?:link_access|share_link|/share|permissions)[^\n]*', t):
+[_figma_t3_put.py] ('proto_link_access=edit', {'proto_link_access': 'edit'}),
+[_figma_t3_put.py] ('嵌套name+link_access', {'name': 'n', 'link_access': 'edit'}),
+[_figma_v43_final.py] print(f'  FILE_A name={ma.get("name")!r} link_access={ma.get("link_access")!r}')
+[_figma_v58b_role.py] for path in [f'/api/files/{M}/acl', f'/api/files/{M}/permissions', f'/api/files/{M}/role',
+[_figma_v58b_role.py] f'/api/file/{M}/permissions', f'/api/files/{M}/users']:
+[_figma_v63_restrict_ctl.py] la = re.search(r'"link_access":"([^"]*)"', t)
+[_figma_v63_restrict_ctl.py] print(f'[{tag}] {r.status_code} link_access={la.group(1) if la else "?"} '
+[_figma_v65_boot_ctl.py] for kw in ['"can_edit"', '"can_export"', '"role"', '"viewer_export_restricted"', '"file_minimal_user_state"', '"link_access"']:
+[_figma_v69_inspect.py] for kw in ['"key"', '"name"', '"folder_id"', '"team_id"', '"creator_id"', '"link_access"', '"trashed', '"editor_type"', '"updated_at"']:
+[_figma_w07_endpoints.py] for kw in ['/shared', 'shareToken', 'share_token', 'publicShare', 'isPublic', 'visibility', 'access_level']:
+[_figma_w08_anon.py] ('recipes-shared', '/v1/recipes/shared'),
+[_figma_w08_anon.py] ('flow-share-assets', '/v1/assets/shared'),
+[_figma_w10_tier.py] probe('recipes-shared', 'GET', '/v1/recipes/shared')
+[_figma_w12_anonv1.py] probe('fonts', 'GET', '/assets/shared?workflowId=x&contentKey=y')
+[_figma_w13_sharemodel.py] """w13: 考古 share 模型 - assets/shared 调用/生成 / 分享链接 URL 形态 / share flow"""
+[_figma_w13_sharemodel.py] # 1. assets/shared 完整调用上下文 (b9r 附近)
+[_figma_w13_sharemodel.py] for kw in ['/assets/shared', 'sharedAsset', 'contentKey', 'workflowId']:
+[_figma_w14_shareurl.py] for kw in ['invitation/', 'validate', '/share', 'share/', 'publicView', 'viewRecipe', '/flow/', '/recipe/']:
+[_figma_w18_oauth.py] ('baseline-share', 'https://app.weavy.ai/share'),
+[_figma_w22_finger.py] 'https://share.figma.com/', 'https://config.figma.com/', 'https://register.config.figma.com/',
+[_figma_w30_embedarch.py] KWS = ['embed/community', 'contentKey', 'assets/shared', 'auth:', 'workflowId', 'shared',
+[_figma_w33_routes.py] 'GET|https://api.weavy.ai/api/v1/assets/shared?workflowId=demo1&contentKey=demo1',
+[_figma_w39_methods.py] ('GET', f'{B}/recipes/{rid}/shared'),
+[_figma_w41_idor.py] ('GET', f'{B}/assets/shared?workflowId={rid}&contentKey=probe', None),
+[_figma_w42_sharemodel.py] POST /v1/recipes/{id}/share      ?
+[_figma_w42_sharemodel.py] POST /v1/recipes/{id}/shared     ?
+[_figma_w42_sharemodel.py] for kw in ['/share', 'visibility', 'sharedUsers', 'makePublic', 'shared/']:
+[_figma_w43_authmatrix.py] call('a3', 'POST', f'/recipes/{PRIV}/share', {'emails': ['nobody-test@example.com']}, expect=402)
+[_figma_w43_authmatrix.py] call('b4', 'POST', f'/recipes/{PUB}/share', {'emails': ['nobody-test@example.com']}, expect=403)
+[_figma_w47_endpoints.py] """w47: bundle 考古 - workspace/invitation/checkout/share 真实端点路径与 payload"""
+[_figma_w47_endpoints.py] if '/share' in seg or '/v1/' in seg or 'POST' in seg:
+[_figma_w53_cleanup.py] req('2b-shared-del', 'POST', f'{B}/recipes/CLOID63hXfPGwO72C6tYzt/shared/delete')
+[_figma_w53_cleanup.py] req('2c-share-clear', 'POST', f'{B}/recipes/CLOID63hXfPGwO72C6tYzt/share', body={'emails': []})
+[_figma_w58_tools.py] """w58: tools 面测试 - 匿名豁免 + visibility/share 免费账号 (同型对照 recipes)"""
+[_figma_w58_tools.py] req('2b-shared-users', 'GET', f'{B}/tools/{TID}/shared-users')
+[_figma_w58_tools.py] req('4a-share', 'POST', f'{B}/tools/{TID}/share', body={'emails': ['ctl-tool@example.com']})
+[_figma_w61_visroles.py] req('2a-role', 'POST', f'{B}/recipes/CLOID63hXfPGwO72C6tYzt/share',
+[_figma_w61_visroles.py] req('3a-users', 'GET', f'{B}/recipes/CLOID63hXfPGwO72C6tYzt/shared-users')
+[_figma_w67_scan.py] for p in [f'/recipes/{RID}/snapshots', f'/recipes/{RID}/shared-users']:
+[_figma_z36_share.py] """z36: 分享设置结构考古——link_access 上下文找 copy/export 限制字段 + 设置端点
+[_figma_z36_share.py] print('########## link_access 定义/使用 ##########')
+[_figma_z36_share.py] scan_files('link_access', cap=6, before=250, after=450)
+[_probe_accessrow2.py] i = data.find('function N(e){return!!(!e.canEdit&&e.viewer_export_restricted&&e.link_access===d.PQ.INHERIT)')
+[_probe_restrict_switch.py] # 1. file_permissions_modal 的 i18n key 清单 (export/download/copy/restrict)
+[_probe_restrict_switch.py] for pat in [r'file_permissions_modal\.[a-z_.0-9]+', r'file_access_row\.[a-z_.0-9]+']:
+[_probe_shareapi.py] # 1. 找所有 /api/ 开头的字符串字面量, 过滤含 file/files/share/invite/user/role 的
+[_probe_user_api.py] """探测: A 身份读 /api/user 拿 email (自读) + 考古 file_permissions_modal 角色变更端点"""
+[_figma_file_share.py] '/api/files/%s/permissions' % FILE_A,
+[_figma_find_share.py] """从 transcript 找早期 link_access 修改(分享写)请求形态"""
+[_figma_find_share.py] # 只搜 assistant 执行/汇报里的 HTTP 形态: PUT/POST/PATCH 带 link_access 或 share/permission
+[_figma_find_share.py] r'(PUT|POST|PATCH)[^"]{0,120}link_access[^"]{0,200}',
+[_figma_find_share.py] r'link_access[^"]{0,150}(PUT|POST|PATCH)',
+[_figma_n1f_priv.py] 考古依据: PUT /api/files/{key} 白名单字段含 link_access (B-owner 曾 200 改 M)
+[_figma_n1f_priv.py] 流程: GET meta 回填 -> PUT link_access=invite -> anon 验证私有 -> A/anon x versions/canvas/meta
+[_figma_n1f_priv.py] print(f'   current: name={name!r} link_access={m.get("link_access")!r} desc={desc!r} tg={tg!r} vxr={vxr!r}')
+[_figma_n1f_priv.py] body = {'name': name, 'description': desc, 'link_access': cand}
+[_figma_n1f_priv.py] rr = req('PUT', f'{BASE}/api/files/{FILE_B}', UID_B, body=body, label=f'PUT link_access={cand}')
+[_figma_n1f_priv.py] nm = (j.get('meta') or {}).get('link_access') or (j.get('meta') or {}).get('name')
+[_figma_n1f_priv.py] body={'name': name, 'description': desc, 'link_access': 'view'}, label=f'RESTORE view after {cand}')
+[_figma_n1f_priv.py] body = {'name': name, 'description': desc, 'link_access': 'view'}
+[_figma_r48a_links.py] """r48a: 对比文件 link_access 与匿名可读性
+[_figma_r48a_links.py] return {'status': 200, 'name': m.get('name'), 'link_access': m.get('link_access'),
+[_figma_r48a_links.py] fmt = lambda d: f"{d.get('status')} na={d.get('link_access')} et={d.get('editor_type')}" if d.get('status') == 200 else f"{d.get('status')} {str(d.get
+[_figma_r50a_js.py] """r50a: 从 JS bundle 提取修改 link_access 的 API"""
+[_figma_r50a_js.py] ('link_access url', r'.{60}link_access.{0,220}'),
+[_figma_r50b_link.py] """r50b: 找设置 link_access / 分享 API - 历史脚本 + JS 深挖"""
+[_figma_r50b_link.py] print('===== 历史脚本中的 share/link_access 调用 =====')
+[_figma_r50b_link.py] if re.search(r'link_access|share_link|/share|permissions', t):
+[_figma_r50b_link.py] for m in re.finditer(r'[^\n]*(?:link_access|share_link|/share|permissions)[^\n]*', t):
+[_figma_t3_put.py] ('proto_link_access=edit', {'proto_link_access': 'edit'}),
+[_figma_t3_put.py] ('嵌套name+link_access', {'name': 'n', 'link_access': 'edit'}),
+[_figma_v43_final.py] print(f'  FILE_A name={ma.get("name")!r} link_access={ma.get("link_access")!r}')
+[_figma_v58b_role.py] for path in [f'/api/files/{M}/acl', f'/api/files/{M}/permissions', f'/api/files/{M}/role',
+[_figma_v58b_role.py] f'/api/file/{M}/permissions', f'/api/files/{M}/users']:
+[_figma_v63_restrict_ctl.py] la = re.search(r'"link_access":"([^"]*)"', t)
+[_figma_v63_restrict_ctl.py] print(f'[{tag}] {r.status_code} link_access={la.group(1) if la else "?"} '
+[_figma_v65_boot_ctl.py] for kw in ['"can_edit"', '"can_export"', '"role"', '"viewer_export_restricted"', '"file_minimal_user_state"', '"link_access"']:
+[_figma_v69_inspect.py] for kw in ['"key"', '"name"', '"folder_id"', '"team_id"', '"creator_id"', '"link_access"', '"trashed', '"editor_type"', '"updated_at"']:
+[_figma_w07_endpoints.py] for kw in ['/shared', 'shareToken', 'share_token', 'publicShare', 'isPublic', 'visibility', 'access_level']:
+[_figma_w08_anon.py] ('recipes-shared', '/v1/recipes/shared'),
+[_figma_w08_anon.py] ('flow-share-assets', '/v1/assets/shared'),
+[_figma_w10_tier.py] probe('recipes-shared', 'GET', '/v1/recipes/shared')
+[_figma_w12_anonv1.py] probe('fonts', 'GET', '/assets/shared?workflowId=x&contentKey=y')
+[_figma_w13_sharemodel.py] """w13: 考古 share 模型 - assets/shared 调用/生成 / 分享链接 URL 形态 / share flow"""
+[_figma_w13_sharemodel.py] # 1. assets/shared 完整调用上下文 (b9r 附近)
+[_figma_w13_sharemodel.py] for kw in ['/assets/shared', 'sharedAsset', 'contentKey', 'workflowId']:
+[_figma_w14_shareurl.py] for kw in ['invitation/', 'validate', '/share', 'share/', 'publicView', 'viewRecipe', '/flow/', '/recipe/']:
+[_figma_w18_oauth.py] ('baseline-share', 'https://app.weavy.ai/share'),
+[_figma_w22_finger.py] 'https://share.figma.com/', 'https://config.figma.com/', 'https://register.config.figma.com/',
+[_figma_w30_embedarch.py] KWS = ['embed/community', 'contentKey', 'assets/shared', 'auth:', 'workflowId', 'shared',
+[_figma_w33_routes.py] 'GET|https://api.weavy.ai/api/v1/assets/shared?workflowId=demo1&contentKey=demo1',
+[_figma_w39_methods.py] ('GET', f'{B}/recipes/{rid}/shared'),
+[_figma_w41_idor.py] ('GET', f'{B}/assets/shared?workflowId={rid}&contentKey=probe', None),
+[_figma_w42_sharemodel.py] POST /v1/recipes/{id}/share      ?
+[_figma_w42_sharemodel.py] POST /v1/recipes/{id}/shared     ?
+[_figma_w42_sharemodel.py] for kw in ['/share', 'visibility', 'sharedUsers', 'makePublic', 'shared/']:
+[_figma_w43_authmatrix.py] call('a3', 'POST', f'/recipes/{PRIV}/share', {'emails': ['nobody-test@example.com']}, expect=402)
+[_figma_w43_authmatrix.py] call('b4', 'POST', f'/recipes/{PUB}/share', {'emails': ['nobody-test@example.com']}, expect=403)
+[_figma_w47_endpoints.py] """w47: bundle 考古 - workspace/invitation/checkout/share 真实端点路径与 payload"""
+[_figma_w47_endpoints.py] if '/share' in seg or '/v1/' in seg or 'POST' in seg:
+[_figma_w53_cleanup.py] req('2b-shared-del', 'POST', f'{B}/recipes/CLOID63hXfPGwO72C6tYzt/shared/delete')
+[_figma_w53_cleanup.py] req('2c-share-clear', 'POST', f'{B}/recipes/CLOID63hXfPGwO72C6tYzt/share', body={'emails': []})
+[_figma_w58_tools.py] """w58: tools 面测试 - 匿名豁免 + visibility/share 免费账号 (同型对照 recipes)"""
+[_figma_w58_tools.py] req('2b-shared-users', 'GET', f'{B}/tools/{TID}/shared-users')
+[_figma_w58_tools.py] req('4a-share', 'POST', f'{B}/tools/{TID}/share', body={'emails': ['ctl-tool@example.com']})
+[_figma_w61_visroles.py] req('2a-role', 'POST', f'{B}/recipes/CLOID63hXfPGwO72C6tYzt/share',
+[_figma_w61_visroles.py] req('3a-users', 'GET', f'{B}/recipes/CLOID63hXfPGwO72C6tYzt/shared-users')
+[_figma_w67_scan.py] for p in [f'/recipes/{RID}/snapshots', f'/recipes/{RID}/shared-users']:
+[_figma_z36_share.py] """z36: 分享设置结构考古——link_access 上下文找 copy/export 限制字段 + 设置端点
+[_figma_z36_share.py] print('########## link_access 定义/使用 ##########')
+[_figma_z36_share.py] scan_files('link_access', cap=6, before=250, after=450)
+[_probe_accessrow2.py] i = data.find('function N(e){return!!(!e.canEdit&&e.viewer_export_restricted&&e.link_access===d.PQ.INHERIT)')
+[_probe_restrict_switch.py] # 1. file_permissions_modal 的 i18n key 清单 (export/download/copy/restrict)
+[_probe_restrict_switch.py] for pat in [r'file_permissions_modal\.[a-z_.0-9]+', r'file_access_row\.[a-z_.0-9]+']:
+[_probe_shareapi.py] # 1. 找所有 /api/ 开头的字符串字面量, 过滤含 file/files/share/invite/user/role 的
+[_probe_user_api.py] """探测: A 身份读 /api/user 拿 email (自读) + 考古 file_permissions_modal 角色变更端点"""
+
+===== JS: files API 的写方法 =====
+[_js\935-431f89677a39072c.min.js] .post(t.url`/api/files/${e.fileKey}/audios/${e.sha1}/upload`
+[_js\935-431f89677a39072c.min.js] .post(t.url`/api/files/${e.fileKey}/page_thumbnails`
+[_js\935-431f89677a39072c.min.js] .post(t.url`/api/files/hub_file_duplicates`
+[_js\935-431f89677a39072c.min.js] .post(t.url`/api/files/${e.fileKey}/reference_id`
+[_js\935-431f89677a39072c.min.js] url`/api/files/${e.fileKey}/related_links`
+[_js\figma_app-main.js] .post(t.url`/api/files/${e.fileKey}/ai_credits/plan_user_action_credit_usage`
+[_js\figma_app-main.js] .post(t.url`/api/files/${e.file_key}/published_package`
+[_js\figma_app-main.js] .post(a.url`/api/file/${i}/collections`
+[_js\figma_app-main.js] .put(t.url`/api/file/claim/${e.fileKey}`
+[_js\figma_app-main.js] .put(t.url`/api/file/claim/${e.fileKey}`
+[_js\figma_app-main.js] .put(t.url`/api/file/mark_diagram_inserted/${e.fileKey}`
+[_js\figma_app-main.js] .post(t.url`/api/files/${e.fileKey}/make_local_metadata`
+[_js\figma_app-main.js] .put(t.url`/api/files/${e.fileKey}/figspec/code_repository`
+[_js\figma_app-main.js] url`/api/files/${r}/related_links`
+[_js\figma_app-main.js] url`/api/files/${e}/related_links`
+[_js\figma_app-main.js] url`/api/files/${e}/related_links`
+[_js\figma_app-main.js] url`/api/files/${e.fileKey}/related_links/link_preview`
+[_js\figma_app-main.js] url`/api/file/${e.fileKey}/canvas_mentions/needs_invite`
+[_js\figma_app-main.js] url`/api/file/${e.fileKey}/canvas_mentions/record_invite`
+[_js\figma_app-main.js] url`/api/files/${e}/expire_public_link`

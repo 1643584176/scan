@@ -1,0 +1,23 @@
+===== STEP0 获取 folder id(只读候选) =====
+[S0a_teams_folders] 200 len=1062 :: {"error":false,"status":200,"meta":{"folders":{"634606972":{"updated_at":"2026-08-18T02:51:16.136Z"}},"folder_rows":[{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-08-04T08:09:57.693Z","scheme":null,"path":"Team folder","settings":null,"team_id":"1666382706663462213","view_only_at":null,"org_id":null,"deleted_at":null,"description":null,"sharing_audience_control":"pla
+[S0b_v2_folders] 404 len=830453 :: <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>
+    <script nonce="dk
+[S0c_folders_get] 404 len=830473 :: <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>
+    <script nonce="C7
+FID = None
+
+===== STEP1 paginated_files 基线 =====
+
+===== STEP3 activity_logs 可达性 =====
+[AL_list] 403 len=281 :: {"error":true,"status":403,"message":"You don't have permission to do that. Contact your organization administrator.","i18n":{"id":"error.no_permission_contact_org_admin","fallback_text":"You don't have permission to do that. Contact your organization administ
+[AL_recent_me] 403 len=197 :: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[AL_lastedit_me] 403 len=197 :: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+DONE

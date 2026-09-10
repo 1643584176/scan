@@ -1,0 +1,13 @@
+===== R22 A/B 下载差异判别 =====
+
+[whoami_B] 200 len=2536
+    plans_by_user_id keys = ['1666382703778278399']
+
+[code_other_A] 302 len=0
+    Location: https://s3-alpha-sig.figma.com/plugins/1679214735149351192/272413/c34c4cc1-a459-4a57-b540-bec7d85f57fa-code?Expires=1789948800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=d~AbM5Vu~fFCsTKQAyncFwwFo0FxBTuFVbazt669E2B3Mo37JC
+
+[code_other_B] 403 len=46
+    body: You don't seem to have permission to do that.
+
+
+DONE

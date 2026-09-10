@@ -1,0 +1,59 @@
+===== A. users/batched(GET;userIds 逗号列表,JS 已证) =====
+[A1a_camel] 200 len=    50 665ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A1b_snake] 200 len=   251 329ms (对照:映射方向)
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+[A2_two] 200 len=    50 338ms (集合语义)
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A3_abc] 200 len=    50 355ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A4_mixed] 200 len=    50 339ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A5_empty] 200 len=    50 331ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A6_quote] 200 len=    50 336ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A7_or] 200 len=    50 338ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A8_and1] 200 len=    50 354ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A9_and2] 200 len=    50 333ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A10_pct2c] 200 len=    50 330ms (编码逗号)
+      {"error":false,"status":200,"meta":[],"i18n":null}
+
+===== B. file_move/suggested(org_id;JS 已证) =====
+[B1_no] 200 len=   221 393ms (基线 221B)
+      {"error":false,"status":200,"meta":[{"id":"634606972","name":"Team folder","team_name":"1643584176's team","is_editable":true,"team_id":"1666382706663462213","workspace_id":null,"is_connected_project":false}],"i18n":null}
+[B2_org_uid] 200 len=    50 334ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[B3_org_team] 200 len=    50 356ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[B4_org_1] 200 len=    50 590ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[B5_org_q] 500 len=   157 541ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B6_org_or] 500 len=   157 361ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B7_org_big] 500 len=   157 374ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B8_org_neg] 200 len=    50 349ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+
+===== C. unsplash search(自有 file key) =====
+[C1_dog] 200 len= 46806 782ms 
+      head: {"error":false,"status":200,"meta":{"total":10000,"total_pages":1000,"results":[{"id":"yihlaRCCvd4","alternative_slugs":{"en":"dog-running-on-beach-during-daytime-yihlaRCCvd4","es"
+[C2_cat] 200 len= 45773 721ms (差分对)
+[C3_q] 200 len= 46072 723ms 
+[C4_or] 200 len= 47532 837ms 
+
+===== D. content_summary(mode=trash|delete 已知;探元素字段) =====
+[D1_trash_e0] 200 len=   184 361ms 
+      {"error":false,"status":200,"meta":{"subfolder_count":0,"file_count":0,"has_hidden_items":false,"has_pending_asset_transfer":false,"has_pending_resource_connection":false},"i18n":null}
+[D2_del_e0] 200 len=   184 344ms 
+      {"error":false,"status":200,"meta":{"subfolder_count":0,"file_count":0,"has_hidden_items":false,"has_pending_asset_transfer":false,"has_pending_resource_connection":false},"i18n":null}
+[D3_trash_fid] 200 len=   184 828ms 
+      {"error":false,"status":200,"meta":{"subfolder_count":0,"file_count":0,"has_hidden_items":false,"has_pending_asset_transfer":false,"has_pending_resource_connection":false},"i18n":null}
+[D4_trash_num] 400 len=   177 328ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:17: Expected: '{'"}
+DONE

@@ -1,0 +1,2 @@
+HTTP 400
+{"error":true,"status":400,"message":"Billing-period usage summaries are only supported for Org plans","i18n":null}

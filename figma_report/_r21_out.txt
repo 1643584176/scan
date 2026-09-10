@@ -1,0 +1,14 @@
+identity headers: x-figma-user-id=1667396392129259941
+===== R21 B视角 code 下载 =====
+
+[whoami_plans] 200 len=4964
+
+[code_cur_B] 403 len=46
+    body: You don't seem to have permission to do that.
+
+
+[code_v1_B] 403 len=46
+    body: You don't seem to have permission to do that.
+
+
+DONE

@@ -1,0 +1,3 @@
+HTTP 200 (0.59s)
+https://www.figma.com/api/plans/cc6b6125-a07f-4d39-a54c-50ef65f33919/admin_requests/counts?request_permission_level=member&view_all=true
+{"error":false,"status":200,"meta":{"totals":{"account_type_request":0,"ai_credit_request":0},"account_type_request":{"seat_types":{"collaborator":0,"developer":0,"expert":0}}},"i18n":null}

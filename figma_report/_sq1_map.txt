@@ -1,0 +1,1002 @@
+=== 全端点总数: 533 | 资源域: 123 ===
+[DEEP] 84   [PART] 13   [NEW ] 436
+
+===== 未深测端点(按域) =====
+
+-- active_file_users (1) --
+   /api/active_file_users
+
+-- activity_logs (5) --
+   /api/activity_logs
+   /api/activity_logs/${r.key}
+   /api/activity_logs/export
+   /api/activity_logs/last_edit/${e.orgUserId}
+   /api/activity_logs/recent/${e.orgUserId}
+
+-- admin (12) --
+   /api/admin/check_redact_figmascope_file/${n}
+   /api/admin/check_redact_figmascope_file/${r}
+   /api/admin/check_redact_figmascope_journal/${t}
+   /api/admin/checkpoint_diffs/${e}
+   /api/admin/checkpoints/${e}
+   /api/admin/figmascope_checkpoint_diffs/${e}
+   /api/admin/figmascope_checkpoints/${e}
+   /api/admin/multiplayer_journal/${e.fileKey}/${e.endSequenceNumber}
+   /api/admin/multiplayer_journals/${e}
+   /api/admin/start_redact_figmascope_file/${t}/${e}
+   /api/admin/start_redact_figmascope_journal/${e.fileKey}/${e.endSequenceNumber}
+   /api/admin/tax/validate_vat
+
+-- arkose (1) --
+   /api/arkose/on_for_user
+
+-- asset_transfer (5) --
+   /api/asset_transfer/${e.id}
+   /api/asset_transfer/${e.id}/approve
+   /api/asset_transfer/${e.selectedAssetTransferRequest}
+   /api/asset_transfer/create_request
+   /api/asset_transfer/org_team_transfers/${e.orgId}
+
+-- assistant (1) --
+   /api/assistant/beta_support_requests
+
+-- billing (1) --
+   /api/billing/notification_settings
+
+-- bug_reports (1) --
+   /api/bug_reports
+
+-- bulk_favorite_resources_v2 (1) --
+   /api/bulk_favorite_resources_v2
+
+-- buzz_approvals (3) --
+   /api/buzz_approvals/complete_v2
+   /api/buzz_approvals/create
+   /api/buzz_approvals/withdraw
+
+-- checkout_session (5) --
+   /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/approve
+   /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/fulfill
+   /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/update_items
+   /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/update_tax
+   /api/checkout_session/pro_upgrade/create
+
+-- code_connect (17) --
+   /api/code_connect/bulk_map
+   /api/code_connect/code_snippet
+   /api/code_connect/generate_template
+   /api/code_connect/libraries/${e.libraryKey}/repositories
+   /api/code_connect/libraries/${e.libraryKey}/repositories/${e.repositoryId}
+   /api/code_connect/libraries/${e.libraryKey}/repositories/${e.repositoryId}/directories
+   /api/code_connect/libraries/${e.libraryKey}/source_files
+   /api/code_connect/libraries/${e.libraryKey}/source_files/file_details
+   /api/code_connect/libraries/${e}/template_generations/${t}/feedback
+   /api/code_connect/libraries/repositories
+   /api/code_connect/library/${e.libraryKey}/status
+   /api/code_connect/library/${t}/published_components/all
+   /api/code_connect/library/in_context/published_components
+   /api/code_connect/library/in_context/published_components/all
+   /api/code_connect/library/in_context/published_components/status
+   /api/code_connect/map
+   /api/code_connect/user_rules
+
+-- color_palettes (3) --
+   /api/color_palettes
+   /api/color_palettes/${e.uuid}
+   /api/color_palettes/${e}
+
+-- component_log_data (1) --
+   /api/component_log_data
+
+-- curator (1) --
+   /api/curator/file_browser_banner_configs
+
+-- design_systems (8) --
+   /api/design_systems/bundles
+   /api/design_systems/bundles/${e.bundleId}
+   /api/design_systems/bundles/${e.bundleId}/editors
+   /api/design_systems/bundles/${e.bundleId}/sources
+   /api/design_systems/components_state_groups
+   /api/design_systems/documentation_pages
+   /api/design_systems/documentation_pages/${e.pageId}
+   /api/design_systems/published_state_group_versions
+
+-- extension_analytics (1) --
+   /api/extension_analytics/v1/org/${e}
+
+-- feed_posts (5) --
+   /api/feed_posts/${G}/videos/${e.videoContent.videoFileUuid}/manifest
+   /api/feed_posts/${e.postUuid}/mark_viewed
+   /api/feed_posts/${e.publicUuid}/mark_viewed
+   /api/feed_posts/${e.publicUuid}/vote
+   /api/feed_posts/post_uuid/${E.publicUuid}
+
+-- feed_visited (1) --
+   /api/feed_visited/${e.currentOrgId}
+
+-- figjam (2) --
+   /api/figjam/default_collage_items
+   /api/figjam/default_inserts
+
+-- figment-proxy (3) --
+   /api/figment-proxy
+   /api/figment-proxy/monitor
+   /api/figment-proxy/user-support
+
+-- file (15) --
+   /api/file/${a}/comments/${s}
+   /api/file/${a}/voting_sessions/${o}
+   /api/file/${e.fileKey}/canvas_mentions/needs_invite
+   /api/file/${e.fileKey}/canvas_mentions/record_invite
+   /api/file/${e.fileKey}/canvas_mentions/should_add_user_group_to_file
+   /api/file/${e.fileKey}/comments/${e.commentThreadId}
+   /api/file/${i}/collections
+   /api/file/${r.fileKey}/voting_sessions/${t}
+   /api/file/${r}/comments/${t.comment.id}
+   /api/file/${s}/voting_sessions
+   /api/file/${t.key}/file_followers
+   /api/file/${t}/comments/${e}
+   /api/file/${t}/comments/${r}
+   /api/file/claim/${e.fileKey}
+   /api/file/mark_diagram_inserted/${e.fileKey}
+
+-- file_diff (1) --
+   /api/file_diff/v2/checkpoint_diff/${e}
+
+-- file_move (1) --
+   /api/file_move/suggested
+
+-- files_batch (1) --
+   /api/files_batch
+
+-- folder_items (4) --
+   /api/folder_items/can_move_bulk
+   /api/folder_items/content_summary
+   /api/folder_items/move_bulk
+   /api/folder_items/trash_bulk
+
+-- folder_join_link (1) --
+   /api/folder_join_link/redeem
+
+-- folders (18) --
+   /api/folders
+   /api/folders/${e.destFolderId}/can_move_files
+   /api/folders/${e.folderId}
+   /api/folders/${e.folderId}/ancestor_folders
+   /api/folders/${e.folderId}/can_move
+   /api/folders/${e.folderId}/color
+   /api/folders/${e.folderId}/contributors
+   /api/folders/${e.folderId}/duplicate
+   /api/folders/${e.folderId}/files
+   /api/folders/${e.folderId}/inheritance
+   /api/folders/${e}/paginated_files
+   /api/folders/${t.fileKey}/pin
+   /api/folders/${t.folderId}/description
+   /api/folders/${t}/claim
+   /api/folders/move
+   /api/folders/rename
+   /api/folders/restore/${e.folderId}
+   /api/folders/trash/${e.folderId}
+
+-- followers (1) --
+   /api/followers/${e}
+
+-- following (1) --
+   /api/following/${e}
+
+-- follows (1) --
+   /api/follows
+
+-- fonts (1) --
+   /api/fonts
+
+-- form_post (1) --
+   /api/form_post/org-lead-gen
+
+-- guidelines (3) --
+   /api/guidelines/${e}/generate
+   /api/guidelines/${e}/latest_guideline
+   /api/guidelines/${e}/upload
+
+-- hub_files (4) --
+   /api/hub_files/${t}
+   /api/hub_files/${t}/view
+   /api/hub_files/template/${t.hubFileId}/copy
+   /api/hub_files/v2/${r.id}/copy
+
+-- insights (2) --
+   /api/insights/${e.planId}
+   /api/insights/${e.planId}/${e.tableName}/export
+
+-- integrations (14) --
+   /api/integrations/github-app/create_pull_request
+   /api/integrations/github-app/figma-make/${e.file_key}/remove_repository_mapping
+   /api/integrations/github-app/install_authorize_redirection_url
+   /api/integrations/github-app/installation/${e.installation_id}
+   /api/integrations/github-app/org_user_repositories
+   /api/integrations/github-app/repository_branches
+   /api/integrations/github-app/setup
+   /api/integrations/github-app/user_access_token
+   /api/integrations/supabase/${p}/connect
+   /api/integrations/supabase/${p}/edge_functions/make-server/deploy
+   /api/integrations/supabase/${p}/existing_projects
+   /api/integrations/supabase/${p}/project/pause
+   /api/integrations/supabase/${p}/project/restore
+   /api/integrations/supabase/${p}/secrets
+
+-- internal (1) --
+   /api/internal/slides/ai/inspect_file
+
+-- invites (2) --
+   /api/invites
+   /api/invites/resend
+
+-- ip_check (1) --
+   /api/ip_check
+
+-- items (2) --
+   /api/items/${r.databaseId}/fields/${n.databaseId}
+   /api/items/${t.databaseId}/fields/${e.databaseId}/validate
+
+-- libraries (1) --
+   /api/libraries/${e.libraryKey}/code_connect/lookup_by_component_name
+
+-- license_group (1) --
+   /api/license_group/${e.licenseGroup.id}
+
+-- make (9) --
+   /api/make/${e.fileKey}/apply_resource_checkpoint
+   /api/make/${e}/repos/presign_folder_archive_upload
+   /api/make/create_make_library
+   /api/make/default_make_libraries
+   /api/make/delete_make_library_ds_import
+   /api/make/ds_import_libraries
+   /api/make/make_libraries
+   /api/make/make_libraries_by_ids
+   /api/make/update_make_library
+
+-- mcp (10) --
+   /api/mcp/clients
+   /api/mcp/clients/${e.id}
+   /api/mcp/clients/${t}
+   /api/mcp/server/${e.serverId}/oauth/client
+   /api/mcp/servers
+   /api/mcp/servers/${e.serverId}
+   /api/mcp/servers/${e.serverId}/oauth_callback
+   /api/mcp/servers/${e.serverId}/publish_scope
+   /api/mcp/servers/${e}
+   /api/mcp/session_token_exchange
+
+-- ml (4) --
+   /api/ml/export/file_version/${n}
+   /api/ml/export/file_version/${o}
+   /api/ml/export/status/${a}
+   /api/ml/export/status/${s}
+
+-- multiplayer (4) --
+   /api/multiplayer/${e}/copy
+   /api/multiplayer/${i.key}/copy
+   /api/multiplayer/${t.file.key}/copy
+   /api/multiplayer/${t}/copy
+
+-- oauth (12) --
+   /api/oauth/apps
+   /api/oauth/apps/${e}
+   /api/oauth/apps/${e}/delist
+   /api/oauth/apps/${e}/images/upload
+   /api/oauth/apps/${e}/manage
+   /api/oauth/apps/${e}/non_plan_user_count
+   /api/oauth/apps/${e}/plan
+   /api/oauth/apps/${e}/publish
+   /api/oauth/apps/${e}/submit
+   /api/oauth/apps/${e}/withdraw
+   /api/oauth/cms/oauth_code
+   /api/oauth/token/${e.org.id}/${e.token.client_id}
+
+-- org (4) --
+   /api/org/${e.orgId}/org_saml_config
+   /api/org/${e.org_id}/org_saml_config
+   /api/org/${t.orgId}/delete_org_users
+   /api/org/${t}/deletion_request
+
+-- org_approved_library (2) --
+   /api/org_approved_library/${a}
+   /api/org_approved_library/${t}
+
+-- org_invites (2) --
+   /api/org_invites
+   /api/org_invites/${r.id}
+
+-- org_join_request (3) --
+   /api/org_join_request
+   /api/org_join_request/${e.selectedOrgJoinRequest}
+   /api/org_join_request/${t}/approve
+
+-- org_saml_config (4) --
+   /api/org_saml_config
+   /api/org_saml_config/${e.org_saml_config_id}
+   /api/org_saml_config/${e.org_saml_config_id}/oidc_issuer
+   /api/org_saml_config/${t}/scim_api_token
+
+-- org_saml_config_required (1) --
+   /api/org_saml_config_required
+
+-- org_user (1) --
+   /api/org_user/${t.orgId}
+
+-- orgs (20) --
+   /api/orgs
+   /api/orgs/${a}
+   /api/orgs/${e.id}
+   /api/orgs/${e.org.id}/export_teams
+   /api/orgs/${e.orgId}/lock_invoice
+   /api/orgs/${l}/license_groups
+   /api/orgs/${r}
+   /api/orgs/${r}/billing_data
+   /api/orgs/${r}/teams/join
+   /api/orgs/${t.id}
+   /api/orgs/${t.orgId}/org_users
+   /api/orgs/${t}
+   /api/orgs/${t}/export_controls
+   /api/orgs/${t}/ip_allowlist_ranges
+   /api/orgs/${t}/resend_email_verifications
+   /api/orgs/${t}/workspaces/buzz_approvals_settings
+   /api/orgs/${t}/workspaces/export_controls
+   /api/orgs/${t}/workspaces/web_publishing
+   /api/orgs/${u}/license_groups
+   /api/orgs/${u}/workspaces
+
+-- page_status_options (2) --
+   /api/page_status_options
+   /api/page_status_options/${e}
+
+-- password (2) --
+   /api/password/forgot
+   /api/password/recover
+
+-- perf_reports (1) --
+   /api/perf_reports
+
+-- pinned_files (2) --
+   /api/pinned_files/${e}
+   /api/pinned_files/${e}/${t}
+
+-- plan_promo (1) --
+   /api/plan_promo/${e.promoCode}/redeem
+
+-- planless_favorited_resource_plan_id (1) --
+   /api/planless_favorited_resource_plan_id
+
+-- plans (33) --
+   /api/plans/${e.planID}/weave_models
+   /api/plans/${e.planID}/weave_models/${e.weaveModelID}
+   /api/plans/${e.planID}/weave_settings
+   /api/plans/${e.planId}/access_key
+   /api/plans/${e.planId}/access_keys
+   /api/plans/${e.planId}/access_keys/${e.planAccessTokenId}
+   /api/plans/${e.planId}/access_keys/resource_restrictions/validate
+   /api/plans/${e.planId}/access_keys/revoke
+   /api/plans/${e.planId}/access_keys/rotate
+   /api/plans/${e.planId}/admin_requests
+   /api/plans/${e.planId}/admin_requests/counts
+   /api/plans/${e.planId}/admin_requests/dashboard_view
+   /api/plans/${e.planId}/admin_requests/reject
+   /api/plans/${e.planId}/admin_requests/resolve
+   /api/plans/${e.planId}/ai_credits/export
+   /api/plans/${e.planId}/ai_credits/license_group_active_users
+   /api/plans/${e.planId}/ai_credits/license_group_allocations
+   /api/plans/${e.planId}/ai_credits/license_group_usage
+   /api/plans/${e.planId}/ai_credits/plan_ai_usage_billing_period
+   /api/plans/${e.planId}/ai_credits/plan_ai_usage_monthly
+   /api/plans/${e.planId}/ai_credits/plan_balance_summary
+   /api/plans/${e.planId}/ai_credits/plan_billing_period_usage_summary
+   /api/plans/${e.planId}/ai_credits/plan_usage_summary
+   /api/plans/${e.planId}/ai_credits/plan_user_balance_summary
+   /api/plans/${e.planId}/ai_credits/plan_user_usage_summary
+   /api/plans/${e.planId}/ai_credits/request_credits
+   /api/plans/${e.planId}/code_connect/generate_property_mappings
+   /api/plans/${e.planId}/code_connect/generate_property_mappings/status
+   /api/plans/${e.planId}/code_context/code_sources_status
+   /api/plans/${e.planId}/mcp_usage
+   /api/plans/${e.planId}/scm/connections
+   /api/plans/${t}/plan_users/update_permission
+   /api/plans/${t}/web_publishing
+
+-- plugin_preferences (1) --
+   /api/plugin_preferences/user
+
+-- plugin_runs (1) --
+   /api/plugin_runs/${e}
+
+-- plugins (3) --
+   /api/plugins/${o.id}/publishers/${i}
+   /api/plugins/${t.id}/videos/${e.video_file_uuid}/manifest
+   /api/plugins/${t}/roles
+
+-- policy_configs (1) --
+   /api/policy_configs/${e.policyAckConfigId}/acknowledge
+
+-- profile (8) --
+   /api/profile
+   /api/profile/${T}
+   /api/profile/${e.profileId}
+   /api/profile/${n}
+   /api/profile/${r}/block
+   /api/profile/${r}/primary_user
+   /api/profile/${r}/user
+   /api/profile/generate_handle
+
+-- recent_prototypes (1) --
+   /api/recent_prototypes
+
+-- reference_id (1) --
+   /api/reference_id/${e.referenceId}/file_key
+
+-- resource (3) --
+   /api/resource/${e.resource.id}/save
+   /api/resource/${e.resourceId}/like
+   /api/resource/${e.resourceId}/save
+
+-- resource_connection (1) --
+   /api/resource_connection/${e}/disconnect
+
+-- resource_connection_invite (4) --
+   /api/resource_connection_invite
+   /api/resource_connection_invite/${e}
+   /api/resource_connection_invite/lookup/${e.orgOrTeamType}/${e.orgOrTeamId}
+   /api/resource_connection_invite/send_create_team_email
+
+-- resource_saves (1) --
+   /api/resource_saves
+
+-- resource_scope_settings (1) --
+   /api/resource_scope_settings
+
+-- resource_uses (3) --
+   /api/resource_uses/${e.resourceId}
+   /api/resource_uses/hub_file/${e.hubFileId}
+   /api/resource_uses/template/${e.templateId}
+
+-- roles (1) --
+   /api/roles/${t}
+
+-- saml (4) --
+   /api/saml
+   /api/saml/sso_options
+   /api/saml/two_factor
+   /api/saml/validate_code
+
+-- send_mobile_download_email (1) --
+   /api/send_mobile_download_email
+
+-- session (22) --
+   /api/session/app_auth
+   /api/session/app_auth/${e.auth.appAuthId}/grant
+   /api/session/app_auth/redeem
+   /api/session/auth
+   /api/session/available_auth_methods
+   /api/session/check
+   /api/session/clear_account_sharing_flag
+   /api/session/clear_cont
+   /api/session/google_auth/signin
+   /api/session/google_auth/signin_or_signup
+   /api/session/login
+   /api/session/logout
+   /api/session/logout/${e}
+   /api/session/password_encryption_config
+   /api/session/redeem_magic_code
+   /api/session/redeem_magic_link
+   /api/session/request_magic_link
+   /api/session/sessions
+   /api/session/sessions/${e}
+   /api/session/sms_recover
+   /api/session/sso_config
+   /api/session/sync
+
+-- sgs_debug (1) --
+   /api/sgs_debug/operation
+
+-- spell-check-words (1) --
+   /api/spell-check-words
+
+-- state_group_log_data (1) --
+   /api/state_group_log_data
+
+-- statsig (6) --
+   /api/statsig/ai_collab_assistant_plan_details
+   /api/statsig/ai_design_assistant_exp_overrides
+   /api/statsig/bootstrap
+   /api/statsig/flag_descriptions
+   /api/statsig/flag_status_for_user
+   /api/statsig/update_overrides
+
+-- storybook (1) --
+   /api/storybook/projects/${e.litmusProjectId}/design_connection/${e.designConnectionId}
+
+-- styles (1) --
+   /api/styles
+
+-- subscriptions (9) --
+   /api/subscriptions/${e}/pending_cancellations
+   /api/subscriptions/team/${e.teamId}/hosted_invoice_url
+   /api/subscriptions/team/${e.teamId}/preview_coterm_annual_seats
+   /api/subscriptions/team/${e.teamId}/summary
+   /api/subscriptions/team/${t.id}/vat_gst
+   /api/subscriptions/team/${t}/annual_subscription
+   /api/subscriptions/team/${t}/billing_contact
+   /api/subscriptions/team/${t}/coterm_annual_seats
+   /api/subscriptions/teams/calculate_estimate
+
+-- subscriptions-2018-11-08 (2) --
+   /api/subscriptions-2018-11-08/setup_intent
+   /api/subscriptions-2018-11-08/team/${t}
+
+-- tagged_file (1) --
+   /api/tagged_file
+
+-- tax (1) --
+   /api/tax/validate_vat
+
+-- team_join_link (5) --
+   /api/team_join_link
+   /api/team_join_link/disable
+   /api/team_join_link/migration_status
+   /api/team_join_link/redeem
+   /api/team_join_link/reset
+
+-- team_role_requests (3) --
+   /api/team_role_requests
+   /api/team_role_requests/${t.requestId}
+   /api/team_role_requests/${t.requestId}/approve
+
+-- teams (22) --
+   /api/teams/${_}/team_users/request_upgrade
+   /api/teams/${e.teamId}
+   /api/teams/${e.teamId}/ai_data_sharing
+   /api/teams/${e.teamId}/deletion_file_count
+   /api/teams/${e.teamId}/folders
+   /api/teams/${e.teamId}/has_published_site
+   /api/teams/${e.teamId}/num_backfilled_team_user
+   /api/teams/${e.teamId}/subscription_status
+   /api/teams/${e.teamId}/team_admins
+   /api/teams/${e.teamId}/team_name
+   /api/teams/${e.teamId}/users/${e.teamMemberId}/last_active
+   /api/teams/${e}/default_color_palette
+   /api/teams/${n}
+   /api/teams/${r}
+   /api/teams/${r}/restore
+   /api/teams/${t.teamId}
+   /api/teams/${t.teamId}/student_team
+   /api/teams/${t}/student_team
+   /api/teams/${t}/users
+   /api/teams/create
+   /api/teams/deleted/${e.teamId}
+   /api/teams/redeem_promo
+
+-- templates (1) --
+   /api/templates/${t.file_key}/duplicate
+
+-- try (1) --
+   /api/try/figjam
+
+-- unsplash (1) --
+   /api/unsplash/${e.fileKey}/editorial
+
+-- upnode (4) --
+   /api/upnode/font
+   /api/upnode/heic_convert
+   /api/upnode/image
+   /api/upnode/video
+
+-- user (14) --
+   /api/user
+   /api/user/${e.id}/idle_timeout_last_active_at
+   /api/user/${e.userId}
+   /api/user/${e.userId}/deletion_impact
+   /api/user/${e.userId}/scim_provisioned_status
+   /api/user/${e.userId}/segments
+   /api/user/${e.userId}/teams
+   /api/user/${t}/teams
+   /api/user/accept_standalone_team_tos
+   /api/user/backup_codes
+   /api/user/dev_tokens
+   /api/user/email_features
+   /api/user/help-center
+   /api/user/unverified
+
+-- user_notifications (2) --
+   /api/user_notifications/catfic_optin/${e}
+   /api/user_notifications/catfile_optin/${e}
+
+-- user_notifications_bell (1) --
+   /api/user_notifications_bell
+
+-- user_sidebar_sections (3) --
+   /api/user_sidebar_sections
+   /api/user_sidebar_sections/${t.sectionId}
+   /api/user_sidebar_sections/${t.sidebarSectionId}
+
+-- users (1) --
+   /api/users/batched
+
+-- v2 (3) --
+   /api/v2/folders
+   /api/v2/folders/${e.folderId}
+   /api/v2/statsig/bootstrap
+
+-- validate_address (1) --
+   /api/validate_address
+
+-- validate_currency (1) --
+   /api/validate_currency
+
+-- validation (1) --
+   /api/validation/email/send
+
+-- variable_log_data (1) --
+   /api/variable_log_data
+
+-- variable_set_log_data (1) --
+   /api/variable_set_log_data
+
+-- versions (1) --
+   /api/versions/${n}
+
+-- viewer_restricted_draft (2) --
+   /api/viewer_restricted_draft/${e}/dismiss
+   /api/viewer_restricted_draft/${e}/notify
+
+-- voice (1) --
+   /api/voice/${t}/auth
+
+-- weave (6) --
+   /api/weave/${e}/edit_lock/approve
+   /api/weave/${e}/edit_lock/deny
+   /api/weave/${e}/edit_lock/release
+   /api/weave/${e}/edit_lock/request
+   /api/weave/${e}/presence
+   /api/weave/${e}/token
+
+-- workspace (4) --
+   /api/workspace/${eG}/export_teams
+   /api/workspace/${e}/teams
+   /api/workspace/${n}/teams
+   /api/workspace/${x.id}
+
+-- workspace_approved_library (2) --
+   /api/workspace_approved_library/${a}
+   /api/workspace_approved_library/${t}
+
+===== 部分测过(按域) =====
+
+-- community (5) --
+   /api/community/buyer/${d.id}/refund
+   /api/community/cms/category_page/${e}
+   /api/community/seller/onboard
+   /api/community/seller/stripe_dashboard
+   /api/community/weave_workflows/${e.weaveWorkflowId}/unpublish
+
+-- community_comments (4) --
+   /api/community_comments
+   /api/community_comments/${a}
+   /api/community_comments/${a}/report
+   /api/community_comments/${n}
+
+-- community_publishers (2) --
+   /api/community_publishers/accept
+   /api/community_publishers/remove
+
+-- unsplash (1) --
+   /api/unsplash/${e.fileKey}/search
+
+-- user_notifications_bell (1) --
+   /api/user_notifications_bell/community/clear
+
+===== 高价值未测(路径变量/导出/搜索/批量/报表) =====
+   /api/activity_logs
+   /api/activity_logs/${r.key}
+   /api/activity_logs/export
+   /api/activity_logs/last_edit/${e.orgUserId}
+   /api/activity_logs/recent/${e.orgUserId}
+   /api/admin/check_redact_figmascope_file/${n}
+   /api/admin/check_redact_figmascope_file/${r}
+   /api/admin/check_redact_figmascope_journal/${t}
+   /api/admin/checkpoint_diffs/${e}
+   /api/admin/checkpoints/${e}
+   /api/admin/figmascope_checkpoint_diffs/${e}
+   /api/admin/figmascope_checkpoints/${e}
+   /api/admin/multiplayer_journal/${e.fileKey}/${e.endSequenceNumber}
+   /api/admin/multiplayer_journals/${e}
+   /api/admin/start_redact_figmascope_file/${t}/${e}
+   /api/admin/start_redact_figmascope_journal/${e.fileKey}/${e.endSequenceNumber}
+   /api/asset_transfer/${e.id}
+   /api/asset_transfer/${e.id}/approve
+   /api/asset_transfer/${e.selectedAssetTransferRequest}
+   /api/asset_transfer/org_team_transfers/${e.orgId}
+   /api/bug_reports
+   /api/bulk_favorite_resources_v2
+   /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/approve
+   /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/fulfill
+   /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/update_items
+   /api/checkout_session/pro_upgrade/${e.checkoutSessionId}/update_tax
+   /api/code_connect/bulk_map
+   /api/code_connect/libraries/${e.libraryKey}/repositories
+   /api/code_connect/libraries/${e.libraryKey}/repositories/${e.repositoryId}
+   /api/code_connect/libraries/${e.libraryKey}/repositories/${e.repositoryId}/directories
+   /api/code_connect/libraries/${e.libraryKey}/source_files
+   /api/code_connect/libraries/${e.libraryKey}/source_files/file_details
+   /api/code_connect/libraries/${e}/template_generations/${t}/feedback
+   /api/code_connect/library/${e.libraryKey}/status
+   /api/code_connect/library/${t}/published_components/all
+   /api/color_palettes/${e.uuid}
+   /api/color_palettes/${e}
+   /api/component_log_data
+   /api/design_systems/bundles/${e.bundleId}
+   /api/design_systems/bundles/${e.bundleId}/editors
+   /api/design_systems/bundles/${e.bundleId}/sources
+   /api/design_systems/documentation_pages/${e.pageId}
+   /api/extension_analytics/v1/org/${e}
+   /api/feed_posts/${G}/videos/${e.videoContent.videoFileUuid}/manifest
+   /api/feed_posts/${e.postUuid}/mark_viewed
+   /api/feed_posts/${e.publicUuid}/mark_viewed
+   /api/feed_posts/${e.publicUuid}/vote
+   /api/feed_posts/post_uuid/${E.publicUuid}
+   /api/feed_visited/${e.currentOrgId}
+   /api/file/${a}/comments/${s}
+   /api/file/${a}/voting_sessions/${o}
+   /api/file/${e.fileKey}/canvas_mentions/needs_invite
+   /api/file/${e.fileKey}/canvas_mentions/record_invite
+   /api/file/${e.fileKey}/canvas_mentions/should_add_user_group_to_file
+   /api/file/${e.fileKey}/comments/${e.commentThreadId}
+   /api/file/${i}/collections
+   /api/file/${r.fileKey}/voting_sessions/${t}
+   /api/file/${r}/comments/${t.comment.id}
+   /api/file/${s}/voting_sessions
+   /api/file/${t.key}/file_followers
+   /api/file/${t}/comments/${e}
+   /api/file/${t}/comments/${r}
+   /api/file/claim/${e.fileKey}
+   /api/file/mark_diagram_inserted/${e.fileKey}
+   /api/file_diff/v2/checkpoint_diff/${e}
+   /api/files_batch
+   /api/folder_items/can_move_bulk
+   /api/folder_items/move_bulk
+   /api/folder_items/trash_bulk
+   /api/folders/${e.destFolderId}/can_move_files
+   /api/folders/${e.folderId}
+   /api/folders/${e.folderId}/ancestor_folders
+   /api/folders/${e.folderId}/can_move
+   /api/folders/${e.folderId}/color
+   /api/folders/${e.folderId}/contributors
+   /api/folders/${e.folderId}/duplicate
+   /api/folders/${e.folderId}/files
+   /api/folders/${e.folderId}/inheritance
+   /api/folders/${e}/paginated_files
+   /api/folders/${t.fileKey}/pin
+   /api/folders/${t.folderId}/description
+   /api/folders/${t}/claim
+   /api/folders/restore/${e.folderId}
+   /api/folders/trash/${e.folderId}
+   /api/followers/${e}
+   /api/following/${e}
+   /api/guidelines/${e}/generate
+   /api/guidelines/${e}/latest_guideline
+   /api/guidelines/${e}/upload
+   /api/hub_files/${t}
+   /api/hub_files/${t}/view
+   /api/hub_files/template/${t.hubFileId}/copy
+   /api/hub_files/v2/${r.id}/copy
+   /api/insights/${e.planId}
+   /api/insights/${e.planId}/${e.tableName}/export
+   /api/integrations/github-app/figma-make/${e.file_key}/remove_repository_mapping
+   /api/integrations/github-app/installation/${e.installation_id}
+   /api/integrations/supabase/${p}/connect
+   /api/integrations/supabase/${p}/edge_functions/make-server/deploy
+   /api/integrations/supabase/${p}/existing_projects
+   /api/integrations/supabase/${p}/project/pause
+   /api/integrations/supabase/${p}/project/restore
+   /api/integrations/supabase/${p}/secrets
+   /api/items/${r.databaseId}/fields/${n.databaseId}
+   /api/items/${t.databaseId}/fields/${e.databaseId}/validate
+   /api/libraries/${e.libraryKey}/code_connect/lookup_by_component_name
+   /api/license_group/${e.licenseGroup.id}
+   /api/make/${e.fileKey}/apply_resource_checkpoint
+   /api/make/${e}/repos/presign_folder_archive_upload
+   /api/make/delete_make_library_ds_import
+   /api/make/ds_import_libraries
+   /api/mcp/clients/${e.id}
+   /api/mcp/clients/${t}
+   /api/mcp/server/${e.serverId}/oauth/client
+   /api/mcp/servers/${e.serverId}
+   /api/mcp/servers/${e.serverId}/oauth_callback
+   /api/mcp/servers/${e.serverId}/publish_scope
+   /api/mcp/servers/${e}
+   /api/ml/export/file_version/${n}
+   /api/ml/export/file_version/${o}
+   /api/ml/export/status/${a}
+   /api/ml/export/status/${s}
+   /api/multiplayer/${e}/copy
+   /api/multiplayer/${i.key}/copy
+   /api/multiplayer/${t.file.key}/copy
+   /api/multiplayer/${t}/copy
+   /api/oauth/apps/${e}
+   /api/oauth/apps/${e}/delist
+   /api/oauth/apps/${e}/images/upload
+   /api/oauth/apps/${e}/manage
+   /api/oauth/apps/${e}/non_plan_user_count
+   /api/oauth/apps/${e}/plan
+   /api/oauth/apps/${e}/publish
+   /api/oauth/apps/${e}/submit
+   /api/oauth/apps/${e}/withdraw
+   /api/oauth/token/${e.org.id}/${e.token.client_id}
+   /api/org/${e.orgId}/org_saml_config
+   /api/org/${e.org_id}/org_saml_config
+   /api/org/${t.orgId}/delete_org_users
+   /api/org/${t}/deletion_request
+   /api/org_approved_library/${a}
+   /api/org_approved_library/${t}
+   /api/org_invites/${r.id}
+   /api/org_join_request/${e.selectedOrgJoinRequest}
+   /api/org_join_request/${t}/approve
+   /api/org_saml_config/${e.org_saml_config_id}
+   /api/org_saml_config/${e.org_saml_config_id}/oidc_issuer
+   /api/org_saml_config/${t}/scim_api_token
+   /api/org_user/${t.orgId}
+   /api/orgs/${a}
+   /api/orgs/${e.id}
+   /api/orgs/${e.org.id}/export_teams
+   /api/orgs/${e.orgId}/lock_invoice
+   /api/orgs/${l}/license_groups
+   /api/orgs/${r}
+   /api/orgs/${r}/billing_data
+   /api/orgs/${r}/teams/join
+   /api/orgs/${t.id}
+   /api/orgs/${t.orgId}/org_users
+   /api/orgs/${t}
+   /api/orgs/${t}/export_controls
+   /api/orgs/${t}/ip_allowlist_ranges
+   /api/orgs/${t}/resend_email_verifications
+   /api/orgs/${t}/workspaces/buzz_approvals_settings
+   /api/orgs/${t}/workspaces/export_controls
+   /api/orgs/${t}/workspaces/web_publishing
+   /api/orgs/${u}/license_groups
+   /api/orgs/${u}/workspaces
+   /api/page_status_options/${e}
+   /api/perf_reports
+   /api/pinned_files/${e}
+   /api/pinned_files/${e}/${t}
+   /api/plan_promo/${e.promoCode}/redeem
+   /api/plans/${e.planID}/weave_models
+   /api/plans/${e.planID}/weave_models/${e.weaveModelID}
+   /api/plans/${e.planID}/weave_settings
+   /api/plans/${e.planId}/access_key
+   /api/plans/${e.planId}/access_keys
+   /api/plans/${e.planId}/access_keys/${e.planAccessTokenId}
+   /api/plans/${e.planId}/access_keys/resource_restrictions/validate
+   /api/plans/${e.planId}/access_keys/revoke
+   /api/plans/${e.planId}/access_keys/rotate
+   /api/plans/${e.planId}/admin_requests
+   /api/plans/${e.planId}/admin_requests/counts
+   /api/plans/${e.planId}/admin_requests/dashboard_view
+   /api/plans/${e.planId}/admin_requests/reject
+   /api/plans/${e.planId}/admin_requests/resolve
+   /api/plans/${e.planId}/ai_credits/export
+   /api/plans/${e.planId}/ai_credits/license_group_active_users
+   /api/plans/${e.planId}/ai_credits/license_group_allocations
+   /api/plans/${e.planId}/ai_credits/license_group_usage
+   /api/plans/${e.planId}/ai_credits/plan_ai_usage_billing_period
+   /api/plans/${e.planId}/ai_credits/plan_ai_usage_monthly
+   /api/plans/${e.planId}/ai_credits/plan_balance_summary
+   /api/plans/${e.planId}/ai_credits/plan_billing_period_usage_summary
+   /api/plans/${e.planId}/ai_credits/plan_usage_summary
+   /api/plans/${e.planId}/ai_credits/plan_user_balance_summary
+   /api/plans/${e.planId}/ai_credits/plan_user_usage_summary
+   /api/plans/${e.planId}/ai_credits/request_credits
+   /api/plans/${e.planId}/code_connect/generate_property_mappings
+   /api/plans/${e.planId}/code_connect/generate_property_mappings/status
+   /api/plans/${e.planId}/code_context/code_sources_status
+   /api/plans/${e.planId}/mcp_usage
+   /api/plans/${e.planId}/scm/connections
+   /api/plans/${t}/plan_users/update_permission
+   /api/plans/${t}/web_publishing
+   /api/plugin_runs/${e}
+   /api/plugins/${o.id}/publishers/${i}
+   /api/plugins/${t.id}/videos/${e.video_file_uuid}/manifest
+   /api/plugins/${t}/roles
+   /api/policy_configs/${e.policyAckConfigId}/acknowledge
+   /api/profile/${T}
+   /api/profile/${e.profileId}
+   /api/profile/${n}
+   /api/profile/${r}/block
+   /api/profile/${r}/primary_user
+   /api/profile/${r}/user
+   /api/reference_id/${e.referenceId}/file_key
+   /api/resource/${e.resource.id}/save
+   /api/resource/${e.resourceId}/like
+   /api/resource/${e.resourceId}/save
+   /api/resource_connection/${e}/disconnect
+   /api/resource_connection_invite/${e}
+   /api/resource_connection_invite/lookup/${e.orgOrTeamType}/${e.orgOrTeamId}
+   /api/resource_uses/${e.resourceId}
+   /api/resource_uses/hub_file/${e.hubFileId}
+   /api/resource_uses/template/${e.templateId}
+   /api/roles/${t}
+   /api/session/app_auth/${e.auth.appAuthId}/grant
+   /api/session/clear_account_sharing_flag
+   /api/session/login
+   /api/session/logout
+   /api/session/logout/${e}
+   /api/session/sessions/${e}
+   /api/state_group_log_data
+   /api/statsig/ai_collab_assistant_plan_details
+   /api/statsig/ai_design_assistant_exp_overrides
+   /api/statsig/bootstrap
+   /api/statsig/flag_descriptions
+   /api/statsig/flag_status_for_user
+   /api/statsig/update_overrides
+   /api/storybook/projects/${e.litmusProjectId}/design_connection/${e.designConnectionId}
+   /api/subscriptions-2018-11-08/team/${t}
+   /api/subscriptions/${e}/pending_cancellations
+   /api/subscriptions/team/${e.teamId}/hosted_invoice_url
+   /api/subscriptions/team/${e.teamId}/preview_coterm_annual_seats
+   /api/subscriptions/team/${e.teamId}/summary
+   /api/subscriptions/team/${t.id}/vat_gst
+   /api/subscriptions/team/${t}/annual_subscription
+   /api/subscriptions/team/${t}/billing_contact
+   /api/subscriptions/team/${t}/coterm_annual_seats
+   /api/team_role_requests/${t.requestId}
+   /api/team_role_requests/${t.requestId}/approve
+   /api/teams/${_}/team_users/request_upgrade
+   /api/teams/${e.teamId}
+   /api/teams/${e.teamId}/ai_data_sharing
+   /api/teams/${e.teamId}/deletion_file_count
+   /api/teams/${e.teamId}/folders
+   /api/teams/${e.teamId}/has_published_site
+   /api/teams/${e.teamId}/num_backfilled_team_user
+   /api/teams/${e.teamId}/subscription_status
+   /api/teams/${e.teamId}/team_admins
+   /api/teams/${e.teamId}/team_name
+   /api/teams/${e.teamId}/users/${e.teamMemberId}/last_active
+   /api/teams/${e}/default_color_palette
+   /api/teams/${n}
+   /api/teams/${r}
+   /api/teams/${r}/restore
+   /api/teams/${t.teamId}
+   /api/teams/${t.teamId}/student_team
+   /api/teams/${t}/student_team
+   /api/teams/${t}/users
+   /api/teams/deleted/${e.teamId}
+   /api/templates/${t.file_key}/duplicate
+   /api/unsplash/${e.fileKey}/editorial
+   /api/user/${e.id}/idle_timeout_last_active_at
+   /api/user/${e.userId}
+   /api/user/${e.userId}/deletion_impact
+   /api/user/${e.userId}/scim_provisioned_status
+   /api/user/${e.userId}/segments
+   /api/user/${e.userId}/teams
+   /api/user/${t}/teams
+   /api/user_notifications/catfic_optin/${e}
+   /api/user_notifications/catfile_optin/${e}
+   /api/user_sidebar_sections/${t.sectionId}
+   /api/user_sidebar_sections/${t.sidebarSectionId}
+   /api/users/batched
+   /api/v2/folders/${e.folderId}
+   /api/v2/statsig/bootstrap
+   /api/variable_log_data
+   /api/variable_set_log_data
+   /api/versions/${n}
+   /api/viewer_restricted_draft/${e}/dismiss
+   /api/viewer_restricted_draft/${e}/notify
+   /api/voice/${t}/auth
+   /api/weave/${e}/edit_lock/approve
+   /api/weave/${e}/edit_lock/deny
+   /api/weave/${e}/edit_lock/release
+   /api/weave/${e}/edit_lock/request
+   /api/weave/${e}/presence
+   /api/weave/${e}/token
+   /api/workspace/${eG}/export_teams
+   /api/workspace/${e}/teams
+   /api/workspace/${n}/teams
+   /api/workspace/${x.id}
+   /api/workspace_approved_library/${a}
+   /api/workspace_approved_library/${t}

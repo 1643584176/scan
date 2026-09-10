@@ -1,0 +1,40 @@
+===== A. 活端点 dump =====
+[A1_e8_lastact] 200 len=   601 907ms 
+      {"error":false,"status":200,"meta":{"design_file":{"can_view":true,"file_name":"第一个","action_at":"2026-09-02T02:12:23.000Z"},"whiteboard_file":{"can_view":true,"file_name":"FigJam basics","action_at":"2026-08-18T02:32:10.000Z"},"slides_file":null,"sites_file":{"can_view":true,"file_name":"Riccardo Buzzolan Ripetizioni (Community)","action_at":"2026-09-10T05:03:28.000Z"},"cooper_file":{"can_view":true,"file_name":"Temporary Buzz approval fixture","action_at":"2026-08-18T07:41:51.000Z"},"make_file":{"can_view":true,"file_name":"t-99ff96","action_at":"2026-08-20T02:32:13.000Z"}},"i18n":null}
+[A2_e10_curator] 200 len=   723 514ms 
+      {"error":false,"status":200,"meta":{"items":[{"config_id":"config_india_2026_virtual_flip","team":"marketing","priority":51,"feature_flag":null,"rollout_start_at":"2026-08-22T02:30:00Z","rollout_end_at":"2026-10-15T18:30:00Z","eligibility":["all",[["region","in",["APAC","EMEA"]]]],"content":{"cta":"Register","href":"https://reg.config.figma.com/flow/figma/config26india/virtual/login","logo":{"dark":"91bd42a1bdc459a61120078755f494f387bff5f5","light":"a48807f62749ac00e8c1f81178ad1bc05b42e55f"},"size":"small","title":"Join Config India virtually 15 October for free.","bgColor":{"dark":"#0A5C35","light":"#CB9FD2"},"logoHeight":"24px","trackingContextName":""},"lifecycle_max":1,"lifecycle_cooldown":null}]},"i18n":null}
+[A3_f1_collage] 200 len= 18385 856ms 
+
+===== B. E8 last_active 类型层形态(路径双 ID) =====
+[B1_uq] 200 len=   601 567ms (userId 引号)
+[B2_uor] 200 len=   601 898ms (OR)
+[B3_ubig] 404 len=   123 346ms (20位)
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[B4_uabc] 404 len=   123 416ms (abc)
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[B5_tq] 200 len=   601 588ms (teamId 引号)
+[B6_tbig] 403 len=   279 332ms (teamId 20位)
+      {"error":true,"status":403,"message":"You don't have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don't have permission to do that. Contact your team administra
+
+===== C. D1 reference_id 形态(403 存在) =====
+[C1_ref_q] 403 len=    96 381ms 
+      {"error":true,"status":403,"message":"You don't have permission to view this file.","i18n":null}
+[C2_ref_pct] 403 len=    96 330ms (%)
+      {"error":true,"status":403,"message":"You don't have permission to view this file.","i18n":null}
+[C3_ref_big] 403 len=    96 334ms 
+      {"error":true,"status":403,"message":"You don't have permission to view this file.","i18n":null}
+[C4_ref_semi] 403 len=    96 350ms 
+      {"error":true,"status":403,"message":"You don't have permission to view this file.","i18n":null}
+
+===== D. D3 oauth non_plan_user_count 形态(403 存在) =====
+[D1_oq] 403 len=   197 401ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[D2_onum] 403 len=   197 338ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[D3_obig] 403 len=   197 341ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+===== E. F1 collage 参数面 =====
+[E1_collage_p] 200 len= 18385 469ms 
+[E2_collage_q] 200 len= 18385 495ms 
+DONE

@@ -1,0 +1,15 @@
+===== R20 匿名 snapshot / UUID 寻址 =====
+
+[snap_anon] 302 len=0
+    Location: https://s3-alpha-sig.figma.com/plugins/1679037410226110154/272119/7bcff561-5c8d-4621-a7ad-8f51909f585c-snapshot?Expires=1789948800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=V6ecexkYFp2eZ-qBgetVJ83-h44r7Eb7C7lrlgoTOeQuAM
+    ctype: text/html;charset=utf-8
+
+[res_uuid_anon] 404 len=9
+    ctype: text/plain
+    body: Not Found
+
+[res_uuid_auth] 404 len=9
+    ctype: text/plain
+    body: Not Found
+
+DONE

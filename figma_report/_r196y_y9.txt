@@ -1,0 +1,2 @@
+HTTP 200
+{"error":false,"status":200,"meta":{"period_start":"2026-09-01T00:00:00Z","period_end":"2026-10-01T00:00:00Z","full_seat_overage_credits_used":0,"active_users":0,"limited_users":0,"paid_credit_users":0},"i18n":null}
