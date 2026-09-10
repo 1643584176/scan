@@ -1,0 +1,101 @@
+===== DuplicateInfoQuery string len=736 =====
+
+  query DuplicateInfoQuery($originalReportId: Int!, $currentReportId: Int!) {
+    originalReport: report(id: $originalReportId) {
+      id
+      _id
+      title
+      substate
+      self_closed
+      submitted_at
+      original_report {
+        id
+        _id
+      }
+      external_users {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+      report_collaborators {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+      reporter {
+        id
+        username
+        profile_picture(size: small)
+      }
+    }
+    currentReport: report(id: $currentReportId) {
+      id
+      reporter {
+        id
+        username
+      }
+    }
+  }
+
+
+h1kit dir listing:
+  README.md
+  __init__.py
+  _h1x10_fields.py
+  _h1x11_ids.py
+  _h1x12_anonids.py
+  _h1x13_dupfields.py
+  _h1x13_out.txt
+  _h1x14_out.txt
+  _h1x14_track_frag.py
+  _h1x15_out.txt
+  _h1x15_rootfields.py
+  _h1x15b_debug.py
+  _h1x15c_debug2.py
+  _h1x16_roots2.py
+  _h1x17_candfields.py
+  _h1x18_ast_roots.py
+  _h1x19_gids.py
+  _h1x1_fetch.py
+  _h1x1_home.html
+  _h1x20_searchq.py
+  _h1x21_fullq.py
+  _h1x21_out.txt
+  _h1x22_bugsjson.py
+  _h1x23_reportjson.py
+  _h1x24_out.txt
+  _h1x24_pubjson.py
+  _h1x25_dups.py
+  _h1x25_out.txt
+  _h1x25_stdout.txt
+  _h1x26_out.txt
+  _h1x26_refs.py
+  _h1x27_dupinfo.py
+  _h1x2_security.html
+  _h1x2_spa.py
+  _h1x3_constants.js
+  _h1x3_dl.py
+  _h1x3_main.js
+  _h1x4_app.js
+  _h1x4_dl2.py
+  _h1x4_vendor.js
+  _h1x5_analyze.py
+  _h1x6_out.txt
+  _h1x6_queries.py
+  _h1x7_reportops.py
+  _h1x8_reportpage.py
+  _h1x9_gql.py
+  _selftest.py
+  _selftest2.py
+  gitbash.py
+  h1-platform-report-idor-plan.md
+  h1-report-idor-结果存档-2026-09-08.md
+  h1data.py
+  net.py
+  scaffold.py
+--- SortInput 附近 ---
+ctx: ...e:{kind:`Variable`,name:{kind:`Name`,value:`sort`}},type:{kind:`NamedType`,name:{kind:`Name`,value:`SortInput`}}},{kind:`VariableDefinition`,variable:{kind:`Variable`,name:{kind:`Name`,value:`from`}},type:{kind:`NamedType`,name:{kind:`Name`,value:`Int`}}},{kind:`VariableDefinition`,variable:{kind:`Variable`,name:{kind:`Name`,value:`size`}},type:{kind:`NonNullType`,type:{kind:`NamedType`,name:{kind:`Name`,value:`Int`}}}}],selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`teams`},arguments:[{kind:`Argument`,name:{kind:`Name`,value:`where`},value:{kind:`ObjectVa

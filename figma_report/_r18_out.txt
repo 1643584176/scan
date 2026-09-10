@@ -1,0 +1,29 @@
+WAF-only cookies: 5
+
+===== R18 版本 vs 下载入口 =====
+
+[ver_wafonly] 200 len=8922
+    ctype: application/json
+
+[code_page] 302 len=0
+    Location: https://s3-alpha-sig.figma.com/plugins/1679037410226110154/272119/7bcff561-5c8d-4621-a7ad-8f51909f585c-code?Expires=1789948800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BkUaXhYSscDftyLTqFEM4p0dSadnrs1SKXJlwfG-bfY3tE5ZnnOtPr2jKhKz
+    ctype: text/html;charset=utf-8
+
+[code_page_v1] 302 len=0
+    Location: https://s3-alpha-sig.figma.com/plugins/1679037410226110154/272030/f5295dcf-5c3f-463a-a4c3-38c6157c0b30-code?Expires=1789948800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZY6FpR-SHL2iVGbFWL044fZfvhRh7leDGA~r98q9VyXYonvYm3k15KpG4dMU
+    ctype: text/html;charset=utf-8
+
+[code_page_waf] 403 len=46
+    ctype: text/plain; charset=utf-8
+    body: You don't seem to have permission to do that.
+
+
+[snapshot_v1] 302 len=0
+    Location: https://s3-alpha-sig.figma.com/plugins/1679037410226110154/272119/7bcff561-5c8d-4621-a7ad-8f51909f585c-snapshot?Expires=1789948800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=V6ecexkYFp2eZ-qBgetVJ83-h44r7Eb7C7lrlgoTOeQuAMfo5mvGhJsN
+    ctype: text/html;charset=utf-8
+
+[snapshot_cur] 302 len=0
+    Location: https://s3-alpha-sig.figma.com/plugins/1679037410226110154/272119/7bcff561-5c8d-4621-a7ad-8f51909f585c-snapshot?Expires=1789948800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=V6ecexkYFp2eZ-qBgetVJ83-h44r7Eb7C7lrlgoTOeQuAMfo5mvGhJsN
+    ctype: text/html;charset=utf-8
+
+DONE

@@ -1,0 +1,115 @@
+TOTAL Query fields: 114
+activity -> ActivityUnion | args: id:Int
+agent_guidance -> AgentGuidance | args: guidance_type:String
+analytics -> AnalyticsDataPoint | args: queries:None
+analytics_benchmarks -> AnalyticsBenchmarkResult | args: benchmark_configurations:AnalyticsBenchmarkQueryInputType
+analytics_chart -> ConfigurableDashboardChart | args: chart_key:String, organization_id:ID, team_id:ID, filters:JSON, start_date:String, end_date:String, interval:String, limit:Int, benchmarks:AnalyticsCustomBenchmarkInputType
+analytics_chart_benchmark_filters -> None | args: chart_key:String
+analytics_chart_explore -> AnalyticsChartExploreResult | args: chart_key:String, organization_id:ID, explore_type:String, index_value:String, pivot_value:String, filters:JSON, start_date_utc_str:String, end_date_utc_str:String, interval:String, order_by_field:String, order_by_direction:String, page:Int, page_size:Int
+analytics_dashboard_filter_definitions -> None | args: dashboard_key:String, organization_id:ID
+analytics_reports -> AnalyticsReportConnection | args: offset:Int, where:FiltersAnalyticsReportFilterInput, order_by:FiltersAnalyticsReportFilterOrder, after:String, before:String, first:Int, last:Int
+application -> Application | args: 
+asset_context -> AssetContext | args: asset_identifier:String, program_handle:String
+assets -> AssetConnection | args: id:Int, where:FiltersAssetFilterInput, after:String, before:String, first:Int, last:Int
+assets_by_velocity -> AssetConnection | args: after:String, before:String, first:Int, last:Int, organization_id:ID, velocity_class:String
+assignable_teams -> TeamConnection | args: after:String, before:String, first:Int, last:Int, report_ids:None, querystring:String
+automation -> Automation | args: id:Int, organization_handle:String
+available_chart_definitions -> AvailableChartDefinition | args: 
+background_check -> BackgroundCheck | args: 
+bank_transfer_reference -> BankTransferReference | args: 
+campaign_objectives -> CampaignObjectiveConnection | args: after:String, before:String, first:Int, last:Int, where:FiltersCampaignObjectiveFilterInput
+certifications -> CertificationConnection | args: where:FiltersCertificationFilterInput, after:String, before:String, first:Int, last:Int
+clusters -> ClusterConnection | args: id:ID, order_by:ClusterOrder, after:String, before:String, first:Int, last:Int
+completed_recommendations -> CompletedRecommendation | args: team_ids:None
+configurable_dashboard -> ConfigurableDashboard | args: dashboard_key:String, organization_id:ID
+conversation -> ConversationUnion | args: id:ID
+custom_dashboard -> CustomDashboard | args: id:ID
+custom_dashboard_chart -> CustomDashboardChart | args: chart_id:ID
+cve_entry -> RankedCveEntry | args: cve_id:String
+cwe_entries -> CweEntryConnection | args: order_by:CweEntryOrderInput, search:String, after:String, before:String, first:Int, last:Int
+cwe_entry -> CweEntry | args: cwe_id:String
+dashboard_states -> DashboardStateConnection | args: where:FiltersDashboardStateFilterInput, order_by:FiltersDashboardStateFilterOrder, after:String, before:String, first:Int, last:Int
+derived_pentest -> DerivedPentest | args: origin_id:ID, origin_type:String
+document -> DocumentResult | args: queries:None, elements:DocumentElementInputType
+embedded_submission_form -> EmbeddedSubmissionForm | args: uuid:String
+experimental_dream_box_chat -> ChatMessage | args: prompt:String
+external_integration_credentials -> ExternalIntegrationCredentials | args: team_id:ID, organization_id:ID, provider:ExternalIntegrationProvider
+external_program -> ExternalProgram | args: handle:String
+external_programs -> ExternalProgramConnection | args: after:String, before:String, first:Int, last:Int, search_input:String
+features -> FeatureConnection | args: after:String, before:String, first:Int, last:Int
+gateway_users -> GatewayUserConnection | args: team_handle:String, search_string:String, sort_by:GatewayUserOrderFieldEnum, sort_direction:OrderDirection, hackerone_triager:Boolean, program_admin:Boolean, blocked_status:Boolean, after:String, before:String, first:Int, last:Int
+hackerone_triagers -> UserConnection | args: cleared:Boolean, where:FiltersUserFilterInput, order_by:FiltersUserFilterOrder, after:String, before:String, first:Int, last:Int
+hai_agent_core_config -> HaiAgentCoreConfig | args: key:String
+hai_agent_core_configs -> None | args: 
+hai_chat -> HaiChat | args: id:ID
+hai_plays -> HaiPlayConnection | args: where:FiltersHaiPlayFilterInput, order_by:FiltersHaiPlayFilterOrder, after:String, before:String, first:Int, last:Int
+hai_task -> HaiTask | args: id:ID
+id -> ID | args: 
+id_verification -> IdVerification | args: 
+intake_commonly_informative_report_categories -> IntakeCommonlyInformativeReportCategoryConnection | args: after:String, before:String, first:Int, last:Int
+intake_core_ineligible_finding_categories -> IntakeCoreIneligibleFindingCategoryConnection | args: after:String, before:String, first:Int, last:Int
+intake_incomplete_report_categories -> IntakeIncompleteReportCategoryConnection | args: after:String, before:String, first:Int, last:Int, subcategory:IntakeIncompleteReportCategorySubcategoryEnum
+intake_workflow -> WorkflowRun | args: report_id:Int
+label_categories -> LabelCategoryConnection | args: where:FiltersLabelCategoryFilterInput, after:String, before:String, first:Int, last:Int
+languages -> None | args: 
+leaderboard_entries -> LeaderboardEntryConnection | args: after:String, before:String, first:Int, last:Int, key:LeaderboardKeyEnum, year:Int, quarter:Int, filter:String, engagement_type:String, user_type:String
+load_configurable_analytics_chart -> ConfigurableDashboardChart | args: chart_key:String, organization_id:ID, team_id:ID, filters:JSON, start_date:String, end_date:String, interval:String, limit:Int, benchmarks:AnalyticsCustomBenchmarkInputType
+machine_learning_inference_result -> MachineLearningInferenceResult | args: id:Int
+maintenance_banner -> MaintenanceBanner | args: 
+me -> User | args: 
+mediation_requests -> MediationRequestConnection | args: where:FiltersMediationRequestFilterInput, order_by:FiltersMediationRequestFilterOrder, after:String, before:String, first:Int, last:Int
+most_used_asset_types -> None | args: 
+most_used_technologies -> None | args: 
+node -> Node | args: id:ID
+oauth_application -> OauthApplication | args: client_id:String
+opportunities_search -> SearchResultConnection | args: after:String, before:String, first:Int, last:Int, query:OpportunitiesQuery, filter:QueryInput, sort:SortInput, from:Int, size:Int, post_filters:OpportunitiesFilterInput
+organization -> Organization | args: handle:String
+organization_bounty_informed_pentest_generator_runs -> OrganizationBountyInformedPentestGeneratorRunsConnection | args: organization_id:ID, run_id:ID, after:String, before:String, first:Int, last:Int
+organization_inboxes -> OrganizationInboxConnection | args: where:FiltersOrganizationInboxFilterInput, order_by:FiltersOrganizationInboxFilterOrder, after:String, before:String, first:Int, last:Int
+organizations -> OrganizationConnection | args: where:FiltersOrganizationFilterInput, order_by:FiltersOrganizationFilterOrder, after:String, before:String, first:Int, last:Int
+other_workflow_step_conclusions -> OtherWorkflowStepConclusionConnection | args: after:String, before:String, first:Int, last:Int
+pentest -> Pentest | args: id:ID
+pentest_checklist_templates -> PentestChecklistTemplateConnection | args: organization_id:ID, after:String, before:String, first:Int, last:Int
+pentest_opportunities -> PentestOpportunityConnection | args: where:FiltersPentestOpportunityFilterInput, after:String, before:String, first:Int, last:Int
+pentest_opportunity -> PentestOpportunity | args: token:String
+pentest_opportunity_status -> Hash | args: token:String
+pentest_report -> PentestReport | args: id:ID
+pentester_positions -> PentesterPositionConnection | args: order_by:FiltersPentesterPositionFilterOrder, where:FiltersPentesterPositionFilterInput, after:String, before:String, first:Int, last:Int
+pentester_profiles -> PentesterProfileConnection | args: after:String, before:String, first:Int, last:Int, where:FiltersPentesterProfileFilterInput, order_by:FiltersPentesterProfileFilterOrder
+pentests -> PentestConnection | args: order_by:PentestOrderInput, secure_order_by:FiltersPentestFilterOrder, where:FiltersPentestFilterInput, after:String, before:String, first:Int, last:Int
+popular_now -> Hash | args: 
+query -> Query | args: 
+ranked_cve_entries -> RankedCveEntryConnection | args: search:String, order_by:AnalyticsOrderByInputType, after:String, before:String, first:Int, last:Int
+recon_context -> ReconWorkspaceContext | args: id:Int
+recon_contexts -> ReconWorkspaceContextConnection | args: after:String, before:String, first:Int, last:Int, id:String
+report_intent -> ReportIntent | args: id:Int
+report_retest_user -> ReportRetestUser | args: activity_id:Int
+report_retests -> ReportRetestConnection | args: after:String, before:String, first:Int, last:Int, where:FiltersReportRetestFilterInput, order_by:FiltersReportRetestFilterOrder, assignee:AssigneeInputType, offset:Int
+report_triage_summary_examples -> ReportTriageSummaryExampleConnection | args: after:String, before:String, first:Int, last:Int
+reports -> ReportConnection | args: where:FiltersReportFilterInput, handle:String, state:ReportStateEnum, substate:ReportStateEnum, database_id:Int, has_retests:Boolean, offset:Int, has_assignee:Boolean, assignee:AssigneeInputType, order_by:ReportOrderInput, secure_order_by:FiltersReportFilterOrder, filter:ReportFilterInput, after:String, before:String, first:Int, last:Int
+resource -> ResourceInterface | args: url:URI
+rom_asset_group -> RomAssetGroup | args: id:ID
+rom_setting_template -> ReturnOnMitigationDefaultSettings | args: industry:IndustryEnum, revenue_cohort:RevenueCohortEnum
+search -> SearchResultConnection | args: after:String, before:String, first:Int, last:Int, index:IndexEnum, query:QueryInput, query_string:String, limit:Int, sort:SortInput, from:Int, size:Int, reporter_filter:String
+search_documentation -> DocumentationSearchResult | args: query:String
+severity_calculator -> SeverityCalculator | args: 
+skills -> SkillConnection | args: after:String, before:String, first:Int, last:Int, where:FiltersSkillFilterInput, exclude_my_skills:Boolean
+spend_tracker_by_category -> SpendTrackerSpendByAssetCategory | args: organization_id:ID, category_id:ID, start_date:ISO8601DateTime, end_date:ISO8601DateTime
+static_dashboards -> StaticDashboard | args: key:String
+surveys -> SurveyConnection | args: after:String, before:String, first:Int, last:Int, category:SurveyCategoryEnum
+tasks -> TaskConnection | args: after:String, before:String, first:Int, last:Int
+teams -> TeamConnection | args: permissions:PermissionEnum, order_by:TeamOrderInput, secure_order_by:FiltersTeamFilterOrder, where:FiltersTeamFilterInput, after:String, before:String, first:Int, last:Int
+terms -> TermConnection | args: after:String, before:String, first:Int, last:Int, where:FiltersTermFilterInput, order_by:FiltersTermFilterOrder
+time_zones -> None | args: 
+top_technology_tags -> TopTechnologyTagConnection | args: after:String, before:String, first:Int, last:Int
+tray_solution_instance_url -> String | args: integration_id:ID, solution_instance_id:String
+triage_inbox -> TriageInbox | args: 
+triage_inbox_items -> TriageInboxItemConnection | args: assigned_to_triage:Boolean, ordered_by_timer:Boolean, order_by:String, owner_usernames:String, priority:TriageInboxItemPriorityEnum, ccv2:Boolean, report_id:Int, report_substate:TriageInboxItemReportSubstateEnum, report_severity_rating:Boolean, report_title:String, team_handle:String, pod_name:String, view:TriageInboxItemViewEnum, running_validation_timer:Boolean, after:String, before:String, first:Int, last:Int
+triage_pods -> TriagePodConnection | args: after:String, before:String, first:Int, last:Int
+user_insights -> UserInsight | args: 
+users -> UserConnection | args: cleared:Boolean, where:FiltersUserFilterInput, order_by:FiltersUserFilterOrder, after:String, before:String, first:Int, last:Int
+vulnerability_templates -> None | args: 
+weaknesses -> WeaknessConnection | args: after:String, before:String, first:Int, last:Int, order_by:WeaknessOrder, distinct_by_name:Boolean, include_deprecated:Boolean
+webhook -> Webhook | args: id:ID
+workflow_runs -> WorkflowRunConnection | args: where:FiltersWorkflowRunFilterInput, after:String, before:String, first:Int, last:Int
+workflow_step_outcome_configurations -> WorkflowStepOutcomeConfigurationConnection | args: after:String, before:String, first:Int, last:Int

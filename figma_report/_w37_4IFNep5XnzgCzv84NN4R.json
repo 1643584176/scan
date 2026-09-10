@@ -1,0 +1,3595 @@
+{
+ "id": "4IFNep5XnzgCzv84NN4R",
+ "name": "Wan Lora - Rotate",
+ "owner": "H822bxaJlpcStHwreI5drYHEWHX2",
+ "workspaceId": "aa036063-b614-4016-947f-a556884dae9e",
+ "organizationId": "849e299a-54a0-41ad-be8c-48617c59c577",
+ "visibility": "public",
+ "sharedUsers": [],
+ "poster": "https://res.cloudinary.com/dpp2flk93/video/upload/so_1.0625/uploads/skhluzz9lazjf1mftdpw.jpg",
+ "userPoster": true,
+ "createdAt": "2025-04-16T07:58:48.826Z",
+ "updatedAt": "2025-09-26T11:25:10.318Z",
+ "publishedVersions": [],
+ "version": 1,
+ "nodes": [
+  {
+   "id": "12b29600-ea6e-466f-bec2-ff36cf3d0221",
+   "isModel": false,
+   "type": "extract_video_frame",
+   "position": {
+    "x": 2460,
+    "y": -140
+   },
+   "data": {
+    "name": "Extract Video Frame",
+    "time": 1.09375,
+    "color": "Yambo_Black",
+    "input": {
+     "file": {
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744198241/uploads/skhluzz9lazjf1mftdpw.mp4",
+      "type": "video",
+      "input": {
+       "video": {
+        "fps": 16,
+        "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+        "type": "video",
+        "input": {
+         "seed": 938607,
+         "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+         "model": "14b",
+         "width": 768,
+         "frames": 81,
+         "height": 1024,
+         "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+         "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+         "fast_mode": "Balanced",
+         "resolution": "480p",
+         "aspect_ratio": "16:9",
+         "sample_shift": 8,
+         "sample_steps": 30,
+         "lora_strength_clip": 1,
+         "sample_guide_scale": 5,
+         "lora_strength_model": 1
+        },
+        "width": 560,
+        "height": 752,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "duration": 5.0625,
+        "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+        "visualId": 0,
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+       },
+       "upscale_factor": 4
+      },
+      "width": 1608,
+      "height": 2160,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/skhluzz9lazjf1mftdpw",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/skhluzz9lazjf1mftdpw.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "output": {
+     "result": {
+      "url": "",
+      "type": "image",
+      "width": 1608,
+      "height": 2160
+     }
+    },
+    "result": {
+     "url": "",
+     "type": "image",
+     "width": 1608,
+     "height": 2160
+    },
+    "handles": {
+     "input": [
+      "file"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "inputNode": {
+     "file": {
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744198241/uploads/skhluzz9lazjf1mftdpw.mp4",
+      "type": "video",
+      "width": 1608,
+      "height": 2160,
+      "duration": 5.0625,
+      "publicId": "uploads/skhluzz9lazjf1mftdpw",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/skhluzz9lazjf1mftdpw.jpg?_a=BAMCcSfi0"
+     },
+     "nodeId": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d",
+     "outputId": "video"
+    },
+    "description": "Extracts an image for a given frame",
+    "frameNumber": 17
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Extract Video Frame"
+  },
+  {
+   "id": "13a0487b-a98f-4d82-a3e2-866bfeb3d55b",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": -1420,
+    "y": -490
+   },
+   "data": {
+    "name": "File",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744188428/uploads/tbvltcu9g6lrjcdnnuns.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1350,
+      "publicId": "uploads/tbvltcu9g6lrjcdnnuns",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/tbvltcu9g6lrjcdnnuns.png?_a=BAMCcSfi0"
+     }
+    ],
+    "output": {
+     "file": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744188428/uploads/tbvltcu9g6lrjcdnnuns.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1350,
+      "publicId": "uploads/tbvltcu9g6lrjcdnnuns",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/tbvltcu9g6lrjcdnnuns.png?_a=BAMCcSfi0"
+     }
+    },
+    "result": {
+     "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744188428/uploads/tbvltcu9g6lrjcdnnuns.png",
+     "type": "image",
+     "width": 1024,
+     "height": 1350,
+     "publicId": "uploads/tbvltcu9g6lrjcdnnuns",
+     "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/tbvltcu9g6lrjcdnnuns.png?_a=BAMCcSfi0"
+    },
+    "handles": {
+     "output": [
+      "file"
+     ]
+    },
+    "dark_color": "Yambo_Blue_Dark",
+    "border_color": "Yambo_Blue_Stroke",
+    "selectedIndex": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "File"
+  },
+  {
+   "id": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1700,
+    "y": 410
+   },
+   "data": {
+    "name": "Topaz Video Upscaler",
+    "paid": 10,
+    "color": "Yambo_Purple",
+    "input": {
+     "video": {
+      "id": "a1998b28-6f33-4eab-a74e-b745a72fecea",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+      "type": "video",
+      "input": {
+       "seed": 938607,
+       "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+       "model": "14b",
+       "width": 768,
+       "frames": 81,
+       "height": 1024,
+       "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+       "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": 8,
+       "sample_steps": 30,
+       "lora_strength_clip": 1,
+       "sample_guide_scale": 5,
+       "lora_strength_model": 1
+      },
+      "width": 560,
+      "height": 752,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "label": "",
+    "model": {
+     "name": "topaz-upscale-video"
+    },
+    "output": {
+     "video": {
+      "id": "85239aaf-65c6-4629-bdac-0539e10e26c0",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744198241/uploads/skhluzz9lazjf1mftdpw.mp4",
+      "type": "video",
+      "input": {
+       "video": {
+        "fps": 16,
+        "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+        "type": "video",
+        "input": {
+         "seed": 938607,
+         "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+         "model": "14b",
+         "width": 768,
+         "frames": 81,
+         "height": 1024,
+         "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+         "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+         "fast_mode": "Balanced",
+         "resolution": "480p",
+         "aspect_ratio": "16:9",
+         "sample_shift": 8,
+         "sample_steps": 30,
+         "lora_strength_clip": 1,
+         "sample_guide_scale": 5,
+         "lora_strength_model": 1
+        },
+        "width": 560,
+        "height": 752,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "duration": 5.0625,
+        "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+        "visualId": 0,
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+       },
+       "upscale_factor": 4
+      },
+      "width": 1608,
+      "height": 2160,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/skhluzz9lazjf1mftdpw",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/skhluzz9lazjf1mftdpw.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "video": {
+      "id": "a1998b28-6f33-4eab-a74e-b745a72fecea",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+      "type": "video",
+      "input": {
+       "seed": 938607,
+       "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+       "model": "14b",
+       "width": 768,
+       "frames": 81,
+       "height": 1024,
+       "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+       "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": 8,
+       "sample_steps": 30,
+       "lora_strength_clip": 1,
+       "sample_guide_scale": 5,
+       "lora_strength_model": 1
+      },
+      "width": 560,
+      "height": 752,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+     },
+     "upscale_factor": 4
+    },
+    "result": [
+     {
+      "id": "85239aaf-65c6-4629-bdac-0539e10e26c0",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744198241/uploads/skhluzz9lazjf1mftdpw.mp4",
+      "type": "video",
+      "input": {
+       "video": {
+        "fps": 16,
+        "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+        "type": "video",
+        "input": {
+         "seed": 938607,
+         "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+         "model": "14b",
+         "width": 768,
+         "frames": 81,
+         "height": 1024,
+         "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+         "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+         "fast_mode": "Balanced",
+         "resolution": "480p",
+         "aspect_ratio": "16:9",
+         "sample_shift": 8,
+         "sample_steps": 30,
+         "lora_strength_clip": 1,
+         "sample_guide_scale": 5,
+         "lora_strength_model": 1
+        },
+        "width": 560,
+        "height": 752,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "duration": 5.0625,
+        "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+        "visualId": 0,
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+       },
+       "upscale_factor": 4
+      },
+      "width": 1608,
+      "height": 2160,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/skhluzz9lazjf1mftdpw",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/skhluzz9lazjf1mftdpw.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "upscale_factor": {
+      "max": 4,
+      "min": 1,
+      "type": "number",
+      "order": 1,
+      "title": "Upscale Factor",
+      "default": 2,
+      "description": "Factor to upscale the video by (e.g. 2.0 doubles width and height)"
+     }
+    },
+    "handles": {
+     "input": {
+      "video": {
+       "id": "0Mt2JviRf2Ahx1I8wU5Q",
+       "order": 0,
+       "format": "uri",
+       "required": true,
+       "description": "Video to upscale"
+      }
+     },
+     "output": [
+      "video"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional-grade video upscaling using Topaz technology. Maximum 3840x2160",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Topaz Video Upscaler"
+  },
+  {
+   "id": "912817b9-c939-4a8b-aa76-b87f2c52897a",
+   "isModel": false,
+   "type": "export",
+   "position": {
+    "x": 2930,
+    "y": -100
+   },
+   "data": {
+    "name": "Export",
+    "color": "Yambo_Blue",
+    "input": {
+     "file": {
+      "url": "https://media.weavy.ai/video/upload/so_1.0625/uploads/skhluzz9lazjf1mftdpw.jpg",
+      "type": "image",
+      "width": 1608,
+      "height": 2160,
+      "suffix": "uploads/skhluzz9lazjf1mftdpw.jpg",
+      "cloudinaryType": "video",
+      "transformations": [
+       {
+        "frame": "so_1.0625"
+       }
+      ]
+     }
+    },
+    "handles": {
+     "input": [
+      "file"
+     ],
+     "output": []
+    },
+    "inputNode": {
+     "nodeId": "12b29600-ea6e-466f-bec2-ff36cf3d0221",
+     "outputId": "result"
+    },
+    "dark_color": "Yambo_Blue_Dark",
+    "description": "Export file",
+    "border_color": "Yambo_Blue_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Export"
+  },
+  {
+   "id": "92b5ee37-fd4a-4305-a3c7-2b406e1b34af",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -1480,
+    "y": 1000
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Imagen 3"
+    },
+    "name": "Google Imagen 3",
+    "color": "Red",
+    "input": {
+     "prompt": "frontal view of a flat tv screen hang on white wall. "
+    },
+    "model": {
+     "name": "google/imagen-3",
+     "version": "4902bedfc8567f151e7cc0bb500a4480a4fb0575a10baf7e947e02e8b52d0413"
+    },
+    "output": {
+     "result": {
+      "id": "70e9a43e-4e0b-4d93-9957-5b78184ed59b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195668/uploads/g5zobilg9qu6rzq20tof.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a flat tv screen hang on white wall. ",
+       "aspect_ratio": "1:1",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/g5zobilg9qu6rzq20tof",
+      "visualId": "ff80807fd07a3f80",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g5zobilg9qu6rzq20tof.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "prompt": "frontal view of a flat tv screen hang on white wall. ",
+     "aspect_ratio": "1:1",
+     "safety_filter_level": "block_only_high"
+    },
+    "result": [
+     {
+      "id": "96f3b6ca-7166-4cb6-85b8-25b4f589bfff",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744189042/uploads/mnuyvdtcbicuofvnernx.png",
+      "type": "image",
+      "input": {
+       "prompt": "centered view from above of a flat tv screen hang on white wall",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/mnuyvdtcbicuofvnernx.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/mnuyvdtcbicuofvnernx",
+      "visualId": "fe7a85817a902a7a",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/mnuyvdtcbicuofvnernx.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/mnuyvdtcbicuofvnernx.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "f6e2c5b6-8f29-4f7d-9186-04b8f5ebc905",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195604/uploads/cehghclbvipwpsfe4wpa.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view high angle of a flat tv screen lean on white wall. ",
+       "aspect_ratio": "1:1",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/cehghclbvipwpsfe4wpa.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/cehghclbvipwpsfe4wpa",
+      "visualId": "e88387f090fdb41e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/cehghclbvipwpsfe4wpa.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/cehghclbvipwpsfe4wpa.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "70e9a43e-4e0b-4d93-9957-5b78184ed59b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195668/uploads/g5zobilg9qu6rzq20tof.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a flat tv screen hang on white wall. ",
+       "aspect_ratio": "1:1",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/g5zobilg9qu6rzq20tof",
+      "visualId": "ff80807fd07a3f80",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g5zobilg9qu6rzq20tof.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 2,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "9:16",
+       "16:9",
+       "3:4",
+       "4:3"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the generated image"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Negative Prompt",
+      "required": false,
+      "description": "Text prompt for what to discourage in the generated images"
+     },
+     "safety_filter_level": {
+      "type": "enum",
+      "order": 3,
+      "title": "Safety Filter Level",
+      "default": "block_only_high",
+      "options": [
+       "block_low_and_above",
+       "block_medium_and_above",
+       "block_only_high"
+      ],
+      "required": false,
+      "description": "block_low_and_above is strictest, block_medium_and_above blocks some prompts, block_only_high is most permissive but some prompts will still be blocked"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "e59cd3e9-28cd-4485-b21d-b24b3ffc3f56",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "negative_prompt": {
+       "id": "36d95f25-b571-42c5-bd4d-a073bfc9b3b0",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Text prompt for what to discourage in the generated images"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Google's text-to-image model, generating images with high detail, rich lighting",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 2
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Google Imagen 3"
+  },
+  {
+   "id": "96176ddf-5d3c-41cb-884d-6306370e2ca4",
+   "isModel": false,
+   "type": "compv3",
+   "position": {
+    "x": -310,
+    "y": 620
+   },
+   "data": {
+    "data": {
+     "input": [
+      [
+       "layer_1",
+       {
+        "file": {
+         "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744187315/uploads/sicygo4ne6utde6f4x0o.png",
+         "type": "image",
+         "width": 1024,
+         "height": 1024,
+         "publicId": "uploads/sicygo4ne6utde6f4x0o",
+         "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0"
+        },
+        "nodeId": "c3fc7051-f3ae-495e-8e98-f7be6f57b62e",
+        "outputId": "image"
+       }
+      ],
+      [
+       "layer_2",
+       {
+        "file": {
+         "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744792318/uploads/xwhyvi0r0dgujhor2cbd.png",
+         "type": "image",
+         "width": 1024,
+         "height": 1024,
+         "publicId": "uploads/xwhyvi0r0dgujhor2cbd",
+         "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/xwhyvi0r0dgujhor2cbd.jpg?_a=BAMCcSfi0"
+        },
+        "nodeId": "d0f04a77-2567-4f6a-a6ad-489dbb8fd4ac",
+        "outputId": "image"
+       }
+      ],
+      [
+       "background",
+       {
+        "file": {
+         "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744188428/uploads/tbvltcu9g6lrjcdnnuns.png",
+         "type": "image",
+         "width": 1024,
+         "height": 1350,
+         "publicId": "uploads/tbvltcu9g6lrjcdnnuns",
+         "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/tbvltcu9g6lrjcdnnuns.png?_a=BAMCcSfi0"
+        },
+        "nodeId": "13a0487b-a98f-4d82-a3e2-866bfeb3d55b",
+        "outputId": "file"
+       }
+      ]
+     ],
+     "stage": {
+      "width": 1024,
+      "height": 1350
+     },
+     "layers": {
+      "0": {
+       "id": 0,
+       "kind": {
+        "type": "image",
+        "inputId": "background"
+       },
+       "name": "Background",
+       "color": {
+        "a": 1,
+        "b": 255,
+        "g": 255,
+        "r": 255
+       },
+       "scale": {
+        "x": 1,
+        "y": 1
+       },
+       "locked": false,
+       "visible": true,
+       "position": {
+        "x": 0,
+        "y": 0
+       },
+       "rotation": 0,
+       "blendMode": "source-over",
+       "dimension": {
+        "x": 1024,
+        "y": 1350
+       }
+      },
+      "1": {
+       "id": 1,
+       "kind": {
+        "type": "image",
+        "inputId": "layer_1"
+       },
+       "name": "Layer 1",
+       "color": {
+        "a": 1,
+        "b": 255,
+        "g": 255,
+        "r": 255
+       },
+       "scale": {
+        "x": 1,
+        "y": 1
+       },
+       "locked": false,
+       "visible": true,
+       "position": {
+        "x": 0,
+        "y": 0
+       },
+       "rotation": 0,
+       "blendMode": "source-over",
+       "dimension": {
+        "x": 1024,
+        "y": 1024
+       }
+      },
+      "2": {
+       "id": 2,
+       "kind": {
+        "type": "image",
+        "inputId": "layer_2"
+       },
+       "name": "Layer 2",
+       "color": {
+        "a": 1,
+        "b": 255,
+        "g": 255,
+        "r": 255
+       },
+       "scale": {
+        "x": 1,
+        "y": 1
+       },
+       "locked": false,
+       "visible": true,
+       "position": {
+        "x": 13.547431945800781,
+        "y": 206.47666931152344
+       },
+       "rotation": 0,
+       "blendMode": "source-over",
+       "dimension": {
+        "x": 849.7066040039062,
+        "y": 849.7064208984375
+       }
+      }
+     },
+     "layerOrder": [
+      0,
+      1,
+      2
+     ]
+    },
+    "name": "Compositor",
+    "color": "Yambo_Black",
+    "input": {
+     "layer_1": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744187315/uploads/sicygo4ne6utde6f4x0o.png",
+      "type": "image",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186758/uploads/l6btxa785hboylyb73hw.png",
+        "type": "image",
+        "input": {
+         "prompt": "frontal view of an office chair on white background",
+         "aspect_ratio": "1:1",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/l6btxa785hboylyb73hw",
+        "visualId": "e1619e92496cc6dd",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l6btxa785hboylyb73hw.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/sicygo4ne6utde6f4x0o",
+      "visualId": "e1619e92496cc6dd",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0"
+     },
+     "layer_2": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744792318/uploads/xwhyvi0r0dgujhor2cbd.png",
+      "type": "image",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195668/uploads/g5zobilg9qu6rzq20tof.png",
+        "type": "image",
+        "input": {
+         "prompt": "frontal view of a flat tv screen hang on white wall. ",
+         "aspect_ratio": "1:1",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/g5zobilg9qu6rzq20tof",
+        "visualId": "ff80807fd07a3f80",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g5zobilg9qu6rzq20tof.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/xwhyvi0r0dgujhor2cbd.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/xwhyvi0r0dgujhor2cbd",
+      "visualId": "ff80807fd07a3f80",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/xwhyvi0r0dgujhor2cbd.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/xwhyvi0r0dgujhor2cbd.jpg?_a=BAMCcSfi0"
+     },
+     "background": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744188428/uploads/tbvltcu9g6lrjcdnnuns.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1350,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/tbvltcu9g6lrjcdnnuns.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/tbvltcu9g6lrjcdnnuns",
+      "visualId": "8000000000000000",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/tbvltcu9g6lrjcdnnuns.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/tbvltcu9g6lrjcdnnuns.png?_a=BAMCcSfi0"
+     }
+    },
+    "output": {
+     "image": {
+      "url": "",
+      "type": "image",
+      "width": 1024,
+      "height": 1350
+     }
+    },
+    "result": {
+     "url": "",
+     "type": "image",
+     "width": 1024,
+     "height": 1350
+    },
+    "handles": {
+     "input": {
+      "layer_1": {
+       "id": "FC4JC5FMAA1SBQZ9W8Y1",
+       "order": "1",
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "layer_2": {
+       "id": "f05d5ecd-c4a7-4e34-87fc-9b2ac0faf3f8",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "background": {
+       "id": "QL7tunFcDDYMAIHsR09P",
+       "order": 0,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      }
+     },
+     "output": [
+      "image"
+     ]
+    },
+    "version": 2,
+    "description": "Compose layers of images"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Compositor"
+  },
+  {
+   "id": "9eed4e7a-0f7c-43c7-9e84-5b9217187a4e",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 370,
+    "y": 600
+   },
+   "data": {
+    "name": "Flux Dev LoRA",
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "url": "",
+      "type": "image",
+      "width": 1024,
+      "height": 1350
+     },
+     "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows."
+    },
+    "label": "",
+    "model": {
+     "name": "fal_flux_multilora"
+    },
+    "output": {
+     "result": {
+      "id": "0a82b764-4019-4d2d-a6ac-1af893ef5f98",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+      "type": "image",
+      "input": {
+       "seed": 948732,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.7,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/k7mmeazqqtun7t7l3hsf.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/k7mmeazqqtun7t7l3hsf",
+      "visualId": "ea699694954e1ee4",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/k7mmeazqqtun7t7l3hsf.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/k7mmeazqqtun7t7l3hsf.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 948732,
+      "isRandom": true
+     },
+     "image": {
+      "url": "",
+      "type": "image",
+      "width": 1024,
+      "height": 1350
+     },
+     "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+     "strength": 0.6,
+     "image_size": "portrait_4_3",
+     "num_images": 4,
+     "output_format": "png",
+     "guidance_scale": 3.5,
+     "num_inference_steps": 28,
+     "enable_safety_checker": false
+    },
+    "result": [
+     {
+      "id": "c7a0c444-68b6-45ba-8f63-896af27c37b4",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744191750/uploads/xrmcxb1bgnxsgc4k4ojs.png",
+      "type": "image",
+      "input": {
+       "seed": 585025,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/xrmcxb1bgnxsgc4k4ojs.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/xrmcxb1bgnxsgc4k4ojs",
+      "visualId": "f86c87976868b325",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/xrmcxb1bgnxsgc4k4ojs.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/xrmcxb1bgnxsgc4k4ojs.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "c89bd599-129a-4021-848c-20eacaa76434",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744192592/uploads/ix3a4rvpkchnfxvjlkn0.png",
+      "type": "image",
+      "input": {
+       "seed": 117113,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ix3a4rvpkchnfxvjlkn0.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ix3a4rvpkchnfxvjlkn0",
+      "visualId": "e8688797686ab365",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ix3a4rvpkchnfxvjlkn0.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ix3a4rvpkchnfxvjlkn0.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "7861a663-8eff-49f3-a187-048fdb83a8a6",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744192592/uploads/bzfhk8rdfzjcrwthdz3n.png",
+      "type": "image",
+      "input": {
+       "seed": 117113,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/bzfhk8rdfzjcrwthdz3n.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/bzfhk8rdfzjcrwthdz3n",
+      "visualId": "f86887977868b331",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/bzfhk8rdfzjcrwthdz3n.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/bzfhk8rdfzjcrwthdz3n.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "b96a9ca4-9da6-47d1-89b1-237c1f76f1bc",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744192592/uploads/qiywwgv0cjyryq6x8gkl.png",
+      "type": "image",
+      "input": {
+       "seed": 117113,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/qiywwgv0cjyryq6x8gkl.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/qiywwgv0cjyryq6x8gkl",
+      "visualId": "f86c87936878b325",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/qiywwgv0cjyryq6x8gkl.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/qiywwgv0cjyryq6x8gkl.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "0bf13c21-3c47-4ee3-a19d-8d60852d65a2",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744192592/uploads/ubsmxfbtdmmdf0igwazt.png",
+      "type": "image",
+      "input": {
+       "seed": 117113,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ubsmxfbtdmmdf0igwazt.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ubsmxfbtdmmdf0igwazt",
+      "visualId": "f86887976878b361",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ubsmxfbtdmmdf0igwazt.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ubsmxfbtdmmdf0igwazt.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "5943ce29-32cd-4b5f-8c11-4c1007f3d2f5",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194302/uploads/trtw0rxaenim5kih7xda.png",
+      "type": "image",
+      "input": {
+       "seed": 615705,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/trtw0rxaenim5kih7xda.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/trtw0rxaenim5kih7xda",
+      "visualId": "ea698794905e9ee1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/trtw0rxaenim5kih7xda.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/trtw0rxaenim5kih7xda.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "039089c8-0d65-4a66-a212-8ca72042dccb",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194302/uploads/agbm82z0utrm865qiqza.png",
+      "type": "image",
+      "input": {
+       "seed": 615705,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/agbm82z0utrm865qiqza.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/agbm82z0utrm865qiqza",
+      "visualId": "ea699791911e8ee1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/agbm82z0utrm865qiqza.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/agbm82z0utrm865qiqza.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "e1432e40-1c19-4daa-8526-24a392687bdb",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194302/uploads/nyuei4r8mq0qubsxq7yj.png",
+      "type": "image",
+      "input": {
+       "seed": 615705,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/nyuei4r8mq0qubsxq7yj.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/nyuei4r8mq0qubsxq7yj",
+      "visualId": "ea698790915e8ee5",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/nyuei4r8mq0qubsxq7yj.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/nyuei4r8mq0qubsxq7yj.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "a826ba2e-a9fc-446e-8784-05ffd547613b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194302/uploads/bzsjvgj1rv0xyhwehuv0.png",
+      "type": "image",
+      "input": {
+       "seed": 615705,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/bzsjvgj1rv0xyhwehuv0.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/bzsjvgj1rv0xyhwehuv0",
+      "visualId": "ea698794901a9fc7",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/bzsjvgj1rv0xyhwehuv0.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/bzsjvgj1rv0xyhwehuv0.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "72b10923-68b9-43bf-9a71-7eedf57a4591",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194449/uploads/pofxn09s5nzw3sj1aebw.png",
+      "type": "image",
+      "input": {
+       "seed": 502923,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/pofxn09s5nzw3sj1aebw.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/pofxn09s5nzw3sj1aebw",
+      "visualId": "ea688791911e1ee7",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/pofxn09s5nzw3sj1aebw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/pofxn09s5nzw3sj1aebw.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "f612b7d4-cd09-4486-be28-42a758b2141d",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194449/uploads/r7ludilitaxe1dnblzjg.png",
+      "type": "image",
+      "input": {
+       "seed": 502923,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/r7ludilitaxe1dnblzjg.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/r7ludilitaxe1dnblzjg",
+      "visualId": "ea698794915e1ee1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/r7ludilitaxe1dnblzjg.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/r7ludilitaxe1dnblzjg.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "98f5f4db-c17d-492e-a82f-f2bae516f0f9",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194449/uploads/uas9j7e9jwwurst98h0x.png",
+      "type": "image",
+      "input": {
+       "seed": 502923,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/uas9j7e9jwwurst98h0x.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/uas9j7e9jwwurst98h0x",
+      "visualId": "ea699794901e0ee7",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/uas9j7e9jwwurst98h0x.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/uas9j7e9jwwurst98h0x.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "69d6ff30-9220-4a6c-95e7-d0d9dbee8133",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194449/uploads/m7hyoqnjmelvdscymspv.png",
+      "type": "image",
+      "input": {
+       "seed": 502923,
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1350
+       },
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/m7hyoqnjmelvdscymspv.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/m7hyoqnjmelvdscymspv",
+      "visualId": "ea699790911e1ee3",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/m7hyoqnjmelvdscymspv.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/m7hyoqnjmelvdscymspv.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "154f2a15-8dd3-4a0f-86f9-ae3b39cbfb01",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194913/uploads/g34rwxdyqlgr9uzpaux1.png",
+      "type": "image",
+      "input": {
+       "seed": 149107,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g34rwxdyqlgr9uzpaux1.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/g34rwxdyqlgr9uzpaux1",
+      "visualId": "eb6d9690911e0ee5",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g34rwxdyqlgr9uzpaux1.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g34rwxdyqlgr9uzpaux1.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "ab73a335-475a-4b5b-89cb-8300d8991d95",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194913/uploads/j4jtrm11begat2djroc2.png",
+      "type": "image",
+      "input": {
+       "seed": 149107,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/j4jtrm11begat2djroc2.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/j4jtrm11begat2djroc2",
+      "visualId": "eb6d8690911e1ef1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/j4jtrm11begat2djroc2.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/j4jtrm11begat2djroc2.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "1f90e135-836c-4e0f-9724-018822dc0b50",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194913/uploads/goa7oe5nsthv0szfaf0r.png",
+      "type": "image",
+      "input": {
+       "seed": 149107,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/goa7oe5nsthv0szfaf0r.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/goa7oe5nsthv0szfaf0r",
+      "visualId": "ea6d9790911a1ee5",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/goa7oe5nsthv0szfaf0r.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/goa7oe5nsthv0szfaf0r.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "5472d787-6b14-45a9-94f4-1e246db72cdf",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194913/uploads/aulsmyq4hc0sncnmfv95.png",
+      "type": "image",
+      "input": {
+       "seed": 149107,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.6,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/aulsmyq4hc0sncnmfv95.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/aulsmyq4hc0sncnmfv95",
+      "visualId": "ea6d9691911e1ee1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/aulsmyq4hc0sncnmfv95.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/aulsmyq4hc0sncnmfv95.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "ce8dd044-d4f8-404e-8aca-b908c57c15df",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195260/uploads/qivtho9ux3rlyerp3fhi.png",
+      "type": "image",
+      "input": {
+       "seed": 214189,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.8,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/qivtho9ux3rlyerp3fhi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/qivtho9ux3rlyerp3fhi",
+      "visualId": "b86dc790951f9ab0",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/qivtho9ux3rlyerp3fhi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/qivtho9ux3rlyerp3fhi.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "46e396df-6025-4d6a-aee1-4e4a98b4be0c",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195259/uploads/uodq60t8a3jsosiby8w3.png",
+      "type": "image",
+      "input": {
+       "seed": 214189,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.8,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/uodq60t8a3jsosiby8w3.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/uodq60t8a3jsosiby8w3",
+      "visualId": "eb699694951a9ec1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/uodq60t8a3jsosiby8w3.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/uodq60t8a3jsosiby8w3.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "80744203-9a05-4075-96a1-ed97aadd0a32",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195259/uploads/dd09uzlrvrhnmtbqhiux.png",
+      "type": "image",
+      "input": {
+       "seed": 214189,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.8,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dd09uzlrvrhnmtbqhiux.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/dd09uzlrvrhnmtbqhiux",
+      "visualId": "ea698795954e5ab0",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dd09uzlrvrhnmtbqhiux.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dd09uzlrvrhnmtbqhiux.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "33f814af-b8c8-488a-8583-b1ad95b83009",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195260/uploads/ckx80x3ugeldh7zbnna4.png",
+      "type": "image",
+      "input": {
+       "seed": 214189,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.8,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ckx80x3ugeldh7zbnna4.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ckx80x3ugeldh7zbnna4",
+      "visualId": "ea689695950f1ef0",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ckx80x3ugeldh7zbnna4.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ckx80x3ugeldh7zbnna4.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "0a82b764-4019-4d2d-a6ac-1af893ef5f98",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+      "type": "image",
+      "input": {
+       "seed": 948732,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.7,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/k7mmeazqqtun7t7l3hsf.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/k7mmeazqqtun7t7l3hsf",
+      "visualId": "ea699694954e1ee4",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/k7mmeazqqtun7t7l3hsf.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/k7mmeazqqtun7t7l3hsf.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "206a3f4b-5dfe-4b6d-a6cf-fe6468005647",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/ivemj9tbtdb39ju7v4oc.png",
+      "type": "image",
+      "input": {
+       "seed": 948732,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.7,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ivemj9tbtdb39ju7v4oc.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ivemj9tbtdb39ju7v4oc",
+      "visualId": "ea699794914e1eb1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ivemj9tbtdb39ju7v4oc.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ivemj9tbtdb39ju7v4oc.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "ec869268-5bbd-47ca-a15a-5048d9dfd991",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/fl0sn2cjaixldedcnbsv.png",
+      "type": "image",
+      "input": {
+       "seed": 948732,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.7,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/fl0sn2cjaixldedcnbsv.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/fl0sn2cjaixldedcnbsv",
+      "visualId": "ea699794911e1ee1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/fl0sn2cjaixldedcnbsv.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/fl0sn2cjaixldedcnbsv.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "6da20260-a1ed-4974-a581-06de9f5b2ad6",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/bz4jmg6vhyrq2mmbfvyu.png",
+      "type": "image",
+      "input": {
+       "seed": 948732,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.7,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/bz4jmg6vhyrq2mmbfvyu.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/bz4jmg6vhyrq2mmbfvyu",
+      "visualId": "ea6d9790911a1ae7",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/bz4jmg6vhyrq2mmbfvyu.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/bz4jmg6vhyrq2mmbfvyu.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 3,
+      "title": "Seed",
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "strength": {
+      "max": 1,
+      "min": 0.01,
+      "type": "number",
+      "title": "Image Strength",
+      "default": 0.85,
+      "description": "The strength to use for image-to-image"
+     },
+     "image_size": {
+      "ref": "image_size",
+      "type": "enum",
+      "order": 1,
+      "title": "Aspect Ratio",
+      "default": "square_hd",
+      "options": [
+       "square_hd",
+       "square",
+       "portrait_4_3",
+       "portrait_16_9",
+       "landscape_4_3",
+       "landscape_16_9"
+      ],
+      "description": "Aspect ratio for the generated image"
+     },
+     "num_images": {
+      "max": 4,
+      "min": 1,
+      "type": "integer",
+      "order": 0,
+      "title": "Number of Images",
+      "default": "1",
+      "description": "How many images to generate"
+     },
+     "output_format": {
+      "ref": "output_format",
+      "type": "enum",
+      "order": 4,
+      "title": "Output Format",
+      "default": "png",
+      "options": [
+       "jpeg",
+       "png"
+      ],
+      "description": "Format of the output images"
+     },
+     "guidance_scale": {
+      "max": 10,
+      "min": 0,
+      "type": "number",
+      "order": 2,
+      "title": "Guidance Scale",
+      "default": 3.5,
+      "description": "Guidance for generated image."
+     },
+     "num_inference_steps": {
+      "max": 50,
+      "min": 1,
+      "ref": "num_inference_steps",
+      "type": "integer",
+      "order": 1,
+      "title": "Inference Steps",
+      "default": "28",
+      "description": "The number of inference steps to perform"
+     },
+     "enable_safety_checker": {
+      "type": "boolean",
+      "order": 5,
+      "title": "Safety Checker",
+      "default": "false",
+      "description": "If set to true, the safety checker will be enabled"
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "Dot9bmnSWmK4MEgqVCU4",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Image for ImageToImage"
+      },
+      "lora_1": {
+       "id": "Dot9bmnSWmK4MEgqVCU4",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "prompt": {
+       "id": "rASw6VAAK0kZPijbNsqT",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Prompt for generated image"
+      },
+      "lora_1_scale": {
+       "id": "t2jgmmiJjEIEht957nkt",
+       "order": 3,
+       "format": "number",
+       "required": false,
+       "description": ""
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "FLUX LoRA Text-to-Image and Image-to-Image.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 21
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Dev LoRA"
+  },
+  {
+   "id": "a30f05fd-96f3-4428-b83c-59ec4187b1ba",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -310,
+    "y": 240
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows."
+    },
+    "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+    "result": {
+     "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "isModel": true,
+   "type": "wildcardV2",
+   "position": {
+    "x": 1040,
+    "y": 300
+   },
+   "data": {
+    "name": "fofr/wan2.1-with-lora",
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "id": "0a82b764-4019-4d2d-a6ac-1af893ef5f98",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+      "type": "image",
+      "input": {
+       "seed": 948732,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.7,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/k7mmeazqqtun7t7l3hsf.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/k7mmeazqqtun7t7l3hsf",
+      "visualId": "ea699694954e1ee4",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/k7mmeazqqtun7t7l3hsf.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/k7mmeazqqtun7t7l3hsf.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+     "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true"
+    },
+    "model": {
+     "name": "fofr/wan2.1-with-lora",
+     "service": "replicate",
+     "version": "c48fa8ec65b13143cb552ab98ea17984eab9d70e9fe99479117de40a2a7f9ed0",
+     "coverImage": "https://tjzk.replicate.delivery/models_models_featured_image/6069c99f-38c7-433a-8a38-d6bd906e6773/wan-lora-cover.webp"
+    },
+    "output": {
+     "result": {
+      "id": "a1998b28-6f33-4eab-a74e-b745a72fecea",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+      "type": "video",
+      "input": {
+       "seed": 938607,
+       "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+       "model": "14b",
+       "width": 768,
+       "frames": 81,
+       "height": 1024,
+       "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+       "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": 8,
+       "sample_steps": 30,
+       "lora_strength_clip": 1,
+       "sample_guide_scale": 5,
+       "lora_strength_model": 1
+      },
+      "width": 560,
+      "height": 752,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 938607,
+      "isRandom": true
+     },
+     "image": {
+      "id": "0a82b764-4019-4d2d-a6ac-1af893ef5f98",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+      "type": "image",
+      "input": {
+       "seed": 948732,
+       "image": "",
+       "width": 1024,
+       "height": 1350,
+       "prompt": "A high-resolution photograph of a modern flat screen monitor placed on the seat of an Armless ergonomic office chair, leaning against the backrest. The chair has a mesh back. The monitor is angled slightly upward, supported by the chair’s back. The scene is set against a matte light grey background with soft studio lighting. Emphasis on realistic textures and shadows.",
+       "strength": 0.7,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/k7mmeazqqtun7t7l3hsf.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/k7mmeazqqtun7t7l3hsf",
+      "visualId": "ea699694954e1ee4",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/k7mmeazqqtun7t7l3hsf.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/k7mmeazqqtun7t7l3hsf.jpg?_a=BAMCcSfi0"
+     },
+     "model": "14b",
+     "frames": 81,
+     "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+     "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+     "fast_mode": "Balanced",
+     "resolution": "480p",
+     "aspect_ratio": "16:9",
+     "sample_shift": 8,
+     "sample_steps": 30,
+     "lora_strength_clip": 1,
+     "sample_guide_scale": 5,
+     "lora_strength_model": 1
+    },
+    "result": [
+     {
+      "id": "a1998b28-6f33-4eab-a74e-b745a72fecea",
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+      "type": "video",
+      "input": {
+       "seed": 938607,
+       "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+       "model": "14b",
+       "width": 768,
+       "frames": 81,
+       "height": 1024,
+       "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+       "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+       "fast_mode": "Balanced",
+       "resolution": "480p",
+       "aspect_ratio": "16:9",
+       "sample_shift": 8,
+       "sample_steps": 30,
+       "lora_strength_clip": 1,
+       "sample_guide_scale": 5,
+       "lora_strength_model": 1
+      },
+      "width": 560,
+      "height": 752,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 14,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 2,
+      "title": "Image",
+      "format": "uri",
+      "required": false,
+      "description": "Image to use as a starting frame for image to video generation."
+     },
+     "model": {
+      "type": "enum",
+      "order": 5,
+      "title": "Model",
+      "default": "14b",
+      "options": [
+       "1.3b",
+       "14b"
+      ],
+      "required": false,
+      "description": "The model to use. 1.3b is faster, but 14b is better quality. A LORA either works with 1.3b or 14b, depending on the version it was trained on."
+     },
+     "frames": {
+      "type": "enum",
+      "order": 4,
+      "title": "Frames",
+      "default": 81,
+      "options": [
+       17,
+       33,
+       49,
+       65,
+       81
+      ],
+      "required": false,
+      "description": "The number of frames to generate (1 to 5 seconds)"
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for video generation"
+     },
+     "lora_url": {
+      "type": "string",
+      "order": 7,
+      "title": "Lora Url",
+      "required": false,
+      "description": "Optional: The URL of a LORA to use"
+     },
+     "fast_mode": {
+      "type": "enum",
+      "order": 10,
+      "title": "Fast Mode",
+      "default": "Balanced",
+      "options": [
+       "Off",
+       "Balanced",
+       "Fast"
+      ],
+      "required": false,
+      "description": "Speed up generation with different levels of acceleration. Faster modes may degrade quality somewhat. The speedup is dependent on the content, so different videos may see different speedups."
+     },
+     "resolution": {
+      "type": "enum",
+      "order": 6,
+      "title": "Resolution",
+      "default": "480p",
+      "options": [
+       "480p",
+       "720p"
+      ],
+      "required": false,
+      "description": "The resolution of the video. 720p is not supported for 1.3b."
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 3,
+      "title": "Aspect Ratio",
+      "default": "16:9",
+      "options": [
+       "16:9",
+       "9:16",
+       "1:1"
+      ],
+      "required": false,
+      "description": "The aspect ratio of the video. 16:9, 9:16, 1:1, etc."
+     },
+     "sample_shift": {
+      "max": 10,
+      "min": 0,
+      "type": "number",
+      "order": 13,
+      "title": "Sample Shift",
+      "default": 8,
+      "required": false,
+      "description": "Sample shift factor"
+     },
+     "sample_steps": {
+      "max": 60,
+      "min": 1,
+      "type": "integer",
+      "order": 11,
+      "title": "Sample Steps",
+      "default": 30,
+      "required": false,
+      "description": "Number of generation steps. Fewer steps means faster generation, at the expensive of output quality. 30 steps is sufficient for most prompts"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Negative Prompt",
+      "default": "",
+      "required": false,
+      "description": "Things you do not want to see in your video"
+     },
+     "lora_strength_clip": {
+      "type": "input-number",
+      "order": 9,
+      "title": "Lora Strength Clip",
+      "default": 1,
+      "required": false,
+      "description": "Strength of the LORA applied to the CLIP model. 0.0 is no LORA."
+     },
+     "sample_guide_scale": {
+      "max": 10,
+      "min": 0,
+      "type": "number",
+      "order": 12,
+      "title": "Sample Guide Scale",
+      "default": 5,
+      "required": false,
+      "description": "Higher guide scale makes prompt adherence better, but can reduce variation"
+     },
+     "lora_strength_model": {
+      "type": "input-number",
+      "order": 8,
+      "title": "Lora Strength Model",
+      "default": 1,
+      "required": false,
+      "description": "Strength of the LORA applied to the model. 0.0 is no LORA."
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "97737335-8537-4f25-bf5f-4f9928410533",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": "Image to use as a starting frame for image to video generation."
+      },
+      "prompt": {
+       "id": "163381e4-b088-4468-ac87-bde02fe101da",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for video generation"
+      },
+      "lora_url": {
+       "id": "d720c149-300b-41b6-ae7b-c30f9766eafb",
+       "order": 7,
+       "format": "text",
+       "required": false,
+       "description": "Optional: The URL of a LORA to use"
+      },
+      "negative_prompt": {
+       "id": "c2783fb0-54a1-4681-a6dd-d5c03007dbb3",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Things you do not want to see in your video"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "isWildCard": true,
+    "description": "Run Wan2.1 14b or 1.3b with a lora",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "fofr/wan2.1-with-lora"
+  },
+  {
+   "id": "b1149581-78e8-47bb-8717-26d13139197c",
+   "isModel": false,
+   "type": "export",
+   "position": {
+    "x": 2960,
+    "y": 1010
+   },
+   "data": {
+    "name": "Export",
+    "color": "Yambo_Blue",
+    "input": {
+     "file": {
+      "url": "https://media.weavy.ai/video/upload/so_5.0625/uploads/skhluzz9lazjf1mftdpw.jpg",
+      "type": "image",
+      "width": 1608,
+      "height": 2160,
+      "suffix": "uploads/skhluzz9lazjf1mftdpw.jpg",
+      "cloudinaryType": "video",
+      "transformations": [
+       {
+        "frame": "so_5.0625"
+       }
+      ]
+     }
+    },
+    "handles": {
+     "input": [
+      "file"
+     ],
+     "output": []
+    },
+    "inputNode": {
+     "nodeId": "e567283c-60d8-46c1-aa8b-4170f76bae64",
+     "outputId": "result"
+    },
+    "dark_color": "Yambo_Blue_Dark",
+    "description": "Export file",
+    "border_color": "Yambo_Blue_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Export"
+  },
+  {
+   "id": "bb28f19f-8252-4171-9c8f-7796cf3e07c1",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": 370,
+    "y": 280
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation."
+    },
+    "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+    "result": {
+     "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "bf03202b-baf6-42ef-8889-9e39964bdc01",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -2050,
+    "y": 1000
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "frontal view of a flat tv screen hang on white wall. "
+    },
+    "prompt": "frontal view of a flat tv screen hang on white wall. ",
+    "result": {
+     "prompt": "frontal view of a flat tv screen hang on white wall. "
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "bf93bdc7-626d-4148-97dc-a7712bcbcb0a",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 370,
+    "y": -40
+   },
+   "data": {
+    "name": "Text",
+    "color": "Yambo_Green",
+    "value": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+    "output": {
+     "text": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+     "type": "text",
+     "string": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true"
+    },
+    "result": {
+     "string": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "text"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Text"
+  },
+  {
+   "id": "c3fc7051-f3ae-495e-8e98-f7be6f57b62e",
+   "isModel": true,
+   "type": "sd_bgrmv",
+   "position": {
+    "x": -1430,
+    "y": 240
+   },
+   "data": {
+    "name": "SD3 - Remove Background",
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "id": "081e2efd-2db0-4f90-9c10-b75bcf40fa6b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186758/uploads/l6btxa785hboylyb73hw.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of an office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/l6btxa785hboylyb73hw",
+      "visualId": "e1619e92496cc6dd",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l6btxa785hboylyb73hw.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "model": {
+     "name": "sd_bgrmv"
+    },
+    "output": {
+     "image": {
+      "id": "3b33f5ee-fecb-4404-ba30-8df075c05707",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744187315/uploads/sicygo4ne6utde6f4x0o.png",
+      "type": "image",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186758/uploads/l6btxa785hboylyb73hw.png",
+        "type": "image",
+        "input": {
+         "prompt": "frontal view of an office chair on white background",
+         "aspect_ratio": "1:1",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/l6btxa785hboylyb73hw",
+        "visualId": "e1619e92496cc6dd",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l6btxa785hboylyb73hw.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/sicygo4ne6utde6f4x0o",
+      "visualId": "e1619e92496cc6dd",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "image": {
+      "id": "081e2efd-2db0-4f90-9c10-b75bcf40fa6b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186758/uploads/l6btxa785hboylyb73hw.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of an office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/l6btxa785hboylyb73hw",
+      "visualId": "e1619e92496cc6dd",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l6btxa785hboylyb73hw.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "result": [
+     {
+      "id": "3b33f5ee-fecb-4404-ba30-8df075c05707",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744187315/uploads/sicygo4ne6utde6f4x0o.png",
+      "type": "image",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186758/uploads/l6btxa785hboylyb73hw.png",
+        "type": "image",
+        "input": {
+         "prompt": "frontal view of an office chair on white background",
+         "aspect_ratio": "1:1",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/l6btxa785hboylyb73hw",
+        "visualId": "e1619e92496cc6dd",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l6btxa785hboylyb73hw.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/sicygo4ne6utde6f4x0o",
+      "visualId": "e1619e92496cc6dd",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/sicygo4ne6utde6f4x0o.png?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {},
+    "handles": {
+     "input": {
+      "image": {
+       "id": "gG7ev4a4SfElE1jZHgRz",
+       "order": 0,
+       "format": "uri",
+       "required": true,
+       "description": "Image to remove its background"
+      }
+     },
+     "output": [
+      "image"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Remove background of image based on Stable Diffusion",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "SD3 - Remove Background"
+  },
+  {
+   "id": "d03e9e32-6811-4f7c-9a2d-d57f6101d6cd",
+   "isModel": false,
+   "type": "export",
+   "position": {
+    "x": 2950,
+    "y": 470
+   },
+   "data": {
+    "name": "Export",
+    "color": "Yambo_Blue",
+    "input": {
+     "file": {
+      "url": "https://media.weavy.ai/video/upload/so_2.4375/uploads/skhluzz9lazjf1mftdpw.jpg",
+      "type": "image",
+      "width": 1608,
+      "height": 2160,
+      "suffix": "uploads/skhluzz9lazjf1mftdpw.jpg",
+      "cloudinaryType": "video",
+      "transformations": [
+       {
+        "frame": "so_2.4375"
+       }
+      ]
+     }
+    },
+    "handles": {
+     "input": [
+      "file"
+     ],
+     "output": []
+    },
+    "inputNode": {
+     "nodeId": "e7c21d9b-226e-4d77-8adc-54d0164de617",
+     "outputId": "result"
+    },
+    "dark_color": "Yambo_Blue_Dark",
+    "description": "Export file",
+    "border_color": "Yambo_Blue_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Export"
+  },
+  {
+   "id": "d0f04a77-2567-4f6a-a6ad-489dbb8fd4ac",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -910,
+    "y": 1010
+   },
+   "data": {
+    "name": "Bria - Remove Background",
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "id": "70e9a43e-4e0b-4d93-9957-5b78184ed59b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195668/uploads/g5zobilg9qu6rzq20tof.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a flat tv screen hang on white wall. ",
+       "aspect_ratio": "1:1",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/g5zobilg9qu6rzq20tof",
+      "visualId": "ff80807fd07a3f80",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g5zobilg9qu6rzq20tof.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "model": {
+     "name": "br_bgrmv"
+    },
+    "output": {
+     "image": {
+      "id": "ebbab9ea-bf1e-4091-abc5-adeee7c8bca5",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744792318/uploads/xwhyvi0r0dgujhor2cbd.png",
+      "type": "image",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195668/uploads/g5zobilg9qu6rzq20tof.png",
+        "type": "image",
+        "input": {
+         "prompt": "frontal view of a flat tv screen hang on white wall. ",
+         "aspect_ratio": "1:1",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/g5zobilg9qu6rzq20tof",
+        "visualId": "ff80807fd07a3f80",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g5zobilg9qu6rzq20tof.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/xwhyvi0r0dgujhor2cbd.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/xwhyvi0r0dgujhor2cbd",
+      "visualId": "ff80807fd07a3f80",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/xwhyvi0r0dgujhor2cbd.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/xwhyvi0r0dgujhor2cbd.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "image": {
+      "id": "70e9a43e-4e0b-4d93-9957-5b78184ed59b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195668/uploads/g5zobilg9qu6rzq20tof.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a flat tv screen hang on white wall. ",
+       "aspect_ratio": "1:1",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/g5zobilg9qu6rzq20tof",
+      "visualId": "ff80807fd07a3f80",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g5zobilg9qu6rzq20tof.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "result": [
+     {
+      "id": "ebbab9ea-bf1e-4091-abc5-adeee7c8bca5",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744792318/uploads/xwhyvi0r0dgujhor2cbd.png",
+      "type": "image",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195668/uploads/g5zobilg9qu6rzq20tof.png",
+        "type": "image",
+        "input": {
+         "prompt": "frontal view of a flat tv screen hang on white wall. ",
+         "aspect_ratio": "1:1",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/g5zobilg9qu6rzq20tof",
+        "visualId": "ff80807fd07a3f80",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g5zobilg9qu6rzq20tof.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g5zobilg9qu6rzq20tof.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/xwhyvi0r0dgujhor2cbd.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/xwhyvi0r0dgujhor2cbd",
+      "visualId": "ff80807fd07a3f80",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/xwhyvi0r0dgujhor2cbd.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/xwhyvi0r0dgujhor2cbd.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {},
+    "handles": {
+     "input": {
+      "image": {
+       "id": "gG7ev4a4SfElE1jZHgRz",
+       "order": 0,
+       "format": "uri",
+       "required": true,
+       "description": "Image to remove its background"
+      }
+     },
+     "output": [
+      "image"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Remove background of image based on Bria",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Bria - Remove Background"
+  },
+  {
+   "id": "e567283c-60d8-46c1-aa8b-4170f76bae64",
+   "isModel": false,
+   "type": "extract_video_frame",
+   "position": {
+    "x": 2460,
+    "y": 930
+   },
+   "data": {
+    "name": "Extract Video Frame",
+    "time": 5.09375,
+    "color": "Yambo_Black",
+    "input": {
+     "file": {
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744198241/uploads/skhluzz9lazjf1mftdpw.mp4",
+      "type": "video",
+      "input": {
+       "video": {
+        "fps": 16,
+        "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+        "type": "video",
+        "input": {
+         "seed": 938607,
+         "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+         "model": "14b",
+         "width": 768,
+         "frames": 81,
+         "height": 1024,
+         "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+         "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+         "fast_mode": "Balanced",
+         "resolution": "480p",
+         "aspect_ratio": "16:9",
+         "sample_shift": 8,
+         "sample_steps": 30,
+         "lora_strength_clip": 1,
+         "sample_guide_scale": 5,
+         "lora_strength_model": 1
+        },
+        "width": 560,
+        "height": 752,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "duration": 5.0625,
+        "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+        "visualId": 0,
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+       },
+       "upscale_factor": 4
+      },
+      "width": 1608,
+      "height": 2160,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/skhluzz9lazjf1mftdpw",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/skhluzz9lazjf1mftdpw.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "output": {},
+    "handles": {
+     "input": [
+      "file"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "inputNode": {
+     "file": {
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744198241/uploads/skhluzz9lazjf1mftdpw.mp4",
+      "type": "video",
+      "width": 1608,
+      "height": 2160,
+      "duration": 5.0625,
+      "publicId": "uploads/skhluzz9lazjf1mftdpw",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/skhluzz9lazjf1mftdpw.jpg?_a=BAMCcSfi0"
+     },
+     "nodeId": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d",
+     "outputId": "video"
+    },
+    "description": "Extracts an image for a given frame",
+    "frameNumber": 81
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Extract Video Frame"
+  },
+  {
+   "id": "e7c21d9b-226e-4d77-8adc-54d0164de617",
+   "isModel": false,
+   "type": "extract_video_frame",
+   "position": {
+    "x": 2460,
+    "y": 400
+   },
+   "data": {
+    "name": "Extract Video Frame",
+    "time": 2.46875,
+    "color": "Yambo_Black",
+    "input": {
+     "file": {
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744198241/uploads/skhluzz9lazjf1mftdpw.mp4",
+      "type": "video",
+      "input": {
+       "video": {
+        "fps": 16,
+        "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744197215/uploads/hdm4plryn0lvyet1h4qs.mp4",
+        "type": "video",
+        "input": {
+         "seed": 938607,
+         "image": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744195339/uploads/k7mmeazqqtun7t7l3hsf.png",
+         "model": "14b",
+         "width": 768,
+         "frames": 81,
+         "height": 1024,
+         "prompt": "The video features a flat screen on an ergonomic office chair on a white background doing a r0t4tion 360 degrees rotation.",
+         "lora_url": "https://huggingface.co/Remade-AI/Rotate/resolve/main/rotate_20_epochs.safetensors?download=true",
+         "fast_mode": "Balanced",
+         "resolution": "480p",
+         "aspect_ratio": "16:9",
+         "sample_shift": 8,
+         "sample_steps": 30,
+         "lora_strength_clip": 1,
+         "sample_guide_scale": 5,
+         "lora_strength_model": 1
+        },
+        "width": 560,
+        "height": 752,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "duration": 5.0625,
+        "publicId": "uploads/hdm4plryn0lvyet1h4qs",
+        "visualId": 0,
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/hdm4plryn0lvyet1h4qs.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/hdm4plryn0lvyet1h4qs.jpg?_a=BAMCcSfi0"
+       },
+       "upscale_factor": 4
+      },
+      "width": 1608,
+      "height": 2160,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_800/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "duration": 5.0625,
+      "publicId": "uploads/skhluzz9lazjf1mftdpw",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/v1/uploads/skhluzz9lazjf1mftdpw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/skhluzz9lazjf1mftdpw.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "output": {
+     "result": {
+      "url": "",
+      "type": "image",
+      "width": 1608,
+      "height": 2160
+     }
+    },
+    "result": {
+     "url": "",
+     "type": "image",
+     "width": 1608,
+     "height": 2160
+    },
+    "handles": {
+     "input": [
+      "file"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "inputNode": {
+     "file": {
+      "fps": 16,
+      "url": "https://res.cloudinary.com/dpp2flk93/video/upload/v1744198241/uploads/skhluzz9lazjf1mftdpw.mp4",
+      "type": "video",
+      "width": 1608,
+      "height": 2160,
+      "duration": 5.0625,
+      "publicId": "uploads/skhluzz9lazjf1mftdpw",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/video/upload/c_scale,w_450/v1/uploads/skhluzz9lazjf1mftdpw.jpg?_a=BAMCcSfi0"
+     },
+     "nodeId": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d",
+     "outputId": "video"
+    },
+    "description": "Extracts an image for a given frame",
+    "frameNumber": 39
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Extract Video Frame"
+  },
+  {
+   "id": "ed90ddbc-447c-4a83-936e-3e970f7abd30",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -2630,
+    "y": 330
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "frontal view of an armless office chair on white background"
+    },
+    "prompt": "frontal view of an armless office chair on white background",
+    "result": {
+     "prompt": "frontal view of an armless office chair on white background"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "fb2a8e2f-6168-43a7-824f-cb5e046a20bb",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": -2010,
+    "y": 240
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Imagen 3"
+    },
+    "name": "Google Imagen 3",
+    "color": "Red",
+    "input": {
+     "prompt": "frontal view of an armless office chair on white background"
+    },
+    "model": {
+     "name": "google/imagen-3",
+     "version": "4902bedfc8567f151e7cc0bb500a4480a4fb0575a10baf7e947e02e8b52d0413"
+    },
+    "output": {
+     "result": {
+      "id": "081e2efd-2db0-4f90-9c10-b75bcf40fa6b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186758/uploads/l6btxa785hboylyb73hw.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of an office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/l6btxa785hboylyb73hw",
+      "visualId": "e1619e92496cc6dd",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l6btxa785hboylyb73hw.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "prompt": "frontal view of an armless office chair on white background",
+     "aspect_ratio": "1:1",
+     "safety_filter_level": "block_only_high"
+    },
+    "result": [
+     {
+      "id": "27fad6fc-1429-47c2-8df3-e38982043ace",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186730/uploads/dslmfnfef1utcpgb77ac.png",
+      "type": "image",
+      "input": {
+       "prompt": "office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dslmfnfef1utcpgb77ac.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/dslmfnfef1utcpgb77ac",
+      "visualId": "e46c9b92993d923a",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dslmfnfef1utcpgb77ac.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dslmfnfef1utcpgb77ac.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "081e2efd-2db0-4f90-9c10-b75bcf40fa6b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186758/uploads/l6btxa785hboylyb73hw.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of an office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/l6btxa785hboylyb73hw",
+      "visualId": "e1619e92496cc6dd",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l6btxa785hboylyb73hw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l6btxa785hboylyb73hw.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "fd9d4c85-e906-4f3f-849d-3c54e72a964b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186812/uploads/ihgzk0dtxdtr3trxodza.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a handeless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ihgzk0dtxdtr3trxodza.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ihgzk0dtxdtr3trxodza",
+      "visualId": "e131de8ecc6c9269",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ihgzk0dtxdtr3trxodza.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ihgzk0dtxdtr3trxodza.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "ea38a334-0c64-4529-b51f-e644e895f876",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186829/uploads/lwugquhqof1rxqjrxvah.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a handeless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lwugquhqof1rxqjrxvah.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/lwugquhqof1rxqjrxvah",
+      "visualId": "f133ce8e64749361",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lwugquhqof1rxqjrxvah.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lwugquhqof1rxqjrxvah.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "f4c6b7eb-7faf-4f4d-ad65-31c6ea80a1c9",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186848/uploads/da2t1xbmzxv93kpgpfhb.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a handleless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/da2t1xbmzxv93kpgpfhb.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/da2t1xbmzxv93kpgpfhb",
+      "visualId": "f131cece38789263",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/da2t1xbmzxv93kpgpfhb.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/da2t1xbmzxv93kpgpfhb.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "721362d3-d5da-4d0e-bdf6-60063b69e6e7",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186864/uploads/c0zjoqe9mebqnfm8zm9s.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a handleless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/c0zjoqe9mebqnfm8zm9s.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/c0zjoqe9mebqnfm8zm9s",
+      "visualId": "f131cece8c689359",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/c0zjoqe9mebqnfm8zm9s.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/c0zjoqe9mebqnfm8zm9s.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "ec470faa-e9ca-420f-a357-7fb05d0d87f3",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186882/uploads/qwqdeuwlhodwde9mugr1.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of a handleless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/qwqdeuwlhodwde9mugr1.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/qwqdeuwlhodwde9mugr1",
+      "visualId": "b131cece892c939b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/qwqdeuwlhodwde9mugr1.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/qwqdeuwlhodwde9mugr1.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "8fd93aef-51ac-4036-bc93-a104437a18c2",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744186996/uploads/ipwzh7d7i50hyjyyx9mz.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of an Armless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ipwzh7d7i50hyjyyx9mz.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ipwzh7d7i50hyjyyx9mz",
+      "visualId": "e1619e9e980dce99",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ipwzh7d7i50hyjyyx9mz.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ipwzh7d7i50hyjyyx9mz.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "c155a098-afa9-4062-ac2a-9a14fb1c934c",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744187012/uploads/a2qk4p87fvlpgyjh6tjc.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of an Armless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/a2qk4p87fvlpgyjh6tjc.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/a2qk4p87fvlpgyjh6tjc",
+      "visualId": "e1659e9a9a688e9a",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/a2qk4p87fvlpgyjh6tjc.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/a2qk4p87fvlpgyjh6tjc.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "41027973-1235-4b78-a58c-fec0af6c6a69",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194145/uploads/y4c7muywpz7beirpjxkd.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of an armless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/y4c7muywpz7beirpjxkd.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/y4c7muywpz7beirpjxkd",
+      "visualId": "e121de9a8e6c9273",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/y4c7muywpz7beirpjxkd.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/y4c7muywpz7beirpjxkd.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "8f527a4e-b521-4a2d-a440-3c783c7bf48b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744194171/uploads/j9mqif64fsqs4z85bppl.png",
+      "type": "image",
+      "input": {
+       "prompt": "frontal view of an armless office chair on white background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/j9mqif64fsqs4z85bppl.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/j9mqif64fsqs4z85bppl",
+      "visualId": "e125ce9a9b4c9a9a",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/j9mqif64fsqs4z85bppl.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/j9mqif64fsqs4z85bppl.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 2,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "9:16",
+       "16:9",
+       "3:4",
+       "4:3"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the generated image"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Negative Prompt",
+      "required": false,
+      "description": "Text prompt for what to discourage in the generated images"
+     },
+     "safety_filter_level": {
+      "type": "enum",
+      "order": 3,
+      "title": "Safety Filter Level",
+      "default": "block_only_high",
+      "options": [
+       "block_low_and_above",
+       "block_medium_and_above",
+       "block_only_high"
+      ],
+      "required": false,
+      "description": "block_low_and_above is strictest, block_medium_and_above blocks some prompts, block_only_high is most permissive but some prompts will still be blocked"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "e59cd3e9-28cd-4485-b21d-b24b3ffc3f56",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "negative_prompt": {
+       "id": "36d95f25-b571-42c5-bd4d-a073bfc9b3b0",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Text prompt for what to discourage in the generated images"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Google's text-to-image model, generating images with high detail, rich lighting",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 1
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Google Imagen 3"
+  }
+ ],
+ "edges": [
+  {
+   "id": "reactflow__edge-bf93bdc7-626d-4148-97dc-a7712bcbcb0abf93bdc7-626d-4148-97dc-a7712bcbcb0a-output-text-af4a8c58-a260-497f-9da8-528b720030c3af4a8c58-a260-497f-9da8-528b720030c3-input-lora_url",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "bf93bdc7-626d-4148-97dc-a7712bcbcb0a",
+   "target": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "selected": false,
+   "sourceHandle": "bf93bdc7-626d-4148-97dc-a7712bcbcb0a-output-text",
+   "targetHandle": "af4a8c58-a260-497f-9da8-528b720030c3-input-lora_url"
+  },
+  {
+   "id": "reactflow__edge-bb28f19f-8252-4171-9c8f-7796cf3e07c1bb28f19f-8252-4171-9c8f-7796cf3e07c1-output-prompt-af4a8c58-a260-497f-9da8-528b720030c3af4a8c58-a260-497f-9da8-528b720030c3-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "bb28f19f-8252-4171-9c8f-7796cf3e07c1",
+   "target": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "selected": false,
+   "sourceHandle": "bb28f19f-8252-4171-9c8f-7796cf3e07c1-output-prompt",
+   "targetHandle": "af4a8c58-a260-497f-9da8-528b720030c3-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-9eed4e7a-0f7c-43c7-9e84-5b9217187a4e9eed4e7a-0f7c-43c7-9e84-5b9217187a4e-output-result-af4a8c58-a260-497f-9da8-528b720030c3af4a8c58-a260-497f-9da8-528b720030c3-input-image",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "9eed4e7a-0f7c-43c7-9e84-5b9217187a4e",
+   "target": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "selected": false,
+   "sourceHandle": "9eed4e7a-0f7c-43c7-9e84-5b9217187a4e-output-result",
+   "targetHandle": "af4a8c58-a260-497f-9da8-528b720030c3-input-image"
+  },
+  {
+   "id": "reactflow__edge-a30f05fd-96f3-4428-b83c-59ec4187b1baa30f05fd-96f3-4428-b83c-59ec4187b1ba-output-prompt-9eed4e7a-0f7c-43c7-9e84-5b9217187a4e9eed4e7a-0f7c-43c7-9e84-5b9217187a4e-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "a30f05fd-96f3-4428-b83c-59ec4187b1ba",
+   "target": "9eed4e7a-0f7c-43c7-9e84-5b9217187a4e",
+   "selected": false,
+   "sourceHandle": "a30f05fd-96f3-4428-b83c-59ec4187b1ba-output-prompt",
+   "targetHandle": "9eed4e7a-0f7c-43c7-9e84-5b9217187a4e-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-ed90ddbc-447c-4a83-936e-3e970f7abd30ed90ddbc-447c-4a83-936e-3e970f7abd30-output-prompt-fb2a8e2f-6168-43a7-824f-cb5e046a20bbfb2a8e2f-6168-43a7-824f-cb5e046a20bb-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "ed90ddbc-447c-4a83-936e-3e970f7abd30",
+   "target": "fb2a8e2f-6168-43a7-824f-cb5e046a20bb",
+   "selected": false,
+   "sourceHandle": "ed90ddbc-447c-4a83-936e-3e970f7abd30-output-prompt",
+   "targetHandle": "fb2a8e2f-6168-43a7-824f-cb5e046a20bb-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-bf03202b-baf6-42ef-8889-9e39964bdc01bf03202b-baf6-42ef-8889-9e39964bdc01-output-prompt-92b5ee37-fd4a-4305-a3c7-2b406e1b34af92b5ee37-fd4a-4305-a3c7-2b406e1b34af-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "bf03202b-baf6-42ef-8889-9e39964bdc01",
+   "target": "92b5ee37-fd4a-4305-a3c7-2b406e1b34af",
+   "selected": false,
+   "sourceHandle": "bf03202b-baf6-42ef-8889-9e39964bdc01-output-prompt",
+   "targetHandle": "92b5ee37-fd4a-4305-a3c7-2b406e1b34af-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-fb2a8e2f-6168-43a7-824f-cb5e046a20bbfb2a8e2f-6168-43a7-824f-cb5e046a20bb-output-result-c3fc7051-f3ae-495e-8e98-f7be6f57b62ec3fc7051-f3ae-495e-8e98-f7be6f57b62e-input-image",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "fb2a8e2f-6168-43a7-824f-cb5e046a20bb",
+   "target": "c3fc7051-f3ae-495e-8e98-f7be6f57b62e",
+   "selected": false,
+   "sourceHandle": "fb2a8e2f-6168-43a7-824f-cb5e046a20bb-output-result",
+   "targetHandle": "c3fc7051-f3ae-495e-8e98-f7be6f57b62e-input-image"
+  },
+  {
+   "id": "reactflow__edge-af4a8c58-a260-497f-9da8-528b720030c3af4a8c58-a260-497f-9da8-528b720030c3-output-result-46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d-input-video",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "af4a8c58-a260-497f-9da8-528b720030c3",
+   "target": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d",
+   "selected": false,
+   "sourceHandle": "af4a8c58-a260-497f-9da8-528b720030c3-output-result",
+   "targetHandle": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d-input-video"
+  },
+  {
+   "id": "reactflow__edge-46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d-output-video-e7c21d9b-226e-4d77-8adc-54d0164de617e7c21d9b-226e-4d77-8adc-54d0164de617-input-file",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d",
+   "target": "e7c21d9b-226e-4d77-8adc-54d0164de617",
+   "selected": false,
+   "sourceHandle": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d-output-video",
+   "targetHandle": "e7c21d9b-226e-4d77-8adc-54d0164de617-input-file"
+  },
+  {
+   "id": "reactflow__edge-46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d-output-video-12b29600-ea6e-466f-bec2-ff36cf3d022112b29600-ea6e-466f-bec2-ff36cf3d0221-input-file",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d",
+   "target": "12b29600-ea6e-466f-bec2-ff36cf3d0221",
+   "selected": false,
+   "sourceHandle": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d-output-video",
+   "targetHandle": "12b29600-ea6e-466f-bec2-ff36cf3d0221-input-file"
+  },
+  {
+   "id": "reactflow__edge-46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d-output-video-e567283c-60d8-46c1-aa8b-4170f76bae64e567283c-60d8-46c1-aa8b-4170f76bae64-input-file",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d",
+   "target": "e567283c-60d8-46c1-aa8b-4170f76bae64",
+   "selected": false,
+   "sourceHandle": "46caa33b-c7f4-44d6-bc4e-82c2a4bafb1d-output-video",
+   "targetHandle": "e567283c-60d8-46c1-aa8b-4170f76bae64-input-file"
+  },
+  {
+   "id": "reactflow__edge-12b29600-ea6e-466f-bec2-ff36cf3d022112b29600-ea6e-466f-bec2-ff36cf3d0221-output-result-912817b9-c939-4a8b-aa76-b87f2c52897a912817b9-c939-4a8b-aa76-b87f2c52897a-input-file",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Blue"
+   },
+   "type": "custom",
+   "source": "12b29600-ea6e-466f-bec2-ff36cf3d0221",
+   "target": "912817b9-c939-4a8b-aa76-b87f2c52897a",
+   "selected": true,
+   "sourceHandle": "12b29600-ea6e-466f-bec2-ff36cf3d0221-output-result",
+   "targetHandle": "912817b9-c939-4a8b-aa76-b87f2c52897a-input-file"
+  },
+  {
+   "id": "reactflow__edge-e7c21d9b-226e-4d77-8adc-54d0164de617e7c21d9b-226e-4d77-8adc-54d0164de617-output-result-d03e9e32-6811-4f7c-9a2d-d57f6101d6cdd03e9e32-6811-4f7c-9a2d-d57f6101d6cd-input-file",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Blue"
+   },
+   "type": "custom",
+   "source": "e7c21d9b-226e-4d77-8adc-54d0164de617",
+   "target": "d03e9e32-6811-4f7c-9a2d-d57f6101d6cd",
+   "selected": false,
+   "sourceHandle": "e7c21d9b-226e-4d77-8adc-54d0164de617-output-result",
+   "targetHandle": "d03e9e32-6811-4f7c-9a2d-d57f6101d6cd-input-file"
+  },
+  {
+   "id": "reactflow__edge-e567283c-60d8-46c1-aa8b-4170f76bae64e567283c-60d8-46c1-aa8b-4170f76bae64-output-result-b1149581-78e8-47bb-8717-26d13139197cb1149581-78e8-47bb-8717-26d13139197c-input-file",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Blue"
+   },
+   "type": "custom",
+   "source": "e567283c-60d8-46c1-aa8b-4170f76bae64",
+   "target": "b1149581-78e8-47bb-8717-26d13139197c",
+   "selected": false,
+   "sourceHandle": "e567283c-60d8-46c1-aa8b-4170f76bae64-output-result",
+   "targetHandle": "b1149581-78e8-47bb-8717-26d13139197c-input-file"
+  },
+  {
+   "id": "reactflow__edge-92b5ee37-fd4a-4305-a3c7-2b406e1b34af92b5ee37-fd4a-4305-a3c7-2b406e1b34af-output-result-d0f04a77-2567-4f6a-a6ad-489dbb8fd4acd0f04a77-2567-4f6a-a6ad-489dbb8fd4ac-input-image",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "92b5ee37-fd4a-4305-a3c7-2b406e1b34af",
+   "target": "d0f04a77-2567-4f6a-a6ad-489dbb8fd4ac",
+   "selected": false,
+   "sourceHandle": "92b5ee37-fd4a-4305-a3c7-2b406e1b34af-output-result",
+   "targetHandle": "d0f04a77-2567-4f6a-a6ad-489dbb8fd4ac-input-image"
+  },
+  {
+   "id": "reactflow__edge-13a0487b-a98f-4d82-a3e2-866bfeb3d55b13a0487b-a98f-4d82-a3e2-866bfeb3d55b-output-file-96176ddf-5d3c-41cb-884d-6306370e2ca496176ddf-5d3c-41cb-884d-6306370e2ca4-input-background",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "13a0487b-a98f-4d82-a3e2-866bfeb3d55b",
+   "target": "96176ddf-5d3c-41cb-884d-6306370e2ca4",
+   "selected": false,
+   "sourceHandle": "13a0487b-a98f-4d82-a3e2-866bfeb3d55b-output-file",
+   "targetHandle": "96176ddf-5d3c-41cb-884d-6306370e2ca4-input-background"
+  },
+  {
+   "id": "reactflow__edge-c3fc7051-f3ae-495e-8e98-f7be6f57b62ec3fc7051-f3ae-495e-8e98-f7be6f57b62e-output-image-96176ddf-5d3c-41cb-884d-6306370e2ca496176ddf-5d3c-41cb-884d-6306370e2ca4-input-layer_1",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "c3fc7051-f3ae-495e-8e98-f7be6f57b62e",
+   "target": "96176ddf-5d3c-41cb-884d-6306370e2ca4",
+   "selected": false,
+   "sourceHandle": "c3fc7051-f3ae-495e-8e98-f7be6f57b62e-output-image",
+   "targetHandle": "96176ddf-5d3c-41cb-884d-6306370e2ca4-input-layer_1"
+  },
+  {
+   "id": "reactflow__edge-d0f04a77-2567-4f6a-a6ad-489dbb8fd4acd0f04a77-2567-4f6a-a6ad-489dbb8fd4ac-output-image-96176ddf-5d3c-41cb-884d-6306370e2ca496176ddf-5d3c-41cb-884d-6306370e2ca4-input-layer_2",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "d0f04a77-2567-4f6a-a6ad-489dbb8fd4ac",
+   "target": "96176ddf-5d3c-41cb-884d-6306370e2ca4",
+   "selected": false,
+   "sourceHandle": "d0f04a77-2567-4f6a-a6ad-489dbb8fd4ac-output-image",
+   "targetHandle": "96176ddf-5d3c-41cb-884d-6306370e2ca4-input-layer_2"
+  },
+  {
+   "id": "reactflow__edge-96176ddf-5d3c-41cb-884d-6306370e2ca496176ddf-5d3c-41cb-884d-6306370e2ca4-output-image-9eed4e7a-0f7c-43c7-9e84-5b9217187a4e9eed4e7a-0f7c-43c7-9e84-5b9217187a4e-input-image",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "96176ddf-5d3c-41cb-884d-6306370e2ca4",
+   "target": "9eed4e7a-0f7c-43c7-9e84-5b9217187a4e",
+   "selected": false,
+   "sourceHandle": "96176ddf-5d3c-41cb-884d-6306370e2ca4-output-image",
+   "targetHandle": "9eed4e7a-0f7c-43c7-9e84-5b9217187a4e-input-image"
+  }
+ ],
+ "latestVersion": {
+  "version": 1,
+  "createdAt": "2025-04-16T07:58:48.826Z"
+ },
+ "latestPublishedVersion": null,
+ "showcaseOrder": 75,
+ "showcase": false,
+ "designAppMetadata": null,
+ "v3": null,
+ "batchRuns": [],
+ "folderId": "987d87c4-ed1d-4cc3-be7d-5c1d48dde83c",
+ "scope": "WORKSPACE",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

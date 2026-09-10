@@ -1,0 +1,12 @@
+===== R23 B cookie 身份诊断 =====
+
+[state_B] 401 len=59
+    body: {"error":true,"status":401,"message":"","reason":"expired"}
+
+[state_A] 401 len=59
+    body: {"error":true,"status":401,"message":"","reason":"expired"}
+
+[recent_files] 401 len=59
+    body: {"error":true,"status":401,"message":"","reason":"expired"}
+
+DONE

@@ -1,0 +1,25 @@
+===== 0) A opens file via playwright (10s) =====
+A visited, final url: https://www.figma.com/file/RuEdaohBLXN48WdkzS66BY
+
+===== 1a) A WS: FileRecentViewers =====
+
+----- WS A FileRecentViewers -----
+  [sub] FileRecentViewers {fileKey: RuEdaohBLXN48WdkzS66BY} (anon=False)
+  [msg] authSuccess: {'messageType': 'authSuccess', 'userId': '1666382703778278399', 'sessionId': 'session-299aba8d-c889-40a2-98a8-6eff795364bf', 'anonymousUserId': '620290b1-584d-47d4-aaa5-eb9cefc83e4d', 'podName': 'livegraph-548b4f5766-kff
+  [payload] ["FileRecentViewers",{"fileKey":"RuEdaohBLXN48WdkzS66BY"}] (257b)
+      {"File": {"queries": {"[\"root\",\"_fileViewableByPrototypeViewers\",[\"RuEdaohBLXN48WdkzS66BY\",\"1666382703778278399\"],[]]": {"initial": {"RuEdaohBLXN48WdkzS66BY": {"id": "RuEdaohBLXN48WdkzS66BY", "key": "RuEdaohBLXN48WdkzS66BY"}}}}, "computations": {}}}
+  [payload] ["FileRecentViewers",{"fileKey":"RuEdaohBLXN48WdkzS66BY"}] (137b)
+      {"FileViewHistory": {"queries": {"[\"File\",\"fileViewHistory\",[],[\"RuEdaohBLXN48WdkzS66BY\"]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] FileRecentViewers {'fileKey': 'RuEdaohBLXN48WdkzS66BY'}
+
+===== 1b) ANON WS: FileRecentViewers =====
+
+----- WS ANON FileRecentViewers -----
+  [sub] FileRecentViewers {fileKey: RuEdaohBLXN48WdkzS66BY} (anon=True)
+  [msg] authSuccess: {'messageType': 'authSuccess', 'userId': None, 'sessionId': 'session-ec317c33-9876-4840-b297-2c573e79afae', 'anonymousUserId': None, 'podName': 'livegraph-548b4f5766-xkh7z', 'containerName': 'livegraph-7', 'serverVersion
+  [payload] ["FileRecentViewers",{"fileKey":"RuEdaohBLXN48WdkzS66BY"}] (238b)
+      {"File": {"queries": {"[\"root\",\"_fileViewableByPrototypeViewers\",[\"RuEdaohBLXN48WdkzS66BY\",null],[]]": {"initial": {"RuEdaohBLXN48WdkzS66BY": {"id": "RuEdaohBLXN48WdkzS66BY", "key": "RuEdaohBLXN48WdkzS66BY"}}}}, "computations": {}}}
+  [payload] ["FileRecentViewers",{"fileKey":"RuEdaohBLXN48WdkzS66BY"}] (137b)
+      {"FileViewHistory": {"queries": {"[\"File\",\"fileViewHistory\",[],[\"RuEdaohBLXN48WdkzS66BY\"]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] FileRecentViewers {'fileKey': 'RuEdaohBLXN48WdkzS66BY'}
+DONE

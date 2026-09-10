@@ -1,0 +1,75 @@
+===== A) page_size=-1 语义 dump =====
+    -> dumped _r111c_neg1.json (4306B)
+[neg1] PASS 200 len=4306
+    all names: ["1643584176's team library", 'Team folder']
+    keys: ['branch_checkpoint_id', 'client_meta', 'color', 'created_at', 'creator_id', 'deleted_at', 'description', 'edit_url', 'editor_type', 'error', 'file_repo_id', 'files', 'folder', 'folder_access_enabled', 'folder_id', 'handle', 'handoff_url', 'has_file_link_password', 'has_proto_link_password', 'img_url', 'inherits_access', 'is_abandoned_drafts', 'is_claimable_file', 'is_favorited', 'is_invite_only', 'is_make_kit', 'is_published_site', 'is_shared', 'is_subscribed', 'is_team_template', 'is_template', 'is_trashed_with_project', 'is_try_file', 'is_view_only', 'key', 'last_published_at', 'level', 'library_key', 'license', 'link_access']
+
+===== B) sort_column 白名单枚举(200=合法) =====
+[SC(touched_at)] PASS 200 len=13839
+[SC(created_at)] PASS 200 len=13534
+[SC(updated_at)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(last_modified)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(size)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(type)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(file_type)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(folder_id)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(team_id)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(file_name)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(last_used)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(modified_at)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(touched)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(created)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(updated)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(id)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(uid)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(key)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(project_id)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+[SC(creator_id)] REJ  400 len=81
+      {"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}
+
+===== C) sort_order 白名单 =====
+[SO(asc)] PASS 200 len=13534
+[SO(desc)] PASS 200 len=13534
+[SO(ASC)] REJ  400 len=80
+      {"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}
+[SO(DESC)] REJ  400 len=80
+      {"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}
+[SO(Asc)] REJ  400 len=80
+      {"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}
+[SO(ascending)] REJ  400 len=80
+      {"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}
+[SO(random)] REJ  400 len=80
+      {"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}
+
+===== D) file_type 行为(枚举) =====
+[FT('')] PASS 200 len=13534
+[FT('design')] PASS 200 len=8761
+[FT('figjam')] PASS 200 len=13534
+[FT('slides')] PASS 200 len=1600
+[FT('whiteboard')] PASS 200 len=1600
+[FT('junk')] PASS 200 len=13534
+[FT('select')] PASS 200 len=13534
+[FT('file')] PASS 200 len=13534
+
+===== E) can_move 补 team_id =====
+[CM_a] 200 len=40 :: {"error":false,"status":200,"i18n":null}
+[CM_b] 400 len=129 :: {"error":true,"status":400,"message":"Bad request.","i18n":{"id":"error.bad_request","fallback_text":"Bad request.","params":{}}}
+[CM_c] 200 len=40 :: {"error":false,"status":200,"i18n":null}
+DONE

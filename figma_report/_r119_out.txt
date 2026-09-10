@@ -1,0 +1,125 @@
+===== A. insights 表名位(最闪:planId/tableName 路径) =====
+[A1_ins_0_files] 404 len=830453 1557ms [SPA404] (planId=0, tableName=files)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[A2_ins_tm_files] 404 len=830493 966ms [SPA404] (planId=TEAM_A)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[A3_ins_0_abc] 404 len=830453 1022ms [SPA404] (tableName=abc 看是否表名报错)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[A4_ins_0_uu] 404 len=830453 1087ms [SPA404] (伪造表名)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+
+===== B. code_connect 字符串 key 位 =====
+[B1_cc_src] 404 len=   123 546ms 
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[B2_cc_src_q] 404 len=   123 359ms (引号)
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[B3_cc_ctx_pub] 404 len=830453 1036ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[B4_cc_tmpl] 404 len=    74 367ms 
+      {"error":true,"status":404,"message":"Not found","i18n":"error.not_found"}
+
+===== C. design_systems 字符串 key 位 =====
+[C1_ds_bundle] 404 len=830453 980ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[C2_ds_editors] 404 len=830453 1018ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[C3_ds_sources] 404 len=830453 858ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[C4_ds_pages] 404 len=830453 1645ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+
+===== D. 其他字符串 key 位 =====
+[D1_refid] 403 len=    96 362ms 
+      {"error":true,"status":403,"message":"You don't have permission to view this file.","i18n":null}
+[D2_resuse] 404 len=830453 1008ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[D3_oauth] 403 len=   197 363ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[D4_palette_uuid] 404 len=830453 880ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[D5_palette_list] 404 len=830453 911ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+
+===== E. activity_logs / 统计类 =====
+[E1_alog_list] 403 len=   281 334ms 
+      {"error":true,"status":403,"message":"You don't have permission to do that. Contact your organization administrator.","i18n":{"id":"error.no_permission_contact_org_admin","fallback_text":"You don't have permission to do that. Contact your organization administ
+[E2_alog_exp] 404 len=830453 1137ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+[E3_alog_last] 403 len=   197 343ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[E4_alog_recent] 403 len=   197 328ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[E5_ac_bal] 403 len=   197 342ms (planId=TEAM_A)
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[E6_ac_usage] 403 len=   197 330ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[E7_mcp] 403 len=   197 343ms 
+      {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+[E8_tm_lastact] 200 len=   601 680ms 
+[E9_ver] 403 len=   210 429ms 
+      {"error":true,"status":403,"message":"You don't have permission to view this file.","i18n":{"id":"permissions.sinatra.cant_view_file","fallback_text":"You don't have permission to view this file.","params":{}}}
+[E10_curator] 200 len=   723 339ms 
+
+===== F. figjam / 杂项 =====
+[F1_figjam_col] 200 len= 18385 727ms 
+[F2_figjam_ins] 200 len=2374814 560ms 
+[F3_statsig_boot] 200 len=517696 980ms 
+[F4_folders_claim] 404 len=830453 835ms [SPA404] (fileKey 位置)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_st
+DONE

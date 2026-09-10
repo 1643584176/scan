@@ -1,0 +1,10 @@
+sanity title: Example Domain
+=== goto https://zestoro.figma.site/
+goto ok
+title: Zestoro | Best Burgers & Fast Food Deals
+
+===== API responses =====
+GET 200 https://zestoro.figma.site/__figma__/api/community_published_banner_details
+    [application/json] {"error":false,"status":200,"meta":{"hub_file_url":"https://www.figma.com/community/file/1673056696264297444?openSignupModal=true","report_abuse_url":"https://www.figma.com/report-abuse?reported_content=zestoro.figma.site","figma_logo_url":"https://www.figma.com/community/make","
+
+written _r16_site_net.txt (1 unique)

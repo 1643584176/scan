@@ -1,0 +1,17 @@
+
+===== P0a anon FileMakeVersionsView(B Make M, +firstPageSize) =====
+  [sub] FileMakeVersionsView {'fileKey': '6aAuG4WGbgDfgy3zvonKOE', 'firstPageSize': 10}
+  [payload***] ["FileMakeVersionsView",{"fileKey":"6aAuG4WGbgDfgy3zvonKOE","firstPageSize":10}] (227b)
+      {"MakeVersion": {"queries": {"[\"root\",\"fileMakeVersions\",[\"6aAuG4WGbgDfgy3zvonKOE\",10],[],{\"before\":null,\"after\":null,\"count\":10}]": {"initial": {}, "pagination": {"start": null, "end": null}}}, "computations": {}}}
+  [LOADED] FileMakeVersionsView
+  (messages: 3)
+
+===== P0b anon HubFile(blog str) =====
+  [sub] HubFile {'hubFileId': '1633508841091684550'}
+  [payload***] ["HubFile",{"hubFileId":"1633508841091684550"}] (724b)
+      {"HubFile": {"queries": {"[\"root\",\"hubFile\",[\"1633508841091684550\",null],[]]": {"initial": {"1633508841091684550": {"id": "1633508841091684550", "createdAt": "2026-05-05T15:00:56.841Z", "unpublishedAt": null, "publishingStatusUpdatedAt": "2026-05-05T15:00:58.071Z", "contentVerifiedAt": "2026-05-05T15:06:01.367Z", "contentBlockedAt": null, "profileId": "1633501130587900270", "currentHubFileVersionId": "2012863", "publishingStatus": "approved_public", "duplicateCount": 0, "likeCount": 0, "viewCount": 1, "monetizedResourceMetadataId": null}}}}, "computations": {"[\"HubFile\",\"viewerMode\",\"1633508841091684550\",{\"_rootId\":\"1633508841091684550\"}]": {"fieldName": "viewerMode", "value": "figmake_template"}}}}
+  [payload***] ["HubFile",{"hubFileId":"1633508841091684550"}] (219b)
+      {"HubFileVersion": {"queries": {"[\"HubFile\",\"currentHubFileVersion\",[],[\"2012863\"]]": {"initial": {"2012863": {"id": "2012863", "name": "Paul E. Lubienecki | Professor | Hamburg New York"}}}}, "computations": {}}}
+  [LOADED] HubFile
+  (messages: 4)
+DONE

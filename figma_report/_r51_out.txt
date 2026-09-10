@@ -1,0 +1,40 @@
+===== 0) initial =====
+ANON meta status: 200
+
+===== 1) privatize: PUT link_access =====
+current link_access: view
+PUT link_access=plan_view -> 200 (now='plan_view') | ANON meta=403
+>>> PRIVATE with 'plan_view' (anon meta = 403)
+
+===== 2) ANON WS on PRIVATE file =====
+
+----- WS ANON private -----
+  [sub] HasCollectionsView {'fileKey': 'RuEdaohBLXN48WdkzS66BY'}
+  [sub] ListCollectionsView {'fileKey': 'RuEdaohBLXN48WdkzS66BY'}
+  [sub] ListItemsView {'collectionId': '73deee99-90c6-484a-a32c-71125c414216', 'fileKey': 'RuEdaohBLXN48WdkzS66BY'}
+  [sub] ListItemsView {'collectionId': 'ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205', 'fileKey': 'RuEdaohBLXN48WdkzS66BY'}
+  [payload] ["ListCollectionsView",{"fileKey":"RuEdaohBLXN48WdkzS66BY"}]
+      {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] HasCollectionsView
+  [LOADED] ListItemsView
+  [LOADED] ListItemsView
+  [LOADED] ListCollectionsView
+
+===== 3) A WS on same file (control) =====
+
+----- WS A control -----
+  [sub] HasCollectionsView {'fileKey': 'RuEdaohBLXN48WdkzS66BY'}
+  [sub] ListCollectionsView {'fileKey': 'RuEdaohBLXN48WdkzS66BY'}
+  [payload] ["ListCollectionsView",{"fileKey":"RuEdaohBLXN48WdkzS66BY"}]
+      {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]": {"initial": {"24214d48-d634-4642-9e3f-b0bd9e15f751": {"id": "24214d48-d634-4642-9e3f-b0bd9e15f751", "collectionId": "9d0637c1-4853-4ff1-802c-531e8766f4d4", "createdAt": "2026-09-10T04:50:45.760Z", "fileKey": "RuEdaohBLXN48WdkzS66BY"}, "98e57a86-c0bc-400c-9985-e31fe26da19e": {"id": "98e57a86-c0bc-400c-9985-e31fe26da19e", "collectionId": "02200ba1-3855-4023-aa0b-06eb3bede88c", "createdAt": "2026-09-10T04:50:45.756Z", "fileKey": "RuEdaohBLXN48WdkzS66BY"}, "07da80ea-18dd-4e57-909b-bd60c7a387bb": {"id": "07da80ea-18dd-4e57-909b-bd60c7a387bb", "collectionId": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "createdAt": "2026-09-10T04:50:45.752Z", "fileKey": "RuEdaohBLXN48WdkzS66BY"}, "02d6a06b-3da8-405b-8292-a3f675295bd0": {"id": "02d6a06b-3da8-405b-8292-a3f675295bd0", "collectionId": "73deee99-90c6-484a-a32c-71125c414216", "createdAt": "2026-09-10T04:51:05.984Z", "fileKey": "RuEdaohBLXN48WdkzS66BY"}}}}, "computations": {}}}
+  [payload] ["ListCollectionsView",{"fileKey":"RuEdaohBLXN48WdkzS66BY"}]
+      {"CollectionV2": {"queries": {"[\"FileCmsCollection\",\"collectionV2\",[],[\"02200ba1-3855-4023-aa0b-06eb3bede88c\"]]": {"initial": {"02200ba1-3855-4023-aa0b-06eb3bede88c": {"id": "02200ba1-3855-4023-aa0b-06eb3bede88c", "stableId": "7afb1592-8772-427e-89f9-ef863bfbae86", "name": "Employee directory", "description": null}}}, "[\"FileCmsCollection\",\"collectionV2\",[],[\"9d0637c1-4853-4ff1-802c-531e8766f4d4\"]]": {"initial": {"9d0637c1-4853-4ff1-802c-531e8766f4d4": {"id": "9d0637c1-4853-4ff1-802c-531e8766f4d4", "stableId": "4d51e9f1-ec73-4196-8790-7a0c17eb7d31", "name": "Careers", "description": ""}}}, "[\"FileCmsCollection\",\"collectionV2\",[],[\"73deee99-90c6-484a-a32c-71125c414216\"]]": {"initial": {"73deee99-90c6-484a-a32c-71125c414216": {"id": "73deee99-90c6-484a-a32c-71125c414216", "stableId": "73deee99-90c6-484a-a32c-71125c414216", "name": "H1CMS site test", "description": "h1 cms authz"}}}, "[\"FileCmsCollection\",\"collectionV2\",[],[\"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205\"]]": {"initial": {"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205": {"id": "ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205", "stableId": "ae4ddc7c-d16f-497a-8ca5-c44ef0ea38f4", "name": "Journal", "description": ""}}}}, "computations": {}}}
+  [payload] ["HasCollectionsView",{"fileKey":"RuEdaohBLXN48WdkzS66BY"}]
+      {"File": {"queries": {}, "computations": {"[\"File\",\"fileHasCmsCollections\",\"RuEdaohBLXN48WdkzS66BY\",{\"_rootId\":\"RuEdaohBLXN48WdkzS66BY\"}]": {"fieldName": "fileHasCmsCollections", "value": true}}}}
+  [LOADED] ListCollectionsView
+  [LOADED] HasCollectionsView
+
+===== 4) restore link_access=view =====
+restore: 200
+ANON meta after restore: 200
+DONE

@@ -1,0 +1,3358 @@
+{
+ "id": "YPXM99M6Wujufa0tNgXc",
+ "name": "Relight 2.0 human",
+ "owner": "H822bxaJlpcStHwreI5drYHEWHX2",
+ "workspaceId": "aa036063-b614-4016-947f-a556884dae9e",
+ "organizationId": "849e299a-54a0-41ad-be8c-48617c59c577",
+ "visibility": "public",
+ "sharedUsers": [],
+ "poster": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744628984/uploads/juztkudeggjugrx08g6a.jpg",
+ "userPoster": true,
+ "createdAt": "2025-04-16T11:09:22.508Z",
+ "updatedAt": "2025-08-28T09:45:02.331Z",
+ "publishedVersions": [],
+ "version": 1,
+ "nodes": [
+  {
+   "id": "089704a6-2f92-4de3-b857-77e15ea5fc2f",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 2440,
+    "y": 340
+   },
+   "data": {
+    "name": "Input Image",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+      "type": "image",
+      "input": {
+       "seed": 639474,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+      "visualId": "f3468c19253433df",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "output": {
+     "out": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+      "type": "image",
+      "input": {
+       "seed": 639474,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+      "visualId": "f3468c19253433df",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Input Image"
+  },
+  {
+   "id": "19ca324d-4f93-48c1-b4e1-8091cffdafdc",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 4340,
+    "y": 590
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Face Swap"
+    },
+    "name": "Face Swap",
+    "color": "Red",
+    "input": {
+     "swap_image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_669,h_893,x_177,y_0/uploads/lqdgyeqtggvubwuuay8t",
+      "type": "image",
+      "width": 669,
+      "height": 893,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "crop",
+         "width": 669,
+         "x_pos": 177,
+         "y_pos": 0,
+         "height": 893
+        },
+        "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+       }
+      ]
+     },
+     "input_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626646/uploads/vz3ocs3xhzhsexpy9prc.png",
+      "type": "image",
+      "input": {
+       "cfg": 1,
+       "seed": 755615,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+        "type": "image",
+        "input": {
+         "seed": 639474,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+          "type": "image",
+          "input": {
+           "seed": 677295,
+           "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+           "strength": 0.85,
+           "image_size": "portrait_4_3",
+           "num_images": 4,
+           "output_format": "png",
+           "guidance_scale": 3.5,
+           "num_inference_steps": 40,
+           "enable_safety_checker": false
+          },
+          "width": 768,
+          "height": 1024,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+          "visualId": "f247ce9bcc2ccc30",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+         },
+         "steps": 50,
+         "prompt": "light grey background",
+         "guidance": 3,
+         "outpaint": "Zoom out 1.5x",
+         "output_format": "png",
+         "safety_tolerance": 6
+        },
+        "width": 1080,
+        "height": 1440,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+        "visualId": "f3468c19253433df",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. The result is stark and minimal, emphasizing form and silhouette. fine grain",
+       "image_size": "portrait_4_3",
+       "hr_downscale": 0.5,
+       "enable_hr_fix": true,
+       "output_format": "png",
+       "guidance_scale": 5,
+       "initial_latent": "None",
+       "lowres_denoise": 0.98,
+       "highres_denoise": 0.95,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vz3ocs3xhzhsexpy9prc",
+      "visualId": "9c68977aa19a619e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vz3ocs3xhzhsexpy9prc.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "model": {
+     "name": "cdingram/face-swap",
+     "version": "d1d6ea8c8be89d664a07a457526f7128109dee7030fdac424788d762c71ed111"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744628989/uploads/l5dnkpdahzluoqonridf.jpg",
+      "type": "image",
+      "input": {
+       "swap_image": {
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_490,h_654,x_130,y_0/uploads/lqdgyeqtggvubwuuay8t",
+        "type": "image",
+        "width": 490,
+        "height": 654,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "cloudinaryType": "image",
+        "transformations": [
+         {
+          "resize": {
+           "type": "crop",
+           "width": 490,
+           "x_pos": 130,
+           "y_pos": 0,
+           "height": 654
+          },
+          "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+         }
+        ]
+       },
+       "input_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626646/uploads/vz3ocs3xhzhsexpy9prc.png",
+        "type": "image",
+        "input": {
+         "cfg": 1,
+         "seed": 755615,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+          "type": "image",
+          "input": {
+           "seed": 639474,
+           "image": {
+            "fps": 0,
+            "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+            "type": "image",
+            "input": {
+             "seed": 677295,
+             "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+             "strength": 0.85,
+             "image_size": "portrait_4_3",
+             "num_images": 4,
+             "output_format": "png",
+             "guidance_scale": 3.5,
+             "num_inference_steps": 40,
+             "enable_safety_checker": false
+            },
+            "width": 768,
+            "height": 1024,
+            "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+            "duration": 0,
+            "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+            "visualId": "f247ce9bcc2ccc30",
+            "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+            "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+           },
+           "steps": 50,
+           "prompt": "light grey background",
+           "guidance": 3,
+           "outpaint": "Zoom out 1.5x",
+           "output_format": "png",
+           "safety_tolerance": 6
+          },
+          "width": 1080,
+          "height": 1440,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+          "visualId": "f3468c19253433df",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+         },
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. The result is stark and minimal, emphasizing form and silhouette. fine grain",
+         "image_size": "portrait_4_3",
+         "hr_downscale": 0.5,
+         "enable_hr_fix": true,
+         "output_format": "png",
+         "guidance_scale": 5,
+         "initial_latent": "None",
+         "lowres_denoise": 0.98,
+         "highres_denoise": 0.95,
+         "num_inference_steps": 28,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vz3ocs3xhzhsexpy9prc",
+        "visualId": "9c68977aa19a619e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vz3ocs3xhzhsexpy9prc.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l5dnkpdahzluoqonridf.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/l5dnkpdahzluoqonridf",
+      "visualId": "9c68977aa19a619e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l5dnkpdahzluoqonridf.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l5dnkpdahzluoqonridf.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "swap_image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_669,h_893,x_177,y_0/uploads/lqdgyeqtggvubwuuay8t",
+      "type": "image",
+      "width": 669,
+      "height": 893,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "crop",
+         "width": 669,
+         "x_pos": 177,
+         "y_pos": 0,
+         "height": 893
+        },
+        "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+       }
+      ]
+     },
+     "input_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626646/uploads/vz3ocs3xhzhsexpy9prc.png",
+      "type": "image",
+      "input": {
+       "cfg": 1,
+       "seed": 755615,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+        "type": "image",
+        "input": {
+         "seed": 639474,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+          "type": "image",
+          "input": {
+           "seed": 677295,
+           "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+           "strength": 0.85,
+           "image_size": "portrait_4_3",
+           "num_images": 4,
+           "output_format": "png",
+           "guidance_scale": 3.5,
+           "num_inference_steps": 40,
+           "enable_safety_checker": false
+          },
+          "width": 768,
+          "height": 1024,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+          "visualId": "f247ce9bcc2ccc30",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+         },
+         "steps": 50,
+         "prompt": "light grey background",
+         "guidance": 3,
+         "outpaint": "Zoom out 1.5x",
+         "output_format": "png",
+         "safety_tolerance": 6
+        },
+        "width": 1080,
+        "height": 1440,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+        "visualId": "f3468c19253433df",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. The result is stark and minimal, emphasizing form and silhouette. fine grain",
+       "image_size": "portrait_4_3",
+       "hr_downscale": 0.5,
+       "enable_hr_fix": true,
+       "output_format": "png",
+       "guidance_scale": 5,
+       "initial_latent": "None",
+       "lowres_denoise": 0.98,
+       "highres_denoise": 0.95,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vz3ocs3xhzhsexpy9prc",
+      "visualId": "9c68977aa19a619e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vz3ocs3xhzhsexpy9prc.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744628989/uploads/l5dnkpdahzluoqonridf.jpg",
+      "type": "image",
+      "input": {
+       "swap_image": {
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_490,h_654,x_130,y_0/uploads/lqdgyeqtggvubwuuay8t",
+        "type": "image",
+        "width": 490,
+        "height": 654,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "cloudinaryType": "image",
+        "transformations": [
+         {
+          "resize": {
+           "type": "crop",
+           "width": 490,
+           "x_pos": 130,
+           "y_pos": 0,
+           "height": 654
+          },
+          "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+         }
+        ]
+       },
+       "input_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626646/uploads/vz3ocs3xhzhsexpy9prc.png",
+        "type": "image",
+        "input": {
+         "cfg": 1,
+         "seed": 755615,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+          "type": "image",
+          "input": {
+           "seed": 639474,
+           "image": {
+            "fps": 0,
+            "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+            "type": "image",
+            "input": {
+             "seed": 677295,
+             "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+             "strength": 0.85,
+             "image_size": "portrait_4_3",
+             "num_images": 4,
+             "output_format": "png",
+             "guidance_scale": 3.5,
+             "num_inference_steps": 40,
+             "enable_safety_checker": false
+            },
+            "width": 768,
+            "height": 1024,
+            "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+            "duration": 0,
+            "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+            "visualId": "f247ce9bcc2ccc30",
+            "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+            "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+           },
+           "steps": 50,
+           "prompt": "light grey background",
+           "guidance": 3,
+           "outpaint": "Zoom out 1.5x",
+           "output_format": "png",
+           "safety_tolerance": 6
+          },
+          "width": 1080,
+          "height": 1440,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+          "visualId": "f3468c19253433df",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+         },
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. The result is stark and minimal, emphasizing form and silhouette. fine grain",
+         "image_size": "portrait_4_3",
+         "hr_downscale": 0.5,
+         "enable_hr_fix": true,
+         "output_format": "png",
+         "guidance_scale": 5,
+         "initial_latent": "None",
+         "lowres_denoise": 0.98,
+         "highres_denoise": 0.95,
+         "num_inference_steps": 28,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/vz3ocs3xhzhsexpy9prc",
+        "visualId": "9c68977aa19a619e",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vz3ocs3xhzhsexpy9prc.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/l5dnkpdahzluoqonridf.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/l5dnkpdahzluoqonridf",
+      "visualId": "9c68977aa19a619e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/l5dnkpdahzluoqonridf.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/l5dnkpdahzluoqonridf.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "swap_image": {
+      "type": "string",
+      "order": 1,
+      "title": "Swap Image",
+      "format": "uri",
+      "required": true,
+      "description": "Swap image"
+     },
+     "input_image": {
+      "type": "string",
+      "order": 0,
+      "title": "Input Image",
+      "format": "uri",
+      "required": true,
+      "description": "Target image"
+     }
+    },
+    "handles": {
+     "input": {
+      "swap_image": {
+       "id": "0edb6700-2f17-4c3f-9f44-bc7d547eb8e6",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Swap image"
+      },
+      "input_image": {
+       "id": "57a7a8ee-5915-4312-9be1-608f49773485",
+       "order": 0,
+       "format": "uri",
+       "required": true,
+       "description": "Target image"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Image to image face swapping",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Face Swap"
+  },
+  {
+   "id": "1d994f31-97d7-444d-8e9e-b9e2455acd23",
+   "isModel": false,
+   "type": "prompt_concat",
+   "position": {
+    "x": 2800,
+    "y": 1330
+   },
+   "data": {
+    "name": "Prompts Concatenator",
+    "color": "Yambo_Green",
+    "input": {
+     "prompt1": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached;",
+     "prompt2": "The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight."
+    },
+    "output": {
+     "type": "text",
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain"
+    },
+    "result": {
+     "additionalPrompt": "fine grain"
+    },
+    "handles": {
+     "input": [
+      "prompt1",
+      "prompt2"
+     ],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "Concatenates multiple prompts to one output prompt.",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompts Concatenator"
+  },
+  {
+   "id": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251",
+   "isModel": false,
+   "type": "crop",
+   "position": {
+    "x": 1530,
+    "y": -360
+   },
+   "data": {
+    "name": "Crop",
+    "color": "Yambo_Black",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+      "type": "image",
+      "input": {
+       "seed": 677295,
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+       "strength": 0.85,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 40,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "visualId": "f247ce9bcc2ccc30",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "output": {
+     "result": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_669,h_893,x_177,y_0/uploads/lqdgyeqtggvubwuuay8t",
+      "type": "image",
+      "width": 669,
+      "height": 893,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "crop",
+         "width": 669,
+         "x_pos": 177,
+         "y_pos": 0,
+         "height": 893
+        },
+        "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+       }
+      ]
+     }
+    },
+    "result": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_669,h_893,x_177,y_0/uploads/lqdgyeqtggvubwuuay8t",
+    "handles": {
+     "input": [
+      "image"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "crop_data": {
+     "x": 98,
+     "y": 0,
+     "width": 371,
+     "height": 495,
+     "scaleFactor": 1.3195876288659794
+    },
+    "lockAspectRatio": true
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Crop"
+  },
+  {
+   "id": "6dfbb0e3-18a6-4cd3-be38-973a9e9014a5",
+   "isModel": false,
+   "type": "prompt_concat",
+   "position": {
+    "x": 2800,
+    "y": 590
+   },
+   "data": {
+    "name": "Prompts Concatenator",
+    "color": "Yambo_Green",
+    "input": {
+     "prompt1": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached;",
+     "prompt2": "The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup."
+    },
+    "output": {
+     "type": "text",
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. fine grain"
+    },
+    "result": {
+     "additionalPrompt": "fine grain"
+    },
+    "handles": {
+     "input": [
+      "prompt1",
+      "prompt2"
+     ],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "Concatenates multiple prompts to one output prompt.",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompts Concatenator"
+  },
+  {
+   "id": "8331cce1-aea5-4db4-8b27-03daa8d05596",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": 1020,
+    "y": 390
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "light grey background"
+    },
+    "result": {
+     "prompt": "light grey background"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "92feec45-6198-4485-ba50-f463734f6446",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -290,
+    "y": 980
+   },
+   "data": {
+    "name": "Setup",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism."
+    },
+    "result": {
+     "prompt": "soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Setup"
+  },
+  {
+   "id": "9eac8c32-0399-4c76-ab44-511900c1cdf6",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 3500,
+    "y": 590
+   },
+   "data": {
+    "name": "Relight 2.0",
+    "paid": 15,
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+      "type": "image",
+      "input": {
+       "seed": 639474,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+      "visualId": "f3468c19253433df",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. fine grain"
+    },
+    "label": "",
+    "model": {
+     "name": "relight2"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626646/uploads/vz3ocs3xhzhsexpy9prc.png",
+      "type": "image",
+      "input": {
+       "cfg": 1,
+       "seed": 755615,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+        "type": "image",
+        "input": {
+         "seed": 639474,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+          "type": "image",
+          "input": {
+           "seed": 677295,
+           "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+           "strength": 0.85,
+           "image_size": "portrait_4_3",
+           "num_images": 4,
+           "output_format": "png",
+           "guidance_scale": 3.5,
+           "num_inference_steps": 40,
+           "enable_safety_checker": false
+          },
+          "width": 768,
+          "height": 1024,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+          "visualId": "f247ce9bcc2ccc30",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+         },
+         "steps": 50,
+         "prompt": "light grey background",
+         "guidance": 3,
+         "outpaint": "Zoom out 1.5x",
+         "output_format": "png",
+         "safety_tolerance": 6
+        },
+        "width": 1080,
+        "height": 1440,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+        "visualId": "f3468c19253433df",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. The result is stark and minimal, emphasizing form and silhouette. fine grain",
+       "image_size": "portrait_4_3",
+       "hr_downscale": 0.5,
+       "enable_hr_fix": true,
+       "output_format": "png",
+       "guidance_scale": 5,
+       "initial_latent": "None",
+       "lowres_denoise": 0.98,
+       "highres_denoise": 0.95,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vz3ocs3xhzhsexpy9prc",
+      "visualId": "9c68977aa19a619e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vz3ocs3xhzhsexpy9prc.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "cfg": 1,
+     "seed": {
+      "seed": 662381,
+      "isRandom": true
+     },
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+      "type": "image",
+      "input": {
+       "seed": 639474,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+      "visualId": "f3468c19253433df",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. fine grain",
+     "image_size": "portrait_4_3",
+     "hr_downscale": 0.5,
+     "enable_hr_fix": true,
+     "output_format": "png",
+     "guidance_scale": 5,
+     "initial_latent": "None",
+     "lowres_denoise": 0.98,
+     "highres_denoise": 0.95,
+     "num_inference_steps": 28,
+     "enable_safety_checker": false
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626646/uploads/vz3ocs3xhzhsexpy9prc.png",
+      "type": "image",
+      "input": {
+       "cfg": 1,
+       "seed": 755615,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+        "type": "image",
+        "input": {
+         "seed": 639474,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+          "type": "image",
+          "input": {
+           "seed": 677295,
+           "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+           "strength": 0.85,
+           "image_size": "portrait_4_3",
+           "num_images": 4,
+           "output_format": "png",
+           "guidance_scale": 3.5,
+           "num_inference_steps": 40,
+           "enable_safety_checker": false
+          },
+          "width": 768,
+          "height": 1024,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+          "visualId": "f247ce9bcc2ccc30",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+         },
+         "steps": 50,
+         "prompt": "light grey background",
+         "guidance": 3,
+         "outpaint": "Zoom out 1.5x",
+         "output_format": "png",
+         "safety_tolerance": 6
+        },
+        "width": 1080,
+        "height": 1440,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+        "visualId": "f3468c19253433df",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup. The result is stark and minimal, emphasizing form and silhouette. fine grain",
+       "image_size": "portrait_4_3",
+       "hr_downscale": 0.5,
+       "enable_hr_fix": true,
+       "output_format": "png",
+       "guidance_scale": 5,
+       "initial_latent": "None",
+       "lowres_denoise": 0.98,
+       "highres_denoise": 0.95,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vz3ocs3xhzhsexpy9prc",
+      "visualId": "9c68977aa19a619e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/vz3ocs3xhzhsexpy9prc.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/vz3ocs3xhzhsexpy9prc.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "cfg": {
+      "max": 3,
+      "min": 0.1,
+      "type": "number",
+      "order": 12,
+      "title": "CFG",
+      "default": 1,
+      "description": "The real classifier-free-guidance scale for the generation."
+     },
+     "seed": {
+      "type": "seed",
+      "order": 7,
+      "title": "Seed",
+      "description": "The same seed and the same prompt given to the same version of the model will output the same image every time."
+     },
+     "image_size": {
+      "type": "enum",
+      "order": 5,
+      "title": "Image Size",
+      "options": [
+       "square_hd",
+       "square",
+       "portrait_4_3",
+       "portrait_16_9",
+       "landscape_4_3",
+       "landscape_16_9"
+      ],
+      "description": "The size of the generated image."
+     },
+     "hr_downscale": {
+      "max": 1,
+      "min": 0,
+      "type": "number",
+      "order": 15,
+      "title": "HR Downscale",
+      "default": 0.5,
+      "description": "Downscale factor for high-res pass"
+     },
+     "enable_hr_fix": {
+      "type": "boolean",
+      "order": 9,
+      "title": "Enable HR Fix",
+      "description": "Use HR fix"
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 18,
+      "title": "Output Format",
+      "default": "jpeg",
+      "options": [
+       "jpeg",
+       "png"
+      ],
+      "description": "The format of the generated image."
+     },
+     "guidance_scale": {
+      "max": 20,
+      "min": 1,
+      "type": "number",
+      "order": 16,
+      "title": "Guidance Scale",
+      "default": 5,
+      "description": "The CFG (Classifier Free Guidance) scale is a measure of how close you want the model to stick to your prompt when looking for a related image to show you."
+     },
+     "initial_latent": {
+      "type": "enum",
+      "order": 8,
+      "title": "Initial Latent",
+      "default": "None",
+      "options": [
+       "None",
+       "Left",
+       "Right",
+       "Top",
+       "Bottom"
+      ],
+      "description": "Provide lighting conditions for the model"
+     },
+     "lowres_denoise": {
+      "max": 1,
+      "min": 0,
+      "type": "number",
+      "order": 13,
+      "title": "Low-res Denoise",
+      "default": 0.98,
+      "description": "Strength for low-resolution pass."
+     },
+     "highres_denoise": {
+      "max": 1,
+      "min": 0,
+      "type": "number",
+      "order": 14,
+      "title": "High-res Denoise",
+      "default": 0.95,
+      "description": "Strength for high-resolution pass. Only used if enable_hr_fix is True."
+     },
+     "num_inference_steps": {
+      "max": 50,
+      "min": 1,
+      "type": "integer",
+      "order": 6,
+      "title": "Inference Steps",
+      "default": 28,
+      "description": "The number of inference steps to perform."
+     },
+     "enable_safety_checker": {
+      "type": "boolean",
+      "order": 17,
+      "title": "Enable Safety Checker",
+      "default": false,
+      "description": "If set to true, the safety checker will be enabled."
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "faYiTQ88WPAdWe5Aleml",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Image to be used for relighting"
+      },
+      "prompt": {
+       "id": "rASw6VAAK0kZPijbNsqT",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Prompt for generated image"
+      },
+      "negative_prompt": {
+       "id": "BywPXohlCnpNjWPxUVKA",
+       "order": 3,
+       "format": "text",
+       "required": false,
+       "description": "Prompt for generated image"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Re-lighting image and changing their backgrounds per a given description. Based on iclight-v2",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Relight 2.0"
+  },
+  {
+   "id": "b4b4accc-59a5-4fd6-9108-c6380d7c4b02",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": 2260,
+    "y": 1330
+   },
+   "data": {
+    "name": "Setup",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight."
+    },
+    "result": {
+     "prompt": "The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Setup"
+  },
+  {
+   "id": "b6129af6-a5fe-4504-8418-90331f9c989e",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 2490,
+    "y": 260
+   },
+   "data": {
+    "name": "Face",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_669,h_893,x_177,y_0/uploads/lqdgyeqtggvubwuuay8t",
+      "type": "image",
+      "width": 669,
+      "height": 893,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "crop",
+         "width": 669,
+         "x_pos": 177,
+         "y_pos": 0,
+         "height": 893
+        },
+        "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+       }
+      ]
+     }
+    },
+    "output": {
+     "out": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_669,h_893,x_177,y_0/uploads/lqdgyeqtggvubwuuay8t",
+      "type": "image",
+      "width": 669,
+      "height": 893,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "crop",
+         "width": 669,
+         "x_pos": 177,
+         "y_pos": 0,
+         "height": 893
+        },
+        "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+       }
+      ]
+     }
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Face"
+  },
+  {
+   "id": "b74287ea-c216-42fd-a93b-e0aa269533e9",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 2460,
+    "y": 410
+   },
+   "data": {
+    "name": "Charcter",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached;"
+    },
+    "output": {
+     "out": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached;"
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Charcter"
+  },
+  {
+   "id": "be739883-fab6-4c0a-93c3-2823a9fb5b73",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 4340,
+    "y": 1330
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Face Swap"
+    },
+    "name": "Face Swap",
+    "color": "Red",
+    "input": {
+     "swap_image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_669,h_893,x_177,y_0/uploads/lqdgyeqtggvubwuuay8t",
+      "type": "image",
+      "width": 669,
+      "height": 893,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "crop",
+         "width": 669,
+         "x_pos": 177,
+         "y_pos": 0,
+         "height": 893
+        },
+        "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+       }
+      ]
+     },
+     "input_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626991/uploads/t6z53adf5bid7eaop8ij.png",
+      "type": "image",
+      "input": {
+       "cfg": 1,
+       "seed": 562993,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+        "type": "image",
+        "input": {
+         "seed": 639474,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+          "type": "image",
+          "input": {
+           "seed": 677295,
+           "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+           "strength": 0.85,
+           "image_size": "portrait_4_3",
+           "num_images": 4,
+           "output_format": "png",
+           "guidance_scale": 3.5,
+           "num_inference_steps": 40,
+           "enable_safety_checker": false
+          },
+          "width": 768,
+          "height": 1024,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+          "visualId": "f247ce9bcc2ccc30",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+         },
+         "steps": 50,
+         "prompt": "light grey background",
+         "guidance": 3,
+         "outpaint": "Zoom out 1.5x",
+         "output_format": "png",
+         "safety_tolerance": 6
+        },
+        "width": 1080,
+        "height": 1440,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+        "visualId": "f3468c19253433df",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain",
+       "image_size": "portrait_4_3",
+       "hr_downscale": 0.5,
+       "enable_hr_fix": true,
+       "output_format": "png",
+       "guidance_scale": 5,
+       "initial_latent": "None",
+       "lowres_denoise": 0.98,
+       "highres_denoise": 0.95,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/t6z53adf5bid7eaop8ij",
+      "visualId": "b3f2dc08a0776a93",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t6z53adf5bid7eaop8ij.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "model": {
+     "name": "cdingram/face-swap",
+     "version": "d1d6ea8c8be89d664a07a457526f7128109dee7030fdac424788d762c71ed111"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744628984/uploads/juztkudeggjugrx08g6a.jpg",
+      "type": "image",
+      "input": {
+       "swap_image": {
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_490,h_654,x_130,y_0/uploads/lqdgyeqtggvubwuuay8t",
+        "type": "image",
+        "width": 490,
+        "height": 654,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "cloudinaryType": "image",
+        "transformations": [
+         {
+          "resize": {
+           "type": "crop",
+           "width": 490,
+           "x_pos": 130,
+           "y_pos": 0,
+           "height": 654
+          },
+          "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+         }
+        ]
+       },
+       "input_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626991/uploads/t6z53adf5bid7eaop8ij.png",
+        "type": "image",
+        "input": {
+         "cfg": 1,
+         "seed": 562993,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+          "type": "image",
+          "input": {
+           "seed": 639474,
+           "image": {
+            "fps": 0,
+            "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+            "type": "image",
+            "input": {
+             "seed": 677295,
+             "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+             "strength": 0.85,
+             "image_size": "portrait_4_3",
+             "num_images": 4,
+             "output_format": "png",
+             "guidance_scale": 3.5,
+             "num_inference_steps": 40,
+             "enable_safety_checker": false
+            },
+            "width": 768,
+            "height": 1024,
+            "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+            "duration": 0,
+            "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+            "visualId": "f247ce9bcc2ccc30",
+            "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+            "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+           },
+           "steps": 50,
+           "prompt": "light grey background",
+           "guidance": 3,
+           "outpaint": "Zoom out 1.5x",
+           "output_format": "png",
+           "safety_tolerance": 6
+          },
+          "width": 1080,
+          "height": 1440,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+          "visualId": "f3468c19253433df",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+         },
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain",
+         "image_size": "portrait_4_3",
+         "hr_downscale": 0.5,
+         "enable_hr_fix": true,
+         "output_format": "png",
+         "guidance_scale": 5,
+         "initial_latent": "None",
+         "lowres_denoise": 0.98,
+         "highres_denoise": 0.95,
+         "num_inference_steps": 28,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t6z53adf5bid7eaop8ij",
+        "visualId": "b3f2dc08a0776a93",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t6z53adf5bid7eaop8ij.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/juztkudeggjugrx08g6a.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/juztkudeggjugrx08g6a",
+      "visualId": "b3f3dc08a0766a93",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/juztkudeggjugrx08g6a.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/juztkudeggjugrx08g6a.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "swap_image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_669,h_893,x_177,y_0/uploads/lqdgyeqtggvubwuuay8t",
+      "type": "image",
+      "width": 669,
+      "height": 893,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "crop",
+         "width": 669,
+         "x_pos": 177,
+         "y_pos": 0,
+         "height": 893
+        },
+        "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+       }
+      ]
+     },
+     "input_image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626991/uploads/t6z53adf5bid7eaop8ij.png",
+      "type": "image",
+      "input": {
+       "cfg": 1,
+       "seed": 562993,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+        "type": "image",
+        "input": {
+         "seed": 639474,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+          "type": "image",
+          "input": {
+           "seed": 677295,
+           "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+           "strength": 0.85,
+           "image_size": "portrait_4_3",
+           "num_images": 4,
+           "output_format": "png",
+           "guidance_scale": 3.5,
+           "num_inference_steps": 40,
+           "enable_safety_checker": false
+          },
+          "width": 768,
+          "height": 1024,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+          "visualId": "f247ce9bcc2ccc30",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+         },
+         "steps": 50,
+         "prompt": "light grey background",
+         "guidance": 3,
+         "outpaint": "Zoom out 1.5x",
+         "output_format": "png",
+         "safety_tolerance": 6
+        },
+        "width": 1080,
+        "height": 1440,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+        "visualId": "f3468c19253433df",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain",
+       "image_size": "portrait_4_3",
+       "hr_downscale": 0.5,
+       "enable_hr_fix": true,
+       "output_format": "png",
+       "guidance_scale": 5,
+       "initial_latent": "None",
+       "lowres_denoise": 0.98,
+       "highres_denoise": 0.95,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/t6z53adf5bid7eaop8ij",
+      "visualId": "b3f2dc08a0776a93",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t6z53adf5bid7eaop8ij.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744628984/uploads/juztkudeggjugrx08g6a.jpg",
+      "type": "image",
+      "input": {
+       "swap_image": {
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_crop,w_490,h_654,x_130,y_0/uploads/lqdgyeqtggvubwuuay8t",
+        "type": "image",
+        "width": 490,
+        "height": 654,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "cloudinaryType": "image",
+        "transformations": [
+         {
+          "resize": {
+           "type": "crop",
+           "width": 490,
+           "x_pos": 130,
+           "y_pos": 0,
+           "height": 654
+          },
+          "nodeIdentifier": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251"
+         }
+        ]
+       },
+       "input_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626991/uploads/t6z53adf5bid7eaop8ij.png",
+        "type": "image",
+        "input": {
+         "cfg": 1,
+         "seed": 562993,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+          "type": "image",
+          "input": {
+           "seed": 639474,
+           "image": {
+            "fps": 0,
+            "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+            "type": "image",
+            "input": {
+             "seed": 677295,
+             "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+             "strength": 0.85,
+             "image_size": "portrait_4_3",
+             "num_images": 4,
+             "output_format": "png",
+             "guidance_scale": 3.5,
+             "num_inference_steps": 40,
+             "enable_safety_checker": false
+            },
+            "width": 768,
+            "height": 1024,
+            "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+            "duration": 0,
+            "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+            "visualId": "f247ce9bcc2ccc30",
+            "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+            "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+           },
+           "steps": 50,
+           "prompt": "light grey background",
+           "guidance": 3,
+           "outpaint": "Zoom out 1.5x",
+           "output_format": "png",
+           "safety_tolerance": 6
+          },
+          "width": 1080,
+          "height": 1440,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+          "visualId": "f3468c19253433df",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+         },
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain",
+         "image_size": "portrait_4_3",
+         "hr_downscale": 0.5,
+         "enable_hr_fix": true,
+         "output_format": "png",
+         "guidance_scale": 5,
+         "initial_latent": "None",
+         "lowres_denoise": 0.98,
+         "highres_denoise": 0.95,
+         "num_inference_steps": 28,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t6z53adf5bid7eaop8ij",
+        "visualId": "b3f2dc08a0776a93",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t6z53adf5bid7eaop8ij.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/juztkudeggjugrx08g6a.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/juztkudeggjugrx08g6a",
+      "visualId": "b3f3dc08a0766a93",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/juztkudeggjugrx08g6a.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/juztkudeggjugrx08g6a.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "swap_image": {
+      "type": "string",
+      "order": 1,
+      "title": "Swap Image",
+      "format": "uri",
+      "required": true,
+      "description": "Swap image"
+     },
+     "input_image": {
+      "type": "string",
+      "order": 0,
+      "title": "Input Image",
+      "format": "uri",
+      "required": true,
+      "description": "Target image"
+     }
+    },
+    "handles": {
+     "input": {
+      "swap_image": {
+       "id": "0edb6700-2f17-4c3f-9f44-bc7d547eb8e6",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Swap image"
+      },
+      "input_image": {
+       "id": "57a7a8ee-5915-4312-9be1-608f49773485",
+       "order": 0,
+       "format": "uri",
+       "required": true,
+       "description": "Target image"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Image to image face swapping",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Face Swap"
+  },
+  {
+   "id": "bf09388f-8b7f-4f82-8eca-d9bed78b5601",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1020,
+    "y": 590
+   },
+   "data": {
+    "name": "Flux Dev LoRA",
+    "color": "Yambo_Purple",
+    "input": {
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain"
+    },
+    "label": "",
+    "model": {
+     "name": "fal_flux_multilora"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+      "type": "image",
+      "input": {
+       "seed": 677295,
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+       "strength": 0.85,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 40,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "visualId": "f247ce9bcc2ccc30",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 677295,
+      "isRandom": true
+     },
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+     "strength": 0.85,
+     "image_size": "portrait_4_3",
+     "num_images": 4,
+     "output_format": "png",
+     "guidance_scale": 3.5,
+     "num_inference_steps": 40,
+     "enable_safety_checker": false
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+      "type": "image",
+      "input": {
+       "seed": 677295,
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+       "strength": 0.85,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 40,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "visualId": "f247ce9bcc2ccc30",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 3,
+      "title": "Seed",
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "strength": {
+      "max": 1,
+      "min": 0.01,
+      "type": "number",
+      "title": "Image Strength",
+      "default": 0.85,
+      "description": "The strength to use for image-to-image"
+     },
+     "image_size": {
+      "ref": "image_size",
+      "type": "enum",
+      "order": 1,
+      "title": "Aspect Ratio",
+      "default": "square_hd",
+      "options": [
+       "square_hd",
+       "square",
+       "portrait_4_3",
+       "portrait_16_9",
+       "landscape_4_3",
+       "landscape_16_9"
+      ],
+      "description": "Aspect ratio for the generated image"
+     },
+     "num_images": {
+      "max": 4,
+      "min": 1,
+      "type": "integer",
+      "order": 0,
+      "title": "Number of Images",
+      "default": "1",
+      "description": "How many images to generate"
+     },
+     "output_format": {
+      "ref": "output_format",
+      "type": "enum",
+      "order": 4,
+      "title": "Output Format",
+      "default": "png",
+      "options": [
+       "jpeg",
+       "png"
+      ],
+      "description": "Format of the output images"
+     },
+     "guidance_scale": {
+      "max": 10,
+      "min": 0,
+      "type": "number",
+      "order": 2,
+      "title": "Guidance Scale",
+      "default": 3.5,
+      "description": "Guidance for generated image."
+     },
+     "num_inference_steps": {
+      "max": 50,
+      "min": 1,
+      "ref": "num_inference_steps",
+      "type": "integer",
+      "order": 1,
+      "title": "Inference Steps",
+      "default": "28",
+      "description": "The number of inference steps to perform"
+     },
+     "enable_safety_checker": {
+      "type": "boolean",
+      "order": 5,
+      "title": "Safety Checker",
+      "default": "false",
+      "description": "If set to true, the safety checker will be enabled"
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "Dot9bmnSWmK4MEgqVCU4",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Image for ImageToImage"
+      },
+      "lora_1": {
+       "id": "Dot9bmnSWmK4MEgqVCU4",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "prompt": {
+       "id": "rASw6VAAK0kZPijbNsqT",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Prompt for generated image"
+      },
+      "lora_1_scale": {
+       "id": "t2jgmmiJjEIEht957nkt",
+       "order": 3,
+       "format": "number",
+       "required": false,
+       "description": ""
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "FLUX LoRA Text-to-Image and Image-to-Image.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Dev LoRA"
+  },
+  {
+   "id": "c2fe21e0-b438-4444-929e-7afd49081e48",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 3500,
+    "y": 1330
+   },
+   "data": {
+    "name": "Relight 2.0",
+    "paid": 15,
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+      "type": "image",
+      "input": {
+       "seed": 639474,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+      "visualId": "f3468c19253433df",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain"
+    },
+    "label": "",
+    "model": {
+     "name": "relight2"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626991/uploads/t6z53adf5bid7eaop8ij.png",
+      "type": "image",
+      "input": {
+       "cfg": 1,
+       "seed": 562993,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+        "type": "image",
+        "input": {
+         "seed": 639474,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+          "type": "image",
+          "input": {
+           "seed": 677295,
+           "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+           "strength": 0.85,
+           "image_size": "portrait_4_3",
+           "num_images": 4,
+           "output_format": "png",
+           "guidance_scale": 3.5,
+           "num_inference_steps": 40,
+           "enable_safety_checker": false
+          },
+          "width": 768,
+          "height": 1024,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+          "visualId": "f247ce9bcc2ccc30",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+         },
+         "steps": 50,
+         "prompt": "light grey background",
+         "guidance": 3,
+         "outpaint": "Zoom out 1.5x",
+         "output_format": "png",
+         "safety_tolerance": 6
+        },
+        "width": 1080,
+        "height": 1440,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+        "visualId": "f3468c19253433df",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain",
+       "image_size": "portrait_4_3",
+       "hr_downscale": 0.5,
+       "enable_hr_fix": true,
+       "output_format": "png",
+       "guidance_scale": 5,
+       "initial_latent": "None",
+       "lowres_denoise": 0.98,
+       "highres_denoise": 0.95,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/t6z53adf5bid7eaop8ij",
+      "visualId": "b3f2dc08a0776a93",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t6z53adf5bid7eaop8ij.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "cfg": 1,
+     "seed": {
+      "seed": 633964,
+      "isRandom": true
+     },
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+      "type": "image",
+      "input": {
+       "seed": 639474,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+      "visualId": "f3468c19253433df",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain",
+     "image_size": "portrait_4_3",
+     "hr_downscale": 0.5,
+     "enable_hr_fix": true,
+     "output_format": "png",
+     "guidance_scale": 5,
+     "initial_latent": "None",
+     "lowres_denoise": 0.98,
+     "highres_denoise": 0.95,
+     "num_inference_steps": 28,
+     "enable_safety_checker": false
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626991/uploads/t6z53adf5bid7eaop8ij.png",
+      "type": "image",
+      "input": {
+       "cfg": 1,
+       "seed": 562993,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+        "type": "image",
+        "input": {
+         "seed": 639474,
+         "image": {
+          "fps": 0,
+          "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+          "type": "image",
+          "input": {
+           "seed": 677295,
+           "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+           "strength": 0.85,
+           "image_size": "portrait_4_3",
+           "num_images": 4,
+           "output_format": "png",
+           "guidance_scale": 3.5,
+           "num_inference_steps": 40,
+           "enable_safety_checker": false
+          },
+          "width": 768,
+          "height": 1024,
+          "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "duration": 0,
+          "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+          "visualId": "f247ce9bcc2ccc30",
+          "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+          "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+         },
+         "steps": 50,
+         "prompt": "light grey background",
+         "guidance": 3,
+         "outpaint": "Zoom out 1.5x",
+         "output_format": "png",
+         "safety_tolerance": 6
+        },
+        "width": 1080,
+        "height": 1440,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+        "visualId": "f3468c19253433df",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; The subject stands barefoot on a textured rock formation during sunset. The lighting is soft and warm, coming from a low angle, casting elongated shadows and giving a natural golden glow to the scene. The sky is subtly lit with gradient tones of orange, pink, and purple, providing a gentle backdrop. The light softly highlights the contours of the subject and the rock surface, with no artificial lighting visible. The overall setup feels calm, natural, and atmospheric, capturing the serene mood of twilight. fine grain",
+       "image_size": "portrait_4_3",
+       "hr_downscale": 0.5,
+       "enable_hr_fix": true,
+       "output_format": "png",
+       "guidance_scale": 5,
+       "initial_latent": "None",
+       "lowres_denoise": 0.98,
+       "highres_denoise": 0.95,
+       "num_inference_steps": 28,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/t6z53adf5bid7eaop8ij",
+      "visualId": "b3f2dc08a0776a93",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t6z53adf5bid7eaop8ij.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t6z53adf5bid7eaop8ij.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "cfg": {
+      "max": 3,
+      "min": 0.1,
+      "type": "number",
+      "order": 12,
+      "title": "CFG",
+      "default": 1,
+      "description": "The real classifier-free-guidance scale for the generation."
+     },
+     "seed": {
+      "type": "seed",
+      "order": 7,
+      "title": "Seed",
+      "description": "The same seed and the same prompt given to the same version of the model will output the same image every time."
+     },
+     "image_size": {
+      "type": "enum",
+      "order": 5,
+      "title": "Image Size",
+      "options": [
+       "square_hd",
+       "square",
+       "portrait_4_3",
+       "portrait_16_9",
+       "landscape_4_3",
+       "landscape_16_9"
+      ],
+      "description": "The size of the generated image."
+     },
+     "hr_downscale": {
+      "max": 1,
+      "min": 0,
+      "type": "number",
+      "order": 15,
+      "title": "HR Downscale",
+      "default": 0.5,
+      "description": "Downscale factor for high-res pass"
+     },
+     "enable_hr_fix": {
+      "type": "boolean",
+      "order": 9,
+      "title": "Enable HR Fix",
+      "description": "Use HR fix"
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 18,
+      "title": "Output Format",
+      "default": "jpeg",
+      "options": [
+       "jpeg",
+       "png"
+      ],
+      "description": "The format of the generated image."
+     },
+     "guidance_scale": {
+      "max": 20,
+      "min": 1,
+      "type": "number",
+      "order": 16,
+      "title": "Guidance Scale",
+      "default": 5,
+      "description": "The CFG (Classifier Free Guidance) scale is a measure of how close you want the model to stick to your prompt when looking for a related image to show you."
+     },
+     "initial_latent": {
+      "type": "enum",
+      "order": 8,
+      "title": "Initial Latent",
+      "default": "None",
+      "options": [
+       "None",
+       "Left",
+       "Right",
+       "Top",
+       "Bottom"
+      ],
+      "description": "Provide lighting conditions for the model"
+     },
+     "lowres_denoise": {
+      "max": 1,
+      "min": 0,
+      "type": "number",
+      "order": 13,
+      "title": "Low-res Denoise",
+      "default": 0.98,
+      "description": "Strength for low-resolution pass."
+     },
+     "highres_denoise": {
+      "max": 1,
+      "min": 0,
+      "type": "number",
+      "order": 14,
+      "title": "High-res Denoise",
+      "default": 0.95,
+      "description": "Strength for high-resolution pass. Only used if enable_hr_fix is True."
+     },
+     "num_inference_steps": {
+      "max": 50,
+      "min": 1,
+      "type": "integer",
+      "order": 6,
+      "title": "Inference Steps",
+      "default": 28,
+      "description": "The number of inference steps to perform."
+     },
+     "enable_safety_checker": {
+      "type": "boolean",
+      "order": 17,
+      "title": "Enable Safety Checker",
+      "default": false,
+      "description": "If set to true, the safety checker will be enabled."
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "faYiTQ88WPAdWe5Aleml",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Image to be used for relighting"
+      },
+      "prompt": {
+       "id": "rASw6VAAK0kZPijbNsqT",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Prompt for generated image"
+      },
+      "negative_prompt": {
+       "id": "BywPXohlCnpNjWPxUVKA",
+       "order": 3,
+       "format": "text",
+       "required": false,
+       "description": "Prompt for generated image"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Re-lighting image and changing their backgrounds per a given description. Based on iclight-v2",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Relight 2.0"
+  },
+  {
+   "id": "e4d5f267-93e2-4e2f-ab64-11acb0e31363",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": -290,
+    "y": 590
+   },
+   "data": {
+    "name": "Character",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached;"
+    },
+    "result": {
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached;"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Character"
+  },
+  {
+   "id": "e5dd4b76-b6d3-4d10-b2df-501ae4f47780",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": 2260,
+    "y": 590
+   },
+   "data": {
+    "name": "Setup",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup."
+    },
+    "result": {
+     "prompt": "The scene is shot at night, with the subject standing on a textured rock formation. A strong, direct flash is positioned in front of the subject at eye level, casting sharp illumination and creating crisp shadows behind and below. The intense lighting highlights the figure and the rugged details of the rock, while the background fades completely into darkness. There is no ambient or fill light, which isolates the subject in a dramatic, high-contrast setup."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Setup"
+  },
+  {
+   "id": "efe82abf-890a-43e3-94a3-196fe3fb7bf3",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1660,
+    "y": 590
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux Pro Outpaint"
+    },
+    "name": "Flux Pro Outpaint",
+    "color": "Red",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+      "type": "image",
+      "input": {
+       "seed": 677295,
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+       "strength": 0.85,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 40,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "visualId": "f247ce9bcc2ccc30",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "light grey background"
+    },
+    "model": {
+     "name": "black-forest-labs/flux-fill-pro",
+     "version": "9609ba7331ed872c99f81c92c69a9ee52a50d8aba99f636173e0674d997efd0c"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+      "type": "image",
+      "input": {
+       "seed": 639474,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+      "visualId": "f3468c19253433df",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 639474,
+      "isRandom": true
+     },
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+      "type": "image",
+      "input": {
+       "seed": 677295,
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+       "strength": 0.85,
+       "image_size": "portrait_4_3",
+       "num_images": 4,
+       "output_format": "png",
+       "guidance_scale": 3.5,
+       "num_inference_steps": 40,
+       "enable_safety_checker": false
+      },
+      "width": 768,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+      "visualId": "f247ce9bcc2ccc30",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+     },
+     "steps": 50,
+     "prompt": "light grey background",
+     "guidance": 3,
+     "outpaint": "Zoom out 1.5x",
+     "output_format": "png",
+     "safety_tolerance": 6
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626083/uploads/nx4lsq3baiv4ewdgr4vy.png",
+      "type": "image",
+      "input": {
+       "seed": 724279,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/nx4lsq3baiv4ewdgr4vy.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/nx4lsq3baiv4ewdgr4vy",
+      "visualId": "f24a8c19a5b5b593",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/nx4lsq3baiv4ewdgr4vy.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/nx4lsq3baiv4ewdgr4vy.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626122/uploads/o2glylcateqr2qyp8ak2.png",
+      "type": "image",
+      "input": {},
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/o2glylcateqr2qyp8ak2.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/o2glylcateqr2qyp8ak2",
+      "visualId": "c3c63c913e343b4b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/o2glylcateqr2qyp8ak2.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/o2glylcateqr2qyp8ak2.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626148/uploads/ueteymwu85ud2trydtdn.png",
+      "type": "image",
+      "input": {
+       "seed": 787321,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ueteymwu85ud2trydtdn.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ueteymwu85ud2trydtdn",
+      "visualId": "f3478c192434379f",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ueteymwu85ud2trydtdn.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ueteymwu85ud2trydtdn.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626176/uploads/src4dexcj0jzohcllwqe.png",
+      "type": "image",
+      "input": {
+       "seed": 948460,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/src4dexcj0jzohcllwqe.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/src4dexcj0jzohcllwqe",
+      "visualId": "f3478c192436778b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/src4dexcj0jzohcllwqe.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/src4dexcj0jzohcllwqe.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744626256/uploads/ok6lnjzdm3uqqsociuqi.png",
+      "type": "image",
+      "input": {
+       "seed": 639474,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744625650/uploads/lqdgyeqtggvubwuuay8t.png",
+        "type": "image",
+        "input": {
+         "seed": 677295,
+         "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain",
+         "strength": 0.85,
+         "image_size": "portrait_4_3",
+         "num_images": 4,
+         "output_format": "png",
+         "guidance_scale": 3.5,
+         "num_inference_steps": 40,
+         "enable_safety_checker": false
+        },
+        "width": 768,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/lqdgyeqtggvubwuuay8t",
+        "visualId": "f247ce9bcc2ccc30",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/lqdgyeqtggvubwuuay8t.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/lqdgyeqtggvubwuuay8t.jpg?_a=BAMCcSfi0"
+       },
+       "steps": 50,
+       "prompt": "light grey background",
+       "guidance": 3,
+       "outpaint": "Zoom out 1.5x",
+       "output_format": "png",
+       "safety_tolerance": 6
+      },
+      "width": 1080,
+      "height": 1440,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/ok6lnjzdm3uqqsociuqi",
+      "visualId": "f3468c19253433df",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ok6lnjzdm3uqqsociuqi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ok6lnjzdm3uqqsociuqi.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 4,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "steps": {
+      "max": 50,
+      "min": 1,
+      "type": "integer",
+      "order": 5,
+      "title": "Steps",
+      "default": 50,
+      "required": false,
+      "description": "Number of diffusion steps. Higher values yield finer details but increase processing time."
+     },
+     "guidance": {
+      "max": 5,
+      "min": 2,
+      "type": "number",
+      "order": 7,
+      "title": "Guidance",
+      "default": 3,
+      "required": false,
+      "description": "Controls the balance between adherence to the text prompt and image quality/diversity. Higher values make the output more closely match the prompt but may reduce overall image quality. Lower values allow for more creative freedom but might produce results less relevant to the prompt."
+     },
+     "outpaint": {
+      "type": "enum",
+      "order": 3,
+      "title": "Outpaint",
+      "default": "None",
+      "options": [
+       "Zoom out 1.5x",
+       "Zoom out 2x",
+       "Make square",
+       "Left outpaint",
+       "Right outpaint",
+       "Top outpaint",
+       "Bottom outpaint"
+      ],
+      "required": false,
+      "description": "A quick option for outpainting an input image. Mask will be ignored."
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 9,
+      "title": "Output Format",
+      "default": "jpg",
+      "options": [
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images."
+     },
+     "safety_tolerance": {
+      "max": 6,
+      "min": 1,
+      "type": "integer",
+      "order": 8,
+      "title": "Safety Tolerance",
+      "default": 2,
+      "required": false,
+      "description": "Safety tolerance, 1 is most strict and 6 is most permissive"
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "80383014-a947-45c9-a79a-52c4bef16a1e",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "The image to inpaint. Can contain an alpha mask. Must be jpeg, png, gif, or webp."
+      },
+      "prompt": {
+       "id": "de838eee-894a-4bb6-b2aa-2541a5af3d4f",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional outpainting model with state-of-the-art performance. Extend images with natural, seamless results.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 4
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Pro Outpaint"
+  },
+  {
+   "id": "ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5",
+   "isModel": false,
+   "type": "prompt_concat",
+   "position": {
+    "x": 360,
+    "y": 590
+   },
+   "data": {
+    "name": "Prompts Concatenator",
+    "color": "Yambo_Green",
+    "input": {
+     "prompt1": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached;",
+     "prompt2": "soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism."
+    },
+    "output": {
+     "type": "text",
+     "prompt": "a realistic photograph of a tall, dark-skinned man standing barefoot, wearing a sleek, well-fitted navy blue suit with a modern minimalist cut; the suit includes a buttoned-up shirt and straight-leg trousers, no tie; the man stands in a straight, composed posture with arms relaxed at his sides, shoulders squared, feet slightly apart; his expression is detached; soft studio lighting; clean, smooth light grey background with subtle shadows beneath his feet, high-resolution fashion editorial style, centered composition, minimalism. fine grain"
+    },
+    "result": {
+     "additionalPrompt": "fine grain"
+    },
+    "handles": {
+     "input": [
+      "prompt1",
+      "prompt2"
+     ],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "Concatenates multiple prompts to one output prompt.",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompts Concatenator"
+  }
+ ],
+ "edges": [
+  {
+   "id": "reactflow__edge-ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5-output-prompt-bf09388f-8b7f-4f82-8eca-d9bed78b5601bf09388f-8b7f-4f82-8eca-d9bed78b5601-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5",
+   "target": "bf09388f-8b7f-4f82-8eca-d9bed78b5601",
+   "selected": false,
+   "sourceHandle": "ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5-output-prompt",
+   "targetHandle": "bf09388f-8b7f-4f82-8eca-d9bed78b5601-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-e4d5f267-93e2-4e2f-ab64-11acb0e31363e4d5f267-93e2-4e2f-ab64-11acb0e31363-output-prompt-ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5-input-prompt1",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "e4d5f267-93e2-4e2f-ab64-11acb0e31363",
+   "target": "ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5",
+   "selected": false,
+   "sourceHandle": "e4d5f267-93e2-4e2f-ab64-11acb0e31363-output-prompt",
+   "targetHandle": "ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5-input-prompt1"
+  },
+  {
+   "id": "reactflow__edge-92feec45-6198-4485-ba50-f463734f644692feec45-6198-4485-ba50-f463734f6446-output-prompt-ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5-input-prompt2",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "92feec45-6198-4485-ba50-f463734f6446",
+   "target": "ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5",
+   "selected": false,
+   "sourceHandle": "92feec45-6198-4485-ba50-f463734f6446-output-prompt",
+   "targetHandle": "ffbf55bc-d87f-4d4b-92a0-3aabdfe99bf5-input-prompt2"
+  },
+  {
+   "id": "reactflow__edge-e4d5f267-93e2-4e2f-ab64-11acb0e31363e4d5f267-93e2-4e2f-ab64-11acb0e31363-output-prompt-b74287ea-c216-42fd-a93b-e0aa269533e9b74287ea-c216-42fd-a93b-e0aa269533e9-input-in",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "e4d5f267-93e2-4e2f-ab64-11acb0e31363",
+   "target": "b74287ea-c216-42fd-a93b-e0aa269533e9",
+   "selected": false,
+   "sourceHandle": "e4d5f267-93e2-4e2f-ab64-11acb0e31363-output-prompt",
+   "targetHandle": "b74287ea-c216-42fd-a93b-e0aa269533e9-input-in"
+  },
+  {
+   "id": "reactflow__edge-b74287ea-c216-42fd-a93b-e0aa269533e9b74287ea-c216-42fd-a93b-e0aa269533e9-output-out-6dfbb0e3-18a6-4cd3-be38-973a9e9014a56dfbb0e3-18a6-4cd3-be38-973a9e9014a5-input-prompt1",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "b74287ea-c216-42fd-a93b-e0aa269533e9",
+   "target": "6dfbb0e3-18a6-4cd3-be38-973a9e9014a5",
+   "selected": false,
+   "sourceHandle": "b74287ea-c216-42fd-a93b-e0aa269533e9-output-out",
+   "targetHandle": "6dfbb0e3-18a6-4cd3-be38-973a9e9014a5-input-prompt1"
+  },
+  {
+   "id": "reactflow__edge-e5dd4b76-b6d3-4d10-b2df-501ae4f47780e5dd4b76-b6d3-4d10-b2df-501ae4f47780-output-prompt-6dfbb0e3-18a6-4cd3-be38-973a9e9014a56dfbb0e3-18a6-4cd3-be38-973a9e9014a5-input-prompt2",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "e5dd4b76-b6d3-4d10-b2df-501ae4f47780",
+   "target": "6dfbb0e3-18a6-4cd3-be38-973a9e9014a5",
+   "selected": false,
+   "sourceHandle": "e5dd4b76-b6d3-4d10-b2df-501ae4f47780-output-prompt",
+   "targetHandle": "6dfbb0e3-18a6-4cd3-be38-973a9e9014a5-input-prompt2"
+  },
+  {
+   "id": "reactflow__edge-089704a6-2f92-4de3-b857-77e15ea5fc2f089704a6-2f92-4de3-b857-77e15ea5fc2f-output-out-9eac8c32-0399-4c76-ab44-511900c1cdf69eac8c32-0399-4c76-ab44-511900c1cdf6-input-image",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "089704a6-2f92-4de3-b857-77e15ea5fc2f",
+   "target": "9eac8c32-0399-4c76-ab44-511900c1cdf6",
+   "selected": false,
+   "sourceHandle": "089704a6-2f92-4de3-b857-77e15ea5fc2f-output-out",
+   "targetHandle": "9eac8c32-0399-4c76-ab44-511900c1cdf6-input-image"
+  },
+  {
+   "id": "reactflow__edge-6dfbb0e3-18a6-4cd3-be38-973a9e9014a56dfbb0e3-18a6-4cd3-be38-973a9e9014a5-output-prompt-9eac8c32-0399-4c76-ab44-511900c1cdf69eac8c32-0399-4c76-ab44-511900c1cdf6-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "6dfbb0e3-18a6-4cd3-be38-973a9e9014a5",
+   "target": "9eac8c32-0399-4c76-ab44-511900c1cdf6",
+   "selected": false,
+   "sourceHandle": "6dfbb0e3-18a6-4cd3-be38-973a9e9014a5-output-prompt",
+   "targetHandle": "9eac8c32-0399-4c76-ab44-511900c1cdf6-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-bf09388f-8b7f-4f82-8eca-d9bed78b5601bf09388f-8b7f-4f82-8eca-d9bed78b5601-output-result-efe82abf-890a-43e3-94a3-196fe3fb7bf3efe82abf-890a-43e3-94a3-196fe3fb7bf3-input-image",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "bf09388f-8b7f-4f82-8eca-d9bed78b5601",
+   "target": "efe82abf-890a-43e3-94a3-196fe3fb7bf3",
+   "selected": false,
+   "sourceHandle": "bf09388f-8b7f-4f82-8eca-d9bed78b5601-output-result",
+   "targetHandle": "efe82abf-890a-43e3-94a3-196fe3fb7bf3-input-image"
+  },
+  {
+   "id": "reactflow__edge-8331cce1-aea5-4db4-8b27-03daa8d055968331cce1-aea5-4db4-8b27-03daa8d05596-output-prompt-efe82abf-890a-43e3-94a3-196fe3fb7bf3efe82abf-890a-43e3-94a3-196fe3fb7bf3-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "8331cce1-aea5-4db4-8b27-03daa8d05596",
+   "target": "efe82abf-890a-43e3-94a3-196fe3fb7bf3",
+   "sourceHandle": "8331cce1-aea5-4db4-8b27-03daa8d05596-output-prompt",
+   "targetHandle": "efe82abf-890a-43e3-94a3-196fe3fb7bf3-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-efe82abf-890a-43e3-94a3-196fe3fb7bf3efe82abf-890a-43e3-94a3-196fe3fb7bf3-output-result-089704a6-2f92-4de3-b857-77e15ea5fc2f089704a6-2f92-4de3-b857-77e15ea5fc2f-input-in",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "efe82abf-890a-43e3-94a3-196fe3fb7bf3",
+   "target": "089704a6-2f92-4de3-b857-77e15ea5fc2f",
+   "selected": false,
+   "sourceHandle": "efe82abf-890a-43e3-94a3-196fe3fb7bf3-output-result",
+   "targetHandle": "089704a6-2f92-4de3-b857-77e15ea5fc2f-input-in"
+  },
+  {
+   "id": "cb4751d1-5235-43f6-9154-473e410c48f3",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "1d994f31-97d7-444d-8e9e-b9e2455acd23",
+   "target": "c2fe21e0-b438-4444-929e-7afd49081e48",
+   "selected": false,
+   "sourceHandle": "1d994f31-97d7-444d-8e9e-b9e2455acd23-output-prompt",
+   "targetHandle": "c2fe21e0-b438-4444-929e-7afd49081e48-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-b74287ea-c216-42fd-a93b-e0aa269533e9b74287ea-c216-42fd-a93b-e0aa269533e9-output-out-1d994f31-97d7-444d-8e9e-b9e2455acd231d994f31-97d7-444d-8e9e-b9e2455acd23-input-prompt1",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "b74287ea-c216-42fd-a93b-e0aa269533e9",
+   "target": "1d994f31-97d7-444d-8e9e-b9e2455acd23",
+   "selected": false,
+   "sourceHandle": "b74287ea-c216-42fd-a93b-e0aa269533e9-output-out",
+   "targetHandle": "1d994f31-97d7-444d-8e9e-b9e2455acd23-input-prompt1"
+  },
+  {
+   "id": "5de17644-d0c3-4b92-b094-67e6036a689c",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "b4b4accc-59a5-4fd6-9108-c6380d7c4b02",
+   "target": "1d994f31-97d7-444d-8e9e-b9e2455acd23",
+   "selected": false,
+   "sourceHandle": "b4b4accc-59a5-4fd6-9108-c6380d7c4b02-output-prompt",
+   "targetHandle": "1d994f31-97d7-444d-8e9e-b9e2455acd23-input-prompt2"
+  },
+  {
+   "id": "reactflow__edge-089704a6-2f92-4de3-b857-77e15ea5fc2f089704a6-2f92-4de3-b857-77e15ea5fc2f-output-out-c2fe21e0-b438-4444-929e-7afd49081e48c2fe21e0-b438-4444-929e-7afd49081e48-input-image",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "089704a6-2f92-4de3-b857-77e15ea5fc2f",
+   "target": "c2fe21e0-b438-4444-929e-7afd49081e48",
+   "selected": false,
+   "sourceHandle": "089704a6-2f92-4de3-b857-77e15ea5fc2f-output-out",
+   "targetHandle": "c2fe21e0-b438-4444-929e-7afd49081e48-input-image"
+  },
+  {
+   "id": "reactflow__edge-c2fe21e0-b438-4444-929e-7afd49081e48c2fe21e0-b438-4444-929e-7afd49081e48-output-result-be739883-fab6-4c0a-93c3-2823a9fb5b73be739883-fab6-4c0a-93c3-2823a9fb5b73-input-input_image",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "c2fe21e0-b438-4444-929e-7afd49081e48",
+   "target": "be739883-fab6-4c0a-93c3-2823a9fb5b73",
+   "sourceHandle": "c2fe21e0-b438-4444-929e-7afd49081e48-output-result",
+   "targetHandle": "be739883-fab6-4c0a-93c3-2823a9fb5b73-input-input_image"
+  },
+  {
+   "id": "reactflow__edge-9eac8c32-0399-4c76-ab44-511900c1cdf69eac8c32-0399-4c76-ab44-511900c1cdf6-output-result-19ca324d-4f93-48c1-b4e1-8091cffdafdc19ca324d-4f93-48c1-b4e1-8091cffdafdc-input-input_image",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "9eac8c32-0399-4c76-ab44-511900c1cdf6",
+   "target": "19ca324d-4f93-48c1-b4e1-8091cffdafdc",
+   "sourceHandle": "9eac8c32-0399-4c76-ab44-511900c1cdf6-output-result",
+   "targetHandle": "19ca324d-4f93-48c1-b4e1-8091cffdafdc-input-input_image"
+  },
+  {
+   "id": "reactflow__edge-b6129af6-a5fe-4504-8418-90331f9c989eb6129af6-a5fe-4504-8418-90331f9c989e-output-out-19ca324d-4f93-48c1-b4e1-8091cffdafdc19ca324d-4f93-48c1-b4e1-8091cffdafdc-input-swap_image",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "b6129af6-a5fe-4504-8418-90331f9c989e",
+   "target": "19ca324d-4f93-48c1-b4e1-8091cffdafdc",
+   "sourceHandle": "b6129af6-a5fe-4504-8418-90331f9c989e-output-out",
+   "targetHandle": "19ca324d-4f93-48c1-b4e1-8091cffdafdc-input-swap_image"
+  },
+  {
+   "id": "reactflow__edge-b6129af6-a5fe-4504-8418-90331f9c989eb6129af6-a5fe-4504-8418-90331f9c989e-output-out-be739883-fab6-4c0a-93c3-2823a9fb5b73be739883-fab6-4c0a-93c3-2823a9fb5b73-input-swap_image",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "b6129af6-a5fe-4504-8418-90331f9c989e",
+   "target": "be739883-fab6-4c0a-93c3-2823a9fb5b73",
+   "sourceHandle": "b6129af6-a5fe-4504-8418-90331f9c989e-output-out",
+   "targetHandle": "be739883-fab6-4c0a-93c3-2823a9fb5b73-input-swap_image"
+  },
+  {
+   "id": "reactflow__edge-bf09388f-8b7f-4f82-8eca-d9bed78b5601bf09388f-8b7f-4f82-8eca-d9bed78b5601-output-result-4c4e24dd-6a2d-41b0-ad85-f883c6eba2514c4e24dd-6a2d-41b0-ad85-f883c6eba251-input-image",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "bf09388f-8b7f-4f82-8eca-d9bed78b5601",
+   "target": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251",
+   "sourceHandle": "bf09388f-8b7f-4f82-8eca-d9bed78b5601-output-result",
+   "targetHandle": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251-input-image"
+  },
+  {
+   "id": "reactflow__edge-4c4e24dd-6a2d-41b0-ad85-f883c6eba2514c4e24dd-6a2d-41b0-ad85-f883c6eba251-output-result-b6129af6-a5fe-4504-8418-90331f9c989eb6129af6-a5fe-4504-8418-90331f9c989e-input-in",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251",
+   "target": "b6129af6-a5fe-4504-8418-90331f9c989e",
+   "sourceHandle": "4c4e24dd-6a2d-41b0-ad85-f883c6eba251-output-result",
+   "targetHandle": "b6129af6-a5fe-4504-8418-90331f9c989e-input-in"
+  }
+ ],
+ "latestVersion": {
+  "version": 1,
+  "createdAt": "2025-04-16T11:09:22.508Z"
+ },
+ "latestPublishedVersion": null,
+ "showcaseOrder": null,
+ "showcase": null,
+ "designAppMetadata": null,
+ "v3": null,
+ "batchRuns": [],
+ "folderId": "987d87c4-ed1d-4cc3-be7d-5c1d48dde83c",
+ "scope": "WORKSPACE",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

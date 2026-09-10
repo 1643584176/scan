@@ -1,0 +1,4194 @@
+{
+ "id": "dIjHiwG4WWVtodBraoA2",
+ "name": "Generate from multiple models",
+ "owner": "H822bxaJlpcStHwreI5drYHEWHX2",
+ "workspaceId": "aa036063-b614-4016-947f-a556884dae9e",
+ "organizationId": "849e299a-54a0-41ad-be8c-48617c59c577",
+ "visibility": "public",
+ "sharedUsers": [],
+ "poster": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637427/uploads/nlwzbyfech1mjhjkgxv2.png",
+ "userPoster": true,
+ "createdAt": "2025-04-14T13:39:55.673Z",
+ "updatedAt": "2025-09-15T12:50:24.359Z",
+ "publishedVersions": [],
+ "version": 1,
+ "nodes": [
+  {
+   "id": "0b202eb7-1c64-49aa-b905-9b7ca2152c71",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 2390,
+    "y": 2330
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Recraft V3 (Red Panda)"
+    },
+    "name": "Recraft V3 (Red Panda)",
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "model": {
+     "name": "recraft-ai/recraft-v3",
+     "label": "",
+     "version": "5a5970827138fb94ff24a7583baa4ae9a000bfb38836f915816761de4f480fd5"
+    },
+    "output": {
+     "result": {
+      "id": "f893bb80-7032-4f10-b341-8645d94c00be",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740817/uploads/inj72kry7dccffrqrr2q.webp",
+      "type": "image",
+      "input": {
+       "size": "1024x1024",
+       "style": "any",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/inj72kry7dccffrqrr2q.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/inj72kry7dccffrqrr2q",
+      "visualId": "c832616f3e390dae",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/inj72kry7dccffrqrr2q.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/inj72kry7dccffrqrr2q.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "size": "1024x1024",
+     "style": "any",
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "result": [
+     {
+      "id": "eeb492fb-8b62-4cec-9445-40a5a69967cf",
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1731834552/uploads/ury1cxagqpt6pmla4m7j.webp",
+      "type": "image",
+      "input": {
+       "prompt": "a painting of a sheep"
+      },
+      "width": 1024,
+      "height": 1024,
+      "params": {
+       "size": "1024x1024",
+       "style": "any",
+       "prompt": "a painting of a sheep"
+      },
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ury1cxagqpt6pmla4m7j.png?_a=BAMCcSfi0",
+      "publicId": "uploads/ury1cxagqpt6pmla4m7j",
+      "visualId": "c3bde4aa1d76088b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ury1cxagqpt6pmla4m7j.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ury1cxagqpt6pmla4m7j.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "5ca341e4-1d57-4b88-9497-b68e23073793",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919397/uploads/hgtitmafh6sytrhb8mbq.webp",
+      "type": "image",
+      "input": {
+       "size": "1024x1024",
+       "style": "any",
+       "prompt": "A monochromatic portrait of a young asian trans individual, captured in a side profile. The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/hgtitmafh6sytrhb8mbq.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hgtitmafh6sytrhb8mbq",
+      "visualId": "9f6e3032ed993264",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/hgtitmafh6sytrhb8mbq.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/hgtitmafh6sytrhb8mbq.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "a3516242-472d-41ec-bd34-78a641de0bfc",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919502/uploads/un1diyp0f6wafkyjtf8r.webp",
+      "type": "image",
+      "input": {
+       "size": "1024x1024",
+       "style": "any",
+       "prompt": "screen capture, a monochromatic portrait of a young trans individual, captured in a side profile. subtitles say \"this is the book i love to read\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/un1diyp0f6wafkyjtf8r.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/un1diyp0f6wafkyjtf8r",
+      "visualId": "8f67b432ec991a89",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/un1diyp0f6wafkyjtf8r.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/un1diyp0f6wafkyjtf8r.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "9f4048bd-a3b7-4b7c-982d-d593a42d386f",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919676/uploads/wrocor1jxpfsjmoo54al.webp",
+      "type": "image",
+      "input": {
+       "size": "1024x1024",
+       "style": "any",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable. The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/wrocor1jxpfsjmoo54al.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/wrocor1jxpfsjmoo54al",
+      "visualId": "8363bc5bcc90e365",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/wrocor1jxpfsjmoo54al.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/wrocor1jxpfsjmoo54al.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "da7231b0-5342-4641-8ff0-cff184fc1604",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637407/uploads/cyuftaqlp0kfzweuptb3.webp",
+      "type": "image",
+      "input": {
+       "size": "1024x1024",
+       "style": "any",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/cyuftaqlp0kfzweuptb3.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/cyuftaqlp0kfzweuptb3",
+      "visualId": "9e4e3b24593b31b1",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/cyuftaqlp0kfzweuptb3.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/cyuftaqlp0kfzweuptb3.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "f893bb80-7032-4f10-b341-8645d94c00be",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740817/uploads/inj72kry7dccffrqrr2q.webp",
+      "type": "image",
+      "input": {
+       "size": "1024x1024",
+       "style": "any",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/inj72kry7dccffrqrr2q.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/inj72kry7dccffrqrr2q",
+      "visualId": "c832616f3e390dae",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/inj72kry7dccffrqrr2q.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/inj72kry7dccffrqrr2q.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "size": {
+      "type": "enum",
+      "order": 1,
+      "title": "Size",
+      "default": "1024x1024",
+      "options": [
+       "1024x1024",
+       "1365x1024",
+       "1024x1365",
+       "1536x1024",
+       "1024x1536",
+       "1820x1024",
+       "1024x1820",
+       "1024x2048",
+       "2048x1024",
+       "1434x1024",
+       "1024x1434",
+       "1024x1280",
+       "1280x1024",
+       "1024x1707",
+       "1707x1024"
+      ],
+      "required": false,
+      "description": "Width and height of the generated image"
+     },
+     "style": {
+      "type": "enum",
+      "order": 2,
+      "title": "Style",
+      "default": "any",
+      "options": [
+       "any",
+       "realistic_image",
+       "digital_illustration",
+       "digital_illustration/pixel_art",
+       "digital_illustration/hand_drawn",
+       "digital_illustration/grain",
+       "digital_illustration/infantile_sketch",
+       "digital_illustration/2d_art_poster",
+       "digital_illustration/handmade_3d",
+       "digital_illustration/hand_drawn_outline",
+       "digital_illustration/engraving_color",
+       "digital_illustration/2d_art_poster_2",
+       "realistic_image/b_and_w",
+       "realistic_image/hard_flash",
+       "realistic_image/hdr",
+       "realistic_image/natural_light",
+       "realistic_image/studio_portrait",
+       "realistic_image/enterprise",
+       "realistic_image/motion_blur"
+      ],
+      "required": false,
+      "description": "Style of the generated image."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "3bc220aa-d38b-43c0-a366-ce576cf68072",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Recraft v3 (code-named red_panda) is a state-of-the-art text-to-image.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 5
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Recraft V3 (Red Panda)"
+  },
+  {
+   "id": "24566069-61e8-4715-8532-b923a21efce2",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1890,
+    "y": 1110
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux Pro 1.1 Ultra"
+    },
+    "name": "Flux Pro 1.1 Ultra",
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "model": {
+     "name": "black-forest-labs/flux-1.1-pro-ultra",
+     "label": "",
+     "version": "dc614139a59d6ea30f020e0eedbe26c368f0bedea9d687285732af9f60cf4fe6"
+    },
+    "output": {
+     "result": {
+      "id": "dc647695-b149-4396-a168-ce406678a9a6",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740824/uploads/jbnnm3ob33eyandibkve.png",
+      "type": "image",
+      "input": {
+       "raw": true,
+       "seed": 369427,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "image_prompt": "",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "image_prompt_strength": 0.1
+      },
+      "width": 2048,
+      "height": 2048,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/jbnnm3ob33eyandibkve.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/jbnnm3ob33eyandibkve",
+      "visualId": "db3d700ed7641b18",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/jbnnm3ob33eyandibkve.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/jbnnm3ob33eyandibkve.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "raw": true,
+     "seed": {
+      "seed": 369427,
+      "isRandom": true
+     },
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "aspect_ratio": "1:1",
+     "output_format": "png",
+     "safety_tolerance": 6,
+     "image_prompt_strength": 0.1
+    },
+    "result": [
+     {
+      "id": "48726d01-2a57-4e49-ba0c-2e38a63d4624",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744638017/uploads/rjdhkr8oplp0h9d05lde.png",
+      "type": "image",
+      "input": {
+       "raw": true,
+       "seed": 621571,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "image_prompt": "",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "image_prompt_strength": 0.1
+      },
+      "width": 2048,
+      "height": 2048,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/rjdhkr8oplp0h9d05lde.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/rjdhkr8oplp0h9d05lde",
+      "visualId": "99596a74b6251b4e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/rjdhkr8oplp0h9d05lde.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/rjdhkr8oplp0h9d05lde.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "dc647695-b149-4396-a168-ce406678a9a6",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740824/uploads/jbnnm3ob33eyandibkve.png",
+      "type": "image",
+      "input": {
+       "raw": true,
+       "seed": 369427,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "image_prompt": "",
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "image_prompt_strength": 0.1
+      },
+      "width": 2048,
+      "height": 2048,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/jbnnm3ob33eyandibkve.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/jbnnm3ob33eyandibkve",
+      "visualId": "db3d700ed7641b18",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/jbnnm3ob33eyandibkve.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/jbnnm3ob33eyandibkve.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "raw": {
+      "type": "boolean",
+      "order": 6,
+      "title": "Raw",
+      "default": false,
+      "required": false,
+      "description": "Generate less processed, more natural-looking images"
+     },
+     "seed": {
+      "type": "seed",
+      "order": 5,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 3,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "21:9",
+       "16:9",
+       "3:2",
+       "4:3",
+       "5:4",
+       "1:1",
+       "4:5",
+       "3:4",
+       "2:3",
+       "9:16",
+       "9:21"
+      ],
+      "required": false,
+      "description": "Aspect ratio for the generated image"
+     },
+     "image_prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Image Prompt",
+      "format": "uri",
+      "required": false,
+      "description": "Image to use with Flux Redux. This is used together with the text prompt to guide the generation towards the composition of the image_prompt. Must be jpeg, png, or webp."
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 7,
+      "title": "Output Format",
+      "default": "jpg",
+      "options": [
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images."
+     },
+     "safety_tolerance": {
+      "max": 6,
+      "min": 1,
+      "type": "integer",
+      "order": 4,
+      "title": "Safety Tolerance",
+      "default": 2,
+      "required": false,
+      "description": "Safety tolerance, 1 is most strict and 6 is most permissive"
+     },
+     "image_prompt_strength": {
+      "max": 1,
+      "min": 0,
+      "type": "number",
+      "order": 2,
+      "title": "Image Prompt Strength",
+      "default": 0.1,
+      "required": false,
+      "description": "Blend between the prompt and the image prompt."
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "cb1a098d-9e31-4e9b-9460-03141f483ac9",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "image_prompt": {
+       "id": "b38eaaa8-fbc2-481a-9802-9d324d1960d9",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Image to use with Flux Redux. This is used together with the text prompt to guide the generation towards the composition of the image_prompt. Must be jpeg, png, or webp."
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "FLUX1.1 [pro] in ultra and raw modes. Images are up to 4 megapixels. Use raw mode for realism.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 1
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Pro 1.1 Ultra"
+  },
+  {
+   "id": "29079b1e-905c-4145-b700-9e7f9cd84e21",
+   "isModel": true,
+   "type": "br_text2image",
+   "position": {
+    "x": 2400,
+    "y": 1110
+   },
+   "data": {
+    "name": "Bria",
+    "color": "Yambo_Purple",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "model": {
+     "name": "br_text2image"
+    },
+    "output": {
+     "result": {
+      "id": "a2bef9aa-c197-4cfc-924d-67eb96796597",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "input": {
+       "seed": 406526,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "steps_num": 30,
+       "num_results": 1,
+       "aspect_ratio": "1:1",
+       "prompt_enhancement": true,
+       "text_guidance_scale": 5
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "visualId": "8c531222735a6b7f",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 406526,
+      "isRandom": true
+     },
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "steps_num": 30,
+     "num_results": 1,
+     "aspect_ratio": "1:1",
+     "prompt_enhancement": true,
+     "text_guidance_scale": 5
+    },
+    "result": [
+     {
+      "id": "f81b0115-e749-4544-9e66-3e5f3796f47f",
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1731834558/uploads/ia0o0czswgmj6qkraels.png",
+      "type": "image",
+      "input": {
+       "prompt": "a painting of a sheep"
+      },
+      "width": 1024,
+      "height": 1024,
+      "params": {
+       "seed": 321639,
+       "steps_num": 30,
+       "num_results": 1,
+       "aspect_ratio": "1:1",
+       "prompt_enhancement": true,
+       "text_guidance_scale": 5
+      },
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/ia0o0czswgmj6qkraels.png?_a=BAMCcSfi0",
+      "publicId": "uploads/ia0o0czswgmj6qkraels",
+      "visualId": "f89463e186cf6c1c",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/ia0o0czswgmj6qkraels.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/ia0o0czswgmj6qkraels.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "4ad75194-9f5c-4fc8-b823-93f9f557f4bc",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919396/uploads/xr8tys6tkkxegcrgi69d.png",
+      "type": "image",
+      "input": {
+       "seed": 110099,
+       "prompt": "A monochromatic portrait of a young asian trans individual, captured in a side profile. The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "steps_num": 30,
+       "num_results": 1,
+       "aspect_ratio": "1:1",
+       "prompt_enhancement": true,
+       "text_guidance_scale": 5
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/xr8tys6tkkxegcrgi69d.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/xr8tys6tkkxegcrgi69d",
+      "visualId": "966649921dcd66b3",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/xr8tys6tkkxegcrgi69d.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/xr8tys6tkkxegcrgi69d.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "3a48c8d7-a56f-4dca-82e0-916cd64421d4",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919490/uploads/yg48cgnjmf0m750imozg.png",
+      "type": "image",
+      "input": {
+       "seed": 631322,
+       "prompt": "screen capture, a monochromatic portrait of a young trans individual, captured in a side profile. subtitles say \"this is the book i love to read\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "steps_num": 30,
+       "num_results": 1,
+       "aspect_ratio": "1:1",
+       "prompt_enhancement": true,
+       "text_guidance_scale": 5
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/yg48cgnjmf0m750imozg.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/yg48cgnjmf0m750imozg",
+      "visualId": "da3c33c726f2034e",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/yg48cgnjmf0m750imozg.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/yg48cgnjmf0m750imozg.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "a092927b-55ce-49bd-b088-bb2f9560802c",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919661/uploads/bvyflvjajk83lcyprn7r.png",
+      "type": "image",
+      "input": {
+       "seed": 593373,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable. The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "steps_num": 30,
+       "num_results": 1,
+       "aspect_ratio": "1:1",
+       "prompt_enhancement": true,
+       "text_guidance_scale": 5
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/bvyflvjajk83lcyprn7r.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/bvyflvjajk83lcyprn7r",
+      "visualId": "803d74e327da6cc6",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/bvyflvjajk83lcyprn7r.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/bvyflvjajk83lcyprn7r.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "a2bef9aa-c197-4cfc-924d-67eb96796597",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "input": {
+       "seed": 406526,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "steps_num": 30,
+       "num_results": 1,
+       "aspect_ratio": "1:1",
+       "prompt_enhancement": true,
+       "text_guidance_scale": 5
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "visualId": "8c531222735a6b7f",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "b9b98c87-e423-4575-b5b6-1f875866d49e",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740819/uploads/as5kkdablrpmvrk441az.png",
+      "type": "image",
+      "input": {
+       "seed": 762370,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "steps_num": 30,
+       "num_results": 1,
+       "aspect_ratio": "1:1",
+       "prompt_enhancement": true,
+       "text_guidance_scale": 5
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/as5kkdablrpmvrk441az.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/as5kkdablrpmvrk441az",
+      "visualId": "803978e273f0c7c7",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/as5kkdablrpmvrk441az.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/as5kkdablrpmvrk441az.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 4,
+      "title": "Seed",
+      "default": {
+       "seed": 3998457,
+       "isRandom": true
+      },
+      "description": "Uncheck to keep the same result"
+     },
+     "steps_num": {
+      "max": 50,
+      "min": 20,
+      "type": "integer",
+      "order": 2,
+      "title": "Number of Steps",
+      "default": 30,
+      "description": "The number of iterations the model goes through to refine the generated image."
+     },
+     "num_results": {
+      "max": 4,
+      "min": 1,
+      "type": "integer",
+      "order": 0,
+      "title": "Number of Results",
+      "default": 1,
+      "description": "Number of generated images on each run"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 0,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "2:3",
+       "3:4",
+       "4:5",
+       "9:16",
+       "16:9",
+       "5:4",
+       "4:3",
+       "3:2"
+      ],
+      "description": "The aspect ratio of the image."
+     },
+     "prompt_enhancement": {
+      "type": "boolean",
+      "order": 3,
+      "title": "prompt_enhancement",
+      "default": true,
+      "description": "Enhances the provided prompt by generating additional, more descriptive variations, resulting in more diverse and creative output images"
+     },
+     "text_guidance_scale": {
+      "max": 10,
+      "min": 1,
+      "type": "number",
+      "order": 1,
+      "title": "text_guidance_scale",
+      "default": 5,
+      "description": "Determines how closely the generated image should adhere to the input text description."
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "x1047uc6W0y9SYTDerv2",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Prompt for the generated image"
+      },
+      "negative_prompt": {
+       "id": "AkaI7eQ6KbpPv1rt1APN",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "What should not be included in the generated image"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Generate images using Bria model",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 4
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Bria"
+  },
+  {
+   "id": "8cf3533c-8dc3-4518-8d99-59293c2d085b",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 3870,
+    "y": 1750
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Generate using same Image with multiple video models, "
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "944c0002-8b78-48cd-bfdd-e9e028d092f4",
+   "isModel": true,
+   "type": "ig_text2image",
+   "position": {
+    "x": 2930,
+    "y": 1710
+   },
+   "data": {
+    "name": "Ideogram V2",
+    "color": "Yambo_Purple",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "model": {
+     "name": "ig_text2image"
+    },
+    "output": {
+     "result": {
+      "id": "bb8bfae1-f168-48f0-983c-5ce939f4ec5b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740829/uploads/sz0myc0dn5n6wlqzruri.png",
+      "type": "image",
+      "input": {
+       "seed": 413774,
+       "model": "V_2",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "style_type": "REALISTIC",
+       "aspect_ratio": "ASPECT_1_1",
+       "image_weight": 50,
+       "magic_prompt_option": "ON"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/sz0myc0dn5n6wlqzruri.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/sz0myc0dn5n6wlqzruri",
+      "visualId": "ee2bb11ef88386e0",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/sz0myc0dn5n6wlqzruri.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/sz0myc0dn5n6wlqzruri.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 413774,
+      "isRandom": true
+     },
+     "model": "V_2",
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "style_type": "REALISTIC",
+     "aspect_ratio": "ASPECT_1_1",
+     "image_weight": 50,
+     "magic_prompt_option": "ON"
+    },
+    "result": [
+     {
+      "id": "df5000c9-f777-420b-aabc-f504ec64c724",
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1731834576/uploads/g4olzgjlds5hbzg5vrlj.png",
+      "type": "image",
+      "input": {
+       "prompt": "a painting of a sheep"
+      },
+      "width": 1024,
+      "height": 1024,
+      "params": {
+       "seed": 493793,
+       "model": "V_2",
+       "style_type": "REALISTIC",
+       "aspect_ratio": "ASPECT_1_1",
+       "image_weight": 50,
+       "magic_prompt_option": "ON"
+      },
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/g4olzgjlds5hbzg5vrlj.png?_a=BAMCcSfi0",
+      "publicId": "uploads/g4olzgjlds5hbzg5vrlj",
+      "visualId": "e2c67662c0dab671",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/g4olzgjlds5hbzg5vrlj.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/g4olzgjlds5hbzg5vrlj.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "d9c043ec-2496-4087-b743-f203f076d4bc",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919482/uploads/t2jkwzheq9pfv5uce8p1.png",
+      "type": "image",
+      "input": {
+       "seed": 456725,
+       "model": "V_2",
+       "prompt": "A monochromatic portrait of a young asian trans individual, captured in a side profile. The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "style_type": "REALISTIC",
+       "aspect_ratio": "ASPECT_1_1",
+       "image_weight": 50,
+       "magic_prompt_option": "ON"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2jkwzheq9pfv5uce8p1.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/t2jkwzheq9pfv5uce8p1",
+      "visualId": "c51bb4670e9de20d",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2jkwzheq9pfv5uce8p1.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2jkwzheq9pfv5uce8p1.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "3bce8bcd-9e08-4db5-89c2-4affc3c501e7",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919681/uploads/o2d5jka8uyn4i1jvzckj.png",
+      "type": "image",
+      "input": {
+       "seed": 607940,
+       "model": "V_2",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable. The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "style_type": "REALISTIC",
+       "aspect_ratio": "ASPECT_1_1",
+       "image_weight": 50,
+       "magic_prompt_option": "ON"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/o2d5jka8uyn4i1jvzckj.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/o2d5jka8uyn4i1jvzckj",
+      "visualId": "8728bf355d8066e6",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/o2d5jka8uyn4i1jvzckj.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/o2d5jka8uyn4i1jvzckj.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "66fe721a-9f3e-4a51-81a1-01d73e2e4ee3",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637427/uploads/nlwzbyfech1mjhjkgxv2.png",
+      "type": "image",
+      "input": {
+       "seed": 746294,
+       "model": "V_2",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "style_type": "REALISTIC",
+       "aspect_ratio": "ASPECT_1_1",
+       "image_weight": 50,
+       "magic_prompt_option": "ON"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/nlwzbyfech1mjhjkgxv2.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/nlwzbyfech1mjhjkgxv2",
+      "visualId": "da19e166bb462c74",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/nlwzbyfech1mjhjkgxv2.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/nlwzbyfech1mjhjkgxv2.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "bb8bfae1-f168-48f0-983c-5ce939f4ec5b",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740829/uploads/sz0myc0dn5n6wlqzruri.png",
+      "type": "image",
+      "input": {
+       "seed": 413774,
+       "model": "V_2",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "style_type": "REALISTIC",
+       "aspect_ratio": "ASPECT_1_1",
+       "image_weight": 50,
+       "magic_prompt_option": "ON"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/sz0myc0dn5n6wlqzruri.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/sz0myc0dn5n6wlqzruri",
+      "visualId": "ee2bb11ef88386e0",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/sz0myc0dn5n6wlqzruri.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/sz0myc0dn5n6wlqzruri.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 5,
+      "title": "Seed",
+      "default": {
+       "seed": 2342367,
+       "isRandom": true
+      },
+      "description": "Uncheck to keep the same result\""
+     },
+     "model": {
+      "type": "enum",
+      "order": 0,
+      "title": "Model",
+      "default": "V_2",
+      "options": [
+       "V_2",
+       "V_2_TURBO"
+      ],
+      "description": "Which Ideogram model to run"
+     },
+     "style_type": {
+      "type": "enum",
+      "order": 3,
+      "title": "Style",
+      "default": "REALISTIC",
+      "options": [
+       "REALISTIC",
+       "GENERAL",
+       "DESIGN",
+       "RENDER_3D",
+       "ANIME"
+      ],
+      "description": "The style type to generate with"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 2,
+      "title": "Aspect Ratio",
+      "default": "ASPECT_1_1",
+      "options": [
+       "ASPECT_1_1",
+       "ASPECT_1_3",
+       "ASPECT_3_1",
+       "ASPECT_3_4",
+       "ASPECT_4_3",
+       "ASPECT_2_3",
+       "ASPECT_3_2",
+       "ASPECT_9_16",
+       "ASPECT_16_9",
+       "ASPECT_10_16",
+       "ASPECT_16_10"
+      ],
+      "description": "Aspect ration of the generated image"
+     },
+     "image_weight": {
+      "max": 100,
+      "min": 0,
+      "type": "integer",
+      "order": 6,
+      "title": "Reference Image Weight",
+      "default": 50,
+      "description": "If a reference image is connected, how much the reference image would affect the result"
+     },
+     "magic_prompt_option": {
+      "type": "enum",
+      "order": 1,
+      "title": "Enhance Prompt",
+      "default": "ON",
+      "options": [
+       "ON",
+       "OFF"
+      ],
+      "description": "Automatically enhance the given prompt"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "PJoOyKgiV59F8i1BvBdL",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Prompt for the generated image"
+      },
+      "negative_prompt": {
+       "id": "dXIRW7uYw91boIUPLAOf",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "What to exclude from the generated image"
+      },
+      "reference_image": {
+       "id": "m1UU0UV0reg5WfLpmO0k",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": "Refernce image for the generation"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Generate images using Ideogram",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 4
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Ideogram V2"
+  },
+  {
+   "id": "b2285aed-f935-4bdb-ab35-bce7b12d29aa",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 1425,
+    "y": 765
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Generate using same prompt with multiple image models"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "c8f200a4-74df-42ae-b143-6102d3050cdf",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 2910,
+    "y": 1120
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Stable Diffusion 3.5"
+    },
+    "name": "Stable Diffusion 3.5",
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "model": {
+     "name": "stability-ai/stable-diffusion-3.5-large",
+     "label": "",
+     "version": "e6c4657fe1b3f078fb26d68a1413bc8013e2b085504dd84a33e26e16fb95a593"
+    },
+    "output": {
+     "result": {
+      "id": "1f24a855-9ecb-4b8a-b626-8cd13187ed32",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740823/uploads/tpjm5rtlecs08dnbi7zq.png",
+      "type": "image",
+      "input": {
+       "cfg": 3.5,
+       "seed": 593019,
+       "image": "",
+       "steps": 35,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "output_format": "png",
+       "output_quality": 90,
+       "prompt_strength": 0.85
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/tpjm5rtlecs08dnbi7zq.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/tpjm5rtlecs08dnbi7zq",
+      "visualId": "976b311cc933c663",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/tpjm5rtlecs08dnbi7zq.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/tpjm5rtlecs08dnbi7zq.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "cfg": 3.5,
+     "seed": {
+      "seed": 593019,
+      "isRandom": true
+     },
+     "steps": 35,
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "aspect_ratio": "1:1",
+     "output_format": "png",
+     "output_quality": 90,
+     "prompt_strength": 0.85
+    },
+    "result": [
+     {
+      "id": "b4cfc171-4ebb-4972-a5f1-1cd0f3b4acc0",
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1731834586/uploads/uzmvfzacy5dxvkenpjys.png",
+      "type": "image",
+      "input": {
+       "prompt": "a painting of a sheep"
+      },
+      "width": 1024,
+      "height": 1024,
+      "params": {
+       "cfg": 3.5,
+       "seed": 257602,
+       "image": "",
+       "steps": 35,
+       "prompt": "a painting of a sheep",
+       "aspect_ratio": "1:1",
+       "output_format": "png",
+       "output_quality": 90,
+       "prompt_strength": 0.85
+      },
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/uzmvfzacy5dxvkenpjys.png?_a=BAMCcSfi0",
+      "publicId": "uploads/uzmvfzacy5dxvkenpjys",
+      "visualId": "bc8b26e7d42c0d4b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/uzmvfzacy5dxvkenpjys.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/uzmvfzacy5dxvkenpjys.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "65b9b54b-3422-4c60-9e76-a6cff8d0b2a9",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919393/uploads/gtpvr4ih8sov96vucadc.png",
+      "type": "image",
+      "input": {
+       "cfg": 3.5,
+       "seed": 338569,
+       "steps": 35,
+       "prompt": "A monochromatic portrait of a young asian trans individual, captured in a side profile. The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "output_format": "png",
+       "output_quality": 90,
+       "prompt_strength": 0.85
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/gtpvr4ih8sov96vucadc.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/gtpvr4ih8sov96vucadc",
+      "visualId": "956ab156c931b699",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/gtpvr4ih8sov96vucadc.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/gtpvr4ih8sov96vucadc.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "785a8310-27a8-4355-9310-42eb746b636d",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919493/uploads/xpugkyjs2ivakc33hdyw.png",
+      "type": "image",
+      "input": {
+       "cfg": 3.5,
+       "seed": 623819,
+       "steps": 35,
+       "prompt": "screen capture, a monochromatic portrait of a young trans individual, captured in a side profile. subtitles say \"this is the book i love to read\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "output_format": "png",
+       "output_quality": 90,
+       "prompt_strength": 0.85
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/xpugkyjs2ivakc33hdyw.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/xpugkyjs2ivakc33hdyw",
+      "visualId": "cf6197186c87da0d",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/xpugkyjs2ivakc33hdyw.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/xpugkyjs2ivakc33hdyw.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "63c75ee1-e452-4d43-a270-8bfcb8ce5518",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1737919663/uploads/x2oykuqeeisrvlt6xf1z.png",
+      "type": "image",
+      "input": {
+       "cfg": 3.5,
+       "seed": 97792,
+       "steps": 35,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable. The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "output_format": "png",
+       "output_quality": 90,
+       "prompt_strength": 0.85
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/x2oykuqeeisrvlt6xf1z.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/x2oykuqeeisrvlt6xf1z",
+      "visualId": "9c6e3432698dd31b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/x2oykuqeeisrvlt6xf1z.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/x2oykuqeeisrvlt6xf1z.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "49ae1c6d-7df9-45c5-80a9-80d5caff5ea2",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637422/uploads/fuffqusxymp3trpngxxi.png",
+      "type": "image",
+      "input": {
+       "cfg": 3.5,
+       "seed": 250143,
+       "image": "",
+       "steps": 35,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "output_format": "png",
+       "output_quality": 90,
+       "prompt_strength": 0.85
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/fuffqusxymp3trpngxxi.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/fuffqusxymp3trpngxxi",
+      "visualId": "996a643373499dc6",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/fuffqusxymp3trpngxxi.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/fuffqusxymp3trpngxxi.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "id": "1f24a855-9ecb-4b8a-b626-8cd13187ed32",
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1745740823/uploads/tpjm5rtlecs08dnbi7zq.png",
+      "type": "image",
+      "input": {
+       "cfg": 3.5,
+       "seed": 593019,
+       "image": "",
+       "steps": 35,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "output_format": "png",
+       "output_quality": 90,
+       "prompt_strength": 0.85
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/tpjm5rtlecs08dnbi7zq.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/tpjm5rtlecs08dnbi7zq",
+      "visualId": "976b311cc933c663",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/tpjm5rtlecs08dnbi7zq.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/tpjm5rtlecs08dnbi7zq.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "cfg": {
+      "max": 20,
+      "min": 0,
+      "type": "number",
+      "order": 2,
+      "title": "Cfg",
+      "default": 3.5,
+      "required": false,
+      "description": "The guidance scale tells the model how similar the output should be to the prompt."
+     },
+     "seed": {
+      "type": "seed",
+      "order": 6,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 3,
+      "title": "Image",
+      "format": "uri",
+      "required": false,
+      "description": "Input image for image to image mode. The aspect ratio of your output will match this image."
+     },
+     "steps": {
+      "max": 50,
+      "min": 1,
+      "type": "integer",
+      "order": 5,
+      "title": "Steps",
+      "default": 35,
+      "required": false,
+      "description": "Number of steps to run the sampler for."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "default": "",
+      "required": false,
+      "description": "Text prompt for image generation"
+     },
+     "aspect_ratio": {
+      "ref": "aspect_ratio",
+      "type": "enum",
+      "order": 1,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "16:9",
+       "21:9",
+       "3:2",
+       "2:3",
+       "4:5",
+       "5:4",
+       "3:4",
+       "4:3",
+       "9:16",
+       "9:21"
+      ],
+      "required": false,
+      "description": "The aspect ratio of your output image. This value is ignored if you are using an input image."
+     },
+     "output_format": {
+      "ref": "output_format",
+      "type": "enum",
+      "order": 7,
+      "title": "Output Format",
+      "default": "webp",
+      "options": [
+       "webp",
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images"
+     },
+     "output_quality": {
+      "max": 100,
+      "min": 0,
+      "type": "integer",
+      "order": 8,
+      "title": "Output Quality",
+      "default": 90,
+      "required": false,
+      "description": "Quality of the output images, from 0 to 100. 100 is best quality, 0 is lowest quality."
+     },
+     "prompt_strength": {
+      "max": 1,
+      "min": 0,
+      "type": "number",
+      "order": 4,
+      "title": "Prompt Strength",
+      "default": 0.85,
+      "required": false,
+      "description": "Prompt strength (or denoising strength) when using image to image. 1.0 corresponds to full destruction of information in image."
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "37f2098a-3b05-4e30-b0e1-4d43fc8e3b03",
+       "order": 3,
+       "format": "uri",
+       "required": false,
+       "description": "Input image for image to image mode. The aspect ratio of your output will match this image."
+      },
+      "prompt": {
+       "id": "24aa7f9b-2fc5-4e5e-a710-fadd826e717f",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "A text-to-image model that generates high-resolution images with fine details. It supports various artistic styles and produces diverse outputs from the same prompt.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 5
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Stable Diffusion 3.5"
+  },
+  {
+   "id": "f4750e1a-e6ed-40af-b3bc-fb4aa6b9bb1e",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 2930,
+    "y": 2340
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Ideogram V3"
+    },
+    "name": "Ideogram V3",
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": {
+     "name": "ideogram-ai/ideogram-v3-quality",
+     "version": "7a0ab9aed1a1a37b9857e3c4e684e499b9200270ba717449e69fc10940a2831c"
+    },
+    "output": {
+     "image": {
+      "id": "ba6de420-f746-4720-9a11-d44390f2bd66",
+      "url": "https://media.weavy.ai/image/upload/v1748181174/uploads/ra6uqchr6wyi7nftsgj1.png",
+      "type": "image",
+      "input": {
+       "mask": "",
+       "seed": 893065,
+       "image": "",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "resolution": "None",
+       "style_type": "None",
+       "aspect_ratio": "1:1",
+       "magic_prompt_option": "Auto",
+       "style_reference_images": ""
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/ra6uqchr6wyi7nftsgj1.png?_a=BAMCkGWO0",
+      "publicId": "uploads/ra6uqchr6wyi7nftsgj1",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/ra6uqchr6wyi7nftsgj1.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/ra6uqchr6wyi7nftsgj1.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "mask": "",
+     "seed": {
+      "seed": 893065,
+      "isRandom": true
+     },
+     "image": "",
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "resolution": "None",
+     "style_type": "None",
+     "aspect_ratio": "1:1",
+     "magic_prompt_option": "Auto",
+     "style_reference_images": ""
+    },
+    "result": [
+     {
+      "id": "ba6de420-f746-4720-9a11-d44390f2bd66",
+      "url": "https://media.weavy.ai/image/upload/v1748181174/uploads/ra6uqchr6wyi7nftsgj1.png",
+      "type": "image",
+      "input": {
+       "mask": "",
+       "seed": 893065,
+       "image": "",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "resolution": "None",
+       "style_type": "None",
+       "aspect_ratio": "1:1",
+       "magic_prompt_option": "Auto",
+       "style_reference_images": ""
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/ra6uqchr6wyi7nftsgj1.png?_a=BAMCkGWO0",
+      "publicId": "uploads/ra6uqchr6wyi7nftsgj1",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/ra6uqchr6wyi7nftsgj1.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/ra6uqchr6wyi7nftsgj1.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "mask": {
+      "type": "string",
+      "order": 5,
+      "title": "Mask",
+      "format": "uri",
+      "required": false,
+      "description": "A black and white image. Black pixels are inpainted, white pixels are preserved. The mask will be resized to match the image size."
+     },
+     "seed": {
+      "max": 2147483647,
+      "type": "seed",
+      "order": 8,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 4,
+      "title": "Image",
+      "format": "uri",
+      "required": false,
+      "description": "An image file to use for inpainting. You must also use a mask."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "resolution": {
+      "type": "enum",
+      "order": 2,
+      "title": "Resolution",
+      "default": "None",
+      "options": [
+       "None",
+       "512x1536",
+       "576x1408",
+       "576x1472",
+       "576x1536",
+       "640x1344",
+       "640x1408",
+       "640x1472",
+       "640x1536",
+       "704x1152",
+       "704x1216",
+       "704x1280",
+       "704x1344",
+       "704x1408",
+       "704x1472",
+       "736x1312",
+       "768x1088",
+       "768x1216",
+       "768x1280",
+       "768x1344",
+       "800x1280",
+       "832x960",
+       "832x1024",
+       "832x1088",
+       "832x1152",
+       "832x1216",
+       "832x1248",
+       "864x1152",
+       "896x960",
+       "896x1024",
+       "896x1088",
+       "896x1120",
+       "896x1152",
+       "960x832",
+       "960x896",
+       "960x1024",
+       "960x1088",
+       "1024x832",
+       "1024x896",
+       "1024x960",
+       "1024x1024",
+       "1088x768",
+       "1088x832",
+       "1088x896",
+       "1088x960",
+       "1120x896",
+       "1152x704",
+       "1152x832",
+       "1152x864",
+       "1152x896",
+       "1216x704",
+       "1216x768",
+       "1216x832",
+       "1248x832",
+       "1280x704",
+       "1280x768",
+       "1280x800",
+       "1312x736",
+       "1344x640",
+       "1344x704",
+       "1344x768",
+       "1408x576",
+       "1408x640",
+       "1408x704",
+       "1472x576",
+       "1472x640",
+       "1472x704",
+       "1536x512",
+       "1536x576",
+       "1536x640"
+      ],
+      "required": false,
+      "description": "Resolution. Overrides aspect ratio. Ignored if an inpainting image is given."
+     },
+     "style_type": {
+      "type": "enum",
+      "order": 6,
+      "title": "Style Type",
+      "default": "None",
+      "options": [
+       "None",
+       "Auto",
+       "General",
+       "Realistic",
+       "Design"
+      ],
+      "required": false,
+      "description": "The styles help define the specific aesthetic of the image you want to generate."
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 1,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:3",
+       "3:1",
+       "1:2",
+       "2:1",
+       "9:16",
+       "16:9",
+       "10:16",
+       "16:10",
+       "2:3",
+       "3:2",
+       "3:4",
+       "4:3",
+       "4:5",
+       "5:4",
+       "1:1"
+      ],
+      "required": false,
+      "description": "Aspect ratio. Ignored if a resolution or inpainting image is given."
+     },
+     "magic_prompt_option": {
+      "type": "enum",
+      "order": 3,
+      "title": "Magic Prompt Option",
+      "default": "Auto",
+      "options": [
+       "Auto",
+       "On",
+       "Off"
+      ],
+      "required": false,
+      "description": "Magic Prompt will interpret your prompt and optimize it to maximize variety and quality of the images generated. You can also use it to write prompts in different languages."
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "5c6ca435-db5d-4234-b128-95769ff1e5e7",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "style_reference_image_1": {
+       "id": "14f3703b-564c-47c0-b956-476615834712",
+       "type": "image",
+       "label": "style_reference_image_1",
+       "order": 3,
+       "format": "uri",
+       "required": false,
+       "description": "A style reference image"
+      }
+     },
+     "output": {
+      "image": {
+       "id": "14f3703b-564c-47c0-b956-476615834734",
+       "type": "image",
+       "label": "Image",
+       "order": 0,
+       "format": "uri",
+       "description": "The result image"
+      }
+     }
+    },
+    "version": 3,
+    "is3DLocked": false,
+    "description": "The highest quality Ideogram v3 model.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Ideogram V3"
+  },
+  {
+   "id": "f8ffeadd-0434-42d9-b379-3cd006266d2a",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1890,
+    "y": 1720
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "GPT Image 1"
+    },
+    "name": "GPT Image 1",
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": {
+     "name": "gpt_image_1"
+    },
+    "output": {
+     "image": {
+      "id": "6e467000-f5ce-4866-abcb-7b8160ed83c4",
+      "url": "https://media.weavy.ai/image/upload/v1748181167/uploads/uib9hk91ofdlxpqntgdv.png",
+      "type": "image",
+      "input": {
+       "size": "1024x1024",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "quality": "medium",
+       "background": "opaque",
+       "output_format": "png",
+       "number_of_images": 1
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/uib9hk91ofdlxpqntgdv.png?_a=BAMCkGWO0",
+      "publicId": "uploads/uib9hk91ofdlxpqntgdv",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/uib9hk91ofdlxpqntgdv.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/uib9hk91ofdlxpqntgdv.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "size": "1024x1024",
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "quality": "medium",
+     "background": "opaque",
+     "output_format": "png",
+     "number_of_images": 1
+    },
+    "result": [
+     {
+      "id": "6e467000-f5ce-4866-abcb-7b8160ed83c4",
+      "url": "https://media.weavy.ai/image/upload/v1748181167/uploads/uib9hk91ofdlxpqntgdv.png",
+      "type": "image",
+      "input": {
+       "size": "1024x1024",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "quality": "medium",
+       "background": "opaque",
+       "output_format": "png",
+       "number_of_images": 1
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/uib9hk91ofdlxpqntgdv.png?_a=BAMCkGWO0",
+      "publicId": "uploads/uib9hk91ofdlxpqntgdv",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/uib9hk91ofdlxpqntgdv.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/uib9hk91ofdlxpqntgdv.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "size": {
+      "type": "enum",
+      "order": 9,
+      "title": "Size",
+      "default": "auto",
+      "options": [
+       "1024x1024",
+       "1536x1024",
+       "1024x1536"
+      ],
+      "description": "The size of the generated images"
+     },
+     "quality": {
+      "type": "enum",
+      "order": 7,
+      "title": "Quality",
+      "default": "medium",
+      "options": [
+       "high",
+       "medium",
+       "low"
+      ],
+      "description": "The quality of the image that will be generated. 'auto' will automatically select the best quality for the given model."
+     },
+     "background": {
+      "type": "enum",
+      "order": 1,
+      "title": "Background",
+      "default": "opaque",
+      "options": [
+       "transparent",
+       "opaque"
+      ],
+      "description": "Set transparency for the background of the generated image(s)"
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 6,
+      "title": "Output Format",
+      "default": "png",
+      "options": [
+       "png",
+       "jpeg"
+      ],
+      "description": "The format in which the generated images are returned. This parameter is only supported for gpt-image-1."
+     },
+     "number_of_images": {
+      "max": 10,
+      "min": 1,
+      "type": "integer",
+      "order": 4,
+      "title": "Number of Images",
+      "default": 1,
+      "description": "The number of images to generate. Must be between 1 and 10."
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610ab",
+       "type": "text",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      }
+     },
+     "output": {
+      "image": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610ac",
+       "type": "image",
+       "label": "image",
+       "order": 0,
+       "format": "uri",
+       "description": "Image result"
+      }
+     }
+    },
+    "version": 3,
+    "is3DLocked": false,
+    "description": "Generate images with OpenAI's GPT Image 1",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "GPT Image 1"
+  },
+  {
+   "id": "782de075-1ac9-4726-9fb2-5b7088facb2d",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 2410,
+    "y": 1720
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Google Imagen"
+    },
+    "name": "Google Imagen 4",
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": {
+     "name": "imagen4"
+    },
+    "output": {
+     "result": {
+      "id": "8e9ad588-3080-44fa-b56f-48b54e464301",
+      "url": "https://media.weavy.ai/image/upload/v1748181153/uploads/xenohryapg9wb03ydfco.png",
+      "type": "image",
+      "input": {
+       "seed": 87677,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/xenohryapg9wb03ydfco.png?_a=BAMCkGWO0",
+      "publicId": "uploads/xenohryapg9wb03ydfco",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/xenohryapg9wb03ydfco.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/xenohryapg9wb03ydfco.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 87677,
+      "isRandom": true
+     },
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "aspect_ratio": "1:1"
+    },
+    "result": [
+     {
+      "id": "8e9ad588-3080-44fa-b56f-48b54e464301",
+      "url": "https://media.weavy.ai/image/upload/v1748181153/uploads/xenohryapg9wb03ydfco.png",
+      "type": "image",
+      "input": {
+       "seed": 87677,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/xenohryapg9wb03ydfco.png?_a=BAMCkGWO0",
+      "publicId": "uploads/xenohryapg9wb03ydfco",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/xenohryapg9wb03ydfco.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/xenohryapg9wb03ydfco.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 3,
+      "title": "Seed",
+      "default": {
+       "seed": 42,
+       "isRandom": true
+      },
+      "required": false,
+      "description": "Seed for the generated image"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 2,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "9:16",
+       "16:9",
+       "3:4",
+       "4:3"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the generated image"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610ab",
+       "type": "text",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "negative_prompt": {
+       "id": "22a30105-f370-4040-b51c-e2db7022f63d",
+       "type": "text",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Text prompt for what to discourage in the generated images"
+      }
+     },
+     "output": {
+      "result": {
+       "id": "470e45b3-3c3a-46f1-822e-715abc4610ac",
+       "type": "image",
+       "label": "result",
+       "order": 0,
+       "format": "uri",
+       "description": "Result image"
+      }
+     }
+    },
+    "version": 3,
+    "is3DLocked": false,
+    "description": "Google’s highest quality image generation model",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Google Imagen 4"
+  },
+  {
+   "id": "9fea1da0-9c51-4f05-9dfc-30a7e69417ba",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 1880,
+    "y": 2340
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Minimax Image 01"
+    },
+    "name": "Minimax Image 01",
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": {
+     "name": "minimax/image-01",
+     "version": "4e10af7818383d071483838a53345ae04d2f5379c41fe417f1a809b6cc0ee1f9"
+    },
+    "output": {
+     "result": {
+      "id": "1c84f3f6-a65f-4c1c-89ae-66d547552692",
+      "url": "https://media.weavy.ai/image/upload/v1748181221/uploads/barzgfktefzbmxvgsp1l.jpg",
+      "type": "image",
+      "input": {
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "number_of_images": 1,
+       "prompt_optimizer": true
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/barzgfktefzbmxvgsp1l.png?_a=BAMCkGWO0",
+      "publicId": "uploads/barzgfktefzbmxvgsp1l",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/barzgfktefzbmxvgsp1l.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/barzgfktefzbmxvgsp1l.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "aspect_ratio": "1:1",
+     "number_of_images": 1,
+     "prompt_optimizer": true
+    },
+    "result": [
+     {
+      "id": "1c84f3f6-a65f-4c1c-89ae-66d547552692",
+      "url": "https://media.weavy.ai/image/upload/v1748181221/uploads/barzgfktefzbmxvgsp1l.jpg",
+      "type": "image",
+      "input": {
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "aspect_ratio": "1:1",
+       "number_of_images": 1,
+       "prompt_optimizer": true
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/barzgfktefzbmxvgsp1l.png?_a=BAMCkGWO0",
+      "publicId": "uploads/barzgfktefzbmxvgsp1l",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/barzgfktefzbmxvgsp1l.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/barzgfktefzbmxvgsp1l.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for generation"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 1,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "16:9",
+       "4:3",
+       "3:2",
+       "2:3",
+       "3:4",
+       "9:16",
+       "21:9"
+      ],
+      "required": false,
+      "description": "Image aspect ratio"
+     },
+     "number_of_images": {
+      "max": 9,
+      "min": 1,
+      "type": "integer",
+      "order": 2,
+      "title": "Number Of Images",
+      "default": 1,
+      "required": false,
+      "description": "Number of images to generate"
+     },
+     "prompt_optimizer": {
+      "type": "boolean",
+      "order": 3,
+      "title": "Prompt Optimizer",
+      "default": true,
+      "required": false,
+      "description": "Use prompt optimizer"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "09d6a1eb-3d0d-4398-aad1-da5b7c5df814",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for generation"
+      }
+     },
+     "output": {
+      "result": {
+       "id": "09d6a1eb-3d0d-4398-aad1-da5b7c5df814",
+       "type": "image",
+       "label": "result",
+       "order": 0,
+       "format": "uri",
+       "description": "Result image"
+      }
+     }
+    },
+    "version": 3,
+    "is3DLocked": false,
+    "description": "Minimax's first image model",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Minimax Image 01"
+  },
+  {
+   "id": "562d8bd0-d28b-4274-ab7f-ce27e67c4d25",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": 780,
+    "y": 1880
+   },
+   "data": {
+    "menu": null,
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "model": null,
+    "output": {
+     "type": "text",
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "params": null,
+    "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+    "result": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": {
+      "prompt": {
+       "type": "text",
+       "order": 0,
+       "format": "text",
+       "description": "Text prompt"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Green_Dark",
+    "description": null,
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 1430,
+    "y": 1950
+   },
+   "data": {
+    "menu": null,
+    "name": "Prompt",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": null,
+    "output": {
+     "out": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "params": null,
+    "result": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+    "schema": null,
+    "handles": {
+     "input": {
+      "in": {
+       "id": "xK9mP4nQ7vR2tW5yZ8sL3j",
+       "type": "text",
+       "label": "In",
+       "order": 0,
+       "description": "The input"
+      }
+     },
+     "output": {
+      "out": {
+       "id": "xK9mP4nQ7vR2tW5yZ8sL3K",
+       "type": "text",
+       "label": "Out",
+       "order": 0,
+       "description": "The output"
+      }
+     }
+    },
+    "version": 3,
+    "inputNode": {
+     "nodeId": "562d8bd0-d28b-4274-ab7f-ce27e67c4d25",
+     "string": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "outputId": "prompt"
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "description": null,
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "2d4900ae-ae31-4f9b-a934-4854e484f029",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 3870,
+    "y": 2080
+   },
+   "data": {
+    "menu": null,
+    "name": "Bria",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "input": {
+       "seed": 406526,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "steps_num": 30,
+       "num_results": 1,
+       "aspect_ratio": "1:1",
+       "prompt_enhancement": true,
+       "text_guidance_scale": 5
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "visualId": "8c531222735a6b7f",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "label": null,
+    "model": null,
+    "output": {
+     "out": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": null,
+    "result": {
+     "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+     "type": "image",
+     "width": 1024,
+     "height": 1024,
+     "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+     "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+    },
+    "schema": null,
+    "handles": {
+     "input": {
+      "in": {
+       "id": "xK9mP4nQ7vR2tW5yZ8sL3j",
+       "type": "any",
+       "label": "In",
+       "order": 0,
+       "description": "The input"
+      }
+     },
+     "output": {
+      "out": {
+       "id": "xK9mP4nQ7vR2tW5yZ8sL3K",
+       "type": "any",
+       "label": "Out",
+       "order": 0,
+       "description": "The output"
+      }
+     }
+    },
+    "version": 3,
+    "inputNode": {
+     "file": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     },
+     "nodeId": "29079b1e-905c-4145-b700-9e7f9cd84e21",
+     "outputId": "result"
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "description": null,
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Bria"
+  },
+  {
+   "id": "a28dd193-299b-4fb6-8c88-2a8003103ea3",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 4670,
+    "y": 1420
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Pixverse V4"
+    },
+    "name": "Pixverse V4",
+    "color": "Red",
+    "input": {
+     "image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": {
+     "name": "pixverse/pixverse-v4",
+     "version": "5596a52dde8487b02a41ef49a57cc6129fe8c112d4b179d5b1223aad2d594dac"
+    },
+    "output": {
+     "video": {
+      "id": "4c28b2c3-34a8-48f5-9706-e60ca4a8eb6b",
+      "fps": 30,
+      "url": "https://media.weavy.ai/video/upload/v1748280047/uploads/gy2gwd3v45ihlztwnh1y.mp4",
+      "type": "video",
+      "input": {
+       "seed": 621830,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       },
+       "style": "None",
+       "effect": "None",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "quality": "540p",
+       "duration": 5,
+       "motion_mode": "normal",
+       "aspect_ratio": "1:1"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/gy2gwd3v45ihlztwnh1y.png?_a=BAMCkGWO0",
+      "duration": 5.368685,
+      "publicId": "uploads/gy2gwd3v45ihlztwnh1y",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/gy2gwd3v45ihlztwnh1y.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/gy2gwd3v45ihlztwnh1y.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 621830,
+      "isRandom": true
+     },
+     "image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     },
+     "style": "None",
+     "effect": "None",
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "quality": "540p",
+     "duration": 5,
+     "motion_mode": "normal",
+     "aspect_ratio": "1:1"
+    },
+    "result": [
+     {
+      "id": "4c28b2c3-34a8-48f5-9706-e60ca4a8eb6b",
+      "fps": 30,
+      "url": "https://media.weavy.ai/video/upload/v1748280047/uploads/gy2gwd3v45ihlztwnh1y.mp4",
+      "type": "video",
+      "input": {
+       "seed": 621830,
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       },
+       "style": "None",
+       "effect": "None",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "quality": "540p",
+       "duration": 5,
+       "motion_mode": "normal",
+       "aspect_ratio": "1:1"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/gy2gwd3v45ihlztwnh1y.png?_a=BAMCkGWO0",
+      "duration": 5.368685,
+      "publicId": "uploads/gy2gwd3v45ihlztwnh1y",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/gy2gwd3v45ihlztwnh1y.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/gy2gwd3v45ihlztwnh1y.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 7,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "image": {
+      "type": "string",
+      "order": 1,
+      "title": "Image",
+      "format": "uri",
+      "required": false,
+      "description": "Image to use for video generation"
+     },
+     "style": {
+      "type": "enum",
+      "order": 8,
+      "title": "Style",
+      "default": "None",
+      "options": [
+       "None",
+       "anime",
+       "3d_animation",
+       "clay",
+       "cyberpunk",
+       "comic"
+      ],
+      "required": false,
+      "description": "Style of the video"
+     },
+     "effect": {
+      "type": "enum",
+      "order": 9,
+      "title": "Effect",
+      "default": "None",
+      "options": [
+       "None",
+       "Let's YMCA!",
+       "Subject 3 Fever",
+       "Ghibli Live!",
+       "Suit Swagger",
+       "Muscle Surge",
+       "360° Microwave",
+       "Warmth of Jesus",
+       "Emergency Beat",
+       "Anything, Robot",
+       "Kungfu Club",
+       "Mint in Box",
+       "Retro Anime Pop",
+       "Vogue Walk",
+       "Mega Dive",
+       "Evil Trigger"
+      ],
+      "required": false,
+      "description": "Special effect to apply to the video"
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for video generation"
+     },
+     "quality": {
+      "type": "enum",
+      "order": 2,
+      "title": "Quality",
+      "default": "540p",
+      "options": [
+       "360p",
+       "540p",
+       "720p",
+       "1080p"
+      ],
+      "required": false,
+      "description": "Resolution of the video. 360p and 540p cost the same, but 720p and 1080p cost more. For 5 seconds in normal motion mode, 360p and 540p cost $0.45, 720p costs $0.60, and 1080p costs $1.20"
+     },
+     "duration": {
+      "type": "enum",
+      "order": 4,
+      "title": "Duration",
+      "default": 5,
+      "options": [
+       5,
+       8
+      ],
+      "required": false,
+      "description": "Duration of the video in seconds. 8 second videos cost twice as much as 5 second videos. (1080p does not support 8 second duration)"
+     },
+     "motion_mode": {
+      "type": "enum",
+      "order": 5,
+      "title": "Motion Mode",
+      "default": "normal",
+      "options": [
+       "normal",
+       "smooth"
+      ],
+      "required": false,
+      "description": "Motion mode for the video. Smooth videos generate more frames, so they cost twice as much. (smooth is only available when using a 5 second duration, 1080p does not support smooth motion)"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 3,
+      "title": "Aspect Ratio",
+      "default": "16:9",
+      "options": [
+       "16:9",
+       "9:16",
+       "1:1"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the video"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 6,
+      "title": "Negative Prompt",
+      "default": "",
+      "required": false,
+      "description": "Negative prompt to avoid certain elements in the video"
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "id": "22195063-be62-43ae-ad4f-3d266eca93ef",
+       "type": "image",
+       "label": "image",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Image to use for video generation"
+      },
+      "prompt": {
+       "id": "21549d28-7c7f-41f8-a523-47fc8b95f9db",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for video generation"
+      },
+      "negative_prompt": {
+       "id": "b38291da-9687-4ff9-8a4e-8a6226fc34bd",
+       "type": "text",
+       "label": "negative_prompt",
+       "order": 6,
+       "format": "text",
+       "required": false,
+       "description": "Negative prompt to avoid certain elements in the video"
+      }
+     },
+     "output": {
+      "video": {
+       "id": "7e2b8e4f-c8e8-4a2c-95b5-2a52f8414371",
+       "type": "video",
+       "label": "Video",
+       "order": 0,
+       "format": "uri"
+      }
+     }
+    },
+    "version": 3,
+    "is3DLocked": false,
+    "description": "Quickly generate smooth 5s or 8s videos at 540p, 720p or 1080p",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Pixverse V4"
+  },
+  {
+   "id": "be9550a1-34ea-45bf-bd75-0ea5ae6cdac6",
+   "isModel": true,
+   "type": "kling",
+   "position": {
+    "x": 5240,
+    "y": 1420
+   },
+   "data": {
+    "menu": null,
+    "name": "Kling Video",
+    "paid": 65,
+    "plan": 10,
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": {
+     "name": "kling"
+    },
+    "output": {
+     "video": {
+      "id": "49250bee-ae2d-453e-b0c2-7391ab8867a9",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1748280188/uploads/dj28iao4n4dtckdzfcxt.mp4",
+      "type": "video",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       },
+       "model": "2.0 Master",
+       "ratio": "1:1",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "duration": 5
+      },
+      "width": 960,
+      "height": 960,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/dj28iao4n4dtckdzfcxt.png?_a=BAMCkGWO0",
+      "duration": 5.041667,
+      "publicId": "uploads/dj28iao4n4dtckdzfcxt",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/dj28iao4n4dtckdzfcxt.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/dj28iao4n4dtckdzfcxt.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     },
+     "model": "2.0 Master",
+     "ratio": "1:1",
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "duration": 5
+    },
+    "result": [
+     {
+      "id": "49250bee-ae2d-453e-b0c2-7391ab8867a9",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1748280188/uploads/dj28iao4n4dtckdzfcxt.mp4",
+      "type": "video",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       },
+       "model": "2.0 Master",
+       "ratio": "1:1",
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "duration": 5
+      },
+      "width": 960,
+      "height": 960,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/dj28iao4n4dtckdzfcxt.png?_a=BAMCkGWO0",
+      "duration": 5.041667,
+      "publicId": "uploads/dj28iao4n4dtckdzfcxt",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/dj28iao4n4dtckdzfcxt.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/dj28iao4n4dtckdzfcxt.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "model": {
+      "type": "enum",
+      "order": 0,
+      "title": "Model",
+      "default": 5,
+      "options": [
+       "Pro 1.6",
+       "Pro 1.5",
+       "Pro",
+       "Standard",
+       "2.0 Master"
+      ],
+      "description": "Kling model version"
+     },
+     "ratio": {
+      "type": "enum",
+      "order": 2,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "16:9",
+       "9:16",
+       "1:1"
+      ],
+      "description": "The aspect ratio of the output video."
+     },
+     "duration": {
+      "type": "enum",
+      "order": 1,
+      "title": "Duration",
+      "default": 5,
+      "options": [
+       5,
+       10
+      ],
+      "description": "Length of the video - 5 or 10 seconds."
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "type": "image",
+       "label": "first_frame",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "The first frame of the generation"
+      },
+      "prompt": {
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Use a prompt to describe the camera style and movement speed."
+      }
+     },
+     "output": {
+      "video": {
+       "type": "video",
+       "label": "video",
+       "order": 0,
+       "format": "uri",
+       "description": "The video result"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Generate video from an image and a prompt",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Kling Video"
+  },
+  {
+   "id": "a9a48059-1ad1-4d9c-8bcf-7a00cacaa4e9",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 4660,
+    "y": 2040
+   },
+   "data": {
+    "menu": {
+     "displayName": "Veo 2 Video"
+    },
+    "name": "Veo 2 Video",
+    "paid": 250,
+    "color": "Red",
+    "input": {
+     "image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": {
+     "name": "google-veo2"
+    },
+    "output": {
+     "result": {
+      "id": "d39b30fa-5bda-45ad-9983-78ce225a81b8",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1748280057/uploads/uf7mihrdf92iz5wghcrp.mp4",
+      "type": "video",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "duration": "5s",
+       "aspect_ratio": "9:16"
+      },
+      "width": 720,
+      "height": 1280,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/uf7mihrdf92iz5wghcrp.png?_a=BAMCkGWO0",
+      "duration": 5,
+      "publicId": "uploads/uf7mihrdf92iz5wghcrp",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/uf7mihrdf92iz5wghcrp.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/uf7mihrdf92iz5wghcrp.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "duration": "5s",
+     "aspect_ratio": "9:16"
+    },
+    "result": [
+     {
+      "id": "d39b30fa-5bda-45ad-9983-78ce225a81b8",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1748280057/uploads/uf7mihrdf92iz5wghcrp.mp4",
+      "type": "video",
+      "input": {
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "duration": "5s",
+       "aspect_ratio": "9:16"
+      },
+      "width": 720,
+      "height": 1280,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/uf7mihrdf92iz5wghcrp.png?_a=BAMCkGWO0",
+      "duration": 5,
+      "publicId": "uploads/uf7mihrdf92iz5wghcrp",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/uf7mihrdf92iz5wghcrp.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/uf7mihrdf92iz5wghcrp.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "duration": {
+      "type": "enum",
+      "order": 1,
+      "title": "Duration",
+      "default": "5s",
+      "options": [
+       "5s",
+       "8s"
+      ],
+      "required": false,
+      "description": "The duration of the generated video in seconds."
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 0,
+      "title": "Aspect Ratio",
+      "default": "16:9",
+      "options": [
+       "16:9",
+       "9:16"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the output video."
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "type": "image",
+       "label": "first_frame",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "The first frame of the generation"
+      },
+      "prompt": {
+       "id": "kKKGFHc1xAxCdZmKTE2a",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for the video generation."
+      }
+     },
+     "output": {
+      "result": {
+       "id": "7e2b8e4f-c8e8-4a2c-95b5-2a52f8414371",
+       "type": "video",
+       "label": "result",
+       "format": "uri",
+       "description": "The video result"
+      }
+     }
+    },
+    "version": 3,
+    "is3DLocked": false,
+    "description": "Veo creates videos with realistic motion and high quality output.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Veo 2 Video"
+  },
+  {
+   "id": "5c785322-de58-463f-9062-c9acb4525a1a",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 5240,
+    "y": 2020
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Minimax Video 01"
+    },
+    "name": "Minimax Video 01",
+    "paid": 50,
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "first_frame_image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "label": null,
+    "model": {
+     "name": "minimax/video-01",
+     "version": "c8bcc4751328608bb75043b3af7bed4eabcf1a6c0a478d50a4cf57fa04bd5101"
+    },
+    "output": {
+     "result": {
+      "id": "c42a5f8c-bd76-4098-87ac-f0f7c89ba8a7",
+      "fps": 25,
+      "url": "https://media.weavy.ai/video/upload/v1748280117/uploads/l77lzveeimlbmtpdoj19.mp4",
+      "type": "video",
+      "input": {
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "prompt_optimizer": true,
+       "first_frame_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 720,
+      "height": 720,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/l77lzveeimlbmtpdoj19.png?_a=BAMCkGWO0",
+      "duration": 5.64,
+      "publicId": "uploads/l77lzveeimlbmtpdoj19",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/l77lzveeimlbmtpdoj19.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/l77lzveeimlbmtpdoj19.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "prompt_optimizer": true,
+     "first_frame_image": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "result": [
+     {
+      "id": "c42a5f8c-bd76-4098-87ac-f0f7c89ba8a7",
+      "fps": 25,
+      "url": "https://media.weavy.ai/video/upload/v1748280117/uploads/l77lzveeimlbmtpdoj19.mp4",
+      "type": "video",
+      "input": {
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "prompt_optimizer": true,
+       "first_frame_image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 720,
+      "height": 720,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/l77lzveeimlbmtpdoj19.png?_a=BAMCkGWO0",
+      "duration": 5.64,
+      "publicId": "uploads/l77lzveeimlbmtpdoj19",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/l77lzveeimlbmtpdoj19.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/l77lzveeimlbmtpdoj19.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "prompt_optimizer": {
+      "type": "boolean",
+      "order": 3,
+      "title": "Prompt Optimizer",
+      "default": true,
+      "required": false,
+      "description": "Use prompt optimizer"
+     },
+     "first_frame_image": {
+      "type": "string",
+      "order": 1,
+      "title": "First Frame Image",
+      "format": "uri",
+      "required": false,
+      "description": "First frame image for video generation. The output video will have the same aspect ratio as this image."
+     },
+     "subject_reference": {
+      "type": "string",
+      "order": 2,
+      "title": "Subject Reference",
+      "format": "uri",
+      "required": false,
+      "description": "An optional character reference image to use as the subject in the generated video (this will use the S2V-01 model)"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "c54d385d-2c36-4c4a-8df1-b4256e27c6c4",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "first_frame_image": {
+       "id": "30412d65-edc2-4b33-ab81-22a0f1bba584",
+       "type": "image",
+       "label": "first_frame",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "First frame image for video generation. The output video will have the same aspect ratio as this image."
+      },
+      "subject_reference": {
+       "id": "ba1540b1-dfa2-468d-b559-872f5af28e82",
+       "type": "image",
+       "label": "subject_reference_image",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": "An optional character reference image to use as the subject in the generated video (this will use the S2V-01 model)"
+      }
+     },
+     "output": {
+      "result": {
+       "id": "7e2b8e4f-c8e8-4a2c-95b5-2a52f8414371",
+       "type": "video",
+       "label": "result",
+       "format": "uri",
+       "description": "The video result"
+      }
+     }
+    },
+    "version": 3,
+    "is3DLocked": false,
+    "description": "Generate 6s videos with prompts or images. (Also known as Hailuo). Use a subject reference to make a video with a character and the S2V-01 model.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Minimax Video 01"
+  },
+  {
+   "id": "be775b7f-1171-4497-a12c-29a7d48ba3de",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 3870,
+    "y": 2180
+   },
+   "data": {
+    "menu": null,
+    "name": "Prompt",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "label": null,
+    "model": null,
+    "output": {
+     "out": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  "
+    },
+    "params": null,
+    "result": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+    "schema": null,
+    "handles": {
+     "input": {
+      "in": {
+       "id": "xK9mP4nQ7vR2tW5yZ8sL3j",
+       "type": "text",
+       "label": "In",
+       "order": 0,
+       "description": "The input"
+      }
+     },
+     "output": {
+      "out": {
+       "id": "xK9mP4nQ7vR2tW5yZ8sL3K",
+       "type": "text",
+       "label": "Out",
+       "order": 0,
+       "description": "The output"
+      }
+     }
+    },
+    "version": 3,
+    "inputNode": {
+     "nodeId": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+     "string": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "outputId": "out"
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "description": null,
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "7a5ccc70-1c51-4fdf-be3f-7aeb14e41482",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 5790,
+    "y": 2020
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Luma Ray 2"
+    },
+    "name": "Luma Ray 2",
+    "color": "Red",
+    "input": {
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "start_image_url": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "label": null,
+    "model": {
+     "name": "luma/ray-2-720p",
+     "version": "c691efb7eb925616ad82dbec883dbc3b3fe82bf2ddfc61e1870221f5926eedce"
+    },
+    "output": {
+     "video": {
+      "id": "cd5b23da-38ca-4de9-ae81-b9a7cb29a818",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1748280148/uploads/q0flr0fo5z4kmrilsoqr.mp4",
+      "type": "video",
+      "input": {
+       "loop": false,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "concepts": "",
+       "duration": 5,
+       "aspect_ratio": "1:1",
+       "start_image_url": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/q0flr0fo5z4kmrilsoqr.png?_a=BAMCkGWO0",
+      "duration": 5.208333,
+      "publicId": "uploads/q0flr0fo5z4kmrilsoqr",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/q0flr0fo5z4kmrilsoqr.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/q0flr0fo5z4kmrilsoqr.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "loop": false,
+     "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+     "concepts": "",
+     "duration": 5,
+     "aspect_ratio": "1:1",
+     "start_image_url": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "result": [
+     {
+      "id": "cd5b23da-38ca-4de9-ae81-b9a7cb29a818",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1748280148/uploads/q0flr0fo5z4kmrilsoqr.mp4",
+      "type": "video",
+      "input": {
+       "loop": false,
+       "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+       "concepts": "",
+       "duration": 5,
+       "aspect_ratio": "1:1",
+       "start_image_url": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1744637405/uploads/t2rccwefw1mqv4hlxsxu.png",
+        "type": "image",
+        "input": {
+         "seed": 406526,
+         "prompt": "old film screen capture, a muted colored portrait of a young trans individual, captured in a side profile. subtitles say \"Being right too soon is socially unacceptable\". The person has a pronounced jawline, sharp cheekbones, and dark hair that is slicked back. The individual is wearing a white shirt. The background is dark, emphasizing the subject's face and attire. 45 degrees.  ",
+         "steps_num": 30,
+         "num_results": 1,
+         "aspect_ratio": "1:1",
+         "prompt_enhancement": true,
+         "text_guidance_scale": 5
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/t2rccwefw1mqv4hlxsxu",
+        "visualId": "8c531222735a6b7f",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/t2rccwefw1mqv4hlxsxu.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/t2rccwefw1mqv4hlxsxu.jpg?_a=BAMCcSfi0"
+       }
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://media.weavy.ai/video/upload/c_scale,w_800/v1/uploads/q0flr0fo5z4kmrilsoqr.png?_a=BAMCkGWO0",
+      "duration": 5.208333,
+      "publicId": "uploads/q0flr0fo5z4kmrilsoqr",
+      "originalUrl": "https://media.weavy.ai/video/upload/v1/uploads/q0flr0fo5z4kmrilsoqr.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/q0flr0fo5z4kmrilsoqr.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "loop": {
+      "type": "boolean",
+      "order": 5,
+      "title": "Loop",
+      "default": false,
+      "required": false,
+      "description": "Whether the video should loop, with the last frame matching the first frame for smooth, continuous playback."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for video generation"
+     },
+     "concepts": {
+      "type": "array",
+      "order": 6,
+      "title": "Concepts",
+      "required": false,
+      "array_type": "string",
+      "description": "List of camera concepts to apply to the video generation. Concepts include: truck_left, pan_right, pedestal_down, low_angle, pedestal_up, selfie, pan_left, roll_right, zoom_in, over_the_shoulder, orbit_right, orbit_left, static, tiny_planet, high_angle, bolt_cam, dolly_zoom, overhead, zoom_out, handheld, roll_left, pov, aerial_drone, push_in, crane_down, truck_right, tilt_down, elevator_doors, tilt_up, ground_level, pull_out, aerial, crane_up, eye_level"
+     },
+     "duration": {
+      "type": "enum",
+      "order": 3,
+      "title": "Duration",
+      "default": 5,
+      "options": [
+       5,
+       9
+      ],
+      "required": false,
+      "description": "Duration of the video in seconds"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 4,
+      "title": "Aspect Ratio",
+      "default": "16:9",
+      "options": [
+       "1:1",
+       "3:4",
+       "4:3",
+       "9:16",
+       "16:9",
+       "9:21",
+       "21:9"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the generated video"
+     },
+     "end_image_url": {
+      "type": "string",
+      "order": 2,
+      "title": "End Image Url",
+      "required": false,
+      "description": "URL of an image to use as the ending frame"
+     },
+     "start_image_url": {
+      "type": "string",
+      "order": 1,
+      "title": "Start Image Url",
+      "required": false,
+      "description": "URL of an image to use as the starting frame"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "f52ce662-b15b-4a78-ad37-6db7b7df3cf0",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for video generation"
+      },
+      "end_image_url": {
+       "id": "747efb1f-2ac0-4fd4-a825-8ef45136af38",
+       "type": "image",
+       "label": "End frame",
+       "order": 2,
+       "format": "text",
+       "required": false,
+       "description": "Image to use as the ending frame"
+      },
+      "start_image_url": {
+       "id": "0775f6f4-498d-48a0-9f1c-75b07b2fe1e0",
+       "type": "image",
+       "label": "Start frame",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Image to use as the starting frame"
+      }
+     },
+     "output": {
+      "video": {
+       "id": "0775f6f4-498d-48a0-9f1c-75b07b2fe1e1",
+       "type": "video",
+       "label": "Video",
+       "order": 0,
+       "format": "video"
+      }
+     }
+    },
+    "version": 3,
+    "is3DLocked": false,
+    "description": "Generate 5s and 9s 720p videos",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Luma Ray 2"
+  },
+  {
+   "id": "3a2f0b7e-40c1-412c-a54d-23e95ffe41b6",
+   "isModel": false,
+   "type": "extract_video_frame",
+   "position": {
+    "x": 5290,
+    "y": 2890
+   },
+   "data": {
+    "menu": null,
+    "name": "Extract Video Frame",
+    "time": 0.016666666666666666,
+    "color": "Yambo_Black",
+    "label": null,
+    "model": null,
+    "output": {},
+    "params": null,
+    "schema": null,
+    "handles": {
+     "input": {
+      "file": {
+       "type": "video",
+       "label": "Video",
+       "order": 0
+      }
+     },
+     "output": {
+      "result": {
+       "type": "image",
+       "label": "Image",
+       "order": 0
+      }
+     }
+    },
+    "version": 3,
+    "inputNode": {
+     "file": {
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1748280057/uploads/uf7mihrdf92iz5wghcrp.mp4",
+      "type": "video",
+      "width": 720,
+      "height": 1280,
+      "duration": 5,
+      "publicId": "uploads/uf7mihrdf92iz5wghcrp",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/uf7mihrdf92iz5wghcrp.png?_a=BAMCkGWO0"
+     },
+     "nodeId": "a9a48059-1ad1-4d9c-8bcf-7a00cacaa4e9",
+     "outputId": "result"
+    },
+    "description": "Extracts an image for a given frame"
+   },
+   "createdAt": "2025-07-07T09:58:13.479Z",
+   "dragHandle": ".node-header",
+   "originalName": "Extract Video Frame"
+  },
+  {
+   "id": "aff35327-1499-4d52-b67c-ef45356b7622",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 5930,
+    "y": 2950
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Video Upscale / GFPGAN video"
+    },
+    "name": "Video Upscale / GFPGAN video",
+    "color": "Red",
+    "input": {
+     "video": null
+    },
+    "label": null,
+    "model": {
+     "name": "pbarker/gfpgan-video",
+     "version": "ea1116ce24126a411c7beb092e587bee24b25525c1b0e493e3a907904952ace3"
+    },
+    "output": {},
+    "params": {
+     "scale": 2,
+     "video": null,
+     "version": "v1.4"
+    },
+    "result": [],
+    "schema": {
+     "scale": {
+      "type": "input-number",
+      "order": 2,
+      "title": "Scale",
+      "default": 2,
+      "required": false,
+      "description": "Rescaling factor"
+     },
+     "video": {
+      "type": "string",
+      "order": 0,
+      "title": "Video",
+      "format": "uri",
+      "required": true,
+      "description": "Input"
+     },
+     "version": {
+      "type": "enum",
+      "order": 1,
+      "title": "Version",
+      "default": "v1.4",
+      "options": [
+       "v1.2",
+       "v1.3",
+       "v1.4",
+       "RestoreFormer"
+      ],
+      "required": false,
+      "description": "GFPGAN version. v1.3: better quality. v1.4: more details and better identity."
+     }
+    },
+    "handles": {
+     "input": {
+      "video": {
+       "id": "44170e1e-2e14-491a-905d-ead0977faac0",
+       "order": 0,
+       "format": "uri",
+       "required": true,
+       "description": "Input"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "description": "GFPGAN for human face video upscaling",
+    "selectedOutput": -1
+   },
+   "createdAt": "2025-07-07T09:58:25.270Z",
+   "dragHandle": ".node-header",
+   "originalName": "Video Upscale / GFPGAN video"
+  }
+ ],
+ "edges": [
+  {
+   "id": "d85e5d55-2d28-4a9c-bcce-0e2fc5e33d33",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "24566069-61e8-4715-8532-b923a21efce2",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "24566069-61e8-4715-8532-b923a21efce2-input-prompt"
+  },
+  {
+   "id": "054ff7c9-64b6-41a7-8228-960fa2e31542",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Purple",
+    "sourceHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "29079b1e-905c-4145-b700-9e7f9cd84e21",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "29079b1e-905c-4145-b700-9e7f9cd84e21-input-prompt"
+  },
+  {
+   "id": "87b41a88-8e41-4a0f-9e1c-9aa792ce4cd6",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "c8f200a4-74df-42ae-b143-6102d3050cdf",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "c8f200a4-74df-42ae-b143-6102d3050cdf-input-prompt"
+  },
+  {
+   "id": "8195c163-b7ae-44be-bf38-7e556657ffa6",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "f8ffeadd-0434-42d9-b379-3cd006266d2a",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "f8ffeadd-0434-42d9-b379-3cd006266d2a-input-prompt"
+  },
+  {
+   "id": "c32ed1f8-9528-4f9e-88dc-ac96fb201587",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "782de075-1ac9-4726-9fb2-5b7088facb2d",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "782de075-1ac9-4726-9fb2-5b7088facb2d-input-prompt"
+  },
+  {
+   "id": "de75aae0-e1e7-4d4d-b7ed-ee4ac2fda345",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Purple",
+    "sourceHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "944c0002-8b78-48cd-bfdd-e9e028d092f4",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "944c0002-8b78-48cd-bfdd-e9e028d092f4-input-prompt"
+  },
+  {
+   "id": "4ff619b8-e77f-4466-89d4-7a0fa4d93ac9",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "9fea1da0-9c51-4f05-9dfc-30a7e69417ba",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "9fea1da0-9c51-4f05-9dfc-30a7e69417ba-input-prompt"
+  },
+  {
+   "id": "15b917ad-e37b-4170-af7c-670dea09b9ce",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "0b202eb7-1c64-49aa-b905-9b7ca2152c71",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "0b202eb7-1c64-49aa-b905-9b7ca2152c71-input-prompt"
+  },
+  {
+   "id": "d87f5292-2709-411d-bfe0-3d10c17b397a",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "f4750e1a-e6ed-40af-b3bc-fb4aa6b9bb1e",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "f4750e1a-e6ed-40af-b3bc-fb4aa6b9bb1e-input-prompt"
+  },
+  {
+   "id": "abfcccb1-681a-4e9e-9121-4c1c84e66745",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Orange",
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "29079b1e-905c-4145-b700-9e7f9cd84e21",
+   "target": "2d4900ae-ae31-4f9b-a934-4854e484f029",
+   "selected": false,
+   "sourceHandle": "29079b1e-905c-4145-b700-9e7f9cd84e21-output-result",
+   "targetHandle": "2d4900ae-ae31-4f9b-a934-4854e484f029-input-in"
+  },
+  {
+   "id": "19e122ca-0a69-44c3-b35e-4a1dfc374a61",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "any",
+    "targetHandleType": "image"
+   },
+   "type": "custom",
+   "source": "2d4900ae-ae31-4f9b-a934-4854e484f029",
+   "target": "a28dd193-299b-4fb6-8c88-2a8003103ea3",
+   "selected": false,
+   "sourceHandle": "2d4900ae-ae31-4f9b-a934-4854e484f029-output-out",
+   "targetHandle": "a28dd193-299b-4fb6-8c88-2a8003103ea3-input-image"
+  },
+  {
+   "id": "234d67b1-6016-4ad3-bf18-74554ae0b7f1",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "any",
+    "targetHandleType": "image"
+   },
+   "type": "custom",
+   "source": "2d4900ae-ae31-4f9b-a934-4854e484f029",
+   "target": "a9a48059-1ad1-4d9c-8bcf-7a00cacaa4e9",
+   "selected": false,
+   "sourceHandle": "2d4900ae-ae31-4f9b-a934-4854e484f029-output-out",
+   "targetHandle": "a9a48059-1ad1-4d9c-8bcf-7a00cacaa4e9-input-image"
+  },
+  {
+   "id": "d6d13373-0022-45a8-ad93-c059fb0ac3bc",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "any",
+    "targetHandleType": "image"
+   },
+   "type": "custom",
+   "source": "2d4900ae-ae31-4f9b-a934-4854e484f029",
+   "target": "5c785322-de58-463f-9062-c9acb4525a1a",
+   "selected": false,
+   "sourceHandle": "2d4900ae-ae31-4f9b-a934-4854e484f029-output-out",
+   "targetHandle": "5c785322-de58-463f-9062-c9acb4525a1a-input-first_frame_image"
+  },
+  {
+   "id": "72700af8-78af-415a-a9d7-4f81bcf51ffd",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Purple",
+    "sourceHandleType": "any",
+    "targetHandleType": "image"
+   },
+   "type": "custom",
+   "source": "2d4900ae-ae31-4f9b-a934-4854e484f029",
+   "target": "be9550a1-34ea-45bf-bd75-0ea5ae6cdac6",
+   "selected": false,
+   "sourceHandle": "2d4900ae-ae31-4f9b-a934-4854e484f029-output-out",
+   "targetHandle": "be9550a1-34ea-45bf-bd75-0ea5ae6cdac6-input-image"
+  },
+  {
+   "id": "a22452b0-7e88-4efb-9b7a-734a1c00cf6e",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Orange",
+    "sourceHandleType": "text",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "target": "be775b7f-1171-4497-a12c-29a7d48ba3de",
+   "selected": true,
+   "sourceHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-output-out",
+   "targetHandle": "be775b7f-1171-4497-a12c-29a7d48ba3de-input-in"
+  },
+  {
+   "id": "99403e22-f8c0-483b-8d58-c54cac7234c2",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "be775b7f-1171-4497-a12c-29a7d48ba3de",
+   "target": "a28dd193-299b-4fb6-8c88-2a8003103ea3",
+   "selected": false,
+   "sourceHandle": "be775b7f-1171-4497-a12c-29a7d48ba3de-output-out",
+   "targetHandle": "a28dd193-299b-4fb6-8c88-2a8003103ea3-input-prompt"
+  },
+  {
+   "id": "bbaf58ea-c216-4970-84ee-60d61a8b9734",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "be775b7f-1171-4497-a12c-29a7d48ba3de",
+   "target": "a9a48059-1ad1-4d9c-8bcf-7a00cacaa4e9",
+   "selected": false,
+   "sourceHandle": "be775b7f-1171-4497-a12c-29a7d48ba3de-output-out",
+   "targetHandle": "a9a48059-1ad1-4d9c-8bcf-7a00cacaa4e9-input-prompt"
+  },
+  {
+   "id": "170d8926-1d39-4ef9-90d8-d1dd910b72f9",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "be775b7f-1171-4497-a12c-29a7d48ba3de",
+   "target": "5c785322-de58-463f-9062-c9acb4525a1a",
+   "selected": false,
+   "sourceHandle": "be775b7f-1171-4497-a12c-29a7d48ba3de-output-out",
+   "targetHandle": "5c785322-de58-463f-9062-c9acb4525a1a-input-prompt"
+  },
+  {
+   "id": "906ed2b0-9930-418f-a37c-16232ceeb360",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Purple",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "be775b7f-1171-4497-a12c-29a7d48ba3de",
+   "target": "be9550a1-34ea-45bf-bd75-0ea5ae6cdac6",
+   "selected": false,
+   "sourceHandle": "be775b7f-1171-4497-a12c-29a7d48ba3de-output-out",
+   "targetHandle": "be9550a1-34ea-45bf-bd75-0ea5ae6cdac6-input-prompt"
+  },
+  {
+   "id": "3c0d6903-2a04-48f2-a199-5037201bf55e",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "be775b7f-1171-4497-a12c-29a7d48ba3de",
+   "target": "7a5ccc70-1c51-4fdf-be3f-7aeb14e41482",
+   "selected": false,
+   "sourceHandle": "be775b7f-1171-4497-a12c-29a7d48ba3de-output-out",
+   "targetHandle": "7a5ccc70-1c51-4fdf-be3f-7aeb14e41482-input-prompt"
+  },
+  {
+   "id": "d1810f2f-f933-4d81-a538-a8b27768713b",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red",
+    "sourceHandleType": "any",
+    "targetHandleType": "image"
+   },
+   "type": "custom",
+   "source": "2d4900ae-ae31-4f9b-a934-4854e484f029",
+   "target": "7a5ccc70-1c51-4fdf-be3f-7aeb14e41482",
+   "selected": false,
+   "sourceHandle": "2d4900ae-ae31-4f9b-a934-4854e484f029-output-out",
+   "targetHandle": "7a5ccc70-1c51-4fdf-be3f-7aeb14e41482-input-start_image_url"
+  },
+  {
+   "id": "d65a2f76-d5f1-48f2-b748-61524445ba44",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Black",
+    "sourceHandleType": "video",
+    "targetHandleType": "video"
+   },
+   "type": "custom",
+   "source": "a9a48059-1ad1-4d9c-8bcf-7a00cacaa4e9",
+   "target": "3a2f0b7e-40c1-412c-a54d-23e95ffe41b6",
+   "selected": false,
+   "sourceHandle": "a9a48059-1ad1-4d9c-8bcf-7a00cacaa4e9-output-result",
+   "targetHandle": "3a2f0b7e-40c1-412c-a54d-23e95ffe41b6-input-file"
+  },
+  {
+   "id": "47f705fe-2ee7-4abe-b8a0-f3e63f60980b",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Red",
+    "sourceHandleType": "image"
+   },
+   "type": "custom",
+   "source": "3a2f0b7e-40c1-412c-a54d-23e95ffe41b6",
+   "target": "aff35327-1499-4d52-b67c-ef45356b7622",
+   "selected": false,
+   "sourceHandle": "3a2f0b7e-40c1-412c-a54d-23e95ffe41b6-output-result",
+   "targetHandle": "aff35327-1499-4d52-b67c-ef45356b7622-input-video"
+  },
+  {
+   "id": "96763dfa-f6d9-42ff-8120-8bb5dd48a36a",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Orange",
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "562d8bd0-d28b-4274-ab7f-ce27e67c4d25",
+   "target": "33318fa2-4d5f-4f81-b559-9734a8575b8c",
+   "selected": true,
+   "sourceHandle": "562d8bd0-d28b-4274-ab7f-ce27e67c4d25-output-prompt",
+   "targetHandle": "33318fa2-4d5f-4f81-b559-9734a8575b8c-input-in"
+  }
+ ],
+ "latestVersion": {
+  "version": 1,
+  "createdAt": "2025-04-14T13:39:55.673Z"
+ },
+ "latestPublishedVersion": null,
+ "showcaseOrder": 10,
+ "showcase": false,
+ "designAppMetadata": null,
+ "v3": true,
+ "batchRuns": [],
+ "folderId": "988ed3f0-585f-4c83-a899-f8af3867e972",
+ "scope": "WORKSPACE",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

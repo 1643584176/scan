@@ -1,0 +1,2 @@
+HTTP 400
+{"error":true,"status":400,"message":"Unsupported activity_type","i18n":null}

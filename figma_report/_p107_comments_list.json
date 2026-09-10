@@ -1,0 +1,351 @@
+{
+ "error": false,
+ "status": 200,
+ "meta": {
+  "comments": [
+   {
+    "id": "1679000583346637607",
+    "created_at": "2026-09-08T03:48:53.368Z",
+    "message": "It is so good",
+    "message_meta": [
+     {
+      "t": "It is so good"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1678723815222325641",
+     "profile_handle": "pccp",
+     "primary_user_id": "1666382703778278399",
+     "name": "pccp",
+     "img_url": "https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v2.png",
+     "img_urls": {
+      "120_120": "https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v2.png"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1656393613630233319",
+    "created_at": "2026-07-07T18:36:51.778Z",
+    "message": "How can I download it bro?\n",
+    "message_meta": [
+     {
+      "t": "How can I download it bro?\n"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1562076092740551624",
+     "profile_handle": "sirojiddindev",
+     "primary_user_id": "1562076092582168852",
+     "name": "Sirojiddin dev",
+     "img_url": "https://s3-alpha.figma.com/profile/56b16fba-fe6e-43c2-8d4b-916a99aa98f2",
+     "img_urls": {
+      "120_120": "https://s3-alpha.figma.com/profile/56b16fba-fe6e-43c2-8d4b-916a99aa98f2",
+      "500_500": "https://s3-alpha.figma.com/profile/3f6ad28f-9e87-4fc7-bbae-fb34e8a62c47"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1646847576164791422",
+    "created_at": "2026-06-11T10:24:19.089Z",
+    "message": "Rafin",
+    "message_meta": [
+     {
+      "t": "Rafin"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1646846473509738466",
+     "profile_handle": "mdrafin",
+     "primary_user_id": "1646846473355090770",
+     "name": "Mdrafin",
+     "img_url": "https://s3-alpha.figma.com/profile/d1929c10-8f20-47e9-bd3f-0b846c0ee286",
+     "img_urls": {
+      "120_120": "https://s3-alpha.figma.com/profile/d1929c10-8f20-47e9-bd3f-0b846c0ee286",
+      "500_500": "https://s3-alpha.figma.com/profile/edd2832c-400d-45a2-b097-0493fa60acd5"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1643516514619310511",
+    "created_at": "2026-06-02T05:47:52.121Z",
+    "message": "Bro how can I install this ?",
+    "message_meta": [
+     {
+      "t": "Bro how can I install this ?"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1420741906408979523",
+     "profile_handle": "tanryguly",
+     "primary_user_id": "1420741906270698951",
+     "name": "Tanryguly",
+     "img_url": "https://s3-alpha.figma.com/profile/f46b912e-3985-4abc-a5e5-0dbb11355056",
+     "img_urls": {
+      "120_120": "https://s3-alpha.figma.com/profile/f46b912e-3985-4abc-a5e5-0dbb11355056",
+      "500_500": "https://s3-alpha.figma.com/profile/1faf7f55-1261-46c7-8124-b5852de2394d"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1632137958909758722",
+    "created_at": "2026-05-01T20:13:33.052Z",
+    "message": "It is a package?\nHow can I download it?",
+    "message_meta": [
+     {
+      "t": "It is a package?\nHow can I download it?"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1632131922246407775",
+     "profile_handle": "ramzialghanmi",
+     "primary_user_id": "1632131922142873269",
+     "name": "Ramzi AlGhanmi",
+     "img_url": "https://www.gravatar.com/avatar/782189247f8fae155ec45d762a68d176?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_r_v2.png",
+     "img_urls": {
+      "120_120": "https://www.gravatar.com/avatar/782189247f8fae155ec45d762a68d176?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_r_v2.png"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1630171687593445245",
+    "created_at": "2026-04-26T10:00:17.432Z",
+    "message": "Please how do i use this icons on website design on wordpress for instance ?",
+    "message_meta": [
+     {
+      "t": "Please how do i use this icons on website design on wordpress for instance ?"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1259090352627440039",
+     "profile_handle": "dareclement",
+     "primary_user_id": "1259090352459745207",
+     "name": "Dare Clement",
+     "img_url": "https://s3-alpha.figma.com/profile/05fae1e7-084b-49b4-9842-f3aa09456409",
+     "img_urls": {
+      "120_120": "https://s3-alpha.figma.com/profile/05fae1e7-084b-49b4-9842-f3aa09456409",
+      "500_500": "https://s3-alpha.figma.com/profile/58a71696-e090-443d-a904-0ace17baec50"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1620339398128501733",
+    "created_at": "2026-03-30T06:50:16.947Z",
+    "message": "this is lottery man! thanks",
+    "message_meta": [
+     {
+      "t": "this is lottery man! thanks"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1107866082959701321",
+     "profile_handle": "vfxhealing",
+     "primary_user_id": "1107866082782312721",
+     "name": "VFX Healing",
+     "img_url": "https://www.gravatar.com/avatar/e40d72590cc2e2c8558b809a4befd2c9?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_v_v2.png",
+     "img_urls": {
+      "120_120": "https://www.gravatar.com/avatar/e40d72590cc2e2c8558b809a4befd2c9?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_v_v2.png"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1571083687887604425",
+    "created_at": "2025-11-14T08:45:40.493Z",
+    "message": "Харош",
+    "message_meta": [
+     {
+      "t": "Харош"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1271416905421398007",
+     "profile_handle": "f7c4e0f6_4107_4",
+     "primary_user_id": "1271416905233284751",
+     "name": "A",
+     "img_url": "https://www.gravatar.com/avatar/53a8a7f5b399e3ccdbac3d03d45b8732?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_a_v2.png",
+     "img_urls": {
+      "120_120": "https://www.gravatar.com/avatar/53a8a7f5b399e3ccdbac3d03d45b8732?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_a_v2.png"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1570569698464966173",
+    "created_at": "2025-11-12T22:43:15.868Z",
+    "message": "Awsome!",
+    "message_meta": [
+     {
+      "t": "Awsome!"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1341635926785475048",
+     "profile_handle": "ilyaas1",
+     "primary_user_id": "1341635926669471192",
+     "name": "Ilyaas",
+     "img_url": "https://s3-alpha.figma.com/profile/f5724448-7f62-438b-8655-2aba5980f08c",
+     "img_urls": {
+      "120_120": "https://s3-alpha.figma.com/profile/f5724448-7f62-438b-8655-2aba5980f08c",
+      "500_500": "https://s3-alpha.figma.com/profile/253a951f-d53b-4ffe-b977-ad864e1489b1"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1560851826572067160",
+    "created_at": "2025-10-17T03:07:54.662Z",
+    "message": "hero",
+    "message_meta": [
+     {
+      "t": "hero"
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": null,
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1516622331199841614",
+     "profile_handle": "2297731366",
+     "primary_user_id": "1516622331103288071",
+     "name": "Venus",
+     "img_url": "https://s3-alpha.figma.com/profile/1a663c60-f059-476c-a67a-9fd65664baf0",
+     "img_urls": {
+      "120_120": "https://s3-alpha.figma.com/profile/1a663c60-f059-476c-a67a-9fd65664baf0",
+      "500_500": "https://s3-alpha.figma.com/profile/68b32ed6-56d6-4b0a-b8ce-b4c44e2c43e1"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   },
+   {
+    "id": "1558145852183654118",
+    "created_at": "2025-10-09T15:55:20.093Z",
+    "message": "I have run into an issue. When trying to resize  the icons, they seem to lose some of their properties and don't look as nice after resizing. I feel like I am doing something wrong. I am copying and pasting the icons from the original project into mine, but when I click and drag to expand, they lose their properties and revert to basic SVGs. Please help.\n\n-Edit I figured out the issue. For the edit-alt icon, the pencil eraser is colored in with a trapezoid vector which at larger sizes, the corners bleed through the outline. If you need to resize these icons, be prepared for some extra steps.",
+    "message_meta": [
+     {
+      "t": "I have run into an issue. When trying to resize  the icons, they seem to lose some of their properties and don't look as nice after resizing. I feel like I am doing something wrong. I am copying and pasting the icons from the original project into mine, but when I click and drag to expand, they lose their properties and revert to basic SVGs. Please help.\n\n-Edit I figured out the issue. For the edit-alt icon, the pencil eraser is colored in with a trapezoid vector which at larger sizes, the corners bleed through the outline. If you need to resize these icons, be prepared for some extra steps."
+     }
+    ],
+    "parent_id": null,
+    "reply_count": 0,
+    "resolved_at": null,
+    "edited_at": "2025-10-09T16:05:53.768Z",
+    "hidden_at": null,
+    "last_replied_at": null,
+    "resource_id": "d2b50308-9c96-4681-b23b-0130308047ee",
+    "content_version_id": "673425",
+    "author": {
+     "id": "1524791517941136006",
+     "profile_handle": "christiangalvan",
+     "primary_user_id": "1524791517814420086",
+     "name": "Christian Galvan",
+     "img_url": "https://s3-alpha.figma.com/profile/7edd0cdc-4aa1-46e4-bce7-4f001affa4b0",
+     "img_urls": {
+      "120_120": "https://s3-alpha.figma.com/profile/7edd0cdc-4aa1-46e4-bce7-4f001affa4b0",
+      "500_500": "https://s3-alpha.figma.com/profile/cc1fbafc-534b-4bf6-ae82-d621aa002444"
+     },
+     "current_user_is_following": false,
+     "is_restricted_by_current_user": null
+    }
+   }
+  ],
+  "selected_comment": null,
+  "mentioned_profiles": {}
+ },
+ "pagination": {
+  "next_page": "/api/resources/d2b50308-9c96-4681-b23b-0130308047ee/comments?sort_order=desc&pagination_direction=next&column_cursor=2025-10-09 15:55:20.093911000&id_cursor=2025-10-09 15:55:20.093911000&page_size=20"
+ },
+ "i18n": null
+}

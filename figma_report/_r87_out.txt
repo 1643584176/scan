@@ -1,0 +1,49 @@
+===== A) 稳定性: 同参数连打2次 =====
+[A1_dt_design_1] 200 len=150489 body=
+[A2_dt_design_2] 200 len=150489 body=
+[A3_fm_design_1] 200 len=140911 body=
+[A4_fm_design_2] 200 len=140911 body=
+===== B) 差分复现: 引号 vs null =====
+[B1_dt_q_1] 200 len=150489 body=
+[B2_dt_q_2] 200 len=150489 body=
+[B3_dt_null_1] 200 len=150489 body=
+[B4_dt_null_2] 200 len=150489 body=
+[B5_fm_q_1] 200 len=140911 body=
+[B6_fm_null_1] 200 len=140911 body=
+[B7_fm_null_2] 200 len=140911 body=
+===== C) 空格/后缀类对照(检验搜索词变化说) =====
+[C1_dt_sp1] 200 len=150489 body=
+[C2_dt_sp2] 200 len=150489 body=
+[C3_dt_word] 200 len=150489 body=
+[C4_dt_dash] 200 len=150489 body=
+[C5_dt_hash] 200 len=150489 body=
+===== D) rt 位 null-byte oracle =====
+[D1_rt_null] 200 len=150489 body=
+[D2_rt_null2] 200 len=150489 body=
+[D3_rt_nullq] 200 len=150489 body=
+===== E) 非法rt 400 body 全dump =====
+[E1_400dbg] 400 len=114 body= BODY={"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: slide_deck_template","i18n":null}
+[E2_400dbg] 400 len=116 body= BODY={"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: figjam_board_template","i18n":null}
+[E3_400dbg] 400 len=102 body= BODY={"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: profile","i18n":null}
+[E4_400dbg] 400 len=101 body= BODY={"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: skills","i18n":null}
+[E5_400dbg] 400 len=102 body= BODY={"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: shaders","i18n":null}
+[E6_400dbg] 400 len=108 body= BODY={"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: buzz_template","i18n":null}
+===== F) sleep 深度变体(计时) =====
+[F1_sleep_quote] 200 len=150489 body=
+[F2_sleep_or] 200 len=150489 body=
+[F3_sleep_cat] 200 len=150489 body=
+===== G) limit/page/cursor 参数探测 =====
+[G1_limit1] 200 len=150489 body=
+[G2_limit0] 200 len=150489 body=
+[G3_page2] 200 len=150489 body=
+[G4_cursor] 200 len=150489 body=
+[G5_offset] 200 len=150489 body=
+===== H) query 空/特殊 =====
+[H1_empty] 200 len=150489 body=
+[H2_space] 200 len=150489 body=
+[H3_star] 200 len=150489 body=
+[H4_pct] 200 len=150489 body=
+===== I) fm base 重测(对齐 r85) =====
+[I1_fm_base_1] 200 len=140895 body=
+[I2_fm_base_2] 200 len=140895 body=
+DONE

@@ -1,0 +1,31 @@
+===== getTeams( =====
+### FILE: _js\5911-80d3c1dad6a7a16f.min.js  hits=1
+'t:this.onSubmit,onBlur:this.onBlur,selectOnMount:!0,className:"formatted_expanding_textarea--expandingTextarea--zTzip"})]})}}f7.displayName="FormattedExpandingTextarea";var f9=r(611811),ge=r(286792),gt=r(840830);let gr=te.M4.Query({label:"userTeamsQuery",fetch:async({userId:e,orgId:t})=>(await fX.k.getTeams({userId:e,orgId:t})).data.meta,gcPolicy:"onUnmount",stalenessPolicy:"onUnmount"});function gs(e){let t=(0,d.wA)(),r=(0,f.iZ)(),s=(0,ge.w)(e.user),a=(0,d.d4)(t=>t.currentUserOrgId===e.orgId),i=()=>{t((0,D.to)({type:gt.u}))};return(0,o.jsx)("div",{...{className:"x78zum5 xdt5ytf xvnky2a x5yr21'
+  ------
+### FILE: _js\935-431f89677a39072c.min.js  hits=1
+'&(r={retryCount:t}),(0,A.r)(),this.StateSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/state`,k.td.toAPIParameters({redact:"org_billing_data",...e}),r))}getUserTeams(e){return this.UserTeamsSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/${e.userId}/teams`))}getTeams(e){let{userId:t,...r}=e;return this.TeamsSchemaValidator.validate(async({xr:e})=>await e.get(e.url`/api/user/${t}/teams`,k.td.toAPIParameters(r)))}getUser(e){return this.UserSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/${e.userId}`))}putUser(e){return this.UserSchemaV'
+  ------
+### FILE: _js\figma_app-main.js  hits=3
+'am_actions.an_error_occurred_while_trying_to_fetch_this_team"))))})},({teamId:e})=>`ORG_FETCH_TEAM_${e}`),S=(0,l.NC)("ORG_FETCH_DISCOVERABLE_TEAMS"),A=(0,m.nF)((e,t)=>{let r=e.getState().currentUserOrgId,{includeProjectCount:n,includeMemberCount:i,includeTopMembers:s,includeSecretTeams:l}=t||{};g.U.getTeams({orgId:r,includeMemberCount:i,includeProjectCount:n,includeTopMembers:s,includeSecretTeams:l}).then(t=>{let r=t.data.meta;e.dispatch(C({teams:r}))}).catch(t=>{e.dispatch((0,c.GW)((0,a.J)(t,(0,o.t)("org_team_actions.an_error_occurred_while_trying_to_fetch_teams_within_the_organization"))))})'
+  ------
+'.wA)(),o=(0,_.A)(()=>{a(v({teamId:e,level:t})),r&&r(e)},500,{leading:!0,trailing:!1});return(0,n.useCallback)(o,[o])}},534873(e,t,r){r.d(t,{FU:()=>s,J0:()=>d,eW:()=>c,oZ:()=>o});var n=r(981271),i=r(559554),a=r(456825);let o=i.M4.Query({label:"orgDiscoverableTeams",fetch:async({orgId:e})=>(await a.U.getTeams({orgId:e})).data.meta}),s=i.M4.Query({label:"orgTeamsWithSummaries",fetch:async({orgId:e})=>(await a.U.getTeams({orgId:e,includeMemberCount:!0,includeProjectCount:!0,includeTopMembers:!1})).data.meta}),l=i.M4.Mutation(({orgId:e,updates:t},{query:r})=>{let n=new Map(t.map(({id:e,workspace_id'
+  ------
+'[o])}},534873(e,t,r){r.d(t,{FU:()=>s,J0:()=>d,eW:()=>c,oZ:()=>o});var n=r(981271),i=r(559554),a=r(456825);let o=i.M4.Query({label:"orgDiscoverableTeams",fetch:async({orgId:e})=>(await a.U.getTeams({orgId:e})).data.meta}),s=i.M4.Query({label:"orgTeamsWithSummaries",fetch:async({orgId:e})=>(await a.U.getTeams({orgId:e,includeMemberCount:!0,includeProjectCount:!0,includeTopMembers:!1})).data.meta}),l=i.M4.Mutation(({orgId:e,updates:t},{query:r})=>{let n=new Map(t.map(({id:e,workspace_id:t})=>[e,t??null])),i=e=>{for(let t of e){let e=n.get(t.id);void 0!==e&&(t.workspace_id=e)}};return r.mutate(o({'
+  ------
+
+===== getUserTeams( =====
+### FILE: _js\935-431f89677a39072c.min.js  hits=1
+'wait t.get(t.url`/api/user/backup_codes`,{password_verify_token:e.passwordVerifyToken}))}getState(e,t){let r={};return t&&t>0&&(r={retryCount:t}),(0,A.r)(),this.StateSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/state`,k.td.toAPIParameters({redact:"org_billing_data",...e}),r))}getUserTeams(e){return this.UserTeamsSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/${e.userId}/teams`))}getTeams(e){let{userId:t,...r}=e;return this.TeamsSchemaValidator.validate(async({xr:e})=>await e.get(e.url`/api/user/${t}/teams`,k.td.toAPIParameters(r)))}getUser(e){return '
+  ------
+
+===== getDeletionImpact =====
+### FILE: _js\935-431f89677a39072c.min.js  hits=1
+'async({xr:t})=>await t.get(t.url`/api/user/${e.userId}/scim_provisioned_status`))}createDevToken(e){return this.DevTokenSchemaValidator.validate(({xr:t})=>t.post(t.url`/api/user/dev_tokens`,e))}getChatbotMeta(){return this.ChatbotMetaValidator.validate(({xr:e})=>e.get(e.url`/api/user/help-center`))}getDeletionImpact(e){return(0,A.r)(),this.DeletionImpactSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/${e.userId}/deletion_impact`))}getSegments(e){return(0,A.r)(),this.SegmentsSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/${e.userId}/segments`))}};var I=r'
+  ------
+
+===== getSegments( =====
+### FILE: _js\935-431f89677a39072c.min.js  hits=1
+'t.post(t.url`/api/user/dev_tokens`,e))}getChatbotMeta(){return this.ChatbotMetaValidator.validate(({xr:e})=>e.get(e.url`/api/user/help-center`))}getDeletionImpact(e){return(0,A.r)(),this.DeletionImpactSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/${e.userId}/deletion_impact`))}getSegments(e){return(0,A.r)(),this.SegmentsSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/user/${e.userId}/segments`))}};var I=r(8179),R=r(8682);function D(){return(0,a.jsxs)("svg",{width:"327",height:"171",viewBox:"0 0 327 171",fill:"none",className:R.fn,children:[(0,a.jsx)("path",'
+  ------
+
+DONE

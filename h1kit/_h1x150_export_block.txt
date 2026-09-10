@@ -1,0 +1,35 @@
+(async () => {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  const csrf = document.querySelector('meta[name="csrf-token"]').content;
+  const out = [];
+  const MARK = ["internal", "triage", "analyst", "duplicate", "not applicable", "resolution", "verdict", "n/a", "reason", "note"];
+  const rid = 3972961;
+  const doRaw = async (label, inc) => {
+    const r = await fetch(`/reports/${rid}/export/raw`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrf },
+      body: JSON.stringify({ include_internal_activities: inc, redact_usernames: false })
+    });
+    const t = await r.text();
+    const lines = t.split("\n");
+    const hits = [];
+    lines.forEach((ln, i) => {
+      const low = ln.toLowerCase();
+      for (const m of MARK) { if (low.includes(m)) { hits.push("L" + i + ": " + ln.slice(0, 240)); break; } }
+    });
+    out.push(`===== RAW inc=${inc} status=${r.status} len=${t.length} lines=${lines.length}`);
+    out.push(hits.length ? hits.slice(0, 30).join("\n") : "(no marker lines)");
+  };
+  await doRaw('RAW-false', false);
+  await sleep(500);
+  await doRaw('RAW-true', true);
+  await sleep(500);
+  try {
+    const r = await fetch(`/hackbot/genii?report_id=${rid}`, { headers: { "X-Requested-With": "XMLHttpRequest" } });
+    const t = await r.text();
+    out.push(`===== GENII status=${r.status} len=${t.length}\n` + t.slice(0, 1500));
+  } catch (e) { out.push("GENII ERR " + e); }
+  const ta = document.createElement("textarea");
+  ta.style.cssText = 'position:fixed;top:0;left:0;width:97%;height:92%;z-index:999999;font:10px monospace;white-space:pre;';
+  ta.value = out.join('\n\n');
+  document.body.appendChild(ta); ta.focus(); ta.select();
+})();

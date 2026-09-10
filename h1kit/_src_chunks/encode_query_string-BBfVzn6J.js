@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime-DAXXjFlN.js";import{Uf as t}from"./vendor-_WdvpBLr.js";var n=e(t());function r(e){return(0,n.default)(e,function(e,t,n){return t===void 0?e:Array.isArray(t)?`${e}${t.map(e=>`${n}[]=${e}&`).join(``)}`:`${e}${n}=${encodeURIComponent(t)}&`},``).slice(0,-1)}export{r as t};

@@ -1,0 +1,96 @@
+total fields with args: 95
+activity                                                | id:Int
+agent_guidance                                          | guidance_type:String
+analytics                                               | queries:?
+analytics_benchmarks                                    | benchmark_configurations:?
+analytics_chart                                         | chart_key:String; organization_id:ID; team_id:ID; filters:JSON; start_date:String; end_date:String; interval:String; limit:Int; benchmarks:LIST
+analytics_chart_benchmark_filters                       | chart_key:String
+analytics_chart_explore                                 | chart_key:String; organization_id:ID; explore_type:String; index_value:String; pivot_value:String; filters:JSON; start_date_utc_str:String; end_date_utc_str:String; interval:String; order_by_field:String; order_by_direction:String; page:Int; page_size:Int
+analytics_dashboard_filter_definitions                  | dashboard_key:String; organization_id:ID
+analytics_reports                                       | offset:Int; where:FiltersAnalyticsReportFilterInput; order_by:FiltersAnalyticsReportFilterOrder; after:String; before:String; first:Int; last:Int
+asset_context                                           | asset_identifier:String; program_handle:String
+assets                                                  | id:LIST; where:FiltersAssetFilterInput; after:String; before:String; first:Int; last:Int
+assets_by_velocity                                      | after:String; before:String; first:Int; last:Int; organization_id:ID; velocity_class:String
+assignable_teams                                        | after:String; before:String; first:Int; last:Int; report_ids:?; querystring:String
+automation                                              | id:Int; organization_handle:String
+campaign_objectives                                     | after:String; before:String; first:Int; last:Int; where:FiltersCampaignObjectiveFilterInput
+certifications                                          | where:FiltersCertificationFilterInput; after:String; before:String; first:Int; last:Int
+clusters                                                | id:ID; order_by:ClusterOrder; after:String; before:String; first:Int; last:Int
+completed_recommendations                               | team_ids:?
+configurable_dashboard                                  | dashboard_key:String; organization_id:ID
+conversation                                            | id:ID
+custom_dashboard                                        | id:ID
+custom_dashboard_chart                                  | chart_id:ID
+cve_entry                                               | cve_id:String
+cwe_entries                                             | order_by:CweEntryOrderInput; search:String; after:String; before:String; first:Int; last:Int
+cwe_entry                                               | cwe_id:String
+dashboard_states                                        | where:FiltersDashboardStateFilterInput; order_by:FiltersDashboardStateFilterOrder; after:String; before:String; first:Int; last:Int
+derived_pentest                                         | origin_id:ID; origin_type:String
+document                                                | queries:?; elements:?
+embedded_submission_form                                | uuid:String
+experimental_dream_box_chat                             | prompt:String
+external_integration_credentials                        | team_id:ID; organization_id:ID; provider:ExternalIntegrationProvider
+external_program                                        | handle:String
+external_programs                                       | after:String; before:String; first:Int; last:Int; search_input:String
+features                                                | after:String; before:String; first:Int; last:Int
+gateway_users                                           | team_handle:String; search_string:String; sort_by:GatewayUserOrderFieldEnum; sort_direction:OrderDirection; hackerone_triager:Boolean; program_admin:Boolean; blocked_status:Boolean; after:String; before:String; first:Int; last:Int
+hackerone_triagers                                      | cleared:Boolean; where:FiltersUserFilterInput; order_by:FiltersUserFilterOrder; after:String; before:String; first:Int; last:Int
+hai_agent_core_config                                   | key:String
+hai_chat                                                | id:ID
+hai_plays                                               | where:FiltersHaiPlayFilterInput; order_by:FiltersHaiPlayFilterOrder; after:String; before:String; first:Int; last:Int
+hai_task                                                | id:ID
+intake_commonly_informative_report_categories           | after:String; before:String; first:Int; last:Int
+intake_core_ineligible_finding_categories               | after:String; before:String; first:Int; last:Int
+intake_incomplete_report_categories                     | after:String; before:String; first:Int; last:Int; subcategory:IntakeIncompleteReportCategorySubcategoryEnum
+intake_workflow                                         | report_id:Int
+label_categories                                        | where:FiltersLabelCategoryFilterInput; after:String; before:String; first:Int; last:Int
+leaderboard_entries                                     | after:String; before:String; first:Int; last:Int; key:LeaderboardKeyEnum; year:Int; quarter:Int; filter:String; engagement_type:String; user_type:String
+load_configurable_analytics_chart                       | chart_key:String; organization_id:ID; team_id:ID; filters:JSON; start_date:String; end_date:String; interval:String; limit:Int; benchmarks:LIST
+machine_learning_inference_result                       | id:Int
+mediation_requests                                      | where:FiltersMediationRequestFilterInput; order_by:FiltersMediationRequestFilterOrder; after:String; before:String; first:Int; last:Int
+node                                                    | id:ID
+oauth_application                                       | client_id:String
+opportunities_search                                    | after:String; before:String; first:Int; last:Int; query:OpportunitiesQuery; filter:QueryInput; sort:LIST; from:Int; size:Int; post_filters:OpportunitiesFilterInput
+organization                                            | handle:String
+organization_bounty_informed_pentest_generator_runs     | organization_id:ID; run_id:ID; after:String; before:String; first:Int; last:Int
+organization_inboxes                                    | where:FiltersOrganizationInboxFilterInput; order_by:FiltersOrganizationInboxFilterOrder; after:String; before:String; first:Int; last:Int
+organizations                                           | where:FiltersOrganizationFilterInput; order_by:FiltersOrganizationFilterOrder; after:String; before:String; first:Int; last:Int
+other_workflow_step_conclusions                         | after:String; before:String; first:Int; last:Int
+pentest                                                 | id:ID
+pentest_checklist_templates                             | organization_id:ID; after:String; before:String; first:Int; last:Int
+pentest_opportunities                                   | where:FiltersPentestOpportunityFilterInput; after:String; before:String; first:Int; last:Int
+pentest_opportunity                                     | token:String
+pentest_opportunity_status                              | token:String
+pentest_report                                          | id:ID
+pentester_positions                                     | order_by:FiltersPentesterPositionFilterOrder; where:FiltersPentesterPositionFilterInput; after:String; before:String; first:Int; last:Int
+pentester_profiles                                      | after:String; before:String; first:Int; last:Int; where:FiltersPentesterProfileFilterInput; order_by:FiltersPentesterProfileFilterOrder
+pentests                                                | order_by:PentestOrderInput; secure_order_by:FiltersPentestFilterOrder; where:FiltersPentestFilterInput; after:String; before:String; first:Int; last:Int
+ranked_cve_entries                                      | search:String; order_by:AnalyticsOrderByInputType; after:String; before:String; first:Int; last:Int
+recon_context                                           | id:Int
+recon_contexts                                          | after:String; before:String; first:Int; last:Int; id:String
+report_intent                                           | id:Int
+report_retest_user                                      | activity_id:Int
+report_retests                                          | after:String; before:String; first:Int; last:Int; where:FiltersReportRetestFilterInput; order_by:FiltersReportRetestFilterOrder; assignee:AssigneeInputType; offset:Int
+report_triage_summary_examples                          | after:String; before:String; first:Int; last:Int
+reports                                                 | where:FiltersReportFilterInput; handle:String; state:ReportStateEnum; substate:ReportStateEnum; database_id:Int; has_retests:Boolean; offset:Int; has_assignee:Boolean; assignee:AssigneeInputType; order_by:ReportOrderInput; secure_order_by:FiltersReportFilterOrder; filter:ReportFilterInput; after:String; before:String; first:Int; last:Int
+resource                                                | url:URI
+rom_asset_group                                         | id:ID
+rom_setting_template                                    | industry:IndustryEnum; revenue_cohort:RevenueCohortEnum
+search                                                  | after:String; before:String; first:Int; last:Int; index:IndexEnum; query:QueryInput; query_string:String; limit:Int; sort:SortInput; from:Int; size:Int; reporter_filter:String
+search_documentation                                    | query:String
+skills                                                  | after:String; before:String; first:Int; last:Int; where:FiltersSkillFilterInput; exclude_my_skills:Boolean
+spend_tracker_by_category                               | organization_id:ID; category_id:ID; start_date:ISO8601DateTime; end_date:ISO8601DateTime
+static_dashboards                                       | key:String
+surveys                                                 | after:String; before:String; first:Int; last:Int; category:SurveyCategoryEnum
+tasks                                                   | after:String; before:String; first:Int; last:Int
+teams                                                   | permissions:LIST; order_by:TeamOrderInput; secure_order_by:FiltersTeamFilterOrder; where:FiltersTeamFilterInput; after:String; before:String; first:Int; last:Int
+terms                                                   | after:String; before:String; first:Int; last:Int; where:FiltersTermFilterInput; order_by:FiltersTermFilterOrder
+top_technology_tags                                     | after:String; before:String; first:Int; last:Int
+tray_solution_instance_url                              | integration_id:ID; solution_instance_id:String
+triage_inbox_items                                      | assigned_to_triage:Boolean; ordered_by_timer:Boolean; order_by:String; owner_usernames:LIST; priority:TriageInboxItemPriorityEnum; ccv2:Boolean; report_id:Int; report_substate:TriageInboxItemReportSubstateEnum; report_severity_rating:Boolean; report_title:String; team_handle:LIST; pod_name:String; view:TriageInboxItemViewEnum; running_validation_timer:Boolean; after:String; before:String; first:Int; last:Int
+triage_pods                                             | after:String; before:String; first:Int; last:Int
+users                                                   | cleared:Boolean; where:FiltersUserFilterInput; order_by:FiltersUserFilterOrder; after:String; before:String; first:Int; last:Int
+weaknesses                                              | after:String; before:String; first:Int; last:Int; order_by:WeaknessOrder; distinct_by_name:Boolean; include_deprecated:Boolean
+webhook                                                 | id:ID
+workflow_runs                                           | where:FiltersWorkflowRunFilterInput; after:String; before:String; first:Int; last:Int
+workflow_step_outcome_configurations                    | after:String; before:String; first:Int; last:Int

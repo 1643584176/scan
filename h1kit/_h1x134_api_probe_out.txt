@@ -1,0 +1,67 @@
+===== GET /hackers/me
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /me
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /users/me
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /hackers/base_alert
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports?page[size]=3
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /hackers/4421190/reports?page[size]=3
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports/3732660
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports/3732660/activities?page[size]=3
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports/3732659
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports/3732659/activities?page[size]=3
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports/3732661
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports/3732661/activities?page[size]=3
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports/1
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /reports/1/activities?page[size]=3
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /teams/bug_bounty_program
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /teams/security
+HTTP 401
+{"errors":[{"status":401}]}
+
+===== GET /teams/gitlab
+HTTP 401
+{"errors":[{"status":401}]}

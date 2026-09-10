@@ -1,0 +1,30 @@
+L0: 
+L1: ===== ai_chat endpoints =====
+L2: (no hit)
+L3: 
+L4: ===== ai_chat bare =====
+L5: (no hit)
+L6: 
+L7: ===== privacy_mode =====
+L8: (no hit)
+L9: 
+L10: ===== make_versions ctx =====
+L11: --- figma_app-main.js @6233836 ---
+L12: oks/use_sandbox/wait_for_preview_ready":"./internal/code_nodes/figmake/hooks/use_sandbox/wait_for_preview_ready.ts","./internal/code_nodes/figmake/hooks/use_analyze_routes_subscription":"./internal/code_nodes/figmake/hooks/use_analyze_routes_subscription.ts","./internal/code_nodes/figmake/hooks/use_make_versions":"./internal/code_nodes/figmake/hooks/use_make_versions.ts","./internal/code_nodes/figmake/hooks/use_version_preview":"./internal/code_nodes/figmake/hooks/use_version_preview.tsx","./internal/code_nodes/figmake/hooks/use_version_preview_cached_preview":"./internal/code_nodes/figmake/hooks/use_versi
+L13: --- figma_app-main.js @6233892 ---
+L14: _nodes/figmake/hooks/use_sandbox/wait_for_preview_ready.ts","./internal/code_nodes/figmake/hooks/use_analyze_routes_subscription":"./internal/code_nodes/figmake/hooks/use_analyze_routes_subscription.ts","./internal/code_nodes/figmake/hooks/use_make_versions":"./internal/code_nodes/figmake/hooks/use_make_versions.ts","./internal/code_nodes/figmake/hooks/use_version_preview":"./internal/code_nodes/figmake/hooks/use_version_preview.tsx","./internal/code_nodes/figmake/hooks/use_version_preview_cached_preview":"./internal/code_nodes/figmake/hooks/use_version_preview_cached_preview.ts","./internal/code_nodes/hoo
+L15: 
+L16: ===== thread_type const =====
+L17: --- figma_app-main.js @311747 ---
+L18: ",id:`${n}:make-build-clarify`,defaultPrompt:e,selectedNodeIds:t,surface:r}]}]}function p(e){for(let t of e)if("assistant"===t.type){for(let e of t.messages)if("makeBuildClarify"===e.type)return{defaultPrompt:e.defaultPrompt,selectedNodeIds:e.selectedNodeIds}}return null}function _(){return(0,n.t)("make_in_design.build_clarify.question")}function m(e,t){let r=e?.trim();return r?`${t} ${r}`:t}function h(){return[(0,n.t)("make_in_design.build_clarify.option_build_now"),(0,n.t)("make_in_design.build_clarify.option_add_info")]}},714804(e,t,r){r.d(t,{$0:()=>h,D4:()=>_,WU:()=>u,h6:()=>f,mp:()=>m});var n=r(263439)
+L19: --- figma_app-main.js @311871 ---
+L20: =t.type){for(let e of t.messages)if("makeBuildClarify"===e.type)return{defaultPrompt:e.defaultPrompt,selectedNodeIds:e.selectedNodeIds}}return null}function _(){return(0,n.t)("make_in_design.build_clarify.question")}function m(e,t){let r=e?.trim();return r?`${t} ${r}`:t}function h(){return[(0,n.t)("make_in_design.build_clarify.option_build_now"),(0,n.t)("make_in_design.build_clarify.option_add_info")]}},714804(e,t,r){r.d(t,{$0:()=>h,D4:()=>_,WU:()=>u,h6:()=>f,mp:()=>m});var n=r(263439),i=r(313302),a=r(184665),o=r(817530),s=r(392544),l=r(399907),d=r(314558),c=r(207935);function u(){return(0,s.Fk)(e=>{try{let
+L21: --- figma_app-main.js @311928 ---
+L22: e.type)return{defaultPrompt:e.defaultPrompt,selectedNodeIds:e.selectedNodeIds}}return null}function _(){return(0,n.t)("make_in_design.build_clarify.question")}function m(e,t){let r=e?.trim();return r?`${t} ${r}`:t}function h(){return[(0,n.t)("make_in_design.build_clarify.option_build_now"),(0,n.t)("make_in_design.build_clarify.option_add_info")]}},714804(e,t,r){r.d(t,{$0:()=>h,D4:()=>_,WU:()=>u,h6:()=>f,mp:()=>m});var n=r(263439),i=r(313302),a=r(184665),o=r(817530),s=r(392544),l=r(399907),d=r(314558),c=r(207935);function u(){return(0,s.Fk)(e=>{try{let t=e.getDirectlySelectedNodes();if(!t||0===t.length||!t.e
+L23: --- figma_app-main.js @1414991 ---
+L24: .d4)(sz.Sh),i=(0,rn.tS)(),a=(0,cF.I0)(),{Sprig:o}=(0,dH.A)(),[s,l]=t2.useState(!1),{topLevelMode:c}=(0,aX.rM)(aH.un),u=function({isDesignMode:e,selectedNodeGuids:t}){let r=(0,li.k)({isDesignMode:e,selectedNodeGuids:t});return(0,dp.Fk)(e=>!!r&&!!t&&0!==t.length&&function(e,t){if(!m.v.getFeatureGate("make_in_design_roundtrip_v1")&&!(0,cP.m)())return!0;for(let r of t){let t=e.get(r);if(!t)return!0;let n=(0,ck.Ec)(t);if(!n)return!0;let i=e.get(n);if(!i)return!0;let a=(0,cL.HX)(i,t);if(!a||(t.editInfo?.lastEditedAt??0)!==(a.editInfo?.lastEditedAt??0))return!0}return!1}(e,t),[r,t])}({isDesignMode:c===aC.lyf.LAYOU
+L25: --- figma_app-main.js @1434662 ---
+L26: k(()=>{f&&(0,eU.$I)({moduleToOpen:{type:"custom",module:(0,d.jsx)(dE,{nodeId:f}),name:dc.Sn.MAKESPLOSION},trackingData:{source:"canvas_roundtrip_secondary_toolbar"}})},[f]),ee=t2.useCallback(()=>{let e;if(!f||!r7.dj)return;let t=r7.dj.isMakePlaying(f);dS(),db=p.Jk.getInstance().startUserFlow({name:"make_in_design.edit_on_canvas",team:h.e.MAKE,forwardToFigment:!0,context:(e=(0,di.getActiveTSSceneGraph)()?.get(f)??null,{makeNodeType:(0,dy.q)(e),editOnCanvasEntrypoint:"secondary_toolbelt",wasMakePlayingAtStart:t,isNested:(0,da.Cm)(e),isPublished:!!e?.isPublishedSite})}),dT=f,dv=setTimeout(()=>dx(f),6e4),(0,da.
+L27: --- figma_app-main.js @2555370 ---
+L28: n.t)("org_settings.oauth_app_allowlist.allowed_label");default:(0,i.xb)(e)}}function m(e){return(0,a.uy)(e)?null:Number(e)}},79600(e,t,r){r.d(t,{$S:()=>p,Ay:()=>c,Cu:()=>l,Pw:()=>u,yB:()=>d});var n=r(263439),i=r(734113),a=r(899496),o=r(527527),s=r(221387);let l=(0,i.eU)(null),d={CREATE_FROM_DESIGN:"make_in_design_create_from_design",CREATE_ON_CANVAS:"make_in_design_create_on_canvas",THREE_PLUS_PROMPTS_IN_MAKE:"make_in_design_3plus_prompts_in_make",LAYER_BREAKOUT_M2D:"make_in_design_layer_breakout_m2d",LAYER_BREAKOUT_D2M:"make_in_design_layer_breakout_d2m"};function c(){let{Sprig:e}=(0,s.A)(),t=(0,o.md)(l),r
+L29: 

@@ -1,0 +1,48 @@
+===== A. ml/export/status 500 细探 =====
+[A1_s1] 500 len=    64 664ms <<<500 (复现 500)
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+[A2_s0] 500 len=    64 325ms <<<500 
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+[A3_s2] 500 len=    64 347ms <<<500 
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+[A4_sabc] 500 len=    64 318ms <<<500 (非数字:500还是404?)
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+[A5_sbig] 500 len=    64 324ms <<<500 (20位)
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+[A6_sq] 500 len=    64 330ms <<<500 (引号)
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+[A7_sor] 500 len=    64 319ms <<<500 (OR)
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+[A8_sneg] 500 len=    64 367ms <<<500 
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+
+===== B. tax/validate_vat 参数面(第三方 or SQL?) =====
+[B1_norm] 400 len=    88 318ms (正常格式)
+      {"error":true,"status":400,"message":"VAT ID and country code are required","i18n":null}
+[B2_q] 400 len=    88 327ms (引号)
+      {"error":true,"status":400,"message":"VAT ID and country code are required","i18n":null}
+[B3_or] 400 len=    88 432ms (OR)
+      {"error":true,"status":400,"message":"VAT ID and country code are required","i18n":null}
+[B4_long] 400 len=    88 325ms (超长300)
+      {"error":true,"status":400,"message":"VAT ID and country code are required","i18n":null}
+[B5_cc_bad] 400 len=    88 311ms (非法国家码)
+      {"error":true,"status":400,"message":"VAT ID and country code are required","i18n":null}
+[B6_cc_q] 400 len=    88 322ms (cc 引号)
+      {"error":true,"status":400,"message":"VAT ID and country code are required","i18n":null}
+
+===== C. validate_currency / validate_address =====
+[C1_vc_empty] 400 len=    87 332ms (空探)
+      {"error":true,"status":400,"message":"Missing required parameter currency","i18n":null}
+[C2_vc_usd] 200 len=    40 340ms 
+      {"error":false,"status":200,"i18n":null}
+[C3_vc_q] 400 len=   435 342ms 
+      {"error":true,"status":400,"message":"Your payment method's billing address is in a country that can't pay in '. Please use a different payment method.","i18n":{"id":"subscription.error.payment_method_billing_address_cant_pay_selected_currency","fallback_text":"Your payment metho
+[C4_va_addr] 400 len=   175 342ms (地址探)
+      {"error":true,"status":400,"message":"Enter a valid state","i18n":{"id":"subscription.error.enter_state","fallback_text":"Enter a valid state","params":{}},"reason":"ADDRESS"}
+
+===== D. teams/deleted 宽容对照(便宜) =====
+[D1_del_q] 400 len=    71 341ms 
+      {"error":true,"status":400,"message":"Team is not deleted","i18n":null}
+[D2_del_big] 403 len=   102 347ms 
+      {"error":true,"status":403,"message":"You don't have permission to complete this action.","i18n":null}
+DONE

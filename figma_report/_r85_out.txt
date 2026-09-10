@@ -1,0 +1,63 @@
+===== 1) 判别力校准(query 影响结果集?) =====
+[c1_design] 200 len=141679 1252ms
+[c2_desig] 200 len=141679 1154ms
+[c3_designx] 200 len=141679 1157ms
+[c4_xyzzyq] 200 len=141686 1285ms
+[c5_noquery] 200 len=141686 1088ms
+
+===== 2) resource_type 枚举全矩阵 =====
+[rt:design_template] 200 len=150443 1217ms
+[rt:figmake_template] 200 len=141185 1361ms
+[rt:ui_kit] 200 len=115569 1143ms
+[rt:slide_template] 200 len=148483 1404ms
+[rt:slide_deck_template] 400 len=114 580ms
+[rt:figjam_template] 200 len=144876 1650ms
+[rt:widget] 200 len=160175 1445ms
+[rt:plugin] 200 len=173686 1444ms
+[rt:site_template] 200 len=146881 1122ms
+[rt:figjam_board_template] 400 len=116 592ms
+[rt:oauth_app] 200 len=150628 1288ms
+[rt:profile] 400 len=102 575ms
+[rt:profiles] 400 len=103 545ms
+[rt:skills] 400 len=101 605ms
+[rt:shaders] 400 len=102 580ms
+[rt:gen_tool] 200 len=156573 1136ms
+[rt:gen_effect] 200 len=136812 1131ms
+[rt:gen_fill] 200 len=100397 1240ms
+[rt:weave_app] 200 len=93405 1409ms
+[rt:weave_workflow] 200 len=136423 1723ms
+[rt:custom_skill] 200 len=166052 3109ms
+[rt:repo_template] 200 len=141621 1750ms
+[rt:mcp_connector] 200 len=141351 1382ms
+[rt:cooper_template_file] 200 len=171948 1260ms
+[rt:cooper_template_asset] 200 len=120377 1196ms
+[rt:buzz_template] 400 len=108 584ms
+
+===== 3) 合法 rt 下 md 全注入矩阵 =====
+[dt_01q] 200 len=150443 1101ms
+[dt_02eq] 200 len=150443 1230ms
+[dt_03dq] 200 len=150443 1202ms
+[dt_04bt] 200 len=150443 1295ms
+[dt_05cmt] 200 len=150489 1465ms
+[dt_06hash] 200 len=150489 1124ms
+[dt_07blk] 200 len=150489 1357ms
+[dt_08blkc] 200 len=150489 1130ms
+[dt_09btrue] 200 len=150489 1200ms
+[dt_10bfalse] 200 len=150489 1365ms
+[dt_11orall] 200 len=150489 1158ms
+[dt_12num1] 200 len=150489 1261ms
+[dt_13num2] 200 len=150489 1279ms
+[dt_14null] 200 len=150489 1350ms
+[dt_15nl] 200 len=150489 1150ms
+[dt_16sleep] 200 len=150489 1235ms
+[dt_17like] 200 len=150489 1044ms
+[dt_18us] 200 len=150489 1147ms
+[dt_19unicode] 200 len=150489 1102ms
+
+===== 核心5变体×figmake_template =====
+[fm_01q] 200 len=141164 1495ms
+[fm_09btrue] 200 len=141164 1337ms
+[fm_10bfalse] 200 len=141164 1147ms
+[fm_14null] 200 len=140640 1335ms
+[fm_16sleep] 200 len=140640 1028ms
+DONE

@@ -1,0 +1,15 @@
+===== ANON file access attempts =====
+[ANON /file/] 200 len=789354 loc=-
+
+[ANON /make/] 200 len=789216 loc=-
+
+[ANON /site/] 200 len=789354 loc=-
+
+[ANON /api/files/] 200 len=2603 loc=-
+
+===== A (owner) file access (control) =====
+[A /api/files/] 200 len=2627 loc=-
+
+===== metadata checks =====
+  meta: <meta property="og:description" content="Created with Figma" />
+DONE

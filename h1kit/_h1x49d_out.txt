@@ -1,0 +1,49 @@
+--- ReportOrderInput ---
+{"data":{"__type":{"inputFields":[{"name":"direction","type":{"kind":"NON_NULL","name":null,"ofType":{"kind":"ENUM","name":"OrderDirection","ofType":null}}},{"name":"field","type":{"kind":"NON_NULL","name":null,"ofType":{"kind":"ENUM","name":"ReportOrderField","ofType":null}}}]}}}
+
+--- Hasura/内部端点探测 ---
+[404] /v1/graphql ct=text/html; charset=UTF-8 body=<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found |
+[404] /v1/query ct=text/html; charset=UTF-8 body=<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found |
+[404] /graphql/v1 ct=text/html; charset=UTF-8 body=<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found |
+[404] /hasura/v1/graphql ct=text/html; charset=UTF-8 body=<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found |
+[404] /api/graphql ct=text/html; charset=UTF-8 body=<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found |
+[404] /gql ct=text/html; charset=UTF-8 body=<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found |
+[404] /graphql/query ct=text/html; charset=UTF-8 body=<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found |
+[404] /v2/query ct=text/html; charset=UTF-8 body=<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found |
+
+--- ES query_string 语法面(索引内查 _id) ---
+CompleteHacktivityReportIndex | _id:3732660 -> [200] {"errors":[{"message":"Field '_id' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+CompleteHacktivityReportIndex | _id:2487889 -> [200] {"errors":[{"message":"Field '_id' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}
+CompleteHacktivityReportIndex | reporter.username:bate5a -> [200] {"errors":[{"message":"Field 'reporter.username' is not searchable","locations":[{"line":1,"column":3}],"path":["search"]}],"data":{"search":null}}

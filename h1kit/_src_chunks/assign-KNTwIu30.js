@@ -1,0 +1,1 @@
+import{t as e}from"./rolldown-runtime-DAXXjFlN.js";import{Dw as t,Ew as n,Tw as r,px as i,vx as a,yx as o}from"./vendor-_WdvpBLr.js";var s=e(((e,s)=>{var c=o(),l=a(),u=i(),d=n(),f=t(),p=r(),m=Object.prototype.hasOwnProperty;s.exports=u(function(e,t){if(f(t)||d(t)){l(t,p(t),e);return}for(var n in t)m.call(t,n)&&c(e,n,t[n])})}));export{s as t};

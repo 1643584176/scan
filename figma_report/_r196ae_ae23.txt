@@ -1,0 +1,2 @@
+HTTP 400
+{"error":true,"status":400,"message":"This file does not support a code repository","i18n":null}

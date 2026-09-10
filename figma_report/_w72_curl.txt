@@ -1,0 +1,27 @@
+curl ^"https://api.weavy.ai/api/v1/users^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7^" ^
+  -H ^"authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjI0N2Y4MDYwMDM5YjVmNDBkOTQ5NjkzOGJiMTg5NzA2ZWY4ODkzM2QiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiYm9ibyBsaSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKNXZwOTU1bzJLeUxEZk5QTW01aFdLVmdybmhDSmdTa0ZhVmd5VDhUTUYwUE0xalE9czk2LWMiLCJzdWJzY3JpcHRpb25fdHlwZSI6ImZyZWUiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY29tZnl3ZWItYzMxYmUiLCJhdWQiOiJjb21meXdlYi1jMzFiZSIsImF1dGhfdGltZSI6MTc4ODgzNzAwMSwidXNlcl9pZCI6ImxSUEN4WnAyZXlaaU8yMHJmUGU1bGJUM1c1UyIsInN1YiI6ImxSUEN4WnAyZXlaaU8yMHJmUGU1bGJUM1c1UyIsImlhdCI6MTc4ODgzNzAwNCwiZXhwIjoxNzg4ODQwNjA0LCJlbWFpbCI6ImxpYm9ibzEyMjlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDcxNTU4MjMyOTE4MTE1MDM0NDUiXSwiZW1haWwiOlsibGlib2JvMTIyOUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.H0haAKpLLyY2h7aCvYkU3t5zhfgkG25x1471sqLhalMiluw7-NNA_ntrt78pRUrGxCI7GXoidLWjMwdzqK-eS0HGWB86OwnHOQdjEkP_gpSIi9gIB2ca5arA5aCaSyc0dgtri8TwcQhWfKtHKxLTQ1n6L3VCYFOp-5VNqRuYjmj94CayS6UNqFAhMoDyFThcnoui_fuTA2Gy3-V8-N-ont-2NDFyKJKGhh-vocRLE8dLsN8WtlnmSQQMOpjVHKFB6Ee7aWZeHSxweNd7puKU-7hty20mc5R7aSF7LERDnnrkbSmNz_f3j0OzNyehKd3_yN7PSgNLG_z_iVAQweRzEg^" ^
+  -H ^"baggage: session.id=1f9ce980-0041-421b-bb83-62037af4c8f2^" ^
+  -H ^"cache-control: no-cache^" ^
+  -b ^"_ga=GA1.1.1180683737.1788836916; _gcl_au=1.1.369757076.1788836916; __Host-wv_tier=v1.lRPCxZp2eyZiO20rfPe5lbT3W5S2~1788837003-6VJzEwtU8bPMKYUQygZdWOiisZ_X2O58HPn2KDuvsdI; intercom-session-siifiun4=RDZQcVVzSUkvMlJHYlJ4L3lkSTJCVyt2QWhsUlJwbGlKWjVVRUZLR2dPeFRSSGtOVExWbE5iUG12aWtpS2ovK0pKeXQwWWFhYlhOMlk4dzdEOG9TME41RGdWUDN0azM4cHFQVzR6QkxEV0w5a2pMR0l1T0pIUDFZQ2ozVFdHdC9kUzlrWkRBRXhoM0puR2VaUnlpdnc1TmdTVHIzNy9RNmhkaDNmdnRxcGtkL3EzbHBvakxMZ21qcXVqY1dvZEhncnZmZUtoeDNzRUo0UmFrMU1mSmNGcWtwTGdENVRpd1pnbXBWRWdCQzYzaz0tLXFXNG5UcWJwVGY5N2JmQUoyTHJhY1E9PQ==--5f22facc5734719305170628e5f3a11c47770d65; intercom-device-id-siifiun4=16e464db-bda4-4025-922a-8dbe363d11e5; ph_phc_NT2sOH8m82boUw21Q1Vsr0tQUtjpRJUIE5aoqA0En8T_posthog=^%^7B^%^22^%^24device_id^%^22^%^3A^%^22019feff3-272b-773c-b380-f3b62d8347e8^%^22^%^2C^%^22distinct_id^%^22^%^3A^%^22lRPCxZp2eyZiO20rfPe5lbT3W5S2^%^22^%^2C^%^22^%^24sesid^%^22^%^3A^%^5B1788837346553^%^2C^%^2201a07ea4-e408-79e1-af87-10732ba8f9b0^%^22^%^2C1788831130629^%^5D^%^2C^%^22^%^24epp^%^22^%^3Atrue^%^2C^%^22^%^24initial_person_info^%^22^%^3A^%^7B^%^22r^%^22^%^3A^%^22^%^24direct^%^22^%^2C^%^22u^%^22^%^3A^%^22https^%^3A^%^2F^%^2Fapp.weavy.ai^%^2Fsignin^%^3Fcode^%^3DUpCZNvswEDsZeBsnXEPsrjsnz^%^26state^%^3DJLL6loTqsdlwTKk02cVRIpV.-lTEdVHe^%^22^%^7D^%^2C^%^22^%^24user_state^%^22^%^3A^%^22identified^%^22^%^7D; _ga_FZG9BNPQXK=GS2.1.s1788836915^$o1^$g1^$t1788837346^$j45^$l0^$h0; cf_clearance=CRgM3eCbga9XoUz0cLdjSwSh2QG6gMuzMF7wm6BHxRY-1788837327-1.2.1.1-R7kmSzW0U4gXi1fRDRX0w5LatBhRHdHyqMkg5iR0DfmwTiD1CULv1dctIkutPYTyic4OFRMmlVspSCXnTLVn8zZliqsJrZLdrb9rCLCV8VUPl823eoAWYWK1X9NTfTSpJfS6b7rCSqE2sdgIbYGxH63hb9I.QG9h6BlC7arXfpPHWGJeLC2C.fTZaftN02qw5hU4xvpcTO0ffLMsucTU6V91FgCuTc91MI2vf9J6j6nGHH1Ju5wdNBt_hXZUrFpzdQvAYMMrZfBoGybtOOjnZVvvvvyyB37baP4gps56osYT2cHxYimfBKajzy.JXskGqOtWbflaDwMUm2a9BEL8Kjn9hxyIU4s35CWC9jk0u8F8cQ8sJ0WtDqjDIB7LHHVwDv6MiJS_8DykJM.LAuKKWJkLO6l0lfUDLbT6bfPxn0PRnW7_BW4VpSpruSTAxcGV^" ^
+  -H ^"origin: https://app.weavy.ai^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"sec-ch-ua: ^\^"Microsoft Edge^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-site^" ^
+  -H ^"traceparent: 00-000000000000000065c8d7ed04fdf2d7-485261f107f66b1d-01^" ^
+  -H ^"tracestate: dd=s:1;o:rum^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0^" ^
+  -H ^"x-app-recipeid: 9CzKElKiDIYFVfB5snJoYM^" ^
+  -H ^"x-app-version: 4.1.1214^" ^
+  -H ^"x-datadog-origin: rum^" ^
+  -H ^"x-datadog-parent-id: 5211335406669687581^" ^
+  -H ^"x-datadog-sampling-priority: 1^" ^
+  -H ^"x-datadog-trace-id: 7334349406163825367^" ^
+  -H ^"x-weavy-auth-provider: firebase^" ^
+  -H ^"x-wv-tier-cookie: 1^"

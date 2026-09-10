@@ -1,0 +1,24 @@
+=== 2487889.json status 200 ===
+{"title": "Insecure Direct Object Reference (IDOR) Allows Viewing Private Report Details via /bugs.json Endpoint", "reporter": "bate5a", "team": "security", "state": "Closed"}
+--- pub_title_kw ---
+  [200] {"data":{"search":{"total_count":142}}}
+--- pub_reporter ---
+  [200] {"data":{"search":{"total_count":27}}}
+--- self_reporter_xxbo ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- neon_hunter_xxbo ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- pub_team ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- team_neon ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- substate_triaged ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- sev_high ---
+  [200] {"data":{"search":{"total_count":1954}}}
+--- sev_critical ---
+  [200] {"data":{"search":{"total_count":1003}}}
+--- sev_5 ---
+  [200] {"data":{"search":{"total_count":0}}}
+--- disclosed_2024 ---
+  [500] {"data":null,"errors":[{"message":"Something went wrong processing your request. Please contact https://support.hackerone.com if this problem persists.","type":"STANDARD_ERROR"}]}

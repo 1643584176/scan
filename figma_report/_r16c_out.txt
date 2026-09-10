@@ -1,0 +1,16 @@
+=== goto https://zestoro.figma.site/
+goto ok
+html dumped: 176962 chars
+  html pat '__figma__': 1 hits [176899]
+    ...-3.48-8.413Z"></path></svg></a></div></div></div>        <script defer="" src="/__figma__/make_community_banner_v1.js"></script> </body></html>...
+  html pat 'databaseId': 0 hits []
+  html pat 'database_id': 0 hits []
+  html pat 'collection': 0 hits []
+  html pat 'cms': 0 hits []
+
+===== XHR/API responses =====
+GET [document] 200 https://zestoro.figma.site/
+GET [fetch] 200 https://zestoro.figma.site/__figma__/api/community_published_banner_details
+    [application/json] {"error":false,"status":200,"meta":{"hub_file_url":"https://www.figma.com/community/file/1673056696264297444?openSignupModal=true","report_abuse_url":"https://www.figma.com/report-abuse?reported_content=zestoro.figma.site","figma_logo_url":"https://www.figma.com/community/make","remix_button_text":"
+
+written _r16c_site_net.txt (2 unique)

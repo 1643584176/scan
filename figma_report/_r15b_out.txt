@@ -1,0 +1,8 @@
+===== R15b collections 错误形态 =====
+
+[coll_items] 404 len=830051 ctype=text/html;charset=utf-8
+
+[coll_export] 403 len=197 ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+DONE

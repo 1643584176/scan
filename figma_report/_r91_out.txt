@@ -1,0 +1,34 @@
+===== A) user/session state 挖 org/team id =====
+[A1_user_state] 200 len=33804
+    found ids: ['1666382706663462213']
+    ctx: team_users":[{"id":"311767172"
+    ctx: team_id":"1666382706663462213"
+    ctx: team_flags":[]
+    ctx: team_id":"1666382706663462213"
+    ctx: team"
+    ctx: team-members-1666382706663462213:1789021468:0:28bf2e08bd9227b909
+    ctx: team_id":"1666382706663462213"
+    ctx: team_id":"1666382706663462213"
+    ctx: team_id":"1666382706663462213"
+    ctx: team_id":"1666382706663462213"
+[A2_session_state] 200 len=5727
+    found ids: ['1666382706663462213']
+    ctx: team_tos":false
+    ctx: team"
+    ctx: teams":[{"id":"1666382706663462213"
+    ctx: team"
+    ctx: team_at":null
+    ctx: team_at":null
+    ctx: team_state":"not_student_team"
+    ctx: team":false
+    ctx: team":true
+    ctx: team":false
+[A3_user_meta] 404 len=9
+    found ids: []
+[A4_me] 404 len=9
+    found ids: []
+===== B) folder_search org_id 1..30 枚举 =====
+    org 1-30 非404命中: 无
+===== C) folder_search team_id 1..12 枚举 =====
+    team 1-12 非404命中: 无
+DONE

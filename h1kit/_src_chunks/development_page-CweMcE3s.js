@@ -1,0 +1,1 @@
+import{Fw as e}from"./vendor-_WdvpBLr.js";import"./app-5pKgUmmm.js";e();var t=()=>null;export{t as default};

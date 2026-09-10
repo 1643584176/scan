@@ -1,0 +1,26 @@
+WAF-only cookies: 5
+
+===== R19 versions/code 授权矩阵 =====
+
+[ver_invalid] 403 len=197
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+    versions=[] current=None
+
+[ver_other_anon] 200 len=6184
+    versions=['270570'] current=270570
+
+[verhist_other_anon] 200 len=11137
+
+[code_badver] 403 len=46
+    body: You don't seem to have permission to do that.
+
+
+>>> other widget first version id = '270570'
+[code_cross] 403 len=46
+    body: You don't seem to have permission to do that.
+
+
+[ver_self_anon] 200 len=8922
+    versions=['272119', '272030', '272091'] current=272119
+
+DONE

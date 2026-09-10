@@ -1,0 +1,207 @@
+总: 533  已深测: 84
+DBQ(查询类): 132   DBW(批量写): 17   X(排除): 300
+
+===== DBQ 纯查询类(注入首选) (132) =====
+-- activity_logs (5) --
+   /api/activity_logs
+   /api/activity_logs/${r.key}
+   /api/activity_logs/export
+   /api/activity_logs/last_edit/${e.orgUserId}
+   /api/activity_logs/recent/${e.orgUserId}
+-- bug_reports (1) --
+   /api/bug_reports
+-- code_connect (8) --
+   /api/code_connect/generate_template
+   /api/code_connect/libraries/${e.libraryKey}/source_files
+   /api/code_connect/libraries/${e.libraryKey}/source_files/file_details
+   /api/code_connect/libraries/${e}/template_generations/${t}/feedback
+   /api/code_connect/library/${t}/published_components/all
+   /api/code_connect/library/in_context/published_components
+   /api/code_connect/library/in_context/published_components/all
+   /api/code_connect/library/in_context/published_components/status
+-- color_palettes (3) --
+   /api/color_palettes
+   /api/color_palettes/${e.uuid}
+   /api/color_palettes/${e}
+-- community_comments (1) --
+   /api/community_comments/${a}/report
+-- curator (1) --
+   /api/curator/file_browser_banner_configs
+-- design_systems (7) --
+   /api/design_systems/bundles
+   /api/design_systems/bundles/${e.bundleId}
+   /api/design_systems/bundles/${e.bundleId}/editors
+   /api/design_systems/bundles/${e.bundleId}/sources
+   /api/design_systems/documentation_pages
+   /api/design_systems/documentation_pages/${e.pageId}
+   /api/design_systems/published_state_group_versions
+-- extension_analytics (1) --
+   /api/extension_analytics/v1/org/${e}
+-- feed_posts (1) --
+   /api/feed_posts/${G}/videos/${e.videoContent.videoFileUuid}/manifest
+-- figjam (2) --
+   /api/figjam/default_collage_items
+   /api/figjam/default_inserts
+-- figment-proxy (1) --
+   /api/figment-proxy/monitor
+-- file_move (1) --
+   /api/file_move/suggested
+-- folder_items (1) --
+   /api/folder_items/content_summary
+-- folders (18) --
+   /api/folders
+   /api/folders/${e.destFolderId}/can_move_files
+   /api/folders/${e.folderId}
+   /api/folders/${e.folderId}/ancestor_folders
+   /api/folders/${e.folderId}/can_move
+   /api/folders/${e.folderId}/color
+   /api/folders/${e.folderId}/contributors
+   /api/folders/${e.folderId}/duplicate
+   /api/folders/${e.folderId}/files
+   /api/folders/${e.folderId}/inheritance
+   /api/folders/${e}/paginated_files
+   /api/folders/${t.fileKey}/pin
+   /api/folders/${t.folderId}/description
+   /api/folders/${t}/claim
+   /api/folders/move
+   /api/folders/rename
+   /api/folders/restore/${e.folderId}
+   /api/folders/trash/${e.folderId}
+-- hub_files (1) --
+   /api/hub_files/template/${t.hubFileId}/copy
+-- insights (1) --
+   /api/insights/${e.planId}/${e.tableName}/export
+-- integrations (1) --
+   /api/integrations/github-app/figma-make/${e.file_key}/remove_repository_mapping
+-- license_group (1) --
+   /api/license_group/${e.licenseGroup.id}
+-- ml (4) --
+   /api/ml/export/file_version/${n}
+   /api/ml/export/file_version/${o}
+   /api/ml/export/status/${a}
+   /api/ml/export/status/${s}
+-- oauth (1) --
+   /api/oauth/apps/${e}/non_plan_user_count
+-- org (2) --
+   /api/org/${t.orgId}/delete_org_users
+   /api/org/${t}/deletion_request
+-- orgs (7) --
+   /api/orgs/${e.org.id}/export_teams
+   /api/orgs/${l}/license_groups
+   /api/orgs/${r}/teams/join
+   /api/orgs/${t.orgId}/org_users
+   /api/orgs/${t}/export_controls
+   /api/orgs/${t}/workspaces/export_controls
+   /api/orgs/${u}/license_groups
+-- perf_reports (1) --
+   /api/perf_reports
+-- plans (13) --
+   /api/plans/${e.planId}/admin_requests/counts
+   /api/plans/${e.planId}/ai_credits/export
+   /api/plans/${e.planId}/ai_credits/license_group_active_users
+   /api/plans/${e.planId}/ai_credits/license_group_allocations
+   /api/plans/${e.planId}/ai_credits/license_group_usage
+   /api/plans/${e.planId}/ai_credits/plan_ai_usage_billing_period
+   /api/plans/${e.planId}/ai_credits/plan_ai_usage_monthly
+   /api/plans/${e.planId}/ai_credits/plan_balance_summary
+   /api/plans/${e.planId}/ai_credits/plan_billing_period_usage_summary
+   /api/plans/${e.planId}/ai_credits/plan_usage_summary
+   /api/plans/${e.planId}/ai_credits/plan_user_balance_summary
+   /api/plans/${e.planId}/ai_credits/plan_user_usage_summary
+   /api/plans/${e.planId}/mcp_usage
+-- plugins (1) --
+   /api/plugins/${t.id}/videos/${e.video_file_uuid}/manifest
+-- recent_prototypes (1) --
+   /api/recent_prototypes
+-- reference_id (1) --
+   /api/reference_id/${e.referenceId}/file_key
+-- resource_uses (1) --
+   /api/resource_uses/template/${e.templateId}
+-- session (1) --
+   /api/session/clear_account_sharing_flag
+-- statsig (6) --
+   /api/statsig/ai_collab_assistant_plan_details
+   /api/statsig/ai_design_assistant_exp_overrides
+   /api/statsig/bootstrap
+   /api/statsig/flag_descriptions
+   /api/statsig/flag_status_for_user
+   /api/statsig/update_overrides
+-- subscriptions (2) --
+   /api/subscriptions/team/${e.teamId}/summary
+   /api/subscriptions/teams/calculate_estimate
+-- teams (22) --
+   /api/teams/${_}/team_users/request_upgrade
+   /api/teams/${e.teamId}
+   /api/teams/${e.teamId}/ai_data_sharing
+   /api/teams/${e.teamId}/deletion_file_count
+   /api/teams/${e.teamId}/folders
+   /api/teams/${e.teamId}/has_published_site
+   /api/teams/${e.teamId}/num_backfilled_team_user
+   /api/teams/${e.teamId}/subscription_status
+   /api/teams/${e.teamId}/team_admins
+   /api/teams/${e.teamId}/team_name
+   /api/teams/${e.teamId}/users/${e.teamMemberId}/last_active
+   /api/teams/${e}/default_color_palette
+   /api/teams/${n}
+   /api/teams/${r}
+   /api/teams/${r}/restore
+   /api/teams/${t.teamId}
+   /api/teams/${t.teamId}/student_team
+   /api/teams/${t}/student_team
+   /api/teams/${t}/users
+   /api/teams/create
+   /api/teams/deleted/${e.teamId}
+   /api/teams/redeem_promo
+-- templates (1) --
+   /api/templates/${t.file_key}/duplicate
+-- unsplash (1) --
+   /api/unsplash/${e.fileKey}/search
+-- user (4) --
+   /api/user/${e.userId}/deletion_impact
+   /api/user/${e.userId}/segments
+   /api/user/${e.userId}/teams
+   /api/user/${t}/teams
+-- users (1) --
+   /api/users/batched
+-- v2 (3) --
+   /api/v2/folders
+   /api/v2/folders/${e.folderId}
+   /api/v2/statsig/bootstrap
+-- versions (1) --
+   /api/versions/${n}
+-- workspace (3) --
+   /api/workspace/${eG}/export_teams
+   /api/workspace/${e}/teams
+   /api/workspace/${n}/teams
+
+===== DBW 批量/导入/校验类 (17) =====
+-- admin (1) --
+   /api/admin/tax/validate_vat
+-- bulk_favorite_resources_v2 (1) --
+   /api/bulk_favorite_resources_v2
+-- code_connect (1) --
+   /api/code_connect/bulk_map
+-- files_batch (1) --
+   /api/files_batch
+-- folder_items (3) --
+   /api/folder_items/can_move_bulk
+   /api/folder_items/move_bulk
+   /api/folder_items/trash_bulk
+-- items (1) --
+   /api/items/${t.databaseId}/fields/${e.databaseId}/validate
+-- make (1) --
+   /api/make/ds_import_libraries
+-- plans (3) --
+   /api/plans/${e.planId}/access_keys/resource_restrictions/validate
+   /api/plans/${e.planId}/code_connect/generate_property_mappings
+   /api/plans/${e.planId}/code_connect/generate_property_mappings/status
+-- saml (1) --
+   /api/saml/validate_code
+-- tax (1) --
+   /api/tax/validate_vat
+-- validate_address (1) --
+   /api/validate_address
+-- validate_currency (1) --
+   /api/validate_currency
+-- weave (1) --
+   /api/weave/${e}/edit_lock/release

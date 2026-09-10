@@ -1,0 +1,40 @@
+===== P1: A duplicate blog template =====
+status: 200
+meta keys: ['creator_id', 'updated_at', 'key', 'name', 'description', 'folder_id', 'scheme', 'team_id', 'link_access', 'trashed_user_id', 'client_meta', 'license', 'parent_org_id', 'org_browsable', 'thumbnail_url_override', 'thumbnail_guid', 'proto_link_access', 'org_audience', 'file_repo_id', 'source_file_key', 'source_checkpoint_id', 'editor_type', 'branch_checkpoint_id', 'has_file_link_password', 'has_proto_link_password', 'folder_access_enabled', '_internal_only_written_by_backfill', 'is_trashed_with_project', 'trashed_with_parent', 'url']
+NEW_KEY: k7tnoOiCG5H49sdSgrSPlP | editor_type: figmake | folder: 634606970
+
+===== P2a ANON -> CMS views (A private figmake file) =====
+  [sub] HasCollectionsView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [sub] ListCollectionsView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [sub] ListFieldSchemasView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [payload] ["ListCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (142b)
+      {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {}}}, "computations": {}}}
+  [payload] ["ListFieldSchemasView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (142b)
+      {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+  [LOADED] ListFieldSchemasView
+  [payload] ["HasCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (208b)
+      {"File": {"queries": {"[\"root\",\"fileV2\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {"k7tnoOiCG5H49sdSgrSPlP": {"id": "k7tnoOiCG5H49sdSgrSPlP", "key": "k7tnoOiCG5H49sdSgrSPlP"}}}}, "computations": {}}}
+  [payload] ["HasCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (207b)
+      {"File": {"queries": {}, "computations": {"[\"File\",\"fileHasCmsCollections\",\"k7tnoOiCG5H49sdSgrSPlP\",{\"_rootId\":\"k7tnoOiCG5H49sdSgrSPlP\"}]": {"fieldName": "fileHasCmsCollections", "value": false}}}}
+  [LOADED] HasCollectionsView
+  (messages: 7)
+
+===== P2b A(self) -> CMS views (baseline) =====
+  [sub] HasCollectionsView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [sub] ListCollectionsView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [sub] ListFieldSchemasView {'fileKey': 'k7tnoOiCG5H49sdSgrSPlP'}
+  [payload] ["ListCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (142b)
+      {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {}}}, "computations": {}}}
+  [payload] ["ListFieldSchemasView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (142b)
+      {"FileCmsCollection": {"queries": {"[\"root\",\"fileCmsCollections\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ListCollectionsView
+  [LOADED] ListFieldSchemasView
+  [payload] ["HasCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (208b)
+      {"File": {"queries": {"[\"root\",\"fileV2\",[\"k7tnoOiCG5H49sdSgrSPlP\"],[]]": {"initial": {"k7tnoOiCG5H49sdSgrSPlP": {"id": "k7tnoOiCG5H49sdSgrSPlP", "key": "k7tnoOiCG5H49sdSgrSPlP"}}}}, "computations": {}}}
+  [payload] ["HasCollectionsView",{"fileKey":"k7tnoOiCG5H49sdSgrSPlP"}] (207b)
+      {"File": {"queries": {}, "computations": {"[\"File\",\"fileHasCmsCollections\",\"k7tnoOiCG5H49sdSgrSPlP\",{\"_rootId\":\"k7tnoOiCG5H49sdSgrSPlP\"}]": {"fieldName": "fileHasCmsCollections", "value": false}}}}
+  [LOADED] HasCollectionsView
+  (messages: 7)
+
+DONE — NEW_KEY=k7tnoOiCG5H49sdSgrSPlP

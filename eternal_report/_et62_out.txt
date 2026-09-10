@@ -1,0 +1,9 @@
+[403 len=404] /webroutes/restaurant/info?res_id=3%27                     <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "ht
+[403 len=404] /webroutes/restaurant/info?res_id=3%27%27                  <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "ht
+[403 len=406] /webroutes/restaurant/info?res_id=3%27%27%27               <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "ht
+[403 len=404] /webroutes/restaurant/info?res_id=3%5C%27                  <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "ht
+[403 len=404] /webroutes/restaurant/info?res_id=3%09                     <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "ht
+[403 len=406] /webroutes/restaurant/info?res_id=3%09and%091              <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "ht
+[403 len=406] /webroutes/restaurant/info?res_id=3%20                     <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "ht
+[403 len=404] /webroutes/restaurant/info?res_id=3%23                     <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "ht
+done

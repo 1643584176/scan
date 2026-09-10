@@ -1,0 +1,34 @@
+direction literal: DESC
+direction literal: DESC
+direction literal: DESC
+direction literal: DESC
+AST direction ctx: DESC
+AST direction ctx: DESC
+AST direction ctx: DESC
+AST direction ctx: DESC
+AST direction ctx: DESC
+AST direction ctx: DESC
+AST direction ctx: DESC
+AST direction ctx: DESC
+AST direction ctx: DESC
+
+
+--- near index ---
+:`NamedType`,name:{kind:`Name`,value:`Int`}}},{kind:`VariableDefinition`,variable:{kind:`Variable`,name:{kind:`Name`,value:`sort`}},type:{kind:`NonNullType`,type:{kind:`NamedType`,name:{kind:`Name`,value:`SortInput`}}}},{kind:`VariableDefinition`,variable:{kind:`Variable`,name:{kind:`Name`,value:`reporterFilter`}},type:{kind:`NamedType`,name:{kind:`Name`,value:`String`}}}],selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`me`},selectionSet:{kind:`SelectionSet`,selections:[{kind:`Field`,name:{kind:`Name`,value:`id`}}]}},{kind:`Field`,name:{kind:`Name`,value:`search`},arguments:[{kind:`Argument`,name:{kind:`Name`,value:`index`},value:{kind:`EnumValue`,value:`
+oldest: 13
+recent: 25
+popular: 9
+upvotes: 4
+latest_disclosable_activity_at: 10
+
+ctx: ...:`Name`,value:`currency`}}]}},{kind:`Field`,name:{kind:`Name`,value:`total_awarded_amount`}},{kind:`Field`,name:{kind:`Name`,value:`latest_disclosable_action`}},{kind:`Field`,name:{kind:`Name`,value:`latest_disclosable_activity_at`}},{kind:`Field`,name:{kind:`Name`,value:`submitted_at`}},{kind:`Field`,name:{kind:`Name`,value:`disclosed`}},{kind:`Fi
+
+ctx: ...\n            medium_profile_picture: profile_picture(size: medium)\n            url\n            currency\n          }\n          total_awarded_amount\n          latest_disclosable_action\n          latest_disclosable_activity_at\n          submitted_at\n          disclosed\n          has_collaboration\n          collaborators {\n            id\n 
+
+ctx: ...   name             medium_profile_picture: profile_picture(size: medium)             url             currency           }           total_awarded_amount           latest_disclosable_action           latest_disclosable_activity_at           submitted_at           disclosed           has_collaboration           collaborators {             id        
+
+ctx: ...Hw.SET_SORT:return{...e,sort:t.value};case Hw.SET_PAGE:return{...e,pageIndex:t.value};case Hw.SET_SEARCH_MODE:return{...e,queryString:``};default:return e}},Ww=`DESC`,Gw=`disclosed_at`,Kw=`votes`,qw=`latest_disclosable_activity_at`,Jw={latest_disclosable_activity_at:{field:qw,direction:Ww},disclosed_at_desc:{field:Gw,direction:Ww},disclosed_at_asc:
+
+ctx: ...};case Hw.SET_PAGE:return{...e,pageIndex:t.value};case Hw.SET_SEARCH_MODE:return{...e,queryString:``};default:return e}},Ww=`DESC`,Gw=`disclosed_at`,Kw=`votes`,qw=`latest_disclosable_activity_at`,Jw={latest_disclosable_activity_at:{field:qw,direction:Ww},disclosed_at_desc:{field:Gw,direction:Ww},disclosed_at_asc:{field:Gw,direction:`ASC`},total_awa
+
+ctx: ...SET_SORT,value:Jw[o]})},children:`Apply`})}),children:(0,L.jsx)(Pt,{label:`Sort by`,options:[{id:`disclosed_at_asc`,label:`Earliest disclosed`},{id:`total_awarded_amount`,label:`Highest bounty`},{id:`latest_disclosable_activity_at`,label:`Recent activity`},{id:`disclosed_at_desc`,label:`Recently disclosed`},{id:`votes`,label:`Popularity`}],value:o,

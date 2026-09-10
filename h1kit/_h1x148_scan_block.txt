@@ -1,0 +1,320 @@
+(async () => {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  const csrf = document.querySelector('meta[name="csrf-token"]').content;
+  const hits = [];
+  const q = async (handle) => {
+    const r = await fetch("/graphql", {
+      method: 'POST', headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrf },
+      body: JSON.stringify({ query: `{ team(handle: "${handle}") { structured_scopes { edges { node { id asset_identifier credentials_available_count credentials_claimed_count } } } } }` })
+    });
+    const j = await r.json();
+    const sc = j?.data?.team?.structured_scopes?.edges || [];
+    for (const e of sc) {
+      const n = e.node;
+      if (n.credentials_available_count > 0 || n.credentials_claimed_count > 0)
+        hits.push(handle + " | " + n.asset_identifier + " | avail=" + n.credentials_available_count + " claimed=" + n.credentials_claimed_count);
+    }
+  };
+  try { await q('assa_abloy_americas'); await q('prism_vdp'); await q('wolt'); } catch (e) {}
+  await sleep(160);
+  try { await q('agoda-public'); await q('anthropic-cyber-jailbreak'); await q('epicgames-vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('omnicell'); await q('phonepe_vdp'); await q('vanguard'); } catch (e) {}
+  await sleep(160);
+  try { await q('mcgrawhill'); await q('clear_street_vdp'); await q('discover-vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('gogo_vdp'); await q('coupang_tw'); await q('getyourguide_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('essity'); await q('tbs-sct'); await q('bose_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('mod_supply_chain_vdp'); await q('anduril_industries'); await q('cognition'); } catch (e) {}
+  await sleep(160);
+  try { await q('tines_automation_vdp'); await q('taxwell-vdp'); await q('luminor'); } catch (e) {}
+  await sleep(160);
+  try { await q('twilio'); await q('mufg-vdp'); await q('bankunited'); } catch (e) {}
+  await sleep(160);
+  try { await q('mueller_water_products_vdp'); await q('hexagon_vdp'); await q('doordash'); } catch (e) {}
+  await sleep(160);
+  try { await q('henkel_vdp'); await q('vueling_vdp'); await q('robinhood_markets'); } catch (e) {}
+  await sleep(160);
+  try { await q('robinhood'); await q('docusign'); await q('british_airways_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('vercel-open-source'); await q('regions_financial'); await q('1win_com'); } catch (e) {}
+  await sleep(160);
+  try { await q('citi_group'); await q('tucows_vdp'); await q('banco_plata'); } catch (e) {}
+  await sleep(160);
+  try { await q('netscaler_public_program'); await q('hack_the_box'); await q('meesho_bbp'); } catch (e) {}
+  await sleep(160);
+  try { await q('kaseya'); await q('lovable-vdp'); await q('braze_inc'); } catch (e) {}
+  await sleep(160);
+  try { await q('kong'); await q('hyland_software'); await q('worldpay'); } catch (e) {}
+  await sleep(160);
+  try { await q('hertz'); await q('qinetiq'); await q('kraken-tech'); } catch (e) {}
+  await sleep(160);
+  try { await q('vf-corporation-vdp'); await q('experian'); await q('ferrero'); } catch (e) {}
+  await sleep(160);
+  try { await q('baird_vdp'); await q('dust'); await q('msci'); } catch (e) {}
+  await sleep(160);
+  try { await q('hotmartvdp'); await q('whoop_bug_bounty'); await q('hex'); } catch (e) {}
+  await sleep(160);
+  try { await q('hubspot'); await q('alibaba_vdp'); await q('oppo_bbp'); } catch (e) {}
+  await sleep(160);
+  try { await q('1password'); await q('bill_vdp'); await q('bcny'); } catch (e) {}
+  await sleep(160);
+  try { await q('penn_entertainment'); await q('verily_life_sciences'); await q('neon_bbp'); } catch (e) {}
+  await sleep(160);
+  try { await q('bumba_bbp'); await q('starbucks_japan'); await q('starbucks_china'); } catch (e) {}
+  await sleep(160);
+  try { await q('adevinta_vdp'); await q('recreation_gov_vdp'); await q('syfe_bbp'); } catch (e) {}
+  await sleep(160);
+  try { await q('pepsico_vdp'); await q('aws_vdp'); await q('nba-public'); } catch (e) {}
+  await sleep(160);
+  try { await q('hpe_vdp'); await q('itau_unibanco'); await q('supabase'); } catch (e) {}
+  await sleep(160);
+  try { await q('finnair_vdp'); await q('liverpool_victoria'); await q('6sense-vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('mintel'); await q('circle-bbp'); await q('lpl_financial-vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('peloton'); await q('varonis'); await q('ion'); } catch (e) {}
+  await sleep(160);
+  try { await q('unico_idtech'); await q('wallet_on_telegram'); await q('tomtom'); } catch (e) {}
+  await sleep(160);
+  try { await q('fanduel-vdp'); await q('singlestore'); await q('lowes'); } catch (e) {}
+  await sleep(160);
+  try { await q('rei_vdp'); await q('chia_network'); await q('corebridge_financial'); } catch (e) {}
+  await sleep(160);
+  try { await q('3cx'); await q('interco_vdp'); await q('privy-bbp'); } catch (e) {}
+  await sleep(160);
+  try { await q('dailypay_vdp'); await q('netflix'); await q('transunion'); } catch (e) {}
+  await sleep(160);
+  try { await q('wellhive'); await q('23andme_bbp'); await q('aeromexico_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('audible'); await q('temu'); await q('vectra_ai_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('bybit_fintech'); await q('trip_com'); await q('bykea'); } catch (e) {}
+  await sleep(160);
+  try { await q('anthropic'); await q('inditex'); await q('aon'); } catch (e) {}
+  await sleep(160);
+  try { await q('oaknorth_bank'); await q('aven_response'); await q('visa'); } catch (e) {}
+  await sleep(160);
+  try { await q('brightspeed'); await q('toolsforhumanity'); await q('alshaya'); } catch (e) {}
+  await sleep(160);
+  try { await q('ring'); await q('truist_financial'); await q('six-group'); } catch (e) {}
+  await sleep(160);
+  try { await q('eufy_security'); await q('eero'); await q('fertitta_entertainment'); } catch (e) {}
+  await sleep(160);
+  try { await q('mozilla'); await q('stripchat'); await q('redox_bbp'); } catch (e) {}
+  await sleep(160);
+  try { await q('okg'); await q('wisdomtree'); await q('pornbox'); } catch (e) {}
+  await sleep(160);
+  try { await q('tron_dao'); await q('superbet'); await q('abn_amro_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('magic-eden'); await q('prudential-financial'); await q('boozt'); } catch (e) {}
+  await sleep(160);
+  try { await q('us-department-of-state'); await q('sheer_bbp'); await q('vodafone_oman'); } catch (e) {}
+  await sleep(160);
+  try { await q('kkr_vdp'); await q('intuit_rdp'); await q('fifth_third_bank_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('indrive'); await q('rei_bbp'); await q('mergify'); } catch (e) {}
+  await sleep(160);
+  try { await q('zabbix'); await q('arkose_labs'); await q('productboard'); } catch (e) {}
+  await sleep(160);
+  try { await q('abb'); await q('avalara'); await q('alsco'); } catch (e) {}
+  await sleep(160);
+  try { await q('abercrombie_fitch_bbp'); await q('abercrombie_fitch'); await q('city_of_los_angeles_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('resmed'); await q('yuga_labs'); await q('modern_treasury'); } catch (e) {}
+  await sleep(160);
+  try { await q('notion'); await q('daimler_truck'); await q('canada_goose_inc'); } catch (e) {}
+  await sleep(160);
+  try { await q('monarch_money'); await q('clarivate'); await q('render'); } catch (e) {}
+  await sleep(160);
+  try { await q('metamask'); await q('floqast'); await q('callsign'); } catch (e) {}
+  await sleep(160);
+  try { await q('palantir_public'); await q('ro'); await q('unitigroup'); } catch (e) {}
+  await sleep(160);
+  try { await q('mongodb'); await q('ripio'); await q('deribit'); } catch (e) {}
+  await sleep(160);
+  try { await q('fidelity'); await q('sorare'); await q('fresenius'); } catch (e) {}
+  await sleep(160);
+  try { await q('caterpillar'); await q('disney'); await q('alohi'); } catch (e) {}
+  await sleep(160);
+  try { await q('hilton'); await q('gymshark'); await q('moov'); } catch (e) {}
+  await sleep(160);
+  try { await q('vodafone'); await q('compass-bbp'); await q('wellsfargo-bbp'); } catch (e) {}
+  await sleep(160);
+  try { await q('allegion'); await q('wickr'); await q('pagerduty'); } catch (e) {}
+  await sleep(160);
+  try { await q('oanda'); await q('payoneer'); await q('tesco'); } catch (e) {}
+  await sleep(160);
+  try { await q('planet-labs'); await q('moonpay'); await q('koho'); } catch (e) {}
+  await sleep(160);
+  try { await q('veeam'); await q('redis-vdp'); await q('godaddy-vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('mondelez'); await q('inspectorio'); await q('capital-one-bounty'); } catch (e) {}
+  await sleep(160);
+  try { await q('apnic'); await q('blend-labs'); await q('razorpay'); } catch (e) {}
+  await sleep(160);
+  try { await q('hy-vee'); await q('zooplus'); await q('tenable'); } catch (e) {}
+  await sleep(160);
+  try { await q('newegg'); await q('octopus-energy'); await q('semtech'); } catch (e) {}
+  await sleep(160);
+  try { await q('fastly-vdp'); await q('servicenow-disclosure'); await q('zurich-insurance'); } catch (e) {}
+  await sleep(160);
+  try { await q('krisp'); await q('whatnot'); await q('latamairlines'); } catch (e) {}
+  await sleep(160);
+  try { await q('khealth'); await q('smtp2go'); await q('jetblue'); } catch (e) {}
+  await sleep(160);
+  try { await q('nominet'); await q('zebra_vdp'); await q('fiserv'); } catch (e) {}
+  await sleep(160);
+  try { await q('ups'); await q('playtika'); await q('beiersdorf'); } catch (e) {}
+  await sleep(160);
+  try { await q('john-deere'); await q('trendyol'); await q('mtb'); } catch (e) {}
+  await sleep(160);
+  try { await q('dib-vdp'); await q('global-payments'); await q('blackrock'); } catch (e) {}
+  await sleep(160);
+  try { await q('costco'); await q('on'); await q('hypr-corp'); } catch (e) {}
+  await sleep(160);
+  try { await q('mars'); await q('who-covid-19-mobile-app'); await q('stripe'); } catch (e) {}
+  await sleep(160);
+  try { await q('pfizer'); await q('emoney-advisor'); await q('paystack-vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('freshworks'); await q('judgeme'); await q('r3'); } catch (e) {}
+  await sleep(160);
+  try { await q('cbre'); await q('doppler'); await q('grindr'); } catch (e) {}
+  await sleep(160);
+  try { await q('csg-public'); await q('xvideos'); await q('anywhererealestate'); } catch (e) {}
+  await sleep(160);
+  try { await q('ohiosecretaryofstate'); await q('openmage'); await q('8x8-bounty'); } catch (e) {}
+  await sleep(160);
+  try { await q('tiktok'); await q('estee-lauder'); await q('aig'); } catch (e) {}
+  await sleep(160);
+  try { await q('finra'); await q('polygon-technology'); await q('cognizant'); } catch (e) {}
+  await sleep(160);
+  try { await q('vendasta'); await q('insightly'); await q('figma'); } catch (e) {}
+  await sleep(160);
+  try { await q('mendix'); await q('amazonvrp'); await q('cs_money'); } catch (e) {}
+  await sleep(160);
+  try { await q('cedars-sinai'); await q('hostinger'); await q('shutterfly_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('usps'); await q('shein'); await q('navient_solutions'); } catch (e) {}
+  await sleep(160);
+  try { await q('stagingdoteverydotorg'); await q('td-bank'); await q('flexport_vdp'); } catch (e) {}
+  await sleep(160);
+  try { await q('thnks'); await q('myndr'); await q('faraday_inc'); } catch (e) {}
+  await sleep(160);
+  try { await q('playstation'); await q('truecaller'); await q('insulet_corporation'); } catch (e) {}
+  await sleep(160);
+  try { await q('simple_poll'); await q('pubg'); await q('picsart'); } catch (e) {}
+  await sleep(160);
+  try { await q('evernote'); await q('box_private'); await q('hcl_software'); } catch (e) {}
+  await sleep(160);
+  try { await q('bestbuy'); await q('stripo'); await q('lemlist'); } catch (e) {}
+  await sleep(160);
+  try { await q('exodus'); await q('keybank'); await q('gmelius'); } catch (e) {}
+  await sleep(160);
+  try { await q('thomsonreuters-public'); await q('streak_com'); await q('palo_alto_software'); } catch (e) {}
+  await sleep(160);
+  try { await q('mtn_group'); await q('kubernetes'); await q('coinspot'); } catch (e) {}
+  await sleep(160);
+  try { await q('gocardless_bbp'); await q('equifax'); await q('forescout_technologies'); } catch (e) {}
+  await sleep(160);
+  try { await q('att'); await q('lark_technologies'); await q('top_echelon_software'); } catch (e) {}
+  await sleep(160);
+  try { await q('solidus'); await q('worklytics'); await q('defectdojo'); } catch (e) {}
+  await sleep(160);
+  try { await q('trellix'); await q('curl'); await q('dynatrace'); } catch (e) {}
+  await sleep(160);
+  try { await q('ridewithvia'); await q('xiaomi'); await q('starling_bank'); } catch (e) {}
+  await sleep(160);
+  try { await q('central-security-project'); await q('capital-one'); await q('reddit'); } catch (e) {}
+  await sleep(160);
+  try { await q('msd'); await q('early_warning'); await q('instacart'); } catch (e) {}
+  await sleep(160);
+  try { await q('phpbb'); await q('ford'); await q('expediagroup_bbp'); } catch (e) {}
+  await sleep(160);
+  try { await q('fronthq'); await q('netlify'); await q('fanduel'); } catch (e) {}
+  await sleep(160);
+  try { await q('creditkarma'); await q('mercadolibre'); await q('urbancompany'); } catch (e) {}
+  await sleep(160);
+  try { await q('remitly'); await q('expediagroup'); await q('nutanix'); } catch (e) {}
+  await sleep(160);
+  try { await q('s-pankki'); await q('flickr'); await q('matomo'); } catch (e) {}
+  await sleep(160);
+  try { await q('nisc'); await q('logitech'); await q('marriott'); } catch (e) {}
+  await sleep(160);
+  try { await q('hyatt'); await q('flipkart'); await q('acronis'); } catch (e) {}
+  await sleep(160);
+  try { await q('chainlink'); await q('paypal'); await q('chaturbate'); } catch (e) {}
+  await sleep(160);
+  try { await q('pixiv'); await q('ibm'); await q('arkadiyt-projects'); } catch (e) {}
+  await sleep(160);
+  try { await q('duckduckgo'); await q('affirm'); await q('crypto'); } catch (e) {}
+  await sleep(160);
+  try { await q('goodrx'); await q('nodejs'); await q('pingidentity'); } catch (e) {}
+  await sleep(160);
+  try { await q('flutteruki'); await q('toyota'); await q('crowdstrike'); } catch (e) {}
+  await sleep(160);
+  try { await q('databricks'); await q('coalition'); await q('elastic'); } catch (e) {}
+  await sleep(160);
+  try { await q('goldmansachs'); await q('yoti'); await q('valve'); } catch (e) {}
+  await sleep(160);
+  try { await q('epicgames'); await q('sony'); await q('malwarebytes'); } catch (e) {}
+  await sleep(160);
+  try { await q('superhuman'); await q('autodesk'); await q('monero'); } catch (e) {}
+  await sleep(160);
+  try { await q('bitwarden'); await q('oportun_vdp'); await q('wakatime'); } catch (e) {}
+  await sleep(160);
+  try { await q('bumble'); await q('spotify'); await q('roblox'); } catch (e) {}
+  await sleep(160);
+  try { await q('dyson'); await q('disclosure-assistance'); await q('lyst'); } catch (e) {}
+  await sleep(160);
+  try { await q('kiwicom'); await q('discourse'); await q('enjin'); } catch (e) {}
+  await sleep(160);
+  try { await q('nintendo'); await q('deptofdefense'); await q('plaid'); } catch (e) {}
+  await sleep(160);
+  try { await q('semrush'); await q('quora'); await q('brave'); } catch (e) {}
+  await sleep(160);
+  try { await q('portswigger'); await q('rubygems'); await q('files'); } catch (e) {}
+  await sleep(160);
+  try { await q('owox'); await q('exness'); await q('wordpress'); } catch (e) {}
+  await sleep(160);
+  try { await q('nextcloud'); await q('publitas'); await q('starbucks'); } catch (e) {}
+  await sleep(160);
+  try { await q('ruby'); await q('rockstargames'); await q('github'); } catch (e) {}
+  await sleep(160);
+  try { await q('wealthsimple'); await q('eternal'); await q('gm'); } catch (e) {}
+  await sleep(160);
+  try { await q('torproject'); await q('deriv'); await q('tinder'); } catch (e) {}
+  await sleep(160);
+  try { await q('fetlife'); await q('versioncake'); await q('grab'); } catch (e) {}
+  await sleep(160);
+  try { await q('cert'); await q('coinmate'); await q('clear'); } catch (e) {}
+  await sleep(160);
+  try { await q('revive_adserver'); await q('moneybird'); await q('coursera'); } catch (e) {}
+  await sleep(160);
+  try { await q('udemy'); await q('kayak'); await q('basecamp'); } catch (e) {}
+  await sleep(160);
+  try { await q('shopify'); await q('ips'); await q('airbnb'); } catch (e) {}
+  await sleep(160);
+  try { await q('bookingcom'); await q('airtable'); await q('formassembly'); } catch (e) {}
+  await sleep(160);
+  try { await q('ui'); await q('snapchat'); await q('priceline'); } catch (e) {}
+  await sleep(160);
+  try { await q('uber'); await q('yelp'); await q('informatica'); } catch (e) {}
+  await sleep(160);
+  try { await q('vimeo'); await q('linkedin'); await q('greenhouse'); } catch (e) {}
+  await sleep(160);
+  try { await q('gitlab'); await q('x'); await q('cloudflare'); } catch (e) {}
+  await sleep(160);
+  try { await q('automattic'); await q('khanacademy'); await q('coinbase'); } catch (e) {}
+  await sleep(160);
+  try { await q('concretecms'); await q('slack'); await q('phabricator'); } catch (e) {}
+  await sleep(160);
+  try { await q('rails'); await q('django'); await q('security'); } catch (e) {}
+  await sleep(160);
+  const ta = document.createElement("textarea");
+  ta.style.cssText = 'position:fixed;top:0;left:0;width:97%;height:92%;z-index:999999;font:10px monospace;white-space:pre;';
+  ta.value = 'HITS (' + hits.length + '):\n' + hits.join('\n') + '\n\n(empty = no scope has credentials)';
+  document.body.appendChild(ta); ta.focus(); ta.select();
+})();

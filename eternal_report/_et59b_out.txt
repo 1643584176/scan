@@ -1,0 +1,41 @@
+[200] /webroutes/location/search                           []
+[200] /webroutes/location/locationGeoData                  {"status":"failed","message":"Invalid parameters"}
+[200] /webroutes/location/get                              []
+[400] /webroutes/reviews/loadMore                          {"message":"error"}
+[400] /webroutes/reviews/sortReviews                       {"message":"error"}
+[401] /webroutes/reviews/suggestTags                       {"message":"Please login"}
+[400] /webroutes/reviews/comment/loadMore                  {"message":"error"}
+[400] /webroutes/photos/loadMore                           {"message":"error"}
+[400] /webroutes/photos/viewGallery                        {"message":"error"}
+[400] /webroutes/menu/viewMenu                             {"message":"error"}
+[400] /webroutes/restaurant/info                           {"message":"error"}
+[400] /webroutes/restaurant/getHygieneDetails              {"message":"error"}
+[400] /webroutes/restaurant/getHyperpureDetails            {"message":"error"}
+[405] /webroutes/restaurant/userModalInfo                  {"message":"Method not allowed. Must be one of: POST"}
+[400] /webroutes/order/receipt                             {"status":"failed","isError":true,"message":"Invalid Order Id"}
+[200] /webroutes/order/details                             {"title":"Order Summary","details":{"isInvalid":0,"order":{"items":[]},"rating":null,"orderId":0,"ratingV2":"-","bgColorV2":[],"ha
+[405] /webroutes/cdng/getDiningCart                        {"message":"Method not allowed. Must be one of: POST"}
+[405] /webroutes/cdng/fetchQRData                          {"message":"Method not allowed. Must be one of: POST"}
+[405] /webroutes/cdng/getCallServerState                   {"message":"Method not allowed. Must be one of: POST"}
+[200] /webroutes/feeding/getTotalAmount                    {"amount":313733038.8500001}
+[200] /webroutes/getPage                                   {"page_info":{"name":"search","pageTitle":"Checkout Best Food Places To Eat In Delhi NCR | Zomato","pageDescription":"Looking for 
+[200] /webroutes/kitchen/city                              {"cities":[{"city_id":11552,"name":"Abohar","is_o2_city":1,"lat":"30.1450000000000000","lng":"74.1990000000000000"},{"city_id":125
+[200] /webroutes/promo/info                                {"data":[]}
+[301] /webroutes/awards/winners/                           <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> <html><head> <title>301 Moved Permanently</title> </head><body> <h1>Moved Perma
+[401] /webroutes/loyaltyqrscan/getResList                  {"status":"false","message":"unauthorized"}
+[200] /webroutes/home/quickLinks                           {"page_data":{"sections":{"SECTION_QUICK_SEARCH":{"items":[{"title":"Order Online","img":"https:\/\/b.zmtcdn.com\/webFrontend\/e5b
+[200] /webroutes/home/o2quickLinks                         {"isO2City":true,"url":"https:\/\/www.zomato.com\/ncr\/order-food-online"}
+[200] /webroutes/blog/posts                                {"response":[],"message":"","success":false}
+[200] /webroutes/ads                                       {"gAds":[]}
+[405] /webroutes/hygiene                                   {"message":"Method not allowed. Must be one of: POST"}
+[405] /webroutes/dote/home                                 {"message":"Method not allowed. Must be one of: POST"}
+[405] /webroutes/dote/cart                                 {"message":"Method not allowed. Must be one of: POST"}
+[200] /webroutes/dote/address                              {"status":"failed","message":"Please login to continue"}
+[404] /webroutes/dote/orderDetails                         {"message":"Not found"}
+[400] /webroutes/gift/getCrystalData                       {"message":"Invalid order hash"}
+[400] /webroutes/orderShare/getCrystalData                 {"message":"Invalid order hash"}
+[400] /webroutes/postCdng/getOrderDetails                  {"message":"Try using via mobile"}
+[404] /webroutes/postOrder/crystalPromoCard                {"message":"Not found"}
+[404] /webroutes/postOrder/getRiderStatus                  {"message":"Not found"}
+[405] /webroutes/postOrder/pollCrystalData                 {"message":"Method not allowed. Must be one of: POST"}
+done 40

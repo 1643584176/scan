@@ -1,0 +1,24 @@
+===== R63 databaseId 注入判别 (A cookie) =====
+
+[base_journal_export] 200 len=9478 713ms ctype=application/csv
+    body: Title,Slug,Article thumbnail,Author,Article hero image,Description (displayed in list view),Article intro,Article content,Category,Time to read,Date published How to Build a Climate-Ready Data Stack,how-to-build-a-climate-ready-data-stack,https://s3-alpha-sig.figma.com/img/bdb3/0674/ad958933f85288ea31822252e1a378d0?Expires=1789948800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=X
+
+[nonexist_uuid] 403 len=197 552ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+[quote_tail] 403 len=197 560ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+[quote_comment] 403 len=197 539ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+[bool_false] 403 len=197 649ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+[bool_true] 403 len=197 600ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+[plain_abc] 403 len=197 613ms ctype=application/json; charset=utf-8
+    body: {"error":true,"status":403,"message":"You don't seem to have permission to do that.","i18n":{"id":"error.no_permission","fallback_text":"You don't seem to have permission to do that.","params":{}}}
+
+DONE

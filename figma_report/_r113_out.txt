@@ -1,0 +1,52 @@
+===== S. file_key 重取(page_size=10,与 r111b 同形态) =====
+[S0_pf10] 400 len=80 733ms 
+      {"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}
+
+===== U. users/batched 元素形状探测(裸数组→500 已知;找元素真形态) =====
+[U1_e_uid_obj] 500 len=157 334ms [{"user_id": "1666382703778278399"}]
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[U2_e_id_obj] 500 len=157 345ms [{"id": "1666382703778278399"}]
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[U3_e_str] 500 len=157 363ms ["hj"]
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[U4_e_num] 500 len=157 352ms [123456]
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[U5_e_null] 500 len=157 364ms [null]
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[U6_e_empty_obj] 500 len=157 358ms [{}]
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[U7_e_mixed] 500 len=157 406ms ["1666382703778278399", {"user_id": "1666382703778278399"}]
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[U8_e_fid] 500 len=157 350ms [{"user_id": "634606972"}]
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+
+===== X. content_summary 元素/模式探测(元素须对象;mode 必填) =====
+[X1_e_empty_obj] 400 len=84 337ms {"folder_items": [{}], "mode": "unfiled"}
+      {"error":true,"status":400,"message":"mode must be 'trash' or 'delete'","i18n":null}
+[X2_e_fid] 400 len=84 320ms {"folder_items": [{"folder_id": "634606972"}], "mode": "unfiled"}
+      {"error":true,"status":400,"message":"mode must be 'trash' or 'delete'","i18n":null}
+[X3_e_id] 400 len=84 356ms {"folder_items": [{"id": "634606972"}], "mode": "unfiled"}
+      {"error":true,"status":400,"message":"mode must be 'trash' or 'delete'","i18n":null}
+[X4_e_camel] 400 len=84 381ms {"folder_items": [{"folderId": "634606972"}], "mode": "unfiled"}
+      {"error":true,"status":400,"message":"mode must be 'trash' or 'delete'","i18n":null}
+[X5_e_str] 400 len=177 326ms {"folder_items": ["634606972"], "mode": "unfiled"}
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:17: Expected: '{'"}
+
+===== M. file_move/suggested dump(221B 无差分) =====
+[M1_fm] 200 len=221 361ms 
+      body: {"error":false,"status":200,"meta":[{"id":"634606972","name":"Team folder","team_name":"1643584176's team","is_editable":true,"team_id":"1666382706663462213","workspace_id":null,"is_connected_project":false}],"i18n":null}
+
+===== D. 200 端点结构 dump =====
+[D1_rp] 200 len=5419 549ms 
+      head: {"error":false,"status":200,"meta":[{"id":"1492336096853895549","file_key":"bv2nMIdFf4u3dESGail4sm","page_id":"0:1","thumbnail_meta":"{\"background_color\":{\"r\":0.11764705926179886,\"g\":0.117647059
+[D2_sub] 200 len=406 369ms 
+      head: {"error":false,"status":200,"meta":{"annual_subscription":null,"monthly_subscription":null,"monthly_invoice":null,"annual_invoice":null,"invoice_receiver":null,"whiteboard_quantity":0,"show_vat_gst":f
+[D3_delc] 200 len=233 394ms 
+      head: {"error":false,"status":200,"meta":{"active_drafts_count":16,"active_project_active_file_count":5,"team_active_project_count":1,"team_abandoned_drafts_count":0,"team_trashed_file_count":21,"team_trash
+[D4_ffiles] 200 len=13538 562ms 
+      head: {"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-18T02:43:57Z","last_published_at":null,"is_team_template":false,"is_published_site":false,"is_make_kit":false,"creator_id":"16663827
+[D5_contrib] 200 len=282 453ms 
+      head: {"error":false,"status":200,"meta":[{"user":{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-al
+[D6_detail] 200 len=903 396ms 
+      head: {"error":false,"status":200,"meta":{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-08-04T08:09:57.693Z","scheme":null,"path":"Team folder","settings":null,"team_id":"16663
+DONE

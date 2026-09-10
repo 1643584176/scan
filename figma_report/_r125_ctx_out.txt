@@ -1,0 +1,31 @@
+===== validate_vat =====
+### FILE: _js\figma_app-main.js  hits=2
+'cription),plan_canceled:e.plan_canceled,currency:e.currency})});function m(e){return null==e?null:{canceled_at:null==e.canceled_at?null:h(e.canceled_at),current_period_end:h(e.current_period_end),seats:e.seats}}function h(e){return new Date(1e3*e).toISOString()}},131484(e,t,r){r.d(t,{V:()=>s,r:()=>o});var n=r(374339),i=r(295502),a=r(12063);function o(e,t,r){let n=(0,a.q)()?i.Ay.url`/api/admin/tax/validate_vat`:i.Ay.url`/api/tax/validate_vat`;return i.Ay.post(n,{vat_gst_id:e,country_code:t,region:r})}function s(e,t,r,i,a){return e&&t?o(e,t,a).then(e=>e.data.meta.valid?(r(),!0):(i((0,n.t)(e.data.i18n.id)),!1)).catch(e=>(i(e.data&&e.data.message||(0,n.t)("tax.vat.vat_gst_validation_failed")),!1'
+  ------
+'anceled,currency:e.currency})});function m(e){return null==e?null:{canceled_at:null==e.canceled_at?null:h(e.canceled_at),current_period_end:h(e.current_period_end),seats:e.seats}}function h(e){return new Date(1e3*e).toISOString()}},131484(e,t,r){r.d(t,{V:()=>s,r:()=>o});var n=r(374339),i=r(295502),a=r(12063);function o(e,t,r){let n=(0,a.q)()?i.Ay.url`/api/admin/tax/validate_vat`:i.Ay.url`/api/tax/validate_vat`;return i.Ay.post(n,{vat_gst_id:e,country_code:t,region:r})}function s(e,t,r,i,a){return e&&t?o(e,t,a).then(e=>e.data.meta.valid?(r(),!0):(i((0,n.t)(e.data.i18n.id)),!1)).catch(e=>(i(e.data&&e.data.message||(0,n.t)("tax.vat.vat_gst_validation_failed")),!1)):(r(),Promise.resolve(!0))}},8'
+  ------
+
+===== validateVat =====
+
+===== validate_currency =====
+### FILE: _js\935-431f89677a39072c.min.js  hits=1
+'get_custom_domain_dns_records","check_custom_domain_limit","remove_custom_domain","update_bundle","update_subdomain","validate_subdomain","configure_redirect","remove_custom_domain_redirect","set_password","unset_password","enable_sso","cached_preview_urls","entity_cached_preview_urls","generic-cached-preview","user","org","discovery","bizsys","set_up_org_billing","stripe_details","credit_notes","validate_currency","billing_metadata","org_operation","add_domain_users","pricing","contract_rates","prices_at_contract_renewal","team_prices_at_next_invoice","terms_of_service","hex","org_admin","create_presigned_url","provision_org","org_saml_config","org_saml_configs","clear_config","configure_or'
+  ------
+### FILE: _js\figma_app-main.js  hits=1
+'turn this.ValidateAddressesSchemaValidator.validate(async({xr:t})=>await t.post(t.url`/api/validate_address`,{billing_address:(0,d.$V)(e.billingAddress)?null:e.billingAddress,shipping_address:(0,d.$V)(e.shippingAddress)?null:e.shippingAddress,team_id:e.teamId,is_checkout:e.isCheckout}))}validateCurrency(e){return this.ValidateCurrencySchemaValidator.validate(async({xr:t})=>await t.post(t.url`/api/validate_currency`,{team_id:e.teamId,currency:e.currency,is_checkout:e.isCheckout,billing_address:(0,d.$V)(e.billingAddress)?null:e.billingAddress,shipping_address:(0,d.$V)(e.shippingAddress)?null:e.shippingAddress}))}getPendingCancellations(e){return this.GetPendingCancellationsSchemaValidator.vali'
+  ------
+
+===== validateCurrency =====
+### FILE: _js\6088-14762a8fd3d70fc1.min.js  hits=2
+'tion-error",message:(0,c.J)(e)||e.message}),!0}else{let e=await a();if(e)return C({code:"address-validation-error",message:e}),!0}if(A&&!await (0,v.V)(A,r.country,()=>{},e=>{C({code:"vat-gst-id-verification-error",message:e})})||P&&!await (0,v.V)(P,r.country,()=>{},e=>{C({code:"vat-gst-id-verification-error",message:e})},r.region))return!0;if(e.canSeeBillingAddressExp){if(e.currency)try{await b.T.validateCurrency({teamId:e.customerInfo.teamId,currency:e.currency,billingAddress:r,shippingAddress:s,isCheckout:e.isCheckout})}catch(t){return q({error:"Currency/Address Mismatch",code:"currency-validation-error",message:(0,l.t)("payments.errors.currency_mismatch_with_country_error",{selected_curre'
+  ------
+'ustomerInfo.teamId,currency:e.currency,billingAddress:r,shippingAddress:s,isCheckout:e.isCheckout})}catch(t){return q({error:"Currency/Address Mismatch",code:"currency-validation-error",message:(0,l.t)("payments.errors.currency_mismatch_with_country_error",{selected_currency:e.currency.toUpperCase()}),extra:{country:r.country,currency:e.currency}}),!0}else if(e.shouldCheckIpCurrency)try{await b.T.validateCurrency({teamId:e.customerInfo.teamId,currency:(0,g.LN)(),billingAddress:r,shippingAddress:s,isCheckout:e.isCheckout})}catch(t){return q({error:`Currency & IP address mismatch error: ${JSON.stringify(e.customerInfo)}, country: ${r.country}, currency: ${(0,g.LN)()}`,code:"currency-validation'
+  ------
+### FILE: _js\c5e2cae0-3f7c89124b4f1b73.min.js  hits=1
+',I.$V)(e))return{code:eb.Wc.MISSING_ADDRESS_ERROR,message:(0,v.t)("checkout.errors.missing_address")};try{await ej.T.validateAddresses({billingAddress:e,shippingAddress:t,teamId:a,isCheckout:r})}catch(e){return{code:eb.Wc.ADDRESS_VALIDATION_ERROR,message:(0,e_.J)(e)||e.message}}}async function eP({currency:e,billingAddress:t,shippingAddress:a,teamId:r,isCheckout:s}){if(!(0,I.$V)(t))try{await ej.T.validateCurrency({currency:e,billingAddress:t,shippingAddress:a,teamId:r,isCheckout:s})}catch(t){if(t instanceof Error&&"status"in t&&403===t.status)return{code:eb.Wc.PERMISSION_ERROR,message:(0,e_.J)(t)||t.message};return{code:eb.Wc.CURRENCY_VALIDATION_ERROR,message:(0,v.t)("payments.errors.currenc'
+  ------
+### FILE: _js\figma_app-main.js  hits=1
+'urrency,vat_gst_id:e.vatGstId,regional_vat_gst_id:e.regionalVatGstId,team_id:e.teamId}))}validateAddresses(e){return this.ValidateAddressesSchemaValidator.validate(async({xr:t})=>await t.post(t.url`/api/validate_address`,{billing_address:(0,d.$V)(e.billingAddress)?null:e.billingAddress,shipping_address:(0,d.$V)(e.shippingAddress)?null:e.shippingAddress,team_id:e.teamId,is_checkout:e.isCheckout}))}validateCurrency(e){return this.ValidateCurrencySchemaValidator.validate(async({xr:t})=>await t.post(t.url`/api/validate_currency`,{team_id:e.teamId,currency:e.currency,is_checkout:e.isCheckout,billing_address:(0,d.$V)(e.billingAddress)?null:e.billingAddress,shipping_address:(0,d.$V)(e.shippingAddre'
+  ------
+
+DONE

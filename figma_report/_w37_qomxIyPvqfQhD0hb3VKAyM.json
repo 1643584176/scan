@@ -1,0 +1,1674 @@
+{
+ "id": "qomxIyPvqfQhD0hb3VKAyM",
+ "name": "Seedance 2.5 - Two Worlds Collide",
+ "owner": "hYJ5SfmgRUYNQWqLUdH6RolqFeT2",
+ "workspaceId": "aa036063-b614-4016-947f-a556884dae9e",
+ "organizationId": "849e299a-54a0-41ad-be8c-48617c59c577",
+ "visibility": "public",
+ "sharedUsers": [],
+ "poster": "https://media.weavy.ai/image/upload/v1786091232/uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/dezpm5dw1qilgn2hccyj.png",
+ "userPoster": true,
+ "createdAt": "2026-08-03T10:04:47.882Z",
+ "updatedAt": "2026-08-10T15:48:04.536Z",
+ "publishedVersions": [],
+ "version": 1,
+ "nodes": [
+  {
+   "id": "5676fa82-7ef1-417a-990e-8e5fdd16a711",
+   "isModel": false,
+   "type": "custom_group",
+   "position": {
+    "x": -770,
+    "y": -820
+   },
+   "data": {
+    "name": "Edited Video",
+    "type": "custom_group",
+    "color": "rgba(227, 232, 236, 0.64)",
+    "width": 1220,
+    "height": 696,
+    "handles": {
+     "input": [],
+     "output": []
+    },
+    "version": 3,
+    "description": "Group of nodes",
+    "labelFontSize": 16
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Edited Video"
+  },
+  {
+   "id": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 730,
+    "y": 50
+   },
+   "data": {
+    "kind": {
+     "type": "wildcard",
+     "model": {
+      "name": "bytedance/seedance-2.5/reference-to-video",
+      "type": "predefined",
+      "service": "fal_imported",
+      "version": "bytedance/seedance-2.5/reference-to-video",
+      "description": "ByteDance's latest reference-to-video model. Guide generation with up to 30 images, 10 videos, and 10 audio clips, referenced from the prompt as @Image1, @Video1, @Audio1."
+     },
+     "inputs": [
+      [
+       {
+        "id": "prompt",
+        "title": "Prompt",
+        "required": true,
+        "validTypes": [
+         "text"
+        ],
+        "description": "The text prompt used to generate the video."
+       },
+       {
+        "nodeId": "a6395af0-02f1-4da4-87de-ab97c54f3f7b",
+        "string": "Use the provided inputs exactly:\n\nINPUTS\n- 1 original 5-second video.\n- 7 reference images, each containing one distinct character.\n\nGOAL\nCreate a new 5-second version of the original video using the original video as the locked base plate. Preserve the dinosaur, camera movement, scenery, lighting, color palette, pacing, voiceover, ambience, and full audio mix exactly as in the source. The dinosaur must perform the exact same motion as the original: same slow walking rhythm, scale, path, timing, framing, and behavior. Do not make the dinosaur react.\n\nAdd exactly one character from each of the 7 reference images: 7 characters total, no more and no fewer. All 7 characters must be present in the frame from the very first frame of the video through the very last frame — they are not entering, arriving, or appearing partway through. They are already walking or flying alongside the dinosaur as the video begins, as if they have been part of this scene the entire time, and they remain part of the scene for the full 5 seconds without exception.\n\nIDENTITY LOCK / NO DUPLICATION\nBefore animation, treat the 7 reference characters as 7 separate tracked subjects:\nCharacter 1 = reference image 1\nCharacter 2 = reference image 2\nCharacter 3 = reference image 3\nCharacter 4 = reference image 4\nCharacter 5 = reference image 5\nCharacter 6 = reference image 6\nCharacter 7 = reference image 7\n\nEach tracked subject must remain a single, unique individual for the entire video. Do not create copies, clones, echoes, crowd duplicates, alternate versions, reflections, ghost trails, extra background versions, or split-off versions of any character. There must never be two of the same character visible at once.\n\nDo not merge characters together. Each character must keep its own body, silhouette, colors, costume, limbs, face, wings, props, and identity. Characters may walk near each other or briefly overlap in depth, but they must remain clearly separate subjects. If two characters cross paths, preserve clean occlusion and separation: one passes in front, one behind. Never blend their bodies, swap features, combine colors, share limbs, fuse into a hybrid, or transform into one another.\n\nCHARACTER CONTINUITY — NO ENTRANCE, CONSTANT PRESENCE\nThere is no entrance moment. Do not have characters run, fly, or walk into frame from off-screen at any point in the video. All 7 characters are already positioned beside, ahead of, or trailing the dinosaur in the very first frame, integrated into the locked shot as if the footage was always filmed this way. They must remain present and readable in every single frame of every shot for the full 5 seconds. They should never disappear, teleport, fade out, get replaced, change design, change species, change costume, or become a different object. If a character is briefly hidden by the dinosaur, grass, or another character, it must reappear immediately as the same character at the same consistent scale and identity.\n\nKeep each character's size consistent across all frames and camera angles. Do not let characters shrink at any point. Preserve each character's apparent scale relative to the dinosaur's feet, the grass, the ground, and the other characters. Perspective may change, but the character's size identity must remain stable.\n\nMULTI-SHOT / MULTI-CUT CONSISTENCY\nIf the original video contains more than one shot, camera cut, or scene change, all 7 characters must appear in every single shot without exception — not only the opening shot. Treat each shot as requiring the same 7 characters to be re-applied and present, with the same identity, design, colors, and scale as in every other shot. No shot is allowed to show the dinosaur alone or with only some of the 7 characters. Every cut must carry all 7 characters forward as if they were physically present and filmed in that shot, not added only once at the start of the video.\n\nMOTION STYLE\nThe added characters move at a calm, steady pace that matches the dinosaur's slow walking rhythm, joining it as traveling companions already in motion together. Walking characters stay beside, ahead of, or trailing the dinosaur at a relaxed gait, keeping consistent spacing without weaving, dodging, or circling. Flying characters glide or flap gently at a steady speed just above or alongside the dinosaur, matching its pace rather than zipping past it.\n\nThe overall feeling should be a calm, companionable group already moving together through the scene: characters walk or fly alongside the dinosaur, evenly spaced, with no chasing, no sprinting, no looping around its feet, and no jumping onto its body. The dinosaur remains slow, calm, graceful, and unchanged, and the added characters mirror that same relaxed tempo throughout.\n\nFLYING CHARACTER RULES\nDifferent flying characters must fly according to what they are.\n\nIf one reference character is an airplane, it must fly like an airplane: rigid steady wings, smooth gentle banking, gliding arcs, controlled pitch and roll, stable fuselage, no bird-like wing flapping, no organic wing bending. The airplane holds a steady cruising path alongside the group, wings fixed and steady.\n\nIf one reference character is a bird, it must fly like a bird: natural gentle wing flapping, small body adjustments, steady gliding, matching the slow pace of the walking characters.\n\nDo not confuse the airplane and bird. The airplane never flaps. The bird does flap.\n\nVISUAL INTEGRATION\nThe characters must look naturally integrated into the original footage, not pasted on. Match the source video's camera perspective, depth, lens character, motion blur, shadows, ground contact, lighting direction, color temperature, atmospheric haze, and pink evening meadow palette. Grounded characters should contact the terrain convincingly. Flying characters should occupy clear 3D space and pass in front of or behind the dinosaur with correct occlusion.\n\nTo prevent merging, give each character its own clear walking or flying lane, spacing, and depth layer. Stagger their positions around the dinosaur rather than clustering them into one blob. When the scene is busy, prioritize clean character separation over density.\n\nAUDIO\nKeep the original sound exactly the same.\n\nHARD CONSTRAINTS\n- Output duration exactly 5 seconds.\n- Use the original video as the locked base.\n- Dinosaur, camera, scenery, lighting, timing, and voiceover remain unchanged.\n- All 7 characters are present in the frame from the first frame to the last frame — no entrances, no arrivals, no appearing partway through.\n- If the source video has multiple shots or cuts, all 7 characters must appear in every shot, with no shot showing the dinosaur alone or with a partial set of characters.\n- Add exactly 7 characters total: one from each reference image.\n- No duplicates, clones, copies, echoes, or extra instances.\n- No merging, blending, hybrid characters, feature swapping, or transformations.\n- Character size stays consistent across all shots.\n- All characters, walking or flying, move at a calm, steady pace matching the dinosaur's rhythm.\n- Airplane flies with rigid steady wings; bird flaps like a bird.\n- Keep the movement calm, companionable, readable, and physically coherent — no chasing, sprinting, or circling.",
+        "outputId": "prompt"
+       }
+      ],
+      [
+       {
+        "id": "reference_1",
+        "title": "reference_1",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": "Image/Video/Audio"
+       },
+       {
+        "file": {
+         "id": "02e011e0-a0be-497b-8289-a5a5fe0366a7",
+         "fps": 24,
+         "url": "https://media.weavy.ai/video/upload/v1786085365/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.mp4",
+         "name": "Original Video",
+         "type": "video",
+         "width": 1280,
+         "height": 720,
+         "duration": 5.06195,
+         "hasAudio": true,
+         "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve",
+         "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.png?_a=BAMAPqWO0"
+        },
+        "nodeId": "3bf235cd-82ac-481d-ad37-ceea949d9957",
+        "outputId": "file"
+       }
+      ],
+      [
+       {
+        "id": "reference_2",
+        "title": "reference_2",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": ""
+       },
+       {
+        "file": {
+         "id": "7fd02d5d-1c59-47fa-8aa4-f39ab743198f",
+         "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png",
+         "name": "cha4.png",
+         "type": "image",
+         "width": 1024,
+         "height": 1024,
+         "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl",
+         "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png?_a=BAMAPqWO0"
+        },
+        "nodeId": "57bd0e42-1d72-45ce-87e8-2f89dc7d2c3b",
+        "outputId": "file"
+       }
+      ],
+      [
+       {
+        "id": "reference_3",
+        "title": "reference_3",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": ""
+       },
+       {
+        "file": {
+         "id": "524b6f7d-676f-4c23-ac6e-ff291022e255",
+         "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png",
+         "name": "cha5.png",
+         "type": "image",
+         "width": 1024,
+         "height": 1024,
+         "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg",
+         "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png?_a=BAMAPqWO0"
+        },
+        "nodeId": "41e0d712-607c-4b96-aa09-6abb43ec927a",
+        "outputId": "file"
+       }
+      ],
+      [
+       {
+        "id": "reference_4",
+        "title": "reference_4",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": ""
+       },
+       {
+        "file": {
+         "id": "e2bf470b-a45d-463e-9072-7e06e8552804",
+         "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png",
+         "name": "cha6.png",
+         "type": "image",
+         "width": 896,
+         "height": 1196,
+         "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk",
+         "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png?_a=BAMAPqWO0"
+        },
+        "nodeId": "8c128bbf-c2a1-4679-a599-79c51d5d76b3",
+        "outputId": "file"
+       }
+      ],
+      [
+       {
+        "id": "reference_5",
+        "title": "reference_5",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": ""
+       },
+       {
+        "file": {
+         "id": "8084ad87-16cd-49b7-936a-96368ee72cd1",
+         "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png",
+         "name": "cha1.png",
+         "type": "image",
+         "width": 1024,
+         "height": 1024,
+         "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom",
+         "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png?_a=BAMAPqWO0"
+        },
+        "nodeId": "4cdeac3a-01b8-42dc-923c-b43239921996",
+        "outputId": "file"
+       }
+      ],
+      [
+       {
+        "id": "reference_6",
+        "title": "reference_6",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": ""
+       },
+       {
+        "file": {
+         "id": "4b1608a9-788a-4a94-980f-193250e63fe4",
+         "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png",
+         "name": "cha3.png",
+         "type": "image",
+         "width": 1536,
+         "height": 2740,
+         "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh",
+         "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png?_a=BAMAPqWO0"
+        },
+        "nodeId": "bb9d4dbf-6ede-4ed9-85c5-fbd34a212a6b",
+        "outputId": "file"
+       }
+      ],
+      [
+       {
+        "id": "reference_7",
+        "title": "reference_7",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": ""
+       },
+       {
+        "file": {
+         "id": "4d455843-97cd-41c8-8a09-248159c35787",
+         "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png",
+         "name": "cha7.png",
+         "type": "image",
+         "width": 1536,
+         "height": 2740,
+         "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj",
+         "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png?_a=BAMAPqWO0"
+        },
+        "nodeId": "345c702d-c91d-4d71-aafa-725b083286b9",
+        "outputId": "file"
+       }
+      ],
+      [
+       {
+        "id": "reference_8",
+        "title": "reference_8",
+        "required": false,
+        "validTypes": [
+         "image",
+         "video",
+         "audio",
+         "3D",
+         "text",
+         "number",
+         "boolean",
+         "seed",
+         "array",
+         "lora",
+         "kling-element",
+         "runway-aleph2-keyframe"
+        ],
+        "description": ""
+       },
+       {
+        "file": {
+         "id": "7141d9a8-e635-46f6-8cee-35d9439acf23",
+         "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png",
+         "name": "cha2.png",
+         "type": "image",
+         "width": 1792,
+         "height": 2388,
+         "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz",
+         "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png?_a=BAMAPqWO0"
+        },
+        "nodeId": "f2bfc738-7a34-4303-96cc-281962a0ec49",
+        "outputId": "file"
+       }
+      ]
+     ],
+     "outputs": [
+      {
+       "id": "result",
+       "title": "result",
+       "dataType": "video",
+       "description": "The video result"
+      }
+     ],
+     "parameters": [
+      [
+       {
+        "id": "resolution",
+        "title": "Resolution",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "480p",
+          "720p"
+         ]
+        },
+        "description": "Video resolution - 480p for faster generation, 720p for balance.",
+        "defaultValue": {
+         "type": "string",
+         "value": "720p"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "720p"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "duration",
+        "title": "Duration",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "auto",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30"
+         ]
+        },
+        "description": "Duration of the video in seconds. Supports 4 to 30 seconds, or auto to let the model decide based on the prompt.",
+        "defaultValue": {
+         "type": "string",
+         "value": "auto"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "auto"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "aspect_ratio",
+        "title": "Aspect Ratio",
+        "constraint": {
+         "type": "enum",
+         "options": [
+          "auto",
+          "21:9",
+          "16:9",
+          "4:3",
+          "1:1",
+          "3:4",
+          "9:16"
+         ]
+        },
+        "description": "The aspect ratio of the generated video. Use 16:9 for landscape, 9:16 for portrait/vertical, 1:1 for square, 21:9 for ultrawide cinematic, or auto to let the model decide.",
+        "defaultValue": {
+         "type": "string",
+         "value": "auto"
+        }
+       },
+       {
+        "data": {
+         "type": "string",
+         "value": "auto"
+        },
+        "type": "value"
+       }
+      ],
+      [
+       {
+        "id": "generate_audio",
+        "title": "Generate Audio",
+        "constraint": {
+         "type": "boolean"
+        },
+        "description": "Whether to generate synchronized audio for the video, including sound effects, ambient sounds, and lip-synced speech. The cost of video generation is the same regardless of whether audio is generated or not.",
+        "defaultValue": {
+         "type": "boolean",
+         "value": true
+        }
+       },
+       {
+        "data": {
+         "type": "boolean",
+         "value": true
+        },
+        "type": "value"
+       }
+      ]
+     ]
+    },
+    "menu": {
+     "icon": "bytedance",
+     "isModel": true,
+     "displayName": "Seedance 2.5 Reference"
+    },
+    "name": "Seedance 2.5 Reference",
+    "color": null,
+    "label": null,
+    "model": {
+     "name": "bytedance/seedance-2.5/reference-to-video",
+     "service": "fal_imported",
+     "version": "bytedance/seedance-2.5/reference-to-video"
+    },
+    "output": {
+     "result": {
+      "id": "5234585f-0810-4f5e-bb8b-087e682e1784",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1786090887/uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw.mp4",
+      "type": "video",
+      "input": {
+       "prompt": "Use the provided inputs exactly:\n\nINPUTS\n- 1 original 5-second video.\n- 7 reference images, each containing one distinct character.\n\nGOAL\nCreate a new 5-second version of the original video using the original video as the locked base plate. Preserve the dinosaur, camera movement, scenery, lighting, color palette, pacing, voiceover, ambience, and full audio mix exactly as in the source. The dinosaur must perform the exact same motion as the original: same slow walking rhythm, scale, path, timing, framing, and behavior. Do not make the dinosaur react.\n\nAdd exactly one character from each of the 7 reference images: 7 characters total, no more and no fewer. All 7 characters must be present in the frame from the very first frame of the video through the very last frame — they are not entering, arriving, or appearing partway through. They are already walking or flying alongside the dinosaur as the video begins, as if they have been part of this scene the entire time, and they remain part of the scene for the full 5 seconds without exception.\n\nIDENTITY LOCK / NO DUPLICATION\nBefore animation, treat the 7 reference characters as 7 separate tracked subjects:\nCharacter 1 = reference image 1\nCharacter 2 = reference image 2\nCharacter 3 = reference image 3\nCharacter 4 = reference image 4\nCharacter 5 = reference image 5\nCharacter 6 = reference image 6\nCharacter 7 = reference image 7\n\nEach tracked subject must remain a single, unique individual for the entire video. Do not create copies, clones, echoes, crowd duplicates, alternate versions, reflections, ghost trails, extra background versions, or split-off versions of any character. There must never be two of the same character visible at once.\n\nDo not merge characters together. Each character must keep its own body, silhouette, colors, costume, limbs, face, wings, props, and identity. Characters may walk near each other or briefly overlap in depth, but they must remain clearly separate subjects. If two characters cross paths, preserve clean occlusion and separation: one passes in front, one behind. Never blend their bodies, swap features, combine colors, share limbs, fuse into a hybrid, or transform into one another.\n\nCHARACTER CONTINUITY — NO ENTRANCE, CONSTANT PRESENCE\nThere is no entrance moment. Do not have characters run, fly, or walk into frame from off-screen at any point in the video. All 7 characters are already positioned beside, ahead of, or trailing the dinosaur in the very first frame, integrated into the locked shot as if the footage was always filmed this way. They must remain present and readable in every single frame of every shot for the full 5 seconds. They should never disappear, teleport, fade out, get replaced, change design, change species, change costume, or become a different object. If a character is briefly hidden by the dinosaur, grass, or another character, it must reappear immediately as the same character at the same consistent scale and identity.\n\nKeep each character's size consistent across all frames and camera angles. Do not let characters shrink at any point. Preserve each character's apparent scale relative to the dinosaur's feet, the grass, the ground, and the other characters. Perspective may change, but the character's size identity must remain stable.\n\nMULTI-SHOT / MULTI-CUT CONSISTENCY\nIf the original video contains more than one shot, camera cut, or scene change, all 7 characters must appear in every single shot without exception — not only the opening shot. Treat each shot as requiring the same 7 characters to be re-applied and present, with the same identity, design, colors, and scale as in every other shot. No shot is allowed to show the dinosaur alone or with only some of the 7 characters. Every cut must carry all 7 characters forward as if they were physically present and filmed in that shot, not added only once at the start of the video.\n\nMOTION STYLE\nThe added characters move at a calm, steady pace that matches the dinosaur's slow walking rhythm, joining it as traveling companions already in motion together. Walking characters stay beside, ahead of, or trailing the dinosaur at a relaxed gait, keeping consistent spacing without weaving, dodging, or circling. Flying characters glide or flap gently at a steady speed just above or alongside the dinosaur, matching its pace rather than zipping past it.\n\nThe overall feeling should be a calm, companionable group already moving together through the scene: characters walk or fly alongside the dinosaur, evenly spaced, with no chasing, no sprinting, no looping around its feet, and no jumping onto its body. The dinosaur remains slow, calm, graceful, and unchanged, and the added characters mirror that same relaxed tempo throughout.\n\nFLYING CHARACTER RULES\nDifferent flying characters must fly according to what they are.\n\nIf one reference character is an airplane, it must fly like an airplane: rigid steady wings, smooth gentle banking, gliding arcs, controlled pitch and roll, stable fuselage, no bird-like wing flapping, no organic wing bending. The airplane holds a steady cruising path alongside the group, wings fixed and steady.\n\nIf one reference character is a bird, it must fly like a bird: natural gentle wing flapping, small body adjustments, steady gliding, matching the slow pace of the walking characters.\n\nDo not confuse the airplane and bird. The airplane never flaps. The bird does flap.\n\nVISUAL INTEGRATION\nThe characters must look naturally integrated into the original footage, not pasted on. Match the source video's camera perspective, depth, lens character, motion blur, shadows, ground contact, lighting direction, color temperature, atmospheric haze, and pink evening meadow palette. Grounded characters should contact the terrain convincingly. Flying characters should occupy clear 3D space and pass in front of or behind the dinosaur with correct occlusion.\n\nTo prevent merging, give each character its own clear walking or flying lane, spacing, and depth layer. Stagger their positions around the dinosaur rather than clustering them into one blob. When the scene is busy, prioritize clean character separation over density.\n\nAUDIO\nKeep the original sound exactly the same.\n\nHARD CONSTRAINTS\n- Output duration exactly 5 seconds.\n- Use the original video as the locked base.\n- Dinosaur, camera, scenery, lighting, timing, and voiceover remain unchanged.\n- All 7 characters are present in the frame from the first frame to the last frame — no entrances, no arrivals, no appearing partway through.\n- If the source video has multiple shots or cuts, all 7 characters must appear in every shot, with no shot showing the dinosaur alone or with a partial set of characters.\n- Add exactly 7 characters total: one from each reference image.\n- No duplicates, clones, copies, echoes, or extra instances.\n- No merging, blending, hybrid characters, feature swapping, or transformations.\n- Character size stays consistent across all shots.\n- All characters, walking or flying, move at a calm, steady pace matching the dinosaur's rhythm.\n- Airplane flies with rigid steady wings; bird flaps like a bird.\n- Keep the movement calm, companionable, readable, and physically coherent — no chasing, sprinting, or circling.",
+       "duration": "auto",
+       "image_urls": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png",
+       "resolution": "720p",
+       "video_urls": "https://media.weavy.ai/video/upload/v1786085365/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.mp4",
+       "aspect_ratio": "auto",
+       "generate_audio": "true"
+      },
+      "order": 0,
+      "width": 1280,
+      "height": 720,
+      "params": {},
+      "batchId": "94d0709a-bd38-453a-a480-6a5057943444",
+      "viewUrl": "",
+      "duration": 5.056,
+      "publicId": "uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw",
+      "visualId": "",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw.png?_a=BAMAPqWO0",
+      "secondaryOrder": 0
+     }
+    },
+    "params": {
+     "prompt": "",
+     "duration": "auto",
+     "resolution": "720p",
+     "aspect_ratio": "auto",
+     "generate_audio": true
+    },
+    "result": [
+     {
+      "id": "5234585f-0810-4f5e-bb8b-087e682e1784",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1786090887/uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw.mp4",
+      "type": "video",
+      "input": {
+       "prompt": "Use the provided inputs exactly:\n\nINPUTS\n- 1 original 5-second video.\n- 7 reference images, each containing one distinct character.\n\nGOAL\nCreate a new 5-second version of the original video using the original video as the locked base plate. Preserve the dinosaur, camera movement, scenery, lighting, color palette, pacing, voiceover, ambience, and full audio mix exactly as in the source. The dinosaur must perform the exact same motion as the original: same slow walking rhythm, scale, path, timing, framing, and behavior. Do not make the dinosaur react.\n\nAdd exactly one character from each of the 7 reference images: 7 characters total, no more and no fewer. All 7 characters must be present in the frame from the very first frame of the video through the very last frame — they are not entering, arriving, or appearing partway through. They are already walking or flying alongside the dinosaur as the video begins, as if they have been part of this scene the entire time, and they remain part of the scene for the full 5 seconds without exception.\n\nIDENTITY LOCK / NO DUPLICATION\nBefore animation, treat the 7 reference characters as 7 separate tracked subjects:\nCharacter 1 = reference image 1\nCharacter 2 = reference image 2\nCharacter 3 = reference image 3\nCharacter 4 = reference image 4\nCharacter 5 = reference image 5\nCharacter 6 = reference image 6\nCharacter 7 = reference image 7\n\nEach tracked subject must remain a single, unique individual for the entire video. Do not create copies, clones, echoes, crowd duplicates, alternate versions, reflections, ghost trails, extra background versions, or split-off versions of any character. There must never be two of the same character visible at once.\n\nDo not merge characters together. Each character must keep its own body, silhouette, colors, costume, limbs, face, wings, props, and identity. Characters may walk near each other or briefly overlap in depth, but they must remain clearly separate subjects. If two characters cross paths, preserve clean occlusion and separation: one passes in front, one behind. Never blend their bodies, swap features, combine colors, share limbs, fuse into a hybrid, or transform into one another.\n\nCHARACTER CONTINUITY — NO ENTRANCE, CONSTANT PRESENCE\nThere is no entrance moment. Do not have characters run, fly, or walk into frame from off-screen at any point in the video. All 7 characters are already positioned beside, ahead of, or trailing the dinosaur in the very first frame, integrated into the locked shot as if the footage was always filmed this way. They must remain present and readable in every single frame of every shot for the full 5 seconds. They should never disappear, teleport, fade out, get replaced, change design, change species, change costume, or become a different object. If a character is briefly hidden by the dinosaur, grass, or another character, it must reappear immediately as the same character at the same consistent scale and identity.\n\nKeep each character's size consistent across all frames and camera angles. Do not let characters shrink at any point. Preserve each character's apparent scale relative to the dinosaur's feet, the grass, the ground, and the other characters. Perspective may change, but the character's size identity must remain stable.\n\nMULTI-SHOT / MULTI-CUT CONSISTENCY\nIf the original video contains more than one shot, camera cut, or scene change, all 7 characters must appear in every single shot without exception — not only the opening shot. Treat each shot as requiring the same 7 characters to be re-applied and present, with the same identity, design, colors, and scale as in every other shot. No shot is allowed to show the dinosaur alone or with only some of the 7 characters. Every cut must carry all 7 characters forward as if they were physically present and filmed in that shot, not added only once at the start of the video.\n\nMOTION STYLE\nThe added characters move at a calm, steady pace that matches the dinosaur's slow walking rhythm, joining it as traveling companions already in motion together. Walking characters stay beside, ahead of, or trailing the dinosaur at a relaxed gait, keeping consistent spacing without weaving, dodging, or circling. Flying characters glide or flap gently at a steady speed just above or alongside the dinosaur, matching its pace rather than zipping past it.\n\nThe overall feeling should be a calm, companionable group already moving together through the scene: characters walk or fly alongside the dinosaur, evenly spaced, with no chasing, no sprinting, no looping around its feet, and no jumping onto its body. The dinosaur remains slow, calm, graceful, and unchanged, and the added characters mirror that same relaxed tempo throughout.\n\nFLYING CHARACTER RULES\nDifferent flying characters must fly according to what they are.\n\nIf one reference character is an airplane, it must fly like an airplane: rigid steady wings, smooth gentle banking, gliding arcs, controlled pitch and roll, stable fuselage, no bird-like wing flapping, no organic wing bending. The airplane holds a steady cruising path alongside the group, wings fixed and steady.\n\nIf one reference character is a bird, it must fly like a bird: natural gentle wing flapping, small body adjustments, steady gliding, matching the slow pace of the walking characters.\n\nDo not confuse the airplane and bird. The airplane never flaps. The bird does flap.\n\nVISUAL INTEGRATION\nThe characters must look naturally integrated into the original footage, not pasted on. Match the source video's camera perspective, depth, lens character, motion blur, shadows, ground contact, lighting direction, color temperature, atmospheric haze, and pink evening meadow palette. Grounded characters should contact the terrain convincingly. Flying characters should occupy clear 3D space and pass in front of or behind the dinosaur with correct occlusion.\n\nTo prevent merging, give each character its own clear walking or flying lane, spacing, and depth layer. Stagger their positions around the dinosaur rather than clustering them into one blob. When the scene is busy, prioritize clean character separation over density.\n\nAUDIO\nKeep the original sound exactly the same.\n\nHARD CONSTRAINTS\n- Output duration exactly 5 seconds.\n- Use the original video as the locked base.\n- Dinosaur, camera, scenery, lighting, timing, and voiceover remain unchanged.\n- All 7 characters are present in the frame from the first frame to the last frame — no entrances, no arrivals, no appearing partway through.\n- If the source video has multiple shots or cuts, all 7 characters must appear in every shot, with no shot showing the dinosaur alone or with a partial set of characters.\n- Add exactly 7 characters total: one from each reference image.\n- No duplicates, clones, copies, echoes, or extra instances.\n- No merging, blending, hybrid characters, feature swapping, or transformations.\n- Character size stays consistent across all shots.\n- All characters, walking or flying, move at a calm, steady pace matching the dinosaur's rhythm.\n- Airplane flies with rigid steady wings; bird flaps like a bird.\n- Keep the movement calm, companionable, readable, and physically coherent — no chasing, sprinting, or circling.",
+       "duration": "auto",
+       "image_urls": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png",
+       "resolution": "720p",
+       "video_urls": "https://media.weavy.ai/video/upload/v1786085365/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.mp4",
+       "aspect_ratio": "auto",
+       "generate_audio": "true"
+      },
+      "order": 0,
+      "width": 1280,
+      "height": 720,
+      "params": {},
+      "batchId": "94d0709a-bd38-453a-a480-6a5057943444",
+      "viewUrl": "",
+      "duration": 5.056,
+      "publicId": "uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw",
+      "visualId": "",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw.png?_a=BAMAPqWO0",
+      "secondaryOrder": 0
+     }
+    ],
+    "schema": {
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "The text prompt used to generate the video."
+     },
+     "duration": {
+      "type": "enum",
+      "order": 2,
+      "title": "Duration",
+      "default": "auto",
+      "options": [
+       "auto",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "10",
+       "11",
+       "12",
+       "13",
+       "14",
+       "15",
+       "16",
+       "17",
+       "18",
+       "19",
+       "20",
+       "21",
+       "22",
+       "23",
+       "24",
+       "25",
+       "26",
+       "27",
+       "28",
+       "29",
+       "30"
+      ],
+      "required": false,
+      "description": "Duration of the video in seconds. Supports 4 to 30 seconds, or auto to let the model decide based on the prompt."
+     },
+     "resolution": {
+      "type": "enum",
+      "order": 1,
+      "title": "Resolution",
+      "default": "720p",
+      "options": [
+       "480p",
+       "720p"
+      ],
+      "required": false,
+      "description": "Video resolution - 480p for faster generation, 720p for balance."
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 3,
+      "title": "Aspect Ratio",
+      "default": "auto",
+      "options": [
+       "auto",
+       "21:9",
+       "16:9",
+       "4:3",
+       "1:1",
+       "3:4",
+       "9:16"
+      ],
+      "required": false,
+      "description": "The aspect ratio of the generated video. Use 16:9 for landscape, 9:16 for portrait/vertical, 1:1 for square, 21:9 for ultrawide cinematic, or auto to let the model decide."
+     },
+     "generate_audio": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Generate Audio",
+      "default": true,
+      "required": false,
+      "description": "Whether to generate synchronized audio for the video, including sound effects, ambient sounds, and lip-synced speech. The cost of video generation is the same regardless of whether audio is generated or not."
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "c8e405b1-6f37-42da-9b58-71d0a3e6c294",
+       "type": "text",
+       "label": "prompt",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "The text prompt used to generate the video."
+      },
+      "reference_1": {
+       "id": "2ad917f6-4b80-4e35-a7c2-93f60be15d48",
+       "type": "any",
+       "label": "reference_1",
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Image/Video/Audio"
+      },
+      "reference_2": {
+       "id": "c9dcc3fd-7d7f-4991-9ff2-6ba0d5c9a551",
+       "type": "any",
+       "label": "reference_2",
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "reference_3": {
+       "id": "b6c31d48-446e-47d9-a97e-f18166a334cb",
+       "type": "any",
+       "label": "reference_3",
+       "order": 3,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "reference_4": {
+       "id": "917564f8-19dc-4b11-9aa6-69accbb6539b",
+       "type": "any",
+       "label": "reference_4",
+       "order": 4,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "reference_5": {
+       "id": "b8e2e910-7388-4095-86a8-38f5d6b74183",
+       "type": "any",
+       "label": "reference_5",
+       "order": 5,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "reference_6": {
+       "id": "a8a36878-5463-482e-8078-c5b340a3fe88",
+       "type": "any",
+       "label": "reference_6",
+       "order": 6,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "reference_7": {
+       "id": "5e2628c1-65af-410b-9fe5-dd0179c10499",
+       "type": "any",
+       "label": "reference_7",
+       "order": 7,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      },
+      "reference_8": {
+       "id": "c19a3e24-f055-423a-8e38-23dc5e27ed14",
+       "type": "any",
+       "label": "reference_8",
+       "order": 8,
+       "format": "uri",
+       "required": false,
+       "description": ""
+      }
+     },
+     "output": {
+      "result": {
+       "id": "9c6b3e70-58d1-4a2f-b04e-e17925cf3a86",
+       "type": "video",
+       "label": "result",
+       "order": 0,
+       "format": "uri",
+       "required": true,
+       "description": "The video result"
+      }
+     }
+    },
+    "version": 3,
+    "description": "ByteDance's latest reference-to-video model. Guide generation with up to 30 images, 10 videos, and 10 audio clips, referenced from the prompt as @Image1, @Video1, @Audio1.",
+    "generations": [
+     {
+      "kind": {
+       "id": "5234585f-0810-4f5e-bb8b-087e682e1784",
+       "fps": 24,
+       "url": "https://media.weavy.ai/video/upload/v1786090887/uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw.mp4",
+       "type": "video",
+       "width": 1280,
+       "height": 720,
+       "duration": 5.056,
+       "hasAudio": true,
+       "publicId": "uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw",
+       "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/dt4y0NMzUlfqs9tbcddbyOIdYKn1/lcya3l0djxbnziqeubfw.png?_a=BAMAPqWO0"
+      },
+      "input": [
+       [
+        "prompt",
+        "Use the provided inputs exactly:\n\nINPUTS\n- 1 original 5-second video.\n- 7 reference images, each containing one distinct character.\n\nGOAL\nCreate a new 5-second version of the original video using the original video as the locked base plate. Preserve the dinosaur, camera movement, scenery, lighting, color palette, pacing, voiceover, ambience, and full audio mix exactly as in the source. The dinosaur must perform the exact same motion as the original: same slow walking rhythm, scale, path, timing, framing, and behavior. Do not make the dinosaur react.\n\nAdd exactly one character from each of the 7 reference images: 7 characters total, no more and no fewer. All 7 characters must be present in the frame from the very first frame of the video through the very last frame — they are not entering, arriving, or appearing partway through. They are already walking or flying alongside the dinosaur as the video begins, as if they have been part of this scene the entire time, and they remain part of the scene for the full 5 seconds without exception.\n\nIDENTITY LOCK / NO DUPLICATION\nBefore animation, treat the 7 reference characters as 7 separate tracked subjects:\nCharacter 1 = reference image 1\nCharacter 2 = reference image 2\nCharacter 3 = reference image 3\nCharacter 4 = reference image 4\nCharacter 5 = reference image 5\nCharacter 6 = reference image 6\nCharacter 7 = reference image 7\n\nEach tracked subject must remain a single, unique individual for the entire video. Do not create copies, clones, echoes, crowd duplicates, alternate versions, reflections, ghost trails, extra background versions, or split-off versions of any character. There must never be two of the same character visible at once.\n\nDo not merge characters together. Each character must keep its own body, silhouette, colors, costume, limbs, face, wings, props, and identity. Characters may walk near each other or briefly overlap in depth, but they must remain clearly separate subjects. If two characters cross paths, preserve clean occlusion and separation: one passes in front, one behind. Never blend their bodies, swap features, combine colors, share limbs, fuse into a hybrid, or transform into one another.\n\nCHARACTER CONTINUITY — NO ENTRANCE, CONSTANT PRESENCE\nThere is no entrance moment. Do not have characters run, fly, or walk into frame from off-screen at any point in the video. All 7 characters are already positioned beside, ahead of, or trailing the dinosaur in the very first frame, integrated into the locked shot as if the footage was always filmed this way. They must remain present and readable in every single frame of every shot for the full 5 seconds. They should never disappear, teleport, fade out, get replaced, change design, change species, change costume, or become a different object. If a character is briefly hidden by the dinosaur, grass, or another character, it must reappear immediately as the same character at the same consistent scale and identity.\n\nKeep each character's size consistent across all frames and camera angles. Do not let characters shrink at any point. Preserve each character's apparent scale relative to the dinosaur's feet, the grass, the ground, and the other characters. Perspective may change, but the character's size identity must remain stable.\n\nMULTI-SHOT / MULTI-CUT CONSISTENCY\nIf the original video contains more than one shot, camera cut, or scene change, all 7 characters must appear in every single shot without exception — not only the opening shot. Treat each shot as requiring the same 7 characters to be re-applied and present, with the same identity, design, colors, and scale as in every other shot. No shot is allowed to show the dinosaur alone or with only some of the 7 characters. Every cut must carry all 7 characters forward as if they were physically present and filmed in that shot, not added only once at the start of the video.\n\nMOTION STYLE\nThe added characters move at a calm, steady pace that matches the dinosaur's slow walking rhythm, joining it as traveling companions already in motion together. Walking characters stay beside, ahead of, or trailing the dinosaur at a relaxed gait, keeping consistent spacing without weaving, dodging, or circling. Flying characters glide or flap gently at a steady speed just above or alongside the dinosaur, matching its pace rather than zipping past it.\n\nThe overall feeling should be a calm, companionable group already moving together through the scene: characters walk or fly alongside the dinosaur, evenly spaced, with no chasing, no sprinting, no looping around its feet, and no jumping onto its body. The dinosaur remains slow, calm, graceful, and unchanged, and the added characters mirror that same relaxed tempo throughout.\n\nFLYING CHARACTER RULES\nDifferent flying characters must fly according to what they are.\n\nIf one reference character is an airplane, it must fly like an airplane: rigid steady wings, smooth gentle banking, gliding arcs, controlled pitch and roll, stable fuselage, no bird-like wing flapping, no organic wing bending. The airplane holds a steady cruising path alongside the group, wings fixed and steady.\n\nIf one reference character is a bird, it must fly like a bird: natural gentle wing flapping, small body adjustments, steady gliding, matching the slow pace of the walking characters.\n\nDo not confuse the airplane and bird. The airplane never flaps. The bird does flap.\n\nVISUAL INTEGRATION\nThe characters must look naturally integrated into the original footage, not pasted on. Match the source video's camera perspective, depth, lens character, motion blur, shadows, ground contact, lighting direction, color temperature, atmospheric haze, and pink evening meadow palette. Grounded characters should contact the terrain convincingly. Flying characters should occupy clear 3D space and pass in front of or behind the dinosaur with correct occlusion.\n\nTo prevent merging, give each character its own clear walking or flying lane, spacing, and depth layer. Stagger their positions around the dinosaur rather than clustering them into one blob. When the scene is busy, prioritize clean character separation over density.\n\nAUDIO\nKeep the original sound exactly the same.\n\nHARD CONSTRAINTS\n- Output duration exactly 5 seconds.\n- Use the original video as the locked base.\n- Dinosaur, camera, scenery, lighting, timing, and voiceover remain unchanged.\n- All 7 characters are present in the frame from the first frame to the last frame — no entrances, no arrivals, no appearing partway through.\n- If the source video has multiple shots or cuts, all 7 characters must appear in every shot, with no shot showing the dinosaur alone or with a partial set of characters.\n- Add exactly 7 characters total: one from each reference image.\n- No duplicates, clones, copies, echoes, or extra instances.\n- No merging, blending, hybrid characters, feature swapping, or transformations.\n- Character size stays consistent across all shots.\n- All characters, walking or flying, move at a calm, steady pace matching the dinosaur's rhythm.\n- Airplane flies with rigid steady wings; bird flaps like a bird.\n- Keep the movement calm, companionable, readable, and physically coherent — no chasing, sprinting, or circling."
+       ],
+       [
+        "duration",
+        "auto"
+       ],
+       [
+        "image_urls",
+        "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png\nhttps://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png\nhttps://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png"
+       ],
+       [
+        "resolution",
+        "720p"
+       ],
+       [
+        "video_urls",
+        "https://media.weavy.ai/video/upload/v1786085365/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.mp4"
+       ],
+       [
+        "aspect_ratio",
+        "auto"
+       ],
+       [
+        "generate_audio",
+        "true"
+       ]
+      ],
+      "order": 0,
+      "batchId": "94d0709a-bd38-453a-a480-6a5057943444",
+      "parameters": [],
+      "secondaryOrder": 0
+     }
+    ],
+    "renderWidth": 1024,
+    "cameraLocked": false,
+    "renderHeight": 1024,
+    "selectedIndex": 0,
+    "selectedOutput": 0
+   },
+   "createdAt": "2026-08-07T08:23:59.073Z",
+   "dragHandle": ".node-header",
+   "parentId": "5676fa82-7ef1-417a-990e-8e5fdd16a711",
+   "originalName": "Seedance 2.5 Reference"
+  },
+  {
+   "id": "a6395af0-02f1-4da4-87de-ab97c54f3f7b",
+   "isModel": false,
+   "type": "promptV3",
+   "position": {
+    "x": 30,
+    "y": 30
+   },
+   "data": {
+    "menu": null,
+    "name": "Prompt",
+    "color": "Yambo_Green",
+    "label": "prompt",
+    "output": {
+     "type": "text",
+     "prompt": "Use the provided inputs exactly:\n\nINPUTS\n- 1 original 5-second video.\n- 7 reference images, each containing one distinct character.\n\nGOAL\nCreate a new 5-second version of the original video using the original video as the locked base plate. Preserve the dinosaur, camera movement, scenery, lighting, color palette, pacing, voiceover, ambience, and full audio mix exactly as in the source. The dinosaur must perform the exact same motion as the original: same slow walking rhythm, scale, path, timing, framing, and behavior. Do not make the dinosaur react.\n\nAdd exactly one character from each of the 7 reference images: 7 characters total, no more and no fewer. All 7 characters must be present in the frame from the very first frame of the video through the very last frame — they are not entering, arriving, or appearing partway through. They are already walking or flying alongside the dinosaur as the video begins, as if they have been part of this scene the entire time, and they remain part of the scene for the full 5 seconds without exception.\n\nIDENTITY LOCK / NO DUPLICATION\nBefore animation, treat the 7 reference characters as 7 separate tracked subjects:\nCharacter 1 = reference image 1\nCharacter 2 = reference image 2\nCharacter 3 = reference image 3\nCharacter 4 = reference image 4\nCharacter 5 = reference image 5\nCharacter 6 = reference image 6\nCharacter 7 = reference image 7\n\nEach tracked subject must remain a single, unique individual for the entire video. Do not create copies, clones, echoes, crowd duplicates, alternate versions, reflections, ghost trails, extra background versions, or split-off versions of any character. There must never be two of the same character visible at once.\n\nDo not merge characters together. Each character must keep its own body, silhouette, colors, costume, limbs, face, wings, props, and identity. Characters may walk near each other or briefly overlap in depth, but they must remain clearly separate subjects. If two characters cross paths, preserve clean occlusion and separation: one passes in front, one behind. Never blend their bodies, swap features, combine colors, share limbs, fuse into a hybrid, or transform into one another.\n\nCHARACTER CONTINUITY — NO ENTRANCE, CONSTANT PRESENCE\nThere is no entrance moment. Do not have characters run, fly, or walk into frame from off-screen at any point in the video. All 7 characters are already positioned beside, ahead of, or trailing the dinosaur in the very first frame, integrated into the locked shot as if the footage was always filmed this way. They must remain present and readable in every single frame of every shot for the full 5 seconds. They should never disappear, teleport, fade out, get replaced, change design, change species, change costume, or become a different object. If a character is briefly hidden by the dinosaur, grass, or another character, it must reappear immediately as the same character at the same consistent scale and identity.\n\nKeep each character's size consistent across all frames and camera angles. Do not let characters shrink at any point. Preserve each character's apparent scale relative to the dinosaur's feet, the grass, the ground, and the other characters. Perspective may change, but the character's size identity must remain stable.\n\nMULTI-SHOT / MULTI-CUT CONSISTENCY\nIf the original video contains more than one shot, camera cut, or scene change, all 7 characters must appear in every single shot without exception — not only the opening shot. Treat each shot as requiring the same 7 characters to be re-applied and present, with the same identity, design, colors, and scale as in every other shot. No shot is allowed to show the dinosaur alone or with only some of the 7 characters. Every cut must carry all 7 characters forward as if they were physically present and filmed in that shot, not added only once at the start of the video.\n\nMOTION STYLE\nThe added characters move at a calm, steady pace that matches the dinosaur's slow walking rhythm, joining it as traveling companions already in motion together. Walking characters stay beside, ahead of, or trailing the dinosaur at a relaxed gait, keeping consistent spacing without weaving, dodging, or circling. Flying characters glide or flap gently at a steady speed just above or alongside the dinosaur, matching its pace rather than zipping past it.\n\nThe overall feeling should be a calm, companionable group already moving together through the scene: characters walk or fly alongside the dinosaur, evenly spaced, with no chasing, no sprinting, no looping around its feet, and no jumping onto its body. The dinosaur remains slow, calm, graceful, and unchanged, and the added characters mirror that same relaxed tempo throughout.\n\nFLYING CHARACTER RULES\nDifferent flying characters must fly according to what they are.\n\nIf one reference character is an airplane, it must fly like an airplane: rigid steady wings, smooth gentle banking, gliding arcs, controlled pitch and roll, stable fuselage, no bird-like wing flapping, no organic wing bending. The airplane holds a steady cruising path alongside the group, wings fixed and steady.\n\nIf one reference character is a bird, it must fly like a bird: natural gentle wing flapping, small body adjustments, steady gliding, matching the slow pace of the walking characters.\n\nDo not confuse the airplane and bird. The airplane never flaps. The bird does flap.\n\nVISUAL INTEGRATION\nThe characters must look naturally integrated into the original footage, not pasted on. Match the source video's camera perspective, depth, lens character, motion blur, shadows, ground contact, lighting direction, color temperature, atmospheric haze, and pink evening meadow palette. Grounded characters should contact the terrain convincingly. Flying characters should occupy clear 3D space and pass in front of or behind the dinosaur with correct occlusion.\n\nTo prevent merging, give each character its own clear walking or flying lane, spacing, and depth layer. Stagger their positions around the dinosaur rather than clustering them into one blob. When the scene is busy, prioritize clean character separation over density.\n\nAUDIO\nKeep the original sound exactly the same.\n\nHARD CONSTRAINTS\n- Output duration exactly 5 seconds.\n- Use the original video as the locked base.\n- Dinosaur, camera, scenery, lighting, timing, and voiceover remain unchanged.\n- All 7 characters are present in the frame from the first frame to the last frame — no entrances, no arrivals, no appearing partway through.\n- If the source video has multiple shots or cuts, all 7 characters must appear in every shot, with no shot showing the dinosaur alone or with a partial set of characters.\n- Add exactly 7 characters total: one from each reference image.\n- No duplicates, clones, copies, echoes, or extra instances.\n- No merging, blending, hybrid characters, feature swapping, or transformations.\n- Character size stays consistent across all shots.\n- All characters, walking or flying, move at a calm, steady pace matching the dinosaur's rhythm.\n- Airplane flies with rigid steady wings; bird flaps like a bird.\n- Keep the movement calm, companionable, readable, and physically coherent — no chasing, sprinting, or circling."
+    },
+    "params": null,
+    "prompt": "Use the provided inputs exactly:\n\nINPUTS\n- 1 original 5-second video.\n- 7 reference images, each containing one distinct character.\n\nGOAL\nCreate a new 5-second version of the original video using the original video as the locked base plate. Preserve the dinosaur, camera movement, scenery, lighting, color palette, pacing, voiceover, ambience, and full audio mix exactly as in the source. The dinosaur must perform the exact same motion as the original: same slow walking rhythm, scale, path, timing, framing, and behavior. Do not make the dinosaur react.\n\nAdd exactly one character from each of the 7 reference images: 7 characters total, no more and no fewer. All 7 characters must be present in the frame from the very first frame of the video through the very last frame — they are not entering, arriving, or appearing partway through. They are already walking or flying alongside the dinosaur as the video begins, as if they have been part of this scene the entire time, and they remain part of the scene for the full 5 seconds without exception.\n\nIDENTITY LOCK / NO DUPLICATION\nBefore animation, treat the 7 reference characters as 7 separate tracked subjects:\nCharacter 1 = reference image 1\nCharacter 2 = reference image 2\nCharacter 3 = reference image 3\nCharacter 4 = reference image 4\nCharacter 5 = reference image 5\nCharacter 6 = reference image 6\nCharacter 7 = reference image 7\n\nEach tracked subject must remain a single, unique individual for the entire video. Do not create copies, clones, echoes, crowd duplicates, alternate versions, reflections, ghost trails, extra background versions, or split-off versions of any character. There must never be two of the same character visible at once.\n\nDo not merge characters together. Each character must keep its own body, silhouette, colors, costume, limbs, face, wings, props, and identity. Characters may walk near each other or briefly overlap in depth, but they must remain clearly separate subjects. If two characters cross paths, preserve clean occlusion and separation: one passes in front, one behind. Never blend their bodies, swap features, combine colors, share limbs, fuse into a hybrid, or transform into one another.\n\nCHARACTER CONTINUITY — NO ENTRANCE, CONSTANT PRESENCE\nThere is no entrance moment. Do not have characters run, fly, or walk into frame from off-screen at any point in the video. All 7 characters are already positioned beside, ahead of, or trailing the dinosaur in the very first frame, integrated into the locked shot as if the footage was always filmed this way. They must remain present and readable in every single frame of every shot for the full 5 seconds. They should never disappear, teleport, fade out, get replaced, change design, change species, change costume, or become a different object. If a character is briefly hidden by the dinosaur, grass, or another character, it must reappear immediately as the same character at the same consistent scale and identity.\n\nKeep each character's size consistent across all frames and camera angles. Do not let characters shrink at any point. Preserve each character's apparent scale relative to the dinosaur's feet, the grass, the ground, and the other characters. Perspective may change, but the character's size identity must remain stable.\n\nMULTI-SHOT / MULTI-CUT CONSISTENCY\nIf the original video contains more than one shot, camera cut, or scene change, all 7 characters must appear in every single shot without exception — not only the opening shot. Treat each shot as requiring the same 7 characters to be re-applied and present, with the same identity, design, colors, and scale as in every other shot. No shot is allowed to show the dinosaur alone or with only some of the 7 characters. Every cut must carry all 7 characters forward as if they were physically present and filmed in that shot, not added only once at the start of the video.\n\nMOTION STYLE\nThe added characters move at a calm, steady pace that matches the dinosaur's slow walking rhythm, joining it as traveling companions already in motion together. Walking characters stay beside, ahead of, or trailing the dinosaur at a relaxed gait, keeping consistent spacing without weaving, dodging, or circling. Flying characters glide or flap gently at a steady speed just above or alongside the dinosaur, matching its pace rather than zipping past it.\n\nThe overall feeling should be a calm, companionable group already moving together through the scene: characters walk or fly alongside the dinosaur, evenly spaced, with no chasing, no sprinting, no looping around its feet, and no jumping onto its body. The dinosaur remains slow, calm, graceful, and unchanged, and the added characters mirror that same relaxed tempo throughout.\n\nFLYING CHARACTER RULES\nDifferent flying characters must fly according to what they are.\n\nIf one reference character is an airplane, it must fly like an airplane: rigid steady wings, smooth gentle banking, gliding arcs, controlled pitch and roll, stable fuselage, no bird-like wing flapping, no organic wing bending. The airplane holds a steady cruising path alongside the group, wings fixed and steady.\n\nIf one reference character is a bird, it must fly like a bird: natural gentle wing flapping, small body adjustments, steady gliding, matching the slow pace of the walking characters.\n\nDo not confuse the airplane and bird. The airplane never flaps. The bird does flap.\n\nVISUAL INTEGRATION\nThe characters must look naturally integrated into the original footage, not pasted on. Match the source video's camera perspective, depth, lens character, motion blur, shadows, ground contact, lighting direction, color temperature, atmospheric haze, and pink evening meadow palette. Grounded characters should contact the terrain convincingly. Flying characters should occupy clear 3D space and pass in front of or behind the dinosaur with correct occlusion.\n\nTo prevent merging, give each character its own clear walking or flying lane, spacing, and depth layer. Stagger their positions around the dinosaur rather than clustering them into one blob. When the scene is busy, prioritize clean character separation over density.\n\nAUDIO\nKeep the original sound exactly the same.\n\nHARD CONSTRAINTS\n- Output duration exactly 5 seconds.\n- Use the original video as the locked base.\n- Dinosaur, camera, scenery, lighting, timing, and voiceover remain unchanged.\n- All 7 characters are present in the frame from the first frame to the last frame — no entrances, no arrivals, no appearing partway through.\n- If the source video has multiple shots or cuts, all 7 characters must appear in every shot, with no shot showing the dinosaur alone or with a partial set of characters.\n- Add exactly 7 characters total: one from each reference image.\n- No duplicates, clones, copies, echoes, or extra instances.\n- No merging, blending, hybrid characters, feature swapping, or transformations.\n- Character size stays consistent across all shots.\n- All characters, walking or flying, move at a calm, steady pace matching the dinosaur's rhythm.\n- Airplane flies with rigid steady wings; bird flaps like a bird.\n- Keep the movement calm, companionable, readable, and physically coherent — no chasing, sprinting, or circling.",
+    "result": {
+     "prompt": "Use the provided inputs exactly:\n\nINPUTS\n- 1 original 5-second video.\n- 7 reference images, each containing one distinct character.\n\nGOAL\nCreate a new 5-second version of the original video using the original video as the locked base plate. Preserve the dinosaur, camera movement, scenery, lighting, color palette, pacing, voiceover, ambience, and full audio mix exactly as in the source. The dinosaur must perform the exact same motion as the original: same slow walking rhythm, scale, path, timing, framing, and behavior. Do not make the dinosaur react.\n\nAdd exactly one character from each of the 7 reference images: 7 characters total, no more and no fewer. All 7 characters must be present in the frame from the very first frame of the video through the very last frame — they are not entering, arriving, or appearing partway through. They are already walking or flying alongside the dinosaur as the video begins, as if they have been part of this scene the entire time, and they remain part of the scene for the full 5 seconds without exception.\n\nIDENTITY LOCK / NO DUPLICATION\nBefore animation, treat the 7 reference characters as 7 separate tracked subjects:\nCharacter 1 = reference image 1\nCharacter 2 = reference image 2\nCharacter 3 = reference image 3\nCharacter 4 = reference image 4\nCharacter 5 = reference image 5\nCharacter 6 = reference image 6\nCharacter 7 = reference image 7\n\nEach tracked subject must remain a single, unique individual for the entire video. Do not create copies, clones, echoes, crowd duplicates, alternate versions, reflections, ghost trails, extra background versions, or split-off versions of any character. There must never be two of the same character visible at once.\n\nDo not merge characters together. Each character must keep its own body, silhouette, colors, costume, limbs, face, wings, props, and identity. Characters may walk near each other or briefly overlap in depth, but they must remain clearly separate subjects. If two characters cross paths, preserve clean occlusion and separation: one passes in front, one behind. Never blend their bodies, swap features, combine colors, share limbs, fuse into a hybrid, or transform into one another.\n\nCHARACTER CONTINUITY — NO ENTRANCE, CONSTANT PRESENCE\nThere is no entrance moment. Do not have characters run, fly, or walk into frame from off-screen at any point in the video. All 7 characters are already positioned beside, ahead of, or trailing the dinosaur in the very first frame, integrated into the locked shot as if the footage was always filmed this way. They must remain present and readable in every single frame of every shot for the full 5 seconds. They should never disappear, teleport, fade out, get replaced, change design, change species, change costume, or become a different object. If a character is briefly hidden by the dinosaur, grass, or another character, it must reappear immediately as the same character at the same consistent scale and identity.\n\nKeep each character's size consistent across all frames and camera angles. Do not let characters shrink at any point. Preserve each character's apparent scale relative to the dinosaur's feet, the grass, the ground, and the other characters. Perspective may change, but the character's size identity must remain stable.\n\nMULTI-SHOT / MULTI-CUT CONSISTENCY\nIf the original video contains more than one shot, camera cut, or scene change, all 7 characters must appear in every single shot without exception — not only the opening shot. Treat each shot as requiring the same 7 characters to be re-applied and present, with the same identity, design, colors, and scale as in every other shot. No shot is allowed to show the dinosaur alone or with only some of the 7 characters. Every cut must carry all 7 characters forward as if they were physically present and filmed in that shot, not added only once at the start of the video.\n\nMOTION STYLE\nThe added characters move at a calm, steady pace that matches the dinosaur's slow walking rhythm, joining it as traveling companions already in motion together. Walking characters stay beside, ahead of, or trailing the dinosaur at a relaxed gait, keeping consistent spacing without weaving, dodging, or circling. Flying characters glide or flap gently at a steady speed just above or alongside the dinosaur, matching its pace rather than zipping past it.\n\nThe overall feeling should be a calm, companionable group already moving together through the scene: characters walk or fly alongside the dinosaur, evenly spaced, with no chasing, no sprinting, no looping around its feet, and no jumping onto its body. The dinosaur remains slow, calm, graceful, and unchanged, and the added characters mirror that same relaxed tempo throughout.\n\nFLYING CHARACTER RULES\nDifferent flying characters must fly according to what they are.\n\nIf one reference character is an airplane, it must fly like an airplane: rigid steady wings, smooth gentle banking, gliding arcs, controlled pitch and roll, stable fuselage, no bird-like wing flapping, no organic wing bending. The airplane holds a steady cruising path alongside the group, wings fixed and steady.\n\nIf one reference character is a bird, it must fly like a bird: natural gentle wing flapping, small body adjustments, steady gliding, matching the slow pace of the walking characters.\n\nDo not confuse the airplane and bird. The airplane never flaps. The bird does flap.\n\nVISUAL INTEGRATION\nThe characters must look naturally integrated into the original footage, not pasted on. Match the source video's camera perspective, depth, lens character, motion blur, shadows, ground contact, lighting direction, color temperature, atmospheric haze, and pink evening meadow palette. Grounded characters should contact the terrain convincingly. Flying characters should occupy clear 3D space and pass in front of or behind the dinosaur with correct occlusion.\n\nTo prevent merging, give each character its own clear walking or flying lane, spacing, and depth layer. Stagger their positions around the dinosaur rather than clustering them into one blob. When the scene is busy, prioritize clean character separation over density.\n\nAUDIO\nKeep the original sound exactly the same.\n\nHARD CONSTRAINTS\n- Output duration exactly 5 seconds.\n- Use the original video as the locked base.\n- Dinosaur, camera, scenery, lighting, timing, and voiceover remain unchanged.\n- All 7 characters are present in the frame from the first frame to the last frame — no entrances, no arrivals, no appearing partway through.\n- If the source video has multiple shots or cuts, all 7 characters must appear in every shot, with no shot showing the dinosaur alone or with a partial set of characters.\n- Add exactly 7 characters total: one from each reference image.\n- No duplicates, clones, copies, echoes, or extra instances.\n- No merging, blending, hybrid characters, feature swapping, or transformations.\n- Character size stays consistent across all shots.\n- All characters, walking or flying, move at a calm, steady pace matching the dinosaur's rhythm.\n- Airplane flies with rigid steady wings; bird flaps like a bird.\n- Keep the movement calm, companionable, readable, and physically coherent — no chasing, sprinting, or circling."
+    },
+    "schema": null,
+    "handles": {
+     "input": [],
+     "output": {
+      "prompt": {
+       "type": "text",
+       "order": 0,
+       "format": "text",
+       "description": "Text prompt"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Green_Dark",
+    "inputNodes": [],
+    "description": null,
+    "displayMode": "source-value",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "createdAt": "2026-08-07T08:24:29.576Z",
+   "dragHandle": ".node-header",
+   "parentId": "5676fa82-7ef1-417a-990e-8e5fdd16a711",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "dc1ccdb2-0b6c-4c1b-b0e5-34e7f0c9eed9",
+   "isModel": false,
+   "type": "custom_group",
+   "position": {
+    "x": -2930,
+    "y": -470
+   },
+   "data": {
+    "name": "Characters",
+    "type": "custom_group",
+    "color": "rgba(227, 232, 236, 0.64)",
+    "width": 2020,
+    "height": 1520,
+    "handles": {
+     "input": [],
+     "output": []
+    },
+    "version": 3,
+    "description": "Group of nodes",
+    "labelFontSize": 16
+   },
+   "createdAt": "2026-08-07T08:24:40.740Z",
+   "dragHandle": ".node-header",
+   "originalName": "Characters"
+  },
+  {
+   "id": "41e0d712-607c-4b96-aa09-6abb43ec927a",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": 30,
+    "y": 30
+   },
+   "data": {
+    "menu": null,
+    "name": "File",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "524b6f7d-676f-4c23-ac6e-ff291022e255",
+      "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png",
+      "name": "cha5.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png?_a=BAMAPqWO0",
+      "insertionOrder": 0
+     }
+    ],
+    "label": null,
+    "width": 1024,
+    "height": 1024,
+    "output": {
+     "file": {
+      "id": "524b6f7d-676f-4c23-ac6e-ff291022e255",
+      "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png",
+      "name": "cha5.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png?_a=BAMAPqWO0",
+      "insertionOrder": 0
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "524b6f7d-676f-4c23-ac6e-ff291022e255",
+     "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png",
+     "name": "cha5.png",
+     "type": "image",
+     "width": 1024,
+     "height": 1024,
+     "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg",
+     "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/nea8vahef0hzzp0wy9cg.png?_a=BAMAPqWO0",
+     "insertionOrder": 0
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-08-07T08:24:40.740Z",
+   "dragHandle": ".node-header",
+   "parentId": "dc1ccdb2-0b6c-4c1b-b0e5-34e7f0c9eed9",
+   "originalName": "File"
+  },
+  {
+   "id": "57bd0e42-1d72-45ce-87e8-2f89dc7d2c3b",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": 530,
+    "y": 30
+   },
+   "data": {
+    "menu": null,
+    "name": "File",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "7fd02d5d-1c59-47fa-8aa4-f39ab743198f",
+      "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png",
+      "name": "cha4.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png?_a=BAMAPqWO0",
+      "insertionOrder": 1
+     }
+    ],
+    "label": null,
+    "width": 1024,
+    "height": 1024,
+    "output": {
+     "file": {
+      "id": "7fd02d5d-1c59-47fa-8aa4-f39ab743198f",
+      "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png",
+      "name": "cha4.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png?_a=BAMAPqWO0",
+      "insertionOrder": 1
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "7fd02d5d-1c59-47fa-8aa4-f39ab743198f",
+     "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png",
+     "name": "cha4.png",
+     "type": "image",
+     "width": 1024,
+     "height": 1024,
+     "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl",
+     "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qhpowx2txbbptgtcctbl.png?_a=BAMAPqWO0",
+     "insertionOrder": 1
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-08-07T08:24:40.740Z",
+   "dragHandle": ".node-header",
+   "parentId": "dc1ccdb2-0b6c-4c1b-b0e5-34e7f0c9eed9",
+   "originalName": "File"
+  },
+  {
+   "id": "8c128bbf-c2a1-4679-a599-79c51d5d76b3",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": 1030,
+    "y": 30
+   },
+   "data": {
+    "menu": null,
+    "name": "File",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "e2bf470b-a45d-463e-9072-7e06e8552804",
+      "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png",
+      "name": "cha6.png",
+      "type": "image",
+      "width": 896,
+      "height": 1196,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png?_a=BAMAPqWO0",
+      "insertionOrder": 2
+     }
+    ],
+    "label": null,
+    "width": 1024,
+    "height": 1024,
+    "output": {
+     "file": {
+      "id": "e2bf470b-a45d-463e-9072-7e06e8552804",
+      "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png",
+      "name": "cha6.png",
+      "type": "image",
+      "width": 896,
+      "height": 1196,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png?_a=BAMAPqWO0",
+      "insertionOrder": 2
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "e2bf470b-a45d-463e-9072-7e06e8552804",
+     "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png",
+     "name": "cha6.png",
+     "type": "image",
+     "width": 896,
+     "height": 1196,
+     "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk",
+     "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/qcelzgm05vphz9wk6cdk.png?_a=BAMAPqWO0",
+     "insertionOrder": 2
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-08-07T08:24:40.741Z",
+   "dragHandle": ".node-header",
+   "parentId": "dc1ccdb2-0b6c-4c1b-b0e5-34e7f0c9eed9",
+   "originalName": "File"
+  },
+  {
+   "id": "4cdeac3a-01b8-42dc-923c-b43239921996",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": 1530,
+    "y": 30
+   },
+   "data": {
+    "menu": null,
+    "name": "File",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "8084ad87-16cd-49b7-936a-96368ee72cd1",
+      "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png",
+      "name": "cha1.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png?_a=BAMAPqWO0",
+      "insertionOrder": 3
+     }
+    ],
+    "label": null,
+    "width": 1024,
+    "height": 1024,
+    "output": {
+     "file": {
+      "id": "8084ad87-16cd-49b7-936a-96368ee72cd1",
+      "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png",
+      "name": "cha1.png",
+      "type": "image",
+      "width": 1024,
+      "height": 1024,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png?_a=BAMAPqWO0",
+      "insertionOrder": 3
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "8084ad87-16cd-49b7-936a-96368ee72cd1",
+     "url": "https://media.weavy.ai/image/upload/v1786085555/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png",
+     "name": "cha1.png",
+     "type": "image",
+     "width": 1024,
+     "height": 1024,
+     "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom",
+     "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/dva6vox1ug7w7gyezfom.png?_a=BAMAPqWO0",
+     "insertionOrder": 3
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-08-07T08:24:40.741Z",
+   "dragHandle": ".node-header",
+   "parentId": "dc1ccdb2-0b6c-4c1b-b0e5-34e7f0c9eed9",
+   "originalName": "File"
+  },
+  {
+   "id": "bb9d4dbf-6ede-4ed9-85c5-fbd34a212a6b",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": 30,
+    "y": 614
+   },
+   "data": {
+    "menu": null,
+    "name": "File",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "4b1608a9-788a-4a94-980f-193250e63fe4",
+      "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png",
+      "name": "cha3.png",
+      "type": "image",
+      "width": 1536,
+      "height": 2740,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png?_a=BAMAPqWO0",
+      "insertionOrder": 4
+     }
+    ],
+    "label": null,
+    "width": 1024,
+    "height": 1024,
+    "output": {
+     "file": {
+      "id": "4b1608a9-788a-4a94-980f-193250e63fe4",
+      "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png",
+      "name": "cha3.png",
+      "type": "image",
+      "width": 1536,
+      "height": 2740,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png?_a=BAMAPqWO0",
+      "insertionOrder": 4
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "4b1608a9-788a-4a94-980f-193250e63fe4",
+     "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png",
+     "name": "cha3.png",
+     "type": "image",
+     "width": 1536,
+     "height": 2740,
+     "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh",
+     "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/uybqj1vq5f6kwr6bardh.png?_a=BAMAPqWO0",
+     "insertionOrder": 4
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-08-07T08:24:40.741Z",
+   "dragHandle": ".node-header",
+   "parentId": "dc1ccdb2-0b6c-4c1b-b0e5-34e7f0c9eed9",
+   "originalName": "File"
+  },
+  {
+   "id": "345c702d-c91d-4d71-aafa-725b083286b9",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": 530,
+    "y": 614
+   },
+   "data": {
+    "menu": null,
+    "name": "File",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "4d455843-97cd-41c8-8a09-248159c35787",
+      "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png",
+      "name": "cha7.png",
+      "type": "image",
+      "width": 1536,
+      "height": 2740,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png?_a=BAMAPqWO0",
+      "insertionOrder": 5
+     }
+    ],
+    "label": null,
+    "width": 1024,
+    "height": 1024,
+    "output": {
+     "file": {
+      "id": "4d455843-97cd-41c8-8a09-248159c35787",
+      "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png",
+      "name": "cha7.png",
+      "type": "image",
+      "width": 1536,
+      "height": 2740,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png?_a=BAMAPqWO0",
+      "insertionOrder": 5
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "4d455843-97cd-41c8-8a09-248159c35787",
+     "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png",
+     "name": "cha7.png",
+     "type": "image",
+     "width": 1536,
+     "height": 2740,
+     "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj",
+     "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/pce2gst4fd9aamo5wbpj.png?_a=BAMAPqWO0",
+     "insertionOrder": 5
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-08-07T08:24:40.741Z",
+   "dragHandle": ".node-header",
+   "parentId": "dc1ccdb2-0b6c-4c1b-b0e5-34e7f0c9eed9",
+   "originalName": "File"
+  },
+  {
+   "id": "f2bfc738-7a34-4303-96cc-281962a0ec49",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": 1020,
+    "y": 750
+   },
+   "data": {
+    "menu": null,
+    "name": "File",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "7141d9a8-e635-46f6-8cee-35d9439acf23",
+      "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png",
+      "name": "cha2.png",
+      "type": "image",
+      "width": 1792,
+      "height": 2388,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png?_a=BAMAPqWO0",
+      "insertionOrder": 6
+     }
+    ],
+    "label": null,
+    "width": 1024,
+    "height": 1024,
+    "output": {
+     "file": {
+      "id": "7141d9a8-e635-46f6-8cee-35d9439acf23",
+      "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png",
+      "name": "cha2.png",
+      "type": "image",
+      "width": 1792,
+      "height": 2388,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png?_a=BAMAPqWO0",
+      "insertionOrder": 6
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "7141d9a8-e635-46f6-8cee-35d9439acf23",
+     "url": "https://media.weavy.ai/image/upload/v1786085557/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png",
+     "name": "cha2.png",
+     "type": "image",
+     "width": 1792,
+     "height": 2388,
+     "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz",
+     "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/vkuszglcfzwevwakanpz.png?_a=BAMAPqWO0",
+     "insertionOrder": 6
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-08-07T08:24:40.741Z",
+   "dragHandle": ".node-header",
+   "parentId": "dc1ccdb2-0b6c-4c1b-b0e5-34e7f0c9eed9",
+   "originalName": "File"
+  },
+  {
+   "id": "3bf235cd-82ac-481d-ad37-ceea949d9957",
+   "isModel": false,
+   "type": "import",
+   "position": {
+    "x": -1550,
+    "y": -980
+   },
+   "data": {
+    "menu": null,
+    "name": "Original Video",
+    "color": "Yambo_Blue",
+    "files": [
+     {
+      "id": "02e011e0-a0be-497b-8289-a5a5fe0366a7",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1786085365/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.mp4",
+      "name": "Original Video",
+      "type": "video",
+      "width": 1280,
+      "height": 720,
+      "duration": 5.06195,
+      "hasAudio": true,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.png?_a=BAMAPqWO0",
+      "insertionOrder": 0
+     }
+    ],
+    "label": null,
+    "width": 1024,
+    "height": 1024,
+    "output": {
+     "file": {
+      "id": "02e011e0-a0be-497b-8289-a5a5fe0366a7",
+      "fps": 24,
+      "url": "https://media.weavy.ai/video/upload/v1786085365/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.mp4",
+      "name": "Original Video",
+      "type": "video",
+      "width": 1280,
+      "height": 720,
+      "duration": 5.06195,
+      "hasAudio": true,
+      "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve",
+      "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.png?_a=BAMAPqWO0",
+      "insertionOrder": 0
+     }
+    },
+    "params": null,
+    "result": {
+     "id": "02e011e0-a0be-497b-8289-a5a5fe0366a7",
+     "fps": 24,
+     "url": "https://media.weavy.ai/video/upload/v1786085365/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.mp4",
+     "name": "Original Video",
+     "type": "video",
+     "width": 1280,
+     "height": 720,
+     "duration": 5.06195,
+     "hasAudio": true,
+     "publicId": "uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve",
+     "thumbnailUrl": "https://media.weavy.ai/video/upload/c_scale,w_150/v1/uploads/H822bxaJlpcStHwreI5drYHEWHX2/p4fk6bkkwqhbfyzr8cve.png?_a=BAMAPqWO0",
+     "insertionOrder": 0
+    },
+    "schema": null,
+    "handles": {
+     "output": {
+      "file": {
+       "type": "any",
+       "label": "File",
+       "order": 0,
+       "format": "uri",
+       "description": "The uploaded file"
+      }
+     }
+    },
+    "version": 3,
+    "dark_color": "Yambo_Blue_Dark",
+    "description": null,
+    "border_color": "Yambo_Blue_Stroke",
+    "cameraLocked": false,
+    "selectedIndex": 0
+   },
+   "createdAt": "2026-08-07T08:24:58.575Z",
+   "dragHandle": ".node-header",
+   "originalName": "File"
+  }
+ ],
+ "edges": [
+  {
+   "id": "4f018904-c602-4f31-8767-6cf07b2af846",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": null,
+    "sourceHandleType": "text",
+    "targetHandleType": "text"
+   },
+   "type": "custom",
+   "source": "a6395af0-02f1-4da4-87de-ab97c54f3f7b",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "a6395af0-02f1-4da4-87de-ab97c54f3f7b-output-prompt",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-prompt"
+  },
+  {
+   "id": "e7776a64-cdcd-4482-a3ac-8541be2e9c6e",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": null,
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "57bd0e42-1d72-45ce-87e8-2f89dc7d2c3b",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "57bd0e42-1d72-45ce-87e8-2f89dc7d2c3b-output-file",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-reference_2"
+  },
+  {
+   "id": "0fb2ad3e-2032-4882-a3cd-7f40549a02f5",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": null,
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "41e0d712-607c-4b96-aa09-6abb43ec927a",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "41e0d712-607c-4b96-aa09-6abb43ec927a-output-file",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-reference_3"
+  },
+  {
+   "id": "d63cb4e0-80d6-4a1c-9b49-579c63927392",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": null,
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "8c128bbf-c2a1-4679-a599-79c51d5d76b3",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "8c128bbf-c2a1-4679-a599-79c51d5d76b3-output-file",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-reference_4"
+  },
+  {
+   "id": "a5f91800-4068-49a5-9f18-1e1569f2bef4",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": null,
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "4cdeac3a-01b8-42dc-923c-b43239921996",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "4cdeac3a-01b8-42dc-923c-b43239921996-output-file",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-reference_5"
+  },
+  {
+   "id": "b6e95197-6ffa-42e0-9f20-d03af728b1a2",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": null,
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "bb9d4dbf-6ede-4ed9-85c5-fbd34a212a6b",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "bb9d4dbf-6ede-4ed9-85c5-fbd34a212a6b-output-file",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-reference_6"
+  },
+  {
+   "id": "0c4ac197-8976-4168-a06e-5aeefaac6404",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": null,
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "345c702d-c91d-4d71-aafa-725b083286b9",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "345c702d-c91d-4d71-aafa-725b083286b9-output-file",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-reference_7"
+  },
+  {
+   "id": "b3622e54-6081-4f37-9860-0894f43a9ac4",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": null,
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "f2bfc738-7a34-4303-96cc-281962a0ec49",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "f2bfc738-7a34-4303-96cc-281962a0ec49-output-file",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-reference_8"
+  },
+  {
+   "id": "9f7af42b-876f-4a2b-993e-91ed6633ac36",
+   "data": {
+    "sourceColor": "Yambo_Blue",
+    "targetColor": null,
+    "sourceHandleType": "any",
+    "targetHandleType": "any"
+   },
+   "type": "custom",
+   "source": "3bf235cd-82ac-481d-ad37-ceea949d9957",
+   "target": "6555badd-e442-4ae1-a827-031b16e2da9a",
+   "selected": false,
+   "sourceHandle": "3bf235cd-82ac-481d-ad37-ceea949d9957-output-file",
+   "targetHandle": "6555badd-e442-4ae1-a827-031b16e2da9a-input-reference_1"
+  }
+ ],
+ "latestVersion": {
+  "version": 1,
+  "createdAt": "2026-08-03T10:04:47.882Z"
+ },
+ "latestPublishedVersion": null,
+ "showcaseOrder": null,
+ "showcase": null,
+ "designAppMetadata": null,
+ "v3": true,
+ "batchRuns": [],
+ "folderId": "72d2a231-a3da-443f-9736-ceafaf2d42c9",
+ "scope": "PERSONAL",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

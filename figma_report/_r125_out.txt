@@ -1,0 +1,34 @@
+===== A. validate_vat 真参数(vat_gst_id/country_code/region) =====
+[A1_norm] 200 len=   236 655ms (正常)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_COUNTRY"},"message":"Unsupported VAT/GST country","i18n":{"id":"tax.vat.unsupported_vat_gst_country","fallback_text":"Unsupported VAT/GST country","params":{}}}
+[A2_q] 200 len=   236 344ms (vat 引号)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_COUNTRY"},"message":"Unsupported VAT/GST country","i18n":{"id":"tax.vat.unsupported_vat_gst_country","fallback_text":"Unsupported VAT/GST country","params":{}}}
+[A3_or] 200 len=   236 343ms (vat OR)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_COUNTRY"},"message":"Unsupported VAT/GST country","i18n":{"id":"tax.vat.unsupported_vat_gst_country","fallback_text":"Unsupported VAT/GST country","params":{}}}
+[A4_cc_q] 200 len=   236 339ms (cc 引号)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_COUNTRY"},"message":"Unsupported VAT/GST country","i18n":{"id":"tax.vat.unsupported_vat_gst_country","fallback_text":"Unsupported VAT/GST country","params":{}}}
+[A5_reg_q] 200 len=   236 360ms (region 引号)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_COUNTRY"},"message":"Unsupported VAT/GST country","i18n":{"id":"tax.vat.unsupported_vat_gst_country","fallback_text":"Unsupported VAT/GST country","params":{}}}
+[A6_long] 200 len=   236 353ms (超长500)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_COUNTRY"},"message":"Unsupported VAT/GST country","i18n":{"id":"tax.vat.unsupported_vat_gst_country","fallback_text":"Unsupported VAT/GST country","params":{}}}
+[A7_empty_vat] 200 len=   236 359ms (空vat)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_COUNTRY"},"message":"Unsupported VAT/GST country","i18n":{"id":"tax.vat.unsupported_vat_gst_country","fallback_text":"Unsupported VAT/GST country","params":{}}}
+
+===== B. validate_currency 补 team_id =====
+[B1_norm] 200 len=    40 454ms (完整形态)
+      {"error":false,"status":200,"i18n":null}
+[B2_or] 400 len=   474 422ms (currency OR)
+      {"error":true,"status":400,"message":"Your payment method's billing address is in a country that can't pay in USD' OR '1'='1. Please use a different payment method.","i18n":{"id":"subscription.error.payment_method_billing_address_cant_pay_selected_currency","fallback_text":"Your payment method's bil
+[B3_semi] 400 len=   471 377ms (currency 分号)
+      {"error":true,"status":400,"message":"Your payment method's billing address is in a country that can't pay in X';SELECT 1--. Please use a different payment method.","i18n":{"id":"subscription.error.payment_method_billing_address_cant_pay_selected_currency","fallback_text":"Your payment method's bill
+[B4_tidq] 400 len=   106 339ms (team_id 引号)
+      {"error":true,"status":400,"message":"'team_id' must be a valid number, received type String","i18n":null}
+
+===== C. validate_address 真形态(地址字段注入) =====
+[C1_norm] 200 len=    40 453ms (正常地址)
+      {"error":false,"status":200,"i18n":null}
+[C2_state_or] 400 len=   175 371ms (state OR)
+      {"error":true,"status":400,"message":"Enter a valid state","i18n":{"id":"subscription.error.enter_state","fallback_text":"Enter a valid state","params":{}},"reason":"ADDRESS"}
+[C3_line_cmt] 200 len=    40 445ms (line1 注释)
+      {"error":false,"status":200,"i18n":null}
+DONE

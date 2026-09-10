@@ -1,0 +1,68 @@
+===== A. teams 统计群(GET) =====
+[A1_aidata] 404 len=830473 2597ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[A2_backfill] 200 len=    96 369ms 
+      {"error":false,"status":200,"meta":{"num_backfilled_team_user":0,"num_team_user":1},"i18n":null}
+[A3_substat] 200 len=    81 394ms 
+      {"error":false,"status":200,"meta":{"subscription_will_renew":false},"i18n":null}
+[A4_admins] 200 len=   272 402ms 
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","name":"pccp","email":"1643584176@qq.com","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v2.png"}],"i18n":null}
+[A5_name] 200 len=    97 395ms 
+      {"error":false,"status":200,"meta":"1643584176's team","message":"1643584176's team","i18n":null}
+[A6_deleted] 400 len=    71 355ms 
+      {"error":true,"status":400,"message":"Team is not deleted","i18n":null}
+[A7_haspub] 200 len=    76 422ms 
+      {"error":false,"status":200,"meta":{"has_published_site":false},"i18n":null}
+[A8_student] 404 len=830473 1200ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+
+===== B. subscriptions =====
+[B1_summary] 200 len=   406 389ms 
+      {"error":false,"status":200,"meta":{"annual_subscription":null,"monthly_subscription":null,"monthly_invoice":null,"annual_invoice":null,"invoice_receiver":null,"whiteboard_quantity":0,"show_vat_gst":false,"vat_gst_id":"","shipping_address":null,"shipping_address_name":null,"has_billing_address":false,"annual_seats":{},"monthly_seats":{},"total_upgraded_user_counts":{},"account_credit":null},"i18n":null}
+[B2_est_empty] 200 len=   146 420ms (空探)
+      {"error":false,"status":200,"meta":{"estimate":{"currency":"usd","tax_percent":0.0,"sub_total":0,"tax_total":0,"total":0,"lines":[]}},"i18n":null}
+[B3_est_1] 200 len=   146 427ms (num_editors 探)
+      {"error":false,"status":200,"meta":{"estimate":{"currency":"usd","tax_percent":0.0,"sub_total":0,"tax_total":0,"total":0,"lines":[]}},"i18n":null}
+
+===== C. ml export / versions =====
+[C1_ml_status] 500 len=    64 325ms <<<500 
+      {"error":true,"status":500,"message":"Unauthorized","i18n":null}
+[C2_ml_fv] 404 len=830453 969ms [SPA404] 
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+
+===== D. 杂项到达性(GET 探) =====
+[D1_cc_report] 404 len=830453 1115ms [SPA404] (GET 探)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[D2_plg_manifest] 404 len=   123 362ms 
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[D3_feed_manifest] 404 len=    74 320ms 
+      {"error":true,"status":404,"message":"Not found","i18n":"error.not_found"}
+[D4_saml] 403 len=   257 374ms (POST 空探)
+      {"error":true,"status":403,"message":"Your session is invalid or expired, please try again.","i18n":{"id":"auth.error.invalid_session_try_again","fallback_text":"Your session is invalid or expired, please try again.","params":{}},"reason":"invalid_session"}
+[D5_items] 404 len=830453 973ms [SPA404] (POST 空探)
+      <!DOCTYPE html>
+<html lang="en" data-product-locale="en">
+  <head>
+      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>
+      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi
+[D6_vat] 400 len=    88 325ms (POST 空探)
+      {"error":true,"status":400,"message":"VAT ID and country code are required","i18n":null}
+[D7_vaddr] 200 len=    40 549ms (POST 空探)
+      {"error":false,"status":200,"i18n":null}
+DONE

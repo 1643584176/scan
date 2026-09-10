@@ -1,0 +1,154 @@
+recv frames: 241
+
+=== viewName data frame count (top 70) ===
+  28  StyleByKey
+  21  ListItemsView
+  14  OneItemView
+   9  OneCollectionView
+   5  LibraryAssetDataOfType
+   4  TeamByIdForPlanUserView
+   4  OrgSharedSettingView
+   4  FileMakeVersionsView
+   4  FileFavoritedMakeVersionsView
+   4  ListCollectionsView
+   3  TeamByIdForPlanView
+   3  FileExpirationView
+   3  HasCollectionsView
+   2  StatsigTeamsOrderView
+   2  LockClientView
+   2  UserColorProfilePreferenceView
+   2  ClientReloadView
+   2  RecentIdleTimeoutSettingChangeView
+   2  RecentNetworkControlRejectionView
+   2  FileCanAccessFullDevMode
+   2  FileIsEligibleForDevModeTrial
+   2  FileIsInDevModeTrial
+   2  FileDevModeTrialRequestPending
+   2  FileCanAccessFullDevModeOrgPlus
+   2  FileCanExport
+   2  FileCanUseAiOrViewerModeAi
+   2  FileCanEditCmsContent
+   2  RecentlyUsedActionsView
+   2  BranchingPermissionsView
+   2  CurrentWorkspaceView
+   2  PluginPreferencesView
+   2  DeviceTryFileView
+   2  NotificationExperimentInfoView
+   1  OpenEditorFileData
+   1  FileCanUseDevModeDemoFile
+   1  LibraryVariableCollectionDataWithVariables
+   1  LibraryModuleData
+   1  LibraryPresetSubscriptionsV2
+   1  UserForRcs
+   1  LibraryData
+   1  LegacySourceStyleData
+   1  StateGroupUpdatesForFile
+   1  ComponentUpdatesForFile
+   1  UserPreferences
+   1  CurrentUserStudentApplication
+   1  FileCanUseAi
+   1  FileCanUseFragmentSearchAi
+   1  FileCanUseAiOrDevModeAi
+   1  SavedResources
+   1  FileCanViewAnnotations
+   1  FileCanEditAnnotations
+   1  FileCanViewAnnotationsMegadot
+   1  ResolvedComments
+   1  FileWorkshopMode
+   1  LibraryTeamSubscriptions
+   1  FileWithCommentsAndReactions
+   1  PlanByFileKey
+   1  SiteBundles
+   1  SiteMountWithPublishEvents
+   1  SiteMount
+   1  SitePublishDomainState
+   1  FileByKey
+   1  DeveloperRelatedLinks
+   1  CurrentTeamCombinedPermissions
+   1  TeamPermissions
+   1  TeamCanEdit
+   1  LibraryAssetByKey
+   1  SiteLintingData
+   1  WebFontsForFile
+   1  FileManagePermission
+
+=== sensitive view frames (first 3 each) ===
+
+-- [SiteMount] (1/3) len=3037
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"OpenEditorFileData\",{\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"LicenseGroup":{"queries":{"[\"Team\",\"licenseGroup\",[],[null]]":{"initial":{}}},"computations":{}},"TeamUser":{"queries":{"[\"File\",\"currentTeamUser\",[null],[\"1666382706663462213\"]]":{"initial":{}}},"computations":{}},"FileKeyToReferenceId":{"queries":{"[\"File\",\"fileKeyToReferenceId\",[],[\"RuEdaohBLXN48WdkzS66BY\"]]":{"initial":{}}},"computations":{}},"FileRole":{"queries":{"[\"File\",\"ownerRole\",[],[\"RuEdaohBLXN48WdkzS66BY\"]]":{"initial":{"3164446023"
+
+-- [ResolvedComments] (1/3) len=12188
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"OrgSharedSettingView\",{\"orgId\":null}]":{"Org":{"queries":{"[\"root\",\"org\",[null,null],[]]":{"initial":{}}},"computations":{}}},"[\"UserPreferences\",{}]":{"User":{"queries":{"[\"root\",\"loggedInUser\",[null],[]]":{"initial":{}}},"computations":{}}},"[\"CurrentUserStudentApplication\",{}]":{"User":{"queries":{"[\"root\",\"currentUser\",[null],[]]":{"initial":{}}},"computations":{}}},"[\"FileCanAccessFullDevMode\",{\"key\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"FilePrototypeInfo":{"queries":{"[\"root\",\"filePrototypeInfo\",[\"RuEdao
+
+-- [ResolvedComments] (2/3) len=5422
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"SavedResources\",{\"orgId\":null}]":{"User":{"queries":{"[\"root\",\"currentUser\",[null],[]]":{"initial":{}}},"computations":{}},"Org":{"queries":{"[\"root\",\"org\",[null,null],[]]":{"initial":{}}},"computations":{}}},"[\"FileCanViewAnnotations\",{\"key\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"FilePrototypeInfo":{"queries":{"[\"root\",\"filePrototypeInfo\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]":{"initial":{"RuEdaohBLXN48WdkzS66BY":{"id":"RuEdaohBLXN48WdkzS66BY","key":"RuEdaohBLXN48WdkzS66BY"}}}},"computations":{"[\"FilePrototypeInfo\",\"canV
+
+-- [FileExpirationView] (1/3) len=107
+    {"messageType":"viewLoaded","viewName":"FileExpirationView","args":{"figFileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [ResolvedComments] (3/3) len=102
+    {"messageType":"viewLoaded","viewName":"ResolvedComments","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [FileWithCommentsAndReactions] (1/3) len=114
+    {"messageType":"viewLoaded","viewName":"FileWithCommentsAndReactions","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [PlanByFileKey] (1/3) len=99
+    {"messageType":"viewLoaded","viewName":"PlanByFileKey","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [SiteBundles] (1/3) len=97
+    {"messageType":"viewLoaded","viewName":"SiteBundles","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [SiteMountWithPublishEvents] (1/3) len=112
+    {"messageType":"viewLoaded","viewName":"SiteMountWithPublishEvents","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [SiteMount] (2/3) len=95
+    {"messageType":"viewLoaded","viewName":"SiteMount","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [SitePublishDomainState] (1/3) len=108
+    {"messageType":"viewLoaded","viewName":"SitePublishDomainState","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [SiteMount] (3/3) len=969
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"SiteLintingData\",{\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"SiteMount":{"queries":{"[\"root\",\"siteMount\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]":{"initial":{}}},"computations":{}},"File":{"queries":{"[\"root\",\"fileV2\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]":{"initial":{"RuEdaohBLXN48WdkzS66BY":{"id":"RuEdaohBLXN48WdkzS66BY","parentOrgId":null,"key":"RuEdaohBLXN48WdkzS66BY"}}}},"computations":{"[\"File\",\"sharedContainerSetting\",\"RuEdaohBLXN48WdkzS66BY\",{\"_rootId\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"fieldName":"sharedContainerSetting
+
+-- [SiteLintingData] (1/3) len=101
+    {"messageType":"viewLoaded","viewName":"SiteLintingData","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [FileManagePermission] (1/3) len=3625
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"FileNameViewDropdown\",{\"branchFileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"File":{"queries":{"[\"root\",\"fileV2\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]":{"initial":{"RuEdaohBLXN48WdkzS66BY":{"id":"RuEdaohBLXN48WdkzS66BY","trashedAt":null,"sourceFileKey":null,"key":"RuEdaohBLXN48WdkzS66BY","folderId":"634606970"}}},"[\"File\",\"sourceFile\",[],[null]]":{"initial":{}}},"computations":{"[\"File\",\"name\",\"RuEdaohBLXN48WdkzS66BY\",{\"_rootId\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"fieldName":"name","value":"Riccardo Buzzolan Ripetizioni (Commun
+
+-- [FileManagePermission] (2/3) len=106
+    {"messageType":"viewLoaded","viewName":"FileManagePermission","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [FilePublishSitePermissions] (1/3) len=1392
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"ListCollectionsView\",{\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"FileCmsCollection":{"queries":{"[\"root\",\"fileCmsCollections\",[\"RuEdaohBLXN48WdkzS66BY\"],[]]":{"initial":{"98e57a86-c0bc-400c-9985-e31fe26da19e":{"id":"98e57a86-c0bc-400c-9985-e31fe26da19e","collectionId":"02200ba1-3855-4023-aa0b-06eb3bede88c","createdAt":"2026-09-10T04:50:45.756Z","fileKey":"RuEdaohBLXN48WdkzS66BY"},"07da80ea-18dd-4e57-909b-bd60c7a387bb":{"id":"07da80ea-18dd-4e57-909b-bd60c7a387bb","collectionId":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","created
+
+-- [FileRecentViewers] (1/3) len=356
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"FileRecentViewers\",{\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"File":{"queries":{"[\"root\",\"_fileViewableByPrototypeViewers\",[\"RuEdaohBLXN48WdkzS66BY\",null],[]]":{"initial":{"RuEdaohBLXN48WdkzS66BY":{"id":"RuEdaohBLXN48WdkzS66BY","key":"RuEdaohBLXN48WdkzS66BY"}}}},"computations":{}}}}}
+
+-- [FileRecentViewers] (2/3) len=458
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"PluginPreferencesView\",{\"targetOrgId\":null,\"targetUserId\":null}]":{"PluginPreferences":{"queries":{"[\"root\",\"pluginPreferences\",[null,null,null],[]]":{"initial":{}}},"computations":{}}},"[\"FileRecentViewers\",{\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"FileViewHistory":{"queries":{"[\"File\",\"fileViewHistory\",[],[\"RuEdaohBLXN48WdkzS66BY\"]]":{"initial":{}}},"computations":{}}}}}
+
+-- [FileRecentViewers] (3/3) len=103
+    {"messageType":"viewLoaded","viewName":"FileRecentViewers","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+-- [FilePublishSitePermissions] (2/3) len=514
+    {"messageType":"denormalizedPendingMutations","mutations":{"[\"FilePublishSitePermissions\",{\"fileKey\":\"RuEdaohBLXN48WdkzS66BY\"}]":{"File":{"queries":{},"computations":{"[\"File\",\"canPublishSiteWithReasons\",\"RuEdaohBLXN48WdkzS66BY\",{\"_rootId\":\"RuEdaohBLXN48WdkzS66BY\",\"userId\":null,\"sessionId\":\"session-f1d0e8da-6047-4fba-945d-c652f11db7c0\",\"anonymousUserId\":null}]":{"fieldName":"canPublishSiteWithReasons","value":{"result":false,"publicDenyReasons":["file_deny_publish_starter_team"]}}}}}}}
+
+-- [FilePublishSitePermissions] (3/3) len=112
+    {"messageType":"viewLoaded","viewName":"FilePublishSitePermissions","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+
+=== summary of found ===
+FileRecentViewers: 3 frames
+ResolvedComments: 3 frames
+FileWithCommentsAndReactions: 3 frames
+SitePublishDomainState: 2 frames
+SiteMountWithPublishEvents: 2 frames
+SiteMount: 5 frames
+SiteBundles: 2 frames
+FileExpirationView: 3 frames
+FileManagePermission: 2 frames
+PlanByFileKey: 3 frames
+SiteLintingData: 2 frames
+UserLicensesForFile: 0 frames
+FilePublishSitePermissions: 3 frames
+DONE

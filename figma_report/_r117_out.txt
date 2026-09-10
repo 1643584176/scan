@@ -1,0 +1,86 @@
+===== X. content_summary 真形态首打(对照:Team folder 有文件=应计数>0) =====
+[X1_folder_id] 200 len=   184 957ms (应该 file_count>0)
+      {"error":false,"status":200,"meta":{"subfolder_count":0,"file_count":5,"has_hidden_items":false,"has_pending_asset_transfer":false,"has_pending_resource_connection":false},"i18n":null}
+[X2_file_key] 200 len=   184 444ms (单文件)
+      {"error":false,"status":200,"meta":{"subfolder_count":0,"file_count":1,"has_hidden_items":false,"has_pending_asset_transfer":false,"has_pending_resource_connection":false},"i18n":null}
+[X3_mixed] 400 len=    97 352ms (混合)
+      {"error":true,"status":400,"message":"One or more folders not found or not trashed.","i18n":null}
+[X4_id_q] 400 len=   203 337ms (引号)
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:45: Non-number characters in quoted integer"}
+[X5_id_or1] 400 len=   203 361ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:51: Non-number characters in quoted integer"}
+[X5b_id_and1] 400 len=   203 330ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:52: Non-number characters in quoted integer"}
+[X5c_id_and2] 400 len=   203 329ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:52: Non-number characters in quoted integer"}
+[X6_id_abc] 400 len=   203 332ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:38: Non-number characters in quoted integer"}
+[X7_extra_field] 200 len=   184 470ms (多余字段宽容度)
+      {"error":false,"status":200,"meta":{"subfolder_count":0,"file_count":5,"has_hidden_items":false,"has_pending_asset_transfer":false,"has_pending_resource_connection":false},"i18n":null}
+[X8_key_q] 400 len=    80 337ms 
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[X9_key_abc] 400 len=    80 336ms 
+      {"error":true,"status":400,"message":"One or more files not found.","i18n":null}
+[X10_folder_empty] 200 len=   184 331ms (缺 id)
+      {"error":false,"status":200,"meta":{"subfolder_count":0,"file_count":0,"has_hidden_items":false,"has_pending_asset_transfer":false,"has_pending_resource_connection":false},"i18n":null}
+[X11_id_neg] 400 len=    82 338ms 
+      {"error":true,"status":400,"message":"One or more folders not found.","i18n":null}
+[X12_id_big] 400 len=   180 328ms (20位大数)
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/content_summary: Error occurred during parsing: Error parsing JSON @1:55: Integer overflow"}
+[X13_id_zero] 400 len=    82 337ms 
+      {"error":true,"status":400,"message":"One or more folders not found.","i18n":null}
+[X14_dup] 400 len=    82 393ms (重复元素)
+      {"error":true,"status":400,"message":"One or more folders not found.","i18n":null}
+
+===== B. file_move/suggested org_id 判别实验(区分 强转 vs 拼接) =====
+[B9_and1] 500 len=   157 382ms <<<500 (若拼接→200语法合法;若强转→500)
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B10_and2] 500 len=   157 431ms <<<500 (拼接→200)
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B11_arith] 500 len=   157 393ms <<<500 (拼接→200:算 2)
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B12_q1] 500 len=   157 389ms <<<500 (拼接→PG:1 数字上下文 quote 错?)
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B13_1cmt] 500 len=   157 392ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B14_semi] 500 len=   157 353ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B15_subq] 500 len=   157 370ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B16_or] 500 len=   157 357ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B17_space] 200 len=    50 395ms (尾空格 trim?)
+      {"error":false,"status":200,"meta":[],"i18n":null}
+
+===== A. users/batched(user_ids=真实名)重打 =====
+[A2r_two] 200 len=   251 660ms (集合语义:期望1条去重或2条)
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+[A3r_abc] 200 len=    50 329ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A4r_mix] 200 len=   251 360ms 
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+[A5r_q] 200 len=    50 324ms 
+      {"error":false,"status":200,"meta":[],"i18n":null}
+[A6r_uidq] 200 len=   251 371ms 
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+[A7r_or] 200 len=   251 334ms 
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+[A8r_and1] 200 len=   251 678ms 
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+[A9r_and2] 200 len=   251 329ms 
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+[A10r_ghost] 200 len=   251 327ms (不存在用户)
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+[A11r_many] 200 len=   251 340ms (5x 去重?)
+      {"error":false,"status":200,"meta":[{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240\u0026default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v
+
+===== C. can_move_bulk 空探(形态引导) =====
+[C1_empty] 400 len=   166 348ms 
+      {"error":true,"status":400,"message":"Error in route typechecking for /api/folder_items/can_move_bulk: Required field 'folder_items' is missing from the input JSON."}
+[C2_items] 400 len=    92 403ms 
+      {"error":true,"status":400,"message":"Exactly one destination must be provided","i18n":null}
+[C3_plain_arr] 500 len=   157 404ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[C4_fid_arr] 500 len=   157 363ms <<<500 
+      {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+DONE

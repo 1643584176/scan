@@ -1,0 +1,13 @@
+== res_ids found: [] ==
+using RID=3
+
+== baseline & variants on /webroutes/restaurant/info ==
+[200 len=11041] /webroutes/restaurant/info?res_id=3                                    {"page_data":{"sections":{"SECTION_IMAGE_CAROUSEL":{"entities":[{"entity_type":"IMAGES","entity_ids":[]}],"has_more_photo":false,"
+[500 len=0] /webroutes/restaurant/info?res_id=3%27                                 
+[403 len=404] /webroutes/restaurant/info?res_id=3%20and%201=1                        <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "http&#58;&#4
+[403 len=404] /webroutes/restaurant/info?res_id=3%20and%201=2                        <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "http&#58;&#4
+[403 len=404] /webroutes/restaurant/info?res_id=0                                    <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "http&#58;&#4
+[200 len=19] /webroutes/restaurant/info?res_id=-1                                   {"message":"error"}
+[403 len=404] /webroutes/restaurant/info?res_id=99999999                             <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "http&#58;&#4
+[403 len=406] /webroutes/restaurant/info?res_id=3.5                                  <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access "http&#58;&#4
+done

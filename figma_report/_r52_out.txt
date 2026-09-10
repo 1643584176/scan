@@ -1,0 +1,218 @@
+all cookies: 29 | waf-only: 6
+
+========== CTX1: A full cookies ==========
+goto https://www.figma.com/file/RuEdaohBLXN48WdkzS66BY
+final url: https://www.figma.com/file/RuEdaohBLXN48WdkzS66BY
+--- text ---
+File
+Insert
+Find
+Variables
+Make
+CMS
+Settings
+Riccardo Buzzolan Ripetizioni (Community)
+File name
+Beta
+Drafts
+Free
+Publish…
+Webpages
+Home
+/journal
+/article
+/about
+/careers
+/job-listing
+Layers
+div
+Styles
+div
+Thumbnail
+Home
+/journal
+/article
+/about
+/careers
+/job-listing
+P
+Share
+Design
+Design
+Interaction
+Interaction
+4%
+Background
+Color
+%
+Toggle visibility
+Styles
+Text styles
+Nav link
+· 16/120
+Button text
+· 14/100
+Caption
+· 14/100
+Header
+Paragraph
+Color styles
+Divider
+Sticker
+Text
+Background
+Effect styles
+Dropshadow
+Export
+shot saved: D:\scan\figma_report\_r52_A.png
+--- ws sent (208) ---
+  S> {"messageType":"auth","clientType":"web","args":{"userId":"1666382703778278399","anonymousUserId":"620290b1-584d-47d4-aaa5-eb9cefc83e4d"},"tags":{"clientType":"web","commitHash":"676bd5bf1127d544bd63db31dea851407483657c","clientUrl":"https://www.figma.com/file
+  S> {"messageType":"subscribe","viewName":"UserFlagsView","viewHash":"790e295abf28e164a4433f52cde651751a6049e635ba1b09a79ecde0ee39c3b6","loadType":"initial","args":{}}
+  S> {"messageType":"subscribe","viewName":"OpenEditorFileData","viewHash":"995bb2e8a4c8f625b8ac4920c0975d2d9942b2e9442b65f63ef55d5d750eb847","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  S> {"messageType":"subscribe","viewName":"UserForRealtimeShim","viewHash":"272fc67c8250795b361650d18084dfc74238429b24524e8261d14eea40802bc9","loadType":"initial","args":{}}
+  S> {"messageType":"subscribe","viewName":"OrgUsersForRealtimeShim","viewHash":"ec9055eea469aa607df7df65d1d3d4f373e8be5f42ebc8d51692d419b14aaf80","loadType":"initial","args":{}}
+  S> {"messageType":"subscribe","viewName":"EduGracePeriodsForUser","viewHash":"e3d69bb9e4520b27e0f31e5c89953aa15016a52ebc418251a65acf310923c31e","loadType":"initial","args":{"updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  S> {"messageType":"subscribe","viewName":"UserTeamFlagsForRealtimeShim","viewHash":"3379e92b516fb5dd0200627f5952882b9acad0228dda0c9007fb4b3d316ff552","loadType":"initial","args":{}}
+  S> {"messageType":"subscribe","viewName":"UserTeamRoleRequestView","viewHash":"e95fda31e25a4d03f2a7ef14c2e5fb0419484a7aa1873782caaa269ac6ffda36","loadType":"initial","args":{"updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  S> {"messageType":"subscribe","viewName":"FontFileForUserView","viewHash":"3405b8d146ab6d66ef2c34b3ce443cea6ef6d6b932e75697cffdab4a2a927f20","loadType":"initial","args":{"updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  S> {"messageType":"subscribe","viewName":"RoleUpdatesForTeam","viewHash":"93b3cdb44799af858a10b1261060d02840e441092bbfd8b1195d1013e1eb35b2","loadType":"initial","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  S> {"messageType":"subscribe","viewName":"FilesForTeam","viewHash":"bf399f0c4e0e8a5cd149c35533cf88ba61491dfa7a7c2838456984c4fedf1298","loadType":"initial","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  S> {"messageType":"subscribe","viewName":"ProjectsForTeam","viewHash":"b475a04383bc17b59c846bb23db29e7015bd524b5a62cb5348622ed994be4c77","loadType":"initial","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  S> {"messageType":"subscribe","viewName":"TeamByIdForRealtimeShim","viewHash":"01da3ab94186f5f79258bbfc0911747f34b27b1a863c82a8c5bb1968d7364c32","loadType":"initial","args":{"teamId":"1666382706663462213"}}
+  S> {"messageType":"subscribe","viewName":"ReposForTeam","viewHash":"9f94f79b138473cee82c5a5ec6ae1b6a8b60f0acba7c80a341267c446bc80231","loadType":"initial","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  S> {"messageType":"subscribe","viewName":"ComponentUpdatesForTeam","viewHash":"52dfdb2aec3087ca5d9014033f4b58704d7118841adf7cb31a64c87751aa24d8","loadType":"initial","args":{"teamId":"1666382706663462213"}}
+  S> {"messageType":"subscribe","viewName":"StateGroupUpdatesForTeam","viewHash":"6113d847ddfa4fa658afbadb2ccfb1bd2bd49975ed9c0d39cfb64f0069fe8bf3","loadType":"initial","args":{"teamId":"1666382706663462213"}}
+  S> {"messageType":"subscribe","viewName":"FontFileForTeamView","viewHash":"cceeb6550c615bd306bfe28a2d9d0288842cd3dd57e36b3bee09e8cf20b68727","loadType":"initial","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  S> {"messageType":"subscribe","viewName":"StatsigTeamsOrderView","viewHash":"16c129c0c9135d1b62bf91a990996bf07c3771e5dfa34ba09a7d6da442e59bf2","loadType":"initial","args":{"currentOrgId":null}}
+  S> {"messageType":"subscribe","viewName":"TeamByIdForPlanUserView","viewHash":"91557f88bbaa665a0f1aa49fb5653f16d090b232067a52c34d21d733cd90ebaa","loadType":"initial","args":{"teamId":"1666382706663462213"}}
+  S> {"messageType":"subscribe","viewName":"TeamByIdForPlanView","viewHash":"fb2acdcc5aa49efe163ca37965f3064b85d5dfb01a2ba04c584987af6118b808","loadType":"initial","args":{"teamId":"1666382706663462213"}}
+  S> {"messageType":"subscribe","viewName":"UpgradeEligibilityView","viewHash":"4ba649c02530324cf233fcd10f2a64ba725533362d4d5a29a392ea81af0fadfb","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY","planParentId":null,"planType":null}}
+  S> {"messageType":"subscribe","viewName":"AiAssistantKillSwitchView","viewHash":"01a5350a5d6b49eb45aa04414b294f5a815be998b73ea80a7bb3de567299b928","loadType":"initial","args":{}}
+  S> {"messageType":"subscribe","viewName":"OrgSharedSettingView","viewHash":"0dbedcef4ecf486641b4babc1a6bc2b0c74a246604f97eeb249bb7eee0278934","loadType":"initial","args":{"orgId":null}}
+  S> {"messageType":"subscribe","viewName":"FileCanUseDevModeDemoFile","viewHash":"71f2e28d59b7dd5cb843ca69e89d4b8ee17de0a0acfe265c7c3fb2d0e91d38de","loadType":"initial","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+  S> {"messageType":"subscribe","viewName":"LibraryVariableCollectionDataWithVariables","viewHash":"64d304112f925191f67332c426a2c4ccf7a0134d1451e831ad1b02cb7a09b838","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+--- ws recv interesting (205) ---
+  R< [ws-open] wss://www.figma.com/api/livegraph?pv=1&pr=30f1c0952c899da8&pt=1789016522&ph=2V3si8_w8tYQX09XmbOA_Yisdrepv2KPYTp3XcEdgrc&userId=1666382703778278399&ano
+  R< [ws-open] wss://www.figma.com/api/multiplayer/RuEdaohBLXN48WdkzS66BY?role=editor&tracking_session_id=wwBudHtfRG3NpZzv&version=222&recentReload=0&file-load-strea
+  R< [recv] {"messageType":"viewLoaded","viewName":"CurrentTeamCombinedPermissions","args":{"teamId":"1666382706663462213"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"UserFlagsView","args":{}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"OrgUsersForRealtimeShim","args":{}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"UserTeamFlagsForRealtimeShim","args":{}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"EduGracePeriodsForUser","args":{"updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"UserTeamRoleRequestView","args":{"updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"UserForRealtimeShim","args":{}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"OpenEditorFileData","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FontFileForUserView","args":{"updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"ReposForTeam","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"TeamByIdForRealtimeShim","args":{"teamId":"1666382706663462213"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"RoleUpdatesForTeam","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"ProjectsForTeam","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"ComponentUpdatesForTeam","args":{"teamId":"1666382706663462213"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"StateGroupUpdatesForTeam","args":{"teamId":"1666382706663462213"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FontFileForTeamView","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FilesForTeam","args":{"teamId":"1666382706663462213","updatedAtTimestamp":"2026-09-09T16:00:00.000Z"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"TeamByIdForPlanView","args":{"teamId":"1666382706663462213"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"TeamByIdForPlanUserView","args":{"teamId":"1666382706663462213"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"StatsigTeamsOrderView","args":{"currentOrgId":null}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"AiAssistantKillSwitchView","args":{}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"OrgSharedSettingView","args":{"orgId":null}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"UpgradeEligibilityView","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY","planParentId":null,"planType":null}}
+--- api calls (5) ---
+  A> 200 GET https://www.figma.com/api/files/RuEdaohBLXN48WdkzS66BY/realtime_token
+  A> 200 GET https://www.figma.com/api/files/RuEdaohBLXN48WdkzS66BY/realtime_token
+  A> 200 POST https://www.figma.com/api/files/batch
+  A> 200 POST https://www.figma.com/api/files/batch
+  A> 200 POST https://www.figma.com/api/files/RuEdaohBLXN48WdkzS66BY/view
+
+========== CTX2: ANON (waf-only cookies) ==========
+goto https://www.figma.com/file/RuEdaohBLXN48WdkzS66BY
+final url: https://www.figma.com/file/RuEdaohBLXN48WdkzS66BY
+--- text ---
+File
+Find
+CMS
+Riccardo Buzzolan Ripetizioni (Community)
+File name
+Beta
+Publish…
+Webpages
+Home
+/journal
+/article
+/about
+/careers
+/job-listing
+Layers
+div
+Styles
+div
+Thumbnail
+Home
+/journal
+/article
+/about
+/careers
+/job-listing
+5%
+Share
+Sign up to comment, edit, preview, and more.
+Sign up
+Continue
+shot saved: D:\scan\figma_report\_r52_anon.png
+--- ws sent (140) ---
+  S> {"messageType":"auth","clientType":"web","args":{"userId":null,"anonymousUserId":null},"tags":{"clientType":"web","commitHash":"676bd5bf1127d544bd63db31dea851407483657c","clientUrl":"https://www.figma.com/file/RuEdaohBLXN48WdkzS66BY"},"clientRequestedVersion":
+  S> {"messageType":"subscribe","viewName":"OpenEditorFileData","viewHash":"995bb2e8a4c8f625b8ac4920c0975d2d9942b2e9442b65f63ef55d5d750eb847","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  S> {"messageType":"subscribe","viewName":"StatsigTeamsOrderView","viewHash":"16c129c0c9135d1b62bf91a990996bf07c3771e5dfa34ba09a7d6da442e59bf2","loadType":"initial","args":{"currentOrgId":null}}
+  S> {"messageType":"subscribe","viewName":"TeamByIdForPlanUserView","viewHash":"91557f88bbaa665a0f1aa49fb5653f16d090b232067a52c34d21d733cd90ebaa","loadType":"initial","args":{"teamId":"1666382706663462213"}}
+  S> {"messageType":"subscribe","viewName":"TeamByIdForPlanView","viewHash":"fb2acdcc5aa49efe163ca37965f3064b85d5dfb01a2ba04c584987af6118b808","loadType":"initial","args":{"teamId":"1666382706663462213"}}
+  S> {"messageType":"subscribe","viewName":"OrgSharedSettingView","viewHash":"0dbedcef4ecf486641b4babc1a6bc2b0c74a246604f97eeb249bb7eee0278934","loadType":"initial","args":{"orgId":null}}
+  S> {"messageType":"subscribe","viewName":"FileCanUseDevModeDemoFile","viewHash":"71f2e28d59b7dd5cb843ca69e89d4b8ee17de0a0acfe265c7c3fb2d0e91d38de","loadType":"initial","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+  S> {"messageType":"subscribe","viewName":"LibraryPresetSubscriptionsV2","viewHash":"dbde304966947b3db8eb706daec19fc36cc68fe30b20e4835aaf638983798fb0","loadType":"initial","args":{"group":"default"}}
+  S> {"messageType":"subscribe","viewName":"LockClientView","viewHash":"33c1c91067a94b090e87a7a00fba7e2660afa8224decc365ca4c0a30fbf1b6bd","loadType":"initial","args":{"cacheNonce":"6f0f699a-2828-411a-b45e-e4d6798621a4"}}
+  S> {"messageType":"subscribe","viewName":"UserForRcs","viewHash":"d3fe5032fdb0514d65901993a4761d35e3898d0e297139137434b892c13a720b","loadType":"initial","args":{}}
+  S> {"messageType":"subscribe","viewName":"UserColorProfilePreferenceView","viewHash":"b8d0e8d696d791163e3e7caf8df987593becff3f127d7cc9b10a449c256e5b09","loadType":"initial","args":{}}
+  S> {"messageType":"subscribe","viewName":"LibraryVariableCollectionDataWithVariables","viewHash":"64d304112f925191f67332c426a2c4ccf7a0134d1451e831ad1b02cb7a09b838","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  S> {"messageType":"subscribe","viewName":"LibraryModuleData","viewHash":"25318ec37d5b8f135dc56e8db11605593ba93c154936ac32e6bbcfad7368e185","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  S> {"messageType":"subscribe","viewName":"LegacySourceStyleData","viewHash":"5cbf3e6251d38bb8e8a3803f32ea3ace8dfdf1647d7857a9d828890fe4c2fc64","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  S> {"messageType":"subscribe","viewName":"ClientReloadView","viewHash":"090107196b2da79691cdfb1d0184f983e8335f393c9c59a8201bae7318a03f36","loadType":"initial","args":{"cacheNonce":"03a79822-84c1-4b9c-9fc5-ef6a8c82d835"}}
+  S> {"messageType":"subscribe","viewName":"RecentNetworkControlRejectionView","viewHash":"70ac169ba7bfadb506b3117809bf61e3d264afc826f87c4dcef8409c028392ce","loadType":"initial","args":{"cacheNonce":"63842772-23d7-4492-bbb0-60a16c394c4b"}}
+  S> {"messageType":"subscribe","viewName":"RecentIdleTimeoutSettingChangeView","viewHash":"a77f1370dad45949b55317d68e62d2a0c2c811abe0ba52449efa02b64ba0bb47","loadType":"initial","args":{"cacheNonce":"fabcde8c-7197-46a9-8ae7-6a284696d2e1"}}
+  S> {"messageType":"subscribe","viewName":"LibraryData","viewHash":"fce68eeee3014e622a2b8b96ed5d952b6fd4d24158900c3bb2dc838fb0c84136","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  S> {"messageType":"subscribe","viewName":"LibraryAssetDataOfType","viewHash":"e84dbeb822d523556943fa2c7e353c74b0d1098f70b7284ee014b3556ba86bbc","loadType":"initial","args":{"libraryKey":"lk-201b8b07bf0f6747dfce6e43c56746d0950e1e16e47303721e1135f08bf5da5469bb8ae28
+  S> {"messageType":"subscribe","viewName":"LibraryAssetDataOfType","viewHash":"e84dbeb822d523556943fa2c7e353c74b0d1098f70b7284ee014b3556ba86bbc","loadType":"initial","args":{"libraryKey":"lk-21b90a1b692868f8a36325a03b7e4f5f7993d51f9ff19d7cd00029b2a0133de7b5b016213
+  S> {"messageType":"subscribe","viewName":"LibraryAssetDataOfType","viewHash":"e84dbeb822d523556943fa2c7e353c74b0d1098f70b7284ee014b3556ba86bbc","loadType":"initial","args":{"libraryKey":"lk-be1de6ae22e83941579454e7e324bb161f9a5a4c2fe0e30be35f56cb8ce185d9a800fc990
+  S> {"messageType":"subscribe","viewName":"LibraryAssetDataOfType","viewHash":"e84dbeb822d523556943fa2c7e353c74b0d1098f70b7284ee014b3556ba86bbc","loadType":"initial","args":{"libraryKey":"lk-881a066ef4896fa3045ada8d59d0858d07192409a118118b9fa698ea5aa5297b8520c9609
+  S> {"messageType":"subscribe","viewName":"LibraryAssetDataOfType","viewHash":"e84dbeb822d523556943fa2c7e353c74b0d1098f70b7284ee014b3556ba86bbc","loadType":"initial","args":{"libraryKey":"lk-79a27f9c87e1eabed7687212440f0f73c2a44bfbc38bd4b5cba1b0685330227d402072e1f
+  S> {"messageType":"subscribe","viewName":"FileMakeVersionsView","viewHash":"7eb73e02f0aba4ae10ab3dcba8718ba58807259bc3f2fa908f8c911ca016b179","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY","firstPageSize":50}}
+  S> {"messageType":"subscribe","viewName":"FileFavoritedMakeVersionsView","viewHash":"eaa1cd1b88dc499a2ce09299e12f5b1541a28baaa8a7da25b945c8de27951f9d","loadType":"initial","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY","firstPageSize":50}}
+--- ws recv interesting (137) ---
+  R< [ws-open] wss://www.figma.com/api/livegraph?pv=1&pr=ad71418f90fbaa80&pt=1789016555&ph=9WnAy7CCXLc9ohA6JXcRa--xF96A5QtTGLDe09wqGqI&userId=&anonUserId=&clientType
+  R< [ws-open] wss://www.figma.com/api/multiplayer/RuEdaohBLXN48WdkzS66BY?role=editor&tracking_session_id=ZR44mFqIkqgLsYfi&version=222&recentReload=0&file-load-strea
+  R< [recv] {"messageType":"viewLoaded","viewName":"OpenEditorFileData","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"StatsigTeamsOrderView","args":{"currentOrgId":null}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"TeamByIdForPlanUserView","args":{"teamId":"1666382706663462213"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"TeamByIdForPlanView","args":{"teamId":"1666382706663462213"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"OrgSharedSettingView","args":{"orgId":null}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FileCanUseDevModeDemoFile","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"LibraryPresetSubscriptionsV2","args":{"group":"default"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"LockClientView","args":{"cacheNonce":"6f0f699a-2828-411a-b45e-e4d6798621a4"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"UserForRcs","args":{}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"UserColorProfilePreferenceView","args":{}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"ClientReloadView","args":{"cacheNonce":"03a79822-84c1-4b9c-9fc5-ef6a8c82d835"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"RecentNetworkControlRejectionView","args":{"cacheNonce":"63842772-23d7-4492-bbb0-60a16c394c4b"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"LegacySourceStyleData","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"LibraryVariableCollectionDataWithVariables","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"LibraryModuleData","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"RecentIdleTimeoutSettingChangeView","args":{"cacheNonce":"fabcde8c-7197-46a9-8ae7-6a284696d2e1"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"LibraryData","args":{"fileKey":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FileIsEligibleForDevModeTrial","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FileIsInDevModeTrial","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FileDevModeTrialRequestPending","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FileCanAccessFullDevMode","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FileCanAccessFullDevModeOrgPlus","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+  R< [recv] {"messageType":"viewLoaded","viewName":"FileCanExport","args":{"key":"RuEdaohBLXN48WdkzS66BY"}}
+--- api calls (2) ---
+  A> 200 GET https://www.figma.com/api/files/RuEdaohBLXN48WdkzS66BY/realtime_token
+  A> 401 POST https://www.figma.com/api/files/batch
+
+DONE

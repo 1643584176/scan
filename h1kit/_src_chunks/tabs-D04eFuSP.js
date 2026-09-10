@@ -1,0 +1,1 @@
+import"./tabs-CK50rHQ_.js";var e=`data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M3%2017v2h6v-2H3zM3%205v2h10V5H3zm10%2016v-2h8v-2h-8v-2h-2v6h2zM7%209v2H3v2h4v2h2V9H7zm14%204v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z'/%3e%3c/svg%3e`;export{e as t};

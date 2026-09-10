@@ -1,0 +1,38 @@
+GET 200 https://www.figma.com/api/hub_files/1633508841091684550/versions?include_version_history=false
+    {"error":false,"status":200,"meta":{"id":"1633508841091684550","creator":{"id":"1633501130463093620","handle":"Paul E. Lubienecki","img_url":"https://www.gravatar.com/avatar/72631ce906f541cf00498e77d044bd13?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v2.png"},"thumbnail_url":
+POST 200 https://www.figma.com/api/figment-proxy/identify
+    
+GET 403 https://browser-intake-datadoghq.com/api/v2/rum
+    
+POST 200 https://www.figma.com/api/figment-proxy/page
+    
+GET 200 https://www.figma.com/api/user/state?team_id=1666382706663462213&fuid=1666382703778278399
+    {"error":false,"status":200,"meta":{"team_users":[{"id":"311767172","team_id":"1666382706663462213","user_id":"1666382703778278399","design_paid_status":"starter","whiteboard_paid_status":"starter","created_at":"2026-08-04T08:09:57.219Z","updated_at":"2026-08-04T08:09:57.399Z","show_figjam_user_onbo
+GET 200 https://www.figma.com/api/session/state?fuid=1666382703778278399
+    {"error":false,"status":200,"meta":{"users":[{"id":"1666382703778278399","name":"pccp","email":"1643584176@qq.com","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v2.png","created_at":"202
+POST 200 https://errors.figma.com/api/sentry/api/56203/envelope/?sentry_key=d1b12a8fbe424e4b956eb33cadd5b30d&sentry_version=7&sentry_client=sentry.javascript.browser%2F8.40.0
+    {}
+POST 200 https://www.figma.com/api/figment-proxy/monitor
+    
+GET 200 https://www.figma.com/api/session/sync
+    {"error":false,"status":200,"meta":{"user_highest_plan":"starter","segment_id":"0"},"i18n":null}
+POST 200 https://www.figma.com/api/web_logger/metrics/session_start
+    
+GET 200 https://www.figma.com/api/v2/statsig/bootstrap?team_ids=&page_locale=en&release_manifest_git_commit=676bd5bf1127d544bd63db31dea851407483657c&release_server_git_commit=05039616c0f54583de33735b4084938e31edce5e
+    {"error":false,"status":200,"meta":[{"team_id":null,"bootstrap_values":{"feature_gates":{"503922365":{"id_type":"userID","value":true,"name":"503922365","rule_id":"disabled","secondary_exposures":[]},"308934089":{"id_type":"stableID","value":false,"name":"308934089","rule_id":"default","secondary_ex
+GET 200 https://www.figma.com/api/authed_users/plans
+    {"error":false,"status":200,"meta":{"plans_by_user_id":{"1666382703778278399":[{"plan_id":"1666382706663462213","plan_type":"team","permission":"admin","plan_name":"1643584176's team","is_guest":false,"created_at":"2026-08-04T08:09:57.230Z","has_drafts":true,"is_figjam_disabled":false,"is_slides_dis
+GET 200 https://www.figma.com/api/resources/hub_files/1633508841091684550?include_full_category=true&include_version_history=false
+    {"error":false,"status":200,"meta":{"resource":{"id":"ff0c0b6a-f18b-4f2a-97f3-80b966066eac","name":"Paul E. Lubienecki | Professor | Hamburg New York","description":"","resource_type":"figmake_template","created_at":"2026-05-05T15:00:57.100Z","updated_at":"2026-05-05T15:06:01.420Z","unpublished_at":
+GET 200 https://www.figma.com/api/resources/ff0c0b6a-f18b-4f2a-97f3-80b966066eac/comments?page_size=60
+    {"error":false,"status":200,"meta":{"comments":[],"selected_comment":null,"mentioned_profiles":{}},"pagination":{},"i18n":null}
+GET 200 https://www.figma.com/api/community/categories/metadata/make?locale=en
+    {"error":false,"status":200,"meta":{"title":"Figma Make","meta_title":"Create with AI - Make Community Projects","description":"Jump-start your AI-powered projects with these Make Community projects. Make your ideas real with AI.","meta_description":"Create with AI in this Make Community playground.
+POST 200 https://www.figma.com/api/hub_files/1633508841091684550/view
+    {"error":false,"status":200,"i18n":null}
+POST 200 https://www.figma.com/api/web_logger/histogram_batched
+    
+POST 200 https://www.figma.com/api/web_logger/metrics_batched
+    
+GET 200 https://www.figma.com/api/resources/hub_file/1633508841091684550/related_content
+    {"error":false,"status":200,"meta":{"content":[{"id":"43277cb7-cb28-4dcc-bcbb-8978605b938a","name":"Minimalist sidebar component","description":"","resource_type":"figmake_template","created_at":"2025-08-07T01:47:25.758Z","updated_at":"2025-09-25T13:32:17.101Z","unpublished_at":null,"support_contact

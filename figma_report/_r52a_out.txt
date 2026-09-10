@@ -1,0 +1,88 @@
+===== playwright scripts =====
+-- _chk_browser.py
+    # -*- coding: utf-8 -*-
+    """检查本地浏览器自动化环境"""
+    import sys, io, glob, os
+-- _figma_r13_detail.py
+    # -*- coding: utf-8 -*-
+    """r13: playwright 打开 widget/plugin 详情页，抓单资源读取 API 真实路径
+    带 A 账号 cookie；headed Chrome 过 WAF。
+-- _figma_r16b_site.py
+    # -*- coding: utf-8 -*-
+    """r16b: playwright 环境自检 + figma.site 抓包（带异常保护与分步诊断）"""
+    import sys, io, traceback
+-- _figma_r16c_site.py
+    # -*- coding: utf-8 -*-
+    """r16c: figma.site 全量 XHR/fetch 抓包 + HTML dump + 关键串搜索
+    目标：找出 CMS collections 数据加载端点与真实 databaseId 来源"""
+-- _figma_r16_site.py
+    # -*- coding: utf-8 -*-
+    """r16: playwright 打开公开 Figma Site (zestoro.figma.site)，抓全部 /api/ 网络
+    目标：定位 CMS collections API 形态 + 真实 databaseId
+-- _figma_r24_cms.py
+    # -*- coding: utf-8 -*-
+    """r24: 观察公开 CMS figma.site（博客站）产物与 API
+    - 目标: https://paul-e-lubienecki.figma.site/ + 其博客子页
+-- _figma_r26_filepage.py
+    # -*- coding: utf-8 -*-
+    """r26: 打开公开 Community 文件（含 CMS 的站点文件）编辑器
+    - 目标文件: 1633508841091684550（paul-e-lubienecki.figma.site 的来源文件）
+-- _figma_r49_pw.py
+    # -*- coding: utf-8 -*-
+    """r49: Playwright 匿名浏览器打开 A 的站点文件 - 前端行为观测
+    观察: 1) 是否登录墙/权限提示 2) 页面是否显示内容 3) 页面自身 API/WS 行为
+-- _figma_r52a_pw.py
+    # -*- coding: utf-8 -*-
+    """r52a: 找历史 playwright 脚本与 WAF 处理经验"""
+    import re, glob, io, sys, os
+-- _figma_r7_searchpage.py
+    # -*- coding: utf-8 -*-
+    """r7: playwright 打开社区搜索页，抓真实搜索 API（含响应片段）
+    带 A 账号 cookie；headed Chrome 过 WAF"""
+-- _figma_waf1.py
+    # -*- coding: utf-8 -*-
+    """waf1: 用 playwright + 系统 Chrome 过 AWS WAF challenge，
+    导出新 aws-waf-token/AWSALB* 合并进 A 的 cookie，然后测试 /api/resources"""
+-- _figma_waf2.py
+    # -*- coding: utf-8 -*-
+    """waf2: headed Chrome 过 AWS WAF challenge + 轮询等待 aws-waf-token 下发"""
+    import sys, io, re, json
+
+===== WAF / aws-waf-token handling =====
+[_figma_creds.py] COOKIE_B = 'ajs_anonymous_id=%229b32ca5d-4bc8-4b2d-9d5d-e2c3d4d5c6c6%22; product_locale=%22en%22; __Host-figma.did=MTc4ODMxNDcwMQ.QgZC%2FYaTV%2BUmdIs5YGXXAPnXM8
+[_figma_r10_fields.py] cookie: _waf_cookies_new.txt"""
+[_figma_r11_truth.py] cookie: _waf_cookies_new.txt"""
+[_figma_r12_readface.py] cookie: _waf_cookies_new.txt"""
+[_figma_r13_detail.py] jar_raw = open(r'D:\scan\figma_report\_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r14_vers.py] cookie: _waf_cookies_new.txt"""
+[_figma_r15a_code.py] H['Cookie'] = open(r'D:\scan\figma_report\_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r15b_coll.py] H['Cookie'] = open(r'D:\scan\figma_report\_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r18_dl.py] cookie: _waf_cookies_new.txt"""
+[_figma_r19_authz.py] cookie: _waf_cookies_new.txt"""
+[_figma_r20_gap.py] cookie: _waf_cookies_new.txt"""
+[_figma_r22_ab.py] H_A['Cookie'] = open(r'D:\scan\figma_report\_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r26_filepage.py] - A 账号cookie（_waf_cookies_new.txt），headless
+[_figma_r34_cmsws.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r35b_cmsws2.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r36_copy.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r37b_mkcms.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r38_cmstry.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r39_sitetpl.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r41_sitecopy.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r42_cmsmatrix.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r43_canary.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r45_keyhunt.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r47b_body.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r47_anonvs.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r48a_links.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r4b_query.py] cookie: 使用 _waf_cookies_new.txt（waf2 合并后的新 token）"""
+[_figma_r4c_params.py] cookie: _waf_cookies_new.txt"""
+[_figma_r51_private.py] COOKIE_A = open('_waf_cookies_new.txt', encoding='utf-8').read().strip()
+[_figma_r52a_pw.py] print('===== WAF / aws-waf-token handling =====')
+[_figma_r5a_search.py] 低量 6 请求，6s 间隔，cookie: _waf_cookies_new.txt"""
+[_figma_r6_enum.py] cookie: _waf_cookies_new.txt"""
+[_figma_r7_searchpage.py] # 解析 cookie（_waf_cookies_new.txt: "k=v; k=v; ..."）
+[_figma_r8_searchapi.py] cookie: _waf_cookies_new.txt"""
+[_figma_r9_syntax.py] cookie: _waf_cookies_new.txt"""
+[_figma_waf1.py] """waf1: 用 playwright + 系统 Chrome 过 AWS WAF challenge，
+[_figma_waf2.py] """waf2: headed Chrome 过 AWS WAF challenge + 轮询等待 aws-waf-token 下发"""

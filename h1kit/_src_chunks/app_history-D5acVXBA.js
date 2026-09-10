@@ -1,0 +1,1 @@
+import{Ix as e}from"./vendor-_WdvpBLr.js";var t=e();export{t};

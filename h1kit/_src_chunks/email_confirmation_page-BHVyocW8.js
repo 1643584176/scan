@@ -1,0 +1,1 @@
+import{Fw as e}from"./vendor-_WdvpBLr.js";import{mr as t}from"./app-5pKgUmmm.js";import{t as n}from"./email_confirmation-BRVhPO-G.js";var r=e(),i=()=>(0,r.jsx)(t,{content:(0,r.jsx)(`div`,{className:`narrow-wrapper`,children:(0,r.jsx)(n,{})})});export{i as default};

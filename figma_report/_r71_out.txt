@@ -1,0 +1,36 @@
+===== 组1: /api/resources 搜索 (ANON) =====
+[1a_base_snake] 400 len=100 536ms ctype=application/json
+     {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: files","i18n":null}
+
+[1b_base_camel] 200 len=140318 1272ms ctype=application/json
+     {"error":false,"status":200,"meta":[{"id":"cecd0a43-def3-45f2-9ef8-6f83740dd7be","name":"Edit Reminder Screen","description":"","resource_type":"figmake_template","created_at":"2026-09-10T05:55:43.363Z","updated_at":"2026-09-10T05:55:46.205Z","unpublished_at":null,"support_contact":null,"publishing_status":"approved_public","publish_scope":"community","editor_types":["figmake"],"category_id":"4152eb8a-abca-4a8b-9cf8-18a9de8201af","category":null,"creator":
+
+[1c_null] 400 len=100 572ms ctype=application/json
+     {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: files","i18n":null}
+
+[1d_quote] 400 len=100 613ms ctype=application/json
+     {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: files","i18n":null}
+
+[1e_comment] 400 len=100 553ms ctype=application/json
+     {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: files","i18n":null}
+
+[1f_btrue] 400 len=100 617ms ctype=application/json
+     {"error":true,"status":400,"message":"Invalid value for Resources::ResourceType: files","i18n":null}
+
+[1g_bfalse] 202 len=0 322ms ctype=text/html; charset=UTF-8
+     
+
+[1h_backtick] 202 len=0 364ms ctype=text/html; charset=UTF-8
+     
+
+===== 组2: /api/search/code_suggestions (A) =====
+[2a_base] 200 len=62 555ms ctype=application/json
+     {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[2b_null] 200 len=62 571ms ctype=application/json
+     {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+[2c_quote] 200 len=62 572ms ctype=application/json
+     {"error":false,"status":200,"meta":{"results":[]},"i18n":null}
+
+DONE

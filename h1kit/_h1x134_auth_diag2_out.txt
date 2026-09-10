@@ -1,0 +1,23 @@
+===== https://api.hackerone.com/v1 basic-user hackers/me
+HTTP 401 {"errors":[{"status":401}]}
+
+===== https://api.hackerone.com/v1 basic-email hackers/me
+HTTP 401 {"errors":[{"status":401}]}
+
+===== https://api.hackerone.com/v1 bearer /me
+HTTP 401 {"errors":[{"status":401}]}
+
+===== https://api.hackerone.com/v1 bearer /reports/3732660
+HTTP 401 {"errors":[{"status":401}]}
+
+===== https://api.hackerone.com/v2 basic-user hackers/me
+HTTP 401 {"errors":[{"status":401}]}
+
+===== https://api.hackerone.com/v2 basic-email hackers/me
+HTTP 401 {"errors":[{"status":401}]}
+
+===== https://api.hackerone.com/v2 bearer /me
+HTTP 401 {"errors":[{"status":401}]}
+
+===== https://api.hackerone.com/v2 bearer /reports/3732660
+HTTP 401 {"errors":[{"status":401}]}

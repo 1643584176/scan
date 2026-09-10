@@ -1,0 +1,371 @@
+###### USER #1 (len=10) ######
+
+继续figma
+
+
+
+###### USER #2 (len=13) ######
+
+我想的还是数据库方向
+
+
+
+###### USER #3 (len=31) ######
+
+记住如果注入不会 看H1的hackerone的sql注入
+
+
+
+###### USER #4 (len=84) ######
+
+你不要跑偏了,我的意思是你看hackerone.com的sql注入逻辑,我之前有记录md,然后根据记录的md来找figma的sql注入,根据思路构造参数破解数据库
+
+
+
+###### USER #5 (len=20) ######
+
+为什么要设置6s间隔 2s就可以了
+
+
+
+###### USER #6 (len=73) ######
+
+曹尼玛的,一个地方你随便跑一条sql就结束了?傻逼吗,我让你测试来了?我让你找真正的漏洞,你个弱智是在找漏的吗, 你测你妈呢,不会的话滚你妈
+
+
+
+###### USER #7 (len=41) ######
+
+我不是让你简单跑两次就够了,我要你把md里面的所有技术都用上,必须,强制完全
+
+
+
+###### USER #8 (len=20) ######
+
+sq应该执行很快啊,你这怎么这么慢
+
+
+
+###### USER #9 (len=16) ######
+
+也就是没有sql注入的地方
+
+
+
+###### USER #10 (len=20) ######
+
+是不是sql注入不够细用完md了吗
+
+
+
+###### USER #11 (len=28) ######
+
+我之前有没有说过用完,你为什么不看不听,当我白说呢
+
+
+
+###### USER #12 (len=103) ######
+
+我的想法是建立一个经验库的东西,里面全是sql注入的思路,以后测完多了经验就多了思路就往里面加,然后给别的项目全用,必须全用,然后别的项目也用了之后就有了新的经验然后继续加里面,就像sql注入脚本一样
+
+
+
+###### USER #13 (len=85) ######
+
+也就是figma用了这个经验库之后还是没找到sql的突破口是吧,那你会根据figma的历史请求分析什么入参和出参以及多个架构来分析应该怎么构造入参来执行sql注入吗
+
+
+
+###### USER #14 (len=36) ######
+
+我的意思既然db有经验就应该只找db这一种类型的,同时我们也要创新
+
+
+
+###### USER #15 (len=25) ######
+
+我说的经验库是sql入参 不是你请求的url
+
+
+
+###### USER #16 (len=10) ######
+
+继续figma
+
+
+
+###### USER #17 (len=3937) ######
+
+Hacktivity
+
+Filter
+
+Sort
+
+2
+paypal
+PayPal
+$23,000
+Bug reported by
+michael1026
+and
+matanber
+was resolved
+8 hrs ago
+
+14
+paypal
+PayPal
+$18,400
+Bug reported by
+michael1026
+was resolved
+4 months ago
+
+0
+amazonvrp
+Amazon Vulnerability Research Program
+Bug reported by
+michael1026
+was resolved
+8 months ago
+
+0
+amazonvrp
+Amazon Vulnerability Research Program
+Bug reported by
+michael1026
+was resolved
+10 months ago
+
+4
+paypal
+PayPal
+$18,400
+Bug reported by
+michael1026
+was resolved
+about 1 year ago
+
+2
+paypal
+PayPal
+$1,000
+Bug reported by
+michael1026
+was resolved
+about 1 year ago
+
+4
+paypal
+PayPal
+$12,600
+Bug reported by
+michael1026
+was resolved
+2 years ago
+
+9
+paypal
+PayPal
+$18,400
+Bug reported by
+michael1026
+was resolved
+2 years ago
+
+3
+paypal
+PayPal
+$23,000
+Bug reported by
+michael1026
+and
+matanber
+was resolved
+2 years ago
+
+0
+epicgames
+Epic Games
+$200
+Bug reported by
+michael1026
+was awarded a bounty
+2 years ago
+
+0
+paypal
+PayPal
+$18,400
+Bug reported by
+michael1026
+was awarded a bounty
+2 years ago
+
+2
+paypal
+PayPal
+$13,200
+Bug reported by
+michael1026
+was resolved
+2 years ago
+
+2
+paypal
+PayPal
+$18,400
+Bug reported by
+michael1026
+was resolved
+2 years ago
+
+4
+paypal
+PayPal
+$18,400
+Bug reported by
+michael10
+
+###### USER #18 (len=16859) ######
+
+Hacktivity
+
+Filter
+
+Sort
+
+5
+paypal
+PayPal
+$30,000
+Bug reported by
+alexbirsan
+was resolved
+11 hrs ago
+
+6
+paypal
+PayPal
+$18,900
+Bug reported by
+alexbirsan
+was resolved
+about 1 day ago
+
+13
+cs_money
+CS Money
+$10,250
+Bug reported by
+alexbirsan
+was awarded a bounty
+4 months ago
+
+10
+epicgames
+Epic Games
+$15,000
+Bug reported by
+alexbirsan
+was resolved
+5 months ago
+
+10
+valve
+Valve
+$10,200
+Bug reported by
+alexbirsan
+was resolved
+5 months ago
+
+19
+paypal
+PayPal
+$30,000
+Bug reported by
+alexbirsan
+and
+82af5ddffbb795
+was resolved
+7 months ago
+
+14
+paypal
+PayPal
+$3,400
+Bug reported by
+alexbirsan
+was resolved
+7 months ago
+
+9
+paypal
+PayPal
+$11,100
+Bug reported by
+alexbirsan
+was resolved
+10 months ago
+
+3
+inditex
+Inditex
+Bug reported by
+alexbirsan
+was resolved
+10 months ago
+
+7
+cs_money
+CS Money
+$5,000
+Bug reported by
+alexbirsan
+was resolved
+11 months ago
+
+11
+paypal
+PayPal
+$23,000
+Bug reported by
+alexbirsan
+was resolved
+11 months ago
+
+7
+etoro_bbp
+eToro BBP
+$15,000
+Bug reported by
+alexbirsan
+and
+streaak
+was resolved
+11 months ago
+
+2
+udemy
+Udemy
+Bug reported by
+alexbirsan
+was resolved
+12 months ago
+
+16
+coinspot
+CoinSpot
+$20,000
+Bug reported by
+alexbirsan
+and
+streaak
+was resolved
+12 months ago
+
+13
+paypal
+

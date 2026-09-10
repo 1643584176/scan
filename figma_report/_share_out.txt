@@ -1,0 +1,5 @@
+figma_app-main.js: d}`))}getCanvasMentionsFileNeedsInvite(e){return this.CanvasMentionsFileNeedsInviteValidator.validate(({xr:t})=>t.get(t.url`/api/file/${e.fileKey}/canvas_mentions/needs_invite`,{mentioned_user_id:e.mentionedUserId}))}getCanvasMentionsShouldAddUserGroupToFile(e){return this.Ca
+
+figma_app-main.js: .put(n.Ay.url`/api/files/create_starter_team_file_role`,{key:e.key})}recordCanvasMentionInvite(e){return n.Ay.post(n.Ay.url`/api/file/${e.fileKey}/canvas_mentions/record_invite`,{...e.mentionedUserId?{mentioned_user_id:e.mentionedUserId}:{},...e.mentionedUserGroupId?{mentioned
+
+ALL DONE

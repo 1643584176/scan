@@ -1,0 +1,32 @@
+===== A. validate_vat VAT 国家(DE) =====
+[A1_de_norm] 200 len=    80 654ms (DE 正常)
+      {"error":false,"status":200,"meta":{"valid":true,"error_code":null},"i18n":null}
+[A2_de_q] 200 len=   226 355ms (vat 引号)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_FORMAT"},"message":"Invalid VAT/GST ID format","i18n":{"id":"tax.vat.invalid_vat_gst_format","fallback_text":"Invalid VAT/GST ID format","params":{}}}
+[A3_de_or] 200 len=   226 348ms (vat OR)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_FORMAT"},"message":"Invalid VAT/GST ID format","i18n":{"id":"tax.vat.invalid_vat_gst_format","fallback_text":"Invalid VAT/GST ID format","params":{}}}
+[A4_de_long] 200 len=   226 370ms (超长)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_FORMAT"},"message":"Invalid VAT/GST ID format","i18n":{"id":"tax.vat.invalid_vat_gst_format","fallback_text":"Invalid VAT/GST ID format","params":{}}}
+[A5_cc_gen] 200 len=   236 354ms (伪造国家码)
+      {"error":false,"status":200,"meta":{"valid":false,"error_code":"INVALID_VAT_COUNTRY"},"message":"Unsupported VAT/GST country","i18n":{"id":"tax.vat.unsupported_vat_gst_country","fallback_text":"Unsupported VAT/GST country","params":{}}}
+[A6_gb] 200 len=    80 319ms (GB)
+      {"error":false,"status":200,"meta":{"valid":true,"error_code":null},"i18n":null}
+
+===== B. team_id 数字断言绕过形态(validate_currency) =====
+[B1_exp] 400 len=   106 365ms (科学计数合法 number)
+      {"error":true,"status":400,"message":"'team_id' must be a valid number, received type String","i18n":null}
+[B2_float] 400 len=   106 337ms (小数)
+      {"error":true,"status":400,"message":"'team_id' must be a valid number, received type String","i18n":null}
+[B3_plus] 400 len=   106 349ms (正号)
+      {"error":true,"status":400,"message":"'team_id' must be a valid number, received type String","i18n":null}
+[B4_space] 200 len=    40 392ms (前空格)
+      {"error":false,"status":200,"i18n":null}
+[B5_leadtrail] 200 len=    40 367ms (后空格)
+      {"error":false,"status":200,"i18n":null}
+[B6_hex] 400 len=   106 334ms (十六进制)
+      {"error":true,"status":400,"message":"'team_id' must be a valid number, received type String","i18n":null}
+[B7_neg] 404 len=   123 347ms (负数)
+      {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}
+[B8_inf] 400 len=   106 338ms (Infinity)
+      {"error":true,"status":400,"message":"'team_id' must be a valid number, received type String","i18n":null}
+DONE

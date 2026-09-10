@@ -1,0 +1,12 @@
+##### createCollection full (figma_app-main)
+... e});return t??!1}function m(e){let{collections:t,status:r}=(0,l.X)({fileKey:""===e?void 0:e});return(0,n.useMemo)(()=>({status:r,data:t}),[t,r])}function h(e){return(0,a.W)().optimisticallyCreate(i.O.createCollection,{},u.A2.createCollection(e)).then(e=>e.data.meta).then(c.b)}function f({collection:e,name:t}){let r={CollectionV2:{[e.databaseId]:{name:t,updatedAt:new Date}}};return(0,a.W)().optimisticallyUpdate(i.O.renameCollection,r,u.A2.renameCollection({collection:e,name:t})).then(e=>e.data.meta)}function g({collection:e}){let t=e.databaseId;return(0,a.W)().optimisticallyDelete(i.O.deleteCollection,{CollectionV2:{[t]:null}},u.A2.deleteCollection({collection:e}).then(()=>o.sM))}function E({collection:e}){return u.A2.exportAsCsv({collection:e})}},380070(e,t,r){r.d(t,{IR:()=>h,Sp:()=>m,Vp:()=>f,dx:()=>_,gg:()=>E,j:()=>b,w1:()=>y,wx:()=>g});var n=r(263439),i=r(556662),a=r(206535),o=r(25054),s=r(397087),l= ...
+
+##### field_type hints
+   field_type:e.fieldType
+   field_type:t.fieldType
+   field_type:r.fieldType
+
+##### createItem full (4740)
+... g)(),m=n.map(e=>({field:e,lgOptimisticMutationUuid:(0,r.g)()})),h=m.reduce((e,{field:n,lgOptimisticMutationUuid:i})=>(e[n.fieldId]=u(t,n.fieldSchema.databaseId,n.value,n.assetsForPublish,n.jobStatus,i),e),{});return(0,a.W)().optimisticallyCreate(i.O.createItem,{CollectionItemV2:{[t]:{lgOptimisticMutationUuid:p,stableId:t,collectionId:e.databaseId,position:o,status:"draft",createdAt:new Date,updatedAt:new Date,lastPublishedAt:null,statusUpdatedAt:null,contentUpdatedAt:new Date,contentUpdatedByUserId:d??null,createdByUserId:d??null,allFields:Object.values(h)}},CollectionItemField:h},s.hl.createItem({collection:e,itemId:t,fields:m.map(({field:e,lgOptimisticMutationUuid:t})=>({...e,lgOptimisticMutationUuid:t})),lgOptimisticMutationUuid:p})).then(e=>(l(e.data.meta.id),e.data.meta),e=>{c(e)}),t}function o({collection:e,item:t,updatedItemAttributes:n}){(0,a.W)().optimisticallyUpdate(i.O.updateItem,{CollectionItemV2:{[t.databaseId]:{collectionId:e.databaseId,position:n.position,status:n.status}}},s.hl.updateItem({collection:e,item:t,updatedItemAttribut ...
+
+##### createItem caller (figma_app-main, optimistic)

@@ -1,0 +1,21 @@
+===== A) base 对照(端点当前是否健康) =====
+[A1_base_1] 200 len=40 {"error":false,"status":200,"i18n":null}
+[A2_base_2] 200 len=40 {"error":false,"status":200,"i18n":null}
+===== B) 变量隔离 =====
+[B1_query_str] 200 len=40 {"error":false,"status":200,"i18n":null}
+[B2_query_null] 500 len=157 {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B3_ts_null] 500 len=157 {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B4_extra_null] 500 len=157 {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+[B5_query_2null] 500 len=157 {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+===== C) org_id 变体 =====
+[C1_org0] 200 len=40 {"error":false,"status":200,"i18n":null}
+[C2_orgnum] 200 len=40 {"error":false,"status":200,"i18n":null}
+[C3_orgstr] 200 len=40 {"error":false,"status":200,"i18n":null}
+[C4_orgq] 200 len=40 {"error":false,"status":200,"i18n":null}
+===== D) GET 读回 =====
+[D1_get_1] 404 len=830441 <!DOCTYPE html> <html lang="en" data-product-locale="en">   <head>       <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=166
+[D2_get_2] 404 len=830441 <!DOCTYPE html> <html lang="en" data-product-locale="en">   <head>       <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=166
+===== E) 恢复 =====
+[E1_restore] 200 len=40 {"error":false,"status":200,"i18n":null}
+[E2_get_after] 404 len=830461 <!DOCTYPE html> <html lang="en" data-product-locale="en">   <head>       <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=166
+DONE

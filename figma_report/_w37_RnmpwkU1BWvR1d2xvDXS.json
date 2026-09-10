@@ -1,0 +1,3273 @@
+{
+ "id": "RnmpwkU1BWvR1d2xvDXS",
+ "name": "Camera Angle Control",
+ "owner": "H822bxaJlpcStHwreI5drYHEWHX2",
+ "workspaceId": "aa036063-b614-4016-947f-a556884dae9e",
+ "organizationId": "849e299a-54a0-41ad-be8c-48617c59c577",
+ "visibility": "public",
+ "sharedUsers": [],
+ "poster": "https://res.cloudinary.com/dpp2flk93/image/upload/v1747051043/uploads/evqefbcev7o5njzmktea.png",
+ "userPoster": true,
+ "createdAt": "2025-03-16T10:33:04.360Z",
+ "updatedAt": "2025-08-28T09:45:02.331Z",
+ "publishedVersions": [],
+ "version": 1,
+ "nodes": [
+  {
+   "id": "05ce941b-2a68-457c-a249-c573ff6c7ba8",
+   "isModel": false,
+   "type": "resize",
+   "position": {
+    "x": 3520,
+    "y": -80
+   },
+   "data": {
+    "name": "Resize",
+    "color": "Yambo_Black",
+    "input": {
+     "image": {
+      "url": "",
+      "type": "image",
+      "width": 188,
+      "height": 188
+     }
+    },
+    "output": {
+     "result": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/c5hoiqp5xenrbg5va1fy",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/c5hoiqp5xenrbg5va1fy",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+       }
+      ]
+     }
+    },
+    "result": {
+     "convertedSrc": {
+      "url": "https://media.weavy.ai/image/upload/v1748756968/uploads/c5hoiqp5xenrbg5va1fy.png",
+      "type": "image",
+      "width": 188,
+      "height": 188,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/c5hoiqp5xenrbg5va1fy.png?_a=BAMCkGWO0",
+      "publicId": "uploads/c5hoiqp5xenrbg5va1fy",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/c5hoiqp5xenrbg5va1fy.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/c5hoiqp5xenrbg5va1fy.png?_a=BAMCkGWO0"
+     }
+    },
+    "handles": {
+     "input": [
+      "image"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "resize_properties": {
+     "resize": {
+      "width": 512,
+      "height": 512
+     },
+     "isSrcBase64": true,
+     "aspect_ratio": 1,
+     "lock_aspect_ratio": true
+    }
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Resize"
+  },
+  {
+   "id": "09a34b79-206f-4a06-b27e-ea1391358787",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 2640,
+    "y": -360
+   },
+   "data": {
+    "name": "BG prompt",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": "light grey background"
+    },
+    "output": {
+     "out": "light grey background"
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "BG prompt"
+  },
+  {
+   "id": "23bd0fc3-6b88-4646-8921-2ffd251e7f4c",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 2930,
+    "y": -100
+   },
+   "data": {
+    "name": "Rodin 3D",
+    "paid": 40,
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742065268/uploads/dgigarcevsbwkrt1djt5.png",
+      "type": "image",
+      "input": {
+       "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old female caucasian post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic black shoes. light grey background ",
+       "aspect_ratio": "9:16",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 768,
+      "height": 1408,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/dgigarcevsbwkrt1djt5",
+      "visualId": "e7195819e646a66b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dgigarcevsbwkrt1djt5.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "model": {
+     "name": "hyper_3d_rodin"
+    },
+    "output": {
+     "image": {
+      "url": "",
+      "type": "image",
+      "width": 188,
+      "height": 188
+     },
+     "3d_model": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742066150/uploads/vk1tp7qyhuegb51vn7lr.glb",
+      "type": "3D",
+      "input": {
+       "seed": 31638,
+       "tier": "Regular",
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742065268/uploads/dgigarcevsbwkrt1djt5.png",
+        "type": "image",
+        "input": {
+         "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old female caucasian post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic black shoes. light grey background ",
+         "aspect_ratio": "9:16",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 768,
+        "height": 1408,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/dgigarcevsbwkrt1djt5",
+        "visualId": "e7195819e646a66b",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dgigarcevsbwkrt1djt5.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic",
+       "quality": "high",
+       "material": "PBR",
+       "use_hyper": true,
+       "condition_mode": "concat"
+      },
+      "width": 0,
+      "height": 0,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_800/v1/uploads/vk1tp7qyhuegb51vn7lr.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vk1tp7qyhuegb51vn7lr",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/v1/uploads/vk1tp7qyhuegb51vn7lr.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_450/v1/uploads/vk1tp7qyhuegb51vn7lr.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 42817,
+      "isRandom": true
+     },
+     "tier": "Regular",
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742065268/uploads/dgigarcevsbwkrt1djt5.png",
+      "type": "image",
+      "input": {
+       "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old female caucasian post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic black shoes. light grey background ",
+       "aspect_ratio": "9:16",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 768,
+      "height": 1408,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/dgigarcevsbwkrt1djt5",
+      "visualId": "e7195819e646a66b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dgigarcevsbwkrt1djt5.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic",
+     "quality": "high",
+     "material": "PBR",
+     "use_hyper": true,
+     "condition_mode": "concat"
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742066150/uploads/vk1tp7qyhuegb51vn7lr.glb",
+      "type": "3D",
+      "input": {
+       "seed": 31638,
+       "tier": "Regular",
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742065268/uploads/dgigarcevsbwkrt1djt5.png",
+        "type": "image",
+        "input": {
+         "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old female caucasian post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic black shoes. light grey background ",
+         "aspect_ratio": "9:16",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 768,
+        "height": 1408,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/dgigarcevsbwkrt1djt5",
+        "visualId": "e7195819e646a66b",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dgigarcevsbwkrt1djt5.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic",
+       "quality": "high",
+       "material": "PBR",
+       "use_hyper": true,
+       "condition_mode": "concat"
+      },
+      "width": 0,
+      "height": 0,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_800/v1/uploads/vk1tp7qyhuegb51vn7lr.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/vk1tp7qyhuegb51vn7lr",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/v1/uploads/vk1tp7qyhuegb51vn7lr.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_450/v1/uploads/vk1tp7qyhuegb51vn7lr.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1743673165/uploads/nlbsw2nxrxccummkavxu.glb",
+      "type": "3D",
+      "input": {
+       "seed": 42817,
+       "tier": "Regular",
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742065268/uploads/dgigarcevsbwkrt1djt5.png",
+        "type": "image",
+        "input": {
+         "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old female caucasian post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic black shoes. light grey background ",
+         "aspect_ratio": "9:16",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 768,
+        "height": 1408,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/dgigarcevsbwkrt1djt5",
+        "visualId": "e7195819e646a66b",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dgigarcevsbwkrt1djt5.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic",
+       "quality": "high",
+       "material": "PBR",
+       "use_hyper": true,
+       "condition_mode": "concat"
+      },
+      "width": 0,
+      "height": 0,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_800/v1/uploads/nlbsw2nxrxccummkavxu.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/nlbsw2nxrxccummkavxu",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/v1/uploads/nlbsw2nxrxccummkavxu.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_450/v1/uploads/nlbsw2nxrxccummkavxu.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 9,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for randomization (0-65535)"
+     },
+     "tier": {
+      "type": "enum",
+      "order": 5,
+      "title": "Tier",
+      "default": "Regular",
+      "options": [
+       "Regular",
+       "Sketch"
+      ],
+      "required": false,
+      "description": "Tier of generation"
+     },
+     "TAPose": {
+      "type": "boolean",
+      "order": 6,
+      "title": "T/A Pose",
+      "default": false,
+      "required": false,
+      "description": "Control the generation result to T/A Pose for human-like models"
+     },
+     "quality": {
+      "type": "enum",
+      "order": 3,
+      "title": "Quality",
+      "default": "medium",
+      "options": [
+       "high",
+       "medium",
+       "low",
+       "extra-low"
+      ],
+      "required": false,
+      "description": "Generation quality"
+     },
+     "material": {
+      "type": "enum",
+      "order": 2,
+      "title": "Material",
+      "default": "PBR",
+      "options": [
+       "PBR",
+       "Shaded"
+      ],
+      "required": false,
+      "description": "Material type"
+     },
+     "use_hyper": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Use Hyper Mode",
+      "default": false,
+      "required": false,
+      "description": "Whether to export the model using hyper mode"
+     },
+     "bbox_condition": {
+      "type": "array",
+      "items": {
+       "type": "number"
+      },
+      "order": 7,
+      "title": "Bounding Box",
+      "maxItems": 3,
+      "minItems": 3,
+      "required": false,
+      "description": "Dimensions and scaling factor of the bounding box (Length, Width, Height)"
+     },
+     "condition_mode": {
+      "type": "enum",
+      "order": 0,
+      "title": "Condition Mode",
+      "default": "concat",
+      "options": [
+       "fuse",
+       "concat"
+      ],
+      "required": false,
+      "description": "For fuse mode, one or more images are required. For concat mode, need to upload multiple multi-view images of the same object"
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Image to use while generating the 3D model"
+      },
+      "prompt": {
+       "order": 0,
+       "format": "text",
+       "required": false,
+       "description": "A textual prompt to guide model generation"
+      }
+     },
+     "output": [
+      "3d_model",
+      "image"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Generate 3D models from text and/or images",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": 0.01241033583462917,
+     "y": 4.399151473900278,
+     "z": 1.4963934889985164
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Rodin 3D"
+  },
+  {
+   "id": "25840733-5bb6-4bc3-8bf6-c1f6bc23326d",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 2370,
+    "y": -70
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Imagen 3"
+    },
+    "name": "Google Imagen 3",
+    "color": "Red",
+    "input": {
+     "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic light grey background "
+    },
+    "model": {
+     "name": "google/imagen-3",
+     "version": "4902bedfc8567f151e7cc0bb500a4480a4fb0575a10baf7e947e02e8b52d0413"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742065268/uploads/dgigarcevsbwkrt1djt5.png",
+      "type": "image",
+      "input": {
+       "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old female caucasian post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic black shoes. light grey background ",
+       "aspect_ratio": "9:16",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 768,
+      "height": 1408,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/dgigarcevsbwkrt1djt5",
+      "visualId": "e7195819e646a66b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dgigarcevsbwkrt1djt5.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic light grey background ",
+     "aspect_ratio": "9:16",
+     "safety_filter_level": "block_only_high"
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742065268/uploads/dgigarcevsbwkrt1djt5.png",
+      "type": "image",
+      "input": {
+       "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old female caucasian post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. High contrast, grainy texture, conceptual art aesthetic black shoes. light grey background ",
+       "aspect_ratio": "9:16",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 768,
+      "height": 1408,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/dgigarcevsbwkrt1djt5",
+      "visualId": "e7195819e646a66b",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/dgigarcevsbwkrt1djt5.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/dgigarcevsbwkrt1djt5.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 2,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "9:16",
+       "16:9",
+       "3:4",
+       "4:3"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the generated image"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Negative Prompt",
+      "required": false,
+      "description": "Text prompt for what to discourage in the generated images"
+     },
+     "safety_filter_level": {
+      "type": "enum",
+      "order": 3,
+      "title": "Safety Filter Level",
+      "default": "block_only_high",
+      "options": [
+       "block_low_and_above",
+       "block_medium_and_above",
+       "block_only_high"
+      ],
+      "required": false,
+      "description": "block_low_and_above is strictest, block_medium_and_above blocks some prompts, block_only_high is most permissive but some prompts will still be blocked"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "e59cd3e9-28cd-4485-b21d-b24b3ffc3f56",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "negative_prompt": {
+       "id": "36d95f25-b571-42c5-bd4d-a073bfc9b3b0",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Text prompt for what to discourage in the generated images"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Google's text-to-image model, generating images with high detail, rich lighting",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Google Imagen 3"
+  },
+  {
+   "id": "327938ef-ffa3-467b-8ce5-a5323a565f72",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 2480,
+    "y": 980
+   },
+   "data": {
+    "name": "Prompt",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "output": {
+     "out": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt"
+  },
+  {
+   "id": "47c0fda0-b3de-455b-a046-cd201423ca14",
+   "isModel": false,
+   "type": "resize",
+   "position": {
+    "x": 3340,
+    "y": 1110
+   },
+   "data": {
+    "name": "Resize",
+    "color": "Yambo_Black",
+    "input": {
+     "image": {
+      "url": "",
+      "type": "image",
+      "width": 188,
+      "height": 188
+     }
+    },
+    "output": {
+     "result": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/n3sfuubhplujiy6qi0ad",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/n3sfuubhplujiy6qi0ad",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "47c0fda0-b3de-455b-a046-cd201423ca14"
+       }
+      ]
+     }
+    },
+    "result": {
+     "convertedSrc": {
+      "url": "https://media.weavy.ai/image/upload/v1748756968/uploads/n3sfuubhplujiy6qi0ad.png",
+      "type": "image",
+      "width": 188,
+      "height": 188,
+      "viewUrl": "https://media.weavy.ai/image/upload/c_scale,w_800/v1/uploads/n3sfuubhplujiy6qi0ad.png?_a=BAMCkGWO0",
+      "publicId": "uploads/n3sfuubhplujiy6qi0ad",
+      "originalUrl": "https://media.weavy.ai/image/upload/v1/uploads/n3sfuubhplujiy6qi0ad.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://media.weavy.ai/image/upload/c_scale,w_150/v1/uploads/n3sfuubhplujiy6qi0ad.png?_a=BAMCkGWO0"
+     }
+    },
+    "handles": {
+     "input": [
+      "image"
+     ],
+     "output": [
+      "result"
+     ]
+    },
+    "resize_properties": {
+     "resize": {
+      "width": 512,
+      "height": 512
+     },
+     "isSrcBase64": true,
+     "aspect_ratio": 1,
+     "lock_aspect_ratio": true
+    }
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Resize"
+  },
+  {
+   "id": "55ead9cc-196d-4190-acb8-fe258bf34e38",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 1110,
+    "y": -220
+   },
+   "data": {
+    "name": "Text",
+    "color": "Yambo_Green",
+    "value": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic",
+    "output": {
+     "text": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic",
+     "type": "text",
+     "string": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "result": {
+     "string": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "string"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Text"
+  },
+  {
+   "id": "623762ac-8bad-4ef9-b2d4-63472265204c",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 2290,
+    "y": 1110
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Imagen 3"
+    },
+    "name": "Google Imagen 3",
+    "color": "Red",
+    "input": {
+     "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background "
+    },
+    "model": {
+     "name": "google/imagen-3",
+     "version": "4902bedfc8567f151e7cc0bb500a4480a4fb0575a10baf7e947e02e8b52d0413"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053113/uploads/x2hxptygswndf5597h49.png",
+      "type": "image",
+      "input": {
+       "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/x2hxptygswndf5597h49",
+      "visualId": "b3c20ce33b3d4ccc",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/x2hxptygswndf5597h49.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background ",
+     "aspect_ratio": "1:1",
+     "safety_filter_level": "block_only_high"
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053113/uploads/x2hxptygswndf5597h49.png",
+      "type": "image",
+      "input": {
+       "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/x2hxptygswndf5597h49",
+      "visualId": "b3c20ce33b3d4ccc",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/x2hxptygswndf5597h49.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "aspect_ratio": {
+      "type": "enum",
+      "order": 2,
+      "title": "Aspect Ratio",
+      "default": "1:1",
+      "options": [
+       "1:1",
+       "9:16",
+       "16:9",
+       "3:4",
+       "4:3"
+      ],
+      "required": false,
+      "description": "Aspect ratio of the generated image"
+     },
+     "negative_prompt": {
+      "type": "string",
+      "order": 1,
+      "title": "Negative Prompt",
+      "required": false,
+      "description": "Text prompt for what to discourage in the generated images"
+     },
+     "safety_filter_level": {
+      "type": "enum",
+      "order": 3,
+      "title": "Safety Filter Level",
+      "default": "block_only_high",
+      "options": [
+       "block_low_and_above",
+       "block_medium_and_above",
+       "block_only_high"
+      ],
+      "required": false,
+      "description": "block_low_and_above is strictest, block_medium_and_above blocks some prompts, block_only_high is most permissive but some prompts will still be blocked"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "e59cd3e9-28cd-4485-b21d-b24b3ffc3f56",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "negative_prompt": {
+       "id": "36d95f25-b571-42c5-bd4d-a073bfc9b3b0",
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Text prompt for what to discourage in the generated images"
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Google's text-to-image model, generating images with high detail, rich lighting",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Google Imagen 3"
+  },
+  {
+   "id": "6962f71a-02ea-4010-83f0-36f0b8d99b5b",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 5270,
+    "y": 1030
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux Depth Pro"
+    },
+    "name": "Flux Depth Pro",
+    "color": "Red",
+    "input": {
+     "prompt": "realistic photograph. Low angle camera, looking upward and slightly forward. light grey background A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic ",
+     "control_image": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/n3sfuubhplujiy6qi0ad",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/n3sfuubhplujiy6qi0ad",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "47c0fda0-b3de-455b-a046-cd201423ca14"
+       }
+      ]
+     }
+    },
+    "model": {
+     "name": "black-forest-labs/flux-depth-pro",
+     "label": "",
+     "version": "30812170810708f84810ae99c7758c458f5dc6b7f29e8851dd388f311c8a01bd"
+    },
+    "output": {
+     "result": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053761/uploads/huocdxbosfuvpqbqf9gt.png",
+      "type": "image",
+      "input": {
+       "seed": 11779,
+       "steps": 50,
+       "prompt": "realistic editorial photograph. The camera angle is slightly low and angled upward, looking at two objects from above and slightly forward. minimal setup white background A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic ",
+       "guidance": 14.8,
+       "control_image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1024
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": false
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/huocdxbosfuvpqbqf9gt.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/huocdxbosfuvpqbqf9gt",
+      "visualId": "a3849c9acb99316f",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/huocdxbosfuvpqbqf9gt.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/huocdxbosfuvpqbqf9gt.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 167240,
+      "isRandom": true
+     },
+     "steps": 50,
+     "prompt": "realistic photograph. Low angle camera, looking upward and slightly forward. light grey background A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic ",
+     "guidance": 14.8,
+     "control_image": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/n3sfuubhplujiy6qi0ad",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/n3sfuubhplujiy6qi0ad",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "47c0fda0-b3de-455b-a046-cd201423ca14"
+       }
+      ]
+     },
+     "output_format": "png",
+     "safety_tolerance": 6,
+     "prompt_upsampling": false
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053761/uploads/huocdxbosfuvpqbqf9gt.png",
+      "type": "image",
+      "input": {
+       "seed": 11779,
+       "steps": 50,
+       "prompt": "realistic editorial photograph. The camera angle is slightly low and angled upward, looking at two objects from above and slightly forward. minimal setup white background A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic ",
+       "guidance": 14.8,
+       "control_image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1024
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": false
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/huocdxbosfuvpqbqf9gt.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/huocdxbosfuvpqbqf9gt",
+      "visualId": "a3849c9acb99316f",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/huocdxbosfuvpqbqf9gt.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/huocdxbosfuvpqbqf9gt.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 2,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "steps": {
+      "max": 50,
+      "min": 15,
+      "type": "integer",
+      "order": 3,
+      "title": "Steps",
+      "default": 50,
+      "required": false,
+      "description": "Number of diffusion steps. Higher values yield finer details but increase processing time."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "guidance": {
+      "max": 50,
+      "min": 1,
+      "type": "number",
+      "order": 5,
+      "title": "Guidance",
+      "default": 10,
+      "required": false,
+      "description": "Controls the balance between adherence to the text as well as image prompt and image quality/diversity. Higher values make the output more closely match the prompt but may reduce overall image quality. Lower values allow for more creative freedom but might produce results less relevant to the prompt."
+     },
+     "control_image": {
+      "type": "string",
+      "order": 1,
+      "title": "Control Image",
+      "format": "uri",
+      "required": true,
+      "description": "Image to use as control input. Must be jpeg, png, or webp."
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 7,
+      "title": "Output Format",
+      "default": "png",
+      "options": [
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images."
+     },
+     "safety_tolerance": {
+      "max": 6,
+      "min": 1,
+      "type": "integer",
+      "order": 6,
+      "title": "Safety Tolerance",
+      "default": 2,
+      "required": false,
+      "description": "Safety tolerance, 1 is most strict and 6 is most permissive"
+     },
+     "prompt_upsampling": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Prompt Upsampling",
+      "default": false,
+      "required": false,
+      "description": "Automatically modify the prompt for more creative generation"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "ce25e0fd-2d23-4b66-9c69-cdcd8ce1d29a",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "control_image": {
+       "id": "67109cfa-2f1a-4ffc-a7df-8cd8e0683e8b",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Image to use as control input. Must be jpeg, png, or webp."
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional depth-aware image generation. Edit images while preserving spatial relationships.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Depth Pro"
+  },
+  {
+   "id": "829fcf38-8fec-4079-88d1-ea2eadf53e64",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 1020,
+    "y": 1260
+   },
+   "data": {
+    "name": "Text",
+    "color": "Yambo_Green",
+    "value": "light grey background",
+    "output": {
+     "text": "light grey background",
+     "type": "text",
+     "string": "light grey background"
+    },
+    "result": {
+     "string": "light grey background"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "text"
+     ]
+    },
+    "isLocked": false,
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Text"
+  },
+  {
+   "id": "83e9e204-8d3d-488f-8b2f-da71cc649257",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 4070,
+    "y": 800
+   },
+   "data": {
+    "name": "image for controlnet",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/n3sfuubhplujiy6qi0ad",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/n3sfuubhplujiy6qi0ad",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "47c0fda0-b3de-455b-a046-cd201423ca14"
+       }
+      ]
+     }
+    },
+    "output": {
+     "out": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/n3sfuubhplujiy6qi0ad",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/n3sfuubhplujiy6qi0ad",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "47c0fda0-b3de-455b-a046-cd201423ca14"
+       }
+      ]
+     }
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "image for controlnet"
+  },
+  {
+   "id": "88c52d0c-bb28-4736-860b-197169d90552",
+   "isModel": false,
+   "type": "prompt_concat",
+   "position": {
+    "x": 1640,
+    "y": 1250
+   },
+   "data": {
+    "name": "Prompts Concatenator",
+    "color": "Yambo_Green",
+    "input": {
+     "prompt1": "realistic photograph. ",
+     "prompt2": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic",
+     "prompt3": "light grey background"
+    },
+    "output": {
+     "type": "text",
+     "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background "
+    },
+    "result": {
+     "additionalPrompt": ""
+    },
+    "handles": {
+     "input": [
+      "prompt1",
+      "prompt2",
+      "prompt3"
+     ],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "Concatenates multiple prompts to one output prompt.",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompts Concatenator"
+  },
+  {
+   "id": "9d1869ff-789e-46e9-ab26-d2f881867bd6",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 4070,
+    "y": -410
+   },
+   "data": {
+    "name": "Text",
+    "color": "Yambo_Green",
+    "value": "realistic photograph, black and white, clean, minimal",
+    "output": {
+     "text": "realistic photograph, black and white, clean, minimal",
+     "type": "text",
+     "string": "realistic photograph, black and white, clean, minimal"
+    },
+    "result": {
+     "string": "realistic photograph, black and white, clean, minimal"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "string"
+     ]
+    },
+    "isLocked": false,
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Text"
+  },
+  {
+   "id": "9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 4710,
+    "y": 330
+   },
+   "data": {
+    "name": "Image for controlnet",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/c5hoiqp5xenrbg5va1fy",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/c5hoiqp5xenrbg5va1fy",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+       }
+      ]
+     }
+    },
+    "output": {
+     "out": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/c5hoiqp5xenrbg5va1fy",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/c5hoiqp5xenrbg5va1fy",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+       }
+      ]
+     }
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Image for controlnet"
+  },
+  {
+   "id": "9f425e8c-a360-45b0-b9e3-70e6d1bb65ad",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 730,
+    "y": 1260
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Setup/Background description"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "a2dc916a-407f-43a0-9575-3c8c55dc1298",
+   "isModel": false,
+   "type": "prompt_concat",
+   "position": {
+    "x": 4600,
+    "y": 1040
+   },
+   "data": {
+    "name": "Prompts Concatenator",
+    "color": "Yambo_Green",
+    "input": {
+     "prompt1": "realistic photograph.",
+     "prompt2": {
+      "type": "text",
+      "input": {
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1024
+       },
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+      },
+      "value": "Low angle camera, looking upward and slightly forward."
+     },
+     "prompt3": "light grey background",
+     "prompt4": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "output": {
+     "type": "text",
+     "prompt": "realistic photograph. Low angle camera, looking upward and slightly forward. light grey background A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic "
+    },
+    "result": {
+     "additionalPrompt": ""
+    },
+    "handles": {
+     "input": [
+      "prompt1",
+      "prompt2",
+      "prompt3",
+      "prompt4"
+     ],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "Concatenates multiple prompts to one output prompt.",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompts Concatenator"
+  },
+  {
+   "id": "a379be04-44fa-47b4-abcd-0a749498bd4b",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 5310,
+    "y": -270
+   },
+   "data": {
+    "menu": {
+     "icon": "EmojiObjectsIcon",
+     "isModel": true,
+     "displayName": "Flux Depth Pro"
+    },
+    "name": "Flux Depth Pro",
+    "color": "Red",
+    "input": {
+     "prompt": "realistic photograph, black and white, clean, minimal High angle, looking directly down at the subject. light grey background Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic ",
+     "control_image": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/c5hoiqp5xenrbg5va1fy",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/c5hoiqp5xenrbg5va1fy",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+       }
+      ]
+     }
+    },
+    "model": {
+     "name": "black-forest-labs/flux-depth-pro",
+     "label": "",
+     "version": "30812170810708f84810ae99c7758c458f5dc6b7f29e8851dd388f311c8a01bd"
+    },
+    "output": {
+     "result": {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1747832433/uploads/xfguwpnkesh22llmznpa.png",
+      "type": "image",
+      "input": {
+       "seed": 439799,
+       "steps": 40,
+       "prompt": "realistic photograph, black and white, clean, minimal High angle, looking directly down at the subject. light grey background Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic ",
+       "guidance": 8,
+       "control_image": {
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_scale,w_416,h_416,x_0,y_0/uploads/avwsa3r4ollkj3pbrdwr",
+        "type": "image",
+        "width": 416,
+        "height": 416,
+        "publicId": "uploads/avwsa3r4ollkj3pbrdwr",
+        "cloudinaryType": "image",
+        "transformations": [
+         {
+          "resize": {
+           "type": "scale",
+           "width": 416,
+           "height": 416
+          },
+          "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+         }
+        ]
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 416,
+      "height": 416,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/xfguwpnkesh22llmznpa.png?_a=BAMCkGWO0",
+      "publicId": "uploads/xfguwpnkesh22llmznpa",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/xfguwpnkesh22llmznpa.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_150/v1/uploads/xfguwpnkesh22llmznpa.png?_a=BAMCkGWO0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 439799,
+      "isRandom": true
+     },
+     "steps": 40,
+     "prompt": "realistic photograph, black and white, clean, minimal High angle, looking directly down at the subject. light grey background Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic ",
+     "guidance": 8,
+     "control_image": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/c5hoiqp5xenrbg5va1fy",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/c5hoiqp5xenrbg5va1fy",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+       }
+      ]
+     },
+     "output_format": "png",
+     "safety_tolerance": 6,
+     "prompt_upsampling": true
+    },
+    "result": [
+     {
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1747832433/uploads/xfguwpnkesh22llmznpa.png",
+      "type": "image",
+      "input": {
+       "seed": 439799,
+       "steps": 40,
+       "prompt": "realistic photograph, black and white, clean, minimal High angle, looking directly down at the subject. light grey background Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic ",
+       "guidance": 8,
+       "control_image": {
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/q_auto,f_auto/c_scale,w_416,h_416,x_0,y_0/uploads/avwsa3r4ollkj3pbrdwr",
+        "type": "image",
+        "width": 416,
+        "height": 416,
+        "publicId": "uploads/avwsa3r4ollkj3pbrdwr",
+        "cloudinaryType": "image",
+        "transformations": [
+         {
+          "resize": {
+           "type": "scale",
+           "width": 416,
+           "height": 416
+          },
+          "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+         }
+        ]
+       },
+       "output_format": "png",
+       "safety_tolerance": 6,
+       "prompt_upsampling": true
+      },
+      "width": 416,
+      "height": 416,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/xfguwpnkesh22llmznpa.png?_a=BAMCkGWO0",
+      "publicId": "uploads/xfguwpnkesh22llmznpa",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/xfguwpnkesh22llmznpa.png?_a=BAMCkGWO0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_150/v1/uploads/xfguwpnkesh22llmznpa.png?_a=BAMCkGWO0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 2,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for random number generator. Uncheck for reproducible results."
+     },
+     "steps": {
+      "max": 50,
+      "min": 15,
+      "type": "integer",
+      "order": 3,
+      "title": "Steps",
+      "default": 50,
+      "required": false,
+      "description": "Number of diffusion steps. Higher values yield finer details but increase processing time."
+     },
+     "prompt": {
+      "type": "string",
+      "order": 0,
+      "title": "Prompt",
+      "required": true,
+      "description": "Text prompt for image generation"
+     },
+     "guidance": {
+      "max": 50,
+      "min": 1,
+      "type": "number",
+      "order": 5,
+      "title": "Guidance",
+      "default": 10,
+      "required": false,
+      "description": "Controls the balance between adherence to the text as well as image prompt and image quality/diversity. Higher values make the output more closely match the prompt but may reduce overall image quality. Lower values allow for more creative freedom but might produce results less relevant to the prompt."
+     },
+     "control_image": {
+      "type": "string",
+      "order": 1,
+      "title": "Control Image",
+      "format": "uri",
+      "required": true,
+      "description": "Image to use as control input. Must be jpeg, png, or webp."
+     },
+     "output_format": {
+      "type": "enum",
+      "order": 7,
+      "title": "Output Format",
+      "default": "png",
+      "options": [
+       "jpg",
+       "png"
+      ],
+      "required": false,
+      "description": "Format of the output images."
+     },
+     "safety_tolerance": {
+      "max": 6,
+      "min": 1,
+      "type": "integer",
+      "order": 6,
+      "title": "Safety Tolerance",
+      "default": 2,
+      "required": false,
+      "description": "Safety tolerance, 1 is most strict and 6 is most permissive"
+     },
+     "prompt_upsampling": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Prompt Upsampling",
+      "default": false,
+      "required": false,
+      "description": "Automatically modify the prompt for more creative generation"
+     }
+    },
+    "handles": {
+     "input": {
+      "prompt": {
+       "id": "ce25e0fd-2d23-4b66-9c69-cdcd8ce1d29a",
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Text prompt for image generation"
+      },
+      "control_image": {
+       "id": "67109cfa-2f1a-4ffc-a7df-8cd8e0683e8b",
+       "order": 1,
+       "format": "uri",
+       "required": true,
+       "description": "Image to use as control input. Must be jpeg, png, or webp."
+      }
+     },
+     "output": [
+      "result"
+     ]
+    },
+    "version": 2,
+    "is3DLocked": false,
+    "description": "Professional depth-aware image generation. Edit images while preserving spatial relationships.",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Flux Depth Pro"
+  },
+  {
+   "id": "a511f35d-69d7-42cf-829b-05d16f4bc00a",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 4000,
+    "y": 1180
+   },
+   "data": {
+    "name": "String",
+    "color": "Yambo_Green",
+    "value": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward.",
+    "output": {
+     "text": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward.",
+     "type": "text",
+     "string": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+    },
+    "result": {
+     "string": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "string"
+     ]
+    },
+    "isLocked": false,
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "String"
+  },
+  {
+   "id": "a82eb0ac-4969-40be-a52b-9f81b8b14e7f",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 2780,
+    "y": 1050
+   },
+   "data": {
+    "name": "Rodin 3D",
+    "paid": 40,
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053113/uploads/x2hxptygswndf5597h49.png",
+      "type": "image",
+      "input": {
+       "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/x2hxptygswndf5597h49",
+      "visualId": "b3c20ce33b3d4ccc",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/x2hxptygswndf5597h49.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "model": {
+     "name": "hyper_3d_rodin"
+    },
+    "output": {
+     "image": {
+      "url": "",
+      "type": "image",
+      "width": 188,
+      "height": 188
+     },
+     "3d_model": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053247/uploads/m1iiygax5e6m1vb2q32o.glb",
+      "type": "3D",
+      "input": {
+       "seed": 19418,
+       "tier": "Regular",
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053113/uploads/x2hxptygswndf5597h49.png",
+        "type": "image",
+        "input": {
+         "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background",
+         "aspect_ratio": "1:1",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/x2hxptygswndf5597h49",
+        "visualId": "b3c20ce33b3d4ccc",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/x2hxptygswndf5597h49.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic",
+       "quality": "high",
+       "material": "PBR",
+       "use_hyper": true,
+       "condition_mode": "concat"
+      },
+      "width": 0,
+      "height": 0,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_800/v1/uploads/m1iiygax5e6m1vb2q32o.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/m1iiygax5e6m1vb2q32o",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/v1/uploads/m1iiygax5e6m1vb2q32o.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_450/v1/uploads/m1iiygax5e6m1vb2q32o.jpg?_a=BAMCcSfi0"
+     }
+    },
+    "params": {
+     "seed": {
+      "seed": 21789,
+      "isRandom": true
+     },
+     "tier": "Regular",
+     "image": {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053113/uploads/x2hxptygswndf5597h49.png",
+      "type": "image",
+      "input": {
+       "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background",
+       "aspect_ratio": "1:1",
+       "negative_prompt": "",
+       "safety_filter_level": "block_only_high"
+      },
+      "width": 1024,
+      "height": 1024,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/x2hxptygswndf5597h49",
+      "visualId": "b3c20ce33b3d4ccc",
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/x2hxptygswndf5597h49.jpg?_a=BAMCcSfi0"
+     },
+     "prompt": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic",
+     "quality": "high",
+     "material": "PBR",
+     "use_hyper": true,
+     "condition_mode": "concat"
+    },
+    "result": [
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053247/uploads/m1iiygax5e6m1vb2q32o.glb",
+      "type": "3D",
+      "input": {
+       "seed": 19418,
+       "tier": "Regular",
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053113/uploads/x2hxptygswndf5597h49.png",
+        "type": "image",
+        "input": {
+         "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background",
+         "aspect_ratio": "1:1",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/x2hxptygswndf5597h49",
+        "visualId": "b3c20ce33b3d4ccc",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/x2hxptygswndf5597h49.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic",
+       "quality": "high",
+       "material": "PBR",
+       "use_hyper": true,
+       "condition_mode": "concat"
+      },
+      "width": 0,
+      "height": 0,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_800/v1/uploads/m1iiygax5e6m1vb2q32o.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/m1iiygax5e6m1vb2q32o",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/v1/uploads/m1iiygax5e6m1vb2q32o.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_450/v1/uploads/m1iiygax5e6m1vb2q32o.jpg?_a=BAMCcSfi0"
+     },
+     {
+      "fps": 0,
+      "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1743413186/uploads/hc6dbparnc6t2lptmhw7.glb",
+      "type": "3D",
+      "input": {
+       "seed": 21789,
+       "tier": "Regular",
+       "image": {
+        "fps": 0,
+        "url": "https://res.cloudinary.com/dpp2flk93/image/upload/v1742053113/uploads/x2hxptygswndf5597h49.png",
+        "type": "image",
+        "input": {
+         "prompt": "realistic photograph.  A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic light grey background",
+         "aspect_ratio": "1:1",
+         "negative_prompt": "",
+         "safety_filter_level": "block_only_high"
+        },
+        "width": 1024,
+        "height": 1024,
+        "viewUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_800/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+        "duration": 0,
+        "publicId": "uploads/x2hxptygswndf5597h49",
+        "visualId": "b3c20ce33b3d4ccc",
+        "originalUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/v1/uploads/x2hxptygswndf5597h49.png?_a=BAMCcSfi0",
+        "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/image/upload/c_scale,w_450/v1/uploads/x2hxptygswndf5597h49.jpg?_a=BAMCcSfi0"
+       },
+       "prompt": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic",
+       "quality": "high",
+       "material": "PBR",
+       "use_hyper": true,
+       "condition_mode": "concat"
+      },
+      "width": 0,
+      "height": 0,
+      "viewUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_800/v1/uploads/hc6dbparnc6t2lptmhw7.png?_a=BAMCcSfi0",
+      "duration": 0,
+      "publicId": "uploads/hc6dbparnc6t2lptmhw7",
+      "visualId": 0,
+      "originalUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/v1/uploads/hc6dbparnc6t2lptmhw7.png?_a=BAMCcSfi0",
+      "thumbnailUrl": "https://res.cloudinary.com/dpp2flk93/3D/upload/c_scale,w_450/v1/uploads/hc6dbparnc6t2lptmhw7.jpg?_a=BAMCcSfi0"
+     }
+    ],
+    "schema": {
+     "seed": {
+      "type": "seed",
+      "order": 9,
+      "title": "Seed",
+      "required": false,
+      "description": "Seed value for randomization (0-65535)"
+     },
+     "tier": {
+      "type": "enum",
+      "order": 5,
+      "title": "Tier",
+      "default": "Regular",
+      "options": [
+       "Regular",
+       "Sketch"
+      ],
+      "required": false,
+      "description": "Tier of generation"
+     },
+     "TAPose": {
+      "type": "boolean",
+      "order": 6,
+      "title": "T/A Pose",
+      "default": false,
+      "required": false,
+      "description": "Control the generation result to T/A Pose for human-like models"
+     },
+     "quality": {
+      "type": "enum",
+      "order": 3,
+      "title": "Quality",
+      "default": "medium",
+      "options": [
+       "high",
+       "medium",
+       "low",
+       "extra-low"
+      ],
+      "required": false,
+      "description": "Generation quality"
+     },
+     "material": {
+      "type": "enum",
+      "order": 2,
+      "title": "Material",
+      "default": "PBR",
+      "options": [
+       "PBR",
+       "Shaded"
+      ],
+      "required": false,
+      "description": "Material type"
+     },
+     "use_hyper": {
+      "type": "boolean",
+      "order": 4,
+      "title": "Use Hyper Mode",
+      "default": false,
+      "required": false,
+      "description": "Whether to export the model using hyper mode"
+     },
+     "bbox_condition": {
+      "type": "array",
+      "items": {
+       "type": "number"
+      },
+      "order": 7,
+      "title": "Bounding Box",
+      "maxItems": 3,
+      "minItems": 3,
+      "required": false,
+      "description": "Dimensions and scaling factor of the bounding box (Length, Width, Height)"
+     },
+     "condition_mode": {
+      "type": "enum",
+      "order": 0,
+      "title": "Condition Mode",
+      "default": "concat",
+      "options": [
+       "fuse",
+       "concat"
+      ],
+      "required": false,
+      "description": "For fuse mode, one or more images are required. For concat mode, need to upload multiple multi-view images of the same object"
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "order": 1,
+       "format": "uri",
+       "required": false,
+       "description": "Image to use while generating the 3D model"
+      },
+      "prompt": {
+       "order": 0,
+       "format": "text",
+       "required": false,
+       "description": "A textual prompt to guide model generation"
+      }
+     },
+     "output": [
+      "3d_model",
+      "image"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Generate 3D models from text and/or images",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": 1.560167932301316,
+     "y": -3.6498878015153586,
+     "z": 3.786338235634964
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Rodin 3D"
+  },
+  {
+   "id": "acf3c917-c3fa-4c06-bb55-5e396a46fbca",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 1020,
+    "y": 940
+   },
+   "data": {
+    "name": "String",
+    "color": "Yambo_Green",
+    "value": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic",
+    "output": {
+     "text": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic",
+     "type": "text",
+     "string": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "result": {
+     "string": "A surreal black-and-white photograph of two straight high ball glasses with sparkling water Placed close together. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "string"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "String"
+  },
+  {
+   "id": "add243c3-0ddd-4429-bf39-937e9987f554",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 2470,
+    "y": 900
+   },
+   "data": {
+    "name": "Prompt for BG",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": "light grey background"
+    },
+    "output": {
+     "out": "light grey background"
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompt for BG"
+  },
+  {
+   "id": "bba5676e-3a9e-41ce-8dff-582635c35689",
+   "isModel": false,
+   "type": "prompt_concat",
+   "position": {
+    "x": 4690,
+    "y": -230
+   },
+   "data": {
+    "name": "Prompts Concatenator",
+    "color": "Yambo_Green",
+    "input": {
+     "prompt1": "realistic photograph, black and white, clean, minimal",
+     "prompt2": {
+      "type": "text",
+      "input": {
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 197,
+        "height": 197
+       },
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+      },
+      "value": "High angle, looking directly down at the subject."
+     },
+     "prompt3": "light grey background",
+     "prompt4": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "output": {
+     "type": "text",
+     "prompt": "realistic photograph, black and white, clean, minimal High angle, looking directly down at the subject. light grey background Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic "
+    },
+    "result": {
+     "additionalPrompt": ""
+    },
+    "handles": {
+     "input": [
+      "prompt1",
+      "prompt2",
+      "prompt3",
+      "prompt4"
+     ],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "Concatenates multiple prompts to one output prompt.",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompts Concatenator"
+  },
+  {
+   "id": "bcffd815-d2f3-4e0c-a29f-8d5b153af3d7",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 1100,
+    "y": 80
+   },
+   "data": {
+    "name": "Text",
+    "color": "Yambo_Green",
+    "value": "light grey background",
+    "output": {
+     "text": "light grey background",
+     "type": "text",
+     "string": "light grey background"
+    },
+    "result": {
+     "string": "light grey background"
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "text"
+     ]
+    },
+    "isLocked": false,
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Text"
+  },
+  {
+   "id": "c1a9f797-89c7-4128-be41-7f0d969a8e56",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 1640,
+    "y": 950
+   },
+   "data": {
+    "name": "String",
+    "color": "Yambo_Green",
+    "value": "realistic photograph. ",
+    "output": {
+     "text": "realistic photograph. ",
+     "type": "text",
+     "string": "realistic photograph. "
+    },
+    "result": {
+     "string": "realistic photograph. "
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "string"
+     ]
+    },
+    "isLocked": false,
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "String"
+  },
+  {
+   "id": "c3c04bb2-575e-4e34-82db-e3e5750edc7d",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 840,
+    "y": 80
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Setup/Background description"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "c68fe6a5-0bd8-402e-b4af-a252d54aa118",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 4070,
+    "y": -120
+   },
+   "data": {
+    "name": "Text",
+    "color": "Yambo_Green",
+    "value": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward.",
+    "output": {
+     "text": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward.",
+     "type": "text",
+     "string": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+    },
+    "result": {
+     "string": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "string"
+     ]
+    },
+    "isLocked": false,
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Text"
+  },
+  {
+   "id": "c86ed127-ac36-4e38-81fe-627f767e7d84",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 1730,
+    "y": -280
+   },
+   "data": {
+    "name": "Text",
+    "color": "Yambo_Green",
+    "value": "Full body portrait. realistic photograph. ",
+    "output": {
+     "text": "Full body portrait. realistic photograph. ",
+     "type": "text",
+     "string": "Full body portrait. realistic photograph. "
+    },
+    "result": {
+     "string": "Full body portrait. realistic photograph. "
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "string"
+     ]
+    },
+    "isLocked": false,
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Text"
+  },
+  {
+   "id": "cc83e2bc-ffb9-43dc-b541-a6375a142390",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 850,
+    "y": -220
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Character description"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "d0a783de-95e0-4a4e-9dc9-059966d8a538",
+   "isModel": false,
+   "type": "string",
+   "position": {
+    "x": 4000,
+    "y": 890
+   },
+   "data": {
+    "name": "String",
+    "color": "Yambo_Green",
+    "value": "realistic photograph.",
+    "output": {
+     "text": "realistic photograph.",
+     "type": "text",
+     "string": "realistic photograph."
+    },
+    "result": {
+     "string": "realistic photograph."
+    },
+    "handles": {
+     "input": [],
+     "output": [
+      "string"
+     ]
+    },
+    "isLocked": false,
+    "dark_color": "Yambo_Green_Dark",
+    "description": "",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "String"
+  },
+  {
+   "id": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08",
+   "isModel": false,
+   "type": "prompt_concat",
+   "position": {
+    "x": 1720,
+    "y": 20
+   },
+   "data": {
+    "name": "Prompts Concatenator",
+    "color": "Yambo_Green",
+    "input": {
+     "prompt1": "Full body portrait. realistic photograph. ",
+     "prompt2": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic",
+     "prompt3": "light grey background"
+    },
+    "output": {
+     "type": "text",
+     "prompt": "Full body portrait. realistic photograph.  Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic light grey background "
+    },
+    "result": {
+     "additionalPrompt": ""
+    },
+    "handles": {
+     "input": [
+      "prompt1",
+      "prompt2",
+      "prompt3"
+     ],
+     "output": [
+      "prompt"
+     ]
+    },
+    "dark_color": "Yambo_Green_Dark",
+    "description": "Concatenates multiple prompts to one output prompt.",
+    "border_color": "Yambo_Green_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Prompts Concatenator"
+  },
+  {
+   "id": "e3532d01-34f8-484a-bb35-196d84e172df",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 4010,
+    "y": 1480
+   },
+   "data": {
+    "name": "Any LLM",
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/n3sfuubhplujiy6qi0ad",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/n3sfuubhplujiy6qi0ad",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "47c0fda0-b3de-455b-a046-cd201423ca14"
+       }
+      ]
+     },
+     "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+    },
+    "model": {
+     "name": "any_llm"
+    },
+    "output": {
+     "text": {
+      "type": "text",
+      "input": {
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1024
+       },
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+      },
+      "value": "Low angle camera, looking upward and slightly forward."
+     }
+    },
+    "params": {
+     "image": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/n3sfuubhplujiy6qi0ad",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/n3sfuubhplujiy6qi0ad",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "47c0fda0-b3de-455b-a046-cd201423ca14"
+       }
+      ]
+     },
+     "model": "google/gemini-flash-1.5-8b",
+     "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+    },
+    "result": [
+     {
+      "type": "text",
+      "input": {
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 1024,
+        "height": 1024
+       },
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+      },
+      "value": "Low angle camera, looking upward and slightly forward."
+     }
+    ],
+    "schema": {
+     "model": {
+      "type": "enum",
+      "order": 0,
+      "title": "Model Name",
+      "default": "google/gemini-flash-1.5-8b",
+      "options": [
+       "anthropic/claude-3.5-sonnet",
+       "anthropic/claude-3-haiku",
+       "google/gemini-pro-1.5",
+       "google/gemini-flash-1.5",
+       "google/gemini-flash-1.5-8b",
+       "openai/gpt-4o",
+       "meta-llama/llama-3.2-90b-vision-instruct"
+      ],
+      "description": "Name of the model to use"
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": "Image to analyse"
+      },
+      "prompt": {
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Describe your request from the model"
+      },
+      "system_prompt": {
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Describe the purpose of the model (e.g \"you are a prompt generator\")"
+      }
+     },
+     "output": [
+      "text"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Run any large language model.",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Any LLM"
+  },
+  {
+   "id": "e720d29a-c8f2-4a89-9a40-b3daa8e2e132",
+   "isModel": false,
+   "type": "stickynote",
+   "position": {
+    "x": 730,
+    "y": 1080
+   },
+   "data": {
+    "name": "Sticky Note",
+    "result": {
+     "note": "Object description"
+    },
+    "handles": {
+     "input": [],
+     "output": []
+    }
+   },
+   "originalName": "Sticky Note"
+  },
+  {
+   "id": "f488236d-754e-4930-8323-f0a83d988e87",
+   "isModel": false,
+   "type": "router",
+   "position": {
+    "x": 2640,
+    "y": -290
+   },
+   "data": {
+    "name": "prompt",
+    "color": "Yambo_Orange",
+    "input": {
+     "in": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "output": {
+     "out": "Black-and-white photograph of 60 years old senior caucasian woman. post punk musician with black voluminous and tousled hair. Wearing black sleeveless golf and leather pants. black shoes. she looks directly to the camera. High contrast, grainy texture, conceptual art aesthetic"
+    },
+    "handles": {
+     "input": [
+      "in"
+     ],
+     "output": [
+      "out"
+     ]
+    },
+    "dark_color": "Yambo_Orange_Dark",
+    "border_color": "Yambo_Orange_Stroke"
+   },
+   "dragHandle": ".node-header",
+   "originalName": "prompt"
+  },
+  {
+   "id": "fe5545e8-f952-4b58-aa1a-f6960145b5c5",
+   "isModel": true,
+   "type": "custommodelV2",
+   "position": {
+    "x": 4090,
+    "y": 180
+   },
+   "data": {
+    "name": "Any LLM",
+    "color": "Yambo_Purple",
+    "input": {
+     "image": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/c5hoiqp5xenrbg5va1fy",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/c5hoiqp5xenrbg5va1fy",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+       }
+      ]
+     },
+     "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+    },
+    "model": {
+     "name": "any_llm"
+    },
+    "output": {
+     "text": {
+      "type": "text",
+      "input": {
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 197,
+        "height": 197
+       },
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+      },
+      "value": "High angle, looking directly down at the subject."
+     }
+    },
+    "params": {
+     "image": {
+      "url": "https://media.weavy.ai/image/upload/q_auto,f_auto/c_scale,w_512,h_512,x_0,y_0/uploads/c5hoiqp5xenrbg5va1fy",
+      "type": "image",
+      "width": 512,
+      "height": 512,
+      "publicId": "uploads/c5hoiqp5xenrbg5va1fy",
+      "cloudinaryType": "image",
+      "transformations": [
+       {
+        "resize": {
+         "type": "scale",
+         "width": 512,
+         "height": 512
+        },
+        "nodeIdentifier": "05ce941b-2a68-457c-a249-c573ff6c7ba8"
+       }
+      ]
+     },
+     "model": "google/gemini-flash-1.5-8b",
+     "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+    },
+    "result": [
+     {
+      "type": "text",
+      "input": {
+       "image": {
+        "url": "",
+        "type": "image",
+        "width": 197,
+        "height": 197
+       },
+       "model": "google/gemini-flash-1.5-8b",
+       "prompt": "describe the camera angle of this image in maximum one sentence.\nDon't mention the object itself.\n\nFor example: High angle camera, looking downward and slightly forward."
+      },
+      "value": "High angle, looking directly down at the subject."
+     }
+    ],
+    "schema": {
+     "model": {
+      "type": "enum",
+      "order": 0,
+      "title": "Model Name",
+      "default": "google/gemini-flash-1.5-8b",
+      "options": [
+       "anthropic/claude-3.5-sonnet",
+       "anthropic/claude-3-haiku",
+       "google/gemini-pro-1.5",
+       "google/gemini-flash-1.5",
+       "google/gemini-flash-1.5-8b",
+       "openai/gpt-4o",
+       "meta-llama/llama-3.2-90b-vision-instruct"
+      ],
+      "description": "Name of the model to use"
+     }
+    },
+    "handles": {
+     "input": {
+      "image": {
+       "order": 2,
+       "format": "uri",
+       "required": false,
+       "description": "Image to analyse"
+      },
+      "prompt": {
+       "order": 0,
+       "format": "text",
+       "required": true,
+       "description": "Describe your request from the model"
+      },
+      "system_prompt": {
+       "order": 1,
+       "format": "text",
+       "required": false,
+       "description": "Describe the purpose of the model (e.g \"you are a prompt generator\")"
+      }
+     },
+     "output": [
+      "text"
+     ]
+    },
+    "version": 2,
+    "dark_color": "Yambo_Purple_Dark",
+    "is3DLocked": false,
+    "description": "Run any large language model.",
+    "border_color": "Yambo_Purple_Stroke",
+    "cameraPosition": {
+     "x": -3,
+     "y": 4,
+     "z": 10
+    },
+    "selectedOutput": 0
+   },
+   "dragHandle": ".node-header",
+   "originalName": "Any LLM"
+  }
+ ],
+ "edges": [
+  {
+   "id": "reactflow__edge-c86ed127-ac36-4e38-81fe-627f767e7d84c86ed127-ac36-4e38-81fe-627f767e7d84-output-string-d54f2f5a-2205-4f1f-8863-bb2b599bfa08d54f2f5a-2205-4f1f-8863-bb2b599bfa08-input-prompt2",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "c86ed127-ac36-4e38-81fe-627f767e7d84",
+   "target": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08",
+   "selected": false,
+   "sourceHandle": "c86ed127-ac36-4e38-81fe-627f767e7d84-output-string",
+   "targetHandle": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08-input-prompt1"
+  },
+  {
+   "id": "reactflow__edge-f488236d-754e-4930-8323-f0a83d988e87f488236d-754e-4930-8323-f0a83d988e87-output-out-23bd0fc3-6b88-4646-8921-2ffd251e7f4c23bd0fc3-6b88-4646-8921-2ffd251e7f4c-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "f488236d-754e-4930-8323-f0a83d988e87",
+   "target": "23bd0fc3-6b88-4646-8921-2ffd251e7f4c",
+   "selected": false,
+   "sourceHandle": "f488236d-754e-4930-8323-f0a83d988e87-output-out",
+   "targetHandle": "23bd0fc3-6b88-4646-8921-2ffd251e7f4c-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-c68fe6a5-0bd8-402e-b4af-a252d54aa118c68fe6a5-0bd8-402e-b4af-a252d54aa118-output-string-fe5545e8-f952-4b58-aa1a-f6960145b5c5fe5545e8-f952-4b58-aa1a-f6960145b5c5-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "c68fe6a5-0bd8-402e-b4af-a252d54aa118",
+   "target": "fe5545e8-f952-4b58-aa1a-f6960145b5c5",
+   "selected": false,
+   "sourceHandle": "c68fe6a5-0bd8-402e-b4af-a252d54aa118-output-string",
+   "targetHandle": "fe5545e8-f952-4b58-aa1a-f6960145b5c5-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-bba5676e-3a9e-41ce-8dff-582635c35689bba5676e-3a9e-41ce-8dff-582635c35689-output-prompt-a379be04-44fa-47b4-abcd-0a749498bd4ba379be04-44fa-47b4-abcd-0a749498bd4b-input-control_image",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "bba5676e-3a9e-41ce-8dff-582635c35689",
+   "target": "a379be04-44fa-47b4-abcd-0a749498bd4b",
+   "selected": false,
+   "sourceHandle": "bba5676e-3a9e-41ce-8dff-582635c35689-output-prompt",
+   "targetHandle": "a379be04-44fa-47b4-abcd-0a749498bd4b-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb-output-out-a379be04-44fa-47b4-abcd-0a749498bd4ba379be04-44fa-47b4-abcd-0a749498bd4b-input-control_image",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb",
+   "target": "a379be04-44fa-47b4-abcd-0a749498bd4b",
+   "selected": false,
+   "sourceHandle": "9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb-output-out",
+   "targetHandle": "a379be04-44fa-47b4-abcd-0a749498bd4b-input-control_image"
+  },
+  {
+   "id": "reactflow__edge-25840733-5bb6-4bc3-8bf6-c1f6bc23326d25840733-5bb6-4bc3-8bf6-c1f6bc23326d-output-result-23bd0fc3-6b88-4646-8921-2ffd251e7f4c23bd0fc3-6b88-4646-8921-2ffd251e7f4c-input-image",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "25840733-5bb6-4bc3-8bf6-c1f6bc23326d",
+   "target": "23bd0fc3-6b88-4646-8921-2ffd251e7f4c",
+   "selected": false,
+   "sourceHandle": "25840733-5bb6-4bc3-8bf6-c1f6bc23326d-output-result",
+   "targetHandle": "23bd0fc3-6b88-4646-8921-2ffd251e7f4c-input-image"
+  },
+  {
+   "id": "reactflow__edge-9d1869ff-789e-46e9-ab26-d2f881867bd69d1869ff-789e-46e9-ab26-d2f881867bd6-output-string-bba5676e-3a9e-41ce-8dff-582635c35689bba5676e-3a9e-41ce-8dff-582635c35689-input-prompt1",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "9d1869ff-789e-46e9-ab26-d2f881867bd6",
+   "target": "bba5676e-3a9e-41ce-8dff-582635c35689",
+   "selected": false,
+   "sourceHandle": "9d1869ff-789e-46e9-ab26-d2f881867bd6-output-string",
+   "targetHandle": "bba5676e-3a9e-41ce-8dff-582635c35689-input-prompt1"
+  },
+  {
+   "id": "reactflow__edge-45443dbc-0b8f-416b-a99b-dc7264a8b98445443dbc-0b8f-416b-a99b-dc7264a8b984-output-text-f488236d-754e-4930-8323-f0a83d988e87f488236d-754e-4930-8323-f0a83d988e87-input-in",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "55ead9cc-196d-4190-acb8-fe258bf34e38",
+   "target": "f488236d-754e-4930-8323-f0a83d988e87",
+   "selected": false,
+   "sourceHandle": "55ead9cc-196d-4190-acb8-fe258bf34e38-output-string",
+   "targetHandle": "f488236d-754e-4930-8323-f0a83d988e87-input-in"
+  },
+  {
+   "id": "reactflow__edge-45443dbc-0b8f-416b-a99b-dc7264a8b98445443dbc-0b8f-416b-a99b-dc7264a8b984-output-text-d54f2f5a-2205-4f1f-8863-bb2b599bfa08d54f2f5a-2205-4f1f-8863-bb2b599bfa08-input-prompt3",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "55ead9cc-196d-4190-acb8-fe258bf34e38",
+   "target": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08",
+   "selected": false,
+   "sourceHandle": "55ead9cc-196d-4190-acb8-fe258bf34e38-output-string",
+   "targetHandle": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08-input-prompt2"
+  },
+  {
+   "id": "reactflow__edge-d54f2f5a-2205-4f1f-8863-bb2b599bfa08d54f2f5a-2205-4f1f-8863-bb2b599bfa08-output-prompt-25840733-5bb6-4bc3-8bf6-c1f6bc23326d25840733-5bb6-4bc3-8bf6-c1f6bc23326d-input-prompt",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08",
+   "target": "25840733-5bb6-4bc3-8bf6-c1f6bc23326d",
+   "selected": false,
+   "sourceHandle": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08-output-prompt",
+   "targetHandle": "25840733-5bb6-4bc3-8bf6-c1f6bc23326d-input-prompt"
+  },
+  {
+   "id": "reactflow__edge-f488236d-754e-4930-8323-f0a83d988e87f488236d-754e-4930-8323-f0a83d988e87-output-out-bba5676e-3a9e-41ce-8dff-582635c35689bba5676e-3a9e-41ce-8dff-582635c35689-input-prompt2",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "f488236d-754e-4930-8323-f0a83d988e87",
+   "target": "bba5676e-3a9e-41ce-8dff-582635c35689",
+   "selected": false,
+   "sourceHandle": "f488236d-754e-4930-8323-f0a83d988e87-output-out",
+   "targetHandle": "bba5676e-3a9e-41ce-8dff-582635c35689-input-prompt4"
+  },
+  {
+   "id": "reactflow__edge-fe5545e8-f952-4b58-aa1a-f6960145b5c5fe5545e8-f952-4b58-aa1a-f6960145b5c5-output-text-bba5676e-3a9e-41ce-8dff-582635c35689bba5676e-3a9e-41ce-8dff-582635c35689-input-prompt1",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "fe5545e8-f952-4b58-aa1a-f6960145b5c5",
+   "target": "bba5676e-3a9e-41ce-8dff-582635c35689",
+   "selected": false,
+   "sourceHandle": "fe5545e8-f952-4b58-aa1a-f6960145b5c5-output-text",
+   "targetHandle": "bba5676e-3a9e-41ce-8dff-582635c35689-input-prompt2"
+  },
+  {
+   "id": "reactflow__edge-bcffd815-d2f3-4e0c-a29f-8d5b153af3d7bcffd815-d2f3-4e0c-a29f-8d5b153af3d7-output-text-d54f2f5a-2205-4f1f-8863-bb2b599bfa08d54f2f5a-2205-4f1f-8863-bb2b599bfa08-input-prompt3",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "bcffd815-d2f3-4e0c-a29f-8d5b153af3d7",
+   "target": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08",
+   "selected": false,
+   "sourceHandle": "bcffd815-d2f3-4e0c-a29f-8d5b153af3d7-output-text",
+   "targetHandle": "d54f2f5a-2205-4f1f-8863-bb2b599bfa08-input-prompt3"
+  },
+  {
+   "id": "reactflow__edge-bcffd815-d2f3-4e0c-a29f-8d5b153af3d7bcffd815-d2f3-4e0c-a29f-8d5b153af3d7-output-text-09a34b79-206f-4a06-b27e-ea139135878709a34b79-206f-4a06-b27e-ea1391358787-input-in",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "bcffd815-d2f3-4e0c-a29f-8d5b153af3d7",
+   "target": "09a34b79-206f-4a06-b27e-ea1391358787",
+   "selected": false,
+   "sourceHandle": "bcffd815-d2f3-4e0c-a29f-8d5b153af3d7-output-text",
+   "targetHandle": "09a34b79-206f-4a06-b27e-ea1391358787-input-in"
+  },
+  {
+   "id": "reactflow__edge-09a34b79-206f-4a06-b27e-ea139135878709a34b79-206f-4a06-b27e-ea1391358787-output-out-bba5676e-3a9e-41ce-8dff-582635c35689bba5676e-3a9e-41ce-8dff-582635c35689-input-prompt3",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "09a34b79-206f-4a06-b27e-ea1391358787",
+   "target": "bba5676e-3a9e-41ce-8dff-582635c35689",
+   "selected": false,
+   "sourceHandle": "09a34b79-206f-4a06-b27e-ea1391358787-output-out",
+   "targetHandle": "bba5676e-3a9e-41ce-8dff-582635c35689-input-prompt3"
+  },
+  {
+   "id": "fc4ab781-4943-4106-8448-88f7a4baf74a",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "c1a9f797-89c7-4128-be41-7f0d969a8e56",
+   "target": "88c52d0c-bb28-4736-860b-197169d90552",
+   "selected": false,
+   "sourceHandle": "c1a9f797-89c7-4128-be41-7f0d969a8e56-output-string",
+   "targetHandle": "88c52d0c-bb28-4736-860b-197169d90552-input-prompt1"
+  },
+  {
+   "id": "6cb6879a-7c10-4a42-ad98-8932254354b1",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "327938ef-ffa3-467b-8ce5-a5323a565f72",
+   "target": "a82eb0ac-4969-40be-a52b-9f81b8b14e7f",
+   "selected": false,
+   "sourceHandle": "327938ef-ffa3-467b-8ce5-a5323a565f72-output-out",
+   "targetHandle": "a82eb0ac-4969-40be-a52b-9f81b8b14e7f-input-prompt"
+  },
+  {
+   "id": "eed21044-1a63-42ea-93b1-518b9272bb8e",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "a511f35d-69d7-42cf-829b-05d16f4bc00a",
+   "target": "e3532d01-34f8-484a-bb35-196d84e172df",
+   "selected": false,
+   "sourceHandle": "a511f35d-69d7-42cf-829b-05d16f4bc00a-output-string",
+   "targetHandle": "e3532d01-34f8-484a-bb35-196d84e172df-input-prompt"
+  },
+  {
+   "id": "724ad80b-2f9e-466d-bbbb-621c4af37b53",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "a2dc916a-407f-43a0-9575-3c8c55dc1298",
+   "target": "6962f71a-02ea-4010-83f0-36f0b8d99b5b",
+   "selected": false,
+   "sourceHandle": "a2dc916a-407f-43a0-9575-3c8c55dc1298-output-prompt",
+   "targetHandle": "6962f71a-02ea-4010-83f0-36f0b8d99b5b-input-prompt"
+  },
+  {
+   "id": "1c68a6b8-a078-4db1-959b-8a15a5364e64",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "83e9e204-8d3d-488f-8b2f-da71cc649257",
+   "target": "6962f71a-02ea-4010-83f0-36f0b8d99b5b",
+   "selected": false,
+   "sourceHandle": "83e9e204-8d3d-488f-8b2f-da71cc649257-output-out",
+   "targetHandle": "6962f71a-02ea-4010-83f0-36f0b8d99b5b-input-control_image"
+  },
+  {
+   "id": "c316da37-bb29-47a0-a15b-2eb9da22e7cb",
+   "data": {
+    "sourceColor": "Red",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "623762ac-8bad-4ef9-b2d4-63472265204c",
+   "target": "a82eb0ac-4969-40be-a52b-9f81b8b14e7f",
+   "selected": false,
+   "sourceHandle": "623762ac-8bad-4ef9-b2d4-63472265204c-output-result",
+   "targetHandle": "a82eb0ac-4969-40be-a52b-9f81b8b14e7f-input-image"
+  },
+  {
+   "id": "671b9984-09eb-4ef7-9c92-8ef1761d00c8",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "d0a783de-95e0-4a4e-9dc9-059966d8a538",
+   "target": "a2dc916a-407f-43a0-9575-3c8c55dc1298",
+   "selected": false,
+   "sourceHandle": "d0a783de-95e0-4a4e-9dc9-059966d8a538-output-string",
+   "targetHandle": "a2dc916a-407f-43a0-9575-3c8c55dc1298-input-prompt1"
+  },
+  {
+   "id": "49a3a665-31a0-411a-81fa-d2ee8e0bfe88",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "acf3c917-c3fa-4c06-bb55-5e396a46fbca",
+   "target": "327938ef-ffa3-467b-8ce5-a5323a565f72",
+   "selected": false,
+   "sourceHandle": "acf3c917-c3fa-4c06-bb55-5e396a46fbca-output-string",
+   "targetHandle": "327938ef-ffa3-467b-8ce5-a5323a565f72-input-in"
+  },
+  {
+   "id": "b0e2e718-3df4-40fa-8ffe-fcc23253a091",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "acf3c917-c3fa-4c06-bb55-5e396a46fbca",
+   "target": "88c52d0c-bb28-4736-860b-197169d90552",
+   "selected": false,
+   "sourceHandle": "acf3c917-c3fa-4c06-bb55-5e396a46fbca-output-string",
+   "targetHandle": "88c52d0c-bb28-4736-860b-197169d90552-input-prompt2"
+  },
+  {
+   "id": "e4e2a99f-826a-4b3c-9700-b3acdc01f823",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Red"
+   },
+   "type": "custom",
+   "source": "88c52d0c-bb28-4736-860b-197169d90552",
+   "target": "623762ac-8bad-4ef9-b2d4-63472265204c",
+   "selected": false,
+   "sourceHandle": "88c52d0c-bb28-4736-860b-197169d90552-output-prompt",
+   "targetHandle": "623762ac-8bad-4ef9-b2d4-63472265204c-input-prompt"
+  },
+  {
+   "id": "41511563-4081-48c8-b810-a5f83001daac",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "327938ef-ffa3-467b-8ce5-a5323a565f72",
+   "target": "a2dc916a-407f-43a0-9575-3c8c55dc1298",
+   "selected": false,
+   "sourceHandle": "327938ef-ffa3-467b-8ce5-a5323a565f72-output-out",
+   "targetHandle": "a2dc916a-407f-43a0-9575-3c8c55dc1298-input-prompt4"
+  },
+  {
+   "id": "bc39da80-be03-4e81-b6a1-90ea9a2fb2d4",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "e3532d01-34f8-484a-bb35-196d84e172df",
+   "target": "a2dc916a-407f-43a0-9575-3c8c55dc1298",
+   "selected": false,
+   "sourceHandle": "e3532d01-34f8-484a-bb35-196d84e172df-output-text",
+   "targetHandle": "a2dc916a-407f-43a0-9575-3c8c55dc1298-input-prompt2"
+  },
+  {
+   "id": "dd0f8ead-e736-4271-825b-2ea37fbe24cc",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "829fcf38-8fec-4079-88d1-ea2eadf53e64",
+   "target": "88c52d0c-bb28-4736-860b-197169d90552",
+   "selected": false,
+   "sourceHandle": "829fcf38-8fec-4079-88d1-ea2eadf53e64-output-text",
+   "targetHandle": "88c52d0c-bb28-4736-860b-197169d90552-input-prompt3"
+  },
+  {
+   "id": "4fe6a758-a96a-406e-9391-4633c4143725",
+   "data": {
+    "sourceColor": "Yambo_Green",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "829fcf38-8fec-4079-88d1-ea2eadf53e64",
+   "target": "add243c3-0ddd-4429-bf39-937e9987f554",
+   "selected": false,
+   "sourceHandle": "829fcf38-8fec-4079-88d1-ea2eadf53e64-output-text",
+   "targetHandle": "add243c3-0ddd-4429-bf39-937e9987f554-input-in"
+  },
+  {
+   "id": "555371df-b32b-4208-8138-cea9d2a841ce",
+   "data": {
+    "sourceColor": "Yambo_Orange",
+    "targetColor": "Yambo_Green"
+   },
+   "type": "custom",
+   "source": "add243c3-0ddd-4429-bf39-937e9987f554",
+   "target": "a2dc916a-407f-43a0-9575-3c8c55dc1298",
+   "selected": false,
+   "sourceHandle": "add243c3-0ddd-4429-bf39-937e9987f554-output-out",
+   "targetHandle": "a2dc916a-407f-43a0-9575-3c8c55dc1298-input-prompt3"
+  },
+  {
+   "id": "8d94d601-a9d6-4f97-82fe-8d6acf5f8a65",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "a82eb0ac-4969-40be-a52b-9f81b8b14e7f",
+   "target": "47c0fda0-b3de-455b-a046-cd201423ca14",
+   "selected": false,
+   "sourceHandle": "a82eb0ac-4969-40be-a52b-9f81b8b14e7f-output-image",
+   "targetHandle": "47c0fda0-b3de-455b-a046-cd201423ca14-input-image"
+  },
+  {
+   "id": "8e4d0bd7-9009-42eb-921b-9dd6b0d9d07b",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "47c0fda0-b3de-455b-a046-cd201423ca14",
+   "target": "83e9e204-8d3d-488f-8b2f-da71cc649257",
+   "selected": false,
+   "sourceHandle": "47c0fda0-b3de-455b-a046-cd201423ca14-output-result",
+   "targetHandle": "83e9e204-8d3d-488f-8b2f-da71cc649257-input-in"
+  },
+  {
+   "id": "6add815c-0b43-4928-9be4-0c540d4f8560",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "47c0fda0-b3de-455b-a046-cd201423ca14",
+   "target": "e3532d01-34f8-484a-bb35-196d84e172df",
+   "selected": false,
+   "sourceHandle": "47c0fda0-b3de-455b-a046-cd201423ca14-output-result",
+   "targetHandle": "e3532d01-34f8-484a-bb35-196d84e172df-input-image"
+  },
+  {
+   "id": "reactflow__edge-05ce941b-2a68-457c-a249-c573ff6c7ba805ce941b-2a68-457c-a249-c573ff6c7ba8-output-result-fe5545e8-f952-4b58-aa1a-f6960145b5c5fe5545e8-f952-4b58-aa1a-f6960145b5c5-input-image",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Purple"
+   },
+   "type": "custom",
+   "source": "05ce941b-2a68-457c-a249-c573ff6c7ba8",
+   "target": "fe5545e8-f952-4b58-aa1a-f6960145b5c5",
+   "selected": false,
+   "sourceHandle": "05ce941b-2a68-457c-a249-c573ff6c7ba8-output-result",
+   "targetHandle": "fe5545e8-f952-4b58-aa1a-f6960145b5c5-input-image"
+  },
+  {
+   "id": "reactflow__edge-05ce941b-2a68-457c-a249-c573ff6c7ba805ce941b-2a68-457c-a249-c573ff6c7ba8-output-result-9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb-input-in",
+   "data": {
+    "sourceColor": "Yambo_Black",
+    "targetColor": "Yambo_Orange"
+   },
+   "type": "custom",
+   "source": "05ce941b-2a68-457c-a249-c573ff6c7ba8",
+   "target": "9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb",
+   "selected": false,
+   "sourceHandle": "05ce941b-2a68-457c-a249-c573ff6c7ba8-output-result",
+   "targetHandle": "9e48b6fc-4d51-47b8-a975-e5a14a4bbfcb-input-in"
+  },
+  {
+   "id": "reactflow__edge-23bd0fc3-6b88-4646-8921-2ffd251e7f4c23bd0fc3-6b88-4646-8921-2ffd251e7f4c-output-image-05ce941b-2a68-457c-a249-c573ff6c7ba805ce941b-2a68-457c-a249-c573ff6c7ba8-input-image",
+   "data": {
+    "sourceColor": "Yambo_Purple",
+    "targetColor": "Yambo_Black"
+   },
+   "type": "custom",
+   "source": "23bd0fc3-6b88-4646-8921-2ffd251e7f4c",
+   "target": "05ce941b-2a68-457c-a249-c573ff6c7ba8",
+   "selected": false,
+   "sourceHandle": "23bd0fc3-6b88-4646-8921-2ffd251e7f4c-output-image",
+   "targetHandle": "05ce941b-2a68-457c-a249-c573ff6c7ba8-input-image"
+  }
+ ],
+ "latestVersion": {
+  "version": 1,
+  "createdAt": "2025-03-16T10:33:04.360Z"
+ },
+ "latestPublishedVersion": null,
+ "showcaseOrder": 133,
+ "showcase": false,
+ "designAppMetadata": {
+  "829fcf38-8fec-4079-88d1-ea2eadf53e64": {
+   "order": 4,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  },
+  "a511f35d-69d7-42cf-829b-05d16f4bc00a": {
+   "order": 2,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  },
+  "acf3c917-c3fa-4c06-bb55-5e396a46fbca": {
+   "order": 1,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  },
+  "c1a9f797-89c7-4128-be41-7f0d969a8e56": {
+   "order": 3,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  },
+  "d0a783de-95e0-4a4e-9dc9-059966d8a538": {
+   "order": 0,
+   "exposed": true,
+   "disabled": false,
+   "required": false
+  }
+ },
+ "v3": null,
+ "batchRuns": [],
+ "folderId": "987d87c4-ed1d-4cc3-be7d-5c1d48dde83c",
+ "scope": "WORKSPACE",
+ "isDeleted": false,
+ "resolvedAssets": {},
+ "redirectToToolId": null
+}

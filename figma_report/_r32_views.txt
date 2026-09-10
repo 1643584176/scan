@@ -1,0 +1,548 @@
+total distinct view names: 395
+
+===== keyword-matched =====
+  AbandonedDraftFilesPageView   <- ['_js\\469e6e40-f27da0e8f34b0858.min.js', '_js\\469e6e40-f27da0e8f34b0858.min.js']
+  ActiveFileUsersForFileView   <- ['_js\\figma_app-main.js']
+  AddContextModalRecentDesignFilesView   <- ['_js\\figma_app-main.js']
+  AddContextModalSearchFileDraftStatusView   <- ['_js\\figma_app-main.js']
+  AddUnassignedTeamsModalView   <- ['_js\\figma_app-main.js']
+  AddWorkspacePinSearchFilesView   <- ['_js\\figma_app-main.js']
+  AddWorkspacePinSuggestedFilesView   <- ['_js\\figma_app-main.js']
+  AddWorkspacePinnedFileView   <- ['_js\\figma_app-main.js']
+  CanCreateTeamView   <- ['_js\\figma_app-main.js']
+  CmsManagerView   <- ['_js\\figma_app-main.js']
+  CommentsDetailsView   <- ['_js\\1671-b95ce97580ac1302.min.js', '_js\\1671-b95ce97580ac1302.min.js']
+  CommunityPlaygroundFileSelectorRecentFilesView   <- ['_js\\figma_app-main.js']
+  CommunityTryResourceRecentFilesView   <- ['_js\\figma_app-main.js']
+  CommunityUniversalPostingModalRecentFileKeysView   <- ['_js\\figma_app-main.js']
+  CreateIdpUserView   <- ['_js\\935-431f89677a39072c.min.js']
+  CurrentUserAssignedWorkspaceView   <- ['_js\\figma_app-main.js']
+  CurrentUserInStudentPlanView   <- ['_js\\figma_app-main.js']
+  CurrentUserInStudentPlusPlanView   <- ['_js\\figma_app-main.js']
+  CurrentUserIsMfaRequiredByMembershipOrgView   <- ['_js\\figma_app-main.js']
+  DSAFileView   <- ['_js\\935-431f89677a39072c.min.js']
+  DeleteWorkspacePinnedFileView   <- ['_js\\figma_app-main.js']
+  DesktopNewTabRecentFilesView   <- ['_js\\figma_app-main.js']
+  DeviceTryFileView   <- ['_js\\figma_app-main.js']
+  EditWorkspacePinnedFileView   <- ['_js\\figma_app-main.js']
+  EditorFilePickerRecentFilesByEditorTypeView   <- ['_js\\figma_app-main.js']
+  ExpOneClickAskToEditTeamView   <- ['_js\\figma_app-main.js']
+  ExpSocialProofExpansionTeamView   <- ['_js\\figma_app-main.js']
+  FacetedSearchPreviewRecentFilesView   <- ['_js\\figma_app-main.js']
+  FileAiChatThreadsView   <- ['_js\\figma_app-main.js']
+  FileBrowserAssistantFilePreviewView   <- ['_js\\figma_app-main.js']
+  FileBrowserDraftsPageByEditorTypeV2View   <- ['_js\\figma_app-main.js']
+  FileBrowserDraftsPageV2View   <- ['_js\\figma_app-main.js']
+  FileBrowserDraftsViewBarView   <- ['_js\\figma_app-main.js']
+  FileBrowserFolderPageByEditorTypeV2View   <- ['_js\\figma_app-main.js']
+  FileBrowserFolderPageChildFoldersView   <- ['_js\\figma_app-main.js']
+  FileBrowserFolderPageV2View   <- ['_js\\figma_app-main.js']
+  FileBrowserOrgPageAllTeamsView   <- ['_js\\figma_app-main.js']
+  FileBrowserOrgPageJoinedTeamsView   <- ['_js\\figma_app-main.js']
+  FileBrowserOrgPageUnassignedTeamsView   <- ['_js\\figma_app-main.js']
+  FileBrowserOrgWorkspacesView   <- ['_js\\figma_app-main.js']
+  FileBrowserPaginatedRecentFilesByEditorTypeView   <- ['_js\\figma_app-main.js']
+  FileBrowserPaginatedRecentFilesView   <- ['_js\\figma_app-main.js']
+  FileBrowserProjectPageTitleView   <- ['_js\\figma_app-main.js']
+  FileBrowserRecentFilesByEditorTypeView   <- ['_js\\figma_app-main.js']
+  FileBrowserRecentFilesView   <- ['_js\\figma_app-main.js']
+  FileBrowserTeamPageFolderItemsView   <- ['_js\\figma_app-main.js']
+  FileBrowserView   <- ['_js\\2537-1fa3aa98a4696aa8.min.js', '_js\\figma_app-main.js']
+  FileBrowserWorkspacePageTeamsView   <- ['_js\\figma_app-main.js']
+  FileCanView   <- ['_js\\figma_app-main.js']
+  FileCreationDropdownView   <- ['_js\\figma_app-main.js']
+  FileCreationPermissionsView   <- ['_js\\figma_app-main.js']
+  FileCustomToolsMetadataView   <- ['_js\\figma_app-main.js']
+  FileExpirationView   <- ['_js\\figma_app-main.js']
+  FileFavoritedMakeVersionsForNodeView   <- ['_js\\figma_app-main.js']
+  FileFavoritedMakeVersionsView   <- ['_js\\figma_app-main.js']
+  FileGenericCachedPreviewsView   <- ['_js\\figma_app-main.js']
+  FileMakeVersionsForNodeView   <- ['_js\\figma_app-main.js']
+  FileMakeVersionsView   <- ['_js\\figma_app-main.js']
+  FileMoveChildFolderListView   <- ['_js\\figma_app-main.js']
+  FileMoveV2FolderCreationTeamView   <- ['_js\\figma_app-main.js']
+  FileOperationsView   <- ['_js\\figma_app-main.js']
+  FileOrgExtensionSettingsView   <- ['_js\\figma_app-main.js']
+  FilePickerView   <- ['_js\\1674-a28b39d42736af05.min.js', '_js\\935-431f89677a39072c.min.js']
+  FileTemplateView   <- ['_js\\figma_app-main.js']
+  FileView   <- ['_js\\3333-0886af92a86c7967.min.js']
+  FileWorkspacePinActionsView   <- ['_js\\figma_app-main.js']
+  FolderFilesQuerySyncView   <- ['_js\\figma_app-main.js']
+  FolderMoveModalPlanTeamsView   <- ['_js\\figma_app-main.js']
+  FolderSettingsDisconnectedProjectShareCopyOnboardingOverlayView   <- ['_js\\figma_app-main.js']
+  FolderUntrashedFilesAndSitesView   <- ['_js\\figma_app-main.js']
+  FontFileForOrgView   <- ['_js\\figma_app-main.js']
+  FontFileForTeamView   <- ['_js\\figma_app-main.js']
+  FontFileForUserView   <- ['_js\\figma_app-main.js']
+  HasCollectionsView   <- ['_js\\figma_app-main.js']
+  HubFileDetailView   <- ['_js\\figma_app-main.js']
+  IdpUserView   <- ['_js\\figma_app-main.js']
+  LazySitesView   <- ['_js\\figma_app-main.js']
+  LibraryCodeFileEditorSplitView   <- ['_js\\3333-0886af92a86c7967.min.js']
+  LimitedSpaceSharedProjectsView   <- ['_js\\figma_app-main.js']
+  ListCollectionsView   <- ['_js\\figma_app-main.js']
+  MakeEditsDebugView   <- ['_js\\7456-1a38d2d2beed1ad4.min.js', '_js\\9300-41a18cb0f8ba922b.min.js']
+  MakeEnvironmentConfigurationVariablesView   <- ['_js\\figma_app-main.js']
+  MakeFormView   <- ['_js\\935-431f89677a39072c.min.js']
+  MediaExportJobsForFileView   <- ['_js\\figma_app-main.js']
+  ModifyPlanUserSeatModalView   <- ['_js\\figma_app-main.js']
+  MoveDraftsNudgeV2OverlayRecentFilesView   <- ['_js\\figma_app-main.js']
+  MoveDraftsTeamNudgeView   <- ['_js\\935-431f89677a39072c.min.js']
+  MoveFileFavoritesView   <- ['_js\\figma_app-main.js']
+  NavigationOrgUserDataView   <- ['_js\\figma_app-main.js']
+  NuxNewFileFolderView   <- ['_js\\figma_app-main.js']
+  NuxTeamRolesView   <- ['_js\\figma_app-main.js']
+  OneCollectionView   <- ['_js\\figma_app-main.js']
+  OrgAdminUserMinimalFieldsView   <- ['_js\\figma_app-main.js']
+  OrgAdminUserView   <- ['_js\\figma_app-main.js']
+  OrgByIdForPlanUserView   <- ['_js\\935-431f89677a39072c.min.js', '_js\\figma_app-main.js']
+  OrgTeamView   <- ['_js\\figma_app-main.js']
+  OrgTeamsInAdminView   <- ['_js\\figma_app-main.js']
+  OrgUserIsMfaRestrictedView   <- ['_js\\figma_app-main.js']
+  OrgUsersByIdView   <- ['_js\\figma_app-main.js']
+  PageThumbnailsByFileKeyView   <- ['_js\\figma_app-main.js']
+  PaginatedAbandonedDraftFilesView   <- ['_js\\figma_app-main.js']
+  PaginatedPlanAiUsageByUsersV2View   <- ['_js\\figma_app-main.js']
+  PaginatedPlanAiUsageByUsersView   <- ['_js\\figma_app-main.js']
+  PaginatedPlanBillingPeriodAiUsageByUsersView   <- ['_js\\figma_app-main.js']
+  PaginatedUserAiChatThreadsView   <- ['_js\\figma_app-main.js']
+  PlanSwitcherTeamBadgesTeamView   <- ['_js\\figma_app-main.js']
+  ProjectCanView   <- ['_js\\figma_app-main.js']
+  PromoCodeSelectTeamContentUserTeamsView   <- ['_js\\figma_app-main.js']
+  ResourceHubItemsView   <- ['_js\\7435-ce1dc6726292bd56.min.js', '_js\\7435-ce1dc6726292bd56.min.js']
+  SeatRequestFlyoutTeamUserView   <- ['_js\\figma_app-main.js']
+  SharedWithYouFilesView   <- ['_js\\5911-80d3c1dad6a7a16f.min.js', '_js\\935-431f89677a39072c.min.js']
+  SharedWithYouProjectsView   <- ['_js\\5911-80d3c1dad6a7a16f.min.js', '_js\\935-431f89677a39072c.min.js']
+  SitesView   <- ['_js\\940032c6-b1c2c739c723c9e9.min.js']
+  SlidesAiFileDisabledForFilePickerView   <- ['_js\\figma_app-main.js']
+  StandaloneTeamMembersModalView   <- ['_js\\figma_app-main.js']
+  StandaloneTeamPlanPermsEnabledView   <- ['_js\\figma_app-main.js']
+  StatsigTeamsOrderView   <- ['_js\\figma_app-main.js']
+  StorybookSettingsViewDesignFileView   <- ['_js\\figma_app-main.js']
+  StreamlinedMakeFormView   <- ['_js\\935-431f89677a39072c.min.js']
+  SubscriptionFileView   <- ['_js\\935-431f89677a39072c.min.js']
+  TeamAdminConsoleView   <- ['_js\\469e6e40-f27da0e8f34b0858.min.js', '_js\\5911-80d3c1dad6a7a16f.min.js']
+  TeamAssociatedProfileUsersAdminsView   <- ['_js\\figma_app-main.js']
+  TeamByIdForPlanUserView   <- ['_js\\935-431f89677a39072c.min.js', '_js\\figma_app-main.js']
+  TeamByIdForPlanView   <- ['_js\\935-431f89677a39072c.min.js', '_js\\figma_app-main.js']
+  TeamCanView   <- ['_js\\figma_app-main.js']
+  TeamCreationWorkspaceView   <- ['_js\\figma_app-main.js']
+  TeamHasOtherPlanAdminsView   <- ['_js\\figma_app-main.js']
+  TeamMembersModalView   <- ['_js\\figma_app-main.js']
+  TeamPeopleTableView   <- ['_js\\figma_app-main.js']
+  TeamRoleRequestView   <- ['_js\\figma_app-main.js']
+  TeamTaxIdView   <- ['_js\\figma_app-main.js']
+  TeamUpgradeBannerView   <- ['_js\\figma_app-main.js']
+  TrashedFilesPageView   <- ['_js\\figma_app-main.js']
+  UnclaimedDomainUserView   <- ['_js\\figma_app-main.js']
+  UpgradeSectionHooksUserHasUpsellEligibleTeamView   <- ['_js\\figma_app-main.js']
+  UserAvatarView   <- ['_js\\figma_app-main.js']
+  UserColorProfilePreferenceView   <- ['_js\\figma_app-main.js']
+  UserFlagsView   <- ['_js\\figma_app-main.js']
+  UserGroupCanView   <- ['_js\\figma_app-main.js']
+  UserPageView   <- ['_js\\5911-80d3c1dad6a7a16f.min.js']
+  UserProfilePageByEditorTypeView   <- ['_js\\figma_app-main.js']
+  UserProfilePageView   <- ['_js\\figma_app-main.js']
+  UserTeamRoleRequestView   <- ['_js\\figma_app-main.js']
+  VersionHistoryView   <- ['_js\\figma_app-main.js']
+  WeaveFilePresenceView   <- ['_js\\figma_app-main.js']
+  WeaveRestrictedUserBannerView   <- ['_js\\figma_app-main.js']
+  WorkspaceDefaultTeamsView   <- ['_js\\figma_app-main.js']
+  WorkspacePinnedFileKeysView   <- ['_js\\figma_app-main.js']
+
+===== all names =====
+   AbandonedDraftFilesPageView
+   AcceptedView
+   AccountTypeRequestByIdView
+   ActiveAiChatThreadPaginatedView
+   ActiveAiChatThreadView
+   ActiveFileUsersForFileView
+   AddContextModalRecentDesignFilesView
+   AddContextModalSearchFileDraftStatusView
+   AddUnassignedTeamsModalView
+   AddWorkspacePinSearchFilesView
+   AddWorkspacePinSuggestedFilesView
+   AddWorkspacePinnedFileView
+   AdminNotificationsCountView
+   AdminRequestDashboardView
+   AdminRequestDetailView
+   AdminRequestsPageView
+   AdminSettingsSelectorView
+   AiAssistantCanvasView
+   AiAssistantKillSwitchView
+   AiChatThreadMessageCountView
+   AiCreditsBetaContextView
+   AiCreditsPermissionsView
+   AiCreditsPlanContextView
+   AiCreditsSeatContextView
+   AiMeterUsageView
+   AllowlistPluginsSectionView
+   AllowlistSettingsModalView
+   ApprovedLibrariesForWorkspaceView
+   AssetTransferReloadView
+   AssetsTabDetailView
+   AssistantOrgDesignSystemsBundleLibrariesView
+   AuthView
+   AutoRunPluginsView
+   BannersView
+   BaseNotificationsView
+   BillingGroupDashboardSettingsPageView
+   BranchingPermissionsView
+   BranchingSourceViewSidebarView
+   BrowseExtensionsOrgAllowlistView
+   BrowsePluginsCombinedListView
+   BrowsePluginsView
+   BrowseTemplatesView
+   BrowseWidgetsView
+   CanCreateTeamView
+   CheckoutSessionView
+   ChurnFrictionPersonalizedModalView
+   ChurnV2FrictionPersonalizedModalView
+   ClientReloadView
+   CmsManagerView
+   CodeView
+   CommentsDetailsView
+   CommunityLoggedInView
+   CommunityNotificationBellView
+   CommunityPlaygroundFileSelectorRecentFilesView
+   CommunityTryResourceRecentFilesView
+   CommunityUniversalPostingModalRecentFileKeysView
+   CommunityView
+   ComponentBrowserSettingsSidebarPackagesNavigationStackView
+   ConfiguredUpgradeRequestModalView
+   CooperTemplateAllView
+   CooperTemplateOrgView
+   CooperTemplateSearchView
+   CooperView
+   CreateIdpUserView
+   CurrentOrgBillingPeriodView
+   CurrentUserAssignedWorkspaceView
+   CurrentUserInStudentPlanView
+   CurrentUserInStudentPlusPlanView
+   CurrentUserIsMfaRequiredByMembershipOrgView
+   CurrentWorkspaceView
+   CustomSkillDetailView
+   CustomSkillsView
+   CustomToolFormView
+   DSAFileView
+   DSALibraryView
+   DSDocumentationPageRelationshipByAssetKeyView
+   DakotaTableView
+   DataView
+   DeleteWorkspacePinnedFileView
+   DesignFullPageView
+   DesignIngestionStatusView
+   DesignPrototypeAppView
+   DesignSystemBundleLatestEditView
+   DesignSystemBundleResourceLiveView
+   DesignSystemBundleView
+   DesignSystemView
+   DesignSystemsBundleEntrypointPermissionsView
+   DesignView
+   DesktopNewTabRecentFilesView
+   DesktopNewTabView
+   DesktopPushNotificationView
+   DesktopTabPreviewView
+   DetailView
+   DevHandoffView
+   DevModeMcpView
+   DeviceTryFileView
+   DraggableModalView
+   EditAccessModalView
+   EditButtonView
+   EditPostFormView
+   EditWorkspacePinnedFileView
+   EditorFilePickerRecentFilesByEditorTypeView
+   EnterpriseOrgAdminOnboardingSequenceView
+   EnterpriseOrgMetaContentView
+   ExpOneClickAskToEditOrgView
+   ExpOneClickAskToEditTeamView
+   ExpSocialProofExpansionOrgView
+   ExpSocialProofExpansionTeamView
+   ExtensionActivityLogHistoryView
+   ExtensionFormView
+   ExtensionRequestTableView
+   FacetedSearchPreviewRecentFilesView
+   FdBrowsePluginTileView
+   FigjamView
+   FigmaAppView
+   FigmakeFullView
+   FigmakeSettingsFullPageView
+   FigmakeSplitView
+   FigspecView
+   FileAiChatThreadsView
+   FileBrowserAssistantFilePreviewView
+   FileBrowserDraftsPageByEditorTypeV2View
+   FileBrowserDraftsPageV2View
+   FileBrowserDraftsViewBarView
+   FileBrowserFolderPageByEditorTypeV2View
+   FileBrowserFolderPageChildFoldersView
+   FileBrowserFolderPageV2View
+   FileBrowserOrgPageAllTeamsView
+   FileBrowserOrgPageJoinedTeamsView
+   FileBrowserOrgPageUnassignedTeamsView
+   FileBrowserOrgWorkspacesView
+   FileBrowserPaginatedRecentFilesByEditorTypeView
+   FileBrowserPaginatedRecentFilesView
+   FileBrowserProjectPageTitleView
+   FileBrowserRecentFilesByEditorTypeView
+   FileBrowserRecentFilesView
+   FileBrowserTeamPageFolderItemsView
+   FileBrowserView
+   FileBrowserWorkspacePageTeamsView
+   FileCanView
+   FileCreationDropdownView
+   FileCreationPermissionsView
+   FileCustomToolsMetadataView
+   FileExpirationView
+   FileFavoritedMakeVersionsForNodeView
+   FileFavoritedMakeVersionsView
+   FileGenericCachedPreviewsView
+   FileMakeVersionsForNodeView
+   FileMakeVersionsView
+   FileMoveChildFolderListView
+   FileMoveV2FolderCreationTeamView
+   FileOperationsView
+   FileOrgExtensionSettingsView
+   FilePickerView
+   FileTemplateView
+   FileView
+   FileWorkspacePinActionsView
+   FlyoutView
+   FolderBannerView
+   FolderCanView
+   FolderFilesQuerySyncView
+   FolderJoinLinksSupportedForFolderView
+   FolderLocationView
+   FolderMoveModalPlanTeamsView
+   FolderMoveModalView
+   FolderPageView
+   FolderSettingsDisconnectedProjectShareCopyOnboardingOverlayView
+   FolderUntrashedFilesAndSitesView
+   FontFileForOrgView
+   FontFileForTeamView
+   FontFileForUserView
+   FrecencyHistoryView
+   FromSourceView
+   FullWidthEmptyStateView
+   FullscreenPageView
+   GenericTileTitleContentsViewOnlyLabelView
+   GithubStatusView
+   GoogleClassroomIntegrationView
+   GridView
+   HasCollectionsView
+   HubFileDetailView
+   Icon24GridView
+   IdpUserView
+   IllustrationView
+   IndependentCornerRadiusView
+   InnerWorkspaceAdminSettingsPageView
+   IpAllowlistRangesView
+   LazyCooperView
+   LazyDesignView
+   LazyDevHandoffView
+   LazyFigjamView
+   LazyFigspecView
+   LazyIllustrationView
+   LazySitesView
+   LazySlidesView
+   LazyWeaveView
+   LibrariesViewFilterStatesView
+   LibraryCodeFileEditorSplitView
+   LibraryComponentView
+   LibraryItemsCompactView
+   LibraryModalStorybooksView
+   LibraryStateGroupView
+   LibraryStyleView
+   LibrarySubscriptionView
+   LibraryVariableView
+   LicenseGroupAdminSettingsPageView
+   LicenseGroupSeatCountsView
+   LimitedSpaceSharedProjectsView
+   ListCollectionsView
+   ListFieldSchemasView
+   ListItemsView
+   ListView
+   LockClientView
+   LockedAccountView
+   MakeEditsDebugView
+   MakeEnvironmentConfigurationVariablesView
+   MakeFormView
+   McpConnectorsView
+   McpOauthClientsView
+   McpRemoteActivityView
+   MediaExportJobsForFileView
+   MemberFlyoutInfoView
+   MfaRequiredAppView
+   MissingLibrariesView
+   ModifyPlanUserSeatModalView
+   MoveDraftsNudgeV2OverlayRecentFilesView
+   MoveDraftsTeamNudgeView
+   MoveFileFavoritesView
+   NavigationOrgUserDataView
+   NestedFoldersEnabledView
+   NodeAiChatThreadsBySessionView
+   NonEnterpriseOrgMetaContentView
+   NotificationExperimentInfoView
+   NuxNewFileFolderView
+   NuxTeamRolesView
+   ObjectsPanelView
+   OneCollectionView
+   OneItemView
+   OrgAdminSettingsPageView
+   OrgAdminUserMinimalFieldsView
+   OrgAdminUserView
+   OrgAdminView
+   OrgByIdForPlanUserView
+   OrgByIdForPlanView
+   OrgDesignSystemsBundleView
+   OrgDomainManagementPageView
+   OrgGuestSettingsView
+   OrgHasSeatsManagedViaScimView
+   OrgHasWorkspacesView
+   OrgIdpGroupsView
+   OrgIdpManagementPageView
+   OrgInviteModalView
+   OrgLocalityMigrationsView
+   OrgMfaGuestInfoView
+   OrgMfaMemberInfoView
+   OrgPageView
+   OrgSharedSettingView
+   OrgTaxIdView
+   OrgTeamView
+   OrgTeamsInAdminView
+   OrgUserIsMfaRestrictedView
+   OrgUsersByIdView
+   OrgWidgetsView
+   OrgWithWorkspacesWebPublishingSettingView
+   OrgWorkspacesView
+   OrgWorkspacesWithControlSettingsView
+   OwnedCustomToolsView
+   PageThumbnailsByFileKeyView
+   PaginatedAbandonedDraftFilesView
+   PaginatedAbandonedDraftsView
+   PaginatedPlanAiUsageByUsersV2View
+   PaginatedPlanAiUsageByUsersView
+   PaginatedPlanBillingPeriodAiUsageByUsersView
+   PaginatedUserAiChatThreadsView
+   PendingAdminRequestView
+   PendingConfirmedRenewalSeatCountsView
+   PlanAdminRecommendedResourcesEnabledView
+   PlanCanConnectView
+   PlanFilterOptionsView
+   PlanPromoView
+   PlanRenewalConfirmationView
+   PlanRequestUpgradeView
+   PlanSharedContainerSettingsView
+   PlanSwitcherTeamBadgesTeamView
+   PluginAllowlistManagementModalView
+   PluginPreferencesView
+   PolicyAcknowledgementStatusView
+   PostFormView
+   PreviewView
+   ProductTrialsView
+   ProjectCanView
+   PromoCodeSelectTeamContentUserTeamsView
+   PrototypeCanView
+   PrototypeView
+   ProvisionalAccessOrgSelfServeView
+   PublishingModalView
+   RecentIdleTimeoutSettingChangeView
+   RecentNetworkControlRejectionView
+   RecentlyUsedActionsView
+   RecentsAndSavedView
+   RepoBranchCountByIdView
+   RepoCanView
+   RequestEditView
+   ResourceConnectionInviteByIdView
+   ResourceHubItemsView
+   ResourceRecommendScopesView
+   RewriteView
+   SavedView
+   SearchFilterWorkspaceView
+   SearchPageView
+   SearchResultView
+   SearchView
+   SeatRequestFlyoutTeamUserView
+   SeatRequestsPageView
+   SeatRequestsTableMiniView
+   SecurityView
+   SelectFolderView
+   SharedVrDraftTooltipView
+   SharedWithYouFilesView
+   SharedWithYouProjectsView
+   SitesView
+   SlidesAiFileDisabledForFilePickerView
+   SlidesAudienceView
+   SlidesPopoutView
+   SlidesPresenterView
+   SlidesView
+   StandaloneTeamMembersModalView
+   StandaloneTeamPlanPermsEnabledView
+   StatsigTeamsOrderView
+   StorybookDetailView
+   StorybookSettingsViewDesignFileView
+   StorybookSettingsViewMainStorybookView
+   StorybookTileView
+   StreamlinedMakeFormView
+   SubscriptionFileView
+   SupabaseAuthView
+   TeamAdminConsoleView
+   TeamAssociatedProfileUsersAdminsView
+   TeamByIdForPlanUserView
+   TeamByIdForPlanView
+   TeamCanView
+   TeamCreationWorkspaceView
+   TeamHasOtherPlanAdminsView
+   TeamMembersModalView
+   TeamPeopleTableView
+   TeamRoleRequestView
+   TeamTaxIdView
+   TeamUpgradeBannerView
+   ThreadListView
+   ThreadView
+   TierUpgradeFlowView
+   TilesItemsView
+   ToSourceView
+   ToggleView
+   ToggledDevModeSettingsView
+   TooltipView
+   TrashedFilesPageView
+   TrashedFoldersPageView
+   UnavailableView
+   UnclaimedDomainUserView
+   UpgradeEligibilityFolderView
+   UpgradeEligibilityView
+   UpgradeSectionHooksUserHasUpsellEligibleTeamView
+   UsageBucketsView
+   UseStarterPromptRecentsView
+   UserAvatarView
+   UserColorProfilePreferenceView
+   UserFlagsView
+   UserGroupCanView
+   UserPageView
+   UserProfilePageByEditorTypeView
+   UserProfilePageView
+   UserTeamRoleRequestView
+   UtilsNuxFolderRolesView
+   VersionHistoryView
+   WeaveAiModelsPageView
+   WeaveEditLockView
+   WeaveFilePresenceView
+   WeaveRestrictedUserBannerView
+   WeaveWorkflowNameView
+   WorkspaceAdminLibrariesSectionView
+   WorkspaceAdminOnboardingOverlayView
+   WorkspaceAdminSettingsPageView
+   WorkspaceAdminSettingsView
+   WorkspaceAdminsView
+   WorkspaceDefaultTeamsView
+   WorkspaceInfoView
+   WorkspacePageMembersView
+   WorkspacePageView
+   WorkspacePinnedFileKeysView
+   WorkspaceSelectorView
+   WorkspaceSuggestedPinsView
+   WorkspacesCanAdminView
+   WorkspacesDirectoryView
+   WorkspacesTableView

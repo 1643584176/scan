@@ -1,0 +1,294 @@
+_figma_reg_dump.py                         -*- coding: utf-8 -*-
+_figma_reqid.py                            -*- coding: utf-8 -*-
+_figma_reqid2.py                           -*- coding: utf-8 -*-
+_figma_reqid3.py                           -*- coding: utf-8 -*-
+_figma_runtime_scan.py                     -*- coding: utf-8 -*-
+_figma_runtime_scan2.py                    -*- coding: utf-8 -*-
+_figma_r1_foldersearch.py                  -*- coding: utf-8 -*-
+_figma_r2_resources.py                     -*- coding: utf-8 -*-
+_figma_r3_query.py                         -*- coding: utf-8 -*-
+_figma_r4a_202check.py                     -*- coding: utf-8 -*-
+_figma_r4b_query.py                        -*- coding: utf-8 -*-
+_figma_r4c_params.py                       -*- coding: utf-8 -*-
+_figma_r5a_search.py                       -*- coding: utf-8 -*-
+_figma_r6_enum.py                          -*- coding: utf-8 -*-
+_figma_r7_searchpage.py                    -*- coding: utf-8 -*-
+_figma_r8_searchapi.py                     -*- coding: utf-8 -*-
+_figma_r9_syntax.py                        -*- coding: utf-8 -*-
+_figma_r10_fields.py                       -*- coding: utf-8 -*-
+_figma_r11_truth.py                        -*- coding: utf-8 -*-
+_figma_r12_readface.py                     -*- coding: utf-8 -*-
+_figma_r13_detail.py                       -*- coding: utf-8 -*-
+_figma_r14_vers.py                         -*- coding: utf-8 -*-
+_figma_r15a_code.py                        -*- coding: utf-8 -*-
+_figma_r15b_coll.py                        -*- coding: utf-8 -*-
+_figma_r16_site.py                         -*- coding: utf-8 -*-
+_figma_r16b_site.py                        -*- coding: utf-8 -*-
+_figma_r16c_site.py                        -*- coding: utf-8 -*-
+_figma_r17_analyze.py                      -*- coding: utf-8 -*-
+_figma_r18_dl.py                           -*- coding: utf-8 -*-
+_figma_r19_authz.py                        -*- coding: utf-8 -*-
+_figma_r20_gap.py                          -*- coding: utf-8 -*-
+_figma_r21_bview.py                        -*- coding: utf-8 -*-
+_figma_r22_ab.py                           -*- coding: utf-8 -*-
+_figma_r23_bid.py                          -*- coding: utf-8 -*-
+_figma_r24_cms.py                          -*- coding: utf-8 -*-
+_figma_r25_cmsjson.py                      -*- coding: utf-8 -*-
+_figma_r26_filepage.py                     -*- coding: utf-8 -*-
+_figma_r29_js_sites.py                     -*- coding: utf-8 -*-
+_figma_r30_sitejs.py                       -*- coding: utf-8 -*-
+_figma_r31_prev.py                         -*- coding: utf-8 -*-
+_figma_r32_views.py                        -*- coding: utf-8 -*-
+_figma_r33_cmsviews.py                     -*- coding: utf-8 -*-
+_figma_r34_cmsws.py                        -*- coding: utf-8 -*-
+_figma_r35a_dup.py                         -*- coding: utf-8 -*-
+_figma_r35b_cmsws2.py                      -*- coding: utf-8 -*-
+_figma_r36_copy.py                         -*- coding: utf-8 -*-
+_figma_r37a2.py                            -*- coding: utf-8 -*-
+_figma_r37a3.py                            -*- coding: utf-8 -*-
+_figma_r37a4.py                            -*- coding: utf-8 -*-
+_figma_r37a5.py                            -*- coding: utf-8 -*-
+_figma_r37a_cms_create.py                  -*- coding: utf-8 -*-
+_figma_r37b_mkcms.py                       -*- coding: utf-8 -*-
+_figma_r37c_sites.py                       -*- coding: utf-8 -*-
+_figma_r37d_gates.py                       -*- coding: utf-8 -*-
+_figma_r38_cmstry.py                       -*- coding: utf-8 -*-
+_figma_r39_sitetpl.py                      -*- coding: utf-8 -*-
+_figma_r40_tplana.py                       -*- coding: utf-8 -*-
+_figma_r41_sitecopy.py                     -*- coding: utf-8 -*-
+_figma_r42_cmsmatrix.py                    -*- coding: utf-8 -*-
+_figma_r42a_js.py                          -*- coding: utf-8 -*-
+_figma_r42b_js.py                          -*- coding: utf-8 -*-
+_figma_r43_canary.py                       -*- coding: utf-8 -*-
+_figma_r44a_sitesearch.py                  -*- coding: utf-8 -*-
+_figma_r44b_zsearch.py                     -*- coding: utf-8 -*-
+_figma_r45_keyhunt.py                      -*- coding: utf-8 -*-
+_figma_r45b_ctx.py                         -*- coding: utf-8 -*-
+_figma_r45c_ctx.py                         -*- coding: utf-8 -*-
+_figma_r46a_ls.py                          -*- coding: utf-8 -*-
+_figma_r47_anonvs.py                       -*- coding: utf-8 -*-
+_figma_r47b_body.py                        -*- coding: utf-8 -*-
+_figma_r48a_links.py                       -*- coding: utf-8 -*-
+_figma_r49_pw.py                           -*- coding: utf-8 -*-
+_figma_r50a_js.py                          -*- coding: utf-8 -*-
+_figma_r50b_link.py                        -*- coding: utf-8 -*-
+_figma_r51_private.py                      -*- coding: utf-8 -*-
+_figma_r52_pwcmp.py                        -*- coding: utf-8 -*-
+_figma_r52a_pw.py                          -*- coding: utf-8 -*-
+_figma_r53_wsdump.py                       -*- coding: utf-8 -*-
+_figma_r54_anonrecv.py                     -*- coding: utf-8 -*-
+_figma_r55_recvscan.py                     -*- coding: utf-8 -*-
+_figma_r56_recentviewers.py                -*- coding: utf-8 -*-
+_figma_r57_reverify.py                     -*- coding: utf-8 -*-
+_figma_r58_aichatws.py                     -*- coding: utf-8 -*-
+_figma_r59_cmsapi.py                       -*- coding: utf-8 -*-
+_figma_r60_cmsctx.py                       -*- coding: utf-8 -*-
+_figma_r61_covercheck.py                   -*- coding: utf-8 -*-
+_figma_r62_sqlparam.py                     -*- coding: utf-8 -*-
+_figma_r63_dbid.py                         -*- coding: utf-8 -*-
+_figma_r64_wsval.py                        -*- coding: utf-8 -*-
+_figma_r65_correctbool.py                  -*- coding: utf-8 -*-
+_figma_r66_wsdeep.py                       -*- coding: utf-8 -*-
+_figma_r67_fkeymatrix.py                   -*- coding: utf-8 -*-
+_figma_r68_nullfull.py                     -*- coding: utf-8 -*-
+_figma_r69_oracle.py                       -*- coding: utf-8 -*-
+_figma_r70_search.py                       -*- coding: utf-8 -*-
+_figma_r71_search.py                       -*- coding: utf-8 -*-
+_figma_r72_enum.py                         -*- coding: utf-8 -*-
+_figma_r73_newpos.py                       -*- coding: utf-8 -*-
+_figma_r74_dig.py                          -*- coding: utf-8 -*-
+_figma_r75_dig.py                          -*- coding: utf-8 -*-
+_figma_r76_dig.py                          -*- coding: utf-8 -*-
+_figma_r77_access.py                       -*- coding: utf-8 -*-
+_figma_r78_fs.py                           -*- coding: utf-8 -*-
+_figma_r79_dig.py                          -*- coding: utf-8 -*-
+_figma_r80_parse.py                        -*- coding: utf-8 -*-
+_figma_r80_peek.py                         -*- coding: utf-8 -*-
+_figma_r80_wsdig.py                        -*- coding: utf-8 -*-
+_figma_r81_put.py                          -*- coding: utf-8 -*-
+_figma_r82_free.py                         -*- coding: utf-8 -*-
+_figma_r83_search.py                       -*- coding: utf-8 -*-
+_figma_r84_dig.py                          -*- coding: utf-8 -*-
+_figma_r84_three.py                        -*- coding: utf-8 -*-
+_figma_r85_rt.py                           -*- coding: utf-8 -*-
+_figma_r86_import.py                       -*- coding: utf-8 -*-
+_figma_r87_fast.py                         -*- coding: utf-8 -*- r87 快节奏(0.4s): 差分复现 + rt位null-byte + 400错误body + 稳定对照
+_figma_r88_num.py                          -*- coding: utf-8 -*- r88: folder_search org_id/team_id 纯数字边界矩阵(类型墙穿透探针) 0.4s r77 已证: 非数字 → 400 route typechecking "Non-number characters in quoted in
+_figma_r89_rs.py                           -*- coding: utf-8 -*- r89: recent_search null 变量隔离 + GET读回 + 恢复; 快节奏0.4s
+_figma_r90_wsdump.py                       -*- coding: utf-8 -*- r90: WS 读回 ListItemsView 全表 -> 清点(只读,不删)
+_figma_r91_orgdig.py                       -*- coding: utf-8 -*- r91: 找 A 账号真实 org/team id(user/state) + folder_search org_id/team_id 小样本枚举
+_figma_r92_key.py                          -*- coding: utf-8 -*- r92: 用真实 team id 打通 folder_search 判别面!
+_figma_r93_dig.py                          -*- coding: utf-8 -*- r93: 挖 user_state 里的 team/org/folder/project 结构 + 找 B 账号 cookie 文件
+_figma_r94_jsdig.py                        -*- coding: utf-8 -*- r94: 挖 folder_search 调用点参数 + user_state roles 详情
+_figma_r95_jsdig2.py                       -*- coding: utf-8 -*- r95: 挖 resource_connection_invite 调用点 + folder 名 + 参数真名
+_figma_r96_param.py                        -*- coding: utf-8 -*- r96: folder_search 判别面打通二连: facet/query/folder_id 真参数
+_figma_r97_matrix.py                       -*- coding: utf-8 -*- r97: 判别力激活后的 md 全技术矩阵! query 位(team 上下文, 结果非空)
+_figma_r98_dump.py                         -*- coding: utf-8 -*- r98: dump folder_search 响应全文 + diff 找出 len 魔数来源
+_figma_r99_diff.py                         -*- coding: utf-8 -*- r99: 对比 r80(基线) vs r90(现状) -> 生成清理清单
+_figma_r99b_parse.py                       -*- coding: utf-8 -*- r99b: 结构化解析 WS dump -> 精确 diff r80 vs r90
+_figma_r100_deljs.py                       -*- coding: utf-8 -*- r100: 挖 delete item 端点形态
+_figma_r101_clean.py                       -*- coding: utf-8 -*- r101: 清理 17 个测试 item (DELETE), 再 WS 读回验收
+_figma_r102_verify.py                      -*- coding: utf-8 -*- r102: 从 _r101_ws.json 结构化提取所有 item 的 (id, position) + 找 COOKIE_B
+_figma_r103_bdig.py                        -*- coding: utf-8 -*- r103: 从 _p112_state_B.json 挖 B 账号 team/org id
+_figma_r104_idor.py                        -*- coding: utf-8 -*- r104: 跨租户 IDOR 决定战: A 的 cookie + B 的 team_id
+_figma_r105_ident.py                       -*- coding: utf-8 -*- r105: 标识符位矩阵! URL 路径 id(item/field/collection)畸形注射(安全:畸形 id 匹配不到合法资源)
+_figma_r106_mdgap1.py                      -*- coding: utf-8 -*- r106: md 技术补完①——Rails 参数语法(query[]/x[k]) + HPP 重复参数 + 编码差异层(%25xx双重/%C0%A7 overlong/U+2019/反斜杠)
+_figma_r107_mdgap2.py                      -*- coding: utf-8 -*- r107: md 技术补完②——CMS 写面:JSON 转义层间绕过(\u0027 文本绕清洗) + 反斜杠 + 全角 + 类型混淆 全部在临时 item 上打(打完 DELETE),不碰真实 6 items
+_figma_r107b_ws.py                         -*- coding: utf-8 -*- r107b: WS 读回 r107 导入的临时 item——desc 存储态(+item id 供 DELETE)
+_figma_r107c_ctx.py                        -*- coding: utf-8 -*- r107c: 打印每个 r107 slug 后 450 字符原始上下文,确定存储结构
+_figma_r107d_v1.py                         -*- coding: utf-8 -*- r107d: V1 desc 存储值(slug 前窗口)+ 全 itemId 清单
+_figma_r108_mdgap3.py                      -*- coding: utf-8 -*- r108: md 补完③——PUT类型混淆 + import字符族 + recent_search类型混淆 + JS挖createItem形态
+_figma_r108b_ws.py                         -*- coding: utf-8 -*- r108b: WS 读回 r108 字符族存储态 + U组未落库验证 + r84 脚本 createItem 形态抓取
+_figma_r109_ci.py                          -*- coding: utf-8 -*- r109: createItem 端点补打(类型混淆+JSON转义) + DELETE r107/r108 全部 13 个临时 item
+_figma_r109b_ws.py                         -*- coding: utf-8 -*- r109b: 最终 WS 读回——B1/B2 createItem 存储态 + 全量 item 验收清单
+_figma_r110_final.py                       -*- coding: utf-8 -*- r110: 最终验收——WS 读回 item 清单 + 残留判定
+_figma_r111_folders.py                     -*- coding: utf-8 -*- r111: DB 方向新面开打——folders 域(paginated_files 列名位 S2)+ activity_logs 可达性 全程只读(GET),零破坏
+_figma_r111b.py                            -*- coding: utf-8 -*- r111b: folders 域正式开打(FID=634606972 已确认) + teams/folders 全量 dump
+_figma_r111c.py                            -*- coding: utf-8 -*- r111c: folders 域深挖——sort_column 白名单枚举 + file_type 行为 + page_size=-1 语义 + can_move 补参
+_figma_r111d.py                            -*- coding: utf-8 -*- r111d: file_type 深打(过滤位,S2/Q 全套)+ sort_column 大小写变体 + figjam 复核
+_figma_r111e.py                            -*- coding: utf-8 -*- r111e: 创新打法——内部名直发(editor_type)+ HPP + 双重编码 + null-byte(枚举位层间)
+_figma_r111f.py                            -*- coding: utf-8 -*- r111f: folders 域对账补齐(overlong/全角/反斜杠)——R4/R5/R6 在三类值位上的收尾
+_figma_r112.py                             -*- coding: utf-8 -*- r112: DB 语义清单第二批 —— 新域到达性探测 + 判别面初扫 目标域: v2/folders(横比 v1) / folder_items / file_move / unsplash / teams 统计 / design_systems / f
+_figma_r113.py                             -*- coding: utf-8 -*- r113: 形状探测 —— users/batched(裸数组已到 handler→500) + folder_items/content_summary(元素须对象) + file_key 重取(page_size=10) + file_move dum
+_figma_r114_ctx.py                         -*- coding: utf-8 -*- r114 ctx: JS 调用上下文挖掘(file_move/suggested、users/batched)+ D4 ffiles 提取
+_figma_r115.py                             -*- coding: utf-8 -*- r115: 参数名到手后的首轮 —— users/batched(GET userIds) / file_move/suggested(org_id) / unsplash(file key) / content_summary(mode=trash|de
+_figma_r116_ctx.py                         -*- coding: utf-8 -*- r116 ctx: content_summary 调用上下文(元素字段名)+ user_ids 参数转换行为
+_figma_r117.py                             -*- coding: utf-8 -*- r117: content_summary 真形态({folder:{id}}/{file:{key}}) + file_move/suggested org_id 判别实验 + users/batched(user_ids)重打 + can_move_b
+_figma_r118.py                             -*- coding: utf-8 -*- r118: can_move_bulk 真形态(team_root/folder destination)+ 注入判别(team_id/parent_folder_id) + content_summary file.key 注入判别(字符串位) + us
+_figma_r118_ctx.py                         -*- coding: utf-8 -*- r118 ctx: canMoveBulk 调用点(destination 字段构造)+ file.key 来源语义
+_figma_r118_ctx2.py                        -*- coding: utf-8 -*- r118 ctx2: folderItemsCanMoveBulk 调用点 + destination 字段构造
+_figma_r118_ctx3.py                        -*- coding: utf-8 -*- r118 ctx3: bulk move UI 层 query 参数构造(planLimitErrorCode 使用点)
+_figma_r119.py                             -*- coding: utf-8 -*- r119: 第三批域到达性探测(insights 表名位 / code_connect / design_systems / 字符串 key 位 / 统计导出类)
+_figma_r120.py                             -*- coding: utf-8 -*- r120: 活端点 dump(E8 last_active/E10 curator/F1 figjam)+ 类型层形态探测(E8/D1/D3)
+_figma_r121.py                             -*- coding: utf-8 -*- r121: teams/{t}/users 列表参数面(offset/limit 分页位)+ 未测读端点到达性 + 写端点仅空探
+_figma_r121_ctx.py                         -*- coding: utf-8 -*- r121 ctx: files_batch / bulk_favorite_resources_v2 请求形态挖掘
+_figma_r122.py                             -*- coding: utf-8 -*- r122: user/teams 参数面(org_id/include_*)+ 新端点到达性(deletion_impact/scim/email_features/help-center) + files_batch 零匹配形态补全(破坏性端点:严格无引
+_figma_r122_ctx.py                         -*- coding: utf-8 -*- r122 ctx: /api/user/* 调用形态(teams/segments)+ segments 参数
+_figma_r122_ctx2.py                        -*- coding: utf-8 -*- r122 ctx2: getTeams / getUserTeams 调用点(query 参数名)+ deletion_impact/scim 调用点
+_figma_r123.py                             -*- coding: utf-8 -*- r123: teams 统计群(读)+ subscriptions + ml export + community/plugins/tax/saml/items 到达性
+_figma_r124.py                             -*- coding: utf-8 -*- r124: ml/export/status 500 细探 + tax/validate_vat 参数面 + validate_currency + teams deleted 对照
+_figma_r125.py                             -*- coding: utf-8 -*- r125: validate_vat 真参数(vat_gst_id/country_code/region)+ validate_currency 补 team_id + validate_address 真形态(地址自由文本字段探)
+_figma_r125_ctx.py                         -*- coding: utf-8 -*- r125 ctx: validate_vat / validate_currency 调用形态(参数真名)
+_figma_r126.py                             -*- coding: utf-8 -*- r126: validate_vat 换 VAT 国家(DE/GB)+ team_id 数字断言绕过形态
+_figma_r127_ctx.py                         -*- coding: utf-8 -*- r127 ctx: graphql 端点普查(www 域)+ 剩余域浅探目标确认
+_figma_r128.py                             -*- coding: utf-8 -*- r128: 新域读端点到达性——community/cms slug + profile handle + follows + pinned/spell/tagged
+_figma_r129.py                             -*- coding: utf-8 -*- r129: 时间盲注复核(org_id/user_ids 是 parse 崩还是 SQL 执行)+ admin 域探测 + ml 根因
+_figma_r130.py                             -*- coding: utf-8 -*- r130: file 域 path 字符串 fileKey 注入形态(从未打过!)+ file 域其它端点 + 数字 id 端点群
+_figma_r131.py                             -*- coding: utf-8 -*- r131: 对照实验——fileKey 注入形态 403 是"特殊分支"还是"不存在key 的通用 fallback"
+_figma_r132.py                             -*- coding: utf-8 -*- r132: 计费面基线侦察——orgs/subscriptions/plans(先拿 org id/plan id 再打子端点)
+_figma_r133.py                             -*- coding: utf-8 -*- r133: lookup_by_component_name 形态探测(fake key+零匹配)+ items/file_diff/page_status 形态
+_figma_r134.py                             -*- coding: utf-8 -*- r134: 深度单点——①lookup_by_component_name 用 FK2 当 libraryKey ②file_diff POST 形态 ③fonts 参数面 ④recent_prototypes 内容
+_figma_r135.py                             -*- coding: utf-8 -*- r135: file_diff 参数形态深挖(fromFileVersionId/direction)+ versions 域 + code_connect FK2 状态
+_figma_r136.py                             -*- coding: utf-8 -*- r136: file_diff query 参数形态重打 + bulk_map 元素形态
+_figma_r137.py                             -*- coding: utf-8 -*- r137: file_diff 正确参数名形态链(diff_version/from_file_version_id/migration_version/nodes_to_diff)
+_figma_r138.py                             -*- coding: utf-8 -*- r138: /api/versions/{FK2}——版本列表(拿真实 version id 用来喂 file_diff)
+_figma_r139.py                             -*- coding: utf-8 -*- r139: versions 参数面注入形态(column/secondary_column=排序列名!)+ file_diff 真实 version id
+_figma_r140.py                             -*- coding: utf-8 -*- r140: versions before 游标 500 判别(时间解析崩 vs SQL 崩)+ full cursor 激活
+_figma_r141.py                             -*- coding: utf-8 -*- r141: file_proxy 新域探测 + versions 矛盾复核
+_figma_r142.py                             -*- coding: utf-8 -*- r142: 真实资源激活(HAR 派生 key)+ 新面首探 + versions 游标矩阵补齐
+_figma_r143_sb.py                          -*- coding: utf-8 -*- r143: secondary_before 数字游标槽 —— 无引号 SQL 注入矩阵(布尔对/时间盲注/引号对照)
+_figma_r144_clean.py                       -*- coding: utf-8 -*- r144: A)清洗层语义判决(全局删除 vs 边缘剥离);B)file_diff 真实会话头解锁
+_figma_r145_construct.py                   -*- coding: utf-8 -*- r145: versions SQL 原始构造反推 S0/S1 无参与单参全量dump(看他们返回的游标结构) / S2 column 值域枚举 S3 before 时间曲线+格式容错(比较符/解析器身份) / S4 secondary 语义
+_figma_r146_limit.py                       -*- coding: utf-8 -*- r146: versions 原始构造深挖 A page_size 槽(LIMIT 语义) / B sc=date 崩溃路径 + sb 数值边界 C 比较字段判定(created_at vs edited_at / 时区) / D before 解析器身份
+_figma_r147_default.py                     -*- coding: utf-8 -*- r147: versions 原始构造收口战 F column=default 的 before 类型(数字游标?) / G pagination 全文dump(找 next_page) H 解析器字节级(引号删除vs容错/小数边界/补零/Z后缀/sb通道
+_figma_r148_after.py                       -*- coding: utf-8 -*- r148: versions 构造模型收口 K after 方向判定 / L int64 边界 / M created_at 隐藏小数 bisection / N page_size 钳位回声 / O sc=date 下 sb 是否参与过滤
+_figma_r149_default.py                     -*- coding: utf-8 -*- r149: "去掉入参"矩阵 + 完美入参(PG 语义收口) P 缺省/空值/单参分支 / Q 重复参数与大小写别名 / R f 二分 + 解析器身份 + sb tie-break 边界 + IHt8 dump
+_figma_r150_pvalue.py                      -*- coding: utf-8 -*- r150: P 真值双边夹逼 + IHt8 阈值曲线 + secondary_after 配对规则 S FK2 before 精分(.0395~.0425) / T FK2 after 双边 / U IHt8 双基准扫描 / V secondary_aft
+_figma_r151_kvalue.py                      -*- coding: utf-8 -*- r151: K 真值 µs 二分 + tie-break 触发(行值比较实证) A FK2 µs 二分(41992~42481µs) / B tie-break 组(before=K, sb=REAL±1; after=K, sa=REAL±1; sc=d
+_figma_r152_orcheck.py                     -*- coding: utf-8 -*- r152: OR 型 WHERE 判别 + IHt8 µs 精分 + 交叉验证 X 超界主游标 x sb/sa 变体(before=.042340 / after=.042338) → 1=OR拼接 / 0=WHERE无sb C IHt8 µs 二分([5
+_figma_r153_verify.py                      -*- coding: utf-8 -*- r153: 模型预言检验(严格比较 + OR 运算符判定 + 往返) FK2 created=42340µs, IHt8 created=513342µs Z before/after 主假 x sb/sa 变体判运算符 / W 预言(after=+1µs
+_figma_r154_pathinj.py                     -*- coding: utf-8 -*- r154: file_key 路径位注入(核心新面) + query 编码族 + POST/body 通道 + 参数名撞击
+_figma_r155_commentfam.py                  -*- coding: utf-8 -*- r155: 注释族/条件消失族 槽位全覆盖(versions) + folder_search 注释与通配符放大 + 新搜索面首打
+_figma_r156_hubprof.py                     -*- coding: utf-8 -*- r156: hub_profiles 注入族(新活面首打) + search/resources 补参打 + versions 块注释追 + folder_search 通配符对照
+_figma_r157_a3puzzle.py                    -*- coding: utf-8 -*- r157: hub_profiles A3 谜题(874B 是什么) + resources resource_type 枚举 + versions 块注释修复重发
+_figma_r158_discard.py                     -*- coding: utf-8 -*- r158: versions 块注释"丢弃vs剥除"分离实验(1970) + plugin 搜索注入族 + resource_type 枚举
+_figma_r159_neutralize.py                  -*- coding: utf-8 -*- r159: "参数中性化"铁证(sc+sb 配对) + 尾字符宽容矩阵(1970 判据) + plugin hits 复核 + file_metadata 结构
+_figma_r160_striptable.py                  -*- coding: utf-8 -*- r160: 尾剥离字符全集(2030判据: 0=剥后生效 / 500=不可剥 / 1=参数级异常) + 引号上下文 + 纯垃圾
+_figma_r161_crossparam.py                  -*- coding: utf-8 -*- r161: 跨参数注释对(before=/* ... sb=*/0) + 头部注释剥离判定 + 各槽注释残渣行为
+_figma_r162_headmatrix.py                  -*- coding: utf-8 -*- r162: 头部符号矩阵(补齐 头/尾 净剥对称性) + 横线族
+_figma_r163_verify_matrix.py               -*- coding: utf-8 -*- r163: 自有文件验证矩阵(仅记录: 状态码 / 响应条数 / 是否跨文件) 无害: 全部 GET; 文件=自有无害文件 FK2、IHt8; 不存在key用 22A; 无任何写操作
+_figma_r164_dup_pin.py                     -*- coding: utf-8 -*- r164: 补钉——完整body看游标结构 + 重复参数"取首/取尾"判定 + 重复sb复核
+_figma_r165_pagination.py                  -*- coding: utf-8 -*- r165: pagination 完整提取 + server 游标URL回打(翻页往返) + ps钳位入游标 + 重复sb取尾
+_figma_r165b_nexturl.py                    -*- coding: utf-8 -*- r165b: 修复 P3 —— 回打 F2(ps=1) 的 next_page URL(after/sa 成对游标 server 版)
+_figma_r166_newfaces_smoke.py              -*- coding: utf-8 -*- r166: 新面探活(activity_logs/recent、export、users/batched、make_libraries_by_ids、related_links、by_content) 全只读 GET;不碰 POST 写接口
+_figma_r167_newfaces_inj.py                -*- coding: utf-8 -*- r167: 活面注入族 —— users/batched(逗号串) / make_libraries_by_ids(ids[]) / resources/by_content_ids_and_types(POST content_id) 全只读;空数据面判
+_figma_r168_postfaces.py                   -*- coding: utf-8 -*- r168: 方法修正面 POST 补打 —— files/related_links(file_keys数组) + activity_logs/export(org_id+时间)
+_figma_r169_realids.py                     -*- coding: utf-8 -*- r169: 拿"真实存在的社区 id" —— 为 by_content_ids_and_types / users/batched 造有数据基线
+_figma_r170_baseline_inj.py                -*- coding: utf-8 -*- r170: 有数据基线的注入差测 —— by_content_ids_and_types(真实UUID) + users/batched(真实uid)
+_figma_r171_self_uid.py                    -*- coding: utf-8 -*- r171: batched 用"自己"uid(必然可见?) + by_content 基线复核/A3慢发复核
+_figma_r172_empty_anatomy.py               -*- coding: utf-8 -*- r172: 空响应全文解剖 + widget场景 + by_content 变体
+_figma_r173_pathresources.py               -*- coding: utf-8 -*- r173: 路径位新面 —— GET /api/resources/{type}/{contentId} 探活+路径位注入族
+_figma_r174_numid_path.py                  -*- coding: utf-8 -*- r174: /api/resources/plugins/{数字id} —— dump搜索model找数字id + 数字型路径位注入族
+_figma_r175_numid_real.py                  -*- coding: utf-8 -*- r175: 真实 content_id 基线(200有数据?) + 数字门边界形态(-1/+/. /全角/空格)
+_figma_r176_newbatch_smoke.py              -*- coding: utf-8 -*- r176: 新批探活 —— sgs_debug(假op学消息) + admin路径位 + mcp路径位 + feed manifest + upnode参数 原则: 只发"假身份/空body"探活, 不产生任何真实操作/数据
+_figma_r177_mcp_upnode.py                  -*- coding: utf-8 -*- r177: mcp/feed 注入族(找500/差异) + upnode 过CT门深探(参数层注入候选)
+_figma_r178_readfaces.py                   -*- coding: utf-8 -*- r178: 新读面探活+基线 —— /api/user(拿org) → oauth/apps 路径位 → design_systems → tagged_file → variable_log_data
+_figma_r179_ds_inj.py                      -*- coding: utf-8 -*- r179: design_systems/components_state_groups 注入族(布尔+时间盲注双变体) + tagged_file/log_data 重打(snake)
+_figma_r180_oauth_logdata.py               -*- coding: utf-8 -*- r180: oauth/apps 路径位(weavy client_id) + tagged_file 枚举 + log_data 族对象元素注入族
+_figma_r181_ownfiles.py                    -*- coding: utf-8 -*- r181: 自有文件(LnVEzMlZc1rVRIjlcVtt2x/SeYTOjeOwFtVZvTPTYdX8D/folder 634606970)新面 + log_data version重打
+_figma_r182_file_folder_inj.py             -*- coding: utf-8 -*- r182: 文件meta路径位 + folder数字位 注入族(布尔对照+时间盲注); 空格用%20编码
+_figma_r183_logdata2.py                    -*- coding: utf-8 -*- r183: log_data 族全塞参数试探(version/content_hash)——学必填字段位
+_figma_r184_logdata_inj.py                 -*- coding: utf-8 -*- r184: log_data 过门形态 + 注入族(引号/布尔/时间); 复核 7s 异常
+_figma_r185_nextbatch.py                   -*- coding: utf-8 -*- r185: 下一批探活 —— bulk_favorite/follows/team_role_requests(GET)/invites(仅GET)/styles/widgets batch
+_figma_r186_wafchk.py                      -*- coding: utf-8 -*- r186: WAF 拦截验证(重打早前200的GET) + widgets/batch 深探(ids 参数)
+_figma_r187_postfaces.py                   -*- coding: utf-8 -*- r187: bulk_favorite 枚举破解 + recent_search PUT + validate_* 探活(POST-only, WAF期)
+_figma_r188_probe.py                       -*- coding: utf-8 -*- r188: 输出异常验证 —— GET复测/POST对照/PUT复测, 全宽捕获
+_figma_r189_rs_inj.py                      -*- coding: utf-8 -*- r189: recent_search query 注入族(引号/布尔/时间) + 读回探(GET, WAF已解除, 间隔1.5s)
+_figma_r190_hubdupes.py                    -*- coding: utf-8 -*- r190: 探活+注入 —— hub_file_duplicates / published_state_group_versions / content_summary / code_suggestions
+_figma_r191_or_flip.py                     -*- coding: utf-8 -*- r191: hub_file_duplicates OR翻转判决 + code_suggestions 参数名试探
+_figma_r192_cs_ctx.py                      -*- coding: utf-8 -*- r192: code_suggestions 文件上下文参数试探 + bulk 500面板探索
+_figma_r193_finalbatch.py                  -*- coding: utf-8 -*- r193: 收尾批 —— resources族(pinned/home_shelf/saves) + design_systems(published_sgv/doc_pages/bundles) + folder_items
+_figma_r194a_cms_meta.py                   -*- coding: utf-8 -*- r194a: CMS 业务链补打①——只读探活(export 回放点/列表探测) + 新建集合基线 零破坏:注入实验全部放"新建集合/新建字段",真实集合 J 仅只读导出
+_figma_r194b_coll_fix.py                   -*- coding: utf-8 -*- r194b: CMS 集合创建修正版(plain_text + position:"0")——单发基线,打印完整响应
+_figma_r194c_cms_replay.py                 -*- coding: utf-8 -*- r194c: 新集合灌注入值 item + 导出回放(X1 第一步:值存储→回放)
+_figma_r194d_cms_fields.py                 -*- coding: utf-8 -*- r194d: 新集合加字段——S1 slug字段 + S2 正常字段 + S3 字段名注入探针 + S4 导出
+_figma_r194e_cms_items.py                  -*- coding: utf-8 -*- r194e: 灌 item(注入值 + slug 值注入)+ 导出回放(X1 闭环)
+_figma_r194f_cms_update.py                 -*- coding: utf-8 -*- r194f: 导出回放(repr 确认) + 集合改名注入 + 字段更新注入 + 再导出
+_figma_r194g_cms_slots.py                  -*- coding: utf-8 -*- r194g: 元数据槽位总攻——position注入 / required混淆 / properties混淆 / role注入 / field_type注入
+_figma_r194h_cms_read.py                   -*- coding: utf-8 -*- r194h: items 读取面探测 + 重复 slug 语义 + 集合创建 description 注入
+_figma_r194i_cms_itemops.py                -*- coding: utf-8 -*- r194i: createItem 拿 item id → 字段更新(PUT)/validate 端点系列 + validate_cms_csv 探活
+_figma_r194j_cms_csvval.py                 -*- coding: utf-8 -*- r194j: validate_cms_csv 大输入面(空/注入值/slug注入值) + validate 响应捕获
+_figma_r195a_homeshelf.py                  -*- coding: utf-8 -*- r195a: home_shelf 参数定位(seenResourceIds snake/camel 差分 + 自有值)+ 一致性
+_figma_r195b_hs_pinned.py                  -*- coding: utf-8 -*- r195b: home_shelf 参数确权(数组语法/引号/OR/snake) + pinned 参数面基线
+_figma_r195c_pinned.py                     -*- coding: utf-8 -*- r195c: pinned 参数消息全捕获(sort_by/resource_type/editor_type/price 枚举+注入)
+_figma_r195d_fav.py                        -*- coding: utf-8 -*- r195d: bulk_favorite 正确结构基线({file:{key}}) + pinned 读回(判别面激活)
+_figma_r195e_saves.py                      -*- coding: utf-8 -*- r195e: resource_saves 读回(收藏激活) + content_summary mode 探测
+_figma_r195f_trash.py                      -*- coding: utf-8 -*- r195f: 回收站业务链——content_summary trash/delete + ID 位注入 + can_move_bulk 探测
+_figma_r196a_views.py                      -*- coding: utf-8 -*- r196a: 本地逆向 JS——枚举所有 WS View 注册(name/hash)+ livegraph/subscribe 协议构造点
+_figma_r196aa_files.py                     -*- coding: utf-8 -*- r196aa(AA): file comments/collections 面 + h4 fileKey 清单 + z7 全文 + JS collections 调用参数
+_figma_r196ab_perm.py                      -*- coding: utf-8 -*- r196ab(AB): comments 权限对照 + collections export 注入 + 老端点参数测绘 + z7 全文
+_figma_r196ac_actlog.py                    -*- coding: utf-8 -*- r196ac(AC): activity_logs 401 深挖(数字 orgUserId) + /api/files/* 子接口权限口径 + JS /api/files/ 全集
+_figma_r196ad_perm2.py                     -*- coding: utf-8 -*- r196ad(AD): /api/files/{key} 权限分布矩阵(8个h4 key) + recent_activity 数据面 + activity orgId 参数
+_figma_r196ae_sieve.py                     -*- coding: utf-8 -*- r196ae(AE): h4 全 key 权限分布筛 + 我们文件的子接口矩阵 + ad6-8 元数据
+_figma_r196af_wrap.py                      -*- coding: utf-8 -*- r196af(AF): 绕过 route typecheck 的包裹型注入 —— JSON 数组元素注入 / boolean / enum 参数
+_figma_r196ah_typecheck.py                 -*- coding: utf-8 -*- r196ah(AH): AG 解密格式实测 —— request_types[]= 穿透 route typecheck + 元素级注入
+_figma_r196ai_adminreq2.py                 -*- coding: utf-8 -*- r196ai(AI): admin_requests 正确值域+正确参数名 判别面校准 → V1/V5/V6/I3 槽位注入 JS 解密: request_types[] 真值 = account_type_request/ai_credit_reques
+_figma_r196aj_hpp.py                       -*- coding: utf-8 -*- r196aj(AJ): admin_requests 双解析路径(HPP) + counts 枚举真值 + query_string 时延探针(D1) + 数字宽容度
+_figma_r196ak_cursor.py                    -*- coding: utf-8 -*- r196ak(AK): cursor 解析器结构爆破(base64/JSON 差分) + request_types 嵌套元素类型混淆 + 枚举补漏
+_figma_r196al_cursor2.py                   -*- coding: utf-8 -*- r196al(AL): cursor 单字段结构筛选(带 X-Runtime oracle) + 枚举补漏(guest/member 注入) + 类型变体
+_figma_r196am_cursor3.py                   -*- coding: utf-8 -*- r196am(AM): cursor 深度临界点判定(核实 rescue 边界) + 元组形态 + __ 字段 + 命名风格变体
+_figma_r196an_cursor4.py                   -*- coding: utf-8 -*- r196an(AN): cursor 收口验证 —— v/version 数字值假设(F 模型: 版本/签名早检查)
+_figma_r196ao_links1.py                    -*- coding: utf-8 -*- q6(r196q): related_links 面第一波——端点形态+权限基线+批量混发越权
+_figma_r196ap_links2.py                    -*- coding: utf-8 -*- r196ap(AP): related_links 批量接口重打(RST验证+越权行为) + recent_activity 真值枚举权限探测
+_figma_r196b_wsview.py                     -*- coding: utf-8 -*- r196b: WS livegraph View 订阅矩阵——基线/额外参数宽容性/标识符注入差分
+_figma_r196c_wsinj.py                      -*- coding: utf-8 -*- r196c: WS View 值位注入——fileKey 布尔对/通配符、ListItems 差分、OneItemView、UserProfilePage 探
+_figma_r196d_sortprobe.py                  -*- coding: utf-8 -*- r196d: WS View 排序/列名位侦察——error 段全量提取(内部 LQ 查询构造)
+_figma_r196e_reqid.py                      -*- coding: utf-8 -*- r196e: __requestId 解锁 sinatra 静态查询——trashed/unclaimed/profile/buzzapprovals
+_figma_r196f_introspect.py                 -*- coding: utf-8 -*- r196f: 自省 View(plan/team/org 情报)+ BuzzApproval 注入 + fileV2 fileKey 注入
+_figma_r196g_buzzplan.py                   -*- coding: utf-8 -*- r196g: Buzz requestId 数字型注入 + TrashedFiles 真 planId/planType 解锁
+_figma_r196h_plannum.py                    -*- coding: utf-8 -*- r196h: TrashedFiles 数字 planId 解锁(H3/H2 数字候选)
+_figma_r196i_trashinj.py                   -*- coding: utf-8 -*- r196i(K): trashed_resources 注入矩阵——sortType/sortDirection/creatorFilter/fileTypeFilter/queryParams
+_figma_r196j_strongbool.py                 -*- coding: utf-8 -*- r196j(L): trashed_resources 强判据——布尔注入(creatorFilter)+函数执行+时间盲注(计时)
+_figma_r196k_planviews.py                  -*- coding: utf-8 -*- r196k(M): uuid-plan 系 View 探——PlanAiUsage/AdminRequest/FileBrowser/LitmusBuilds
+_figma_r196l_planunlock.py                 -*- coding: utf-8 -*- r196l(N): PlanAiUsage 解锁+注入; AdminRequest 数字 plan; FileBrowser sortColumn 值域
+_figma_r196o_planai.py                     -*- coding: utf-8 -*- r196o(O): sinatra plan_ai_usage_by_users_v2 真解锁 — sort_by 白名单绕过 + searchQuery 注入 + AdminRequest __requestId
+_figma_r196p_adminenum.py                  -*- coding: utf-8 -*- r196p(P): 读 O 数据 + JS 逆向 planType 值域 + searchQuery 注入重试 + admin plan_type 枚举
+_figma_r196q_baseline.py                   -*- coding: utf-8 -*- r196q(Q): 空 searchQuery 全量基线 + 通配符 + PLAN2 跨plan + JS 挖 plan_type 枚举真值
+_figma_r196q_links1.py                     -*- coding: utf-8 -*- q6(r196q): related_links 面第一波——端点形态+权限基线+批量混发越权
+_figma_r196t_admix.py                      -*- coding: utf-8 -*- r196t(T): admin plan_type x planId 交叉矩阵 + searchQuery 单引号/超长判读 + sortOrder 注入
+_figma_r196u_team.py                       -*- coding: utf-8 -*- r196u(U): planType='Team' 过白名单后——换数字 plan(3018639018)找 pro team;三兄弟 View 联动
+_figma_r196v_types.py                      -*- coding: utf-8 -*- r196v(V): plan_ai_usage filterParams/meteringPeriodId 类型混淆 + RowIds/NotifCount __requestId 补发
+_figma_r196w_httpapi.py                    -*- coding: utf-8 -*- r196w(W): JS 列全 /api/plans/ 端点 + HTTP 直打 plan_usage_summary(含引号注入) + WS meteringPeriodId 引号探针
+_figma_r196x_adminreq.py                   -*- coding: utf-8 -*- r196x(X): HTTP 直打 admin_requests 系(plan_type 注入) + WS 真实 metering period 解锁数据面
+_figma_r196y_httpfull.py                   -*- coding: utf-8 -*- r196y(Y): HTTP PLAN1 全套 admin_requests/ai_credits GET + plan_type 注入变体; 读 x7/x8
+_figma_r196z_apimap.py                     -*- coding: utf-8 -*- r196z(Z): JS 全量 /api/ 端点测绘 + query_string 注入系列 + subscriptions-2018 数字 id 面

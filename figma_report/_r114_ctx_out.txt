@@ -1,0 +1,17 @@
+===== 1) D4_ffiles 文件列表提取 =====
+  key: laF5guxdhRzBcWmVwfKJ4e
+  key: 5Gs4PaTz11Hlk2sqVnidBG
+  key: qzDqStIDJyGbthpKiuvfwg
+  key: EaAuAdTX5AgpBLrwGBc46k
+  key: 9MmnJNhhwn2hDNEqLoMToP
+  names: ['Untitled', 't-99ff96', "1643584176's team library", 'Untitled', 'Untitled', 'Team folder']
+  creators: [('1666382703778278399', 5)]
+
+===== 2) file_move/suggested JS 上下文 =====
+'tarred",l.ALL="All",l),eh=r(454638),ex=r(441676),eg=r(504287),eb=r(497296);let ey=new class{constructor(){this.FileMoveSuggestedSchemaValidator=(0,eb.vh)(),this.getFileMoveSuggestedResults=e=>{let{orgId:t}=e;return this.FileMoveSuggestedSchemaValidator.validate(async({xr:e})=>await e.get(e.url`/api/file_move/suggested`,eb.td.toAPIParameters({org_id:t})))}}};var ej=r(146138),ew=r(151717),ek=r(716019),eE=r(797504),eT=r(29002),eF=r(814914),eI=r(7357'
+ ------
+
+===== 3) users/batched JS 上下文 =====
+'maValidator.validate(async({xr:t})=>await t.get(t.url`/api/team_role_requests`,n.td.toAPIParameters(e)))}}},840137(e,t,r){r.d(t,{D:()=>i});var n=r(497296);let i=new class{constructor(){this.BatchedSchemaValidator=(0,n.vh)()}getBatched(e){return this.BatchedSchemaValidator.validate(async({xr:t})=>await t.get(t.url`/api/users/batched`,n.td.toAPIParameters({userIds:e.userIds.join(",")})))}}},692944(e,t,r){r.d(t,{Fc:()=>u,iQ:()=>_,ju:()=>c,sT:()=>p});var n=r(432459),i=r(238191),a=r(382260),o=r(898509),s=r(770584),l=r(868588),d=r(667149);f'
+ ------
+DONE

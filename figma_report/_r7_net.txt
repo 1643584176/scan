@@ -1,0 +1,32 @@
+POST 200 https://www.figma.com/api/figment-proxy/identify
+    
+GET 403 https://browser-intake-datadoghq.com/api/v2/rum
+    
+POST 200 https://www.figma.com/api/figment-proxy/page
+    
+GET 200 https://www.figma.com/api/user/state?team_id=1666382706663462213&fuid=1666382703778278399
+    {"error":false,"status":200,"meta":{"team_users":[{"id":"311767172","team_id":"1666382706663462213","user_id":"1666382703778278399","design_paid_status":"starter","whiteboard_paid_status":"starter","created_at":"2026-08-04T08:09:57.219Z","updated_at"
+GET 200 https://www.figma.com/api/session/state?fuid=1666382703778278399
+    {"error":false,"status":200,"meta":{"users":[{"id":"1666382703778278399","name":"pccp","email":"1643584176@qq.com","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-alpha.fig
+POST 200 https://www.figma.com/api/figment-proxy/monitor
+    
+POST 200 https://errors.figma.com/api/sentry/api/56203/envelope/?sentry_key=d1b12a8fbe424e4b956eb33cadd5b30d&sentry_version=7&sentry_client=sentry.javascript.browser%2F8.40.0
+    {}
+GET 200 https://www.figma.com/api/session/sync
+    {"error":false,"status":200,"meta":{"user_highest_plan":"starter","segment_id":"0"},"i18n":null}
+POST 200 https://www.figma.com/api/web_logger/metrics/session_start
+    
+GET 200 https://www.figma.com/api/authed_users/plans
+    {"error":false,"status":200,"meta":{"plans_by_user_id":{"1666382703778278399":[{"plan_id":"1666382706663462213","plan_type":"team","permission":"admin","plan_name":"1643584176's team","is_guest":false,"created_at":"2026-08-04T08:09:57.230Z","has_draf
+GET 200 https://www.figma.com/api/search/hub_profiles?query=icon&session_id=unattributed&max_num_results=50
+    {"error":false,"status":200,"meta":{"results":[{"model":{"id":"1073685036695260867","profile_handle":"iconduck","primary_user_id":"1073685036523977688","public_at":"2022-02-11T21:45:36.618Z","created_at":"2022-02-10T19:21:00.846Z","follower_count":13
+GET 200 https://www.figma.com/api/search/resources?query=icon&price=all&creators=all&sort_by=relevancy&resource_type=oauth_app&session_id=unattributed&include_content=false&caller=search_page&include_full_category=true&include_t
+    {"error":false,"status":200,"meta":{"results":[{"model":{"id":"67dcfd34-252f-4cae-9649-276d86f39230","name":"Tendee: custom icon collection","description":"<p>Tendee connects your Figma icon library to your Framer projects.</p><p><br></p><p><strong> 
+GET 200 https://www.figma.com/api/v2/statsig/bootstrap?team_ids=&page_locale=en&release_manifest_git_commit=676bd5bf1127d544bd63db31dea851407483657c&release_server_git_commit=05039616c0f54583de33735b4084938e31edce5e
+    {"error":false,"status":200,"meta":[{"team_id":null,"bootstrap_values":{"feature_gates":{"503922365":{"id_type":"userID","value":true,"name":"503922365","rule_id":"disabled","secondary_exposures":[]},"308934089":{"id_type":"stableID","value":false,"n
+POST 200 https://www.figma.com/api/web_logger/histogram_batched
+    
+POST 200 https://www.figma.com/api/web_logger/metrics_batched
+    
+POST 200 https://www.figma.com/api/user/flags
+    {"error":false,"status":200,"i18n":null}

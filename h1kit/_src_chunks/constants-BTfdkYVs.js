@@ -1,0 +1,1 @@
+import{Pv as e}from"./vendor-_WdvpBLr.js";var t=`YYYY-MM-DD h:mm A`,n=`MMM DD, YYYY`,r=e(`2013-01-01`),i=new Date;export{r as i,t as n,i as r,n as t};

@@ -1,0 +1,20 @@
+===== graphql basic-user
+HTTP 401 {"data":null,"errors":[{"message":"Invalid authentication token"}]}
+
+===== graphql basic-nouser
+HTTP 401 {"data":null,"errors":[{"message":"Invalid authentication token"}]}
+
+===== graphql bearer
+HTTP 401 {"data":null,"errors":[{"message":"Invalid authentication token"}]}
+
+===== hackerone.com /api/v1/me
+HTTP 404 {"status":404,"error":"Not Found"}
+
+===== hackerone.com /api/me
+HTTP 404 {"status":404,"error":"Not Found"}
+
+===== hackerone.com /api/v1/hackers/me
+HTTP 404 {"status":404,"error":"Not Found"}
+
+===== api.hackerone.com nouser
+HTTP 401 {"errors":[{"status":401}]}

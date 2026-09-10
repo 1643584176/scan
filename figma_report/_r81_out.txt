@@ -1,0 +1,75 @@
+===== PUT 写面 · Slug 字段 · md 全技术矩阵 =====
+URL: https://www.figma.com/api/items/96c7afe6-3530-45d0-b3fd-016c23b2444f/fields/e5545270-a872-4dbf-95e0-36fbb2c1a79f
+uuid(field实例): 46604fd7-3c3f-48b4-898f-39557228f6b1
+
+[p01_base] 200 len=387 1048ms
+     {"error":false,"status":200,"meta":{"value":"h1test","assets_for_publish":null,"id":"46604fd7-3c3f-48b4-898f-39557228f6b1","item_id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","field_schema_id":"e5545270-a872-4dbf-95e0-36fbb2c1a79f","version":2,"created_at":"2026-09-10T04:50:44.197Z","updated_at":"2026-09-10T06:05:37.163Z","job_status":null,"lg_optimistic_mutation_uuid":null},"i18n":null}
+
+[p02_quote] 422 len=205 712ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p03_escq] 422 len=205 788ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p04_dquote] 422 len=205 779ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p05_bt] 422 len=205 883ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p06_cmt] 422 len=205 690ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p07_hash] 422 len=205 757ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p08_blk] 422 len=205 787ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p09_blkc] 422 len=205 846ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p10_btrue] 422 len=205 904ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p11_bfalse] 422 len=205 797ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p12_orall] 422 len=205 820ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p13_num1] 422 len=205 845ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p14_num2] 422 len=205 882ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p15_null] 200 len=387 829ms
+     {"error":false,"status":200,"meta":{"id":"46604fd7-3c3f-48b4-898f-39557228f6b1","item_id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","field_schema_id":"e5545270-a872-4dbf-95e0-36fbb2c1a79f","value":"h1test","version":2,"created_at":"2026-09-10T04:50:44.197Z","updated_at":"2026-09-10T06:05:37.163Z","assets_for_publish":null,"job_status":null,"lg_optimistic_mutation_uuid":null},"i18n":null}
+
+[p16_nl] 200 len=387 852ms
+     {"error":false,"status":200,"meta":{"id":"46604fd7-3c3f-48b4-898f-39557228f6b1","item_id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","field_schema_id":"e5545270-a872-4dbf-95e0-36fbb2c1a79f","value":"h1test","version":2,"created_at":"2026-09-10T04:50:44.197Z","updated_at":"2026-09-10T06:05:37.163Z","assets_for_publish":null,"job_status":null,"lg_optimistic_mutation_uuid":null},"i18n":null}
+
+[p17_sleep] 422 len=205 1049ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p18_concat] 422 len=205 768ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p19_int] 200 len=384 891ms
+     {"error":false,"status":200,"meta":{"value":"123","assets_for_publish":null,"id":"46604fd7-3c3f-48b4-898f-39557228f6b1","item_id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","field_schema_id":"e5545270-a872-4dbf-95e0-36fbb2c1a79f","version":3,"created_at":"2026-09-10T04:50:44.197Z","updated_at":"2026-09-10T06:06:28.067Z","job_status":null,"lg_optimistic_mutation_uuid":null},"i18n":null}
+
+[p20_bool] 200 len=382 1339ms
+     {"error":false,"status":200,"meta":{"value":"t","assets_for_publish":null,"id":"46604fd7-3c3f-48b4-898f-39557228f6b1","item_id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","field_schema_id":"e5545270-a872-4dbf-95e0-36fbb2c1a79f","version":4,"created_at":"2026-09-10T04:50:44.197Z","updated_at":"2026-09-10T06:06:31.410Z","job_status":null,"lg_optimistic_mutation_uuid":null},"i18n":null}
+
+[p21_obj] 422 len=205 880ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+[p22_arr] 422 len=205 1063ms
+     {"error":true,"status":422,"message":"Slug contains invalid characters","i18n":null,"failure_info":{"errors":["Slug contains invalid characters"],"i18n_keys":["cms_errors.fields.slug_invalid_characters"]}}
+
+===== 恢复原值 =====
+[p99_restore] 200 len=444 698ms
+     {"error":false,"status":200,"meta":{"value":"from-spreadsheets-to-systems-the-evolution-of-climate-reporting","assets_for_publish":null,"id":"46604fd7-3c3f-48b4-898f-39557228f6b1","item_id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","field_schema_id":"e5545270-a872-4dbf-95e0-36fbb2c1a79f","version":5,"created_at":"2026-09-10T04:50:44.197Z","updated_at":"2026-09-10T06:06:40.062Z","job_status":null,"lg_optimistic_mutation_uuid":null},"i18n":null}
+
+DONE

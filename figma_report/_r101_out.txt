@@ -1,0 +1,108 @@
+===== 清理: DELETE 17 个测试 item =====
+[a2a41fdc] 200 len=556 {"error":false,"status":200,"meta":{"id":"a2a41fdc-cf08-4ef3-959b-ee21f400ff01","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[c7449b2e] 200 len=556 {"error":false,"status":200,"meta":{"id":"c7449b2e-5f95-4db0-b46e-61089e11cae5","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[3d7167bb] 200 len=556 {"error":false,"status":200,"meta":{"id":"3d7167bb-2278-42f0-894e-f292ca007201","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[c87744be] 200 len=590 {"error":false,"status":200,"meta":{"id":"c87744be-2798-457a-833b-62681f7ddcdf","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[ad046336] 200 len=556 {"error":false,"status":200,"meta":{"id":"ad046336-ead9-46c0-a868-9e76d1f15012","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[5a193f0b] 200 len=556 {"error":false,"status":200,"meta":{"id":"5a193f0b-8bad-4a1f-818a-9c42f39292ed","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[ce33bbc3] 200 len=590 {"error":false,"status":200,"meta":{"id":"ce33bbc3-9f5e-40a4-a1e7-25f1cb16f3ef","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[9aa9ba92] 200 len=590 {"error":false,"status":200,"meta":{"id":"9aa9ba92-7384-468d-9eb8-851a08dc513e","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[9d844a78] 200 len=590 {"error":false,"status":200,"meta":{"id":"9d844a78-8be8-4574-b880-3c83e516a03d","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[7ce816f6] 200 len=590 {"error":false,"status":200,"meta":{"id":"7ce816f6-834a-427f-aa03-715d31155497","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[5d03c565] 200 len=590 {"error":false,"status":200,"meta":{"id":"5d03c565-6223-47fb-83c4-11cd0cdc5714","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[c0eabe33] 200 len=590 {"error":false,"status":200,"meta":{"id":"c0eabe33-29a9-481b-a3c6-be28478a6119","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[06dabf8c] 200 len=590 {"error":false,"status":200,"meta":{"id":"06dabf8c-faef-4cad-bf39-86805f452996","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[a9a2d518] 200 len=556 {"error":false,"status":200,"meta":{"id":"a9a2d518-7820-491e-8596-0f295f6185a3","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[e48105de] 200 len=556 {"error":false,"status":200,"meta":{"id":"e48105de-a79b-4e1a-b5ba-6eb3da600737","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[0d3ed546] 200 len=590 {"error":false,"status":200,"meta":{"id":"0d3ed546-e1a7-48a4-bd7b-cc7cee050ffc","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+[89a344f5] 200 len=590 {"error":false,"status":200,"meta":{"id":"89a344f5-9a02-4f24-bddb-e8509c958232","collection_id":"ec2817c9-a5e7-4f0f-9f1c
+deleted ok: 17/17
+===== WS 读回验收 =====
+剩余 item ids: 85
+   4aa78b00-1cc3-4e50-a8fc-d1a9e29392aa
+   ec5fdaf9-b7b5-40a4-b477-0581f361ed76
+   0c6a207a-e733-4fc1-984a-4a3873236c22
+   96c7afe6-3530-45d0-b3fd-016c23b2444f
+   67d0a7ed-00b9-47c0-9038-aa69f6950215
+   f2de917e-1b07-4b7a-9231-78760712d8ec
+   07da80ea-18dd-4e57-909b-bd60c7a387bb
+   ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205
+   ec141e2f-f03c-4839-90e5-1be8d2930cc1
+   39b64407-2a22-4747-ba1a-0e74b554b265
+   2e803d7c-6dcf-4064-aa79-0d2af7175b1a
+   c8013179-3850-4f4a-89dc-3907b62fc5a7
+   c01effa0-a083-4de2-9cff-d570a6312800
+   4a88ac86-6b1e-49f5-a873-2f498d41ab95
+   7e301637-8ef1-4d4c-9479-9c0d7cb197da
+   d6169ba0-a45d-4e15-8d9f-a772ac2b0fe9
+   f8db8c49-3161-491b-b7f1-a0b8ddb2bbf3
+   e0463f64-3480-4d87-abb3-1d684b320c53
+   5478b4ae-5170-4022-93ac-2294cb192aae
+   2a8cd8f9-ff73-44d6-ba5a-2756e568a7c8
+   3eb45534-15f0-4f8f-b717-23c92f904729
+   eda82455-4450-4758-9209-a32c09271c34
+   b75a704b-94c3-4cd2-9746-bad4111a055e
+   724aaccc-ec9e-4b39-98f9-b419b174017f
+   764e54ca-2b67-4bac-8b84-ab3b4f4ea6a8
+   29b184be-2c12-4790-ac26-14540c9c4c91
+   e88484cf-e337-48c9-9acc-28b55a81b797
+   f0141f14-39ca-4b91-ad58-5f603644721f
+   e156411b-240e-4180-8293-7724b91001f9
+   abaad36c-9267-41ce-adaa-3b75f9fdd2db
+   478e1dbc-f024-4820-8d40-d8cded79a0db
+   8afb6ba9-4683-44f3-a5b2-e221051145da
+   3701ee29-5aad-427a-8c2d-614dd2106d97
+   96b76f01-e5d5-4a3f-981e-3dc5e9d27c1a
+   0e8d2b7c-5542-4fc9-997a-eb2023b7a6d9
+   7581897c-415a-4e37-8767-4b55184ffa88
+   dd732e44-9fcc-403c-86bb-5e67484b6f85
+   7d618472-59f5-4371-96dd-7e1359e15572
+   145a3782-6b54-42d0-9064-b0145711cc2c
+   149956ee-87ee-43a0-baa0-bb96c3f82bdd
+   8e1569c4-fad5-4ac6-8f04-9cf041700748
+   20fa4689-eefc-4e3d-a262-96cac50ff390
+   44ef130f-b675-4e3d-8af8-19af562c6523
+   fc1004e1-69f2-472a-a2f3-90f45a23adb6
+   f5fdff95-93b5-4adb-bea5-d53ccc5bd907
+   46604fd7-3c3f-48b4-898f-39557228f6b1
+   0d046a5e-c91b-4db9-b14a-0977001af773
+   c4198b32-8987-4b55-a80d-b6e820649fd4
+   8b49335f-668e-44ff-abbb-faedac1c6f77
+   e2ebf614-7d97-4c6b-b174-905156a9500f
+   74c8abbe-9ab7-4ce6-98ca-299f88b25cf8
+   76a17127-2f50-410b-9e72-eb5c1be75c53
+   59051509-758e-48f6-bf60-4ee6c8a76b5b
+   2738b733-ee27-4396-adfd-fa9fee6e5054
+   c9f81f9c-d9fe-4c4f-8469-ef5de0ad6957
+   17e7d529-9ef0-4eb0-beab-aa0c47185491
+   bb7f82ce-4ff4-4311-9a40-506088251ee7
+   b9737e63-4482-430c-85d3-012f180d0cc3
+   946bc7ab-4e01-4440-ac77-bcdc68a7543a
+   3cb2472c-72b7-4b8f-94e0-c4b1b3dd6da2
+   8f8dd864-a26e-4747-b49e-46c67bd47ea5
+   2b00c70a-ccaa-4ed4-bfef-4a2375b6df8a
+   b5447042-b801-4bca-8a3d-173a04cf6825
+   f2af165a-e03c-44c4-b09d-98568e9a10cd
+   9783c3f9-58ca-4851-a759-6724c9fb3f2c
+   8e360b2a-8855-4f43-88a6-31c259145688
+   c4c9db93-d98f-408d-999c-ed5b319610ad
+   0fa7a8a2-45f0-4471-8760-217298de5848
+   c0290109-b5bc-418b-a8cc-63e4a73fa2eb
+   88d75a3d-aa8b-4cd8-acaf-0216f26aa5c8
+   0e3db8e0-5fc3-4fea-932f-c0ad2d35824a
+   4d6862d7-b346-4caa-b4a9-8503a23ba118
+   2aeb3aae-4877-4542-ae95-04347e6c2433
+   3b921128-ce31-4bbe-b062-932f4022c40c
+   e75282ec-e3ec-497a-882f-3b816f16ce4d
+   9f28ab0d-7178-403e-a5e6-4f56117cde32
+   e5545270-a872-4dbf-95e0-36fbb2c1a79f
+   d157abc8-3927-4d13-957f-216407754afe
+   98e8f141-c4b1-4de5-a395-e64fb936f205
+   b0bb3759-e594-4e93-85ef-1402df3a0444
+   fef24832-8787-4a2d-9747-df1b8254dc9e
+   1d696c1b-d27f-4f2e-bf4d-7e1b7d793a34
+   9f527d36-25d4-466e-8d78-9ececf9ecbfe
+   f246a9ef-d05c-4fba-884d-5c2eff95adf7
+   f27b44f9-d6d9-497a-9054-dff79a1dd661
+仍在列表的测试 item: 0
+DONE

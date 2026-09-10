@@ -1,0 +1,24 @@
+===== A) createItem 类型混淆(4 发) =====
+[C1_num] 400 len=184 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items: Error occurred during parsing: Error parsing JSON @1:171: Expected string"}
+[C2_bool] 400 len=184 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items: Error occurred during parsing: Error parsing JSON @1:171: Expected string"}
+[C3_arr] 400 len=184 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items: Error occurred during parsing: Error parsing JSON @1:171: Expected string"}
+[C4_obj] 400 len=184 resp={"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items: Error occurred during parsing: Error parsing JSON @1:171: Expected string"}
+===== B) createItem JSON 转义(手工文本 2 发) =====
+[B1_esc27] 200 len=590 resp={"error":false,"status":200,"meta":{"id":"88c9644e-0722-4d27-ba46-dd0049015667","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"4","cr
+[B2_bsq] 200 len=590 resp={"error":false,"status":200,"meta":{"id":"1b1e04bd-df62-430c-94ab-373f94dbb3c3","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"5","cr
+===== C) DELETE 13 个临时 item =====
+[DEL OK] ac7c4bfb-e568-4682-8eb2-4aeca575fb1d 200 {"error":false,"status":200,"meta":{"id":"ac7c4bfb-e568-4682-8eb2-4aeca575fb1d","collection_id":"ec2
+[DEL OK] a7517afe-043b-4da9-b45c-36d5b5a9fe5f 200 {"error":false,"status":200,"meta":{"id":"a7517afe-043b-4da9-b45c-36d5b5a9fe5f","collection_id":"ec2
+[DEL OK] 2c04d7f8-18cf-49c6-a253-8daeb916c6d6 200 {"error":false,"status":200,"meta":{"id":"2c04d7f8-18cf-49c6-a253-8daeb916c6d6","collection_id":"ec2
+[DEL OK] af9da9a4-01c0-4780-b4f5-4e3f30ba4f74 200 {"error":false,"status":200,"meta":{"id":"af9da9a4-01c0-4780-b4f5-4e3f30ba4f74","collection_id":"ec2
+[DEL OK] bce88cab-82a2-4d51-a563-90a2db83db14 200 {"error":false,"status":200,"meta":{"id":"bce88cab-82a2-4d51-a563-90a2db83db14","collection_id":"ec2
+[DEL OK] 73fc1904-9048-445a-aec8-4fb4f382b8dd 200 {"error":false,"status":200,"meta":{"id":"73fc1904-9048-445a-aec8-4fb4f382b8dd","collection_id":"ec2
+[DEL OK] 1e534ca9-6e6c-41a7-955e-ec284c79b0fb 200 {"error":false,"status":200,"meta":{"id":"1e534ca9-6e6c-41a7-955e-ec284c79b0fb","collection_id":"ec2
+[DEL OK] 966ac10e-617e-45fb-b154-01aa6da5c39a 200 {"error":false,"status":200,"meta":{"id":"966ac10e-617e-45fb-b154-01aa6da5c39a","collection_id":"ec2
+[DEL OK] a95ec99f-1c55-4565-916a-5ae9bab9bb17 200 {"error":false,"status":200,"meta":{"id":"a95ec99f-1c55-4565-916a-5ae9bab9bb17","collection_id":"ec2
+[DEL OK] ae1340c9-7e7c-4541-b7f7-a882beb2b309 200 {"error":false,"status":200,"meta":{"id":"ae1340c9-7e7c-4541-b7f7-a882beb2b309","collection_id":"ec2
+[DEL OK] b5e2e982-6c79-4492-b964-e1d76b4ab585 200 {"error":false,"status":200,"meta":{"id":"b5e2e982-6c79-4492-b964-e1d76b4ab585","collection_id":"ec2
+[DEL OK] ee6ce326-630b-4a37-a461-86ddcee3c63d 200 {"error":false,"status":200,"meta":{"id":"ee6ce326-630b-4a37-a461-86ddcee3c63d","collection_id":"ec2
+[DEL OK] f18d3bc7-bf73-45f7-a2cf-2f9137654552 200 {"error":false,"status":200,"meta":{"id":"f18d3bc7-bf73-45f7-a2cf-2f9137654552","collection_id":"ec2
+DELETE done: 13/13
+DONE

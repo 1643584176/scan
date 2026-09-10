@@ -1,0 +1,161 @@
+################ A) PUT /api/recent_search ################
+[A_00base] 200 len=40 647ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_01q] 200 len=40 571ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_02cmt] 200 len=40 579ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_03btrue] 200 len=40 568ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_04bfalse] 200 len=40 560ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_05orall] 200 len=40 558ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_06num1] 200 len=40 829ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_07num2] 200 len=40 582ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_08null] 500 len=157 580ms
+     {"error":true,"status":500,"message":"Internal server error","i18n":{"id":"error.internal_server_error","fallback_text":"Internal server error","params":{}}}
+
+[A_09sleep] 200 len=40 551ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_10concat] 200 len=40 591ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_11bool] 200 len=40 564ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_12int] 200 len=40 589ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_13_orgnull] 200 len=40 657ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_14_org0] 200 len=40 584ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_15_ts_quote] 200 len=40 671ms
+     {"error":false,"status":200,"i18n":null}
+
+[A_16_ts_sql] 200 len=40 596ms
+     {"error":false,"status":200,"i18n":null}
+
+################ B) PUT items/{ITEM} index 排序键 ################
+[B_index_00base] 200 len=561 844ms
+     {"error":false,"status":200,"meta":{"position":"h1test","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:13:47.541Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278399","conte
+
+[B_index_01q] 200 len=562 853ms
+     {"error":false,"status":200,"meta":{"position":"h1test'","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:13:50.395Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278399","cont
+
+[B_index_02cmt] 200 len=565 825ms
+     {"error":false,"status":200,"meta":{"position":"h1test' --","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:13:53.220Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278399","c
+
+[B_index_03btrue] 200 len=573 767ms
+     {"error":false,"status":200,"meta":{"position":"h1test' AND '1'='1","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:13:55.996Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"166638270377827
+
+[B_index_04bfalse] 200 len=573 844ms
+     {"error":false,"status":200,"meta":{"position":"h1test' AND '1'='2","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:13:58.833Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"166638270377827
+
+[B_index_05orall] 200 len=572 851ms
+     {"error":false,"status":200,"meta":{"position":"h1test' OR '1'='1","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:01.686Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278
+
+[B_index_06num1] 200 len=572 824ms
+     {"error":false,"status":200,"meta":{"position":"h1test' AND 1=1--","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:04.515Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278
+
+[B_index_07num2] 200 len=572 784ms
+     {"error":false,"status":200,"meta":{"position":"h1test' AND 1=2--","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:07.302Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278
+
+[B_index_08null] 200 len=561 740ms
+     {"error":false,"status":200,"meta":{"position":"h1test","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:10.049Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278399","conte
+
+[B_index_09sleep] 200 len=587 1194ms
+     {"error":false,"status":200,"meta":{"position":"h1test' AND pg_sleep(2)::text='0","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:13.205Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1
+
+[B_index_10concat] 200 len=576 721ms
+     {"error":false,"status":200,"meta":{"position":"' || pg_sleep(2) || '","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:15.969Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"166638270377
+
+[B_index_11bool] 200 len=556 818ms
+     {"error":false,"status":200,"meta":{"position":"t","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:18.782Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278399","content_up
+
+[B_index_12int] 200 len=558 719ms
+     {"error":false,"status":200,"meta":{"position":"123","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:21.507Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278399","content_
+
+[B_index_13_restore] 200 len=556 774ms
+     {"error":false,"status":200,"meta":{"position":"$","id":"96c7afe6-3530-45d0-b3fd-016c23b2444f","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"created_at":"2026-09-10T04:50:44.015Z","updated_at":"2026-09-10T06:14:24.273Z","deleted_at":null,"stable_id":"f9eb9d2a-ee79-4c8c-b5b9-e75e2f9c3865","created_by_user_id":"1666382703778278399","content_up
+
+################ C) POST createItem ################
+[C_00base] 200 len=590 839ms
+     {"error":false,"status":200,"meta":{"id":"5d03c565-6223-47fb-83c4-11cd0cdc5714","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"'","created_at":"2026-09-10T06:14:27.040Z","updated_at":"2026-09-10T06:14:27.040Z","deleted_at":null,"stable_id":"5d03c565-6223-47fb-83c4-11cd0cdc5714","created_by_user_id":"1666382703778278399","content_up
+
+[C_01q] 200 len=590 865ms
+     {"error":false,"status":200,"meta":{"id":"0d3ed546-e1a7-48a4-bd7b-cc7cee050ffc","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"(","created_at":"2026-09-10T06:14:29.911Z","updated_at":"2026-09-10T06:14:29.911Z","deleted_at":null,"stable_id":"0d3ed546-e1a7-48a4-bd7b-cc7cee050ffc","created_by_user_id":"1666382703778278399","content_up
+
+[C_02cmt] 200 len=590 759ms
+     {"error":false,"status":200,"meta":{"id":"ce33bbc3-9f5e-40a4-a1e7-25f1cb16f3ef","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":")","created_at":"2026-09-10T06:14:32.716Z","updated_at":"2026-09-10T06:14:32.716Z","deleted_at":null,"stable_id":"ce33bbc3-9f5e-40a4-a1e7-25f1cb16f3ef","created_by_user_id":"1666382703778278399","content_up
+
+[C_03btrue] 200 len=590 1008ms
+     {"error":false,"status":200,"meta":{"id":"9aa9ba92-7384-468d-9eb8-851a08dc513e","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"*","created_at":"2026-09-10T06:14:35.659Z","updated_at":"2026-09-10T06:14:35.659Z","deleted_at":null,"stable_id":"9aa9ba92-7384-468d-9eb8-851a08dc513e","created_by_user_id":"1666382703778278399","content_up
+
+[C_04bfalse] 200 len=590 807ms
+     {"error":false,"status":200,"meta":{"id":"c0eabe33-29a9-481b-a3c6-be28478a6119","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"+","created_at":"2026-09-10T06:14:38.501Z","updated_at":"2026-09-10T06:14:38.501Z","deleted_at":null,"stable_id":"c0eabe33-29a9-481b-a3c6-be28478a6119","created_by_user_id":"1666382703778278399","content_up
+
+[C_05orall] 200 len=590 858ms
+     {"error":false,"status":200,"meta":{"id":"c87744be-2798-457a-833b-62681f7ddcdf","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":",","created_at":"2026-09-10T06:14:41.345Z","updated_at":"2026-09-10T06:14:41.345Z","deleted_at":null,"stable_id":"c87744be-2798-457a-833b-62681f7ddcdf","created_by_user_id":"1666382703778278399","content_up
+
+[C_06num1] 200 len=590 702ms
+     {"error":false,"status":200,"meta":{"id":"06dabf8c-faef-4cad-bf39-86805f452996","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"-","created_at":"2026-09-10T06:14:44.103Z","updated_at":"2026-09-10T06:14:44.103Z","deleted_at":null,"stable_id":"06dabf8c-faef-4cad-bf39-86805f452996","created_by_user_id":"1666382703778278399","content_up
+
+[C_07num2] 200 len=590 869ms
+     {"error":false,"status":200,"meta":{"id":"9d844a78-8be8-4574-b880-3c83e516a03d","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":".","created_at":"2026-09-10T06:14:46.912Z","updated_at":"2026-09-10T06:14:46.912Z","deleted_at":null,"stable_id":"9d844a78-8be8-4574-b880-3c83e516a03d","created_by_user_id":"1666382703778278399","content_up
+
+[C_08null] 400 len=212 932ms
+     {"error":true,"status":400,"message":"PG::CharacterNotInRepertoire: dbproxy-client: received error from postgres (SQLSTATE 22021): ERROR: invalid byte sequence for encoding \"UTF8\": 0x00\nDETAIL:\n","i18n":null}
+
+[C_09sleep] 200 len=590 781ms
+     {"error":false,"status":200,"meta":{"id":"7ce816f6-834a-427f-aa03-715d31155497","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"/","created_at":"2026-09-10T06:14:52.679Z","updated_at":"2026-09-10T06:14:52.679Z","deleted_at":null,"stable_id":"7ce816f6-834a-427f-aa03-715d31155497","created_by_user_id":"1666382703778278399","content_up
+
+[C_10concat] 200 len=590 801ms
+     {"error":false,"status":200,"meta":{"id":"89a344f5-9a02-4f24-bddb-e8509c958232","collection_id":"ec2817c9-a5e7-4f0f-9f1c-3af0b0d4d205","status_updated_at":null,"status":"draft","last_published_at":null,"position":"0","created_at":"2026-09-10T06:14:55.451Z","updated_at":"2026-09-10T06:14:55.451Z","deleted_at":null,"stable_id":"89a344f5-9a02-4f24-bddb-e8509c958232","created_by_user_id":"1666382703778278399","content_up
+
+[C_11bool] 400 len=184 677ms
+     {"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items: Error occurred during parsing: Error parsing JSON @1:171: Expected string"}
+
+[C_12int] 400 len=184 694ms
+     {"error":true,"status":400,"message":"Error in route typechecking for /api/collections/:collection_id/items: Error occurred during parsing: Error parsing JSON @1:171: Expected string"}
+
+################ D) POST items/import ################
+[D_00base] 422 len=100 752ms
+     {"error":true,"status":422,"message":"Exactly one slug field is required for each item","i18n":null}
+
+[D_01q] 422 len=100 757ms
+     {"error":true,"status":422,"message":"Exactly one slug field is required for each item","i18n":null}
+
+[D_02cmt] 422 len=100 813ms
+     {"error":true,"status":422,"message":"Exactly one slug field is required for each item","i18n":null}
+
+[D_03btrue] 422 len=100 784ms
+     {"error":true,"status":422,"message":"Exactly one slug field is required for each item","i18n":null}
+
+[D_04bfalse] 422 len=100 735ms
+     {"error":true,"status":422,"message":"Exactly one slug field is required for each item","i18n":null}
+
+[D_05orall] 422 len=100 774ms
+     {"error":true,"status":422,"message":"Exactly one slug field is required for each item","i18n":null}
+
+[D_06num1] 422 len=100 710ms
+     {"error":true,"status":422,"message":"Exactly one slug field is required for each item","i18n":null}
+
+[D_07num2] 422 len=100 855ms
+     {"error":true,"status":422,"message":"Exactly one slug field is required for each item","i18n":null}
+
+DONE

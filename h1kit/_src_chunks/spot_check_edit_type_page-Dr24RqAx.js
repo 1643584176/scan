@@ -1,0 +1,1 @@
+import{Fw as e}from"./vendor-_WdvpBLr.js";import{t}from"./select_type-CLxzGLKZ.js";var n=e(),r=()=>(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(`h1`,{className:`text-2xl mb-lg`,children:`Edit spot check`}),(0,n.jsx)(t,{constants:window.constants,isEdit:!0})]});export{r as default};

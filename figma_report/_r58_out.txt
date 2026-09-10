@@ -1,0 +1,32 @@
+===== 1) file access check: A vs M =====
+  [A] GET /api/files/{M} -> 200 :: {"error":false,"status":200,"meta":{"creator_id":"1667396392129259941","updated_at":"2026-09-07T10:04:00.155Z","key":"6aAuG4WGbgDfgy3zvonKOE","name":"File content inquiry","description":"","folder_id":"636027532","scheme":null,"team_id":"1667396394890946753","
+  [ANON] GET /api/files/{M} -> 403 :: {"error":true,"status":403,"message":"You don't have permission to view this file.","i18n":{"id":"permissions.sinatra.cant_view_file","fallback_text":"You don't have permission to view this file.","params":{}}}
+
+===== 2) ANON WS FileAiChatThreadsView {ownerId: M} =====
+
+----- WS ANON FileAiChatThreadsView -----
+  [sub] FileAiChatThreadsView {'ownerId': '6aAuG4WGbgDfgy3zvonKOE'}
+  [msg] authSuccess: {'messageType': 'authSuccess', 'userId': None, 'sessionId': 'session-e3b2fb7f-50a5-43e9-ab1a-f8a9f51d45b6', 'anonymousUserId': None, 'podName': 'livegraph-548b4f5766-gk95c', 'containerName': 'livegrap
+  [payload] (136b) {"AiChatThread": {"queries": {"[\"root\",\"fileAiChatThreads\",[\"6aAuG4WGbgDfgy3zvonKOE\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] FileAiChatThreadsView {'ownerId': '6aAuG4WGbgDfgy3zvonKOE'}
+
+===== 3) ANON WS ActiveAiChatThreadPaginatedView =====
+
+----- WS ANON ActiveAiChatThreadPaginatedView -----
+  [sub] ActiveAiChatThreadPaginatedView {'id': '62c61983-5b6f-44c7-bebe-c1038ad63613', 'ownerId': '6aAuG4WGbgDfgy3zvonKOE', 'firstPageSize': 20}
+  [msg] authSuccess: {'messageType': 'authSuccess', 'userId': None, 'sessionId': 'session-45ba9c0b-5087-4663-893f-7e45623ccab1', 'anonymousUserId': None, 'podName': 'livegraph-548b4f5766-hrjch', 'containerName': 'livegrap
+  [payload] (178b) {"AiChatThread": {"queries": {"[\"root\",\"activeAiChatThread\",[\"6aAuG4WGbgDfgy3zvonKOE\",\"62c61983-5b6f-44c7-bebe-c1038ad63613\"],[]]": {"initial": {}}}, "computations": {}}}
+  [LOADED] ActiveAiChatThreadPaginatedView {'id': '62c61983-5b6f-44c7-bebe-c1038ad63613', 'ownerId': '6aAuG4WGbgDfgy3zvonKOE', 'firstPageSize': 20}
+
+===== 4) A WS FileAiChatThreadsView {ownerId: FILE_A} (baseline) =====
+
+----- WS A FileAiChatThreadsView FILE_A -----
+  [sub] FileAiChatThreadsView {'ownerId': 'IHt8kgtR3XmtqU5i8vz7p1'}
+  [msg] authSuccess: {'messageType': 'authSuccess', 'userId': '1666382703778278399', 'sessionId': 'session-7cb99e4c-38eb-45b8-a1f9-c6eedc327f6d', 'anonymousUserId': '620290b1-584d-47d4-aaa5-eb9cefc83e4d', 'podName': 'live
+  [payload] (506b) {"AiChatThread": {"queries": {"[\"root\",\"fileAiChatThreads\",[\"IHt8kgtR3XmtqU5i8vz7p1\"],[]]": {"initial": {"a2f71e01-40c9-4439-9438-e89b23942c21": {"id": "a2f71e01-40c9-4439-9438-e89b23942c21", "userId": "1666382703778278399", "privacyMode": "file", "createdAt": "2026-09-02T02:07:51.096Z", "nodeGuid": null, "metadata": {"title": "Design next user screen", "previewNodeGuid": "1:806"}, "externalSessionId": null, "ownerId": "IHt8kgtR3XmtqU5i8vz7p1", "threadType": "assistant"}}}}, "computations": {}}}
+  [payload] (418b) {"User": {"queries": {"[\"AiChatThread\",\"user\",[],[\"1666382703778278399\"]]": {"initial": {"1666382703778278399": {"id": "1666382703778278399"}}}}, "computations": {}}, "AiChatThread": {"queries": {}, "computations": {"[\"AiChatThread\",\"derivedThreadStatus\",\"a2f71e01-40c9-4439-9438-e89b23942c21\",{\"_rootId\":\"a2f71e01-40c9-4439-9438-e89b23942c21\"}]": {"fieldName": "derivedThreadStatus", "value": null}}}}
+  [payload] (495b) {"AiChatMessage": {"queries": {"[\"AiChatThread\",\"latestUserMessage\",[],[\"IHt8kgtR3XmtqU5i8vz7p1\",\"a2f71e01-40c9-4439-9438-e89b23942c21\"]]": {"initial": {"e3564c96-9467-4239-8292-a370878a4148": {"id": "e3564c96-9467-4239-8292-a370878a4148", "clientId": "fafc52eb-c157-4541-aabb-dcaf7b169071", "role": "user", "createdAt": "2026-09-02T02:08:00.680Z", "ownerId": "IHt8kgtR3XmtqU5i8vz7p1", "messageIndex": 0, "aiChatThreadId": "a2f71e01-40c9-4439-9438-e89b23942c21"}}}}, "computations": {}}}
+  [payload] (230b) {"AiChatThread": {"queries": {}, "computations": {"[\"AiChatThread\",\"messageCount\",\"a2f71e01-40c9-4439-9438-e89b23942c21\",{\"_rootId\":\"a2f71e01-40c9-4439-9438-e89b23942c21\"}]": {"fieldName": "messageCount", "value": 18}}}}
+  [payload] (2712b) {"AiMessagePart": {"queries": {"[\"AiChatMessage\",\"parts\",[],[\"IHt8kgtR3XmtqU5i8vz7p1\",\"e3564c96-9467-4239-8292-a370878a4148\"]]": {"initial": {"8cabf25a-175c-4dec-a44d-a6f8c221b2a9": {"id": "8cabf25a-175c-4dec-a44d-a6f8c221b2a9", "partIndex": 0, "contentPb": "CkFDcmVhdGUgdGhlIG5leHQgc2NyZWVuIHRoYXQgZm9sbG93cyB0aGlzIG9uZSBpbiB0aGUgdXNlciBqb3VybmV5Lg==", "partType": "text", "isContentCompressed": false, "blobstoreContentKey": null, "ownerId": "IHt8kgtR3XmtqU5i8vz7p1", "aiChatMessageId": "e3564c96-9467-4239-8292-a370878a4148"}, "fbe690c3-9823-489b-90f5-651011febd72": {"id": "fbe690c3-9823-489b-90f5-651011febd72", "partIndex": 1, "contentPb": "Cv0ICgUxOjgwNhIGU2NyZWVuGgVGUkFNRSEAAAAAAOiSQCkAAAAAAGCIQDLSCGRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFGTENBWUFBQUNnRHpUSUFBQUFDWEJJV1hNQUFBc1RBQUFMRXdFQW1wd1lBQUFBQVhOU1IwSUFyczRjNlFBQUFBUm5RVTFCQUFDeGp3djhZUVVBQUFBT
+  [LOADED] FileAiChatThreadsView {'ownerId': 'IHt8kgtR3XmtqU5i8vz7p1'}
+DONE

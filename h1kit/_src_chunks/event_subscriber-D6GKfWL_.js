@@ -1,0 +1,1 @@
+var e=new Map,t={onKeyUp:`keyup`},n={escape:`Escape`,arrowDown:`ArrowDown`},r=new Set(Object.values(t)),i=(t,n)=>{if(!r.has(t))throw Error(`${t} is not a valid event type`);e.set(n,t),window.addEventListener(t,n)},a=(e,t)=>{window.removeEventListener(e,t)},o=(e,t)=>(i(e,t),a.bind(null,e,t)),s=e=>{let{onKeyUp:n}=t;return o(n,e)};export{s as n,n as t};
