@@ -1,0 +1,37 @@
+== 0. live spec ==
+spec https://console-stage.neon.build/api/v2/openapi.json ERR HTTP Error 401: Unauthorized
+spec https://console-stage.neon.build/openapi.json ERR HTTP Error 404: Not Found
+
+== 1. POST /api_keys matrix ==
+[A valid viewer scope] 200 echo_scope=False resp={"id":1277654,"key":"napi_uv23fv0ak9dbiomzljaz058sd40gt7ky0v2e90vzb22b8sb1w9gnxyrtkhxqff8f","name":"u18-a","created_at":"2026-09-10T21:38:01Z","created_by":"6e7f1952-b696-496f-b403-2847065ba787"}
+[B bogus permission] 200 echo_scope=False resp={"id":1277655,"key":"napi_fy6tccf8fqjlpc6v4d9v1qx4hun60gmkh271lah26kyw7oax5jjp6d9ifz4i0cfp","name":"u18-b","created_at":"2026-09-10T21:38:02Z","created_by":"6e7f1952-b696-496f-b403-2847065ba787"}
+[C scope wrong type] 200 echo_scope=False resp={"id":1277656,"key":"napi_j9jakp51lbbhi2dczekvje1d49bt8x9a5p2nhvv62ccdqtnq58okq8k094ryxr0u","name":"u18-c","created_at":"2026-09-10T21:38:04Z","created_by":"6e7f1952-b696-496f-b403-2847065ba787"}
+[D unknown junk field] 200 echo_scope=False resp={"id":1277657,"key":"napi_7ii7fgmbqv7967sfmacg2wfk1knsdn7d6oq22xc9ako5m05x6j4ipcpxqgcuj13l","name":"u18-d","created_at":"2026-09-10T21:38:05Z","created_by":"6e7f1952-b696-496f-b403-2847065ba787"}
+[E flat project_id] 200 echo_scope=False resp={"id":1277658,"key":"napi_v2ow07a8038lwzy4490j3cibcacckbo8b3urmg75upxdc2osyfqsu0hdhdoo4yg1","name":"u18-e","created_at":"2026-09-10T21:38:06Z","created_by":"6e7f1952-b696-496f-b403-2847065ba787"}
+
+== 2. readback GET /api_keys ==
+  item: {"id": 1277658, "name": "u18-e", "created_at": "2026-09-10T21:38:06Z", "created_by": {"id": "6e7f1952-b696-496f-b403-2847065ba787", "name": " ", "image": ""}, "last_used_at": null, "last_used_from_addr": ""}
+  item: {"id": 1277657, "name": "u18-d", "created_at": "2026-09-10T21:38:05Z", "created_by": {"id": "6e7f1952-b696-496f-b403-2847065ba787", "name": " ", "image": ""}, "last_used_at": null, "last_used_from_addr": ""}
+  item: {"id": 1277656, "name": "u18-c", "created_at": "2026-09-10T21:38:04Z", "created_by": {"id": "6e7f1952-b696-496f-b403-2847065ba787", "name": " ", "image": ""}, "last_used_at": null, "last_used_from_addr": ""}
+  item: {"id": 1277655, "name": "u18-b", "created_at": "2026-09-10T21:38:02Z", "created_by": {"id": "6e7f1952-b696-496f-b403-2847065ba787", "name": " ", "image": ""}, "last_used_at": null, "last_used_from_addr": ""}
+  item: {"id": 1277654, "name": "u18-a", "created_at": "2026-09-10T21:38:01Z", "created_by": {"id": "6e7f1952-b696-496f-b403-2847065ba787", "name": " ", "image": ""}, "last_used_at": null, "last_used_from_addr": ""}
+
+== 3. probes ==
+B(garbage scope) GET branches PA: 200 {"branches":[{"id":"br-wandering-field-w2ob6mpn","project_id":"orange-sun-90493739","name":"main","slug":"br-wandering-f
+B(garbage scope) GET junk path: 404
+E(flat project_id=PA) GET branches PB(OTHER): 200 {"branches":[{"id":"br-raspy-band-w247957z","project_id":"damp-term-63384673","name":"production","slug":"br-raspy-band-
+-- org key project_id probe --
+create org key: 200 resp={"id":1277659,"key":"napi_pyadrfpglllw3jl9f8q0sus4hixb3o357jgz6q413xr2nhrnl6a77rhpzmd3s7u4","name":"u18-g","created_at":"2026-09-10T21:38:11Z","created_by":"6e7f1952-b696-496f-b403-2847065ba787","project_id":"orange-sun-90493739"}
+G GET project PA (own scope): 200 {"project":{"data_storage_bytes_hour":0,"data_transfer_bytes":8766258,"written_data_bytes":0,"compute_time_seconds":1076
+G GET branches PB (other project): 404 {"request_id":"a451314c-5cb6-4b22-9766-a24ba70fa885","code":"","message":"project not found"}
+G GET /projects list: 404 {"request_id":"141fee0e-4417-4f4c-b575-a2b07ff4e93d","code":"","message":"not allowed to perform actions outside the project this key is scoped to; subject_project_id:\"orange-sun-90493739\""}
+
+== 4. cleanup ==
+del u18-e: 200
+del u18-d: 200
+del u18-c: 200
+del u18-b: 200
+del u18-a: 200
+del org key u18-g: 200 {"id":1277659,"name":"u18-g","created_at":"2026-09-10T21:38:11Z","created_by":"6e7f1952-b696-496f-b403-2847065ba787","last_used_at":"2026-09-10T21:38:12Z","last
+remaining: ['sec-pccp-key']
+== DONE

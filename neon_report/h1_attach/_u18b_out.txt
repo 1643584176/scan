@@ -1,0 +1,18 @@
+# napi_* values redacted for hygiene (test key deleted during cleanup; see end of log)
+
+create project-scoped key: 200 {"id":1277660,"key":"napi_***REDACTED***","name":"u18b-ps","created_at":"2026-09-10T21:39:56Z","created_by":"6e7f1952-b696-496f-b403-2847065ba787","project_id":"orange-sun-90493739"}
+src=br-raspy-brook-w2edekf7 ready=True
+src seeded
+branch_anonymized: 201 {"branch":{"id":"br-orange-mode-w2hgz9st","project_id":"orange-sun-90493739","parent_id":"br-raspy-brook-w2edekf7","parent_lsn":"0/375BCD0","name":"u18b-anon","slug":"br-orange-mode-w2hgz9st","project_slug":"orange-sun-90493739","current_state":"init","pending
+anon=br-orange-mode-w2hgz9st restricted_actions=[{'name': 'restore', 'reason': 'cannot restore anonymized branches'}, {'name': 'delete-rw-endpoint', 'reason': 'cannot delete read-write endpoints for anonymized branches'}, {'name': 'connect-to-endpoints', 'reason': 'cannot connect to endpoints while branch is being anonymized'}]
+PS-key fork of restricted branch: 201 {"branch":{"id":"br-patient-river-w2zzzaxd","project_id":"orange-sun-90493739","parent_id":"br-orange-mode-w2hgz9st","parent_lsn":"0/3A7D6C0","name":"u18b-fork","slug":"br-patient-river-w2zzzaxd","project_slug":"orange-sun-90493739","current_state":"init","pen
+fork=br-patient-river-w2zzzaxd child restricted_actions=None
+fork ready=True
+PS-key GET connection_uri(fork): OK
+PS-KEY DATA READ: RAW=True rows=([1, 'alice.real@victimcorp.com', 'ssn-111-22-3333'],)
+del branch br-patient-river-w2zzzaxd: 200
+del branch br-orange-mode-w2hgz9st: 200
+del branch br-raspy-brook-w2edekf7: 200
+del PS key: 200
+FINAL branches: ['main']
+== DONE
