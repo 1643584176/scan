@@ -1,0 +1,2 @@
+HTTP 500 1175ms https://www.figma.com/api/file_diff/v2/checkpoint_diff/6aAuG4WGbgDfgy3zvonKOE?from_file_version_id=2396396343069925306&diff_version=2&migration_version=1
+{"error":true,"message":"Error updating diff."}

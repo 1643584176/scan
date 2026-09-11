@@ -1,0 +1,10 @@
+===== admin 端点试探 =====
+[A1_cpd_ver] 404   644ms :: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.", (checkpoint_diffs + 版本id)
+[A2_cpd_fk] 404   315ms :: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.", (checkpoint_diffs + fk)
+[A3_fscpd_ver] 404   315ms :: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.", (figmascope_cd + 版本id)
+[A4_fscpd_fk] 404   313ms :: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.", (figmascope_cd + fk)
+[A5_fscp_ver] 404   313ms :: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.", (figmascope_checkpoints + 版本id)
+[A6_cp_ver] 404   316ms :: {"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.", (checkpoints + 版本id)
+===== OPTIONS Allow 复读 =====
+OPTIONS 200 OPTIONS, POST | {'Content-Length': '0', 'Connection': 'keep-alive', 'Date': 'Fri, 11 Sep 2026 03:45:11 GMT', 'Allow': 'OPTIONS, POST', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 31358263ea6585f9fcae08733998bbf4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'SIN3-P2', 'Alt-Svc': 'h3=":443"; ma=86400', 'X-Amz-Cf-Id': '0LyItyUuPnKY3yfNvQh0reT3YLEP7xqSmMBS7pC-ix3IEY0nG0SmFA==', 'X-Content-Type-Options': 'nosniff'
+DONE208

@@ -1,0 +1,16 @@
+===== A. hub 面新子路径（从未打过） =====
+[J1] 202 len=     0 425ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront GET 单 hub 元数据
+[J2] 202 len=     0 680ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront template copy（NX 形态）
+[J3] 403 len=   247 883ms ct=application/json; charset=utf-8 xcache=Error from cloudfront TeamTemplate template_canvas 路径
+    body=b'{"error":true,"status":403,"message":"You don\xe2\x80\x99t have permission to use this file as template.","i18n":{"id":"permissions.sinatra.cant_use_file_as_template","fallback_text":"You don\xe2\x80\x99t have permission to use this file as template.","params":{}}}'
+[J4] 403 len=    96 951ms ct=application/json; charset=utf-8 xcache=Error from cloudfront TeamTemplate prepare_insert 路径
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to edit this file.","i18n":null}'
+
+===== B. 旧社区面 + 对照 =====
+[J5] 404 len=     9 842ms ct=text/plain xcache=Error from cloudfront 社区文件元数据（旧面）
+    body=b'Not Found'
+[J6] 404 len=826135 1917ms ct=text/html;charset=utf-8 xcache=Error from cloudfront resource_uses GET（对照）
+
+===== C. template_canvas 时间再打（距 B2 约 12 分钟） =====
+[J7] 202 len=     0 657ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront TC 再打（冷却时间判别）
+DONE r261

@@ -1,0 +1,30 @@
+===== r214c B段: thumbnails 极限 =====
+[B1] 404 len=123 969ms 大写hex
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[B2] 400 len=915 96ms 40hex+%00尾
+    body=b'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\n<TITLE>ERROR: The request could not be satisfied</TITLE>\n</HEAD><BODY>\n<H1>400 ERROR</H1>\n<H2>The request could not be satisfied.</H2>\n<HR noshade size="1px">\nBad request.\nWe can\'t connect to the server for this app or website at th'
+[B3] 400 len=75 709ms 矩阵参数 ;v=1
+    body=b'{"error":true,"status":400,"message":"Missing or invalid sha1","i18n":null}'
+[B4] 404 len=9 273ms 编码..路径段
+    body=b'Not Found'
+[B5] 404 len=9 271ms 双斜杠空段
+    body=b'Not Found'
+[B6] 404 len=826095 1213ms 尾斜杠
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>\n    <script nonce="Cvz7PmHRi+dypgo83uxCeg'
+[B7] 404 len=123 434ms width=100 喷洒
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[B8] 404 len=123 417ms width=100引号
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[B9] 404 len=123 407ms format/q/page/limit/size/dpr 多参
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[B10] 400 len=214 426ms quoted integer "1"
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:22: Non-number characters in quoted integer"}'
+[B11] 400 len=214 397ms 数组 [1]
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:20: Non-number characters in quoted integer"}'
+[B12] 400 len=214 389ms float 1.5
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:20: Non-number characters in quoted integer"}'
+[B13] 404 len=123 395ms 负时间戳
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[B14] 404 len=9 273ms feed镜像探测
+    body=b'Not Found'
+DONE r214c

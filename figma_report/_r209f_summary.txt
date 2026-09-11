@@ -1,0 +1,26 @@
+A1_A | 200 947ms | 1666382703778278399 | {"needs_invite":false,"reason":"HAS_ACCESS_TO_FILE"}
+A2_B | 200 564ms | 1667396392129259941 | {"needs_invite":false,"reason":"NOT_ALLOWED_TO_CONTACT_USER"}
+A3_one | 404 505ms | 1 | "message": "USER_NOT_FOUND"
+A4_neighbour | 404 386ms | 1666382703778278398 | "message": "USER_NOT_FOUND"
+A5_huge | 404 431ms | 9999999999999999999 | "message": "USER_NOT_FOUND"
+B1_q | 200 611ms | 1667396392129259941%27 | {"needs_invite":false,"reason":"NOT_ALLOWED_TO_CONTACT_USER"}
+B2_qcm | 200 534ms | 1667396392129259941%27-- | {"needs_invite":false,"reason":"NOT_ALLOWED_TO_CONTACT_USER"}
+B3_or1 | 404 427ms | 0+OR+1%3D1 | "message": "USER_NOT_FOUND"
+B4_or2 | 404 408ms | 0+OR+1%3D2 | "message": "USER_NOT_FOUND"
+B5_a11 | 200 756ms | 1667396392129259941%27+AND+%271%27%3D%27 | {"needs_invite":false,"reason":"NOT_ALLOWED_TO_CONTACT_USER"}
+B6_a12 | 200 526ms | 1667396392129259941%27+AND+%271%27%3D%27 | {"needs_invite":false,"reason":"NOT_ALLOWED_TO_CONTACT_USER"}
+B7_sleep | 200 547ms | 1667396392129259941%3BSELECT+pg_sleep%28 | {"needs_invite":false,"reason":"NOT_ALLOWED_TO_CONTACT_USER"}
+B8_concat | 200 596ms | 1667396392129259941%27%7C%7Cpg_sleep%283 | {"needs_invite":false,"reason":"NOT_ALLOWED_TO_CONTACT_USER"}
+B9_aq | 200 431ms | 1666382703778278399%27 | {"needs_invite":false,"reason":"HAS_ACCESS_TO_FILE"}
+C1_base | 200 343ms |  | {"ingestion_status":"not_connected","completed_at":null}
+C2_rand | 200 331ms |  | {"ingestion_status":"not_connected","completed_at":null}
+C3_fk2 | 200 379ms |  | {"ingestion_status":"not_connected","completed_at":null}
+C4_q | 200 333ms |  | {"ingestion_status":"not_connected","completed_at":null}
+C5_qcm | 200 344ms |  | {"ingestion_status":"not_connected","completed_at":null}
+C6_pct | 200 339ms |  | {"ingestion_status":"not_connected","completed_at":null}
+D1_empty | 400 325ms |  | "message": "asset_keys is required"
+D2_a | 200 340ms |  | {"components":{}
+D3_guess | 200 341ms |  | {"components":{}
+D4_q | 200 378ms |  | {"components":{}
+D5_a11 | 200 330ms |  | {"components":{}
+D6_sleep | 200 368ms |  | {"components":{}

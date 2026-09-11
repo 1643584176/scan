@@ -1,0 +1,34 @@
+===== r244 F. 参数生效性判别(大数对照) =====
+[F5] 403 len=99 870ms 路径=BIG query=FID (路径生效?)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this project.","i18n":null}'
+[F6] 200 len=13534 1563ms 路径=FID query=BIG (query生效?)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+[F7] 403 len=99 1197ms 双BIG (全查无?)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this project.","i18n":null}'
+===== r244 D. can_move 基准+大数 =====
+[D0] 200 len=40 1444ms can_move 正常基准
+    body=b'{"error":false,"status":200,"i18n":null}'
+[D3] 200 len=40 1184ms can_move dest 大数
+    body=b'{"error":false,"status":200,"i18n":null}'
+===== r244 B. 布尔参数 =====
+[B1] 200 len=13534 2135ms bool 尾引号
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+[B2] 200 len=13534 1202ms bool 非法值 junk
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+===== r244 A. file_type 数组元素注入 =====
+[A1] 400 len=96 942ms ft[]=design' 元素尾引号
+    body=b'{"error":true,"status":400,"message":"editor_type must be a string, received Array","i18n":null}'
+[A2] 400 len=96 870ms ft[]=design' OR '1'='1
+    body=b'{"error":true,"status":400,"message":"editor_type must be a string, received Array","i18n":null}'
+[A3] 400 len=96 930ms ft[]=design\x00junk 中段NUL
+    body=b'{"error":true,"status":400,"message":"editor_type must be a string, received Array","i18n":null}'
+[A4] 400 len=96 617ms ft[] HPP 双发(合法+恶意)
+    body=b'{"error":true,"status":400,"message":"editor_type must be a string, received Array","i18n":null}'
+===== r244 N. 收官确认 =====
+[N2] 200 len=13534 707ms 基准复打
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+DONE r244

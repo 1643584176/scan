@@ -1,0 +1,72 @@
+===== r243 N. 基准 =====
+[N1] 200 len=13534 1129ms 基准(正常全参)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+===== r243 S. sort_column SQL 语法形态 =====
+[S1] 400 len=81 1222ms sc=name -- (空格+注释)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[S2] 400 len=81 1322ms sc=name,name (逗号双列)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[S3] 400 len=81 1330ms sc=(name) 括号
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[S4] 400 len=81 1575ms sc=name desc (空格+方向)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[S5] 400 len=81 1488ms sc=name' 尾引号
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[S6] 200 len=13534 1591ms sc=(空格)name 前空格
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+[S7] 200 len=13534 1559ms sc=name(空格) 尾空格
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+[S8] 200 len=13534 1499ms sc=name\t 尾Tab
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+[S9] 400 len=81 1300ms sc=name\x00x 中段NUL
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[S10] 400 len=81 1287ms sc=name' OR '1'='1
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+===== r243 O. sort_order 语法形态 =====
+[O1] 400 len=80 1593ms so=asc;SELECT 1 堆叠
+    body=b'{"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}'
+[O2] 400 len=80 1146ms so=asc -- 注释
+    body=b'{"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}'
+[O3] 400 len=80 1277ms so=asc' 尾引号
+    body=b'{"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}'
+[O4] 400 len=80 1310ms so=asc,desc 逗号
+    body=b'{"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}'
+===== r243 P. page_size 语法形态 =====
+[P1] 400 len=108 1379ms ps=10' 尾引号
+    body=b'{"error":true,"status":400,"message":"\'page_size\' must be a valid number, received type String","i18n":null}'
+[P2] 400 len=108 1479ms ps=10;SELECT pg_sleep(3) 堆叠时延
+    body=b'{"error":true,"status":400,"message":"\'page_size\' must be a valid number, received type String","i18n":null}'
+[P3] 200 len=13534 1537ms ps=10 -- 注释
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+[P4] 400 len=108 869ms ps=(SELECT 10) 子查询
+    body=b'{"error":true,"status":400,"message":"\'page_size\' must be a valid number, received type String","i18n":null}'
+===== r243 F. folderId/路径 FID 注入值位(0 覆盖区) =====
+[F1] 200 len=13534 1068ms folderId=FID' 尾引号
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+[F2] 200 len=13534 1124ms 路径 FID%27 尾引号
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+[F3] 200 len=13534 1746ms folderId=FID OR 1=1
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+[F4] 200 len=13534 1084ms 路径 FID OR 1=1
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_template":false,"is_published_site'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled', 't-99ff96']
+===== r243 D. destFolderId (can_move 槽位) =====
+[D1] 200 len=40 999ms destFolderId=FID' 尾引号
+    body=b'{"error":false,"status":200,"i18n":null}'
+[D2] 200 len=40 989ms destFolderId=FID OR 1=1
+    body=b'{"error":false,"status":200,"i18n":null}'
+===== r243 X. 兄弟端点路径引号 =====
+[X1] 200 len=282 879ms contributors 路径尾引号
+    body=b'{"error":false,"status":200,"meta":[{"user":{"id":"1666382703778278399","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed21693'
+    names=[None]
+[X2] 200 len=71 1022ms ancestors 路径尾引号
+    body=b'{"error":false,"status":200,"meta":{"ancestor_folders":[]},"i18n":null}'
+DONE r243

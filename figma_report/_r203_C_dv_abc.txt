@@ -1,0 +1,3 @@
+HTTP 400 708ms https://www.figma.com/api/file_diff/v2/checkpoint_diff/LnVEzMlZc1rVRIjlcVtt2x?diff_version=abc&from_file_version_id=2385988972663143242&migration_version=0
+{'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '86', 'Connection': 'keep-alive', 'Date': 'Fri, 11 Sep 2026 03:38:04 GMT', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 e78b50eab333f2c2442984d125a57e28.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'SIN3-P2', 'Alt-Svc': 'h3=":443"; ma=86400', 'X-Amz-Cf-Id': 'X_MX3mf21E-l7JQ14Nrl3XwiWPl8hSmq4WlGiU9gvekOzfEu5l5FBA==', 'X-Content-Type-Options': 'nosniff', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'}
+{"error":true,"message":"'diff_version' must be a valid number, received type String"}

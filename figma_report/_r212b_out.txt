@@ -1,0 +1,18 @@
+===== r212b notification_settings 矩阵 =====
+[N3] 400 len=106 645ms plan_id=PLAN_B(UUID)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N4] 200 len=40 369ms plan_id=TEAM_A(数字)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[N5] 403 len=279 588ms plan_id=TEAM_B(数字)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[N6] 400 len=106 332ms plan_type 枚举探针
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N7] 400 len=106 319ms notification_type 枚举探针
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N8] 400 len=106 326ms plan_id 尾引号
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N9] 400 len=106 324ms plan_id 布尔
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N10] 400 len=106 319ms plan_id 盲注
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+DONE r212b

@@ -1,0 +1,28 @@
+===== 1. 202 判别：单独重打（观察顺序依赖） =====
+[R1] 202 len=     0 374ms ct=text/html; charset=UTF-8 srv=CloudFront fv=abc 单独重打（r257 时=202）
+    body=b''
+[R2] 202 len=     0 418ms ct=text/html; charset=UTF-8 srv=CloudFront fv=1'-- 单独重打（r257 时=202）
+    body=b''
+[R3] 202 len=     0 403ms ct=text/html; charset=UTF-8 srv=CloudFront fv=1 对照（r257 时=400）
+    body=b''
+
+===== 2. fv 格式探索（找合法格式边界） =====
+[S1] 202 len=     0 653ms ct=text/html; charset=UTF-8 srv=CloudFront fv=1.5 浮点
+    body=b''
+[S2] 202 len=     0 691ms ct=text/html; charset=UTF-8 srv=CloudFront fv=20位大数
+    body=b''
+[S3] 202 len=     0 1027ms ct=text/html; charset=UTF-8 srv=CloudFront fv=-1 负数
+    body=b''
+
+===== 3. prepare_insert fileKey 位（形态修正后） =====
+[P1] 202 len=     0 610ms ct=text/html; charset=UTF-8 srv=CloudFront 第2段=真 fileKey
+    body=b''
+[P2] 202 len=     0 698ms ct=text/html; charset=UTF-8 srv=CloudFront fileKey+尾缀
+    body=b''
+[P3] 202 len=     0 729ms ct=text/html; charset=UTF-8 srv=CloudFront 不存在 hub + 真 key
+    body=b''
+
+===== 4. resource_uses 200 内容采集 =====
+[U1] 200 len=   292 1007ms ct=application/json srv= hub_file 真值（看 200 全文）
+    body=b'{"error":false,"status":200,"meta":{"id":"14d2f6d9-e9dd-412b-b9d0-951074b78a7d","user_id":"1666382703778278399","created_at":"2026-09-10T04:41:40.293Z","updated_at":"2026-09-10T04:41:40.293Z","resource_id":"ff0c0b6a-f18b-4f2a-97f3-80b966066eac","usage_id":null,"usage_type":null},"i18n":null}'
+DONE r258

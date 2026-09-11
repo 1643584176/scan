@@ -1,0 +1,2 @@
+HTTP 200 457ms https://www.figma.com/api/resource_connection_invite/folder_search?query=test&sort=relevancy&desc=true&max_num_results=10
+{"error":false,"status":200,"meta":{"results":[]},"i18n":null}

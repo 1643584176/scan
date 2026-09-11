@@ -1,0 +1,15 @@
+===== r256 控制符剥离边界 =====
+[X1] 200 len=337 pid=A \x02 尾（范围扩展）
+[X2] 200 len=337 pid=A \x08 尾（backspace）
+[X3] 200 len=337 pid=A \x1F 尾（区段末）
+[X4] 200 len=337 pid=前 \x01 + A（前位剥离判别）
+[X5] 403 len=279 pid=A \x01 1（中段剥离→20位过门=403？不剥=400）
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscr'
+[X6] 400 len=106 pid=A \x01 '（剥控制符后引号露出的组合）
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[X7] 400 len=106 pid=' A \x01（前引号+尾控制符）
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[X8] 400 len=86 名位 plan\x01_id（名字剥控制符判别）
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[X9] 200 len=13534 folder sc=name\x01（跨端点对照）
+DONE r256

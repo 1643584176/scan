@@ -1,0 +1,28 @@
+===== A. 方法/路径边界 =====
+[E1] 202 len=     0 425ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront GET（r257=404 SPA）
+    body=b''
+[E2] 202 len=     0 707ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront POST 无 body（r257=400 Missing）
+    body=b''
+[E3] 202 len=     0 1154ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront NX hub（r257=404 not found）
+    body=b''
+[E4] 202 len=     0 675ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront v2/copy 路径形态（NX）
+    body=b''
+
+===== B. 绕行：路径变体 =====
+[E5] 202 len=     0 668ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront 尾斜杠
+    body=b''
+[E6] 202 len=     0 703ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront 双斜杠
+    body=b''
+
+===== C. 绕行：头部依赖 =====
+[E7] 202 len=     0 665ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront 去 X-Figma-User-ID
+    body=b''
+[E8] 202 len=     0 888ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront Accept: */*
+    body=b''
+[E9] 202 len=     0 673ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront form CT（body 仍是 json 传）
+    body=b''
+
+===== D. 时序对照（距 r257 B2 约数分钟后） =====
+[E10] 202 len=     0 640ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront fv=1 再次（冷却判别）
+    body=b''
+DONE r259

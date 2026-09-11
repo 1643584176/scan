@@ -1,0 +1,49 @@
+===== r237 D. JSON重复键 校验层/使用层分离判别 =====
+[D1] 400 len=106 548ms 重复键 合法先+恶意后 (400=校验看last一致/200=校验first分裂!)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[D2] 200 len=337 821ms 重复键 恶意先+合法后 (200=校验看last一致/400=校验first分裂!)
+    body=b'{"error":false,"status":200,"meta":{"id":"0d33c1a2-2cb7-4a75-905e-d2a2d5da1ab3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:09:52.776Z","updated_at":"20'
+===== r237 P. 路径版本变体 (SPA大len=不存在) =====
+[P1] 404 len=9 1020ms 版本路径 /api/billing/v2/notification_settings
+    body=b'Not Found'
+[P2] 404 len=9 1068ms 版本路径 /api/v2/billing/notification_settings
+    body=b'Not Found'
+[P3] 404 len=9 1000ms 版本路径 /api/billing/notification_settings/v2
+    body=b'Not Found'
+[P4] 404 len=9 413ms 版本路径 /api/v1/billing/notification_settings
+    body=b'Not Found'
+===== r237 X. 兄弟操作路径 =====
+[X1] 404 len=9 400ms 兄弟操作 /api/billing/notification_settings/copy
+    body=b'Not Found'
+[X2] 404 len=9 417ms 兄弟操作 /api/billing/notification_settings/bulk
+    body=b'Not Found'
+[X3] 404 len=9 399ms 兄弟操作 /api/billing/notification_settings/history
+    body=b'Not Found'
+[X4] 404 len=9 408ms 兄弟操作 /api/billing/notification_settings/audit
+    body=b'Not Found'
+===== r237 S. 同表其他端点 =====
+[S1] 400 len=106 486ms 同表端点 /api/user/notification_settings
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[S2] 404 len=9 401ms 同表端点 /api/notifications/settings
+    body=b'Not Found'
+[S3] 404 len=9 564ms 同表端点 /api/settings/notifications
+    body=b'Not Found'
+===== r237 Z. 负零 / multipart / 互换 / 时间戳 / HPP写 =====
+[Z1] 403 len=279 458ms 负零 -0 (过正则→查询0→403?或400?)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[Z2] 400 len=96 714ms multipart body 探测
+    body=b'{"error":true,"status":400,"message":"Missing required parameter notification_type","i18n":null}'
+[Z3] 403 len=101 784ms file_key/sha1 互换 (期望400格式拒)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+[Z4] 200 len=337 758ms 时间戳 mass assignment created_at
+    body=b'{"error":false,"status":200,"meta":{"id":"8ff85f74-9b28-47a8-bc79-b033c2c2aa5a","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:10:35.140Z","updated_at":"20'
+[Z5] 200 len=337 904ms 时间戳 mass assignment updated_at
+    body=b'{"error":false,"status":200,"meta":{"id":"3c5878fc-de0d-4cf8-a4a7-a248f0e5dd55","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:10:38.344Z","updated_at":"20'
+[Z6] 403 len=279 1214ms PUT query 双plan_id(A,B)+body缺plan字段 (last→403门/first→200)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+===== r237 净化 =====
+[F1] 200 len=337 1347ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"23d3badf-8beb-4276-b829-785f8cd2450e","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:10:45.231Z","updated_at":"20'
+[F2] 200 len=337 971ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"23d3badf-8beb-4276-b829-785f8cd2450e","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:10:45.231Z","updated_at":"20'
+DONE r237

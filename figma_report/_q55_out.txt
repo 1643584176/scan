@@ -1,0 +1,54 @@
+扫描脚本数: 885
+
+===== A. /api/user/ 任意形态 =====
+  _figma_cookie_chk.py:38: s, txt = req('GET', '/api/user/%s/segments' % UID_B, cookie=COOKIE_B)
+  _figma_cookie_chk.py:39: print('[B cookie] GET /api/user/B/segments -> %d %s' % (s, txt[:200].replace('\n', ' ')))
+  _figma_matrix1.py:36: req('GET', '/api/user/%s/segments' % UID_B)
+  _figma_p112_tri.py:41: r = requests.get(f'{BASE}/api/user/state?fuid={uid}', headers=h, timeout=20, verify=False)
+  _figma_p112_tri.py:43: print(f'  [{tag}] /api/user/state -> {r.status_code} :: {t[:400]}')
+  _figma_p114_statex.py:2: """p114: /api/user/state fuid 交叉读取测试 + B profile restrict 状态"""
+  _figma_p114_statex.py:33: r = requests.get(f'{BASE}/api/user/state?fuid={fuid}', headers=H_B, timeout=20, verify=False)
+  _figma_r121.py:60: go('B3_segments', f'/api/user/{UID_A}/segments')
+  _figma_r121.py:61: go('B4_user_teams', f'/api/user/{UID_A}/teams')
+  _figma_r122.py:47: UT = f'/api/user/{UID_A}/teams'
+  → 命中行数: 30
+
+===== B. fuid 参数 =====
+  _figma_matrix1.py:8: F. fuid 头伪装复验(单次确认,不做批量)
+  _figma_matrix1.py:58: print('\n=== F. fuid 头伪装复验(单次) ===')
+  _figma_p112_tri.py:41: r = requests.get(f'{BASE}/api/user/state?fuid={uid}', headers=h, timeout=20, verify=False)
+  _figma_p114_statex.py:2: """p114: /api/user/state fuid 交叉读取测试 + B profile restrict 状态"""
+  _figma_p114_statex.py:31: print('===== ① fuid 交叉读取 =====')
+  _figma_p114_statex.py:32: for fuid, tag in [(UID_A, 'B-cookie->A-fuid'), (UID_C, 'B-cookie->C-fuid'), (UID_B, 'B-cookie->B-fuid')]:
+  _figma_p114_statex.py:33: r = requests.get(f'{BASE}/api/user/state?fuid={fuid}', headers=H_B, timeout=20, verify=False)
+  _figma_p114_statex.py:39: if r.status_code == 200 and fuid != UID_B:
+  _figma_r210_diag.py:29: t('figma_api', 'https://www.figma.com/api/user/state?fuid=' + UID_A,
+  _figma_r23_bid.py:3: 1) [B] /api/session/state?fuid=UID_B → 是否返回 B（729488839@qq.com）的用户记录
+  → 命中行数: 19
+
+===== C. /api/user/state =====
+  _figma_p112_tri.py:41: r = requests.get(f'{BASE}/api/user/state?fuid={uid}', headers=h, timeout=20, verify=False)
+  _figma_p112_tri.py:43: print(f'  [{tag}] /api/user/state -> {r.status_code} :: {t[:400]}')
+  _figma_p114_statex.py:2: """p114: /api/user/state fuid 交叉读取测试 + B profile restrict 状态"""
+  _figma_p114_statex.py:33: r = requests.get(f'{BASE}/api/user/state?fuid={fuid}', headers=H_B, timeout=20, verify=False)
+  _figma_r1_foldersearch.py:43: r = requests.get(f'{BASE}/api/user/state', headers=H_A, timeout=20, verify=False)
+  _figma_r210_diag.py:29: t('figma_api', 'https://www.figma.com/api/user/state?fuid=' + UID_A,
+  _figma_r210_diag.py:33: t('figma_api_nc', 'https://www.figma.com/api/user/state')
+  _figma_r43_canary.py:52: r = requests.get('https://www.figma.com/api/user/state',
+  _figma_r43_canary.py:56: show('B user/state', r)
+  _figma_r91_orgdig.py:2: # r91: 找 A 账号真实 org/team id(user/state) + folder_search org_id/team_id 小样本枚举
+  → 命中行数: 15
+
+===== D. /api/user/ 数字路径 =====
+  _figma_r122.py:57: go('A9_uid_big', '/api/user/99999999999999999999/teams', note='(20位)')
+  _figma_r223_teams_types.py:65: req('N2', 'GET', f'{BASE}/api/user/1666382703778278400/teams', '陌生uid校准(越权模型)')
+  → 命中行数: 2
+
+===== E. /api/user/notification =====
+  _figma_r237_sql_residual.py:71: for i, p in enumerate(['/api/user/notification_settings', '/api/notifications/settings', '/api/settings/notifications']):
+  _figma_r238_newface.py:2: # r238: 新端点 /api/user/notification_settings 的 user_id 槽位 + multipart 通道 —— 15 发
+  _figma_r238_newface.py:20: UEP = f'{BASE}/api/user/notification_settings'
+  _q54_sql_gap.py:13: 'C. 同表其他路径 user/settings': r'(api/user/notification_settings|api/notifications/settings|api/settings/notification)',
+  → 命中行数: 4
+
+DONE q55

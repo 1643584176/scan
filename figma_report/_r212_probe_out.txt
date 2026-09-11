@@ -1,0 +1,25 @@
+===== r212 探活批 =====
+
+-- 0) 会话活性 --
+[S0] 200 len=1530 1021ms 会话活性探针
+    body=b'{"error":false,"status":200,"meta":{"file_id_feature_flags":{},"file_id":"2394399966021772483","is_default":null,"script":"b8944e6a1f9274878f35ae86ffe521d18d36f932","name":"\xe7\xac\xac\xe4\xb8\x80\xe4\xb8\xaa","file_key":"IHt8kgtR3XmtqU5i8vz7p1","source_file_key":null,"file_repo":null,"needs_upgrade":false,"pass_state":"{\\"file_key\\":\\"IHt8kgtR3XmtqU5i8vz7p1\\",\\"session_id\\":436093916}","realtime_token":"/file-IHt8kgtR3XmtqU5i8vz7p1:178910843'
+-- 1) videos 族 --
+[V1] 200 len=61 413ms videos 列表基线(自有文件)
+    body=b'{"error":false,"status":200,"meta":{"videos":{}},"i18n":null}'
+[V2] 404 len=123 452ms thumbnails 假sha1基线
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[V3] 404 len=123 420ms thumbnails 数字位冒烟
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[V4] 403 len=309 575ms upload 子端点探活
+    body=b'{"error":true,"status":403,"message":"Access denied: video uploads can only be performed on files that belong to a subscribed team","i18n":{"id":"visual_bell.video_no_edit_permissions","fallback_text":"Access denied: video uploads can only be performed on files that belong to a subscribed team","params":{}}}'
+-- 2) ds_import_libraries --
+[D1] 200 len=50 398ms 基线
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+[D2] 200 len=50 393ms library_key 探针
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+-- 3) notification_settings --
+[N1] 400 len=86 652ms 无参基线
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[N2] 400 len=86 333ms 参数探针
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+DONE r212-probe

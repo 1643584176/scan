@@ -1,0 +1,66 @@
+never_L1: 1157
+toAPI: 60  win: 1097  state: 0
+
+saved: Figma-从未用过的入参清单-2026-09-11.md + _q34_result.json
+
+=== toAPI 层全量 ===
+  account_type → figma_app-main.js :: /api/activity_logs/recent/{}
+  ai_credit → figma_app-main.js :: /api/activity_logs/recent/{}
+  clientId → figma_app-main.js :: /api/plans/{}/admin_requests
+  colorPaletteUuid → figma_app-main.js :: /api/files/{}/color_palette
+  creationParams → figma_app-main.js :: /api/plans/{}/admin_requests
+  credits → figma_app-main.js :: /api/plans/{}/admin_requests/resolve
+  currentOrgId → 935-431f89677a39072c.min.js :: /api/tagged_file
+  currentTeamId → 935-431f89677a39072c.min.js :: /api/tagged_file
+  desktop_protocol → figma_app-main.js :: /api/integrations/github-app/setup
+  directories → figma_app-main.js :: /api/code_connect/libraries/{}/source_files
+  editorType → figma_app-main.js :: /api/resources/home_shelf
+  end_timestamp_ms → 935-431f89677a39072c.min.js :: /api/files/{}/videos/{}
+  fileKeys → 935-431f89677a39072c.min.js :: /api/files/hub_file_duplicates
+  fileTags → 935-431f89677a39072c.min.js :: /api/tagged_file
+  filter_to_selected_repo_directories → figma_app-main.js :: /api/code_connect/libraries/{}/source_files
+  includeCategorySlug → figma_app-main.js :: /api/resources/pinned
+  includeContent → 7435-ce1dc6726292bd56.min.js :: /api/resource_saves
+  includeFolderTeamCanEdit → 935-431f89677a39072c.min.js :: /api/files/{}
+  includeTags → figma_app-main.js :: /api/resources/pinned
+  integrationHost → 935-431f89677a39072c.min.js :: /api/statsig/bootstrap
+  lgOptimisticMutationUuid → figma_app-main.js :: /api/resource/{}/like
+  library_keys → figma_app-main.js :: /api/code_connect/libraries/repositories
+  max_results → 935-431f89677a39072c.min.js :: /api/files/{}/videos/{}
+  note → figma_app-main.js :: /api/activity_logs/recent/{}
+  notification_type → 469e6e40-f27da0e8f34b0858.min.js :: /api/billing/notification_settings
+  numResourcesPerTeam → figma_app-main.js :: /api/resources/pinned
+  num_assets_in_request → figma_app-main.js :: /api/buzz_approvals/create
+  oauth_app → figma_app-main.js :: /api/activity_logs/recent/{}
+  pageLocale → 935-431f89677a39072c.min.js :: /api/statsig/bootstrap
+  planKey → 935-431f89677a39072c.min.js :: /api/statsig/update_overrides
+  plan_parent_id → figma_app-main.js :: /api/integrations/github-app/setup
+  profileId → figma_app-main.js :: /api/resources/home_shelf
+  queryId → figma_app-main.js :: /api/resources
+  redact → 935-431f89677a39072c.min.js :: /api/user/state
+  rejectionParams → figma_app-main.js :: /api/plans/{}/admin_requests/reject
+  releaseManifestGitCommit → 935-431f89677a39072c.min.js :: /api/statsig/bootstrap
+  releaseServerGitCommit → 935-431f89677a39072c.min.js :: /api/statsig/bootstrap
+  repository_ids → figma_app-main.js :: /api/code_connect/libraries/{}/repositories
+  requestIds → figma_app-main.js :: /api/plans/{}/admin_requests/resolve
+  requestType → figma_app-main.js :: /api/activity_logs/recent/{}
+  request_context → figma_app-main.js :: /api/integrations/github-app/setup
+  request_context_id → figma_app-main.js :: /api/integrations/github-app/setup
+  request_id → figma_app-main.js :: /api/activity_logs/recent/{}
+  requestedFromFileKey → figma_app-main.js :: /api/plans/{}/admin_requests
+  requested_at → figma_app-main.js :: /api/buzz_approvals/create
+  requesterNote → figma_app-main.js :: /api/plans/{}/admin_requests
+  resolutionParams → figma_app-main.js :: /api/plans/{}/admin_requests/resolve
+  reviewer_ids → figma_app-main.js :: /api/buzz_approvals/create
+  secret_name → 7456-1a38d2d2beed1ad4.min.js :: /api/integrations/supabase/{}/secrets
+  secret_value → 7456-1a38d2d2beed1ad4.min.js :: /api/integrations/supabase/{}/secrets
+  seenResourceIds → figma_app-main.js :: /api/resources/home_shelf
+  shouldRecreate → 935-431f89677a39072c.min.js :: /api/tagged_file
+  snapshot_id → figma_app-main.js :: /api/code_connect/libraries/{}/source_files/file_details
+  start_timestamp_ms → 935-431f89677a39072c.min.js :: /api/files/{}/videos/{}
+  supabase_org_id → 7456-1a38d2d2beed1ad4.min.js :: /api/integrations/supabase/{}/connect
+  supabase_project_id → 7456-1a38d2d2beed1ad4.min.js :: /api/integrations/supabase/{}/connect
+  teamId → 6488-b9e83e69aee3c0e0.min.js :: /api/file_move/suggested
+  teamIds → 935-431f89677a39072c.min.js :: /api/statsig/bootstrap
+  viewAll → figma_app-main.js :: /api/plans/{}/admin_requests/counts
+  workspaceIds → 469e6e40-f27da0e8f34b0858.min.js :: /api/{}/org/{}/allowlist/{}

@@ -1,0 +1,31 @@
+===== r247 D. 归一化规则边界（400=识别/归一, 404=忽略） =====
+[D1] 400 len=214 922ms maxResults=1' (重打,读完整错误)
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:18: Non-number characters in quoted integer"}'
+[D2] 400 len=214 1014ms max_results=1' (蛇形对照)
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:19: Non-number characters in quoted integer"}'
+[D5] 404 len=123 1147ms MAX_RESULTS=1' (全大写)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[D6] 404 len=123 929ms MaxResults=1' (Pascal)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[D7] 404 len=123 1290ms maxresults=1' (全小写无分隔)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[D8] 404 len=123 1513ms max_results_camel=1' (无关名对照)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[D9] 400 len=214 1146ms startTimestampMs=0' (时间戳驼峰) [400=归一/404=忽略]
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:24: Non-number characters in quoted integer"}'
+[D10] 400 len=214 1316ms start_timestamp_ms=0' (蛇形对照)
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:26: Non-number characters in quoted integer"}'
+[D11] 404 len=123 1287ms startTsMs=0' (缩写变体)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[D12] 400 len=214 1148ms endTimestampMs=0' (另一驼峰)
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:22: Non-number characters in quoted integer"}'
+===== r247 H. 归一化 × HPP 交互 =====
+[H1] 400 len=214 831ms HPP: 驼峰先(1)+蛇形后(1') [取尾→400/取首→404]
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:36: Non-number characters in quoted integer"}'
+[H2] 400 len=214 1423ms HPP: 蛇形先(1)+驼峰后(1')
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:36: Non-number characters in quoted integer"}'
+[H3] 404 len=123 851ms HPP: 同驼峰名双值(1',1)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[H4] 400 len=214 861ms HPP: 驼峰(1')+蛇形(1) [归一合并→取尾404?]
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:18: Non-number characters in quoted integer"}'
+DONE r247

@@ -1,0 +1,66 @@
+扫描脚本数: 886
+
+===== A. fuid 带引号/注释 =====
+  _figma_p112_tri.py:41: r = requests.get(f'{BASE}/api/user/state?fuid={uid}', headers=h, timeout=20, verify=False)
+  _figma_p114_statex.py:33: r = requests.get(f'{BASE}/api/user/state?fuid={fuid}', headers=H_B, timeout=20, verify=False)
+  _figma_r210_diag.py:29: t('figma_api', 'https://www.figma.com/api/user/state?fuid=' + UID_A,
+  _figma_r23_bid.py:52: probe('state_B', f'/api/session/state?fuid={UID_B}')
+  _figma_r23_bid.py:53: probe('state_A', f'/api/session/state?fuid={UID_A}')
+  _figma_r80_wsdig.py:110: ('R4_cookie_searchpage', HA(f'{BASE}/search?fuid={UID_A}'), 'query=design&resource_type=plugins&caller=SEARCH_PAGE&page_size=10'),
+  _figma_r91_orgdig.py:38: get('A1_user_state', f'{BASE}/api/user/state?fuid={UID_A}', dump=True)
+  _figma_r91_orgdig.py:39: get('A2_session_state', f'{BASE}/api/session/state?fuid={UID_A}', dump=True)
+  → 命中行数: 8
+
+===== B. /api/user/ 路径带引号 =====
+  _figma_cookie_chk.py:38: s, txt = req('GET', '/api/user/%s/segments' % UID_B, cookie=COOKIE_B)
+  _figma_matrix1.py:36: req('GET', '/api/user/%s/segments' % UID_B)
+  _figma_p112_tri.py:41: r = requests.get(f'{BASE}/api/user/state?fuid={uid}', headers=h, timeout=20, verify=False)
+  _figma_p114_statex.py:33: r = requests.get(f'{BASE}/api/user/state?fuid={fuid}', headers=H_B, timeout=20, verify=False)
+  _figma_r121.py:60: go('B3_segments', f'/api/user/{UID_A}/segments')
+  _figma_r121.py:61: go('B4_user_teams', f'/api/user/{UID_A}/teams')
+  _figma_r122.py:47: UT = f'/api/user/{UID_A}/teams'
+  _figma_r122.py:56: go('A8_uid_q', f"/api/user/{UID_A}'/teams", note='(路径宽容对照)')
+  _figma_r122.py:57: go('A9_uid_big', '/api/user/99999999999999999999/teams', note='(20位)')
+  _figma_r122.py:61: go('B1_del_impact', f'/api/user/{UID_A}/deletion_impact', full=True)
+  _figma_r122.py:62: go('B2_scim', f'/api/user/{UID_A}/scim_provisioned_status', full=True)
+  _figma_r122.py:63: go('B3_emailf', '/api/user/email_features', full=True)
+  → 命中行数: 27
+
+===== C. /segments 任意用法 =====
+  _figma_cookie_chk.py:38: s, txt = req('GET', '/api/user/%s/segments' % UID_B, cookie=COOKIE_B)
+  _figma_cookie_chk.py:39: print('[B cookie] GET /api/user/B/segments -> %d %s' % (s, txt[:200].replace('\n', ' ')))
+  _figma_matrix1.py:36: req('GET', '/api/user/%s/segments' % UID_B)
+  _figma_r121.py:60: go('B3_segments', f'/api/user/{UID_A}/segments')
+  _figma_r122.py:65: go('B5_segments_r', f'/api/user/{UID_A}/segments', full=True)
+  _figma_r122_ctx.py:2: # r122 ctx: /api/user/* 调用形态(teams/segments)+ segments 参数
+  → 命中行数: 6
+
+===== D. /teams 路径用法(非 state) =====
+  _figma_r121.py:61: go('B4_user_teams', f'/api/user/{UID_A}/teams')
+  _figma_r122.py:46: print('===== A. user/{UID}/teams 参数面 =====')
+  _figma_r122.py:47: UT = f'/api/user/{UID_A}/teams'
+  _figma_r122.py:56: go('A8_uid_q', f"/api/user/{UID_A}'/teams", note='(路径宽容对照)')
+  _figma_r122.py:57: go('A9_uid_big', '/api/user/99999999999999999999/teams', note='(20位)')
+  _figma_r223_teams_types.py:46: r = req('N1', 'GET', f'{BASE}/api/user/{UID_A}/teams', 'A的team列表')
+  _figma_r223_teams_types.py:65: req('N2', 'GET', f'{BASE}/api/user/1666382703778278400/teams', '陌生uid校准(越权模型)')
+  → 命中行数: 7
+
+===== E. api/user/<uid>/ 其他子路径 =====
+  _figma_r122.py:61: go('B1_del_impact', f'/api/user/{UID_A}/deletion_impact', full=True)
+  _figma_r122.py:62: go('B2_scim', f'/api/user/{UID_A}/scim_provisioned_status', full=True)
+  _q54_sql_gap.py:13: 'C. 同表其他路径 user/settings': r'(api/user/notification_settings|api/notifications/settings|api/settings/notification)',
+  _q55_user_face.py:14: 'D. /api/user/ 数字路径': r"api/user/\{?[a-zA-Z_]*\d|api/user/[0-9]",
+  → 命中行数: 4
+
+===== F. 裸 /api/user/<数字>（无子路径） =====
+  _figma_r121.py:60: go('B3_segments', f'/api/user/{UID_A}/segments')
+  _figma_r121.py:61: go('B4_user_teams', f'/api/user/{UID_A}/teams')
+  _figma_r122.py:47: UT = f'/api/user/{UID_A}/teams'
+  _figma_r122.py:56: go('A8_uid_q', f"/api/user/{UID_A}'/teams", note='(路径宽容对照)')
+  _figma_r122.py:61: go('B1_del_impact', f'/api/user/{UID_A}/deletion_impact', full=True)
+  _figma_r122.py:62: go('B2_scim', f'/api/user/{UID_A}/scim_provisioned_status', full=True)
+  _figma_r122.py:65: go('B5_segments_r', f'/api/user/{UID_A}/segments', full=True)
+  _figma_r223_teams_types.py:46: r = req('N1', 'GET', f'{BASE}/api/user/{UID_A}/teams', 'A的team列表')
+  → 命中行数: 8
+
+DONE q56

@@ -1,0 +1,23 @@
+===== r217 终局极限 =====
+[H1] 200 len=40 977ms ntype 大写(DB引擎指纹)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[H2] 500 len=73 466ms junk类型+非空freq[junk]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[H3] 500 len=73 1760ms junk类型+非空freq[daily]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[H4] 403 len=279 502ms plan_id=TEAM_B 越权写门(期望403)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[H4b] 404 len=123 409ms plan_type=organization 类型交叉
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[H5] 403 len=279 458ms JSON重复键 A,B(解析器分歧)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[H6] 400 len=86 403ms XML body 传送层探测
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[H7] 404 len=9 330ms 路径id形态 /{id}
+    body=b'Not Found'
+--- 恢复净空 ---
+[G1] 200 len=337 497ms 恢复净空
+    body=b'{"error":false,"status":200,"meta":{"id":"e64fc64b-c450-4648-b97b-cd2d75aba33f","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:51:20.856Z","updated_at":"2026-09-11T06:51:20.856Z"},"i18n":null}'
+[G2] 200 len=337 448ms 复核净空
+    body=b'{"error":false,"status":200,"meta":{"id":"e64fc64b-c450-4648-b97b-cd2d75aba33f","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:51:20.856Z","updated_at":"2026-09-11T06:51:20.856Z"},"i18n":null}'
+DONE r217

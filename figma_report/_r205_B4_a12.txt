@@ -1,0 +1,3 @@
+HTTP 500 707ms https://www.figma.com/api/file_diff/v2/checkpoint_diff/LnVEzMlZc1rVRIjlcVtt2x?diff_version=2&from_file_version_id=2383785353797520871&migration_version=0+AND+1%3D2
+{'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '47', 'Connection': 'keep-alive', 'Date': 'Fri, 11 Sep 2026 03:42:51 GMT', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 68daf5ddc4c36236469db3f39e254baa.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'SIN3-P2', 'Alt-Svc': 'h3=":443"; ma=86400', 'X-Amz-Cf-Id': 'EPM6wMIXG2GaFHskVsrRr4r79a2MN2T6V8eovhPybLdqQGNGAjd8WA==', 'X-Content-Type-Options': 'nosniff', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'}
+{"error":true,"message":"Error updating diff."}

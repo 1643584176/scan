@@ -1,0 +1,18 @@
+===== r222 L1-L3: 新端点哈希位+引号（对照 K1/K2/K5 无引号基线） =====
+[L1] 400 len=75 704ms videos download位 %27尾引号
+    body=b'{"error":true,"status":400,"message":"Missing or invalid sha1","i18n":null}'
+[L2] 400 len=75 960ms manifest位 %27尾引号
+    body=b'{"error":true,"status":400,"message":"Missing or invalid sha1","i18n":null}'
+[L3] 400 len=75 1068ms audios download位 %27尾引号
+    body=b'{"error":true,"status":400,"message":"Missing or invalid sha1","i18n":null}'
+===== r222 L4-L5: 社区视频域探测 =====
+[L4] 404 len=74 984ms feed_posts manifest(不存在uuid)
+    body=b'{"error":true,"status":404,"message":"Not found","i18n":"error.not_found"}'
+[L5] 404 len=123 986ms plugins manifest(不存在id)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+===== r222 L6-L7: A账号数据面横向（找其他team/org） =====
+[L6] 404 len=9 903ms A的team列表
+    body=b'Not Found'
+[L7] 200 len=50 939ms A的org列表
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+DONE r222

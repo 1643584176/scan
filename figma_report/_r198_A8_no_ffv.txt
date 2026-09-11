@@ -1,0 +1,2 @@
+HTTP 400 787ms https://www.figma.com/api/file_diff/v2/checkpoint_diff/IHt8kgtR3XmtqU5i8vz7p1?diff_version=2&migration_version=1
+{"error":true,"message":"One of direction xor fromFileVersionId params must be provided"}

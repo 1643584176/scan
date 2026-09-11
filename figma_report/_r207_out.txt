@@ -1,0 +1,11 @@
+===== 方法矩阵 =====
+[M1_get] GET 405  1127ms :: Method Not Allowed  (GET 无参)
+[M2_getp] GET 405   269ms :: Method Not Allowed  (GET 带参)
+[M3_head] HEAD 405   613ms ::  (HEAD)
+[M4_opt] OPTIONS 200   790ms ::  (OPTIONS)
+[M5_put] PUT 405   614ms :: Method Not Allowed  (PUT)
+[M6_del] DELETE 405   787ms :: Method Not Allowed  (DELETE)
+===== fk 网关细节 =====
+[N1_empty] POST 404   270ms :: 404 page not found  (空 fk)
+[N2_25char] POST 403   329ms :: {"error":true,"message":"You don't have permission to view this file."} (随机25字符)
+DONE207

@@ -1,0 +1,14 @@
+===== r220 fk位终局判决 =====
+[Z0] 404 len=123 853ms 真fk基线(对照)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[Z4] 403 len=101 616ms 不存在fk(无引号校准)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+[Z5] 403 len=101 672ms 不存在fk+引号
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+[Z1] 403 len=101 790ms 真fk+OR布尔
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+[Z3] 403 len=101 978ms 真fk+双引号闭合
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+[Z2] 403 len=101 900ms 真fk+AND时延
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+DONE r220

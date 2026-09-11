@@ -1,0 +1,13 @@
+===== r232 补针 =====
+[P1] 200 len=337 788ms plan_id首字符\u0031转义+正确Content-Type(重打r231AB2)
+    body=b'{"error":false,"status":200,"meta":{"id":"753710c7-57bf-4dc4-b7d0-892da99aea9d","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:56:58.429Z","updated_at":"20'
+[P2] 400 len=106 897ms 值中段空格(strip只删首尾?→预期400)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[P3] 404 len=123 899ms organization小写基线
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[P4] 404 len=123 865ms ORGANIZATION大写(判别:异常=归一化生效/200=大写被丢弃)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+===== r232 确认 =====
+[P5] 200 len=337 997ms 状态确认
+    body=b'{"error":false,"status":200,"meta":{"id":"753710c7-57bf-4dc4-b7d0-892da99aea9d","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:56:58.429Z","updated_at":"20'
+DONE r232

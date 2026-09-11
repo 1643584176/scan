@@ -1,0 +1,10 @@
+===== r235 Origin 匹配边界 =====
+[O1] 200 len=337 564ms Origin: null (sandbox场景)
+    body=b'{"error":false,"status":200,"meta":{"id":"7d96e02d-e366-4f49-8a9f-5e0ad94e8502","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_'
+[O2] 200 len=337 776ms Origin: figma.com.evil.com (后缀骗术)
+    body=b'{"error":false,"status":200,"meta":{"id":"7d96e02d-e366-4f49-8a9f-5e0ad94e8502","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_'
+[O3] 200 len=337 888ms Origin: 全大写 FIGMA.COM (大小写)
+    body=b'{"error":false,"status":200,"meta":{"id":"7d96e02d-e366-4f49-8a9f-5e0ad94e8502","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_'
+[O4] 200 len=337 865ms Origin: 缺端口 figma.com:443
+    body=b'{"error":false,"status":200,"meta":{"id":"7d96e02d-e366-4f49-8a9f-5e0ad94e8502","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_'
+DONE r235

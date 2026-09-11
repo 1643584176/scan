@@ -1,0 +1,35 @@
+===== r215 notification_settings PUT 写面 =====
+[U1] 400 len=86 848ms PUT {} 空body
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[U2] 200 len=337 472ms PUT 3字段(无frequencies)
+    body=b'{"error":false,"status":200,"meta":{"id":"1ea7ac7b-4869-41cf-af59-8cc0a17bfdfb","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:22.018Z","updated_at":"2026-09-11T06:46:22.018Z"},"i18n":null}'
+[U3] 200 len=337 450ms PUT 完整: frequencies=[] recipient_settings='specific_admins' recipients=[]
+    body=b'{"error":false,"status":200,"meta":{"id":"a7659594-7d44-4c6b-a993-c9f9f4234d34","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:24.684Z","updated_at":"2026-09-11T06:46:24.684Z"},"i18n":null}'
+[U3b] 500 len=73 2178ms PUT frequencies=['junk'] 枚举墙探测
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[U4] 200 len=337 410ms GET 读回(激活解剖)
+    body=b'{"error":false,"status":200,"meta":{"id":"a7659594-7d44-4c6b-a993-c9f9f4234d34","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:24.684Z","updated_at":"2026-09-11T06:46:24.684Z"},"i18n":null}'
+[U5] 500 len=73 423ms PUT 注入: frequencies=[xtest' OR '1'='1]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[U6] 200 len=337 400ms GET 读回(写面回显判别)
+    body=b'{"error":false,"status":200,"meta":{"id":"a7659594-7d44-4c6b-a993-c9f9f4234d34","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:24.684Z","updated_at":"2026-09-11T06:46:24.684Z"},"i18n":null}'
+[U7] 200 len=337 467ms PUT 注入: recipients=[1'] (元素位)
+    body=b'{"error":false,"status":200,"meta":{"id":"f289e333-e43a-474f-9f29-039dce0399bd","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:39.548Z","updated_at":"2026-09-11T06:46:39.548Z"},"i18n":null}'
+[U8] 200 len=337 476ms GET 读回(recipients 判别)
+    body=b'{"error":false,"status":200,"meta":{"id":"f289e333-e43a-474f-9f29-039dce0399bd","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:39.548Z","updated_at":"2026-09-11T06:46:39.548Z"},"i18n":null}'
+[U9] 400 len=106 315ms PUT plan_id=TEAM_A'(body弱校验判别)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[U10] 400 len=106 344ms PUT form支路 plan_id=TEAM_A'
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[U11] 500 len=73 528ms PUT form支路 frequencies[]=x'
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[U12] 400 len=86 315ms PUT json 嵌套包裹 {notification_settings:{...}}
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+--- 恢复净空 ---
+[U13] 200 len=337 485ms 恢复净空 frequencies=[] recipients=[]
+    body=b'{"error":false,"status":200,"meta":{"id":"c7960c4f-a55e-4b54-8c60-54e092168327","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:55.221Z","updated_at":"2026-09-11T06:46:55.221Z"},"i18n":null}'
+[U14] 200 len=337 397ms 复核净空
+    body=b'{"error":false,"status":200,"meta":{"id":"c7960c4f-a55e-4b54-8c60-54e092168327","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:46:55.221Z","updated_at":"2026-09-11T06:46:55.221Z"},"i18n":null}'
+[U15] 404 len=826115 1127ms DELETE 探测
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>\n    <script nonce="jnrty&#47;f2i7BX8qEfJAVI+w==">performance.mark(\'figma:bootstrap:preload-start-http\')</script>\n\n    <meta charset="utf-8">\n\n      <meta http-equiv="origin-trial" c'
+DONE r215

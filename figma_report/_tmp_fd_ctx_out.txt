@@ -1,0 +1,180 @@
+=================================== _q3_ctx_out.txt (22407 chars)
+===== code_connect :: 58 hits =====
+  >>> mpfire.org.feature.design_libraries"),(0,l.tx)("plan_comparison.campfire.org.feature.scim"),(0,l.tx)("plan_comparison.campfire.org.feature.tools_like_code_connect")]:[(0,l.tx)("plan_comparison.campfire.org.feature.centralized_admin_hub"),(0,l.tx)("plan_comparison.campfire.org.feature.design_libraries"),(0,l.tx)("plan_comparison.campfire.org.feature.scim"),(0,l.tx)("plan_comparison.campfire.org.feature.more_file_features"),(0,l
+  >>> fire.org.feature.scim"),(0,l.tx)("plan_comparison.campfire.org.feature.more_file_features"),(0,l.tx)("plan_comparison.campfire.org.feature.tools_like_code_connect"),(0,l.tx)("plan_comparison.feature.ai_credits",{aiCredits:3500})];case c.Ag.ENTERPRISE:return[(0,l.tx)("plan_comparison.campfire.enterprise.feature.customized_workspaces"),(0,l.tx)("plan_comparison.campfire.enterprise.feature.advanced_design_systems"),(0,l.tx)("plan
+  >>> ope.file_codebase_upload_write_description"),getPersonalDescription:()=>[(0,n.t)("tokens.oauth.scope.file_codebase_upload_write_description")]},"file_code_connect:write":{id:"file_code_connect:write",category:"DEVELOPMENT",requiredPlanTier:o.Ag.ORG,tokenTypes:["personal","oauth","plan"],planAccessTokenMinTier:o.Ag.ORG,getImpersonalDescription:()=>(0,n.t)("tokens.settings.dev_token_modal.scope.code_connect_description"),getPers
+  >>> _description"),getPersonalDescription:()=>[(0,n.t)("tokens.oauth.scope.file_codebase_upload_write_description")]},"file_code_connect:write":{id:"file_code_connect:write",category:"DEVELOPMENT",requiredPlanTier:o.Ag.ORG,tokenTypes:["personal","oauth","plan"],planAccessTokenMinTier:o.Ag.ORG,getImpersonalDescription:()=>(0,n.t)("tokens.settings.dev_token_modal.scope.code_connect_description"),getPersonalDescription:()=>[(0,n.t)("
+  >>> RG,tokenTypes:["personal","oauth","plan"],planAccessTokenMinTier:o.Ag.ORG,getImpersonalDescription:()=>(0,n.t)("tokens.settings.dev_token_modal.scope.code_connect_description"),getPersonalDescription:()=>[(0,n.t)("tokens.oauth.scope.code_connect_description")]},file_create:{id:"file_create",category:"FILES",requiredPlanTier:null,tokenTypes:["oauth"],ldFlag:"ext_chrome_extension_scopes",getImpersonalDescription:()=>(0,n.t)("tok
+  >>> onalDescription:()=>(0,n.t)("tokens.settings.dev_token_modal.scope.code_connect_description"),getPersonalDescription:()=>[(0,n.t)("tokens.oauth.scope.code_connect_description")]},file_create:{id:"file_create",category:"FILES",requiredPlanTier:null,tokenTypes:["oauth"],ldFlag:"ext_chrome_extension_scopes",getImpersonalDescription:()=>(0,n.t)("tokens.settings.dev_token_modal.scope.file_create_description"),getPersonalDescription
+  >>> gistry:install","npm_registry:publish","storybooks:import","make_foundry:current_user:read","weave_standalone:api","file_codebase_upload:write","file_code_connect:write"].includes(e.id))),this}includeProjectsReadScopeIf(e){let t=d["projects:read"];if(p(t))return this;let r=this.scopes.some(e=>"projects:read"===e.id);return e&&!r&&this.scopes.push(t),this}includeCodeConnectScopeIf(e){let t=this.scopes.some(e=>"file_code_connect
+  >>> let r=this.scopes.some(e=>"projects:read"===e.id);return e&&!r&&this.scopes.push(t),this}includeCodeConnectScopeIf(e){let t=this.scopes.some(e=>"file_code_connect:write"===e.id);return e&&!t&&this.scopes.push(d["file_code_connect:write"]),this}includeFileVariablesScopesIf(e){let t=this.scopes.some(e=>"file_variables:read"===e.id),r=this.scopes.some(e=>"file_variables:write"===e.id);return e&&(t||this.scopes.push(d["file_variab
+  >>> s.scopes.push(t),this}includeCodeConnectScopeIf(e){let t=this.scopes.some(e=>"file_code_connect:write"===e.id);return e&&!t&&this.scopes.push(d["file_code_connect:write"]),this}includeFileVariablesScopesIf(e){let t=this.scopes.some(e=>"file_variables:read"===e.id),r=this.scopes.some(e=>"file_variables:write"===e.id);return e&&(t||this.scopes.push(d["file_variables:read"]),r||this.scopes.push(d["file_variables:write"])),this}ge
+  >>> r",d,null)}getInContextPublishedComponents(e){return this.InContextPublishedComponentsSchemaValidator.validate(async({xr:t})=>await t.post(t.url`/api/code_connect/library/in_context/published_components`,{asset_keys:e}))}getInContextPublishedComponentsAll(e){return this.InContextPublishedComponentsAllSchemaValidator.validate(async({xr:t})=>await t.post(t.url`/api/code_connect/library/in_context/published_components/all`,{asset
+
+===== related_links :: 6 hits =====
+  >>>  of o){let r=i.get(e);if(!r||"INSTANCE"!==r.type)continue;a(e,r.symbolId,t);let n=(0,E.Yi)([e],i);a(e,n,t)}}let l=await p.Ay.post(p.Ay.url`/api/files/related_links`,{file_keys:Array.from(t.values())}),d=[];return l.data.meta.forEach(t=>{let a=e===t.file_key&&!!i.get(i.guidFromDeveloperFriendlyId(t.node_id)),o={id:t.id,linkName:t.link_name,linkUrl:t.link_url,fileKey:t.file_key,isUserOverride:!!t.is_user_override,linkPreviewJson
+  >>>  ${t}`)}else m=await C(e)}let h=(0,o.g)(),f={node_id:t??"",link_name:m,link_url:e,lg_optimistic_mutation_uuid:h},g
+...[截断]
+
+=================================== _figma_z24_diff.py (3862 chars)
+# -*- coding: utf-8 -*-
+"""z24: R3 修复 + checkpoint_diff 真实参数考古(JS) + 参数修正后网络测试
+R3b: versions/{vid} 完整响应 A vs B 全字段
+R2c: checkpoint_diff body 参数 = fromFileVersionId(camelCase, 错误消息泄露) -> A(viewer) 能否拿 M 版本内容
+考古: main JS 里 checkpoint_diff 调用上下文 -> 参数真实形态
+"""
+import json, re, sys, io, os, urllib.request, urllib.error, ssl
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+sys.path.insert(0, 'D:/scan/figma_report')
+from _figma_creds import UID_A, UID_B, COOKIE_B
+
+M = '6aAuG4WGbgDfgy3zvonKOE'
+VID_M = '2396319450789103577'
+UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/128.0 Safari/537.36'
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+def call(method, path, body=None, uid=UID_B, anon=False):
+    url = 'https://www.figma.com/api' + path
+    hd = {'User-Agent': UA, 'Accept': 'application/json'}
+    if not anon:
+        hd['Cookie'] = COOKIE_B
+        hd['X-Figma-User-ID'] = uid
+    if body is not None:
+        hd['Content-Type'] = 'application/json'
+    req = urllib.request.Request(url, method=method,
+                                 data=json.dumps(body).encode() if body is not None else None,
+                                 headers=hd)
+    try:
+        r = urllib.request.urlopen(req, timeout=15, context=ctx)
+        return r.status, r.read(2000).decode('utf-8', 'replace')
+    except urllib.error.HTTPError as e:
+        return e.code, e.read(500).decode('utf-8', 'replace')
+    except Exception as e:
+        return 'ERR', str(e)[:150]
+
+def probe(label, method, path, body=None, uid=UID_B, anon=False):
+    st, raw = call(method, path, body, uid, anon)
+    print('%-46s %s %s -> %s :: %s' % (label, method, path, st, raw[:600].replace('\n', ' ')))
+    return st, raw
+
+print('===== R3b: versions/{vid} 完整字段 A(viewer) vs B(owner) vs anon =====')
+for uid, who in [(UID_A, 'A-viewer'), (UID_B, 'B-owner')]:
+    st, raw = call('GET', '/versions/%s/%s' % (M, VID_M), uid=uid)
+    print('[%s] status %s len %d' % (who, st, len(raw)))
+    if st == 200:
+        try:
+            j = json.loads(raw)
+            v = j.get('meta', {}).get('version', {})
+            print('    version keys:', sorted(v.keys()))
+            print('    full:', json.dumps(j.get('meta'), ensure_ascii=False)[:1500])
+        except Exception:
+            print('    RAW:', raw[:800])
+st, raw = call('GET', '/versions/%s/%s' % (M, VID_M), anon=True)
+print('[anon] status %s :: %s' % (st, raw[:200]))
+# 列表端点 anon 对照(已知 A 200) —— 顺带 versions 列表上有没有 vid 内容带出
+st, raw = call('GET', '/versions/%s' % M, anon=True)
+print('[anon list] status %s :: %s' % (st, raw[:200]))
+print('(R3b done)')
+
+print()
+print('===== R2c: checkpoint_diff camelCase 参数修正 (fromFileVersionId / direction) =====')
+bodies = [
+    {'fromFileVersionId': VID_M},
+    {'fromFileVersionId': VID_M, 'diff_version': VID_M},
+    {'direction': 'backward'},
+    {'direction': 'forward', 'fromFileVersionId': VID_M},
+    {'fromFileVersionId': VID_M, 'migrationVersion': 0, 'nodesToDiff': []},
+]
+for uid, who in [(UID_A, 'A-viewer'), (UID_B, 'B-owner')]:
+    for b in bodies:
+        probe('[%s]' % who, 'POST', '/file_diff/v2/checkpoint_diff/%s' % M, body=b, uid=uid)
+print('(R2c done)')
+
+print()
+print('===== 考古: JS 里 checkpoint_diff 调用参数 =====')
+JS = r'D:\scan\figma_report\_js'
+found = []
+for f in os.listdir(JS):
+    if not f.endswith('.js'):
+        continue
+    try:
+        data = open(os.path.join(JS, f), 'r', encoding='utf-8', errors='replac
+...[截断]
+
+=================================== _figma_z26_fv.py (2536 chars)
+# -*- coding: utf-8 -*-
+"""z26: 补参下钻
+Q1b: canvas fv 参数值猜测 (VID_M / 1 / 数字版本)
+Q2b: checkpoint_diff ?direction=backward&migration_version={0,1,2,3,9,100} 逐层剥
+     通了 -> A(viewer) vs B(owner) 内容对比
+"""
+import json, sys, io, urllib.request, urllib.error, ssl
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+sys.path.insert(0, 'D:/scan/figma_report')
+from _figma_creds import UID_A, UID_B, COOKIE_B
+
+M = '6aAuG4WGbgDfgy3zvonKOE'
+VID_M = '2396319450789103577'
+UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/128.0 Safari/537.36'
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+def call_raw(method, url, body=None, uid=UID_B, anon=False, read=1500):
+    hd = {'User-Agent': UA, 'Accept': '*/*'}
+    if not anon:
+        hd['Cookie'] = COOKIE_B
+        hd['X-Figma-User-ID'] = uid
+    if body is not None:
+        hd['Content-Type'] = 'application/json'
+    req = urllib.request.Request(url, method=method,
+                                 data=json.dumps(body).encode() if body is not None else None,
+                                 headers=hd)
+    try:
+        r = urllib.request.urlopen(req, timeout=20, context=ctx)
+        raw = r.read(read)
+        return r.status, r.headers.get('Content-Type', ''), raw
+    except urllib.error.HTTPError as e:
+        return e.code, e.headers.get('Content-Type', ''), e.read(400)
+    except Exception as e:
+        return 'ERR', '', str(e)[:150].encode()
+
+def show(label, st, ct, raw, n=350):
+    print('%-52s -> %s ct=%s' % (label, st, ct))
+    if raw:
+        print('      %s' % raw.decode('utf-8', 'replace')[:n].replace('\n', ' '))
+
+print('===== Q1b: canvas fv 参数 =====')
+for fv in [VID_M, '1', 'latest', '0']:
+    u = 'https://www.figma.com/version/%s/canvas?fk=%s&fv=%s' % (VID_M, M, fv)
+    st, ct, raw = call_raw('GET', u, uid=UID_A)
+    show('[A fv=%s]' % fv, st, ct, raw)
+
+print()
+print('===== Q2b: checkpoint_diff migration_version 剥层 (direction=backward) =====')
+for mv in ['0', '1', '2', '3', '9', '100']:
+    u = 'https://www.figma.com/api/file_diff/v2/checkpoint_diff/%s?direction=backward&migration_version=%s' % (M, mv)
+    st, ct, raw = call_raw('POST', u, body={}, uid=UID_A)
+    show('[A mv=%s]' % mv, st, ct, raw)
+# forward 方向 + mv
+u = 'https://www.figma.com/api/file_diff/v2/checkpoint_diff/%s?direction=forward&migration_version=0' % M
+st, ct, raw = call_raw('POST', u, body={}, uid=UID_A)
+show('[A fwd mv=0]', st, ct, raw)
+print('(剥到 400 消失/内容出现即通)')
+print('ALL DONE')
+
+
+=================================== _q1_paths.json file_diff 行
+...eKey}": [   "figma_app-main.js"  ],  "/api/file/mark_diagram_inserted/${e.fileKey}": [   "figma_app-main.js"  ],  "/api/file_diff/v2/checkpoint_diff/${e}": [   "figma_app-main.js"  ],  "/api/file_move/suggested": [   "6488-b9e83e69aee3c0e0.min.js"  ],  "/api/files/${c}": [   "figma_app-main.js"  ],  "/api/files/${e.bra...
+
+=================================== _g1_scripts.txt from_file_version_id 行
+ 179| _figma_r133.py                             -*- coding: utf-8 -*- r133: lookup_by_component_name 形态探测(fake key+零匹配)+ items/file_diff/page_status 形态
+ 180| _figma_r134.py                             -*- coding: utf-8 -*- r134: 深度单点——①lookup_by_component_name 用 FK2 当 libraryKey ②file_diff POST 形态 ③fonts 参数面 ④recent_prototypes 内容
+ 181| _figma_r135.py                             -*- coding: utf-8 -*- r135: file_diff 参数形态深挖(fromFileVersionId/direction)+ versions 域 + code_connect FK2 状态
+ 182| _figma_r136.py                             -*- coding: utf-8 -*- r136: file_diff query 参数形态重打 + bulk_map 元素形态
+ 183| _figma_r137.py                             -*- coding: utf-8 -*- r137: file_diff 正确参数名形态链(diff_version/from_file_version_id/migration_version/nodes_to_diff)
+ 184| _figma_r138.py                             -*- coding: utf-8 -*- r138: /api/versions/{FK2}——版本列表(拿真实 version id 用来喂 file_diff)
+ 185| _figma_r139.py                             -*- coding: utf-8 -*- r139: versions 参数面注入形态(column/secondary_column=排序列名!)+ file_diff 真实 version id
+ 190| _figma_r144_clean.py                       -*- coding: utf-8 -*- r144: A)清洗层语义判决(全局删除 vs 边缘剥离);B)file_diff 真实会话头解锁

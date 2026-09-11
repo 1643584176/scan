@@ -1,0 +1,35 @@
+===== r213 V段: videos thumbnails =====
+[V5] 404 len=123 852ms 基线重打(对照)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[V6] 400 len=75 387ms sha1 尾引号
+    body=b'{"error":true,"status":400,"message":"Missing or invalid sha1","i18n":null}'
+[V7] 400 len=75 405ms sha1 OR 注入
+    body=b'{"error":true,"status":400,"message":"Missing or invalid sha1","i18n":null}'
+[V8] 400 len=75 376ms sha1 时延盲注
+    body=b'{"error":true,"status":400,"message":"Missing or invalid sha1","i18n":null}'
+[V9] 400 len=75 401ms sha1 短值(格式校验探针)
+    body=b'{"error":true,"status":400,"message":"Missing or invalid sha1","i18n":null}'
+[V10] 404 len=123 448ms max_results 负值
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[V11] 400 len=214 448ms start 数字位引号
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:26: Non-number characters in quoted integer"}'
+[V12] 400 len=191 389ms end 超长20位
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:42: Integer overflow"}'
+===== r213 D段: ds_import_libraries =====
+[D3] 200 len=50 398ms 基线重打(对照)
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+[D4] 200 len=50 402ms library_key 尾引号
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+[D5] 200 len=50 425ms library_key 时延盲注
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+[D6] 200 len=50 376ms org_id 尾引号
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+[D7] 200 len=50 536ms org_id=0 存在性探针
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+[D8] 200 len=50 399ms org_id 不存在值
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+[D9] 200 len=50 403ms include_nonextracted 参数
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+[D10] 200 len=50 418ms library_key 空串
+    body=b'{"error":false,"status":200,"meta":[],"i18n":null}'
+DONE r213

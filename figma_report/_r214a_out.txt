@@ -1,0 +1,36 @@
+===== r214a A段: notification_settings 极限 =====
+[A1] 403 len=279 761ms HPP 双plan_id(合法+不存在)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A2] 400 len=105 356ms plan_id[] 数组语法
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type Array","i18n":null}'
+[A3] 404 len=123 350ms plan_type 双值HPP
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[A4] 403 len=279 345ms plan_id=-1
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A5] 403 len=279 337ms plan_id int64min
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A6] 403 len=279 334ms plan_id int64max
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A7] 403 len=279 371ms plan_id int64max+1
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A8] 400 len=106 342ms plan_id=00
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[A9] 400 len=106 336ms plan_id 全角数字
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[A10] 400 len=106 342ms plan_id 逗号串
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[A11] 200 len=40 362ms plan_id 前后双空格
+    body=b'{"error":false,"status":200,"i18n":null}'
+[A12] 400 len=106 356ms plan_id +前缀
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[A13] 200 len=40 372ms plan_type 尾空格
+    body=b'{"error":false,"status":200,"i18n":null}'
+[A14] 200 len=40 402ms ntype 双值HPP
+    body=b'{"error":false,"status":200,"i18n":null}'
+[A15] 404 len=9 272ms .json 后缀
+    body=b'Not Found'
+[A16] 200 len=40 408ms _method=PUT 覆盖
+    body=b'{"error":false,"status":200,"i18n":null}'
+[A17] 404 len=826095 1135ms POST body 探测
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>\n    <script nonce="GIa7vutNd5+uFKU+FrLCyQ'
+DONE r214a

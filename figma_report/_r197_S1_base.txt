@@ -1,0 +1,2 @@
+HTTP 404 353ms https://www.figma.com/api/resource_connection_invite/folder_search?query=test&sort=relevancy&desc=true&max_num_results=10&org_id=1666382706663462213&team_id=1666382706663462213
+{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}

@@ -1,0 +1,42 @@
+扫描脚本数: 882
+
+===== A. 路径版本 v2/v1 =====
+  → 命中行数: 0
+
+===== B. 兄弟操作 copy/bulk/history/audit =====
+  → 命中行数: 0
+
+===== C. 同表其他路径 user/settings =====
+  → 命中行数: 0
+
+===== D. 负零 -0 =====
+  → 命中行数: 0
+
+===== E. multipart =====
+  _figma_t4_upload.py:23: if ct == 'multipart/form-data':
+  _figma_t4_upload.py:24: b = body  # 已经是构造好的 multipart 串
+  _figma_t4_upload.py:57: ('multipart畸形', '----------------------------x\r\nContent-Disposition: form-data; name="file"; filename="a.png"\r\nContent-Type: image/png\r
+  _q49_final_edge_grep.py:30: scan('Content-Type 分流 text/plain/multipart', r"Content-Type.*text/plain|multipart/form-data")
+  → 命中行数: 4
+
+===== F. 时间戳写入 created_at =====
+  _figma_r111c.py:53: for cand in ['touched_at', 'created_at', 'updated_at', 'last_modified', 'size', 'type',
+  _figma_r139.py:40: go('A2_created', V, {'column': 'created_at'}, note='(created_at)')
+  _figma_r145_construct.py:65: for v in ['default', 'id', 'created_at', 'updated_at', 'name', 'label', 'title',
+  _figma_r145_construct.py:84: for sc in ['id', 'date', 'created_at', 'name']:
+  _figma_r196ak_cursor.py:55: http('ak10', LR, LQ + '&cursor=' + q(b64('{"created_at":"2026-01-01T00:00:00Z"}')))
+  _figma_r196ak_cursor.py:57: http('ak12', LR, LQ + '&cursor=' + q(b64('{"id":"1","created_at":"2026-01-01T00:00:00Z"}')))
+  _figma_r196al_cursor2.py:49: FIELDS = ['id', 'last_id', 'created_at', 'updated_at', 'most_recent_requested_date',
+  _figma_r196an_cursor4.py:40: http('an3', LQ + '&cursor=' + q(b64('{"v":1,"id":"1","created_at":"2026-01-01T00:00:00Z"}')))
+  → 命中行数: 13
+
+===== G. JSON重复键 =====
+  _figma_r214a_notif_deep.py:44: g('A1', [('plan_id', TEAM_A), ('plan_id', '12345'), ('plan_type', 'team'), ('notification_type', NEC)], 'HPP 双plan_id(合法+不存在)')
+  _figma_r214b_precision.py:43: g('A21', [('plan_id', '12345'), ('plan_id', TEAM_A), ('plan_type', 'team'), ('notification_type', NEC)], 'HPP 颠倒(非法+合法)')
+  _figma_r217_final.py:55: raw = ('{"plan_id": "%s", "plan_id": "%s", "plan_type": "team", "notification_type": "%s", '
+  → 命中行数: 3
+
+===== H. file_key/sha1互换 =====
+  → 命中行数: 0
+
+DONE q54

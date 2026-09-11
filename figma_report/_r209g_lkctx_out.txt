@@ -1,0 +1,32 @@
+>>> t-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c9b85df2d932bb01568c1b048f7883e8512ae09bb5d2cd62c5a518f900f3d061","is_template":true,"is_try_file":false,"is_claimable_file":false,"library_key":"lk-4c9d456dc1f91ab8f131510f6e4de87468df0559e6544ee87729c6b34da57863e7af23e6e552d26e8b1d49e2024fa335882ab33491ba59da7617e
+---
+>>> t-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=14b89f52050c2de1f3a830cc1acb98b175bb8f4c431c15c9287265295ca0c830","is_template":true,"is_try_file":false,"is_claimable_file":false,"library_key":"lk-c83637a992b3b1b6f33d6799f4e7a287a95d9676e0acd8f033dfefc743335417f85645b67812d51f137b95b82f4a8575aad82655a27cb971a37fc
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8506bc01e62f80c8059ba5dda1741ea32f4ec250e9ac25a755e9bb75d8f71437","is_try_file":false,"is_claimable_file":false,"library_key":"lk-b75284507d1c3e2229ac1af9bc953e5d1fc07f3615de2a123ba91e9bfd3e27709ff7b5bee2c43f6eae5e5c084b6cfa48a075141636bb18b006d14
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=30c7773ab830eadc92834982d4bfc1f3d5d692d98d1233c8c7822487a1a9a52a","is_try_file":false,"is_claimable_file":false,"library_key":"lk-aa09b069c3670b7c20c5c4d85f48456f6ebb7d25dc58217dfd3e013737d17ea9803c11fee059b7941a15b9f271dc2e7d4eb4983ebd2e84f9b95b0
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fe25fd9ce0f5aa434611f557bb352aeb77f1ca9b0024e418889f3dae89369f3d","is_try_file":false,"is_claimable_file":false,"library_key":"lk-d52ec95b578feaa8ad3833ed5de7ce1247da0a87634ab3123186eb65dc04dd32da4147bd80574b056a3fac122da3cf7b33d861cabef0bf288233f
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=96ae934c93ffcd9e048a60d69cc9ab88d51bddadfd9697484b5323717738882b","is_try_file":false,"is_claimable_file":false,"library_key":"lk-e4076023701edb9e5ee33a9361a8e92ce3b2c78420ba438a7e485d37b370ae62e996dabb610db5b2f1aa94e570f6aa2b6583a4a104038dc12c95f
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=96ae934c93ffcd9e048a60d69cc9ab88d51bddadfd9697484b5323717738882b","is_try_file":false,"is_claimable_file":false,"library_key":"lk-8373ac914093346d9c95f6c35009790070161e5c71177f0902222bf918997af76237f7e1b472a352bdbc75c70c18373c803089db10dae43c0e852
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6632c422ee0536e035c10e0c635f1d9521c72be5dbc29f60ec1fa0f977476b2d","is_try_file":false,"is_claimable_file":false,"library_key":"lk-77cc62f54357b39beeb2eb4cc8eb00f0f33f92e00c2abbded567ac2a4fa2d48bf9f78732e9ed6bcc88eea68de85a4f6c055beac76f11f24bc8285
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9570fcc06db6a1716f2a023d38cb6b98828782c084dc5340e21ec5f66774d79d","is_try_file":false,"is_claimable_file":false,"library_key":"lk-075d45e411c1eef263cb6f6ea15cb08750f808afb661e47b174bef18b8aaf2e9c834b8a0669443046fe990f70c25a72464bf634b921bbea5c94c3
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb970c996c43752d29208d99909966c10a2d0bdde042eed0ecb0fd35f7590c2d","is_try_file":false,"is_claimable_file":false,"library_key":"lk-67f05101adb3211125ec6f48acc6b9085a12fae5fe97a955b5809b16c631b24bf15dec5b3b302949ed88cb514fe84e39b46886193c2f5d844ccab
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9570fcc06db6a1716f2a023d38cb6b98828782c084dc5340e21ec5f66774d79d","is_try_file":false,"is_claimable_file":false,"library_key":"lk-4c88a267f9cb4d180b612ccbd1c19bfa7e4bd234df0fdaeab6e2a69080241c621665902b6beb2a05da9fc71fb116b59e4e4bde464302c8be108ed
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=32055f731ad5f7d5b5f9903cc889d3cd419961d4e2b13cc45e7e356685bc0495","is_try_file":false,"is_claimable_file":false,"library_key":"lk-e885b2a03154fa3db829c67248e405d2dade616d2dcd6a460dcfa46b532310ef3271e7064adb2e566282c9a2f4417ab6c49afed1e8c5a8235ffcc
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6c228125f16b5c8f7eb66f8d5c1449baa01e68398edc398bf793916e6e7fa034","is_try_file":false,"is_claimable_file":false,"library_key":"lk-8aceea0732f151fcc6bccd245ffc2ed20e12873d78dba49a73b60f0e47c9ac730b3908697c17211c2400cb309305a117173f0d44b77501c2de64b
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6c228125f16b5c8f7eb66f8d5c1449baa01e68398edc398bf793916e6e7fa034","is_try_file":false,"is_claimable_file":false,"library_key":"lk-4c293b91287b33e7ff6d2ea3f912dc2f48684050ec1d441006015a60b5134b59ddf8af91f5686cd4dca42f605ef0027d08e273f90922639d73bd1
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c324e540573dbcee70347874c0355f597b8315919570748ec72cd364e1f07f84","is_try_file":false,"is_claimable_file":false,"library_key":"lk-396bae586cc28c914842df712f0d4c2f9e6141f9c66f499ae99afd2edae91cc474ab65ade187978436c46a1f3ed0d76db6c94e1cef43c7268e2db
+---
+>>> 2F20260910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260910T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7f83b30d4fea34a4c363ec16470dcee2ba5d23392bfcb00a4ba8cd2e4bf6f09d","is_try_file":false,"is_claimable_file":false,"library_key":"lk-da48423d365aea44dffe9ef289330a8032b129612df6f88fa12fa95fa35b3d701997c9124b6f2a7dbe2d85bab7834b30ea9441f18505f528341f8
+---

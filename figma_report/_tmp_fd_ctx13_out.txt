@@ -1,0 +1,116 @@
+============ 4018-2a716c6cdd7985ad.min.js | signed_url | # 1 | pos 1127
+?"0":"")+e.toString(16)).join("")),a??null}async function g({paint:e,fileKey:t}){if(!t||"VIDEO"!==e.type)return null;let n=S(e);return n?(await h.S.getVideosDownload({hexHash:n,fileKey:t})).data.meta.signed_url:null}function E(e,t){let n=window.URL.createObjectURL(e),a=document.createElement("a");a.href=n,a.download=t,document.body.appendChild(a),a.click(),document.body.removeChild(a),window.URL.revokeObjectURL(n)}function j(e){return"VIDEO"===e.type?"mp4"
+
+============ 4018-2a716c6cdd7985ad.min.js | signed_url | # 2 | pos 2691
+n="text"}){let i=(0,R.tS)()??"",o=S(e),[c,p]=r.useState(!1);r.useEffect(()=>{p(!1)},[o]);let d=r.useCallback(()=>{o&&(p(!0),h.S.getVideosDownload({hexHash:o,fileKey:i}).then(t=>{try{fetch(t.data.meta.signed_url).then(e=>e.blob()).then(t=>{E(t,`${w(e)}.${j(e)}`),setTimeout(()=>p(!1),1e3)}).catch(e=>p(!1))}catch{p(!1)}}))},[i,o,e]);return o?c?(0,a.jsx)(_.k,{}):"icon"===n?(0,a.jsx)(s.K,{onClick:d,"aria-label":(0,u.t)("inspect_panel.images.download_with_type",
+
+   (total signed_url in 4018-2a716c6cdd7985ad.min.js: 2)
+============ 4740-72098fc09d96357b.min.js | signed_url | # 1 | pos 1707988
+act";async function g({file_key:e}){let t,n;try{t=await (0,c.PX)({file_key:e,artifact_type:c.x2})}catch{return{success:!1,message:"No all-fonts artifact was produced",fonts:[]}}let i=await fetch(t.presigned_url);if(!i.ok)return{success:!1,message:"Failed to download all-fonts artifact",fonts:[]};try{n=await i.json()}catch(e){return(0,l.$D)(s.e.MAKE_DESIGN_SYSTEMS,e instanceof Error?e:Error(String(e))),{success:!1,message:x,fonts:[]}}if(!Array.isArray(n))re
+
+============ 4740-72098fc09d96357b.min.js | signed_url | # 2 | pos 1708814
+ion:`metadata_json_download:${e}`}})}async function k({file_key:e}){let t,n;try{t=await (0,c.PX)({file_key:e,artifact_type:"metadata_json"})}catch(e){return _("presign",e),null}try{n=await fetch(t.presigned_url)}catch(e){return _("fetch",e),null}if(!n.ok)return null;try{return await n.json()}catch(e){return _("parse",e),null}}let v=`${a.eu}/styles.css`;async function b(e){if(!e.getFileEntryByPath(v))return;let t=(0,m.wZ)(e);if(!t)return;let n=t.path,i=(0,r
+
+============ 4740-72098fc09d96357b.min.js | signed_url | # 3 | pos 1711808
+)return(0,l.$D)(s.e.MAKE_DESIGN_SYSTEMS,Error("Make kit extraction: success task missing result_artifact_id")),"failed";try{i=(await (0,c.PX)({file_key:e,artifact_type:c.J7,result_artifact_id:n})).presigned_url}catch(e){return(0,l.$D)(s.e.MAKE_DESIGN_SYSTEMS,e instanceof Error?e:Error(String(e))),"failed"}o&&!u&&await A({fileKey:e,vfs:r});let d=[];if(o)try{let t=await g({file_key:e});t.success&&(d=t.fonts)}catch(e){(0,l.$D)(s.e.MAKE_DESIGN_SYSTEMS,e instan
+
+============ 4740-72098fc09d96357b.min.js | signed_url | # 4 | pos 1722430
+({file_key:e,result_artifact_id:t,pathPrefix:n=""}){let o;try{o=await (0,r.PX)({file_key:e,artifact_type:r.J7,result_artifact_id:t})}catch{return{success:!1,message:s,files:[]}}let c=await fetch(o.presigned_url);if(!c.ok)return{success:!1,message:s,files:[]};let d=await c.arrayBuffer(),u=Object.entries((0,a._q)(d,{pathPrefix:n})).map(([e,t])=>{let n=(0,i.mr)(e,t);return"text"===n.kind?{path:e,kind:"text",content:n.text}:{path:e,kind:"binary",bytes:n.bytes,
+
+   (total signed_url in 4740-72098fc09d96357b.min.js: 4)
+============ 7379-6917000bee1c36c7.min.js | signed_url | # 1 | pos 9112
+)throw Error("Unsupported file");try{let t=await v.S.getVideosDownload({fileKey:r.fileKey,hexHash:e});if(200!==t.status||t.data.error)throw Error("api error while resolving video");return t.data.meta.signed_url}catch(r){throw console.warn(`Couldn't download video with hash ${e}`),r}}let M=1464==t.j?1/15:null;function A(e){let[r,t]=(0,a.useState)(!0),i=x(e),n=(0,g.qc)((0,g._X)({subscribeToUpdates_expensive:!1}));return(0,a.useEffect)(()=>{let e=0;i&&(e=i.x*
+
+   (total signed_url in 7379-6917000bee1c36c7.min.js: 1)
+============ 8997-ee55a1b8dde04710.min.js | signed_url | # 1 | pos 6520
+eo fill")}async function eS(e){let t=ec.zl.get(et.ze);if(!t)throw Error("No file key available for video URL");let n=(0,em.nj)(e);return(await eb.S.getVideosDownload({fileKey:t,hexHash:n})).data.meta.signed_url}async function eA(e,t){let n="video"===ew(e)?await eI(e):await ez(e);if(t&&!t())return null;let l=await (0,ex.vr)({node:n.node,contentsOnly:!0,maxSize:416});return t&&!t()?null:{uploaded:n,thumbnailUrl:l}}var eT=n(320074),eR=n(231572),eq=n(989295);f
+
+   (total signed_url in 8997-ee55a1b8dde04710.min.js: 1)
+============ 9300-41a18cb0f8ba922b.min.js | file_diff | # 1 | pos 459919
+0,i.jsx)(td.E,{...{className:"x10l6tqk x10a8y8t x78zum5 x6s0dn4 x13a6bvl x1fuw9x7 x1heor9g"},onClick:d,"aria-expanded":c,"aria-controls":c?x:void 0,"aria-label":(0,C.t)("figmake.chat.code_diff.toggle_file_diff",{file:e.path}),children:c?(0,i.jsx)(sX.l,{"aria-hidden":!0,className:"x1wt4b31"}):(0,i.jsx)(sZ.k,{"aria-hidden":!0,className:"x1wt4b31"})}),(0,i.jsxs)("div",{...{0:{className:"x1n2onr6 x78zum5 x6s0dn4 xrrek2q xbxwrki x1lqv20w x1h7iorg xjd7tmr x47cor
+
+   (total file_diff in 9300-41a18cb0f8ba922b.min.js: 1)
+============ 935-431f89677a39072c.min.js | file_diff | # 1 | pos 250977
+eate_pull_request","delete_session","execute_browser_action","get_pr_details","get_capabilities","get_coder_file_remote_project","get_coder_workspace_file_key","get_mcp_token","get_code_diff_snapshot_file_diff","get_code_diff_snapshot_summary","get_diff","get_diff_summary","get_dev_server_state","restart_dev_server","list_directory_for_cwd","list_files_for_cwd_vfs","get_push_status","get_session_turn_state","get_supported_models","get_supported_commands","
+
+============ 935-431f89677a39072c.min.js | file_diff | # 2 | pos 252341
+"remote_environment_progress","remote_project_bound","remote_project_unbound","capabilities","coder_workspace_file_key","coder_workspace_file_key_set","code_diff_snapshot_created","code_diff_snapshot_file_diff","code_diff_snapshot_summary","code_diff_snapshots_released","changes_committed","changes_committed_for_cwd","cli_crashed","commit_checked_out","design_library_located","design_library_scanned","repository_metadata_setup_started","repository_metadata
+
+   (total file_diff in 935-431f89677a39072c.min.js: 2)
+============ 935-431f89677a39072c.min.js | checkpoint_diff | # 1 | pos 782295
+"source_file","translations","fig_file_video_usages","fig_file_image_usages","desktop","livegraph_client","page_load_token","figmascope","figmascope_multiplayer_journal","figmascope_file","figmascope_checkpoint_diffs","figmascope_checkpoints","figmascope_file_validation","start_redact_figmascope_file_validation","figmascope_file_validation_unredacted","start_redact_figmascope_file","check_redact_figmascope_file","start_redact_figmascope_journal","check_red
+
+============ 935-431f89677a39072c.min.js | checkpoint_diff | # 2 | pos 785898
+e_connect","mapping","published_components","libraries","repositories","source_files","file_details","bulk_map","directories","contents","code_snippet","user_rules","eval","view","checkpoint_upload","checkpoint_diff_upload","checkpoint_diff","code_snapshot","code","snapshot","ds_import_libraries","create_make_library","make_libraries","all_make_library_code","publish_make_library","oauth","apps","setup","submit","manage","withdraw","version","images","uplo
+
+============ 935-431f89677a39072c.min.js | checkpoint_diff | # 3 | pos 785923
+lished_components","libraries","repositories","source_files","file_details","bulk_map","directories","contents","code_snippet","user_rules","eval","view","checkpoint_upload","checkpoint_diff_upload","checkpoint_diff","code_snapshot","code","snapshot","ds_import_libraries","create_make_library","make_libraries","all_make_library_code","publish_make_library","oauth","apps","setup","submit","manage","withdraw","version","images","upload","non_plan_user_count"
+
+   (total checkpoint_diff in 935-431f89677a39072c.min.js: 3)
+============ 935-431f89677a39072c.min.js | signed_url | # 1 | pos 784141
+e_currency","billing_metadata","org_operation","add_domain_users","pricing","contract_rates","prices_at_contract_renewal","team_prices_at_next_invoice","terms_of_service","hex","org_admin","create_presigned_url","provision_org","org_saml_config","org_saml_configs","clear_config","configure_org_renewal","domains","member_counts","plan_ai_usage_monthly","plan_user_ai_usage_monthly","plan_ai_usage_by_users","user_ai_prompts","plugin_preferences","lg_update_sl
+
+   (total signed_url in 935-431f89677a39072c.min.js: 1)
+============ 935-431f89677a39072c.min.js | checkpoint_token | # 1 | pos 42318
+=r,...this.getFigmentTags()},{batchRequest:!0})}}},eU=F.Ip.au.undefined(F.z.string().optional()),eB=F.Ip.au.null(F.z.string().nullable()),ej=z("File",F.z.object({checkpoint_id:F.z.string().optional(),checkpoint_token:eU.optional(),client_meta:eB,created_at:F.z.string(),creator_id:F.z.string(),deleted_at:F.z.string().nullable(),trashed_at:F.z.union([F.z.string(),F.z.number()]).nullable(),trashed_user_id:F.z.string().nullable(),description:F.z.string().nulla
+
+   (total checkpoint_token in 935-431f89677a39072c.min.js: 1)
+============ figma_app-main.js | file_diff | # 1 | pos 2587435
+2)().toString()),i.set("from_file_version_id",t),i.set("migration_version",`${r}`),n&&n.length>0&&i.set("nodes_to_diff",n.join(","));let{data:{meta:{checkpoint_diff:a}}}=await b.Ay.post(b.Ay.url`/api/file_diff/v2/checkpoint_diff/${e}`,void 0,{params:i});return a},X=async e=>{let t=new Date().getTime(),{data:r}=await b.Ay.crossOriginGetAny(e,null,{responseType:"arraybuffer"}),n=new Date().getTime();return(0,f.sx)("versioning_performance_metrics",{name:"down
+
+============ figma_app-main.js | file_diff | # 2 | pos 5136994
+1===this.hasTabMessage(e)))throw new m("Code diff snapshots are not supported by this figcode version.","unsupported_version",!1)}assertCodeDiffSnapshotFileDiffSupported(){if(["get_code_diff_snapshot_file_diff","code_diff_snapshot_file_diff"].some(e=>!1===this.hasTabMessage(e)))throw new m("Expanded code diffs are not supported by this figcode version.","unsupported_version",!1)}async createCodeDiffSnapshot(e){return this.assertCodeDiffSnapshotsSupported()
+
+============ figma_app-main.js | file_diff | # 3 | pos 5137025
+w new m("Code diff snapshots are not supported by this figcode version.","unsupported_version",!1)}assertCodeDiffSnapshotFileDiffSupported(){if(["get_code_diff_snapshot_file_diff","code_diff_snapshot_file_diff"].some(e=>!1===this.hasTabMessage(e)))throw new m("Expanded code diffs are not supported by this figcode version.","unsupported_version",!1)}async createCodeDiffSnapshot(e){return this.assertCodeDiffSnapshotsSupported(),await this.createPendingReques
+
+============ figma_app-main.js | file_diff | # 4 | pos 5137700
+t_summary",...e},"code_diff_snapshot_summary")}async getCodeDiffSnapshotFileDiff(e){return this.assertCodeDiffSnapshotFileDiffSupported(),await this.createPendingRequest({type:"get_code_diff_snapshot_file_diff",...e},"code_diff_snapshot_file_diff")}async releaseCodeDiffSnapshots(e){return this.assertCodeDiffSnapshotsSupported(),await this.createPendingRequest({type:"release_code_diff_snapshots",...e},"code_diff_snapshots_released")}async commitChanges(e){l
+
+============ figma_app-main.js | file_diff | # 5 | pos 5137737
+summary")}async getCodeDiffSnapshotFileDiff(e){return this.assertCodeDiffSnapshotFileDiffSupported(),await this.createPendingRequest({type:"get_code_diff_snapshot_file_diff",...e},"code_diff_snapshot_file_diff")}async releaseCodeDiffSnapshots(e){return this.assertCodeDiffSnapshotsSupported(),await this.createPendingRequest({type:"release_code_diff_snapshots",...e},"code_diff_snapshots_released")}async commitChanges(e){let{agentSessionId:t,cwd:r}=e;return a
+
+============ figma_app-main.js | file_diff | # 6 | pos 5148425
+ls_ready":case"pushed":case"pulled_from_master":case"pulled_from_branch":case"aborted_merge":case"branch_pushed":case"diff":case"diff_summary":case"code_diff_snapshot_created":case"code_diff_snapshot_file_diff":case"code_diff_snapshot_summary":case"code_diff_snapshots_released":case"directory_listing_for_cwd":case"file_listing_for_cwd_vfs":case"file_contents_for_cwd":case"design_library_located":case"design_library_scanned":case"repository_metadata_setup_s
+
+   (total file_diff in figma_app-main.js: 8)
+============ figma_app-main.js | checkpoint_diff | # 1 | pos 1314264
+sync function nH(e){if((0,nt.M0)())try{let t=await nj(e,"fig-diff");return{buffer:await n$(t),sensitiveTextPolicy:"show"}}catch(e){console.error(e)}return nK({redactedBufferUrl:`/api/admin/figmascope_checkpoint_diffs/${e}`,unredactedMetadataUrl:`/api/admin/checkpoint_diffs/${e}`})}async function nK({redactedBufferUrl:e,unredactedMetadataUrl:t}){if((0,nt.M0)())try{return{buffer:await n$(e),sensitiveTextPolicy:"show"}}catch(e){console.error(e)}let r=await nW
+
+============ figma_app-main.js | checkpoint_diff | # 2 | pos 1314321
+fig-diff");return{buffer:await n$(t),sensitiveTextPolicy:"show"}}catch(e){console.error(e)}return nK({redactedBufferUrl:`/api/admin/figmascope_checkpoint_diffs/${e}`,unredactedMetadataUrl:`/api/admin/checkpoint_diffs/${e}`})}async function nK({redactedBufferUrl:e,unredactedMetadataUrl:t}){if((0,nt.M0)())try{return{buffer:await n$(e),sensitiveTextPolicy:"show"}}catch(e){console.error(e)}let r=await nW(t);return nY(r),{buffer:await n$(r),sensitiveTextPolicy:
+
+============ figma_app-main.js | checkpoint_diff | # 3 | pos 1323946
+on_checkpoint":return nq(e.prefix,e.diffPrefix,async t=>{let{buffer:r,sensitiveTextPolicy:n}=await nz(e.key,t,e.locality);return n5(r,e.key,`File Validation ${e.key}`,n)});case"server_file_validation_checkpoint_diff":return nX(e);case"server_checkpoint_diff":return nJ(e);case"multiplayer_journal_browser":return nQ(e);case"multiplayer_journal_diff":return n0(e)}},[e])),(0,d.jsx)(ir.J,{onClose:t})}function is({urlParams:e,onClose:t}){let r=(0,rJ.J)(()=>{swit
+
+============ figma_app-main.js | checkpoint_diff | # 4 | pos 1323988
+efix,async t=>{let{buffer:r,sensitiveTextPolicy:n}=await nz(e.key,t,e.locality);return n5(r,e.key,`File Validation ${e.key}`,n)});case"server_file_validation_checkpoint_diff":return nX(e);case"server_checkpoint_diff":return nJ(e);case"multiplayer_journal_browser":return nQ(e);case"multiplayer_journal_diff":return n0(e)}},[e])),(0,d.jsx)(ir.J,{onClose:t})}function is({urlParams:e,onClose:t}){let r=(0,rJ.J)(()=>{switch(e.type){case"server_file":return nZ(e.k
+
+============ figma_app-main.js | checkpoint_diff | # 5 | pos 2587384
+t i=new URLSearchParams;i.set("diff_version",(0,N.C2)().toString()),i.set("from_file_version_id",t),i.set("migration_version",`${r}`),n&&n.length>0&&i.set("nodes_to_diff",n.join(","));let{data:{meta:{checkpoint_diff:a}}}=await b.Ay.post(b.Ay.url`/api/file_diff/v2/checkpoint_diff/${e}`,void 0,{params:i});return a},X=async e=>{let t=new Date().getTime(),{data:r}=await b.Ay.crossOriginGetAny(e,null,{responseType:"arraybuffer"}),n=new Date().getTime();return(0
+
+============ figma_app-main.js | checkpoint_diff | # 6 | pos 2587448
+()),i.set("from_file_version_id",t),i.set("migration_version",`${r}`),n&&n.length>0&&i.set("nodes_to_diff",n.join(","));let{data:{meta:{checkpoint_diff:a}}}=await b.Ay.post(b.Ay.url`/api/file_diff/v2/checkpoint_diff/${e}`,void 0,{params:i});return a},X=async e=>{let t=new Date().getTime(),{data:r}=await b.Ay.crossOriginGetAny(e,null,{responseType:"arraybuffer"}),n=new Date().getTime();return(0,f.sx)("versioning_performance_metrics",{name:"download_diff",du
+
+   (total checkpoint_diff in figma_app-main.js: 6)
+============ figma_app-main.js | signed_url | # 1 | pos 755317
+rossOriginPost(i,o,{raw:!0,headers:{"Content-Type":r}})}return"string"==typeof e?w.Ay.crossOriginPut(e,t,{raw:!0,headers:{...w.Ay.defaults.headers,"Content-Type":r}}):Promise.reject(Error("Invalid presigned_url"))}async function ej({presignedUrl:e,presignedFields:t,content:r,contentSha1:n,contentType:i}){try{let a=new FormData;Object.entries(t).forEach(([e,t])=>{t&&a.append(e,t)}),a.set("Content-Type",i),a.append("x-amz-checksum-sha1",(0,d.b_)(n));let o=ne
+
+============ figma_app-main.js | signed_url | # 2 | pos 756907
+Post(n,a,{raw:!0,headers:{"Content-Type":t.type}})}return"string"==typeof e?w.Ay.crossOriginPut(e,r,{raw:!0,headers:{...w.Ay.defaults.headers,"Content-Type":t.type}}):Promise.reject(Error("Invalid presigned_url"))})({imagePath:d.url,fields:d.fields,proxyUploadPresignedPost:d.proxyUploadPresignedPost},u,n).catch(e=>{throw Error((0,s.t)("community.actions.error_uploading_plugin_video_thumbnail_error",{error:(0,o.J)(e,e.data?.message||"unknown error")}))}),[_
+
+============ figma_app-main.js | signed_url | # 3 | pos 2587991
+id===e.activeId)return t;if(e.linkedVersion&&e.activeId===e.linkedVersion.id)return e.linkedVersion}async function Q(e,t,r){let n=await J(t.getState().openFile.key,e,t.getState().fileVersion,r);if(!n.signed_url)return"Error viewing what's changed between file versions.";let i=!!t.getState().openFile?.canEdit,a=new Date().getTime(),[o]=await Promise.all([X(n.signed_url),(0,G.W5)(l._em.DEBUG_TOOL)]),s=new Date().getTime();return((0,f.sx)("versioning_performa
+
+============ figma_app-main.js | signed_url | # 4 | pos 2588151
+key,e,t.getState().fileVersion,r);if(!n.signed_url)return"Error viewing what's changed between file versions.";let i=!!t.getState().openFile?.canEdit,a=new Date().getTime(),[o]=await Promise.all([X(n.signed_url),(0,G.W5)(l._em.DEBUG_TOOL)]),s=new Date().getTime();return((0,f.sx)("versioning_performance_metrics",{name:"download_diff_and_load_pages",durationMs:s-a,isEditor:i},{forwardToDatadog:!0}),d.GT?.loadHistoryChangesState(o))?"":"Error loading HistoryC
+
+============ figma_app-main.js | signed_url | # 5 | pos 4142192
+)throw Error("Unsupported file");try{let r=await y.S.getVideosDownload({fileKey:t.fileKey,hexHash:e});if(200!==r.status||r.data.error)throw Error("api error while resolving video");return r.data.meta.signed_url}catch(t){throw console.warn(`Couldn't download video with hash ${e}`),t}}let N=1/15;function w(e){let[t,r]=(0,i.useState)(!0),n=L(e),a=(0,g.qc)((0,g._X)({subscribeToUpdates_expensive:!1}));return(0,i.useEffect)(()=>{let e=0;n&&(e=n.x*n.y),r(e/(a.hei
+
+   (total signed_url in figma_app-main.js: 5)
+============ figma_app-main.js | checkpoint_token | # 1 | pos 4629755
+d_at:e.trashedAt?e.trashedAt.toString():null,trashed_user_id:e.trashedUser?e.trashedUser.id:null,updated_at:e.updatedAt.toString(),planSubscriptionCreatedAt:e?.plan?.planSubscription?.createdAt||null,checkpoint_token:"",edit_url:"",prototype_url:(0,g.iw)("proto",e.key,e.name),url:(0,g.iw)("file",e.key,e.name)};return{canEdit:e.canEdit,canEditCanvas:e.canEditCanvas,hasEditRole:e.hasEditRole,hasViewRole:e.hasViewRole,canView:e.canView,canViewPrototype:e.canV
+
+   (total checkpoint_token in figma_app-main.js: 1)
+DONE13

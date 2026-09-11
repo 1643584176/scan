@@ -1,0 +1,56 @@
+扫描脚本数: 889
+
+===== A. 孤立代理 d800/d8xx =====
+  → 命中行数: 0
+
+===== B. 全角数字 FF1x =====
+  _figma_r142.py:15: 'lk-e0ffcff14368019c4f30f45401cd233d6cbc5f869988484192d04cbbef801fb0064ef68feaa8a2775ee4f1',
+  _figma_r175_numid_real.py:76: go('E4', '/api/resources/plugins/１２３', '全角数字')
+  _figma_r196ak_cursor.py:75: http('ak21', LR, LQ + '&billing_group_ids%5B%5D=' + q('12３'))   # 半全角混合
+  _figma_r214a_notif_deep.py:60: g('A9', {**base3, 'plan_id': '１６６６３８２７０６６６３４６２２１３'}, 'plan_id 全角数字')
+  _figma_r227_param_merge.py:70: req('T13a', 'PUT', NOTIF, 'plan_id=全角数字(归一化探)', jbody=B3(plan_id='１６６６３８２７０６６６３４６２２１３'))
+  → 命中行数: 5
+
+===== C. 阿拉伯数字 066x =====
+  _figma_creds.py:13: TEAM_A = '1666382706663462213'   # A 的团队(来自 HAR)
+  _figma_lg_enum.py:23: ('TeamView', {'teamId': '1666382706663462213'}),
+  _figma_lg_enum.py:24: ('TeamUsersView', {'teamId': '1666382706663462213'}),
+  _figma_lg_enum2.py:20: ('TeamView', {'teamId': '1666382706663462213'}),
+  _figma_lg_enum2.py:21: ('TeamUsersView', {'teamId': '1666382706663462213'}),
+  _figma_lg_enum3.py:19: ('TeamView', {'teamId': '1666382706663462213'}),
+  _figma_lg_enum3.py:20: ('TeamUsersView', {'teamId': '1666382706663462213'}),
+  _figma_matrix1.py:54: req('GET', '/api/roles/team/%s' % '1666382706663462213')  # A 的团队
+  → 命中行数: 120
+
+===== D. overlong %C0%AF =====
+  _figma_r106_mdgap1.py:2: # r106: md 技术补完①——Rails 参数语法(query[]/x[k]) + HPP 重复参数 + 编码差异层(%25xx双重/%C0%A7 overlong/U+2019/反斜杠)
+  _figma_r106_mdgap1.py:57: probe_raw('C4_ovl', f'query=team%C0%A7--&{BASE_QS}', 'overlong utf8 0x27')
+  _figma_r111f.py:2: # r111f: folders 域对账补齐(overlong/全角/反斜杠)——R4/R5/R6 在三类值位上的收尾
+  _figma_r111f.py:34: print('===== R4 overlong / R5 全角 / R6 反斜杠(sort_column 白名单位) =====')
+  _figma_r111f.py:35: go('SC_R4_ovl', f'{BASEQ}&sort_column=%C0%A7name', 'overlong 前缀')
+  _figma_r111f.py:36: go('SC_R4_ovl2', f'{BASEQ}&sort_column=name%C0%A7', 'overlong 后缀')
+  _figma_r111f.py:43: go('FT_R4_ovl', f'{BASEQ}&sort_column=name&file_type=design%C0%A7', 'design+overlong')
+  _figma_r154_pathinj.py:61: cl('R7', '(overlong %C0%A7)', url=BASE + '/api/versions/' + FK2 + '%C0%A7')
+  → 命中行数: 10
+
+===== E. 非法字节 %FF/%FE =====
+  → 命中行数: 0
+
+===== F. 中段/前段 NUL (plan_id 前后) =====
+  _figma_r231_param_mutation.py:58: req('Z5', 'GET', f'{NOTIF}?plan_id={TEAM_A}%00{QT}', '值尾 NUL')
+  → 命中行数: 1
+
+===== G. soft hyphen 00AD =====
+  → 命中行数: 0
+
+===== H. Bidi 202E/RLO =====
+  → 命中行数: 0
+
+===== I. 参数名带 NUL/异字节 =====
+  → 命中行数: 0
+
+===== J. 超长数字串(>100位) =====
+  _figma_r105_ident.py:49: ('long', '1' * 200),
+  → 命中行数: 1
+
+DONE q58

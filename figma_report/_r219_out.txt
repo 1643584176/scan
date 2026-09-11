@@ -1,0 +1,38 @@
+===== r219 X组: thumbnails fk位/头位 =====
+[X1] 403 len=101 853ms fk位 %27 尾引号
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+[X1b] 403 len=101 973ms fk位 原始引号(看WAF)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+[X2] 404 len=123 1089ms 头位 UID_A+引号
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[X3] 404 len=123 1082ms 头位 UID_A+OR布尔
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[X4] 200 len=337 1257ms 头位注入到 notif GET
+    body=b'{"error":false,"status":200,"meta":{"id":"f4ecb9d0-de60-46f9-a661-7e4e6cea28c6","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T06:52:02.493Z","updated_at":"2026-09-11T06:52:02.493Z"},"i18n":null}'
+===== r219 Y组: notif 写面漏网 =====
+[Y1] 200 len=337 1072ms recipient_settings='junk'
+    body=b'{"error":false,"status":200,"meta":{"id":"976ebc05-abae-473f-b486-1ecd608bd1ff","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:01:27.562Z","updated_at":"2026-09-11T07:01:27.562Z"},"i18n":null}'
+[Y2] 200 len=337 767ms recipient_settings=specific_admins+引号
+    body=b'{"error":false,"status":200,"meta":{"id":"4f78175f-e16e-4bdd-99e9-0270508388a8","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:01:30.536Z","updated_at":"2026-09-11T07:01:30.536Z"},"i18n":null}'
+[Y3] 200 len=337 1045ms mass: team_id=TEAM_B
+    body=b'{"error":false,"status":200,"meta":{"id":"c7683768-ef3d-4918-977d-52eaeea055ba","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:01:33.774Z","updated_at":"2026-09-11T07:01:33.774Z"},"i18n":null}'
+[Y4] 200 len=337 1192ms mass: id=随机UUID
+    body=b'{"error":false,"status":200,"meta":{"id":"488bf703-2315-4763-9294-56debcd432c3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:01:37.183Z","updated_at":"2026-09-11T07:01:37.183Z"},"i18n":null}'
+[Y5] 500 len=73 1066ms freq=[null]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[Y6] 500 len=73 1772ms freq=[123]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[Y7] 500 len=73 1050ms freq=[{}]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[Y8] 500 len=73 1830ms freq=[[]]
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[Y9] 200 len=337 1513ms recipients=[int UID_A]
+    body=b'{"error":false,"status":200,"meta":{"id":"c87df517-dc7f-45f3-a972-9110d6fe1ade","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:01:55.420Z","updated_at":"2026-09-11T07:01:55.420Z"},"i18n":null}'
+[Y10] 500 len=73 2398ms 多语句 x'; SELECT pg_sleep(4)-- 
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+--- 净化 ---
+[G1] 200 len=337 1030ms 恢复净空
+    body=b'{"error":false,"status":200,"meta":{"id":"a4ed37a7-f235-4d14-a9ed-a24a877bb33c","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:02:03.273Z","updated_at":"2026-09-11T07:02:03.273Z"},"i18n":null}'
+[G2] 200 len=337 1072ms 复核净空
+    body=b'{"error":false,"status":200,"meta":{"id":"a4ed37a7-f235-4d14-a9ed-a24a877bb33c","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:02:03.273Z","updated_at":"2026-09-11T07:02:03.273Z"},"i18n":null}'
+DONE r219

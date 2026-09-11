@@ -1,0 +1,57 @@
+===== r231 Y1-Y3,Y5: 参数名变异 =====
+[Y1] 400 len=86 687ms 名尾空格 plan_id␣
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[Y2] 200 len=337 1074ms 编码下划线 plan%5Fid(解码后等价?)
+    body=b'{"error":false,"status":200,"meta":{"id":"68301264-aa4c-4841-9f2d-31acc4b804fc","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:47:45.846Z","updated_at":"20'
+[Y3] 400 len=124 985ms 双层嵌套 plan_id[a][b]
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type Sinatra::IndifferentHash","i18n":null}'
+[Y5] 200 len=337 1118ms body 重复键大小写混合 {"plan_id":A,"PLAN_ID":B}
+    body=b'{"error":false,"status":200,"meta":{"id":"0f27d5b5-5763-486b-a923-ed48fe7e22c3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:08.707Z","updated_at":"20'
+===== r231 Z0-Z6: Ruby strip 家族（值尾/前缀空白——A13 只打过尾空格） =====
+[Z0] 200 len=337 1695ms 值前导空格
+    body=b'{"error":false,"status":200,"meta":{"id":"0f27d5b5-5763-486b-a923-ed48fe7e22c3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:08.707Z","updated_at":"20'
+[Z1] 200 len=337 1120ms 值尾 TAB
+    body=b'{"error":false,"status":200,"meta":{"id":"0f27d5b5-5763-486b-a923-ed48fe7e22c3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:08.707Z","updated_at":"20'
+[Z2] 200 len=337 1088ms 值尾 LF
+    body=b'{"error":false,"status":200,"meta":{"id":"0f27d5b5-5763-486b-a923-ed48fe7e22c3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:08.707Z","updated_at":"20'
+[Z3] 200 len=337 1030ms 值尾 VT\v
+    body=b'{"error":false,"status":200,"meta":{"id":"0f27d5b5-5763-486b-a923-ed48fe7e22c3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:08.707Z","updated_at":"20'
+[Z4] 200 len=337 1029ms 值尾 CR
+    body=b'{"error":false,"status":200,"meta":{"id":"0f27d5b5-5763-486b-a923-ed48fe7e22c3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:08.707Z","updated_at":"20'
+[Z5] 200 len=337 1015ms 值尾 NUL
+    body=b'{"error":false,"status":200,"meta":{"id":"0f27d5b5-5763-486b-a923-ed48fe7e22c3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:08.707Z","updated_at":"20'
+[Z6] 400 len=106 980ms 值尾 NBSP(U+00A0,strip不吃)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+===== r231 AA1-AA5: 整数形态变异 =====
+[AA1] 403 len=279 954ms 负数
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[AA2] 400 len=106 1020ms 加号本体 %2B
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[AA3] 403 len=279 1006ms 19个9(>2^63-1,PG int8溢出探)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[AA4] 403 len=279 1001ms 2^63-1 精确边界(对照)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[AA5] 400 len=106 1000ms 整数.0
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+===== r231 AB1-AB5: JSON 传输变异 =====
+[AB1] 400 len=86 986ms body 前后空白+换行
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[AB2] 400 len=86 942ms plan_id值首字符\u0031转义
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[AB4] 200 len=337 1260ms Content-Type: Application/JSON 大小写
+    body=b'{"error":false,"status":200,"meta":{"id":"c2f8fbec-cbd9-4bb8-a16b-83fe363860df","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:57.860Z","updated_at":"20'
+[AB5] 400 len=40 807ms charset=utf-16 + UTF-16编码body
+    body=b'{"error":"Failed to parse body as JSON"}'
+===== r231 AC1/2/4: 枚举大小写变异 =====
+[AC1] 200 len=337 941ms plan_type=Team 大写
+    body=b'{"error":false,"status":200,"meta":{"id":"c2f8fbec-cbd9-4bb8-a16b-83fe363860df","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:55:57.860Z","updated_at":"20'
+[AC2] 200 len=40 1044ms ntype 大写变体
+    body=b'{"error":false,"status":200,"i18n":null}'
+[AC4] 200 len=337 962ms rs=Specific_Admins 大小写(观察回显归一化)
+    body=b'{"error":false,"status":200,"meta":{"id":"89722082-f7c0-40bc-8073-d557cc9b3997","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:56:10.424Z","updated_at":"20'
+===== r231 净化 =====
+[AD1] 200 len=337 1103ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"b2a459fd-e694-4e7e-ab9f-fec80758de80","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:56:13.722Z","updated_at":"20'
+[AD2] 200 len=337 2342ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"b2a459fd-e694-4e7e-ab9f-fec80758de80","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:56:13.722Z","updated_at":"20'
+DONE r231

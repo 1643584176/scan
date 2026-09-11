@@ -1,0 +1,8 @@
+===== fv 值域探索（数字型） =====
+[W1] 202 len=     0 417ms ct=text/html; charset=UTF-8 fv=100（3位）
+[W2] 202 len=     0 598ms ct=text/html; charset=UTF-8 fv=9999999999（10位）
+[W3] 202 len=     0 705ms ct=text/html; charset=UTF-8 fv=9999999999999999999（19位）
+[W4] 202 len=     0 674ms ct=text/html; charset=UTF-8 fv=2388882899084859386（真版本 id）
+[W5] 202 len=     0 706ms ct=text/html; charset=UTF-8 fv=1757560000000（13位时间戳ms）
+[W6] 202 len=     0 732ms ct=text/html; charset=UTF-8 fv=0（零）
+DONE r264

@@ -1,0 +1,29 @@
+===== r242 M. thumbnails 数字参数注入态 =====
+[M0] 404 len=123 801ms 基准 max_results=1
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[M1] 400 len=214 1056ms max_results=1' 尾引号
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:19: Non-number characters in quoted integer"}'
+[M2] 400 len=214 1026ms max_results=1'-- 引号+注释(LIMIT注入形态)
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:21: Non-number characters in quoted integer"}'
+[M3] 400 len=214 1027ms max_results=1' OR '1'='1
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:29: Non-number characters in quoted integer"}'
+[M4] 400 len=214 1003ms max_results=1;SELECT 1 分号
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:27: Non-number characters in quoted integer"}'
+[M5] 400 len=214 951ms max_results=1 UNION SELECT 1
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:33: Non-number characters in quoted integer"}'
+[M6] 400 len=214 994ms start_timestamp_ms=0' 尾引号
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:26: Non-number characters in quoted integer"}'
+[M7] 400 len=214 1023ms start_timestamp_ms=0'-- 注释
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:28: Non-number characters in quoted integer"}'
+[M8] 400 len=214 1107ms start_timestamp_ms=0 OR 1=1
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:32: Non-number characters in quoted integer"}'
+[M9] 400 len=214 1114ms max_results 时延语义
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:37: Non-number characters in quoted integer"}'
+[M10] 400 len=214 1135ms start 括号闭合+时延
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:45: Non-number characters in quoted integer"}'
+===== r242 V. B账号视频面 =====
+[V1] 401 len=59 1035ms B的文件videos列表(B cookie)
+    body=b'{"error":true,"status":401,"message":"","reason":"expired"}'
+[V2] 200 len=61 1088ms A cookie 读 B文件(越权对照)
+    body=b'{"error":false,"status":200,"meta":{"videos":{}},"i18n":null}'
+DONE r242

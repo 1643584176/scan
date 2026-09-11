@@ -1,0 +1,52 @@
+脚本数: 706
+A(URL查询串): 121  B(请求字典/kwargs): 115  C(全字面量): 391
+used_L1: 204   used_L2: 451
+S: 1286
+never_L1 (从未作为入参发送): 1169
+never_L2 (更严格): 1079
+脚本文本有但从未作为入参发送: 615
+toAPI 标记: 19  never_L1∩toAPI: 19
+
+saved: Figma-已用入参清单与未用入参-2026-09-11.md + _q31_result.json
+
+=== used_L1 高频 top 40 ===
+  resource_type  (76/36)
+  query  (66/43)
+  clientType  (66/0)
+  pv  (66/0)
+  preload  (66/0)
+  userId  (66/0)
+  connectionType  (66/0)
+  requestedProtocolVersion  (66/0)
+  clientUrl  (66/0)
+  reconnect  (66/0)
+  anonUserId  (66/0)
+  page_size  (48/6)
+  team_id  (46/5)
+  cursor  (46/1)
+  max_num_results  (45/0)
+  desc  (43/0)
+  sort  (37/4)
+  primary_user_id  (0/32)
+  view_all  (27/0)
+  profile_handle  (0/24)
+  fk  (23/0)
+  sort_column  (21/0)
+  name  (0/21)
+  value  (0/20)
+  pageSize  (20/0)
+  fv  (20/0)
+  org_id  (11/9)
+  description  (0/19)
+  file_type  (16/2)
+  fields  (0/17)
+  resource_id  (15/2)
+  sort_by  (17/0)
+  query_string  (16/0)
+  field_schema_id  (0/16)
+  viewer_export_restricted  (0/16)
+  limit  (3/12)
+  version_id  (14/1)
+  column  (5/9)
+  direction  (9/4)
+  sort_order  (13/0)

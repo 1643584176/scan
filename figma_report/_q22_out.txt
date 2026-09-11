@@ -1,0 +1,484 @@
+[B] tested identifiers: 491
+[A] endpoints with param candidates: 252
+[D1] endpoints=239, total uncovered param candidates=2163
+
+  /api/active_file_users
+      -> keys, s_r, users
+  /api/activity_logs
+      -> ACCOUNT_TYPE_REQUEST, AI_CREDIT_REQUEST, OAUTH_APP_REQUEST, account__type__request, account_type_request, ai__credit__request, oauth__app__request, request_type, totals
+  /api/activity_logs/last_edit/{}
+      -> ACCOUNT_TYPE_REQUEST, AI_CREDIT_REQUEST, OAUTH_APP_REQUEST, account__type__request, account_type_request, ai__credit__request, avatar_url, oauth__app__request, request_type, seat_types, totals
+  /api/activity_logs/recent/{}
+      -> ACCOUNT_TYPE_REQUEST, AI_CREDIT_REQUEST, OAUTH_APP_REQUEST, account__type__request, account_type_request, ai__credit__request, avatar_url, oauth__app__request, permission, proxy_requester, request_ids, request_type, seat_types, totals, user
+  /api/activity_logs/{}
+      -> endDateFilter, endTime, end_date_filter, eventName, eventNamesFilter, event_name, event_names_filter, filtersOnActedOnEmail, filtersOnActorEmail, filters_on_acted_on_email, filters_on_actor_email, isLoading, isNewQuery, is_loading, is_new_query, logs, newQuery, new_query, numberOfResults, number_of_results, startDateFilter, startTime, start_date_filter, teamIdFilter, team_id_filter
+  /api/admin/files/{}
+      -> createdAt, encodedKiwiSchemaUrl, encoded_kiwi_schema_url, endSequenceNumber, end_sequence_number, entry, startSequenceNumber, start_sequence_number, userIdToChangeCount, user_id_to_change_count
+  /api/admin/multiplayer_journal/{}/{}
+      -> basisParentNodeChanges, basis_parent_node_changes, blobs, diffBasis, diffChunks, diffPayload, diff_basis, diff_chunks, diff_payload, downloadableBuffer, downloadable_buffer, nodeChanges, node_changes, parentNodeChanges, parent_node_changes, sensitiveTextPolicy, sensitive_text_policy
+  /api/admin/multiplayer_journals/{}
+      -> blobs, createdAt, encodedKiwiSchemaUrl, encoded_kiwi_schema_url, endSequenceNumber, end_sequence_number, entry, nodeChanges, node_changes, startSequenceNumber, start_sequence_number, userIdToChangeCount, user_id_to_change_count
+  /api/bug_reports
+      -> descriptionLabel, descriptionPlaceholder, description_label, description_placeholder, endpoint, href, isPerformanceIssue, is_performance_issue, modalTitle, modal_title, newTab, new_tab, notifyTheRelevantOncall, notify_the_relevant_oncall, onError, onSubmit, on_error, on_submit, productAreaGroups, product_area_groups, recordingKey, recording_key, severityOptions, severity_options, shareFileLabel, share_file_label, showTitle, show_title, submitButtonText, submit_button_text
+  /api/bulk_favorite_resources_v2
+      -> FavoritedProject, FavoritedTeam, f_c, favorited_project, favorited_team, insert_after_favorite_id, insert_at_index, insert_before_favorite_id, pageId, q_r, section_id, sidebarSectionId, sidebar_section_id
+  /api/buzz_approvals/complete_v2
+      -> assetApprovalStatuses, asset_approval_statuses, codeConnectId, codeToFigma, codeToFigmaStatus, code_connect_id, code_to_figma, code_to_figma_status, componentKey, componentName, componentThumbnailUrl, component_thumbnail_url, fileName, file_name, matches, nodeId, sourcePath
+  /api/buzz_approvals/create
+      -> assetApprovalStatuses, asset_approval_statuses, codeConnectId, code_connect_id, fileName, file_name, nodeId, note, num_assets_in_request, requested_at, reviewer_ids
+  /api/buzz_approvals/withdraw
+      -> assetApprovalStatuses, asset_approval_statuses, codeConnectId, codeToFigma, codeToFigmaStatus, code_connect_id, code_to_figma, code_to_figma_status, componentKey, componentName, componentThumbnailUrl, component_thumbnail_url, fileName, file_name, nodeId
+  /api/code_connect/bulk_map
+      -> generationId, generation_id, libraryKey
+  /api/code_connect/code_snippet
+      -> generationId, generation_id, libraryKey
+  /api/code_connect/generate_template
+      -> generationId, generation_id, libraryKey
+  /api/code_connect/libraries/repositories
+      -> baseColors, base_colors, creatorId, isTeamDefault, is_team_default
+  /api/code_connect/libraries/{}/repositories
+      -> directories, filter_to_selected_repo_directories, repository_ids, snapshot_id
+  /api/code_connect/libraries/{}/repositories/{}
+      -> baseColors, base_colors, creatorId, isTeamDefault, is_team_default
+  /api/code_connect/libraries/{}/repositories/{}/directories
+      -> directories, generationId, generation_id, libraryKey
+  /api/code_connect/libraries/{}/source_files
+      -> filter_to_selected_repo_directories, snapshot_id
+  /api/code_connect/libraries/{}/source_files/file_details
+      -> snapshot_id
+  /api/code_connect/libraries/{}/template_generations/{}/feedback
+      -> creatorId, generationId, generation_id, libraryKey
+  /api/code_connect/library/in_context/published_components
+      -> libraryKey
+  /api/code_connect/library/in_context/published_components/all
+      -> libraryKey
+  /api/code_connect/library/in_context/published_components/status
+      -> filter_to_selected_repo_directories, libraryKey
+  /api/code_connect/library/{}/published_components/all
+      -> filter_to_selected_repo_directories
+  /api/code_connect/library/{}/status
+      -> filter_to_selected_repo_directories, snapshot_id
+  /api/code_connect/map
+      -> repository_ids
+  /api/code_connect/user_rules
+      -> repository_ids
+  /api/collections/{}
+      -> attributes, collection, fieldSchema, field_schema, newAttributes, new_attributes, responseType
+  /api/collections/{}/export
+      -> destinationFileKey, destination_file_key, plugins, responseType, sourceHubFileId, templates, use_cases, widgets
+  /api/collections/{}/field_schemas
+      -> collection, destinationFileKey, destination_file_key, fieldSchema, field_schema, newAttributes, new_attributes, responseType, sourceHubFileId
+  /api/collections/{}/field_schemas/{}
+      -> collection, destinationFileKey, destination_file_key, fieldSchema, field_schema, plugins, responseType, sourceHubFileId, templates, widgets
+  /api/color_palettes
+      -> colorPaletteUuid, color_palette_uuid, createdAt
+  /api/color_palettes/{}
+      -> colorPaletteUuid, color_palette_uuid, createdAt, updatedAt, updated_at
+  /api/community/buyer/{}/refund
+      -> here, open, popStack, pop_stack, preventUserClose, prevent_user_close, refund_other_reason_text, refund_reason, user, variant
+  /api/community/weave_workflows/{}/unpublish
+      -> settings, x_q, y_o
+  /api/community_comments
+      -> callback, comment, commentId, comment_id, contentId, errorMessage, error_message, isReply, is_reply, loadingKey, loading_key, messageMeta, optimistId, optimist_id
+  /api/community_comments/{}
+      -> comment, commentId, comment_id, comments, contentId, errorMessage, error_message, hide, loadingKey, loading_key, onFinish, on_finish, userIsAdmin, user_is_admin
+  /api/community_comments/{}/report
+      -> commentId, comment_id, contentId, errorMessage, error_message, manager, padding, preventUserClose, prevent_user_close
+  /api/component_log_data
+      -> assetType, asset_type
+  /api/design_systems/components_state_groups
+      -> localOldGuidToNewKey, local_old_guid_to_new_key, subscribeToRealtime, subscribe_to_realtime, subscribedOldKeyToNewKey, subscribed_old_key_to_new_key
+  /api/design_systems/published_state_group_versions
+      -> onStateGroupRequest, on_state_group_request, shouldRecordUsedStateGroupFetchResult, shouldUpdateLoadingStatus, should_record_used_state_group_fetch_result, should_update_loading_status
+  /api/figjam/default_collage_items
+      -> folder_name, save_location, success
+  /api/figjam/default_inserts
+      -> folder_name, save_location, success
+  /api/file/{}/canvas_mentions/record_invite
+      -> has_make_local_remote
+  /api/file/{}/collections
+      -> attributes, collection, fieldSchema, field_schema, newAttributes, new_attributes
+  /api/file/{}/comments/{}
+      -> Comment, attachment_updates, button, clientMeta, client_meta, comment, fallbackError, fallback_error, flow, inFrame, in_frame, isOptimistic, is_optimistic, messageMeta, nodeId, nodeOffset, node_offset, onDismiss, onFailure, on_dismiss, on_failure, pageId, pending_mentions, promise, resolved, resolvedAt, selectionBoxAnchor, selection_box_anchor, share_to_mentions, stablePath
+  /api/file/{}/voting_sessions
+      -> VotingSession, fallbackError, fallback_error, promise, usedCustomTitle, used_custom_title, votingSessionId, voting_session, voting_session_id
+  /api/file/{}/voting_sessions/{}
+      -> VotingSession, fallbackError, fallback_error, matchType, match_type, promise, requestBody, request_body, uiSurface, ui_surface, usedCustomTitle, used_custom_title, votingSessionId, votingSessionTitle, voting_session, voting_session_id, voting_session_title
+  /api/file_diff/v2/checkpoint_diff/{}
+      -> durationMs, duration_ms, forwardToDatadog, forward_to_datadog, isEditor, is_editor, params, responseType
+  /api/file_proxy/component/{}/canvas
+      -> canvas_url, containing_frame, default_state_key, fileVersion, has_video, isLocal, is_local, is_template, library, min_node_height, min_node_width, sceneGraph, scene_graph, sort_position, subscribedComponents, subscribedComponentsOnCurrentPage, subscribedStateGroups, subscribedStateGroupsOnCurrentPage, subscribed_components, subscribed_components_on_current_page, subscribed_state_groups, subscribed_state_groups_on_current_page, thumbnail_url, userFacingVersion, user_facing_version
+  /api/file_proxy/module_asset/{}/canvas
+      -> canvas_url, containing_frame, description_rt, moduleSource, module_source, thumbnail_url, unpublished_at, updated_at, userFacingVersion, user_facing_version
+  /api/file_proxy/state_group/{}/canvas
+      -> canvas_url, containingStateGroup, containing_frame, containing_state_group, default_state_key, fill_color, isLocal, is_local, is_template, min_node_height, min_node_width, nodeId, sort_position, states, style_type, thumbnail_url, userFacingVersion, user_facing_version
+  /api/file_proxy/style/{}/canvas
+      -> sort_position, style_type, thumbnail_url, userFacingVersion, user_facing_version
+  /api/files/batch
+      -> failOnEmptyResponse, fail_on_empty_response, numFiles, num_files, retryCount, retry_count, style_keys, styles, subscribeToRealtime, subscribe_to_realtime
+  /api/files/create_starter_team_file_role
+      -> has_make_local_remote
+  /api/files/related_links
+      -> isUserOverride, is_user_override, linkName, linkPreviewJson, linkUrl, link_preview_json, mainComponentId, main_component_id, nodeId, nodeType, node_type, pluginId, plugin_id
+  /api/files/role_request/{}/accept
+      -> has_make_local_remote
+  /api/files/role_request/{}/deny
+      -> has_make_local_remote
+  /api/files/{}
+      -> failed, image_origin_file_key, image_origin_library_key, image_sha1s, is_playground, shas, success
+  /api/files/{}/ai_credits/plan_user_action_credit_usage
+      -> license_group_id, surface, usage_alert_id, user_action_uuid, user_action_uuids
+  /api/files/{}/apply_hub_file_collections
+      -> plugins, templates, use_cases, widgets
+  /api/files/{}/can_request_edit
+      -> has_make_local_remote
+  /api/files/{}/color_palette
+      -> characterLimit, character_limit, colorPaletteUuid, color_palette_uuid, createdAt, placeholder, updatedAt, updated_at
+  /api/files/{}/expire_public_link
+      -> onCanvasExpired, on_canvas_expired
+  /api/files/{}/figspec/code_repository
+      -> branch, canceled_at, current_period_end, github_installation_id, remote_repository_id, seats
+  /api/files/{}/make_local_metadata
+      -> has_make_local_remote
+  /api/files/{}/prototype/view
+      -> contentType, extra, fallbackError, fallback_error, pageId, prototype, requestPromise, request_promise, responseType, store
+  /api/files/{}/published_package
+      -> repository_ids
+  /api/files/{}/published_package/{}
+      -> repository_ids
+  /api/files/{}/recent_activity
+      -> has_make_local_remote
+  /api/files/{}/related_links
+      -> DeveloperRelatedLink, clearLinkPreview, clear_link_preview, currentUrl, current_url, developer_related_link, extra, isUserOverride, is_user_override, lgOptimisticMutationUuid, link, linkId, linkName, linkPreviewJson, linkUrl, link_preview_json, newValue, new_value, nodeId, nodeType, node_type, pluginId, plugin_id
+  /api/files/{}/related_links/link_preview
+      -> DeveloperRelatedLink, developer_related_link, extra, link, linkPreviewJson, link_preview_json, nodeId
+  /api/files/{}/state_group_backfill/trigger
+      -> allStates, all_states, editingFileKey, editing_file_key, err, href, newTab, new_tab, onRetry, on_retry, reportAsSentryError, report_as_sentry_error, selectedStates, selected_states, stateGroupError, stateGroupNodeId, stateGroupSelectionMode, state_group_error, state_group_node_id, state_group_selection_mode, trusted, variant
+  /api/files/{}/thumbnail_guid
+      -> thumbnail_guid
+  /api/files/{}/view
+      -> lastEdited, last_edit_at, last_edited, last_view_at, openFileKey, open_file_key, versionHistory, version_history
+  /api/files/{}/workshop
+      -> FigFileWorkshopMode, button, expiresAt, expires_at, fig_file_workshop_mode, lastEdited, last_edit_at, last_edited, last_view_at, liveStore, live_store, openFileKey, open_file_key
+  /api/files_batch
+      -> imageBytesSkipped, imageBytesTotal, image_bytes_skipped, image_bytes_total, invalidFiles, invalid_files, oversizedFiles, oversized_files
+  /api/folders
+      -> emailsToExclude, emails_to_exclude, entry_point, fallbackError, fallback_error, folderIds, folderUpdates, folder_ids, folder_updates, i18n, inherits_access, is_invite_only, is_view_only, objects, promise, reduxStore, redux_store, resourceIdOrKey, resource_id_or_key, sharingAudienceControl, sharing_audience_control, teamAccess, team_access, userGroupIds, user_group_ids
+  /api/folders/move
+      -> Project, cannot_create_under_connected_folder, cannot_create_under_draft_folder, fallbackError, fallback_error, folderName, folder_name, project, promise, teamName, team_name
+  /api/folders/rename
+      -> Project, fallbackError, fallback_error, newSharingAudienceControl, new_sharing_audience_control, oldSharingAudienceControl, old_sharing_audience_control, optimistId, optimist_id, project, promise, share_settings_type, sharingAudienceControl, sharing_audience_control
+  /api/folders/{}/color
+      -> Project, entryPoint, entry_point, fallbackError, fallback_error, onFolderCreated, on_folder_created, oneStep, one_step, project, promise, shouldRedirectOnCreate, should_redirect_on_create, where
+  /api/folders/{}/pin
+      -> is_invite_only, is_subscribed, is_view_only, updated_at
+  /api/follows
+      -> authors, b_f, c_j, currentUserProfileId, current_user_profile_id, entity, followedProfileId, loadingKey, loading_key, onSuccess, on_success, p_j, profileName, profile_name, q_d, r_n, s_d, searchSessionId, search_session_id
+  /api/hub_files/template/{}/copy
+      -> allowDefaulting, allow_defaulting, canRetry, can_retry, hubFileName, hub_file_name, isDrawMode, is_draw_mode, selectedView, selected_view, storeInRecentsKey, store_in_recents_key
+  /api/hub_files/{}
+      -> f_v, hubFiles, hub_files, src
+  /api/hub_files/{}/template_canvas
+      -> cloneLocalStylesAndVariablesForTemplate, clone_local_styles_and_variables_for_template, insert, responseType, selectTemplateAfterInsertion, select_template_after_insertion, template, templateBuffer, templateCustomPosition, templateInsertionDirection, template_buffer, template_custom_position, template_insertion_direction, userTriggered, user_triggered
+  /api/hub_files/{}/view
+      -> f_v
+  /api/hub_files/{}/{}/prepare_insert
+      -> cloneLocalStylesAndVariablesForTemplate, clone_local_styles_and_variables_for_template, insert, responseType, selectTemplateAfterInsertion, select_template_after_insertion, template, templateBuffer, templateCustomPosition, templateInsertionDirection, template_buffer, template_custom_position, template_insertion_direction, userTriggered, user_triggered
+  /api/integrations/github-app/create_pull_request
+      -> logoUrl, logo_url, p_o, publishScope, publish_scope, redacted_custom_headers, tagline
+  /api/integrations/github-app/install_authorize_redirection_url
+      -> p_o
+  /api/integrations/github-app/org_user_repositories
+      -> logo_url, p_o, tagline
+  /api/integrations/github-app/repository_branches
+      -> logo_url, p_o, publish_scope, redacted_custom_headers, tagline
+  /api/integrations/github-app/setup
+      -> desktop_protocol, request_context, request_context_id
+  /api/invites
+      -> billable_product_key, figmaAppDecagonMessage, figma_app_decagon_message, forwardToDatadog, forward_to_datadog, git_branch, initial_view, reportAsSentryError, report_as_sentry_error, resource_id_or_key, roleUserEmail, role_user_email, show_support_chat, support_chat_frame_url, support_chat_origin, user_group_ids
+  /api/invites/resend
+      -> fallbackError, fallback_error, promise, resource_id_or_key, roleId, role_id, z_k
+  /api/ip_check
+      -> closePluginModal, close_plugin_modal, latestVersion, latest_version, originNodeGuid, origin_node_guid, reason, ref, triggeredFrom, triggered_from
+  /api/libraries/{}/code_connect/lookup_by_component_name
+      -> baseColors, base_colors, creatorId, isTeamDefault, is_team_default
+  /api/mcp/clients
+      -> McpClient, canRead, canReadV2, can_read, can_read_v2, createdAt, lgOptimisticMutationUuid, mcpServerId, mcp_client, mcp_server_id, toolPreferences, tool_preferences
+  /api/mcp/clients/{}
+      -> McpClient, client, headers, mcp_client, toolPreferences, tool_preferences
+  /api/mcp/server/{}/oauth/client
+      -> client
+  /api/mcp/servers
+      -> McpServer, canRead, canReadV2, can_read, can_read_v2, customHeaders, custom_headers, isPublic, is_public, lgOptimisticMutationUuid, logoUrl, logoUrlNonNullable, logo_url, logo_url_non_nullable, mcp_server, publishScope, publish_scope, redactedCustomHeaders, redacted_custom_headers, tagline
+  /api/mcp/servers/{}
+      -> McpClient, McpServer, canRead, canReadV2, can_read, can_read_v2, createdAt, customHeaders, custom_headers, isPublic, is_public, lgOptimisticMutationUuid, logoUrl, logoUrlNonNullable, logo_url, logo_url_non_nullable, mcpServerId, mcp_client, mcp_server, mcp_server_id, publishScope, publish_scope, redactedCustomHeaders, redacted_custom_headers, tagline, toolPreferences, tool_preferences, visible_to_plan
+  /api/mcp/servers/{}/oauth_callback
+      -> client, headers
+  /api/mcp/servers/{}/publish_scope
+      -> McpClient, McpServer, canRead, can_read, createdAt, lgOptimisticMutationUuid, mcpServerId, mcp_client, mcp_server, mcp_server_id, publishScope, publish_scope, toolPreferences, tool_preferences, visible_to_plan
+  /api/mcp/session_token_exchange
+      -> client, j_v
+  /api/multiplayer/{}/copy
+      -> c_m, d_x, duplicatedContainingFolderId, duplicatedFileKey, duplicatedFileTeamId, duplicated_containing_folder_id, duplicated_file_key, duplicated_file_team_id, editorType, fileEditorType, file_editor_type, intArg, int_arg, isBranch, isLibrary, isTeamTemplate, is_branch, is_library, is_team_template, m_o, params, v_p, x_t
+  /api/org/{}/delete_org_users
+      -> h_z, is_slides_disabled, org_user_ids, slidesDisabled, slides_disabled, successMessage, success_message, supabaseDisabled, supabase_disabled, y_h
+  /api/org/{}/deletion_request
+      -> exportControlSetting, export_control_setting, file_export_setting, successMessage, success_message
+  /api/org/{}/org_saml_config
+      -> certificate, domain_mappings, domains_to_unmap, h_z, idp_entity_id, idp_name, l_h, metadata_url, nickname, numTeams, num_teams, oidc_issuer, sso_target_url, team_ids, updates, x_m
+  /api/org_invites
+      -> billable_product_key, creating, idpUser, idp_user, license_group_id, numExisting, numInvites, num_existing, num_invites
+  /api/org_invites/{}
+      -> onCloseOrComplete, on_close_or_complete, org_invite_id, showBreadcrumbs, show_breadcrumbs, startProUpgradeFlow, start_pro_upgrade_flow
+  /api/org_saml_config/{}
+      -> certificate, domain_mappings, domains_to_unmap, h_z, idp_entity_id, idp_name, l_h, metadata_url, nickname, oidc_issuer, sso_target_url, x_m
+  /api/org_saml_config/{}/oidc_issuer
+      -> certificate, domain_mappings, domains_to_unmap, h_z, idp_entity_id, idp_name, l_h, metadata_url, nickname, oidc_issuer, sso_target_url, x_m
+  /api/org_saml_config/{}/scim_api_token
+      -> dispatch, domain_mappings, domains_to_unmap, onCancel, onConfirm, on_cancel, on_confirm, orgSamlConfig, orgSamlConfigId, org_saml_config, org_saml_config_id, provisioningApiToken, provisioning_api_token
+  /api/org_user/{}
+      -> optimistId, optimist_id, orgName, org_name
+  /api/orgs/{}
+      -> attribute, dispatch, featured_scim_metadata, googleSsoOnly, google_sso_only, idle_timeout_duration_in_secs, img_url, img_url_500_500, ipAllowlistEnabled, ipAllowlistRanges, ip_allowlist, ip_allowlist_enabled, ip_allowlist_ranges, ip_ranges, mfaRequired, mfa_required, onFailure, onSuccess, on_failure, on_success, onfulfilled, onrejected, org, public_plugins_allowed, regional_vat_gst_id, samlSsoOnly, saml_sso_only, shared_container_setting, successMessage, success_message
+  /api/orgs/{}/billing_data
+      -> admin_email, enabled, license_quantities, policy
+  /api/orgs/{}/export_controls
+      -> exportControlSetting, export_control_setting, file_export_setting, successMessage, success_message
+  /api/orgs/{}/ip_allowlist_ranges
+      -> exportControlSetting, export_control_setting, file_export_setting, ip_allowlist, ip_allowlist_enabled, ip_ranges, shared_container_setting, successMessage, success_message
+  /api/orgs/{}/lock_invoice
+      -> enabled, license_quantities, policy
+  /api/orgs/{}/org_users
+      -> deletedOrgUserCount, deleted_org_user_count, includeLicenseAdmins, include_license_admins, loadingKey, loading_key, orgUsers, org_users
+  /api/orgs/{}/teams/join
+      -> disableFlashError, disable_flash_error, includeMemberCount, includeProjectCount, includeSecretTeams, includeTopMembers, include_project_count, include_top_members, loadingKey, loading_key, teamIds, team_ids, userInitiated, user_initiated
+  /api/orgs/{}/workspaces/buzz_approvals_settings
+      -> buzz_approvals_enabled, buzz_approvals_non_blocking, successMessage, success_message, webPublishing, web_publishing
+  /api/orgs/{}/workspaces/export_controls
+      -> buzzApprovalsEnabled, buzzApprovalsNonBlocking, buzz_approvals_enabled, buzz_approvals_non_blocking, exportControlSetting, export_control_setting, file_export_setting, successMessage, success_message
+  /api/orgs/{}/workspaces/web_publishing
+      -> defaultPlanCreditsAccess, default_plan_credits_access, oauthAppAllowlistSetting, oauth_app_allowlist_setting, successMessage, success_message, web_publishing
+  /api/perf_reports
+      -> href, isPerformanceIssue, is_performance_issue, modalTitle, modal_title, newTab, new_tab, onSubmit, on_submit, recordingKey, recording_key, shareFileLabel, share_file_label, showTitle, show_title, slackChannel, slack_channel, submitButtonText, submit_button_text, successMessage, success_message, trusted
+  /api/planless_favorited_resource_plan_id
+      -> UserSidebarSection, createdAt, insert_at_index, lgOptimisticMutationUuid, movingResource, moving_resource, orderedFavoritedResourceIds, ordered_favorited_resource_ids, ordered_sections, user_sidebar_section
+  /api/plans/{}/admin_requests
+      -> account_type, ai_credit, available, b_z, bypass_metering, clientId, creationParams, creation_params, credits, headers, oauth_app, requestIds, requestType, request_ids, request_type, requestedFromFileKey, requested_from_file_key, requesterNote, requester_note, resets_at, resolutionParams, resolution_params, starts_at, subscription_variant_id, total, viewAll, view_all, z_v
+  /api/plans/{}/admin_requests/counts
+      -> requestPermissionLevel, request_permission_level, viewAll, view_all
+  /api/plans/{}/admin_requests/dashboard_view
+      -> Unspecified, available, b_z, bypass_metering, bypass_proactive_metering_check, daily_summary, headers, monthly_summary, resets_at, starts_at, subscription_variant_id, total, unspecified, viewAll, view_all, z_v
+  /api/plans/{}/admin_requests/reject
+      -> account_type, rejectionParams, rejection_params, requestIds, requestPermissionLevel, requestType, request_ids, request_permission_level, request_type, viewAll, view_all
+  /api/plans/{}/admin_requests/resolve
+      -> account_type, ai_credit, credits, rejectionParams, rejection_params, requestIds, requestType, request_ids, request_type, resolutionParams, resolution_params
+  /api/plans/{}/ai_credits/export
+      -> license_group_id, surface, usage_alert_id
+  /api/plans/{}/ai_credits/license_group_active_users
+      -> license_group_id, note, num_assets_in_request
+  /api/plans/{}/ai_credits/license_group_allocations
+      -> allocations, include_derived_allocation_data, license_group_id
+  /api/plans/{}/ai_credits/license_group_usage
+      -> allocations, include_derived_allocation_data, license_group_id
+  /api/plans/{}/ai_credits/plan_ai_usage_billing_period
+      -> assetApprovalStatuses, asset_approval_statuses, note, num_assets_in_request, requested_at, reviewer_ids
+  /api/plans/{}/ai_credits/plan_ai_usage_monthly
+      -> license_group_id, note, num_assets_in_request, requested_at, reviewer_ids
+  /api/plans/{}/ai_credits/plan_balance_summary
+      -> usage_alert_id, user_action_uuid, user_action_uuids
+  /api/plans/{}/ai_credits/plan_billing_period_usage_summary
+      -> include_derived_allocation_data, use_plan_constraints_schema
+  /api/plans/{}/ai_credits/plan_usage_summary
+      -> use_plan_constraints_schema
+  /api/plans/{}/ai_credits/plan_user_balance_summary
+      -> license_group_id, usage_alert_id, user_action_uuid, user_action_uuids
+  /api/plans/{}/ai_credits/plan_user_usage_summary
+      -> include_derived_allocation_data, license_group_id, use_plan_constraints_schema
+  /api/plans/{}/ai_credits/request_credits
+      -> license_group_id, surface, usage_alert_id, use_plan_constraints_schema
+  /api/plans/{}/code_connect/generate_property_mappings
+      -> canceled_at, current_period_end, estimate_context_by_billable_product, seats
+  /api/plans/{}/code_connect/generate_property_mappings/status
+      -> annual_subscription, canceled_at, current_period_end, estimate_context_by_billable_product, seats
+  /api/plans/{}/mcp_usage
+      -> github_repository_remote_id, j_v, owner, provider, repo_url
+  /api/plans/{}/plan_users/update_permission
+      -> PlanUserRecord, dbBackedPermission, db_backed_permission, h_s, m_z, permission, plan_user_ids, plan_user_record
+  /api/plans/{}/scm/connections
+      -> branch, github_installation_id, github_repository, installation_id, remote_repository_id, ugit_url
+  /api/plans/{}/web_publishing
+      -> successMessage, success_message, webPublishing, web_publishing
+  /api/plugin_preferences/user
+      -> codegenEnabled, codegen_enabled, loaded, pinnedPluginsEnabled, pinned_plugins_enabled, plugin, preferences, svg, targetOrgId, target_org_id
+  /api/plugin_runs/{}
+      -> currentUserId, current_user_id, extensionId, extensionType, extension_id, extension_type, sharedApiPromise, shared_api_promise, storeInRecentsKey, store_in_recents_key, userFirstRanAt, user_first_ran_at
+  /api/plugins/{}/publishers/{}
+      -> accepted, codePath, code_path, headers, pending, proxyUploadPresignedPost, proxy_upload_presigned_post, publishedPlugins, published_plugins, src
+  /api/plugins/{}/roles
+      -> isWidget, is_widget, needApproval, need_approval, pluginId, plugin_id, pluralized, publishedPlugins, published_plugins, resource, src, toOrg, toPublic, to_org, to_public
+  /api/policy_configs/{}/acknowledge
+      -> headerText, header_text, parentId, secondaryText, secondary_text, subscribeToChanges, subscribe_to_changes, variant
+  /api/profile
+      -> community_profile_handle, community_profile_id, currentUserOrgId, current_user_org_id, orgById, org_by_id, userInitiated, user_initiated
+  /api/profile/generate_handle
+      -> contact_email, gallery_title, github, instagram, linkedin, loadingKey, loading_key, onSuccess, on_success, pinterest, portfolio_frame_type, portfolio_url, profileHandle, pronouns, threads, twitter, youtube
+  /api/profile/merge
+      -> authedProfilesById, authedTeamsById, authedUsers, authed_profiles_by_id, authed_teams_by_id, authed_users, currentUserOrgId, current_user_org_id, msg, orgUsersByOrgId, org_users_by_org_id, secondaryUserId, selectedView, selected_view, teamAdminRolesForAuthedUsers, team_admin_roles_for_authed_users, user
+  /api/profile/{}
+      -> b_x, c_b, communityHub, community_hub, community_profile_handle, community_profile_id, contact_email, currentUserOrgId, currentUserProfileId, current_user_org_id, current_user_profile_id, exact, followedProfileId, gallery_title, github, instagram, l_t, linkedin, loadingKey, loading_key, m_a, onSuccess, on_success, orgById, org_by_id, pinterest, portfolio_frame_type, portfolio_url, profileHandle, profileName
+  /api/profile/{}/block
+      -> authorsById, authors_by_id, blockedProfileId, blocked_profile_id, commentsById, comments_by_id, contentId, feed, j_f, library, onSuccess, on_success
+  /api/profile/{}/primary_user
+      -> loadingKey, loading_key
+  /api/profile/{}/user
+      -> loadingKey, loading_key, primaryUserId, secondaryUserId
+  /api/recent_prototypes
+      -> RecentFile2, apiFileKeys, api_file_keys, fileKeys, includeRepo, include_repo, isGlobal, is_global, optimisticFileKeys, optimistic_file_keys, parent_org_id, prototype, recent_file2, recent_prototype_repos, recent_prototypes, repos
+  /api/recent_search
+      -> previousSearches, previous_searches, workspaceFilter, workspace_filter
+  /api/resource/{}/like
+      -> settings, x_q, y_o
+  /api/resource/{}/save
+      -> x_q, y_o
+  /api/resource_scope_settings
+      -> settings, x_q, y_o
+  /api/resource_uses/hub_file/{}
+      -> branch, connection, connections, github_installation_id, github_repository_remote_id, j_v, node_count, owner, provider, remote_repository_id, repo_url, repository_full_name, run_count, ugit_url
+  /api/resource_uses/template/{}
+      -> branch, connection, connections, github_installation_id, github_repository_remote_id, j_v, node_count, owner, provider, remote_repository_id, repo_url, repository_full_name, run_count, ugit_url
+  /api/resource_uses/{}
+      -> branch, connection, connections, github_installation_id, github_repository_remote_id, j_v, owner, provider, remote_repository_id, repo_url, repository_full_name, ugit_url
+  /api/resource_uses/{}/{}
+      -> branch, connection, connections, github_installation_id, github_repository_remote_id, j_v, node_count, owner, provider, remote_repository_id, repo_url, repository_full_name, run_count, ugit_url
+  /api/resources
+      -> metadataQuery, metadata_query, nextPage, next_page, pageParam, page_param, prevPage, prev_page, queryId, query_id, resourceIds, resource_ids
+  /api/resources/group_by_team/{}
+      -> contentId, includeFullCategory, includeVersionHistory, include_full_category, include_version_history, nextPage, next_page, prevPage, prev_page
+  /api/resources/home_shelf
+      -> editorType, pageParam, page_param, timeout
+  /api/resources/pinned
+      -> editorType, includeCategorySlug, includeContent, includeTags, include_tags, nextPage, next_page, numResourcesPerTeam, num_resources_per_team, pageParam, page_param, prevPage, prev_page
+  /api/resources/{}/{}
+      -> includeContent
+  /api/roles/{}
+      -> fallbackError, fallback_error, promise, z_k
+  /api/session/app_auth
+      -> app_type, authed_ids, currentPlanFilter, currentSharedByFilter, current_plan_filter, current_shared_by_filter, entrypoint, forwardToDatadog, forward_to_datadog, sprig, teamViewTab, team_view_tab, viewMode, view_mode
+  /api/session/check
+      -> cacheNonce, cache_nonce, reason
+  /api/session/clear_account_sharing_flag
+      -> clickAnswer, click_answer, completeStates, complete_states, dismissModal, dismiss_modal, fadingOut, fading_out, getDefaultHeight, get_default_height, initialState, initial_state, offscreenBoundsRef, offscreen_bounds_ref, onShow, on_show, ref, setNextState, set_next_state, upcomingState, upcoming_state
+  /api/spell-check-words
+      -> displaySize, display_size, err, h_x, j_s, pixelSize, pixel_size, pixels, reportAsSentryError, report_as_sentry_error, responseData, responseStatus, response_data, response_status, word
+  /api/state_group_log_data
+      -> assetType, asset_type
+  /api/styles
+      -> style_keys, subscribeToRealtime, subscribe_to_realtime
+  /api/subscriptions-2018-11-08/team/{}
+      -> annual_subscription, cancelDate, cancel_date, monthly_subscription, teamName, team_name, userInitiated, user_initiated
+  /api/subscriptions/team/{}/annual_subscription
+      -> annualSeatCounts, annual_seat_counts, count_by_billable_product, dispatch, onFailure, onSuccess, on_failure, on_success
+  /api/subscriptions/team/{}/billing_contact
+      -> annualSeatCounts, annualSub, annual_seat_counts, annual_sub, billing_contact, canSeeBillingAddressExp, can_see_billing_address_exp, cancelling, customerInfo, customer_info, defaultCountry, default_country, dispatch, estimatedChargeCents, estimated_charge_cents, isReactivating, is_reactivating, loadingKey, loading_key, monthlySub, monthly_sub, trackingProperties, tracking_properties
+  /api/subscriptions/team/{}/coterm_annual_seats
+      -> count_by_billable_product, dispatch, p_m, regional_vat_gst_id, updateVatGstId, update_vat_gst_id
+  /api/subscriptions/team/{}/hosted_invoice_url
+      -> regional_vat_gst_id, selected_currency, shipping_address
+  /api/subscriptions/team/{}/preview_coterm_annual_seats
+      -> regional_vat_gst_id, selected_currency, shipping_address
+  /api/subscriptions/team/{}/summary
+      -> regional_vat_gst_id, selected_currency, shipping_address
+  /api/subscriptions/team/{}/vat_gst
+      -> fdPreviewResource, fd_preview_resource, initialX, initialY, initial_x, initial_y, isWidget, is_widget, p_m, previewResource, preview_resource, regional_vat_gst_id, updateVatGstId, update_vat_gst_id
+  /api/subscriptions/teams/calculate_estimate
+      -> regional_vat_gst_id, selected_currency, shipping_address
+  /api/subscriptions/{}/pending_cancellations
+      -> annual_subscription, canceled_at, current_period_end, monthly_subscription, output, params, plan_canceled, seats
+  /api/team_role_requests
+      -> i_q, s_t
+  /api/team_role_requests/{}
+      -> org, public_plugins_allowed
+  /api/team_role_requests/{}/approve
+      -> org, public_plugins_allowed, successMessage, success_message
+  /api/teams/create
+      -> emailsToExclude, emails_to_exclude, hidden, ignoreCurrentPlan, ignore_current_plan, resourceIdOrKey, resource_id_or_key, sharing_audience_control, should_show_standalone_team_tos, user, userGroupIds, userGroupsData, userInitiated, user_group_ids, user_groups_data, user_initiated
+  /api/teams/{}
+      -> Team, button, fallbackError, fallback_error, figma_provided_libraries_disabled, hidden, img_url, img_url_500_500, newHidden, newOrgBrowsable, newSharingAudienceControl, newTeamName, new_hidden, new_org_browsable, new_sharing_audience_control, new_team_name, oldHidden, oldOrgBrowsable, oldSharingAudienceControl, oldTeamName, old_hidden, old_org_browsable, old_sharing_audience_control, old_team_name, org, orgBrowsable, presetsDisabled, presets_disabled, promise, requestPromise
+  /api/teams/{}/default_color_palette
+      -> characterLimit, character_limit, colorPaletteUuid, color_palette_uuid, createdAt, placeholder, readOnly, read_only, updatedAt, updated_at
+  /api/teams/{}/members
+      -> p_g
+  /api/teams/{}/restore
+      -> errorMsg, error_msg, presetsDisabled, presets_disabled, userInitiated, user_initiated
+  /api/teams/{}/student_team
+      -> annual_subscription, cancelDate, cancel_date, isEduUpgrade, is_edu_upgrade, monthly_subscription, student_team, submitPending, submit_pending, teamName, team_name, userInitiated, user_initiated, workspace
+  /api/teams/{}/team_admins
+      -> p_g
+  /api/teams/{}/team_users/request_upgrade
+      -> billable_product_key, entry_point, entry_point_editor_type, entry_point_license_type, entry_point_mode
+  /api/teams/{}/users
+      -> p_g
+  /api/teams/{}/users/{}/last_active
+      -> p_g
+  /api/templates/{}/duplicate
+      -> dispatch, fig_file, hubFileName, hub_file_name, onFailure, onSuccess, on_failure, on_success, storeInRecentsKey, store_in_recents_key, template
+  /api/templates/{}/template_canvas
+      -> cloneLocalStylesAndVariablesForTemplate, clone_local_styles_and_variables_for_template, insert, responseType, selectTemplateAfterInsertion, select_template_after_insertion, template, templateBuffer, templateCustomPosition, templateInsertionDirection, template_buffer, template_custom_position, template_insertion_direction, userTriggered, user_triggered
+  /api/templates/{}/{}/prepare_insert
+      -> cloneLocalStylesAndVariablesForTemplate, clone_local_styles_and_variables_for_template, insert, responseType, selectTemplateAfterInsertion, select_template_after_insertion, template, templateBuffer, templateCustomPosition, templateInsertionDirection, template_buffer, template_custom_position, template_insertion_direction, userTriggered, user_triggered
+  /api/try/figjam
+      -> editorType, loaded, loadingElementId, loading_element_id
+  /api/upnode/font
+      -> acceptedFonts, accepted_fonts, headers, icon, numFiles, num_files, params, showSuccess, showUploadError, showUploading, show_success, show_upload_error, show_uploading, success, timeoutOverride, timeout_override
+  /api/upnode/heic_convert
+      -> array, bitmap, colorProfile, color_profile, headers, isMultiFrameGIF, is_multi_frame_gif, premultiplyAlpha, premultiply_alpha, rawBody, raw_body, reportAsSentryError, report_as_sentry_error, responseType, retryCount, retry_count, supportsCreateBitmapOptions, supports_create_bitmap_options, wasConvertedFromHEIC, was_converted_from_heic
+  /api/upnode/image
+      -> collection, contentType, hash, headers, imageBytes, image_bytes, loadstart, params, purpose, rawBody, raw_body, reportAsSentryError, report_as_sentry_error, retryCount, retry_count, severity, sha1, timeout, uploadEvents, upload_events, using_cms_collection
+  /api/upnode/video
+      -> designNodeIds, design_node_ids, motionEntries, motionExportNodeIds, motion_entries, motion_export_node_ids, numPublishers, num_publishers, params, sha1, videoThumbnailSha1, video_thumbnail_sha1
+  /api/user
+      -> UserColorProfilePreference, additionalDataToLog, additional_data_to_log, callback, canSeeP3, can_see_p3, colorProfilePreference, color_profile, color_profile_preference, createdAt, enabled, eventName, eventOrigin, event_name, event_origin, hideForQuickCommand, hide_for_quick_command, img_url, img_url_500_500, keyboard_preference, keyboard_preference_method, layout, localCollections, localExtendedCollections, local_collections, local_extended_collections, mouse_scroll_to_zoom, navigationPreference, navigation_preference, p3Plugins
+  /api/user/{}/idle_timeout_last_active_at
+      -> documentFocused, document_focused, integration_host, is_embed, leading, localStorageLastActive, local_storage_last_active, pathname, sourceRoute, source_route, timeoutDuration, timeout_duration, trailing
+  /api/user_notifications/catfic_optin/{}
+      -> acceptCallback, accept_callback, button, dismissCallback, dismiss_callback, notification, onDismiss, on_dismiss, opted_in, timeoutOverride, timeout_override
+  /api/user_notifications/catfile_optin/{}
+      -> button, notification, onDismiss, on_dismiss, opted_in, timeoutOverride, timeout_override
+  /api/user_notifications_bell
+      -> bell, fallbackError, fallback_error, requestPromise, request_promise, store, t_o
+  /api/user_notifications_bell/community/clear
+      -> fallbackError, fallback_error, store, t_o
+  /api/user_sidebar_sections
+      -> UserSidebarSection, createdAt, lgOptimisticMutationUuid, movingResource, moving_resource, orderedFavoritedResourceIds, orderedLicenseGroupIds, orderedSidebarSections, orderedTeamIds, ordered_favorited_resource_ids, ordered_license_group_ids, ordered_sidebar_sections, ordered_team_ids, user_sidebar_section
+  /api/user_sidebar_sections/{}
+      -> UserSidebarSection, favorited_resource_ids, insert_at_index, orderedFavoritedResourceIds, ordered_favorited_resource_ids, ordered_sections, user_sidebar_section
+  /api/users/batched
+      -> i_q, s_t
+  /api/validate_address
+      -> params, shipping_address
+  /api/validate_currency
+      -> annual_subscription, monthly_subscription, output, params, plan_canceled, shipping_address
+  /api/variable_log_data
+      -> assetType, asset_type
+  /api/variable_set_log_data
+      -> assetType, asset_type
+  /api/widgets/batch
+      -> currentUserOrgId, current_user_org_id, loadingKey, loading_key, overrideInstallStatus, override_install_status, publishedPlugins, published_plugins, src, widgetID, widgetIDAndVersions, widgetIDToVersions, widgetIds, widgetVersionID, widget_id, widget_idand_versions, widget_ids, widget_idto_versions, widget_version_id
+  /api/widgets/v2/versions
+      -> currentUserOrgId, current_user_org_id, ids_to_versions, overrideInstallStatus, override_install_status, pluginIds, plugin_ids, publishedPlugins, publishedWidgets, published_plugins, published_widgets, src, widgetIds, widget_ids
+  /api/widgets/{}/publishers/{}
+      -> accepted, codePath, code_path, headers, pending, proxyUploadPresignedPost, proxy_upload_presigned_post, publishedPlugins, published_plugins, src
+  /api/widgets/{}/roles
+      -> isWidget, is_widget, needApproval, need_approval, pluginId, plugin_id, pluralized, publishedPlugins, published_plugins, resource, src, toOrg, toPublic, to_org, to_public
+  /api/workspace/{}/teams
+      -> numTeams, num_teams, teamIds, team_ids, updates, workspaceName, workspace_name
+  /api/{}
+      -> img_url, localPlugins, local_plugins, publishedCanvasWidgetVersions, publishedWidgets, published_canvas_widget_versions, published_widgets
+  /api/{})}/{}
+      -> loadingKey, loading_key, overrideInstallStatus, override_install_status, pluginId, plugin_id, publishedPlugins, published_plugins, src, widgetId, widget_id
+  /api/{})}/{}/publisher_invites
+      -> accepted, attachmentCount, attachment_count, errors, f_i, feedType, feed_type, hasMotion, has_motion, j_t, pending, plugin_publishers, postId, post_id, resource, user
+  /api/{}/{}/install
+      -> ResourceSave, isWidget, is_widget, lgOptimisticMutationUuid, orgName, org_name, overrideInstallStatus, override_install_status, publishedPlugins, published_plugins, resource_save, src
+
+saved: _q22_gap.json

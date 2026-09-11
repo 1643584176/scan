@@ -1,0 +1,10 @@
+>> 起始原名 = 'Team folder'
+[V1] 400 len=107 674ms rename -> 原名+'\'(单反斜杠) -> path=None
+    body=b'{"error":true,"status":400,"message":"The following characters are not allowed: \\\\ : ? * \\" |","i18n":null}'
+>> V1 后读回 = 'Team folder'  (1个\=参数化 / 2个\\=转义层 addslashes)
+[V2] 200 len=864 1015ms 改回原名 -> path='Team folder'
+[V3] 200 len=864 963ms rename -> 原名+NUL(\u0000) -> path='Team folder'
+>> V3 后读回 = 'Team folder'
+[V4] 200 len=864 920ms 改回原名 -> path='Team folder'
+>> V5 终态 = 'Team folder'  (应=='Team folder')
+DONE r250

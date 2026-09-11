@@ -1,0 +1,16 @@
+===== r225 Q组: Ruby Integer() 解析器判决 =====
+[Q1] 400 len=106 654ms plan_id='9'*100(100位,任意精度界)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[Q2] 400 len=106 633ms plan_id='08'(八进制非法:Ruby Integer()->异常400 / 十进制->8->403)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[Q3] 400 len=106 618ms plan_id='0x10'(hex前缀:Ruby->16 / 正则->拒)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[Q4] 400 len=106 1063ms plan_id='1_000'(下划线:Ruby->1000 / 正则->拒)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[Q5] 400 len=96 783ms plan_type='<script>alert(1)</script>'(反射点确认)
+    body=b'{"error":true,"status":400,"message":"Invalid plan type: <script>alert(1)</script>","i18n":null}'
+[Q6] 200 len=337 1058ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"25ba703a-006f-4a7f-aa66-3d3956e3edd1","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:11:55.438Z","updated_at":"2026-09-11T07:11:55.438Z"},"i18n":null}'
+[Q7] 200 len=337 984ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"25ba703a-006f-4a7f-aa66-3d3956e3edd1","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:11:55.438Z","updated_at":"2026-09-11T07:11:55.438Z"},"i18n":null}'
+DONE r225

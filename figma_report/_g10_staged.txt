@@ -1,0 +1,14 @@
+ignore-check figma_report/_waf_cookies_new.txt -> IGNORED
+ignore-check figma_report/_r14_recent_authed.json -> IGNORED
+ignore-check figma_report/_r14_recent_wafonly.json -> IGNORED
+git add -A done: warning: in the working copy of 'H1-analytics-DSL-SQL入参清单.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '_tmp_enum_scan.py', LF will be replaced by CRLF
+staged files: 824
+sensitive-keyword hits in staged: 0
+staged by dir:
+    749  figma_report
+     51  eternal_report
+     10  (root)
+      9  "\347\273\217\351\252\214
+      4  "figma_report
+      1  "eternal_report

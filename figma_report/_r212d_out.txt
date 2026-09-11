@@ -1,0 +1,18 @@
+===== r212d notification_type 注入矩阵 =====
+[T1] 200 len=40 716ms 基线(对照)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[T2] 200 len=40 380ms 尾引号
+    body=b'{"error":false,"status":200,"i18n":null}'
+[T3] 200 len=40 381ms 引号+注释
+    body=b'{"error":false,"status":200,"i18n":null}'
+[T4] 200 len=40 360ms OR 注入
+    body=b'{"error":false,"status":200,"i18n":null}'
+[T5] 200 len=40 365ms 时延盲注
+    body=b'{"error":false,"status":200,"i18n":null}'
+[T6] 200 len=40 347ms 布尔平衡
+    body=b'{"error":false,"status":200,"i18n":null}'
+[T7] 400 len=96 337ms 空串
+    body=b'{"error":true,"status":400,"message":"Missing required parameter notification_type","i18n":null}'
+[T8] 200 len=40 383ms 尾字母(值变体对照)
+    body=b'{"error":false,"status":200,"i18n":null}'
+DONE r212d

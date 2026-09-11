@@ -1,0 +1,22 @@
+===== r214b 精度通道 + 缝隙 =====
+[A18] 403 len=279 737ms TEAM_A+1 (浮点同格?)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A19] 403 len=279 336ms 浮点网格值 (同格)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A20] 403 len=279 326ms TEAM_A-5 (同格?)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A21] 200 len=40 397ms HPP 颠倒(非法+合法)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[A22] 200 len=40 365ms plan_type 尾tab
+    body=b'{"error":false,"status":200,"i18n":null}'
+[A23] 200 len=40 363ms plan_type 尾换行
+    body=b'{"error":false,"status":200,"i18n":null}'
+[A24] 200 len=40 368ms plan_type 前空格
+    body=b'{"error":false,"status":200,"i18n":null}'
+[A25] 403 len=279 334ms uint64max(20位)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A26] 403 len=279 339ms '9'x20(>uint64max)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[A27] 200 len=40 375ms 基线重打(副作用核对)
+    body=b'{"error":false,"status":200,"i18n":null}'
+DONE r214b

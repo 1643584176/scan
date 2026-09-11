@@ -1,0 +1,16 @@
+[V1] 200 len=1757 读 team 全量 JSON
+    meta keys: ['id', 'name', 'created_at', 'img_url', 'synced_at', 'providers', 'subscription', 'editors', 'student_team_at', 'student_autoverifying_team_at', 'org_id', 'org_access', 'deleted_at', 'blocked_at', 'trial_period_end', 'description', 'deleted_by', 'experiment_seed', 'license_group_id', 'migrated_stripe_customer_id', 'community_blocked_at', 'default_permission', 'vat_gst_id', 'workspace_id', 'default_color_palette_uuid', 'tax_id_verification_status', 'tax_id_verified_at', 'legal_name', 'ai_features_disabled_at', 'editors_whiteboard', 'editors_total_unique', 'sharing_audience_control', '_internal_only_written_by_backfill', 'figma_provided_libraries_disabled_at', 'upgrade_approval_settings', 'stripe_customer_id', 'stripe_billing_address_country', 'projects', 'grace_period_end', 'grace_period_type', 'img_urls', 'student_team_state', 'sanctioned_at', 'restrictions_list', 'student_team', 'starter_team', 'pro_team', 'DEPRECATED_pro_team', 'org_team', 'subscription_raw', 'community_profile_id', 'community_profile_handle', 'is_paid', 'ai_features_disabled', 'ai_data_sharing_enabled', 'org_browsable', 'hidden', 'last_upgraded_at', 'figma_provided_libraries_disabled', 'experiment_assignments']
+    >> ai_features_disabled_at = '2026-09-11T09:07:02.890Z'
+    >> figma_provided_libraries_disabled_at = None
+    >> is_paid = False
+    >> ai_features_disabled = True
+    >> ai_data_sharing_enabled = True
+    >> figma_provided_libraries_disabled = False
+[V2] 200 len=1736 改回 ai_features_disabled=false (现值=True)
+[V3] 200 len=1736 改回后回读
+    >> after: ai_features_disabled = False
+[V4] 200 len=2477 user 终态确认
+    >> name='pccp' handle='pccp'
+[V5] 200 len=903 folder 终态确认
+    >> path='Team folder' sharing_audience_control='plan_edit'
+DONE r252 fixed= True

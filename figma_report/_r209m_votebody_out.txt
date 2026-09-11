@@ -1,0 +1,5 @@
+>>> ailed")}))};e.dispatch((0,c.Lz)({key:s})),e.dispatch((0,h.cx)({matchType:l})),await f.Ay.put(f.Ay.url`/api/file/${a}/voting_sessions/${o}`,{in_progress:!1}).then(({status:r})=>{200===r?(e.dispatch((0,c.kE)({key:s})),"MeetingsPanel"===t&&i.zl.set(y.Qs,{type:"SET_VIEW",payload:y.iN.PAST_VOTES})):d()}).catch(e=>{throw d(),e})}),O=e=>`end_voting_session_${e}`,C=(0,g.nF)((e,{source:t,usedCustomTitle:r,requestBody:a,uiSurface:o})=>{let{fileKey:s}=e.getState().selectedView;if(!s)return;let l=N(s),d=()=>{e.dispatch((0,c.v8)({key:l})),e.dispatch((0,h.gD)({type:"start-voting-session-failed",message:(0,n.t)("voting.visual_bell.start_voting_session_failed")}))};e.dispatch((0,c.Lz)({key:l})),e.dispatch((0,h.cx)({matchType:"start-voting-session-failed"})),f.Ay.post(f.Ay.url`/api/file/${s}/voting_sessions`,a).then(n=>{200===n.status?(e.dispatch(S({votingSessionId:n.data.meta.id})),"MeetingsPanel"===o&&i.zl.get(y.Qs).activeToolModal===y.sx.VOTING&&i.zl.set(y.Qs,{type:"SET_TOOL",payload:null}),e.dispat
+---
+===== user_vote_limit :: 0 =====
+===== page_node_id :: 0 =====
+===== allow_other_users_to_add :: 0 =====

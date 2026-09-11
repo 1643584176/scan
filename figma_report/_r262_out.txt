@@ -1,0 +1,19 @@
+===== A. templates 面载体探测 =====
+[A1] 403 len=   247 679ms ct=application/json; charset=utf-8 xc=Error from cloudfront 自有文件当 template
+    body=b'{"error":true,"status":403,"message":"You don\xe2\x80\x99t have permission to use this file as template.","i18n":{"id":"permissions.sinatra.cant_use_file_as_template","fallback_text":"You don\xe2\x80\x99t have permission to use this file as template.","params":{}}}'
+[A2] 403 len=    96 962ms ct=application/json; charset=utf-8 xc=Error from cloudfront 自有文件 prepare_insert
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to edit this file.","i18n":null}'
+[A3] 403 len=   247 973ms ct=application/json; charset=utf-8 xc=Error from cloudfront 自有文件 fv=9999
+    body=b'{"error":true,"status":403,"message":"You don\xe2\x80\x99t have permission to use this file as template.","i18n":{"id":"permissions.sinatra.cant_use_file_as_template","fallback_text":"You don\xe2\x80\x99t have permission to use this file as template.","params":{}}}'
+
+===== B. hub 冷却对照（距 B2 触发约 15 分钟） =====
+[B1] 202 len=     0 632ms ct=text/html; charset=UTF-8 xc=Error from cloudfront TC 冷却判别
+
+===== C. community 路径探测 =====
+[C1] 404 len=     9 823ms ct=text/plain xc=Error from cloudfront 自有文件走 community 路径
+    body=b'Not Found'
+[C2] 404 len=     9 854ms ct=text/plain xc=Error from cloudfront hub 走 community+query
+    body=b'Not Found'
+[C3] 404 len=     9 805ms ct=text/plain xc=Error from cloudfront community/files 列表
+    body=b'Not Found'
+DONE r262

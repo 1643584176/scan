@@ -112,7 +112,21 @@ figma_report/_figma_*.txt
 
 # Figma session/cookie captures & authed snapshots (secrets - never commit)
 figma_report/_waf_cookies_new.txt
+figma_report/_waf_cookies_v2.txt
 figma_report/_r14_recent_authed.json
 figma_report/_r14_recent_wafonly.json
+figma_report/_r204_filepage.html
+# Figma/authed raw captures and curl reproducer files
+figma_report/_p*_curl*.txt
+figma_report/_js/*.html
+figma_report/_v*_boot*.html
+
+# Netlify/AWS credential probe artifacts
+netlify_report/_aws_creds*.json
+netlify_report/_probe*_full.txt
+netlify_report/_probe*_out.json
+netlify_report/_net_nftoken.py
+/_tmp_scan*_hard.txt
+
 # WS recv snapshot (contains lk-* libraryKeys falsely flagged as AWS key by GH scanner)
 figma_report/_r54_anon_recv.txt

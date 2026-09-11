@@ -1,0 +1,6 @@
+===== r230 分号分隔符判别针 =====
+[X2c] 200 len=40 714ms ; 走私 notification_type=junk(判别:Missing=注入生效)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[X2d] 400 len=106 928ms 对照针 %3B 编码分号(判别:valid number=切分在解码前)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+DONE r230

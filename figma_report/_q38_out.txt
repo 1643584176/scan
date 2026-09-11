@@ -1,0 +1,64 @@
+[1] S=1286  used_L2=454  never_final=1029
+    旧 never_v2=1118  剔除伪 never=89
+    伪never样本: ['Team', 'action', 'activity_type', 'address', 'after', 'alg', 'allowInternal', 'asset_keys', 'author', 'behind_latest_version_checks', 'billing_address', 'billing_period_id', 'body', 'canEdit', 'componentKey', 'componentName', 'component_keys', 'component_name', 'components', 'content', 'country_code', 'createdAt', 'created_at', 'creatorId', 'currency', 'data', 'date', 'endTime', 'end_time', 'error', 'fetch', 'files', 'folder', 'has_file_link_password', 'height', 'hubFileId', 'hub_file_id', 'in_progress', 'index', 'initial']
+[2] q34 toAPI标记键=60  其中仍未打=42
+     account_type
+     ai_credit
+     colorPaletteUuid
+     creationParams
+     credits
+     desktop_protocol
+     directories
+     end_timestamp_ms
+     filter_to_selected_repo_directories
+     includeFolderTeamCanEdit
+     includeTags
+     integrationHost
+     max_results
+     note
+     notification_type
+     numResourcesPerTeam
+     num_assets_in_request
+     oauth_app
+     pageLocale
+     planKey
+     queryId
+     redact
+     rejectionParams
+     releaseServerGitCommit
+     repository_ids
+     requestIds
+     requestType
+     request_context
+     request_context_id
+     requestedFromFileKey
+     requested_at
+     requesterNote
+     resolutionParams
+     reviewer_ids
+     secret_name
+     secret_value
+     snapshot_id
+     start_timestamp_ms
+     supabase_org_id
+     supabase_project_id
+     teamIds
+     workspaceIds
+[3] 历史测试痕迹:
+  hub_file_duplicates: ['_figma_r190_hubdupes.py(x6)', '_figma_r191_or_flip.py(x5)']
+  tagged_file: ['_figma_cookie_chk.py(x2)', '_figma_csrf.py(x1)', '_figma_post_hdr.py(x1)', '_figma_r128.py(x1)', '_figma_r178_readfaces.py(x4)', '_figma_r179_ds_inj.py(x4)', '_figma_r180_oauth_logdata.py(x5)', '_figma_t2_json.py(x3)']
+  make_libraries: ['_figma_r166_newfaces_smoke.py(x5)', '_figma_r167_newfaces_inj.py(x8)', '_figma_r172_empty_anatomy.py(x1)']
+  ds_import_libraries: ZERO
+  videos/: ['_figma_r123.py(x2)', '_figma_r176_newbatch_smoke.py(x2)', '_figma_r177_mcp_upnode.py(x3)', '_figma_v10_matrix.py(x1)']
+  notification_settings: ZERO
+  reference_id: ['_figma_r119.py(x1)', '_figma_r120.py(x5)']
+  weave_cover_photo: ['_figma_z11_probe.py(x1)', '_figma_z9_arch5.py(x2)']
+[4] 输出文件痕迹:
+  hub_file_duplicates: ZERO
+  tagged_file: ZERO
+  make_libraries: ZERO
+  ds_import_libraries: ZERO
+  videos/: ['(Figma-从未出现参数清单-2026-09-11.md)', '(Figma-从未用过的入参清单-2026-09-11.md)']
+  notification_settings: ['(Figma-从未用过的入参清单-2026-09-11.md)']
+  reference_id: ZERO
+  weave_cover_photo: ZERO

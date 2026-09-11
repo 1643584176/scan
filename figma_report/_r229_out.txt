@@ -1,0 +1,42 @@
+===== r229 V1-V7: 方法语义/协议层 =====
+[V1] 404 len=826143 1369ms OPTIONS notif — Allow 方法枚举
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>\n    <script nonce="bzcb6S8dWWBe+A0FS6Um5A==">performance.mark(\'figma:bootstrap:pr'
+[V2] 404 len=826183 1630ms PATCH notif — 方法扩展探(次要方法常走独立代码路径)
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>\n    <script nonce="Ut2GlFJO&#47;WyOJBl&#47;FUtROQ==">performance.mark(\'figma:boot'
+[V3] 404 len=826143 2711ms POST notif — 同(此前只打过 DELETE)
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>\n    <script nonce="kqZhwZWmf3Uq7lwy+6vxFA==">performance.mark(\'figma:bootstrap:pr'
+[V4] 200 len=337 1024ms PUT + If-Match 乐观锁探
+    body=b'{"error":false,"status":200,"meta":{"id":"bdeb37b6-d325-45db-8054-f4bbe6ea7be8","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:46:54.648Z","updated_at":"2026-09-11T07:46:54.648Z"},"i18n":null}'
+[V5] 404 len=9 842ms 格式后缀 .json
+    body=b'Not Found'
+[V6] 400 len=86 882ms 参数名大小写 Plan_ID
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[V7] 404 len=826143 1752ms OPTIONS thumbnails
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>\n    <script nonce="5l0mLFHHhnTZLZRqtDU6RA==">performance.mark(\'figma:bootstrap:pr'
+===== r229 W1-W5: 后门参数（业务语义定向隐藏参数，非法体 freq=[daily] 为观察靶） =====
+[W1] 500 len=73 1719ms skip_validation 后门探(若200=金矿)
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[W2] 500 len=73 3792ms force 后门探
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[W3] 500 len=73 1684ms validate=false 后门探
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[W4] 200 len=337 1490ms debug 信息泄露探
+    body=b'{"error":false,"status":200,"meta":{"id":"bdeb37b6-d325-45db-8054-f4bbe6ea7be8","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:46:54.648Z","updated_at":"2026-09-11T07:46:54.648Z"},"i18n":null}'
+[W5] 200 len=337 961ms internal 内部视图探
+    body=b'{"error":false,"status":200,"meta":{"id":"bdeb37b6-d325-45db-8054-f4bbe6ea7be8","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:46:54.648Z","updated_at":"2026-09-11T07:46:54.648Z"},"i18n":null}'
+===== r229 X1-X2: 链式语义/多值分隔 =====
+[X1a] 200 len=337 1447ms 取当前真实记录 id
+    body=b'{"error":false,"status":200,"meta":{"id":"bdeb37b6-d325-45db-8054-f4bbe6ea7be8","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:46:54.648Z","updated_at":"2026-09-11T07:46:54.648Z"},"i18n":null}'
+    真实 id = bdeb37b6-d325-45db-8054-f4bbe6ea7be8
+[X1b] 200 len=337 1081ms PUT body 带真实 id(bdeb37b6...) — upsert-by-id 语义探
+    body=b'{"error":false,"status":200,"meta":{"id":"0851c205-fe41-4f2e-ab3a-9878ea0d4606","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:47:32.351Z","updated_at":"2026-09-11T07:47:32.351Z"},"i18n":null}'
+[X2a] 400 len=106 1873ms plan_id 逗号多值
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[X2b] 200 len=337 4067ms plan_id 分号多值
+    body=b'{"error":false,"status":200,"meta":{"id":"0851c205-fe41-4f2e-ab3a-9878ea0d4606","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:47:32.351Z","updated_at":"2026-09-11T07:47:32.351Z"},"i18n":null}'
+===== r229 净化 =====
+[X3] 200 len=337 936ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"68301264-aa4c-4841-9f2d-31acc4b804fc","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:47:45.846Z","updated_at":"2026-09-11T07:47:45.846Z"},"i18n":null}'
+[X4] 200 len=337 840ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"68301264-aa4c-4841-9f2d-31acc4b804fc","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:47:45.846Z","updated_at":"2026-09-11T07:47:45.846Z"},"i18n":null}'
+DONE r229

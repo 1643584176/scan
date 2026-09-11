@@ -1,0 +1,35 @@
+git: 'credential-manager-core' is not a git command. See 'git --help'.
+remote: error: GH013: Repository rule violations found for refs/heads/dev.        
+remote: 
+remote: - GITHUB PUSH PROTECTION        
+remote:   —————————————————————————————————————————        
+remote:     Resolve the following violations before pushing again        
+remote: 
+remote:     - Push cannot contain secrets        
+remote: 
+remote:             
+remote:      (?) Learn how to resolve a blocked push        
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push        
+remote:             
+remote:             
+remote:       —— Amazon AWS Access Key ID ——————————————————————————        
+remote:        locations:        
+remote:          - commit: 29603b79c31d7668407e8a96fe78a4fa8af27556        
+remote:            path: figma_report/_r54_anon_recv.txt:47        
+remote:          - commit: 29603b79c31d7668407e8a96fe78a4fa8af27556        
+remote:            path: figma_report/_r54_anon_recv.txt:47        
+remote:          - commit: 29603b79c31d7668407e8a96fe78a4fa8af27556        
+remote:            path: figma_report/_r54_anon_recv.txt:47        
+remote:          - commit: 29603b79c31d7668407e8a96fe78a4fa8af27556        
+remote:            path: figma_report/_r54_anon_recv.txt:47        
+remote:          - commit: 29603b79c31d7668407e8a96fe78a4fa8af27556        
+remote:            path: figma_report/_r54_anon_recv.txt:47        
+remote:             
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
+remote:        https://github.com/1643584176/scan/security/secret-scanning/unblock-secret/3J8LLkW0epSiDBhzR9v3NVPcJtX        
+remote:             
+remote: 
+remote: 
+To https://github.com/1643584176/scan.git
+ ! [remote rejected]   dev -> dev (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/1643584176/scan.git'

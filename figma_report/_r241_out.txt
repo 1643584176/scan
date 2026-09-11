@@ -1,0 +1,8 @@
+===== r241 Cf 家族补针 =====
+[R1] 400 len=106 807ms 尾 U+200B 零宽(对照S9的RLO) [200=尾Cf全删/400=RLO特殊]
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[R2] 200 len=337 1158ms 前 RLO [200=首Cf也删/400=只删尾]
+    body=b'{"error":false,"status":200,"meta":{"id":"a48a5ac0-4a51-4102-b232-7d6b87b35986","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_'
+[R3] 400 len=86 1094ms 纯NUL值 [200=截断/ strip 为空?/400=空值拒]
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+DONE r241

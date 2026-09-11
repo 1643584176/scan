@@ -1,0 +1,84 @@
+toAPI 高置信参数数: 19
+
+### account_type  (块内出现 2 次)
+   - figma_app-main.js :: /api/plans/{}/admin_requests/resolve
+     ctx: ...(e){switch(e.requestType){case S.ACCOUNT_TYPE_REQUEST:return{account_type:s.td.toBodyParameters(e.context)};case S.AI_CREDIT_REQUEST:var t=e.context.a...
+   - figma_app-main.js :: /api/plans/{}/admin_requests/reject
+     ctx: ...(e){switch(e.requestType){case S.ACCOUNT_TYPE_REQUEST:return{account_type:s.td.toBodyParameters(e.context)};case S.AI_CREDIT_REQUEST:case S.OAUTH_APP_...
+
+### ai_credit  (块内出现 2 次)
+   - figma_app-main.js :: /api/plans/{}/admin_requests/resolve
+     ctx: ...r t=e.context.amount;if(void 0!==t)return t===u.Z.UNLIMITED?{ai_credit:{}}:{ai_credit:{credits:t}};return;case S.OAUTH_APP_REQUEST:return;default:retu...
+
+### colorPaletteUuid  (块内出现 2 次)
+   - figma_app-main.js :: /api/files/{}/color_palette
+     ctx: ....Ay.url`/api/files/${e}/color_palette`,a.td.toAPIParameters({colorPaletteUuid:t}))}setTeamDefaultPalette(e,t){return i.Ay.post(i.Ay.url`/api/teams/${e...
+   - figma_app-main.js :: /api/teams/{}/default_color_palette
+     ctx: .../api/teams/${e}/default_color_palette`,a.td.toAPIParameters({colorPaletteUuid:t}))}clearTeamDefaultPalette(e){return i.Ay.del(i.Ay.url`/api/teams/${e}...
+
+### creationParams  (块内出现 1 次)
+   - figma_app-main.js :: /api/plans/{}/admin_requests
+     ctx: ...:e.requesterNote,requestedFromFileKey:e.requestedFromFileKey,creationParams:function(e){switch(e.requestType){case S.OAUTH_APP_REQUEST:return{oauth_ap...
+
+### desktop_protocol  (块内出现 1 次)
+   - figma_app-main.js :: /api/integrations/github-app/setup
+     ctx: ...xt:e.request_context,request_context_id:e.request_context_id,desktop_protocol:e.desktop_protocol})))}adminCreateGithubRepository(e){return this.Github...
+
+### end_timestamp_ms  (块内出现 1 次)
+   - 935-431f89677a39072c.min.js :: /api/files/{}/videos/{}
+     ctx: ...x_results:e.maxResults,start_timestamp_ms:e.startTimestampMs,end_timestamp_ms:e.endTimestampMs});return t.get(t.url`/api/files/${e.fileKey}/videos/${e...
+
+### includeFolderTeamCanEdit  (块内出现 1 次)
+   - 935-431f89677a39072c.min.js :: /api/files/{}
+     ctx: ...t t.get(t.url`/api/files/${e.fileKey}`,A.td.toAPIParameters({includeFolderTeamCanEdit:+!!e.includeFolderTeamCanEdit})))}putFile(e){return S.Ay.put(S.A...
+
+### num_assets_in_request  (块内出现 1 次)
+   - figma_app-main.js :: /api/buzz_approvals/create
+     ctx: ...oAPIParameters({file_key:e.fileKey,title:e.title,note:e.note,num_assets_in_request:e.numAssetsInRequest,request_id:e.requestId,requested_at:e.requeste...
+
+### rejectionParams  (块内出现 1 次)
+   - figma_app-main.js :: /api/plans/{}/admin_requests/reject
+     ctx: ...arameters({requestType:e.requestType,requestIds:e.requestIds,rejectionParams:function(e){switch(e.requestType){case S.ACCOUNT_TYPE_REQUEST:return{acco...
+
+### requestIds  (块内出现 2 次)
+   - figma_app-main.js :: /api/plans/{}/admin_requests/resolve
+     ctx: ...ts/resolve`,s.td.toBodyParameters({requestType:e.requestType,requestIds:e.requestIds,resolutionParams:function(e){switch(e.requestType){case S.ACCOUNT...
+   - figma_app-main.js :: /api/plans/{}/admin_requests/reject
+     ctx: ...sts/reject`,s.td.toBodyParameters({requestType:e.requestType,requestIds:e.requestIds,rejectionParams:function(e){switch(e.requestType){case S.ACCOUNT_...
+
+### request_context  (块内出现 1 次)
+   - figma_app-main.js :: /api/integrations/github-app/setup
+     ctx: ...eters({plan_type:e.plan_type,plan_parent_id:e.plan_parent_id,request_context:e.request_context,request_context_id:e.request_context_id,desktop_protoco...
+
+### request_context_id  (块内出现 1 次)
+   - figma_app-main.js :: /api/integrations/github-app/setup
+     ctx: ...parent_id:e.plan_parent_id,request_context:e.request_context,request_context_id:e.request_context_id,desktop_protocol:e.desktop_protocol})))}adminCrea...
+
+### requestedFromFileKey  (块内出现 1 次)
+   - figma_app-main.js :: /api/plans/{}/admin_requests
+     ctx: ...ers({requestType:e.requestType,requesterNote:e.requesterNote,requestedFromFileKey:e.requestedFromFileKey,creationParams:function(e){switch(e.requestTy...
+
+### requesterNote  (块内出现 1 次)
+   - figma_app-main.js :: /api/plans/{}/admin_requests
+     ctx: ...n_requests`,s.td.toBodyParameters({requestType:e.requestType,requesterNote:e.requesterNote,requestedFromFileKey:e.requestedFromFileKey,creationParams:...
+
+### resolutionParams  (块内出现 1 次)
+   - figma_app-main.js :: /api/plans/{}/admin_requests/resolve
+     ctx: ...arameters({requestType:e.requestType,requestIds:e.requestIds,resolutionParams:function(e){switch(e.requestType){case S.ACCOUNT_TYPE_REQUEST:return{acc...
+
+### reviewer_ids  (块内出现 1 次)
+   - figma_app-main.js :: /api/buzz_approvals/create
+     ctx: ...sInRequest,request_id:e.requestId,requested_at:e.requestedAt,reviewer_ids:e.reviewerIds})))}withdrawBuzzApprovalRequest(e){return i._5.validate(async(...
+
+### secret_name  (块内出现 1 次)
+   - 7456-1a38d2d2beed1ad4.min.js :: /api/integrations/supabase/{}/secrets
+     ctx: ...pi/integrations/supabase/${p}/secrets`,f.td.toAPIParameters({secret_name:z,secret_value:P})),G(""),L(""),N("Secret added")}catch(e){A(`Failed to add s...
+
+### secret_value  (块内出现 1 次)
+   - 7456-1a38d2d2beed1ad4.min.js :: /api/integrations/supabase/{}/secrets
+     ctx: ...s/supabase/${p}/secrets`,f.td.toAPIParameters({secret_name:z,secret_value:P})),G(""),L(""),N("Secret added")}catch(e){A(`Failed to add secret: ${e}`)}...
+
+### start_timestamp_ms  (块内出现 1 次)
+   - 935-431f89677a39072c.min.js :: /api/files/{}/videos/{}
+     ctx: ...r:t})=>{let r=A.td.toAPIParameters({max_results:e.maxResults,start_timestamp_ms:e.startTimestampMs,end_timestamp_ms:e.endTimestampMs});return t.get(t....
+

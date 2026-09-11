@@ -1,0 +1,27 @@
+JS 文件: 161 个
+
+### billing 族路径全集 —— //api/billing/[a-z_0-9/\$\{\}\.]{0,50}/
+  /api/billing/notification_settings   [469e6e40-f27da0e8f34b0858.min.js]
+
+### notification 相关路径 —— //api/[a-z_0-9/\$\{\}\.]*notification[a-z_0-9/\$\{\}\.]*/
+  /api/billing/notification_settings   [469e6e40-f27da0e8f34b0858.min.js]
+  /api/user_notifications/catfic_optin/${e}   [figma_app-main.js]
+  /api/user_notifications/catfile_optin/${e}   [figma_app-main.js]
+  /api/user_notifications_bell   [figma_app-main.js]
+  /api/user_notifications_bell/community/clear   [figma_app-main.js]
+
+### email/settings 相关端点 —— //api/[a-z_0-9/\$\{\}\.]*(?:email_settings|settings_v\d|user_settings)[a-z_0-9/\$\{\}\.]*/
+  (无命中)
+
+### subscription/plan 端点 —— //api/[a-z_0-9/\$\{\}\.]*(?:subscription|checkout|upgrade|downgrade)[a-z_0-9/\$\{\}\.]{0,30}/
+  /api/checkout_session/pro_upgrade/${e.checkout   [c5e2cae0-3f7c89124b4f1b73.min.js]
+  /api/checkout_session/pro_upgrade/create   [c5e2cae0-3f7c89124b4f1b73.min.js]
+  /api/subscriptions   [6088-14762a8fd3d70fc1.min.js]
+  /api/subscriptions/${e}/pending_cancellations   [figma_app-main.js]
+  /api/subscriptions/team/${e.team   [figma_app-main.js]
+  /api/subscriptions/team/${t.id}/vat_gst   [figma_app-main.js]
+  /api/subscriptions/team/${t}/annual_subscription   [figma_app-main.js]
+  /api/subscriptions/team/${t}/billing_contact   [figma_app-main.js]
+  /api/subscriptions/team/${t}/coterm_annual_seat   [figma_app-main.js]
+  /api/subscriptions/teams/calculate_estimate   [figma_app-main.js]
+  /api/teams/${_}/team_users/request_upgrade   [figma_app-main.js]

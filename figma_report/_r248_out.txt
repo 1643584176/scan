@@ -1,0 +1,36 @@
+===== N0 基准复打 =====
+[N0] 200 len=13534 1112ms 基准(预期 200 len=13534) [=基准:忽略]
+===== A. 时间过滤族（6） =====
+[A1] 200 len=13534 865ms touched_after=1' [=基准:忽略]
+[A2] 200 len=13534 860ms touched_before=1' [=基准:忽略]
+[A3] 200 len=13534 828ms created_after=1' [=基准:忽略]
+[A4] 200 len=13534 936ms created_before=1' [=基准:忽略]
+[A5] 200 len=13534 971ms since=1' [=基准:忽略]
+[A6] 200 len=13534 1054ms until=1' [=基准:忽略]
+===== B. 分页族（6） =====
+[B1] 200 len=13534 1140ms offset=1' [=基准:忽略]
+[B2] 200 len=13534 1143ms limit=1' [=基准:忽略]
+[B3] 200 len=13534 1222ms page=1' [=基准:忽略]
+[B4] 200 len=13534 1220ms per_page=1' [=基准:忽略]
+[B5] 200 len=13534 1244ms cursor=1' [=基准:忽略]
+[B6] 200 len=13534 1280ms count=1' [=基准:忽略]
+===== C. 排序族（5） =====
+[C1] 200 len=13534 1198ms sort=name' [=基准:忽略]
+[C2] 200 len=13534 1129ms order=asc' [=基准:忽略]
+[C3] 200 len=13534 1211ms column=name' [=基准:忽略]
+[C4] 200 len=13534 1255ms field=name' [=基准:忽略]
+[C5] 200 len=13534 1274ms dir=asc' [=基准:忽略]
+===== D. 前缀/过滤/搜索族（6） =====
+[D1] 200 len=13534 1240ms fetch_only_shared_with_me=1' [=基准:忽略]
+[D2] 200 len=13534 1551ms fetch_only_trashed=1' [=基准:忽略]
+[D3] 200 len=13534 860ms file_name=x' [=基准:忽略]
+[D4] 200 len=13534 847ms search_query=x' [=基准:忽略]
+[D5] 200 len=13534 1187ms q=x' [=基准:忽略]
+[D6] 200 len=13534 1151ms filter=x' [=基准:忽略]
+===== E. 框架族 + 对照（5） =====
+[E1] 200 len=13534 1279ms format=json' [=基准:忽略]
+[E2] 200 len=13534 1257ms _method=PUT [=基准:忽略]
+[E3] 200 len=13534 1218ms locale=en' [=基准:忽略]
+[E4] 200 len=13534 1264ms 垃圾对照(预期200=忽略) [=基准:忽略]
+[E5] 200 len=13534 1324ms name=x'(对照:近似合法名) [=基准:忽略]
+DONE r248

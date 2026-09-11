@@ -1,0 +1,43 @@
+===== r227 T1-T3: 跨参数 SQL 拼接探（start/end 同片段假设） =====
+[T1] 400 len=214 1051ms start=0-- (a注释后半)
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:27: Non-number characters in quoted integer"}'
+[T2] 400 len=214 1146ms end=1-- (b注释,对称)
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:50: Non-number characters in quoted integer"}'
+[T3] 404 len=123 1221ms 全零组合边界
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+===== r227 T4: 值走私（b 藏进 a 的值：&plan_type=team） =====
+[T4] 400 len=106 995ms plan_type 仅藏在 plan_id 值内
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+===== r227 T5-T7: 跨通道合并（PUT query+body 同一 params 池） =====
+[T5] 200 len=337 1167ms query全齐+body仅3字段
+    body=b'{"error":false,"status":200,"meta":{"id":"78a8d19d-636b-4b0e-aab0-800860dcb834","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:37:28.869Z","updated_at":"2026-09-11T07:37:28.869Z"},"i18n":null}'
+[T6] 200 len=337 1225ms query=TEAM_B vs body=TEAM_A,谁赢
+    body=b'{"error":false,"status":200,"meta":{"id":"dad20c91-fc78-4d2d-8780-948294927705","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:37:32.301Z","updated_at":"2026-09-11T07:37:32.301Z"},"i18n":null}'
+[T7] 200 len=337 1444ms query plan_id尾引号,校验同源?
+    body=b'{"error":false,"status":200,"meta":{"id":"289faf44-9654-4199-b165-9dfd38400a94","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:37:35.895Z","updated_at":"2026-09-11T07:37:35.895Z"},"i18n":null}'
+===== r227 T8-T9: Rails 嵌套/索引参数语法 =====
+[T8] 400 len=86 1146ms plan[id] 嵌套语法
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[T9] 400 len=124 1362ms plan_id[0] 索引语法
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type Sinatra::IndifferentHash","i18n":null}'
+===== r227 T10-T13: 元素边界/走私/归一化 =====
+[T10] 500 len=73 2466ms freq=[''](空串元素)
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[T11] 500 len=73 2393ms freq=[' '](空格串元素)
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[T12] 400 len=106 1124ms body plan_id值内嵌JSON(二次解析探)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[T13a] 400 len=106 1264ms plan_id=全角数字(归一化探)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[T13b] 400 len=106 1198ms BF27宽字节引号(GBK走私探)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[T13c] 400 len=106 1262ms plan_id=尾全角撇号(U+FF07归一化探)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[T16] 400 len=214 910ms 数字位逗号多值
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred during parsing: Error parsing JSON @1:20: Non-number characters in quoted integer"}'
+===== r227 净化 =====
+[T17] 200 len=337 1155ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"efb63086-038a-4fb3-8b62-42b87748f4af","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:38:12.313Z","updated_at":"2026-09-11T07:38:12.313Z"},"i18n":null}'
+[T18] 200 len=337 961ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"efb63086-038a-4fb3-8b62-42b87748f4af","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:38:12.313Z","updated_at":"2026-09-11T07:38:12.313Z"},"i18n":null}'
+DONE r227

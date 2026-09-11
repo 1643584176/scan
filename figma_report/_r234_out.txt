@@ -1,0 +1,36 @@
+===== r234 G. 能用机制运输不能用字符 =====
+[G1] 400 len=106 545ms plan_id="..\u0027"(用可用的\u机制运输单引号)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[G2] 400 len=106 647ms 值拼接38位数字(A+B,长度边界)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[G3] 400 len=106 844ms 中段负号组合(合法符+合法符)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[G4] 200 len=337 816ms 尾分号空段(合法分隔+空段)
+    body=b'{"error":false,"status":200,"meta":{"id":"c8347488-f8f7-4a02-a7e0-ebff179d8e34","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:01:02.615Z","updated_at":"20'
+===== r234 O. 双参数组合的处理次序判别 =====
+[O1] 400 len=75 655ms 403门值+junk枚举 → 400=枚举先/403=查询先
+    body=b'{"error":true,"status":400,"message":"Invalid plan type: junk","i18n":null}'
+[O2] 400 len=106 509ms abc+junk双非法 → 哪个先报
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[O3] 400 len=75 526ms 越权门值+junk枚举 → 403还是400
+    body=b'{"error":true,"status":400,"message":"Invalid plan type: junk","i18n":null}'
+===== r234 B. 类型集合真遗漏（布尔/false/0） =====
+[B1] 400 len=109 474ms plan_id=true 布尔(类型全谱补漏)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type TrueClass","i18n":null}'
+[B2] 500 len=73 653ms frequencies=true 布尔(假值语义:Ruby0 truthy?)
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[B3] 500 len=73 567ms frequencies=0 数字零(Ruby falsy判别)
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[B4] 403 len=279 450ms plan_id=0 零值门
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+===== r234 R. Origin/Referer 头注入 =====
+[R1] 401 len=74 472ms Origin=https://evil.com (CSRF校验判别)
+    body=b'{"error":true,"status":401,"message":"","reason":"missing_authentication"}'
+[R2] 200 len=337 496ms Referer带payload
+    body=b'{"error":false,"status":200,"meta":{"id":"c8347488-f8f7-4a02-a7e0-ebff179d8e34","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:01:02.615Z","updated_at":"20'
+===== r234 净化 =====
+[F1] 200 len=337 551ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"7d96e02d-e366-4f49-8a9f-5e0ad94e8502","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:03:04.860Z","updated_at":"20'
+[F2] 200 len=337 504ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"7d96e02d-e366-4f49-8a9f-5e0ad94e8502","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T08:03:04.860Z","updated_at":"20'
+DONE r234

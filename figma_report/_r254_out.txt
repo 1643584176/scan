@@ -1,0 +1,20 @@
+===== r254 page_thumbnails 通道矩阵 =====
+[Q0] 200 len=40 POST 裸基准(无参)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[Q1] 200 len=40 POST + query max_results=1' 
+    body=b'{"error":false,"status":200,"i18n":null}'
+[Q2] 200 len=40 POST + query maxResults=1' (驼峰)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[Q3] 200 len=40 POST + JSON {"max_results":"1'"}
+    body=b'{"error":false,"status":200,"i18n":null}'
+[Q4] 200 len=40 POST + JSON {"maxResults":"1'"} (驼峰)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[Q5] 200 len=40 POST + form max_results=abc (非法值,判通道)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[Q6] 200 len=40 POST + JSON {"max_results":"abc"} (非法值)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[Q7] 200 len=40 POST + form maxResults=abc (驼峰非法)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[Q8] 404 len=826143 GET 同端点(v10 探活复现,方法对照)
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_st'
+DONE r254

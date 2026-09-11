@@ -1,0 +1,18 @@
+===== 1) N.C2 全部引用 =====
+pos 2587232 :: te(),r=t.openFile?.key,n=t.mirror.appModel.currentPage;if(!r||!n)return null;let i=Y(r,n,e,(0,s.N)(t.fileVersion));H.delete(i)}let J=async(e,t,r,n)=>{let i=new URLSearchParams;i.set("diff_version",(0,N.C2)().toString()),i.set("from_file_version_id",t),i.set("migration_version",`${r}`),n&&n.length>0&
+
+===== 2) J 模块头 / N 绑定 =====
+module head pos 2585472
+r.d(t,{Eg:()=>eu,Ht:()=>H,Nb:()=>e_,Ul:()=>en,V_:()=>V,_b:()=>ec,_h:()=>el,_t:()=>$,bg:()=>ed,cn:()=>Y,hZ:()=>er,kT:()=>W,tP:()=>K,un:()=>ei,vF:()=>eh,vw:()=>Z,w_:()=>q,yH:()=>em});var n=r(734113),i=r(206535),a=r(25054),o=r(690027),s=r(520155),l=r(382260),d=r(
+
+N=r( @ 2585954 : ),I=r(910626),S=r(357186),A=r(586423),O=r(5355),C=r(770584),N=r(475210),w=r(940021),R=r(225392),L=r(504287),k=r(442077),P=r(916428),D=r(966129),M=r(735736),F=r(667149),j=r(314707),U=r(978099),G=r(7764
+
+===== 3) N=( 变体 =====
+
+===== 4) J 函数完整上下文(前 1600) =====
+23),m=r(397087),h=r(817530),f=r(822979),g=r(140566),E=r(176726),y=r(944420),b=r(295502),T=r(883344),v=r(897604),I=r(910626),S=r(357186),A=r(586423),O=r(5355),C=r(770584),N=r(475210),w=r(940021),R=r(225392),L=r(504287),k=r(442077),P=r(916428),D=r(966129),M=r(735736),F=r(667149),j=r(314707),U=r(978099),G=r(77644),B=r(184526),z=r(559554);let V="current_version",H=new _.q(40),K=(0,n.eU)(""),W=z.M4.Query({fetch:async e=>{let t=e.fileKey;if(!t)return null;let r=performance.now(),n=await P.W.getPaginatedVersions({...e,fileKey:t,versionIds:e.versionIds?.join(",")}),i=performance.now()-r;return(0,f.sx)("version_diffing_performance_metrics",{name:"Lego versions fetched",durationMs:i}),n.data.meta?.versions||[]},label:"fileVersionsPaginated"});function Y(e,t,r,n){return`${e}-${t}-${r.id}-${n}`}function $(e,t){let r=g.D.getState(),n=r.openFile?.key,i=[t,r.mirror.sceneGraph.getInternalCanvas()?.guid].filter(e=>!!e);if(!n||!t)return null;let a=Y(n,t,e,(0,s.N)(r.fileVersion));if(H.has(a))return H.get(a);let o=new Promise((r,o)=>(0,U.n)(`${e.canvas_url}&nodes_to_extract=${i.join(",")}`).then(([i,o,s])=>{let l=Y(n,t,e,s),d=Promise.resolve({canvas:i,key:l});H.delete(a),H.set(l,d),r(d)}).catch(o));return H.set(a,o),o}function q(e){let t=g.D.getState(),r=t.openFile?.key,n=t.mirror.appModel.currentPage;if(!r||!n)return null;let i=Y(r,n,e,(0,s.N)(t.fileVersion));H.delete(i)}let J=async(e,t,r,n)=>{let i=new URLSearchParams;i.set("diff_version",(0,N.C2)().toString()),i.set("from_file_version_id",t),i.set("migration_version",`${r}`),n&&n.length>0&&i.set("nodes_to_diff",n.join(","));let{data:{meta:{checkpoint_diff:a}}}=await b.Ay.post(b.Ay.url`/api/file_diff/v2/checkpoint_diff/${e}`,void 0,{params:i});return a},X=asy
+
+===== 5) 模块 660929 内 C2:()=>eo 的 eo 定义 =====
+m660 pos 4839108
+C2->eo at 4839139
+DONE3

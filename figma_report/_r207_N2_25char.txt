@@ -1,0 +1,3 @@
+HTTP 403 329ms https://www.figma.com/api/file_diff/v2/checkpoint_diff/abcdefghijklmnopqrstuvwxy?diff_version=2&from_file_version_id=2383785353797520871&migration_version=0
+{'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '71', 'Connection': 'keep-alive', 'Date': 'Fri, 11 Sep 2026 03:44:48 GMT', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 4fd659a09def2d55e7f508245e41d796.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'SIN3-P2', 'Alt-Svc': 'h3=":443"; ma=86400', 'X-Amz-Cf-Id': 'KolPIKF0eZYayUGoDoH-uAHZ8JtxSUxDx8rjMM1FGpBCSy4HSI9Hpg==', 'X-Content-Type-Options': 'nosniff', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'}
+{"error":true,"message":"You don't have permission to view this file."}

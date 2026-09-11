@@ -1,0 +1,24 @@
+===== r245 A. file_type 标量通道 =====
+[A5] 200 len=13534 838ms file_type=design' 标量尾引号
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+[A6] 200 len=13534 1512ms file_type=design' OR '1'='1
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+[A7] 200 len=13534 1022ms file_type=design\x00junk 标量中段NUL
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+[A8] 200 len=13534 1429ms file_type HPP 双发(合法+junk)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+[A9] 200 len=13534 1630ms file_type=junk 无效枚举单发(语义对照)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+[A10] 200 len=13534 1541ms file_type=design,design 逗号
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+===== r245 E. editor_type 内部名通道 =====
+[E1] 200 len=13534 1451ms editor_type[] 数组(验证报错名)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is_team_temp'
+    names=["1643584176's team library", 'Untitled', 'Untitled']
+DONE r245

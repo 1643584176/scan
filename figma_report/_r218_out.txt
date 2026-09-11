@@ -1,0 +1,8 @@
+===== r218 时延根因补针 =====
+[J1] 500 859ms ['junk'] 复打(快路径对照)
+[J2] 500 511ms T4复打 pg_sleep版
+[J3] 500 1510ms T2复打 SLEEP版
+[J4] 500 452ms ['x'] 无SQL字符对照(再证捷基)
+[G1] 200 624ms 净化
+[G2] 200 438ms 复核净空 body=b'{"error":false,"status":200,"meta":{"id":"f4ecb9d0-de60-46f9-a661-7e4e6cea28c6","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_'
+DONE r218

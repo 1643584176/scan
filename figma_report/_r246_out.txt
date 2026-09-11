@@ -1,0 +1,49 @@
+===== r246 基准组（默认 vs 蛇形显式） =====
+[N0] 400 len=80 1046ms 无sort_column(默认排序)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}'
+[N1] 200 len=13534 1475ms sort_column=name(显式)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled']
+[C0] 200 len=4306 1234ms page_size=1(对照值)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library"]
+===== r246 R. 驼峰命名交叉（paginated_files） =====
+[R1] 200 len=13534 1040ms pageSize=1(驼峰,对照C0)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled']
+[R2] 200 len=13534 1017ms pageSize=1'(驼峰+引号)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled']
+[R3] 200 len=13534 1022ms sortColumn=name(驼峰,对照N1)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 't-99ff96', 'Untitled', 'Untitled']
+[R4] 200 len=13534 984ms sortColumn=name --(驼峰+注释) [核心]
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 't-99ff96', 'Untitled', 'Untitled']
+[R5] 200 len=13534 1011ms sortColumn=junk(驼峰+无效)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 't-99ff96', 'Untitled', 'Untitled']
+[R6] 400 len=80 879ms sortOrder=asc --(驼峰+注释)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_order parameter","i18n":null}'
+[R9] 200 len=13534 1014ms fileType=design(驼峰,过滤判别)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled']
+[R10] 200 len=13534 1615ms fileType=design'(驼峰+引号)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 'Untitled', 'Untitled', 'Untitled']
+[R12] 200 len=13534 989ms SORT_COLUMN=name(全大写)
+    body=b'{"error":false,"status":200,"meta":{"files":[{"touched_at":"2026-08-04T08:09:58Z","last_published_at":null,"is'
+    names=["1643584176's team library", 't-99ff96', 'Untitled', 'Untitled']
+===== r246 P. notif 驼峰 planId 判别 =====
+[P1] 400 len=86 636ms planId=TEAM(驼峰) [Missing=不识别/200=识别!]
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[P2] 400 len=86 853ms planId=TEAM'(驼峰+引号)
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[P3] 400 len=86 850ms planId+recipients[]混搭
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+===== r246 T. thumbnails 驼峰 maxResults =====
+[T1] 400 len=214 708ms maxResults=1'(驼峰+引号) [400=识别/404=忽略]
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbn'
+[T2] 404 len=123 900ms maxResults=1(驼峰正常值)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.",'
+DONE r246

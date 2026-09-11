@@ -1,0 +1,42 @@
+===== T. teams/{id}/folders 名字表判别（r111b 只 dump 过） =====
+[T0] 200 len=1062 797ms 基准（读）
+    body=b'{"error":false,"status":200,"meta":{"folders":{"634606972":{"updated_at":"2026-09-11T08:56:12.361Z"}},"folder_rows":[{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-09-11T'
+[T1] 200 len=1062 765ms sc=name(识别判别)
+    body=b'{"error":false,"status":200,"meta":{"folders":{"634606972":{"updated_at":"2026-09-11T08:56:12.361Z"}},"folder_rows":[{"id":"634606972","created_at":"2'
+    >> delta=0 [=基准:忽略]
+[T2] 200 len=1062 761ms sc=name --
+    body=b'{"error":false,"status":200,"meta":{"folders":{"634606972":{"updated_at":"2026-09-11T08:56:12.361Z"}},"folder_rows":[{"id":"634606972","created_at":"2'
+    >> delta=0 [=基准:忽略]
+[T3] 200 len=1062 747ms ps=1'
+    body=b'{"error":false,"status":200,"meta":{"folders":{"634606972":{"updated_at":"2026-09-11T08:56:12.361Z"}},"folder_rows":[{"id":"634606972","created_at":"2'
+    >> delta=0 [=基准:忽略]
+[T4] 200 len=1062 727ms offset=1'
+    body=b'{"error":false,"status":200,"meta":{"folders":{"634606972":{"updated_at":"2026-09-11T08:56:12.361Z"}},"folder_rows":[{"id":"634606972","created_at":"2'
+    >> delta=0 [=基准:忽略]
+[T5] 200 len=1062 744ms sort=name'
+    body=b'{"error":false,"status":200,"meta":{"folders":{"634606972":{"updated_at":"2026-09-11T08:56:12.361Z"}},"folder_rows":[{"id":"634606972","created_at":"2'
+    >> delta=0 [=基准:忽略]
+
+===== U. 写面三端点（自建自清链） =====
+[U0] 200 len=2477 777ms 读自己 user 对象
+    body=b'{"error":false,"status":200,"meta":{"id":"1666382703778278399","name":"pccp","email":"1643584176@qq.com","handle":"pccp","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?siz'
+    >> user name = 'pccp'
+[U1] 200 len=2619 734ms PUT user name='pccp'+' (尾引号)
+    body=b'{"error":false,"status":200,"meta":{"id":"1666382703778278399","name":"pccp\'","email":"1643584176@qq.com","handle":"pccp\'","img_url":"https://www.grav'
+[U2] 200 len=2479 815ms 回读
+    body=b'{"error":false,"status":200,"meta":{"id":"1666382703778278399","name":"pccp\'","email":"1643584176@qq.com","handle":"pccp\'","img_url":"https://www.gravatar.com/avatar/2f908873db5bed216938407d7d95fde7?s'
+    >> 回读 name = "pccp'"
+[U3] 200 len=2617 809ms 改回 name='pccp'
+    body=b'{"error":false,"status":200,"meta":{"id":"1666382703778278399","name":"pccp","email":"1643584176@qq.com","handle":"pccp","img_url":"https://www.gravat'
+[U4] 200 len=903 710ms 读 folder 现况
+    body=b'{"error":false,"status":200,"meta":{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-09-11T08:56:12.361Z","scheme":null,"path":"Team folder","settings":null,"team_id":"16663'
+    body=b'{"error":false,"status":200,"meta":{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-09-11T08:56:12.361Z","scheme":null,"path":"Team folder","settings":null,"team_id":"1666382706663462213","view_only_at":null,"org_id":null,"deleted_at":null,"description":null,"sharing_audience_control":"plan_'
+[U5] 400 len=121 750ms folder sharing_audience_control=x'（枚举位注入形态）
+    body=b'{"error":true,"status":400,"message":"Starter team folders can only use the \\"plan_edit\\" sharing audience.","i18n":null}'
+[U6] 200 len=903 716ms 回读 foldER
+    body=b'{"error":false,"status":200,"meta":{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-09-11T08:56:12.361Z","scheme":null,"path":"Team folder","settings":null,"team_id":"16663'
+[U7] 200 len=1757 872ms team ai_features_disabled=x'（布尔位注入形态）
+    body=b'{"error":false,"status":200,"meta":{"id":"1666382706663462213","name":"1643584176\'s team","created_at":"2026-08-04T08:09:57.159Z","img_url":null,"sync'
+[U8] 200 len=1757 772ms 回读 team
+    body=b'{"error":false,"status":200,"meta":{"id":"1666382706663462213","name":"1643584176\'s team","created_at":"2026-08-04T08:09:57.159Z","img_url":null,"synced_at":null,"providers":null,"subscription":null,"'
+DONE r251

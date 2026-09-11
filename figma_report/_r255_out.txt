@@ -1,0 +1,54 @@
+===== 基准组（三入口） =====
+[B0a] 200 len=13534 folder sort_column=name(名排序基准) NAMES=("1643584176's team library", 'Untitled', 'Untitled', 'Untitled')
+[B0b] 200 len=13534 folder 无 sort_column(默认排序) NAMES=("1643584176's team library", 't-99ff96', 'Untitled', 'Untitled')
+[B0c] 200 len=337 notif plan_id=A(真值基准)
+[B0d] 404 len=123 thumbs max_results=1(进查询基准)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+
+===== A. 内联注释 /**/（三条 SQL 入口） =====
+[A1] 400 len=81 folder sc=n/**/ame (中段拆词)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[A2] 400 len=81 folder sc=name/**/ (尾注释)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[A3] 400 len=106 notif plan_id=A/**/ (尾)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[A4] 400 len=214 thumbs mr=1/**/ (JSON靶)
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/files/:file_key/videos/:sha1/thumbnails: Error occurred'
+
+===== B. 注释+换行 --%0a =====
+[B1] 400 len=81 folder sc=name--LF--
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[B2] 400 len=81 folder sc=name LF-- (LF strip 判别)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[B3] 400 len=106 notif pid=A LF--
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[B4] 400 len=106 notif pid=A--LF A (注释吃尾+新行)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+
+===== C. PG 专属符（::/$$/||） =====
+[C1] 400 len=106 notif pid=A::int
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[C2] 400 len=106 notif pid=$$A$$ (美元引用)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[C3] 400 len=106 notif pid=A||A
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[C4] 400 len=81 folder sc=name||name
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+
+===== D. U+2028/2029 行分隔符（JS trim 含它 / Ruby strip 不含） =====
+[D1] 400 len=81 folder sc=name U+2028 尾
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[D2] 400 len=106 notif pid=A U+2028 尾 (剥离=JS层!)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[D3] 400 len=106 notif pid=U+2029前 A
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+
+===== E. 控制符 =====
+[E1] 200 len=337 notif pid=A \x01尾 (非空白控制符)
+
+===== F. 合并新形态 =====
+[F1] 400 len=81 folder sc=name,asc (逗号合并两参)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+[F2] 400 len=81 folder sc=name&so=asc (值藏编码&)
+    body=b'{"error":true,"status":400,"message":"Invalid sort_column parameter","i18n":null}'
+DONE r255

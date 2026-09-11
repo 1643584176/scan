@@ -1,0 +1,35 @@
+===== r223 N组: A账号全部team遍历（数据面翻案尝试） =====
+[N1] 200 len=1380 688ms A的team列表
+    body=b'{"error":false,"status":200,"meta":[{"id":"1666382706663462213","name":"1643584176\'s team","created_at":"2026-08-04T08:09:57.159Z","img_url":null,"synced_at":null,"providers":null,"subscription":null,"editors":0,"student_team_at":null,"student_autoverifying_team_at":null,"org_id":null,"org_access":null,"deleted_at":null,"blocked_at":null,"trial_period_end":null,"description":null,"deleted_by":null,"experiment_seed":140177,"license_group_id":null,"migrated_stripe_customer_id":null,"community_bloc'
+    >> team_ids=['1666382706663462213']
+[N2] 404 len=123 955ms 陌生uid校准(越权模型)
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[N3-462213] 200 len=337 977ms team 1666382706663462213 的notification配置
+    body=b'{"error":false,"status":200,"meta":{"id":"809ce9ac-39af-41a5-8f46-ad84c79331db","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:07:21.740Z","updated_at":"2026-09-11T07:07:21.740Z"},"i18n":null}'
+===== r223 M组: 顶层JSON类型混淆全谱 =====
+[M1] 200 len=337 1128ms frequencies='daily' 裸字符串
+    body=b'{"error":false,"status":200,"meta":{"id":"6d6e252a-a321-4c64-951e-964e8e3ba90a","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:09:28.956Z","updated_at":"2026-09-11T07:09:28.956Z"},"i18n":null}'
+[M2] 500 len=73 1086ms frequencies=123 裸数字
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[M3] 200 len=337 1097ms frequencies=None 裸null
+    body=b'{"error":false,"status":200,"meta":{"id":"cc766306-4f5e-40b2-8a3a-17400aea7a45","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:09:35.534Z","updated_at":"2026-09-11T07:09:35.534Z"},"i18n":null}'
+[M4] 500 len=73 1103ms frequencies={x:1} 裸对象
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[M5] 200 len=337 1100ms recipients='UID_A' 裸字符串
+    body=b'{"error":false,"status":200,"meta":{"id":"73bc3867-cd2b-4a19-8ceb-2a28ef551a1e","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:09:42.141Z","updated_at":"2026-09-11T07:09:42.141Z"},"i18n":null}'
+[M6] 200 len=337 1088ms recipients=None 裸null
+    body=b'{"error":false,"status":200,"meta":{"id":"cabac30e-ceeb-427c-bd23-d88426370b8b","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:09:45.449Z","updated_at":"2026-09-11T07:09:45.449Z"},"i18n":null}'
+[M7] 200 len=337 1172ms recipient_settings=123
+    body=b'{"error":false,"status":200,"meta":{"id":"c00003ae-87d2-4a6f-afc0-b5b5eb3f508f","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:09:48.817Z","updated_at":"2026-09-11T07:09:48.817Z"},"i18n":null}'
+[M8] 200 len=337 1059ms recipient_settings=None
+    body=b'{"error":false,"status":200,"meta":{"id":"3039e7f2-3a70-4233-8416-6555dc520cd3","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:09:52.078Z","updated_at":"2026-09-11T07:09:52.078Z"},"i18n":null}'
+[M9] 500 len=73 1894ms notification_type=[NEC] 数组
+    body=b'{"error":true,"status":500,"message":"Internal Server Error","i18n":null}'
+[M10] 400 len=96 952ms notification_type=None
+    body=b'{"error":true,"status":400,"message":"Missing required parameter notification_type","i18n":null}'
+===== r223 净化 =====
+[M11] 200 len=337 1096ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"d1e8b954-2626-4b3b-a265-9b52be1166a2","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:10:02.622Z","updated_at":"2026-09-11T07:10:02.622Z"},"i18n":null}'
+[M12] 200 len=337 1020ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"d1e8b954-2626-4b3b-a265-9b52be1166a2","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:10:02.622Z","updated_at":"2026-09-11T07:10:02.622Z"},"i18n":null}'
+DONE r223

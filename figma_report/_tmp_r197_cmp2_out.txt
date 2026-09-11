@@ -1,0 +1,123 @@
+===== A. 字段级: meta.files 条数/名字/ folder_id =====
+C1_base n=5 folder_id=['634606972', '634606972', '634606972'] names=["1643584176's team library", 't-99ff96']
+C2_ref n=5 folder_id=['634606972', '634606972', '634606972'] names=["1643584176's team library", 't-99ff96']
+C3_arith n=5 folder_id=['634606972', '634606972', '634606972'] names=["1643584176's team library", 't-99ff96']
+C4_frag n=5 folder_id=['634606972', '634606972', '634606972'] names=["1643584176's team library", 't-99ff96']
+C6a_notexist n=5 folder_id=['634606972', '634606972', '634606972'] names=["1643584176's team library", 't-99ff96']
+C6b_small n=5 folder_id=['634606972', '634606972', '634606972'] names=["1643584176's team library", 't-99ff96']
+C1r_replay n=5 folder_id=['634606972', '634606972', '634606972'] names=["1643584176's team library", 't-99ff96']
+===== B. 差异块 vs 基线 C1(前 6 块, 各带 50 字上下文) =====
+-- C2_ref: len 13534 vs 13534, blocks=6
+   @2501
+     C1: ...'time_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"to'
+     C2_ref: ...'time_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092160:0:9c4ea12ca203818aab222a376b257d3acaef4e42"},{"to'
+   @2506
+     C1: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","l'
+     C2_ref: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092160:0:9c4ea12ca203818aab222a376b257d3acaef4e42"},{"touched_at":"2026-08-04T08:14:47Z","l'
+   @2539
+     C1: ...'fwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+     C2_ref: ...'fwg:1789092160:0:9c4ea12ca203818aab222a376b257d3acaef4e42"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+   @4889
+     C1: ...'time_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"to'
+     C2_ref: ...'time_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092160:0:34ac8d6c94aebf12f51dea77894c89939cb56ece"},{"to'
+   @4894
+     C1: ...'token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"touched_at":"2026-'
+     C2_ref: ...'token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092160:0:34ac8d6c94aebf12f51dea77894c89939cb56ece"},{"touched_at":"2026-'
+   @4908
+     C1: ...'5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"touched_at":"2026-08-17T09:35:36Z","last_publ'
+     C2_ref: ...'5Gs4PaTz11Hlk2sqVnidBG:1789092160:0:34ac8d6c94aebf12f51dea77894c89939cb56ece"},{"touched_at":"2026-08-17T09:35:36Z","last_publ'
+-- C3_arith: len 13534 vs 13534, blocks=6
+   @2501
+     C1: ...'time_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"to'
+     C3_arith: ...'time_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092162:0:1728467aa9c8e63d6d71205a9c96784a4b67198a"},{"to'
+   @2506
+     C1: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touche'
+     C3_arith: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092162:0:1728467aa9c8e63d6d71205a9c96784a4b67198a"},{"touche'
+   @2508
+     C1: ...'ken":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2'
+     C3_arith: ...'ken":"/file-qzDqStIDJyGbthpKiuvfwg:1789092162:0:1728467aa9c8e63d6d71205a9c96784a4b67198a"},{"touched_at":"2'
+   @2516
+     C1: ...'ile-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+     C3_arith: ...'ile-qzDqStIDJyGbthpKiuvfwg:1789092162:0:1728467aa9c8e63d6d71205a9c96784a4b67198a"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+   @4889
+     C1: ...'time_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"to'
+     C3_arith: ...'time_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092162:0:31c9dbe67395fa7d80d1002a27ff48d73ec6fa73"},{"to'
+   @4894
+     C1: ...'token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"touched_at":"2026-08-17T09:35:36Z","'
+     C3_arith: ...'token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092162:0:31c9dbe67395fa7d80d1002a27ff48d73ec6fa73"},{"touched_at":"2026-08-17T09:35:36Z","'
+-- C4_frag: len 13534 vs 13534, blocks=6
+   @2501
+     C1: ...'time_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"to'
+     C4_frag: ...'time_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092164:0:8e9d275771b7d9aac8cf96cbe6c71d1835879b37"},{"to'
+   @2506
+     C1: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026'
+     C4_frag: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092164:0:8e9d275771b7d9aac8cf96cbe6c71d1835879b37"},{"touched_at":"2026'
+   @2519
+     C1: ...'-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z'
+     C4_frag: ...'-qzDqStIDJyGbthpKiuvfwg:1789092164:0:8e9d275771b7d9aac8cf96cbe6c71d1835879b37"},{"touched_at":"2026-08-04T08:14:47Z'
+   @2535
+     C1: ...'Kiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","last_pu'
+     C4_frag: ...'Kiuvfwg:1789092164:0:8e9d275771b7d9aac8cf96cbe6c71d1835879b37"},{"touched_at":"2026-08-04T08:14:47Z","last_pu'
+   @2545
+     C1: ...'89092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+     C4_frag: ...'89092164:0:8e9d275771b7d9aac8cf96cbe6c71d1835879b37"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+   @4889
+     C1: ...'time_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"to'
+     C4_frag: ...'time_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092164:0:dbf3fb20dfbb33256b64dfa8a3db4d84f1d90128"},{"to'
+-- C6a_notexist: len 13534 vs 13534, blocks=6
+   @2500
+     C1: ...'ltime_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"to'
+     C6a_notexist: ...'ltime_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092280:0:dc27095d065b35fb88ab4ac020e9318e4a8f163f"},{"to'
+   @2506
+     C1: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at'
+     C6a_notexist: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092280:0:dc27095d065b35fb88ab4ac020e9318e4a8f163f"},{"touched_at'
+   @2512
+     C1: ...':"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14'
+     C6a_notexist: ...':"/file-qzDqStIDJyGbthpKiuvfwg:1789092280:0:dc27095d065b35fb88ab4ac020e9318e4a8f163f"},{"touched_at":"2026-08-04T08:14'
+   @2531
+     C1: ...'bthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z",'
+     C6a_notexist: ...'bthpKiuvfwg:1789092280:0:dc27095d065b35fb88ab4ac020e9318e4a8f163f"},{"touched_at":"2026-08-04T08:14:47Z",'
+   @2537
+     C1: ...'uvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","last_pu'
+     C6a_notexist: ...'uvfwg:1789092280:0:dc27095d065b35fb88ab4ac020e9318e4a8f163f"},{"touched_at":"2026-08-04T08:14:47Z","last_pu'
+   @2545
+     C1: ...'89092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+     C6a_notexist: ...'89092280:0:dc27095d065b35fb88ab4ac020e9318e4a8f163f"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+-- C6b_small: len 13534 vs 13534, blocks=6
+   @2500
+     C1: ...'ltime_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"to'
+     C6b_small: ...'ltime_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092282:0:16702b249f59b622d212373f59a012631e9f8827"},{"to'
+   @2506
+     C1: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04'
+     C6b_small: ...'token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092282:0:16702b249f59b622d212373f59a012631e9f8827"},{"touched_at":"2026-08-04'
+   @2525
+     C1: ...'tIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z'
+     C6b_small: ...'tIDJyGbthpKiuvfwg:1789092282:0:16702b249f59b622d212373f59a012631e9f8827"},{"touched_at":"2026-08-04T08:14:47Z'
+   @2535
+     C1: ...'Kiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+     C6b_small: ...'Kiuvfwg:1789092282:0:16702b249f59b622d212373f59a012631e9f8827"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+   @4888
+     C1: ...'ltime_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"to'
+     C6b_small: ...'ltime_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092282:0:4783b6abff70494e6e0e08989f2c7704c08011de"},{"to'
+   @4894
+     C1: ...'token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"touched_at":'
+     C6b_small: ...'token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092282:0:4783b6abff70494e6e0e08989f2c7704c08011de"},{"touched_at":'
+-- C1r_replay: len 13534 vs 13534, blocks=6
+   @2500
+     C1: ...'ltime_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"to'
+     C1r_replay: ...'ltime_token":"/file-qzDqStIDJyGbthpKiuvfwg:1789092284:0:bec2ffa13904aa93ab098c4b58c733419a054e12"},{"to'
+   @2507
+     C1: ...'oken":"/file-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2'
+     C1r_replay: ...'oken":"/file-qzDqStIDJyGbthpKiuvfwg:1789092284:0:bec2ffa13904aa93ab098c4b58c733419a054e12"},{"touched_at":"2'
+   @2516
+     C1: ...'ile-qzDqStIDJyGbthpKiuvfwg:1789092158:0:b7b6899589a5d2de0f1355822dfd1085c02e2234"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+     C1r_replay: ...'ile-qzDqStIDJyGbthpKiuvfwg:1789092284:0:bec2ffa13904aa93ab098c4b58c733419a054e12"},{"touched_at":"2026-08-04T08:14:47Z","last_publ'
+   @4888
+     C1: ...'ltime_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"to'
+     C1r_replay: ...'ltime_token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092284:0:b84fc329c279eff5c0fce1faa18f0df3fb99afe5"},{"to'
+   @4894
+     C1: ...'token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"touched_at":"2026-'
+     C1r_replay: ...'token":"/file-5Gs4PaTz11Hlk2sqVnidBG:1789092284:0:b84fc329c279eff5c0fce1faa18f0df3fb99afe5"},{"touched_at":"2026-'
+   @4908
+     C1: ...'5Gs4PaTz11Hlk2sqVnidBG:1789092158:0:a9d5404bf9663f64ca948e13e1139377ed79bbd5"},{"touched_at":"2026-08-'
+     C1r_replay: ...'5Gs4PaTz11Hlk2sqVnidBG:1789092284:0:b84fc329c279eff5c0fce1faa18f0df3fb99afe5"},{"touched_at":"2026-08-'

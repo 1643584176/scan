@@ -1,0 +1,16 @@
+===== r236 PUT 下 Origin 匹配逻辑 =====
+[P1] 401 len=74 462ms Origin=null [Origin=null]
+    body=b'{"error":true,"status":401,"message":"","reason":"missing_authentication"}'
+[P2] 401 len=74 413ms 后缀骗术 figma.com.evil.com (若200=包含匹配) [Origin=https://figma.com.evil.com]
+    body=b'{"error":true,"status":401,"message":"","reason":"missing_authentication"}'
+[P3] 401 len=74 417ms 全大写 FIGMA.COM [Origin=https://www.FIGMA.COM]
+    body=b'{"error":true,"status":401,"message":"","reason":"missing_authentication"}'
+[P4] 200 len=337 595ms 带端口 :443 [Origin=https://www.figma.com:443]
+    body=b'{"error":false,"status":200,"meta":{"id":"14a7853a-4cd1-43de-a279-6f6431956aee","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_no'
+[P5] 401 len=74 485ms 无 www: https://figma.com [Origin=https://figma.com]
+    body=b'{"error":true,"status":401,"message":"","reason":"missing_authentication"}'
+[P6] 401 len=74 448ms 反向骗术 evilfigma.com [Origin=https://evilfigma.com]
+    body=b'{"error":true,"status":401,"message":"","reason":"missing_authentication"}'
+===== 确认 =====
+[C] 200 len=337 状态确认
+DONE r236

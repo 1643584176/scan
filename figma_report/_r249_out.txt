@@ -1,0 +1,29 @@
+===== X. 读面探活（4） =====
+[X1] 200 len=133 799ms last_interaction 探活(自建文件)
+    body=b'{"error":false,"status":200,"meta":{"last_view_at":"2026-09-02T02:12:23.612Z","last_edit_at":"2026-09-02T02:12:23.566Z"},"i18n":null}'
+[X2] 400 len=75 962ms source_file_updated_info 探活
+    body=b'{"error":true,"status":400,"message":"File is not branch file","i18n":null}'
+[X3] 200 len=2217 1028ms files meta 探活
+    body=b'{"error":false,"status":200,"meta":{"creator_id":"1666382703778278399","updated_at":"2026-09-07T10:12:02.045Z","key":"IHt8kgtR3XmtqU5i8vz7p1","name":"\xe7\xac\xac\xe4\xb8\x80\xe4\xb8\xaa","description":null,"folder_id":"634606970","scheme":null,"team_id":"1666382706663462213","link_acce'
+[X4] 200 len=903 1149ms folder 读名(写面预热)
+    body=b'{"error":false,"status":200,"meta":{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-08-04T08:09:57.693Z","scheme":null,"path":"Team folder","settings":null,"team_id":"1666382706663462213","view_only_at":null,"org_id":null,"deleted_a'
+    >> folder 原名 = 'Team folder'
+===== Y. 隐藏参数判别（3） =====
+[Y1] 200 len=133 1063ms last_interaction?user_id=1'
+    body=b'{"error":false,"status":200,"meta":{"last_view_at":"2026-09-02T02:12:23.612Z","last_edit_at":"2026-09-02T02:12:23.566Z"},"i18n":null}'
+[Y2] 200 len=2217 1058ms meta?version=1'
+    body=b'{"error":false,"status":200,"meta":{"creator_id":"1666382703778278399","updated_at":"2026-09-07T10:12:02.045Z","key":"IHt8kgtR3XmtqU5i8vz7p1","name":"\xe7\xac\xac\xe4\xb8\x80\xe4\xb8\xaa","description":null,"folder_id":"634606970","scheme":null,"team_id":"1666382706663462213","link_acce'
+[Y3] 400 len=75 1058ms sfui?version=1'
+    body=b'{"error":true,"status":400,"message":"File is not branch file","i18n":null}'
+[Y4] 403 len=99 895ms GET folders/rename (方法探测)
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this project.","i18n":null}'
+===== W. 写面 rename（自建自清: payload→回读→改回） =====
+[W1] 200 len=866 1127ms rename → "Team folder'" (尾引号)
+    body=b'{"error":false,"status":200,"meta":[{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-09-11T08:56:05.700Z","scheme":null,"path":"Team folder\'","settings":null,"team_id":"1666382706663462213","view_only_at":null,"org_id":null,"deleted'
+[W2] 200 len=905 1148ms 回读(看名字)
+    body=b'{"error":false,"status":200,"meta":{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-09-11T08:56:05.700Z","scheme":null,"path":"Team folder\'","settings":null,"team_id":"1666382706663462213","view_only_at":null,"org_id":null,"deleted_'
+[W3] 200 len=864 1100ms 改回 → 'Team folder'
+    body=b'{"error":false,"status":200,"meta":[{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-09-11T08:56:12.361Z","scheme":null,"path":"Team folder","settings":null,"team_id":"1666382706663462213","view_only_at":null,"org_id":null,"deleted_'
+[W4] 200 len=903 1067ms 终态确认
+    body=b'{"error":false,"status":200,"meta":{"id":"634606972","created_at":"2026-08-04T08:09:57.693Z","updated_at":"2026-09-11T08:56:12.361Z","scheme":null,"path":"Team folder","settings":null,"team_id":"1666382706663462213","view_only_at":null,"org_id":null,"deleted_a'
+DONE r249

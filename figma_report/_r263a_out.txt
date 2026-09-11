@@ -1,0 +1,11 @@
+===== 路径变体绕过（干净数字 fv） =====
+[V0] 400 len=    38 1018ms ct=text/plain; charset=utf-8 xc=Error from cloudfront V0 原形对照
+    body=b'{"error": "Invalid parameter for fv"}\n'
+[V1] 202 len=     0 682ms ct=text/html; charset=UTF-8 xc=Error from cloudfront V1 h 编码 %68
+[V2] 404 len=     9 884ms ct=text/plain xc=Error from cloudfront V2 大小写
+    body=b'Not Found'
+[V3] 202 len=     0 628ms ct=text/html; charset=UTF-8 xc=Error from cloudfront V3 点段 ./
+[V4] 404 len=     9 853ms ct=text/plain xc=Error from cloudfront V4 编码斜杠 %2f
+    body=b'Not Found'
+[V5] 400 len=   915 676ms ct=text/html xc=Error from cloudfront V5 NUL 尾
+DONE r263a

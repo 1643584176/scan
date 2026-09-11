@@ -1,0 +1,14 @@
+===== A. query 变体（缓存键判别） =====
+[G1] 202 len=     0 401ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront age= POST + query x=1
+[G2] 202 len=     0 649ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront age= GET + query x=1
+[G3] 202 len=     0 667ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront age= POST + query t=时间戳
+
+===== B. 匿名对照（会话标记判别） =====
+[G4] 202 len=     0 633ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront age= 匿名 POST（无 cookie）
+[G5] 202 len=     0 640ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront age= 匿名 GET（无 cookie）
+
+===== C. 同期对照 =====
+[G6] 200 len=   292 950ms ct=application/json xcache=Miss from cloudfront age= resource_uses 对照（应 200）
+    body=b'{"error":false,"status":200,"meta":{"id":"14d2f6d9-e9dd-412b-b9d0-951074b78a7d","user_id":"1666382703778278399","created_at":"2026-09-10T04:41:40.293Z","updated_at":"2026-09-10T04:41:40.293Z","resource_id":"ff0c0b6a-f18b-4f2a-97f3-80b966066eac","usage_id":null'
+[G7] 202 len=     0 670ms ct=text/html; charset=UTF-8 xcache=Error from cloudfront age= 回打原 URL（现状再确认）
+DONE r260

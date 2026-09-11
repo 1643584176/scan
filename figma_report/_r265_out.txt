@@ -1,0 +1,15 @@
+===== A. API 慢打（W1 补 + 类型对比 + 1' 复测） =====
+>> [X1] POST .figma.com/api/hub_files/1633508841091684550/template_canvas fv=100 补打
+[X1] 202 len=     0 439ms ct=text/html; charset=UTF-8
+>> [X2] POST .figma.com/api/hub_files/1633508841091684550/template_canvas 字符串大数（对比数字）
+[X2] 202 len=     0 689ms ct=text/html; charset=UTF-8
+>> [X3] POST .figma.com/api/hub_files/1633508841091684550/template_canvas fv=1' 复测（400 or 202）
+[X3] 202 len=     0 670ms ct=text/html; charset=UTF-8
+===== B. 社区页面 SSR（独立通道） =====
+>> [X4] GET https://www.figma.com/community/file/1633508841091684550 SSR 基线
+[X4] 202 len=  2479 687ms ct=text/html; charset=UTF-8
+>> [X5] GET https://www.figma.com/community/file/1633508841091684550' SSR 注入探针（尾引号）
+[X5] 202 len=  2479 669ms ct=text/html; charset=UTF-8
+>> [X6] GET https://www.figma.com/community/file/1633508841091684550x SSR 对照（尾缀）
+[X6] 202 len=  2479 692ms ct=text/html; charset=UTF-8
+DONE r265

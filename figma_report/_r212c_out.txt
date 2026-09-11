@@ -1,0 +1,22 @@
+===== r212c 数字语义探针 =====
+[N11] 403 len=279 686ms 不存在值模板
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to do that. Contact your team administrator.","i18n":{"id":"subscription.error.no_permission_contact_team_admin","fallback_text":"You don\'t have permission to do that. Contact your team administrator.","params":{}}}'
+[N12] 400 len=106 392ms 浮点零尾
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N13] 400 len=106 317ms 前导零
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N14] 200 len=40 604ms 前导空格(Number trim?)
+    body=b'{"error":false,"status":200,"i18n":null}'
+[N15] 400 len=106 333ms 科学计数
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N16] 400 len=106 337ms Infinity 穿层
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[N17] 400 len=75 343ms plan_type 枚举探针
+    body=b'{"error":true,"status":400,"message":"Invalid plan type: junk","i18n":null}'
+[N18] 200 len=40 366ms notification_type 枚举探针
+    body=b'{"error":false,"status":200,"i18n":null}'
+[N19] 404 len=123 350ms plan_type=organization
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[N20] 400 len=88 355ms plan_type 缺省
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_type","i18n":null}'
+DONE r212c

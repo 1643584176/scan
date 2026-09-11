@@ -1,0 +1,2 @@
+HTTP 400 329ms https://www.figma.com/api/resource_connection_invite/folder_search?query=test&sort=relevancy&desc=true&max_num_results=10&org_id=org_id
+{"error":true,"status":400,"message":"Error in route typechecking for /api/resource_connection_invite/folder_search: Error occurred during parsing: Error parsing JSON @1:89: Non-number characters in quoted integer"}

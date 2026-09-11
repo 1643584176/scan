@@ -1,0 +1,35 @@
+===== A. template_canvas 探活（GET vs POST 形态 + 版本语义） =====
+[A1] 404 len=826135 1694ms ct=text/html;charset=utf-8 GET 形态（应 405/404）
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;use'
+[A2] 400 len=    38 1300ms ct=text/plain; charset=utf-8 POST fv=1（版本1）
+    body=b'{"error": "Invalid parameter for fv"}\n'
+[A3] 400 len=    38 1268ms ct=text/plain; charset=utf-8 POST fv=0（版本0）
+    body=b'{"error": "Invalid parameter for fv"}\n'
+[A4] 400 len=    81 962ms ct=application/json POST 无 body（fv 缺失判别）
+    body=b'{"error":true,"status":400,"message":"Missing required parameter fv","i18n":null}'
+[A5] 404 len=   188 929ms ct=application/json; charset=utf-8 POST 不存在 hub（存在性对照）
+    body=b'{"error":true,"status":404,"message":"Community file not found","i18n":{"id":"community.sinatra.hub_files.community_file_not_found","fallback_text":"Community file not found","para'
+
+===== B. fv 位注入首判（读面首个注入判别） =====
+[B1] 400 len=    38 1245ms ct=text/plain; charset=utf-8 fv=1'（尾引号）
+    body=b'{"error": "Invalid parameter for fv"}\n'
+[B2] 202 len=     0 631ms ct=text/html; charset=UTF-8 fv=1'--（注释）
+    body=b''
+[B3] 202 len=     0 650ms ct=text/html; charset=UTF-8 fv=abc（类型校准）
+    body=b''
+
+===== C. prepare_insert 探活 + 路径 version 位 =====
+[C1] 202 len=     0 720ms ct=text/html; charset=UTF-8 version=1 基线
+    body=b''
+[C2] 202 len=     0 660ms ct=text/html; charset=UTF-8 version=abc（类型校准）
+    body=b''
+[C3] 202 len=     0 664ms ct=text/html; charset=UTF-8 version=1'（尾引号）
+    body=b''
+
+===== D. resource_uses 探活（埋点、无 body） =====
+[D1] 200 len=   292 2298ms ct=application/json hub_file 真值
+[D2] 404 len=   123 1039ms ct=application/json; charset=utf-8 hub_file 不存在对照
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[D3] 400 len=   214 1009ms ct=application/json hub_file 尾引号
+    body=b'{"error":true,"status":400,"message":"Error in route typechecking for /api/resource_uses/:content_type/:content_id: Error occurred during parsing: Error parsing JSON @1:62: Non-num'
+DONE r257

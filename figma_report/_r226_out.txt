@@ -1,0 +1,31 @@
+===== r226 S1-S3: thumbnails 结构层最后空格 =====
+[S1] 404 len=123 1108ms 隐藏参数 sort
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[S2] 404 len=123 1117ms 隐藏参数 order_by/order
+    body=b'{"error":true,"status":404,"message":"Not found.","i18n":{"id":"error.not_found","fallback_text":"Not found.","params":{}}}'
+[S3] 403 len=101 999ms fk位双重编码 %2527
+    body=b'{"error":true,"status":403,"message":"You don\'t have permission to view this prototype.","i18n":null}'
+===== r226 S4-S7: notif 结构层 =====
+[S4] 400 len=106 1066ms plan_id尾双重编码
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[S5] 400 len=106 1341ms plan_id前加号(%2B)
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type String","i18n":null}'
+[S6] 404 len=826135 2477ms 路径尾斜杠
+    body=b'<!DOCTYPE html>\n<html lang="en" data-product-locale="en">\n  <head>\n      <link id="figma_preload_user_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;user&#47;state?fuid=1666382703778278399"/>\n      <link id="figma_preload_session_state" rel="preload" as="fetch" crossorigin="anonymous" href="&#47;api&#47;session&#47;state?fuid=1666382703778278399"/>\n '
+[S7] 404 len=9 949ms 路径双斜杠
+    body=b'Not Found'
+===== r226 S8-S11: body/头位/内容协商 =====
+[S8] 400 len=86 1215ms Content-Type: text/plain+JSON
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[S9] 400 len=86 2116ms 键名畸形 plan_id'(无正常键)
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[S10] 200 len=337 1142ms XFF头注入
+    body=b'{"error":false,"status":200,"meta":{"id":"25ba703a-006f-4a7f-aa66-3d3956e3edd1","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:11:55.438Z","updated_at":"2026-09-11T07:11:55.438Z"},"i18n":null}'
+[S11] 200 len=337 1189ms Accept:text/html 内容协商
+    body=b'{"error":false,"status":200,"meta":{"id":"25ba703a-006f-4a7f-aa66-3d3956e3edd1","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:11:55.438Z","updated_at":"2026-09-11T07:11:55.438Z"},"i18n":null}'
+===== r226 净化 =====
+[S12] 200 len=337 1472ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"ea08388b-0847-4369-8073-7987fd16f1e5","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:16:38.700Z","updated_at":"2026-09-11T07:16:38.700Z"},"i18n":null}'
+[S13] 200 len=337 1257ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"ea08388b-0847-4369-8073-7987fd16f1e5","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:16:38.700Z","updated_at":"2026-09-11T07:16:38.700Z"},"i18n":null}'
+DONE r226

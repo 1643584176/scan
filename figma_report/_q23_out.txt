@@ -1,0 +1,88 @@
+scripts(+落盘) loaded: 1627
+
+===== A. 端点盲区初判（排除 q2x 侦查脚本自身） =====
+  [  59] /api/resources  <= _figma_p100_uuid.py,_figma_p101_saves.py,_figma_p106_comments.py,_figma_p107_read.py
+  [   1] /api/resources/group_by_team  <= _figma_r6_enum.py
+  [   3] /api/resources/home_shelf  <= _figma_r193_finalbatch.py,_figma_r195a_homeshelf.py,_figma_r195b_hs_pinned.py
+  [   7] /api/resources/pinned  <= _figma_r193_finalbatch.py,_figma_r195b_hs_pinned.py,_figma_r195c_pinned.py,_figma_r195d_fav.py
+  [  99] /api/files/  <= _figma_ai_perm.py,_figma_file_share.py,_figma_find_share.py,_figma_matrix1.py
+  [  35] thumbnail_guid  <= _figma_n1f_priv.py,_figma_r196ae_sieve.py,_figma_r51_private.py,_r196ab_ab10.txt
+  [  32] /view  <= _figma_boot_load.py,_figma_r196ai_adminreq2.py,_figma_w58_tools.py,_r13_net.txt
+  [  18] hub_files  <= _figma_q7_searchapi.py,_figma_r127_ctx.py,_figma_r35a_dup.py,_figma_r36_copy.py
+  [  49] multiplayer  <= _figma_har_deep.py,_figma_mp_save.py,_figma_mp_test.py,_figma_r129.py
+  [   6] recent_prototypes  <= _figma_r112.py,_figma_r113.py,_figma_r133.py,_figma_r134.py
+  [   1] /api/files/batch  <= _r52_out.txt
+  [   7] bulk_favorite_resources_v2  <= _figma_r121.py,_figma_r121_ctx.py,_figma_r185_nextbatch.py,_figma_r187_postfaces.py
+  [   3] widgets/batch  <= _figma_r185_nextbatch.py,_figma_r186_wafchk.py,_figma_r188_probe.py
+  [ZERO] widgets/v2/versions  <= 
+  [   2] /roles  <= _figma_matrix1.py,_figma_r133.py
+  [   2] spell-check  <= _figma_r128.py,_tmp_ls.py
+  [  23] items/import  <= _figma_r107_mdgap2.py,_figma_r108_mdgap3.py,_figma_r194c_cms_replay.py,_figma_r194e_cms_items.py
+  [   2] /api/invites  <= _figma_r130.py,_figma_r185_nextbatch.py
+  [ZERO] teams/create  <= 
+  [ZERO] org_invites  <= 
+  [   1] plugin_runs  <= _tmp_ls5.py
+  [ 124] code_connect  <= _figma_r119.py,_figma_r133.py,_figma_r134.py,_figma_r135.py
+  [  29] mcp/  <= _figma_r176_newbatch_smoke.py,_figma_r177_mcp_upnode.py,_figma_y6_batch.py,_figma_y7_mcp2.py
+  [   5] workspace/  <= _figma_r121.py,_figma_w47_endpoints.py,_r50b_out.txt,_r59_out.txt
+  [   5] user_sidebar_sections  <= _figma_r128.py,_figma_r130.py,_figma_r185_nextbatch.py,_tmp_ls.py
+  [   7] /api/follows  <= _figma_p105_follow.py,_figma_p119_ctx.py,_figma_p120_newapi.py,_figma_p121_fix.py
+  [   5] profile/merge  <= _figma_p119_ctx.py,_figma_v45_merge.py,_figma_v47_merge2.py,_figma_v49_restore2.py
+  [ZERO] planless_favorited  <= 
+  [   5] resource_uses  <= _figma_r119.py,_figma_v54_hubops.py,_r210g_hubctx_out.txt,_tmp_ls5.py
+  [   2] templates/  <= _r210g_hubctx_out.txt,_r29_out.txt
+  [   3] prepare_insert  <= _r210g_hubctx_out.txt,_r29_out.txt,_tmp_r210g_hubctx.py
+  [   2] template_canvas  <= _r210g_hubctx_out.txt,_tmp_r210g_hubctx.py
+  [   8] /duplicate  <= _figma_r69_oracle.py,_figma_w39_methods.py,_figma_w43_authmatrix.py,_r28_js_out.txt
+  [  17] recent_search  <= _figma_q2_ctx.py,_figma_r108_mdgap3.py,_figma_r187_postfaces.py,_figma_r188_probe.py
+  [   5] files/related_links  <= _figma_r166_newfaces_smoke.py,_figma_r168_postfaces.py,_figma_r196ao_links1.py,_figma_r196ap_links2.py
+
+===== B. 已打面的参数盲区 =====
+  -- resources/{type}/{cid} query
+     [  11] include_full_category  <= _figma_r10_fields.py,_figma_r11_truth.py,_figma_r12_readface.py
+     [   6] include_version_history  <= _figma_r14_vers.py,_figma_r19_authz.py,_r26_net.txt
+     [  23] allow_internal  <= _r196aa_aa2.txt,_r196aa_aa3.txt,_r196aa_aa4.txt
+  -- /api/resources 列表查询
+     [   4] resourceIds  <= _figma_r4c_params.py,_r70_out.txt,_r72_out.txt
+     [  26] resource_ids  <= _figma_r195a_homeshelf.py,_figma_r195b_hs_pinned.py,_r196aa_aa2.txt
+     [ 330] locale  <= _figma_creds.py,_figma_p96_res.py,_figma_r13_detail.py
+     [   5] queryId  <= _r209k_chunks_out.txt,_r70_out.txt,_r72_out.txt
+     [  25] query_id  <= _r196aa_aa2.txt,_r196aa_aa3.txt,_r196aa_aa4.txt
+     [  14] include_content  <= _figma_r10_fields.py,_figma_r11_truth.py,_figma_r12_readface.py
+     [ZERO] tags=  <= 
+  -- group_by_team 族
+     [ZERO] num_resources_per_team  <= 
+     [   1] numResourcesPerTeam  <= _r70_out.txt
+     [   4] include_category_slug  <= _figma_r12_readface.py,_figma_r167_newfaces_inj.py,_figma_r170_baseline_inj.py
+     [   1] include_tags  <= _r70_out.txt
+  -- recent_search 深尾
+     [ZERO] workspace_filter  <= 
+     [   2] workspaceFilter  <= _r62_out.txt,_r74_dig_out.txt
+     [ZERO] previous_searches  <= 
+     [   2] previousSearches  <= _r70_out.txt,_r84_dig_out.txt
+  -- files view 族
+     [  25] open_file_key  <= _r196aa_aa2.txt,_r196aa_aa3.txt,_r196aa_aa4.txt
+     [ZERO] last_view_at  <= 
+     [   9] version_history  <= _figma_r12_readface.py,_figma_r14_vers.py,_figma_r19_authz.py
+  -- bulk_favorite 深尾
+     [   1] insert_at_index  <= _r121_ctx_out.txt
+     [   1] insert_after_favorite_id  <= _r121_ctx_out.txt
+     [   1] insert_before_favorite_id  <= _r121_ctx_out.txt
+     [   1] section_id  <= _r121_ctx_out.txt
+     [ZERO] sidebar_section_id  <= 
+  -- home_shelf 深尾
+     [   2] seen_resource_ids  <= _figma_r195a_homeshelf.py,_figma_r195b_hs_pinned.py
+  -- users/batched 深尾
+     [   7] user_ids  <= _figma_r112.py,_figma_r115.py,_figma_r116_ctx.py
+  -- files/batch
+     [ZERO] style_keys  <= 
+     [ZERO] subscribe_to_realtime  <= 
+  -- widgets v2
+     [ZERO] ids_to_versions  <= 
+     [ZERO] widget_ids  <= 
+     [ZERO] override_install_status  <= 
+  -- spell-check
+     [   2] word=  <= _figma_t3_put.py,_r50a_out.txt
+  -- collections import
+     [  42] cms_csv  <= _figma_js_coll2.py,_figma_q2_ctx.py,_figma_r194i_cms_itemops.py
+     [  48] csv  <= _figma_js_coll2.py,_figma_q2_ctx.py,_figma_r194i_cms_itemops.py

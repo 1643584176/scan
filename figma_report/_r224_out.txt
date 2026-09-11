@@ -1,0 +1,20 @@
+===== r224 P组: plan_id/plan_type 顶层类型混淆（矩阵最后空格） =====
+[P1] 200 len=337 777ms plan_id=裸数字(int64 JSON number,超2^53)
+    body=b'{"error":false,"status":200,"meta":{"id":"ddf836d0-cbae-4e34-bb74-0a7e5e97167d","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:10:40.269Z","updated_at":"2026-09-11T07:10:40.269Z"},"i18n":null}'
+[P2] 200 len=337 2237ms plan_id=字符串(对照,已证200)
+    body=b'{"error":false,"status":200,"meta":{"id":"1ece84f8-f625-4a4a-a88e-ba8396e3e8c8","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:10:44.726Z","updated_at":"2026-09-11T07:10:44.726Z"},"i18n":null}'
+[P3] 400 len=86 987ms plan_id=null
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_id","i18n":null}'
+[P4] 400 len=105 951ms plan_id=[数组]
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type Array","i18n":null}'
+[P5] 400 len=124 895ms plan_id={对象}
+    body=b'{"error":true,"status":400,"message":"\'plan_id\' must be a valid number, received type Sinatra::IndifferentHash","i18n":null}'
+[P6] 400 len=74 978ms plan_type=123 裸数字
+    body=b'{"error":true,"status":400,"message":"Invalid plan type: 123","i18n":null}'
+[P7] 400 len=88 824ms plan_type=null
+    body=b'{"error":true,"status":400,"message":"Missing required parameter plan_type","i18n":null}'
+[P8] 200 len=337 1242ms 净化回默认
+    body=b'{"error":false,"status":200,"meta":{"id":"eff64ee0-3dac-45b0-8370-26997a465dbd","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:11:03.845Z","updated_at":"2026-09-11T07:11:03.845Z"},"i18n":null}'
+[P9] 200 len=337 1021ms 净化确认
+    body=b'{"error":false,"status":200,"meta":{"id":"eff64ee0-3dac-45b0-8370-26997a465dbd","team_id":"1666382706663462213","org_id":null,"notification_type":"new_editor_notification","frequencies":[],"recipient_settings":"specific_admins","recipients":[],"created_at":"2026-09-11T07:11:03.845Z","updated_at":"2026-09-11T07:11:03.845Z"},"i18n":null}'
+DONE r224

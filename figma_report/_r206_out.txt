@@ -1,0 +1,19 @@
+===== A: 对照复飞 =====
+[A1_base] 500  1559ms :: {"error":true,"message":"Error updating diff."} (基线 fk)
+[A2_ver] 403   672ms :: {"error":true,"message":"You don't have permission to view this file."} (fk=版本id, 复查403?)
+[A3_bogus] 403   325ms :: {"error":true,"message":"You don't have permission to view this file."} (fk=乱码)
+===== B: fk 注入 =====
+[B1_q] 403   849ms :: {"error":true,"message":"You don't have permission to view this file."} (fk+%27)
+[B2_qcm] 403   321ms :: {"error":true,"message":"You don't have permission to view this file."} (fk+%27--)
+[B3_q11] 403   849ms :: {"error":true,"message":"You don't have permission to view this file."} (fk+' AND '1'='1)
+[B4_q12] 403   831ms :: {"error":true,"message":"You don't have permission to view this file."} (fk+' AND '1'='2)
+[B5_sleep] 403   841ms :: {"error":true,"message":"You don't have permission to view this file."} (fk+';SELECT pg_sleep(3)--
+[B6_concat] 403   851ms :: {"error":true,"message":"You don't have permission to view this file."} (fk+'||pg_sleep(3)||')
+[B7_or11] 403   841ms :: {"error":true,"message":"You don't have permission to view this file."} (' OR '1'='1 --)
+[B8_slash] 404   280ms :: 404 page not found  (fk..%2f..)
+[B9_mfk_q] 403   324ms :: {"error":true,"message":"You don't have permission to view this file."} (M fk+%27)
+===== C: 端点变体 =====
+[C1_v1] 404   783ms :: 404 page not found  (/api/file_diff/v1/checkpoint_diff/)
+[C2_nov] 404   782ms :: 404 page not found  (/api/file_diff/checkpoint_diff/)
+[C3_v3] 404   266ms :: 404 page not found  (/api/file_diff/v3/checkpoint_diff/)
+DONE206
